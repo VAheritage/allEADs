@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://sca.gmu.edu/tools/ead.dtd">
+<!DOCTYPE ead SYSTEM "http://sca.gmu.edu/tools/ead.dtd"[
+<!ENTITY % xmlchar "INCLUDE">
+<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/gmu.jpg" NDATA jpeg>
+]>
 <ead id="vifgm00010">
 <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
 <eadid countrycode="US" mainagencycode="ViFGM" url="http://sca.gmu.edu/finding_aids/">vifgm00010
@@ -39,8 +42,8 @@
          <lb />Special Collections and Archives 
          <num type="Collection Number">C0006</num></subtitle>
         <p id="logostmt">
-            
-         </p>
+	<extptr actuate="onload" show="embed" entityref="logo"/>
+	</p>
          <publisher>George Mason University Libraries</publisher>
          <date type="publication">2011</date>
          <list type="simple">
