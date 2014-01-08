@@ -4,10 +4,16 @@
 ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
 [
 <!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
+<!ENTITY % notats SYSTEM 
+"http://ead.lib.virginia.edu/bin/dtd/vivaead/eadnotat.ent"> %notats;
+<!ENTITY logo SYSTEM 
+"http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
+<!ENTITY conditions SYSTEM 
+"http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
+<!ENTITY address SYSTEM 
+"http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
+<!ENTITY contact SYSTEM 
+"http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
 ]>
 <ead id="vi00159">
    <eadheader audience="internal" langencoding="iso639-2b"
@@ -28,20 +34,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          </titlestmt>
          <publicationstmt>
             <publisher>Library of Virginia</publisher>
-            <address>
-               <addressline>The Library of Virginia</addressline>
-               <addressline>800 East Broad Street</addressline>
-               <addressline>Richmond, Virginia 23219-8000</addressline>
-               <addressline>USA</addressline>
-               <addressline>Phone: (804) 692-3888 (Archives
-               Reference)</addressline>
-               <addressline>Fax: (804) 692-3556 (Archives
-               Reference)</addressline>
-               <addressline>Email: archdesk@lva.lib.va.us
-               (Archives)</addressline>
-               <addressline>URL:
-               http://www.lva.lib.va.us/</addressline>
-            </address>
+            &address;
             <date type="publication">&#169; 2002 By the Library
             of Virginia.</date>
             <p id="usestatement">
