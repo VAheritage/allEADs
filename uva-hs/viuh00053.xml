@@ -1,118 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/uva-sc.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/uva-hs_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/uva-hs_contact.xml">
-]>
-<ead id="viuh00053">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-        <eadid countrycode="US" mainagencycode="ViU-H">PUBLIC "-//University of Virginia::Health
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viuh00053">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViU-H">PUBLIC "-//University of Virginia::Health
             System::Claude Moore Health Sciences Library::Historical Collections//TEXT
             (US::ViU-H::viuh00053:: University of Virginia School of Medicine Chapter of Alpha Omega
             Alpha//EN" "viuh00053.xml" </eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>A Guide to the University of Virginia School of Medicine Chapter of
-                    Alpha Omega Alpha, <date>1919-1978</date>
-                </titleproper>
-                <subtitle id="sort">University of Virginia School of Medicine Chapter of Alpha Omega
-                        Alpha<num type="collectionnumber">MS-53 </num>
-                </subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Historical Collections, Claude Moore Health Sciences Library </publisher>
-                &address; <date type="publication">&copy; 2012 By the Rector and Visitors of the
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the University of Virginia School of Medicine Chapter of
+                    Alpha Omega Alpha, <date era="ce" calendar="gregorian">1919-1978</date></titleproper>
+        <subtitle id="sort">University of Virginia School of Medicine Chapter of Alpha Omega
+                        Alpha<num type="collectionnumber">MS-53 </num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Historical Collections, Claude Moore Health Sciences Library </publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/uva-hs_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012 By the Rector and Visitors of the
                     University of Virginia. All rights reserved. </date>
-                <p id="usestatement">
-                    <extref entityref="conditions">Conditions of Use </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Machine-readable finding aid created by Janet Pearson, <date>12/04/2012</date>
-            </creation>
-            <langusage>Description is in <language langcode="eng">English </language>
-            </langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>A Guide to the University of Virginia School of Medicine Chapter of Alpha
-                Omega Alpha, <date>1919-1978</date>
-            </titleproper>
-            <subtitle>A Collection in <lb/>Historical Collections, Claude Moore Health Sciences
-                Library <num type="Accession Number">MS-53 </num>
-            </subtitle>
-            <p id="logostmt">
-                <extptr actuate="onload" show="embed" entityref="logo"/>
-            </p>
-            <publisher>Historical Collections, Claude Moore Health Sciences Library </publisher>
-            <date type="publication">2012 </date> &contact; <list type="deflist">
-                <defitem>
-                    <label>Processed by: </label>
-                    <item>Historical Collections Staff </item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="collection">
-        <runner placement="footer">Historical Collections, Claude Moore Health Sciences Library </runner>
-        <did>
-            <head>Descriptive Summary </head>
-            <repository label="Repository" encodinganalog="852$a">Historical Collections, Claude
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid created by Janet Pearson, <date era="ce" calendar="gregorian">12/04/2012</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the University of Virginia School of Medicine Chapter of Alpha
+                Omega Alpha, <date era="ce" calendar="gregorian">1919-1978</date></titleproper>
+      <subtitle>A Collection in <lb/>Historical Collections, Claude Moore Health Sciences
+                Library <num type="Accession Number">MS-53 </num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/uva-sc.jpg"/>
+      </p>
+      <publisher>Historical Collections, Claude Moore Health Sciences Library </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2012 </date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/uva-hs_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: </label>
+          <item>Historical Collections Staff </item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Historical Collections, Claude Moore Health Sciences Library </runner>
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">Historical Collections, Claude
                 Moore Health Sciences Library, University of Virginia </repository>
-            <unittitle label="Title" encodinganalog="245$a">University of Virginia School of
-                Medicine Chapter of Alpha Omega Alpha <unitdate type="inclusive" label="Date"
-                    encodinganalog="245$f">1919-1978 </unitdate>
-            </unittitle>
-            <unitid label="Accession Number" encodinganalog="099$a">MS-53 </unitid>
-            <physdesc label="Physical Description" encodinganalog="300$a">1 box, 5.5"x10.5"x15.5," 5.5
+      <unittitle label="Title" encodinganalog="245$a">University of Virginia School of
+                Medicine Chapter of Alpha Omega Alpha <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1919-1978 </unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">MS-53 </unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">1 box, 5.5"x10.5"x15.5," 5.5
                 inches, 3 folders </physdesc>
-            <langmaterial label="Language">
-                <language langcode="eng">English </language>
-            </langmaterial>
-            <origination label="Creator" encodinganalog="100$a">Historical Collections
+      <langmaterial label="Language">
+        <language langcode="eng">English </language>
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Historical Collections
             </origination>
-        </did>
-        <descgrp type="admininfo">
-            <head>Administrative Information </head>
-            <accessrestrict encodinganalog="506$a">
-                <head>Access Restrictions </head>
-                <p>Collection is open to research. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540$a">
-                <head>Use Restrictions </head>
-                <p>There are no restrictions. </p>
-            </userestrict>
-            <prefercite encodinganalog="524$a">
-                <head>Preferred Citation </head>
-                <p>University of Virginia School of Medicine Chapter of Alpha Omega Alpha, Accession
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information </head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions </head>
+        <p>Collection is open to research. </p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions </head>
+        <p>There are no restrictions. </p>
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation </head>
+        <p>University of Virginia School of Medicine Chapter of Alpha Omega Alpha, Accession
                     #MS-53, Historical Collections, Claude Moore Health Sciences Library, University
                     of Virginia, Charlottesville, Va. </p>
-            </prefercite>
-            <acqinfo encodinganalog="541$a">
-                <head>Acquisition Information </head>
-                <p> </p>
-            </acqinfo>
-        </descgrp>
-        <bioghist>
-            <head>Biographical/Historical Information</head>
-            <p>Alpha Omega Alpha was founded in 1902 and is the national medical honor society. It
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information </head>
+        <p/>
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>Alpha Omega Alpha was founded in 1902 and is the national medical honor society. It
                 started at the College of Physicians and Surgeons of Chicago when a small number of
                 medical students, led by William Webster Root, wanted to foster professional values
                 and good conduct in fellow medical students and sometimes in their faculty. Modeled
                 after Phi Beta Kappa, they stated that membership in the new society would be based
                 on both academic achievement and professional conduct.</p>
-            <p> By 2012 there were more than 130 chapters in medical schools throughout the United
+      <p> By 2012 there were more than 130 chapters in medical schools throughout the United
                 Sates. The AOA mission statement found on their website indicates that it is
                 “dedicated to the belief that in the profession of medicine we will improve care for
                 all by recognizing high educational achievement, honoring gifted teaching,
                 encouraging the development of leaders in academia and the community, supporting the
                 ideals of humanism, and promoting service to others." </p>
-            <p>The University of Virginia chapter started in 1919 and was the 23rd member. The first
+      <p>The University of Virginia chapter started in 1919 and was the 23rd member. The first
                 school in Virginia to join, its chapter is named Alpha Virginia. Each chapter may
                 elect to membership no more than one-sixth of the anticipated number of graduates.
                 Those elected must come from the top quartile of students academically. According to
@@ -122,62 +121,57 @@
                 commitment to service. At UVa generally 6-9 students are elected by their peers
                 after their second year, and another 17 or so are elected after their third year.
             </p>
-        </bioghist>
-        <scopecontent encodinganalog="520$a">
-            <head>Scope and Content </head>
-            <p>There are three volumes in the collection. The first is the chapter roll and minutes
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content </head>
+      <p>There are three volumes in the collection. The first is the chapter roll and minutes
                 from 1919 to 1955. The second covers the roll and minutes from 1955 to 1969. The
                 third is a treasurer's ledger covering 1922 to 1978.</p>
-        </scopecontent>
-        <arrangement encodinganalog="351">
-            <head>Arrangement </head>
-            <p>The folders are arranged by end date. </p>
-        </arrangement>
-        <dsc type="combined">
-            <head>Contents List </head>
-            <c01 level="item">
-                <did>
-                    <unittitle>Alpha Omega Alpha Virginia Chapter Roll and Minutes, <unitdate
-                            type="inclusive">1919 October 4 - 1955 April 19</unitdate>
-                    </unittitle>
-                    <container label="Box-Folder" type="box-folder">001-001 </container>
-                    <physdesc>AM; </physdesc>
-                </did>
-                <scopecontent>
-                    <p>The book includes minutes of meetings, lists of new members, and peakers and
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement </head>
+      <p>The folders are arranged by end date. </p>
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List </head>
+      <c01 level="item">
+        <did>
+          <unittitle>Alpha Omega Alpha Virginia Chapter Roll and Minutes, <unitdate type="inclusive" era="ce" calendar="gregorian">1919 October 4 - 1955 April 19</unitdate></unittitle>
+          <container label="Box-Folder" type="box-folder">001-001 </container>
+          <physdesc>AM; </physdesc>
+        </did>
+        <scopecontent>
+          <p>The book includes minutes of meetings, lists of new members, and peakers and
                         topics of the talks given at the meetings for inducted members. Also
                         included are news clippings of an event in November 1947 in which Dr. Philip
                         S. Hench gave a presentation about Walter Reed and yellow fever, one
                         clipping about the March 1950 AOA elections at UVA, and one about the 1945
                         elections.</p>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Alpha Omega Alpha Virginia Chapter Roll and Minutes, <unitdate
-                            type="inclusive">1955 September 29 - 1969 May 12</unitdate>
-                    </unittitle>
-                    <container label="Box-Folder" type="box-folder">001-002 </container>
-                    <physdesc>AM; </physdesc>
-                </did>
-                <scopecontent>
-                    <p>The book includes minutes of meetings, lists of new members, and speakers and
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Alpha Omega Alpha Virginia Chapter Roll and Minutes, <unitdate type="inclusive" era="ce" calendar="gregorian">1955 September 29 - 1969 May 12</unitdate></unittitle>
+          <container label="Box-Folder" type="box-folder">001-002 </container>
+          <physdesc>AM; </physdesc>
+        </did>
+        <scopecontent>
+          <p>The book includes minutes of meetings, lists of new members, and speakers and
                         topics of the talks given at the meetings for inducted members.</p>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Alpha Omega Alpha Treasurer's Book, <unitdate type="inclusive">1922
-                            May 4 - 1978 January 23 </unitdate>
-                    </unittitle>
-                    <container label="Box-Folder" type="box-folder">001-003 </container>
-                    <physdesc>AM; </physdesc>
-                </did>
-                <scopecontent>
-                    <p>The book includes expenses and income from dues, banquets, printing, lecture
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Alpha Omega Alpha Treasurer's Book, <unitdate type="inclusive" era="ce" calendar="gregorian">1922
+                            May 4 - 1978 January 23 </unitdate></unittitle>
+          <container label="Box-Folder" type="box-folder">001-003 </container>
+          <physdesc>AM; </physdesc>
+        </did>
+        <scopecontent>
+          <p>The book includes expenses and income from dues, banquets, printing, lecture
                         costs, etc.</p>
-                </scopecontent>
-            </c01>
-        </dsc>
-    </archdesc>
+        </scopecontent>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
