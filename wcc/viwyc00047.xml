@@ -1,166 +1,172 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wcc.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wcc_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wcc_contact.xml">
-]><ead id="viwyc00047">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="ViWyC">PUBLIC "-//Wytheville Community College::Kegley Library::Special Collections//TEXT (US::ViWyC::viwyc00047::A Guide to the Fulton-Graham-Sanders Family Papers, 1789-1962)//EN" "viwyc00047.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viwyc00047">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViWyC">PUBLIC "-//Wytheville Community College::Kegley Library::Special Collections//TEXT (US::ViWyC::viwyc00047::A Guide to the Fulton-Graham-Sanders Family Papers, 1789-1962)//EN" "viwyc00047.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Fulton-Graham-Sanders Family Papers, <date>1789-1962</date>
-</titleproper>
-<subtitle id="sort">Fulton-Graham-Sanders Family, Papers, 1789-1962
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Fulton-Graham-Sanders Family Papers, <date era="ce" calendar="gregorian">1789-1962</date></titleproper>
+        <subtitle id="sort">Fulton-Graham-Sanders Family, Papers, 1789-1962
 <num type="collectionnumber">1994.1
-</num>
-</subtitle>
-<author>Cathy Carlson Reynolds
+</num></subtitle>
+        <author>Cathy Carlson Reynolds
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Special Collections, Kegley Library, Wytheville
-            Community College
-</publisher> &address;
-<date type="publication">&#169; 2011 By Wytheville Community College. All rights reserved.
-</date>
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MS Word, created by Cathy Carlson Reynolds, <date>4 November 2011</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Fulton-Graham-Sanders Family Papers, <date>1789-1962</date>
-</titleproper>
-<subtitle>A Collection in <lb/>Special Collections, Kegley Library
-<num type="Collection Number">1994.1
-</num>
-</subtitle>
-<author>Cathy Carlson Reynolds
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Special Collections, Kegley Library, Wytheville
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Kegley Library, Wytheville
             Community College
 </publisher>
-<date type="publication">2011
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Cathy Carlson Reynolds
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Kegley Library, Wytheville Community College
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">Special Collections, Kegley Library
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Fulton-Graham-Sanders Papers
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1789-1962
-</unitdate>
-</unittitle>
-<unitid label="Collection Number" encodinganalog="099$a">1994.1
-</unitid>
-<physdesc label="Physical Characteristics" encodinganalog="300$a">8 series; 178 folders..
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wcc_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2011 By Wytheville Community College. All rights reserved.
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Cathy Carlson Reynolds, <date era="ce" calendar="gregorian">4 November 2011</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Fulton-Graham-Sanders Family Papers, <date era="ce" calendar="gregorian">1789-1962</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections, Kegley Library
+<num type="Collection Number">1994.1
+</num></subtitle>
+      <author>Cathy Carlson Reynolds
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wcc.jpg"/>
+      </p>
+      <publisher>Special Collections, Kegley Library, Wytheville
+            Community College
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2011
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wcc_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Cathy Carlson Reynolds
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Kegley Library, Wytheville Community College
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, Kegley Library
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Fulton-Graham-Sanders Papers
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1789-1962
+</unitdate></unittitle>
+      <unitid label="Collection Number" encodinganalog="099$a">1994.1
+</unitid>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">8 series; 178 folders..
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p> Fulton-Graham-Sanders Papers, Mss. Collection 1994.1, Kegley Library, Wytheville Community College, Wytheville, VA
+        <p> Fulton-Graham-Sanders Papers, Mss. Collection 1994.1, Kegley Library, Wytheville Community College, Wytheville, VA
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Donated by Malcolm Sanders in 1994.
+        <p>Donated by Malcolm Sanders in 1994.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical/Historical Information 
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical/Historical Information 
 </head>
-<p>The Fulton-Graham-Sanders Papers chronicle the history of three prominent Wythe County families.  A brief history of each family as it pertains to this collection follows as does a history of the Tate family.
+      <p>The Fulton-Graham-Sanders Papers chronicle the history of three prominent Wythe County families.  A brief history of each family as it pertains to this collection follows as does a history of the Tate family.
 </p>
-<p><title render="bold">Fulton Family</title></p>
-<p> Andrew Steele Fulton, son of Elizabeth Hall and Andrew Fulton, was born in September 1800 in Augusta County and attended Hampden-Sydney College.  He studied law under Judge Baldwin in Staunton, Virginia.  1828 proved to be a momentous year in the young lawyer's life as he married Sallie McClellan Kincannon and opened a law office in Wytheville.</p>
-<p>Sally and Andrew Steele Fulton had nine children including Mamie Alexander Fulton sanders (married John Posey Mathews Sanders in 1858), John Hall Fulton (married Cynthia McGavock in 1876), and William Edward Fulton (married Katherine Friel Graham in 1907).  Politics dominated much of Andrew Steele Fulton's professional life as he served as Wythe County Commonwealth Attorney, Judge of the 15th Judicial Circuit of Virginia, and Representative in the 30th United States Congress.  He died in 1884.</p>
-<p>His sons, John Hall and Edward Fulton, also practiced law in Wytheville.  John Hall Fulton also served as captain of Co. A, 4th Virginia Infantry Regiment, C. S. A., until he was  severely wounded at Chancellorsville on 3 May 1863.  With his leg amputated, Fulton resigned from military service and returned home to practice law.  He ans his wife, Cynthia McGavock, had one daughter, Frances Janet Fulton.  Fulton served both as a state delegate (1869-1871) and as Judge of the 15th Judicial District Court of Virginia from 1870 to 1887.  He died in 1907.</p>
-<p>William Edward Fulton, Born in 1856, attended Virginia Military Institute and taught military drill to students of the Wytheville Male Academy during the 1880s.  He also practiced law, sharing clients and an office in Wytheville with his brother, John Hall Fulton.  In May 1898 he organized a company of Wythe County men to serve in the Spanish-American War.  The company, although never mobilized, elected Fulton as their captain.  William Edward Fulton later served as county court judge from 1892 to 1907.</p>
-<p>In 1904 he embarked upon a three year endeavor to woo and win Katherine Friel Graham, daughter of David Peirce and Nancy Montgomery Tate Graham.  Through persistence, Fulton persuaded Katherine to marry him despite their twenty-four year age difference.  They wed in August 1907 and had no children.  Fulton continued his successful legal profession until his death in 1933.  Katherine Fulton died in 1964.</p>
-<p><title render="bold">Graham Family</title></p>
-<p>David Peirce Graham, son of David and Martha Peirce Graham, was born in 1838.  He attended Virginia Military Institute for one year.  IN 1861 he enlisted in Co. B., 51st Virginia Infantry Regiment, C. S. A., and eventually become major (hence his postwar moniker of Major Graham).</p>
-<p>After the Civil War, Graham enlarged his father's prosperous iron, mining and manufacturing business, eventually owning several companies including Graham and Robinson (with brother-in-law John W. Robinson) and several furnaces (Dora, Foster Falls, and Reed Island.)  Graham also encouraged the industrial development of Southwest Virginia by investing in and governing several mining and manufacturing companies.  He died in 1898.</p>
-<p>Graham married Nancy Montgomery Tate in 1868.  Daughter of Elizabeth Friel Graham and Charles Campbell Tate, Nancy was born in 1843 and educated at the Kalorama School in Staunton, Virginia.  During the Civil War she correspondence with brothers who served in the Confederate Army including Charles Tate and Beverly Tate (Virginia Military Institute cadets), James Graham Tate (Co. A, 4th Virginia Infantry Regiment), and William Hanson Tate (Co. B., 51st Virginia Infantry Regiment).  Both James and William Tate died during battle.</p>
-<p>After her marriage to David Peirce Graham in 1868, Nancy Montgomery Tate Graham devoted herself to family and civil duties.  She had eight children including Elizabeth Graham, David Graham, Lillian Tate Graham, Martha "Patsy" Graham, Charles Tate Graham, Katherine Friel Graham, James Montgomery Graham, and Rober Calvin Graham.  She was active in the Daughters of the American Revolution, United Daughters of the Confederacy, Red Cross, and other organizations.  She also wrote and compiled genealogical data, much of which will be found in Series IV.  She died in 1923.</p>
-<p>Her sons also distinguished themselves in professional and private life.  David Graham involved himself with church work in Roanoke and married Elizabeth Crockett Raper in 1894.  They had two daughters, Margaret Stuart Graham and Elizabeth Friel Graham Caldwell (married James Caldwell in 1920).</p>
-<p>William Tate Graham never married but graduated from the University of Virginia Medical School in 1896.  He practiced in Wytheville for several years before resuming his study of orthopedic surgery at Children's Hospital in Boston.  In 1913 he opened an office in Richmond and after the infantile paralysis epidemic in 1919, established the Crippled Children's Hospital.  He served as a member of the Virginia Board of Health for forty years.  He died in 1953.</p>
-<p>Charles Tate Graham married Frederica Oewel in 1903 and had five children; he died in 1940 in Abingdon.  James Montgomery Graham married Mary Lou Campbell in 1907 and had two sons.  He worked as a cashier and banker at Farmers Bank and Trust National Bank.  Robert Calvin Graham married Harriet Isabella Wysor in 1908.  He lived in North Carolina but retuned in Pulaski County in the 1930s.  He died in 1949.</p>
-<p><title render="bold">Sanders Family</title></p>
-<p>The daughters of David Peirce Graham and Nancy Montgomery Tate Graham include Elizabeth Graham.  She married Edwin Hanson Sanders (son of Andrew Tate Sanders and Shipton Curran Sanders)in 1901.  Their daughter, Agnes Graham Sanders Riley, collected documents and wrote numerous articles regarding Sanders, Fulton, and Tate family history.  Much of her material has been deposited at Wytheville Community College and the University of Virginia.  Elizabeth Sanders died in 1956.</p>
-<p>Martha "Patsy" Peirce Graham married William Dixon Sanders, son of Stephen Drake Sanders and Eliza Ann Hutton Sanders, in 1903.  They had thirteen children including Malcolm Robinson Sanders.  Patsy Graham died in 1936.</p>
-<p><title render="bold">Tate Family</title></p>
-<p>The Tate family history intertwines itself with that of the Graham and Sanders families.  Charles Campbell Tate, son of Charles Tate and Mary Tate of Washington and Smyth counties, was born in 1808.  He married Elizabeth Friel Graham in 1832.  They had nine children including William Hanson Tate, James Graham Tate, and Charles Beverly Tate, and Nancy Montgomery Tate Graham.  Elizabeth Graham died in 1849.  Charles remarried Jane Draper and they had three children.  Tate died in 1874.  Charles C. Tate, son of Robert Crockett Tate and Matilda Martin Hairstoon Tate, was born in 1874.  He was a banker in Wythe COunty and died in 1953.</p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+      <p>
+        <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Fulton Family</title>
+      </p>
+      <p> Andrew Steele Fulton, son of Elizabeth Hall and Andrew Fulton, was born in September 1800 in Augusta County and attended Hampden-Sydney College.  He studied law under Judge Baldwin in Staunton, Virginia.  1828 proved to be a momentous year in the young lawyer's life as he married Sallie McClellan Kincannon and opened a law office in Wytheville.</p>
+      <p>Sally and Andrew Steele Fulton had nine children including Mamie Alexander Fulton sanders (married John Posey Mathews Sanders in 1858), John Hall Fulton (married Cynthia McGavock in 1876), and William Edward Fulton (married Katherine Friel Graham in 1907).  Politics dominated much of Andrew Steele Fulton's professional life as he served as Wythe County Commonwealth Attorney, Judge of the 15th Judicial Circuit of Virginia, and Representative in the 30th United States Congress.  He died in 1884.</p>
+      <p>His sons, John Hall and Edward Fulton, also practiced law in Wytheville.  John Hall Fulton also served as captain of Co. A, 4th Virginia Infantry Regiment, C. S. A., until he was  severely wounded at Chancellorsville on 3 May 1863.  With his leg amputated, Fulton resigned from military service and returned home to practice law.  He ans his wife, Cynthia McGavock, had one daughter, Frances Janet Fulton.  Fulton served both as a state delegate (1869-1871) and as Judge of the 15th Judicial District Court of Virginia from 1870 to 1887.  He died in 1907.</p>
+      <p>William Edward Fulton, Born in 1856, attended Virginia Military Institute and taught military drill to students of the Wytheville Male Academy during the 1880s.  He also practiced law, sharing clients and an office in Wytheville with his brother, John Hall Fulton.  In May 1898 he organized a company of Wythe County men to serve in the Spanish-American War.  The company, although never mobilized, elected Fulton as their captain.  William Edward Fulton later served as county court judge from 1892 to 1907.</p>
+      <p>In 1904 he embarked upon a three year endeavor to woo and win Katherine Friel Graham, daughter of David Peirce and Nancy Montgomery Tate Graham.  Through persistence, Fulton persuaded Katherine to marry him despite their twenty-four year age difference.  They wed in August 1907 and had no children.  Fulton continued his successful legal profession until his death in 1933.  Katherine Fulton died in 1964.</p>
+      <p>
+        <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Graham Family</title>
+      </p>
+      <p>David Peirce Graham, son of David and Martha Peirce Graham, was born in 1838.  He attended Virginia Military Institute for one year.  IN 1861 he enlisted in Co. B., 51st Virginia Infantry Regiment, C. S. A., and eventually become major (hence his postwar moniker of Major Graham).</p>
+      <p>After the Civil War, Graham enlarged his father's prosperous iron, mining and manufacturing business, eventually owning several companies including Graham and Robinson (with brother-in-law John W. Robinson) and several furnaces (Dora, Foster Falls, and Reed Island.)  Graham also encouraged the industrial development of Southwest Virginia by investing in and governing several mining and manufacturing companies.  He died in 1898.</p>
+      <p>Graham married Nancy Montgomery Tate in 1868.  Daughter of Elizabeth Friel Graham and Charles Campbell Tate, Nancy was born in 1843 and educated at the Kalorama School in Staunton, Virginia.  During the Civil War she correspondence with brothers who served in the Confederate Army including Charles Tate and Beverly Tate (Virginia Military Institute cadets), James Graham Tate (Co. A, 4th Virginia Infantry Regiment), and William Hanson Tate (Co. B., 51st Virginia Infantry Regiment).  Both James and William Tate died during battle.</p>
+      <p>After her marriage to David Peirce Graham in 1868, Nancy Montgomery Tate Graham devoted herself to family and civil duties.  She had eight children including Elizabeth Graham, David Graham, Lillian Tate Graham, Martha "Patsy" Graham, Charles Tate Graham, Katherine Friel Graham, James Montgomery Graham, and Rober Calvin Graham.  She was active in the Daughters of the American Revolution, United Daughters of the Confederacy, Red Cross, and other organizations.  She also wrote and compiled genealogical data, much of which will be found in Series IV.  She died in 1923.</p>
+      <p>Her sons also distinguished themselves in professional and private life.  David Graham involved himself with church work in Roanoke and married Elizabeth Crockett Raper in 1894.  They had two daughters, Margaret Stuart Graham and Elizabeth Friel Graham Caldwell (married James Caldwell in 1920).</p>
+      <p>William Tate Graham never married but graduated from the University of Virginia Medical School in 1896.  He practiced in Wytheville for several years before resuming his study of orthopedic surgery at Children's Hospital in Boston.  In 1913 he opened an office in Richmond and after the infantile paralysis epidemic in 1919, established the Crippled Children's Hospital.  He served as a member of the Virginia Board of Health for forty years.  He died in 1953.</p>
+      <p>Charles Tate Graham married Frederica Oewel in 1903 and had five children; he died in 1940 in Abingdon.  James Montgomery Graham married Mary Lou Campbell in 1907 and had two sons.  He worked as a cashier and banker at Farmers Bank and Trust National Bank.  Robert Calvin Graham married Harriet Isabella Wysor in 1908.  He lived in North Carolina but retuned in Pulaski County in the 1930s.  He died in 1949.</p>
+      <p>
+        <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Sanders Family</title>
+      </p>
+      <p>The daughters of David Peirce Graham and Nancy Montgomery Tate Graham include Elizabeth Graham.  She married Edwin Hanson Sanders (son of Andrew Tate Sanders and Shipton Curran Sanders)in 1901.  Their daughter, Agnes Graham Sanders Riley, collected documents and wrote numerous articles regarding Sanders, Fulton, and Tate family history.  Much of her material has been deposited at Wytheville Community College and the University of Virginia.  Elizabeth Sanders died in 1956.</p>
+      <p>Martha "Patsy" Peirce Graham married William Dixon Sanders, son of Stephen Drake Sanders and Eliza Ann Hutton Sanders, in 1903.  They had thirteen children including Malcolm Robinson Sanders.  Patsy Graham died in 1936.</p>
+      <p>
+        <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Tate Family</title>
+      </p>
+      <p>The Tate family history intertwines itself with that of the Graham and Sanders families.  Charles Campbell Tate, son of Charles Tate and Mary Tate of Washington and Smyth counties, was born in 1808.  He married Elizabeth Friel Graham in 1832.  They had nine children including William Hanson Tate, James Graham Tate, and Charles Beverly Tate, and Nancy Montgomery Tate Graham.  Elizabeth Graham died in 1849.  Charles remarried Jane Draper and they had three children.  Tate died in 1874.  Charles C. Tate, son of Robert Crockett Tate and Matilda Martin Hairstoon Tate, was born in 1874.  He was a banker in Wythe COunty and died in 1953.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>The Fulton-Graham-Sanders Papers chronicle the history of three prominent Wythe County families.  Both the personal and professional lives of David Peirce Graham, his wife, Nancy Montgomery Tate Graham, and their children are reflected in these documents.  The Papers are arranged into eight series.
+      <p>The Fulton-Graham-Sanders Papers chronicle the history of three prominent Wythe County families.  Both the personal and professional lives of David Peirce Graham, his wife, Nancy Montgomery Tate Graham, and their children are reflected in these documents.  The Papers are arranged into eight series.
 </p>
-<p>Correspondence by and between members of the Fulton, Graham, and Sanders families, found in Series I, Correspondence, (1815-1962, undated), comprises the bulk of the Papers.  Correspondents include legal clients and colleagues of Andrew Steele Fulton, John Hall Fulton, and William Edward Fulton.  the voluminous correspondence of William Edward Fulton (folders 33-71) provide information concerning the legal practice of a rural attorney.  Fulton handled wills, estates, land transactions, debt collections and other legal matters.</p>
-<p>Family correspondence between Nancy Montgomery Tate Graham and her children David Graham, William Tate Graham, and Katherine Friel Graham Fulton, among others, forms another significant part of Series I.  Everyday life in Wythe County and southwestern Virginia is revealed in these letters.  Of particular interest are the letters of Katherine Friel Graham to her future husband William Edward Fulton (folders 75-82).  Her correspondence illustrates the strong maternal influence of Nancy Montgomery Tate Graham and the ambivalence Katherine felt about courtship and marriage.</p>
-<p>Letters from David Graham to his mother and sister provide lively accounts of life in early twentieth-century Roanoke, Virginia.  His humorous anecdotes and descriptions of church functions and neighborhood activities are valuable.</p>
-<p>Series II, Financial Records (1807-1937) gives researchers a vast amount of information on early Wythe County businesses.  While most of the records concentrate on financial transactions of William Edward Fulton and Katherine Friel Graham Fulton, several bills and receipts and account books chronicle the history of the law practices of Andrew Steele Fulton, John Hall Fulton, and Peregrine S. Buckingham.  Other account and ledger books provide information on Grayson Sulphur Springs, the Lead Mines in Austinville, Kent and Sanders Store, sanders and Baugh Store, Graham and Robinson Store, and the estate of Nancy Montgomery Tate Graham.  A ledger book details financial transactions of the law practice of William Edward Fulton from 1887 to 1906.</p>
-<p>Series III, Legal Records (1809-1937) primarily contains documents relating to legal cases and transactions handled by William Edward Fulton.  Legal records of the Virginia Iron, Coal and Coke Company, Rustin Land, Mining and Manufacturing Company, and the Boyd Land and Improvement Company are included in this series.  Other records of interest include Wythe Lead and Zinc Company and the Virginia Pocahontas Coal Company.</p>
-<p>Series IV, Genealogical Records (undated) contains notes and documents compiled and collected by Nancy Tate Montgomery Graham and others.  Information on the following families is included:  Anderson family, Bell family, Bentley family, Campbell family, Crockett family, Fulton family, Graham family, Howard family, Kincannon family, McDonald family, Montgomery family, Peirce family, Simmerman family, Tate family, and Trigg family.</p>
-<p>Series V, Land Records (1789-1925) include deeds, surveys and plats, maps, and a ledger book.  A map of Wytheville dated 1890 prepared for the Wytheville Development Company as well as one showing the farm and subdivisions of the estate of Nancy Montgomery Tate Graham are included.  A ledger book dating 1866 to 1868 lists sales of land belonging to the Ruston family.</p>
-<p>Confederate rosters and muster rolls are included in Series VI, Military Records (1861-1862, undated).  Rosters include one for Co. B, 45th Virginia Infantry Regiment known as the Mount Airy Rough and Readys and one for Co. D, 45th Virginia Infantry Regiment known as the Minute Men.  The latter roster lists men who refused to reenlist in the regiment after its reorganization in May 1862.  Sic muster rolls for this unit complete this series.</p>
-<p>Series VII, Photographs (undated), contains over twenty-five identified photographs and twenty-eight unidentified photographs.  Also included is an album with mostly unidentified images.</p>
-<p>Series VIII, Miscellaneous Records (1835-1941, undated)contains political tracts from the 1830s, astrological charts for Katherine Graham Fulton, William Tate Graham, and William Edward Fulton, programs and a songbook.  Also included are drawings (1892) and an address book of Katherine Friel Graham Fulton.</p>
-</scopecontent>
-</archdesc>
+      <p>Correspondence by and between members of the Fulton, Graham, and Sanders families, found in Series I, Correspondence, (1815-1962, undated), comprises the bulk of the Papers.  Correspondents include legal clients and colleagues of Andrew Steele Fulton, John Hall Fulton, and William Edward Fulton.  the voluminous correspondence of William Edward Fulton (folders 33-71) provide information concerning the legal practice of a rural attorney.  Fulton handled wills, estates, land transactions, debt collections and other legal matters.</p>
+      <p>Family correspondence between Nancy Montgomery Tate Graham and her children David Graham, William Tate Graham, and Katherine Friel Graham Fulton, among others, forms another significant part of Series I.  Everyday life in Wythe County and southwestern Virginia is revealed in these letters.  Of particular interest are the letters of Katherine Friel Graham to her future husband William Edward Fulton (folders 75-82).  Her correspondence illustrates the strong maternal influence of Nancy Montgomery Tate Graham and the ambivalence Katherine felt about courtship and marriage.</p>
+      <p>Letters from David Graham to his mother and sister provide lively accounts of life in early twentieth-century Roanoke, Virginia.  His humorous anecdotes and descriptions of church functions and neighborhood activities are valuable.</p>
+      <p>Series II, Financial Records (1807-1937) gives researchers a vast amount of information on early Wythe County businesses.  While most of the records concentrate on financial transactions of William Edward Fulton and Katherine Friel Graham Fulton, several bills and receipts and account books chronicle the history of the law practices of Andrew Steele Fulton, John Hall Fulton, and Peregrine S. Buckingham.  Other account and ledger books provide information on Grayson Sulphur Springs, the Lead Mines in Austinville, Kent and Sanders Store, sanders and Baugh Store, Graham and Robinson Store, and the estate of Nancy Montgomery Tate Graham.  A ledger book details financial transactions of the law practice of William Edward Fulton from 1887 to 1906.</p>
+      <p>Series III, Legal Records (1809-1937) primarily contains documents relating to legal cases and transactions handled by William Edward Fulton.  Legal records of the Virginia Iron, Coal and Coke Company, Rustin Land, Mining and Manufacturing Company, and the Boyd Land and Improvement Company are included in this series.  Other records of interest include Wythe Lead and Zinc Company and the Virginia Pocahontas Coal Company.</p>
+      <p>Series IV, Genealogical Records (undated) contains notes and documents compiled and collected by Nancy Tate Montgomery Graham and others.  Information on the following families is included:  Anderson family, Bell family, Bentley family, Campbell family, Crockett family, Fulton family, Graham family, Howard family, Kincannon family, McDonald family, Montgomery family, Peirce family, Simmerman family, Tate family, and Trigg family.</p>
+      <p>Series V, Land Records (1789-1925) include deeds, surveys and plats, maps, and a ledger book.  A map of Wytheville dated 1890 prepared for the Wytheville Development Company as well as one showing the farm and subdivisions of the estate of Nancy Montgomery Tate Graham are included.  A ledger book dating 1866 to 1868 lists sales of land belonging to the Ruston family.</p>
+      <p>Confederate rosters and muster rolls are included in Series VI, Military Records (1861-1862, undated).  Rosters include one for Co. B, 45th Virginia Infantry Regiment known as the Mount Airy Rough and Readys and one for Co. D, 45th Virginia Infantry Regiment known as the Minute Men.  The latter roster lists men who refused to reenlist in the regiment after its reorganization in May 1862.  Sic muster rolls for this unit complete this series.</p>
+      <p>Series VII, Photographs (undated), contains over twenty-five identified photographs and twenty-eight unidentified photographs.  Also included is an album with mostly unidentified images.</p>
+      <p>Series VIII, Miscellaneous Records (1835-1941, undated)contains political tracts from the 1830s, astrological charts for Katherine Graham Fulton, William Tate Graham, and William Edward Fulton, programs and a songbook.  Also included are drawings (1892) and an address book of Katherine Friel Graham Fulton.</p>
+    </scopecontent>
+  </archdesc>
 </ead>
