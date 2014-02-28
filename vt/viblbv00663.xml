@@ -1,138 +1,134 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/vt.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/vt_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/vt_contact.xml">
-<!ENTITY KY SYSTEM "http://www.louisvilleky.gov/louisvillefire/lfd_history_full_text.htm" NDATA html>
-<!ENTITY floura SYSTEM "http://spec.lib.vt.edu/mss/ballard/flour_a.jpg" NDATA jpeg>
-<!ENTITY flourb SYSTEM "http://spec.lib.vt.edu/mss/ballard/flour_b.jpg" NDATA jpeg>
-<!ENTITY piea SYSTEM "http://spec.lib.vt.edu/mss/ballard/pie_a.jpg" NDATA jpeg>
-<!ENTITY pieb SYSTEM "http://spec.lib.vt.edu/mss/ballard/pie_b.jpg" NDATA jpeg>
-]>
-<ead id="viblbv00663">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-        <eadid countrycode="US" mainagencycode="ViBlbV">PUBLIC "-//Virginia Polytechnic Institute
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv00663">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute
             and State University::University Libraries::Special Collections//TEXT
             (US::ViBlbV::viblbv00663:: Ballard &amp; Ballard Company Collection, c.1925)//EN"
             "viblbv00663.xml" </eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>A Guide to the Ballard and Ballard Company Collection,
-                        <date>c.1925</date>
-                </titleproper>
-                <subtitle id="sort">Ballard and Ballard Company Collection <num
-                        type="collectionnumber">Ms2010-032 </num>
-                </subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Special Collections, Virginia Polytechnic Institute and State University
-                </publisher> &address; <date type="publication">&copy; 2010 By Virginia Polytechnic
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Ballard and Ballard Company Collection,
+                        <date era="ce" calendar="gregorian">c.1925</date></titleproper>
+        <subtitle id="sort">Ballard and Ballard Company Collection <num type="collectionnumber">Ms2010-032 </num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Virginia Polytechnic Institute and State University
+                </publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By Virginia Polytechnic
                     Institute and State University. All rights reserved. </date>
-                <p id="usestatement">
-                    <extref entityref="conditions">Conditions of Use </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Machine-readable finding aid derived from MS Word, created by Carmen
-                Boggs-Parker, <date>06/15/2010</date>
-            </creation>
-            <langusage>Description is in <language langcode="eng">English </language>
-            </langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>A Guide to the Ballard and Ballard Company Collection, <date>c.1925</date>
-            </titleproper>
-            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"
-                    >Ms2010-032 </num>
-            </subtitle>
-            <p id="logostmt">
-                <extptr actuate="onload" show="embed" entityref="logo"/>
-            </p>
-            <publisher>Special Collections, Virginia Polytechnic Institute and State University </publisher>
-            <date type="publication">2010 </date> &contact; <list type="deflist">
-                <defitem>
-                    <label>Processed by: Carmen Boggs-Parker </label>
-                    <item>Special Collections Staff </item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="collection">
-        <runner placement="footer">Special Collections, Virginia Polytechnic Institute and State
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Carmen
+                Boggs-Parker, <date era="ce" calendar="gregorian">06/15/2010</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Ballard and Ballard Company Collection, <date era="ce" calendar="gregorian">c.1925</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">Ms2010-032 </num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+      </p>
+      <publisher>Special Collections, Virginia Polytechnic Institute and State University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010 </date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: Carmen Boggs-Parker </label>
+          <item>Special Collections Staff </item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Virginia Polytechnic Institute and State
             University </runner>
-        <did>
-            <head>Descriptive Summary </head>
-            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia
                 Polytechnic Institute and State University, Blacksburg, Va. </repository>
-            <unittitle label="Title" encodinganalog="245$a">Ballard and Ballard Company Collection
-                    <unitdate type="inclusive" label="Date" encodinganalog="245$f">c.1925
-                </unitdate>
-            </unittitle>
-            <unitid label="Collection Number" encodinganalog="099$a">Ms2010-032 </unitid>
-            <physdesc label="Physical Characteristics" encodinganalog="300$a">1 container; 0.3 cu.
+      <unittitle label="Title" encodinganalog="245$a">Ballard and Ballard Company Collection
+                    <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">c.1925
+                </unitdate></unittitle>
+      <unitid label="Collection Number" encodinganalog="099$a">Ms2010-032 </unitid>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">1 container; 0.3 cu.
                 ft. </physdesc>
-            <langmaterial label="Language">
-                <language langcode="eng">English </language>
-            </langmaterial>
-            <abstract label="Abstract">The collection includes a string of cardboard cut-out
+      <langmaterial label="Language">
+        <language langcode="eng">English </language>
+      </langmaterial>
+      <abstract label="Abstract">The collection includes a string of cardboard cut-out
                 advertisements for Ballard's Obelisk Flour and a booklet with recipes and cooking
                 tips from the Ballard and Ballard Company. </abstract>
-            <origination label="Creator" encodinganalog="100$a">Ballard and Ballard Company
+      <origination label="Creator" encodinganalog="100$a">Ballard and Ballard Company
             </origination>
-        </did>
-        <descgrp type="admininfo">
-            <head>Administrative Information </head>
-            <accessrestrict encodinganalog="506$a">
-                <head>Access Restrictions </head>
-                <p>Collection is open to research. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540$a">
-                <head>Use Restrictions </head>
-                <p>Permission to publish material from the Ballard and Ballard Company Collection
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information </head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions </head>
+        <p>Collection is open to research. </p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions </head>
+        <p>Permission to publish material from the Ballard and Ballard Company Collection
                     must be obtained from Special Collections, Virginia Tech. </p>
-            </userestrict>
-            <prefercite encodinganalog="524$a">
-                <head>Preferred Citation </head>
-                <p>Researchers wishing to cite this collection should include the following
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation </head>
+        <p>Researchers wishing to cite this collection should include the following
                     information: Ballard and Ballard Company, Ms2010-032, Special Collections,
                     Virginia Polytechnic Institute and State University, Blacksburg, Va. </p>
-            </prefercite>
-            <acqinfo encodinganalog="541$a">
-                <head>Acquisition Information </head>
-                <p>The Ballard and Ballard Company Collection was purchased by Special Collections
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information </head>
+        <p>The Ballard and Ballard Company Collection was purchased by Special Collections
                     in 2010. </p>
-            </acqinfo>
-            <altformavail>
-                <head>Alternate Form Available</head>
-                <p>Scans of two of the display panels are available online. See the "Contents List"
+      </acqinfo>
+      <altformavail>
+        <head>Alternate Form Available</head>
+        <p>Scans of two of the display panels are available online. See the "Contents List"
                     below for links to the images (jpgs)</p>
-            </altformavail>
-            <processinfo>
-                <head>Processing Information </head>
-                <p>The processing, arrangement and description of the Ballard and Ballard Company
+      </altformavail>
+      <processinfo>
+        <head>Processing Information </head>
+        <p>The processing, arrangement and description of the Ballard and Ballard Company
                     Collection commenced and was completed in June, 2010. </p>
-            </processinfo>
-        </descgrp>
-        <bioghist encodinganalog="545$a">
-            <head>Historical Information </head>
-            <p>Ballard and Ballard Company, also known as Ballar's Obelisk Flour and Ballard Mills,
+      </processinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information </head>
+      <p>Ballard and Ballard Company, also known as Ballar's Obelisk Flour and Ballard Mills,
                 was founded by Samuel Thruston Ballard and Charles T. Ballard in Louisville,
                 Kentucky in 1880. Ballard and Ballard was purchased by the Pillsbury Company in
                 1951. </p>
-            <p><extref entityref="KY">
-                    http://www.louisvilleky.gov/louisvillefire/lfd_history_full_text.htm</extref></p>
-        </bioghist>
-        <scopecontent encodinganalog="520$a">
-            <head>Scope and Content </head>
-            <p>The collection includes a string of cardboard cut-out advertisements and a booklet
+      <p>
+        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.louisvilleky.gov/louisvillefire/lfd_history_full_text.htm">
+                    http://www.louisvilleky.gov/louisvillefire/lfd_history_full_text.htm</extref>
+      </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content </head>
+      <p>The collection includes a string of cardboard cut-out advertisements and a booklet
                 titled, "It's Ballard that's Enough." </p>
-            <p>The cardboard advertisements consist of five panels, attached to a hanging string.
+      <p>The cardboard advertisements consist of five panels, attached to a hanging string.
                 The exterior panels imitate small cloth flour bags imprinted with the company seal
                 and promote Ballard's flour with the phrases, "Bread Is the Staff Of Life Therefore
                 Have it Good" and "Ballard's Obelisk Flour Always Reliable." The second and fourth
@@ -144,7 +140,7 @@
                 Obelisk Flour", "Ballard's Obelisk Flour", "Ballard's Obelisk the Kind of Flour that
                 Encourages Home Baking", and "A Valuable Premium Ticket in Every Sack of Ballard's
                 Obelisk Flour."</p>
-            <p> The booklet contains recipes and cooking tips from the Presidents and Directors of
+      <p> The booklet contains recipes and cooking tips from the Presidents and Directors of
                 the General Federation of Women's Clubs of all fifty states and the District of
                 Columbia. The booklet includes chapters on The Housewife Problem; Breads and
                 Biscuits; Sensible Salads and Desserts; Thrift Suggestions; Cakes and Cookies; Pies,
@@ -152,39 +148,45 @@
                 Fats; Thrifty Meatless Recipes; Table Laid for Formal Dinner; Home Canning; Canning
                 of Fruit; Time Table for Canning Vegetables; Vegetables and Fruit Drying; and
                 Miscellaneous Tables. </p>
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement </head>
+      <p>The collection is arranged by material type. </p>
+    </arrangement>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">History of Food and Drink</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="combined">
+      <head>Contents List </head>
+      <c01 level="file">
+        <did>
+          <unittitle>Panels, booklet <unitdate type="inclusive" era="ce" calendar="gregorian">c.1925 </unitdate></unittitle>
+          <container label="Folder" type="folder">1 </container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sample images. <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+        </did>
+        <scopecontent>
+          <p>
+            <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://spec.lib.vt.edu/mss/ballard/flour_a.jpg">Flour bag panel (front)</extref>
+          </p>
+          <p>
+            <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://spec.lib.vt.edu/mss/ballard/flour_b.jpg">Flour bag panel (back)</extref>
+          </p>
+          <p>
+            <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://spec.lib.vt.edu/mss/ballard/pie_a.jpg">Pie panel (front)</extref>
+          </p>
+          <p>
+            <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://spec.lib.vt.edu/mss/ballard/pie_b.jpg">Pie panel (back)</extref>
+          </p>
         </scopecontent>
-        <arrangement encodinganalog="351">
-            <head>Arrangement </head>
-            <p>The collection is arranged by material type. </p>
-        </arrangement>
-        <controlaccess>
-            <head>Index Terms</head>
-            <controlaccess>
-                <head>Subjects:</head>
-                <subject source="lcsh" encodinganalog="650$a">History of Food and Drink</subject>
-            </controlaccess>
-        </controlaccess>
-        <dsc type="combined">
-            <head>Contents List </head>
-            <c01 level="file">
-                <did>
-                    <unittitle>Panels, booklet <unitdate type="inclusive">c.1925 </unitdate>
-                    </unittitle>
-                    <container label="Folder" type="folder">1 </container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Sample images. <unitdate type="inclusive"> </unitdate>
-                    </unittitle>
-                </did>
-                <scopecontent>
-                    <p><extref entityref="floura">Flour bag panel (front)</extref></p>
-                    <p><extref entityref="flourb">Flour bag panel (back)</extref></p>
-                    <p><extref entityref="piea">Pie panel (front)</extref></p>
-                    <p><extref entityref="pieb">Pie panel (back)</extref></p>
-                </scopecontent>
-            </c01>
-        </dsc>
-    </archdesc>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

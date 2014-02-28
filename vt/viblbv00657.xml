@@ -1,960 +1,820 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/vt.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/vt_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/vt_contact.xml">
-<!ENTITY source2 SYSTEM "http://www.virginia.edu/bov/meetings/99mar/resolutionminutes.html" NDATA html>
-<!ENTITY source3 SYSTEM "http://www.johnowens.info/TyrrellNews/feb2004.htm" NDATA html>
-]><ead id="viblbv00657">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and State University::University Libraries::Special Collections//TEXT (US::ViBlbV::viblbv00657:: Earl A. Thornton Collection, 1885-1998.)//EN" "viblbv00657.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv00657">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and State University::University Libraries::Special Collections//TEXT (US::ViBlbV::viblbv00657:: Earl A. Thornton Collection, 1885-1998.)//EN" "viblbv00657.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Earl A. Thornton Collection, <date>1885-1998.</date>
-</titleproper>
-<subtitle id="sort">Thornton, Earl A. Collection
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Earl A. Thornton Collection, <date era="ce" calendar="gregorian">1885-1998.</date></titleproper>
+        <subtitle id="sort">Thornton, Earl A. Collection
 <num type="collectionnumber">Ms2010-026
-</num>
-</subtitle>
-</titlestmt>
-<publicationstmt>
-<publisher>Special Collections, Virginia Polytechnic Institute and State University
-</publisher> &address;
-<date type="publication">&copy; 2010 By Virginia Polytechnic Institute and State University. All rights reserved.
-</date>
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MS Word, created by Carmen Boggs-Parker, <date>06/02/2010</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Earl A. Thornton Collection, <date>1885-1998.</date>
-</titleproper>
-<subtitle>A Collection in <lb/>Special Collections
-<num type="Collection Number">Ms2010-026
-</num>
-</subtitle>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Special Collections, Virginia Polytechnic Institute and State University
+</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Virginia Polytechnic Institute and State University
 </publisher>
-<date type="publication">2010
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by: Carmen Boggs-Parker
-</label>
-<item>Special Collections Staff
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Virginia Polytechnic Institute and State University
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">Special Collections, Virginia Polytechnic Institute and State University, Blacksburg, Va.
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Earl A. Thornton Collection
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1885-1998
-</unitdate>
-</unittitle>
-<unitid label="Collection Number" encodinganalog="099$a">Ms2010-026
-</unitid>
-<physdesc label="Physical Characteristics" encodinganalog="300$a">8 containers, 4.9 cu. ft.  
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By Virginia Polytechnic Institute and State University. All rights reserved.
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Carmen Boggs-Parker, <date era="ce" calendar="gregorian">06/02/2010</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Earl A. Thornton Collection, <date era="ce" calendar="gregorian">1885-1998.</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections
+<num type="Collection Number">Ms2010-026
+</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+      </p>
+      <publisher>Special Collections, Virginia Polytechnic Institute and State University
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: Carmen Boggs-Parker
+</label>
+          <item>Special Collections Staff
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Virginia Polytechnic Institute and State University
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia Polytechnic Institute and State University, Blacksburg, Va.
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Earl A. Thornton Collection
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1885-1998
+</unitdate></unittitle>
+      <unitid label="Collection Number" encodinganalog="099$a">Ms2010-026
+</unitid>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">8 containers, 4.9 cu. ft.  
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<abstract label="Abstract">The collection includes research files, personal notes, audio recordings, videocassettes, photographs, and publications collected by engineer and Professor Earl A. Thornton on the fields of aviation, aeronautics, and aerospace. 
+      </langmaterial>
+      <abstract label="Abstract">The collection includes research files, personal notes, audio recordings, videocassettes, photographs, and publications collected by engineer and Professor Earl A. Thornton on the fields of aviation, aeronautics, and aerospace. 
 </abstract>
-<origination label="Creator" encodinganalog="100$a">Earl A. Thornton (Collector)
+      <origination label="Creator" encodinganalog="100$a">Earl A. Thornton (Collector)
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>Permission to publish material from the Earl A. Thornton Collection must be obtained from Special Collections, Virginia Tech. 
+        <p>Permission to publish material from the Earl A. Thornton Collection must be obtained from Special Collections, Virginia Tech. 
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Researchers wishing to cite this collection should include the following information: Earl A. Thornton Collection, Ms2010-026, Special Collections, Virginia Polytechnic Institute and State University, Blacksburg, Va.
+        <p>Researchers wishing to cite this collection should include the following information: Earl A. Thornton Collection, Ms2010-026, Special Collections, Virginia Polytechnic Institute and State University, Blacksburg, Va.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>The Earl A. Thornton Collection was donated to Special Collections. 
+        <p>The Earl A. Thornton Collection was donated to Special Collections. 
 </p>
-</acqinfo>
-<processinfo>
-<head>Processing Information
+      </acqinfo>
+      <processinfo>
+        <head>Processing Information
 </head>
-<p>The processing, arrangement and description of the Earl A. Thornton Collection commenced in May, 2010 and was completed in June, 2010. 
+        <p>The processing, arrangement and description of the Earl A. Thornton Collection commenced in May, 2010 and was completed in June, 2010. 
 </p>
-</processinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </processinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Earl Arthur Thornton was born to Dora Weatherly Thornton and John S. Thornton in 1936. He has a brother, John S. Thornton, Jr. and a sister Elizabeth Thornton Gardner. He is married to Margaret Thornton and resides in Virginia. 
+      <p>Earl Arthur Thornton was born to Dora Weatherly Thornton and John S. Thornton in 1936. He has a brother, John S. Thornton, Jr. and a sister Elizabeth Thornton Gardner. He is married to Margaret Thornton and resides in Virginia. 
 </p>
-<p>Earl A. Thornton graduated from Virginia Tech with a Bachelor's degree in Mechanical Engineering in 1959. Thornton went on to the University of Illinois to complete his Master's degree in Theoretical and Applied Mechanics before returning to Virginia Tech for a doctoral degree in Mechanical Engineering. Thornton graduated from Virginia Tech in 1968 and joined the professoriate. Thornton served at Old Dominion University (1969-1986), was a visiting scholar at the University of Texas (1987-88), and worked at the University of Virginia (1989-1999) until his retirement on May 24, 1999.Thornton authored books on thermal structures and the finite element method and is an Associate Editor of the Journal of Spacecraft and Rockets. Thornton is a Fellow of the American Institute of Aeronautics and Astronautics (AIAA).</p>
-<p>Sources:</p>
-<p><extref entityref="source2">http://www.virginia.edu/bov/meetings/99mar/resolutionminutes.html</extref></p>
-<p><extref entityref="source3">http://www.johnowens.info/TyrrellNews/feb2004.htm</extref></p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+      <p>Earl A. Thornton graduated from Virginia Tech with a Bachelor's degree in Mechanical Engineering in 1959. Thornton went on to the University of Illinois to complete his Master's degree in Theoretical and Applied Mechanics before returning to Virginia Tech for a doctoral degree in Mechanical Engineering. Thornton graduated from Virginia Tech in 1968 and joined the professoriate. Thornton served at Old Dominion University (1969-1986), was a visiting scholar at the University of Texas (1987-88), and worked at the University of Virginia (1989-1999) until his retirement on May 24, 1999.Thornton authored books on thermal structures and the finite element method and is an Associate Editor of the Journal of Spacecraft and Rockets. Thornton is a Fellow of the American Institute of Aeronautics and Astronautics (AIAA).</p>
+      <p>Sources:</p>
+      <p>
+        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.virginia.edu/bov/meetings/99mar/resolutionminutes.html">http://www.virginia.edu/bov/meetings/99mar/resolutionminutes.html</extref>
+      </p>
+      <p>
+        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.johnowens.info/TyrrellNews/feb2004.htm">http://www.johnowens.info/TyrrellNews/feb2004.htm</extref>
+      </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>The Earl A. Thornton collection contains research files, personal notes, audio recordings, videocassettes, photographs, and publications on the fields of aviation, aeronautics, and aerospace. The research files include files on individuals and subject files, as well as publications. 
+      <p>The Earl A. Thornton collection contains research files, personal notes, audio recordings, videocassettes, photographs, and publications on the fields of aviation, aeronautics, and aerospace. The research files include files on individuals and subject files, as well as publications. 
 </p>
-<p>Individuals listed include: Sir George Cayley, Octave Chanute, William Samuel Henson and John Stringfellow, Frederick W. Lanchester, S.P. Langley, Otto Lilienthal, Charles Matthews Manly, Charles Fayette Taylor, Theodore von Karman, Edward P. Warner, Francis Herbert Wenham, Wilbur and Orville Wright, Pearl I. Young, and Alfred F. Zahm. Topics include: Aerodynamics, Aeronautical Education Development, Aviation Progress, Challenger Launch Decision, Development of Aircraft Structures, The Evolution of Aircraft Design, Metal Airplane Construction, Propulsion, Structures History, Trusses, Wilbur Wright Memorial Lectures, and Wing Spars and Beam Columns.</p>
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+      <p>Individuals listed include: Sir George Cayley, Octave Chanute, William Samuel Henson and John Stringfellow, Frederick W. Lanchester, S.P. Langley, Otto Lilienthal, Charles Matthews Manly, Charles Fayette Taylor, Theodore von Karman, Edward P. Warner, Francis Herbert Wenham, Wilbur and Orville Wright, Pearl I. Young, and Alfred F. Zahm. Topics include: Aerodynamics, Aeronautical Education Development, Aviation Progress, Challenger Launch Decision, Development of Aircraft Structures, The Evolution of Aircraft Design, Metal Airplane Construction, Propulsion, Structures History, Trusses, Wilbur Wright Memorial Lectures, and Wing Spars and Beam Columns.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
 </head>
-<p>The collection is arranged in three series-Series I: Publications, 1981-1997, Series II: 
+      <p>The collection is arranged in three series-Series I: Publications, 1981-1997, Series II: 
 </p>
-<p>Subseries I: Conference Publications contains materials published from conferences held at various NASA facilities and at the Thermal Structures conference held at the University of Virginia, as well as a short course from the American Institute of Aeronautics and Astronautics. This subseries is arranged chronologically.</p>
-<p>Subseries II: Other Publications contains books, senate hearing transcripts, training programs, journals, and magazines. This subseries is arranged chronologically. </p>
-<p>Series II: Research Files has two subseries.</p>
-<p>Subseries I: Files on Individuals contains articles, pamphlets, and biographical information on individuals who had an impact on the fields of aviation and/or aeronautical or aerospace engineering and design. This subseries is arranged alphabetically by individual's last name.</p>
-<p>Subseries II: Subject Files contain research, articles, and reports on topics related to the
+      <p>Subseries I: Conference Publications contains materials published from conferences held at various NASA facilities and at the Thermal Structures conference held at the University of Virginia, as well as a short course from the American Institute of Aeronautics and Astronautics. This subseries is arranged chronologically.</p>
+      <p>Subseries II: Other Publications contains books, senate hearing transcripts, training programs, journals, and magazines. This subseries is arranged chronologically. </p>
+      <p>Series II: Research Files has two subseries.</p>
+      <p>Subseries I: Files on Individuals contains articles, pamphlets, and biographical information on individuals who had an impact on the fields of aviation and/or aeronautical or aerospace engineering and design. This subseries is arranged alphabetically by individual's last name.</p>
+      <p>Subseries II: Subject Files contain research, articles, and reports on topics related to the
 field of aviation and aeronautical engineering. The original folder titles were used. 
 This subseries is arranged alphabetically.
 </p>
-<p>
+      <p>
 Series III: Audio/Visual Materials and Memorabilia has three subseries.
 </p>
-<p>Subseries I: Audiocassettes contain audio taped transcriptions of "13 Famous Aircraft" given on 10-5-1978 by Paul Garber. </p>
-<p>Subseries II: Videocassettes contain VHS recordings of documentaries, television
+      <p>Subseries I: Audiocassettes contain audio taped transcriptions of "13 Famous Aircraft" given on 10-5-1978 by Paul Garber. </p>
+      <p>Subseries II: Videocassettes contain VHS recordings of documentaries, television
 programs, and films all related to aviation and aerospace science. 
 </p>
-<p>Subseries III: Prints and Memorabilia contain airplane illustrations, pamphlets,
+      <p>Subseries III: Prints and Memorabilia contain airplane illustrations, pamphlets,
 promotional photo reproductions, posters, and a visor. This series is 
 arranged by material type.
 </p>
-</arrangement>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </arrangement>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<separatedmaterial encodinganalog="544$a">
-<head>Separated Material
+      <separatedmaterial encodinganalog="544$a">
+        <head>Separated Material
 </head>
-<p>Thornton, Earl A. <title render="italic">Aerospace thermal structures and materials for a new era.</title>Progress in astronautics and aeronautics, v. 168. Washington, DC: American Institute of Aeronautics and Astronautics, 1995.
+        <p>Thornton, Earl A. <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Aerospace thermal structures and materials for a new era.</title>Progress in astronautics and aeronautics, v. 168. Washington, DC: American Institute of Aeronautics and Astronautics, 1995.
 </p>
-</separatedmaterial></descgrp>
-<dsc type="combined">
-<head>Contents List
+      </separatedmaterial>
+    </descgrp>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="series">
-<did>
-<unittitle>SERIES I: Publications
-<unitdate type="inclusive">1981-1997
-</unitdate>
-</unittitle>
-</did>
-	<c02 level="subseries">
-	<did>
-	<unittitle>Subseries I: Conference Publications
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	</did>
-		<c03 level="file">
-		<did>
-		<unittitle>NASA Conference Publications
-		<unitdate type="inclusive">1981, 1988, 1991, 1992
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">1-2
+      <c01 level="series">
+        <did>
+          <unittitle>SERIES I: Publications
+<unitdate type="inclusive" era="ce" calendar="gregorian">1981-1997
+</unitdate></unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries I: Conference Publications
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>NASA Conference Publications
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1981, 1988, 1991, 1992
+		</unitdate></unittitle>
+              <container label="Box-folder" type="box-folder">1-2
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>AIAA Short Course
-		<unitdate type="inclusive">1990
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>AIAA Short Course
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1990
+		</unitdate></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Thermal Structures Conference Proceedings
-		<unitdate type="inclusive">1990, 1994
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">1
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Thermal Structures Conference Proceedings
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1990, 1994
+		</unitdate></unittitle>
+              <container label="Box" type="box">1
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Measurement Technology Conference
-		<unitdate type="inclusive">1992
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">2
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Measurement Technology Conference
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1992
+		</unitdate></unittitle>
+              <container label="Box" type="box">2
 		</container>
-		</did>
-		</c03>
-	</c02>
-	<c02 level="subseries">
-	<did>
-	<unittitle>Subseries II: Other Publications
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	</did>
-		<c03 level="file">
-		<did>
-		<unittitle>The Oases Meeting: International Egyptian Aviation Meeting
-		<unitdate type="inclusive">1933, 1936
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:1
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries II: Other Publications
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>The Oases Meeting: International Egyptian Aviation Meeting
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1933, 1936
+		</unitdate></unittitle>
+              <container label="Box-folder" type="box-folder">3:1
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>The Royal Aeronautical Society 1866-1966: A Short History
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:3
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>The Royal Aeronautical Society 1866-1966: A Short History
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:3
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Senate Hearings before the Committee on Appropriations Fiscal Year 
-		<unitdate type="inclusive">1971
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Senate Hearings before the Committee on Appropriations Fiscal Year 
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1971
+		</unitdate></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>McLean, Edward. NASA SP-4720: Supersonic Cruise Technology 
-		<unitdate type="inclusive">1985
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>McLean, Edward. NASA SP-4720: Supersonic Cruise Technology 
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1985
+		</unitdate></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>"Exploring the Earth." National Geographic Magazine 
-		<unitdate type="inclusive">1988
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:2
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>"Exploring the Earth." National Geographic Magazine 
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1988
+		</unitdate></unittitle>
+              <container label="Box-folder" type="box-folder">3:2
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>American Scientist
-		<unitdate type="inclusive">March-April 1989
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:2
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>American Scientist
+		<unitdate type="inclusive" era="ce" calendar="gregorian">March-April 1989
+		</unitdate></unittitle>
+              <container label="Box-folder" type="box-folder">3:2
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Aerospace Design Engineers Guide: Third Edition, Washington DC: 
-		<unitdate type="inclusive">March 1993
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:2
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Aerospace Design Engineers Guide: Third Edition, Washington DC: 
+		<unitdate type="inclusive" era="ce" calendar="gregorian">March 1993
+		</unitdate></unittitle>
+              <container label="Box-folder" type="box-folder">3:2
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Martin Marietta Corp. Communications Satellite Training Program 
-		<unitdate type="inclusive">1993
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Martin Marietta Corp. Communications Satellite Training Program 
+		<unitdate type="inclusive" era="ce" calendar="gregorian">1993
+		</unitdate></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>American Institute of Aeronautics and Astronautics Journal 
-		<unitdate type="inclusive">April-May 1997
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:3
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>American Institute of Aeronautics and Astronautics Journal 
+		<unitdate type="inclusive" era="ce" calendar="gregorian">April-May 1997
+		</unitdate></unittitle>
+              <container label="Box-folder" type="box-folder">3:3
 		</container>
-		</did>
-		</c03>
-	</c02>
-</c01>
-<c01 level="series">
-<did>
-<unittitle>SERIES II: Research Files
-<unitdate type="inclusive">1885-1997
-</unitdate>
-</unittitle>
-</did>
-	<c02 level="subseries">
-	<did>
-	<unittitle>Subseries I: Files on Individuals 
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	</did>
-		<c03 level="file">
-		<did>
-		<unittitle>Sir George Cayley: Article on Cayley 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:1
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>SERIES II: Research Files
+<unitdate type="inclusive" era="ce" calendar="gregorian">1885-1997
+</unitdate></unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries I: Files on Individuals 
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Sir George Cayley: Article on Cayley 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:1
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>O. Chanute: Bibliographic information, notes, and articles by and about Chanute 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:2
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>O. Chanute: Bibliographic information, notes, and articles by and about Chanute 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:2
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>William Samuel Henson and John Stringfellow: Articles about Henson and Stringfellow
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:3
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>William Samuel Henson and John Stringfellow: Articles about Henson and Stringfellow
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:3
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Frederick W. Lanchester: Article about Lanchester 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Frederick W. Lanchester: Article about Lanchester 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>S.P. Langley: Articles by Langley 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:5
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>S.P. Langley: Articles by Langley 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:5
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Otto Lilienthal: Articles and magazine by and about Lilienthal 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:6
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Otto Lilienthal: Articles and magazine by and about Lilienthal 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:6
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Charles Matthews Manly Binder: b. April 24, 1876 d. October 16, 1927: 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Charles Matthews Manly Binder: b. April 24, 1876 d. October 16, 1927: 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		<physdesc>Binder is divided into the following headings: Birth, Biographies, Cornell, Veal Biography, F. Spratt, Father, Thurston, Obituary, Papers, SAE Manly Engine, Langley 1903 Tests, Louise Manly 
+              <physdesc>Binder is divided into the following headings: Birth, Biographies, Cornell, Veal Biography, F. Spratt, Father, Thurston, Obituary, Papers, SAE Manly Engine, Langley 1903 Tests, Louise Manly 
 		</physdesc>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Charles Fayette Taylor Binder: 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Charles Fayette Taylor Binder: 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		<physdesc>Binder is divided into the following headings: MIT Libraries, Archives Finders Guide, Growing Up with the 20th Century, Engine Articles 
+              <physdesc>Binder is divided into the following headings: MIT Libraries, Archives Finders Guide, Growing Up with the 20th Century, Engine Articles 
 		</physdesc>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>von Karman: Contents: Research notes and articles about von Karman 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>von Karman: Contents: Research notes and articles about von Karman 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Edward P. Warner: Article about Warner 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Edward P. Warner: Article about Warner 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Francis Herbert Wenham: Article about Wenham 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:9
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Francis Herbert Wenham: Article about Wenham 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:9
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Wright Brothers: Flyers, maps, notes, pamphlets, photographs, newsletters and articles by and about Wilbur and Orville Wright 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:10-12
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Wright Brothers: Flyers, maps, notes, pamphlets, photographs, newsletters and articles by and about Wilbur and Orville Wright 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:10-12
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Pearl I. Young: Articles by and about Young 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:13
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Pearl I. Young: Articles by and about Young 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:13
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Alfred F. Zahm: 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">4:14
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Alfred F. Zahm: 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">4:14
 		</container>
-		</did>
-		</c03>
-	</c02>
-	<c02 level="subseries">
-	<did>
-	<unittitle>Subseries II: Subject Files
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	</did>
-		<c03 level="file">
-		<did>
-		<unittitle>Aerodynamics: Bibliography, articles, and a report on topics related to aerodynamics 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">5:1
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries II: Subject Files
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Aerodynamics: Bibliography, articles, and a report on topics related to aerodynamics 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">5:1
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Aeronautical Education Development: Notes and articles on topics related to aeronautical education 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">5:2
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Aeronautical Education Development: Notes and articles on topics related to aeronautical education 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">5:2
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Aviation Progress: Articles on topics related to aviation progress 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">5:3
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Aviation Progress: Articles on topics related to aviation progress 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">5:3
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Challenger Launch Decision Notes and articles on topics related to the Challenger space shuttle
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">5:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Challenger Launch Decision Notes and articles on topics related to the Challenger space shuttle
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">5:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Development of Aircraft Structures: Articles on the development of aircraft structures and copies of Aerospace Engineering from May-October 1989 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">5:5
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Development of Aircraft Structures: Articles on the development of aircraft structures and copies of Aerospace Engineering from May-October 1989 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">5:5
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>The Evolution of Aircraft Design: Notes, conference and papers from AIAA conference of 1978 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">5:6
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>The Evolution of Aircraft Design: Notes, conference and papers from AIAA conference of 1978 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">5:6
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Metal Airplane Construction: Articles on metal airplane construction Box: 6:1
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">6:1
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Metal Airplane Construction: Articles on metal airplane construction Box: 6:1
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">6:1
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Propulsion: Article on propulsion 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">6:2
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Propulsion: Article on propulsion 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">6:2
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Structures History: Notes and articles on structures 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">6:3
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Structures History: Notes and articles on structures 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">6:3
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Trusses: Articles on trusses 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">6:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Trusses: Articles on trusses 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">6:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Wilbur Wright Memorial Lectures: Handwritten notes, bibliographic references, booklets, and articles on the Wilbur Wright Memorial Lectures 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">6:5
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Wilbur Wright Memorial Lectures: Handwritten notes, bibliographic references, booklets, and articles on the Wilbur Wright Memorial Lectures 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">6:5
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Wing Spars and Beam Columns: Articles on topics related to wing spans and beam columns
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">6:6
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Wing Spars and Beam Columns: Articles on topics related to wing spans and beam columns
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">6:6
 		</container>
-		</did>
-		</c03>
-	</c02>
-</c01>
-<c01 level="series">
-<did>
-<unittitle>SERIES III: Audio/Visual Materials and Memorabilia
-<unitdate type="inclusive">1927-1998
-</unitdate>
-</unittitle>
-</did>
-	<c02 level="subseries">
-	<did>
-	<unittitle>Subseries I: Audiocassettes of Paul Garber's lecture on 13 Famous Aircraft given on 10-5-1978
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Box-folder" type="box-folder">6:7
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>SERIES III: Audio/Visual Materials and Memorabilia
+<unitdate type="inclusive" era="ce" calendar="gregorian">1927-1998
+</unitdate></unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries I: Audiocassettes of Paul Garber's lecture on 13 Famous Aircraft given on 10-5-1978
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box-folder" type="box-folder">6:7
 	</container>
-	</did>
-	</c02>
-	<c02 level="subseries">
-	<did>
-	<unittitle>Subseries II: Videocassettes 
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	</did>
-		<c03 level="file">
-		<did>
-		<unittitle>TRACE Solar Panel Test Video: UVA Thermal Structures Lab, Summer 1998
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries II: Videocassettes 
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>TRACE Solar Panel Test Video: UVA Thermal Structures Lab, Summer 1998
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>NOVA: Rescue Mission in Space 1460; Women of Courage, 1460-2550; APOLLO 13, 2550
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>NOVA: Rescue Mission in Space 1460; Women of Courage, 1460-2550; APOLLO 13, 2550
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Paul Garber: 13 Famous Aircraft: 10/5/78, Audio Only  
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Paul Garber: 13 Famous Aircraft: 10/5/78, Audio Only  
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Challenger Report 60 min., Copied 3/26/96; Roger Boisjoly Talk
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Challenger Report 60 min., Copied 3/26/96; Roger Boisjoly Talk
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>The World at War; Strategic Bombing in Europe 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>The World at War; Strategic Bombing in Europe 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>(1) 777-0-1471; (2) 1470-2570; (3) 2570-
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>(1) 777-0-1471; (2) 1470-2570; (3) 2570-
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>TWA 800; NTSB Hearing Dec. 8, 1997: 5 hours
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>TWA 800; NTSB Hearing Dec. 8, 1997: 5 hours
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Research on Space Station
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Research on Space Station
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>The Wright Stuff; The American Experience Feb. 1996
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>The Wright Stuff; The American Experience Feb. 1996
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Restoration Special: Jenny Ken Hyde, National Geographic: 4574: Last Episode (Cars, etc.)
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Restoration Special: Jenny Ken Hyde, National Geographic: 4574: Last Episode (Cars, etc.)
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>1. Amelia Earhart (American Experience) 1-1470; 2. NOVA: (Hunt for Alien Worlds) 1470-2520
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1. Amelia Earhart (American Experience) 1-1470; 2. NOVA: (Hunt for Alien Worlds) 1470-2520
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Red Baron: 0-1426; A Fighter Pilot's Story: 1426-3094; A Fighter Pilot's Story 3100-4312
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Red Baron: 0-1426; A Fighter Pilot's Story: 1426-3094; A Fighter Pilot's Story 3100-4312
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>1. No Highway in the Sky: 0-2310; 2. Wing and a Prayer, Utah Man: 2312-3250; A and E Wright Brothers Biography
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1. No Highway in the Sky: 0-2310; 2. Wing and a Prayer, Utah Man: 2312-3250; A and E Wright Brothers Biography
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>1) NOVA: DC-3: 0-1430; 2) Memphis Belle 1431-2585
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1) NOVA: DC-3: 0-1430; 2) Memphis Belle 1431-2585
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>NOVA: Fastest Planes in the Sky: 0-1440; NOVA: DC-3: 1440-4180; Boeing 777: 4180-4820
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>NOVA: Fastest Planes in the Sky: 0-1440; NOVA: DC-3: 1440-4180; Boeing 777: 4180-4820
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>We Saw It Happen, United Tech. Film, Narrated by Igor Sikorsky: 120 min.
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">7
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>We Saw It Happen, United Tech. Film, Narrated by Igor Sikorsky: 120 min.
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">7
 		</container>
-		</did>
-		</c03>
-	</c02>
-	<c02 level="subseries">
-	<did>
-	<unittitle>Subseries III: Prints and Memorabilia
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	</did>
-		<c03 level="file">
-		<did>
-		<unittitle> Stinson SM-8A 1931-33, DeHavilland D.H.-4B 1926-1927, artist Nixon Galloway Copyright 1981 United Airlines 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries III: Prints and Memorabilia
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle> Stinson SM-8A 1931-33, DeHavilland D.H.-4B 1926-1927, artist Nixon Galloway Copyright 1981 United Airlines 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>"Aircraft of the Skunk Works: A gallery of innovative designs from a small group of engineers who mastered the fine art of achieving the impossible." Air and Space Smithsonian: a supplement to the April/May 1994 issue of Air and Space/Smithsonian. Design and production by Phil Jordan, illustrations by John Batchelor 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>"Aircraft of the Skunk Works: A gallery of innovative designs from a small group of engineers who mastered the fine art of achieving the impossible." Air and Space Smithsonian: a supplement to the April/May 1994 issue of Air and Space/Smithsonian. Design and production by Phil Jordan, illustrations by John Batchelor 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>NASA Photo no. 69-HC-171 "Exercise for a Lunar Landing-The Lunar Module of Apollo 9 on Its Own in Space" 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>NASA Photo no. 69-HC-171 "Exercise for a Lunar Landing-The Lunar Module of Apollo 9 on Its Own in Space" 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>NASA Photo no. 66-HC-289 "Going for the touchdown-Apollo Rollout Atop Saturn V near the Vehicle Assembly Building at the Kennedy Space Center" 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>NASA Photo no. 66-HC-289 "Going for the touchdown-Apollo Rollout Atop Saturn V near the Vehicle Assembly Building at the Kennedy Space Center" 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>NASA Photo no. 69-HC-317 "An Open Door To Space-The Command Service and Lunar Modules of Apollo 9 Joined Together During Commander David R. Scott's Extravehicular Activity" 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>NASA Photo no. 69-HC-317 "An Open Door To Space-The Command Service and Lunar Modules of Apollo 9 Joined Together During Commander David R. Scott's Extravehicular Activity" 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>NASA Photo no. 68-HC-866 "Between Heaven and Earth-The Beginning of the Voyage of Apollo 8 to Circumnavigate the Moon" 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>NASA Photo no. 68-HC-866 "Between Heaven and Earth-The Beginning of the Voyage of Apollo 8 to Circumnavigate the Moon" 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>NASA Photo no. 69-HC-609 "Within Reach But Not Within Grasp-The Apollo 10 Command Ship in Orbit About Sixty Miles Above the Moon" 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">8
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>NASA Photo no. 69-HC-609 "Within Reach But Not Within Grasp-The Apollo 10 Command Ship in Orbit About Sixty Miles Above the Moon" 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">8
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Men and Ideas from American Aviation 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Men and Ideas from American Aviation 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Popular Science magazine pamphlet: Welcome to the Curtiss-Wright Exhibit of Air Power for the Next Ten Years 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Popular Science magazine pamphlet: Welcome to the Curtiss-Wright Exhibit of Air Power for the Next Ten Years 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Air Scoop: The aeronautical endeavors of the Naval Air Material Center, August 30, 1955 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Air Scoop: The aeronautical endeavors of the Naval Air Material Center, August 30, 1955 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Illustrations on Air Force F-100 Super Sabre, Air Force F-86D Sabre Jet, North American Aviation, Inc
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Illustrations on Air Force F-100 Super Sabre, Air Force F-86D Sabre Jet, North American Aviation, Inc
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Crosley Division Manufacturing Corp., Quality Products for the Nation's Defense 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Crosley Division Manufacturing Corp., Quality Products for the Nation's Defense 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Visor from Bendix Aviation Corporation 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Visor from Bendix Aviation Corporation 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-		<c03 level="file">
-		<did>
-		<unittitle>Promotional photo reproductions: H-21 Work-Horse; Navy HUP-2 Helicopter; H-21C Work Horse; YH-16 Transporter; PH-42 Transport Helicopter 
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box-folder" type="box-folder">3:4
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Promotional photo reproductions: H-21 Work-Horse; Navy HUP-2 Helicopter; H-21C Work Horse; YH-16 Transporter; PH-42 Transport Helicopter 
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box-folder" type="box-folder">3:4
 		</container>
-		</did>
-		</c03>
-	</c02>
-</c01>
-</dsc>
-</archdesc>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

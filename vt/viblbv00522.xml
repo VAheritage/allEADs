@@ -1,288 +1,125 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/vt.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/vt_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/vt_contact.xml">
-<!ENTITY bioglist SYSTEM "http://spec.lib.vt.edu/mss/spf/list.htm" NDATA html>
-<!ENTITY apva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/vt/viblbv00510.xml.frame" NDATA html>
-<!ENTITY jpp SYSTEM "http://ead.lib.virginia.edu/vivaead/published/vt/viblbv00017.xml.frame" NDATA html>
-<!ENTITY wpg SYSTEM "http://ead.lib.virginia.edu/vivaead/published/vt/viblbv00495.xml.frame" NDATA html>
-<!ENTITY spf SYSTEM "http://www.smithfieldplantation.org/index.html" NDATA html>
-<!ENTITY jan8 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan8,1802.htm" NDATA html>
-<!ENTITY jan8a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn99.jpg" NDATA html>
-<!ENTITY apr15 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Apr15,1795.htm" NDATA html>
-<!ENTITY apr15a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn104.jpg" NDATA html>
-<!ENTITY july21 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/July21,1799.htm" NDATA html>
-<!ENTITY july21a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn105.jpg" NDATA html>
-<!ENTITY jan16 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan16,1823.htm" NDATA html>
-<!ENTITY jan16a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn85.jpg" NDATA html>
-<!ENTITY jan16b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn86.jpg" NDATA html>
-<!ENTITY jan16c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn87.jpg" NDATA html>
-<!ENTITY dec5 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Dec5,1801.htm" NDATA html>
-<!ENTITY dec5a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn109.jpg" NDATA html>
-<!ENTITY dec5b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn110.jpg" NDATA html>
-<!ENTITY july3 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/July3,1838.htm" NDATA html>
-<!ENTITY july3a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn143.jpg" NDATA html>
-<!ENTITY july3b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn144.jpg" NDATA html>
-<!ENTITY july3c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn145.jpg" NDATA html>
-<!ENTITY july3d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn146.jpg" NDATA html>
-<!ENTITY july3e SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn147.jpg" NDATA html>
-<!ENTITY july3f SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn148.jpg" NDATA html>
-<!ENTITY july3g SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn149.jpg" NDATA html>
-<!ENTITY oct20 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Oct20,1838.htm" NDATA html>
-<!ENTITY oct20a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn151.jpg" NDATA html>
-<!ENTITY oct20b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn152.jpg" NDATA html>
-<!ENTITY oct20c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn153.jpg" NDATA html>
-<!ENTITY oct20d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn154.jpg" NDATA html>
-<!ENTITY nov29 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Nov29,1838.htm" NDATA html>
-<!ENTITY nov29a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn160.jpg" NDATA html>
-<!ENTITY nov29b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn161.jpg" NDATA html>
-<!ENTITY nov29c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn162.jpg" NDATA html>
-<!ENTITY nov29d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn163.jpg" NDATA html>
-<!ENTITY jan30 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan30,1843.htm" NDATA html>
-<!ENTITY jan30a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn150.jpg" NDATA html>
-<!ENTITY jun23 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jun23,1845.htm" NDATA html>
-<!ENTITY jun23a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn155.jpg" NDATA html>
-<!ENTITY jun23b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn156.jpg" NDATA html>
-<!ENTITY jun23c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn157.jpg" NDATA html>
-<!ENTITY oct4 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Oct4,1847.htm" NDATA html>
-<!ENTITY oct4a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn158.jpg" NDATA html>
-<!ENTITY oct4b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn159.jpg" NDATA html>
-<!ENTITY aug9 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Aug9,1816.htm" NDATA html>
-<!ENTITY aug9a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn164.jpg" NDATA html>
-<!ENTITY aug9b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn165.jpg" NDATA html>
-<!ENTITY aug9c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn166.jpg" NDATA html>
-<!ENTITY aug9d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn167.jpg" NDATA html>
-<!ENTITY aug9e SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn168.jpg" NDATA html>
-<!ENTITY aug9f SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn169.jpg" NDATA html>
-<!ENTITY aug9g SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn170.jpg" NDATA html>
-<!ENTITY apr23 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Apr23,1819.htm" NDATA html>
-<!ENTITY apr23a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn171.jpg" NDATA html>
-<!ENTITY apr23b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn172.jpg" NDATA html>
-<!ENTITY apr23c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn173.jpg" NDATA html>
-<!ENTITY nd1 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/nodate1.htm" NDATA html>
-<!ENTITY nd1a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn174.jpg" NDATA html>
-<!ENTITY nd1b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn175.jpg" NDATA html>
-<!ENTITY nd1c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn176.jpg" NDATA html>
-<!ENTITY jun17 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jun17,1798.htm" NDATA html>
-<!ENTITY jun17a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn100.jpg" NDATA html>
-<!ENTITY oct5 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Oct5,1798.htm" NDATA html>
-<!ENTITY oct5a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn101.jpg" NDATA html>
-<!ENTITY may27 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/May27,1804.htm" NDATA html>
-<!ENTITY may27a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn102.jpg" NDATA html>
-<!ENTITY may27b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn106.jpg" NDATA html>
-<!ENTITY jan161 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan16,1821.htm" NDATA html>
-<!ENTITY jan161a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn72.jpg" NDATA html>
-<!ENTITY jan161b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn73.jpg" NDATA html>
-<!ENTITY jan161c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn74.jpg" NDATA html>
-<!ENTITY jan161d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn75.jpg" NDATA html>
-<!ENTITY jan161e SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn76.jpg" NDATA html>
-<!ENTITY jan301 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan30,1821.htm" NDATA html>
-<!ENTITY jan301a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn77.jpg" NDATA html>
-<!ENTITY jan301b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn78.jpg" NDATA html>
-<!ENTITY jun5 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jun5,1821.htm" NDATA html>
-<!ENTITY jun5a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn79.jpg" NDATA html>
-<!ENTITY jun5b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn80.jpg" NDATA html>
-<!ENTITY jun5c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn81.jpg" NDATA html>
-<!ENTITY dec1 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Dec1,1821.htm" NDATA html>
-<!ENTITY dec1a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn58.jpg" NDATA html>
-<!ENTITY dec1b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn59.jpg" NDATA html>
-<!ENTITY dec1c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn60.jpg" NDATA html>
-<!ENTITY mar10 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Mar10,1822.htm" NDATA html>
-<!ENTITY mar10a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn64.jpg" NDATA html>
-<!ENTITY mar10b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn65.jpg" NDATA html>
-<!ENTITY mar10c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn66.jpg" NDATA html>
-<!ENTITY mar10d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn67.jpg" NDATA html>
-<!ENTITY mar10e SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn68.jpg" NDATA html>
-<!ENTITY mar10f SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn69.jpg" NDATA html>
-<!ENTITY mar10g SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn70.jpg" NDATA html>
-<!ENTITY mar10h SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn71.jpg" NDATA html>
-<!ENTITY nd2 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jun20,1824.htm" NDATA html>
-<!ENTITY nd2a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn88.jpg" NDATA html>
-<!ENTITY nd2b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn89.jpg" NDATA html>
-<!ENTITY nd2c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn90.jpg" NDATA html>
-<!ENTITY nd2d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn91.jpg" NDATA html>
-<!ENTITY may5 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/May5,1804.htm" NDATA html>
-<!ENTITY may5a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn115.jpg" NDATA html>
-<!ENTITY may5b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn116.jpg" NDATA html>
-<!ENTITY may5c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn117.jpg" NDATA html>
-<!ENTITY july11 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/July11,1827.htm" NDATA html>
-<!ENTITY july11a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn118.jpg" NDATA html>
-<!ENTITY feb12 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Feb12,1831.htm" NDATA html>
-<!ENTITY feb12a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn119.jpg" NDATA html>
-<!ENTITY feb12b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn120.jpg" NDATA html>
-<!ENTITY feb12c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn121.jpg" NDATA html>
-<!ENTITY july16 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/July16,1831.htm" NDATA html>
-<!ENTITY july16a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn122.jpg" NDATA html>
-<!ENTITY sep12 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Sept12,1831.htm" NDATA html>
-<!ENTITY sep12a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn123.jpg" NDATA html>
-<!ENTITY sep12b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn124.jpg" NDATA html>
-<!ENTITY sep12c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn125.jpg" NDATA html>
-<!ENTITY oct16 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Oct16,1831.htm" NDATA html>
-<!ENTITY oct16a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn126.jpg" NDATA html>
-<!ENTITY oct16b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn127.jpg" NDATA html>
-<!ENTITY oct16c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn128.jpg" NDATA html>
-<!ENTITY jun8 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jun8,1832.htm" NDATA html>
-<!ENTITY jun8a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn129.jpg" NDATA html>
-<!ENTITY mar9 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Mar9,1835.htm" NDATA html>
-<!ENTITY mar9a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn130.jpg" NDATA html>
-<!ENTITY jan10 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan10,1784.htm" NDATA html>
-<!ENTITY jan10a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn95.jpg" NDATA html>
-<!ENTITY jan10b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn96.jpg" NDATA html>
-<!ENTITY jan10c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn97.jpg" NDATA html>
-<!ENTITY jan10d SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn98.jpg" NDATA html>
-<!ENTITY may30 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/May30,1813.htm" NDATA html>
-<!ENTITY may30a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn140.jpg" NDATA html>
-<!ENTITY may30b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn141.jpg" NDATA html>
-<!ENTITY may30c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn142.jpg" NDATA html>
-<!ENTITY jun28 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jun28,1833.htm" NDATA html>
-<!ENTITY jun28a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn134.jpg" NDATA html>
-<!ENTITY jun28b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn135.jpg" NDATA html>
-<!ENTITY jun28c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn136.jpg" NDATA html>
-<!ENTITY jan12 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan12,1799.htm" NDATA html>
-<!ENTITY jan12a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn107.jpg" NDATA html>
-<!ENTITY jan12b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn108.jpg" NDATA html>
-<!ENTITY jan29 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jan29,1802.htm" NDATA html>
-<!ENTITY jan29a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn111.jpg" NDATA html>
-<!ENTITY jan29b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn112.jpg" NDATA html>
-<!ENTITY jun15 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Jun15,1805.htm" NDATA html>
-<!ENTITY jun15a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn131.jpg" NDATA html>
-<!ENTITY jun15b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn132.jpg" NDATA html>
-<!ENTITY jun15c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn133.jpg" NDATA html>
-<!ENTITY nov23 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Nov23,1834.htm" NDATA html>
-<!ENTITY nov23a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn137.jpg" NDATA html>
-<!ENTITY nov23b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn138.jpg" NDATA html>
-<!ENTITY nov23c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn139.jpg" NDATA html>
-<!ENTITY aug5 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Aug5,1804.htm" NDATA html>
-<!ENTITY aug5a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn113.jpg" NDATA html>
-<!ENTITY aug5b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn114.jpg" NDATA html>
-<!ENTITY aug29 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Aug29,1794.htm" NDATA html>
-<!ENTITY aug29a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn103.jpg" NDATA html>
-<!ENTITY mar23 SYSTEM "http://spec.lib.vt.edu/mss/spf/letters/Mar23,1822.htm" NDATA html>
-<!ENTITY mar23a SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn92.jpg" NDATA html>
-<!ENTITY mar23b SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn93.jpg" NDATA html>
-<!ENTITY mar23c SYSTEM "http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn94.jpg" NDATA html>
-]>
-<?xml-stylesheet type="text/css" href="http://ead.lib.virginia.edu/vivaead/published/document.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
 
-<ead id="viblbv00522">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-        <eadid countrycode="US" mainagencycode="ViBlbV">PUBLIC "-//Virginia Polytechnic Institute
+<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv00522">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute
             and State University::University Libraries::Special Collections//TEXT
             (US::ViBlbV::viblbv00522::Smithfield Preston Foundation Papers, 1784-1881, n.d.)//EN"
             "viblbv00522.xml"</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Smithfield Preston Foundation Papers, <date>1784-1881, n.d.</date>
-                </titleproper>
-                <subtitle id="sort">Smithfield Preston Foundation Papers <num
-                        type="collectionnumber">Ms1997-002</num>
-                </subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Special Collections, Virginia Polytechnic Institute and State
-                    University</publisher>&address; <date type="publication">&copy; 2009 By
+    <filedesc>
+      <titlestmt>
+        <titleproper>Smithfield Preston Foundation Papers, <date era="ce" calendar="gregorian">1784-1881, n.d.</date></titleproper>
+        <subtitle id="sort">Smithfield Preston Foundation Papers <num type="collectionnumber">Ms1997-002</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Virginia Polytechnic Institute and State
+                    University</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2009 By
                     Virginia Polytechnic Institute and State University. All rights reserved.</date>
-                <p id="usestatement">
-                    <extref entityref="conditions">Conditions of Use </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Machine-readable finding aid created in oXygen by Kira A. Dietz,
-                    <date>10/26/2009</date></creation>
-            <langusage>Description is in <language langcode="eng">English </language>
-            </langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>Smithfield Preston Foundation Papers, <date>1784-1881, n.d.</date>
-            </titleproper>
-            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"
-                    >Ms1997-002</num>
-            </subtitle>
-            <p id="logostmt">
-                <extptr actuate="onload" show="embed" entityref="logo"/>
-            </p>
-            <publisher>Special Collections, Virginia Polytechnic Institute and State
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid created in oXygen by Kira A. Dietz,
+                    <date era="ce" calendar="gregorian">10/26/2009</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2014-01-30">2014-01-30</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Smithfield Preston Foundation Papers, <date era="ce" calendar="gregorian">1784-1881, n.d.</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">Ms1997-002</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+      </p>
+      <publisher>Special Collections, Virginia Polytechnic Institute and State
                 University</publisher>
-            <date type="publication">2009 </date> &contact; <list type="deflist">
-                <defitem>
-                    <label>Processed by: Danielle Morrison, student assistant, and Laura Katz Smith,
+      <date type="publication" era="ce" calendar="gregorian">2009 </date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: Danielle Morrison, student assistant, and Laura Katz Smith,
                         Manuscripts Curator </label>
-                    <item>Special Collections</item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="collection">
-        <runner placement="footer">Special Collections, Virginia Polytechnic Institute and State
+          <item>Special Collections</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Virginia Polytechnic Institute and State
             University </runner>
-        <did>
-            <head>Descriptive Summary </head>
-            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia
                 Polytechnic Institute and State University, Blacksburg, Va. </repository>
-            <unittitle label="Title" encodinganalog="245$a">Smithfield Preston Foundation Papers,
-                    <unitdate type="inclusive" label="Date" encodinganalog="245$f">1784-1881,
-                    n.d.</unitdate>
-            </unittitle>
-            <unitid label="Collection Number" encodinganalog="099$a">Ms1997-002</unitid>
-            <physdesc label="Physical Characteristics" encodinganalog="300$a">1 boxes; 0.4 cu.
+      <unittitle label="Title" encodinganalog="245$a">Smithfield Preston Foundation Papers,
+                    <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1784-1881,
+                    n.d.</unitdate></unittitle>
+      <unitid label="Collection Number" encodinganalog="099$a">Ms1997-002</unitid>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">1 boxes; 0.4 cu.
                 ft.</physdesc>
-            <langmaterial label="Language">
-                <language langcode="eng">English </language>
-            </langmaterial>
-            <abstract label="Abstract">The Smithfield Preston Foundation collection consists of 200
+      <langmaterial label="Language">
+        <language langcode="eng">English </language>
+      </langmaterial>
+      <abstract label="Abstract">The Smithfield Preston Foundation collection consists of 200
                 letters written almost exclusively by two generations of members of the Preston
                 family of southwest Virginia, Kentucky, and South Carolina, to James and Sarah
                 Preston McDowell of Rockbridge County, Virginia.</abstract>
-            <origination label="Collector" encodinganalog="110$a">Smithfield Preston Foundation
+      <origination label="Collector" encodinganalog="110$a">Smithfield Preston Foundation
             </origination>
-        </did>
-        <descgrp type="admininfo">
-            <head>Administrative Information</head>
-            <accessrestrict encodinganalog="506$a">
-                <head>Access Restrictions</head>
-                <p>Collection is open to research.</p>
-            </accessrestrict>
-            <userestrict encodinganalog="540$a">
-                <head>Use Restrictions</head>
-                <p>Permission to publish from the Smithfield Preston Foundation Papers must be
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions</head>
+        <p>Collection is open to research.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions</head>
+        <p>Permission to publish from the Smithfield Preston Foundation Papers must be
                     obtained from Special Collections, Virginia Tech.</p>
-            </userestrict>
-            <prefercite encodinganalog="524$a">
-                <head>Preferred Citation</head>
-                <p>Researchers wishing to cite this collection should include the following
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation</head>
+        <p>Researchers wishing to cite this collection should include the following
                     information: Smithfield Preston Foundation Papers, Ms1997-002, Special
                     Collections, Virginia Polytechnic Institute and State University, Blacksburg,
                     Va.</p>
-            </prefercite>
-
-            <acqinfo encodinganalog="541$a">
-                <head>Acquisition Information</head>
-                <p>The Smithfield Preston Foundation Papers were donated to Special Collections in
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information</head>
+        <p>The Smithfield Preston Foundation Papers were donated to Special Collections in
                     May 1997.</p>
-            </acqinfo>
-            <altformavail>
-                <head>Alternate Form Available</head>
-                <p>Transcripts and images (jpgs) of some letters are available. See the <ref
-                        target="contents">&quot;Contents List&quot;</ref> section of the
+      </acqinfo>
+      <altformavail>
+        <head>Alternate Form Available</head>
+        <p>Transcripts and images (jpgs) of some letters are available. See the <ref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" target="contents" xlink:href="">"Contents List"</ref> section of the
                     finding aid for links.</p>
-            </altformavail>
-            <processinfo>
-                <head>Processing Information</head>
-                <p>The processing, arrangement, and description of the Smithfield Preston Foundation
+      </altformavail>
+      <processinfo>
+        <head>Processing Information</head>
+        <p>The processing, arrangement, and description of the Smithfield Preston Foundation
                     Papers commenced and was completed in 1997 and 1998. Additional description was
                     completed in 2009.</p>
-            </processinfo>
-        </descgrp>
-        <bioghist encodinganalog="545$a">
-            <head>Biographical/Historical Information</head>
-            <p>Smithfield Plantation is the historic home of the Preston family, one of the founding
+      </processinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical/Historical Information</head>
+      <p>Smithfield Plantation is the historic home of the Preston family, one of the founding
                 families of Blacksburg and Montgomery County, Virginia. It was built by William
                 Preston (1729-83), who emigrated from northern Ireland with his family in 1737. He
                 married Susanna Smith in 1761 and settled at Greenfield in Botetourt County in 1769.
@@ -294,1293 +131,1232 @@
                 named in honor of his wife, in 1773. Smithfield was the birthplace and home of three
                 Virginia governors, including James Patton Preston (son of William), and John
                 Buchanan Floyd and John Floyd, Jr. (grandsons of William).</p>
-            <p>Smithfield Plantation remained in the family for generations and is currently
+      <p>Smithfield Plantation remained in the family for generations and is currently
                 maintained by the Montgomery County branch of the Association for the Preservation
                 of Virginia Antiquities. Greenfield was a home in Botetourt County where William and
                 Susanna Smith Preston resided in the 1760s.</p>
-            <p>A more detailed list of correspondents in the collection, with some biographical
-                information, is available <extref entityref="bioglist">here</extref>.</p>
-            <p>For more information about the Preston family, see John Frederick Dorman, <title
-                    render="italic">The Prestons of Smithfield and Greenfield in Virginia</title>
+      <p>A more detailed list of correspondents in the collection, with some biographical
+                information, is available <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://spec.lib.vt.edu/mss/spf/list.htm">here</extref>.</p>
+      <p>For more information about the Preston family, see John Frederick Dorman, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Prestons of Smithfield and Greenfield in Virginia</title>
                 (Filson Club, Inc.; Louisville, Kentucky, 1982).</p>
-            <p>For more information on the Smithfield Preston Foundation, see the <extref
-                    entityref="spf">website</extref>.</p>
-        </bioghist>
-        <scopecontent encodinganalog="520$a">
-            <head>Scope and Content</head>
-            <p>The Smithfield Preston Foundation collection consists of 200 letters written almost
+      <p>For more information on the Smithfield Preston Foundation, see the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.smithfieldplantation.org/index.html">website</extref>.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content</head>
+      <p>The Smithfield Preston Foundation collection consists of 200 letters written almost
                 exclusively by two generations of members of the Preston family of southwest
                 Virginia, Kentucky, and South Carolina, to James and Sarah Preston McDowell of
                 Rockbridge County, Virginia. The collection also includes a will of William Campbell
                 Preston, an obituary of John Smith Preston and his photograph, and a circular asking
                 for funds for a memorial in honor of John Smith Preston.</p>
-            <p>Many of the correspondents are the children and grandchildren of William (1729-83)
+      <p>Many of the correspondents are the children and grandchildren of William (1729-83)
                 and Susanna Smith (1740-1825) Preston, settlers of Botetourt and then Montgomery
                 County, Virginia. The letters were written by Sarah Preston McDowell's brothers and
                 sisters, and their spouses. Other letters were written by the children of her
                 brothers Francis Preston and James Patton Preston. Most of the letters are addressed
                 to Sarah Preston McDowell and James McDowell or their son James McDowell and his
                 wife Susanna Smith Preston McDowell.</p>
-        </scopecontent>
-        <arrangement encodinganalog="351">
-            <head>Arrangement</head>
-            <p>The collection is arranged by correspondent.</p>
-        </arrangement>
-        <descgrp type="add">
-            <head>Adjunct Descriptive Data </head>
-            <relatedmaterial encodinganalog="544$a">
-                <head>Related Material</head>
-                <p>There are severeal collections in Special Collections related to the Smithfield
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement</head>
+      <p>The collection is arranged by correspondent.</p>
+    </arrangement>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data </head>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material</head>
+        <p>There are severeal collections in Special Collections related to the Smithfield
                     Plantation and the Preston family:</p>
-                <list>
-                    <item>Association for the Preservation of Virginia Antiquities, Montgomery
-                        County Branch Papers, 1754-1996. Ms62-001. <extref entityref="apva">Finding
+        <list>
+          <item>Association for the Preservation of Virginia Antiquities, Montgomery
+                        County Branch Papers, 1754-1996. Ms62-001. <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/published/vt/viblbv00510.xml.frame">Finding
                             aid</extref> available on the Virginia Heritage database.</item>
-                    <item>John Preston Deed, 1826. Ms2005-014.</item>
-                    <item>John Preston Papers, 1806-1830, 1844, n.d. Ms94-034. <extref
-                            entityref="jpp">Finding aid</extref> available on the Virginia Heritage
+          <item>John Preston Deed, 1826. Ms2005-014.</item>
+          <item>John Preston Papers, 1806-1830, 1844, n.d. Ms94-034. <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/published/vt/viblbv00017.xml.frame">Finding aid</extref> available on the Virginia Heritage
                         database.</item>
-                    <item>Preston Family (Alice Preston Moore Collection) Papers, 1745-1882.
+          <item>Preston Family (Alice Preston Moore Collection) Papers, 1745-1882.
                         Ms62-004.</item>
-                    <item>Preston Family (Charles Peale Didier Collection) Papers, 1747-1897.
+          <item>Preston Family (Charles Peale Didier Collection) Papers, 1747-1897.
                         Ms85-020.</item>
-                    <item>Robert Taylor Preston Papers, 1829-1871, n.d. Ms92-003.</item>
-                    <item>William Preston Land Grant, 1773. Ms94-027.</item>
-                    <item>Willard Prestion Genealogy, c.1998. Ms2009-121. <extref entityref="wpg"
-                            >Finding aid</extref> available on the Virginia Heritage
+          <item>Robert Taylor Preston Papers, 1829-1871, n.d. Ms92-003.</item>
+          <item>William Preston Land Grant, 1773. Ms94-027.</item>
+          <item>Willard Prestion Genealogy, c.1998. Ms2009-121. <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/published/vt/viblbv00495.xml.frame">Finding aid</extref> available on the Virginia Heritage
                         database.</item>
-                    <item>George Green Shackelford Papers, ca.1955-1986. Ms83-003. This collection
+          <item>George Green Shackelford Papers, ca.1955-1986. Ms83-003. This collection
                         is unprocessed and has some access restrictions. Please contact Special
                         Collections for further information.</item>
-                </list>
-            </relatedmaterial>
-        </descgrp>
-        <controlaccess>
-            <head>Index Terms</head>
-            <controlaccess>
-                <head>Persons:</head>
-                <persname source="local">McDowell, James, 1795-1851</persname>
-                <persname source="local">McDowell, James</persname>
-                <persname source="local">McDowell, Sarah Preston</persname>
-                <persname source="local">McDowell, Susana Smith Preston</persname>
-                <persname source="local">Preston, Francis, 1765-1835</persname>
-                <persname source="local">Preston, William Campbell</persname>
-            </controlaccess>
-            <controlaccess>
-                <head>Family Names:</head>
-                <famname source="local" encodinganalog="600$a">McDowell family, Rockbridge County, Va.</famname>
-                <famname source="local" encodinganalog="600$a">Preston family, Montgomery County, Va.</famname>
-            </controlaccess>
-            <controlaccess>
-                    <head>Subjects:</head>            
-                    <subject source="lcsh">Blacksburg (Va.)</subject>
-                    <subject source="local">Local/Regional History and Appalachian South</subject>
-                    <subject source="local">Montgomery County (Va.)</subject>
-                <subject source="lcsh">Smithfield Plantation House (Blacksburg, Va.)</subject>
-            </controlaccess>
-        </controlaccess>
-        <dsc type="combined">
-            <head id="contents">Contents List</head>
-            <c01 level="file">
-                <did>
-                    <unittitle>Letter from Susanna Smith Madison [Peyton] to her uncle James
-                        McDowell, <unitdate type="inclusive">January 8, 1802.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan8"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan8a">Page 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from J. Preston at Smithfield to James McDowell, <unitdate
-                            type="inclusive">April 15, 1795.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="apr15"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="apr15a">Page
+        </list>
+      </relatedmaterial>
+    </descgrp>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Persons:</head>
+        <persname source="local">McDowell, James, 1795-1851</persname>
+        <persname source="local">McDowell, James</persname>
+        <persname source="local">McDowell, Sarah Preston</persname>
+        <persname source="local">McDowell, Susana Smith Preston</persname>
+        <persname source="local">Preston, Francis, 1765-1835</persname>
+        <persname source="local">Preston, William Campbell</persname>
+      </controlaccess>
+      <controlaccess>
+        <head>Family Names:</head>
+        <famname source="local" encodinganalog="600$a">McDowell family, Rockbridge County, Va.</famname>
+        <famname source="local" encodinganalog="600$a">Preston family, Montgomery County, Va.</famname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh">Blacksburg (Va.)</subject>
+        <subject source="local">Local/Regional History and Appalachian South</subject>
+        <subject source="local">Montgomery County (Va.)</subject>
+        <subject source="lcsh">Smithfield Plantation House (Blacksburg, Va.)</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="combined">
+      <head id="contents">Contents List</head>
+      <c01 level="file">
+        <did>
+          <unittitle>Letter from Susanna Smith Madison [Peyton] to her uncle James
+                        McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">January 8, 1802.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan8,1802.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn99.jpg">Page 1</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from J. Preston at Smithfield to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">April 15, 1795.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Apr15,1795.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn104.jpg">Page
                                 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from J. Preston at Smithfield to James McDowell, <unitdate
-                            type="inclusive">July 21, 1799.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july21"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july21a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from J. Preston at Smithfield to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">July 21, 1799.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/July21,1799.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn105.jpg">Page
                                 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Letter from Francis Preston in Greenfield to James McDowell,
-                            <unitdate type="inclusive">January 16, 1823.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:3</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan16"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan16a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letter from Francis Preston in Greenfield to James McDowell,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">January 16, 1823.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:3</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan16,1823.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn85.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan16b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn86.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan16c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn87.jpg">Page
                                 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Letter from William Preston from home to James McDowell, <unitdate
-                            type="inclusive">December 5, 1801.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:4</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="dec5"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="dec5a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="dec5b">Page 2</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Thomas Lewis Preston to William Campbell Preston,
-                            <unitdate type="inclusive">July 3, 1838.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:5</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letter from William Preston from home to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">December 5, 1801.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:4</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Dec5,1801.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn109.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn110.jpg">Page 2</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Thomas Lewis Preston to William Campbell Preston,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">July 3, 1838.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:5</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/July3,1838.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn143.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn144.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn145.jpg">Page
                                 3</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3d">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn146.jpg">Page
                                 4</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3e">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn147.jpg">Page
                                 5</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3f">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn148.jpg">Page
                                 6</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july3g">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn149.jpg">Page
                                 7</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Thomas Lewis Preston to Susanna Preston, <unitdate
-                            type="inclusive">October 20, 1838.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:5</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct20"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct20a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Thomas Lewis Preston to Susanna Preston, <unitdate type="inclusive" era="ce" calendar="gregorian">October 20, 1838.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:5</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Oct20,1838.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn151.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct20b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn152.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct20c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn153.jpg">Page
                                 3</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct20d">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn154.jpg">Page
                                 4</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Thomas Lewis Preston to William Campbell Preston,
-                            <unitdate type="inclusive">November 29, 1838.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:5</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nov29"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nov29a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Thomas Lewis Preston to William Campbell Preston,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">November 29, 1838.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:5</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Nov29,1838.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn160.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nov29b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn161.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nov29c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn162.jpg">Page
                                 3</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nov29d">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn163.jpg">Page
                                 4</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Thomas Lewis Preston to Susanna Preston, <unitdate
-                            type="inclusive">January 30, 1843.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:5</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan30"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan30a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Thomas Lewis Preston to Susanna Preston, <unitdate type="inclusive" era="ce" calendar="gregorian">January 30, 1843.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:5</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan30,1843.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn150.jpg">Page
                                 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Thomas Lewis Preston to William Campbell Preston,
-                            <unitdate type="inclusive">June 23, 1845.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:5</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun23"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun23a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Thomas Lewis Preston to William Campbell Preston,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">June 23, 1845.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:5</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jun23,1845.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn155.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun23b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn156.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun23c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn157.jpg">Page
                                 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Thomas Lewis Preston to Susanna Preston, <unitdate
-                            type="inclusive">October 4, 1847.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:5</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct4"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct4a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct4b">Page 2</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from William Campbell Preston to Susanna Smith Preston
-                        McDowell, <unitdate type="inclusive">August 9, 1816.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:6</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9b">Page 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9c">Page 3</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9d">Page 4</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9e">Page 5</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9f">Page 6</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="aug9g">Page 7</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from William Campbell Preston to Susanna Smith Preston
-                        McDowell, <unitdate type="inclusive">April 23, 1819.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:6</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="apr23"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="apr23a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Thomas Lewis Preston to Susanna Preston, <unitdate type="inclusive" era="ce" calendar="gregorian">October 4, 1847.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:5</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Oct4,1847.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn158.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn159.jpg">Page 2</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from William Campbell Preston to Susanna Smith Preston
+                        McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">August 9, 1816.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:6</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Aug9,1816.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn164.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn165.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn166.jpg">Page 3</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn167.jpg">Page 4</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn168.jpg">Page 5</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn169.jpg">Page 6</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn170.jpg">Page 7</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from William Campbell Preston to Susanna Smith Preston
+                        McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">April 23, 1819.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:6</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Apr23,1819.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn171.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="apr23b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn172.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="apr23c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn173.jpg">Page
                                 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letters from William Campbell Preston to Susanna Smith Preston
-                        McDowell. <unitdate type="inclusive"/>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:6</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd1"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd1a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd1b">Page 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd1c">Page 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Eight legal letters and documents of the McDowell and Preston
-                        families, <unitdate type="inclusive">1816-1858.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:7</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Seven letters from William Campbell Preston to James McDowell,
-                            <unitdate type="inclusive">1819-1845.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:8</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Ten letters from William Campbell Preston to Susanna S. McDowell,
-                            <unitdate type="inclusive">1819-1847.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:9</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Nine letters from Francis Preston to Susanna McDowell, <unitdate
-                            type="inclusive">1819-1833.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:10</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Eight letters from E.M. Preston to James McDowell (1795- 1851), Sarah
-                        McDowell and Susanna Smith Preston McDowell (1800-47), <unitdate
-                            type="inclusive">1820-1846.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:11</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Two letters from Susanna Preston Hart to Sarah McDowell, <unitdate
-                            type="inclusive">1821.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:12</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Twelve letters from Sarah Ballard Preston to Susanna S. McDowell and
-                        Thomas L. Preston, <unitdate type="inclusive">1821-1844.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:13</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Nine letters from William Campbell Preston to Sally (Sarah B.
-                        Preston), <unitdate type="inclusive">1821-1854.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:14</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Sixteen miscellaneous letters to and from the Preston and McDowell
-                        families, <unitdate type="inclusive">1822-1859.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:15</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Four letters from Eliza Preston Carrington to Susanna S. McDowell,
-                            <unitdate type="inclusive">1824-1825.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:16</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Thirteen letters from Francis Preston to James McDowell, <unitdate
-                            type="inclusive">1826-1833.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:17</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>One letter to Susanna McDowell from Ed. William Johnston, <unitdate
-                            type="inclusive">1829.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:18</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Two letters from Isaac T. Preston to James McDowell, <unitdate
-                            type="inclusive">1829, 1846.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:19</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Six letters from John T. L. Preston to James McDowell, <unitdate
-                            type="inclusive">1830-1844.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:20</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Two letters from William B. Preston to James McDowell, <unitdate
-                            type="inclusive">1833, 1847.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:21</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Thirteen letters from Francis Preston to James McDowell, <unitdate
-                            type="inclusive">1834-1836.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:22</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Thirteen letters to William C. Preston from Alexander McCall,
-                            <unitdate type="inclusive">1840-1843.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:23</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Three letters to William C. Preston from James Dellets(?), <unitdate
-                            type="inclusive">1840-1843.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:24</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Eleven letters from William C. Preston to unidentified persons,
-                            <unitdate type="inclusive">1841-1859.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:25</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>One letter from Rev. B.R. Smith to James McDowell, <unitdate
-                            type="inclusive">1843.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:26</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Three letters from Wade and Margaret Hampton to James McDowell,
-                            <unitdate type="inclusive">1847-1851.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:27</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>One letter from Robert Jefferson Breckinridge to &quot;my dear
-                        Sally,&quot; <unitdate type="inclusive">1848.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:28</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Two letters from John Smith Preston to &quot;my dear
-                        Sally,&quot; <unitdate type="inclusive">1853, n.d.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:29</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Manuscript will of William C. Preston, <unitdate type="inclusive"
-                            >1859.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:30</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Obituary of John Smith Preston with photograph, <unitdate
-                            type="inclusive">1881.</unitdate>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:31</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Circular about John Smith Preston. <unitdate type="inclusive"/>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:32</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>One letter from Mary Preston Lewis to James McDowell. <unitdate
-                            type="inclusive"/>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:33</container>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>One letter from Ann Sophonisba Preston Breckinridge to Sarah Preston
-                        McDowell. <unitdate type="inclusive"/>
-                    </unittitle>
-                    <container label="Box-folder" type="box-folder">1:34</container>
-                </did>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston to James McDowell, <unitdate
-                            type="inclusive">June 17, 1798.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun17"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun17a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letters from William Campbell Preston to Susanna Smith Preston
+                        McDowell. <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          <container label="Box-folder" type="box-folder">1:6</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/nodate1.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn174.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn175.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn176.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Eight legal letters and documents of the McDowell and Preston
+                        families, <unitdate type="inclusive" era="ce" calendar="gregorian">1816-1858.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Seven letters from William Campbell Preston to James McDowell,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">1819-1845.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Ten letters from William Campbell Preston to Susanna S. McDowell,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">1819-1847.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Nine letters from Francis Preston to Susanna McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1819-1833.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:10</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Eight letters from E.M. Preston to James McDowell (1795- 1851), Sarah
+                        McDowell and Susanna Smith Preston McDowell (1800-47), <unitdate type="inclusive" era="ce" calendar="gregorian">1820-1846.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:11</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Two letters from Susanna Preston Hart to Sarah McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1821.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:12</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Twelve letters from Sarah Ballard Preston to Susanna S. McDowell and
+                        Thomas L. Preston, <unitdate type="inclusive" era="ce" calendar="gregorian">1821-1844.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:13</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Nine letters from William Campbell Preston to Sally (Sarah B.
+                        Preston), <unitdate type="inclusive" era="ce" calendar="gregorian">1821-1854.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:14</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sixteen miscellaneous letters to and from the Preston and McDowell
+                        families, <unitdate type="inclusive" era="ce" calendar="gregorian">1822-1859.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:15</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Four letters from Eliza Preston Carrington to Susanna S. McDowell,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">1824-1825.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:16</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Thirteen letters from Francis Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1826-1833.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:17</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>One letter to Susanna McDowell from Ed. William Johnston, <unitdate type="inclusive" era="ce" calendar="gregorian">1829.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:18</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Two letters from Isaac T. Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1829, 1846.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:19</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Six letters from John T. L. Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1830-1844.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:20</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Two letters from William B. Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1833, 1847.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:21</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Thirteen letters from Francis Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1834-1836.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:22</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Thirteen letters to William C. Preston from Alexander McCall,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">1840-1843.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:23</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Three letters to William C. Preston from James Dellets(?), <unitdate type="inclusive" era="ce" calendar="gregorian">1840-1843.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:24</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Eleven letters from William C. Preston to unidentified persons,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">1841-1859.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:25</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>One letter from Rev. B.R. Smith to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">1843.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:26</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Three letters from Wade and Margaret Hampton to James McDowell,
+                            <unitdate type="inclusive" era="ce" calendar="gregorian">1847-1851.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:27</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>One letter from Robert Jefferson Breckinridge to "my dear
+                        Sally," <unitdate type="inclusive" era="ce" calendar="gregorian">1848.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:28</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Two letters from John Smith Preston to "my dear
+                        Sally," <unitdate type="inclusive" era="ce" calendar="gregorian">1853, n.d.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:29</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Manuscript will of William C. Preston, <unitdate type="inclusive" era="ce" calendar="gregorian">1859.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:30</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Obituary of John Smith Preston with photograph, <unitdate type="inclusive" era="ce" calendar="gregorian">1881.</unitdate></unittitle>
+          <container label="Box-folder" type="box-folder">1:31</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Circular about John Smith Preston. <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          <container label="Box-folder" type="box-folder">1:32</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>One letter from Mary Preston Lewis to James McDowell. <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          <container label="Box-folder" type="box-folder">1:33</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>One letter from Ann Sophonisba Preston Breckinridge to Sarah Preston
+                        McDowell. <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          <container label="Box-folder" type="box-folder">1:34</container>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">June 17, 1798.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jun17,1798.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn100.jpg">Page
                                 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston to James McDowell, <unitdate
-                            type="inclusive">October 5, 1798.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct5"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct5a">Page 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston to James McDowell, <unitdate
-                            type="inclusive">May 27, 1804.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="may27"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="may27a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">October 5, 1798.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Oct5,1798.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn101.jpg">Page 1</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">May 27, 1804.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/May27,1804.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn102.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="may27b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn106.jpg">Page
                                 2</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston in Abington to James McDowell, <unitdate
-                            type="inclusive">January 16, 1821.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan161"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan161a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston in Abington to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">January 16, 1821.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan16,1821.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn72.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan161b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn73.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan161c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn74.jpg">Page
                                 3</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan161d">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn75.jpg">Page
                                 4</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan161e">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn76.jpg">Page
                                 5</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston to James McDowell,
-                        <unitdate type="inclusive">January 30, 1821.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan301"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan301a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston to James McDowell,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">January 30, 1821.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan30,1821.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn77.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jan301b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn78.jpg">Page
                                 2</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston to James McDowell, <unitdate
-                            type="inclusive">June 5, 1821.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun5"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun5a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun5b">Page 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun5c">Page 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston to James McDowell, <unitdate
-                            type="inclusive">December 21, 1821.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="dec1"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="dec1a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="dec1b">Page 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="dec1c">Page 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston in Abington to James McDowell, <unitdate
-                            type="inclusive">March 10, 1822.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">June 5, 1821.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jun5,1821.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn79.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn80.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn81.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">December 21, 1821.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Dec1,1821.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn58.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn59.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn60.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston in Abington to James McDowell, <unitdate type="inclusive" era="ce" calendar="gregorian">March 10, 1822.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Mar10,1822.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn64.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn65.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn66.jpg">Page
                                 3</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10d">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn67.jpg">Page
                                 4</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10e">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn68.jpg">Page
                                 5</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10f">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn69.jpg">Page
                                 6</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10g">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn70.jpg">Page
                                 7</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar10h">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn71.jpg">Page
                                 8</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Francis Preston to James McDowell. <unitdate
-                            type="inclusive"/>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:1</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd2"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd2a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd2b">Page 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd2c">Page 3</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="nd2d">Page 4</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
-                        McDowell in Lexington, Virginia, <unitdate type="inclusive">May 5,
-                            1804.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="may5"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="may5a">Page 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="may5b">Page 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="may5c">Page 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
-                        McDowell in Lexington, Virginia, <unitdate type="inclusive">July 11,
-                            1827.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july11"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july11a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Francis Preston to James McDowell. <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          <container label="Oversize" type="oversize">2:1</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jun20,1824.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn88.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn89.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn90.jpg">Page 3</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn91.jpg">Page 4</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
+                        McDowell in Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">May 5,
+                            1804.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/May5,1804.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn115.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn116.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn117.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
+                        McDowell in Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">July 11,
+                            1827.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/July11,1827.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn118.jpg">Page
                                 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston at Smithfield to Susanna McDowell in
-                        Lexington, Virginia. <unitdate type="inclusive">February 12,
-                            1831.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="feb12"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="feb12a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston at Smithfield to Susanna McDowell in
+                        Lexington, Virginia. <unitdate type="inclusive" era="ce" calendar="gregorian">February 12,
+                            1831.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Feb12,1831.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn119.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="feb12b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn120.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="feb12c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn121.jpg">Page
                                 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
-                        McDowell in Lexington, Virginia, <unitdate type="inclusive">July 16,
-                            1831.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july16"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="july16a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
+                        McDowell in Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">July 16,
+                            1831.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/July16,1831.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn122.jpg">Page
                                 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
-                        McDowell in Lexington, Virginia, <unitdate type="inclusive">September 12,
-                            1831.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="sep12"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="sep12a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
+                        McDowell in Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">September 12,
+                            1831.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Sept12,1831.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn123.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="sep12b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn124.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="sep12c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn125.jpg">Page
                                 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston at Smithfield to Susanna McDowell in
-                        Lexington, Virginia, <unitdate type="inclusive">October 16, 1831.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct16"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct16a">Page
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston at Smithfield to Susanna McDowell in
+                        Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">October 16, 1831.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Oct16,1831.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn126.jpg">Page
                                 1</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct16b">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn127.jpg">Page
                                 2</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="oct16c">Page
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn128.jpg">Page
                                 3</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
-                        McDowell in Lexington, Virginia, <unitdate type="inclusive">June 8,
-                            1832.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun8"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="jun8a">Page 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from James Patton Preston at Smithfield to James McDowell in
-                        Lexington, Virginia, <unitdate type="inclusive">March 9, 1835.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:2</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar9"
-                                >Transcription</extref>
-                        </item>
-                        <item>
-                            <extref actuate="onrequest" show="new" entityref="mar9a">Page 1</extref>
-                        </item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Letter from Eliza Preston Madison in Stafford, Virginia to her sister
-                        Sarah Preston McDowell in Lexington, Virginia, <unitdate type="inclusive"
-                            >January 10, 1784.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:3</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="jan10">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan10a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan10b">Page 2</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan10c">Page 3</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan10d">Page 4</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Letter from Edmonia M. Preston in Stafford, Virginia to Sarah Preston McDowell in Lexington, Virginia,
-                        <unitdate type="inclusive">May 30, 1813.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:4</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="may30">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="may30a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="may30b">Page 2</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="may30c">Page 3</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Letter from George C. Thompson in Shawnee Springs, Kentucky to James McDowell in Lexington, Virginia,
-                        <unitdate type="inclusive">June 28, 1833.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:5</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="jun28">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jun28a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jun28b">Page 2</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jun28c">Page 3</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from William Preston from Fincastle to James McDowell,
-                        <unitdate type="inclusive">January 12, 1799.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:6</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="jan12">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan12a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan12b">Page 2</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from William Preston from Fincastle to James McDowell,
-                        <unitdate type="inclusive">January 29, 1802.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:6</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="jan29">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan29a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jan29b">Page 2</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Nathaniel Hart in Franklin, Kentucky to James McDowell in Fairfield, Virginia,
-                        <unitdate type="inclusive">June 15, 1805.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:7</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="jun15">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jun15a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jun15b">Page 2</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="jun15c">Page 3</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from Nathaniel Hart in Spring Hill, Kentucky to James McDowell in Lexington, Virginia,
-                        <unitdate type="inclusive">November 23, 1834.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:7</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="nov23">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="nov23a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="nov23b">Page 2</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="nov23c">Page 3</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Letter from John Lewis in Covington to James McDowell in Rockbridge County, Virginia.
-                        <unitdate type="inclusive">August 5, 1804.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:8</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="aug5">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="aug5a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="aug5b">Page 2</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from John Preston to James McDowell,
-                        <unitdate type="inclusive">August 29, 1794.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:9</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="aug29">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="aug29a">Page 1</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-            <c01 level="item">
-                <did>
-                    <unittitle>Letter from John Preston at Greenfield to James McDowell,
-                        <unitdate type="inclusive">March 23, 1822.</unitdate>
-                    </unittitle>
-                    <container label="Oversize" type="oversize">2:9</container>
-                </did>
-                <scopecontent>
-                    <list>
-                        <item><extref actuate="onrequest" show="new" entityref="mar23">Transcription</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="mar23a">Page 1</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="mar23b">Page 2</extref></item>
-                        <item><extref actuate="onrequest" show="new" entityref="mar23c">Page 3</extref></item>
-                    </list>
-                </scopecontent>
-            </c01>
-        </dsc>
-    </archdesc>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston in Richmond, Virginia to James
+                        McDowell in Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">June 8,
+                            1832.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jun8,1832.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn129.jpg">Page 1</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from James Patton Preston at Smithfield to James McDowell in
+                        Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">March 9, 1835.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:2</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Mar9,1835.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn130.jpg">Page 1</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letter from Eliza Preston Madison in Stafford, Virginia to her sister
+                        Sarah Preston McDowell in Lexington, Virginia, <unitdate type="inclusive" era="ce" calendar="gregorian">January 10, 1784.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:3</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan10,1784.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn95.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn96.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn97.jpg">Page 3</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn98.jpg">Page 4</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letter from Edmonia M. Preston in Stafford, Virginia to Sarah Preston McDowell in Lexington, Virginia,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">May 30, 1813.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:4</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/May30,1813.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn140.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn141.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn142.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letter from George C. Thompson in Shawnee Springs, Kentucky to James McDowell in Lexington, Virginia,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">June 28, 1833.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:5</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jun28,1833.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn134.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn135.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn136.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from William Preston from Fincastle to James McDowell,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">January 12, 1799.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:6</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan12,1799.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn107.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn108.jpg">Page 2</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from William Preston from Fincastle to James McDowell,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">January 29, 1802.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:6</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jan29,1802.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn111.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn112.jpg">Page 2</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Nathaniel Hart in Franklin, Kentucky to James McDowell in Fairfield, Virginia,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">June 15, 1805.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:7</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Jun15,1805.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn131.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn132.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn133.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from Nathaniel Hart in Spring Hill, Kentucky to James McDowell in Lexington, Virginia,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">November 23, 1834.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:7</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Nov23,1834.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn137.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn138.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn139.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letter from John Lewis in Covington to James McDowell in Rockbridge County, Virginia.
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">August 5, 1804.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:8</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Aug5,1804.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn113.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn114.jpg">Page 2</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from John Preston to James McDowell,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">August 29, 1794.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:9</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Aug29,1794.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn103.jpg">Page 1</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter from John Preston at Greenfield to James McDowell,
+                        <unitdate type="inclusive" era="ce" calendar="gregorian">March 23, 1822.</unitdate></unittitle>
+          <container label="Oversize" type="oversize">2:9</container>
+        </did>
+        <scopecontent>
+          <list>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/mss/spf/letters/Mar23,1822.htm">Transcription</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn92.jpg">Page 1</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn93.jpg">Page 2</extref>
+            </item>
+            <item>
+              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://spec.lib.vt.edu/imagebase/smithfieldpreston/full/mn94.jpg">Page 3</extref>
+            </item>
+          </list>
+        </scopecontent>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
