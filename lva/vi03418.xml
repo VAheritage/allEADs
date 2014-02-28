@@ -1,259 +1,248 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY lost SYSTEM "http://www.virginiamemory.com/collections/lost" NDATA html>
-<!ENTITY notes SYSTEM "http://www.lva.virginia.gov/public/guides/rn30_lostrecords.pdf" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03418">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03418::A Guide to the Prince William County (Va.) Records, 1731-1969)//EN" "vi03418.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03418">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03418::A Guide to the Prince William County (Va.) Records, 1731-1969)//EN" "vi03418.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Prince William County (Va.) Records, <date>1731-1969</date>
-</titleproper>
-<subtitle id="sort">Prince William County (Va.) Records, 1731-1969
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Prince William County (Va.) Records, <date era="ce" calendar="gregorian">1731-1969</date></titleproper>
+        <subtitle id="sort">Prince William County (Va.) Records, 1731-1969
 <num type="collectionnumber">1050828, 1050831-1050832, 1050834, 1050838, 1114844
-</num>
-</subtitle>
-<author>Callie Lou Freed
+</num></subtitle>
+        <author>Callie Lou Freed
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2012 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Callie Lou Freed, <date>30 May 2012</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Prince William County (Va.) Records, <date>1731-1969</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Barcode numbers:">1050828, 1050831-1050832, 1050834, 1050838, 1114844
-</num>
-</subtitle>
-<author>Callie Lou Freed
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2012
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Library of Virginia staff
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Prince William County (Va.) Records, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1731-1969
-</unitdate>
-</unittitle>
-<unitid label="Barcode numbers" encodinganalog="099$a">1050828, 1050831-1050832, 1050834, 1050838, 1114844
-</unitid>
-<physloc label="Location">State Records Center - Archives Annex, Library of Virginia (Box 1050828 is found at the Library of Virginia.)
-</physloc>
-<physdesc label="Physical Characteristics" encodinganalog="300$a">6 boxes
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Callie Lou Freed, <date era="ce" calendar="gregorian">30 May 2012</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2014-01-13">2014-01-13</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Prince William County (Va.) Records, <date era="ce" calendar="gregorian">1731-1969</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Barcode numbers:">1050828, 1050831-1050832, 1050834, 1050838, 1114844
+</num></subtitle>
+      <author>Callie Lou Freed
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2012
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Library of Virginia staff
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Prince William County (Va.) Records, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1731-1969
+</unitdate></unittitle>
+      <unitid label="Barcode numbers" encodinganalog="099$a">1050828, 1050831-1050832, 1050834, 1050838, 1114844
+</unitid>
+      <physloc label="Location">State Records Center - Archives Annex, Library of Virginia (Box 1050828 is found at the Library of Virginia.)
+</physloc>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">6 boxes
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Collector" encodinganalog="110$a">Prince William County (Va.) Circuit Court.
+      </langmaterial>
+      <origination label="Collector" encodinganalog="110$a">Prince William County (Va.) Circuit Court.
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Prince William County (Va.) Records, 1731-1969.  Local Government Records Collection, Prince William County Court Records.  The Library of Virginia, Richmond, Va. 23219.
+        <p>Prince William County (Va.) Records, 1731-1969.  Local Government Records Collection, Prince William County Court Records.  The Library of Virginia, Richmond, Va. 23219.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>These items came to the Library of Virginia in a shipment of court records from Prince William County.  Portions of the collection were transferred under the following accession numbers:  25223, 22656, 24961, 23722, 21178-21189, 20816-20818, 34345, 33797, 21709, 22743b and 20620. 
+        <p>These items came to the Library of Virginia in a shipment of court records from Prince William County.  Portions of the collection were transferred under the following accession numbers:  25223, 22656, 24961, 23722, 21178-21189, 20816-20818, 34345, 33797, 21709, 22743b and 20620. 
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>Prince William County was formed from Stafford and King George Counties by a statute adopted in 1730, to take effect on 12 March 1731.  The county was named for William Augustus, duke of Cumberland and third son of King George II.
+      <p>Prince William County was formed from Stafford and King George Counties by a statute adopted in 1730, to take effect on 12 March 1731.  The county was named for William Augustus, duke of Cumberland and third son of King George II.
 </p>
-<p>Many pre-Civil War records were lost, destroyed, or stolen by Union troops in 1863 during the Civil War. Sixteen deed books and five will books are missing.
+      <p>Many pre-Civil War records were lost, destroyed, or stolen by Union troops in 1863 during the Civil War. Sixteen deed books and five will books are missing.
 </p>
-<p>Some items in this collection were originally created by the County Court.
+      <p>Some items in this collection were originally created by the County Court.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Prince William County (Va.) Records, 1731-1969, include various records from the following series: County and Circuit Court Records, Election Records, Fiduciary Records, Land Records, Miscellaneous Records, Tax and Fiscal Records and Wills.
+      <p>Prince William County (Va.) Records, 1731-1969, include various records from the following series: County and Circuit Court Records, Election Records, Fiduciary Records, Land Records, Miscellaneous Records, Tax and Fiscal Records and Wills.
 </p>
-</scopecontent>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </scopecontent>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Additional Prince William Additional Prince William County Records can be found on microfilm at the Library of Virginia.  Consult <extref entityref="microfilm">"A Guide to Virginia County and City Records on Microfilm"</extref> found on the Library of Virginia's web site.
+        <p>Additional Prince William Additional Prince William County Records can be found on microfilm at the Library of Virginia.  Consult <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm">"A Guide to Virginia County and City Records on Microfilm"</extref> found on the Library of Virginia's web site.
 </p>
-<p>Prince William County is one of Virginia's Lost Records Localities. Additional Prince William County Records may be found in the Virginia Lost Records Localities Collection at the Library of Virginia. Search the <extref entityref="lost">Lost Records Localities Digital Collection</extref> available at Virginia Memory.
+        <p>Prince William County is one of Virginia's Lost Records Localities. Additional Prince William County Records may be found in the Virginia Lost Records Localities Collection at the Library of Virginia. Search the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.virginiamemory.com/collections/lost">Lost Records Localities Digital Collection</extref> available at Virginia Memory.
 </p>
-<p>For more information and a listing of lost records localities see <extref entityref="notes">Lost Records research note</extref>. 
+        <p>For more information and a listing of lost records localities see <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.virginia.gov/public/guides/rn30_lostrecords.pdf">Lost Records research note</extref>. 
 </p>
-</relatedmaterial>
-</descgrp>
-<controlaccess>
-<head>Index Terms</head>
-<controlaccess>
-<head>Corporate Names:</head>
-<corpname encodinganalog="610$a">Prince William County (Va.) Circuit Court.</corpname>
-</controlaccess>
-<controlaccess>
-<head>Subjects:</head>
-<subject source="lcsh" encodinganalog="650$a">Public records--Virginia--Prince William County.</subject>
-</controlaccess>
-<controlaccess>
-<head>Geographical Names:</head>
-<geogname source="lcsh" encodinganalog="651$a">Prince William County (Va.)--History.</geogname>
-</controlaccess>
-<controlaccess>
-<head>Genre and Form Terms:</head>
-<genreform source="aat" encodinganalog="655$a">Local government records--Virginia--Prince William County.</genreform>
-</controlaccess>
-<controlaccess>
-<head>Added Entry - Corporate Name:</head>
-<corpname encodinganalog="710$a">Prince William County (Va.) County Court.</corpname>
-</controlaccess>
-</controlaccess>
-<dsc type="analyticover">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Corporate Names:</head>
+        <corpname encodinganalog="610$a">Prince William County (Va.) Circuit Court.</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Public records--Virginia--Prince William County.</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+        <geogname source="lcsh" encodinganalog="651$a">Prince William County (Va.)--History.</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre and Form Terms:</head>
+        <genreform source="aat" encodinganalog="655$a">Local government records--Virginia--Prince William County.</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Added Entry - Corporate Name:</head>
+        <corpname encodinganalog="710$a">Prince William County (Va.) County Court.</corpname>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="analyticover">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1050828">Records,
-<unitdate type="inclusive">1921 circa, 1937
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Court Records: Board of Supervisors vs. J. P. Leachman, County Treasurer, 1921 ca.  Leachman accused of forgery.  Election Records: Municipal elections - town of Manassas, 8 June 1937
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1050828">Records,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1921 circa, 1937
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Court Records: Board of Supervisors vs. J. P. Leachman, County Treasurer, 1921 ca.  Leachman accused of forgery.  Election Records: Municipal elections - town of Manassas, 8 June 1937
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1050831">Records, 
-<unitdate type="inclusive">1866, 1915-1947
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Miscellaneous records, correspondence, list of tax collected, executions
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1050831">Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1866, 1915-1947
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Miscellaneous records, correspondence, list of tax collected, executions
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1050832">Records, 
-<unitdate type="inclusive">1834, 1897
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Settlement of Estates by sheriff as administrator, miscellaneous papers (correspondence, accounts, court papers) concerning Magow family of Gainesville.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1050832">Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1834, 1897
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Settlement of Estates by sheriff as administrator, miscellaneous papers (correspondence, accounts, court papers) concerning Magow family of Gainesville.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1050834">Records 
-<unitdate type="inclusive">1890 circa, 1915, 1930, 1944, 1967-1969
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Court Records: Criminal Records: Commonwealth vs. W.W. Garrison (forgery); Judgment: Admr. of Whetzel vs. Southern Railroad Company; Tax and Fiscal Records: Cash Receipts and Disbursements, 1967-1969, Miscellaneous financial records; Miscellaneous Records: Unidentified photograph
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1050834">Records 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1890 circa, 1915, 1930, 1944, 1967-1969
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Court Records: Criminal Records: Commonwealth vs. W.W. Garrison (forgery); Judgment: Admr. of Whetzel vs. Southern Railroad Company; Tax and Fiscal Records: Cash Receipts and Disbursements, 1967-1969, Miscellaneous financial records; Miscellaneous Records: Unidentified photograph
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1050838">Records, 
-<unitdate type="inclusive">1731-1806
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>will of James Harrill, misc records and writ
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1050838">Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1731-1806
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>will of James Harrill, misc records and writ
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1114844">Records, 
-<unitdate type="inclusive">1737-1933
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Prince William County: Tax and Fiscal Records: Rent Rolls, 1737 (negative photostat - Accession #21178), 1738-1739 (negative photostat - Accession #21179), 1753 (negative photostat - Accession #21180), 1754 (negative photostat - Accession #21181),1760 (negative photostat - Accession #21182), 1761 (negative photostat - Accession #21183), 1767 (negative photostat - Accession #21184), 1767 (negative photostat - Accession #21185), 1773 (negative photostat - Accession #21186),  1777 (negative photostat - Accession #21187); Rental,  1752 (negative photostat - Accession #20816), 1753 (negative photostat - Accession #20817), 1754 (negative photostat - Accession #20818); Tithables: 1747 (Accession #22743b), 1765 (photocopy); Land Records: List of Landholders, 1762 (Accession #21188); Deeds, 1742 (Accession #34345), 1743 (Accession #33797); List of Landholders in Prince William and Fairfax residing elsewhere, 1767 (Accession #21189); Court Records: Memo of Court Records at Manassas, 1752-1933 (Accession #20620); Writ (capias) issued by Peter Wagener, 1752 (accession #21709); Fiduciary Records: Appraisement, 1751 (Accession #33797)
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1114844">Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1737-1933
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Prince William County: Tax and Fiscal Records: Rent Rolls, 1737 (negative photostat - Accession #21178), 1738-1739 (negative photostat - Accession #21179), 1753 (negative photostat - Accession #21180), 1754 (negative photostat - Accession #21181),1760 (negative photostat - Accession #21182), 1761 (negative photostat - Accession #21183), 1767 (negative photostat - Accession #21184), 1767 (negative photostat - Accession #21185), 1773 (negative photostat - Accession #21186),  1777 (negative photostat - Accession #21187); Rental,  1752 (negative photostat - Accession #20816), 1753 (negative photostat - Accession #20817), 1754 (negative photostat - Accession #20818); Tithables: 1747 (Accession #22743b), 1765 (photocopy); Land Records: List of Landholders, 1762 (Accession #21188); Deeds, 1742 (Accession #34345), 1743 (Accession #33797); List of Landholders in Prince William and Fairfax residing elsewhere, 1767 (Accession #21189); Court Records: Memo of Court Records at Manassas, 1752-1933 (Accession #20620); Writ (capias) issued by Peter Wagener, 1752 (accession #21709); Fiduciary Records: Appraisement, 1751 (Accession #33797)
 </p>
-</scopecontent>
-</c01>
-</dsc>
-</archdesc>
+        </scopecontent>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

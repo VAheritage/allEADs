@@ -1,562 +1,535 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03746">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03746::A Guide to the Brewer Family Papers, 1847-1983)//EN" "vi03746.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03746">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03746::A Guide to the Brewer Family Papers, 1847-1983)//EN" "vi03746.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Brewer Family Papers, <date>1847-1983</date>
-</titleproper>
-<subtitle id="sort">Brewer Family, Papers, 1847-1983
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Brewer Family Papers, <date era="ce" calendar="gregorian">1847-1983</date></titleproper>
+        <subtitle id="sort">Brewer Family, Papers, 1847-1983
 <num type="collectionnumber">51003
-</num>
-</subtitle>
-<author>Jim Greve
+</num></subtitle>
+        <author>Jim Greve
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2013 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Jim Greve, <date>22 August 2013</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Brewer Family Papers, <date>1847-1983</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">51003
-</num>
-</subtitle>
-<author>Jim Greve
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2013
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Jim Greve
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Brewer Family Papers, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1847-1983
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">51003
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a"> .9 cubic feet (2 boxes).
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2013 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Jim Greve, <date era="ce" calendar="gregorian">22 August 2013</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Brewer Family Papers, <date era="ce" calendar="gregorian">1847-1983</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">51003
+</num></subtitle>
+      <author>Jim Greve
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2013
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Jim Greve
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Brewer Family Papers, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1847-1983
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">51003
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a"> .9 cubic feet (2 boxes).
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Brewer Family Papers, 1847-1983. Accession 51003. Personal papers collection, The Library of Virginia, Richmond, Virginia. 
+        <p>Brewer Family Papers, 1847-1983. Accession 51003. Personal papers collection, The Library of Virginia, Richmond, Virginia. 
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Purchased.
+        <p>Purchased.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>The Brewer family were residents of Rockingham County, Virginia. Adam H. Brewer was born on 5 September 1822. He was a merchant and served as constable and deputy sheriff. He married Jane E. Rhodes (1830-1904). Adam H. Brewer died on 2 October 1905 and is buried in Keezletown Cemetery. His son, Scott William Brewer was born on 26 August 1858. He was a physician. Dr. Brewer married Flemma Swank (1867-1943). He died in 1927.
+      <p>The Brewer family were residents of Rockingham County, Virginia. Adam H. Brewer was born on 5 September 1822. He was a merchant and served as constable and deputy sheriff. He married Jane E. Rhodes (1830-1904). Adam H. Brewer died on 2 October 1905 and is buried in Keezletown Cemetery. His son, Scott William Brewer was born on 26 August 1858. He was a physician. Dr. Brewer married Flemma Swank (1867-1943). He died in 1927.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Papers, 1847-1983, of the Brewer family of Rockingham County, Virginia, namely Adam H. Brewer (1822-1905) and his son Dr. Scott W. Brewer (1858-1927). The collection contains clippings, correspondence, poetry, recipes, school exercises, scrapbook, stamp collection, teacher's register from Greenwood School in Albemarle County, and information on the Woman's Christian Temperance Union. There is a good deal of material related to Adam H. Brewer's duties as constable, including executions and receipts for claims due various individuals, lists of claims collected and returned, and memorandum and receipt books.
+      <p>Papers, 1847-1983, of the Brewer family of Rockingham County, Virginia, namely Adam H. Brewer (1822-1905) and his son Dr. Scott W. Brewer (1858-1927). The collection contains clippings, correspondence, poetry, recipes, school exercises, scrapbook, stamp collection, teacher's register from Greenwood School in Albemarle County, and information on the Woman's Christian Temperance Union. There is a good deal of material related to Adam H. Brewer's duties as constable, including executions and receipts for claims due various individuals, lists of claims collected and returned, and memorandum and receipt books.
 </p>
-</scopecontent>
-<dsc type="combined">
-<head>Contents List
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="file">
-<did>
-<unittitle><title render="italic">...and then we'll get him!</title> by Gahan Wilson, 
-<unitdate>1978</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">1
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Armentrout v. Funkhouser,
-<unitdate>1876</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">2
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Bible Verses Read
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">3
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Bill of Sale - Morris/Kerlin,
-<unitdate>1886</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">4
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Clippings
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">5
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Correspondence
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">6
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Death Certificate - Myers/Davis,
-<unitdate>1918</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">7
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Diary Entries
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">8
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Donovan Memorial Church,
-<unitdate>1943</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">9
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Envelopes
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">10
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Estate of Dr. William Williams
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">11
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Executions,
-<unitdate>1847, 1870-1898</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">12-16
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Forthcoming Bonds
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">17
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Home Demonstration Club,
-<unitdate>1937-1938</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">18
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Indemnity Bonds
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">19
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Independent Order of Odd Fellows, Valley Lodge No. 40,
-<unitdate>1914</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">20
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Insurance
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">21
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle><title render="italic">Know Your City - Waynesboro,</title>
-<unitdate>1983</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">22
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Lists of Claims Collected and Returned,
-<unitdate>1885-1893</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">23
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>McCree, Winifred Fleming Brewer
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">24
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Memorandum Book,
-<unitdate>1854-1855</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">25
-</container>
-</did>
-</c01><c01 level="file">
-<did>
-<unittitle>Miscellaneous
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">26
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>National Library Week Promotion Aids Brochure,
-<unitdate>1970</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">27
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Orders to Pay Witnesses
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">28
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle><title render="italic">The Otterbein Teacher,</title>
-<unitdate>April-May 1943</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">29
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Photographs
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">1
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Poetry
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">2
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Promissory Notes
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">3
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Receipt Book,
-<unitdate>1854-1857</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">4
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Receipt Book,
-<unitdate>1887-1890, 1897</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">5
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Receipts,
-<unitdate>1850-1898</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">6-11
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Receipts,
-<unitdate>undated</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">12
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Recipes
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">13
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>School Exercises
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">14
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Scrapbook
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">15
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Stamp Collection
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">16
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Subscription List
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">17
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Tax Tickets and Receipts
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">18
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Teacher's Register - Greenwood School (Albemarle County), 
-<unitdate>1955-1956</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">19
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Woman's Christian Temperance Union
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">20
-</container>
-</did>
-</c01>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</dsc>
-</archdesc>
+      <c01 level="file">
+        <did>
+          <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">...and then we'll get him!</title> by Gahan Wilson, 
+<unitdate era="ce" calendar="gregorian">1978</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">1
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Armentrout v. Funkhouser,
+<unitdate era="ce" calendar="gregorian">1876</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">2
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Bible Verses Read
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">3
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Bill of Sale - Morris/Kerlin,
+<unitdate era="ce" calendar="gregorian">1886</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">4
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Clippings
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">5
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Correspondence
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">6
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Death Certificate - Myers/Davis,
+<unitdate era="ce" calendar="gregorian">1918</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">7
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Diary Entries
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">8
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Donovan Memorial Church,
+<unitdate era="ce" calendar="gregorian">1943</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">9
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Envelopes
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">10
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Estate of Dr. William Williams
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">11
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Executions,
+<unitdate era="ce" calendar="gregorian">1847, 1870-1898</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">12-16
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Forthcoming Bonds
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">17
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Home Demonstration Club,
+<unitdate era="ce" calendar="gregorian">1937-1938</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">18
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Indemnity Bonds
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">19
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Independent Order of Odd Fellows, Valley Lodge No. 40,
+<unitdate era="ce" calendar="gregorian">1914</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">20
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Insurance
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">21
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Know Your City - Waynesboro,</title><unitdate era="ce" calendar="gregorian">1983</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">22
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Lists of Claims Collected and Returned,
+<unitdate era="ce" calendar="gregorian">1885-1893</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">23
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>McCree, Winifred Fleming Brewer
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">24
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Memorandum Book,
+<unitdate era="ce" calendar="gregorian">1854-1855</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">25
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Miscellaneous
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">26
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>National Library Week Promotion Aids Brochure,
+<unitdate era="ce" calendar="gregorian">1970</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">27
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Orders to Pay Witnesses
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">28
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Otterbein Teacher,</title><unitdate era="ce" calendar="gregorian">April-May 1943</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">29
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Photographs
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">1
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Poetry
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">2
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Promissory Notes
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">3
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Receipt Book,
+<unitdate era="ce" calendar="gregorian">1854-1857</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">4
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Receipt Book,
+<unitdate era="ce" calendar="gregorian">1887-1890, 1897</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">5
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Receipts,
+<unitdate era="ce" calendar="gregorian">1850-1898</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">6-11
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Receipts,
+<unitdate era="ce" calendar="gregorian">undated</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">12
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Recipes
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">13
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>School Exercises
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">14
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Scrapbook
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">15
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Stamp Collection
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">16
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Subscription List
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">17
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Tax Tickets and Receipts
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">18
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Teacher's Register - Greenwood School (Albemarle County), 
+<unitdate era="ce" calendar="gregorian">1955-1956</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">19
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Woman's Christian Temperance Union
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">20
+</container>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

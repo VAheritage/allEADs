@@ -1,433 +1,412 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03084">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03084::A Guide to the Henry A. Wise Papers, 1829-1847)//EN" "vi03084.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03084">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03084::A Guide to the Henry A. Wise Papers, 1829-1847)//EN" "vi03084.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Henry A. Wise Papers, <date>1829-1847</date>
-</titleproper>
-<subtitle id="sort">Wise, Henry A. Papers
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Henry A. Wise Papers, <date era="ce" calendar="gregorian">1829-1847</date></titleproper>
+        <subtitle id="sort">Wise, Henry A. Papers
 <num type="collectionnumber">36084
-</num>
-</subtitle>
-<author>Renee M. Savits
+</num></subtitle>
+        <author>Renee M. Savits
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2010  By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from being created directly into EAD, created by Renee M. Savits, <date>4 March 2010</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Henry A. Wise Papers, <date>1829-1847</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">36084
-</num>
-</subtitle>
-<author>Renee M. Savits
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2010 
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Description staff
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Henry A. Wise Papers, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1829-1847
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">36084
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">.45 cu. ft. (1 box)
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010  By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from being created directly into EAD, created by Renee M. Savits, <date era="ce" calendar="gregorian">4 March 2010</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Henry A. Wise Papers, <date era="ce" calendar="gregorian">1829-1847</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">36084
+</num></subtitle>
+      <author>Renee M. Savits
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010 
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Description staff
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Henry A. Wise Papers, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1829-1847
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">36084
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">.45 cu. ft. (1 box)
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>For preservation purposes, please use microfilm (Misc. reel 421).
+        <p>For preservation purposes, please use microfilm (Misc. reel 421).
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Henry A. Wise. Papers, 1829-1847. Accession 36084. Personal papers collection, The Library of Virginia, Richmond 23219.
+        <p>Henry A. Wise. Papers, 1829-1847. Accession 36084. Personal papers collection, The Library of Virginia, Richmond 23219.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Donor information unavailable.
+        <p>Donor information unavailable.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Henry Alexander Wise was born 3 December 1806 in Accomack County, Virginia, to Major John Wise (d. 1812) and Sallie Cropper Wise (d. 1813). Wise attended Washington College in Pennsylvania, graduating in 1825. He then studied law under Henry St. George Tucker in Winchester, Virginia. Admitted to the Virginia bar in 1828, Wise followed his future wife and family to Nashville, Tennessee. He practiced law in Nashville for two years before returning to Accomack in 1830. Elected to the United States House of Representatives in 1833, Wise served until 1844. He was nominated as United States Minister to Brazil on 18 January 1844. He was officially appointed by President John Tyler, 16 February 1844, as Envoy Extraordinary and Minister Plenipotentiary of the United States to Brazil. Wise was recalled and succeeded by David Tod in August 1847. He represented the Eastern Shore counties of Accomack and Northampton in the Virginia Constitutional Convention of 1850-1851, and represented Princess Anne County in the Virginia Secession Convention of 1861. Wise was elected governor of Virginia in 1855 and served from 1856 to 1860, during which time he met with John Brown (1800-1859) after the latter's failed raid in Harper's Ferry, (West) Virginia. During the Civil War, Wise raised troops and was appointed a brigadier general. After the war, he practiced law in Richmond, Virginia. Wise married three times: first, to Ann Elizabeth Jennings (1808-1837) of Nashville, Tennessee, 8 October 1828; second, to Sarah Sergeant (d. 1850) of Philadelphia, Pennsylvania, November 1840; and third, to Mary Elizabeth Lyons (1817-1901) of Richmond, Virginia, 1 November 1853. He fathered fourteen children, only seven of whom reached maturity. Wise died 12 September 1876, and was buried in Hollywood Cemetery in Richmond. </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+      <p>Henry Alexander Wise was born 3 December 1806 in Accomack County, Virginia, to Major John Wise (d. 1812) and Sallie Cropper Wise (d. 1813). Wise attended Washington College in Pennsylvania, graduating in 1825. He then studied law under Henry St. George Tucker in Winchester, Virginia. Admitted to the Virginia bar in 1828, Wise followed his future wife and family to Nashville, Tennessee. He practiced law in Nashville for two years before returning to Accomack in 1830. Elected to the United States House of Representatives in 1833, Wise served until 1844. He was nominated as United States Minister to Brazil on 18 January 1844. He was officially appointed by President John Tyler, 16 February 1844, as Envoy Extraordinary and Minister Plenipotentiary of the United States to Brazil. Wise was recalled and succeeded by David Tod in August 1847. He represented the Eastern Shore counties of Accomack and Northampton in the Virginia Constitutional Convention of 1850-1851, and represented Princess Anne County in the Virginia Secession Convention of 1861. Wise was elected governor of Virginia in 1855 and served from 1856 to 1860, during which time he met with John Brown (1800-1859) after the latter's failed raid in Harper's Ferry, (West) Virginia. During the Civil War, Wise raised troops and was appointed a brigadier general. After the war, he practiced law in Richmond, Virginia. Wise married three times: first, to Ann Elizabeth Jennings (1808-1837) of Nashville, Tennessee, 8 October 1828; second, to Sarah Sergeant (d. 1850) of Philadelphia, Pennsylvania, November 1840; and third, to Mary Elizabeth Lyons (1817-1901) of Richmond, Virginia, 1 November 1853. He fathered fourteen children, only seven of whom reached maturity. Wise died 12 September 1876, and was buried in Hollywood Cemetery in Richmond. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Papers, 1829-1847, of Henry A. Wise, consisting of drafts of Wise's letters to Brazilian officials, letters and documents received by Wise, and informational notes and papers relevant to United States and Brazil relations. Correspondents include James Buchanan, John C. Calhoun, John Tyler, and Abel P. Upshur. During Wise's tenure issues relating to slavery, the annexation of Texas, claims of American citizens, tariffs, and the Mexican-American War strained the friendly relationship between the countries. Wise's overzealous and indignant responses to the Brazilian government jeopardized the relationship with Brazil and culminated in Wise's recall in 1847.</p>
-
-
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+      <p>Papers, 1829-1847, of Henry A. Wise, consisting of drafts of Wise's letters to Brazilian officials, letters and documents received by Wise, and informational notes and papers relevant to United States and Brazil relations. Correspondents include James Buchanan, John C. Calhoun, John Tyler, and Abel P. Upshur. During Wise's tenure issues relating to slavery, the annexation of Texas, claims of American citizens, tariffs, and the Mexican-American War strained the friendly relationship between the countries. Wise's overzealous and indignant responses to the Brazilian government jeopardized the relationship with Brazil and culminated in Wise's recall in 1847.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
 </head>
-<p>This collection is arranged into the following series:</p>
-<list type="simple">
-<item>Series I: Correspondence, Outgoing, 1844-1847</item>
-<item>Series II: Correspondence, Incoming, 1844-1847</item>
-<item>Series III: Papers relevant to U.S.-Brazilian relations, 1829-1845</item>
-</list></arrangement>
-<dsc type="combined">
-<head>Contents List
+      <p>This collection is arranged into the following series:</p>
+      <list type="simple">
+        <item>Series I: Correspondence, Outgoing, 1844-1847</item>
+        <item>Series II: Correspondence, Incoming, 1844-1847</item>
+        <item>Series III: Papers relevant to U.S.-Brazilian relations, 1829-1845</item>
+      </list>
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-
-
-<c01 level="series">
-<did>
-<unittitle><emph render="bold">Series I: Correspondence, Outgoing</emph>, 
-<unitdate type="inclusive"><emph render="bold">1844-1847</emph></unitdate>.</unittitle>
-</did>
-
-<scopecontent>
-<p>This series includes copies of Wise's letters, 1844-1847, to Ernesto Ferreira Franca (1844), Antonio Paulino Limpo de Abreu (1845), and Barao de Cayru (1846), Ministers and Secretaries of State for Foreign Affairs of Brazil, and Duarte da Ponte Ribeiro, Office of State. Topics include postage charges, taxes and tariffs, claims of American citizens, Texas annexation, military disputes, and the Mexican-American War. Included is a letter, 5 August 1844, introducing Wise to the Minister and Secretary of State of Brazil and a letter, 24 September 1844, presenting a thorough outline of United States policy towards Brazil, reflecting many of John Calhoun's ideas. Of note are several letters, January-February 1845 regarding the brig "Porpoise" and the capture of United States sailors by the Brazilian government. Also of note are letters, October-November 1846, regarding an altercation with soldiers of the brig "Columbia," and letter, 18 July 1846, announcing the United States declaration of war against Mexico. Finally included are letters, 1847 February-August, regarding the tenuous relationship and Wise's recall from Brazil.
+      <c01 level="series">
+        <did>
+          <unittitle><emph render="bold">Series I: Correspondence, Outgoing</emph>, 
+<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">1844-1847</emph></unitdate>.</unittitle>
+        </did>
+        <scopecontent>
+          <p>This series includes copies of Wise's letters, 1844-1847, to Ernesto Ferreira Franca (1844), Antonio Paulino Limpo de Abreu (1845), and Barao de Cayru (1846), Ministers and Secretaries of State for Foreign Affairs of Brazil, and Duarte da Ponte Ribeiro, Office of State. Topics include postage charges, taxes and tariffs, claims of American citizens, Texas annexation, military disputes, and the Mexican-American War. Included is a letter, 5 August 1844, introducing Wise to the Minister and Secretary of State of Brazil and a letter, 24 September 1844, presenting a thorough outline of United States policy towards Brazil, reflecting many of John Calhoun's ideas. Of note are several letters, January-February 1845 regarding the brig "Porpoise" and the capture of United States sailors by the Brazilian government. Also of note are letters, October-November 1846, regarding an altercation with soldiers of the brig "Columbia," and letter, 18 July 1846, announcing the United States declaration of war against Mexico. Finally included are letters, 1847 February-August, regarding the tenuous relationship and Wise's recall from Brazil.
 </p>
-</scopecontent>
-
-	<c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1844</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1844</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">1
+            <container label="Folder" type="folder">1
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Henry A. Wise to Ernesto Ferreira Franca, Minister and Secretary of State for Foreign Affairs of Brazil [5 August 1844; 6 September 1844 (2); 19 September 1844; 23 September 1844; 24 September 1844; 30 October 1844; 4 November 1844; 8 November 1844; 30 November 1844].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1845 January - February</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Henry A. Wise to Ernesto Ferreira Franca, Minister and Secretary of State for Foreign Affairs of Brazil [5 August 1844; 6 September 1844 (2); 19 September 1844; 23 September 1844; 24 September 1844; 30 October 1844; 4 November 1844; 8 November 1844; 30 November 1844].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1845 January - February</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">2
+            <container label="Folder" type="folder">2
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Henry A. Wise to Ernesto Ferreira Franca, Minister and Secretary of State for Foreign Affairs of Brazil [25 January 1845; 28 January 1845; 28 January 1845; 29 January 1845; 29 January 1845; 30 January 1845; 1 February 1845 (2); 2 February 1845 (3); 3 February 1845 (2); 4 February 1845; 5 February 1845 (2); 6 February 1845 (2); 7 February 1845; 8 February 1845; 27 February 1845].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1845 June - November</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Henry A. Wise to Ernesto Ferreira Franca, Minister and Secretary of State for Foreign Affairs of Brazil [25 January 1845; 28 January 1845; 28 January 1845; 29 January 1845; 29 January 1845; 30 January 1845; 1 February 1845 (2); 2 February 1845 (3); 3 February 1845 (2); 4 February 1845; 5 February 1845 (2); 6 February 1845 (2); 7 February 1845; 8 February 1845; 27 February 1845].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1845 June - November</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">3
+            <container label="Folder" type="folder">3
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Henry A. Wise to Antonio Paulino Limpo de Abreu, Minister and Secretary of State for Foreign Affairs of Brazil [15 June 1845; 28 June 1845; 2 July 1845; 6 July 1845; 8 July 1845; 26 July 1845; 2 August 1845; 4 August 1845; 5 August 1845; 6 August 1845; 8 August 1825 (2); 9 August 1845; 28 August 1845; 3 September 1845; 4 September 1845; 10 September 1845; 20 September 1845 (2); 29 September 1845; 2 October 1845; 4 October 1845; 28 October 1845; 11 November 1845; 17 November 1845].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1846 January - June</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Henry A. Wise to Antonio Paulino Limpo de Abreu, Minister and Secretary of State for Foreign Affairs of Brazil [15 June 1845; 28 June 1845; 2 July 1845; 6 July 1845; 8 July 1845; 26 July 1845; 2 August 1845; 4 August 1845; 5 August 1845; 6 August 1845; 8 August 1825 (2); 9 August 1845; 28 August 1845; 3 September 1845; 4 September 1845; 10 September 1845; 20 September 1845 (2); 29 September 1845; 2 October 1845; 4 October 1845; 28 October 1845; 11 November 1845; 17 November 1845].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1846 January - June</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">4
+            <container label="Folder" type="folder">4
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Henry A. Wise to Antonio Paulino Limpo de Abreu, Minister and Secretary of State for Foreign Affairs of Brazil [5 January 1846; 13 January 1846].</item>
-<item>Henry A. Wise to Duarte da Ponte Ribeiro, Office of State [13 January 1846].</item>
-<item>Henry A. Wise to Antonio Paulino Limpo de Abreu, Minister and Secretary of State for Foreign Affairs of Brazil [15 January 1846; 17 January 1846; 27 January 1846; 19 February 1846; 20 February 1846; 22 February 1846; 4 March 1846; 14 March 1846; 21 March 1846 (2); 18 April 1846].</item>
-<item>Henry A. Wise to Duarte da Ponte Ribeiro, Office of State [23 April 1846].</item>
-<item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [4 May 1846; 7 May 1846].</item>
-<item>Henry A. Wise to Hollanda Cavalcanti, Minister and Secretary of State for Marine Affairs of Brazil [7 May 1846].</item>
-<item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [13 June 1846].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1846 July - November</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Henry A. Wise to Antonio Paulino Limpo de Abreu, Minister and Secretary of State for Foreign Affairs of Brazil [5 January 1846; 13 January 1846].</item>
+                <item>Henry A. Wise to Duarte da Ponte Ribeiro, Office of State [13 January 1846].</item>
+                <item>Henry A. Wise to Antonio Paulino Limpo de Abreu, Minister and Secretary of State for Foreign Affairs of Brazil [15 January 1846; 17 January 1846; 27 January 1846; 19 February 1846; 20 February 1846; 22 February 1846; 4 March 1846; 14 March 1846; 21 March 1846 (2); 18 April 1846].</item>
+                <item>Henry A. Wise to Duarte da Ponte Ribeiro, Office of State [23 April 1846].</item>
+                <item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [4 May 1846; 7 May 1846].</item>
+                <item>Henry A. Wise to Hollanda Cavalcanti, Minister and Secretary of State for Marine Affairs of Brazil [7 May 1846].</item>
+                <item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [13 June 1846].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1846 July - November</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">5
+            <container label="Folder" type="folder">5
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [1 July 1846; 9 July 1846; 13 July 1846; 14 July 1846 (2); 18 July 1846; 6 August 1846; 17 August 1846; 20 August 1846; 26 August 1846; 26 September 1846; 30 September 1846; 18 October 1846; 19 October 1846; 2 November 1846 (2); 4 November 1846 (2); 10 November 1846].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1847 February - August</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [1 July 1846; 9 July 1846; 13 July 1846; 14 July 1846 (2); 18 July 1846; 6 August 1846; 17 August 1846; 20 August 1846; 26 August 1846; 26 September 1846; 30 September 1846; 18 October 1846; 19 October 1846; 2 November 1846 (2); 4 November 1846 (2); 10 November 1846].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1847 February - August</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">6
+            <container label="Folder" type="folder">6
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [1847; 1 February 1847; 15 February 1847 (2)].</item>
-<item>Henry A. Wise to Hollanda Cavalcanti, Minister and Secretary of State for Marine Affairs of Brazil [15 February 1847].</item>
-<item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [25 February 1847; 26 February 1847; 21 April 1847; 15 May 1847; 12 June 1847; 12 August 1847].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02>
-</c01>
-<c01 level="series">
-<did>
-<unittitle><emph render="bold">Series II: Correspondence, Incoming</emph>, 
-<unitdate type="inclusive"><emph render="bold">1844-1847</emph></unitdate>.</unittitle>
-</did>
-<scopecontent>
-<p>This series includes letters, 1844-1847, received by Wise from various state officials including James Buchanan, John C. Calhoun, President John Tyler, and Abel P. Upshur. Included are circulars, 16 February 1844, announcing the appointment of Wise; 1 April 1844, announcing the appointment of John C. Calhoun as Secretary of State; and 10 March 1845 announcing the appointment of James Buchanan as Secretary of State. Included is a lengthy letter, 18 July 1844, from John C. Calhoun regarding the claim of Joseph Ray against the Brazilian government. Of note is a letter, 12 August 1844, from John C. Calhoun analyzing the annexation of Texas, African slave trade, and the relationships with France and England. The letter to Wise emphasizes the importance of Brazil and impresses on Wise the need to appease Brazil that the annexation of Texas was not to be interpreted as a threat to Mexico. Also included is a letter, 10 April 1847, from President James K. Polk to Dom Pedro II regarding the recall of Wise and a letter, 12 June 1847, from James Buchanan to Wise also in regards to his return to the United States.
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [1847; 1 February 1847; 15 February 1847 (2)].</item>
+                <item>Henry A. Wise to Hollanda Cavalcanti, Minister and Secretary of State for Marine Affairs of Brazil [15 February 1847].</item>
+                <item>Henry A. Wise to Barao de Cayru, Minister and Secretary of State for Foreign Affairs of Brazil [25 February 1847; 26 February 1847; 21 April 1847; 15 May 1847; 12 June 1847; 12 August 1847].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle><emph render="bold">Series II: Correspondence, Incoming</emph>, 
+<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">1844-1847</emph></unitdate>.</unittitle>
+        </did>
+        <scopecontent>
+          <p>This series includes letters, 1844-1847, received by Wise from various state officials including James Buchanan, John C. Calhoun, President John Tyler, and Abel P. Upshur. Included are circulars, 16 February 1844, announcing the appointment of Wise; 1 April 1844, announcing the appointment of John C. Calhoun as Secretary of State; and 10 March 1845 announcing the appointment of James Buchanan as Secretary of State. Included is a lengthy letter, 18 July 1844, from John C. Calhoun regarding the claim of Joseph Ray against the Brazilian government. Of note is a letter, 12 August 1844, from John C. Calhoun analyzing the annexation of Texas, African slave trade, and the relationships with France and England. The letter to Wise emphasizes the importance of Brazil and impresses on Wise the need to appease Brazil that the annexation of Texas was not to be interpreted as a threat to Mexico. Also included is a letter, 10 April 1847, from President James K. Polk to Dom Pedro II regarding the recall of Wise and a letter, 12 June 1847, from James Buchanan to Wise also in regards to his return to the United States.
 </p>
-</scopecontent>
-
-<c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1844 February - September</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1844 February - September</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">7
+            <container label="Folder" type="folder">7
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Abel P. Upshur to Henry A. Wise [16 February 1844].</item>
-<item>John C. Calhoun to Henry A. Wise [1 April 1844].</item>
-<item>John Tyler to Henry A. Wise [25 May 1844- Located in PP Oversize Box 13].</item>
-<item>John T. Reid to Henry A. Wise [27 May 1844].</item>
-<item>John C. Calhoun to Henry A. Wise [18 July 1844; 12 August 1844; 16 August 1844].</item>
-<item>J. Gardner to Henry A. Wise [18 September 1844].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1845 March - August</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Abel P. Upshur to Henry A. Wise [16 February 1844].</item>
+                <item>John C. Calhoun to Henry A. Wise [1 April 1844].</item>
+                <item>John Tyler to Henry A. Wise [25 May 1844- Located in PP Oversize Box 13].</item>
+                <item>John T. Reid to Henry A. Wise [27 May 1844].</item>
+                <item>John C. Calhoun to Henry A. Wise [18 July 1844; 12 August 1844; 16 August 1844].</item>
+                <item>J. Gardner to Henry A. Wise [18 September 1844].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1845 March - August</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">8
+            <container label="Folder" type="folder">8
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>James Buchanan to Henry A. Wise [10 March 1845; 22 April 1845; 11 June 1845; 14 June 1845].</item>
-<item>J.Y. Mason to Henry A. Wise [4 August 1845].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1846 March - 1847 June</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>James Buchanan to Henry A. Wise [10 March 1845; 22 April 1845; 11 June 1845; 14 June 1845].</item>
+                <item>J.Y. Mason to Henry A. Wise [4 August 1845].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1846 March - 1847 June</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">9
+            <container label="Folder" type="folder">9
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>James Buchanan to Henry A. Wise [9 March 1846; 14 May 1846; 13 July 1846; 25 November 1846; 12 June 1847].</item>
-<item>James K. Polk to Dom Pedro II [10 June 1847].</item>
-<item>Expense account of Henry A. Wise [12 September 1846].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02>
-</c01>
-<c01 level="series">
-<did>
-<unittitle><emph render="bold">Series III: Papers relevant to U.S.-Brazilian relations</emph>, 
-<unitdate type="inclusive"><emph render="bold">1829-1845</emph></unitdate>.</unittitle>
-</did>
-<scopecontent>
-<p>This series includes letters, 1829-1845, lists of citizens claims against Brazil, and notes concerning the historical relationship between the United States and Brazil. Most of the letters pre-date Wise's appointment as Envoy Extraordinary but were perhaps given to Wise for informational purposes. Correspondents include Mariano Roque Alonzo, Marquis de Aracaty, James Buchanan, John C. Calhoun, Pedro Jose Cardoro, Amory Edwards, William Hunter, Carlos Antonio Lopez, Joseph Ray, William Tudor, and John Tyler. Included are several letters between William Hunter, United States representative to Brazil, and Joseph Ray, detailing a claim by Ray for property confiscated by the government of Brazil. Of note are letters, 1843-1845, requesting acknowledgment by the United States for the country of Paraguay and a letter, 10 September 1844, from James Buchanan to Edward Hopkins appointing Hopkins Special Agent to Paraguay and detailing the desired relationship between the two countries. Also of note is a letter, 10 September 1844, from John Calhoun to Wilson Shannon, Minister to Mexico, regarding the annexation of Texas and the possibility war between the countries.
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>James Buchanan to Henry A. Wise [9 March 1846; 14 May 1846; 13 July 1846; 25 November 1846; 12 June 1847].</item>
+                <item>James K. Polk to Dom Pedro II [10 June 1847].</item>
+                <item>Expense account of Henry A. Wise [12 September 1846].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle><emph render="bold">Series III: Papers relevant to U.S.-Brazilian relations</emph>, 
+<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">1829-1845</emph></unitdate>.</unittitle>
+        </did>
+        <scopecontent>
+          <p>This series includes letters, 1829-1845, lists of citizens claims against Brazil, and notes concerning the historical relationship between the United States and Brazil. Most of the letters pre-date Wise's appointment as Envoy Extraordinary but were perhaps given to Wise for informational purposes. Correspondents include Mariano Roque Alonzo, Marquis de Aracaty, James Buchanan, John C. Calhoun, Pedro Jose Cardoro, Amory Edwards, William Hunter, Carlos Antonio Lopez, Joseph Ray, William Tudor, and John Tyler. Included are several letters between William Hunter, United States representative to Brazil, and Joseph Ray, detailing a claim by Ray for property confiscated by the government of Brazil. Of note are letters, 1843-1845, requesting acknowledgment by the United States for the country of Paraguay and a letter, 10 September 1844, from James Buchanan to Edward Hopkins appointing Hopkins Special Agent to Paraguay and detailing the desired relationship between the two countries. Also of note is a letter, 10 September 1844, from John Calhoun to Wilson Shannon, Minister to Mexico, regarding the annexation of Texas and the possibility war between the countries.
 </p>
-
-
-
-<p>Also included is a list and history of specific claims of United States citizens against the government of Brazil, 1826-1842, mostly relating to the confiscation of cargo and personal property. A brief history of the relations of the United States and Brazil is also included, containing extractions of letters from William Hunter. Included is a note concerning the detention of two men by Brazilian Customhouse Officers and a history of the colonial expansion policy of France towards South America.</p>
-
-
-
-</scopecontent>
-
-<c02 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1829-1945</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          <p>Also included is a list and history of specific claims of United States citizens against the government of Brazil, 1826-1842, mostly relating to the confiscation of cargo and personal property. A brief history of the relations of the United States and Brazil is also included, containing extractions of letters from William Hunter. Included is a note concerning the detention of two men by Brazilian Customhouse Officers and a history of the colonial expansion policy of France towards South America.</p>
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1829-1945</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">10
+            <container label="Folder" type="folder">10
 	</container>
-	</did>
-<scopecontent>
-		<p>
-<list type="simple">
-<item>Marquis de Aracaty to William Tudor [29 October 1829].</item>
-<item>Daniel Brent to Ethan A. Brown [18 November 1830].</item>
-<item>Joseph Ray - William Hunter [18 May 1837 - 20 July 1840].</item>
-<item>Amory Edwards to Abel P. Upshur [10 November 1843].</item>
-<item>Joseph Ray to George H. Proffit [8 January 1844].</item>
-<item>Pedro Jose Cardoro to Joseph Ray [7 May 1844].</item>
-<item>John C. Calhoun to Barring Brothers &amp; Co. [20 June 1844].</item>
-<item>John Tyler to Emperor Dom Pedro II [15 August 1844].</item>
-<item>John C. Calhoun to Wilson Shannon [10 September 1844].</item>
-<item>Amory Edwards to John C. Calhoun [1 April 1845].</item>
-<item>Certification by Charles Smith, Consul of the United States for the Province of Paia [9 April 1845].</item>
-<item>James Buchanan to Edward A. Hopkins [10 June 1845].</item>
-<item>Daniel Turner to Abel P. Upshur [22 November 1845].</item>
-</list>
-		</p>
-		</scopecontent>
-		</c02>
-
-<c02 level="file">
-	<did>
-	<unittitle>Claims of Citizens of the United States upon the Brazilian Government, 1826-1842.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+          <scopecontent>
+            <p>
+              <list type="simple">
+                <item>Marquis de Aracaty to William Tudor [29 October 1829].</item>
+                <item>Daniel Brent to Ethan A. Brown [18 November 1830].</item>
+                <item>Joseph Ray - William Hunter [18 May 1837 - 20 July 1840].</item>
+                <item>Amory Edwards to Abel P. Upshur [10 November 1843].</item>
+                <item>Joseph Ray to George H. Proffit [8 January 1844].</item>
+                <item>Pedro Jose Cardoro to Joseph Ray [7 May 1844].</item>
+                <item>John C. Calhoun to Barring Brothers &amp; Co. [20 June 1844].</item>
+                <item>John Tyler to Emperor Dom Pedro II [15 August 1844].</item>
+                <item>John C. Calhoun to Wilson Shannon [10 September 1844].</item>
+                <item>Amory Edwards to John C. Calhoun [1 April 1845].</item>
+                <item>Certification by Charles Smith, Consul of the United States for the Province of Paia [9 April 1845].</item>
+                <item>James Buchanan to Edward A. Hopkins [10 June 1845].</item>
+                <item>Daniel Turner to Abel P. Upshur [22 November 1845].</item>
+              </list>
+            </p>
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Claims of Citizens of the United States upon the Brazilian Government, 1826-1842.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">11
+            <container label="Folder" type="folder">11
 	</container>
-	</did>
-	</c02>
-
-
-<c02 level="file">
-	<did>
-	<unittitle>Synopsis of the Relations of the United States with Brazil, 1828-1842.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Synopsis of the Relations of the United States with Brazil, 1828-1842.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">12
+            <container label="Folder" type="folder">12
 	</container>
-	</did>
-
-		</c02>
-
-<c02 level="file">
-	<did>
-	<unittitle>Note concerning Detention of Two Men by Brazilian Customhouse Officers, 
-	<unitdate type="inclusive">undated</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Note concerning Detention of Two Men by Brazilian Customhouse Officers, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">undated</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">13
+            <container label="Folder" type="folder">13
 	</container>
-	</did>
-
-		</c02>
-
-<c02 level="file">
-	<did>
-	<unittitle>Note concerning the Colonial Expansion Policy of France, 
-	<unitdate type="inclusive">undated</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Note concerning the Colonial Expansion Policy of France, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">undated</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	<container label="Folder" type="folder">14
+            <container label="Folder" type="folder">14
 	</container>
-	</did>
-
-		</c02>
-
-
-		</c01>
-		</dsc>
-		</archdesc>
-		</ead>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

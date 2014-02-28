@@ -1,183 +1,178 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY lost SYSTEM "http://www.lva.virginia.gov/whatwehave/local/lost/" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03251">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03251::A Guide to the Accomack County (Va.) Port of Entry Books, 1778-1793)//EN" "vi03251.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03251">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03251::A Guide to the Accomack County (Va.) Port of Entry Books, 1778-1793)//EN" "vi03251.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Accomack County (Va.) Port of Entry Books, <date>1778-1793</date>
-</titleproper>
-<subtitle id="sort">Accomack County (Va.) Port of Entry Books, 1778-1793
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Accomack County (Va.) Port of Entry Books, <date era="ce" calendar="gregorian">1778-1793</date></titleproper>
+        <subtitle id="sort">Accomack County (Va.) Port of Entry Books, 1778-1793
 <num type="collectionnumber">Barcode numbers 1103785, 1121826/Accomack County (Va.) Reels 346-347
-</num>
-</subtitle>
-<author>Sam Walters
+</num></subtitle>
+        <author>Sam Walters
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2010 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Catherine OBrion, <date>14 July 2010</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Accomack County (Va.) Port of Entry Books, <date>1778-1793</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Collection numbers: ">Barcode numbers 1103785, 1121826/Accomack County (Va.) Reels 346-347
-</num>
-</subtitle>
-<author>Sam Walters
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2010
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Library of Virginia staff
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Accomack County (Va.) Port of Entry Books, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1778-1793
-</unitdate>
-</unittitle>
-<unitid label="Collection numbers" encodinganalog="099$a">Barcode numbers 1103785, 1121826/Accomack County (Va.) Reels 346-347
-</unitid>
-<physloc label="Location">Library of Virginia
-</physloc>
-<physdesc label="Physical Characteristics" encodinganalog="300$a">2 v. and 2 microfilm reels
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Catherine OBrion, <date era="ce" calendar="gregorian">14 July 2010</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Accomack County (Va.) Port of Entry Books, <date era="ce" calendar="gregorian">1778-1793</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Collection numbers:">Barcode numbers 1103785, 1121826/Accomack County (Va.) Reels 346-347
+</num></subtitle>
+      <author>Sam Walters
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Library of Virginia staff
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Accomack County (Va.) Port of Entry Books, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1778-1793
+</unitdate></unittitle>
+      <unitid label="Collection numbers" encodinganalog="099$a">Barcode numbers 1103785, 1121826/Accomack County (Va.) Reels 346-347
+</unitid>
+      <physloc label="Location">Library of Virginia
+</physloc>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">2 v. and 2 microfilm reels
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Collector" encodinganalog="110$a">Accomack County (Va.) Circuit Court.
+      </langmaterial>
+      <origination label="Collector" encodinganalog="110$a">Accomack County (Va.) Circuit Court.
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>Use microfilm copies, Accomack County (Va.) Reels 346-347
+        <p>Use microfilm copies, Accomack County (Va.) Reels 346-347
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Accomack County (Va.) Port of Entry Books, 1778-1793. Local Government Records Collection, Accomack County Court Records. The Library of Virginia, Richmond, Virginia.
+        <p>Accomack County (Va.) Port of Entry Books, 1778-1793. Local Government Records Collection, Accomack County Court Records. The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>These items came to the Library of Virginia in transfers of court papers from Accomack County.
+        <p>These items came to the Library of Virginia in transfers of court papers from Accomack County.
 </p>
-<p>Microfilm reels were generated by Backstage Library Works through the Library of Virginia's Circuit Court Records Preservation Program.</p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+        <p>Microfilm reels were generated by Backstage Library Works through the Library of Virginia's Circuit Court Records Preservation Program.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>Accomack County was named for the Accomac Indians, who lived on the eastern Shore at the time of the first English settlement in Virginia. One of the original eight shires established in 1634, Accomac County (spelled without a k) became Northampton County in 1643. The present country was formed from Northampton about 1663. In 1940 the General Assembly adopted the county's present spelling.
+      <p>Accomack County was named for the Accomac Indians, who lived on the eastern Shore at the time of the first English settlement in Virginia. One of the original eight shires established in 1634, Accomac County (spelled without a k) became Northampton County in 1643. The present country was formed from Northampton about 1663. In 1940 the General Assembly adopted the county's present spelling.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Accomack County (Va.) Port of Entry Books, 1778-1793, consist of 2 volumes that record the arrival of ships to Virginia's Eastern Shore ports located in Accomack County. Each entry includes the date each ship arrived, it's name, the ship's most recent port of departure, the type of vessel (schooner, sloop, etc), the ship's size, where it was built, the name and citizenship of the ship's master and owners, and some entries include a brief description of it's cargo.    
+      <p>Accomack County (Va.) Port of Entry Books, 1778-1793, consist of 2 volumes that record the arrival of ships to Virginia's Eastern Shore ports located in Accomack County. Each entry includes the date each ship arrived, it's name, the ship's most recent port of departure, the type of vessel (schooner, sloop, etc), the ship's size, where it was built, the name and citizenship of the ship's master and owners, and some entries include a brief description of it's cargo.    
 </p>
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
 </head>
-<p>Arranged chronologically.
+      <p>Arranged chronologically.
 </p>
-</arrangement>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </arrangement>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Additional Accomack County Court records can be found on microfilm at The Library of Virginia web site. Consult <extref entityref="microfilm">A Guide to Virginia County and City Records on Microfilm</extref>
-</p>
-</relatedmaterial>
-</descgrp>
-<controlaccess>
-<head>Index Terms</head>
-<controlaccess>
-<head>Corporate Names:</head>
-<corpname encodinganalog="610$a">Accomack County (Va.). Circuit Court.</corpname>
-</controlaccess>
-<controlaccess>
-<head>Subjects:</head>
-<subject source="lcsh" encodinganalog="650$a">Cargo ships -- Virginia -- Accomack County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Masters of ships -- Virginia -- Accomack County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Schooners -- Virginia -- Accomack County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Ships -- Virginia -- Accomack County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Sloops -- Virginia -- Accomack County.</subject>
-</controlaccess>
-<controlaccess>
-<head>Geographical Names:</head>
-<geogname source="lcsh" encodinganalog="651$a">Accomack County -- History -- 18th century</geogname>
-</controlaccess>
-<controlaccess>
-<head>Genre and Form Terms:</head>
-<genreform source="aat" encodinganalog="655$a">Local government records -- Virginia -- Accomack County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Merchant vessels -- Virginia -- Accomack County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Ports -- Virginia -- Accomack County.</genreform>
-</controlaccess>
-</controlaccess>
-</archdesc>
+        <p>Additional Accomack County Court records can be found on microfilm at The Library of Virginia web site. Consult <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm">A Guide to Virginia County and City Records on Microfilm</extref></p>
+      </relatedmaterial>
+    </descgrp>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Corporate Names:</head>
+        <corpname encodinganalog="610$a">Accomack County (Va.). Circuit Court.</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Cargo ships -- Virginia -- Accomack County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Masters of ships -- Virginia -- Accomack County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Schooners -- Virginia -- Accomack County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Ships -- Virginia -- Accomack County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Sloops -- Virginia -- Accomack County.</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+        <geogname source="lcsh" encodinganalog="651$a">Accomack County -- History -- 18th century</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre and Form Terms:</head>
+        <genreform source="aat" encodinganalog="655$a">Local government records -- Virginia -- Accomack County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Merchant vessels -- Virginia -- Accomack County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Ports -- Virginia -- Accomack County.</genreform>
+      </controlaccess>
+    </controlaccess>
+  </archdesc>
 </ead>

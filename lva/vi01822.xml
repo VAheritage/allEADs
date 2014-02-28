@@ -1,342 +1,339 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01822">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01822::A Guide to the Bland Family King and Queen County Records, 1794-1864)//EN" "vi01822.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01822">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01822::A Guide to the Bland Family King and Queen County Records, 1794-1864)//EN" "vi01822.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Bland Family King and Queen County Records, <date>1794-1864</date>
-</titleproper>
-<subtitle id="sort">Bland Family King and Queen County Records, 1794-1864
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Bland Family King and Queen County Records, <date era="ce" calendar="gregorian">1794-1864</date></titleproper>
+        <subtitle id="sort">Bland Family King and Queen County Records, 1794-1864
 <num type="collectionnumber">24097
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2006 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>7 June 2006</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Bland Family King and Queen County Records, <date>1794-1864</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">24097
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Bland Family King and Queen County Records, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1794-1864
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">24097
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a">75 leaves, negative photostats
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">7 June 2006</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Bland Family King and Queen County Records, <date era="ce" calendar="gregorian">1794-1864</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">24097
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Bland Family King and Queen County Records, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1794-1864
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">24097
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">75 leaves, negative photostats
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">Bland Family
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Bland Family
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Bland Family King and Queen County Records, 1794-1864.  Accession 24097.  Personal Papers Collection, The Library of  Virginia, Richmond, Virginia.
+        <p>Bland Family King and Queen County Records, 1794-1864.  Accession 24097.  Personal Papers Collection, The Library of  Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Lent for copying, 18 December 1953, by Mrs. J. D. Hutchinson, Walkerton, Virginia.
+        <p>Lent for copying, 18 December 1953, by Mrs. J. D. Hutchinson, Walkerton, Virginia.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>The Bland family was a prominent family in King and Queen County, Virginia.
+      <p>The Bland family was a prominent family in King and Queen County, Virginia.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Records, 1794-1864, of the Bland family of King and Queen County, Virginia, consisting of deeds, 1794-1851, for property in King and Queen County, for a mill, mill seat, and waterpower fixtures, for share of the estate of Henry Dixon, deceased, and for a match of bay horses; plats, 1809-1832 and no date, of land in King and Queen County; decree, 14 March 1836, from the King and Queen County Court in suit of John G. Muire vs Eleanor and Richard Moore; will, 4 October 1848, of Nancy Newcomb; minutes, 3 June 1850, of the meeting of the Board of Overseers of the Poor of King and Queen County; agreement, 5 March 1860, between Sarah Spencer on the one part and William W. Spencer, et. al. for all rights to Sarah Spencer's dower and share in her deceased husband's estate; and notes, 1861 and 1864, issued by King and Queen County and signed by Robert Pollard.
+      <p>Records, 1794-1864, of the Bland family of King and Queen County, Virginia, consisting of deeds, 1794-1851, for property in King and Queen County, for a mill, mill seat, and waterpower fixtures, for share of the estate of Henry Dixon, deceased, and for a match of bay horses; plats, 1809-1832 and no date, of land in King and Queen County; decree, 14 March 1836, from the King and Queen County Court in suit of John G. Muire vs Eleanor and Richard Moore; will, 4 October 1848, of Nancy Newcomb; minutes, 3 June 1850, of the meeting of the Board of Overseers of the Poor of King and Queen County; agreement, 5 March 1860, between Sarah Spencer on the one part and William W. Spencer, et. al. for all rights to Sarah Spencer's dower and share in her deceased husband's estate; and notes, 1861 and 1864, issued by King and Queen County and signed by Robert Pollard.
 </p>
-</scopecontent>
-<dsc type="in-depth">
-<head>Contents List
+    </scopecontent>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle>Plat, 
-<unitdate>no date, 
+      <c01 level="item">
+        <did>
+          <unittitle>Plat, 
+<unitdate era="ce" calendar="gregorian">no date, 
 </unitdate>of 398 acres belonging to the estate of Michael Dickson by Samuel May.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated and recorded 14 April 1794, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated and recorded 14 April 1794, 
 </unitdate>for 146 acres from William Bland to Ralph Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Plat, 
-<unitdate>made 21 February 1809 and copied 18 May 1818, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Plat, 
+<unitdate era="ce" calendar="gregorian">made 21 February 1809 and copied 18 May 1818, 
 </unitdate>of 93 1/4 acred belonging to the estate of John Carr, plat made by John Carlton and copied by Christopher Carlton.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 24 January 1823 and recorded 10 February 1823, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 24 January 1823 and recorded 10 February 1823, 
 </unitdate>for 94 acres from Mildred G. Blake of Mathews County, Virginia, to John Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>28 December 1824, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">28 December 1824, 
 </unitdate>for their share in the estate of Henry Dixon from Charles and Louisa Atkinson to John Jessee, Jessee relinquished his claim to John Bland, Jr., 8 December 1825.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 3 December 1825 and recorded 12 December 1825, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 3 December 1825 and recorded 12 December 1825, 
 </unitdate>for 94 acres from John Mann, William Farinholt, and Thomas Dudley to John Bland, Jr.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 4 April 1829 and recorded 13 April 1829, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 4 April 1829 and recorded 13 April 1829, 
 </unitdate>for 11 acres from Thomas and Caroline Dudley to John Bland, Jr.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 22 May 1829 and recorded 8 June 1829, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 22 May 1829 and recorded 8 June 1829, 
 </unitdate>for 98 1/4 acres from James A. and Frances Walden to Roderick Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Plat, 
-<unitdate>7 November 1832, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Plat, 
+<unitdate era="ce" calendar="gregorian">7 November 1832, 
 </unitdate>for 32 acres belonging to Nancy Haywood by John Mann.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 3 November 1832 and recorded 10 December 1832, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 3 November 1832 and recorded 10 December 1832, 
 </unitdate>for 22 acres from Thomas Crittenden to Roderick Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 17 September 1833 and recorded 20 December 1833, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 17 September 1833 and recorded 20 December 1833, 
 </unitdate>for right and title to certain property from Fleming Padget to John Mann.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Decree, 
-<unitdate>14 March 1836, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Decree, 
+<unitdate era="ce" calendar="gregorian">14 March 1836, 
 </unitdate>from the King and Queen County Court in suit of John G. Muire vs Eleanor and Richard Moore.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 2 April 1836 and recorded 9 May 1836, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 2 April 1836 and recorded 9 May 1836, 
 </unitdate>for 40 acres from John Summerson to John Bland, Jr.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 8 February 1837 and recorded 13 February 1837, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 8 February 1837 and recorded 13 February 1837, 
 </unitdate>for 32 acres from William Haywood, Elizabeth Haywood, Benjamin Haywood, John Haywood, Nancy Haywood, and Sarah Haywood to John Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 31 December 1836 and recorded 14 March 1837, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 31 December 1836 and recorded 14 March 1837, 
 </unitdate>for 37 acres from John Bland, Sr. to John Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>16 July 1846, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">16 July 1846, 
 </unitdate>for a match of bay horses from Alexander Gilliam of Richmond, Virginia, to Roderick Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 18 July 1846 and recorded 10 August 1846, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 18 July 1846 and recorded 10 August 1846, 
 </unitdate>for 133 acres from Richard Shackelford to Roderick Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Will, 
-<unitdate>4 October 1848, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Will, 
+<unitdate era="ce" calendar="gregorian">4 October 1848, 
 </unitdate>of Nancy Newcomb.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 14 October 1848 and recorded 11 December 1848, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 14 October 1848 and recorded 11 December 1848, 
 </unitdate>for 40 acres from Peter and Harriet Broocke to Henry Williams.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 16 February 1850 and recorded 11 March 1850, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 16 February 1850 and recorded 11 March 1850, 
 </unitdate>for 269 acres from George W. Booker, Commissioner, to Roderick Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Minutes, 
-<unitdate>3 June 1850, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Minutes, 
+<unitdate era="ce" calendar="gregorian">3 June 1850, 
 </unitdate>of the meeting of the Board of Overseers of the Poor of King and Queen County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 13 June 1851 and recorded 11 August 1851, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 13 June 1851 and recorded 11 August 1851, 
 </unitdate>for a mill, mill seat, and waterpower fixtures from Richard G. Smith to Roderick and Absolom Bland.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Agreement, 
-<unitdate>5 March 1860, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Agreement, 
+<unitdate era="ce" calendar="gregorian">5 March 1860, 
 </unitdate>between Sarah Spencer on the one part and William W. Spencer, John Spencer, James S. Bristow, and Laurence Anderson for all rights to Sarah Spencer's dower and share in the estate of her deceased husband John Spencer.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Two notes, 
-<unitdate>1 July 1861, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Two notes, 
+<unitdate era="ce" calendar="gregorian">1 July 1861, 
 </unitdate>for $10 issued by King and Queen County and signed by Robert Pollard, clerk of court, to John R. Bagby or bearer.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Notes, 
-<unitdate>1 August 1864, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Notes, 
+<unitdate era="ce" calendar="gregorian">1 August 1864, 
 </unitdate>for $100 issued by King and Queen County and signed by Robert Pollard to "bearer."
 </unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

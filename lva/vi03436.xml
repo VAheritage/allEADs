@@ -1,190 +1,195 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03436">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03436::A Guide to the Fairfax family proprietary papers, 1720-1793)//EN" "vi03436.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03436">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03436::A Guide to the Fairfax family proprietary papers, 1720-1793)//EN" "vi03436.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Fairfax family proprietary papers, <date>1720-1793</date>
-</titleproper>
-<subtitle id="sort">Fairfax family proprietary papers
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Fairfax family proprietary papers, <date era="ce" calendar="gregorian">1720-1793</date></titleproper>
+        <subtitle id="sort">Fairfax family proprietary papers
 <num type="collectionnumber">27213
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2013  By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>1 April 2013</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Fairfax family proprietary papers, <date>1720-1793</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">27213
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2013 
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Fairfax family proproprietary papers, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1720-1793
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">27213
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">37 leaves and 1 folder
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2013  By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">1 April 2013</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Fairfax family proprietary papers, <date era="ce" calendar="gregorian">1720-1793</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">27213
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2013 
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Fairfax family proproprietary papers, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1720-1793
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">27213
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">37 leaves and 1 folder
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">Fairfax family
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Fairfax family
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Fairfax family proprietary papers, 1720-1792. Accession 27213. Personal papers collection, The Library of Virginia, Richmond, Virginia.
+        <p>Fairfax family proprietary papers, 1720-1792. Accession 27213. Personal papers collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Lent for copying by Mrs. Beirne J. Kerr of Staunton, Virginia.
+        <p>Lent for copying by Mrs. Beirne J. Kerr of Staunton, Virginia.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>The Northern Neck Land Office controlled 5,282,000 acres in land grants located between the Rappahannock and Potomac rivers, which were given to seven loyal supporters of King Charles II, including Lord Fairfax. Agents of the Northern Neck Proprietary issued the first land grant in 1690. The Proprietary operated until the death of Thomas, Sixth Lord Fairfax in 1781. For the next thirty years, however, the ownership was in dispute. Fairfax family interest was terminated in 1808 when the last surviving heir sold his title to his remaining manor to a syndicate.
+      <p>The Northern Neck Land Office controlled 5,282,000 acres in land grants located between the Rappahannock and Potomac rivers, which were given to seven loyal supporters of King Charles II, including Lord Fairfax. Agents of the Northern Neck Proprietary issued the first land grant in 1690. The Proprietary operated until the death of Thomas, Sixth Lord Fairfax in 1781. For the next thirty years, however, the ownership was in dispute. Fairfax family interest was terminated in 1808 when the last surviving heir sold his title to his remaining manor to a syndicate.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Proprietary papers, 1720-1793, of the Fairfax family consisting of deeds of lease, deeds of release, agreements, surveys, and plats, all for property in the Northern Neck of Virginia owned by the Fairfax family, including Prince William and Clarke Counties.
+      <p>Proprietary papers, 1720-1793, of the Fairfax family consisting of deeds of lease, deeds of release, agreements, surveys, and plats, all for property in the Northern Neck of Virginia owned by the Fairfax family, including Prince William and Clarke Counties.
 </p>
-</scopecontent>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </scopecontent>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Fairfax Family Northern Neck Proprietary Papers, 1688-1810 (LVA accession 24062).
+        <p>Fairfax Family Northern Neck Proprietary Papers, 1688-1810 (LVA accession 24062).
 </p>
-</relatedmaterial>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </relatedmaterial>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Fairfax Family Northern Neck Proprietary Papers, 1675-1843 (LVA accession 41008 misc reels 4617-4624).
+        <p>Fairfax Family Northern Neck Proprietary Papers, 1675-1843 (LVA accession 41008 misc reels 4617-4624).
 </p>
-</relatedmaterial>
-</descgrp>
-<dsc type="combined">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="file"><did>
-<unittitle>Deed of lease, <unitdate>3 June 1720, </unitdate>for the Northern Neck from Thomas, Lord Fairfax, and Wililam Cage to Robert Carter.</unittitle>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Deed of lease, <unitdate>dated 20 August 1742 and recorded 27 September 1742, </unitdate>for 26,535 acres in Prince William County from Charles Green to Thomas, Lord Fairfax.</unittitle>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Deed of release, <unitdate>dated 21 August 1742 and recorded 27 September 1742, </unitdate>for 26,535 acres in Prince William County from Charles and Margaret Green to Thomas, Lord Fairfax.</unittitle>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Deed of release, <unitdate>dated 21 August 1742 and recorded 27 September 1742, </unitdate>for certain land known as the Manor of Leeds in Prince William County from Charles and Margaret Green to Thomas, Lord Fairfax.</unittitle>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Agreement, <unitdate>1 February 1793, </unitdate>between Denny Fairfax, England and James Markham Marshall, Richmond, Virginia (pages 1-5 of agreement are copies from orginal in LVA accession 24062).</unittitle>
-</did>
-</c01>	
-<c01 level="file"><did>
-<unittitle>Survey, <unitdate>no date, </unitdate> of 12 acres at <title render="doublequote">Bath</title> by Richard Rigg</unittitle>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Plat, <unitdate>no date, </unitdate>of certain land, Manor of Greenway Court (Clarke County), belonging to Thomas Bryan Martin.</unittitle>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Plat, <unitdate>no date, </unitdate>8,840 acres, Manor of Greenway Court (Clarke County), belonging to Thomas Bryan Martin by John Baylis.</unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+      <c01 level="file">
+        <did>
+          <unittitle>Deed of lease, <unitdate era="ce" calendar="gregorian">3 June 1720, </unitdate>for the Northern Neck from Thomas, Lord Fairfax, and Wililam Cage to Robert Carter.</unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Deed of lease, <unitdate era="ce" calendar="gregorian">dated 20 August 1742 and recorded 27 September 1742, </unitdate>for 26,535 acres in Prince William County from Charles Green to Thomas, Lord Fairfax.</unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Deed of release, <unitdate era="ce" calendar="gregorian">dated 21 August 1742 and recorded 27 September 1742, </unitdate>for 26,535 acres in Prince William County from Charles and Margaret Green to Thomas, Lord Fairfax.</unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Deed of release, <unitdate era="ce" calendar="gregorian">dated 21 August 1742 and recorded 27 September 1742, </unitdate>for certain land known as the Manor of Leeds in Prince William County from Charles and Margaret Green to Thomas, Lord Fairfax.</unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Agreement, <unitdate era="ce" calendar="gregorian">1 February 1793, </unitdate>between Denny Fairfax, England and James Markham Marshall, Richmond, Virginia (pages 1-5 of agreement are copies from orginal in LVA accession 24062).</unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Survey, <unitdate era="ce" calendar="gregorian">no date, </unitdate> of 12 acres at <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="doublequote" xlink:href="">Bath</title> by Richard Rigg</unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plat, <unitdate era="ce" calendar="gregorian">no date, </unitdate>of certain land, Manor of Greenway Court (Clarke County), belonging to Thomas Bryan Martin.</unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plat, <unitdate era="ce" calendar="gregorian">no date, </unitdate>8,840 acres, Manor of Greenway Court (Clarke County), belonging to Thomas Bryan Martin by John Baylis.</unittitle>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

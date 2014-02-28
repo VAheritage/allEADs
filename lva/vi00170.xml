@@ -1,153 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00170">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00170::A Guide to the Bryan Family Papers, 1679-1943)//EN&amp;#34; &amp;#34;vi00170&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00170">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00170::A Guide to the Bryan Family Papers, 1679-1943)//EN&amp;#34; &amp;#34;vi00170&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00170::A Guide to the Bryan
              Family Papers, 1679-1943)//EN" "vi00170"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Bryan Family Papers, 
-            <date>1679-1943</date></titleproper>
-            <subtitle id="sort">Bryan Family Papers, 1679-1943 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Bryan Family Papers, 
+            <date era="ce" calendar="gregorian">1679-1943</date></titleproper>
+        <subtitle id="sort">Bryan Family Papers, 1679-1943 
             <num type="collectionnumber">24882</num></subtitle>
-            <author>Description Services Staff</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Description Services Staff</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 141 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MSWord.
+        </p>
+        <p id="filesize">ca. 141 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MSWord.
          Created by Jay Gaidmore, 
-         <date>12 August 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">12 August 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00170::A Guide to the Bryan Family Papers,
             1679-1943)//EN" "vi00170" converted from EAD 1.0 to 2002 by
             v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Bryan Family Papers, 
-         <date>1679-1943</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Bryan Family Papers, 
+         <date era="ce" calendar="gregorian">1679-1943</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">24882</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Description Services Staff</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Description Services Staff</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Bryan Family Papers, 
-         <unitdate type="inclusive" label="Date">
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Bryan Family Papers, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1679-1943</unitdate></unittitle>
-         <unitid label="Accession number">24882</unitid>
-         <physloc label="Physical Location">Personal papers collection,
+      <unitid label="Accession number">24882</unitid>
+      <physloc label="Physical Location">Personal papers collection,
          Acc. 24882.</physloc>
-         <physdesc label="Physical Characteristics">5.5 cubic feet (13
+      <physdesc label="Physical Characteristics">5.5 cubic feet (13
          boxes)</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>Do not serve Box 13, which contains originals of letters
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>Do not serve Box 13, which contains originals of letters
             deemed too difficult to preserve. Xerox copies have been
             made and placed in the proper folders.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Bryan Family Papers, 1679-1943. Accession 24882,
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Bryan Family Papers, 1679-1943. Accession 24882,
             Personal papers collection, The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Gift of the estate of John Stewart Bryan of Richmond,
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Gift of the estate of John Stewart Bryan of Richmond,
             Virginia, 1952. Collection transferred from the
             administrative office of the Library to the Archives
             Division in May 1958.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>Joseph Bryan (1773-1812) of Savannah, Georgia, served as a
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>Joseph Bryan (1773-1812) of Savannah, Georgia, served as a
          congressman from 1803 to 1806, and became close friends with
          John Randolph (1773-1833) of Roanoke, Charlotte County,
          Virginia. He married Delia Forman (ca. 1788-1825) 5 April
@@ -163,10 +148,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          he served as a member of the command of John S. Mosby
          (1833-1916) during the Civil War. He became a newspaper
          publisher in Richmond, Virginia, responsible for the 
-         <title render="italic">Richmond Times</title>, 
-         <title render="italic">Richmond Times- Dispatch,</title> and
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond Times</title>, 
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond Times- Dispatch,</title> and
          the 
-         <title render="italic">Richmond News Leader</title>. He also
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond News Leader</title>. He also
          was a prominent businessman. Bryan lived at Brook Hill in
          Henrico County, Virginia, and at Laburnum in Richmond. He
          married Isobel Lamont Stewart (1847- 1910) 1 February 1871,
@@ -175,35 +160,35 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          newspaper publishing. He also served as president and
          chancellor of the College of William and Mary. He married Anne
          Eliza Tennant 4 June 1903 and they had three children.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Papers, 1679-1943, of the Bryan family of Fluvanna,
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Papers, 1679-1943, of the Bryan family of Fluvanna,
          Gloucester, and Henrico Counties, and Richmond, Virginia, and
          Savannah, Georgia, consisting of Special Correspondence;
          General Correspondence; Genealogies; Business Records;
          Addresses, Essays, and Poems; and Miscellaneous. This
          collection has been microfilmed and is available on Misc.
          Reels 682-690.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Organization</head>
-         <p>Organized into the following six series: I. Special
+    </scopecontent>
+    <arrangement>
+      <head>Organization</head>
+      <p>Organized into the following six series: I. Special
          Correspondence. II. General Correspondence. III. Genealogies.
          IV. Business Records. V. Addresses, Essays, Poems and Diaries.
          VI. Miscellaneous.</p>
-      </arrangement>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series I">Special Correspondence, 
-               <unitdate type="inclusive">
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series I">Special Correspondence, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1780-1943</unitdate></unittitle>
-               <container type="Box" label="Box">1</container>
-            </did>
-            <scopecontent>
-               <p>Inclues correspondence of John Randolph (1773-1833)
+          <container type="Box" label="Box">1</container>
+        </did>
+        <scopecontent>
+          <p>Inclues correspondence of John Randolph (1773-1833)
                of Roanoke with Joseph Bryan, John Randolph Bryan,
                Judith Randolph and others concerning national politics,
                Georgia politics, plantation life in Georgia, personal
@@ -219,195 +204,195 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Consul General in Philadelphia, Pennsylvania, notes on
                the federal Constitution, Louisiana Territory, and a
                presidential election.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Randolph of Roanoke, 
-                  <unitdate type="inclusive">undated and
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>John Randolph of Roanoke, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">undated and
                   1791-1806</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Randolph of Roanoke, 
-                  <unitdate type="inclusive">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Randolph of Roanoke, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1806-1809</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Randolph of Roanoke, 
-                  <unitdate type="inclusive">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Randolph of Roanoke, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1810-1814</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Randolph of Roanoke, 
-                  <unitdate type="inclusive">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Randolph of Roanoke, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1820-1831</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>George Shea-Charles O'Conor, 
-                  <unitdate type="inclusive">undated and
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>George Shea-Charles O'Conor, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">undated and
                   1865-1866</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>George Shea-Charles O'Conor, 
-                  <unitdate type="inclusive">1867-1869
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>George Shea-Charles O'Conor, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1867-1869
                   (1885)</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate type="inclusive">undated and
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">undated and
                   1924-1928</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate type="inclusive">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1929-1930</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate type="inclusive">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1931-1934</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate>1935</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate era="ce" calendar="gregorian">1935</unitdate></unittitle>
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1936-1939</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate>1940</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate era="ce" calendar="gregorian">1940</unitdate></unittitle>
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate type="inclusive">1941,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1941,
                   January-June</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Hirst-Bryan, 
-                  <unitdate type="inclusive">1941
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Hirst-Bryan, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1941
                   July-1943</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous-three essays and one letter
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous-three essays and one letter
                   on banking and currency, 
-                  <unitdate type="inclusive">1780, 1782,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1780, 1782,
                   1789</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous-papers concerning Charles
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous-papers concerning Charles
                   Gottfried Paleske, Prussian Consul at Philadelphia, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1791-1799</unitdate></unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous-Notes on the Constitution of
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous-Notes on the Constitution of
                   the United States</unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous-Counterstatement, the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous-Counterstatement, the
                   Territory of Louisiana</unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous-Election of the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous-Election of the
                   President</unittitle>
-                  <container type="Box" label="Box">1</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">1</container>
+            <container type="Folder" label="Folder">
                   19</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series II">General Correspondence, 
-               <unitdate type="inclusive">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series II">General Correspondence, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1765-1937</unitdate></unittitle>
-               <container type="Box" label="Box">2-5</container>
-            </did>
-            <scopecontent>
-               <p>Includes letters pertaining to family genealogy;
+          <container type="Box" label="Box">2-5</container>
+        </did>
+        <scopecontent>
+          <p>Includes letters pertaining to family genealogy;
                naval career of John Randolph Bryan; John Randolph of
                Roanoke, including a biography and the removal of his
                remains to Hollywood Cemetery in Richmond, Virginia;
@@ -420,727 +405,727 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Virginia Antiquities; the John Marshall House;
                University of Virginia; the College of William and Mary;
                finances; politics; and family matters.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1765-1818</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1821-1825</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1826-1827</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1828-1829</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1830-1839</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1840-1846
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1765-1818</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1821-1825</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1826-1827</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1828-1829</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1830-1839</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1840-1846
                      June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1846 July-1847
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1846 July-1847
                      June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1847
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1847
                      August-1849</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1850-1852</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1853-1854</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1850-1852</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1853-1854</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1855-1856</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1855-1856</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1857-1859</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1857-1859</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1860-1864</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1860-1864</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1865-1869</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1865-1869</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1870-1871
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1870-1871
                      June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1871
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1871
                      August-1872</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">2</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">2</container>
+            <container type="Folder" label="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1873-1874</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1875-1877</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1878
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1873-1874</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1875-1877</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1878
                      January-June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1878 October-1879
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1878 October-1879
                      June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1879
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1879
                      July-December</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1880
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1880
                      January-March</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1880
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1880
                      April-June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1880
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1880
                      July-December</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1881
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1881
                      January-June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1881
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1881
                      July-December</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1882
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1882
                      January-June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1882
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1882
                      July-December</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1883
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1883
                      January-June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1883 July</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">3</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1883 July</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">3</container>
+            <container type="Folder" label="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1883 August</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1883
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1883 August</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1883
                      September-December</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1884</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1885</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1886</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1887</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1888</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1889</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1890-1894</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1895-1899</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1884</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1885</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1886</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1887</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1888</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1889</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1890-1894</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1895-1899</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1900-1902</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1900-1902</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1903-1904</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1903-1904</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1905-1906
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1905-1906
                      September</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1906
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1906
                      October-1907</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">4</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">4</container>
+            <container type="Folder" label="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1908
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1908
                      February-May</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1908 June</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1908 July
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1908 June</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1908 July
                      1-15</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1908 July
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1908 July
                      16-31</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1908 August</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1908
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1908 August</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1908
                      September-December</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1909-1910
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1909-1910
                      April</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1910
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1910
                      May-1912</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1920-1925</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1926-1937</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1920-1925</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1926-1937</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate>undated</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate>undated</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">5</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">5</container>
+            <container type="Folder" label="Folder">
                   12</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series III">Genealogies</unittitle>
-               <container type="Box" label="Box">6-7</container>
-            </did>
-            <scopecontent>
-               <p>Includes genealogical notes and charts on the Bryan
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series III">Genealogies</unittitle>
+          <container type="Box" label="Box">6-7</container>
+        </did>
+        <scopecontent>
+          <p>Includes genealogical notes and charts on the Bryan
                family; Randolph family; Bland family; Coalter family;
                Forman family; Pendarvis family; Bedon family; Screeven
                family; Williamson family; Hext family; Brannan family;
                Williston family; Hitchcock family; Goode family; Lyle
                family; Mosby family; Stuart family; Stewart family; and
                Beverly-Beverley family.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Randolph-Bland family (also box 12, folder
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Randolph-Bland family (also box 12, folder
                   1)</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Coalter family</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Coalter family</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Forman family</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Pendarvis-Bedon-Screeven family (also box
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Coalter family</unittitle>
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Coalter family</unittitle>
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Forman family</unittitle>
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Pendarvis-Bedon-Screeven family (also box
                   12, folder 2)</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-other branches</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-English origins (also box 12,
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-other branches</unittitle>
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-English origins (also box 12,
                   folder 3)</unittitle>
-                  <container type="Box" label="Box">6</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">6</container>
+            <container type="Folder" label="Folder">
                   8-10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-James Bryan
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-James Bryan
                   (1752-1797)</unittitle>
-                  <container type="Box-folder">Box 6, Folder 11 - Box
+            <container type="Box-folder">Box 6, Folder 11 - Box
                   7, Folder 3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-charts, memoranda,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-charts, memoranda,
                   etc.</unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">
                   4-8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-correspondence re: genealogy,
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-correspondence re: genealogy,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1881-1894</unitdate></unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-correspondence re: genealogy,
-                  <unitdate type="inclusive">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-correspondence re: genealogy,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1896-1899</unitdate></unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-correspondence re: genealogy,
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-correspondence re: genealogy,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1901-1902</unitdate></unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-correspondence re: genealogy,
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-correspondence re: genealogy,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1903-1904</unitdate></unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-correspondence re: genealogy,
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-correspondence re: genealogy,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1905-1906</unitdate></unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-correspondence re: genealogy,
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-correspondence re: genealogy,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1907-1908</unitdate></unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-correspondence re: genealogy,
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-correspondence re: genealogy,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1918-1932</unitdate></unittitle>
-                  <container type="Box" label="Box">7</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">7</container>
+            <container type="Folder" label="Folder">
                   15</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series IV">Business and Legal Papers, 
-               <unitdate type="inclusive">1714-1909,
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series IV">Business and Legal Papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1714-1909,
                undated</unitdate></unittitle>
-               <container type="Box" label="Box">8</container>
-            </did>
-            <scopecontent>
-               <p>Includes business papers of Daniel K. Stewart, John
+          <container type="Box" label="Box">8</container>
+        </did>
+        <scopecontent>
+          <p>Includes business papers of Daniel K. Stewart, John
                Stewart, and Joseph Bryan concerning their interests in
                the Sloss-Sheffield Works, American Locomotive Company,
                New York Equitable Life Association, Richmond and
@@ -1153,90 +1138,90 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Stewart; bonds; agreements; powers of attorney; deeds;
                wills; suit papers; pardons; certificates; petitions;
                and minutes.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1714-1829</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1830-1859</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1860-1879</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1880-1884</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1885-1886</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1887-1889</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1889-1895</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1900-1909 and
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1714-1829</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1830-1859</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1860-1879</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1880-1884</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1885-1886</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1887-1889</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1889-1895</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1900-1909 and
                      undated</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">8</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series V">Addresses, Essays, Poems, 
-               <unitdate type="inclusive">
+            </unittitle>
+            <container type="Box" label="Box">8</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series V">Addresses, Essays, Poems, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1679-1941</unitdate></unittitle>
-               <container type="Box" label="Box">9</container>
-            </did>
-            <scopecontent>
-               <p>Includes poems; tombstone inscriptions; sermons;
+          <container type="Box" label="Box">9</container>
+        </did>
+        <scopecontent>
+          <p>Includes poems; tombstone inscriptions; sermons;
                prayers; essays, addresses, and histories on Jamestown,
                College of William and Mary, Posey Page, John Randolph
                of Roanoke, statues of Virignia Confederate generals,
@@ -1245,277 +1230,277 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Gloucester County, Virginia, Civil War balloons, Civil
                War experiences, banking in the South, and journalism.
                See also box 12, folders 4-5.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Addresses, Essays, Poems, 
-                  <unitdate>undated</unitdate></unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Addresses, Essays, Poems, 
+                  <unitdate era="ce" calendar="gregorian">undated</unitdate></unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">
                   1-3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1679-1866</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1891-1899</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1903-1906</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1909</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1910-1919</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1925-1941</unitdate>
-                  </unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous, 
-                  <unitdate>undated</unitdate></unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1679-1866</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1891-1899</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1903-1906</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1909</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1910-1919</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1925-1941</unitdate>
+            </unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous, 
+                  <unitdate era="ce" calendar="gregorian">undated</unitdate></unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous, 
-                  <unitdate>undated</unitdate></unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous, 
+                  <unitdate era="ce" calendar="gregorian">undated</unitdate></unittitle>
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1827-1892</unitdate></unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous, Fragments and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous, Fragments and
                   Envelopes</unittitle>
-                  <container type="Box" label="Box">9</container>
-                  <container type="Folder" label="Folder">
+            <container type="Box" label="Box">9</container>
+            <container type="Folder" label="Folder">
                   13</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series VI">Miscellaneous (see also box
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series VI">Miscellaneous (see also box
                12, folders 6-8)</unittitle>
-               <container type="Box" label="Box">10-12</container>
-            </did>
-            <scopecontent>
-               <p>Includes hair locks; handkerchiefs; flowers; lists;
+          <container type="Box" label="Box">10-12</container>
+        </did>
+        <scopecontent>
+          <p>Includes hair locks; handkerchiefs; flowers; lists;
                grade cards; invitations and announcements; diaries;
                account books; vouchers; receipt books; Bryan Memoranda;
                and other miscellaneous items.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Confederate Roster, list of officers and
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Confederate Roster, list of officers and
                   men of the Albemarle Artillery who were captured this
                   9th day of April 1865 at Appomattox (accession
                   24918)</unittitle>
-                  <container type="Box" label="Box">10</container>
-                  <container type="Folder" label="Folder">1</container>
-                  <physdesc>Negative photostats</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Programs</unittitle>
-                  <container type="Box" label="Box">10</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Political parties</unittitle>
-                  <container type="Box" label="Box">10</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Printed miscellaneous material</unittitle>
-                  <container type="Box" label="Box">10</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Printed miscellaneous material</unittitle>
-                  <container type="Box" label="Box">10</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas Green diaries (2), 
-                  <unitdate type="inclusive">1827-1829</unitdate> -
+            <container type="Box" label="Box">10</container>
+            <container type="Folder" label="Folder">1</container>
+            <physdesc>Negative photostats</physdesc>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Programs</unittitle>
+            <container type="Box" label="Box">10</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Political parties</unittitle>
+            <container type="Box" label="Box">10</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Printed miscellaneous material</unittitle>
+            <container type="Box" label="Box">10</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Printed miscellaneous material</unittitle>
+            <container type="Box" label="Box">10</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Green diaries (2), 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1827-1829</unitdate> -
                   includes a letter, 
-                  <unitdate>31 May 1899</unitdate>, from Mary F. Stone
+                  <unitdate era="ce" calendar="gregorian">31 May 1899</unitdate>, from Mary F. Stone
                   to Joseph Bryan concerning diaries</unittitle>
-                  <container type="Box" label="Box">11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan Memoranda No. 1 - Joseph Bryan, Sr.;
+            <container type="Box" label="Box">11</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan Memoranda No. 1 - Joseph Bryan, Sr.;
                   Hugh Bryan; Joseph Bryan, Second; Jonathan
                   Bryan</unittitle>
-                  <container type="Box" label="Box">11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Receipt book, 
-                  <unitdate>1886</unitdate></unittitle>
-                  <container type="Box" label="Box">11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Joseph Bryan diary, 
-                  <unitdate>1888</unitdate>, includes three
+            <container type="Box" label="Box">11</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Receipt book, 
+                  <unitdate era="ce" calendar="gregorian">1886</unitdate></unittitle>
+            <container type="Box" label="Box">11</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Joseph Bryan diary, 
+                  <unitdate era="ce" calendar="gregorian">1888</unitdate>, includes three
                   miscellaneous items, 
-                  <unitdate type="inclusive">1888, 1891,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1888, 1891,
                   1893</unitdate></unittitle>
-                  <container type="Box" label="Box">11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Account book, 
-                  <unitdate type="inclusive">
+            <container type="Box" label="Box">11</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1887-1889</unitdate></unittitle>
-                  <container type="Box" label="Box">11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Checks (vouchers) from Joseph Bryan,
+            <container type="Box" label="Box">11</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Checks (vouchers) from Joseph Bryan,
                   executor of John Stewart</unittitle>
-                  <container type="Box" label="Box">11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Randolph-Bland family (box 6, folder
+            <container type="Box" label="Box">11</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Randolph-Bland family (box 6, folder
                   1)</unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Pendarvis-Bedon-Screeven family (box 6,
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Pendarvis-Bedon-Screeven family (box 6,
                   folder 5)</unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bryan family-English origins (box 6,
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bryan family-English origins (box 6,
                   folder 8)</unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous-manuscript history of
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous-manuscript history of
                   Jamestown (connected to the miscellaneous materials
                   in boxes 9-10)</unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous (connected to the
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous (connected to the
                   miscellaneous materials in boxes 9-10), 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1903-1924</unitdate></unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Maps (connected to the miscellaneous
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Maps (connected to the miscellaneous
                   materials in boxes 9-10)</unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Newspaper clippings (connected to the
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Newspaper clippings (connected to the
                   miscellaneous materials in boxes 9-10)</unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Programs (connected to the miscellaneous
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Programs (connected to the miscellaneous
                   materials in boxes 9-10)</unittitle>
-                  <container type="Box" label="Box">12</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+            <container type="Box" label="Box">12</container>
+            <container type="Folder" label="Folder">8</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

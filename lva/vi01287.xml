@@ -1,1533 +1,1579 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01287">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01287::A Guide to the Henkel family records, 1838-1903)//EN" "vi01287.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01287">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01287::A Guide to the Henkel family records, 1838-1903)//EN" "vi01287.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Henkel family records, <date>1838-1903</date>
-</titleproper>
-<subtitle id="sort">Henkel family records
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Henkel family records, <date era="ce" calendar="gregorian">1838-1903</date></titleproper>
+        <subtitle id="sort">Henkel family records
 <num type="collectionnumber">28040
-</num>
-</subtitle>
-<author>Renee M. Savits
+</num></subtitle>
+        <author>Renee M. Savits
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2008  By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from being created directly into EAD, created by Renee M. Savits, <date>16 May 2008</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Henkel family records, <date>1838-1903</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">28040
-</num>
-</subtitle>
-<author>Renee M. Savits
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2008 
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Renee M. Savits
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Henkel family records, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1838-1903
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">28040
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">15 cu. ft. (137 volumes)
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2008  By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from being created directly into EAD, created by Renee M. Savits, <date era="ce" calendar="gregorian">16 May 2008</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Henkel family records, <date era="ce" calendar="gregorian">1838-1903</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">28040
+</num></subtitle>
+      <author>Renee M. Savits
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008 
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Renee M. Savits
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Henkel family records, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1838-1903
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">28040
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">15 cu. ft. (137 volumes)
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Henkel family. Records, 1838-1903. Business records collection, The Library of Virginia, Richmond.
+        <p>Henkel family. Records, 1838-1903. Business records collection, The Library of Virginia, Richmond.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Purchased 19 April and 17 July 1973.
+        <p>Purchased 19 April and 17 July 1973.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>The Henkel family of New Market, Shenandoah County, Virginia, was a prominent family of Evangelical Lutheran ministers and printers. Paul Henkel (1754-1825) moved with his family to New Market in 1790, and the next year established St. Davidsburg Church. He also established churches in Augusta County, Virginia, and was one of the founders of the Lutheran Synod of North Carolina. His missionary journeys took him into Ohio, Indiana, Kentucky, and Tennessee. He left a large number of descendants, many of whom were ministers, physicians, printers, and merchants. He married Elizabeth (Negeley) Henkel (1757-1843) on 20 November 1776 and they had nine children. Many of the family members were buried in the Emmanuel Lutheran Church Cemetery near New Market, Virginia. 
+      <p>The Henkel family of New Market, Shenandoah County, Virginia, was a prominent family of Evangelical Lutheran ministers and printers. Paul Henkel (1754-1825) moved with his family to New Market in 1790, and the next year established St. Davidsburg Church. He also established churches in Augusta County, Virginia, and was one of the founders of the Lutheran Synod of North Carolina. His missionary journeys took him into Ohio, Indiana, Kentucky, and Tennessee. He left a large number of descendants, many of whom were ministers, physicians, printers, and merchants. He married Elizabeth (Negeley) Henkel (1757-1843) on 20 November 1776 and they had nine children. Many of the family members were buried in the Emmanuel Lutheran Church Cemetery near New Market, Virginia. 
 </p>
-<p>Solomon Henkel (1777-1847), son of Paul and Elizabeth Henkel, practiced medicine in New Market. He also served as postmaster and operated a printing press with his brother Ambrose (1786-1870), who was also a writer and Lutheran minister. Solomon married Rebecca Miller (1780-1854) on 9 September 1800. Their children included: Helena (1801-1823), Seorim (1803-1804), Sylvanus (1805-1830), Samuel Godfrey (1807-1863), Siram Peter (1809-1879), Simeon Socrates (1811-1812), Silon Amos (1813-1844), Solomon David (1815-1872), and Solon Paul Charles (1818-1882).</p>
-
-<p>At various times the Henkel brothers were involved in the dry goods store in New Market and the mill at Plains Mills in Rockingham County. The store was known at different times as Silon A. Henkel and Company; Solomon D. Henkel and Brothers; J. H. Tinsinger and Henkel; Henkel, Koiner, and Company; D. S. Henkel and Brothers; and L. P. Henkel and Brothers.</p>
-
-<p>Samuel Godfrey Henkel was a physician and married to Susan Koiner (1810-1905). Silon Amos Henkel was a physician and married Elizabeth Shaffer (1822-1894) on 18 August 1842. Solomon David Henkel (1815-1872) married Sarah Bowman (1816-1902) on 11 June 1840, daughter of John and Catherine Minnick Bowman. Solon Paul Charles Henkel was a physician and married Anna Maria Miller (1827-1911) on 25 November 1847. Both Silon Amos and Solon Paul Charles attended the University of Pennsylvania medical department.</p>
-
-<p>Siram Peter Henkel (1809-1879) married Margaret Koiner (1820-1899) on 30 June 1835. They had thirteen children including Louis Philip (1837-1904) and Julia Annette (1859-1911). Louis Philip married 5 April 1872 to Anna Maria Moore (1837-1919) and was a merchant in New Market (L. P. Henkel and Brothers). Many members of the family resided at Plains Mills.  Julia Annette Henkel married 26 December 1883 to Joseph Homer Tinsinger (1853-1938). In the 1890s Joseph operated a general store with members of the Henkel family.</p>
-
-<p>Noah Isiah Henkel (1814-1885) was the son of Ambrose Henkel(1786-1870) and was a merchant in New Market. He married 8 November 1836 to Mary Magdalena Zirkle (1816-1896). </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+      <p>Solomon Henkel (1777-1847), son of Paul and Elizabeth Henkel, practiced medicine in New Market. He also served as postmaster and operated a printing press with his brother Ambrose (1786-1870), who was also a writer and Lutheran minister. Solomon married Rebecca Miller (1780-1854) on 9 September 1800. Their children included: Helena (1801-1823), Seorim (1803-1804), Sylvanus (1805-1830), Samuel Godfrey (1807-1863), Siram Peter (1809-1879), Simeon Socrates (1811-1812), Silon Amos (1813-1844), Solomon David (1815-1872), and Solon Paul Charles (1818-1882).</p>
+      <p>At various times the Henkel brothers were involved in the dry goods store in New Market and the mill at Plains Mills in Rockingham County. The store was known at different times as Silon A. Henkel and Company; Solomon D. Henkel and Brothers; J. H. Tinsinger and Henkel; Henkel, Koiner, and Company; D. S. Henkel and Brothers; and L. P. Henkel and Brothers.</p>
+      <p>Samuel Godfrey Henkel was a physician and married to Susan Koiner (1810-1905). Silon Amos Henkel was a physician and married Elizabeth Shaffer (1822-1894) on 18 August 1842. Solomon David Henkel (1815-1872) married Sarah Bowman (1816-1902) on 11 June 1840, daughter of John and Catherine Minnick Bowman. Solon Paul Charles Henkel was a physician and married Anna Maria Miller (1827-1911) on 25 November 1847. Both Silon Amos and Solon Paul Charles attended the University of Pennsylvania medical department.</p>
+      <p>Siram Peter Henkel (1809-1879) married Margaret Koiner (1820-1899) on 30 June 1835. They had thirteen children including Louis Philip (1837-1904) and Julia Annette (1859-1911). Louis Philip married 5 April 1872 to Anna Maria Moore (1837-1919) and was a merchant in New Market (L. P. Henkel and Brothers). Many members of the family resided at Plains Mills.  Julia Annette Henkel married 26 December 1883 to Joseph Homer Tinsinger (1853-1938). In the 1890s Joseph operated a general store with members of the Henkel family.</p>
+      <p>Noah Isiah Henkel (1814-1885) was the son of Ambrose Henkel(1786-1870) and was a merchant in New Market. He married 8 November 1836 to Mary Magdalena Zirkle (1816-1896). </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Business records, 1838-1903, of the Henkel family of New Market, Virginia, including accounts, cash books, daybooks, inventories, ledgers, and minute books. The records document the many business and agricultural interests of the family including a general store in New Market, farms, New Market River Bridge Company, mill in Plains Mills, and scales owned by several family members. 
+      <p>Business records, 1838-1903, of the Henkel family of New Market, Virginia, including accounts, cash books, daybooks, inventories, ledgers, and minute books. The records document the many business and agricultural interests of the family including a general store in New Market, farms, New Market River Bridge Company, mill in Plains Mills, and scales owned by several family members. 
 </p>
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
 </head>
-<p>This collection is arranged into the following series:</p>
-<list type="simple">
-<item>Series I: General Store [New Market, Va.], 1838-1903</item>
-<item>Series II: Plains Mills [Rockingham County, Va.], 1856-1894</item>
-<item>Series III: Miscellaneous, 1868-1903</item>
-</list></arrangement>
-<dsc type="combined">
-<head>Contents List
+      <p>This collection is arranged into the following series:</p>
+      <list type="simple">
+        <item>Series I: General Store [New Market, Va.], 1838-1903</item>
+        <item>Series II: Plains Mills [Rockingham County, Va.], 1856-1894</item>
+        <item>Series III: Miscellaneous, 1868-1903</item>
+      </list>
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="series">
-<did>
-<unittitle><emph render="bold">Series I: General Store [New Market, Va.]</emph>, 
-<unitdate type="inclusive"><emph render="bold">1838-1903</emph></unitdate>.</unittitle>
-<container label="Boxes" type="box">1-39
+      <c01 level="series">
+        <did>
+          <unittitle><emph render="bold">Series I: General Store [New Market, Va.]</emph>, 
+<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">1838-1903</emph></unitdate>.</unittitle>
+          <container label="Boxes" type="box">1-39
 </container>
-<physdesc><extent>Extent: 39 boxes (9.75 cu. ft.).</extent>
-</physdesc>
-</did>
-<scopecontent>
-<p>Records, 1838-1903, of a general store in New Market, owned by several members of the Henkel family. All of the ledgers were not identified so it is unknown if these records belonged to one or several stores. Ledgers were identified at different times as Silon A. Henkel and Company; Solomon D. Henkel and Brothers; J. H. Tinsinger and Henkel; Henkel, Koiner, and Company; D. S. Henkel and Brothers; and L. P. Henkel and Brothers. Most of the volumes relate to L. P. Henkel and Brothers. 
+          <physdesc>
+            <extent>Extent: 39 boxes (9.75 cu. ft.).</extent>
+          </physdesc>
+        </did>
+        <scopecontent>
+          <p>Records, 1838-1903, of a general store in New Market, owned by several members of the Henkel family. All of the ledgers were not identified so it is unknown if these records belonged to one or several stores. Ledgers were identified at different times as Silon A. Henkel and Company; Solomon D. Henkel and Brothers; J. H. Tinsinger and Henkel; Henkel, Koiner, and Company; D. S. Henkel and Brothers; and L. P. Henkel and Brothers. Most of the volumes relate to L. P. Henkel and Brothers. 
 </p>
-<p>Included are account books, cash books, day books, and ledgers. Information found includes name of customer, items purchased, quantity of items purchased, form of payment, amount owed, and amount paid. Items sold include dry goods, molassas, clothing, tobacco, spikes, shoes, meats, liquor, bacon, oil, and other sundry items. Forms of payments include cash, credit, labor, and barter of items such as butter, eggs, and chicken. </p>
-</scopecontent>
-<arrangement>
-<p>Alphabetically by title.
+          <p>Included are account books, cash books, day books, and ledgers. Information found includes name of customer, items purchased, quantity of items purchased, form of payment, amount owed, and amount paid. Items sold include dry goods, molassas, clothing, tobacco, spikes, shoes, meats, liquor, bacon, oil, and other sundry items. Forms of payments include cash, credit, labor, and barter of items such as butter, eggs, and chicken. </p>
+        </scopecontent>
+        <arrangement>
+          <p>Alphabetically by title.
 </p>
-</arrangement>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1850-1855</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1850-1855</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	</did>
-		<scopecontent>
-		<p>Accounts with wholesalers.
+          </did>
+          <scopecontent>
+            <p>Accounts with wholesalers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1860-1871</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1860-1871</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	</did>
-		<scopecontent>
-		<p>Includes New Market hay and cattle scale account book and accounts with merchants for purchases of shoes, coal, tobacco, flour, and other dry goods. Also includes dates of the arrival Union troops in New Market, list of flour furnished to soldier families,  sale of flour to Shenandoah County clerk, and flour mills, 1864-1865.
+          </did>
+          <scopecontent>
+            <p>Includes New Market hay and cattle scale account book and accounts with merchants for purchases of shoes, coal, tobacco, flour, and other dry goods. Also includes dates of the arrival Union troops in New Market, list of flour furnished to soldier families,  sale of flour to Shenandoah County clerk, and flour mills, 1864-1865.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1869-1872</unitdate>.</unittitle>
-	<container label="Box" type="box">1
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1869-1872</unitdate>.</unittitle>
+            <container label="Box" type="box">1
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers accounts with wholesalers. The receipts were pasted in a volume on top of a Register of Conscripts from the 10th Congressional District and Special Orders, 1863-1864. The Register of Conscripts was microfilmed and is available on Misc. reel 5495, LVA Acc. 43957.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers accounts with wholesalers. The receipts were pasted in a volume on top of a Register of Conscripts from the 10th Congressional District and Special Orders, 1863-1864. The Register of Conscripts was microfilmed and is available on Misc. reel 5495, LVA Acc. 43957.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1870-1873</unitdate>.</unittitle>
-	<container label="Box" type="box">2
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1870-1873</unitdate>.</unittitle>
+            <container label="Box" type="box">2
 	</container>
-	</did>
-		<scopecontent>
-		<p>Accounts with wholesalers. Indexed.
+          </did>
+          <scopecontent>
+            <p>Accounts with wholesalers. Indexed.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1872-1874</unitdate>.</unittitle>
-	<container label="Box" type="box">2
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1872-1874</unitdate>.</unittitle>
+            <container label="Box" type="box">2
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers account with wholesalers. Includes an inventory of stock of goods, 1872-1873. Indexed.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers account with wholesalers. Includes an inventory of stock of goods, 1872-1873. Indexed.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1874-1876</unitdate>.</unittitle>
-	<container label="Box" type="box">2
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1874-1876</unitdate>.</unittitle>
+            <container label="Box" type="box">2
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers account with New Market bank.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers account with New Market bank.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1889-1894</unitdate>.</unittitle>
-	<container label="Box" type="box">2
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889-1894</unitdate>.</unittitle>
+            <container label="Box" type="box">2
 	</container>
-	</did>
-		<scopecontent>
-		<p>Accounts with wholesalers.
+          </did>
+          <scopecontent>
+            <p>Accounts with wholesalers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1891-1899</unitdate>.</unittitle>
-	<container label="Box" type="box">2
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891-1899</unitdate>.</unittitle>
+            <container label="Box" type="box">2
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers accounts with wholesalers.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers accounts with wholesalers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">nd</unitdate>.</unittitle>
-	<container label="Box" type="box">2
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">nd</unitdate>.</unittitle>
+            <container label="Box" type="box">2
 	</container>
-	</did>
-		<scopecontent>
-		<p>Accounts with wholesalers.
+          </did>
+          <scopecontent>
+            <p>Accounts with wholesalers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Bank book, 
-	<unitdate type="inclusive">1885-1887</unitdate>.</unittitle>
-	<container label="Box" type="box">3
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bank book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1885-1887</unitdate>.</unittitle>
+            <container label="Box" type="box">3
 	</container>
-	</did>
-		<scopecontent>
-		<p>Silon A. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>Silon A. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Bank book, 
-	<unitdate type="inclusive">1889-1891</unitdate>.</unittitle>
-	<container label="Box" type="box">3
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bank book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889-1891</unitdate>.</unittitle>
+            <container label="Box" type="box">3
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Cash book, 
-	<unitdate type="inclusive">1885-1886</unitdate>.</unittitle>
-	<container label="Box" type="box">3
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Cash book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1885-1886</unitdate>.</unittitle>
+            <container label="Box" type="box">3
 	</container>
-	</did>
-		<scopecontent>
-		<p>S. A. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>S. A. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Cash book, 
-	<unitdate type="inclusive">1887-1889</unitdate>.</unittitle>
-	<container label="Box" type="box">3
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Cash book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887-1889</unitdate>.</unittitle>
+            <container label="Box" type="box">3
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Cash book, 
-	<unitdate type="inclusive">1889-1891</unitdate>.</unittitle>
-	<container label="Box" type="box">3
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Cash book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889-1891</unitdate>.</unittitle>
+            <container label="Box" type="box">3
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1856-1858</unitdate>.</unittitle>
-	<container label="Box" type="box">4
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1856-1858</unitdate>.</unittitle>
+            <container label="Box" type="box">4
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1861-1862</unitdate>.</unittitle>
-	<container label="Box" type="box">5
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1861-1862</unitdate>.</unittitle>
+            <container label="Box" type="box">5
 	</container>
-	</did>
-		<scopecontent>
-		<p>Solomon D. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>Solomon D. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1862-1865</unitdate>.</unittitle>
-	<container label="Box" type="box">5
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1862-1865</unitdate>.</unittitle>
+            <container label="Box" type="box">5
 	</container>
-	</did>
-		<scopecontent>
-		<p>Solomon D. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>Solomon D. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1865-1866</unitdate>.</unittitle>
-	<container label="Box" type="box">5
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1865-1866</unitdate>.</unittitle>
+            <container label="Box" type="box">5
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1865-1867</unitdate>.</unittitle>
-	<container label="Box" type="box">6
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1865-1867</unitdate>.</unittitle>
+            <container label="Box" type="box">6
 	</container>
-	</did>
-		<scopecontent>
-		<p>Solomon D. Henkel.
+          </did>
+          <scopecontent>
+            <p>Solomon D. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1866-1867</unitdate>.</unittitle>
-	<container label="Box" type="box">6
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1866-1867</unitdate>.</unittitle>
+            <container label="Box" type="box">6
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1867 August-1868 July</unitdate>.</unittitle>
-	<container label="Box" type="box">7
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1867 August-1868 July</unitdate>.</unittitle>
+            <container label="Box" type="box">7
 	</container>
-	</did>
-		<scopecontent>
-		<p>Solomon D. Henkel.
+          </did>
+          <scopecontent>
+            <p>Solomon D. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1867 December-1868 November</unitdate>.</unittitle>
-	<container label="Box" type="box">7
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1867 December-1868 November</unitdate>.</unittitle>
+            <container label="Box" type="box">7
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1868 July-1869 January</unitdate>.</unittitle>
-	<container label="Box" type="box">8
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1868 July-1869 January</unitdate>.</unittitle>
+            <container label="Box" type="box">8
 	</container>
-	</did>
-		<scopecontent>
-		<p>Solomon D. Henkel.
+          </did>
+          <scopecontent>
+            <p>Solomon D. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1868 November-1869 November</unitdate>.</unittitle>
-	<container label="Box" type="box">8
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1868 November-1869 November</unitdate>.</unittitle>
+            <container label="Box" type="box">8
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1869 January-August 1870</unitdate>.</unittitle>
-	<container label="Box" type="box">9
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1869 January-August 1870</unitdate>.</unittitle>
+            <container label="Box" type="box">9
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1869 November-1870 November</unitdate>.</unittitle>
-	<container label="Box" type="box">9
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1869 November-1870 November</unitdate>.</unittitle>
+            <container label="Box" type="box">9
 	</container>
-	</did>
-		<scopecontent>
-		<p>Solomon D. Henkel.
+          </did>
+          <scopecontent>
+            <p>Solomon D. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1870-1871</unitdate>.</unittitle>
-	<container label="Box" type="box">10
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1870-1871</unitdate>.</unittitle>
+            <container label="Box" type="box">10
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1871-1872</unitdate>.</unittitle>
-	<container label="Box" type="box">10
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1871-1872</unitdate>.</unittitle>
+            <container label="Box" type="box">10
 	</container>
-	</did>
-		<scopecontent>
-		<p>Solomon D. Henkel and Silon A. Henkel.
+          </did>
+          <scopecontent>
+            <p>Solomon D. Henkel and Silon A. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1872</unitdate>.</unittitle>
-	<container label="Box" type="box">10
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1872</unitdate>.</unittitle>
+            <container label="Box" type="box">10
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1872-1873</unitdate>.</unittitle>
-	<container label="Box" type="box">11
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1872-1873</unitdate>.</unittitle>
+            <container label="Box" type="box">11
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1873-1874</unitdate>.</unittitle>
-	<container label="Box" type="box">11
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1873-1874</unitdate>.</unittitle>
+            <container label="Box" type="box">11
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers Day Book B.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers Day Book B.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1874 June-October</unitdate>.</unittitle>
-	<container label="Box" type="box">12
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1874 June-October</unitdate>.</unittitle>
+            <container label="Box" type="box">12
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1874 June-December</unitdate>.</unittitle>
-	<container label="Box" type="box">12
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1874 June-December</unitdate>.</unittitle>
+            <container label="Box" type="box">12
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1874 December-1875 March</unitdate>.</unittitle>
-	<container label="Box" type="box">12
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1874 December-1875 March</unitdate>.</unittitle>
+            <container label="Box" type="box">12
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1874-1878</unitdate>.</unittitle>
-	<container label="Box" type="box">12
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1874-1878</unitdate>.</unittitle>
+            <container label="Box" type="box">12
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1875-1876</unitdate>.</unittitle>
-	<container label="Box" type="box">13
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1875-1876</unitdate>.</unittitle>
+            <container label="Box" type="box">13
 	</container>
-	</did>
-		<scopecontent>
-		<p>Frank L. Henkel, Cowan's Station.
+          </did>
+          <scopecontent>
+            <p>Frank L. Henkel, Cowan's Station.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1876-1877</unitdate>.</unittitle>
-	<container label="Box" type="box">13
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1876-1877</unitdate>.</unittitle>
+            <container label="Box" type="box">13
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1877-1878</unitdate>.</unittitle>
-	<container label="Box" type="box">14
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1877-1878</unitdate>.</unittitle>
+            <container label="Box" type="box">14
 	</container>
-	</did>
-		
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1879-1881</unitdate>.</unittitle>
-	<container label="Box" type="box">14
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1879-1881</unitdate>.</unittitle>
+            <container label="Box" type="box">14
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1881-1883</unitdate>.</unittitle>
-	<container label="Box" type="box">14
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1881-1883</unitdate>.</unittitle>
+            <container label="Box" type="box">14
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1884</unitdate>.</unittitle>
-	<container label="Box" type="box">15
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1884</unitdate>.</unittitle>
+            <container label="Box" type="box">15
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1885</unitdate>.</unittitle>
-	<container label="Box" type="box">15
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1885</unitdate>.</unittitle>
+            <container label="Box" type="box">15
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 March-May</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 March-May</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 May-July</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 May-July</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 July-September</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 July-September</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 July-1887 January</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 July-1887 January</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 September-October</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 September-October</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 September-October</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 September-October</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 October-November</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 October-November</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 November-December</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 November-December</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1886 November-December</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1886 November-December</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1887 January-May</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887 January-May</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1887 January-May</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887 January-May</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1887 May-August</unitdate>.</unittitle>
-	<container label="Box" type="box">16
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887 May-August</unitdate>.</unittitle>
+            <container label="Box" type="box">16
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1887 August-December</unitdate>.</unittitle>
-	<container label="Box" type="box">17
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887 August-December</unitdate>.</unittitle>
+            <container label="Box" type="box">17
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1887 August-1888 January</unitdate>.</unittitle>
-	<container label="Box" type="box">17
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887 August-1888 January</unitdate>.</unittitle>
+            <container label="Box" type="box">17
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1887 December-1888 July</unitdate>.</unittitle>
-	<container label="Box" type="box">17
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887 December-1888 July</unitdate>.</unittitle>
+            <container label="Box" type="box">17
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1888</unitdate>.</unittitle>
-	<container label="Box" type="box">18
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1888</unitdate>.</unittitle>
+            <container label="Box" type="box">18
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1888</unitdate>.</unittitle>
-	<container label="Box" type="box">18
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1888</unitdate>.</unittitle>
+            <container label="Box" type="box">18
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1888 July-1889 January</unitdate>.</unittitle>
-	<container label="Box" type="box">18
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1888 July-1889 January</unitdate>.</unittitle>
+            <container label="Box" type="box">18
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1889 January-June</unitdate>.</unittitle>
-	<container label="Box" type="box">19
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889 January-June</unitdate>.</unittitle>
+            <container label="Box" type="box">19
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1889 June 26-November 16</unitdate>.</unittitle>
-	<container label="Box" type="box">19
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889 June 26-November 16</unitdate>.</unittitle>
+            <container label="Box" type="box">19
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1889 June 27-November 14</unitdate>.</unittitle>
-	<container label="Box" type="box">19
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889 June 27-November 14</unitdate>.</unittitle>
+            <container label="Box" type="box">19
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1890 January 25-July 4</unitdate>.</unittitle>
-	<container label="Box" type="box">19
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1890 January 25-July 4</unitdate>.</unittitle>
+            <container label="Box" type="box">19
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1890 January 27-June 25</unitdate>.</unittitle>
-	<container label="Box" type="box">19
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1890 January 27-June 25</unitdate>.</unittitle>
+            <container label="Box" type="box">19
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1890 July 4-November 5</unitdate>.</unittitle>
-	<container label="Box" type="box">20
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1890 July 4-November 5</unitdate>.</unittitle>
+            <container label="Box" type="box">20
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1890 July 7-November 7</unitdate>.</unittitle>
-	<container label="Box" type="box">20
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1890 July 7-November 7</unitdate>.</unittitle>
+            <container label="Box" type="box">20
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1890 November 8-1891 March 6</unitdate>.</unittitle>
-	<container label="Box" type="box">20
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1890 November 8-1891 March 6</unitdate>.</unittitle>
+            <container label="Box" type="box">20
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1890 November 8-1891 March 6</unitdate>.</unittitle>
-	<container label="Box" type="box">20
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1890 November 8-1891 March 6</unitdate>.</unittitle>
+            <container label="Box" type="box">20
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1891 March-April</unitdate>.</unittitle>
-	<container label="Box" type="box">21
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891 March-April</unitdate>.</unittitle>
+            <container label="Box" type="box">21
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1891 April 12-June 15</unitdate>.</unittitle>
-	<container label="Box" type="box">21
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891 April 12-June 15</unitdate>.</unittitle>
+            <container label="Box" type="box">21
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1891 April 20-June 10</unitdate>.</unittitle>
-	<container label="Box" type="box">21
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891 April 20-June 10</unitdate>.</unittitle>
+            <container label="Box" type="box">21
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1891 June 6-December 1</unitdate>.</unittitle>
-	<container label="Box" type="box">21
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891 June 6-December 1</unitdate>.</unittitle>
+            <container label="Box" type="box">21
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1891 June 13-December 19</unitdate>.</unittitle>
-	<container label="Box" type="box">21
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891 June 13-December 19</unitdate>.</unittitle>
+            <container label="Box" type="box">21
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1891 December 2-1892 April 18</unitdate>.</unittitle>
-	<container label="Box" type="box">22
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891 December 2-1892 April 18</unitdate>.</unittitle>
+            <container label="Box" type="box">22
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1891 December 19-1892 April 21</unitdate>.</unittitle>
-	<container label="Box" type="box">22
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1891 December 19-1892 April 21</unitdate>.</unittitle>
+            <container label="Box" type="box">22
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1892 April 21-17 September</unitdate>.</unittitle>
-	<container label="Box" type="box">22
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1892 April 21-17 September</unitdate>.</unittitle>
+            <container label="Box" type="box">22
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1892 April 22-14 September</unitdate>.</unittitle>
-	<container label="Box" type="box">23
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1892 April 22-14 September</unitdate>.</unittitle>
+            <container label="Box" type="box">23
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1892 September 19-27 February 1893</unitdate>.</unittitle>
-	<container label="Box" type="box">23
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1892 September 19-27 February 1893</unitdate>.</unittitle>
+            <container label="Box" type="box">23
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1892 September 19-28 February 1893</unitdate>.</unittitle>
-	<container label="Box" type="box">24
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1892 September 19-28 February 1893</unitdate>.</unittitle>
+            <container label="Box" type="box">24
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1893 March 1- July 7</unitdate>.</unittitle>
-	<container label="Box" type="box">24
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893 March 1- July 7</unitdate>.</unittitle>
+            <container label="Box" type="box">24
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1893 March 11-28 June</unitdate>.</unittitle>
-	<container label="Box" type="box">24
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893 March 11-28 June</unitdate>.</unittitle>
+            <container label="Box" type="box">24
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1893 July 8-1 December</unitdate>.</unittitle>
-	<container label="Box" type="box">25
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893 July 8-1 December</unitdate>.</unittitle>
+            <container label="Box" type="box">25
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1893 July 8-6 December</unitdate>.</unittitle>
-	<container label="Box" type="box">25
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893 July 8-6 December</unitdate>.</unittitle>
+            <container label="Box" type="box">25
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1893 December 7-1894 May 24</unitdate>.</unittitle>
-	<container label="Box" type="box">25
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893 December 7-1894 May 24</unitdate>.</unittitle>
+            <container label="Box" type="box">25
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1893 December 7-1894 May 25</unitdate>.</unittitle>
-	<container label="Box" type="box">26
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893 December 7-1894 May 25</unitdate>.</unittitle>
+            <container label="Box" type="box">26
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1894 May 25- 1895 January 30</unitdate>.</unittitle>
-	<container label="Box" type="box">26 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1894 May 25- 1895 January 30</unitdate>.</unittitle>
+            <container label="Box" type="box">26 
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1895 January 31-25 December</unitdate>.</unittitle>
-	<container label="Box" type="box">27
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1895 January 31-25 December</unitdate>.</unittitle>
+            <container label="Box" type="box">27
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1895 January 31-1896 January 30</unitdate>.</unittitle>
-	<container label="Box" type="box">27
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1895 January 31-1896 January 30</unitdate>.</unittitle>
+            <container label="Box" type="box">27
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1896 July 29-1897 May 17</unitdate>.</unittitle>
-	<container label="Box" type="box">27
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1896 July 29-1897 May 17</unitdate>.</unittitle>
+            <container label="Box" type="box">27
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1897 May 17-November 17</unitdate>.</unittitle>
-	<container label="Box" type="box">28
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1897 May 17-November 17</unitdate>.</unittitle>
+            <container label="Box" type="box">28
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1897 November 18-1902 August</unitdate>.</unittitle>
-	<container label="Box" type="box">28
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1897 November 18-1902 August</unitdate>.</unittitle>
+            <container label="Box" type="box">28
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Financial statement, 
-	<unitdate type="inclusive">1850-1881</unitdate>.</unittitle>
-	<container label="Box" type="box">28
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Financial statement, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1850-1881</unitdate>.</unittitle>
+            <container label="Box" type="box">28
 	</container>
-	</did>
-		<scopecontent>
-		<p>A Schedule of the Notes, Accounts, and a Settlement of the Partnership Transactions of Solomon D. Henkel and Brothers. Partnership is between Samuel G., Solomon D., Solon P.C., and Siram P. Henkel.
+          </did>
+          <scopecontent>
+            <p>A Schedule of the Notes, Accounts, and a Settlement of the Partnership Transactions of Solomon D. Henkel and Brothers. Partnership is between Samuel G., Solomon D., Solon P.C., and Siram P. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Inventory, cash book, and special accounts, 
-	<unitdate type="inclusive">1875-1879</unitdate>.</unittitle>
-	<container label="Box" type="box">28
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inventory, cash book, and special accounts, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1875-1879</unitdate>.</unittitle>
+            <container label="Box" type="box">28
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Inventories and wheat and fertilizer accounts, 
-	<unitdate type="inclusive">1879-1880, 1896-1897</unitdate>.</unittitle>
-	<container label="Box" type="box">29
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inventories and wheat and fertilizer accounts, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1879-1880, 1896-1897</unitdate>.</unittitle>
+            <container label="Box" type="box">29
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Inventory book, 
-	<unitdate type="inclusive">1887-1888</unitdate>.</unittitle>
-	<container label="Box" type="box">29
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inventory book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887-1888</unitdate>.</unittitle>
+            <container label="Box" type="box">29
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Inventory and cash book, 
-	<unitdate type="inclusive">1885, 1889</unitdate>.</unittitle>
-	<container label="Box" type="box">29
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inventory and cash book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1885, 1889</unitdate>.</unittitle>
+            <container label="Box" type="box">29
 	</container>
-	</did>
-		<scopecontent>
-		<p>Inventory of goods of S. A. Henkel and Company to L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>Inventory of goods of S. A. Henkel and Company to L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Journal, 
-	<unitdate type="inclusive">1884-1891</unitdate>.</unittitle>
-	<container label="Box" type="box">29
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Journal, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1884-1891</unitdate>.</unittitle>
+            <container label="Box" type="box">29
 	</container>
-	</did>
-		<scopecontent>
-		<p>Wagon Book B - Henkel, Graves, and Company.
+          </did>
+          <scopecontent>
+            <p>Wagon Book B - Henkel, Graves, and Company.
 		</p>
-		</scopecontent>
-		</c02>
-		<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1838-1851</unitdate>.</unittitle>
-	<container label="Box" type="box">30
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1838-1851</unitdate>.</unittitle>
+            <container label="Box" type="box">30
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1854-1866</unitdate>.</unittitle>
-	<container label="Box" type="box">31
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1854-1866</unitdate>.</unittitle>
+            <container label="Box" type="box">31
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed.
+          </did>
+          <scopecontent>
+            <p>Indexed.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1865-1867</unitdate>.</unittitle>
-	<container label="Box" type="box">32
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1865-1867</unitdate>.</unittitle>
+            <container label="Box" type="box">32
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed.
+          </did>
+          <scopecontent>
+            <p>Indexed.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1867-1870</unitdate>.</unittitle>
-	<container label="Box" type="box">32
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1867-1870</unitdate>.</unittitle>
+            <container label="Box" type="box">32
 	</container>
-	</did>
-		<scopecontent>
-		<p>L. P. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>L. P. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1867-1872</unitdate>.</unittitle>
-	<container label="Box" type="box">33
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1867-1872</unitdate>.</unittitle>
+            <container label="Box" type="box">33
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. Solomon P. Henkel Ledger B.
+          </did>
+          <scopecontent>
+            <p>Indexed. Solomon P. Henkel Ledger B.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1871-1880</unitdate>.</unittitle>
-	<container label="Box" type="box">34
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1871-1880</unitdate>.</unittitle>
+            <container label="Box" type="box">34
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. Includes Statement of Phosphates sold, 1879 (pp. 310-312).
+          </did>
+          <scopecontent>
+            <p>Indexed. Includes Statement of Phosphates sold, 1879 (pp. 310-312).
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1873-1874</unitdate>.</unittitle>
-	<container label="Box" type="box">35
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1873-1874</unitdate>.</unittitle>
+            <container label="Box" type="box">35
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1875-1876</unitdate>.</unittitle>
-	<container label="Box" type="box">36
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1875-1876</unitdate>.</unittitle>
+            <container label="Box" type="box">36
 	</container>
-	</did>
-		<scopecontent>
-		<p>Henkel Koiner and Company.
+          </did>
+          <scopecontent>
+            <p>Henkel Koiner and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1875-1879</unitdate>.</unittitle>
-	<container label="Box" type="box">36
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1875-1879</unitdate>.</unittitle>
+            <container label="Box" type="box">36
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. Franklin L. Henkel and Company. 
+          </did>
+          <scopecontent>
+            <p>Indexed. Franklin L. Henkel and Company. 
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1877-1879</unitdate>.</unittitle>
-	<container label="Box" type="box">36
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1877-1879</unitdate>.</unittitle>
+            <container label="Box" type="box">36
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. Wagon book B and Day book.
+          </did>
+          <scopecontent>
+            <p>Indexed. Wagon book B and Day book.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1877-1880</unitdate>.</unittitle>
-	<container label="Box" type="box">37
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1877-1880</unitdate>.</unittitle>
+            <container label="Box" type="box">37
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. D. S. Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>Indexed. D. S. Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1885-1887</unitdate>.</unittitle>
-	<container label="Box" type="box">37
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1885-1887</unitdate>.</unittitle>
+            <container label="Box" type="box">37
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. L. P. Henkel and Company Ledger A.
+          </did>
+          <scopecontent>
+            <p>Indexed. L. P. Henkel and Company Ledger A.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1885-1889</unitdate>.</unittitle>
-	<container label="Box" type="box">37
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1885-1889</unitdate>.</unittitle>
+            <container label="Box" type="box">37
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. S. A. Henkel.
+          </did>
+          <scopecontent>
+            <p>Indexed. S. A. Henkel.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1888-1894</unitdate>.</unittitle>
-	<container label="Box" type="box">38
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1888-1894</unitdate>.</unittitle>
+            <container label="Box" type="box">38
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>Indexed. L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1894-1903</unitdate>.</unittitle>
-	<container label="Box" type="box">39
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1894-1903</unitdate>.</unittitle>
+            <container label="Box" type="box">39
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. L. P. Henkel and Company.
+          </did>
+          <scopecontent>
+            <p>Indexed. L. P. Henkel and Company.
 		</p>
-		</scopecontent>
-		</c02>
-</c01>
-<c01 level="series">
-<did>
-<unittitle><emph render="bold">Series II: Plains Mills [Rockingham County, Va.]</emph>, 
-<unitdate type="inclusive"><emph render="bold">1856-1897</emph></unitdate>.</unittitle>
-<container label="Boxes" type="box">40-43
+          </scopecontent>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle><emph render="bold">Series II: Plains Mills [Rockingham County, Va.]</emph>, 
+<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">1856-1897</emph></unitdate>.</unittitle>
+          <container label="Boxes" type="box">40-43
 </container>
-<physdesc><extent>Extent: 4 boxes and 1 volume on shelf (1.1 cu. ft.).</extent>
-</physdesc>
-</did>
-<scopecontent>
-<p>Records, 1856-1897, of Plains Mills, 1856-1894, a flour milling business located in Rockingham County, Virginia. Included are account books, day books, and ledgers. Entered in the volumes are charges for the milling of corn and wheat and sawing of lumber. The records also contains profit and loss statements, and wheat, flour, expense and cash accounts. Of note are entries in the account and day books containing names of workers, work performed, amount of time, and pay. Many members of the family of Siram Peter and Margaret Koiner Henkel resided at Plains Mills. 
+          <physdesc>
+            <extent>Extent: 4 boxes and 1 volume on shelf (1.1 cu. ft.).</extent>
+          </physdesc>
+        </did>
+        <scopecontent>
+          <p>Records, 1856-1897, of Plains Mills, 1856-1894, a flour milling business located in Rockingham County, Virginia. Included are account books, day books, and ledgers. Entered in the volumes are charges for the milling of corn and wheat and sawing of lumber. The records also contains profit and loss statements, and wheat, flour, expense and cash accounts. Of note are entries in the account and day books containing names of workers, work performed, amount of time, and pay. Many members of the family of Siram Peter and Margaret Koiner Henkel resided at Plains Mills. 
 </p>
-</scopecontent>
-<arrangement>
-<p>Alphabetically by title.
+        </scopecontent>
+        <arrangement>
+          <p>Alphabetically by title.
 </p>
-</arrangement>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1869-1874</unitdate>.</unittitle>
-	<container label="Box" type="box">40
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1869-1874</unitdate>.</unittitle>
+            <container label="Box" type="box">40
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1881-1883</unitdate>.</unittitle>
-	<container label="Box" type="box">40
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1881-1883</unitdate>.</unittitle>
+            <container label="Box" type="box">40
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1883-1884</unitdate>.</unittitle>
-	<container label="Box" type="box">40
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1883-1884</unitdate>.</unittitle>
+            <container label="Box" type="box">40
 	</container>
-	</did>
-		<scopecontent>
-		<p>Workers account book includes name of workers, work performed and amount of time, and pay. Work included thinning corn, making hay, and shucking corn. Workers were paid in money and food. Some workers boarded and included are notes on number of meals taken and cost per meal.
+          </did>
+          <scopecontent>
+            <p>Workers account book includes name of workers, work performed and amount of time, and pay. Work included thinning corn, making hay, and shucking corn. Workers were paid in money and food. Some workers boarded and included are notes on number of meals taken and cost per meal.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Account book, 
-	<unitdate type="inclusive">1889-1891</unitdate>.</unittitle>
-	<container label="Box" type="box">40
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Account book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889-1891</unitdate>.</unittitle>
+            <container label="Box" type="box">40
 	</container>
-	</did>
-		<scopecontent>
-		<p>Brickyard accounts, lumber for Emmanuel Lutheran Church, and stud book for horse Shannon.
+          </did>
+          <scopecontent>
+            <p>Brickyard accounts, lumber for Emmanuel Lutheran Church, and stud book for horse Shannon.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1856-1860</unitdate>.</unittitle>
-	<container label="Box" type="box">40
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1856-1860</unitdate>.</unittitle>
+            <container label="Box" type="box">40
 	</container>
-	</did>
-		<scopecontent>
-		<p>Day book of Siram P. Henkel, No. 1, Plains Mills Farm, Rockingham County, Virginia.
+          </did>
+          <scopecontent>
+            <p>Day book of Siram P. Henkel, No. 1, Plains Mills Farm, Rockingham County, Virginia.
 		</p>
-		</scopecontent>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1860-1868</unitdate>.</unittitle>
-	<container label="Box" type="box">41
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1860-1868</unitdate>.</unittitle>
+            <container label="Box" type="box">41
 	</container>
-	</did>
-		<scopecontent>
-		<p>Day book of Siram P. Henkel, No. 3, Plains Mills Farm, Rockingham County, Virginia. Includes entries for the Confederate States.
+          </did>
+          <scopecontent>
+            <p>Day book of Siram P. Henkel, No. 3, Plains Mills Farm, Rockingham County, Virginia. Includes entries for the Confederate States.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1874-1878</unitdate>.</unittitle>
-	<container label="Box" type="box">41
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1874-1878</unitdate>.</unittitle>
+            <container label="Box" type="box">41
 	</container>
-	</did>
-		<scopecontent>
-		<p>Day book of Siram P. Henkel, No. 5, Plains Mills Farm, Rockingham County, Virginia. 
+          </did>
+          <scopecontent>
+            <p>Day book of Siram P. Henkel, No. 5, Plains Mills Farm, Rockingham County, Virginia. 
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1874-1878</unitdate>.</unittitle>
-	<container label="Box" type="box">41
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1874-1878</unitdate>.</unittitle>
+            <container label="Box" type="box">41
 	</container>
-	</did>
-		<scopecontent>
-		<p>Milling daybook.
+          </did>
+          <scopecontent>
+            <p>Milling daybook.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1884-1887</unitdate>.</unittitle>
-	<container label="Box" type="box">41
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1884-1887</unitdate>.</unittitle>
+            <container label="Box" type="box">41
 	</container>
-	</did>
-		<scopecontent>
-		<p>Includes inventory, 1897.
+          </did>
+          <scopecontent>
+            <p>Includes inventory, 1897.
 		</p>
-		</scopecontent>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1887-1891</unitdate>.</unittitle>
-	<container label="Box" type="box">42
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887-1891</unitdate>.</unittitle>
+            <container label="Box" type="box">42
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1889-1891</unitdate>.</unittitle>
-	<container label="Box" type="box">42
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889-1891</unitdate>.</unittitle>
+            <container label="Box" type="box">42
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1892-1893</unitdate>.</unittitle>
-	<container label="Box" type="box">42
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1892-1893</unitdate>.</unittitle>
+            <container label="Box" type="box">42
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Day book, 
-	<unitdate type="inclusive">1893-1894</unitdate>.</unittitle>
-	<container label="Box" type="box">42
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Day book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893-1894</unitdate>.</unittitle>
+            <container label="Box" type="box">42
 	</container>
-	</did>
-		</c02>
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1869-1877</unitdate>.</unittitle>
-	<container label="Box" type="box">43
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1869-1877</unitdate>.</unittitle>
+            <container label="Box" type="box">43
 	</container>
-	</did>
-		</c02><c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1869-1880</unitdate>.</unittitle>
-	<container label="Box" type="box">43 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1869-1880</unitdate>.</unittitle>
+            <container label="Box" type="box">43 
 	</container>
-	</did>
-		<scopecontent>
-		<p>Henkel and Brothers.
+          </did>
+          <scopecontent>
+            <p>Henkel and Brothers.
 		</p>
-		</scopecontent>
-		</c02>
-
-<c02 level="file">
-	<did>
-	<unittitle>Ledger, 
-	<unitdate type="inclusive">1888-1897</unitdate>.</unittitle>
-	<container label="Volume" type="volume">on shelf
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1888-1897</unitdate>.</unittitle>
+            <container label="Volume" type="volume">on shelf
 	</container>
-	</did>
-				</c02>
-
-
-</c01>
-<c01 level="series">
-<did>
-<unittitle><emph render="bold">Series III: Miscellaneous</emph>, 
-<unitdate type="inclusive"><emph render="bold">1868-1903</emph></unitdate>.</unittitle>
-<container label="Boxes" type="box">44-45
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle><emph render="bold">Series III: Miscellaneous</emph>, 
+<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">1868-1903</emph></unitdate>.</unittitle>
+          <container label="Boxes" type="box">44-45
 </container>
-<physdesc><extent>Extent: 2 boxes (.5 cu. ft.).</extent>
-</physdesc>
-</did>
-<scopecontent>
-<p>Records, 1868-1903, including account books, ledgers, and minutes for various companies that were partly owned by members of the Henkel family or family members served on the boards. Includes a ledger for a grocery run by Henkel and Joseph Tinsinger, in-law; saw mill accounts; scale ledgers; and a minute book of the New Market River Bridge Company.
+          <physdesc>
+            <extent>Extent: 2 boxes (.5 cu. ft.).</extent>
+          </physdesc>
+        </did>
+        <scopecontent>
+          <p>Records, 1868-1903, including account books, ledgers, and minutes for various companies that were partly owned by members of the Henkel family or family members served on the boards. Includes a ledger for a grocery run by Henkel and Joseph Tinsinger, in-law; saw mill accounts; scale ledgers; and a minute book of the New Market River Bridge Company.
 </p>
-<p>Of note is the minute book, 1868-1887, of the New River Bridge Company. The Company was incorporated in 1869 by W. M. Sibert, D. F. Kazey, A. S. Miller, Thomas Moore, J. B. Strayer, B. Z. Price, C. C. Henkel, and L. M. Henkel. The company was formed to construct a turnpike from New Market to New Market station on the Orange, Alexandria, and Manassas railroad, and to erect a bridge over the North Shenandoah River. In 1877 S. P. C. Henkel, Thomas Moore, Christian Shirley, D. F. Kazey, W. H. Rice, S.P. Shirley, and L. P. Henkel assumed partnership of the company.</p>
-</scopecontent>
-
-
-<c02 level="file">
-	<did>
-	<unittitle>Hay, millwork, and apple accounts, 
-	<unitdate type="inclusive">1893-1895</unitdate>.</unittitle>
-	<container label="Box" type="box">44
+          <p>Of note is the minute book, 1868-1887, of the New River Bridge Company. The Company was incorporated in 1869 by W. M. Sibert, D. F. Kazey, A. S. Miller, Thomas Moore, J. B. Strayer, B. Z. Price, C. C. Henkel, and L. M. Henkel. The company was formed to construct a turnpike from New Market to New Market station on the Orange, Alexandria, and Manassas railroad, and to erect a bridge over the North Shenandoah River. In 1877 S. P. C. Henkel, Thomas Moore, Christian Shirley, D. F. Kazey, W. H. Rice, S.P. Shirley, and L. P. Henkel assumed partnership of the company.</p>
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Hay, millwork, and apple accounts, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1893-1895</unitdate>.</unittitle>
+            <container label="Box" type="box">44
 	</container>
-	</did>
-		</c02>		
-<c02 level="file">
-	<did>
-	<unittitle>Saw mill accounts, 
-	<unitdate type="inclusive">1890</unitdate>.</unittitle>
-	<container label="Box" type="box">44
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Saw mill accounts, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1890</unitdate>.</unittitle>
+            <container label="Box" type="box">44
 	</container>
-	</did>
-		</c02>	
-	<c02 level="file">
-	<did>
-	<unittitle>Scale book, 
-	<unitdate type="inclusive">1887-1888</unitdate>.</unittitle>
-	<container label="Box" type="box">44
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Scale book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1887-1888</unitdate>.</unittitle>
+            <container label="Box" type="box">44
 	</container>
-	</did>
-		</c02>		<c02 level="file">
-	<did>
-	<unittitle>Scale book, 
-	<unitdate type="inclusive">1888-1890</unitdate>.</unittitle>
-	<container label="Box" type="box">44
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Scale book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1888-1890</unitdate>.</unittitle>
+            <container label="Box" type="box">44
 	</container>
-	</did>
-		</c02>		<c02 level="file">
-	<did>
-	<unittitle>Scale book, 
-	<unitdate type="inclusive">1898-1903</unitdate>.</unittitle>
-	<container label="Box" type="box">44
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Scale book, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1898-1903</unitdate>.</unittitle>
+            <container label="Box" type="box">44
 	</container>
-	</did>
-		<scopecontent>
-		<p>J. H. Rupp, weighmaster.
+          </did>
+          <scopecontent>
+            <p>J. H. Rupp, weighmaster.
 		</p>
-		</scopecontent>
-		</c02>	
-	<c02 level="file">
-	<did>
-	<unittitle>Tinsinger and Henkel ledger, 
-	<unitdate type="inclusive">1889-1891</unitdate>.</unittitle>
-	<container label="Box" type="box">45
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Tinsinger and Henkel ledger, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1889-1891</unitdate>.</unittitle>
+            <container label="Box" type="box">45
 	</container>
-	</did>
-		<scopecontent>
-		<p>Indexed. Located in Mt. Jackson, Virginia. Was J. H. Tinsinger and later Tinsinger and Henkel. Dealers in Fresh meats, sausage, lard, bacon, flour, also family groceries. 
+          </did>
+          <scopecontent>
+            <p>Indexed. Located in Mt. Jackson, Virginia. Was J. H. Tinsinger and later Tinsinger and Henkel. Dealers in Fresh meats, sausage, lard, bacon, flour, also family groceries. 
 		</p>
-		</scopecontent>
-		</c02>		
-<c02 level="file">
-	<did>
-	<unittitle>New Market River Bridge Company, 
-	<unitdate type="inclusive">1868-1877, 1886-1887</unitdate>.</unittitle>
-	<container label="Box" type="box">45
+          </scopecontent>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>New Market River Bridge Company, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1868-1877, 1886-1887</unitdate>.</unittitle>
+            <container label="Box" type="box">45
 	</container>
-	</did>
-		<scopecontent>
-		<p>Minute, ledger, and cash book.
+          </did>
+          <scopecontent>
+            <p>Minute, ledger, and cash book.
 		</p>
-		</scopecontent>
-		</c02>	</c01>
-</dsc>
-</archdesc>
+          </scopecontent>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
-	

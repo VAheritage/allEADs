@@ -1,145 +1,125 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00748">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00748::A Guide to the William Leigh Letters, 1825-1836)//EN&amp;#34; &amp;#34;vi00748.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00748">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00748::A Guide to the William Leigh Letters, 1825-1836)//EN&amp;#34; &amp;#34;vi00748.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00748::A Guide to the William
              Leigh Letters, 1825-1836)//EN" "vi00748.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the William Leigh Letters, 
-            <date>1825-1836</date></titleproper>
-            <subtitle id="sort">Leigh, William, Letters, 1825-1836 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the William Leigh Letters, 
+            <date era="ce" calendar="gregorian">1825-1836</date></titleproper>
+        <subtitle id="sort">Leigh, William, Letters, 1825-1836 
             <num type="collectionnumber">18762</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Trenton Hizer</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 10 Kilobytes</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">ca. 10 Kilobytes</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Trenton Hizer, 
-         <date>18 August 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">18 August 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00748::A Guide to the William Leigh Letters,
             1825-1836)//EN" "vi00748.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the William Leigh Letters, 
-         <date>1825-1836</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the William Leigh Letters, 
+         <date era="ce" calendar="gregorian">1825-1836</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">18762</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">William Leigh Letters, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">William Leigh Letters, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1825-1836</unitdate></unittitle>
-         <unitid label="Accession number">18762</unitid>
-         <physloc label="Physical Location">Personal Papers Collection,
+      <unitid label="Accession number">18762</unitid>
+      <physloc label="Physical Location">Personal Papers Collection,
          Acc. 18762</physloc>
-         <physdesc label="Physical Characteristics">54 pages</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">William Leigh</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <physdesc label="Physical Characteristics">54 pages</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">William Leigh</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>William Leigh. Letters, 1825-1836. Accession 18762.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>William Leigh. Letters, 1825-1836. Accession 18762.
             Personal papers collection. The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Purchased from the Anderson Galleries, New York, New
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Purchased from the Anderson Galleries, New York, New
             York, 11 December 1923.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>William Leigh was born in 1783 in Halifax County, Virginia,
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>William Leigh was born in 1783 in Halifax County, Virginia,
          to William Leigh (1748-1787) and Elizabeth Watkins Leigh (d.
          1799). He graduated from the College of William and Mary in
          1804 and was admitted to the bar in 1805. Leigh practiced law
@@ -155,10 +135,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          children. Leigh died at "Leighwood" in Halifax County 19 July
          1871, and was buried at St. John's Episcopal Church in Halifax
          County.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Letters, 1825-1836, from William Leigh (1783-1871) of
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Letters, 1825-1836, from William Leigh (1783-1871) of
          Halifax County, Virginia, to Peachy Ridgway Gilmer (1779-1836)
          of Albemarle County, Virginia, discussing Leigh's judgeship of
          the Virginia General Court and the Circuit Superior Court of
@@ -189,61 +169,61 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Leigh of Richmond, Virginia, to Gilmer, then living in Bedford
          County, Virginia, concerning efforts to prevent a call for a
          state constitutional convention.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Chronological</p>
-      </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>17 August 1825,</unitdate> Benjamin Watkins
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Chronological</p>
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">17 August 1825,</unitdate> Benjamin Watkins
                Leigh, Richmond, [Virginia], to Peachy R. Gilmer,
                Bedford County, [Virginia], discussing measures to
                oppose a state constitutional convention. Leigh comments
                on the Staunton Convention, suffrage, the interests of
                the slaveholding part of the state, and measures
                undertaken by convention opponents.</unittitle>
-               <physdesc>5 p., 
+          <physdesc>5 p., 
                <abbr expan="Autographed Letter Unsigned">AL.</abbr>,
                signature removed.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>24 April 1831,</unitdate> William Leigh,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">24 April 1831,</unitdate> William Leigh,
                Halifax County, [Virginia], to Peachy R. Gilmer,
                [Albemarle County, Virginia], concerning John Randolph's
                election bid, Leigh's being appointed to the General
                Court, Gilmer's son George, and personal
                news.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>22 July 1831,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">22 July 1831,</unitdate> William Leigh to
                Peachy R. Gilmer regretting that he will not be able to
                visit Gilmer and George Tucker. Also comments on John
                Randolph's horses as studs. Leigh states that Randolph
                will not run for Congress because of his health and
                comments on his possible successors, Thomas T. Bouldin
                and George W. Crump.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>18 November 1831,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">18 November 1831,</unitdate> William Leigh to
                Peachy R. Gilmer regarding John Randolph wanting to sell
                his horses; Leigh's meeting with the lawyers of
                Charlotte, Halifax, and Pittsylvania Counties; his
@@ -251,29 +231,29 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                and Chancery; and his concern that Shelton Cooper, a
                Pittsylvania lawyer, may be leaving for
                Missouri.</unittitle>
-               <physdesc>2 p., 
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>22 April 1832,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">22 April 1832,</unitdate> William Leigh to
                Peachy R. Gilmer concerning John Randolph's health;
                politics; Leigh's belief in state rights and his fear of
                a loss of civil liberty; George Tucker's work on a
                biography of Thomas Jefferson and Leigh's opinion of
                Jefferson; Leigh's plans to visit Gilmer.</unittitle>
-               <physdesc>2 p., 
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>25 November 1832,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">25 November 1832,</unitdate> William Leigh to
                Peachy R. Gilmer commenting on Gilmer's career and
                reputation. He asks Gilmer to check on his son, Thomas
                Leigh, at the University of Virginia and informs him
@@ -281,15 +261,15 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                provides news about the Pittsylvania County court. Leigh
                states he doesn't know if he will be able to visit in
                the summer.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>4 February 1833,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">4 February 1833,</unitdate> William Leigh to
                Peachy R. Gilmer thanking him for report on Thomas
                Leigh. Leigh discusses Gilmer's support for Andrew
                Jackson and Leigh's support for state rights,
@@ -297,30 +277,30 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                concern for the continuation of the Union. Leigh also
                provides family and personal news, and comments on
                George Tucker.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>12 April 1833,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">12 April 1833,</unitdate> William Leigh to
                Peachy R. Gilmer, Botetourt County, [Virginia],
                regarding his difficulties with [William B.] Banks who
                has resigned as prosecutor of Halifax Superior Court.
                Leigh comments on state politics, especially recent
                elections. Leigh sends greetings to Gilmer's family and
                to mutual friends.</unittitle>
-               <physdesc>2 p., 
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>23 April 1833,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">23 April 1833,</unitdate> William Leigh to
                Peachy R. Gilmer concerning illness in his family and in
                Halifax County. Leigh has little information on mutual
                friends in Pittsylvania County. He comments on George
@@ -328,15 +308,15 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                regrets that his brother Benjamin Watkins Leigh is not a
                successful agriculturalist. Leigh states he may travel
                north in the summer.</unittitle>
-               <physdesc>2 p., 
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>25 June 1833,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">25 June 1833,</unitdate> William Leigh to
                Peachy R. Gilmer, Albemarle County, concerning the death
                of John Randolph and his wills and estate. Leigh
                complains about his work load from the now-defuct
@@ -344,15 +324,15 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Superior Court of Law and Chancery and thinks it may
                prevent him from realizing his summer plans. Leigh looks
                forward to a visit from Gilmer.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>18 August 1833,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">18 August 1833,</unitdate> William Leigh to
                Peachy R. Gilmer berating Gilmer for his
                self-deprecation. Leigh comments on John Randolph's
                wills and Leigh's difficulties with Randolph's brothers
@@ -363,54 +343,54 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Mentions that he has been reconciled with Thomas T.
                Bouldin. Leigh asks Gilmer to remember him to Gilmer's
                family.</unittitle>
-               <physdesc>6 p., 
+          <physdesc>6 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>21 September 1833,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">21 September 1833,</unitdate> William Leigh to
                Peachy R. Gilmer commenting on Gilmer's health, John
                Randolph's papers, and Leigh's travel schedule for court
                dates.</unittitle>
-               <physdesc>2 p., 
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>30 September 1833,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">30 September 1833,</unitdate> William Leigh to
                Peachy R. Gilmer regarding John Randolph's estate and
                Randolph's wills concerning the emancipation of his
                slaves.</unittitle>
-               <physdesc>2 p., 
+          <physdesc>2 p., 
                <abbr expan="Autographed Letter Unsigned">AL.</abbr>,
                singnature missing.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>12 January 1834,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">12 January 1834,</unitdate> William Leigh to
                Peachy R. Gilmer describing Christmas in Halifax County
                and thanking Gilmer for his comments on Leigh's son
                Thomas. Leigh also remarks on John Randolph's estate and
                Leigh's efforts to get Francis Walker Gilmer's letters
                back for Gilmer. Leigh comments on the election of
                governor in the Virginia General Assembly.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>3 March 1834,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">3 March 1834,</unitdate> William Leigh to
                Peachy R. Gilmer offering condolences on the death of
                Gilmer's brother John and of William Wirt. Leigh
                comments on politics, especially on the election of his
@@ -420,15 +400,15 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Gilmer of the continuing controversy over John
                Randolph's estate. He offers news of mutual friends in
                Pittsylvania County and family news.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>22 November 1834,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">22 November 1834,</unitdate> William Leigh to
                Peachy R. Gilmer asking after his health and his family.
                Leigh plans to travel to Richmond to spend time with his
                brother Benjamin Watkins Leigh before his brother leaves
@@ -437,15 +417,15 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                estate and not testifying in court, he might prevent
                Randolph's slaves from receiving their
                freedom.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>16 January 1835,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">16 January 1835,</unitdate> William Leigh to
                Peachy R. Gilmer regarding Leigh's stay in Richmond for
                the General Court. He comments on Gilmer's interest in
                politics and his own lack of interest. Leigh criticizes
@@ -453,15 +433,15 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Randolph's estate and comments on George Tucker's
                career. Leigh sends greetings to Gilmer's family and
                notes his own is doing well.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>9 June 1835,</unitdate> William Leigh to Peachy
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">9 June 1835,</unitdate> William Leigh to Peachy
                R. Gilmer concerning Gilmer's son Peachy Harmer Gilmer
                who is beginning a medical career in Halifax County.
                Leigh informs Gilmer of a visit he received from Bishop
@@ -469,25 +449,25 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                John Randolph's estate so that he might testify on
                behalf of Randolph's slaves who were emancipated under
                one of Randolph's wills.</unittitle>
-               <physdesc>3 p., 
+          <physdesc>3 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>25 February 1836,</unitdate> William Leigh to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">25 February 1836,</unitdate> William Leigh to
                Peachy R. Gilmer expressing concern over Gilmer's health
                and commenting on getting old and losing friends. Leigh
                bemoans the current state of politics which he blames on
                the expansion of suffrage. He remarks on Gilmer's plans
                to visit Halifax County later in year.</unittitle>
-               <physdesc>2 p., 
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-      </dsc>
-   </archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

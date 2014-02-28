@@ -1,495 +1,466 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]><ead id="vi00925">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00925::A Guide to the Margaret Williams Papers, 1970-1985)//EN" "vi00925.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00925">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00925::A Guide to the Margaret Williams Papers, 1970-1985)//EN" "vi00925.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Margaret Williams Papers, <date>1970-1985</date>
-</titleproper>
-<subtitle id="sort">Williams, Margaret, Papers, 1970-1985
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Margaret Williams Papers, <date era="ce" calendar="gregorian">1970-1985</date></titleproper>
+        <subtitle id="sort">Williams, Margaret, Papers, 1970-1985
 <num type="collectionnumber">32504
-</num>
-</subtitle>
-<author>Alex Lorch
+</num></subtitle>
+        <author>Alex Lorch
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2005 By the Library of Virginia. All rights reserved.
-</date>
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-<p id="filesize">3 kb
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record by Alex Lorch. <date>January 2005.</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Margaret Williams Papers, <date>1970-1985</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">32504
-</num>
-</subtitle>
-<author>Alex Lorch
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2005
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Library of Virginia staff
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository">Library of Virginia
-</repository>
-<unittitle label="Title">Margaret Williams Papers,
-<unitdate type="inclusive" label="Date">1970-1985
-</unitdate>
-</unittitle>
-<unitid label="Accession number">32504
-</unitid>
-<physdesc label="Physical Characteristics">2.45 cubic feet
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2005 By the Library of Virginia. All rights reserved.
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+        <p id="filesize">3 kb
+</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record by Alex Lorch. <date era="ce" calendar="gregorian">January 2005.</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Margaret Williams Papers, <date era="ce" calendar="gregorian">1970-1985</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">32504
+</num></subtitle>
+      <author>Alex Lorch
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2005
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Library of Virginia staff
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository">Library of Virginia
+</repository>
+      <unittitle label="Title">Margaret Williams Papers,
+<unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">1970-1985
+</unitdate></unittitle>
+      <unitid label="Accession number">32504
+</unitid>
+      <physdesc label="Physical Characteristics">2.45 cubic feet
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict>
-<head>Access Restrictions
+      <accessrestrict>
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict>
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite>
-<head>Preferred Citation
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation
 </head>
-<p>Margaret Williams Papers, 1970-1985. Accession 32504, Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
+        <p>Margaret Williams Papers, 1970-1985. Accession 32504, Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo>
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information
 </head>
-<p>Gift of Margaret Williams, Alexandria, Virginia, in 1985.
+        <p>Gift of Margaret Williams, Alexandria, Virginia, in 1985.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist>
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information
 </head>
-<p>Born in 1953 in Norfolk, Virginia, Margaret "Meg" Williams was an active member of the Virginia Women's Political Caucus from 1971-1976. She also served on a number of other women's organizations including the
-Women's Lobby and co-authored <title render="italic">The Almanac of Virginia Politics, 1977-1985</title>. A full biographical vita compiled in 1985 is included in the collection.
+      <p>Born in 1953 in Norfolk, Virginia, Margaret "Meg" Williams was an active member of the Virginia Women's Political Caucus from 1971-1976. She also served on a number of other women's organizations including the
+Women's Lobby and co-authored <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Almanac of Virginia Politics, 1977-1985</title>. A full biographical vita compiled in 1985 is included in the collection.
 </p>
-</bioghist>
-<scopecontent>
-<head>Scope and Content
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content
 </head>
-<p>Papers, 1970-1985, of Margaret "Meg" Williams (1953-) principally consisting of correspodence, speeches, printed resource materials, newspaper clippings, writings, and General Assembly bills pertaining to
+      <p>Papers, 1970-1985, of Margaret "Meg" Williams (1953-) principally consisting of correspodence, speeches, printed resource materials, newspaper clippings, writings, and General Assembly bills pertaining to
 women. This material generally concerns Williams' activities as a woman's activist in Virginia during the 1970's and early 1980's.
 </p>
-</scopecontent>
-<arrangement>
-<head>Arrangement
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement
 </head>
-<p>Organized into the following four series: I. Biographical Information and Writings, 1972, 1985; II. Organizational Files, 1971-1985; III. Subject Files, 1970-1982; IV. General Assembly Bills, 1972-1978.
+      <p>Organized into the following four series: I. Biographical Information and Writings, 1972, 1985; II. Organizational Files, 1971-1985; III. Subject Files, 1970-1982; IV. General Assembly Bills, 1972-1978.
 </p>
-</arrangement>
-<dsc type="in-depth">
-<head>Contents List
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="series">
-<did>
-<unittitle label="Series I">Biographical Information and Writings,
-<unitdate type="inclusive">1972, 1985
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+      <c01 level="series">
+        <did>
+          <unittitle label="Series I">Biographical Information and Writings,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972, 1985
+</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">1
+          <container label="Folder" type="folder">1
 </container>
-</did>
-<scopecontent>
-<p>Consists of a full biographical vita compiled in 1985, a newspaper article concerning Meg Williams dated 1972, and a scholarly paper written by Williams.
+        </did>
+        <scopecontent>
+          <p>Consists of a full biographical vita compiled in 1985, a newspaper article concerning Meg Williams dated 1972, and a scholarly paper written by Williams.
 </p>
-</scopecontent>
-</c01>
-<c01 level="series">
-<did>
-<unittitle label="Series II">Organizational Files,
-<unitdate type="inclusive">1971-1985
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </scopecontent>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series II">Organizational Files,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1971-1985
+</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-<container label="Folders" type="folders">2-15
+          <container label="Folders" type="folders">2-15
 </container>
-</did>
-<scopecontent>
-<p>Contains information related to Meg Williams' involvement with the Equal Rights Amendment Ratification Council, the Richmond chapter of the National Organization for Women, Women's Lobby Inc., STOP ERA,
+        </did>
+        <scopecontent>
+          <p>Contains information related to Meg Williams' involvement with the Equal Rights Amendment Ratification Council, the Richmond chapter of the National Organization for Women, Women's Lobby Inc., STOP ERA,
 Virginia ERA Central, and the Virginia Women's Political Caucus.
 </p>
-</scopecontent>
-<arrangement>
-<p>Arranged alphabetically by organization's name.
+        </scopecontent>
+        <arrangement>
+          <p>Arranged alphabetically by organization's name.
 </p>
-</arrangement>
-<c02 level="file">
-<did>
-<unittitle>ERA Ratification Council,
-<unitdate type="inclusive">1974-1975
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>ERA Ratification Council,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1974-1975
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">2
+            <container label="Folder" type="folder">2
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>National Organization for Women,
-<unitdate type="inclusive">1974-1975
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>National Organization for Women,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1974-1975
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">3
+            <container label="Folder" type="folder">3
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>STOP ERA,
-<unitdate type="inclusive">1973-1974
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>STOP ERA,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1973-1974
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">4
+            <container label="Folder" type="folder">4
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia ERA Central,
-<unitdate type="inclusive">1972-1974
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia ERA Central,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1974
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">5
+            <container label="Folder" type="folder">5
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - general (organizational),
-<unitdate type="inclusive">1971-1974
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - general (organizational),
+<unitdate type="inclusive" era="ce" calendar="gregorian">1971-1974
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">6
+            <container label="Folder" type="folder">6
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - general,
-<unitdate type="inclusive">1971-1973
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - general,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1971-1973
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">7
+            <container label="Folder" type="folder">7
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - appointments,
-<unitdate type="inclusive">1972-1973, 1976
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - appointments,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1973, 1976
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">8
+            <container label="Folder" type="folder">8
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - appointments (rosters),
-<unitdate type="inclusive">1972-1973
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - appointments (rosters),
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1973
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">9
+            <container label="Folder" type="folder">9
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - candidate questionnaires,
-<unitdate type="inclusive">1972-1974
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - candidate questionnaires,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1974
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">10
+            <container label="Folder" type="folder">10
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - lobbying,
-<unitdate type="inclusive">1972-1974
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - lobbying,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1974
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">11
+            <container label="Folder" type="folder">11
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - lobbying (printed material),
-<unitdate type="inclusive">1971-1976
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - lobbying (printed material),
+<unitdate type="inclusive" era="ce" calendar="gregorian">1971-1976
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">12
+            <container label="Folder" type="folder">12
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - rape,
-<unitdate type="inclusive">1972-1976, 1978
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - rape,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1976, 1978
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">13
+            <container label="Folder" type="folder">13
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Virginia Women's Political Caucus - rape,
-<unitdate type="inclusive">1976-1985
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Women's Political Caucus - rape,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1976-1985
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">14
+            <container label="Folder" type="folder">14
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Women's Lobby, Inc.,
-<unitdate type="inclusive">1973-1975
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Women's Lobby, Inc.,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1973-1975
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">15
+            <container label="Folder" type="folder">15
 </container>
-</did>
-</c02>
-</c01>
-<c01 level="series">
-<did>
-<unittitle label="Series III. ">Subject Files,
-<unitdate type="inclusive">1970-1982
-</unitdate>
-</unittitle>
-<container type="box-folder">Box 1, Folders 16-19 - Box 2, Folders 1-5
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series III.">Subject Files,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1970-1982
+</unitdate></unittitle>
+          <container type="box-folder">Box 1, Folders 16-19 - Box 2, Folders 1-5
 </container>
-</did>
-<scopecontent>
-<p>Includes correspondence, newspaper clippings, printed material concerning subjects pertaining to women's rights in the 1970's including abortion, the Equal Rights Amendment both nationally and in Virginia, the
+        </did>
+        <scopecontent>
+          <p>Includes correspondence, newspaper clippings, printed material concerning subjects pertaining to women's rights in the 1970's including abortion, the Equal Rights Amendment both nationally and in Virginia, the
 Feminist Movement, job descrimination and equal pay, Title IX and equality in sports, and equality in economics.
 </p>
-</scopecontent>
-<arrangement>
-<p>Arranged alphabetically by subject.
+        </scopecontent>
+        <arrangement>
+          <p>Arranged alphabetically by subject.
 </p>
-</arrangement>
-<c02 level="file">
-<did>
-<unittitle>Abortion,
-<unitdate type="inclusive">1973-1975
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Abortion,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1973-1975
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">16
+            <container label="Folder" type="folder">16
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>ERA,
-<unitdate type="inclusive">1970-1976
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>ERA,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1970-1976
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">17
+            <container label="Folder" type="folder">17
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>ERA - Virginia,
-<unitdate type="inclusive">1972-1975
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>ERA - Virginia,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1975
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">18
+            <container label="Folder" type="folder">18
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>ERA - Virginia,
-<unitdate type="inclusive">1972-1975
-</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>ERA - Virginia,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1975
+</unitdate></unittitle>
+            <container label="Box" type="box">1
 </container>
-<container label="Folder" type="folder">19
+            <container label="Folder" type="folder">19
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Feminism - general,
-<unitdate type="inclusive">1973-1975
-</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Feminism - general,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1973-1975
+</unitdate></unittitle>
+            <container label="Box" type="box">2
 </container>
-<container label="Folder" type="folder">1
+            <container label="Folder" type="folder">1
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Job discrimination - equal pay,
-<unitdate type="inclusive">n. d.
-</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Job discrimination - equal pay,
+<unitdate type="inclusive" era="ce" calendar="gregorian">n. d.
+</unitdate></unittitle>
+            <container label="Box" type="box">2
 </container>
-<container label="Folder" type="folder">2
+            <container label="Folder" type="folder">2
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Magazines,
-<unitdate type="inclusive">1970-1972, 1976
-</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Magazines,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1970-1972, 1976
+</unitdate></unittitle>
+            <container label="Box" type="box">2
 </container>
-<container label="Folder" type="folder">3
+            <container label="Folder" type="folder">3
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Title IX - sports in higher education,
-<unitdate type="inclusive">1974-1976
-</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Title IX - sports in higher education,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1974-1976
+</unitdate></unittitle>
+            <container label="Box" type="box">2
 </container>
-<container label="Folder" type="folder">4
+            <container label="Folder" type="folder">4
 </container>
-</did>
-</c02>
-<c02 level="file">
-<did>
-<unittitle>Women's National Bank - Women As Economic Equals Conference,
-<unitdate type="inclusive">1973-1982
-</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Women's National Bank - Women As Economic Equals Conference,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1973-1982
+</unitdate></unittitle>
+            <container label="Box" type="box">2
 </container>
-<container label="Folder" type="folder">5
+            <container label="Folder" type="folder">5
 </container>
-</did>
-</c02>
-</c01>
-<c01 level="series">
-<did>
-<unittitle label="Series III">General Assembly Bills,
-<unitdate type="inclusive">1972-1978
-</unitdate>
-</unittitle>
-<container label="Box" type="box">2-3
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series III">General Assembly Bills,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1972-1978
+</unitdate></unittitle>
+          <container label="Box" type="box">2-3
 </container>
-</did>
-<scopecontent>
-<p>Consists of printed Virginia General Assembly bills pertaining to women's issues.
+        </did>
+        <scopecontent>
+          <p>Consists of printed Virginia General Assembly bills pertaining to women's issues.
 </p>
-</scopecontent>
-</c01>
-</dsc>
-</archdesc>
+        </scopecontent>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

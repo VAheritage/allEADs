@@ -1,152 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00332">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-full-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00332::A Guide to the John Todd Letter and Memorandum Book, 1778-1788)//EN&amp;#34; &amp;#34;vi00332.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00332">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00332::A Guide to the John Todd Letter and Memorandum Book, 1778-1788)//EN&amp;#34; &amp;#34;vi00332.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00332::A Guide to the John Todd
              Letter and Memorandum Book, 1778-1788)//EN"
              "vi00332.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the John Todd Letter and Memorandum
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the John Todd Letter and Memorandum
             Book, 
-            <date>1778-1788</date></titleproper>
-            <subtitle id="sort">Todd, John, Letter and Memorandum Book,
+            <date era="ce" calendar="gregorian">1778-1788</date></titleproper>
+        <subtitle id="sort">Todd, John, Letter and Memorandum Book,
             1778-1788 
             <num type="collectionnumber">22954c</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Trenton Hizer</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">2 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from Marc
+        </p>
+        <p id="filesize">2 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from Marc
          record. Created by Renee M. Savits 
-         <date>11 May 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">11 May 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00332::A Guide to the John Todd Letter and
             Memorandum Book, 1778-1788)//EN" "vi00332.xml" converted
             from EAD 1.0 to 2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the John Todd Letter and Memorandum
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the John Todd Letter and Memorandum
          Book, 
-         <date>1778-1788</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1778-1788</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">22954c</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">John Todd Letter and Memorandum Book,
-         <unitdate type="inclusive" label="Date">
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">John Todd Letter and Memorandum Book,
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1778-1788</unitdate></unittitle>
-         <unitid label="Accession number">22954c</unitid>
-         <physloc label="Physical Location">Personal papers collection,
+      <unitid label="Accession number">22954c</unitid>
+      <physloc label="Physical Location">Personal papers collection,
          Acc. 22954c</physloc>
-         <physdesc label="Physical Characteristics">41 leaves,
+      <physdesc label="Physical Characteristics">41 leaves,
          photostats</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>John Todd. Letter and Memorandum Book, 1778-1788.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>John Todd. Letter and Memorandum Book, 1778-1788.
             Accession 22954c, Personal papers collection, The Library
             of Virginia, Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Purchased 1949.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>John Todd was born 20 March 1750 in Montgomery County,
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Purchased 1949.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>John Todd was born 20 March 1750 in Montgomery County,
          Pennsylvania, to David Todd (1726-1785) and Hannah Owen Todd.
          He served as adjutant to General Andrew Lewis (1720-1781) at
          the battle of Point Pleasant, (West) Virginia. Todd settled in
@@ -164,10 +149,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          married Jane Hawkins in 1780, and they had at least one child.
          Todd was killed by Native-Americans at the battle of Blue
          Licks, Kentucky, 19 August 1782.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Letter and memorandum book, 1778-1788, of John Todd
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Letter and memorandum book, 1778-1788, of John Todd
          (1750-1782) of Kaskaskia, Illinois, containing transcripts of
          correspondence, lists of court and militia officers, licenses,
          bonds, proclamations, oaths, accounts, and court papers,
@@ -176,6 +161,6 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          the letter from Governor Patrick Henry (1736-1799) appointing
          Todd to his position. Some of the records included were
          created after Todd's death.</p>
-      </scopecontent>
-   </archdesc>
+    </scopecontent>
+  </archdesc>
 </ead>

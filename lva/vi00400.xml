@@ -1,152 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00400">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00400::A Guide to the Virginia Ordnance Department Records, 1861-1864)//EN&amp;#34; &amp;#34;vi00400.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00400">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00400::A Guide to the Virginia Ordnance Department Records, 1861-1864)//EN&amp;#34; &amp;#34;vi00400.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00400::A Guide to the Virginia
              Ordnance Department Records, 1861-1864)//EN"
              "vi00400.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginia Ordnance Department
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginia Ordnance Department
             Records, 
-            <date>1861-1864</date></titleproper>
-            <subtitle id="sort">Ordnance Department Records, of
+            <date era="ce" calendar="gregorian">1861-1864</date></titleproper>
+        <subtitle id="sort">Ordnance Department Records, of
             Virginia, 1861-1864 
             <num type="collectionnumber">38943</num></subtitle>
-            <author>Description Services Staff</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Description Services Staff</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">2 kb</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">2 kb</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record and Word document. Created by Paige Neal 
-         <date>June 1, 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">June 1, 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00400::A Guide to the Virginia Ordnance
             Department Records, 1861-1864)//EN" "vi00400.xml" converted
             from EAD 1.0 to 2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia Ordnance Department
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia Ordnance Department
          Records, 
-         <date>1861-1864</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1861-1864</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">38943</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Craig Moore</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Craig Moore</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Virginia Ordnance Department Records,
-         <unitdate type="inclusive" label="Date">
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Virginia Ordnance Department Records,
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1861-1864</unitdate></unittitle>
-         <unitid label="Accession number">38943</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <unitid label="Accession number">38943</unitid>
+      <physloc label="Physical Location">State Records Collection,
          Dept. of Military Affairs (Record Group 46).</physloc>
-         <physdesc label="Physical Characteristics">1.73 cubic feet (3
+      <physdesc label="Physical Characteristics">1.73 cubic feet (3
          boxes).</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia Ordnance Department, Records, 1861-1865.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia Ordnance Department, Records, 1861-1865.
             Accession 38943, State Records Collection, The Library of
             Virginia, Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>No acquisition information available.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>The Ordnance Department was created by an act of the
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>No acquisition information available.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>The Ordnance Department was created by an act of the
          General Assembly on January 25, 1861. The department was to
          consist of a colonel of ordnance appointed by the governor and
          no more than six subordinate officers. Governor Letcher
@@ -173,10 +158,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Army was later transferred to Confederate service on 28
          February 1863. J.S. Shriver replaced Charles Dimmock as
          Colonel of Ordnance in October 1863 upon his death.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>These records relate to expenses incurred by the Ordnance
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>These records relate to expenses incurred by the Ordnance
          Department between 1861 and 1864. Contains abstracts,
          vouchers, payrolls, correspondence, inspection certificates,
          and a report, all of which were submitted to the Auditing
@@ -197,7 +182,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          hauling the machinery at Harper's Ferry. There are also
          separate vouchers for Floyd's Army between May and December
          1862.</p>
-         <p>Note that there are a few gaps in the records, most notably
+      <p>Note that there are a few gaps in the records, most notably
          from January-February 1862, July &amp; September-December
          1863, and most of 1864. Some of these records can be found in the 
 	 Records of the Auditing Board, 1861-1864.
@@ -212,990 +197,966 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Edward H. Fitzhugh, Examining Clerk, to the Auditing Board.
          Lastly, there is a report of the operations of the Ordnance
          Department submitted by Col. Shriver in April 1864.</p>
-      </scopecontent>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle>Virginia Ordnance Department Records, 
-               <unitdate type="inclusive">
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Virginia Ordnance Department Records, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1861-1864</unitdate></unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Abstract and Vouchers
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1861 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
             </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Abstract and Vouchers
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-             <c03 level="file">
-               <did>
-                  <unittitle>1861 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-               <c04 level="file">
-               <did>
-                  <unittitle>Abstract A
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-        <c05 level="file">
-               <did>
+            <c04 level="file">
+              <did>
+                <unittitle>Abstract A
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   Vouchers 1-48 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">1</container>
                   <container label="Folder" type="Folder">1</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   Voucher 49 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">1</container>
                   <container label="Folder" type="Folder">2</container>
-               </did>
-            </c05>
-	</c04>
-            <c04 level="file">
-               <did>
-                  <unittitle>Abstract B -
-                  Vouchers 1-28 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
+                </did>
+              </c05>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Abstract C -
+              <did>
+                <unittitle>Abstract B -
+                  Vouchers 1-28 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">1</container>
+                <container label="Folder" type="Folder">3</container>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Abstract C -
                   Vouchers 1-9 (Payrolls)(See Also
                   Oversized)
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">1</container>
+                <container label="Folder" type="Folder">4</container>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Abstract D -
+              <did>
+                <unittitle>Abstract D -
                   Vouchers 1-28 (See Also
                   Oversized)
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">1</container>
+                <container label="Folder" type="Folder">5</container>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Miscellaneous 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c04>	
-                 <c04 level="file">
-               <did>
-                  <unittitle>Winchester 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-          <c05 level="file">
-               <did>
+              <did>
+                <unittitle>Miscellaneous 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">1</container>
+                <container label="Folder" type="Folder">6</container>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Winchester 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Vouchers 1-38,
-                  <unitdate type="inclusive">1861
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1861
                   April-May</unitdate></unittitle>
                   <container label="Box" type="box">1</container>
                   <container label="Folder" type="Folder">7</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>Hauling Machinery 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">1</container>
                   <container label="Folder" type="Folder">8</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>Hauling Machinery 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">1</container>
                   <container label="Folder" type="Folder">9</container>
-               </did>
-            </c05>
-		</c04>
-		</c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>1862 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-          <c04 level="file">
-               <did>
-                  <unittitle>January-July
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+                </did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1862 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>January-July
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">1</container>
+                <container label="Folder" type="Folder">
                   10</container>
-               </did>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>July-September
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-            <c05 level="file">
-               <did>
+              <did>
+                <unittitle>July-September
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Abstract A -
                   Vouchers 1-37 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">1</container>
                   <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>Abstract B -
                   Vouchers 1-7
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">1</container>
                   <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c05>
-		</c04>
+                </did>
+              </c05>
+            </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>August-November
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+              <did>
+                <unittitle>August-November
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">1</container>
+                <container label="Folder" type="Folder">
                   13</container>
-               </did>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>December
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+              <did>
+                <unittitle>December
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">1</container>
+                <container label="Folder" type="Folder">
                   14</container>
-               </did>
+              </did>
             </c04>
-             <c04 level="file">
-               <did>
-                  <unittitle>Floyd's Army 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>           
-		<c05 level="file">
-               <did>
+            <c04 level="file">
+              <did>
+                <unittitle>Floyd's Army 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>1862
                   May-June - Vouchers 1-28 
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">1</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   1862
                   July-September 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c06 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                </did>
+                <c06 level="file">
+                  <did>
+                    <unittitle>
                   Abstract A - Vouchers 1-84 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">2</container>
+                    <container label="Folder" type="Folder">2</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>
                   Abstract B - Vouchers 1-9
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">2</container>
+                    <container label="Folder" type="Folder">3</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>
                   Abstract C - Vouchers 1-3
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c06>
-            </c05>
-            <c05 level="file">
-               <did>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">2</container>
+                    <container label="Folder" type="Folder">4</container>
+                  </did>
+                </c06>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   1862
                   October-November - Vouchers 1-77
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">5</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   1862
                   December - Vouchers 1-31 
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">6</container>
-               </did>
-            </c05>
-	</c04>
-	</c03>
-              <c03 level="file">
-               <did>
-                  <unittitle>1863 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-              <c04 level="file">
-               <did>
-                  <unittitle>Abstract A 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did> 	         
-		 <c05 level="file">
-               <did>
+                </did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1863 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Abstract A 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>
                    January - Vouchers 1-26
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">7</container>
-               </did>
- 		</c05>        
-		<c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
 		February - Vouchers 1-15
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">8</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
 		March - Vouchers 1-18
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">9</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   April - Vouchers 1-7
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   May - Vouchers 1-8
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle> 
                   June - Vouchers 1-16
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c05>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>        
                   August - Vouchers 1-18
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">2</container>
                   <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c05>
-	</c04>
+                </did>
+              </c05>
+            </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Sept. - Vouchers 1-42 (See Also Oversized)
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
+              <did>
+                <unittitle>Sept. - Vouchers 1-42 (See Also Oversized)
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">2</container>
+                <container label="Folder" type="Folder">
                   14</container>
-               </did>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Oct. - Vouchers 1-23 (See Also Oversized)
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
+              <did>
+                <unittitle>Oct. - Vouchers 1-23 (See Also Oversized)
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">2</container>
+                <container label="Folder" type="Folder">
                   15</container>
-               </did>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Nov. (See Oversized)
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
+              <did>
+                <unittitle>Nov. (See Oversized)
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">2</container>
+                <container label="Folder" type="Folder">
                   16</container>
-               </did>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Dec. - Vouchers 1-6 (See Also Oversized)
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
+              <did>
+                <unittitle>Dec. - Vouchers 1-6 (See Also Oversized)
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">2</container>
+                <container label="Folder" type="Folder">
                   17</container>
-               </did>
+              </did>
             </c04>
-	</c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>1864
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-          <c04 level="file">
-               <did>
-                  <unittitle>Jan. - Vouchers 1-5 (See Also Oversized)
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1864
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Jan. - Vouchers 1-5 (See Also Oversized)
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">2</container>
+                <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c04>  
-          <c04 level="file">
-               <did>
-                  <unittitle>Feb. - Vouchers 1-7
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  19</container>
-               </did>
-            </c04>          
-	<c04 level="file">
-               <did>
-                  <unittitle>Jan.-July
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  20</container>
-               </did>
-            </c04>
- 	</c03>
-		</c02>
-          <c02 level="file">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
-                  1861-1863</unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
-                  21</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspection Certificates, 
-                  <unitdate type="inclusive">
-                  1861</unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
-                  22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Report of Operations of the Ordnance
-                  Dept., 
-                  <unitdate type="inclusive">1864 (See
-                  Oversized)</unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  23</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>
-               Oversized, 
-               <unitdate type="inclusive">
-               1861-1864</unitdate></unittitle>
-            </did>
-          <c02>
-            <did>
-               <unittitle>Abstract and Vouchers
-               <unitdate type="inclusive">
-               </unitdate></unittitle>
-            </did>
-           <c03 level="file">
-               <did>
-                  <unittitle>1861
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-               </did>
-           <c04 level="file">
-               <did>
-                  <unittitle>Abstract C -
-                  Vouchers 1-8 - Payroll 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
+              </did>
             </c04>
             <c04 level="file">
-               <did>
-                  <unittitle>Abstract D -
+              <did>
+                <unittitle>Feb. - Vouchers 1-7
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">2</container>
+                <container label="Folder" type="Folder">
+                  19</container>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Jan.-July
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">2</container>
+                <container label="Folder" type="Folder">
+                  20</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
+                  1861-1863</unitdate></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
+                  21</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspection Certificates, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
+                  1861</unitdate></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
+                  22</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Report of Operations of the Ordnance
+                  Dept., 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1864 (See
+                  Oversized)</unitdate></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
+                  23</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>
+               Oversized, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
+               1861-1864</unitdate></unittitle>
+        </did>
+        <c02>
+          <did>
+            <unittitle>Abstract and Vouchers
+               <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1861
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Abstract C -
+                  Vouchers 1-8 - Payroll 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">3</container>
+                <container label="Folder" type="Folder">1</container>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Abstract D -
                   Vouchers 11 and 19 - Payroll of workmen engaged at
                   pulling down and repairing the Armory 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-		</c04>
-            </c03>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                <container label="Box" type="box">3</container>
+                <container label="Folder" type="Folder">2</container>
+              </did>
+            </c04>
+          </c03>
           <c03>
             <did>
-               <unittitle>Floyd's Army
-               <unitdate type="inclusive">
-               </unitdate></unittitle>
+              <unittitle>Floyd's Army
+               <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
             </did>
-          <c04>
-            <did>
-               <unittitle>Abstract A
-               <unitdate type="inclusive">
-               </unitdate></unittitle>
-            </did>
-            <c05 level="file">
-               <did>
+            <c04>
+              <did>
+                <unittitle>Abstract A
+               <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>
                   1862
                   May-June
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c06 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                </did>
+                <c06 level="file">
+                  <did>
+                    <unittitle>
                   Voucher 25 - Payroll of workmen engaged
                   in cleaning and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">3</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>
                   Voucher 26 - Payroll of workmen engaged
                   in fixing ammunition 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c06>
-            </c05>
-            <c05 level="file">
-               <did>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">3</container>
+                  </did>
+                </c06>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>
                    1862
                   July-September
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c06 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                </did>
+                <c06 level="file">
+                  <did>
+                    <unittitle>
                   Voucher 36 - Payroll of workmen engaged
                   in fixing ammunition 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 37 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">4</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 37 - Payroll of workmen engaged
                   in cleaning and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 66 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">4</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 66 - Payroll of workmen engaged
                   in fixing ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 67 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">4</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 67 - Payroll of workmen engaged
                   in cleaning and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 82 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">4</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 82 - Payroll of workmen engaged
                   in cleaning and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 83 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">4</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 83 - Payroll of workmen engaged
                   in fixing ammunition 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c06>
-            </c05>
-            <c05 level="file">
-               <did>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">4</container>
+                  </did>
+                </c06>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>1862
                   October-November
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 27 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                </did>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 27 - Payroll of workmen engaged
                   in cleaning and repairing arms, etc.
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 28 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">5</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 28 - Payroll of workmen engaged
                   in fixing ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 75 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">5</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 75 - Payroll of workmen engaged
                   in cleaning and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 76 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">5</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 76 - Payroll of workmen engaged
                   in fixing ammunition 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c06>
-            </c05>
-            <c05 level="file">
-               <did>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">5</container>
+                  </did>
+                </c06>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>1862
                   December
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 29 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                </did>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 29 - Payroll of workmen engaged
                   in cleaning and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>Voucher 30 - Payroll of workmen engaged
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">6</container>
+                  </did>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>Voucher 30 - Payroll of workmen engaged
                   in fixing ammunition 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c06>
-            </c05>
-           <c05 level="file">
-               <did>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                    <container label="Box" type="box">3</container>
+                    <container label="Folder" type="Folder">6</container>
+                  </did>
+                </c06>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>1863
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c06 level="file">
-               <did>
-                  <unittitle>January 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                </did>
+                <c06 level="file">
+                  <did>
+                    <unittitle>January 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                  </did>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 24 - Payroll of workmen engaged in cleaning
                   and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c07>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">7</container>
+                    </did>
+                  </c07>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 25 - Payroll of workmen engaged in fixing
                   ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c07>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>February
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">7</container>
+                    </did>
+                  </c07>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>February
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                  </did>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 14 - Payroll of workmen engaged in cleaning
                   and repairing arms, etc.
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c07>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">8</container>
+                    </did>
+                  </c07>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 15 - Payroll of workmen engaged in fixing
                   ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c07>
-            </c06>
-            <c06 level="file">
-               <did>
-                  <unittitle>March
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">8</container>
+                    </did>
+                  </c07>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>March
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                  </did>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 11 - Payroll of workmen engaged in storing
                   ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c07>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">9</container>
+                    </did>
+                  </c07>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 16 - Payroll of workmen engaged in cleaning
                   and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c07>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">9</container>
+                    </did>
+                  </c07>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 17 - Payroll of workmen engaged in fixing
                   ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c07>
-            </c06>
-           <c06 level="file">
-               <did>
-                  <unittitle>April
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">9</container>
+                    </did>
+                  </c07>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>April
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                  </did>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 7 - Payroll of workmen engaged in cleaning
                   and repairing arms, etc. 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c07>
-            </c06>
-           <c06 level="file">
-               <did>
-                  <unittitle>August
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c07 level="file">
-               <did>
-                  <unittitle>
+                    </did>
+                  </c07>
+                </c06>
+                <c06 level="file">
+                  <did>
+                    <unittitle>August
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                  </did>
+                  <c07 level="file">
+                    <did>
+                      <unittitle>
                   Voucher 18 - Payroll of workmen engaged in cleaning
                   and repairing arms, etc. and fixing ammunition 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                      <container label="Box" type="box">3</container>
+                      <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c07>
-  		 </c06>
-		</c05>
-		</c04>
-	</c03>
+                    </did>
+                  </c07>
+                </c06>
+              </c05>
+            </c04>
+          </c03>
           <c03>
             <did>
-               <unittitle>1863
-               <unitdate type="inclusive">
-               </unitdate></unittitle>
+              <unittitle>1863
+               <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
             </did>
-           <c04 level="file">
-               <did>
-                  <unittitle>September
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c05 level="file">
-               <did>
-                  <unittitle>Abstract &amp; Account Current 
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">
-                  12</container>
-               </did>
-            </c05>
-           <c05 level="file">
-               <did>
-                  <unittitle>Payroll of workmen
-                  engaged in cleaning and repairing arms, etc. and
-                  fixing ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">
-                  12</container>
-               </did>
-            </c05>
-	</c04>
-           <c04 level="file">
-               <did>
-                  <unittitle>October
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
+            <c04 level="file">
+              <did>
+                <unittitle>September
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
               <c05 level="file">
-               <did>
-                  <unittitle>Abstract &amp; Account Current
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                <did>
+                  <unittitle>Abstract &amp; Account Current 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c05>
-         <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>Payroll of workmen
                   engaged in cleaning and repairing arms, etc. and
                   fixing ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                  <container label="Box" type="box">3</container>
+                  <container label="Folder" type="Folder">
+                  12</container>
+                </did>
+              </c05>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>October
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
+                  <unittitle>Abstract &amp; Account Current
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+                  <container label="Box" type="box">3</container>
+                  <container label="Folder" type="Folder">
+                  12</container>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
+                  <unittitle>Payroll of workmen
+                  engaged in cleaning and repairing arms, etc. and
+                  fixing ammunition
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c05>
-	</c04>
-	    <c04 level="file">
-               <did>
-                  <unittitle>November
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-            <c05 level="file">
-               <did>
+                </did>
+              </c05>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>November
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Payroll of workmen
                   engaged in cleaning and repairing arms, etc. and
                   fixing ammunition
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c05>
-	</c04>
-          <c04 level="file">
-               <did>
-                  <unittitle>December
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-             <c05 level="file">
-               <did>
+                </did>
+              </c05>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>December
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Abstract &amp; Account Current 
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c05>
-	          <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>Payroll of workmen
                   engaged in cleaning and repairing arms, etc. and
                   fixing ammunition 
-                  <unitdate type="inclusive"></unitdate></unittitle>
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c05>
-	</c04>
-	</c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>1864
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
+                </did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1864
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            </did>
             <c04 level="file">
-               <did>
-                  <unittitle>January
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-               <c05 level="file">
-               <did>
+              <did>
+                <unittitle>January
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Account Current &amp; Abstract of Expenditures made by Col. J.S. Shriver, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   January</unitdate></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c05> 
-           <c05 level="file">
-               <did>
+                </did>
+              </c05>
+              <c05 level="file">
+                <did>
                   <unittitle>Payroll of workmen
                   engaged in cleaning and repairing arms, etc. and
                   fixing ammunition, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   January</unitdate></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c05>
-	</c04>
-	   <c04 level="file">
-               <did>
-                  <unittitle>February
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-           <c05 level="file">
-               <did>
+                </did>
+              </c05>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>February
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Payroll of workmen
                   engaged in cleaning and repairing arms, etc. and
                   fixing ammunition, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   January</unitdate></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c05>
-		</c04>
-	   <c04 level="file">
-               <did>
-                  <unittitle>March
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-           <c05 level="file">
-               <did>
+                </did>
+              </c05>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>March
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Payroll of workmen
                   engaged in cleaning and repairing arms, etc. and
                   fixing ammunition, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   January</unitdate></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c05>
-		</c04>
-	   <c04 level="file">
-               <did>
-                  <unittitle>June
-                  <unitdate type="inclusive"></unitdate></unittitle>
-               </did>
-           <c05 level="file">
-               <did>
+                </did>
+              </c05>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>June
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              </did>
+              <c05 level="file">
+                <did>
                   <unittitle>Payroll of workmen
                   engaged in cleaning and repairing arms, etc. and
                   fixing ammunition, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   January</unitdate></unittitle>
                   <container label="Box" type="box">3</container>
                   <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c05>
-		</c04>
-		</c03>
-  		</c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Report of the Operations of the Ordnance
+                </did>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Report of the Operations of the Ordnance
                   Dept., 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1864</unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">
                   20</container>
-            </did>
-	</c02>
-</c01>
-</dsc>
-</archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

@@ -1,612 +1,609 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03744">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03744::A Guide to the Charles Clifton Penick Papers, 1837-1956)//EN" "vi03744.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03744">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03744::A Guide to the Charles Clifton Penick Papers, 1837-1956)//EN" "vi03744.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Charles Clifton Penick Papers, <date>1837-1914</date>
-</titleproper>
-<subtitle id="sort">Penick, Charles Clifton, Papers, 1837-1956
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Charles Clifton Penick Papers, <date era="ce" calendar="gregorian">1837-1914</date></titleproper>
+        <subtitle id="sort">Penick, Charles Clifton, Papers, 1837-1956
 <num type="collectionnumber">50987
-</num>
-</subtitle>
-<author>Jim Greve
+</num></subtitle>
+        <author>Jim Greve
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2013 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Jim Greve, <date>14 August 2013</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Charles Clifton Penick Papers, <date>1837-1956</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">50987
-</num>
-</subtitle>
-<author>Jim Greve
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2013
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Jim Greve
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Charles Clifton Penick Papers, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1837-1956
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">50987
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a"> 1.575 cubic feet (4 boxes).
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2013 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Jim Greve, <date era="ce" calendar="gregorian">14 August 2013</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Charles Clifton Penick Papers, <date era="ce" calendar="gregorian">1837-1956</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">50987
+</num></subtitle>
+      <author>Jim Greve
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2013
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Jim Greve
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Charles Clifton Penick Papers, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1837-1956
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">50987
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a"> 1.575 cubic feet (4 boxes).
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Charles Clifton Penick Papers, 1837-1956. Accession 50987. Personal papers collection, The Library of Virginia, Richmond, Virginia. 
+        <p>Charles Clifton Penick Papers, 1837-1956. Accession 50987. Personal papers collection, The Library of Virginia, Richmond, Virginia. 
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Purchased.
+        <p>Purchased.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Charles Clifton Penick was born in Charlotte County, Virginia on 9 December 1843. He was the son of Edwin Anderson Penick (1820-1862) and Mary Morris Hamner (1821-1881). He attended military school in Danville, Virginia, and soon afterward he went to Hampden-Syidney College. At the beginning of the Civil War, he joined the Confederate army and served with the 38th Virginia Infantry. He then entered the Theological seminary of Virginia at Alexandria, and was graduated in 1869. He was ordained deacon in the chapel of the seminary on 26 June 1869, and as priest on 24 June 1870. Rev. Penick served in Bristol, Virginia, and then in Mount Savage, Maryland. Three years later he accepted the rectorship of the Church of the Messiah in Baltimore, which post he held until 1877. Having been appointed missionary bishop of Cape Palmas and Parts Adjacent in western Africa, he was consecrated in St. Paul's Church, Alexandria, Virginia, on 13 February 1877. He received the degree of D. D. from Kenyon College in Ohio, in 1877. After six years' service in Africa, he sent in his resignation, which was accepted by the House of Bishops in 1883. Afterwards, Bishop Penick served in rectorships at St. Andrew's Church (Louisville, KY), St. Mark's (Richmond, VA), Christ Church (Fairmont, WV), and in Frankfort, KY. He married Mary E. Hoge (1845-1912) in Wheeling, West Virginia on 28 April 1881. Charles Clifton Penick died on 13 April 1914 at Enoch Pratt Hospital in Baltimore, where he had gone for medical treatment. He is buried in the St. John's Episcopal Church cemetery in Halifax, Virginia.
+      <p>Charles Clifton Penick was born in Charlotte County, Virginia on 9 December 1843. He was the son of Edwin Anderson Penick (1820-1862) and Mary Morris Hamner (1821-1881). He attended military school in Danville, Virginia, and soon afterward he went to Hampden-Syidney College. At the beginning of the Civil War, he joined the Confederate army and served with the 38th Virginia Infantry. He then entered the Theological seminary of Virginia at Alexandria, and was graduated in 1869. He was ordained deacon in the chapel of the seminary on 26 June 1869, and as priest on 24 June 1870. Rev. Penick served in Bristol, Virginia, and then in Mount Savage, Maryland. Three years later he accepted the rectorship of the Church of the Messiah in Baltimore, which post he held until 1877. Having been appointed missionary bishop of Cape Palmas and Parts Adjacent in western Africa, he was consecrated in St. Paul's Church, Alexandria, Virginia, on 13 February 1877. He received the degree of D. D. from Kenyon College in Ohio, in 1877. After six years' service in Africa, he sent in his resignation, which was accepted by the House of Bishops in 1883. Afterwards, Bishop Penick served in rectorships at St. Andrew's Church (Louisville, KY), St. Mark's (Richmond, VA), Christ Church (Fairmont, WV), and in Frankfort, KY. He married Mary E. Hoge (1845-1912) in Wheeling, West Virginia on 28 April 1881. Charles Clifton Penick died on 13 April 1914 at Enoch Pratt Hospital in Baltimore, where he had gone for medical treatment. He is buried in the St. John's Episcopal Church cemetery in Halifax, Virginia.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Papers, 1837-1956, of Bishop Charles Clifton Penick (1843-1914) of Halifax County, Virginia, containing material relating to his service as Bishop of the Jurisdiction of Cape Palmas and Parts Adjacent, West Africa, including accounts and expenses, copies of minutes of the mission, letterbook of outgoing correspondence, and reports to the General Convention of the Protestant Episcopal Church. There are also almanacs and diaries kept by Bishop Penick, correspondence, estate papers, published works, sermons, and tax records.
+      <p>Papers, 1837-1956, of Bishop Charles Clifton Penick (1843-1914) of Halifax County, Virginia, containing material relating to his service as Bishop of the Jurisdiction of Cape Palmas and Parts Adjacent, West Africa, including accounts and expenses, copies of minutes of the mission, letterbook of outgoing correspondence, and reports to the General Convention of the Protestant Episcopal Church. There are also almanacs and diaries kept by Bishop Penick, correspondence, estate papers, published works, sermons, and tax records.
 </p>
-<p>The collection also includes a scrapbook of the Susanne Rochet Chapter of the Huguenot Society of the Founders of Manakin in the Colony of Virginia compiled by its founder, Elizabeth Alexander (Green) Penick (1887-1945), and a scrapbook of a Caribbean cruise sponsored by the Twenty-First Street Businessmen's Association of Norfolk, Virginia. compiled by Lucy Mead (Allen) Wilkinson (1885-1960).
+      <p>The collection also includes a scrapbook of the Susanne Rochet Chapter of the Huguenot Society of the Founders of Manakin in the Colony of Virginia compiled by its founder, Elizabeth Alexander (Green) Penick (1887-1945), and a scrapbook of a Caribbean cruise sponsored by the Twenty-First Street Businessmen's Association of Norfolk, Virginia. compiled by Lucy Mead (Allen) Wilkinson (1885-1960).
 </p>
-</scopecontent>
-<dsc type="combined">
-<head>Contents List
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="file">
-<did>
-<unittitle>Account Book,
-<unitdate>1875-1880</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">1
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Accounts and Receipts
-<unitdate>1875-1880</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">2
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>African Steam-Ship Company - Rates of Freight,
-<unitdate>1877</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">3
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Agreement,
-<unitdate>1908</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">4
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Almanacs,
-<unitdate>1879-1883</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">5-9
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Arizona Ostrich Company
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">10
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Boyd, James
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">11
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Cancelled Checks
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">12
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Cash Account Book,
-<unitdate>1869-1883</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">13
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Correspondence
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">14
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Deed,
-<unitdate>1899</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">15
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Diaries,
-<unitdate>1879-1880, 1894</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">16-18
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Estate of Charles Clifton Penick
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">19-20
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle><title render="italic">Everlasting Life: A Vision</title> by Rev. C. Clifton Penick,
-<unitdate>1899</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">21
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Expenses from Africa to Wheeling, WV,
-<unitdate>1882</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">22
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>General Convention Reports,
-<unitdate>1880, 1883</unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">22
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle><title render="italic">Holy Bible</title> (Annotated)
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">1
-</container>
-<container label="Folder" type="folder">n/a
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Honorary Arms and Crest,
-<unitdate>1956</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">1
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Inventory of Mission Property Left in Orphan Asylum,
-<unitdate>1878</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">2
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Journal (Accounts),
-<unitdate>1890-1912</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">3
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Letterbook,
-<unitdate>31 October 1878 - 9 September 1884</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">n/a
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Medical Examiner's Report - Life Insurance,
-<unitdate>1883</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">4
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Minutes - Cape Palmas Mission,
-<unitdate>23 December 1837 - 20 June 1852</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">5-7
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Miscellaneous
-<unitdate>1875-1880</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">8
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle><title render="italic">Our Dead: Our Memories: Our Lessons: Our Duties</title> by Rev. C. Clifton Penick,
-<unitdate>1888</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">9
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Photographs
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">10
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Poetry
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">11
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Postcards
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">12
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Scrapbook - Huguenot Society - Susanne Rochet Chapter,
-<unitdate>1937-1942</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">13
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 1-12 and unnumbered,
-<unitdate>1886-1911</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">14
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 360-366,
-<unitdate>1872-1873</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">15
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 434-436,
-<unitdate>1873</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">16
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 597-600
-<unitdate>1874</unitdate>.</unittitle>
-<container label="Box" type="box">2
-</container>
-<container label="Folder" type="folder">17
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 692-697,
-<unitdate>1875</unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">18
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 2253-2331,
-<unitdate>1894-1895</unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">1
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 2701-2819,
-<unitdate>1897-1901, 1908</unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">2
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 2821-2940,
-<unitdate>1899-1900</unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">3
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 3176-3350,
-<unitdate>1903-1904</unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">4
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 3579-3741,
-<unitdate>1907-1909</unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">5
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, nos. 3742-3926,
-<unitdate>1909-1911</unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">6
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, unnumbered
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">7
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons, unnumbered, and Reasons for Leaving Africa
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">8
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Sermons - Key/Index
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">3
-</container>
-<container label="Folder" type="folder">9
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Seton, Samuel Waddington
-<unitdate></unitdate>.</unittitle>
-<container label="Box" type="box">4
-</container>
-<container label="Folder" type="folder">1
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle><title render="italic">The Story of Goochland</title> by Richard Cunningham Wight,
-<unitdate>1935</unitdate>.</unittitle>
-<container label="Box" type="box">4
-</container>
-<container label="Folder" type="folder">2
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Tax Tickets and Receipts,
-<unitdate>1895-1905</unitdate>.</unittitle>
-<container label="Box" type="box">4
-</container>
-<container label="Folder" type="folder">3
-</container>
-</did>
-</c01>
-<c01 level="file">
-<did>
-<unittitle>Twenty-First Street Businessmen's Association Cruise - Scrapbook,
-<unitdate>1951</unitdate>.</unittitle>
-<container label="Box" type="box">4
-</container>
-<container label="Folder" type="folder">4-6
-</container>
-</did>
-</c01>
-</dsc>
-</archdesc>
+      <c01 level="file">
+        <did>
+          <unittitle>Account Book,
+<unitdate era="ce" calendar="gregorian">1875-1880</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">1
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Accounts and Receipts
+<unitdate era="ce" calendar="gregorian">1875-1880</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">2
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>African Steam-Ship Company - Rates of Freight,
+<unitdate era="ce" calendar="gregorian">1877</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">3
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Agreement,
+<unitdate era="ce" calendar="gregorian">1908</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">4
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Almanacs,
+<unitdate era="ce" calendar="gregorian">1879-1883</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">5-9
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Arizona Ostrich Company
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">10
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Boyd, James
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">11
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Cancelled Checks
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">12
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Cash Account Book,
+<unitdate era="ce" calendar="gregorian">1869-1883</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">13
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Correspondence
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">14
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Deed,
+<unitdate era="ce" calendar="gregorian">1899</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">15
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Diaries,
+<unitdate era="ce" calendar="gregorian">1879-1880, 1894</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">16-18
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Estate of Charles Clifton Penick
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">19-20
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Everlasting Life: A Vision</title> by Rev. C. Clifton Penick,
+<unitdate era="ce" calendar="gregorian">1899</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">21
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Expenses from Africa to Wheeling, WV,
+<unitdate era="ce" calendar="gregorian">1882</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">22
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>General Convention Reports,
+<unitdate era="ce" calendar="gregorian">1880, 1883</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">22
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Holy Bible</title> (Annotated)
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">1
+</container>
+          <container label="Folder" type="folder">n/a
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Honorary Arms and Crest,
+<unitdate era="ce" calendar="gregorian">1956</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">1
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Inventory of Mission Property Left in Orphan Asylum,
+<unitdate era="ce" calendar="gregorian">1878</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">2
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Journal (Accounts),
+<unitdate era="ce" calendar="gregorian">1890-1912</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">3
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letterbook,
+<unitdate era="ce" calendar="gregorian">31 October 1878 - 9 September 1884</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">n/a
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Medical Examiner's Report - Life Insurance,
+<unitdate era="ce" calendar="gregorian">1883</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">4
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Minutes - Cape Palmas Mission,
+<unitdate era="ce" calendar="gregorian">23 December 1837 - 20 June 1852</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">5-7
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Miscellaneous
+<unitdate era="ce" calendar="gregorian">1875-1880</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">8
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Our Dead: Our Memories: Our Lessons: Our Duties</title> by Rev. C. Clifton Penick,
+<unitdate era="ce" calendar="gregorian">1888</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">9
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Photographs
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">10
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Poetry
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">11
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Postcards
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">12
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Scrapbook - Huguenot Society - Susanne Rochet Chapter,
+<unitdate era="ce" calendar="gregorian">1937-1942</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">13
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 1-12 and unnumbered,
+<unitdate era="ce" calendar="gregorian">1886-1911</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">14
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 360-366,
+<unitdate era="ce" calendar="gregorian">1872-1873</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">15
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 434-436,
+<unitdate era="ce" calendar="gregorian">1873</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">16
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 597-600
+<unitdate era="ce" calendar="gregorian">1874</unitdate>.</unittitle>
+          <container label="Box" type="box">2
+</container>
+          <container label="Folder" type="folder">17
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 692-697,
+<unitdate era="ce" calendar="gregorian">1875</unitdate>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">18
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 2253-2331,
+<unitdate era="ce" calendar="gregorian">1894-1895</unitdate>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">1
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 2701-2819,
+<unitdate era="ce" calendar="gregorian">1897-1901, 1908</unitdate>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">2
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 2821-2940,
+<unitdate era="ce" calendar="gregorian">1899-1900</unitdate>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">3
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 3176-3350,
+<unitdate era="ce" calendar="gregorian">1903-1904</unitdate>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">4
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 3579-3741,
+<unitdate era="ce" calendar="gregorian">1907-1909</unitdate>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">5
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, nos. 3742-3926,
+<unitdate era="ce" calendar="gregorian">1909-1911</unitdate>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">6
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, unnumbered
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">7
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons, unnumbered, and Reasons for Leaving Africa
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">8
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Sermons - Key/Index
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">3
+</container>
+          <container label="Folder" type="folder">9
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Seton, Samuel Waddington
+<unitdate era="ce" calendar="gregorian"/>.</unittitle>
+          <container label="Box" type="box">4
+</container>
+          <container label="Folder" type="folder">1
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Story of Goochland</title> by Richard Cunningham Wight,
+<unitdate era="ce" calendar="gregorian">1935</unitdate>.</unittitle>
+          <container label="Box" type="box">4
+</container>
+          <container label="Folder" type="folder">2
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Tax Tickets and Receipts,
+<unitdate era="ce" calendar="gregorian">1895-1905</unitdate>.</unittitle>
+          <container label="Box" type="box">4
+</container>
+          <container label="Folder" type="folder">3
+</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Twenty-First Street Businessmen's Association Cruise - Scrapbook,
+<unitdate era="ce" calendar="gregorian">1951</unitdate>.</unittitle>
+          <container label="Box" type="box">4
+</container>
+          <container label="Folder" type="folder">4-6
+</container>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

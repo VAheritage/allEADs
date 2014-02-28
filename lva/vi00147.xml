@@ -1,181 +1,166 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00147">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00147::A Guide to the Henrico Parish Records, 1730-1941)//EN&amp;#34; &amp;#34;vi00147.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00147">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00147::A Guide to the Henrico Parish Records, 1730-1941)//EN&amp;#34; &amp;#34;vi00147.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00147::A Guide to the Henrico
              Parish Records, 1730-1941)//EN" "vi00147.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Henrico Parish Records, 
-            <date>1730-1941</date></titleproper>
-            <subtitle id="sort">Henrico Parish Records, 1730-1941 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Henrico Parish Records, 
+            <date era="ce" calendar="gregorian">1730-1941</date></titleproper>
+        <subtitle id="sort">Henrico Parish Records, 1730-1941 
             <num type="collectionnumber">13874, 20315, 20339, 21645,
             21646, 25292, 28068, 28309, 30518</num></subtitle>
-            <author>Description Services Staff</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Description Services Staff</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 8 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">ca. 8 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Jay Gaidmore, 
-         <date>1 November 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">1 November 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00147::A Guide to the Henrico Parish Records,
             1730-1941)//EN" "vi00147.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Henrico Parish Records, 
-         <date>1730-1941</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Henrico Parish Records, 
+         <date era="ce" calendar="gregorian">1730-1941</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">13874, 20315, 20339, 21645,
          21646, 25292, 28068, 28309, 30518</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Description Services Staff</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Description Services Staff</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Henrico Parish Records, 
-         <unitdate type="inclusive" label="Date">
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Henrico Parish Records, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1730-1941</unitdate></unittitle>
-         <unitid label="Accession number">13874, 20315, 20339, 21646,
+      <unitid label="Accession number">13874, 20315, 20339, 21646,
          25292, 28068, 28309, 30518</unitid>
-         <physloc label="Physical Location">Church Records Collection,
+      <physloc label="Physical Location">Church Records Collection,
          Episcopal.</physloc>
-         <physdesc label="Physical Characteristics">Accession 13874, 1
+      <physdesc label="Physical Characteristics">Accession 13874, 1
          volume (48 pages), manuscript 
-         <lb />Accession 20315, 1 volume (356 leaves), negative
+         <lb/>Accession 20315, 1 volume (356 leaves), negative
          photostats 
-         <lb />Accession 20339, 1 volume (219 leaves), negative
+         <lb/>Accession 20339, 1 volume (219 leaves), negative
          photostats 
-         <lb />Accession 21645, 1 volume (82 leaves), negative
+         <lb/>Accession 21645, 1 volume (82 leaves), negative
          photostats 
-         <lb />Accession 21646, 1 volume (204 leaves), negative
+         <lb/>Accession 21646, 1 volume (204 leaves), negative
          photostats 
-         <lb />Accession 25292, 2 items, manuscript 
-         <lb />Accession 28068, 1 volume (377 leaves), photocopies 
-         <lb />Accession 28309, 1 leaf, negative photostat 
-         <lb />Accession 30518, 1 microfilm reel</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+         <lb/>Accession 25292, 2 items, manuscript 
+         <lb/>Accession 28068, 1 volume (377 leaves), photocopies 
+         <lb/>Accession 28309, 1 leaf, negative photostat 
+         <lb/>Accession 30518, 1 microfilm reel</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Henrico Parish (Va.) [cite specific record used and
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Henrico Parish (Va.) [cite specific record used and
             dates]. Accession [cite specific accession no. used].
             Church records collection, The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Accession 13874, gift of John Hart, 19 June 1918 
-            <lb />Accession 20315, lent for copying by the Vestry of
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Accession 13874, gift of John Hart, 19 June 1918 
+            <lb/>Accession 20315, lent for copying by the Vestry of
             St. John's Church, Richmond, Virginia, 21 April 1931 
-            <lb />Accession 20339, lent for copying by the Vestry of
+            <lb/>Accession 20339, lent for copying by the Vestry of
             St. John's Church, Richmond, Virginia, 30 June 1931 
-            <lb />Accession 21645-21646, lent for copying by Dr.
+            <lb/>Accession 21645-21646, lent for copying by Dr.
             Churchill J. Gibson, St. James Church, Richmond, Virginia,
             1939. 
-            <lb />Accession 25292, gift of Monumental Church of
+            <lb/>Accession 25292, gift of Monumental Church of
             Richmond, Richmond, Virginia, 7 March 1961. 
-            <lb />Accession 28068, lent for copying by St. Philip's
+            <lb/>Accession 28068, lent for copying by St. Philip's
             Episcopal Church, Richmond, Virginia, through Reverend J.
             Carleton Hayden, Dept. of History, Howard University,
             Washington, D.C., 21 July 1973 
-            <lb />Accession 28309, lent for copy by W. N. Glen,
+            <lb/>Accession 28309, lent for copy by W. N. Glen,
             Richmond, Virginia, 10 June 1974 
-            <lb />Accession 30518, lent for microfilming by the
+            <lb/>Accession 30518, lent for microfilming by the
             Virginia Historical Society, 26 January 1967</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>Henrico Parish dates from 1611 with the founding of
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>Henrico Parish dates from 1611 with the founding of
          Henricopolis. The county of Henrico was one of the original
          shires of 1634 and at the time lay on both sides of the James
          River, extending indefinitely westward from the Charles City
@@ -183,23 +168,23 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Although very early records have not survived, St. John's
          Church records begin in 1730 and are records of the whole of
          Henrico Parish to 1770.</p>
-         <p>St. John's Church, completed 10 June 1741, was in reality
+      <p>St. John's Church, completed 10 June 1741, was in reality
          the fourth church in the parish and did not for some time
          become the main parish church. Throughout the earlier records
          it is referred to as the New Church, the Church on Richmond
          Hill, the Town Church, or simply the Church. Not until 1829
          was it identified as St. John's Church. For more information
          see, A 
-         <title render="italic">Story of St. John's Church, Henrico
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Story of St. John's Church, Henrico
          Parish, 1607-1964,</title> by Grace E. Taliaferro, 1968.</p>
-         <p>St. James Episcopal Church had been in the process of
+      <p>St. James Episcopal Church had been in the process of
          organization for a few years before the cornerstone was laid
          on 2 April 1838, at I (now Marshall) and 5th streets. In 1831,
          a group of churchmen agreed that the western part of Richmond
          needed an Episcopal Church and in 1835 land was conveyed for
          its construction. The church was consecrated on 23 June
          1839.</p>
-         <p>St. Philip's Church, an African-American church established
+      <p>St. Philip's Church, an African-American church established
          in 1861, was originally located on North Fourth street between
          Leigh and Jackson streets. The congregation ceased to exist in
          1865, probably due to the burning of Richmond at the end of
@@ -209,12 +194,12 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          structure was built in 1896. In 1959, St. Philip's Church
          purchased the buildings of the Church of the Epiphany on the
          corner of Hanes Avenue and Essex Street.</p>
-         <p>Monumental Episcopal Church was built in 1814 on the site
+      <p>Monumental Episcopal Church was built in 1814 on the site
          of the Richmond Theater, which burned to the ground on 26
          December 1811. The church was erected as a memorial to the
          seventy-two victims of the fire, including the governor of
          Virginia, George William Smith.</p>
-         <p>St. Andrew's Episcopal Church was the successor of the
+      <p>St. Andrew's Episcopal Church was the successor of the
          Belvidere Mission School begun in March 1874 as a mission of
          the St. Paul's Episcopal Church. The school grew so rapidly
          that each new quarters became too small. With assistance from
@@ -225,82 +210,82 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          mission church of the Diocese and elected its first vestry.
          Financial support from St. Paul's was reduced in 1887 and
          discontinued in 1888.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Accession 20339a - St. John's Church vestry book, 28
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Accession 20339a - St. John's Church vestry book, 28
          October 1730-17 December 1773. Processioning records,
          1735-1760, are included in the minutes. A few births and
          deaths follow the minutes. This volume is bound with Accession
          20339b and 20339c. The majority of these entries are
          transcribed in, 
-         <title render="italic">Annals of Henrico Parish . . . History
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Annals of Henrico Parish . . . History
          of St. John's P.E. Church [1611-1904],</title> edited and
          compiled by J. Staunton Moore, 1904. Also available on
          microfilm (Accession 30518a; Misc. reel 423).</p>
-         <p>Accession 20339b - St. John's Church vestry book, 1807, 12
+      <p>Accession 20339b - St. John's Church vestry book, 1807, 12
          May 1812-16 December 1817. Volume begins with the 16 December
          1817 minutes, followed by the 1807 meeting; afterwards the
          meetings are in chronological order. Most of the vestry
          meetings are also recorded in Accession 20315. This volume is
          bound with Accession 20339a and c. The majority of these
          entries are transcribed in, 
-         <title render="italic">Annals of Henrico Parish . . . History
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Annals of Henrico Parish . . . History
          of St. John's P.E. Church [1611-1904],</title> edited and
          compiled by J. Staunton Moore, 1904. Also available on
          microfilm (Accession 30518d; Misc. reel 423).</p>
-         <p>Accession 20339c - St. John's Church register, 1785-1791,
+      <p>Accession 20339c - St. John's Church register, 1785-1791,
          1808, 1810, 1815-1860. List of marriages, 1785-1791,
          solemnized by the Reverends John Buchanan and Benjamin
          Blagrove, compiled from the Ministers' Returns filed in the
          Henrico County Clerk's Office and five marriages abstracted
          from the 
-         <title render="italic">Richmond Enquirer</title> (1808, 1810,
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond Enquirer</title> (1808, 1810,
          1816, and 1817) precede the regular marriage entries beginning
          in 1815. This volume is bound with Accession 20339a and b. The
          majority of these entries are transcribed in, 
-         <title render="italic">Annals of Henrico Parish . . . History
+         <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Annals of Henrico Parish . . . History
          of St. John's P.E. Church [1611- 1904],</title> edited and
          compiled by J. Staunton Moore, 1904.</p>
-         <p>Accession 20315 - St. John's Church vestry book, 28 March
+      <p>Accession 20315 - St. John's Church vestry book, 28 March
          1785-29 April 1795, 1807, 12 May 1812-5 April 1887. These
          minutes are of particular interest because of the long period
          covered. Also available on microfilm (Accession 30518b; Misc.
          reel 423).</p>
-         <p>Accession 30518c - St. John's Church vestry book, 11 April
+      <p>Accession 30518c - St. John's Church vestry book, 11 April
          1887-6 March 1900. Available on microfilm (Misc. reel
          423).</p>
-         <p>Accession 13874 - Female Charitable Association of St.
+      <p>Accession 13874 - Female Charitable Association of St.
          John's Church records, 31 December 1828-27 January 1831,
          consisting of the association's constitution, list of members,
          and minutes.</p>
-         <p>Accession 21645 - St. James Episcopal Church register,
+      <p>Accession 21645 - St. James Episcopal Church register,
          1837-1855, including baptisms, marriages, funerals,
          communicants, confirmations, families, and financial records
          showing collections and disbursements for the Charity Fund.
          Accession 30101 is the manuscript copy of this volume.</p>
-         <p>Accession 21646 - St. James Episcopal Church register,
+      <p>Accession 21646 - St. James Episcopal Church register,
          1853-1889. This is a well organized and well kept register
          showing baptisms (with birth dates), marriages, burials,
          confirmations, communicants, parishioners, and offerings.
          Additional marriage records follow offerings. Accession 30100
          is the manuscript copy of this volume.</p>
-         <p>Accession 28068a - St. Philips's Church history, n.d. This
+      <p>Accession 28068a - St. Philips's Church history, n.d. This
          item is bound with Accession 28068b-d.</p>
-         <p>Accession 28068b-d - St. Philips's Church vestry books, 24
+      <p>Accession 28068b-d - St. Philips's Church vestry books, 24
          May 1869-2 May 1887 ; 7 April 1888-7 July 1892 ; 22 March
          1895-5 February 1904. Register entries are found in the first
          volume, and miscellaneous material in the third volume extends
          the date range to 1941. These volumes are bound with Accession
          28068a.</p>
-         <p>Accession 25292 - Monumental Episcopal Church of Richmond
+      <p>Accession 25292 - Monumental Episcopal Church of Richmond
          deeds of lease and release, 9 May, 10 May 1814. Deed of lease,
          William Marshall, Robert Johnston, John Dunsmure, Patrick
          Gibson, William Fenwick and John Richard to John
          Brockenbrough, Michael W. Hancock and John Gamble. Deed of
          release, same to same.</p>
-         <p>Accession 28309 - St. Andrew's Episcopal Church
+      <p>Accession 28309 - St. Andrew's Episcopal Church
          consecration by Bishop Whittle, 30 December 1877.</p>
-      </scopecontent>
-   </archdesc>
+    </scopecontent>
+  </archdesc>
 </ead>

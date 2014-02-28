@@ -1,198 +1,193 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01817">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01817::A Guide to the Thomas Jefferson Letters, 1800-1806)//EN" "vi01817.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01817">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01817::A Guide to the Thomas Jefferson Letters, 1800-1806)//EN" "vi01817.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Thomas Jefferson Letters, <date>1800-1806</date>
-</titleproper>
-<subtitle id="sort">Jefferson, Thomas, Letters, 1800-1806
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Thomas Jefferson Letters, <date era="ce" calendar="gregorian">1800-1806</date></titleproper>
+        <subtitle id="sort">Jefferson, Thomas, Letters, 1800-1806
 <num type="collectionnumber">24025
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2006 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>6 June 2006</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Thomas Jefferson Letters, <date>1800-1806</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">24025
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Thomas Jefferson Letters, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1800-1806
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">24025
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a">10 leaves, negative photostats
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">6 June 2006</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Thomas Jefferson Letters, <date era="ce" calendar="gregorian">1800-1806</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">24025
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Thomas Jefferson Letters, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1800-1806
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">24025
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">10 leaves, negative photostats
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">Thomas Jefferson
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Thomas Jefferson
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Thomas Jefferson Letters, 1800-1806.  Accession 24025.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
+        <p>Thomas Jefferson Letters, 1800-1806.  Accession 24025.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Lent for copying, 15 July 2006, by Nell Holladay Boand of Mineral, Virginia.
+        <p>Lent for copying, 15 July 2006, by Nell Holladay Boand of Mineral, Virginia.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Thomas Jefferson was born 13 April 1743 in Goochland County, Virginia (now part of Albemarle County, Virginia). He graduated from the College of William and Mary in 1762. A member of the Virginia House of Burgesses from 1769 to 1775, Jefferson represented Virginia in the Continental Congress in 1775 and 1776. He wrote the Declaration of Independence in 1776. Jefferson served as governor of Virginia from 1779 to 1781. After serving another term in Congress from 1783 to 1784, he was appointed minister to France and served from 1784 to 1788. Jefferson served as Secretary of State under President George Washington from 1789 to 1793, and as Vice President under President John Adams from 1797 to 1801. Jefferson succeeded Adams as president, serving from 1801 to 1809. Upon his retirement, Jefferson returned to his home, Monticello, in Albemarle County. He founded the University of Virginia in Charlottesville, Virginia. Jefferson died 4 July 1826 and was buried at Monticello.
+      <p>Thomas Jefferson was born 13 April 1743 in Goochland County, Virginia (now part of Albemarle County, Virginia). He graduated from the College of William and Mary in 1762. A member of the Virginia House of Burgesses from 1769 to 1775, Jefferson represented Virginia in the Continental Congress in 1775 and 1776. He wrote the Declaration of Independence in 1776. Jefferson served as governor of Virginia from 1779 to 1781. After serving another term in Congress from 1783 to 1784, he was appointed minister to France and served from 1784 to 1788. Jefferson served as Secretary of State under President George Washington from 1789 to 1793, and as Vice President under President John Adams from 1797 to 1801. Jefferson succeeded Adams as president, serving from 1801 to 1809. Upon his retirement, Jefferson returned to his home, Monticello, in Albemarle County. He founded the University of Virginia in Charlottesville, Virginia. Jefferson died 4 July 1826 and was buried at Monticello.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Letters, 1800-1806, of Thomas Jefferson (1743-1826) concerning the whereabouts of Lewis Littlepage (1762-1802) and forwarding letters from Littlepage to John Carter Littlepage (1753-ca. 1833) and Benjamin Lewis (ca. 1762-1820) concerning Lewis Littlepage's property. Also contain letters from Jefferson to Lewis Littlepage regarding papers Jefferson is holding for him; and letter from Jefferson to Waller Holladay (1776-1860) concerning monies Lewis Littlepage has paid to the Commonwealth of Virginia.
+      <p>Letters, 1800-1806, of Thomas Jefferson (1743-1826) concerning the whereabouts of Lewis Littlepage (1762-1802) and forwarding letters from Littlepage to John Carter Littlepage (1753-ca. 1833) and Benjamin Lewis (ca. 1762-1820) concerning Lewis Littlepage's property. Also contain letters from Jefferson to Lewis Littlepage regarding papers Jefferson is holding for him; and letter from Jefferson to Waller Holladay (1776-1860) concerning monies Lewis Littlepage has paid to the Commonwealth of Virginia.
 </p>
-</scopecontent>
-<dsc type="in-depth">
-<head>Contents List
+    </scopecontent>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>4 July 1800, 
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">4 July 1800, 
 </unitdate>from Jefferson to Waller Holladay (1776-1860) of Louisa County, Virginia, concerning the whereabouts of Lewis Littlepage (1762-1802) whose last known location was either Poland or Russia.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>18 July 1800, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">18 July 1800, 
 </unitdate>from Jefferson to Waller Holladay which is a copy of Jefferson's 4 July letter
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>8 May 1801, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">8 May 1801, 
 </unitdate>from Jefferson to John Carter Littlepage (1753-ca. 1833) containing letters, 17 January 1801, from Lewis Littlepage to John Carter Littlepage and to Benjamin Lewis (ca. 1762-1820) informing them of his location and asking Lewis to halt legal proceedings against his land until his return to America.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>23 December 1801, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">23 December 1801, 
 </unitdate>from Jefferson to Lewis Littlepage informing Littlepage he received the papers sent and will keep it safe and regretting he was unable to see Littlepage.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>18 June 1802, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">18 June 1802, 
 </unitdate>from Jefferson to Lewis Littlepage returning the papers Littlepage had left with him and stating he is looking forward to seeing Littlepage.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>15 October 1806, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">15 October 1806, 
 </unitdate>from Jefferson to Waller Holladay concerning monies paid by Lewis Littlepage to the Commonwealth of Virginia in 1786-1787. 
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Two copies of the 15 October 1806 letter.
-<unitdate>
-</unitdate>
-</unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Two copies of the 15 October 1806 letter.
+<unitdate era="ce" calendar="gregorian"/></unittitle>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

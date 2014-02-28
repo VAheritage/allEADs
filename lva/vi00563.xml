@@ -1,160 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00563">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-full-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00563::A Guide to the Campbell Brown Collection, 1793-1886)//EN&amp;#34; &amp;#34;vi00563.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00563">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00563::A Guide to the Campbell Brown Collection, 1793-1886)//EN&amp;#34; &amp;#34;vi00563.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00563::A Guide to the Campbell
              Brown Collection, 1793-1886)//EN" "vi00563.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Campbell Brown Collection, 
-            <date>1793-1886</date></titleproper>
-            <subtitle id="sort">Brown, Campbell, Collection, 1793-1886 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Campbell Brown Collection, 
+            <date era="ce" calendar="gregorian">1793-1886</date></titleproper>
+        <subtitle id="sort">Brown, Campbell, Collection, 1793-1886 
             <num type="collectionnumber">20799</num></subtitle>
-            <author>Description Services Branch Staff</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Description Services Branch Staff</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 60 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">ca. 60 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record and paper. Created by Jay Gaidmore, 
-         <date>24 February 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">24 February 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00563::A Guide to the Campbell Brown Collection,
             1793-1886)//EN" "vi00563.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Campbell Brown Collection, 
-         <date>1793-1886</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Campbell Brown Collection, 
+         <date era="ce" calendar="gregorian">1793-1886</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">20799</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Description Services Branch Staff</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Collection, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Description Services Branch Staff</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Collection, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1793-1886</unitdate></unittitle>
-         <unitid label="Accession number">20799</unitid>
-         <physloc label="Physical Location">Oversize Personal Papers
+      <unitid label="Accession number">20799</unitid>
+      <physloc label="Physical Location">Oversize Personal Papers
          Collection, Acc. 20799</physloc>
-         <physdesc label="Physical Characteristics">1 volume (274
+      <physdesc label="Physical Characteristics">1 volume (274
          leaves)</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Collection">Campbell Brown</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Collection">Campbell Brown</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Campbell Brown Collection, 1793-1886. Accession 20799,
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Campbell Brown Collection, 1793-1886. Accession 20799,
             Personal papers collection, The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Lent for copying by Percy Brown, Charlottesville,
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Lent for copying by Percy Brown, Charlottesville,
             Virginia, 10 February 1931, 12 February 1931, and 19
             October 1934.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>Campbell Brown was born on 27 November 1840 to Percy and
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>Campbell Brown was born on 27 November 1840 to Percy and
          Lizinka Brown. He was the cousin, stepson, and staff officer
          of Confederate General Richard S. Ewell during the Civil War.
          Ewell married Lizinka, his first cousin, in 1862. Brown was
          the grandson of George Washington Campbell Brown and the
          nephew of David Hubbard. He committed suicide on 30 August
          1893.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Collection of papers of George Washington Campbell
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Collection of papers of George Washington Campbell
          (1769-1848) and his sons-in-law, David Hubbard (ca. 1792-1874)
          and Richard Stoddert Ewell (1817-1872).</p>
-         <p>The George Washington Campbell Papers cover the years
+      <p>The George Washington Campbell Papers cover the years
          1793-1833, and include 115 items. Principal correspondents are
          John Jacob Astor, H.A.S. Dearborn, David Hubbard, Andrew
          Jackson, Thomas Jefferson, James Madison, James Monroe, and
@@ -170,7 +150,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Monroe's letter offering Campbell the appointment as Minister
          to Russia, and various letters from individuals wishing him
          success in that post and offering him assistance.</p>
-         <p>The David Hubbard Papers cover the years 1834-1861, and
+      <p>The David Hubbard Papers cover the years 1834-1861, and
          include 17 items. Principal correspondents are John C.
          Calhoun, D.H. Lewis, and James K. Polk. Topics covered include
          national political issues and legislation, Nicholas Biddle and
@@ -178,1920 +158,1877 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          President, as well as issues concerning various national
          political conventions and party politics in general. There is
          also a map of the battleground of Manassas (1861).</p>
-         <p>The Richard Stoddert Ewell Papers cover the years 1862 to
+      <p>The Richard Stoddert Ewell Papers cover the years 1862 to
          1885, and include 16 items. Principal correspondents include
          Jefferson Davis and Robert E. Lee. Topics covered include
          Confederate troop strength and movements, the military service
          of slaves in the Confederacy, and reminiscences of officers
          and battles by various individuals.</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>The finding aid arranges the items alphabetically within
+        <head>Arrangement</head>
+        <p>The finding aid arranges the items alphabetically within
             each series. The items are physically located in a bound
             volume in no particular order. The page numbers in the
             container listing refer to the page number on which the
             item appears.</p>
-         </arrangement>
-         <arrangement>
-            <head>Organization</head>
-            <p>Organized into the following three series: I. George
+      </arrangement>
+      <arrangement>
+        <head>Organization</head>
+        <p>Organized into the following three series: I. George
             Washington Campbell Papers, 1793-1833; II. David Hubbard
             Papers, 1834-1861; III. Richard Stoddert Ewell Papers,
             1862-1885.</p>
-         </arrangement>
       </arrangement>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series I">George Washington Campbell
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series I">George Washington Campbell
                Papers, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1793-1833</unitdate></unittitle>
-               <physdesc>117 items</physdesc>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Joseph Anderson, Washington, [D. C.], to 
+          <physdesc>117 items</physdesc>
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Joseph Anderson, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>23 November 1814</unitdate></unittitle>
-                  <physloc>On pages 70-72.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">23 November 1814</unitdate></unittitle>
+            <physloc>On pages 70-72.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket, additional
                   cover leaf with p.s. on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>William P. Anderson, Federal Bottom,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>William P. Anderson, Federal Bottom,
                   Nashville, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>9 January 1809</unitdate></unittitle>
-                  <physloc>On pages 20-23.</physloc>
-                  <physdesc>7 p., 
+                  <unitdate era="ce" calendar="gregorian">9 January 1809</unitdate></unittitle>
+            <physloc>On pages 20-23.</physloc>
+            <physdesc>7 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="William P. Anderson">W[illiam] P.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="William P. Anderson">W[illiam] P.
                   Anderson</persname>, Craggy Hope, Murfreesboro,
                   Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>30 July 1821</unitdate></unittitle>
-                  <physloc>On pages 179-180</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">30 July 1821</unitdate></unittitle>
+            <physloc>On pages 179-180</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John Armstrong">J[ohn]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John Armstrong">J[ohn]
                   Armstrong</persname>, Baltimore, Maryland, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>4 September 1814</unitdate></unittitle>
-                  <physloc>On page 159.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">4 September 1814</unitdate></unittitle>
+            <physloc>On page 159.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John Armstrong">J[ohn]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John Armstrong">J[ohn]
                   A[rmstrong]</persname>, Baltimore, Maryland, to
                   [James Madison], 
-                  <unitdate>4 September 1814</unitdate></unittitle>
-                  <physloc>On page 58.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">4 September 1814</unitdate></unittitle>
+            <physloc>On page 58.</physloc>
+            <physdesc>1 p., 
                   <abbr>MsL</abbr> (transcript)</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, to General John
                   Armstrong, 
-                  <unitdate>2 January 1815</unitdate></unittitle>
-                  <physloc>On pages 89-90.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">2 January 1815</unitdate></unittitle>
+            <physloc>On pages 89-90.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> (draft) with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Jacob Astor, Paris, [France], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Jacob Astor, Paris, [France], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>24 July 1819</unitdate></unittitle>
-                  <physloc>On pages 206-207.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">24 July 1819</unitdate></unittitle>
+            <physloc>On pages 206-207.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket.</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Jacob Astor, Rome, [Italy], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Jacob Astor, Rome, [Italy], to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>,</unittitle>
-                  <physloc>On pages 164-165.</physloc>
-                  <physdesc>3 p., 
+            <physloc>On pages 164-165.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Samuel P. Black, Murfreesboro,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Samuel P. Black, Murfreesboro,
                   [Tennessee], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, [Tennessee], 
-                  <unitdate>31 December 1821</unitdate></unittitle>
-                  <physloc>On page 187.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">31 December 1821</unitdate></unittitle>
+            <physloc>On page 187.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Robert Brent to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Robert Brent to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, at Mrs. Suter's, 
-                  <unitdate>15 January 1816</unitdate></unittitle>
-                  <physloc>On page 112.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">15 January 1816</unitdate></unittitle>
+            <physloc>On page 112.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Robert Brent, Washington, [D. C.], to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Robert Brent, Washington, [D. C.], to
                   Robert Sacrey, Nashville, Tennessee, 
-                  <unitdate>20 January 1816</unitdate></unittitle>
-                  <physloc>On pages 113, 121.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">20 January 1816</unitdate></unittitle>
+            <physloc>On pages 113, 121.</physloc>
+            <physdesc>2 p., 
                   <abbr>MsL</abbr> (copy) with docket in the hand of 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="James Bright">J[ames]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="James Bright">J[ames]
                   Bright</persname>, Fayettesville, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>29 November 1821</unitdate></unittitle>
-                  <physloc>On pages 182-183.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">29 November 1821</unitdate></unittitle>
+            <physloc>On pages 182-183.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Brown, Fort Armstrong, Cossa River,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Brown, Fort Armstrong, Cossa River,
                   to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Kingston, Tennessee, forwarded to
                   Washington, [D. C.], 
-                  <unitdate>22 November 1813</unitdate></unittitle>
-                  <physloc>On pages 47-48.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">22 November 1813</unitdate></unittitle>
+            <physloc>On pages 47-48.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas Brown, Kingston, Tennessee, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Brown, Kingston, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>25 December 1813</unitdate></unittitle>
-                  <physloc>On pages 45-46.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">25 December 1813</unitdate></unittitle>
+            <physloc>On pages 45-46.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Anthony Butler">A[nthony]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Anthony Butler">A[nthony]
                   Butler</persname>, Russellville, Kentucky, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, D. C., 
-                  <unitdate>3 February 1809</unitdate></unittitle>
-                  <physloc>On pages 24-26.</physloc>
-                  <physdesc>5 p., 
+                  <unitdate era="ce" calendar="gregorian">3 February 1809</unitdate></unittitle>
+            <physloc>On pages 24-26.</physloc>
+            <physdesc>5 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Anthony Butler">An[thony]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Anthony Butler">An[thony]
                   Butler</persname>, Russellville, Kentucky, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Knoxville, Tennessee, 
-                  <unitdate>15 September 1808</unitdate></unittitle>
-                  <physloc>On pages 18-19.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">15 September 1808</unitdate></unittitle>
+            <physloc>On pages 18-19.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John W. Campbell, Knoxville, Tennessee, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John W. Campbell, Knoxville, Tennessee, to
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>5 November 1811</unitdate></unittitle>
-                  <physloc>On pages 68-69.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">5 November 1811</unitdate></unittitle>
+            <physloc>On pages 68-69.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John W. Campbell, Knoxville, [Tennessee],
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John W. Campbell, Knoxville, [Tennessee],
                   to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>20 August 1815</unitdate></unittitle>
-                  <physloc>On pages 104-105.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">20 August 1815</unitdate></unittitle>
+            <physloc>On pages 104-105.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Samuel Carswell, Philadelphia,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Samuel Carswell, Philadelphia,
                   Pennsylvania, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>7 September 1814</unitdate></unittitle>
-                  <physloc>On page 59.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">7 September 1814</unitdate></unittitle>
+            <physloc>On page 59.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>George Coalter, Fayetteville, Tennessee,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>George Coalter, Fayetteville, Tennessee,
                   to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>2 July 1814</unitdate></unittitle>
-                  <physloc>On pages 56-57.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">2 July 1814</unitdate></unittitle>
+            <physloc>On pages 56-57.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Cocke, Rutledge, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Cocke, Rutledge, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>24 December [1805]</unitdate></unittitle>
-                  <physloc>On pages 7-8.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">24 December [1805]</unitdate></unittitle>
+            <physloc>On pages 7-8.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Cocke, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Cocke, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>18 January 1822</unitdate></unittitle>
-                  <physloc>On page 194.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">18 January 1822</unitdate></unittitle>
+            <physloc>On page 194.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>William H. Crawford, Paris, France, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>William H. Crawford, Paris, France, to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>20 April 1814</unitdate></unittitle>
-                  <physloc>On pages 49-50.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">20 April 1814</unitdate></unittitle>
+            <physloc>On pages 49-50.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>William H. Crawford, Washington, [D. C.],
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>William H. Crawford, Washington, [D. C.],
                   to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>16 May 1820</unitdate></unittitle>
-                  <physloc>On pages 173-174.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">16 May 1820</unitdate></unittitle>
+            <physloc>On pages 173-174.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Henry A. S. Dearborn">H[enry A. S.]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Henry A. S. Dearborn">H[enry A. S.]
                   Dearborn</persname>, Boston, Massachusetts, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>6 January 1819</unitdate></unittitle>
-                  <physloc>On pages 140-141.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">6 January 1819</unitdate></unittitle>
+            <physloc>On pages 140-141.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Henry A. S. Dearborn">H[enry] A. S.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Henry A. S. Dearborn">H[enry] A. S.
                   Dearborn</persname>, Boston, [Massachusetts], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Tennessee, 
-                  <unitdate>12 January 1822</unitdate></unittitle>
-                  <physloc>On pages 192-193.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">12 January 1822</unitdate></unittitle>
+            <physloc>On pages 192-193.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Henry A. S. Dearborn">H[enry] A. S.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Henry A. S. Dearborn">H[enry] A. S.
                   Dearborn</persname>, Boston, [Massachusetts], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>11 April 1822</unitdate></unittitle>
-                  <physloc>On pages 198-199.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">11 April 1822</unitdate></unittitle>
+            <physloc>On pages 198-199.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Dickinson, Franklin, [Tennessee], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Dickinson, Franklin, [Tennessee], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>4 May 1814</unitdate></unittitle>
-                  <physloc>On page 51.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">4 May 1814</unitdate></unittitle>
+            <physloc>On page 51.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John Henry Eaton">J[ohn] H[enry]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John Henry Eaton">J[ohn] H[enry]
                   Eaton</persname>, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>29 January 1822</unitdate></unittitle>
-                  <physloc>On pages 195-196.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">29 January 1822</unitdate></unittitle>
+            <physloc>On pages 195-196.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>J. Edgar, Kaskaskia, Illinois, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>J. Edgar, Kaskaskia, Illinois, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>19 November 1821</unitdate></unittitle>
-                  <physloc>On page 181, 190.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">19 November 1821</unitdate></unittitle>
+            <physloc>On page 181, 190.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket. On verso
                   is 1 page, autographed letter, draft reply, from 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, Nashville, Tennessee, to [J. Edgar],
                   1 January 1822.</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>A. H. Everett, Bruselles, [Kingdom of the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>A. H. Everett, Bruselles, [Kingdom of the
                   Netherlands], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Russia, 
-                  <unitdate>7 January 1819</unitdate></unittitle>
-                  <physloc>On page 142.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">7 January 1819</unitdate></unittitle>
+            <physloc>On page 142.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>George W. Ewing, Madrid, [Spain], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>George W. Ewing, Madrid, [Spain], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>2 March 1819</unitdate></unittitle>
-                  <physloc>On pages 145-146.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">2 March 1819</unitdate></unittitle>
+            <physloc>On pages 145-146.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Edmund P. Gaines, Fort Stoddert,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Edmund P. Gaines, Fort Stoddert,
                   Mississippi Territory, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, D. C., forwarded to
                   Nashville, Tennessee, 
-                  <unitdate>22 April 1809</unitdate></unittitle>
-                  <physloc>On pages 29-32.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">22 April 1809</unitdate></unittitle>
+            <physloc>On pages 29-32.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">ALS</abbr>,
                   with 3 p. enclosure (petition) with additional page
                   and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Edmund P. Gaines, Fort Stoddert, Missouri
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Edmund P. Gaines, Fort Stoddert, Missouri
                   Territory, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Knoxville, forwarded to Nashville,
                   Tennessee, 
-                  <unitdate>22 May 1809</unitdate></unittitle>
-                  <physloc>On pages 33-34.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">22 May 1809</unitdate></unittitle>
+            <physloc>On pages 33-34.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Albert Gallatin, Paris, [France], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Albert Gallatin, Paris, [France], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>18 August 1819</unitdate></unittitle>
-                  <physloc>On pages 152-155.</physloc>
-                  <physdesc>8 p., 
+                  <unitdate era="ce" calendar="gregorian">18 August 1819</unitdate></unittitle>
+            <physloc>On pages 152-155.</physloc>
+            <physdesc>8 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Albert Gallatin, Paris, [France], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Albert Gallatin, Paris, [France], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>15 September 1819</unitdate></unittitle>
-                  <physloc>On pages 156-158.</physloc>
-                  <physdesc>6 p., 
+                  <unitdate era="ce" calendar="gregorian">15 September 1819</unitdate></unittitle>
+            <physloc>On pages 156-158.</physloc>
+            <physdesc>6 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Lowry, John Walker, Ridge, Richard
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Lowry, John Walker, Ridge, Richard
                   Taylor, Chew, Washington, [D. C.], to George Graham,
                   Dept. of War, 
-                  <unitdate>22 March 1816</unitdate></unittitle>
-                  <physloc>On page 114.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">22 March 1816</unitdate></unittitle>
+            <physloc>On page 114.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Manuscript Letter">MsL</abbr> (copy) with
                   cover leaf and docket in the hand of 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">[G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, Washington, [D. C.], to George
                   Graham, Acting Secretary of War, 
-                  <unitdate>11 January 1817</unitdate></unittitle>
-                  <physloc>On pages 115-117.</physloc>
-                  <physdesc>5 p., 
+                  <unitdate era="ce" calendar="gregorian">11 January 1817</unitdate></unittitle>
+            <physloc>On pages 115-117.</physloc>
+            <physdesc>5 p., 
                   <abbr expan="Autographed Letter">AL</abbr> (draft)
                   with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>George Graham to Andrew Jackson, 
-                  <unitdate>13 January 1817</unitdate></unittitle>
-                  <physloc>On pages 118-119.</physloc>
-                  <physdesc>2 p., 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>George Graham to Andrew Jackson, 
+                  <unitdate era="ce" calendar="gregorian">13 January 1817</unitdate></unittitle>
+            <physloc>On pages 118-119.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Manuscript Letter">MsL</abbr> (copy) with
                   docket in the hand of 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>George Graham, Dept. of War, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>George Graham, Dept. of War, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Senate of the U. S., 
-                  <unitdate>18 January 1817;</unitdate></unittitle>
-                  <physloc>On page 119.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">18 January 1817;</unitdate></unittitle>
+            <physloc>On page 119.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Manuscript Letter Signed">MsLS</abbr> and
                   docket with enclosure</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Peter Hagner, Dept. of War, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Peter Hagner, Dept. of War, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, U. S. Senate, 
-                  <unitdate>8 January 1817</unitdate></unittitle>
-                  <physloc>On page 120.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">8 January 1817</unitdate></unittitle>
+            <physloc>On page 120.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Alexander Hamilton, Philadelphia, to John
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Alexander Hamilton, Philadelphia, to John
                   Armstrong, Jr., 
-                  <unitdate>1 April 1793</unitdate></unittitle>
-                  <physloc>On pages 2-3.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">1 April 1793</unitdate></unittitle>
+            <physloc>On pages 2-3.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Manuscript Letter">MsL</abbr> (copy) with
                   manuscript notes on cover leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Levet Harris, Burlington, New Jersey, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Levet Harris, Burlington, New Jersey, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Boston, [Massachusetts], 
-                  <unitdate>7 July 1818</unitdate></unittitle>
-                  <physloc>On pages 172-128.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">7 July 1818</unitdate></unittitle>
+            <physloc>On pages 172-128.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>David Hubbard, Florence, Alabama, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>David Hubbard, Florence, Alabama, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>2 December 1821</unitdate></unittitle>
-                  <physloc>On page 184.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">2 December 1821</unitdate></unittitle>
+            <physloc>On page 184.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>David Hubbard, Florence, [Alabama], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>David Hubbard, Florence, [Alabama], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>12 December 1821</unitdate></unittitle>
-                  <physloc>On pages 185-186.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">12 December 1821</unitdate></unittitle>
+            <physloc>On pages 185-186.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="David Hubbard">D[avid]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="David Hubbard">D[avid]
                   Hubbard</persname>, Courtland, [Alabama], to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>9 May 1833</unitdate></unittitle>
-                  <physloc>On page 211.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">9 May 1833</unitdate></unittitle>
+            <physloc>On page 211.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Andrew Jackson, Captain Craigs, to George
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Andrew Jackson, Captain Craigs, to George
                   W. Campbell, Knoxville, [Tennessee], 
-                  <unitdate>13 April 1804</unitdate></unittitle>
-                  <physloc>On page 4.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">13 April 1804</unitdate></unittitle>
+            <physloc>On page 4.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Andrew Jackson, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Andrew Jackson, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Knoxville, [Tennessee], 
-                  <unitdate>28 April 1804</unitdate></unittitle>
-                  <physloc>On pages 5-6.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">28 April 1804</unitdate></unittitle>
+            <physloc>On pages 5-6.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Andrew Jackson, Hermitage, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Andrew Jackson, Hermitage, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Knoxville, Tennessee, 
-                  <unitdate>5 August 1805</unitdate></unittitle>
-                  <physloc>On pages 16-17.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">5 August 1805</unitdate></unittitle>
+            <physloc>On pages 16-17.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Andrew Jackson, Nashville, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Andrew Jackson, Nashville, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>15 January 1807</unitdate></unittitle>
-                  <physloc>On pages 9-11.</physloc>
-                  <physdesc>5 p., 
+                  <unitdate era="ce" calendar="gregorian">15 January 1807</unitdate></unittitle>
+            <physloc>On pages 9-11.</physloc>
+            <physdesc>5 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">[G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>3 April 1828</unitdate></unittitle>
-                  <physloc>On page 12.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">3 April 1828</unitdate></unittitle>
+            <physloc>On page 12.</physloc>
+            <physdesc>1 p., 
                   <abbr>AN</abbr> (draft)</physdesc>
-                  <abstract>Regarding 15 January 1807 letter from
+            <abstract>Regarding 15 January 1807 letter from
                   Andrew Jackson to George Washington
                   Campbell</abstract>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Andrew Jackson to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Andrew Jackson to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>5 August 1811</unitdate></unittitle>
-                  <physloc>On page 40.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">5 August 1811</unitdate></unittitle>
+            <physloc>On page 40.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with p.s. and additional leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Andrew Jackson, Hermitage, [Tennessee], to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Andrew Jackson, Hermitage, [Tennessee], to
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, 
-                  <unitdate>14 February 1828</unitdate></unittitle>
-                  <physloc>On page 203-204.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">14 February 1828</unitdate></unittitle>
+            <physloc>On page 203-204.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Andrew Jackson to Mrs. Mary Polk, care of
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Andrew Jackson to Mrs. Mary Polk, care of
                   Mr. Lucius Polk, Spring Hill, near Columbia,
                   Tennessee, 
-                  <unitdate>26 November 1832</unitdate></unittitle>
-                  <physloc>On pages 209-210.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">26 November 1832</unitdate></unittitle>
+            <physloc>On pages 209-210.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas Jefferson, Monticello, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Jefferson, Monticello, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, D. C., 
-                  <unitdate>8 May 1814</unitdate></unittitle>
-                  <physloc>On page 53.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">8 May 1814</unitdate></unittitle>
+            <physloc>On page 53.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, [Tennessee], to Thomas
                   Jefferson, 
-                  <unitdate>9 September 1815</unitdate></unittitle>
-                  <physloc>On pages 106-107.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">9 September 1815</unitdate></unittitle>
+            <physloc>On pages 106-107.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket (draft)</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas Jefferson, Monticello, Virginia, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Jefferson, Monticello, Virginia, to
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, forwarded to
                   Washington, [D. C.], 
-                  <unitdate>15 October 1815</unitdate></unittitle>
-                  <physloc>On pages 110-111.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">15 October 1815</unitdate></unittitle>
+            <physloc>On pages 110-111.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard M. Johnson, 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard M. Johnson, 
                   <geogname normal="Washington, D. C.">W[ashington, D.
                   C.]</geogname>, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennesse, 
-                  <unitdate>29 October 1814</unitdate></unittitle>
-                  <physloc>On page 63.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">29 October 1814</unitdate></unittitle>
+            <physloc>On page 63.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf, p.s. and
                   docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, to Richard M.
                   Johnson, 
-                  <unitdate>27 November 1814</unitdate></unittitle>
-                  <physloc>On pages 73-80.</physloc>
-                  <physdesc>16 p., 
+                  <unitdate era="ce" calendar="gregorian">27 November 1814</unitdate></unittitle>
+            <physloc>On pages 73-80.</physloc>
+            <physdesc>16 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> (draft) with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="William Jones">W[illiam]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="William Jones">W[illiam]
                   Jones</persname>, Philadelphia, [Pennsylvania], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>7 November 1820</unitdate></unittitle>
-                  <physloc>On pages 188-189.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">7 November 1820</unitdate></unittitle>
+            <physloc>On pages 188-189.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John D. Lewis, St. Petersburg, [Russia],
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John D. Lewis, St. Petersburg, [Russia],
                   to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>27 May 1821</unitdate></unittitle>
-                  <physloc>On pages 175-176.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">27 May 1821</unitdate></unittitle>
+            <physloc>On pages 175-176.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John D. Lewis">J[ohn] D.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John D. Lewis">J[ohn] D.
                   L[ewis]</persname>, St. Petersburg, [Russia], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>21 July 1821</unitdate></unittitle>
-                  <physloc>On pages 177-178.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">21 July 1821</unitdate></unittitle>
+            <physloc>On pages 177-178.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas McCorry, Knoxville, Tennessee, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas McCorry, Knoxville, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>21 December 1814</unitdate></unittitle>
-                  <physloc>On pages 83-84.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">21 December 1814</unitdate></unittitle>
+            <physloc>On pages 83-84.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas McCorry, Knoxville, Tennessee, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas McCorry, Knoxville, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>7 January 1815</unitdate></unittitle>
-                  <physloc>On page 91.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">7 January 1815</unitdate></unittitle>
+            <physloc>On page 91.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas McCorry, Knoxville, Tennessee, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas McCorry, Knoxville, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>4 February 1815</unitdate></unittitle>
-                  <physloc>On page 94.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">4 February 1815</unitdate></unittitle>
+            <physloc>On page 94.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Thomas Macdonough">T[homas]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Thomas Macdonough">T[homas]
                   Macdonough</persname>, U. S. S. Guerriere, Cronstadt
                   and [Russia], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>27 September 1818</unitdate></unittitle>
-                  <physloc>On page 134.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">27 September 1818</unitdate></unittitle>
+            <physloc>On page 134.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Madison, Montpelier, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Madison, Montpelier, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>7 May 1814</unitdate></unittitle>
-                  <physloc>On page 52.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">7 May 1814</unitdate></unittitle>
+            <physloc>On page 52.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Madison, Montpelier, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Madison, Montpelier, to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>25 May 1814</unitdate></unittitle>
-                  <physloc>On pages 54-55</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">25 May 1814</unitdate></unittitle>
+            <physloc>On pages 54-55</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">[G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, Washington, D. C., to [James
                   Madison], 
-                  <unitdate>26 September 1814</unitdate></unittitle>
-                  <physloc>On pages 60-61.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">26 September 1814</unitdate></unittitle>
+            <physloc>On pages 60-61.</physloc>
+            <physdesc>2 p., 
                   <abbr>AL</abbr> (draft) with cover leaf and
                   docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Madison to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Madison to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>27 September 1814</unitdate></unittitle>
-                  <physloc>On page 62.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">27 September 1814</unitdate></unittitle>
+            <physloc>On page 62.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Madison, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Madison, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>2 November 1814</unitdate></unittitle>
-                  <physloc>On pages 66-67.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">2 November 1814</unitdate></unittitle>
+            <physloc>On pages 66-67.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">[G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, Nashville, Tennessee, to [James
                   Madison], 
-                  <unitdate>15 December 1814</unitdate></unittitle>
-                  <physloc>On pages 81-82.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">15 December 1814</unitdate></unittitle>
+            <physloc>On pages 81-82.</physloc>
+            <physdesc>3 p., 
                   <abbr>AL</abbr> (draft) with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">[G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, Nashville, Tennessee, to James
                   Madison, 
-                  <unitdate>15 December 1814</unitdate></unittitle>
-                  <physloc>On pages 85-86.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">15 December 1814</unitdate></unittitle>
+            <physloc>On pages 85-86.</physloc>
+            <physdesc>3 p., 
                   <abbr>AL</abbr> (draft)</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Josiah Meigs, General Land Office,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Josiah Meigs, General Land Office,
                   [Washington, D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>7 January 1822</unitdate></unittitle>
-                  <physloc>On page 191.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">7 January 1822</unitdate></unittitle>
+            <physloc>On page 191.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Samuel Mitchell, New York, [New York], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Samuel Mitchell, New York, [New York], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>13 May 1818</unitdate></unittitle>
-                  <physloc>On pages 123-124.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">13 May 1818</unitdate></unittitle>
+            <physloc>On pages 123-124.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Samuel Mitchell, New York, [New York], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Samuel Mitchell, New York, [New York], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Boston, [Massachusetts], 
-                  <unitdate>22 June 1818</unitdate></unittitle>
-                  <physloc>On pages 125-126.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">22 June 1818</unitdate></unittitle>
+            <physloc>On pages 125-126.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Monroe, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Monroe, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>16 October 1813</unitdate></unittitle>
-                  <physloc>On pages 43-44.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">16 October 1813</unitdate></unittitle>
+            <physloc>On pages 43-44.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Monroe, Sweet Springs, Virginia, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Monroe, Sweet Springs, Virginia, to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>6 September 1815</unitdate></unittitle>
-                  <physloc>On pages 108-109.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">6 September 1815</unitdate></unittitle>
+            <physloc>On pages 108-109.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Monroe, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Monroe, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>11 April 1818</unitdate></unittitle>
-                  <physloc>On page 122.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">11 April 1818</unitdate></unittitle>
+            <physloc>On page 122.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Monroe, Oak Hill, [Virginia], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Monroe, Oak Hill, [Virginia], to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>11 April 1828</unitdate></unittitle>
-                  <physloc>On page 205.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">11 April 1828</unitdate></unittitle>
+            <physloc>On page 205.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas Munroe, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Munroe, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>11 February 1822</unitdate></unittitle>
-                  <physloc>On page 198.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">11 February 1822</unitdate></unittitle>
+            <physloc>On page 198.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>"The Memorialists" [John Nancarrow, et.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>"The Memorialists" [John Nancarrow, et.
                   al.], New Orleans, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, D. C., 
-                  <unitdate>7 February 1809</unitdate></unittitle>
-                  <physloc>On page 27-28.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">7 February 1809</unitdate></unittitle>
+            <physloc>On page 27-28.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket and MsN
                   laid in, enclosure</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Petition, John Nancarrow, Alexander
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Petition, John Nancarrow, Alexander
                   Fulton, Josiah S. Johnston, John Hughes, David B.
                   Morgan to U. S. Congress, 
-                  <unitdate>[7 February 1809]</unitdate></unittitle>
-                  <physloc>On page 1.</physloc>
-                  <physdesc>2 p., printed document</physdesc>
-                  <abstract>Enclosed in the "The Memorialists" to
+                  <unitdate era="ce" calendar="gregorian">[7 February 1809]</unitdate></unittitle>
+            <physloc>On page 1.</physloc>
+            <physdesc>2 p., printed document</physdesc>
+            <abstract>Enclosed in the "The Memorialists" to
                   George Washington Campbell, 7 February
                   1809</abstract>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">[G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, Nashville, Tennessee, to John
                   Norvell, Washington, [D. C.], 
-                  <unitdate>19 January 1815</unitdate></unittitle>
-                  <physloc>On pages 87-88.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">19 January 1815</unitdate></unittitle>
+            <physloc>On pages 87-88.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> (draft) with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John Norvell">J.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John Norvell">J.
                   Norvell</persname>, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>10 February 1815</unitdate></unittitle>
-                  <physloc>On pages 95-96.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">10 February 1815</unitdate></unittitle>
+            <physloc>On pages 95-96.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Norvell, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Norvell, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>3 March 1815</unitdate></unittitle>
-                  <physloc>On pages 99-100.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">3 March 1815</unitdate></unittitle>
+            <physloc>On pages 99-100.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Josiah Nichol, Nashville, Tennessee, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Josiah Nichol, Nashville, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>4 January 1823</unitdate></unittitle>
-                  <physloc>On pages 201-202.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">4 January 1823</unitdate></unittitle>
+            <physloc>On pages 201-202.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Usher Parsons, U. S. Frigate Guerriere, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Usher Parsons, U. S. Frigate Guerriere, to
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, Russia, 
-                  <unitdate>8 October 1818</unitdate></unittitle>
-                  <physloc>On pages 135-136.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">8 October 1818</unitdate></unittitle>
+            <physloc>On pages 135-136.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>William Pinkney, Baltimore, [Maryland], to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>William Pinkney, Baltimore, [Maryland], to
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>29 July 1818</unitdate></unittitle>
-                  <physloc>On pages 130-131.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">29 July 1818</unitdate></unittitle>
+            <physloc>On pages 130-131.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>William Pinkney, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>William Pinkney, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>19 January 1821</unitdate></unittitle>
-                  <physloc>On pages 171-172.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">19 January 1821</unitdate></unittitle>
+            <physloc>On pages 171-172.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas Plater, Georgetown, D. C., to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Plater, Georgetown, D. C., to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>27 January 1815</unitdate></unittitle>
-                  <physloc>On pages 92-93.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">27 January 1815</unitdate></unittitle>
+            <physloc>On pages 92-93.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Alexander Robertson">A[lexander]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Alexander Robertson">A[lexander]
                   Robertson</persname>, New York, [New York], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburgh, [Russia], 
-                  <unitdate>18 July 1819</unitdate></unittitle>
-                  <physloc>On page 149.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">18 July 1819</unitdate></unittitle>
+            <physloc>On page 149.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>2 November 1814</unitdate></unittitle>
-                  <physloc>On pages 64-65.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">2 November 1814</unitdate></unittitle>
+            <physloc>On pages 64-65.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, Washington, D. C., to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, Washington, D. C., to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>22 April 1815</unitdate></unittitle>
-                  <physloc>On pages 101-102.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">22 April 1815</unitdate></unittitle>
+            <physloc>On pages 101-102.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, [Tennessee], to Richard
                   Rush, 
-                  <unitdate>20 July 1815</unitdate></unittitle>
-                  <physloc>On page 103.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">20 July 1815</unitdate></unittitle>
+            <physloc>On page 103.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> (draft) with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, London, [England], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, London, [England], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>30 November 1818</unitdate></unittitle>
-                  <physloc>On page 138-139.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">30 November 1818</unitdate></unittitle>
+            <physloc>On page 138-139.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Julian Whiteside, Gallatin, Tennessee, to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Julian Whiteside, Gallatin, Tennessee, to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>21 December 1807</unitdate></unittitle>
-                  <physloc>On pages 13-14.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">21 December 1807</unitdate></unittitle>
+            <physloc>On pages 13-14.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, London, [England], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, London, [England], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>2 February 1819</unitdate></unittitle>
-                  <physloc>On pages 143-144.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">2 February 1819</unitdate></unittitle>
+            <physloc>On pages 143-144.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, London, [England], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, London, [England], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>1 May 1819</unitdate></unittitle>
-                  <physloc>On pages 147-148.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">1 May 1819</unitdate></unittitle>
+            <physloc>On pages 147-148.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, London, [England], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, London, [England], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>24 July 1819</unitdate></unittitle>
-                  <physloc>On pages 150-151.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">24 July 1819</unitdate></unittitle>
+            <physloc>On pages 150-151.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, London, [England], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, London, [England], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St. Petersburg, [Russia], 
-                  <unitdate>25 January 1820</unitdate></unittitle>
-                  <physloc>On page 160-161.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">25 January 1820</unitdate></unittitle>
+            <physloc>On page 160-161.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, London, [England], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, London, [England], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>28 February 1820</unitdate></unittitle>
-                  <physloc>On pages 162-163.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">28 February 1820</unitdate></unittitle>
+            <physloc>On pages 162-163.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard Rush, London, [England], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard Rush, London, [England], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, St., 
-                  <unitdate>14 December 1820</unitdate></unittitle>
-                  <physloc>On pages 166-167.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">14 December 1820</unitdate></unittitle>
+            <physloc>On pages 166-167.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jonathan Russell, Stockholm, [Sweden], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Jonathan Russell, Stockholm, [Sweden], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>13 September 1818</unitdate></unittitle>
-                  <physloc>On pages 132-133.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">13 September 1818</unitdate></unittitle>
+            <physloc>On pages 132-133.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jonathan Russell, Stockholm, [Sweden], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Jonathan Russell, Stockholm, [Sweden], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>19 October 1818</unitdate></unittitle>
-                  <physloc>On page 137.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">19 October 1818</unitdate></unittitle>
+            <physloc>On page 137.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Thomas Sumter, Stateburgh, [South
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Sumter, Stateburgh, [South
                   Carolina], to 
                   <persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, 
-                  <unitdate>11 July 1808</unitdate></unittitle>
-                  <physloc>On page 15.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">11 July 1808</unitdate></unittitle>
+            <physloc>On page 15.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James Trimble, Gallatin, [Tennessee], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James Trimble, Gallatin, [Tennessee], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Knoxville, Tennessee, 
-                  <unitdate>19 November 1810</unitdate></unittitle>
-                  <physloc>On pages 38-39.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">19 November 1810</unitdate></unittitle>
+            <physloc>On pages 38-39.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Martin Van Buren">M[artin] Van
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Martin Van Buren">M[artin] Van
                   Buren</persname>, 
                   <geogname normal="Washington, D. C.">W[ashington, D.
                   C.]</geogname>, to Miss Mary Easton, Nashville,
                   Tennessee, 
-                  <unitdate>4 July 1830</unitdate></unittitle>
-                  <physloc>On page 208.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">4 July 1830</unitdate></unittitle>
+            <physloc>On page 208.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> [lacking pages] with additional
                   leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>J. B. Varnum, Washington, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>J. B. Varnum, Washington, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Knoxville, Tennessee, 
-                  <unitdate>19 March 1810</unitdate></unittitle>
-                  <physloc>On pages 35-37.</physloc>
-                  <physdesc>5 p., 
+                  <unitdate era="ce" calendar="gregorian">19 March 1810</unitdate></unittitle>
+            <physloc>On pages 35-37.</physloc>
+            <physdesc>5 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John Vaughn, Philadelphia, [Pennsylvania],
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John Vaughn, Philadelphia, [Pennsylvania],
                   to William Vaughn, London, England, 
-                  <unitdate>7 July 1818</unitdate></unittitle>
-                  <physloc>On page 129.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">7 July 1818</unitdate></unittitle>
+            <physloc>On page 129.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and manuscript note on
                   verso, 18 June 1856</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>John and Benjamin Welles, Boston,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>John and Benjamin Welles, Boston,
                   [Massachusetts], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>13 April 1822</unitdate></unittitle>
-                  <physloc>On page 200.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">13 April 1822</unitdate></unittitle>
+            <physloc>On page 200.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>William Whann, Georgetown, [D. C.], to 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>William Whann, Georgetown, [D. C.], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Nashville, Tennessee, 
-                  <unitdate>17 February 1875</unitdate></unittitle>
-                  <physloc>On page 97-98.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">17 February 1875</unitdate></unittitle>
+            <physloc>On page 97-98.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Jenkin Whiteside">J[enkin]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Jenkin Whiteside">J[enkin]
                   Whiteside</persname>, 
                   <persname normal="Felix Grundy">F[elix]
                   Grundy</persname>, Thomas Washington, Nashville,
                   [Tennessee], to 
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, 
-                  <unitdate>12 January 1821</unitdate></unittitle>
-                  <physloc>On page 168.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">12 January 1821</unitdate></unittitle>
+            <physloc>On page 168.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="George Washington Campbell">[G. W.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="George Washington Campbell">[G. W.
                   C.]</persname>, Nashville, [Tennessee], to Jenkin
                   Whiteside, Felix Grundy, Thomas Washington,
                   Nashville, [Tennessee], 
-                  <unitdate>12 January 1821</unitdate></unittitle>
-                  <physloc>On pages 169-170.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">12 January 1821</unitdate></unittitle>
+            <physloc>On pages 169-170.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> (draft) with cover leaf and
                   docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jenkin Whiteside, Nashville, Tennessee, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Jenkin Whiteside, Nashville, Tennessee, to
                   <persname normal="George Washington Campbell">G. W.
                   C.</persname>, Washington, [D. C.], 
-                  <unitdate>4 June 1812</unitdate></unittitle>
-                  <physloc>On pages 41-42.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">4 June 1812</unitdate></unittitle>
+            <physloc>On pages 41-42.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series II">David Hubbard Papers, 
-               <unitdate type="inclusive">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series II">David Hubbard Papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1834-1861</unitdate></unittitle>
-               <physdesc>17 items</physdesc>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>J. J. Abert, Washington, [D. C.], to Major
+          <physdesc>17 items</physdesc>
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>J. J. Abert, Washington, [D. C.], to Major
                   David Hubbard, 
-                  <unitdate>22 November 1834</unitdate></unittitle>
-                  <physloc>On pages 212-215.</physloc>
-                  <physdesc>7 p., 
+                  <unitdate era="ce" calendar="gregorian">22 November 1834</unitdate></unittitle>
+            <physloc>On pages 212-215.</physloc>
+            <physdesc>7 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John C. Calhoun">J[ohn] C.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John C. Calhoun">J[ohn] C.
                   Calhoun</persname>, Washington, [D. C.], to David
                   Hubbard, Philadelphia, [Pennsylvania], 
-                  <unitdate>15 June 1834</unitdate></unittitle>
-                  <physloc>On pages 240-242.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">15 June 1834</unitdate></unittitle>
+            <physloc>On pages 240-242.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional wrapper</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John C. Calhoun">J[ohn] C.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John C. Calhoun">J[ohn] C.
                   Calhoun</persname>, Washington, [D. C.], to David
                   Hubbard, 
-                  <unitdate>12 March 1834</unitdate></unittitle>
-                  <physloc>On pages 230-231.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">12 March 1834</unitdate></unittitle>
+            <physloc>On pages 230-231.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John C. Calhoun">J[ohn] C.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John C. Calhoun">J[ohn] C.
                   Calhoun</persname>, Senate Chamber, [Washington, D.
                   C.], to David Hubbard, 
-                  <unitdate>28 November 1843</unitdate></unittitle>
-                  <physloc>On pages 232-233.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">28 November 1843</unitdate></unittitle>
+            <physloc>On pages 232-233.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="John C. Calhoun">J[ohn] C.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="John C. Calhoun">J[ohn] C.
                   Calhoun</persname>, Washington, [D. C.], to 
                   <persname normal="David Hubbard">D[avid]
                   Hubbard</persname>, 
-                  <unitdate>22 September 1844</unitdate></unittitle>
-                  <physloc>On pages 238-239.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">22 September 1844</unitdate></unittitle>
+            <physloc>On pages 238-239.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Clement Comer Clay">C[lement]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Clement Comer Clay">C[lement]
                   C[omer] Clay</persname>, Washington, [D. C.], to
                   Major David Hubbard, Philadelphia, [Pennsylvania], 
-                  <unitdate>5 July 1838</unitdate></unittitle>
-                  <physloc>On page 224.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">5 July 1838</unitdate></unittitle>
+            <physloc>On page 224.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Clement Comer Clay">C[lement]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Clement Comer Clay">C[lement]
                   C[omer] Clay</persname>, Huntsville, [Alabama], to
                   David Hubbard, Kinlock, Alabama, 
-                  <unitdate>8 July [18]59</unitdate></unittitle>
-                  <physloc>On page 249-250.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">8 July [18]59</unitdate></unittitle>
+            <physloc>On page 249-250.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richard N. Cralle, Washington, [D. C.], to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richard N. Cralle, Washington, [D. C.], to
                   David Hubbard, Philadelphia, [Pennsylvania], 
-                  <unitdate>27 April 1838</unitdate></unittitle>
-                  <physloc>On pages 222-223.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">27 April 1838</unitdate></unittitle>
+            <physloc>On pages 222-223.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>William R. King, New York, [New York], to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>William R. King, New York, [New York], to
                   David Hubbard, Washington, D. C., 
-                  <unitdate>14 May 1844</unitdate></unittitle>
-                  <physloc>On pages 234-237.</physloc>
-                  <physdesc>6 p., 
+                  <unitdate era="ce" calendar="gregorian">14 May 1844</unitdate></unittitle>
+            <physloc>On pages 234-237.</physloc>
+            <physdesc>6 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional leaf and docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>D. H. Lewis, House of Representatives,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>D. H. Lewis, House of Representatives,
                   [Washington, D. C.], to David Hubbard, Philadelphia,
                   [Pennsylvania], 
-                  <unitdate>12 April 1838</unitdate></unittitle>
-                  <physloc>On pages 216-217.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">12 April 1838</unitdate></unittitle>
+            <physloc>On pages 216-217.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>D. H. Lewis, House of Representatives,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>D. H. Lewis, House of Representatives,
                   [Washington, D. C.], to David Hubbard, Philadelphia,
                   [Pennsylvania], 
-                  <unitdate>14 April 1838</unitdate></unittitle>
-                  <physloc>On pages 218-219.</physloc>
-                  <physdesc>p., 
+                  <unitdate era="ce" calendar="gregorian">14 April 1838</unitdate></unittitle>
+            <physloc>On pages 218-219.</physloc>
+            <physdesc>p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional page</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>[D. H. Lewis], House of Representatives,
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>[D. H. Lewis], House of Representatives,
                   [Washington, D. C.], to [David Hubbard], 
-                  <unitdate>28 April 1838</unitdate></unittitle>
-                  <physloc>On pages 220-221.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">28 April 1838</unitdate></unittitle>
+            <physloc>On pages 220-221.</physloc>
+            <physdesc>4 p., 
                   <abbr>AL</abbr> (portion lacking)</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James K. Polk, Nashville, [Tennessee], to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James K. Polk, Nashville, [Tennessee], to
                   David Hubbard, Washington, [D. C.], 
-                  <unitdate>30 December 1839</unitdate></unittitle>
-                  <physloc>On pages 225-226.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">30 December 1839</unitdate></unittitle>
+            <physloc>On pages 225-226.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>James K. Polk, Nashville, [Tennessee], to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>James K. Polk, Nashville, [Tennessee], to
                   David Hubbard, Washington, [D. C.], 
-                  <unitdate>6 April 1840</unitdate></unittitle>
-                  <physloc>On pages 227-229.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">6 April 1840</unitdate></unittitle>
+            <physloc>On pages 227-229.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with additional wrapper and
                   docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Robert Toombs">R[obert]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Robert Toombs">R[obert]
                   Toombs</persname>, Montgomery, Alabama, to R. W.
                   Johnson, Little Rock, Arkansas, 
-                  <unitdate>14 May 1861</unitdate></unittitle>
-                  <physloc>On page 251.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">14 May 1861</unitdate></unittitle>
+            <physloc>On page 251.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with envelope</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Henry A. Wise, Richmond, Virginia, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Henry A. Wise, Richmond, Virginia, to
                   David Hubbard, 
-                  <unitdate>3 March 1859</unitdate></unittitle>
-                  <physloc>On pages 243-244.</physloc>
-                  <physdesc>4 p., 
+                  <unitdate era="ce" calendar="gregorian">3 March 1859</unitdate></unittitle>
+            <physloc>On pages 243-244.</physloc>
+            <physdesc>4 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Henry A. Wise, Richmond, Virginia, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Henry A. Wise, Richmond, Virginia, to
                   David Hubbard, 
-                  <unitdate>20 March 1859</unitdate></unittitle>
-                  <physloc>On pages 245-248.</physloc>
-                  <physdesc>6 p., 
+                  <unitdate era="ce" calendar="gregorian">20 March 1859</unitdate></unittitle>
+            <physloc>On pages 245-248.</physloc>
+            <physdesc>6 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with cover leaf</physdesc>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series III">Richard Stoddert Ewell
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series III">Richard Stoddert Ewell
                Papers, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1862-1885</unitdate></unittitle>
-               <physdesc>16 items</physdesc>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Pierre Gustave Toutant Beauregard">
+          <physdesc>16 items</physdesc>
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Pierre Gustave Toutant Beauregard">
                   [P]. G. T. Beauregard</persname>, Charleston, South
                   Carolina, to R. S. Ewell, Gordonsville, Virginia, 
-                  <unitdate>24 February 1864</unitdate></unittitle>
-                  <physloc>On page 258.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">24 February 1864</unitdate></unittitle>
+            <physloc>On page 258.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jefferson Davis, Beauvoir, Mississippi, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Jefferson Davis, Beauvoir, Mississippi, to
                   Major Campbell Brown, Spring Hill, Maury County,
                   Tennessee, 
-                  <unitdate>13 August 1885</unitdate></unittitle>
-                  <physloc>On pages 269-270.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">13 August 1885</unitdate></unittitle>
+            <physloc>On pages 269-270.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> docketed with envelope docketed</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jefferson Davis, Beauvoir, Mississippi, to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Jefferson Davis, Beauvoir, Mississippi, to
                   Major Campbell Brown, 
-                  <unitdate>14 June 1886</unitdate></unittitle>
-                  <physloc>On pages 271-272.</physloc>
-                  <physdesc>6 p., 
+                  <unitdate era="ce" calendar="gregorian">14 June 1886</unitdate></unittitle>
+            <physloc>On pages 271-272.</physloc>
+            <physdesc>6 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Ulysses S. Grant">U[lysses] S.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Ulysses S. Grant">U[lysses] S.
                   Grant</persname> to James Y. Yeatman, President
                   Western Sanitary Commission, 
-                  <unitdate>7 April 1863</unitdate></unittitle>
-                  <physloc>On pages 254-255.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">7 April 1863</unitdate></unittitle>
+            <physloc>On pages 254-255.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Isham G. Harris, Dalton, Georgia, to Mrs.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Isham G. Harris, Dalton, Georgia, to Mrs.
                   General Ewell, 
-                  <unitdate>7 March 1864</unitdate></unittitle>
-                  <physloc>On pages 259-263.</physloc>
-                  <physdesc>10 p., 
+                  <unitdate era="ce" calendar="gregorian">7 March 1864</unitdate></unittitle>
+            <physloc>On pages 259-263.</physloc>
+            <physdesc>10 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Robert E. Lee">R[obert] E.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Robert E. Lee">R[obert] E.
                   Lee</persname>, Head Quarters, Orange C. H.,
                   Virginia, to R. S. Ewell, 
-                  <unitdate>11 August 1863</unitdate></unittitle>
-                  <physloc>On page 256.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">11 August 1863</unitdate></unittitle>
+            <physloc>On page 256.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Robert E. Lee">R. E.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Robert E. Lee">R. E.
                   Lee</persname>, Headquarters, 
-                  <unitdate>18 February 18[64]</unitdate></unittitle>
-                  <physloc>On page 257.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">18 February 18[64]</unitdate></unittitle>
+            <physloc>On page 257.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with docket on verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Robert E. Lee">R. E.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Robert E. Lee">R. E.
                   Lee</persname>, Headquarters, to Genl. [R. S. Ewell],
-                  <unitdate>10 May 1864</unitdate></unittitle>
-                  <physloc>On page 257.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">10 May 1864</unitdate></unittitle>
+            <physloc>On page 257.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Thomas Jonathan Jackson">T. J.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Thomas Jonathan Jackson">T. J.
                   Jackson</persname> to R. S. Ewell, 
-                  <unitdate>[August 1862]</unitdate></unittitle>
-                  <physloc>On pages 273-274.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">[August 1862]</unitdate></unittitle>
+            <physloc>On pages 273-274.</physloc>
+            <physdesc>1 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr> with typed note (2 copies)</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bradley T. Johnson, Baltimore, [Maryland],
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bradley T. Johnson, Baltimore, [Maryland],
                   to Major Campbell Brown, Nashville, Tennessee, 
-                  <unitdate>29 April 1885</unitdate></unittitle>
-                  <physloc>On page 268.</physloc>
-                  <physdesc>3 p., 
+                  <unitdate era="ce" calendar="gregorian">29 April 1885</unitdate></unittitle>
+            <physloc>On page 268.</physloc>
+            <physdesc>3 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Preston Johnson, Account of torture in
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Preston Johnson, Account of torture in
                   Fort Delaware prison camp, 
-                  <unitdate>26 April 1865</unitdate></unittitle>
-                  <physloc>On page 267.</physloc>
-                  <physdesc>1 p., 
+                  <unitdate era="ce" calendar="gregorian">26 April 1865</unitdate></unittitle>
+            <physloc>On page 267.</physloc>
+            <physdesc>1 p., 
                   <abbr>MsSw</abbr> with manuscript notes on
                   verso</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                  <persname normal="Joseph E. Johnston">J[oseph] E.
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle><persname normal="Joseph E. Johnston">J[oseph] E.
                   Johnston</persname>, Columbia, South Carolina, to "My
                   Dear Colonel," 
-                  <unitdate>23 January 1865</unitdate></unittitle>
-                  <physloc>On page 264.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">23 January 1865</unitdate></unittitle>
+            <physloc>On page 264.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>"Map of the Battle Ground of Manassas . .
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>"Map of the Battle Ground of Manassas . .
                   . by an Officer of Genl. Beauregard's Staff . . July
                   21, 1861." John Henry pub., P. S. Duval &amp; Son,
                   Philadelphia, Lithographers, 
-                  <unitdate>1862</unitdate></unittitle>
-                  <physloc>On pages 252-253.</physloc>
-                  <physdesc>1 p., printed map; signed "Joseph Horner
+                  <unitdate era="ce" calendar="gregorian">1862</unitdate></unittitle>
+            <physloc>On pages 252-253.</physloc>
+            <physdesc>1 p., printed map; signed "Joseph Horner
                   1862" in top margin.</physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Charles Marshall to R. S. Ewell, 
-                  <unitdate>27 March 1865</unitdate></unittitle>
-                  <physloc>On page 265.</physloc>
-                  <physdesc>2 p., 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Charles Marshall to R. S. Ewell, 
+                  <unitdate era="ce" calendar="gregorian">27 March 1865</unitdate></unittitle>
+            <physloc>On page 265.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Charles Marshall to R. S. Ewell, 
-                  <unitdate>30 March 1865</unitdate></unittitle>
-                  <physloc>On page 266.</physloc>
-                  <physdesc>2 p., 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Charles Marshall to R. S. Ewell, 
+                  <unitdate era="ce" calendar="gregorian">30 March 1865</unitdate></unittitle>
+            <physloc>On page 266.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Autographed Letter Signed">
                   ALS</abbr></physdesc>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Unknown, Memorandum on Union Military
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Unknown, Memorandum on Union Military
                   Units, 
-                  <unitdate>n.d.</unitdate></unittitle>
-                  <physloc>On page 258.</physloc>
-                  <physdesc>2 p., 
+                  <unitdate era="ce" calendar="gregorian">n.d.</unitdate></unittitle>
+            <physloc>On page 258.</physloc>
+            <physdesc>2 p., 
                   <abbr expan="Manuscript">Ms</abbr></physdesc>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

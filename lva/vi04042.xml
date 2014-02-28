@@ -1,308 +1,295 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY lost SYSTEM "http://www.virginiamemory.com/collections/lost" NDATA html>
-<!ENTITY notes SYSTEM "http://www.lva.virginia.gov/public/guides/rn30_lostrecords.pdf" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi04042">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi044042::A Guide to the Accomack County (Va.) Township Records, 1870-1879)//EN" "vi044042.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi04042">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi044042::A Guide to the Accomack County (Va.) Township Records, 1870-1879)//EN" "vi044042.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Accomack County (Va.) Township Records, <date>1870-1879</date>
-</titleproper>
-<subtitle id="sort">Accomack County (Va.) Township Records, 1870-1879
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Accomack County (Va.) Township Records, <date era="ce" calendar="gregorian">1870-1879</date></titleproper>
+        <subtitle id="sort">Accomack County (Va.) Township Records, 1870-1879
 <num type="collectionnumber">Barcode numbers 1121846, 1121847, 1121844, 1121845, 1156267, 1202373/ Accomack County (Va.) Reel 325
-</num>
-</subtitle>
-<author>Sarah Nerney
+</num></subtitle>
+        <author>Sarah Nerney
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2009 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Sarah Nerney, <date>18 January 2009</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Accomack County (Va.) Township Records, <date>1870-1879</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Collection numbers:">Barcode numbers 1121846, 1121847, 1121844, 1121845, 1156267, 1202373/ Accomack County (Va.) Reel 325
-</num>
-</subtitle>
-<author>Sarah Nerney
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2009
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Sarah Nerney
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Accomack County (Va.) Township Records, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1870-1879
-</unitdate>
-</unittitle>
-<unitid label="Collection numbers" encodinganalog="099$a">Barcode numbers 1121846, 1121847, 1121844, 1121845, 1156267, 1202373/ Accomack County (Va.) Reel 325
-</unitid>
-<physloc label="Location">Library of Virginia/ State Records Center - Archives Annex, Library of Virginia
-</physloc>
-<physdesc label="Physical Characteristics" encodinganalog="300$a">7 v. and .225 cu. ft. (1 box)
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2009 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Sarah Nerney, <date era="ce" calendar="gregorian">18 January 2009</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2014-02-06">2014-02-06</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Accomack County (Va.) Township Records, <date era="ce" calendar="gregorian">1870-1879</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Collection numbers:">Barcode numbers 1121846, 1121847, 1121844, 1121845, 1156267, 1202373/ Accomack County (Va.) Reel 325
+</num></subtitle>
+      <author>Sarah Nerney
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2009
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Sarah Nerney
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Accomack County (Va.) Township Records, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1870-1879
+</unitdate></unittitle>
+      <unitid label="Collection numbers" encodinganalog="099$a">Barcode numbers 1121846, 1121847, 1121844, 1121845, 1156267, 1202373/ Accomack County (Va.) Reel 325
+</unitid>
+      <physloc label="Location">Library of Virginia/ State Records Center - Archives Annex, Library of Virginia
+</physloc>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">7 v. and .225 cu. ft. (1 box)
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Collector" encodinganalog="110$a">Accomack County (Va.) Circuit Court.
+      </langmaterial>
+      <origination label="Collector" encodinganalog="110$a">Accomack County (Va.) Circuit Court.
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>For Lee Township Record Book, 1871-1873, and Pungoteague Township Record Book, 1873-1875, use microfilm, Accomack County (Va.) Reel 325.
+        <p>For Lee Township Record Book, 1871-1873, and Pungoteague Township Record Book, 1873-1875, use microfilm, Accomack County (Va.) Reel 325.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Accomack County (Va.) Township Records, 1870-1879. Local government records collection, Accomack County Court Records. The Library of Virginia, Richmond, Virginia 23219.
+        <p>Accomack County (Va.) Township Records, 1870-1879. Local government records collection, Accomack County Court Records. The Library of Virginia, Richmond, Virginia 23219.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>These items came to the Library of Virginia in transfers of court papers from Accomack County. The Lee Township papers came to the Library of Virginia in a transfer of court papers from Accomack County under the accession number 44262. The filmed items were microfilmed by the Library of Virginia's Imaging Services Division.
+        <p>These items came to the Library of Virginia in transfers of court papers from Accomack County. The Lee Township papers came to the Library of Virginia in a transfer of court papers from Accomack County under the accession number 44262. The filmed items were microfilmed by the Library of Virginia's Imaging Services Division.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>Accomack County was named for the Accomac Indians, who lived on the Eastern Shore at the time of the first English settlement in Virginia. The word means "on-the-other-side-of-water place" or "across the water." It was one of the original eight shires, or counties, first enumerated in 1634 and spelled Accomac without the k. The county's name was changed to Northampton County in 1643. The present county was formed from Northampton about 1663. In October 1670, the General Assembly temporarily reunited Accomack and Northampton Counties as Northampton County. In November 1673, Accomack County was again separated from Northampton. In early records, the county's name was spelled many ways. In 1940 the General Assembly adopted the present spelling, Accomack. The county gained a small part of the southern end of Smith's Island from Somerset County, Maryland, in 1879, after the United States had approved boundary changes between Virginia and Maryland that had been agreed to in 1877. The county seat is Accomac.
+      <p>Accomack County was named for the Accomac Indians, who lived on the Eastern Shore at the time of the first English settlement in Virginia. The word means "on-the-other-side-of-water place" or "across the water." It was one of the original eight shires, or counties, first enumerated in 1634 and spelled Accomac without the k. The county's name was changed to Northampton County in 1643. The present county was formed from Northampton about 1663. In October 1670, the General Assembly temporarily reunited Accomack and Northampton Counties as Northampton County. In November 1673, Accomack County was again separated from Northampton. In early records, the county's name was spelled many ways. In 1940 the General Assembly adopted the present spelling, Accomack. The county gained a small part of the southern end of Smith's Island from Somerset County, Maryland, in 1879, after the United States had approved boundary changes between Virginia and Maryland that had been agreed to in 1877. The county seat is Accomac.
 </p>
-<p>A significant number of loose records from the 1700s suffered extreme water and pest damage. Volumes that record deeds, court orders, and wills exist.</p>
-<p>The 1870 Virginia Constitution required that each county in the state be divided into no less than three townships (see Article VII, section 2). Based on the New England administrative organization of a county, each township would elect the administration officials for the offices of supervisor, clerk, assessor, collector, commissioner of the roads, overseer of the poor, justice of the peace, and constable. The supervisors of each township would comprise the board of supervisors for the county, and would be responsible for auditing the county accounts, examining the assessors' books, regulating property valuation, fixing the county levies. The Acts of Assembly provided that each township be divided into school and electoral districts (see Acts of Assembly 1869-1870, Chapter 39). A constitutional amendment in 1874 changed the townships into magisterial districts and each district elected one supervisor, three justices of the peace, one constable, and one overseer of the poor. The supervisors of the districts made up the county board of supervisors whose duties were identical as those set out in 1870. The published Acts of Assembly appended a list of township names by county following the acts for every year that townships existed in Virginia.
+      <p>A significant number of loose records from the 1700s suffered extreme water and pest damage. Volumes that record deeds, court orders, and wills exist.</p>
+      <p>The 1870 Virginia Constitution required that each county in the state be divided into no less than three townships (see Article VII, section 2). Based on the New England administrative organization of a county, each township would elect the administration officials for the offices of supervisor, clerk, assessor, collector, commissioner of the roads, overseer of the poor, justice of the peace, and constable. The supervisors of each township would comprise the board of supervisors for the county, and would be responsible for auditing the county accounts, examining the assessors' books, regulating property valuation, fixing the county levies. The Acts of Assembly provided that each township be divided into school and electoral districts (see Acts of Assembly 1869-1870, Chapter 39). A constitutional amendment in 1874 changed the townships into magisterial districts and each district elected one supervisor, three justices of the peace, one constable, and one overseer of the poor. The supervisors of the districts made up the county board of supervisors whose duties were identical as those set out in 1870. The published Acts of Assembly appended a list of township names by county following the acts for every year that townships existed in Virginia.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Accomack County (Va.) Township Records, 1870-1875, consist of seven volumes and one box of papers relating to the administrative functions of the township boards of the county.
+      <p>Accomack County (Va.) Township Records, 1870-1875, consist of seven volumes and one box of papers relating to the administrative functions of the township boards of the county.
 </p>
-<p>Atlantic Township Record Book, 1870-1875, consists of minutes and accounts. Information recorded includes the division of the township into road districts; appointment of road overseers; accounts allowed such as officials' payments, road and bridge accounts, and overseers of the poor accounts; the division of the township into election districts; township levy accounts; and accomodation for the treatment of smallpox in the county (p. 22).
+      <p>Atlantic Township Record Book, 1870-1875, consists of minutes and accounts. Information recorded includes the division of the township into road districts; appointment of road overseers; accounts allowed such as officials' payments, road and bridge accounts, and overseers of the poor accounts; the division of the township into election districts; township levy accounts; and accomodation for the treatment of smallpox in the county (p. 22).
 </p>
-<p>Atlantic Township Accounts Allowed, 1871-1875, record individuals' names and monies paid to them. No details are provided about reason for payment or what service was provided.
+      <p>Atlantic Township Accounts Allowed, 1871-1875, record individuals' names and monies paid to them. No details are provided about reason for payment or what service was provided.
 </p>
-<p>Atlantic Township papers, 1871-1878, consist of claims and allowances paid for accounts claimed against the township board. Most do not say why payment was made but those that do include claims for road and bridge work and payment to township officials. It is unclear whether those claims that post date the existence of the township are for work done prior to its dissolution or date from after the change to magisterial district and are misfiled here.
+      <p>Atlantic Township papers, 1871-1878, consist of claims and allowances paid for accounts claimed against the township board. Most do not say why payment was made but those that do include claims for road and bridge work and payment to township officials. It is unclear whether those claims that post date the existence of the township are for work done prior to its dissolution or date from after the change to magisterial district and are misfiled here.
 </p>
-<p>The Islands Township Record Book, 1872-1875, record accounts with the township board and warrants issued and settled, and clerk's and treasurer's accounts. No details are given about the financial transactions. Inserted in the front of the volumes are three envelopes of vouchers for township and road accounts and a road overseer's bond for Kendal Jester dated August 1874.
+      <p>The Islands Township Record Book, 1872-1875, record accounts with the township board and warrants issued and settled, and clerk's and treasurer's accounts. No details are given about the financial transactions. Inserted in the front of the volumes are three envelopes of vouchers for township and road accounts and a road overseer's bond for Kendal Jester dated August 1874.
 </p>
-<p>Lee Township Record Book, 1871-1873, consists of minutes and accounts. Information recorded includes the division of the township into road districts; road overseers and laborers appointed; division of the township into voting districts; township accounts audit that includes the name of the person paid, why, and the amount; and the township levy with accounts.
+      <p>Lee Township Record Book, 1871-1873, consists of minutes and accounts. Information recorded includes the division of the township into road districts; road overseers and laborers appointed; division of the township into voting districts; township accounts audit that includes the name of the person paid, why, and the amount; and the township levy with accounts.
 </p>
-<p>Lee Township papers, 1874-1879, consist of warrants and accounts against the township board. Included are overseer of the poor claims for supplies and coffins, the final reports of the township clerk and treasurer from 1876, and a printed circular from the Auditor of Public Accounts dated 1877 about voter qualifications. Other claims are for road work or are unspecified. It is unclear whether those claims that post date the existence of the township are for work done prior to its dissolution or date from after the change to magisterial district and are misfiled here.
+      <p>Lee Township papers, 1874-1879, consist of warrants and accounts against the township board. Included are overseer of the poor claims for supplies and coffins, the final reports of the township clerk and treasurer from 1876, and a printed circular from the Auditor of Public Accounts dated 1877 about voter qualifications. Other claims are for road work or are unspecified. It is unclear whether those claims that post date the existence of the township are for work done prior to its dissolution or date from after the change to magisterial district and are misfiled here.
 </p>
-<p>Pungoteague Township Record Book, 1872-1873, consists of two volumes of accounts of the clerk, the treasurer, the road overseers, and the overseer of the poor. Many of the accounts seem to consist of claims allowed against the township.
+      <p>Pungoteague Township Record Book, 1872-1873, consists of two volumes of accounts of the clerk, the treasurer, the road overseers, and the overseer of the poor. Many of the accounts seem to consist of claims allowed against the township.
 </p>
-<p>Pungoteague Township Record Book, 1873-1875, consists of minutes and accounts. Information recorded includes the division of the township into road districts; the division of the township into election precincts; road accounts; township levy accounts; and accounts allowed for road, overseer of the poor, and clerk and other officials' payments.
+      <p>Pungoteague Township Record Book, 1873-1875, consists of minutes and accounts. Information recorded includes the division of the township into road districts; the division of the township into election precincts; road accounts; township levy accounts; and accounts allowed for road, overseer of the poor, and clerk and other officials' payments.
 </p>
-</scopecontent>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </scopecontent>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<originalsloc encodinganalog="535$a">
-<head>Location of Originals
+      <originalsloc encodinganalog="535$a">
+        <head>Location of Originals
 </head>
-<p>Original volumes for Lee Township Record Book, 1871-1873, and Pungoteague Township Record Book, 1873-1875, are located at the Accomack County courthouse.
+        <p>Original volumes for Lee Township Record Book, 1871-1873, and Pungoteague Township Record Book, 1873-1875, are located at the Accomack County courthouse.
 </p>
-</originalsloc>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </originalsloc>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Additional Accomack County Records can be found on microfilm at The Library of Virginia. Consult <extref entityref="microfilm">A Guide to Virginia County and City Records on Microfilm</extref>. 
+        <p>Additional Accomack County Records can be found on microfilm at The Library of Virginia. Consult <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm">A Guide to Virginia County and City Records on Microfilm</extref>. 
 </p>
-<p>Accomack County is one of Virginia's Lost Records Localities. Additional Accomack County Records may be found in the Virginia Lost Records Localities Collection at the Library of Virginia. Search the <extref entityref="lost">Lost Records Localities Digital Collection</extref> available at Virginia Memory.
+        <p>Accomack County is one of Virginia's Lost Records Localities. Additional Accomack County Records may be found in the Virginia Lost Records Localities Collection at the Library of Virginia. Search the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.virginiamemory.com/collections/lost">Lost Records Localities Digital Collection</extref> available at Virginia Memory.
 </p>
-<p>For more information and a listing of lost records localities see <extref entityref="notes">Lost Records research note</extref>. 
+        <p>For more information and a listing of lost records localities see <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.virginia.gov/public/guides/rn30_lostrecords.pdf">Lost Records research note</extref>. 
 </p>
-</relatedmaterial>
-</descgrp>
-<controlaccess>
-<head>Index Terms</head>
-<controlaccess>
-<head>Corporate Names:</head>
-<corpname encodinganalog="610$a">Accomack County (Va.) Circuit Court.</corpname>
-<corpname encodinganalog="610$a">Accomack County (Va.) Overseers of the Poor.</corpname>
-</controlaccess>
-<controlaccess>
-<head>Subjects:</head>
-<subject source="lcsh" encodinganalog="650$a">Local finance -- Virginia -- Accomack County.</subject>
-<subject source="lcsh" encodinganalog="650$a">County government--Records and correspondence -- Virginia -- Accomack County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Local government -- Virginia -- Accomack County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Public records -- Virginia -- Accomack County.</subject>
-</controlaccess>
-<controlaccess>
-<head>Geographical Names:</head>
-<geogname source="lcsh" encodinganalog="651$a">Accomack County (Va.) -- History -- 19th century.</geogname>
-</controlaccess>
-<controlaccess>
-<head>Genre and Form Terms:</head>
-<genreform source="aat" encodinganalog="655$a">Account books -- Virginia -- Accomack County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Accounts -- Virginia -- Accomack County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Local government records -- Virginia -- Accomack County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Minute books -- Virginia -- Accomack County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Township records -- Virginia -- Accomack County.</genreform>
-</controlaccess>
-<controlaccess>
-<head>Added Entry - Corporate Name:</head>
-<corpname encodinganalog="710$a">Township of the Atlantic (Accomack County, VA)</corpname>
-<corpname encodinganalog="710$a">Township of the Islands (Accomack County, VA)</corpname>
-<corpname encodinganalog="710$a">Township of Lee (Accomack County, VA)</corpname>
-<corpname encodinganalog="710$a">Township of Pungoteague (Accomack County, VA)</corpname>
-</controlaccess>
-</controlaccess>
-<dsc type="analyticover">
-<head>Contents List
-</head><c01 level="item">
-<did>
-<unittitle label="Barcode number 1121846">Atlantic Township Record Book, 
-<unitdate type="inclusive">1870-1875, 
-</unitdate>
-</unittitle>
-<physloc>State Records Center - Archives Annex, Library of Virginia
+      </relatedmaterial>
+    </descgrp>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Corporate Names:</head>
+        <corpname encodinganalog="610$a">Accomack County (Va.) Circuit Court.</corpname>
+        <corpname encodinganalog="610$a">Accomack County (Va.) Overseers of the Poor.</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Local finance -- Virginia -- Accomack County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">County government--Records and correspondence -- Virginia -- Accomack County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Local government -- Virginia -- Accomack County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Public records -- Virginia -- Accomack County.</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+        <geogname source="lcsh" encodinganalog="651$a">Accomack County (Va.) -- History -- 19th century.</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre and Form Terms:</head>
+        <genreform source="aat" encodinganalog="655$a">Account books -- Virginia -- Accomack County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Accounts -- Virginia -- Accomack County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Local government records -- Virginia -- Accomack County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Minute books -- Virginia -- Accomack County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Township records -- Virginia -- Accomack County.</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Added Entry - Corporate Name:</head>
+        <corpname encodinganalog="710$a">Township of the Atlantic (Accomack County, VA)</corpname>
+        <corpname encodinganalog="710$a">Township of the Islands (Accomack County, VA)</corpname>
+        <corpname encodinganalog="710$a">Township of Lee (Accomack County, VA)</corpname>
+        <corpname encodinganalog="710$a">Township of Pungoteague (Accomack County, VA)</corpname>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="analyticover">
+      <head>Contents List
+</head>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1121846">Atlantic Township Record Book, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1870-1875, 
+</unitdate></unittitle>
+          <physloc>State Records Center - Archives Annex, Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1121847">Atlantic Township Accounts Allowed,
-<unitdate type="inclusive">1871-1875, 
-</unitdate>
-</unittitle>
-<physloc>State Records Center - Archives Annex, Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1121847">Atlantic Township Accounts Allowed,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1871-1875, 
+</unitdate></unittitle>
+          <physloc>State Records Center - Archives Annex, Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1202373">Atlantic Township Papers,
-<unitdate type="inclusive">1871-1878, 
-</unitdate>
-</unittitle>
-<physloc>State Records Center - Archives Annex, Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1202373">Atlantic Township Papers,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1871-1878, 
+</unitdate></unittitle>
+          <physloc>State Records Center - Archives Annex, Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1121844">The Islands Township Record Book,
-<unitdate type="inclusive">1872-1875, 
-</unitdate>
-</unittitle>
-<physloc>State Records Center - Archives Annex, Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1121844">The Islands Township Record Book,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1872-1875, 
+</unitdate></unittitle>
+          <physloc>State Records Center - Archives Annex, Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Accomack County (Va.) Reel 325">Lee Township Record Book, 
-<unitdate type="inclusive">1871-1873, 
-</unitdate>
-</unittitle>
-<physloc>Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Accomack County (Va.) Reel 325">Lee Township Record Book, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1871-1873, 
+</unitdate></unittitle>
+          <physloc>Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1202373">Lee Township Papers, 
-<unitdate type="inclusive">1874-1879, 
-</unitdate>
-</unittitle>
-<physloc>State Records Center - Archives Annex, Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1202373">Lee Township Papers, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1874-1879, 
+</unitdate></unittitle>
+          <physloc>State Records Center - Archives Annex, Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1121845">Pungoteague Township Record Book, 
-<unitdate type="inclusive">1872-1873 (Vol. 1), 
-</unitdate>
-</unittitle>
-<physloc>State Records Center - Archives Annex, Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1121845">Pungoteague Township Record Book, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1872-1873 (Vol. 1), 
+</unitdate></unittitle>
+          <physloc>State Records Center - Archives Annex, Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1156267">Pungoteague Township Record Book, 
-<unitdate type="inclusive">1872-1873 (Vol. 2), 
-</unitdate>
-</unittitle>
-<physloc>State Records Center - Archives Annex, Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1156267">Pungoteague Township Record Book, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1872-1873 (Vol. 2), 
+</unitdate></unittitle>
+          <physloc>State Records Center - Archives Annex, Library of Virginia
 </physloc>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Accomack County (Va.) Reel 325">Pungoteague Township Record Book, 
-<unitdate type="inclusive">1873-1875, 
-</unitdate>
-</unittitle>
-<physloc>Library of Virginia
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Accomack County (Va.) Reel 325">Pungoteague Township Record Book, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1873-1875, 
+</unitdate></unittitle>
+          <physloc>Library of Virginia
 </physloc>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

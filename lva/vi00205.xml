@@ -1,154 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00205">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00205::A Guide to the Virginia Manufactory of Arms Records, 1798-1864)//EN&amp;#34; &amp;#34;vi00205.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00205">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00205::A Guide to the Virginia Manufactory of Arms Records, 1798-1864)//EN&amp;#34; &amp;#34;vi00205.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00205::A Guide to the Virginia
              Manufactory of Arms Records, 1798-1864)//EN"
              "vi00205.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginia Manufactory of Arms
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginia Manufactory of Arms
             Records, 
-            <date>1798-1864</date></titleproper>
-            <subtitle id="sort">Manufactory of Arms Records, Virginia,
+            <date era="ce" calendar="gregorian">1798-1864</date></titleproper>
+        <subtitle id="sort">Manufactory of Arms Records, Virginia,
             1798-1864 
             <num type="collectionnumber">APA 175</num></subtitle>
-            <author>Description Services Staff</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Description Services Staff</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">2 kb</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">2 kb</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Paige Neal 
-         <date>13 March 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">13 March 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00205::A Guide to the Virginia Manufactory of
             Arms Records, 1798-1864)//EN" "vi00205.xml" converted from
             EAD 1.0 to 2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia Manufactory of Arms
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia Manufactory of Arms
          Records, 
-         <date>1798-1864</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1798-1864</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">APA 175</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Library of Virginia Staff</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Library of Virginia Staff</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Virginia Manufactory of Arms Records,
-         <unitdate type="inclusive" label="Date">
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Virginia Manufactory of Arms Records,
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1798-1864</unitdate></unittitle>
-         <unitid label="Accession number">APA 175</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <unitid label="Accession number">APA 175</unitid>
+      <physloc label="Physical Location">State Records Collection,
          Auditor of Public Accounts (Record Group 48)</physloc>
-         <physdesc label="Physical Characteristics">26 feet, 11 inches,
+      <physdesc label="Physical Characteristics">26 feet, 11 inches,
          and 13 volumes (approximate 13,000 items)</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia Auditor of Public Accounts, Virginia
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia Auditor of Public Accounts, Virginia
             Manufactory of Arms records, 1798-1864. Accession APA 175,
             State Records Collection, The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Transferred from the Office of the Auditor of Public
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Transferred from the Office of the Auditor of Public
             Accounts in 1913.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>MANUFACORY OF ARMS: The Virginia Manufactory of Arms was
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>MANUFACORY OF ARMS: The Virginia Manufactory of Arms was
          established by an act passed by the General Assembly on 23
          January 1798. The manufactory, which served as an armory as
          well, opened in Richmond in 1802 and reached full operating
@@ -163,11 +148,11 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          In 1865 the structure was gutted during the Richmond
          evacuation fire. The remaining walls were pulled down in
          1900.</p>
-         <p>The Virginia Manufactory of Arms produced and repaired
+      <p>The Virginia Manufactory of Arms produced and repaired
          thousands of weapons and employed hundreds of artisans. Two
          supervisors - John Clarke (1798-1808) and John Staples
          (1809-1821) - oversaw the operations of the factory.</p>
-         <p>AUDITOR OF PUBLIC ACCOUNTS: Although the colonial
+      <p>AUDITOR OF PUBLIC ACCOUNTS: Although the colonial
          government had appointed auditors general from time to time,
          the office was not established on a permanent basis until
          after independence was declared. At its first session, which
@@ -187,7 +172,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          receipts and disbursements were made only upon his warrant to
          the treasurer, and his books were the standard against which
          those of the treasurer were checked.</p>
-         <p>The first changes were made as the accounts of the
+      <p>The first changes were made as the accounts of the
          revolutionary era were settled. As the state moved into a
          period of steady financial and governmental growth in the
          nineteenth century, the number of accounts and funds
@@ -198,7 +183,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          funds, the auditor continued to be responsible for most of the
          accounts concerning the daily operation of state
          government.</p>
-         <p>The first changes were made as the accounts of the
+      <p>The first changes were made as the accounts of the
          revolutionary era were settled. As the state moved into a
          period of steady financial and governmental growth in the
          nineteenth century, the number of accounts and funds
@@ -209,7 +194,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          funds, the auditor continued to be responsible for most of the
          accounts concerning the daily operation of state
          government.</p>
-         <p>During the Civil War both the state government and the
+      <p>During the Civil War both the state government and the
          pro-Union Restored Government of Virginia, which was based
          first in Wheeling and then in Alexandria, had auditors of
          public accounts. After the war, near the end of
@@ -220,7 +205,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          remained an army officer. The position was returned to
          civilian control on 12 February 1870 with the election of
          William F. Taylor as auditor by the General Assembly.</p>
-         <p>Following the Civil War the complexities of an increasingly
+      <p>Following the Civil War the complexities of an increasingly
          sophisticated financial world threatened to overwhelm the
          state fiscal offices, which had changed their practices but
          little since the end of the eighteenth century. Inadequate
@@ -235,7 +220,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          funds, and a new office of auditor of public accounts, under
          the General Assembly, to audit state and local government
          agencies.</p>
-         <p>The records of the first auditor of public accounts have
+      <p>The records of the first auditor of public accounts have
          not survived intact; periodically they have been subjected to
          disarrangement or destruction. When the auditor's office was
          created in 1776, Virginia's seat of government was in
@@ -249,7 +234,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          upstream. Before the boats sailed, however, the alarm proved
          false and the records were unloaded and returned to the State
          Capitol.</p>
-         <p>The next threat to the auditor's records came on the night
+      <p>The next threat to the auditor's records came on the night
          of 2-3 April 1865, when the evacuation fire broke out as the
          Confederate garrison abandoned the city. Fortunately, the
          auditor's records escaped the flames because they were stored
@@ -265,10 +250,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          older records were stored in the basement. There they remained
          until 1913, when they were transferred to the custody of the
          state library.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>This series contains the following operational records of
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>This series contains the following operational records of
          the armory: Account Books, 1811-1821, 33 vols.; Armory
          Building: Construction and Maintenance Vouchers, 1799-1811 (1
          ft. 10 in.), Foundry: Vouchers, 1806-1809 (3 in.), Reports,
@@ -278,14 +263,14 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          1812-1827, 1 ft. 8 in.; Repair of Arms, Armory, and Military
          Equipment, Receipts and Vouchers, 1830-1864, 2 ft. 6 in.;
          Warrants, 1798-1810, 1 in.</p>
-         <p>This series contains the following records of the office of
+      <p>This series contains the following records of the office of
          the superintendent: Ledger, 1809-1811, 1 vol.; Vouchers,
          1809-1821, 10 ft. 5 in.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Organized into sub-series by subject or form, arranged
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Organized into sub-series by subject or form, arranged
          chronologically thereunder.</p>
-      </arrangement>
-   </archdesc>
+    </arrangement>
+  </archdesc>
 </ead>

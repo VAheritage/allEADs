@@ -1,494 +1,490 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01735">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01735::A Guide to the Ritchie Family Correspondence, 1795-1871)//EN" "vi01735.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01735">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01735::A Guide to the Ritchie Family Correspondence, 1795-1871)//EN" "vi01735.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Ritchie Family Correspondence, <date>1795-1871</date>
-</titleproper>
-<subtitle id="sort">Ritchie Family Correspondence, 1795-1871
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Ritchie Family Correspondence, <date era="ce" calendar="gregorian">1795-1871</date></titleproper>
+        <subtitle id="sort">Ritchie Family Correspondence, 1795-1871
 <num type="collectionnumber">22120d
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2006 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>12 May 2006</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Ritchie Family Correspondence, <date>1795-1871</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">22120d
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Ritchie Family Correspondence, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1795-1871
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">22120d
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a">89 pages
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">12 May 2006</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Ritchie Family Correspondence, <date era="ce" calendar="gregorian">1795-1871</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">22120d
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Ritchie Family Correspondence, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1795-1871
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">22120d
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">89 pages
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">Ritchie Family
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Ritchie Family
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Ritchie Family Correspondence, 1795-1871.  Accession 22120d.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
+        <p>Ritchie Family Correspondence, 1795-1871.  Accession 22120d.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Purchased from C. J. Carrier, Bridgewater, Virginia, 28 April 1943.
+        <p>Purchased from C. J. Carrier, Bridgewater, Virginia, 28 April 1943.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Born 23 November 1797, John Ritchie lived in Rockbridge County, Virginia. He married Emily V. Hartsook (b. ca. 1821) of Orange County, Virginia, 15 March 1842. John Ritchie died 10 April 1861 and was buried at Timber Ridge Presbyterian cemetery. His brother James M. Ritchie (1803-1856) lived in Tennessee along with his wife Lucy and their children. John Ritchie's sisters Sarah Ritchie and Ann Fulton lived in Ohio with Ann's husband John Fulton (d. ca. 1849).
+      <p>Born 23 November 1797, John Ritchie lived in Rockbridge County, Virginia. He married Emily V. Hartsook (b. ca. 1821) of Orange County, Virginia, 15 March 1842. John Ritchie died 10 April 1861 and was buried at Timber Ridge Presbyterian cemetery. His brother James M. Ritchie (1803-1856) lived in Tennessee along with his wife Lucy and their children. John Ritchie's sisters Sarah Ritchie and Ann Fulton lived in Ohio with Ann's husband John Fulton (d. ca. 1849).
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Correspondence, 1795-1871, of the Ritchie family of Rockbridge County, Virginia, Ohio, and Tennessee, consisting mainly of letters to John Ritchie (1797-1861) from his brother James M. Ritchie (1803-1856) in Tennessee and from his brother-in-law John Fulton (d. ca. 1849) in Ohio. The letters include descriptions of travel and life in developing frontier areas. There is one letter from Claybourn Boyd, serving in the Union army as it passes through Rockbridge County.
+      <p>Correspondence, 1795-1871, of the Ritchie family of Rockbridge County, Virginia, Ohio, and Tennessee, consisting mainly of letters to John Ritchie (1797-1861) from his brother James M. Ritchie (1803-1856) in Tennessee and from his brother-in-law John Fulton (d. ca. 1849) in Ohio. The letters include descriptions of travel and life in developing frontier areas. There is one letter from Claybourn Boyd, serving in the Union army as it passes through Rockbridge County.
 </p>
-</scopecontent>
-<dsc type="in-depth">
-<head>Contents List
+    </scopecontent>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>3 September 1795, 
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">3 September 1795, 
 </unitdate>from Nathaniel Evans and Margit [Margaret] Evans to James Richay [Ritchie], Rockbridge County, Virginia, stating that they and their family are in good health and sending greetings to friends.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>16 October 1818, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">16 October 1818, 
 </unitdate>from James McKnight, Franklin County, Indiana, to James Ritchey [Ritchie], Rockbridge County, describing his journey to Indiana, his difficulties with James Wilson on the way, and other matters.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>15 December 1827, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">15 December 1827, 
 </unitdate>from James. M. Ritchey [Ritchie], [Lebanon, Tennessee?], to his brother John Ritchey [Ritchie, Rockbridge County, concerning his move to Tennessee, the land and business in the area, discussing other family and friends, encouraging John to move there, and sending the birthdates of himself and his family.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>27 April 1828, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">27 April 1828, 
 </unitdate>from John Ross, Fulton County, Ohio, to his brother-in-law John Richey [Ritchie], Rockbridge County, describing his family's journey to Ohio and sending news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>12 July 1830, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">12 July 1830, 
 </unitdate>from John Fulton, Ross County, to John Richey [Ritchie], Rockbridge County, stating that he will be in Rockbridge soon and will collect money for his wife who is buying land, and adding that Ritchie should return to Ohio with him.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>10 December 1830, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">10 December 1830, 
 </unitdate>from James Richie [Ritchie] to John Richie [Ritchie], Rockbridge County, asking him to bring money from Mr. Griffin when he comes at Christmas.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>24 October 1832, from James Richie [Ritchie] to John Richie [Ritchie], Rockbridge County, hoping that John is well and asking him to come over before the election.  James hopes John has his wagon done.
-</unitdate>
-</unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>28 September 1833, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">24 October 1832, from James Richie [Ritchie] to John Richie [Ritchie], Rockbridge County, hoping that John is well and asking him to come over before the election.  James hopes John has his wagon done.
+</unitdate></unittitle>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">28 September 1833, 
 </unitdate>from James Ritchie, Buffalo Springs, [?], to John Ritchey [Ritchie], Rockbridge County, stating that he will probably buy some land and asking for his wagon.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>15 October 1835, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">15 October 1835, 
 </unitdate>from James Richie [Ritchie] to John Richie [Ritchie], Rockbridge County, concerning business matters, including the selling of a slave.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>30 May 1836, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">30 May 1836, 
 </unitdate>from James Richie [Ritchie], Wilson County, Tennessee, to John Ritchie, Rockbridge County, sending news of his family, commenting on his efforts to raise money and asking for help, and commenting on the weather and agriculture in Wilson County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>10 January 1837, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">10 January 1837, 
 </unitdate>from James and Lucy Richie [Ritchie], Wilson County, to John Richie [Ritchie], Rockbridge County, concerning his family, John's last letter, his tobacco in Wilson County and difficult economic times, and other matters.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>10 January 1839, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">10 January 1839, 
 </unitdate>from James M. Richie [Ritchie] and family, Wilson County, to John Richie [Ritchie] Rockbridge County, concerning his farming and land in Wilson County, stating he would not live in Virginia again, commenting that he is sending his children to school, and other matters.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>22 June 1839, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">22 June 1839, 
 </unitdate>John Fulton, [Ohio],  to John Ritchey [Ritchie], Rockbridge County, sending news of his family and commenting on his crops, including wheat, and their market.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>1 September 1839, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">1 September 1839, 
 </unitdate>from James M. Richie [Ritchie] and family, Wilson County, to John Ritchie, Rockbridge County, commenting on family, stating that he might move to Alabama, commenting on politics in Tennessee, and on agriculture and the economy.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>20 January 1840, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">20 January 1840, 
 </unitdate>from James M. Richie [Ritchie], Sumner County, Tennessee, to John Richie [Ritchie], Rockbridge County, stating that he has moved to Sumner County, describing the agriculture in the area, and commenting on Tennessee politics.  
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>13 May 1841, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">13 May 1841, 
 </unitdate>from James M. Richie [Ritchie], Sumner County, to John Richie [Ritchie], Rockbridge County, describing a trip he took through Louisiana, Texas, and Arkansas, commenting on his health, encouraging his brother to come to Tennessee, and sending other family news.  He asks John to send a copy of a deed recorded in Amherst County, Virginia.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>8 December 1841, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">8 December 1841, 
 </unitdate>from John Fulton, Madazon [Madison] County, Ohio, to John Ritchey [Ritchie], Rockbridge County, sending family news and commenting on the agriculture and economy.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>6 February 1842, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">6 February 1842, 
 </unitdate>from Isabelah Richie [Ritchie], [Sumner County], to her uncle John Richie [Ritchie], Rockbridge County, sending greetings and family news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>March 1842, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">March 1842, 
 </unitdate>from Ann Hartsook, Orange County, Virginia, to Emily V. Hartsook [Ritchie], Rockbridge County, sending family news and briefly commenting on Emily's marriage.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>9 May 184[2?], 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">9 May 184[2?], 
 </unitdate>from Thomas Wright, Lynchburg, Virginia, to John Ritchey [Ritchie], Rockbridge County, congratulating him on his marriage and commenting on the price of oats.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>10 July 1842, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">10 July 1842, 
 </unitdate>from Sally C. Ritchey, Madason [Madison] County, to John Ritchey [Ritchie], Rockbridge County, sending family news and congratulating John on his marriage.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>23 July 1843, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">23 July 1843, 
 </unitdate>from John Fulton, Madason [Madison] County, to John Ritchey [Ritchie], Rockbridge County, sending news and commenting on the poor crops this season.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>15 March 1845, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">15 March 1845, 
 </unitdate>from James M. Ritchie, Sumner County, to John Ritchie, Rockbridge County, sending family news, commenting on agricultural prices, remarking on politics, and adding that his daughter is married.  He adds he might move to Texas.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>1 September 1845, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">1 September 1845, 
 </unitdate>from James M. Ritchie, Sumner County, to John Ritchie, Rockbridge County, commenting on his family's health, agriculutural prices, and politics.  He adds that John should move to Tennessee.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>20 September 1846, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">20 September 1846, 
 </unitdate>from John Fulton, Madason [Madison] County, to John Ritchey [Ritchie], Rockbridge County, sending family news and commenting on agricultural prices.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>16 January 1847, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">16 January 1847, 
 </unitdate>from Elizabeth Parrott and Martha Parrott, Orange County, to Emily V. Ritchie, Rockbridge County, sending family and social news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>19 July 1847, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">19 July 1847, 
 </unitdate>from J. C. L. Atkins, Lewis County, (West) Virginia, to Emily V. Ritchey [Ritchie] sending family news, describing the county, and commenting on agricultural prices.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>11 August 1847, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">11 August 1847, 
 </unitdate>from John H. Gregory, Amherst County, Virginia, to John Ritchie, Rockbridge County, stating that Ritchie's slave was troublesome.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>8 October 1847, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">8 October 1847, 
 </unitdate>from John Fulton, Madison County, to John Ritchey [Ritchie], Rockbridge County, concerning the death of his wife and other family news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>14 December 1847, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">14 December 1847, 
 </unitdate>from Philip M. Siler to John Richey [Ritchie], Rockbridge County, concerning an accident to him and "Jorge."
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>9 April 1848, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">9 April 1848, 
 </unitdate>from Robert Rea to John Ritchey [Ritchie], Rockbridge County, concerning difficulty over a note between Ritchie and Andrew McLaughlin.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>11 December 1848, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">11 December 1848, 
 </unitdate>from J. C. L. Atkins, Lewis County, to Emily V. Ritchey [Ritchie], Rockbridge County, concerning family and personal news, including commenting on buying a slave.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>16 April 1849, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">16 April 1849, 
 </unitdate>from R. M. Atkins, Lewis County, to Emily V. Ritchey [Ritchie], Rockbridge County, concerning the death of Jane Atkins and the care of her children.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>1 April 1850, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">1 April 1850, 
 </unitdate>from Sarah Ritchey [Ritchie], Jefferson, [Ohio?], to John Ritchey [Ritchie], Rockbridge County, sending family news, including the births of her children.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>7 June 1850, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">7 June 1850, 
 </unitdate>from James M. Ritchie, Weakley County, Tennessee, to John Ritchie, Rockbridge County, sending family news, including the births and deaths of his children.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>25 January 1851, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">25 January 1851, 
 </unitdate>from James A. F. Randolph, Rockbridge County, to John Ritchey [Ritchie], Rockbridge County, concerning the building of a chimney.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>10 November 1853, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">10 November 1853, 
 </unitdate>from Claybourn Boyd, Jefferson, Ohio, to his uncle John Richey [Ritchie], Rockbridge County, introducing himself, sending family news, and stating that Ritchie's sister would like him to write.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>23 April 1854, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">23 April 1854, 
 </unitdate>from Sarah C. Richey [Richey], [Ohio], to John Richey [Ritchie], Rockbridge County, providing news on the Fulton and Ritchie families in Ohio, and adding that she will come to visit John if he sends money for her to do so.  Includes a note from his nephey John Ritchey [Ritchie].
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>9 August 1854, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">9 August 1854, 
 </unitdate>from Sarah C. Richey [Ritchie] to John Richey [Ritchie], Rockbridge County, again asking for money so she can visit, and sending general news.  Included are two poems, one titled "Maud Muller."
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>1 November 1858, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">1 November 1858, 
 </unitdate>from Robert M. Ritchie, [Weakley County, Tennessee], to John Ritchie, Rockbridge County, informing him of the death of James M. Ritchie, sending family news, and describing the poor conditions of their part of Tennessee.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>5 March 1871, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">5 March 1871, 
 </unitdate>from Isabella C. Carter [nee Ritchie], Mifflin, Tennessee, to an unknown recipient sending family news and asking for news.  Possibly she wrote this to John Ritchie, not knowing he was deceased.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>27 July no year, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">27 July no year, 
 </unitdate>from James Richey [Ritchie] to John Richey [Ritchie] concerning financial matters.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>18 September no year, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">18 September no year, 
 </unitdate>from Robert Campbell Ritchey  and Anny Ritchey [Ritchie] to James Ritchey [Ritchie], Rockbridge County, concerning their move to Kentucky.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>12 July 1864, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">12 July 1864, 
 </unitdate>from Clayborn Boyd, Company C, 23rd Ohio Infantry, Crook's command, Lexington, Virginia, to his Aunt Jane [Ritchie?] commenting that he has passed near her residence, but cannot visit.  He states he is fighting to preserve the Union and hopes the war will end soon.
 </unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

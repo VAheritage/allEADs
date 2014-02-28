@@ -1,151 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00745">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00745::A Guide to the O. A. Hawkins Collection of Virginiana, 1770-1877)//EN&amp;#34; &amp;#34;vi00745.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00745">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00745::A Guide to the O. A. Hawkins Collection of Virginiana, 1770-1877)//EN&amp;#34; &amp;#34;vi00745.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00745::A Guide to the O. A.
              Hawkins Collection of Virginiana, 1770-1877)//EN"
              "vi00745.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the O. A. Hawkins Collection of
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the O. A. Hawkins Collection of
             Virginiana, 
-            <date>1770-1877</date></titleproper>
-            <subtitle id="sort">Hawkins, O. A., Collection of
+            <date era="ce" calendar="gregorian">1770-1877</date></titleproper>
+        <subtitle id="sort">Hawkins, O. A., Collection of
             Virginiana, 1770-1877 
             <num type="collectionnumber">14038</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Trenton Hizer</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 40 Kilobytes</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">ca. 40 Kilobytes</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Trenton Hizer, 
-         <date>11 August 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">11 August 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00745::A Guide to the O. A. Hawkins Collection
             of Virginiana, 1770-1877)//EN" "vi00745.xml" converted from
             EAD 1.0 to 2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the O. A. Hawkins Collection of
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the O. A. Hawkins Collection of
          Virginiana, 
-         <date>1770-1877</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1770-1877</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">14038</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">O. A. Hawkins Collection of
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">O. A. Hawkins Collection of
          Virginiana, 
-         <unitdate type="inclusive" label="Date">
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1770-1877</unitdate></unittitle>
-         <unitid label="Accession number">14038</unitid>
-         <physloc label="Physical Location">Personal Papers Collection,
+      <unitid label="Accession number">14038</unitid>
+      <physloc label="Physical Location">Personal Papers Collection,
          Acc. 14038</physloc>
-         <physdesc label="Physical Characteristics">.225 cubic
+      <physdesc label="Physical Characteristics">.225 cubic
          feet</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Collector">O. A. Hawkins</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Collector">O. A. Hawkins</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>O. A. Hawkins. Collection of Virginiana, 1770-1877.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>O. A. Hawkins. Collection of Virginiana, 1770-1877.
             Accession 14038. Personal papers collection. The Library of
             Virginia, Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Purchased from the Anderson Galleries, New York, New
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Purchased from the Anderson Galleries, New York, New
             York, 2 May 1921.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>Olive A. Hawkins was born in Richmond, Virginia, 10
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>Olive A. Hawkins was born in Richmond, Virginia, 10
          December 1855. Educated in local schools, he graduated with a
          degree from the Medical College of Virginia and became a
          pharmacist. Hawkins then became a salesman for a clothing
@@ -159,10 +139,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Ida Wilson Hawkins (1856-1937) had two children. Hawkins died
          in Richmond 11 September 1934, and was buried in Hollywood
          Cemetery.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Collection, 1770-1877, of Virginiana collected by Olive A.
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Collection, 1770-1877, of Virginiana collected by Olive A.
          Hawkins consisting of correspondence, inventories, accounts,
          instructions, invoices, receipts, bills of exchanges, powers
          of attorney, certificates of sale and transfer, obituaries,
@@ -170,7 +150,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Collection is divided into two series: Series I: Norborne
          Berkeley, Baron de Botetourt estate papers, 1770-1772; and
          Series II: Miscellaneous Manuscripts, 1787-1877.</p>
-         <p>Series I: Norborne Berkeley, Baron de Botetourt estate
+      <p>Series I: Norborne Berkeley, Baron de Botetourt estate
          papers, 1770-1772, contains correspondence between Robert
          Carter Nicholas, William Nelson, John Randolph, George Wythe,
          and John Blair on one hand and the Duke of Beaufort on the
@@ -185,7 +165,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          which Nicholas signed over to the Duke of Beaufort; and
          correspondence concerning a stove ordered by Botetourt before
          his death and given to the Virginia House of Burgesses.</p>
-         <p>Series II: Miscellaneous Manuscripts, 1787-1877, contains
+      <p>Series II: Miscellaneous Manuscripts, 1787-1877, contains
          certificates, correspondence, mortgages, obituaries,
          portraits, powers of attorney, receipts, and treasury notes.
          Correspondence contains letter, 22 May 1815, from Alexander J.
@@ -208,7 +188,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          from Samuel Southard, Secretary of the Navy, to President John
          Quincy Adams concerning the claim of Captain William H.
          Freeman of the Marine Corps.</p>
-         <p>Series II: also include certificates containing one from
+      <p>Series II: also include certificates containing one from
          James Maury, United States Consul in Liverpool, England, for
          sale and transfer of the "Aurora," and one for membership to
          Dean S. Howard in the Washington Monument Society. Collection
@@ -219,36 +199,36 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          of Fairfax County, Virginia, to William Herbert of Alexandria,
          Virginia; and two treasury notes, 1838, from the government of
          Texas.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Organization</head>
-         <p>Collection is arranged into the following two series:
+    </scopecontent>
+    <arrangement>
+      <head>Organization</head>
+      <p>Collection is arranged into the following two series:
          Series I: Norborne Berkeley, Baron de Botetourt estate papers,
          1770-1772; and Series II: Miscellaneous Manuscripts,
          1787-1877. Series I is filed in Box 1 and Series II is filed
          in Box 2.</p>
-      </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>15 August 1770,</unitdate> S. Buzaglu, London,
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">15 August 1770,</unitdate> S. Buzaglu, London,
                [England], to [Norborne Berkeley, Lord Botetourt],
                [Williamsburg, Virginia], noting a shipment of stone and
                enclosing "Directions for using the Warming
                Machines."</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-1</container>
-               <physdesc>2 p., 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-1</container>
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">ALS.</abbr>, and 1
                leaf.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>30 October 1770,</unitdate> William Nelson,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">30 October 1770,</unitdate> William Nelson,
                John Randolph, Robert Carter Nicholas, George Wythe, and
                John Blair, [Williamsburg], Virginia, to [Henry
                Somerset, Duke of Beaufort], informing him of the death
@@ -258,33 +238,33 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Governor's Palace and outbuildings, catalogue of the
                library, and inventory of standing
                furniture.</unittitle>
-               <physloc>Inventory of the Governor's Palace and
+          <physloc>Inventory of the Governor's Palace and
                outbuildings is located in oversize, box 1,</physloc>
-               <container type="Folder" label="Folder">a-2</container>
-               <physdesc>27 p., 
+          <container type="Folder" label="Folder">a-2</container>
+          <physdesc>27 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>n.d.,</unitdate> [James] Horrocks, [London], to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> [James] Horrocks, [London], to
                Robert Carter Nicholas [Williamsburg], directing
                Nicholas to pay the balance of Lord Botetourt's
                subscription for the workhouse to [John]
                Saunders.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-3</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-3</container>
+          <physdesc>1 leaf, 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>2 January 1771,</unitdate> [Duke of] Beaufort,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">2 January 1771,</unitdate> [Duke of] Beaufort,
                Badminton, [England], to William Nelson, et. al.,
                [Williamsburg], stating he had received their letter of
                30 October and sending thanks for services and funeral.
@@ -292,32 +272,32 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                settlement of estate, and requests account of the
                estate. Provides a list of things to be sent to
                England.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-4</container>
-               <physdesc>5 p., and 1 leaf, 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-4</container>
+          <physdesc>5 p., and 1 leaf, 
                <abbr expan="Autograph Letter Signed">ALS.</abbr> Typed
                copy of the list of things to be sent to
                England.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>28 January 1770 [1771],</unitdate> Thomas
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">28 January 1770 [1771],</unitdate> Thomas
                Conway, London, to Mr. [William] Marshman, Williamsburg,
                stating that the Virginia House of Burgesses is to have
                the stove.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-5</container>
-               <physdesc>2 p., 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-5</container>
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>27 May 1771,</unitdate> [Robert Carter
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">27 May 1771,</unitdate> [Robert Carter
                Nicholas, et. al.], [Williamsburg], Virginia, to [the
                Duke of Beaufort], informing him that expenses have been
                paid and goods are packed, but no shpping is available.
@@ -325,17 +305,17 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                been extended and they accept the gift of portraits and
                carriage. Discuss monument to Botetourt, enclosing a
                memorandum on its location.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-6</container>
-               <physdesc>5 p., 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-6</container>
+          <physdesc>5 p., 
                <abbr expan="Autographed Letter Unsigned">
                AL.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>8 June 1771,</unitdate> [Robert Carter
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">8 June 1771,</unitdate> [Robert Carter
                Nicholas, et. al.], [Williamsburg], Virginia, to [the
                Duke of Beaufort] stating that passage for goods has
                been found on Captain John Cawsey's ship "Planter,"
@@ -344,17 +324,17 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                insurance. State that William Marshman and Thomas
                Fuller, the managers of Botetourt's estate, will be
                leaving with Cawsey.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-7</container>
-               <physdesc>2 p., 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-7</container>
+          <physdesc>2 p., 
                <abbr expan="Autographed Letter Unsigned">
                AL.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>25 July 1771,</unitdate> [Robert Carter
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">25 July 1771,</unitdate> [Robert Carter
                Nicholas, et. al.], [Williamsburg], Virginia, to [the
                Duke of Beaufort], informing him that Captain Cawsey has
                been delayed, and that Marshman and Fuller will return
@@ -362,250 +342,250 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                bill for boarding Marshman and Fuller, statement of cash
                received by Marshman for the estate, and a receipt for
                coal.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-8</container>
-               <physdesc>2 leaves and 9 p., 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-8</container>
+          <physdesc>2 leaves and 9 p., 
                <abbr expan="Autographed Letter Unsigned">
                AL.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>13 October 1771,</unitdate> [Duke of] Beaufort,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">13 October 1771,</unitdate> [Duke of] Beaufort,
                Badminton, [England], to [William Nelson, et. al.],
                sending his thanks, and requesting copies of vouchers.
                He comments on statue of Lord Botetourt and states he
                received the draft.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-9</container>
-               <physdesc>2 p. 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-9</container>
+          <physdesc>2 p. 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>6 March 1772,</unitdate> [Duke of] Beaufort,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">6 March 1772,</unitdate> [Duke of] Beaufort,
                Grosvenor Square, [London, England], to [William Nelson,
                et. al.], [Williamsburg, Virginia] stating he has
                received their letters of 12 November 1771 and 2 January
                1772. States that Captain Cawsey and his ship are
                probably lost. Comments on Mr. Norton and the
                statue.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-10</container>
-               <physdesc>2 p., 
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-10</container>
+          <physdesc>2 p., 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Bill of exchange, 
-               <unitdate>28 November 1772,</unitdate> Richard Hanson to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Bill of exchange, 
+               <unitdate era="ce" calendar="gregorian">28 November 1772,</unitdate> Richard Hanson to
                Robert Carter Nicholas on Lyonel and Samuel Lyde for 111
                pounds, 17 shillings, and 11 pence sterling. Signed by
                Nicholas to the Duke of Beaufort.</unittitle>
-               <container label="Box" type="Box">1</container>
-               <container type="Folder" label="Folder">a-11</container>
-               <physdesc>2 p., printed form.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>22 May 1815,</unitdate> Alexander J. Dallas,
+          <container label="Box" type="Box">1</container>
+          <container type="Folder" label="Folder">a-11</container>
+          <physdesc>2 p., printed form.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">22 May 1815,</unitdate> Alexander J. Dallas,
                War Department, to Colonel Hugh Brady, Carlisle,
                Pennsylvania, regarding the organization of the military
                peace establishment of the United States.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-1</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-1</container>
+          <physdesc>1 leaf, 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>6 October 1851,</unitdate> William A. Graham,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">6 October 1851,</unitdate> William A. Graham,
                Secretary of the Navy, to Dr. Robert A. Ashburn,
                Norfolk, Virginia, concerning Ashburn's eligibility to
                appear before the Navy Examining Board.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-2</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-2</container>
+          <physdesc>1 leaf, 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Power of attorney, 
-               <unitdate>13 June 1806,</unitdate> from Richard Dobson to
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Power of attorney, 
+               <unitdate era="ce" calendar="gregorian">13 June 1806,</unitdate> from Richard Dobson to
                Benjamin Day. Attested by Stanton Slaughter, 17 June
                1806, and certified by John Jameson, clerk of the
                Culpeper County, [Virginia], Court.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-3</container>
-               <physdesc>2 p., 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-3</container>
+          <physdesc>2 p., 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Receipt, 
-               <unitdate>January 1855,</unitdate> Senator R. M. T.
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Receipt, 
+               <unitdate era="ce" calendar="gregorian">January 1855,</unitdate> Senator R. M. T.
                Hunter to Asbury Dickins, Secretary of the Senate, for
                Senate and House Journals and for the Reports of the
                Committees.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-4</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-4</container>
+          <physdesc>1 leaf, 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>7 May 1867,</unitdate> Benson J. Lossing,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">7 May 1867,</unitdate> Benson J. Lossing,
                Poughkeepsie, New York, to J. C. Buttre concerning
                Abraham Lincoln's signature.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-5</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-5</container>
+          <physdesc>1 leaf, 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Certificate, 
-               <unitdate>18 August 1809,</unitdate> of Sale and Transfer
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Certificate, 
+               <unitdate era="ce" calendar="gregorian">18 August 1809,</unitdate> of Sale and Transfer
                of the Aurora and its cargo from Thomas Dingley to
                Barnabas Otis. Certificate made by James Maury, United
                States Consul in Liverpool, England.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-6</container>
-               <physdesc>1 leaf, printed form.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>n.d.,</unitdate> from Anna Cora Mowatt
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-6</container>
+          <physdesc>1 leaf, printed form.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> from Anna Cora Mowatt
                [Ritchie] to an unidentified correspondent, and also
                containing a portrait of Anna Mowatt and her obituary,
                17 August 1870, from a Boston, Massachusetts,
                newspaper.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-7</container>
-               <physdesc>3 leaves.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>8 April 1809,</unitdate> William Eustis,
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-7</container>
+          <physdesc>3 leaves.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">8 April 1809,</unitdate> William Eustis,
                Secretary of War, to Thomas Nelson, Commissioner of
                Loans, Richmond, Virginia, appointing Nelson agent for
                payment of military pensions.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-8</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-8</container>
+          <physdesc>1 leaf, 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>6 February 1810,</unitdate> Albert Gallatin,
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">6 February 1810,</unitdate> Albert Gallatin,
                Secretary of the Treasury, to Thomas Nelson,
                Commissioner of Loans, Richmond, Virginia, regarding
                money for the payment of pensions. Gallatins states the
                need for a good accounting of the money.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-9</container>
-               <physdesc>2 p., 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-9</container>
+          <physdesc>2 p., 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>27 July 1810,</unitdate> John Smith, Chief
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">27 July 1810,</unitdate> John Smith, Chief
                Clerk for the Secretary of War, War Deptartment, to
                Thomas Nelson, Commissioner of Loans, Richmond,
                Virginia, regarding payment of particular
                pensions.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-10</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-10</container>
+          <physdesc>1 leaf, 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Mortgage, 
-               <unitdate>9 March 1787,</unitdate> for 722 pounds, 17
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Mortgage, 
+               <unitdate era="ce" calendar="gregorian">9 March 1787,</unitdate> for 722 pounds, 17
                shilliings, 6 pence on 301 1/2 acres and 18 slaves, from
                Buckner and Ann Stith, Fairfax County, Virginia, to
                William Herbert, Alexandria, Virginia. Proved 15 October
                1787.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-11</container>
-               <physdesc>3 p., 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-11</container>
+          <physdesc>3 p., 
                <abbr expan="Manuscript">Ms.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Treasury notes, 
-               <unitdate>1838,</unitdate> issued by the government of
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Treasury notes, 
+               <unitdate era="ce" calendar="gregorian">1838,</unitdate> issued by the government of
                Texas. First note: $3 denomination 10% interest, 1 June
                1838. Second note: $20 denomination 10% interest, 1
                September 1838.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-12</container>
-               <physdesc>1 leaf, photocopies.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>26 October 1877,</unitdate> Robert Toombs,
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-12</container>
+          <physdesc>1 leaf, photocopies.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">26 October 1877,</unitdate> Robert Toombs,
                Washington, Georgia, to J. Burton, New York, New York,
                stating that he received Burton's letter.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-13</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-13</container>
+          <physdesc>1 leaf, 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Membership certificate, 
-               <unitdate>10 July 1851,</unitdate> from the Washington
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Membership certificate, 
+               <unitdate era="ce" calendar="gregorian">10 July 1851,</unitdate> from the Washington
                National Monument Society to Dean S. Howard.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-14</container>
-               <physdesc>1 leaf, printed form.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>5 December 1827,</unitdate> Samuel Southard,
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-14</container>
+          <physdesc>1 leaf, printed form.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">5 December 1827,</unitdate> Samuel Southard,
                Secretary of the Navy, to President John Quincy Adams,
                concerning the case of Captain William H. Freeman of the
                United States Marines.</unittitle>
-               <container label="Box" type="Box">2</container>
-               <container type="Folder" label="Folder">b-15</container>
-               <physdesc>1 leaf, 
+          <container label="Box" type="Box">2</container>
+          <container type="Folder" label="Folder">b-15</container>
+          <physdesc>1 leaf, 
                <abbr expan="Autograph Letter Signed">
                ALS.</abbr></physdesc>
-            </did>
-         </c01>
-      </dsc>
-   </archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

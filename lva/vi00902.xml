@@ -1,165 +1,145 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00902">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00902::A Guide to the Society of the Cincinnati in the State of Virginia, Records, 1778-1941//EN&amp;#34; &amp;#34;vi00902.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00902">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00902::A Guide to the Society of the Cincinnati in the State of Virginia, Records, 1778-1941//EN&amp;#34; &amp;#34;vi00902.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00902::A Guide to the Society of
              the Cincinnati in the State of Virginia, Records,
              1778-1941//EN" "vi00902.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Society of the Cincinnati in
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Society of the Cincinnati in
             the State of Virginia, Records, 
-            <date>1778-1941</date></titleproper>
-            <subtitle id="sort">Society of the Cincinnati in the State
+            <date era="ce" calendar="gregorian">1778-1941</date></titleproper>
+        <subtitle id="sort">Society of the Cincinnati in the State
             of Virginia 
             <num type="collectionnumber">26102</num></subtitle>
-            <author>Alex Lorch</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Alex Lorch</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">75 kb</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from Microsoft
+        </p>
+        <p id="filesize">75 kb</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from Microsoft
          Word. Created by Alex Lorch, 
-         <date>February 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">February 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00902::A Guide to the Society of the Cincinnati
             in the State of Virginia, Records, 1778-1941//EN"
             "vi00902.xml" converted from EAD 1.0 to 2002 by v1to02.xsl
             (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Society of the Cincinnati in the
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Society of the Cincinnati in the
          State of Virginia, Records, 
-         <date>1778-1941</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1778-1941</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">26102</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Alex Lorch</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Records, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Alex Lorch</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Records, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1778-1941</unitdate></unittitle>
-         <unitid label="Accession number">26102</unitid>
-         <physloc label="Physical Location">Organization Records
+      <unitid label="Accession number">26102</unitid>
+      <physloc label="Physical Location">Organization Records
          Collection, Accession 26102</physloc>
-         <physdesc label="Physical Characteristics">2 reels (miscellaneous reels 6026-6027)</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Society of the Cincinnati in the
+      <physdesc label="Physical Characteristics">2 reels (miscellaneous reels 6026-6027)</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Society of the Cincinnati in the
          State of Virginia</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no access restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Society of the Cincinnati in the State of Virginia,
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no access restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Society of the Cincinnati in the State of Virginia,
             Records, 1778-1941. Accession 26102, Organization Records
             Collection, The Library of Virginia, Richmond,
             Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>This collection is on deposit from the Society of the
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>This collection is on deposit from the Society of the
             Cincinnati in the State of Virginia at The Library of
             Virginia from circa 1935-1940.</p>
-         </acqinfo>
-         <altformavail>
-            <head>Related Material</head>
-            <p>Henry Lee, Membership certificate, 10 October 1785,
+      </acqinfo>
+      <altformavail>
+        <head>Related Material</head>
+        <p>Henry Lee, Membership certificate, 10 October 1785,
             Accession 20007a</p>
-            <p>Society of the Cincinnati, Papers, 1783-1861, Accession
+        <p>Society of the Cincinnati, Papers, 1783-1861, Accession
             24646</p>
-            <p>George Washington, Letter, 24 October 1783, Accession
+        <p>George Washington, Letter, 24 October 1783, Accession
             21875</p>
-            <p>Treasurer's Office Inventory, entry no. 54, Special
+        <p>Treasurer's Office Inventory, entry no. 54, Special
             funds receipt ledger, 1823-1844, State Records Collection,
             TOI 54</p>
-         </altformavail>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>The Society of the Cincinnati was formed on 10-13 May 1783
+      </altformavail>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>The Society of the Cincinnati was formed on 10-13 May 1783
          by American Revolutionary Army officers who met at Mount
          Gulian, the American Army's cantonment on the east bank of the
          Hudson River. After resigning his post as General, George
@@ -181,7 +161,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          not-for-profit organization supporting educational, cultural,
          and literary activities that promote the ideals of liberty and
          constitutional government.</p>
-         <p>Within a year constituent societies were established in the
+      <p>Within a year constituent societies were established in the
          thirteen states and in France by officers and members of the
          general society. Officers established the Society of the
          Cincinnati in the State of Virginia on 6 October 1783 in
@@ -202,10 +182,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Society of the Cincinnati in the State of Virginia was
          reformed in the 1890's by descendants of the original
          members.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Records, 1778-1941 (bulk 1783-1848), of the Society of the
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Records, 1778-1941 (bulk 1783-1848), of the Society of the
          Cincinnati in the State of Virginia consisting of
          correspondence including letters and circular letters,
          membership certificates, a membership roster, military
@@ -218,47 +198,47 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          following the last meeting of the society in 1824 and
          correspondence with society president Edgar Erskine Hume
          (1889-1952).</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>Chronological</p>
-         </arrangement>
-         <arrangement>
-            <head>Organization</head>
-            <p>The collection is organized into the following four
-            series: 
-            <lb />Series I: Correspondence, 1783-1941 (bulk 1783-1808) 
-            <lb />Series II: Membership files, 1778-1806 
-            <lb />Series III: Minutes, 1783-1810 
-            <lb />Series IV: Treasurer's Papers and Reports, 1786-1848 
-            <lb /></p>
-         </arrangement>
+        <head>Arrangement</head>
+        <p>Chronological</p>
       </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-<c01 level="item">
-<did>
-<unittitle><emph render="bold">Proceedings of the Virginia State Society of the Cincinnati</emph>, 
-<unitdate type="inclusive"><emph render="bold">1783-1824</emph></unitdate>.</unittitle>
-<container label="Reel" type="reel">6026
+      <arrangement>
+        <head>Organization</head>
+        <p>The collection is organized into the following four
+            series: 
+            <lb/>Series I: Correspondence, 1783-1941 (bulk 1783-1808) 
+            <lb/>Series II: Membership files, 1778-1806 
+            <lb/>Series III: Minutes, 1783-1810 
+            <lb/>Series IV: Treasurer's Papers and Reports, 1786-1848 
+            <lb/></p>
+      </arrangement>
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="item">
+        <did>
+          <unittitle><emph render="bold">Proceedings of the Virginia State Society of the Cincinnati</emph>, 
+<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">1783-1824</emph></unitdate>.</unittitle>
+          <container label="Reel" type="reel">6026
 </container>
-</did>
-<scopecontent>
-<p>Volume, 1783-1824, of the proceedings of the Virginia State Society of the Cincinnati containing minutes, accounts, correspondence, resolutions, other papers concerning the Society in Virginia.
+        </did>
+        <scopecontent>
+          <p>Volume, 1783-1824, of the proceedings of the Virginia State Society of the Cincinnati containing minutes, accounts, correspondence, resolutions, other papers concerning the Society in Virginia.
 </p>
-</scopecontent>
-</c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series I">Correspondence, 
-               <unitdate type="inclusive">1783-1941 (bulk
+        </scopecontent>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series I">Correspondence, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1783-1941 (bulk
                1783-1808)</unitdate></unittitle>
-               <container label="reel" type="Reel">6026</container>
-            </did>
-            <scopecontent>
-               <p>Contains letters, circular letters, and associated
+          <container label="reel" type="Reel">6026</container>
+        </did>
+        <scopecontent>
+          <p>Contains letters, circular letters, and associated
                minutes and proceedings, principally exchanged between
                the Society of the Cincinnati in the State of Virginia
                leaders and members, the general Society of the
@@ -282,194 +262,194 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                Edward Carrington, Samuel Coleman, William Heth, Henry
                Knox, George Weedon, James Wood, and his wife Jean
                Wood.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Proposal for the establishment of the
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Proposal for the establishment of the
                   Society of the Cincinnati, 
-                  <unitdate>10-13 May 1783</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-                  </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence with the general society by
+                  <unitdate era="ce" calendar="gregorian">10-13 May 1783</unitdate></unittitle>
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence with the general society by
                   the Virginia society, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1783-1799</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Other state societies' letters and
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Other state societies' letters and
                   minutes, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1783-1799</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous correspondence, 
-                  <unitdate type="inclusive">
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1783-1808</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Circular letters from the general society
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Circular letters from the general society
                   to the Virginia society, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1786-1808</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Printed proceedings of the Philadelphia
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Printed proceedings of the Philadelphia
                   general meeting, 
-                  <unitdate>1787</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Printed proceedings of the Philadelphia
+                  <unitdate era="ce" calendar="gregorian">1787</unitdate></unittitle>
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Printed proceedings of the Philadelphia
                   general meetings, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1790-1791</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letters in reference to pensions, 
-                  <unitdate type="inclusive">
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letters in reference to pensions, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1791-1808</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letters concerning the Washington
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letters concerning the Washington
                   Academy/College Fund, 
-                  <unitdate>1803</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letters to Edgar Erskine Hume, 
-                  <unitdate>1941</unitdate></unittitle>
-                  <container label="reel" type="Reel">6026</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series II">Membership files, 
-               <unitdate type="inclusive">
+                  <unitdate era="ce" calendar="gregorian">1803</unitdate></unittitle>
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letters to Edgar Erskine Hume, 
+                  <unitdate era="ce" calendar="gregorian">1941</unitdate></unittitle>
+            <container label="reel" type="Reel">6026</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series II">Membership files, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1778-1806</unitdate></unittitle>
-               <container label="reel" type="Reel">6027</container>
-            </did>
-            <scopecontent>
-               <p>There are applications for membership, letters
+          <container label="reel" type="Reel">6027</container>
+        </did>
+        <scopecontent>
+          <p>There are applications for membership, letters
                concerning members, military commissions concerning
                members, muster rolls and rosters containing the names
                of Virginia society members, and a membership roster,
                1785. There is also a membership certificate issued to
                Andrew Waggoner by the society.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Roster, 
-                  <unitdate>11 September 1778, of the officers of the
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Roster, 
+                  <unitdate era="ce" calendar="gregorian">11 September 1778, of the officers of the
                   11th Regiment, Virginia
                   Militia</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Applications for membership, 
-                  <unitdate type="inclusive">
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Applications for membership, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1783-1791</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Commission, 
-                  <unitdate>10 October 1783, issued to Charles
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Commission, 
+                  <unitdate era="ce" calendar="gregorian">10 October 1783, issued to Charles
                   Scott</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Membership certificate, 
-                  <unitdate>1 March 1787, </unitdate>issued to Andrew Waggoner
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Membership certificate, 
+                  <unitdate era="ce" calendar="gregorian">1 March 1787, </unitdate>issued to Andrew Waggoner
 		</unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Muster roll, 
-                  <unitdate>7 October 1806, of the officers of the 2nd
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Muster roll, 
+                  <unitdate era="ce" calendar="gregorian">7 October 1806, of the officers of the 2nd
                   Regiment, Virginia Militia</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series III">Minutes, 
-               <unitdate type="inclusive">
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series III">Minutes, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1783-1810</unitdate></unittitle>
-               <container label="reel" type="Reel">6027</container>
-            </did>
-            <scopecontent>
-               <p>Comprises minutes and miscellaneous
+          <container label="reel" type="Reel">6027</container>
+        </did>
+        <scopecontent>
+          <p>Comprises minutes and miscellaneous
                resolves from meetings of the Society of the Cincinnati
                in the State of Virginia.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Loose minutes of the Virginia society, 
-                  <unitdate>1783-1810</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous resolves of the Virginia
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Loose minutes of the Virginia society, 
+                  <unitdate era="ce" calendar="gregorian">1783-1810</unitdate></unittitle>
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous resolves of the Virginia
                   society, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1786-1788</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Minutes, 
-                  <unitdate>13 December 1802</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series IV">Treasurer's papers and
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Minutes, 
+                  <unitdate era="ce" calendar="gregorian">13 December 1802</unitdate></unittitle>
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series IV">Treasurer's papers and
                reports, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1786-1848</unitdate></unittitle>
-               <container label="reel" type="Reel">6027</container>
-            </did>
-            <scopecontent>
-               <p>Includes papers and reports concerning society
+          <container label="reel" type="Reel">6027</container>
+        </did>
+        <scopecontent>
+          <p>Includes papers and reports concerning society
                finances and pension allotments during the early years
                of the organization. Treasurer's papers, 1829-1848
                principally comprise orders and notices, 1829-1848,
@@ -485,23 +465,23 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                abstract of delinquent members; and e) a report, 1802,
                examining the treasurer's report previously issued by
                William Heth (in printed and written form).</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Treasurer's reports, 
-                  <unitdate type="inclusive">1786-1802 </unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Treasurer's papers, 
-                  <unitdate type="inclusive">
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Treasurer's reports, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1786-1802 </unitdate></unittitle>
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Treasurer's papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1828-1848</unitdate></unittitle>
-                  <container label="reel" type="Reel">6027</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+            <container label="reel" type="Reel">6027</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

@@ -1,170 +1,150 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00762">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::[eadid]::A Guide to the Lancaster County (Va.) Free Negro and Slave Records, Free Negro Register, 1803-1860)//EN&amp;#34; &amp;#34;vi00762&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00762">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::[eadid]::A Guide to the Lancaster County (Va.) Free Negro and Slave Records, Free Negro Register, 1803-1860)//EN&amp;#34; &amp;#34;vi00762&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::[eadid]::A Guide to the Lancaster
              County (Va.) Free Negro and Slave Records, Free Negro
              Register, 1803-1860)//EN" "vi00762"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Lancaster County (Va.) Free
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Lancaster County (Va.) Free
             Negro and Slave Records, Free Negro Register,
             1803-1860</titleproper>
-            <subtitle id="sort">Lancaster County (Va.) Free Negro and
+        <subtitle id="sort">Lancaster County (Va.) Free Negro and
             Slave Records, Free Negro Register, 1803-1860 
             <num type="collectionnumber">1118802</num></subtitle>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">[ca. ## Kilobytes]</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from GAIN
+        </p>
+        <p id="filesize">[ca. ## Kilobytes]</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from GAIN
          database. Created by Carl Childs 
-         <date>17 July 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">17 July 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::[eadid]::A Guide to the Lancaster County (Va.)
             Free Negro and Slave Records, Free Negro Register,
             1803-1860)//EN" "vi00762" converted from EAD 1.0 to 2002 by
             v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Lancaster County (Va.) Free Negro
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Lancaster County (Va.) Free Negro
          and Slave Records, Free Negro Register,
          1803-1860</titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Barcode Number">1118802</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Carl Childs</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">A Guide to the Lancaster County (Va.)
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Carl Childs</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">A Guide to the Lancaster County (Va.)
          Free Negro and Slave Records, Free Negro Register, 
-         <unitdate type="inclusive" label="Date">
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1803-1860</unitdate></unittitle>
-         <unitid label="Barcode number">1118802</unitid>
-         <physloc label="Physical Location">Library of Virginia, Local
+      <unitid label="Barcode number">1118802</unitid>
+      <physloc label="Physical Location">Library of Virginia, Local
          Government Records Collection, Lancaster County.</physloc>
-         <physdesc label="Physical Characteristics">1 volume. 71
+      <physdesc label="Physical Characteristics">1 volume. 71
          pages.</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Lancaster County
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Lancaster County
          (Va.)</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>Use microfilm, Lancaster County, Reel 337.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Lancaster County Free Negro Register, 1803-1860.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>Use microfilm, Lancaster County, Reel 337.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Lancaster County Free Negro Register, 1803-1860.
             Lancaster County Reel 337, Local Government Records
             Collection, The Library of Virginia, Richmond,
             Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Original volume transferred from Lancaster County
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Original volume transferred from Lancaster County
             Circuit Court Clerk's Office. Volume microfilmed by LVA
             ISB.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>Lancaster County was formed in 1651 from Northumberland and
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>Lancaster County was formed in 1651 from Northumberland and
          York Counties.</p>
-         <p>An act passed by the Virginia legislature in 1803 required
+      <p>An act passed by the Virginia legislature in 1803 required
          every free negro or mulatto to be registered and numbered in a
          book to be kept by the county clerk. The register listed the
          age, name, color, stature, marks or scars, in what court the
          person was emancipated or whether the person was born free.
          Some clerks recorded additional information not required by
          the law.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>The volume covers the years 1803-1860.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Chronological.</p>
-      </arrangement>
-   </archdesc>
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>The volume covers the years 1803-1860.</p>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Chronological.</p>
+    </arrangement>
+  </archdesc>
 </ead>

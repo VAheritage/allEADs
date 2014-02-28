@@ -1,157 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00957">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00957::A Guide to the Virginia Consitutional Convention (1901-1902), Records, 1901-1902)//EN&amp;#34; &amp;#34;vi00957.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00957">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00957::A Guide to the Virginia Consitutional Convention (1901-1902), Records, 1901-1902)//EN&amp;#34; &amp;#34;vi00957.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00957::A Guide to the Virginia
              Consitutional Convention (1901-1902), Records,
              1901-1902)//EN" "vi00957.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginia Constitutional
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginia Constitutional
             Convention (1901-1902), Records, 
-            <date>1901-1902</date></titleproper>
-            <subtitle id="sort">Virginia Constitutional Convention
+            <date era="ce" calendar="gregorian">1901-1902</date></titleproper>
+        <subtitle id="sort">Virginia Constitutional Convention
             (1901-1902), Records 
             <num type="collectionnumber">20936, 23877c and
             40664</num></subtitle>
-            <author>Roger Christman</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Roger Christman</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">3 KB]</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">3 KB]</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Roger Christman 
-         <date>2003 June 12</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">2003 June 12</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00957::A Guide to the Virginia Consitutional
             Convention (1901-1902), Records, 1901-1902)//EN"
             "vi00957.xml" converted from EAD 1.0 to 2002 by v1to02.xsl
             (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia Constitutional Convention
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia Constitutional Convention
          (1901-1902), Records, 
-         <date>1901-1902</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1901-1902</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">20936, 23877c and
          40664</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Roger Christman</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Records, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Roger Christman</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Records, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1901-1902</unitdate></unittitle>
-         <unitid label="Accession number">20936, 23877c and
+      <unitid label="Accession number">20936, 23877c and
          40664</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <physloc label="Physical Location">State Records Collection,
          Virginia Constitutional Convention (1901-1902) (Record Group
          97)</physloc>
-         <physdesc label="Physical Characteristics">4.91 cubic feet and
+      <physdesc label="Physical Characteristics">4.91 cubic feet and
          1 volume</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia Constitutional Convention (1901-1902), Records,
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia Constitutional Convention (1901-1902), Records,
             1901-1902. [specific accession number], State Records
             Collection, The Library of Virginia, Richmond,
             Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Gift of Judge Daniel Ginnan, 4 February 1935 (accession
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Gift of Judge Daniel Ginnan, 4 February 1935 (accession
             20936) Transferred from the Secretary of the Commonwealth,
             16 October 1952 (accession 23877c) Acquision information
             unknown, prior to 1905 (accession 40664)</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>Many Virginians felt that the constitution approved in 1869
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>Many Virginians felt that the constitution approved in 1869
          had been forced upon them and over the next several years,
          especially after military Reconstruction ended, there was a
          movement to call a new convention. A number of acts were
@@ -166,7 +146,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          political conservatives to disenfranchise black voters. An
          enabling act was approved by the voters in May 1900 and
          elections for delegates were held in May 1901.</p>
-         <p>The delegates assembled on 12 June 1901, and most of the
+      <p>The delegates assembled on 12 June 1901, and most of the
          preliminary work was done in committees selected to study
          specific topics. The committee reports and recommendations
          were then debated by the full convention. The new constitution
@@ -179,16 +159,16 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          unorthodox procedure was approved by the governor and the
          General Assembly, as well as the state Supreme Court of
          Appeals.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>This collection contains the records of the Virginia
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>This collection contains the records of the Virginia
          Constitutional Convention (1901-1902). Included are committee
          minute books, convention minute books, committee records,
          oaths of office required by 1902 Constitutions, pay roll books
          and drafts of the constitution and the original, approved
          constitution.</p>
-         <p>The committee minute books record the activities of each
+      <p>The committee minute books record the activities of each
          committee and also include an attendance roll listing which
          committee members were present. (Volume 1) Committee on
          Education and Public Instruction, 1901 June 27 - 1902 January
@@ -219,7 +199,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          November 11. (Volume 13) Committee on Rules, Accounts and
          Expenditures, Journal and Enrollment, Minor Committees,
          1901-1902.</p>
-         <p>The Convention Minute Books chronicle the daily activities
+      <p>The Convention Minute Books chronicle the daily activities
          of the Convention between 1901 June 22 and 1902 June 5. Also
          included is a volume documenting the Conventions work as the
          Committee of the Whole between 1901 July 29 and 1902 June 26.
@@ -231,12 +211,12 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          from 1901 July 29 to 1902 June 26. Also included is a
          transcript of the minutes of proceedings of the Convention
          from 12-13 and 20-21 June 2001 (accession 20936).</p>
-         <p>The Committee Records include resolutions, reports,
+      <p>The Committee Records include resolutions, reports,
          correspondence and petitions for the following committees:
          Committee on Education and Public Instruction Committee on
          Public Institutions and Prisons Committee on Corporations Also
          included are miscellaneous committee reports.</p>
-         <p>Oaths Required by 1902 Virginia State Constitution. Under
+      <p>Oaths Required by 1902 Virginia State Constitution. Under
          the provisions of section 22 of the Schedule, the Constitution
          went into effect on 10 July 1902. On that date, at noon, the
          Governor qualified under the new Constitution by taking the
@@ -247,10 +227,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          inclusive, the time allowed them in which to take the oath or
          vacate their respective offices. Oaths are arranged
          alphabetically by locality and by office.</p>
-         <p>Pay roll volumes - These volumes (1901 and 1902) list each
+      <p>Pay roll volumes - These volumes (1901 and 1902) list each
          delegate alphabetically and note payments for attendance and
          reimbursement for travel expenses.</p>
-         <p>Constitution of Virginia, 1901-1902. Four portfolios
+      <p>Constitution of Virginia, 1901-1902. Four portfolios
          containing the Constitution of Virginia as revised by the
          Committee on Final Revision and Adjustment. Articles 1, 2, 3
          and 4 (Sections 1-68 on pages 1-31) Articles 5, 6, 7 and 8
@@ -258,356 +238,356 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          (Sections 129-167 on pages 64-100) Articles 13, 14 and 15
          (Sections 168-197 on pages 101-120), The Schedule (pages
          121-131) and Registration Ordinance.</p>
-         <p>Also included is a corrected first draft of various
+      <p>Also included is a corrected first draft of various
          articles of the Constitution, beginning with Article 7 on the
          organization and government of counties and the approved
          Constitution signed by members present (accession 23877c).</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Series arranged by type of record.</p>
-      </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 1 - Committee on Education and Public
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Series arranged by type of record.</p>
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 1 - Committee on Education and Public
                Instruction, 1901 June 27 - 1902 January 28</unittitle>
-               <container label="Box" type="Box">1</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 2 - Committee on Public Instructions
+          <container label="Box" type="Box">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 2 - Committee on Public Instructions
                and Prisons, 1901 June 27 - November 21</unittitle>
-               <container label="Box" type="Box">1</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 3 - Committee on Final Revision and
+          <container label="Box" type="Box">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 3 - Committee on Final Revision and
                Adjustments of the Various Provisions of the
                Constitution that may be agreed upon, and upon the
                Schedule, 1902 January 31 - April 24</unittitle>
-               <container label="Box" type="Box">1</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 4 - Committee on the Legislative
+          <container label="Box" type="Box">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 4 - Committee on the Legislative
                Department, Except such matters as come within the
                Jurisdiction of other Standing Committees, 1901 (lists
                only actions of committee)</unittitle>
-               <container label="Box" type="Box">2</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 5 - Committee on Taxation and Finance,
+          <container label="Box" type="Box">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 5 - Committee on Taxation and Finance,
                1901 June 27 - 1902 January 29</unittitle>
-               <container label="Box" type="Box">2</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 6 - Committee on the Organization and
+          <container label="Box" type="Box">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 6 - Committee on the Organization and
                Government of Cities and Towns, 1901 June 29 - 1902
                January 9</unittitle>
-               <container label="Box" type="Box">2</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 7 - Committee on Privileges and
+          <container label="Box" type="Box">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 7 - Committee on Privileges and
                Elections, 1901 June 21 - September 12</unittitle>
-               <container label="Box" type="Box">3</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 8 - Committee on the Judiciary, 1901
+          <container label="Box" type="Box">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 8 - Committee on the Judiciary, 1901
                June 26-November 20; and Committee on Agriculture,
                Manufacturing and Industrial Interests and Immigration,
                1901 July 31-1902 January 8</unittitle>
-               <container label="Box" type="Box">3</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 9 - Committee on Preamble and Bill of
+          <container label="Box" type="Box">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 9 - Committee on Preamble and Bill of
                Rights, the Division of Governmental Powers, and on such
                portions of the Constitution as shall not be referred to
                other Committees, 1901 June28-1902 January
                29</unittitle>
-               <container label="Box" type="Box">3</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 10 - Committee on the Elective
+          <container label="Box" type="Box">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 10 - Committee on the Elective
                Franchise, Qualifications for Office, Basis of
                Representation and Apportionment, and on Elections, 1901
                June 27-August 27</unittitle>
-               <container label="Box" type="Box">4</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 12 - Committee on the Organization and
+          <container label="Box" type="Box">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 12 - Committee on the Organization and
                Government of Counties, 1901 July 2-November
                11</unittitle>
-               <container label="Box" type="Box">4</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container label="Box" type="Box">4</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 11 - Committee on Reduction of
+          <container label="Box" type="Box">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <container label="Box" type="Box">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 11 - Committee on Reduction of
                Expenses, 1901 June 27-September 11</unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 14 - Minutes of the Convention from
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 14 - Minutes of the Convention from
                1901 June 22 to November 22</unittitle>
-               <container label="Box" type="Box">5</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 15 - Minutes of the Convention from
+          <container label="Box" type="Box">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 15 - Minutes of the Convention from
                1901 November 23 to 1902 March 3</unittitle>
-               <container label="Box" type="Box">5</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 16 - Minutes of the Convention from
+          <container label="Box" type="Box">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 16 - Minutes of the Convention from
                1902 March 4 to June 5</unittitle>
-               <container label="Box" type="Box">5</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume 17 - Minutes of the Committee of the
+          <container label="Box" type="Box">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume 17 - Minutes of the Committee of the
                Whole of the Constitutional Convention from 1901 July 29
                to 1902 June 26</unittitle>
-               <container label="Box" type="Box">5</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Education
+          <container label="Box" type="Box">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Education
                and Public Instruction, Resolutions</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">1</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Education
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Education
                and Public Instruction, Reports</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">2</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Education
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Education
                and Public Instruction, Correspondence, 1901</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">3</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Education
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Education
                and Public Instruction, Petitions and
                Resolutions</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">4</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Education
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Education
                and Public Instruction, Speech of Giles B. Jackson,
                Secretary of the Negro Business League of Virginia
                before the Committee, 1901</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">5</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Public
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Public
                Institutions and Prisons, Resolutions</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">6</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Public
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Public
                Institutions and Prisons, Reports</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">7</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Public
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Public
                Institutions and Prisons, Correspondence,
                1901</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">8</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on Public
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on Public
                Institutions and Prisons, MIscellaneous
                Records</unittitle>
-               <container label="Box" type="Box">6</container>
-               <container label="Folder" type="Folder">9</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on
+          <container label="Box" type="Box">6</container>
+          <container label="Folder" type="Folder">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on
                Corporations, Resolutions</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">1</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Committee on
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Committee on
                Corporations, Correspondence, 1901</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">2</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Committee Records - Miscellaneous Committee
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Committee Records - Miscellaneous Committee
                Reports</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">3</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Oaths - Supreme Court of Appeals</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">4</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Oaths - Circuit Court</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">5</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Oaths - County Court, Accomack-Lunenburg
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Oaths - Supreme Court of Appeals</unittitle>
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Oaths - Circuit Court</unittitle>
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Oaths - County Court, Accomack-Lunenburg
                Counties</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">6</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Oaths - County/Corporation Courts, Mathews
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Oaths - County/Corporation Courts, Mathews
                County - Winchester</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">7</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Oaths - State Office Holders</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">8</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Minutes of the Convention, 12-13 and 20-21
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Oaths - State Office Holders</unittitle>
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Minutes of the Convention, 12-13 and 20-21
                June 1901 (accession 20936)</unittitle>
-               <container label="Box" type="Box">7</container>
-               <container label="Folder" type="Folder">9</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume - Pay Roll, Virginia Constitutional
+          <container label="Box" type="Box">7</container>
+          <container label="Folder" type="Folder">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume - Pay Roll, Virginia Constitutional
                Convention, 1901</unittitle>
-               <container label="Box" type="Box">8</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume - Pay Roll, Virginia Constitutional
+          <container label="Box" type="Box">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume - Pay Roll, Virginia Constitutional
                Convention, 1902</unittitle>
-               <container label="Box" type="Box">8</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Portfolio - Constitution of Virginia,
+          <container label="Box" type="Box">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Portfolio - Constitution of Virginia,
                Articles 1-4 (Sections 1-68 on pages 1-31)</unittitle>
-               <container label="Box" type="Box">9</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Portfolio - Constitution of Virginia,
+          <container label="Box" type="Box">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Portfolio - Constitution of Virginia,
                Articles 5-8 (Sections 69-128 on pages
                31-63)</unittitle>
-               <container label="Box" type="Box">9</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Portfolio - Constitution of Virginia,
+          <container label="Box" type="Box">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Portfolio - Constitution of Virginia,
                Articles 9-12 (Sections 129-167 on pages
                64-100)</unittitle>
-               <container label="Box" type="Box">9</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Portfolio - Constitution of Virginia,
+          <container label="Box" type="Box">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Portfolio - Constitution of Virginia,
                Articles 13-15 (Sections 168-197 on pages 101-120), The
                Schedule (pages 121-131) and Registration
                Ordinance</unittitle>
-               <container label="Box" type="Box">9</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Corrected first draft of various articles of
+          <container label="Box" type="Box">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Corrected first draft of various articles of
                the Constitution, beginning with Article 7 on the
                organization and government of counties</unittitle>
-               <container label="Box" type="Box">10</container>
-               <container label="Folder" type="Folder">1</container>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>Volume - Constitution of
+          <container label="Box" type="Box">10</container>
+          <container label="Folder" type="Folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Volume - Constitution of
                Virginia....proclaimed in convention on 6 June 1902,
                signed by members present (accession 23877c)</unittitle>
-               <container label="Box" type="Box">11</container>
-            </did>
-         </c01>
-      </dsc>
-   </archdesc>
+          <container label="Box" type="Box">11</container>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

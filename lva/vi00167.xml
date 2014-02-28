@@ -1,223 +1,208 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00167">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00167::A Guide to the Francis H. Pierpont Restored Government Executive Papers, 1861-1865)//EN&amp;#34; &amp;#34;[filename]&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00167">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00167::A Guide to the Francis H. Pierpont Restored Government Executive Papers, 1861-1865)//EN&amp;#34; &amp;#34;[filename]&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00167::A Guide to the Francis H.
              Pierpont Restored Government Executive Papers,
              1861-1865)//EN" "[filename]"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Francis H. Pierpont Restored
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Francis H. Pierpont Restored
             Government Executive Papers, 
-            <date>1861-1865</date></titleproper>
-            <subtitle id="sort">Pierpont, Francis H., Restored
+            <date era="ce" calendar="gregorian">1861-1865</date></titleproper>
+        <subtitle id="sort">Pierpont, Francis H., Restored
             Government Executive Papers, 1861-1865 
             <num type="collectionnumber">36928</num></subtitle>
-            <author>Craig Moore</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Craig Moore</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 37 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from HTML and
+        </p>
+        <p id="filesize">ca. 37 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from HTML and
          MARC record. Created by Jay Gaidmore, 
-         <date>29 July 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">29 July 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00167::A Guide to the Francis H. Pierpont
             Restored Government Executive Papers, 1861-1865)//EN"
             "[filename]" converted from EAD 1.0 to 2002 by v1to02.xsl
             (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Francis H. Pierpont Restored
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Francis H. Pierpont Restored
          Government Executive Papers, 
-         <date>1861-1865</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1861-1865</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">36928</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Craig Moore</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Craig Moore</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository label="Repository">Library of Virginia</repository>
-         <unittitle label="Title">Francis H. Pierpont Restored
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository label="Repository">Library of Virginia</repository>
+      <unittitle label="Title">Francis H. Pierpont Restored
          Government Executive Papers, 
-         <unitdate type="inclusive" label="Date">
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1861-1865</unitdate></unittitle>
-         <unitid label="Accession number">36928</unitid>
-         <physloc label="Physical Location">State Government Records
+      <unitid label="Accession number">36928</unitid>
+      <physloc label="Physical Location">State Government Records
          Collection, RG 3.</physloc>
-         <physdesc label="Physical Characteristics">6.30 cubic
+      <physdesc label="Physical Characteristics">6.30 cubic
          feet.</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Francis H. Pierpont Restored Government Executive
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Francis H. Pierpont Restored Government Executive
             Papers, 1861-1865. Accession 36928, State government
             records collection, The Library of Virginia, Richmond,
             Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Acquired prior to 1905.</p>
-         </acqinfo>
-<altformavail>
-<head>Alternative Form Available
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Acquired prior to 1905.</p>
+      </acqinfo>
+      <altformavail>
+        <head>Alternative Form Available
 </head>
-<p>Also available on microfilm - Miscellaneous Reel 5827-5856.
+        <p>Also available on microfilm - Miscellaneous Reel 5827-5856.
 </p>
-<list type="simple">
-<item>Miscellaneous Reel 5827 - Chronological Files, 1861 Feb.-July 10
+        <list type="simple">
+          <item>Miscellaneous Reel 5827 - Chronological Files, 1861 Feb.-July 10
 </item>
-<item>Miscellaneous Reel 5828 - Chronological Files, 1861 July 11-31
+          <item>Miscellaneous Reel 5828 - Chronological Files, 1861 July 11-31
 </item>
-<item>Miscellaneous Reel 5829 - Chronological Files, 1861 Aug.1-20
+          <item>Miscellaneous Reel 5829 - Chronological Files, 1861 Aug.1-20
 </item>
-<item>Miscellaneous Reel 5830 - Chronological Files, 1861 Aug. 21-Sept. 10
+          <item>Miscellaneous Reel 5830 - Chronological Files, 1861 Aug. 21-Sept. 10
 </item>
-<item>Miscellaneous Reel 5831 - Chronological Files, 1861 Sept. 11-Oct. 10
+          <item>Miscellaneous Reel 5831 - Chronological Files, 1861 Sept. 11-Oct. 10
 </item>
-<item>Miscellaneous Reel 5832 - Chronological Files, 1861 Oct. 11-31
+          <item>Miscellaneous Reel 5832 - Chronological Files, 1861 Oct. 11-31
 </item>
-<item>Miscellaneous Reel 5833 - Chronological Files, 1861 Nov. 1-Dec. 10
+          <item>Miscellaneous Reel 5833 - Chronological Files, 1861 Nov. 1-Dec. 10
 </item>
-<item>Miscellaneous Reel 5834 - Chronological Files, 1861 Dec. 11-31
+          <item>Miscellaneous Reel 5834 - Chronological Files, 1861 Dec. 11-31
 </item>
-<item>Miscellaneous Reel 5835 - Chronological Files, 1862 Jan. 1-Feb. 15
+          <item>Miscellaneous Reel 5835 - Chronological Files, 1862 Jan. 1-Feb. 15
 </item>
-<item>Miscellaneous Reel 5836 - Chronological Files, 1862 Feb. 16-Mar. 27
+          <item>Miscellaneous Reel 5836 - Chronological Files, 1862 Feb. 16-Mar. 27
 </item>
-<item>Miscellaneous Reel 5837 - Chronological Files, 1862 Mar. 28-May 15
+          <item>Miscellaneous Reel 5837 - Chronological Files, 1862 Mar. 28-May 15
 </item>
-<item>Miscellaneous Reel 5838 - Chronological Files, 1862 May 16-June 30
+          <item>Miscellaneous Reel 5838 - Chronological Files, 1862 May 16-June 30
 </item>
-<item>Miscellaneous Reel 5839 - Chronological Files, 1862 July 1-28
+          <item>Miscellaneous Reel 5839 - Chronological Files, 1862 July 1-28
 </item>
-<item>Miscellaneous Reel 5840 - Chronological Files, 1862 July 29-Aug. 15
+          <item>Miscellaneous Reel 5840 - Chronological Files, 1862 July 29-Aug. 15
 </item>
-<item>Miscellaneous Reel 5841 - Chronological Files, 1862 Aug. 16-31
+          <item>Miscellaneous Reel 5841 - Chronological Files, 1862 Aug. 16-31
 </item>
-<item>Miscellaneous Reel 5842 - Chronological Files, 1862 Sept. 1-17
+          <item>Miscellaneous Reel 5842 - Chronological Files, 1862 Sept. 1-17
 </item>
-<item>Miscellaneous Reel 5843 - Chronological Files, 1862 Sept. 18-Oct. 10
+          <item>Miscellaneous Reel 5843 - Chronological Files, 1862 Sept. 18-Oct. 10
 </item>
-<item>Miscellaneous Reel 5844 - Chronological Files, 1862 Oct. 11-31
+          <item>Miscellaneous Reel 5844 - Chronological Files, 1862 Oct. 11-31
 </item>
-<item>Miscellaneous Reel 5845 - Chronological Files, 1862 Nov. 1-30
+          <item>Miscellaneous Reel 5845 - Chronological Files, 1862 Nov. 1-30
 </item>
-<item>Miscellaneous Reel 5846 - Chronological Files, 1862 Dec. 1-31
+          <item>Miscellaneous Reel 5846 - Chronological Files, 1862 Dec. 1-31
 </item>
-<item>Miscellaneous Reel 5847 - Chronological Files, 1863 Jan.-Mar. 10
+          <item>Miscellaneous Reel 5847 - Chronological Files, 1863 Jan.-Mar. 10
 </item>
-<item>Miscellaneous Reel 5848 - Chronological Files, 1863 Mar. 11-July 31
+          <item>Miscellaneous Reel 5848 - Chronological Files, 1863 Mar. 11-July 31
 </item>
-<item>Miscellaneous Reel 5849 - Chronological Files, 1863 Aug. 1-Oct. 31
+          <item>Miscellaneous Reel 5849 - Chronological Files, 1863 Aug. 1-Oct. 31
 </item>
-<item>Miscellaneous Reel 5850 - Chronological Files, 1863 Nov. 1-Dec. 31
+          <item>Miscellaneous Reel 5850 - Chronological Files, 1863 Nov. 1-Dec. 31
 </item>
-<item>Miscellaneous Reel 5851 - Chronological Files, 1864 Jan. 1-Feb. 29
+          <item>Miscellaneous Reel 5851 - Chronological Files, 1864 Jan. 1-Feb. 29
 </item>
-<item>Miscellaneous Reel 5852 - Chronological Files, 1864 Mar. 1-July 31
+          <item>Miscellaneous Reel 5852 - Chronological Files, 1864 Mar. 1-July 31
 </item>
-<item>Miscellaneous Reel 5853 - Chronological Files, 1864 Aug. 1-1865 Apr. 29
+          <item>Miscellaneous Reel 5853 - Chronological Files, 1864 Aug. 1-1865 Apr. 29
 </item>
-<item>Miscellaneous Reel 5854 - Chronological Files, 1865 May 1-9-Subject Files, Bonds-Indictments (A-L)
+          <item>Miscellaneous Reel 5854 - Chronological Files, 1865 May 1-9-Subject Files, Bonds-Indictments (A-L)
 </item>
-<item>Miscellaneous Reel 5855 - Subject Files, Indictments (M-W)-Subpoenas
+          <item>Miscellaneous Reel 5855 - Subject Files, Indictments (M-W)-Subpoenas
 </item>
-<item>Miscellaneous Reel 5856 - Subject Files, Subpoenas-Writs
+          <item>Miscellaneous Reel 5856 - Subject Files, Subpoenas-Writs
 </item>
-</list>
-</altformavail>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>Francis Harrison Pierpont was born on January 25, 1814,
+        </list>
+      </altformavail>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>Francis Harrison Pierpont was born on January 25, 1814,
          just east of Morgantown, W. Va. After working on his father's
          farm and tannery business in Fairmont, W. Va., Pierpont
          studied law at Allegheny College in Meadville, Pa., in 1835.
@@ -240,7 +225,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          met on June 11, 1861, and Piepont was unanimously elected
          governor of the Restored Government of Virginia on June 20,
          1861 with the recognition of President Lincoln.</p>
-         <p>As governor of the Restored Government of Virginia at
+      <p>As governor of the Restored Government of Virginia at
          Wheeling, Pierpont concentrated on raising regiments and
          commissioning officers for the Union cause. Meanwhile,
          continued calls for a new state to be created from the
@@ -260,7 +245,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          counties of Alexandria, Fairfax, Loudoun, Accomac,
          Northampton, and Norfolk) in the new capital at
          Alexandria.</p>
-         <p>Pierpont was again elected governor for a four-year term on
+      <p>Pierpont was again elected governor for a four-year term on
          May 28, 1863. During this time, Pierpont clashed with General
          Benjamin F. Butler who was appointed to command the eastern
          military district of Virginia and North Carolina in Norfolk.
@@ -278,10 +263,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          executive order of President Johnson on May 9, 1865. Pierpont
          finished his 4-year term on April 4, 1868. He died at the home
          of his daughter in Pittsburgh, Pa., on March 24, 1899.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Governor Pierpont's Executive papers are organized into two
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Governor Pierpont's Executive papers are organized into two
          series. Series have been designated for Chronological files
          and Subject files. The bulk of the material can be found in
          the Chronological files' series which primarily consists of
@@ -299,7 +284,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          proceedings, receipts, checks, clippings, reports, petitions,
          resignations, proclamations, maps, resolutions, special
          orders, and other items can be found in this series.</p>
-         <p>The majority of the correspondence relates to requests to
+      <p>The majority of the correspondence relates to requests to
          raise troops and also requests for commissions in the Virginia
          Volunteers. Individuals wrote Pierpont recommending others for
          positions in the Restored Government or the army. Pierpont
@@ -324,7 +309,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          of Pennsylvania; Governor Arthur I. Boreman of West Virginia;
          James Darr, Jr., Provost Marshall General for Virginia; and
          others.</p>
-         <p>Other types of documents found in Pierpont's papers include
+      <p>Other types of documents found in Pierpont's papers include
          certificates of qualification for positions in the Restored
          Government such as the Governor's Council, Auditor of Public
          Accounts, Attorney General, etc. As a result of a resolution
@@ -336,7 +321,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          from the arsenal. Finally, materials related to elections
          including orders to hold elections, certificates of election,
          election returns, etc., are included in Pierpont's papers.</p>
-         <p>Noteworthy documents include ordinances from the Wheeling
+      <p>Noteworthy documents include ordinances from the Wheeling
          Convention of 1861 (June 13, 1861); a 17-page draft of a
          message of the Governor re. Virginia and the state of the
          rebellion (June 25, 1861); a telegram from Major General
@@ -360,7 +345,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          prisoners released at Wheeling (Aug. 21, 1862); letter from
          Governor Pierpont to E.M. Stanton, Secretary of War, re.
          captured guns, etc. (Aug. 22, 1863).</p>
-         <p>Other noteworthy documents include: certificates re. the
+      <p>Other noteworthy documents include: certificates re. the
          result of the election for the annexation of Berkeley and
          Jefferson counties into West Virginia (July 22 &amp; Sept. 14,
          1863); a printed proclamation pursuant to an act of the
@@ -385,7 +370,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Accomac, Northampton, and Portsmouth (Jan. 27, 1863); and an
          ordinance providing for the establishment of the Restored
          Government (April 14, 1864).</p>
-         <p>The second series is devoted to subject files and primarily
+      <p>The second series is devoted to subject files and primarily
          contains indictments for treason and other legal documents
          relating to the prosecution of individuals for treason against
          the Constitution of the United States between 1861 and 1862.
@@ -395,1130 +380,1132 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          recognizances, etc. In addition, affidavits, bonds,
          injunctions, information, subpoenas, and writs of habeus
          corpus are included in this series.</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>These files are arranged chronologically by the date on
+        <head>Arrangement</head>
+        <p>These files are arranged chronologically by the date on
             the endorsement which indicates when the document was
             received and what action was taken by the governor.</p>
-         </arrangement>
-         <arrangement>
-            <head>Organization</head>
-            <p>Organized into the following two series: I.
-            Chronological files; and II. Subject files.</p>
-         </arrangement>
       </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-<c01 level="series">
-<did>
-<unittitle><emph render="bold">Series I: Chronological Files,</emph> 
-<unitdate type="inclusive"><emph render="bold">1861-1865 May</emph>
-</unitdate>
-</unittitle>
-</did>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1861
+      <arrangement>
+        <head>Organization</head>
+        <p>Organized into the following two series: I.
+            Chronological files; and II. Subject files.</p>
+      </arrangement>
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>
+            <emph render="bold">Series I: Chronological Files,</emph>
+            <unitdate type="inclusive" era="ce" calendar="gregorian">
+              <emph render="bold">1861-1865 May</emph>
+            </unitdate>
+          </unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1861
                      </unitdate>
-                  </unittitle>
-                </did>
-		<c03 level="file">
-		<did>
-		<unittitle>February-May
-		<unitdate type="inclusive">
-		</unitdate>
-		</unittitle>
-		<container label="Box" type="box">1
+            </unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>February-May
+		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+              <container label="Box" type="box">1
 		</container>
-		<container label="Folder" type="folder">1
+              <container label="Folder" type="folder">1
 		</container>
-		</did>
-		</c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">June
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">June
                      1-24</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">1</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">June
+              </unittitle>
+              <container type="box" label="Box">1</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">June
                      25-29</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">1</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July
+              </unittitle>
+              <container type="box" label="Box">1</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">1</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July
+              </unittitle>
+              <container type="box" label="Box">1</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">1</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July
+              </unittitle>
+              <container type="box" label="Box">1</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July
                      21-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">1</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">1</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">1</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">1</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">1</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">1</container>
+              <container type="Folder" label="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      21-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">2</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">September
+              </unittitle>
+              <container type="box" label="Box">2</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">September
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">2</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">September
+              </unittitle>
+              <container type="box" label="Box">2</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">September
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">2</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">September
+              </unittitle>
+              <container type="box" label="Box">2</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">September
                      21-30</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">2</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">October
+              </unittitle>
+              <container type="box" label="Box">2</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">October
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">2</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">October
+              </unittitle>
+              <container type="box" label="Box">2</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">October
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">3</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">October
+              </unittitle>
+              <container type="box" label="Box">3</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">October
                      21-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">3</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">November
+              </unittitle>
+              <container type="box" label="Box">3</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">November
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">3</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">November
+              </unittitle>
+              <container type="box" label="Box">3</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">November
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">3</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">November
+              </unittitle>
+              <container type="box" label="Box">3</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">November
                      21-30</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">3</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">3</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      2-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">3</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">3</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">4</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">4</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      21-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">4</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate>Undated</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">4</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-	</c02>
- <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1862
+              </unittitle>
+              <container type="box" label="Box">4</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate era="ce" calendar="gregorian">Undated</unitdate>
+              </unittitle>
+              <container type="box" label="Box">4</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1862
                      </unitdate>
-                  </unittitle>
-               </did>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">January
+            </unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">January
                      1-15</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">5</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">January
+              </unittitle>
+              <container type="box" label="Box">5</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">January
                      16-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">5</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">February
+              </unittitle>
+              <container type="box" label="Box">5</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">February
                      1-15</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">5</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">February
+              </unittitle>
+              <container type="box" label="Box">5</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">February
                      16-28</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">5</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">March
+              </unittitle>
+              <container type="box" label="Box">5</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">March
                      1-15</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">5</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">March
+              </unittitle>
+              <container type="box" label="Box">5</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">March
                      16-27</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">5</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">March
+              </unittitle>
+              <container type="box" label="Box">5</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">March
                      28-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">5</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">April
+              </unittitle>
+              <container type="box" label="Box">5</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">April
                      1-23</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">6</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">April
+              </unittitle>
+              <container type="box" label="Box">6</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">April
                      24-30</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">6</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">May
+              </unittitle>
+              <container type="box" label="Box">6</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">May
                      1-15</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">6</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">May
+              </unittitle>
+              <container type="box" label="Box">6</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">May
                      16-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">6</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1862, June
+              </unittitle>
+              <container type="box" label="Box">6</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">1862, June
                      1-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">6</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">June
+              </unittitle>
+              <container type="box" label="Box">6</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">June
                      21-30</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">6</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July
+              </unittitle>
+              <container type="box" label="Box">6</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">6</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July
+              </unittitle>
+              <container type="box" label="Box">6</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">7</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July
+              </unittitle>
+              <container type="box" label="Box">7</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July
                      21-28</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">7</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July
+              </unittitle>
+              <container type="box" label="Box">7</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July
                      29-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">7</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">7</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      1-8</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">7</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">7</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      9-15</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">7</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">7</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      16-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">7</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">7</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      21-27</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">8</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August
+              </unittitle>
+              <container type="box" label="Box">8</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August
                      28-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">8</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">September
+              </unittitle>
+              <container type="box" label="Box">8</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">September
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">8</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">September
+              </unittitle>
+              <container type="box" label="Box">8</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">September
                      11-17</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">8</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">September
+              </unittitle>
+              <container type="box" label="Box">8</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">September
                      18-27</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">8</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">September
+              </unittitle>
+              <container type="box" label="Box">8</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">September
                      28-30</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">8</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">October
+              </unittitle>
+              <container type="box" label="Box">8</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">October
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">8</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">October
+              </unittitle>
+              <container type="box" label="Box">8</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">October
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">October
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">October
                      21-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">November
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">November
                      1-15</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">November
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">November
                      16-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      11-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      21-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate>Undated</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">9</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-		</c03>
-	</c02>
- 	<c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1863
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate era="ce" calendar="gregorian">Undated</unitdate>
+              </unittitle>
+              <container type="box" label="Box">9</container>
+              <container type="Folder" label="Folder">8</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1863
                      </unitdate>
-                  </unittitle>
-               </did>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+            </unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      January</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      February</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">March
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">March
                      1-10</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">March
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">March
                      11-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">April</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">May</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">June</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">10</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">August</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">11</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">April</unitdate>
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">May</unitdate>
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">June</unitdate>
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July</unitdate>
+              </unittitle>
+              <container type="box" label="Box">10</container>
+              <container type="Folder" label="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">August</unitdate>
+              </unittitle>
+              <container type="box" label="Box">11</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      September</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">11</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+              </unittitle>
+              <container type="box" label="Box">11</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      October</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">11</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+              </unittitle>
+              <container type="box" label="Box">11</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      November</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">11</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">11</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      1-22</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">11</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">December
+              </unittitle>
+              <container type="box" label="Box">11</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">December
                      23-31</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">11</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate>Undated</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">11</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-		</c03>
-            </c02>
- 	<c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1864
+              </unittitle>
+              <container type="box" label="Box">11</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate era="ce" calendar="gregorian">Undated</unitdate>
+              </unittitle>
+              <container type="box" label="Box">11</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1864
                      </unitdate>
-                  </unittitle>
-               </did>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">January
+            </unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">January
                      1-20</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">January
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">January
                      21-30</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      February</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">March</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">April</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">May</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">June</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">July</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">8</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">,
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">March</unitdate>
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">April</unitdate>
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">May</unitdate>
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">June</unitdate>
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">July</unitdate>
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">,
                      August-November</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">9</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">9</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      December</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">12</container>
-                  <container type="Folder" label="Folder">
+              </unittitle>
+              <container type="box" label="Box">12</container>
+              <container type="Folder" label="Folder">
                   10</container>
-               </did>
-            </c03>
-	</c02>
- <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1865
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1865
                      </unitdate>
-                  </unittitle>
-               </did>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">
+            </unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">
                      January-March</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">13</container>
-                  <container type="Folder" label="Folder">1</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">April</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">13</container>
-                  <container type="Folder" label="Folder">2</container>
-               </did>
-            </c03>
-            <c03 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">May
+              </unittitle>
+              <container type="box" label="Box">13</container>
+              <container type="Folder" label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">April</unitdate>
+              </unittitle>
+              <container type="box" label="Box">13</container>
+              <container type="Folder" label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">May
                      1-9</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">13</container>
-                  <container type="Folder" label="Folder">3</container>
-               </did>
-            </c03>
-	</c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle><emph render="bold">Series II: Subject Files</emph></unittitle>
-               <container type="Box-folder">Box 13, Folder 4 - Box
+              </unittitle>
+              <container type="box" label="Box">13</container>
+              <container type="Folder" label="Folder">3</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>
+            <emph render="bold">Series II: Subject Files</emph>
+          </unittitle>
+          <container type="Box-folder">Box 13, Folder 4 - Box
                14</container>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Affidavits, 
-                  <unitdate>1862</unitdate></unittitle>
-                  <container type="box" label="Box">13</container>
-                  <container type="Folder" label="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bonds, 
-                  <unitdate type="inclusive">
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Affidavits, 
+                  <unitdate era="ce" calendar="gregorian">1862</unitdate></unittitle>
+            <container type="box" label="Box">13</container>
+            <container type="Folder" label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1861-1862</unitdate></unittitle>
-                  <container type="box" label="Box">13</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Indictments for Treason</unittitle>
-                  <container type="Box-folder">Box 13, Folder 6 - Box
+            <container type="box" label="Box">13</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Indictments for Treason</unittitle>
+            <container type="Box-folder">Box 13, Folder 6 - Box
                   14, Folder 4</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">A-B</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">13</container>
-                     <container type="Folder" label="Folder">
-                     6</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">C-F</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">13</container>
-                     <container type="Folder" label="Folder">
-                     7</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">G-H</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">13</container>
-                     <container type="Folder" label="Folder">
-                     8</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">I-L</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">13</container>
-                     <container type="Folder" label="Folder">
-                     9</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">M</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">14</container>
-                     <container type="Folder" label="Folder">
-                     1</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">N-R</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">14</container>
-                     <container type="Folder" label="Folder">
-                     2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">S-T</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">14</container>
-                     <container type="Folder" label="Folder">
-                     3</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">W</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">14</container>
-                     <container type="Folder" label="Folder">
-                     4</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Information, 
-                  <unitdate>1862</unitdate></unittitle>
-                  <container type="box" label="Box">14</container>
-                  <container type="Folder" label="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Injunctions, 
-                  <unitdate>1862</unitdate></unittitle>
-                  <container type="box" label="Box">14</container>
-                  <container type="Folder" label="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous, 
-                  <unitdate type="inclusive">
-                  1861-1862</unitdate></unittitle>
-                  <container type="box" label="Box">14</container>
-                  <container type="Folder" label="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Subpoenas, 
-                  <unitdate type="inclusive">
-                  1861-1862</unitdate></unittitle>
-                  <container type="Box-folder">Box 14, Folder
-                  8-9</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate>1861</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">14</container>
-                     <container type="Folder" label="Folder">
-                     8</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>
-                        <unitdate type="inclusive">1861-1862</unitdate>
-                     </unittitle>
-                     <container type="box" label="Box">14</container>
-                     <container type="Folder" label="Folder">
-                     9</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">Writs, 1862</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">14</container>
-                  <container type="Folder" label="Folder">
-                  10</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
+          </did>
+          <c03 level="file">
             <did>
-               <unittitle>Oversized</unittitle>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">A-B</unitdate>
+              </unittitle>
+              <container type="box" label="Box">13</container>
+              <container type="Folder" label="Folder">
+                     6</container>
             </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1861</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">15</container>
-                  <container type="Folder" label="Folder">
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">C-F</unitdate>
+              </unittitle>
+              <container type="box" label="Box">13</container>
+              <container type="Folder" label="Folder">
+                     7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">G-H</unitdate>
+              </unittitle>
+              <container type="box" label="Box">13</container>
+              <container type="Folder" label="Folder">
+                     8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">I-L</unitdate>
+              </unittitle>
+              <container type="box" label="Box">13</container>
+              <container type="Folder" label="Folder">
+                     9</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">M</unitdate>
+              </unittitle>
+              <container type="box" label="Box">14</container>
+              <container type="Folder" label="Folder">
+                     1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">N-R</unitdate>
+              </unittitle>
+              <container type="box" label="Box">14</container>
+              <container type="Folder" label="Folder">
+                     2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">S-T</unitdate>
+              </unittitle>
+              <container type="box" label="Box">14</container>
+              <container type="Folder" label="Folder">
+                     3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">W</unitdate>
+              </unittitle>
+              <container type="box" label="Box">14</container>
+              <container type="Folder" label="Folder">
+                     4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Information, 
+                  <unitdate era="ce" calendar="gregorian">1862</unitdate></unittitle>
+            <container type="box" label="Box">14</container>
+            <container type="Folder" label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Injunctions, 
+                  <unitdate era="ce" calendar="gregorian">1862</unitdate></unittitle>
+            <container type="box" label="Box">14</container>
+            <container type="Folder" label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
+                  1861-1862</unitdate></unittitle>
+            <container type="box" label="Box">14</container>
+            <container type="Folder" label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Subpoenas, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
+                  1861-1862</unitdate></unittitle>
+            <container type="Box-folder">Box 14, Folder
+                  8-9</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate era="ce" calendar="gregorian">1861</unitdate>
+              </unittitle>
+              <container type="box" label="Box">14</container>
+              <container type="Folder" label="Folder">
+                     8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>
+                <unitdate type="inclusive" era="ce" calendar="gregorian">1861-1862</unitdate>
+              </unittitle>
+              <container type="box" label="Box">14</container>
+              <container type="Folder" label="Folder">
+                     9</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">Writs, 1862</unitdate>
+            </unittitle>
+            <container type="box" label="Box">14</container>
+            <container type="Folder" label="Folder">
+                  10</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Oversized</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1861</unitdate>
+            </unittitle>
+            <container type="box" label="Box">15</container>
+            <container type="Folder" label="Folder">
                   1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1862</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">15</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1862</unitdate>
+            </unittitle>
+            <container type="box" label="Box">15</container>
+            <container type="Folder" label="Folder">
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1863</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">15</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1863</unitdate>
+            </unittitle>
+            <container type="box" label="Box">15</container>
+            <container type="Folder" label="Folder">
                   3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>
-                     <unitdate type="inclusive">1864-1865</unitdate>
-                  </unittitle>
-                  <container type="box" label="Box">15</container>
-                  <container type="Folder" label="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>
+              <unitdate type="inclusive" era="ce" calendar="gregorian">1864-1865</unitdate>
+            </unittitle>
+            <container type="box" label="Box">15</container>
+            <container type="Folder" label="Folder">
                   4</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

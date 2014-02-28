@@ -1,146 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00714">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00714::A Guide to the John Walker Deeds, 1775-1857)//EN&amp;#34; &amp;#34;vi00714.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00714">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00714::A Guide to the John Walker Deeds, 1775-1857)//EN&amp;#34; &amp;#34;vi00714.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00714::A Guide to the John
              Walker Deeds, 1775-1857)//EN" "vi00714.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the John Walker Deeds, 
-            <date>1775-1857</date></titleproper>
-            <subtitle id="sort">Walker, John, Deeds, 1775-1857 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the John Walker Deeds, 
+            <date era="ce" calendar="gregorian">1775-1857</date></titleproper>
+        <subtitle id="sort">Walker, John, Deeds, 1775-1857 
             <num type="collectionnumber">24686</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Trenton Hizer</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 2 Kilobytes</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">ca. 2 Kilobytes</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Trenton Hizer, 
-         <date>3 February 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">3 February 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00714::A Guide to the John Walker Deeds,
             1775-1857)//EN" "vi00714.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the John Walker Deeds, 
-         <date>1775-1857</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the John Walker Deeds, 
+         <date era="ce" calendar="gregorian">1775-1857</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">24686</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Deeds, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Deeds, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1775-1857</unitdate></unittitle>
-         <unitid label="Accession number">24686</unitid>
-         <physloc label="Physical Location">Personal Papers Collection,
+      <unitid label="Accession number">24686</unitid>
+      <physloc label="Physical Location">Personal Papers Collection,
          Acc. 24686</physloc>
-         <physdesc label="Physical Characteristics">19 leaves, negative
+      <physdesc label="Physical Characteristics">19 leaves, negative
          photostats</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">John Walker</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">John Walker</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>John Walker. Deeds, 1775-1857. Personal papers
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>John Walker. Deeds, 1775-1857. Personal papers
             collection. The Library of Virginia, Richmond,
             Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Lent for copying by Mrs. A. P. Gwathmey, Walkerton,
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Lent for copying by Mrs. A. P. Gwathmey, Walkerton,
             Virginia, 1 November 1957.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>John Walker was born 15 August 1785 at "Locust Grove" in
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>John Walker was born 15 August 1785 at "Locust Grove" in
          King and Queen County, Virginia, to Humphrey Walker
          (1762-1820) and Frances Temple Walker (ca. 1760-1824). John
          Walker moved to Tennessee in the 1810s, before returning to
@@ -149,10 +129,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          death of a brother, he also became owner of "Locust Grove."
          Walker married Margaret Shepherd (1804-1886), and they had 7
          children. John Walker died 27 February 1867.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Deeds, 1775-1857, of John Walker (1775-1857) of King and
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Deeds, 1775-1857, of John Walker (1775-1857) of King and
          Queen County, Virginia, for lands purchased by Walker in King
          and Queen County. Two deeds are not directly connected to
          Walker. One deed, 6 January 1775, is from Churchill Anderson
@@ -160,132 +140,132 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          and Mary Smithey and Frances Broaddus to Robert B. Bagby. The
          deed books which contained these instruments are no longer
          extant.</p>
-      </scopecontent>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>22 April 1841,</unitdate> from Josiah and
+    </scopecontent>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">22 April 1841,</unitdate> from Josiah and
                Catherine Ryland to John Walker for 66 acres in King and
                Queen County. Recorded in King and Queen County, 9 May
                1842.</unittitle>
-               <unitid>
-                  <emph render="bold">a</emph>
-               </unitid>
-               <physdesc>2 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>5 October 1833,</unitdate> from Robert B. and
+          <unitid>
+            <emph render="bold">a</emph>
+          </unitid>
+          <physdesc>2 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">5 October 1833,</unitdate> from Robert B. and
                Elizabeth Bagby to John Walker for a fourth interest in
                120 acres in King and Queen County. Recorded in King and
                Queen County, 14 September 1835.</unittitle>
-               <unitid>
-                  <emph render="bold">b</emph>
-               </unitid>
-               <physdesc>3 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>6 January 1775,</unitdate> from Churchill
+          <unitid>
+            <emph render="bold">b</emph>
+          </unitid>
+          <physdesc>3 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">6 January 1775,</unitdate> from Churchill
                Anderson to Joseph Temple for 30 acres in St. Stephen's
                Parish, King and Queen County. Recorded in King and
                Queen County, 9 January 1775.</unittitle>
-               <unitid>
-                  <emph render="bold">c</emph>
-               </unitid>
-               <physdesc>2 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>20 March 1834,</unitdate> from Thomas and Betsy
+          <unitid>
+            <emph render="bold">c</emph>
+          </unitid>
+          <physdesc>2 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">20 March 1834,</unitdate> from Thomas and Betsy
                Smithy, Franklin Broaddus, John and Sophia Broaddus, and
                Littleton and Emaly Pickles to John Walker for 104 1/2
                acres devised by Henry Brown, Sr., in King and Queen
                County. Recorded in King and Queen County, 14 September
                1835.</unittitle>
-               <unitid>
-                  <emph render="bold">d</emph>
-               </unitid>
-               <physdesc>2 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>1 January 1857,</unitdate> from John W. and
+          <unitid>
+            <emph render="bold">d</emph>
+          </unitid>
+          <physdesc>2 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">1 January 1857,</unitdate> from John W. and
                Gabriella Scott, both of Caroline County, Virginia, to
                John Walker for 35 acres, 2 rods, and 10 poles in King
                and Queen County. Recorded in King and Queen County, 20
                April 1857.</unittitle>
-               <unitid>
-                  <emph render="bold">e</emph>
-               </unitid>
-               <physdesc>2 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>8 May 1848,</unitdate> from Samuel F. Harwood,
+          <unitid>
+            <emph render="bold">e</emph>
+          </unitid>
+          <physdesc>2 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">8 May 1848,</unitdate> from Samuel F. Harwood,
                commissioner, to John Walker for 1/6 interest in a tract
                of 102 acres in King and Queen County. Recorded in King
                and Queen County, 8 May 1848. Harwood was guardian of
                Isabella E. Pollard, Ella F. Pollard, and Elizabeth P.
                T. Pollard, infant children of Peter T. Pollard,
                deceased.</unittitle>
-               <unitid>
-                  <emph render="bold">f</emph>
-               </unitid>
-               <physdesc>2 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>4 October 1832,</unitdate> from Gouldman and
+          <unitid>
+            <emph render="bold">f</emph>
+          </unitid>
+          <physdesc>2 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">4 October 1832,</unitdate> from Gouldman and
                Mary Smithey, and Frances Broaddus to Robert B. Bagby
                for an unspecified interest in 120 acres in King and
                Queen County. No recordation date shown.</unittitle>
-               <unitid>
-                  <emph render="bold">g</emph>
-               </unitid>
-               <physdesc>2 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>1 January 1824,</unitdate> from Ann Temple to
+          <unitid>
+            <emph render="bold">g</emph>
+          </unitid>
+          <physdesc>2 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">1 January 1824,</unitdate> from Ann Temple to
                John Walker for 438 1/2 acres in King and Queen County
                formerly owned by Joseph Temple, Jr., deceased. Recorded
                in King and Queen County, 14 March 1825.</unittitle>
-               <unitid>
-                  <emph render="bold">h</emph>
-               </unitid>
-               <physdesc>2 p.</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Deed, 
-               <unitdate>30 May 1823,</unitdate> from John Walker,
+          <unitid>
+            <emph render="bold">h</emph>
+          </unitid>
+          <physdesc>2 p.</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+               <unitdate era="ce" calendar="gregorian">30 May 1823,</unitdate> from John Walker,
                executor of Joseph Temple, Jr., deceased, to [Ann] Nancy
                Temple for 1000 acres in King and Queen County devised
                by Joseph Temple, Jr. Recorded in King and Queen County,
                9 June 1823.</unittitle>
-               <unitid>
-                  <emph render="bold">i</emph>
-               </unitid>
-            </did>
-         </c01>
-      </dsc>
-   </archdesc>
+          <unitid>
+            <emph render="bold">i</emph>
+          </unitid>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

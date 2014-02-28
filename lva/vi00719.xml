@@ -1,145 +1,125 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00719">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00719::A Guide to the Charles Lee Papers, 1759-1782)//EN&amp;#34; &amp;#34;vi00719.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00719">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00719::A Guide to the Charles Lee Papers, 1759-1782)//EN&amp;#34; &amp;#34;vi00719.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00719::A Guide to the Charles
              Lee Papers, 1759-1782)//EN" "vi00719.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Charles Lee Papers, 
-            <date>1759-1782</date></titleproper>
-            <subtitle id="sort">Lee, Charles, Papers, 1759-1782 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Charles Lee Papers, 
+            <date era="ce" calendar="gregorian">1759-1782</date></titleproper>
+        <subtitle id="sort">Lee, Charles, Papers, 1759-1782 
             <num type="collectionnumber">24716</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Trenton Hizer</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">[ca. ## Kilobytes]</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">[ca. ## Kilobytes]</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Trenton Hizer, 
-         <date>6 March 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">6 March 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00719::A Guide to the Charles Lee Papers,
             1759-1782)//EN" "vi00719.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Charles Lee Papers, 
-         <date>1759-1782</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Charles Lee Papers, 
+         <date era="ce" calendar="gregorian">1759-1782</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">24716</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Papers, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Papers, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1759-1782</unitdate></unittitle>
-         <unitid label="Accession number">24716</unitid>
-         <physloc label="Physical Location">Personal Papers Collection,
+      <unitid label="Accession number">24716</unitid>
+      <physloc label="Physical Location">Personal Papers Collection,
          Acc. 24716</physloc>
-         <physdesc label="Physical Characteristics">3 leaves and 44
+      <physdesc label="Physical Characteristics">3 leaves and 44
          pages</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Charles Lee</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Charles Lee</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Charles Lee. Papers, 1759-1782. Accession 24716.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Charles Lee. Papers, 1759-1782. Accession 24716.
             Personal papers collection. The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Purchased 22 October 1957.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>Charles Lee was born in 1731 in Dernhall, Cheshire,
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Purchased 22 October 1957.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>Charles Lee was born in 1731 in Dernhall, Cheshire,
          England, to John Lee and Isabella Bunbury Lee. He attended
          school at Bury St. Edmunds and in Switzerland. In 1747, he was
          an ensign in the British army and in 1751, appointed a
@@ -170,10 +150,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          retired to his estate in Berkeley County. Lee died in
          Philadelphia, Pennsylvania, 2 October 1782, and was buried in
          Christ Church.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Letters, 1759-1782, to Charles Lee (1731-1782) of England
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Letters, 1759-1782, to Charles Lee (1731-1782) of England
          and Berkeley County, (West) Virginia, discussing the Seven
          Years' War and campaigning in Canada; St. John's Island
          (Prince Edward Island) in Canada; conditions in Bermuda; the
@@ -198,206 +178,206 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Charles Carroll (1737-1832), Sidney Lee (Lee's sister), Edmund
          Pendleton (1721-1803), Matthew Powell, John Hill Stevenson, C.
          M. Thurston, and Thomas Totty.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Items arranged chronologically.</p>
-      </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>28 November 1759,</unitdate> from Sir William
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Items arranged chronologically.</p>
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">28 November 1759,</unitdate> from Sir William
                Bunbury, London, [England], to Charles [Lee],
                n.p.</unittitle>
-               <unitid>
-                  <emph render="bold">a</emph>
-               </unitid>
-               <physdesc>3 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Land grant, 
-               <unitdate>3 December 1766,</unitdate> by Order-in-Council
+          <unitid>
+            <emph render="bold">a</emph>
+          </unitid>
+          <physdesc>3 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Land grant, 
+               <unitdate era="ce" calendar="gregorian">3 December 1766,</unitdate> by Order-in-Council
                for 20,000 acres in East Florida to Charles
                Lee.</unittitle>
-               <unitid>
-                  <emph render="bold">b</emph>
-               </unitid>
-               <physloc>located in oversize box 7</physloc>
-               <physdesc>3 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>10 November 1772,</unitdate> from Walter
+          <unitid>
+            <emph render="bold">b</emph>
+          </unitid>
+          <physloc>located in oversize box 7</physloc>
+          <physdesc>3 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">10 November 1772,</unitdate> from Walter
                Patterson, Island St. John [Prince Edward Island], to
                [Charles Lee], n.p.</unittitle>
-               <unitid>
-                  <emph render="bold">c</emph>
-               </unitid>
-               <physdesc>6 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>28 January 1773,</unitdate> from John Hill
+          <unitid>
+            <emph render="bold">c</emph>
+          </unitid>
+          <physdesc>6 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">28 January 1773,</unitdate> from John Hill
                [Stevenson], Manchester, to Colonel [Charles] Lee,
                London.</unittitle>
-               <unitid>
-                  <emph render="bold">d</emph>
-               </unitid>
-               <physdesc>1 leaf</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>1 July 1774,</unitdate> from Thomas Gamble, New
+          <unitid>
+            <emph render="bold">d</emph>
+          </unitid>
+          <physdesc>1 leaf</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">1 July 1774,</unitdate> from Thomas Gamble, New
                York, to General [Charles] Lee,
                Philadelphia.</unittitle>
-               <unitid>
-                  <emph render="bold">e</emph>
-               </unitid>
-               <physdesc>2 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>10 September 1774,</unitdate> from Thomas
+          <unitid>
+            <emph render="bold">e</emph>
+          </unitid>
+          <physdesc>2 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">10 September 1774,</unitdate> from Thomas
                Baldwin, Philadelphia, to General [Charles] Lee, at
                York, or Boston, or Salem.</unittitle>
-               <unitid>
-                  <emph render="bold">f</emph>
-               </unitid>
-               <physdesc>4 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>2 May 1776,</unitdate> from Edmund Pendleton,
+          <unitid>
+            <emph render="bold">f</emph>
+          </unitid>
+          <physdesc>4 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">2 May 1776,</unitdate> from Edmund Pendleton,
                Williamsburg, to General [Charles] Lee, n.p.</unittitle>
-               <unitid>
-                  <emph render="bold">g</emph>
-               </unitid>
-               <physdesc>1 leaf</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>6 May 1776,</unitdate> from James Hendricks,
+          <unitid>
+            <emph render="bold">g</emph>
+          </unitid>
+          <physdesc>1 leaf</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">6 May 1776,</unitdate> from James Hendricks,
                Hampton, to Charles Lee, Williamsburg.</unittitle>
-               <unitid>
-                  <emph render="bold">h</emph>
-               </unitid>
-               <physdesc>1 leaf</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>13 August 1776,</unitdate> from General Andrew
+          <unitid>
+            <emph render="bold">h</emph>
+          </unitid>
+          <physdesc>1 leaf</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">13 August 1776,</unitdate> from General Andrew
                Lewis, Williamsburg, to General [Charles] Lee,
                n.p.</unittitle>
-               <unitid>
-                  <emph render="bold">i</emph>
-               </unitid>
-               <physdesc>4 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>1 March 1778,</unitdate> from Dr. Matthew
+          <unitid>
+            <emph render="bold">i</emph>
+          </unitid>
+          <physdesc>4 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">1 March 1778,</unitdate> from Dr. Matthew
                Powell, Jamaica, to General [Charles] Lee,
                n.p.</unittitle>
-               <unitid>
-                  <emph render="bold">j</emph>
-               </unitid>
-               <physdesc>2 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>8 April 1779,</unitdate> from Thomas Totty, New
+          <unitid>
+            <emph render="bold">j</emph>
+          </unitid>
+          <physdesc>2 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">8 April 1779,</unitdate> from Thomas Totty, New
                York, to General [Charles] Lee,
                Philadelphia.</unittitle>
-               <unitid>
-                  <emph render="bold">k</emph>
-               </unitid>
-               <physdesc>2 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>24 August 1779,</unitdate> from Major John S.
+          <unitid>
+            <emph render="bold">k</emph>
+          </unitid>
+          <physdesc>2 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">24 August 1779,</unitdate> from Major John S.
                Eustace, Philadelphia, to [General Charles Lee],
                n.p.</unittitle>
-               <unitid>
-                  <emph render="bold">l</emph>
-               </unitid>
-               <physloc>located in oversize box 7</physloc>
-               <physdesc>4 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>14 March 1780,</unitdate> from 
+          <unitid>
+            <emph render="bold">l</emph>
+          </unitid>
+          <physloc>located in oversize box 7</physloc>
+          <physdesc>4 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">14 March 1780,</unitdate> from 
                <persname normal="Sidney Lee">S[idney] Lee</persname>,
                Bath, [England], to [Charles Lee], n.p.</unittitle>
-               <unitid>
-                  <emph render="bold">m</emph>
-               </unitid>
-               <physdesc>4 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>16 March 1780,</unitdate> from [Thomas
+          <unitid>
+            <emph render="bold">m</emph>
+          </unitid>
+          <physdesc>4 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">16 March 1780,</unitdate> from [Thomas
                Mifflin], Philadelphia, to General [Charles] Lee,
                Berkeley County, Virginia. Includes remarks in Charles
                Lee's hand.</unittitle>
-               <unitid>
-                  <emph render="bold">n</emph>
-               </unitid>
-               <physdesc>4 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>25 September 1781,</unitdate> from Charles
+          <unitid>
+            <emph render="bold">n</emph>
+          </unitid>
+          <physdesc>4 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">25 September 1781,</unitdate> from Charles
                Carroll, n.p., to General Charles Lee, Berkeley County,
                Virginia.</unittitle>
-               <unitid>
-                  <emph render="bold">o</emph>
-               </unitid>
-               <physdesc>2 pages</physdesc>
-            </did>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Letter, 
-               <unitdate>30 August 1782,</unitdate> from C. M. Thurston,
+          <unitid>
+            <emph render="bold">o</emph>
+          </unitid>
+          <physdesc>2 pages</physdesc>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+               <unitdate era="ce" calendar="gregorian">30 August 1782,</unitdate> from C. M. Thurston,
                n.p. to General [Charles] Lee, Berkeley [County,
                Virginia].</unittitle>
-               <unitid>
-                  <emph render="bold">p</emph>
-               </unitid>
-               <physdesc>4 pages</physdesc>
-            </did>
-         </c01>
-      </dsc>
-   </archdesc>
+          <unitid>
+            <emph render="bold">p</emph>
+          </unitid>
+          <physdesc>4 pages</physdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

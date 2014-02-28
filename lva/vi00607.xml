@@ -1,151 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00607">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00607::Secretary of the Commonwealth, Records, 1867-1929)//EN&amp;#34; &amp;#34;vi00607.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00607">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00607::Secretary of the Commonwealth, Records, 1867-1929)//EN&amp;#34; &amp;#34;vi00607.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00607::Secretary of the
              Commonwealth, Records, 1867-1929)//EN"
              "vi00607.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Secretary of the Commonwealth,
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Secretary of the Commonwealth,
             Records, 1867-1929 
-            <date>1867-1929</date></titleproper>
-            <subtitle id="sort">Commonwealth, Secretary of the,
+            <date era="ce" calendar="gregorian">1867-1929</date></titleproper>
+        <subtitle id="sort">Commonwealth, Secretary of the,
             Records, 1867-1929 
             <num type="collectionnumber">25299</num></subtitle>
-            <author>Paige Neal</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Paige Neal</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">10 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from Word and
+        </p>
+        <p id="filesize">10 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from Word and
          MARC record. Created by Paige Neal 
-         <date>6 February 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">6 February 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00607::Secretary of the Commonwealth, Records,
             1867-1929)//EN" "vi00607.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Secretary of the Commonwealth,
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Secretary of the Commonwealth,
          Records, 
-         <date>1867-1929</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1867-1929</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">25299</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Paige Neal</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository label="Repository">Library of Virginia</repository>
-         <unittitle label="Title">Records, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Paige Neal</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository label="Repository">Library of Virginia</repository>
+      <unittitle label="Title">Records, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1867-1929</unitdate></unittitle>
-         <unitid label="Accession number">25299</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <unitid label="Accession number">25299</unitid>
+      <physloc label="Physical Location">State Records Collection,
          Secretary of the Commonwealth (Record Group 13)</physloc>
-         <physdesc label="Physical Characteristics">4.95 cubic
+      <physdesc label="Physical Characteristics">4.95 cubic
          feet</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Secretary of the
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Secretary of the
          Commonwealth</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Secretary of the Commonwealth, Records, 1967-1929.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Secretary of the Commonwealth, Records, 1967-1929.
             Accession 25299, State Records Collection, The Library of
             Virginia, Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Transferred from the Office of the Secretary of the
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Transferred from the Office of the Secretary of the
             Commonwealth, 24 March 1961.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>The Office of the Secretary of the Commonwealth has evolved
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>The Office of the Secretary of the Commonwealth has evolved
          from early colonial times when there existed a Secretary of
          the Colony. Thomas Nelson held the position of the first
          Secretary of Virginia in 1776. Early Secretaries were elected
@@ -162,10 +142,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          a gubernational appointment subsequent to a 1958 Act of the
          Assembly. The Secretary of the Commonwealth is under the
          jurisdiction of the Governor's Office.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Arranged into the following series: Series I. Applications
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Arranged into the following series: Series I. Applications
          and recommendations for appointments to state positions,
          1870-1873, 1883; Series II. Applications and recommendations
          for appointments as Inspector of Tobacco, 1870-1876; Series
@@ -179,7 +159,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          1880-1897; Series X. Contracts and bonds for printing,
          1903-1919; and Series XI. Contracts and bonds for ruling and
          binding, 1903-1919.</p>
-         <p>Series I. Applications and recommendations for appointments
+      <p>Series I. Applications and recommendations for appointments
          to state positions, 1870-1874, 1883. Includes applications and
          recommendations for various state positions, including
          boundary commissioner, clerkships, Geological Survey, fish
@@ -187,24 +167,24 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          inspectors, Public Guard, State Board of Health, and the Board
          of Visitors at the University of Virginia. Arranged
          alphabetically.</p>
-         <p>Series II. Applications and recommendations for
+      <p>Series II. Applications and recommendations for
          appointments as Inspectors of Tobacco, 1870-1876. Includes
          applications and recommendations for appointments in
          Farmville, 1874-1875; Lynchburg, 1870-1872; Petersburg,
          1870-1871, 1875; Richmond, 1874-1876. Arranged alphabetically
          by city, and thereunder chronologically.</p>
-         <p>Series III. Applications and recommendations for
+      <p>Series III. Applications and recommendations for
          appointments as local officials, 1870. Includes applications
          and recommendations for local officials in various Virginia
          counties and cities, including constables, councilmen,
          justices of the peace, magistrates and trustees. Arranged
          alphabetically by locality.</p>
-         <p>Series IV. Correspondence from governors of other states,
+      <p>Series IV. Correspondence from governors of other states,
          1869-1874. Includes correspondence to Virginia Governors
          Gilbert C. Walker and James L. Kemper from various governors
          of other states regarding a variety of topics. Arranged
          chronologically.</p>
-         <p>Series V. Miscellaneous records, 1872-1906. This series
+      <p>Series V. Miscellaneous records, 1872-1906. This series
          includes the following: Annual reports of the Board of
          Visitors at the University of Virginia, 1872-1873; Bond of the
          Secretary of the Commonwealth, 1906; Certificate of
@@ -224,7 +204,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          the Office of the Secretary of the Commonwealth, n.d.; West
          Virginia Act regarding the taking of fish from the Potomac
          River, 1897. Arranged alphabetically.</p>
-         <p>Series VI. Penitentiary papers, 1867-1897. Includes:
+      <p>Series VI. Penitentiary papers, 1867-1897. Includes:
          Applications and recommendations for the positions of
          director, board of directors, clerk of the board of directors,
          superintendent, and commissioner of revenue at the Virginia
@@ -251,7 +231,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          of which concern individual convicts, prison conditions and
          pay, and also includes National Prison Association
          circulars.</p>
-         <p>Series VII. Records of various state institutions and
+      <p>Series VII. Records of various state institutions and
          asylums, 1870-1897. This series includes correspondence,
          recommendations and reports for the following state
          institutions and asylums: Central Lunatic Asylum, 1870-1874;
@@ -260,1955 +240,1952 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          for the Education of the Deaf, Dumb and Blind, 1896-1897; and
          the Western Lunatic Asylum, 1869-1875. Arranged
          alphabetically.</p>
-         <p>Series VIII. Notifications of candidacy, 1900. These
+      <p>Series VIII. Notifications of candidacy, 1900. These
          letters consist of official notices of candidacy to the
          Secretary of the Commonwealth for Congressional offices and
          electors for President and Vice- President for 1900. These
          notices were required by law and requested that the
          candidate's name be placed on the official ballot.</p>
-         <p>Series IX. Miscellaneous papers of the Adjutant General,
+      <p>Series IX. Miscellaneous papers of the Adjutant General,
          1880-1897. These papers include mostly incoming correspondence
          and receipts for supplies for the years 1880-1888; 1895; and
          1897. Arranged chronologically.</p>
-         <p>Series X. Contracts and bonds for printing, 1903-1919.
+      <p>Series X. Contracts and bonds for printing, 1903-1919.
          Includes ontracts and bonds for the printing of state
          government publications. Also includes a petition for a
          contract and transcripts of the ensuing hearing (1907).
          Arranged chronologically.</p>
-         <p>Series XI. Contracts and bonds for ruling and binding,
+      <p>Series XI. Contracts and bonds for ruling and binding,
          1903-1919. Includes contracts and bonds for the ruling and
          binding of state government publications. Arranged
          chronologically.</p>
-      </scopecontent>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle>Series I: Applications and recommendations
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Series I: Applications and recommendations
                for appointments to state positions, 
-               <unitdate type="inclusive">1873-1874;
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1873-1874;
                1883</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically by position.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Boundary Commissioners, 
-                  <unitdate type="inclusive">
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically by position.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Boundary Commissioners, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Boundary Commissioners, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Boundary Commissioners, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Boundary Commissioners, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Boundary Commissioners, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Clerkship in the Executive Dept., 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Clerkship in the Executive Dept., 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Clerkship in the Executive Dept., 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Clerkship in the Executive Dept., 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Clerkship in the Executive Dept., 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Clerkship in the Executive Dept., 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Coroner - Richmond, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Coroner - Richmond, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Geological Survey, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Geological Survey, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1883</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Alexandria, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Alexandria, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Alexandria, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Alexandria, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Alexandria, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Alexandria, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Fredericksburg, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Fredericksburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Norfolk, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Norfolk, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Petersburg, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Petersburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Petersburg, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Petersburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Fish - Richmond, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Fish - Richmond, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Flour - Chesterfield, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Flour - Chesterfield, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Flour - Portsmouth, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Flour - Portsmouth, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Lumber - Norfolk, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Lumber - Norfolk, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Lumber - Portsmouth, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Lumber - Portsmouth, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   20</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Provisions - Norfolk, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Provisions - Norfolk, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   21</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Provisions - Richmond, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Provisions - Richmond, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Public Guard, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Public Guard, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   23</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Public Guard, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Public Guard, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   24</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>State Board of Health, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>State Board of Health, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   25</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>University of Virginia - Board of
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>University of Virginia - Board of
                   Visitors, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   26</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>University of Virginia - Board of
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>University of Virginia - Board of
                   Visitors, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   27</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series II: Applications and recommendations
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series II: Applications and recommendations
                for appointments as Inspector of Tobacco, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1870-1876</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically by locality.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Farmville, 
-                  <unitdate type="inclusive">
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically by locality.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Farmville, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Farmville, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Farmville, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1875</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Lynchburg, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Lynchburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Lynchburg, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Lynchburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Lynchburg, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Lynchburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Petersburg, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Petersburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Petersburg, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Petersburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Petersburg, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Petersburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1875</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Richmond, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Richmond, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Richmond, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Richmond, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1875</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inspector of Tobacco - Richmond, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inspector of Tobacco - Richmond, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1876</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">2</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series III: Applications and recommendations
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series III: Applications and recommendations
                for appointments as local officials, 
-               <unitdate type="inclusive">1870</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically by locality.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Accomack County, 
-                  <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1870</unitdate></unittitle>
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically by locality.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Accomack County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Amelia County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Amelia County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Augusta County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Augusta County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bedford County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bedford County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Botetourt County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Botetourt County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Brunswick County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Brunswick County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Buckingham County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Buckingham County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Chesterfield County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Chesterfield County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Culpeper County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Culpeper County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>King William County, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>King William County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Loudoun County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Loudoun County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Louisa County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Louisa County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Nansemond County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Nansemond County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>New Kent County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>New Kent County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Norfolk County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Norfolk County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Northumberland County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Northumberland County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Orange County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Orange County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Pittsylvania County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Pittsylvania County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Prince Edward County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Prince Edward County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Prince William County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Prince William County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   20</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richmond County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richmond County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   21</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Roanoke County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Roanoke County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Rockingham County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Rockingham County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   23</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Russell County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Russell County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   24</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Scott County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Scott County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   25</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Shenandoah County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Shenandoah County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   26</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Smyth County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Smyth County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   27</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Stafford County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Stafford County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   28</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Surry County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Surry County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   29</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Sussex County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Sussex County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   30</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Tazewell County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Tazewell County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   31</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Warren County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Warren County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   32</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Washington County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Washington County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   33</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Westmoreland County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Westmoreland County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   34</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Wythe County, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Wythe County, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   35</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Abingdon, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Abingdon, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   36</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Alexandra, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Alexandra, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   37</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Charlottesville, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Charlottesville, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   38</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Danville, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Danville, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   39</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Harrisonburg, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Harrisonburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   40</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Lynchburg, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Lynchburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   41</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Manchester, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Manchester, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   42</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Norfolk, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Norfolk, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   43</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Petersburg, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Petersburg, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   44</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Portsmouth, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Portsmouth, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   45</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Richmond, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Richmond, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   46</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Scottsville, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Scottsville, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   47</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Staunton, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Staunton, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   48</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Suffolk, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Suffolk, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   49</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Warrenton, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Warrenton, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   50</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Winchester, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Winchester, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">3</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">3</container>
+            <container label="Folder" type="Folder">
                   51</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series IV: Correspondence from governors of
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series IV: Correspondence from governors of
                other states, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1869-1874</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged chronologically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+        </did>
+        <arrangement>
+          <p>Arranged chronologically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1869</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series V: Miscellaneous records, 
-               <unitdate type="inclusive">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series V: Miscellaneous records, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1872-1906</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Annual reports of the Board of Visitors at
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Annual reports of the Board of Visitors at
                   the University of Virginia, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872-1873</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Bond of the Secretary of the Commonwealth,
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bond of the Secretary of the Commonwealth,
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1906</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Certificate of organization for the
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Certificate of organization for the
                   Seafood Investment Company, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1892</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contract for Metal Fixtures and Furniture
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contract for Metal Fixtures and Furniture
                   for the Office of the Secretary of the Commonwealth, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1906</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence of the Secretary of the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence of the Secretary of the
                   Commonwealth, 
-                  <unitdate type="inclusive">1873; 1877; 1897;
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1873; 1877; 1897;
                   1899</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Leases for state property, 
-                  <unitdate type="inclusive">1866; 1879 (Public
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Leases for state property, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1866; 1879 (Public
                   Warehouse and Armory)</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>List of books delivered to the University
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>List of books delivered to the University
                   of Virginia Library, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1896</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>List of textbook regulations in other
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>List of textbook regulations in other
                   states, 
-                  <unitdate type="inclusive">c.
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">c.
                   1877</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Memorial of the Pamunkey Tribe, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Memorial of the Pamunkey Tribe, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1877</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Papers related to the Mutual Endowment
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Papers related to the Mutual Endowment
                   Association of Virginia, 
-                  <unitdate type="inclusive">c.
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">c.
                   1880</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Petition to Governor Kemper regarding
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Petition to Governor Kemper regarding
                   assistance to former Governor Letcher during his
                   illness, 
-                  <unitdate type="inclusive">c.
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">c.
                   1874-1878</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Report of visitors to Mount Vernon, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Report of visitors to Mount Vernon, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1896</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Reports on debt from other states (A-K), 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Reports on debt from other states (A-K), 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Reports on debt from other states (M-N), 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Reports on debt from other states (M-N), 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   20</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Reports on debt from other states (O-W), 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Reports on debt from other states (O-W), 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   21</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Statement of the Public Debt of the United
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Statement of the Public Debt of the United
                   States, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Various papers from the Office of the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Various papers from the Office of the
                   Secretary of the Commonwealth, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   n.d.</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   23</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>West Virginia Act regarding the taking of
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>West Virginia Act regarding the taking of
                   fish from the Potomac River, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1897</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   24</container>
-               </did>
-            </c02>
-
-		<c02 level="file">
-               <did>
-                  <unittitle>Notary public commission for Frederick Pilcher, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Notary public commission for Frederick Pilcher, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1903</unitdate></unittitle>
-                  <container label="Box" type="Box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">4</container>
+            <container label="Folder" type="Folder">
                   25</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series VI: Penitentiary papers, 
-               <unitdate type="inclusive">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series VI: Penitentiary papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1867-1897</unitdate></unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Applications and recommendations for
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Applications and recommendations for
                   positions at the Virginia State Penitentiary, 
-                  <unitdate type="inclusive">1870; 1872;
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1870; 1872;
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Applications and recommendations for
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Applications and recommendations for
                   Penitentiary physician, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1869-1870</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Applications and recommendations for
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Applications and recommendations for
                   Penitentiary physician, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873-1874</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Monthly reports of prisoners received,
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Monthly reports of prisoners received,
                   discharged, pardoned, died, escaped, etc., 
-                  <unitdate type="inclusive">1894 Jan-Jul and
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1894 Jan-Jul and
                   Sep-Dec</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Monthly reports of prisoners received,
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Monthly reports of prisoners received,
                   discharged, pardoned, died, escaped, etc., 
-                  <unitdate type="inclusive">1895 Jan-May and
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1895 Jan-May and
                   Jul-Dec</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Monthly reports of prisoners received,
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Monthly reports of prisoners received,
                   discharged, pardoned, died, escaped, etc., 
-                  <unitdate type="inclusive">1896
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1896
                   Jan-Dec</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Monthly reports of prisoners received,
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Monthly reports of prisoners received,
                   discharged, pardoned, died, escaped, etc., 
-                  <unitdate type="inclusive">1897
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1897
                   Feb-Nov</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous financial reports, 
-                  <unitdate type="inclusive">1871-1872; 1874
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous financial reports, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1871-1872; 1874
                   Jun</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Quarterly financial and surgeon reports, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Quarterly financial and surgeon reports, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1894-1897</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Quarterly reports of the Board of
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Quarterly reports of the Board of
                   Directors, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872-1874</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Special reports, 
-                  <unitdate type="inclusive">1869;
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Special reports, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1869;
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1867-1868</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1871</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   1</container>
-               </did>
-            </c02>	
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1875</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   2</container>
-               </did>
-            </c02>	
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1877</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   3</container>
-               </did>
-            </c02>	
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1878</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   4</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1879</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   5</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1880</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   6</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1881</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   7</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1882</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   8</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1883</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   9</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1885</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1890</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-	<c02 level="file">
-               <did>
-                  <unittitle>Convict labor: Correspondence and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Convict labor: Correspondence and
                   contracts, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1891</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>									
-
-            <c02 level="file">
-               <did>
-                  <unittitle>Escapees, fugitives and rewards:
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Escapees, fugitives and rewards:
                   Correpsondence, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1869-1871</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous papers, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">13</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1867-1871</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous papers, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">14</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous papers, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">15</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873-1877</unitdate></unittitle>
-                  <container label="Box" type="Box">6</container>
-                  <container label="Folder" type="Folder">16</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series VII: Records of various state
+            <container label="Box" type="Box">6</container>
+            <container label="Folder" type="Folder">16</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series VII: Records of various state
                institutions and asylums, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1870-1897</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged alphabetically by institution.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Central Lunatic Asylum, 
-                  <unitdate type="inclusive">
+        </did>
+        <arrangement>
+          <p>Arranged alphabetically by institution.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Central Lunatic Asylum, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1870-1874</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>New Lunatic Asylum, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>New Lunatic Asylum, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872-1874</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Southwestern State Hospital, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Southwestern State Hospital, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1894-1897</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Virginia Institution for the Education of
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Institution for the Education of
                   the Deaf, Dumb and Blind, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1896-1897</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Western Lunatic Asylum, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Western Lunatic Asylum, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1869-1871</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Western Lunatic Asylum, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Western Lunatic Asylum, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1872</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Western Lunatic Asylum, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Western Lunatic Asylum, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1873</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Western Lunatic Asylum, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Western Lunatic Asylum, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1874</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Western Lunatic Asylum, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Western Lunatic Asylum, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1875</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series VIII: Notifications of Candidacy, 
-               <unitdate type="inclusive">1900</unitdate></unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Notification, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series VIII: Notifications of Candidacy, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1900</unitdate></unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Notification, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1900</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series IX: Miscellaneous papers of the
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series IX: Miscellaneous papers of the
                Adjutant General, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1880-1897</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged chronologically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous papers, 
-                  <unitdate type="inclusive">
+        </did>
+        <arrangement>
+          <p>Arranged chronologically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1880-1888</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous papers, 
-                  <unitdate type="inclusive">1895;
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1895;
                   1897</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Miscellaneous papers, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   n.d.</unitdate></unittitle>
-                  <container label="Box" type="Box">7</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">7</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series X: Contracts and bonds for printing, 
-               <unitdate type="inclusive">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series X: Contracts and bonds for printing, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1903-1919</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged chronologically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+        </did>
+        <arrangement>
+          <p>Arranged chronologically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1903-1904</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1904-1905</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1906-1907</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1907-1908</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1908-1909</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1909-1910</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1910-1911</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1911-1912</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1912-1913</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1913-1914</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1915-1916</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1918-1919</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Petition for printing contract, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Petition for printing contract, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1907</unitdate></unittitle>
-                  <container label="Box" type="Box">8</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">8</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series XI: Contracts and bonds for ruling and
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series XI: Contracts and bonds for ruling and
                binding, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1903-1919</unitdate></unittitle>
-            </did>
-            <arrangement>
-               <p>Arranged chronologically.</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+        </did>
+        <arrangement>
+          <p>Arranged chronologically.</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1903-1904</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1904-1905</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1905-1906</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1907-1908</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1908-1909</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1909-1910</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1910-1911</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1911-1912</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1912-1913</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1913-1914</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1915-1916</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1916-1917</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Contracts and bonds, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contracts and bonds, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1918-1919</unitdate></unittitle>
-                  <container label="Box" type="Box">9</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">9</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

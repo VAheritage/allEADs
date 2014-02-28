@@ -1,215 +1,212 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01859">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01859::A Guide to the Samuel McDowell Tate Papers, 1852-1876)//EN" "vi01859.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01859">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01859::A Guide to the Samuel McDowell Tate Papers, 1852-1876)//EN" "vi01859.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Samuel McDowell Tate Papers, <date>1852-1876</date>
-</titleproper>
-<subtitle id="sort">Tate, Samuel McDowell, Papers, 1852-1876
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Samuel McDowell Tate Papers, <date era="ce" calendar="gregorian">1852-1876</date></titleproper>
+        <subtitle id="sort">Tate, Samuel McDowell, Papers, 1852-1876
 <num type="collectionnumber">37473
-</num>
-</subtitle>
-<author>Alex Lorch
+</num></subtitle>
+        <author>Alex Lorch
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2006 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>11 July 2006</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Samuel McDowell Tate Papers, <date>1852-1876</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">37473
-</num>
-</subtitle>
-<author>Alex Lorch
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Alex Lorch
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Samuel McDowell Tate Papers, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1852-1876
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">37473
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a">12 leaves
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">11 July 2006</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Samuel McDowell Tate Papers, <date era="ce" calendar="gregorian">1852-1876</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">37473
+</num></subtitle>
+      <author>Alex Lorch
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Alex Lorch
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Samuel McDowell Tate Papers, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1852-1876
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">37473
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">12 leaves
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">Samuel McDowell Tate
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Samuel McDowell Tate
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Samuel McDowell Tate Papers, 1852-1876.  Accession 37473.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
+        <p>Samuel McDowell Tate Papers, 1852-1876.  Accession 37473.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Purchased, 19 July 2000, from Nancy Howell, Sacramento, California.
+        <p>Purchased, 19 July 2000, from Nancy Howell, Sacramento, California.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Samuel McDowell Tate (1830-1897), soldier and railroad president, was born in Morganton, North Carolina, the son of David and Susan Maria Tate. Denied a classical education due to the untimely death of his father, Tate principally attended grammar school in Bedford, Pennsylvania, his mother's home town. In early adulthood Tate was engaged in several commercial pursuits in nearby Philadelphia, but by his early 20's Tate had returned to Morganton where he worked as a merchant. In the latter half of the 1850's, Tate served as Morganton's postmaster and was associated with the construction of the Salisbury-Morganton section of the Western North Carolina Railroad (later owned by the Southern Railway Company). On the outbreak of the Civil War, Tate was commissioned captain of the North Carolina 6th Infantry Regiment, Company D, the first North Carolina unit to fight in Virginia. He participated in numerous battles including the 1st and 2nd Battle of Manassas, Gaines' Mill, Sharpsburg, and Fredericksburg. After the 2nd Battle of Manassas, Tate was promoted to major and at Gettysburg, where he was in command of the regiment, he led it in a charge which drove the Federal forces from Culp's Hill. For his actions he was promoted again to the position of lieutenant colonel. At the Battle of Rappahannock Bridge in 1863, Tate was wounded and seriously wounded at both the Battle of Cedar Creek and the Battle of Petersburg.
+      <p>Samuel McDowell Tate (1830-1897), soldier and railroad president, was born in Morganton, North Carolina, the son of David and Susan Maria Tate. Denied a classical education due to the untimely death of his father, Tate principally attended grammar school in Bedford, Pennsylvania, his mother's home town. In early adulthood Tate was engaged in several commercial pursuits in nearby Philadelphia, but by his early 20's Tate had returned to Morganton where he worked as a merchant. In the latter half of the 1850's, Tate served as Morganton's postmaster and was associated with the construction of the Salisbury-Morganton section of the Western North Carolina Railroad (later owned by the Southern Railway Company). On the outbreak of the Civil War, Tate was commissioned captain of the North Carolina 6th Infantry Regiment, Company D, the first North Carolina unit to fight in Virginia. He participated in numerous battles including the 1st and 2nd Battle of Manassas, Gaines' Mill, Sharpsburg, and Fredericksburg. After the 2nd Battle of Manassas, Tate was promoted to major and at Gettysburg, where he was in command of the regiment, he led it in a charge which drove the Federal forces from Culp's Hill. For his actions he was promoted again to the position of lieutenant colonel. At the Battle of Rappahannock Bridge in 1863, Tate was wounded and seriously wounded at both the Battle of Cedar Creek and the Battle of Petersburg.
 </p>
-<p>Soon after Lee's surrender, Tate was elected president of the Western North Carolina Railroad. While successful in that capacity, Tate lost his post in 1868 when North Carolina governor William W. Holden removed him from office. Despite his termination Tate remained an integral participant in the construction of the railroad. North Carolina residents elected him to the lower house of the state legilature in 1874. He became chairman of the finance committee and as such drafted and had passed laws which benefitted the Western North Carolina Railroad. He initiated the convict lease system and labored to to provide ways to enlarge and improve the state's eleemosynary institutions. Tate's legislative efforts also helped to establish the Hospital for the Insane in Morganton and pushed for the removal of the North Carolina School for the Deaf from Raleigh to Morganton. Voters reelected Tate in 1880, 1882, and 1884 and upon his resignation from the post in 1886, he was appointed bank examiner for the district extending from West Virginia to Florida. He served in that capacity until 1892. In 1892 the governor appointed him to the state's treasurers post where he served until 1894. Tate was married to Jane Pearson in 1866 and they subsequently had ten children. He died in Morganton on June 25, 1897.</p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+      <p>Soon after Lee's surrender, Tate was elected president of the Western North Carolina Railroad. While successful in that capacity, Tate lost his post in 1868 when North Carolina governor William W. Holden removed him from office. Despite his termination Tate remained an integral participant in the construction of the railroad. North Carolina residents elected him to the lower house of the state legilature in 1874. He became chairman of the finance committee and as such drafted and had passed laws which benefitted the Western North Carolina Railroad. He initiated the convict lease system and labored to to provide ways to enlarge and improve the state's eleemosynary institutions. Tate's legislative efforts also helped to establish the Hospital for the Insane in Morganton and pushed for the removal of the North Carolina School for the Deaf from Raleigh to Morganton. Voters reelected Tate in 1880, 1882, and 1884 and upon his resignation from the post in 1886, he was appointed bank examiner for the district extending from West Virginia to Florida. He served in that capacity until 1892. In 1892 the governor appointed him to the state's treasurers post where he served until 1894. Tate was married to Jane Pearson in 1866 and they subsequently had ten children. He died in Morganton on June 25, 1897.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Papers, 1852-1876, of Samuel McDowell Tate (1830-1897 of North Carolina and Pennsylvania, consisting of letters, 1852-1876, to Tate concerning a lawsuit and purchase of land; restitution for a piano burned during shipment; a request for free passage on the Western North Carolina Railroad for children being taught by missionaries from the American Tract Society; a question about "pleasant society" along the Western North Carolina Railroad near or in the mountains; brick buildings for rent in Richmond, Virginia; request for fare reduction on the Western North Carolina Railroad for Southern Republican Association members during an upcoming election; and an application sent to Tate by Fred Fisher of Lexington, Virginia. Papers also include invoices, 1869-1874, for a Smith's No. 2 well fixture and for ten bags of ground plaster and a money order, both purchases made by Tate.
+      <p>Papers, 1852-1876, of Samuel McDowell Tate (1830-1897 of North Carolina and Pennsylvania, consisting of letters, 1852-1876, to Tate concerning a lawsuit and purchase of land; restitution for a piano burned during shipment; a request for free passage on the Western North Carolina Railroad for children being taught by missionaries from the American Tract Society; a question about "pleasant society" along the Western North Carolina Railroad near or in the mountains; brick buildings for rent in Richmond, Virginia; request for fare reduction on the Western North Carolina Railroad for Southern Republican Association members during an upcoming election; and an application sent to Tate by Fred Fisher of Lexington, Virginia. Papers also include invoices, 1869-1874, for a Smith's No. 2 well fixture and for ten bags of ground plaster and a money order, both purchases made by Tate.
 </p>
-</scopecontent>
-<dsc type="in-depth">
-<head>Contents List
+    </scopecontent>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>27 May 1852, 
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">27 May 1852, 
 </unitdate>from D. H. Wood, Washington D.C., to Tate concerning a lawsuit and the purchase of land.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>27 June 1856, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">27 June 1856, 
 </unitdate>from Garland Lester, Petersburg, Virginia, to Tate concerning restitution for damages to a piano burned while being shipped on a rail car.  Lester asks for a receipt for the purchase of the piano in order to reimburse Tate.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>29 October 1867, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">29 October 1867, 
 </unitdate>from Reverend G. L. Shearer of the American Tract Society in Richmond, Virginia, to Tate requesting free passage on the Western North Carolina Railroad for children being taught by missionaries of the American Tract Society.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>6 February 1869, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">6 February 1869, 
 </unitdate>from K. J. Stewart, Norfolk, Virginia, to Tate concerning his ill wife who would like to know if there is "pleasant society" along the Western North Carolina Railroad lines in or near the North Carolina mountains.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>4 March 1869, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">4 March 1869, 
 </unitdate>from N. T. Pate[?] to Tate regarding two brick buildings for rent on Cary Street near 15th Street in Richmond, Virginia, including descriptions of the buildings, prices, and dimensions.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Invoice, 
-<unitdate>8 June 1869, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Invoice, 
+<unitdate era="ce" calendar="gregorian">8 June 1869, 
 </unitdate>for a Smith's No. 2 Well Fixture purchased by Tate from John B. Wilson and Richard T. Foster of Wilson and Foster, wholesale grocers and commission merchants, Richmond.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>26 July 1870, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">26 July 1870, 
 </unitdate>from E. A. Paul, Washington D.C., to Tate asking for a possible reduction of travel fares on the Western North Carolina Railroad for Southern Republican Association members during the upcoming elections.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Invoice, 
-<unitdate>24 June 1874, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Invoice, 
+<unitdate era="ce" calendar="gregorian">24 June 1874, 
 </unitdate>for ten bags of ground plaster and a money order, both purchased by Tate from James A. Seddon, William C. Seddon, and Thomas S. Bruce, owners of Seddon and Bruce, wholesale grocers and merchants, Richmond.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>26 December 1876, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">26 December 1876, 
 </unitdate>from Fred Fisher, Lexington, Virginia, to Tate in reference to an application previously sent to Tate by Fisher.
 </unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

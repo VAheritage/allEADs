@@ -1,147 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00715">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00715::A Guide to the George Rust, Jr., Papers, 1788, 1815-1858)//EN&amp;#34; &amp;#34;vi00715.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00715">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00715::A Guide to the George Rust, Jr., Papers, 1788, 1815-1858)//EN&amp;#34; &amp;#34;vi00715.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00715::A Guide to the George
              Rust, Jr., Papers, 1788, 1815-1858)//EN"
              "vi00715.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the George Rust, Jr. Papers, 
-            <date>1788, 1815-1858</date></titleproper>
-            <subtitle id="sort">Rust, George, Jr., Papers, 1788,
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the George Rust, Jr. Papers, 
+            <date era="ce" calendar="gregorian">1788, 1815-1858</date></titleproper>
+        <subtitle id="sort">Rust, George, Jr., Papers, 1788,
             1815-1858 
             <num type="collectionnumber">24688</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Trenton Hizer</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">47 Kilobytes</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from Word
+        </p>
+        <p id="filesize">47 Kilobytes</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from Word
          document. Created by Trenton Hizer, 
-         <date>5 February 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">5 February 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00715::A Guide to the George Rust, Jr., Papers,
             1788, 1815-1858)//EN" "vi00715.xml" converted from EAD 1.0
             to 2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the George Rust, Jr., Papers, 
-         <date>1788, 1815-1858</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the George Rust, Jr., Papers, 
+         <date era="ce" calendar="gregorian">1788, 1815-1858</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">24688</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Papers, 
-         <unitdate type="inclusive" label="Date">1788,
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Papers, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">1788,
          1815-1858</unitdate></unittitle>
-         <unitid label="Accession number">24688</unitid>
-         <physloc label="Physical Location">Personal Papers Collection,
+      <unitid label="Accession number">24688</unitid>
+      <physloc label="Physical Location">Personal Papers Collection,
          Acc. 24688</physloc>
-         <physdesc label="Physical Characteristics">.225 cubic
+      <physdesc label="Physical Characteristics">.225 cubic
          feet</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">George Rust, Jr.</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">George Rust, Jr.</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>George Rust, Jr. Papers, 1788, 1815-1858. Accession
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>George Rust, Jr. Papers, 1788, 1815-1858. Accession
             24688. Personal papers collection. The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Purchased 2 November 1957.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>George Rust, Jr., was born 4 January 1788 in Virginia to
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Purchased 2 November 1957.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>George Rust, Jr., was born 4 January 1788 in Virginia to
          George Rust (1760-1850) and Elizabeth Rust (ca. 1766-1844). He
          lived for a while in Prince George's County, Maryland for a
          few years and was one of the defenders of Baltimore, Maryland,
@@ -163,10 +143,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          1809 in Prince George's County, and they had nine children.
          Rust died 18 September 1857 in Baltimore, and was buried in
          Union Cemetery in Leesburg, Virginia.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Papers, 1788, 1815-1858, of George Rust, Jr. (1788-1857) of
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Papers, 1788, 1815-1858, of George Rust, Jr. (1788-1857) of
          Loudoun County, Virginia, consisting of personal and business
          records containing accounts, advertisements, agreements,
          bonds, broadsides, calling cards, circular letters,
@@ -176,7 +156,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          tax records. Collection is divided into three series. Series
          I: Correspondence, 1815-1856. Series II: Business papers,
          1811-1858. Series III: Business papers, 1788, 1815-1858.</p>
-         <p>Correspondence, 1815-1856, consists of letters to and from
+      <p>Correspondence, 1815-1856, consists of letters to and from
          Rust and covers Virginia politics, national politics,
          turnpikes in Virginia, duelling, carriages, home furnishings,
          the Virginia militia, the United States Armory at Harper's
@@ -193,7 +173,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          recommending individuals for government positions; and letters
          from Albert Rust concerning their plantation "Indian Town" in
          Lancaster County, Virginia.</p>
-         <p>Business papers, 1811-1858, contain accounts,
+      <p>Business papers, 1811-1858, contain accounts,
          advertisements, bonds, broadsides, insurance policies,
          letters, lists, petitions, promissory notes, receipts, and tax
          records. Of particular interest: a letter from "Robison Cruso"
@@ -207,7 +187,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          slaves at Rust's plantation "Exeter" in Loudoun County; and
          petition from William Brannan to the Virginia legislature
          requesting a divorce.</p>
-         <p>Business papers, 1788, 1819-1858, consisting of accounts,
+      <p>Business papers, 1788, 1819-1858, consisting of accounts,
          advertisements, agreements, bonds, calling cards, circulars,
          deeds, land patents, lists, memorandums, notices, powers of
          attorney, promissory notes, receipts, surveys, and tax
@@ -223,1904 +203,1898 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          "Exeter" in Loudoun County; and papers concerning "Indian
          Town" in Lancaster County, Virginia, including deeds and lists
          of slaves.</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>Items are arranged chronologically within each
+        <head>Arrangement</head>
+        <p>Items are arranged chronologically within each
             series.</p>
-         </arrangement>
-         <arrangement>
-            <head>Organization</head>
-            <p>Organized into three series: Series I: Correspondence,
+      </arrangement>
+      <arrangement>
+        <head>Organization</head>
+        <p>Organized into three series: Series I: Correspondence,
             1815-1856. Series II: Buiness papers, 1811-1858. Series
             III: Business papers, 1788, 1819-1858.</p>
-         </arrangement>
       </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle>Correspondence, 
-               <unitdate type="inclusive">
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Correspondence, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1815-1856</unitdate></unittitle>
-               <container label="Folder" type="Folder">1-7</container>
-            </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+          <container label="Folder" type="Folder">1-7</container>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   n.d.</unitdate></unittitle>
-                  <container label="folder" type="Folder">1</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>5 July n.y.,</unitdate> [Henry?]
+            <container label="folder" type="Folder">1</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">5 July n.y.,</unitdate> [Henry?]
                      Edmundson to Gen. George Rust, Harper's Ferry,
                      Virginia</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>n.d.,</unitdate> Armistead T. Mason
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>4 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> Armistead T. Mason
                      [Goshen] to George Rust, Philadelphia,
                      Pennsylvania</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>n.d.,</unitdate>
-                     <persname normal="Armistead T. Mason">A[rmistead]
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate><persname normal="Armistead T. Mason">A[rmistead]
                      T. Mason</persname> to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>n.d.,</unitdate> George Rust to the
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> George Rust to the
                      Secretary of the Interior [possibly Robert
                      McClelland]</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>n.d.,</unitdate> George Rust to the
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> George Rust to the
                      Secretary of the Interior [possibly Robert
                      McClelland]</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>n.d.,</unitdate> George Rust to the
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> George Rust to the
                      President of the United States [Franklin
                      Pierce]</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>n.d.,</unitdate> George Rust to the
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> George Rust to the
                      President of the United States [Franklin
                      Pierce]</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1815-1819</unitdate></unittitle>
-                  <container label="folder" type="Folder">2</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>7 May 1815,</unitdate> Bushrod Rust,
+            <container label="folder" type="Folder">2</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">7 May 1815,</unitdate> Bushrod Rust,
                      Clairsville, to George Rust, Leesburg, Loudoun
                      County</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>13 December 1816,</unitdate> Armistead T.
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">13 December 1816,</unitdate> Armistead T.
                      Mason, Washington, to George Rust,
                      Philadelphia</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>17 December 1816,</unitdate> Armistead T.
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">17 December 1816,</unitdate> Armistead T.
                      Mason, Washington, to George Rust,
                      Philadelphia</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>22 March 1817,</unitdate> Armistead T.
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">22 March 1817,</unitdate> Armistead T.
                      Mason, Rasberry Plain, to George Rust,
                      Philadelphia</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>1 November 1817,</unitdate> Armistead T.
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">1 November 1817,</unitdate> Armistead T.
                      Mason, Leesburg, to Charles F. Mercer,
                      [Leesburg]</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>20 April 1818,</unitdate> Armistead T.
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">20 April 1818,</unitdate> Armistead T.
                      Mason, n.p., to George Rust, Jr.,
                      Leesburg</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>15 January 1819,</unitdate> Armistead T.
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">15 January 1819,</unitdate> Armistead T.
                      Mason, Selma, to George Rust, member of the
                      Virginia Legislature, Richmond</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>6 February 1819,</unitdate> James
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">6 February 1819,</unitdate> James
                      Pleasants, Washington, to William S. Archer, House
                      of Delegates, Richmond</unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>15 April 1819,</unitdate> William H.
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">15 April 1819,</unitdate> William H.
                      Handey, n.p., to George Rust, Leesburg,
                      confidential</unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1820-1829</unitdate></unittitle>
-                  <container label="folder" type="Folder">3</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>8 December 1820,</unitdate> Joseph Lewis,
+            <container label="folder" type="Folder">3</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">8 December 1820,</unitdate> Joseph Lewis,
                      Fredericksburg, to unknown
                      correspondent</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>22 December 1820,</unitdate> Joseph
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">22 December 1820,</unitdate> Joseph
                      Lewis, Washington, to George Rust, House of
                      Delegates, Richmond</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>5 January 1821,</unitdate> R. H.
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">5 January 1821,</unitdate> R. H.
                      Henderson, Leesburg, to George Rust, Jr., member
                      of the House of Delegates, Richmond</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>5 February 1822,</unitdate> R. I. Taylor,
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">5 February 1822,</unitdate> R. I. Taylor,
                      Alexandria, to George Rust, Richmond</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>13 January 1824,</unitdate> Ben[?]
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">13 January 1824,</unitdate> Ben[?]
                      Peyton, Richmond, to [George] Rust,
                      n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>13 January 1824,</unitdate> John Mason,
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">13 January 1824,</unitdate> John Mason,
                      Richmond, to [George] Rust, n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>13 January 1824,</unitdate>
-                     <persname normal="Smith Slaughter">S.
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">13 January 1824,</unitdate><persname normal="Smith Slaughter">S.
                      Slaughter</persname>, Richmond, to George Rust,
                      Leesburg, Loudoun County</unittitle>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>16 February 1824,</unitdate> W. C. B.
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">16 February 1824,</unitdate> W. C. B.
                      Butler, Colonel, 60th Regiment, Virginia militia,
                      Fairfax Court House, to Gen. George Rust,
                      n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>16 January 1828,</unitdate> Asa Rogers,
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">16 January 1828,</unitdate> Asa Rogers,
                      Richmond, to Brigadier General George Rust,
                      Loudoun County</unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>26 January 1828,</unitdate> George Rust,
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">26 January 1828,</unitdate> George Rust,
                      Richmond, to 
                      <persname normal="Philip Norborne Nicholas">P. N.
                      Nicholas</persname>, n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">j</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>15 July 1829,</unitdate> from an
+              <unitid>
+                <emph render="bold">j</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">15 July 1829,</unitdate> from an
                      anonymous correspondent, Charlestown, (West)
                      Virginia, to Gen. George Rust, Leesburg, Loudoun
                      County</unittitle>
-                     <unitid>
-                        <emph render="bold">k</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+              <unitid>
+                <emph render="bold">k</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1830-1839</unitdate></unittitle>
-                  <container label="folder" type="Folder">4</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>11 March 1830,</unitdate> [George Rust,
+            <container label="folder" type="Folder">4</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">11 March 1830,</unitdate> [George Rust,
                      Jr.,], Superintendant's Office, United States
                      Armory, Harper's Ferry [(West) Virginia], to Col.
                      George Bomford, n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>27 March 1831,</unitdate> Edward Lucas,
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">27 March 1831,</unitdate> Edward Lucas,
                      Jr., Richmond, to Dr. J. William Roper, Harper's
                      Ferry, Jefferson County, (West)
                      Virginia</unittitle>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>21 May 1832,</unitdate> Richard Norris,
+              <physdesc>4 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">21 May 1832,</unitdate> Richard Norris,
                      Baltimore, to Gen. [George] Rust, Harper's
                      Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>4 August 1832,</unitdate> R. Withers, New
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">4 August 1832,</unitdate> R. Withers, New
                      York, to Gen. George Rust, Jr., Harper's
                      Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>1 October 1833,</unitdate> W. G.
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">1 October 1833,</unitdate> W. G.
                      Singleton, Winchester, to G. B. Wager,
                      Charlestown</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>21 March 1834,</unitdate> H. F. H.,
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">21 March 1834,</unitdate> H. F. H.,
                      Leesburg, to unknown correspondent</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>11 February 1837,</unitdate> Edward
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">11 February 1837,</unitdate> Edward
                      Lucas, Jr., House of Representatives, to Gen.
                      George Rust, Harper's Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>13 February 1837,</unitdate> Edward
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">13 February 1837,</unitdate> Edward
                      Lucas, Jr., House of Representatives, to George
                      Rust, Harper's Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>14 February 1837,</unitdate> Richard
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">14 February 1837,</unitdate> Richard
                      Johnson, near Jefferson, to George Rust, Harper's
                      Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>8 March 1837,</unitdate> George Rust,
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">8 March 1837,</unitdate> George Rust,
                      Washington, to L. Bullock,
                      Philadelphia</unittitle>
-                     <unitid>
-                        <emph render="bold">j</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>27 January 1838,</unitdate> Agnes Taylor,
+              <unitid>
+                <emph render="bold">j</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">27 January 1838,</unitdate> Agnes Taylor,
                      Upperville, to unknown correspondent</unittitle>
-                     <unitid>
-                        <emph render="bold">k</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>9 March 1839,</unitdate> Amos Kendall,
+              <unitid>
+                <emph render="bold">k</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">9 March 1839,</unitdate> Amos Kendall,
                      Washington, to George Rust, n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">l</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+              <unitid>
+                <emph render="bold">l</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1840-1849</unitdate></unittitle>
-                  <container label="folder" type="Folder">5</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>27 June 1843,</unitdate> Clarence F.
+            <container label="folder" type="Folder">5</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">27 June 1843,</unitdate> Clarence F.
                      LeGrand, Plantation, Maryland Bend, Madison[?]
                      Parish, Louisiana, to George Rust,
                      Baltimore</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>2 leaves</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>28 January 1845,</unitdate> E. Mann,
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>2 leaves</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">28 January 1845,</unitdate> E. Mann,
                      [Vicksburg?] to an unknown
                      correspondent</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>5 March 1845,</unitdate>
-                     <persname normal="William Selden">W.
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">5 March 1845,</unitdate><persname normal="William Selden">W.
                      Selden</persname>, Washington, to [President James
                      K. Polk]</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>8 March 1845,</unitdate> J. Spaight,
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">8 March 1845,</unitdate> J. Spaight,
                      Washington, to James K. Polk, President of the
                      United States</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>8 December 1849,</unitdate>
-                     <persname normal="Robert Ward Johnson">R[obert]
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">8 December 1849,</unitdate><persname normal="Robert Ward Johnson">R[obert]
                      W[ard] Johnson</persname>, House of
                      Representatives, to Harry Hill, New Orleans,
                      Louisiana</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1850-1853</unitdate></unittitle>
-                  <container label="folder" type="Folder">6</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>4 January 1850,</unitdate> Pierre Soule,
+            <container label="folder" type="Folder">6</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">4 January 1850,</unitdate> Pierre Soule,
                      Washington, to Trasimond Landry, Lieutenant
                      Governor of Louisiana, New Orleans</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>4 January 1850,</unitdate> Pierre Soule,
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">4 January 1850,</unitdate> Pierre Soule,
                      Washington, to Horace C. Cammack, New
                      Orleans</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>12 December 1850,</unitdate> [R. Mills?],
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">12 December 1850,</unitdate> [R. Mills?],
                      Gainston[?] [Louisiana], to George Rust,
                      present</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>4 February 1851,</unitdate> William M.
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">4 February 1851,</unitdate> William M.
                      Hume, Richmond, to William M. Rust, Eldorado,
                      Arkansas</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>20 November 1852,</unitdate> George W.
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">20 November 1852,</unitdate> George W.
                      Bolling, n.p., to William Allen,
                      Claremont</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>25 February 1853,</unitdate> John H.
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">25 February 1853,</unitdate> John H.
                      Briscoe, Baltimore, to George Rust, United States
                      Hotel, Washington</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>2 March 1853</unitdate> Andrew Keyser,
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">2 March 1853</unitdate> Andrew Keyser,
                      House of Delegates, Richmond, to George Rust,
                      Washington</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>8 March 1853</unitdate> [George Rust],
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">8 March 1853</unitdate> [George Rust],
                      Washington, to the President of the United States
                      [Franklin Pierce]</unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>George Rust, United States Hotel
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">George Rust, United States Hotel
                      [Washington], to the President of the United
                      States [Franklin Pierce], two
                      drafts</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>5 leaves and 6 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>6 May 1853,</unitdate> G. M. Bayly and
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>5 leaves and 6 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">6 May 1853,</unitdate> G. M. Bayly and
                      Company, New Orleans, to George Rust, Leesburg,
                      Loudoun County</unittitle>
-                     <unitid>
-                        <emph render="bold">j</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>1 June 1853,</unitdate> W. G. Singleton,
+              <unitid>
+                <emph render="bold">j</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">1 June 1853,</unitdate> W. G. Singleton,
                      Winchester, to unknown correspondent</unittitle>
-                     <unitid>
-                        <emph render="bold">k</emph>
-                     </unitid>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>28 July 1853,</unitdate> L. P. Bayne,
+              <unitid>
+                <emph render="bold">k</emph>
+              </unitid>
+              <physdesc>4 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">28 July 1853,</unitdate> L. P. Bayne,
                      Washington, to Gen. [George Rust, Jr.],
                      n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">l</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>1 December 1853,</unitdate> William Rust,
+              <unitid>
+                <emph render="bold">l</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">1 December 1853,</unitdate> William Rust,
                      New Orleans, to George [Rust], n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">m</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Correspondence, 
-                  <unitdate type="inclusive">
+              <unitid>
+                <emph render="bold">m</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Correspondence, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1854-1856</unitdate></unittitle>
-                  <container label="folder" type="Folder">7</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>9 January 1854,</unitdate> Thomas
+            <container label="folder" type="Folder">7</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">9 January 1854,</unitdate> Thomas
                      Johnson, Greene County, to George Rust, Leesburg,
                      Loudoun County</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>18 November 1854,</unitdate> L. P. Bayne,
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">18 November 1854,</unitdate> L. P. Bayne,
                      Washington, to Gen. [George Rust, Jr.],
                      n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>3 February 1855,</unitdate> Joseph R.
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">3 February 1855,</unitdate> Joseph R.
                      Snyder, Baltimore, to Judge John Moore, New
                      Iberia, Louisiana</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>20 June 1855,</unitdate> Thomas Johnson,
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">20 June 1855,</unitdate> Thomas Johnson,
                      Henderson's Mill, Greene County, to George Rust,
                      Leesburg, Loudoun County</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>14 August 1855,</unitdate> A. Cochran,
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">14 August 1855,</unitdate> A. Cochran,
                      General Land Agency of A. Cochran, Council Bluffs,
                      Iowa, to Gen. George Rust, n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>22 February 1856,</unitdate> B. C. Mason,
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">22 February 1856,</unitdate> B. C. Mason,
                      Colrop, to Gen. [George Rust], n.p.</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>7 March 1856,</unitdate> George Rust,
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">7 March 1856,</unitdate> George Rust,
                      Exeter, to Franklin Pierce, President of the
                      United States, listing "persons from this
                      [Loudoun] county now holding offices in Washington
                      under the federal government, and opposed to your
                      administration."</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>11 October 1856,</unitdate>
-                     <persname normal="Albert Rust">A[lbert]
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">11 October 1856,</unitdate><persname normal="Albert Rust">A[lbert]
                      Rust</persname>, Alexandria, to Uncle [George
                      Rust, Jr.]</unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>14 October 1856,</unitdate>
-                     <persname normal="Albert Rust">A[lbert]
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>4 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">14 October 1856,</unitdate><persname normal="Albert Rust">A[lbert]
                      Rust</persname>, Howardsville, to Uncle [George
                      Rust, Jr.]</unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Business papers, 
-               <unitdate type="inclusive">
-               1811-1858</unitdate></unittitle>
-               <container label="folder" type="Folder">8</container>
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>4 pages</physdesc>
             </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Business papers, 
-                  <unitdate type="inclusive">
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Business papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
+               1811-1858</unitdate></unittitle>
+          <container label="folder" type="Folder">8</container>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Business papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1811-1858</unitdate></unittitle>
-                  <container label="folder" type="Folder">8</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>account, 
-                     <unitdate type="inclusive">5 November 1811-16 May
+            <container label="folder" type="Folder">8</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>account, 
+                     <unitdate type="inclusive" era="ce" calendar="gregorian">5 November 1811-16 May
                      1815</unitdate> George Rust, Jr., with P.
                      McIntyre</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Promissory note, 
-                     <unitdate>1 January 1819,</unitdate> Armistead T.
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promissory note, 
+                     <unitdate era="ce" calendar="gregorian">1 January 1819,</unitdate> Armistead T.
                      Mason to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate type="inclusive">February-May
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate type="inclusive" era="ce" calendar="gregorian">February-May
                      1831,</unitdate> John Weaver to George Rust, plank
                      furnished</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>5 April 1832,</unitdate> with George W.
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">5 April 1832,</unitdate> with George W.
                      Carpenter's Chemical Warehouse,
                      Philadelphia</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate type="inclusive">1831-May
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate type="inclusive" era="ce" calendar="gregorian">1831-May
                      1832,</unitdate> Gen. George Rust, lumber borrowed
                      from United States Armory</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Letter, 
-                     <unitdate>1 June 1832,</unitdate>"Robison Cruso"
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter, 
+                     <unitdate era="ce" calendar="gregorian">1 June 1832,</unitdate>"Robison Cruso"
                      to mechanics at Harper's Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>22 October 1832,</unitdate> Mess. Braden
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">22 October 1832,</unitdate> Mess. Braden
                      adn Rust from Wright and Brothers, umbrella
                      manufactory in Philadelphia</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>1 November 1832, with Hopkins Brothers,
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">1 November 1832, with Hopkins Brothers,
                      Baltimore</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>15 January 1836,</unitdate> Harper's
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">15 January 1836,</unitdate> Harper's
                      Ferry post office to Gen. George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Tax receipt for 1834, paid 
-                     <unitdate>16 January 1836,</unitdate> Jefferson
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Tax receipt for 1834, paid 
+                     <unitdate era="ce" calendar="gregorian">16 January 1836,</unitdate> Jefferson
                      County (West) Virginia,</unittitle>
-                     <unitid>
-                        <emph render="bold">j</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Promissory note, 
-                     <unitdate>19 November 1836,</unitdate> from Robert
+              <unitid>
+                <emph render="bold">j</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promissory note, 
+                     <unitdate era="ce" calendar="gregorian">19 November 1836,</unitdate> from Robert
                      B. Rust to George Rust, also note, 20-21 February
                      1837</unittitle>
-                     <unitid>
-                        <emph render="bold">k</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>26 November 1836,</unitdate> from Thomas
+              <unitid>
+                <emph render="bold">k</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">26 November 1836,</unitdate> from Thomas
                      L. Jarrell to George Rust for payment for
                      bricks</unittitle>
-                     <unitid>
-                        <emph render="bold">l</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>tax receipt for 1836, paid 
-                     <unitdate>26 January 1838,</unitdate> Jefferson
+              <unitid>
+                <emph render="bold">l</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>tax receipt for 1836, paid 
+                     <unitdate era="ce" calendar="gregorian">26 January 1838,</unitdate> Jefferson
                      County (West) Virginia</unittitle>
-                     <unitid>
-                        <emph render="bold">m</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Tax receipt for 1838, paid 
-                     <unitdate>22 November 1838,</unitdate> Loudoun
+              <unitid>
+                <emph render="bold">m</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Tax receipt for 1838, paid 
+                     <unitdate era="ce" calendar="gregorian">22 November 1838,</unitdate> Loudoun
                      County, Virginia</unittitle>
-                     <unitid>
-                        <emph render="bold">n</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>11 March 1841,</unitdate> to George Rust
+              <unitid>
+                <emph render="bold">n</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">11 March 1841,</unitdate> to George Rust
                      from Commissioners Burr W. Harrison and John A.
                      Washington, sale of "Exeter" in Loudoun
                      County</unittitle>
-                     <unitid>
-                        <emph render="bold">o</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Bond, 
-                     <unitdate>8 February 1847,</unitdate> George Rust
+              <unitid>
+                <emph render="bold">o</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bond, 
+                     <unitdate era="ce" calendar="gregorian">8 February 1847,</unitdate> George Rust
                      to Loudoun County for release of a slave belonging
                      to William Rust, seized to cover executions
                      against William Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">p</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Tax receipt, paid 
-                     <unitdate>3 December 1849,</unitdate> Loudoun
+              <unitid>
+                <emph render="bold">p</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Tax receipt, paid 
+                     <unitdate era="ce" calendar="gregorian">3 December 1849,</unitdate> Loudoun
                      County</unittitle>
-                     <unitid>
-                        <emph render="bold">q</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Broadside, 
-                     <unitdate>September 1851,</unitdate> for thrashing
+              <unitid>
+                <emph render="bold">q</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Broadside, 
+                     <unitdate era="ce" calendar="gregorian">September 1851,</unitdate> for thrashing
                      machines and other farm equipment, G. Westinghouse
                      and Company</unittitle>
-                     <unitid>
-                        <emph render="bold">r</emph>
-                     </unitid>
-                     <physloc>item located in oversize, box
+              <unitid>
+                <emph render="bold">r</emph>
+              </unitid>
+              <physloc>item located in oversize, box
                      101</physloc>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Insurance policy, 
-                     <unitdate>19 March 1852,</unitdate> no. 122817 to
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Insurance policy, 
+                     <unitdate era="ce" calendar="gregorian">19 March 1852,</unitdate> no. 122817 to
                      George Rust from the Washington County Mutual
                      Insurance Company</unittitle>
-                     <unitid>
-                        <emph render="bold">s</emph>
-                     </unitid>
-                     <physloc>item located in oversize, box
+              <unitid>
+                <emph render="bold">s</emph>
+              </unitid>
+              <physloc>item located in oversize, box
                      101</physloc>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>13 October 1853,</unitdate> for Rust's
+              <physdesc>4 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">13 October 1853,</unitdate> for Rust's
                      subscription to the 
-                     <title render="italic">Loudoun
+                     <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Loudoun
                      Democrat</title></unittitle>
-                     <unitid>
-                        <emph render="bold">t</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>12 July 1854,</unitdate> G. H. Reese and
+              <unitid>
+                <emph render="bold">t</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">12 July 1854,</unitdate> G. H. Reese and
                      Brothers, Baltimore, to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">u</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>4 January 1855,</unitdate> from
+              <unitid>
+                <emph render="bold">u</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">4 January 1855,</unitdate> from
                      Alexandria, Loudoun, and Hampshire Railroad
                      Company to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">v</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>31 August 1855,</unitdate> from
+              <unitid>
+                <emph render="bold">v</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">31 August 1855,</unitdate> from
                      Alexandria, Loudoun, and Hampshire Railroad
                      Company to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">w</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>2 May 1856,</unitdate> George Rust with
+              <unitid>
+                <emph render="bold">w</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">2 May 1856,</unitdate> George Rust with
                      Octavia Furr</unittitle>
-                     <unitid>
-                        <emph render="bold">x</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>List, 
-                     <unitdate>5 August 1856,</unitdate> of slaves and
+              <unitid>
+                <emph render="bold">x</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>List, 
+                     <unitdate era="ce" calendar="gregorian">5 August 1856,</unitdate> of slaves and
                      other property of George Rust and Abner Trundle at
                      "Exeter" in Loudoun County now in Trundle's
                      hands</unittitle>
-                     <unitid>
-                        <emph render="bold">y</emph>
-                     </unitid>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Advertisements and receipts, 
-                     <unitdate>21 December 1858,</unitdate> for sale of
+              <unitid>
+                <emph render="bold">y</emph>
+              </unitid>
+              <physdesc>4 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Advertisements and receipts, 
+                     <unitdate era="ce" calendar="gregorian">21 December 1858,</unitdate> for sale of
                      slaves and property ("Indian Town" in Lancaster
                      County, Virginia) in by D. J. Hartsook, trustee
                      for George and Albert Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">z</emph>
-                     </unitid>
-                     <physdesc>2 leaves</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Petition, 
-                     <unitdate>n.d.,</unitdate> of William Brannan for
+              <unitid>
+                <emph render="bold">z</emph>
+              </unitid>
+              <physdesc>2 leaves</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Petition, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> of William Brannan for
                      divorce from his wife Mary Reid
                      Brannan</unittitle>
-                     <unitid>
-                        <emph render="bold">aa</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>letter, 
-                     <unitdate>n.d.,</unitdate> C. G. Wintersmith to
-                     George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">ab</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>List, 
-                     <unitdate>n.d.,</unitdate> of slaves</unittitle>
-                     <unitid>
-                        <emph render="bold">ac</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Business papers, 
-               <unitdate type="inclusive">1788,
-               1819-1858</unitdate></unittitle>
-               <container label="folder" type="Folder">9-10</container>
+              <unitid>
+                <emph render="bold">aa</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
             </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Business papers, 
-                  <unitdate type="inclusive">1788,
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>letter, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> C. G. Wintersmith to
+                     George Rust</unittitle>
+              <unitid>
+                <emph render="bold">ab</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>List, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> of slaves</unittitle>
+              <unitid>
+                <emph render="bold">ac</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Business papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1788,
+               1819-1858</unitdate></unittitle>
+          <container label="folder" type="Folder">9-10</container>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Business papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">1788,
                   1819-1837</unitdate></unittitle>
-                  <container label="folder" type="Folder">9</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Land patent, 
-                     <unitdate>20 October 1788,</unitdate> for 500 acres
+            <container label="folder" type="Folder">9</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Land patent, 
+                     <unitdate era="ce" calendar="gregorian">20 October 1788,</unitdate> for 500 acres
                      in Monongalia County, (West) Virginia, from
                      Governor Edmund Randolph to Goldsmith Chandley
                      assignee of James Holliday, assignee of John
                      Overton</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>1 April 1819,</unitdate> from William T.
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">1 April 1819,</unitdate> from William T.
                      T. Mason to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Power of attorney, 
-                     <unitdate>22 May 1819,</unitdate> from president
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Power of attorney, 
+                     <unitdate era="ce" calendar="gregorian">22 May 1819,</unitdate> from president
                      and directors of the Leesburg Turnpike Road
                      Company to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Survey, 
-                     <unitdate>15 June 1819,</unitdate> of land in
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Survey, 
+                     <unitdate era="ce" calendar="gregorian">15 June 1819,</unitdate> of land in
                      Leesburg, Virginia, owned by John Newton. Survey
                      made by John J. Mathias</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Deed, 
-                     <unitdate>1820,</unitdate> between George Rust on
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Deed, 
+                     <unitdate era="ce" calendar="gregorian">1820,</unitdate> between George Rust on
                      the one part and Thomas R. Mott and Samuel M.
                      Edwards of the other, all of Loudoun County, for
                      slaves</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physloc>item located in oversize, box
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physloc>item located in oversize, box
                      101</physloc>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>18 January 1820,</unitdate> George Rust
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">18 January 1820,</unitdate> George Rust
                      with Jonathan Shepherd</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>2 paged</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Bond, 
-                     <unitdate>15 June 1820,</unitdate> George Rust to
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>2 paged</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bond, 
+                     <unitdate era="ce" calendar="gregorian">15 June 1820,</unitdate> George Rust to
                      William T. T. Mason and Thomson Mason</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>7 December 1820,</unitdate> from William
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">7 December 1820,</unitdate> from William
                      T. T. Mason to George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Copies, 
-                     <unitdate>26 February 1821,</unitdate> of vouchers
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Copies, 
+                     <unitdate era="ce" calendar="gregorian">26 February 1821,</unitdate> of vouchers
                      filed in Virginia land office</unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Notice, 
-                     <unitdate>23 February 1822,</unitdate> from the
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Notice, 
+                     <unitdate era="ce" calendar="gregorian">23 February 1822,</unitdate> from the
                      Mutual Assurance Society concerning Thomas W.
                      Smith of Loudoun County</unittitle>
-                     <unitid>
-                        <emph render="bold">j</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Notice, 
-                     <unitdate>13 June 1827,</unitdate> that John H.
+              <unitid>
+                <emph render="bold">j</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Notice, 
+                     <unitdate era="ce" calendar="gregorian">13 June 1827,</unitdate> that John H.
                      Hughes has delivered a slave to George
                      Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">k</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Agreement, 
-                     <unitdate>September 1831,</unitdate> between George
+              <unitid>
+                <emph render="bold">k</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Agreement, 
+                     <unitdate era="ce" calendar="gregorian">September 1831,</unitdate> between George
                      Rust and Robert Keyes on one part and John Mackell
                      on the other for construction of a building at
                      Harper's Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">l</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Agreement, 
-                     <unitdate>1 October 1831,</unitdate> between George
+              <unitid>
+                <emph render="bold">l</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Agreement, 
+                     <unitdate era="ce" calendar="gregorian">1 October 1831,</unitdate> between George
                      Rust and Robert Keyes on one part and John Weaver
                      on the other for construction of a building at
                      Harper's Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">m</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>9 April 1832,</unitdate> Messrs. Braden
+              <unitid>
+                <emph render="bold">m</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">9 April 1832,</unitdate> Messrs. Braden
                      and Rust with A. Groverman and Son of Baltimore,
                      Maryland</unittitle>
-                     <unitid>
-                        <emph render="bold">n</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>30 May 1832,</unitdate> from Daniel
+              <unitid>
+                <emph render="bold">n</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">30 May 1832,</unitdate> from Daniel
                      Lathhorn to George Rust for payment for carpentry
                      work</unittitle>
-                     <unitid>
-                        <emph render="bold">o</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Bill of lading, 
-                     <unitdate>12 June 1832,</unitdate> for delivery of
+              <unitid>
+                <emph render="bold">o</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill of lading, 
+                     <unitdate era="ce" calendar="gregorian">12 June 1832,</unitdate> for delivery of
                      a box to Rust and Braden</unittitle>
-                     <unitid>
-                        <emph render="bold">p</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>3 July 1832,</unitdate> for delivery of a
+              <unitid>
+                <emph render="bold">p</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">3 July 1832,</unitdate> for delivery of a
                      box to Braden and Rust at Harper's
                      Ferry</unittitle>
-                     <unitid>
-                        <emph render="bold">q</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>1 September 1832,</unitdate> with J. H.
+              <unitid>
+                <emph render="bold">q</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">1 September 1832,</unitdate> with J. H.
                      Brothers of Baltimore</unittitle>
-                     <unitid>
-                        <emph render="bold">r</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>List, 
-                     <unitdate>1832,</unitdate> of salaries due at
+              <unitid>
+                <emph render="bold">r</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>List, 
+                     <unitdate era="ce" calendar="gregorian">1832,</unitdate> of salaries due at
                      armory[?]</unittitle>
-                     <unitid>
-                        <emph render="bold">s</emph>
-                     </unitid>
-                     <physdesc>12 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>1 February 1836,</unitdate> from G. W.
+              <unitid>
+                <emph render="bold">s</emph>
+              </unitid>
+              <physdesc>12 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">1 February 1836,</unitdate> from G. W.
                      Sappington for [L. T. A.?] Washington to George
                      Rust for payment of execution against Rust by the
                      court</unittitle>
-                     <unitid>
-                        <emph render="bold">t</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Tax receipt, 
-                     <unitdate>10 November 1836,</unitdate> Loudoun
+              <unitid>
+                <emph render="bold">t</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Tax receipt, 
+                     <unitdate era="ce" calendar="gregorian">10 November 1836,</unitdate> Loudoun
                      County</unittitle>
-                     <unitid>
-                        <emph render="bold">u</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Circular, 
-                     <unitdate>19 June 1837,</unitdate> from Virginia
+              <unitid>
+                <emph render="bold">u</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Circular, 
+                     <unitdate era="ce" calendar="gregorian">19 June 1837,</unitdate> from Virginia
                      Board of Public Works regarding state proxies at
                      all joint stock internal improvement
                      companies</unittitle>
-                     <unitid>
-                        <emph render="bold">v</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Business papers, 
-                  <unitdate type="inclusive">
+              <unitid>
+                <emph render="bold">v</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Business papers, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1840-1858</unitdate></unittitle>
-                  <container label="folder" type="Folder">
+            <container label="folder" type="Folder">
                   10</container>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Deed, 
-                     <unitdate>10 February 1840,</unitdate> of a
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Deed, 
+                     <unitdate era="ce" calendar="gregorian">10 February 1840,</unitdate> of a
                      business arrangement between George Rust of
                      Loudoun County, and Francis D. Dungan and Thomas
                      C. Watkins of Baltimore, Maryland, to go into the
                      shoe and hat business</unittitle>
-                     <unitid>
-                        <emph render="bold">a</emph>
-                     </unitid>
-                     <physdesc>8 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>12 June 1843,</unitdate> George Rust with
+              <unitid>
+                <emph render="bold">a</emph>
+              </unitid>
+              <physdesc>8 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">12 June 1843,</unitdate> George Rust with
                      John Matthews</unittitle>
-                     <unitid>
-                        <emph render="bold">b</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>31 December 1844,</unitdate> from E. M.
+              <unitid>
+                <emph render="bold">b</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">31 December 1844,</unitdate> from E. M.
                      Kerr and Company of Baltimore to George
                      Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">c</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Memorandum, 
-                     <unitdate>30 June 1845,</unitdate> between George
+              <unitid>
+                <emph render="bold">c</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Memorandum, 
+                     <unitdate era="ce" calendar="gregorian">30 June 1845,</unitdate> between George
                      Rust, Francis D. Dungan, and Thomas C. Watkins, in
                      which Rust sells his share of the
                      business</unittitle>
-                     <unitid>
-                        <emph render="bold">d</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Promissory note, 
-                     <unitdate>24 April 1846,</unitdate> from George
+              <unitid>
+                <emph render="bold">d</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promissory note, 
+                     <unitdate era="ce" calendar="gregorian">24 April 1846,</unitdate> from George
                      Rust and Thomas H. Clagett to Burr W. Harrison and
                      John A. Washington</unittitle>
-                     <unitid>
-                        <emph render="bold">e</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Agreement, 
-                     <unitdate>1 September 1847,</unitdate> between
+              <unitid>
+                <emph render="bold">e</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Agreement, 
+                     <unitdate era="ce" calendar="gregorian">1 September 1847,</unitdate> between
                      George Rust on one part and Daniel T. Fouche and
                      Edward Hart on the other for construction on a
                      house</unittitle>
-                     <unitid>
-                        <emph render="bold">f</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Tax receipt, 
-                     <unitdate>27 November 1847,</unitdate> Loudoun
+              <unitid>
+                <emph render="bold">f</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Tax receipt, 
+                     <unitdate era="ce" calendar="gregorian">27 November 1847,</unitdate> Loudoun
                      County</unittitle>
-                     <unitid>
-                        <emph render="bold">g</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>List, 
-                     <unitdate>21 November 1849,</unitdate> purchases
+              <unitid>
+                <emph render="bold">g</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>List, 
+                     <unitdate era="ce" calendar="gregorian">21 November 1849,</unitdate> purchases
                      made by George Rust of Alfred Rust's
                      property</unittitle>
-                     <unitid>
-                        <emph render="bold">h</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>12 August 1850,</unitdate> Mountain
+              <unitid>
+                <emph render="bold">h</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">12 August 1850,</unitdate> Mountain
                      House, Capon Springs, (West) Virginia, to George
                      Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">i</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>23 August 1850,</unitdate> George Rust
+              <unitid>
+                <emph render="bold">i</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">23 August 1850,</unitdate> George Rust
                      with B. B. Simpson</unittitle>
-                     <unitid>
-                        <emph render="bold">j</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>1852,</unitdate> George Rust with S. M.
+              <unitid>
+                <emph render="bold">j</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">1852,</unitdate> George Rust with S. M.
                      Janney of the Springdale Boarding School for
                      boarding Virginia Bedinger</unittitle>
-                     <unitid>
-                        <emph render="bold">k</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>7 February 1853,</unitdate> to George
+              <unitid>
+                <emph render="bold">k</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">7 February 1853,</unitdate> to George
                      Rust from G. H. Reese and Brothers of
                      Baltimore</unittitle>
-                     <unitid>
-                        <emph render="bold">l</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>12 March 1852,</unitdate> for
+              <unitid>
+                <emph render="bold">l</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">12 March 1852,</unitdate> for
                      subscription to 
-                     <title render="italic">Leesburg
+                     <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Leesburg
                      Washingtonian</title></unittitle>
-                     <unitid>
-                        <emph render="bold">m</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>23 December 1853,</unitdate> to George
+              <unitid>
+                <emph render="bold">m</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">23 December 1853,</unitdate> to George
                      Rust from G. H. Reese and Brothers of
                      Baltimore</unittitle>
-                     <unitid>
-                        <emph render="bold">n</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Advertisement, 
-                     <unitdate>1 June 1854,</unitdate> for sale of
+              <unitid>
+                <emph render="bold">n</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Advertisement, 
+                     <unitdate era="ce" calendar="gregorian">1 June 1854,</unitdate> for sale of
                      "Exeter" in Loudoun County</unittitle>
-                     <unitid>
-                        <emph render="bold">o</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>10 December 1853,</unitdate> to George
+              <unitid>
+                <emph render="bold">o</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">10 December 1853,</unitdate> to George
                      Rust from G. H. Reese and Brothers of
                      Baltimore</unittitle>
-                     <unitid>
-                        <emph render="bold">p</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>18 January 1856,</unitdate> to George
+              <unitid>
+                <emph render="bold">p</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">18 January 1856,</unitdate> to George
                      Rust from the Exchange Hotel in Richmond,
                      Virginia</unittitle>
-                     <unitid>
-                        <emph render="bold">q</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Agreement, 
-                     <unitdate>3 October 1856,</unitdate> between D. J.
+              <unitid>
+                <emph render="bold">q</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Agreement, 
+                     <unitdate era="ce" calendar="gregorian">3 October 1856,</unitdate> between D. J.
                      Hartsook, as attorney for Mary W. Cabell, and
                      George Rust and Albert Rust, regarding the Rusts'
                      purchase of "Indian Town" in Lancaster County,
                      Virginia</unittitle>
-                     <unitid>
-                        <emph render="bold">r</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Deed, 
-                     <unitdate>3 October 1856,</unitdate> between D. J.
+              <unitid>
+                <emph render="bold">r</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Deed, 
+                     <unitdate era="ce" calendar="gregorian">3 October 1856,</unitdate> between D. J.
                      Hartsook, attorney for Mary W. Cabell, on one part
                      and George Rust and Albert Rust on the other, for
                      purchase of "Indian Town," 1620 acres</unittitle>
-                     <unitid>
-                        <emph render="bold">s</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Deed, 
-                     <unitdate>3 October 1856,</unitdate> between George
+              <unitid>
+                <emph render="bold">s</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Deed, 
+                     <unitdate era="ce" calendar="gregorian">3 October 1856,</unitdate> between George
                      Rust and Albert Rust on one part and D. J.
                      Hartsook and R. W. Elsom on the other for "Indian
                      Town," 1620 acres, until purchase money is
                      paid</unittitle>
-                     <unitid>
-                        <emph render="bold">t</emph>
-                     </unitid>
-                     <physdesc>3 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Agreement, 
-                     <unitdate>21 September 1858, between D. J.
+              <unitid>
+                <emph render="bold">t</emph>
+              </unitid>
+              <physdesc>3 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Agreement, 
+                     <unitdate era="ce" calendar="gregorian">21 September 1858, between D. J.
                      Hartsook, agent for Albert Rust and George Rust's
                      executors and devisees, on one part and William C.
                      Carroll on the other for Carroll's purchase of
                      "Indian Town"</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">u</emph>
-                     </unitid>
-                     <physdesc>4 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Agreement, 
-                     <unitdate>19 October 1858,</unitdate> between 
+              <unitid>
+                <emph render="bold">u</emph>
+              </unitid>
+              <physdesc>4 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Agreement, 
+                     <unitdate era="ce" calendar="gregorian">19 October 1858,</unitdate> between 
                      <persname normal="Armistead Thomson Mason Rust">A.
                      T. M. Rust</persname> and George T. Rust, executors
                      of George Rust, on one part and Albert Rust on the
                      other, for settling George Rust's and Albert
                      Rust's partnership</unittitle>
-                     <unitid>
-                        <emph render="bold">v</emph>
-                     </unitid>
-                     <physdesc>8 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>List, 
-                     <unitdate>n.d.,</unitdate> of slaves at "Indian
+              <unitid>
+                <emph render="bold">v</emph>
+              </unitid>
+              <physdesc>8 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>List, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> of slaves at "Indian
                      Town"</unittitle>
-                     <unitid>
-                        <emph render="bold">w</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>list, 
-                     <unitdate>n.d.,</unitdate> of servants at "Indian
+              <unitid>
+                <emph render="bold">w</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>list, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> of servants at "Indian
                      Town"</unittitle>
-                     <unitid>
-                        <emph render="bold">x</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>List, 
-                     <unitdate>n.d.,</unitdate> of slaves, no
+              <unitid>
+                <emph render="bold">x</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>List, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> of slaves, no
                      location</unittitle>
-                     <unitid>
-                        <emph render="bold">y</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>List, 
-                     <unitdate>n.d.,</unitdate> of slaves, no
+              <unitid>
+                <emph render="bold">y</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>List, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> of slaves, no
                      location</unittitle>
-                     <unitid>
-                        <emph render="bold">z</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Calling card, 
-                     <unitdate>n.d.,</unitdate> for Miss
+              <unitid>
+                <emph render="bold">z</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Calling card, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> for Miss
                      Faulkner</unittitle>
-                     <unitid>
-                        <emph render="bold">aa</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Calling card, 
-                     <unitdate>n.d.,</unitdate> for Annie H.
+              <unitid>
+                <emph render="bold">aa</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Calling card, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> for Annie H.
                      Faulkner</unittitle>
-                     <unitid>
-                        <emph render="bold">ab</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>n.d.,</unitdate> from Strothers Hotel to
+              <unitid>
+                <emph render="bold">ab</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> from Strothers Hotel to
                      George Rust</unittitle>
-                     <unitid>
-                        <emph render="bold">ac</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Receipt, 
-                     <unitdate>n.d.,</unitdate> from Strothers
+              <unitid>
+                <emph render="bold">ac</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> from Strothers
                      Hotel</unittitle>
-                     <unitid>
-                        <emph render="bold">ad</emph>
-                     </unitid>
-                     <physdesc>1 leaf</physdesc>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Account, 
-                     <unitdate>n.d.,</unitdate> George Rust with John
+              <unitid>
+                <emph render="bold">ad</emph>
+              </unitid>
+              <physdesc>1 leaf</physdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Account, 
+                     <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> George Rust with John
                      Weaver</unittitle>
-                     <unitid>
-                        <emph render="bold">ae</emph>
-                     </unitid>
-                     <physdesc>2 pages</physdesc>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+              <unitid>
+                <emph render="bold">ae</emph>
+              </unitid>
+              <physdesc>2 pages</physdesc>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

@@ -1,368 +1,351 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY lost SYSTEM "http://www.lva.virginia.gov/whatwehave/local/lost/" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03058">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03058::A Guide to the Isle of Wight County (Va.)Records, 1754-1956)//EN" "vi03058.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03058">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03058::A Guide to the Isle of Wight County (Va.)Records, 1754-1956)//EN" "vi03058.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Isle of Wight County (Va.) Records, <date>1754-1956</date>
-</titleproper>
-<subtitle id="sort">Isle of Wight County (Va.) Records, 1754-1956
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Isle of Wight County (Va.) Records, <date era="ce" calendar="gregorian">1754-1956</date></titleproper>
+        <subtitle id="sort">Isle of Wight County (Va.) Records, 1754-1956
 <num type="collectionnumber">1114767, 1006289-1006291, 1006794, 1006297, 1161441-1161460 circa
-</num>
-</subtitle>
-<author>Callie Lou Freed
+</num></subtitle>
+        <author>Callie Lou Freed
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2009 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Callie Lou Freed, <date>07 July 2009</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Isle of Wight County (Va.) Records, <date>1754-1956</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Barcode number:">1114767, 1006289-1006794, 1006297, 1161441-1161460 circa
-</num>
-</subtitle>
-<author>Callie Lou Freed
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2009
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Library of Virginia staff
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Isle of Wight County (Va.) Records, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1754-1956
-</unitdate>
-</unittitle>
-<unitid label="Barcode number" encodinganalog="099$a">1114767, 1006289-1006794, 1006297, 1161441-1161460, circa
-</unitid>
-<physloc label="Location">Library of Virginia
-</physloc>
-<physdesc label="Physical Characteristics" encodinganalog="300$a"> 11 boxes and or volumes, and 1 negative photostatic volume  (171 leaves);
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2009 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Callie Lou Freed, <date era="ce" calendar="gregorian">07 July 2009</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Isle of Wight County (Va.) Records, <date era="ce" calendar="gregorian">1754-1956</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Barcode number:">1114767, 1006289-1006794, 1006297, 1161441-1161460 circa
+</num></subtitle>
+      <author>Callie Lou Freed
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2009
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Library of Virginia staff
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Isle of Wight County (Va.) Records, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1754-1956
+</unitdate></unittitle>
+      <unitid label="Barcode number" encodinganalog="099$a">1114767, 1006289-1006794, 1006297, 1161441-1161460, circa
+</unitid>
+      <physloc label="Location">Library of Virginia
+</physloc>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a"> 11 boxes and or volumes, and 1 negative photostatic volume  (171 leaves);
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Collector" encodinganalog="110$a">Isle of Wight County (Va.) Circuit Court.
+      </langmaterial>
+      <origination label="Collector" encodinganalog="110$a">Isle of Wight County (Va.) Circuit Court.
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Isle of Wight County (Va.) Records, 1754-1956.  Local government records collection, Isle of Wight County Court Records.  The Library of Virginia, Richmond, Virginia 23219.
+        <p>Isle of Wight County (Va.) Records, 1754-1956.  Local government records collection, Isle of Wight County Court Records.  The Library of Virginia, Richmond, Virginia 23219.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>This negative photostatic volume was created by the Virginia State Library's (now the Library of Virginia) Archives Division, under the accession number 21594, from the original volume found in the Isle of Wight's Circuit Court Clerk's Office.
+        <p>This negative photostatic volume was created by the Virginia State Library's (now the Library of Virginia) Archives Division, under the accession number 21594, from the original volume found in the Isle of Wight's Circuit Court Clerk's Office.
 </p>
-<p>The eleven volumes and or boxes came to to the Library of Virginia in a shipment of court papers from Isle of Wight County. One collection was transferred under accession number 13860.</p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+        <p>The eleven volumes and or boxes came to to the Library of Virginia in a shipment of court papers from Isle of Wight County. One collection was transferred under accession number 13860.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>Isle of Wight County was one of the original shires, or counties, first enumerated in 1634.  The present name was given in 1637.  Parts of Nansemond County were added in 1769 and 1772.
+      <p>Isle of Wight County was one of the original shires, or counties, first enumerated in 1634.  The present name was given in 1637.  Parts of Nansemond County were added in 1769 and 1772.
 </p>
-<p>The early tax laws required the tax commissioner in each district to record in "a fair alphabetical list" the names of persons owning land or town lots, the quality of land owned, the value of the land or lots and the amount of tax owed. Each tract or lot owned by an individual was to be entered separately.
+      <p>The early tax laws required the tax commissioner in each district to record in "a fair alphabetical list" the names of persons owning land or town lots, the quality of land owned, the value of the land or lots and the amount of tax owed. Each tract or lot owned by an individual was to be entered separately.
 </p>
-<p>"Processioning consisted of a person or persons appointed by the vestries (later the county court) meeting with the land owners and walking their property boundaries with them and remarking their lines and corners. At least one other person, preferably an adjacent land owner, would accompany the owner and the processioner. Perhaps this "processioning" of people walking the boundaries is the basis for the term "processioning." The objective of this practice seems to have been to prevent boundary disputes between adjacent land owners by renewing and maintaining survey marks. However, most of the marks used were temporary items such as trees and bushes. Processioning was not done annually, nor was the entire county done at the same time. Usually processioning was done by militia districts, or some other governmental subdivision of the county."
+      <p>"Processioning consisted of a person or persons appointed by the vestries (later the county court) meeting with the land owners and walking their property boundaries with them and remarking their lines and corners. At least one other person, preferably an adjacent land owner, would accompany the owner and the processioner. Perhaps this "processioning" of people walking the boundaries is the basis for the term "processioning." The objective of this practice seems to have been to prevent boundary disputes between adjacent land owners by renewing and maintaining survey marks. However, most of the marks used were temporary items such as trees and bushes. Processioning was not done annually, nor was the entire county done at the same time. Usually processioning was done by militia districts, or some other governmental subdivision of the county."
 </p>
-<p>Until 1780, marriages could be performed only by ministers of the Established Church, who were required by law to record marriages in the parish register. In 1780, dissenting ministers (only four per county from each sect) were first permitted to perform marriage ceremonies. Ministers' returns were required by law beginning in 1780, so all marriages from that date would be of record in the county court clerk's office--thereby creating an official record. Some ministers adopted a custom of making collected returns--a list of marriages performed within a period of time such as a year or several years. Beginning in 1784, marriage certificates were returned annually. The law was rarely enforced, and ministers' returns were sometimes late, incorrect, incomplete and in many instances, not made at all. Once the marriage service was performed, the minister submitted a return to the county clerk. The county clerk recorded these returns along with other marriage records, such as licenses, in a volume.
+      <p>Until 1780, marriages could be performed only by ministers of the Established Church, who were required by law to record marriages in the parish register. In 1780, dissenting ministers (only four per county from each sect) were first permitted to perform marriage ceremonies. Ministers' returns were required by law beginning in 1780, so all marriages from that date would be of record in the county court clerk's office--thereby creating an official record. Some ministers adopted a custom of making collected returns--a list of marriages performed within a period of time such as a year or several years. Beginning in 1784, marriage certificates were returned annually. The law was rarely enforced, and ministers' returns were sometimes late, incorrect, incomplete and in many instances, not made at all. Once the marriage service was performed, the minister submitted a return to the county clerk. The county clerk recorded these returns along with other marriage records, such as licenses, in a volume.
 </p>
-<p>The original records, from which this volume was comprised, were created by the County Court.
+      <p>The original records, from which this volume was comprised, were created by the County Court.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Isle of Wight County (Va.) Records, 1754-1956, provides the following records; Board of Supervisors Records;  Bonds, Commissions and Oaths Records; Business Records, Coporations, and Partnership Records; County Administrative Records;  Court Records; Election Records; Fiduciary Records; Health and Medical Records; Justice of the Peace Records;  Land Records; Marriage Records and Vital Statistics Records; Miscellaneous Records; Road and Bridge Records; School Records;  Tax and Fiscal Records and one photostatic copy of a volume of original items from early county records offering various record categories.</p>
-</scopecontent>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+      <p>Isle of Wight County (Va.) Records, 1754-1956, provides the following records; Board of Supervisors Records;  Bonds, Commissions and Oaths Records; Business Records, Coporations, and Partnership Records; County Administrative Records;  Court Records; Election Records; Fiduciary Records; Health and Medical Records; Justice of the Peace Records;  Land Records; Marriage Records and Vital Statistics Records; Miscellaneous Records; Road and Bridge Records; School Records;  Tax and Fiscal Records and one photostatic copy of a volume of original items from early county records offering various record categories.</p>
+    </scopecontent>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<originalsloc encodinganalog="535$a">
-<head>Location of Originals
+      <originalsloc encodinganalog="535$a">
+        <head>Location of Originals
 </head>
-<p>The original volume is found in the Isle of Wight's Circuit Court Clerk's Office.
+        <p>The original volume is found in the Isle of Wight's Circuit Court Clerk's Office.
 </p>
-</originalsloc>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </originalsloc>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Additional Isle of Wight County records can be found on microfilm at the Library of Virginia.  Consult <extref entityref="microfilm">"A Guide to Virginia County and City Records on Microfilm"</extref>
-</p>
-</relatedmaterial>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+        <p>Additional Isle of Wight County records can be found on microfilm at the Library of Virginia.  Consult <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm">"A Guide to Virginia County and City Records on Microfilm"</extref></p>
+      </relatedmaterial>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Isle of Wight County is one of Virginia's Lost Record Localities.  Additional Isle of Wight County Court Records may be found in the Virginia Lost Records Localities Collection at the Library of Virginia. Search the <extref entityref="lost">Lost Records Localities Database</extref> found on the Library of Virginia's web site.
+        <p>Isle of Wight County is one of Virginia's Lost Record Localities.  Additional Isle of Wight County Court Records may be found in the Virginia Lost Records Localities Collection at the Library of Virginia. Search the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.virginia.gov/whatwehave/local/lost/">Lost Records Localities Database</extref> found on the Library of Virginia's web site.
 </p>
-</relatedmaterial>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </relatedmaterial>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>For an excellent description of processioning lands, consult "A History of Early Spotsylvania" by James Roger Mansfield, pages 80-81 found in the Library of Virginia's book collection.
+        <p>For an excellent description of processioning lands, consult "A History of Early Spotsylvania" by James Roger Mansfield, pages 80-81 found in the Library of Virginia's book collection.
 </p>
-</relatedmaterial>
-</descgrp>
-<controlaccess>
-<head>Index Terms</head>
-<controlaccess>
-<head>Corporate Names:</head>
-<corpname encodinganalog="610$a">Isle of Wight County (Va.) Circuit Court.</corpname>
-</controlaccess>
-<controlaccess>
-<head>Subjects:</head>
-<subject source="lcsh" encodinganalog="650$a">Christian sects--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Clergy--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Commissions--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Committees--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Domestic animals--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Land value taxation--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Marriage--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Personal property--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Real property--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Slaveholders--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Society of Friends--Marriage--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Society of Friends--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Taxation of personal property--Virginia--Isle of Wight County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Tax collection--Virginia--Isle of Wight County.</subject>
-</controlaccess>
-<controlaccess>
-<head>Geographical Names:</head>
-<geogname source="lcsh" encodinganalog="651$a">Isle of Wight County (Va.)--History.</geogname>
-</controlaccess>
-<controlaccess>
-<head>Genre and Form Terms:</head>
-<genreform source="aat" encodinganalog="655$a">Estray records--Virginia--Isle of Wight County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Land records--Virginia--Isle of Wight County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Local government records--Virginia--Isle of Wight County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Marriage records--Virginia--Isle of Wight County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Ministers' returns--Virginia--Isle of Wight County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Processioners' returns--Virginia--Isle of Wight County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Reports--Virginia--Isle of Wight County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Tax records--Virginia--Isle of Wight County.</genreform>
-</controlaccess>
-<controlaccess>
-<head>Added Entry - Corporate Name:</head>
-<corpname encodinganalog="710$a">Isle of Wight County (Va.) County Court.</corpname>
-</controlaccess>
-</controlaccess>
-<dsc type="analyticover">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Corporate Names:</head>
+        <corpname encodinganalog="610$a">Isle of Wight County (Va.) Circuit Court.</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Christian sects--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Clergy--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Commissions--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Committees--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Domestic animals--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Land value taxation--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Marriage--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Personal property--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Real property--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Slaveholders--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Society of Friends--Marriage--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Society of Friends--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Taxation of personal property--Virginia--Isle of Wight County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Tax collection--Virginia--Isle of Wight County.</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+        <geogname source="lcsh" encodinganalog="651$a">Isle of Wight County (Va.)--History.</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre and Form Terms:</head>
+        <genreform source="aat" encodinganalog="655$a">Estray records--Virginia--Isle of Wight County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Land records--Virginia--Isle of Wight County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Local government records--Virginia--Isle of Wight County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Marriage records--Virginia--Isle of Wight County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Ministers' returns--Virginia--Isle of Wight County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Processioners' returns--Virginia--Isle of Wight County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Reports--Virginia--Isle of Wight County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Tax records--Virginia--Isle of Wight County.</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Added Entry - Corporate Name:</head>
+        <corpname encodinganalog="710$a">Isle of Wight County (Va.) County Court.</corpname>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="analyticover">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1006289">Isle of Wight County Records, 
-<unitdate type="inclusive">1876-1878
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Ended Causes, 1876-1878 Retail Liquor Reports, 1878 Insolvent Capitation Lists, 1878 Reports and Reports Accounts, 1877-1878.
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1006289">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1876-1878
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Ended Causes, 1876-1878 Retail Liquor Reports, 1878 Insolvent Capitation Lists, 1878 Reports and Reports Accounts, 1877-1878.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1006290">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1886-1890
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Board of Supervisors, Bonds/Commissions/Oaths, Fiduciary Records, Justice of the Peace Records,  Road and Bridge Records.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1006290">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1886-1890
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Board of Supervisors, Bonds/Commissions/Oaths, Fiduciary Records, Justice of the Peace Records,  Road and Bridge Records.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1006291">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1893-1903
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Sheriff, Tax and Fiscal Records, Justice of the Peace Records, Land Records and Fiduciary Records.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1006291">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1893-1903
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Sheriff, Tax and Fiscal Records, Justice of the Peace Records, Land Records and Fiduciary Records.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1006294">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1801-1903
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Claims, 1840 Fifas Capias, 1801, 1827, Guardian Accounts, 1823 Crop Liens, 1892-1903 Ordinary License Bonds, 1822-1824.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1006294">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1801-1903
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Claims, 1840 Fifas Capias, 1801, 1827, Guardian Accounts, 1823 Crop Liens, 1892-1903 Ordinary License Bonds, 1822-1824.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1006297">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1780-1816
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Judgments, 1816 Estate Papers, 1787 Unrecorded Deeds, 1799-1814 Wills, 1780-1782.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1006297">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1780-1816
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Judgments, 1816 Estate Papers, 1787 Unrecorded Deeds, 1799-1814 Wills, 1780-1782.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1114767">Isle of Wight County Records, 
-<unitdate type="inclusive">1775-1837
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Isle of Wight County (Va.) Various Record Series, 1775-1837, is a collection of original items from early county records related to the categories of tax, land, marriage and governmental activities. Leaves 1-14, 1778, cover appointments and returns from tax assessors. All taxable property was assessed in the county's three districts--including land and slaves. Processioners' reports are found on leaves 20-30 and span the years 1795-1796 and 1804. Ministers' Returns are recorded on leaves 44-72 and include the years 1785-1837.  Whether single or in the form of lists, these returns record the date of marriage and the names of both parties.  Returns frequently mentioned the minister's denomination.  Processioners' returns from 1824 comprise the largest section of the volume from leaves 73-159. Elected committees noted all business related to county affairs from 1775 to 1832 and are found on leaves 160-171. Leaves 15-19 were skipped in the course of numbering these items to compile this volume.  The volume was originally titled, Isle of Wight (Va.) Miscellany, 1775-1852.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1114767">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1775-1837
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Isle of Wight County (Va.) Various Record Series, 1775-1837, is a collection of original items from early county records related to the categories of tax, land, marriage and governmental activities. Leaves 1-14, 1778, cover appointments and returns from tax assessors. All taxable property was assessed in the county's three districts--including land and slaves. Processioners' reports are found on leaves 20-30 and span the years 1795-1796 and 1804. Ministers' Returns are recorded on leaves 44-72 and include the years 1785-1837.  Whether single or in the form of lists, these returns record the date of marriage and the names of both parties.  Returns frequently mentioned the minister's denomination.  Processioners' returns from 1824 comprise the largest section of the volume from leaves 73-159. Elected committees noted all business related to county affairs from 1775 to 1832 and are found on leaves 160-171. Leaves 15-19 were skipped in the course of numbering these items to compile this volume.  The volume was originally titled, Isle of Wight (Va.) Miscellany, 1775-1852.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1161441">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1821-1952
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Business Records, 1833-1952 School Records, 1821-1937 Sheriff, 1879-1886 Treasurer, 1905.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1161441">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1821-1952
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Business Records, 1833-1952 School Records, 1821-1937 Sheriff, 1879-1886 Treasurer, 1905.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1161442">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1803-1936
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Election Records, 1815-1936,  Military and Pension Records, 1803-1934.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1161442">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1803-1936
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Election Records, 1815-1936,  Military and Pension Records, 1803-1934.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1161449">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1773-1956
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Contracts for Personal Property (Personality), 1951, Estray Papers, 1783-1832, Health and Medical: Lunacy Papers, 1786-1939, Register of Doctors (Physicians and Surgeons), 1892, Small Pox Epidemic Papers, 1853, Juvenile and Domestic Relations, 1924-1934, Liens and Miscellaneous, 1950, Mechanics and Liens Records, 1890-1950, Power of Attorney, 1815-1956, Weapons Petitions to Carry, 1906-1937.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1161449">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1773-1956
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Contracts for Personal Property (Personality), 1951, Estray Papers, 1783-1832, Health and Medical: Lunacy Papers, 1786-1939, Register of Doctors (Physicians and Surgeons), 1892, Small Pox Epidemic Papers, 1853, Juvenile and Domestic Relations, 1924-1934, Liens and Miscellaneous, 1950, Mechanics and Liens Records, 1890-1950, Power of Attorney, 1815-1956, Weapons Petitions to Carry, 1906-1937.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1161454">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1778-1911
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Marriage Records and Vital Statistics, Marriage Statistics for Accomack-Amherst Counties, 1871, Tax and Fiscal Records: Land and Personal Property Tax Book, 1778 (Accession Number 13860), Oyster Tax List, 1905-1909; Treasurer, 1910-1911.  
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1161454">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1778-1911
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Marriage Records and Vital Statistics, Marriage Statistics for Accomack-Amherst Counties, 1871, Tax and Fiscal Records: Land and Personal Property Tax Book, 1778 (Accession Number 13860), Oyster Tax List, 1905-1909; Treasurer, 1910-1911.  
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1161457">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1803-1938
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Court Records: Plats from: Boundary Line Establishment, 1912, 1921, 1923, 1938; Circuit Court Judgments, 1823, 1827, 1934, 1938; Deeds, 1907; Ejectments, 1803(1793 Patent), 1878, 1883-1884, 1889-1890, 1909, 1911; Land Records, 1917,1924, 1926-1929.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1161457">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1803-1938
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Court Records: Plats from: Boundary Line Establishment, 1912, 1921, 1923, 1938; Circuit Court Judgments, 1823, 1827, 1934, 1938; Deeds, 1907; Ejectments, 1803(1793 Patent), 1878, 1883-1884, 1889-1890, 1909, 1911; Land Records, 1917,1924, 1926-1929.
 </p>
-</scopecontent>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1161460">Isle of Wight County Records, 
-<unitdate type="inclusive">circa 1754-1863
-</unitdate>
-</unittitle>
-</did>
-<scopecontent>
-<p>Commonwealth Causes, Judgments, Executions, Fiduciary Records, Officials Bonds, Tax and Fiscal, Criminal, 1754-1863. FRAGILE. DO NOT SERVE.
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1161460">Isle of Wight County Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">circa 1754-1863
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Commonwealth Causes, Judgments, Executions, Fiduciary Records, Officials Bonds, Tax and Fiscal, Criminal, 1754-1863. FRAGILE. DO NOT SERVE.
 </p>
-</scopecontent>
-</c01>
-</dsc>
-</archdesc>
+        </scopecontent>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

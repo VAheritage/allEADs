@@ -1,706 +1,800 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03434">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03434::A Guide to the Mary Lee Chapman Elkins collection, 1783-1966)//EN" "vi03434.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03434">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03434::A Guide to the Mary Lee Chapman Elkins collection, 1783-1966)//EN" "vi03434.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Mary Lee Chapman Elkins collection, <date>1783-1966</date>
-</titleproper>
-<subtitle id="sort">Elkins, Mary Lee Chapman collection, 1783-1966
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Mary Lee Chapman Elkins collection, <date era="ce" calendar="gregorian">1783-1966</date></titleproper>
+        <subtitle id="sort">Elkins, Mary Lee Chapman collection, 1783-1966
 <num type="collectionnumber">27856
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2012  By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>22 October 2012</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Mary Lee Chapman Elkins collection, <date>1783-1966</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">27856
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2012 
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Mary Lee Chapman Elkins collection, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1783-1966
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">27856
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">5.6 cu. ft. and 16 boxes
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012  By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">22 October 2012</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Mary Lee Chapman Elkins collection, <date era="ce" calendar="gregorian">1783-1966</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">27856
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2012 
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Mary Lee Chapman Elkins collection, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1783-1966
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">27856
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">5.6 cu. ft. and 16 boxes
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">Mary Lee Chapman Elkins
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Mary Lee Chapman Elkins
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Mary Lee Chapman Elkins. Papers, 1783-1966. Accession 27856. Personal papers collection, The Library of Virginia, Richmond, Virginia.
+        <p>Mary Lee Chapman Elkins. Papers, 1783-1966. Accession 27856. Personal papers collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Gift of Ethel C. E. Lau of Norristown, Pennsylvania.
+        <p>Gift of Ethel C. E. Lau of Norristown, Pennsylvania.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Mary Lee Chapman was born 13 September 1862 in York, Pennsylvania. She married Harvey Lincoln Elkins (1862-1935), a broker of Philadelphia, Pennsylvania, on 27 March 1889 and they had three children. Mary Lee Chapman Elkins conducted extensive genealogical research into her family's history. She died 3 August 1916 in Philadelphia.
+      <p>Mary Lee Chapman was born 13 September 1862 in York, Pennsylvania. She married Harvey Lincoln Elkins (1862-1935), a broker of Philadelphia, Pennsylvania, on 27 March 1889 and they had three children. Mary Lee Chapman Elkins conducted extensive genealogical research into her family's history. She died 3 August 1916 in Philadelphia.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Papers, 1783-1966, of Mary Lee Chapman Elkins (1862-1916) containing her correspondence and genealogical research files, as well as the bills of sale, correspondence, deeds, diary, and other papers of her ancestor James Riddick Wilson (1793-1852) of Smithfield, Virginia. Papers also include materials on and records of Norfolk and Norfolk County, Virginia. Also includes papers of Ethel C. E. Lau (1895-1968), who transcribed and arranged most of the papers.Mary Lee Chapman Elkins. Papers, 1783-1966. Accession 27856.
+      <p>Papers, 1783-1966, of Mary Lee Chapman Elkins (1862-1916) containing her correspondence and genealogical research files, as well as the bills of sale, correspondence, deeds, diary, and other papers of her ancestor James Riddick Wilson (1793-1852) of Smithfield, Virginia. Papers also include materials on and records of Norfolk and Norfolk County, Virginia. Also includes papers of Ethel C. E. Lau (1895-1968), who transcribed and arranged most of the papers.Mary Lee Chapman Elkins. Papers, 1783-1966. Accession 27856.
 </p>
-</scopecontent>
-<dsc type="combined">
-<head>Contents List
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="file"><did>
-<unittitle>Obituaries, notes, receipts, and miscellaneous papers, <unitdate type="inclusive">1899-1946</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>General correspondence, <unitdate type="inclusive">1888-1920</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">1906</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">1908</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">January-March 1909</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01><c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">April-July 1909</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">August-September 1909</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">October-December 1909, undated</unitdate></unittitle>
-<container label="Box" type="box">1</container>
-<container label="Folder" type="folder">8</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">January-March 1910</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">May-August 1910</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">September-November 1910</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">1911</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">1912</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">1913</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">January-September 1914</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">October-December 1914</unitdate></unittitle>
-<container label="Box" type="box">2</container>
-<container label="Folder" type="folder">8</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">January-February 1915</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">March 1915</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">April 1915</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">May-June 1915</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">July-October 1915</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">November-December, undated 1915</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">1916</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive">undated</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">8</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy: Ethel Chapman Elkins Lau correpondence, <unitdate type="inclusive">1930, 1945-1956, undated</unitdate></unittitle>
-<container label="Box" type="box">3</container>
-<container label="Folder" type="folder">9</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Mary Lee Chapman Elkins correspondence, transcriptions, volume I, correspondence with Fanny Blow Hunter, <unitdate type="inclusive">1909-1911</unitdate></unittitle>
-<container label="Box" type="box">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Mary Lee Chapman Elkins correspondence, transcriptions, volume II, correspondence with Fanny Blow Hunter, <unitdate type="inclusive">1911-1916</unitdate></unittitle>
-<container label="Box" type="box">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Mary Lee Chapman Elkins correspondence,transcriptions, volume III, general correspondence, <unitdate type="inclusive">1909-1916</unitdate></unittitle>
-<container label="Box" type="box">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Mary Lee Chapman Elkins and Ethel C. E. Lau correspondence, transcriptions, volume IV, general correspondence, <unitdate type="inclusive">1909-1946</unitdate></unittitle>
-<container label="Box" type="box">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Ballard family research, <unitdate type="inclusive">1490-1783</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Blow family research, <unitdate type="inclusive">1808-1894</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Burroughs family research (including Wright family), <unitdate type="inclusive">1563-1777</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Byrd family research</unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Conner family research, <unitdate type="inclusive">1707-1966</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Lawson family research, <unitdate type="inclusive">1668-1701</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Mallory family research, <unitdate type="inclusive">1643-1957</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Mason family research, <unitdate type="inclusive">1583-1714</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">8</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Moseley family research, <unitdate type="inclusive">1655-1794</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">9</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Parker family research, <unitdate type="inclusive">1654-1814</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">10</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Phripp family research, <unitdate type="inclusive">1644, 1744-1798</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">11</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Proby family research, <unitdate type="inclusive">1622-1839</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">12</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Riddick family research, <unitdate type="inclusive">1714-1907</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">13</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Thelaball family research, <unitdate type="inclusive">1707-1767</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">14</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Trevethan family research, <unitdate type="inclusive">1675-1738</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">15</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Wilson family research, <unitdate type="inclusive">1620-1915</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">16</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Wilson family research (including Byrd family), <unitdate type="inclusive">1656-1772</unitdate></unittitle>
-<container label="Box" type="box">6</container>
-<container label="Folder" type="folder">17</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Wright family research, <unitdate type="inclusive">1540-1721</unitdate></unittitle>
-<container label="Box" type="box">7</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Wright family research (including Jones, Mallory families), <unitdate type="inclusive">1590-1851</unitdate></unittitle>
-<container label="Box" type="box">7</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Wright family research, <unitdate type="inclusive">1608-1913</unitdate></unittitle>
-<container label="Box" type="box">7</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Wright family research, <unitdate type="inclusive">1627-1849</unitdate></unittitle>
-<container label="Box" type="box">7</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Wright family research (including Phripp family), <unitdate type="inclusive">1653-1862</unitdate></unittitle>
-<container label="Box" type="box">7</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Burgess, Carney, Conner, Craford, Wright, Cary</unittitle>
-<container label="Box" type="box">8</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Byrd, Chapman, Conner, Phripp, Wilson, Wright</unittitle>
-<container label="Box" type="box">8</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Church, Phillips, Wilson, Wright, Mason</unittitle>
-<container label="Box" type="box">8</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Conner, Craford, Mason, Thelaball, Wilson, Wright, Baker</unittitle>
-<container label="Box" type="box">8</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Phillips, Seawell, Wilson, Wright, Conner, Mason</unittitle>
-<container label="Box" type="box">8</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Bromley, Chapman, Green, Mason, Phillips, Wilson, Wright</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Chapman, Church, Conner, Craford, Mason, Wilson, Wright</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Chapman, Moseley, Wilson, Wright, Conner, Church, Phripp, Mason</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Conner, Craford, Martin, Mason, Phillips, Phripp, Rogers, Wilson, Wright</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Mason, Phripp, Seawell, Willoughby</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Mason, Phripp, Rogers, Seawell, Willoughby, Wright</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Mason, Phripp, Wright, Church, Griffin</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Mason, Wright</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">8</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: Wilson, Wright, Riddick, Chapman, Mason</unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">9</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Family research: names from Hakluyt's <title render="italic">Principal Voyages of the British Nation</title></unittitle>
-<container label="Box" type="box">9</container>
-<container label="Folder" type="folder">10</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Norfolk's Silver Mace</unittitle>
-<container label="Box" type="box">10</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Old Saint Paul's caldendar, <unitdate type="inclusive">1905</unitdate></unittitle>
-<container label="Box" type="box">10</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Virginia land patents (folder 1 of 3)</unittitle>
-<container label="Box" type="box">10</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Virginia land patents (folder 2 of 3)</unittitle>
-<container label="Box" type="box">10</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Virginia land patents (folder 3 of 3)</unittitle>
-<container label="Box" type="box">10</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy research: <title render="italic">North Carolina Historical and Genealogical Register</title>, volumes 1-3, excerpts</unittitle>
-<container label="Box" type="box">10</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Genealogy research: miscellaneous</unittitle>
-<container label="Box" type="box">10</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Early Norfolk County records, Portsmouth, Virginia, volume I</unittitle>
-<container label="Box" type="box">11</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Early Norfolk County records, Portsmouth, Virginia, volume II</unittitle>
-<container label="Box" type="box">11</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Early Norfolk County records, Portsmouth, Virginia, volume III</unittitle>
-<container label="Box" type="box">12</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Early Norfolk County records, Portsmouth, Virginia, volume IV</unittitle>
-<container label="Box" type="box">12</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>Early Norfolk County records, Portsmouth, Virginia, volume V</unittitle>
-<container label="Box" type="box">13</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: diary, part I, <unitdate type="inclusive">1819-1820</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: diary, part II, <unitdate type="inclusive">2-23 September 1821</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: diary, part III, <unitdate type="inclusive">1834-1846</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: Memorandum for my Children, <unitdate type="inclusive">1846</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: letters, <unitdate type="inclusive">1840-1852, 1870</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: promissory notes, <unitdate type="inclusive">1811-1850</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: receipts, <unitdate type="inclusive">1817-1857</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: photographs</unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">8</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: miscellaneous papers, <unitdate type="inclusive">1784-1916</unitdate></unittitle>
-<container label="Box" type="box">14</container>
-<container label="Folder" type="folder">9</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: transcriptions, volume I</unittitle>
-<container label="Box" type="box">15</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: transcriptions, volume II</unittitle>
-<container label="Box" type="box">15</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: bills of sale, <unitdate type="inclusive">1788, 1839-1858</unitdate></unittitle>
-<container label="Box" type="box">16</container>
-<container label="Folder" type="folder">1</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive">1783-1798</unitdate></unittitle>
-<container label="Box" type="box">16</container>
-<container label="Folder" type="folder">2</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive">1813-1819</unitdate></unittitle>
-<container label="Box" type="box">16</container>
-<container label="Folder" type="folder">3</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive">1820-1825</unitdate></unittitle>
-<container label="Box" type="box">16</container>
-<container label="Folder" type="folder">4</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive">1831-1839</unitdate></unittitle>
-<container label="Box" type="box">16</container>
-<container label="Folder" type="folder">5</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive">1843-1849</unitdate></unittitle>
-<container label="Box" type="box">16</container>
-<container label="Folder" type="folder">6</container>
-</did>
-</c01>
-<c01 level="file"><did>
-<unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive">1850-1871</unitdate></unittitle>
-<container label="Box" type="box">16</container>
-<container label="Folder" type="folder">7</container>
-</did>
-</c01>
-</dsc>
-</archdesc>
+      <c01 level="file">
+        <did>
+          <unittitle>Obituaries, notes, receipts, and miscellaneous papers, <unitdate type="inclusive" era="ce" calendar="gregorian">1899-1946</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>General correspondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1888-1920</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1906</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1908</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">January-March 1909</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">April-July 1909</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">August-September 1909</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">October-December 1909, undated</unitdate></unittitle>
+          <container label="Box" type="box">1</container>
+          <container label="Folder" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">January-March 1910</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">May-August 1910</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">September-November 1910</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1911</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1912</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1913</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">January-September 1914</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">October-December 1914</unitdate></unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">January-February 1915</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">March 1915</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">April 1915</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">May-June 1915</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">July-October 1915</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">November-December, undated 1915</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1916</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Mary Lee Chapman Elkins correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">undated</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy: Ethel Chapman Elkins Lau correpondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1930, 1945-1956, undated</unitdate></unittitle>
+          <container label="Box" type="box">3</container>
+          <container label="Folder" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Mary Lee Chapman Elkins correspondence, transcriptions, volume I, correspondence with Fanny Blow Hunter, <unitdate type="inclusive" era="ce" calendar="gregorian">1909-1911</unitdate></unittitle>
+          <container label="Box" type="box">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Mary Lee Chapman Elkins correspondence, transcriptions, volume II, correspondence with Fanny Blow Hunter, <unitdate type="inclusive" era="ce" calendar="gregorian">1911-1916</unitdate></unittitle>
+          <container label="Box" type="box">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Mary Lee Chapman Elkins correspondence,transcriptions, volume III, general correspondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1909-1916</unitdate></unittitle>
+          <container label="Box" type="box">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Mary Lee Chapman Elkins and Ethel C. E. Lau correspondence, transcriptions, volume IV, general correspondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1909-1946</unitdate></unittitle>
+          <container label="Box" type="box">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Ballard family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1490-1783</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Blow family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1808-1894</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Burroughs family research (including Wright family), <unitdate type="inclusive" era="ce" calendar="gregorian">1563-1777</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Byrd family research</unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Conner family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1707-1966</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Lawson family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1668-1701</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Mallory family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1643-1957</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Mason family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1583-1714</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Moseley family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1655-1794</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Parker family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1654-1814</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">10</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Phripp family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1644, 1744-1798</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">11</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Proby family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1622-1839</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">12</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Riddick family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1714-1907</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">13</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Thelaball family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1707-1767</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">14</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Trevethan family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1675-1738</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">15</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Wilson family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1620-1915</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">16</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Wilson family research (including Byrd family), <unitdate type="inclusive" era="ce" calendar="gregorian">1656-1772</unitdate></unittitle>
+          <container label="Box" type="box">6</container>
+          <container label="Folder" type="folder">17</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Wright family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1540-1721</unitdate></unittitle>
+          <container label="Box" type="box">7</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Wright family research (including Jones, Mallory families), <unitdate type="inclusive" era="ce" calendar="gregorian">1590-1851</unitdate></unittitle>
+          <container label="Box" type="box">7</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Wright family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1608-1913</unitdate></unittitle>
+          <container label="Box" type="box">7</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Wright family research, <unitdate type="inclusive" era="ce" calendar="gregorian">1627-1849</unitdate></unittitle>
+          <container label="Box" type="box">7</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Wright family research (including Phripp family), <unitdate type="inclusive" era="ce" calendar="gregorian">1653-1862</unitdate></unittitle>
+          <container label="Box" type="box">7</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Burgess, Carney, Conner, Craford, Wright, Cary</unittitle>
+          <container label="Box" type="box">8</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Byrd, Chapman, Conner, Phripp, Wilson, Wright</unittitle>
+          <container label="Box" type="box">8</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Church, Phillips, Wilson, Wright, Mason</unittitle>
+          <container label="Box" type="box">8</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Conner, Craford, Mason, Thelaball, Wilson, Wright, Baker</unittitle>
+          <container label="Box" type="box">8</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Phillips, Seawell, Wilson, Wright, Conner, Mason</unittitle>
+          <container label="Box" type="box">8</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Bromley, Chapman, Green, Mason, Phillips, Wilson, Wright</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Chapman, Church, Conner, Craford, Mason, Wilson, Wright</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Chapman, Moseley, Wilson, Wright, Conner, Church, Phripp, Mason</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Conner, Craford, Martin, Mason, Phillips, Phripp, Rogers, Wilson, Wright</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Mason, Phripp, Seawell, Willoughby</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Mason, Phripp, Rogers, Seawell, Willoughby, Wright</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Mason, Phripp, Wright, Church, Griffin</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Mason, Wright</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: Wilson, Wright, Riddick, Chapman, Mason</unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Family research: names from Hakluyt's <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Principal Voyages of the British Nation</title></unittitle>
+          <container label="Box" type="box">9</container>
+          <container label="Folder" type="folder">10</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Norfolk's Silver Mace</unittitle>
+          <container label="Box" type="box">10</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Old Saint Paul's caldendar, <unitdate type="inclusive" era="ce" calendar="gregorian">1905</unitdate></unittitle>
+          <container label="Box" type="box">10</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Virginia land patents (folder 1 of 3)</unittitle>
+          <container label="Box" type="box">10</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Virginia land patents (folder 2 of 3)</unittitle>
+          <container label="Box" type="box">10</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Virginia land patents (folder 3 of 3)</unittitle>
+          <container label="Box" type="box">10</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy research: <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">North Carolina Historical and Genealogical Register</title>, volumes 1-3, excerpts</unittitle>
+          <container label="Box" type="box">10</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Genealogy research: miscellaneous</unittitle>
+          <container label="Box" type="box">10</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Early Norfolk County records, Portsmouth, Virginia, volume I</unittitle>
+          <container label="Box" type="box">11</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Early Norfolk County records, Portsmouth, Virginia, volume II</unittitle>
+          <container label="Box" type="box">11</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Early Norfolk County records, Portsmouth, Virginia, volume III</unittitle>
+          <container label="Box" type="box">12</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Early Norfolk County records, Portsmouth, Virginia, volume IV</unittitle>
+          <container label="Box" type="box">12</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Early Norfolk County records, Portsmouth, Virginia, volume V</unittitle>
+          <container label="Box" type="box">13</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: diary, part I, <unitdate type="inclusive" era="ce" calendar="gregorian">1819-1820</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: diary, part II, <unitdate type="inclusive" era="ce" calendar="gregorian">2-23 September 1821</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: diary, part III, <unitdate type="inclusive" era="ce" calendar="gregorian">1834-1846</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: Memorandum for my Children, <unitdate type="inclusive" era="ce" calendar="gregorian">1846</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: letters, <unitdate type="inclusive" era="ce" calendar="gregorian">1840-1852, 1870</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: promissory notes, <unitdate type="inclusive" era="ce" calendar="gregorian">1811-1850</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: receipts, <unitdate type="inclusive" era="ce" calendar="gregorian">1817-1857</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: photographs</unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: miscellaneous papers, <unitdate type="inclusive" era="ce" calendar="gregorian">1784-1916</unitdate></unittitle>
+          <container label="Box" type="box">14</container>
+          <container label="Folder" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: transcriptions, volume I</unittitle>
+          <container label="Box" type="box">15</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: transcriptions, volume II</unittitle>
+          <container label="Box" type="box">15</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: bills of sale, <unitdate type="inclusive" era="ce" calendar="gregorian">1788, 1839-1858</unitdate></unittitle>
+          <container label="Box" type="box">16</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive" era="ce" calendar="gregorian">1783-1798</unitdate></unittitle>
+          <container label="Box" type="box">16</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive" era="ce" calendar="gregorian">1813-1819</unitdate></unittitle>
+          <container label="Box" type="box">16</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive" era="ce" calendar="gregorian">1820-1825</unitdate></unittitle>
+          <container label="Box" type="box">16</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive" era="ce" calendar="gregorian">1831-1839</unitdate></unittitle>
+          <container label="Box" type="box">16</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive" era="ce" calendar="gregorian">1843-1849</unitdate></unittitle>
+          <container label="Box" type="box">16</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>James Riddick Wilson papers: deeds, <unitdate type="inclusive" era="ce" calendar="gregorian">1850-1871</unitdate></unittitle>
+          <container label="Box" type="box">16</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

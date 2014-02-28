@@ -1,158 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00956">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00956::A Guide to the Virginia Convention (1861: Richmond), Records, 1861-1961 (bulk 1861)//EN&amp;#34; &amp;#34;vi00956.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00956">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00956::A Guide to the Virginia Convention (1861: Richmond), Records, 1861-1961 (bulk 1861)//EN&amp;#34; &amp;#34;vi00956.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00956::A Guide to the Virginia
              Convention (1861: Richmond), Records, 1861-1961 (bulk
              1861)//EN" "vi00956.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginia Convention (1861:
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginia Convention (1861:
             Richmond), Records, 
-            <date>1861-1961 (bulk 1861)</date></titleproper>
-            <subtitle id="sort">Virginia Convention (1861: Richmond),
+            <date era="ce" calendar="gregorian">1861-1961 (bulk 1861)</date></titleproper>
+        <subtitle id="sort">Virginia Convention (1861: Richmond),
             Records, 1861-1961 (bulk 1861) 
             <num type="collectionnumber">20228, 23877a, 23877d, 29711,
             34887, 40585 and 40586</num></subtitle>
-            <author>Roger Christman</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Roger Christman</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 3 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MS word
+        </p>
+        <p id="filesize">ca. 3 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS word
          document. Created by Roger Christman 
-         <date>2003 June 2</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">2003 June 2</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00956::A Guide to the Virginia Convention (1861:
             Richmond), Records, 1861-1961 (bulk 1861)//EN"
             "vi00956.xml" converted from EAD 1.0 to 2002 by v1to02.xsl
             (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia Convention (1861:
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia Convention (1861:
          Richmond), Records, 
-         <date>1861-1961 (bulk 1861)</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1861-1961 (bulk 1861)</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">20228, 23877a, 23877d, 29711,
          34887, 40585 and 40586</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Roger Christman</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Records, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Roger Christman</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Records, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1861-1961</unitdate></unittitle>
-         <unitid label="Accession number">20228, 23877a, 23877d, 29711,
+      <unitid label="Accession number">20228, 23877a, 23877d, 29711,
          34887, 40585 and 40586</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <physloc label="Physical Location">State Records Collection,
          Virginia Convention (1861: Richmond) (Record Group
          93)</physloc>
-         <physdesc label="Physical Characteristics">2.11 cubic feet,
+      <physdesc label="Physical Characteristics">2.11 cubic feet,
          four volumes and 1 reel of microfilm</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Virginia Convention (1861:
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Virginia Convention (1861:
          Richmond)</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>Original Ordinance of Secession restricted. Serve
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>Original Ordinance of Secession restricted. Serve
             Photostat.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia Convention (1861: Richmond), [specific series],
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia Convention (1861: Richmond), [specific series],
             [dates]. [specific accession number], State Records
             Collection, The Library of Virginia, Richmond,
             Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>These records came in several accessions. See catalogue
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>These records came in several accessions. See catalogue
             record for details.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>The Convention of 1861 met from 13 February 1861 to 1 May 1861 (when they voted for session); the convention adjourned to wait for the results of the referendum and returned 12 June to 1 July 1861.  The second adjourned session met from 13 November to 6 December 1861. The
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>The Convention of 1861 met from 13 February 1861 to 1 May 1861 (when they voted for session); the convention adjourned to wait for the results of the referendum and returned 12 June to 1 July 1861.  The second adjourned session met from 13 November to 6 December 1861. The
          firing on Fort Sumter, on 12 April, ignited the confederates
          to action. On 17 April 1861, the Virginia Convention voted
          eighty-eight to fifty-five to secede from the United States of
@@ -169,16 +149,16 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          met again to draft a new state constitution and adjourned on 6
          December 1861. The new constitution was submitted to the
          voters for approval, but it was defeated.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>The Virginia Constitutional Convention records are
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>The Virginia Constitutional Convention records are
          organized into three series. Series have been designated for
          Election records, Convention records and Ordinance of
          Secession records.</p>
-         <p>Series #1: Election Records, 1861 This series is divided
+      <p>Series #1: Election Records, 1861 This series is divided
          into three sub-series:</p>
-         <p>Subseries A: Election of Delegates, 4 February 1861. This
+      <p>Subseries A: Election of Delegates, 4 February 1861. This
          subseries consists of election certificates from the special
          election held to elect delegates to the convention of 1861.
          The election was held 4 February 1861. Also included are
@@ -187,7 +167,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          be ratified by popular vote? These records are filed together
          and are arranged alphabetically by locality. Records are not
          extant for all localities.</p>
-         <p>Subseries B: Special Election of Delegates, 24 October 1861
+      <p>Subseries B: Special Election of Delegates, 24 October 1861
          (to fill vacancies). This election was held in order to fill
          vacancies in the Secession Convention caused by the expulsion
          of certain delegates from the western counties. These
@@ -214,7 +194,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          election. However, the text of the proclamation does not call
          for a specific election. [above subseries description written
          by T. Headlee, c. July 1964]</p>
-         <p>Subseries C: Referendum Election Returns, 23 May 1861. This
+      <p>Subseries C: Referendum Election Returns, 23 May 1861. This
          subseries consists of abstracts and/or poll books from the
          referendum on the ordinance of secession and the taxation
          amendment to the Virginia constitution. The referendum was
@@ -222,9 +202,9 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          military encampment. Also included are election statements on
          the finally tally of votes for both referendum questions.
          Returns are not extant for all localities.</p>
-         <p>Series #2: Convention Records, 1861 This series is divided
+      <p>Series #2: Convention Records, 1861 This series is divided
          into two subseries:</p>
-         <p>Subseries A: Ordinances, 1861. This subseries consists of
+      <p>Subseries A: Ordinances, 1861. This subseries consists of
          ordinances, arranged numerically, passed by the Convention in
          its three sessions. Ordinances 1-48 were passed during the
          May-June 1861 session; 50-88 were passed in June-July 1861;
@@ -235,7 +215,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          published in volume II of Journals and Papers of the Virginia
          State Convention of 1861. Also included is an oversize volume
          of convention ordinances, resolutions and schedules.</p>
-         <p>Subseries B: Miscellaneous Records, 1861. This subseries
+      <p>Subseries B: Miscellaneous Records, 1861. This subseries
          consists of reports, arranged chronologically, submitted to
          the Convention. Many of these reports were published in volume
          III of Journals and Papers of the Virginia State Convention of
@@ -246,7 +226,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          are available only on microfilm (Miscellaneous Reel 571). The
          original is part of the Brock Collection, Huntington Library,
          California.</p>
-         <p>Series #3: Ordinance of Secession, 1861-1961 This series
+      <p>Series #3: Ordinance of Secession, 1861-1961 This series
          contains the original Ordinance of Secession along with
          correspondence and affidavits documenting ownership after its
          removal from Richmond during the Civil War until its return to
@@ -263,649 +243,649 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          as correspondence and research notes by Library of Virginia
          staff concerning the history and ownership of these various
          editions of the Ordinance.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Organized into the following three (3) series: I. Election
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Organized into the following three (3) series: I. Election
          Records, 1861; II. Convention Records, 1861; and III.
          Ordinance of Secession Records, 1861-1961.</p>
-      </arrangement>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle>Series I. Election Records, 
-               <unitdate type="inclusive">1861</unitdate></unittitle>
-               <physdesc>0.68 cubic feet and 3 volumes</physdesc>
-            </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries A: Election of Delegates, 4
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Series I. Election Records, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1861</unitdate></unittitle>
+          <physdesc>0.68 cubic feet and 3 volumes</physdesc>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries A: Election of Delegates, 4
                   February 1861 (accession 40586)</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Accomack County - Frederick
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Accomack County - Frederick
                      County</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      1</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Giles County - Northampton
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Giles County - Northampton
                      County</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Ohio County - York
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Ohio County - York
                      County/Williamsburg</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      3</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries B: Special Election of
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries B: Special Election of
                   Delegates, 24 October 1861 (to fill vacancies, etc.)
                   (accession 40586)</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Augusta, Brooke, Harrison, Lewis,
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Augusta, Brooke, Harrison, Lewis,
                      Marion, Ohio (see oversize), Preston, Prince
                      William and Taylor counties</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      4</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries C: Referendum Election Returns,
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries C: Referendum Election Returns,
                   23 May 1861 (accession 40586)</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Statement of Vote on Referendum:
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Statement of Vote on Referendum:
                      Ordinance of Secession, 23 May 1861 (Virginia
                      State Library tabulation arranged by locality;
                      prepared by Mrs. Bertie C. Smith, Reference
                      Librarian, General Library Division,
                      VSL)</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      5</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Governor's Proclamation - Ratification
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Governor's Proclamation - Ratification
                      of Taxation Amendment to State Constitution (total
                      votes for and against), 14 June 1861 (2 copies -
                      original and draft)</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      6</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Governor's Proclamation - Ratification
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Governor's Proclamation - Ratification
                      of Ordinance of Secession (total votes for and
                      against), 14 June 1861 (rough draft) Note official
                      proclamation is printed in RICHMOND ENQUIER, 20
                      June 1861, page 3</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      7</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>"Estimate of Supposed Vote" -
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>"Estimate of Supposed Vote" -
                      Ratification of Ordinance of Secession, no
                      date</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      8</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Albemarle County - Frederick County
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Albemarle County - Frederick County
                      (see also oversize)</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      9</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Giles County - Montgomery
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Giles County - Montgomery
                      County</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      10</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Nansemond County - Wythe
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Nansemond County - Wythe
                      County</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      11</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Statement of Vote, Military
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Statement of Vote, Military
                      Encampments, on Referendum: Ordinance of
                      Secession, 23 May 1861 (see oversize)</unittitle>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Poll Books, Various Military
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Poll Books, Various Military
                      Encampments (see also oversize)</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      12</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Poll Books, Various Military
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Poll Books, Various Military
                      Encampments</unittitle>
-                     <container label="Box" type="Box">2</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">2</container>
+              <container label="Folder" type="Folder">
                      1</container>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Volume - Poll Books, Various Military
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Volume - Poll Books, Various Military
                      Encampments (Volume 1, Culpeper County-Henrico
                      County) (accession 40585)</unittitle>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Volume - Poll Books, Various Military
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Volume - Poll Books, Various Military
                      Encampments (Volume 2, James City County - King
                      William County) (accession 40585)</unittitle>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Volume - Poll Books, Various Military
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Volume - Poll Books, Various Military
                      Encampments (Volume 3, Nansemond County-Richond
                      City) (accession 40585)</unittitle>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series II. Convention Records,
-               1861</unittitle>
-               <physdesc>0.825 cubic feet and one reel of
-               microfilm</physdesc>
             </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries A: Ordinances, 1861 (accession
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series II. Convention Records,
+               1861</unittitle>
+          <physdesc>0.825 cubic feet and one reel of
+               microfilm</physdesc>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries A: Ordinances, 1861 (accession
                   40586) (see also oversize)</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 2, 4, 7 and 10</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 2, 4, 7 and 10</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      1</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 11-19</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 11-19</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 20-27 and 29</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 20-27 and 29</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      3</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 31, 33-34 and 36-39</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 31, 33-34 and 36-39</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      4</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 40-42 and 44-48 [note: Number
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 40-42 and 44-48 [note: Number
                      49 appears to have been omitted; however, the
                      handwritten numbers (begining with 50) do not
                      corresponde with the published ordinances in the
                      JOURNAL. They are off by one number.]</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      5</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 50-59</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 50-59</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      6</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 60-69</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 60-69</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      7</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 70-79</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 70-79</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      8</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Numbers 80-88</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Numbers 80-88</unittitle>
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      9</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Tabled or Rejected - 1861
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Tabled or Rejected - 1861
                      June</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      10</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Tabled or Rejected - 1861 November and
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Tabled or Rejected - 1861 November and
                      No Date</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      11</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries B: Miscellaneous Records
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries B: Miscellaneous Records
                   (accession 40586)</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Reports: February-December
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Reports: February-December
                      1861</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      12</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Resolutions: April-June 1861 and No
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Resolutions: April-June 1861 and No
                      Date</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      13</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Petitions and Memorials, April, June
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Petitions and Memorials, April, June
                      1861 and No Date</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      14</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Miscellaneous Correspondence and
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Miscellaneous Correspondence and
                      Documents, 1861</unittitle>
-                     <container label="Box" type="Box">3</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">3</container>
+              <container label="Folder" type="Folder">
                      15</container>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Volume - Pay List of the Members of the
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Volume - Pay List of the Members of the
                      Convention of 1861</unittitle>
-                     <container label="Box" type="Box">4</container>
-                  </did>
-               </c03>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Microfilm - Miscellaneous Reel 571 -
+              <container label="Box" type="Box">4</container>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Microfilm - Miscellaneous Reel 571 -
                      Journal of the Committee on Federal Relations, 16
                      February 1861 - 30 March 1861 (accession 29711;
                      part of Brock Collection)</unittitle>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Series III. Ordinance of Secession, 1861-1961
-               (see also oversize)</unittitle>
             </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Research Notes and Correspondence -
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Series III. Ordinance of Secession, 1861-1961
+               (see also oversize)</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Research Notes and Correspondence -
                   Signatures on the copies of the Ordinances (National
                   Archives and Flegenheimer), No Date (accession
                   40586)</unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Research Notes and Correspondence -
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Research Notes and Correspondence -
                   Sources of Data on William Flegenheimer, No Date
                   (accession 40586)</unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Research Notes and Correspondence -
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Research Notes and Correspondence -
                   Enrolled Copy of Ordinance in the National Archives,
                   1900 and 1945 (accession 40586)</unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Research Notes and Correspondence -
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Research Notes and Correspondence -
                   Enrolled Copy of Ordinance in the National Archives,
                   1956 and 1961 (includes facsimile of National
                   Archives copy) (accession 40586)</unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Research Notes and Correspondence -
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Research Notes and Correspondence -
                   Letters and affidavits concerning return/ownership of
                   engrossed copy of Ordinance penned by William
                   Flegenheimer, 1887 and 1929 (accession
                   20228)</unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Research Notes and Correspondence -
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Research Notes and Correspondence -
                   Lithograph copies of ordinance, 1954-1959 (accession
                   40586)</unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Research Notes and Correspondence -
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Research Notes and Correspondence -
                   William James VAn Schreeven's Notes on the Ordinance
                   of Secession (accession 40586)</unittitle>
-                  <container label="Box" type="Box">5</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Oversize - Series I. Election Records,
+            <container label="Box" type="Box">5</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Oversize - Series I. Election Records,
                1861</unittitle>
-            </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries B: Special Election of
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries B: Special Election of
                   Delegates, 24 October 1861 (to fill vacancies, etc).
                   (accession 40586)</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Ohio County</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Ohio County</unittitle>
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      1</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries C: Referendum Election Returns,
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries C: Referendum Election Returns,
                   23 May 1861 (accession 40586)</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Alexandria County and Boone
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Alexandria County and Boone
                      County</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Statement of Vote, Military
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Statement of Vote, Military
                      Encampments, on Referendum: Ordinance of
                      Secession, 23 May 1861</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      3</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Poll Books, Military Encampments
-                     (Staunton)</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
-                     4</container>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Oversize - Series II. Convention Records,
-               1861</unittitle>
             </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Subseries A: Ordinances, 1861 (accession
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Poll Books, Military Encampments
+                     (Staunton)</unittitle>
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
+                     4</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Oversize - Series II. Convention Records,
+               1861</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Subseries A: Ordinances, 1861 (accession
                   40586)</unittitle>
-               </did>
-               <c03 level="item">
-                  <did>
-                     <unittitle>Volume - Ordinances, Resolutions and
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Volume - Ordinances, Resolutions and
                      Schedules, 1861</unittitle>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Convention Schedule for 6 December
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Convention Schedule for 6 December
                      1861</unittitle>
-                     <container label="Box" type="Box">Map Case
+              <container label="Box" type="Box">Map Case
                      24</container>
-                     <container label="Folder" type="Folder">Drawer
+              <container label="Folder" type="Folder">Drawer
                      2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Copy of Bill of Rights for 1861
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Copy of Bill of Rights for 1861
                      Virginia Constitution (accession
                      23877a)</unittitle>
-                     <container label="Box" type="Box">Map Case
+              <container label="Box" type="Box">Map Case
                      24</container>
-                     <container label="Folder" type="Folder">Drawer
+              <container label="Folder" type="Folder">Drawer
                      2</container>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Oversize - Series III. Ordinance of
-               Secession, 1861-1961</unittitle>
             </did>
-            <c02 level="item">
-               <did>
-                  <unittitle>Ordinance of Secession (William
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Oversize - Series III. Ordinance of
+               Secession, 1861-1961</unittitle>
+        </did>
+        <c02 level="item">
+          <did>
+            <unittitle>Ordinance of Secession (William
                   Flegenheimer parchment) (accession 20228) DO NOT
                   SERVE</unittitle>
-                  <container label="Box" type="Box">Vault</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (facsimile)
+            <container label="Box" type="Box">Vault</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (facsimile)
                   (accession 23877d)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (facsimile)
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (facsimile)
                   (accession 34887)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (facsimile on
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (facsimile on
                   linen) (accession 34877)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (two positive and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (two positive and
                   one negative photo static copies of Flegenheimer's
                   Ordinance) (accession 40586)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (three positive
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (three positive
                   photo static copies of National Archives copy of
                   Ordinance) (accession 40586)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (negative
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (negative
                   photostat) (Simons and Keiningham) (accession
                   40586)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (positive and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (positive and
                   negative photostat) (Hoyer and Ludwige-VHS)
                   (accession 40586)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Ordinance of Secession (positive and
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ordinance of Secession (positive and
                   negative photostat) (Charles L. Ludwig-VHS)
                   (accession 40586)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24'</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Photostat of newspaper articles, 1861
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Photostat of newspaper articles, 1861
                   (accession 40586)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Photo static copies of engrossed
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Photo static copies of engrossed
                   ordinances of the convention, 1861 (accession
                   40586)</unittitle>
-                  <container label="Box" type="Box">Map Case
+            <container label="Box" type="Box">Map Case
                   24</container>
-                  <container label="Folder" type="Folder">Drawer
+            <container label="Folder" type="Folder">Drawer
                   2</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

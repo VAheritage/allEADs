@@ -1,232 +1,229 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01802">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01802::A Guide to the Charles Adam Dempsey Papers, 1866-1941)//EN" "vi01802.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01802">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01802::A Guide to the Charles Adam Dempsey Papers, 1866-1941)//EN" "vi01802.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Charles Adam Dempsey Papers, <date>1866-1941</date>
-</titleproper>
-<subtitle id="sort">Dempsey, Charles Adam, Papers, 1866-1941
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Charles Adam Dempsey Papers, <date era="ce" calendar="gregorian">1866-1941</date></titleproper>
+        <subtitle id="sort">Dempsey, Charles Adam, Papers, 1866-1941
 <num type="collectionnumber">22976
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2006 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>26 May 2006</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Charles Adam Dempsey Papers, <date>1866-1941</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">22976
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Charles Adam Dempsey Papers, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1866-1941
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">22976
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a">12 leaves
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">26 May 2006</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Charles Adam Dempsey Papers, <date era="ce" calendar="gregorian">1866-1941</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">22976
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Charles Adam Dempsey Papers, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1866-1941
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">22976
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">12 leaves
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">Charles Adam Dempsey
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">Charles Adam Dempsey
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Charles Adam Dempsey Papers, 1866-1941.  Accession 22976.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
+        <p>Charles Adam Dempsey Papers, 1866-1941.  Accession 22976.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Gift, 15 January 1949, of Lena Lawson Dempsey, Richmond, Virginia.
+        <p>Gift, 15 January 1949, of Lena Lawson Dempsey, Richmond, Virginia.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Charles Adam Dempsey was born 15 November 1844 in Alexandria, Virginia. He was appointed to the United States Military Academy 1 September 1861, and graduated in 1865. Dempsey was commissioned a 2nd lieutenant, then promoted to 1st lieutenant 23 June 1865 and assigned to the 17 Infantry Regiment stationed on Hart's Island in New York. He was transferred to the 35th Infantry Regiment in Texas 21 September 1866. After being transferred to the 2nd Infantry Regiment, 3 June 1870, Dempsey served in Alabama, Idaho, and Nebraska, promoted to captain 9 February 1878. Commissioned a major of infantry 26 April 1898, Dempsey served in Cuba during the Spanish-American War. Promoted to lieutenant colonel 16 June 1899, Dempsey commanded troops in the Philippines from 1900 to 1901. Appointed a colonel of infantry 4 March 1901, Dempsey retired from active service 27 September 1901. He moved to Richmond, Virginia, and was recalled to military duty with the militia of Virginia, serving from 13 October to 20 January 1922. Dempsey and his wife Lena Lawson Dempsey had one son. Dempsey died 4 June 1941 in Richmond, Virginia, and was buried in Arlington National Cemetery.
+      <p>Charles Adam Dempsey was born 15 November 1844 in Alexandria, Virginia. He was appointed to the United States Military Academy 1 September 1861, and graduated in 1865. Dempsey was commissioned a 2nd lieutenant, then promoted to 1st lieutenant 23 June 1865 and assigned to the 17 Infantry Regiment stationed on Hart's Island in New York. He was transferred to the 35th Infantry Regiment in Texas 21 September 1866. After being transferred to the 2nd Infantry Regiment, 3 June 1870, Dempsey served in Alabama, Idaho, and Nebraska, promoted to captain 9 February 1878. Commissioned a major of infantry 26 April 1898, Dempsey served in Cuba during the Spanish-American War. Promoted to lieutenant colonel 16 June 1899, Dempsey commanded troops in the Philippines from 1900 to 1901. Appointed a colonel of infantry 4 March 1901, Dempsey retired from active service 27 September 1901. He moved to Richmond, Virginia, and was recalled to military duty with the militia of Virginia, serving from 13 October to 20 January 1922. Dempsey and his wife Lena Lawson Dempsey had one son. Dempsey died 4 June 1941 in Richmond, Virginia, and was buried in Arlington National Cemetery.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Papers, 1866-1941, of Charles Adam Dempsey (1844-1941) of Richmond, Virginia, consisting of commissions, 1866-1901, of Dempsey to various ranks in the United States Army. Papers also include a photograph, June 1922, of Colonel Dempsey; newspaper articles, 1940, on Dempsey as oldest living U. S. Military Academy graduate; and Dempsey's service record compiled by Major General Emory Sherwood Adams, adjutant general of the United States, 18 June 1941.
+      <p>Papers, 1866-1941, of Charles Adam Dempsey (1844-1941) of Richmond, Virginia, consisting of commissions, 1866-1901, of Dempsey to various ranks in the United States Army. Papers also include a photograph, June 1922, of Colonel Dempsey; newspaper articles, 1940, on Dempsey as oldest living U. S. Military Academy graduate; and Dempsey's service record compiled by Major General Emory Sherwood Adams, adjutant general of the United States, 18 June 1941.
 </p>
-</scopecontent>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </scopecontent>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>William Worth Dempsey papers, 1916-1918 (LVA accession 23831).
+        <p>William Worth Dempsey papers, 1916-1918 (LVA accession 23831).
 </p>
-</relatedmaterial>
-</descgrp>
-<dsc type="in-depth">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle>Commission, 
-<unitdate>20 April 1866, 
+      <c01 level="item">
+        <did>
+          <unittitle>Commission, 
+<unitdate era="ce" calendar="gregorian">20 April 1866, 
 </unitdate>appointing Dempsey a 1st lieutenant in the 17th Infantry Regiment of the United States Army dating from 23 June 1865, signed by President Andrew Johnson (1808-1875) and Secretary of War Edwin M. Stanton (1814-1869).
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Commission, 
-<unitdate>23 April 1866, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Commission, 
+<unitdate era="ce" calendar="gregorian">23 April 1866, 
 </unitdate>appointing Dempsey a 2nd lieutenant in the 17th Infantry Regiment dating from 23 June 1865, signed by Johnson and Stanton.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Commission, 
-<unitdate>11 April 1867, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Commission, 
+<unitdate era="ce" calendar="gregorian">11 April 1867, 
 </unitdate>appointing Dempsey a 1st lieutenant in the 35th Infantry Regiment dating from 23 June 1865, signed by Johnson and Stanton.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Commission, 
-<unitdate>27 April 1878, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Commission, 
+<unitdate era="ce" calendar="gregorian">27 April 1878, 
 </unitdate>appointing Dempsey a captain in the 2nd Infantry Regiment dating from 9 February 1878, signed by President Rutherford B. Hayes (1822-1893) and Secretary of War George W. McCrary (1835-1890).
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Commission, 
-<unitdate>7 June 1898, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Commission, 
+<unitdate era="ce" calendar="gregorian">7 June 1898, 
 </unitdate>appointing Dempsey a major of infantry dating from 26 April 1898, signed by President William McKinley (1843-1901) and Secretary of War, Russell A. Alger (1836-1907).
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Commission, 
-<unitdate>26 December 1899, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Commission, 
+<unitdate era="ce" calendar="gregorian">26 December 1899, 
 </unitdate>appointing Dempsey a lieutenant colonel of infantry dating from 16 June 1899, signed by McKinley and Secretary of War Elihu Root (1845-1937).
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Commission, 
-<unitdate>11 March 1901, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Commission, 
+<unitdate era="ce" calendar="gregorian">11 March 1901, 
 </unitdate>appointing Dempsey a colonel of infantry dating from 4 March 1901, signed by McKinley and Root.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Photograph, 
-<unitdate>June 1922, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Photograph, 
+<unitdate era="ce" calendar="gregorian">June 1922, 
 </unitdate>of Colonel Dempsey.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Two newspaper articles, 
-<unitdate>1940, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Two newspaper articles, 
+<unitdate era="ce" calendar="gregorian">1940, 
 </unitdate>on Dempsey as oldest living U. S. Military Academy graduate.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Dempsey's service record compiled 
-<unitdate>18 June 1941 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Dempsey's service record compiled 
+<unitdate era="ce" calendar="gregorian">18 June 1941 
 </unitdate>by Major General Emory Sherwood Adams, adjutant general of the United States.
 </unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

@@ -1,151 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00859">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00859::Virginia National Guard, Muster-In Rolls, 1916-1922)//EN&amp;#34; &amp;#34;vi00859.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00859">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00859::Virginia National Guard, Muster-In Rolls, 1916-1922)//EN&amp;#34; &amp;#34;vi00859.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00859::Virginia National Guard,
              Muster-In Rolls, 1916-1922)//EN" "vi00859.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginia National Guard,
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginia National Guard,
             Muster-In Rolls, 
-            <date>1916-1922</date></titleproper>
-            <subtitle id="sort">Virginia National Guard, Muster-In
+            <date era="ce" calendar="gregorian">1916-1922</date></titleproper>
+        <subtitle id="sort">Virginia National Guard, Muster-In
             Rolls, 1916-1922 
             <num type="collectionnumber">32116</num></subtitle>
-            <author>Craig S. Moore</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Craig S. Moore</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 3 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from VTLS
+        </p>
+        <p id="filesize">ca. 3 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from VTLS
          EasyPac. Created by Craig S. Moore 
-         <date>2003 March 18</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">2003 March 18</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00859::Virginia National Guard, Muster-In Rolls,
             1916-1922)//EN" "vi00859.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia National Guard, Muster-In
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia National Guard, Muster-In
          Rolls, 
-         <date>1916-1922</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1916-1922</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">32116</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Craig S. Moore</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Virginia National Guard, Muster-In
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Craig S. Moore</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Virginia National Guard, Muster-In
          Rolls, 
-         <unitdate type="inclusive" label="Date">
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1916-1922</unitdate></unittitle>
-         <unitid label="Accession number">32116</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <unitid label="Accession number">32116</unitid>
+      <physloc label="Physical Location">State Records Collection,
          Dept. of Military Affairs (Record Group 46)</physloc>
-         <physdesc label="Physical Characteristics">8
+      <physdesc label="Physical Characteristics">8
          volumes</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Virginia National
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Virginia National
          Guard</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>Use microfilm (Misc. reels 2084 &amp; 2085)</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia. National Guard. Muster-In rolls, 1916-1922.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>Use microfilm (Misc. reels 2084 &amp; 2085)</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia. National Guard. Muster-In rolls, 1916-1922.
             Accession 32116. State government records collection, The
             Library of Virginia, Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Transferred from the Dept. of Military Affairs, Virginia
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Transferred from the Dept. of Military Affairs, Virginia
             National Guard, 15 June 1984.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>Following the passage of the National Defense Act in 1916,
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>Following the passage of the National Defense Act in 1916,
          the Virginia State militia changed its name from the Virginia
          Volunteers to the Virginia National Guard. On March 9, 1916,
          Pancho Villa and a band of Mexican bandits raided the town of
@@ -159,7 +139,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          addition to the 1st Squadron of Cavalry and the 1st Field
          Artillery Battalion of the Virginia National Guard, were
          sent.</p>
-         <p>Shortly thereafter, the United States declared war on
+      <p>Shortly thereafter, the United States declared war on
          Germany on April 6, 1917, and all of Virginia's National Guard
          were drafted into Federal service. The 1st, 2nd, and 4th
          Infantry Regiments were combined to form the 116th Infantry
@@ -177,7 +157,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          as not to interfere with those units in existence before the
          war. The "provisional" designation was dropped in September
          1920 and the companies were again lettered.</p>
-         <p>Following the war, the Virginia National Guard consisted of
+      <p>Following the war, the Virginia National Guard consisted of
          the following units: 91st Infantry Brigade; 116th Infantry;
          183rd Infantry; 111th Field Artillery; Ambulance Battalion
          Headquarters, 104th Medical Regiment; Ambulance Co. No. 110;
@@ -194,7 +174,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          411th through 415th Companies Coast Artillery Corps were
          re-designated Batteries A through H of the 246th
          Artillery.</p>
-         <p>The 1st Regiment Field Artillery, having served as border
+      <p>The 1st Regiment Field Artillery, having served as border
          guard during the Punitive Expedition into Mexico, remained in
          Federal service when the United States declared war. In the
          summer of 1917, the 1st Battalion of Field Artillery expanded
@@ -209,7 +189,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          were called into Federal service on July 25, 1917, and the 9th
          Company on August 4. The 5th and 9th Companies reorganized as
          Batteries B and F, 60th Artillery, Coast Artillery Corps.</p>
-         <p>The Virginia Coast Artillery Corps was formed in 1916 and
+      <p>The Virginia Coast Artillery Corps was formed in 1916 and
          eventually consisted of 15 companies deployed, in part, to
          protect the harbor at Hampton Roads. The 1st and 2nd Batteries
          were converted to Companies A and B, 117th Train Headquarters
@@ -221,10 +201,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          14th Companies were organized and later called into service on
          May 1, 1918. These units became Companies A through E of the
          35th Artillery, Coast Artillery Corps.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Muster-In Rolls, 1921-1922: contains muster-in rolls for
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Muster-In Rolls, 1921-1922: contains muster-in rolls for
          the Virginia National Guard between 1921 and 1922. Muster
          rolls are included for the following units: 1st &amp; 2nd
          Provisional Infantry regiments; 1st Provisional Field
@@ -251,7 +231,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          records of the company. Lastly, each roll contains a
          recapitulation that enumerates those present and absent for
          duty.</p>
-         <p>Muster-In Rolls, 1st Field Artillery regiment, 1917:
+      <p>Muster-In Rolls, 1st Field Artillery regiment, 1917:
          contains muster-in rolls for the following companies within
          the 1st Field Artillery Regiment of the Virginia National
          Guard who served during the First World War: Batteries "A"
@@ -262,7 +242,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          company, and remarks (including furlough, sick, date reported,
          etc.). Each muster roll is certified by the company commander
          and the inspecting &amp; mustering officer.</p>
-         <p>Muster-In Rolls, 1st, 2nd, &amp; 4th Infantry Regiments,
+      <p>Muster-In Rolls, 1st, 2nd, &amp; 4th Infantry Regiments,
          1917: contain muster-in rolls for the 1st, 2nd, and 4th
          regiments of the Virginia National Guard during the First
          World War. Each regiment's musters include the following
@@ -278,7 +258,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          remarks (including furlough, sick, date reported, etc.). Each
          muster roll is certified by the company commander and the
          inspecting &amp; mustering officer.</p>
-         <p>Muster-In Rolls, 1st Squadron Cavalry, Virginia Coast
+      <p>Muster-In Rolls, 1st Squadron Cavalry, Virginia Coast
          Artillery Corps, and Other Miscellaneous Units, 1917: contain
          muster-in rolls for the following units of the Virginia
          National Guard who served during the First World War: Troops
@@ -291,7 +271,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          sick, date reported, etc.). Each muster roll is certified by
          the company commander and the inspecting &amp; mustering
          officer.</p>
-         <p>Muster-in rolls for the 4th Virginia Infantry Regiment, 1st
+      <p>Muster-in rolls for the 4th Virginia Infantry Regiment, 1st
          Field Artillery Regiment, and Coast Artillery Corps,
          1916-1917: contains muster-in rolls for the following units of
          the Virginia National Guard who served during the First World
@@ -304,7 +284,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          company, and remarks (including furlough, sick, date reported,
          etc.). Each muster roll is certified by the company commander
          and the inspecting &amp; mustering officer.</p>
-         <p>Muster-in rolls for the Virginia Coast Artillery and
+      <p>Muster-in rolls for the Virginia Coast Artillery and
          reorganized Virginia National Guard units, 1917-1920: contains
          muster-in rolls for the following units of the Virginia
          National Guard: 10th through 14th Coast Artillery Companies;
@@ -330,10 +310,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          records of the company. Lastly, each roll contains a
          recapitulation that enumerates those present and absent for
          duty.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Arranged into 8 volumes: Volume I, Muster-In Rolls,
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Arranged into 8 volumes: Volume I, Muster-In Rolls,
          1921-1922; Volume II, Muster-In Rolls, 1st Field Artillery
          regiment, 1917; Volumes III-V, Muster-In Rolls, 1st, 2nd,
          &amp; 4th Infantry Regiments, 1917; Volume VI, Muster-In
@@ -343,68 +323,68 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Artillery Regiment, and Coast Artillery Corps, 1916-1917; and
          Volume VIII, Muster-in rolls for the Virginia Coast Artillery
          and reorganized Virginia National Guard units, 1917-1920</p>
-      </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle>Muster-In Rolls, 
-               <unitdate type="inclusive">
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Muster-In Rolls, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1916-1922</unitdate></unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>1921-1922</unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1st Field Artillery Regiment, 
-                  <unitdate>1917</unitdate></unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1st Infantry Regiment, 
-                  <unitdate>1917</unitdate></unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>2nd Infantry Regiment, 
-                  <unitdate>1917</unitdate></unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>4th Infantry Regiment, 
-                  <unitdate>1917</unitdate></unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1st Squadron Cavalry, Virginia Coast
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>1921-1922</unittitle>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1st Field Artillery Regiment, 
+                  <unitdate era="ce" calendar="gregorian">1917</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1st Infantry Regiment, 
+                  <unitdate era="ce" calendar="gregorian">1917</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>2nd Infantry Regiment, 
+                  <unitdate era="ce" calendar="gregorian">1917</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>4th Infantry Regiment, 
+                  <unitdate era="ce" calendar="gregorian">1917</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1st Squadron Cavalry, Virginia Coast
                   Artillery Corps, and Other Miscellaneous Units, 
-                  <unitdate>1917</unitdate></unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>4th Infantry Regiment, 1st Field Artillery
+                  <unitdate era="ce" calendar="gregorian">1917</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>4th Infantry Regiment, 1st Field Artillery
                   Regiment, and Coast Artillery Corps, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1916-1917</unitdate></unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Virginia Coast Artilley and Reorganized
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Virginia Coast Artilley and Reorganized
                   Virginia National Guard Units, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1917-1920</unitdate></unittitle>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

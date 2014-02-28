@@ -1,694 +1,547 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi00616">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00616::A Guide to the Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry, 1985-1987)//EN" "vi00616.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00616">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00616::A Guide to the Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry, 1985-1987)//EN" "vi00616.xml"
 </eadid>
-
-<filedesc>
-
-<titlestmt>
-<titleproper>A Guide to the Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry, <date>1985-1987</date>
-</titleproper>
-
-<subtitle id="sort">Labor and Industry, Dept. of, Commissioner's correspondence and subject files
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry, <date era="ce" calendar="gregorian">1985-1987</date></titleproper>
+        <subtitle id="sort">Labor and Industry, Dept. of, Commissioner's correspondence and subject files
 <num type="collectionnumber">33972
-</num>
-</subtitle>
-
-</titlestmt>
-
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-
-<date type="publication">&copy; 2011  By The Library of Virginia. All Rights Reserved. 
-</date> 
-
-
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-
-</filedesc>
-
-
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Paige Neal, <date>4 April 2011</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-
-</eadheader>
-
-
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry, <date>1985-1987</date>
-</titleproper>
-
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">33972
-</num>
-</subtitle>
-
-
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-
-<publisher>Library of Virginia
+</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-
-<date type="publication">2011 
-</date> &contact;
-</titlepage>
-
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry,, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1985-1987
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">33972
-</unitid>
-
-<physdesc label="Extent" encodinganalog="300$a">2 cu. ft.
-</physdesc>
-
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2011  By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Paige Neal, <date era="ce" calendar="gregorian">4 April 2011</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry, <date era="ce" calendar="gregorian">1985-1987</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">33972
+</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2011 
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Commissioner's correspondence and subject files of the Virginia Dept. of Labor and Industry,, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1985-1987
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">33972
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">2 cu. ft.
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-
-</did>
-
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Virginia Dept. of Labor and Industry, Commissioner's correspondence and subject files, 1985-1987.  Accession 33972, State Records Collection, The Library of Virginia.
+        <p>Virginia Dept. of Labor and Industry, Commissioner's correspondence and subject files, 1985-1987.  Accession 33972, State Records Collection, The Library of Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Dept. of Labor and Industry, transferred and accessioned 20 June 1991.
+        <p>Dept. of Labor and Industry, transferred and accessioned 20 June 1991.
 </p>
-</acqinfo>
-
-<processinfo>
-<head>Processing Information
+      </acqinfo>
+      <processinfo>
+        <head>Processing Information
 </head>
-<p>This collection has been proecessed using minimal processing standards: the original arrangement has been maintained, the container list is brief and simple, the records have not been refoldered and fasteners have not been removed.
+        <p>This collection has been proecessed using minimal processing standards: the original arrangement has been maintained, the container list is brief and simple, the records have not been refoldered and fasteners have not been removed.
 </p>
-</processinfo>
-
-</descgrp>
-
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </processinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>The Dept. of Labor and Industry has its origins in the Bureau of Labor and Industrial Statistics, which was created by an act of the General Assembly passed on March 3, 1898. The General Assembly saw a need for an agency to compile and circulate data on the industrial pursuits of the state as they related to the commercial, industrial, social, educational, and sanitary condition of the laboring classes and to the permanent prosperity of the productive industries of the state. The name of the Bureau was changed to the Bureau of Labor and Industry on February 13, 1924.
+      <p>The Dept. of Labor and Industry has its origins in the Bureau of Labor and Industrial Statistics, which was created by an act of the General Assembly passed on March 3, 1898. The General Assembly saw a need for an agency to compile and circulate data on the industrial pursuits of the state as they related to the commercial, industrial, social, educational, and sanitary condition of the laboring classes and to the permanent prosperity of the productive industries of the state. The name of the Bureau was changed to the Bureau of Labor and Industry on February 13, 1924.
 </p>
-<p>Several divisions were added to the bureau to deal with a variety of labor related issues. The Division of Mines and Quarries was created in 1912 (duties of this division transferred to the newly created Dept. of Mines, Minerals and Energy in 1985) and joined the Division of Factory Inspection as a unit with the Bureau. In 1922 The Division of Women and Children was created to enforce child labor laws, the 10 hour work day limit and regulate issues related to the employment of women. The Division of State Public Employment Service was created in 1926 to help connect people seeking jobs and employers seeking workers (this division was eliminated in 1960 with the creation of the Virginia Employment Commission).
+      <p>Several divisions were added to the bureau to deal with a variety of labor related issues. The Division of Mines and Quarries was created in 1912 (duties of this division transferred to the newly created Dept. of Mines, Minerals and Energy in 1985) and joined the Division of Factory Inspection as a unit with the Bureau. In 1922 The Division of Women and Children was created to enforce child labor laws, the 10 hour work day limit and regulate issues related to the employment of women. The Division of State Public Employment Service was created in 1926 to help connect people seeking jobs and employers seeking workers (this division was eliminated in 1960 with the creation of the Virginia Employment Commission).
 </p>
-<p>The state government reorganization act of April 18, 1927 changed the name of the bureau to the Dept. of Labor and Industry and gave it the status of a regular administrative agency of the state. The governor appoints a commissioner, subject to confirmation by the General Assembly, who exercises supervision and control of the department. Several additional divisions were created in the department: Division of Apprenticeship Training (1938), Division of Factory, Institution and Mercantile Inspection (1951 - in 1967 this becomes the Division of Construction Safety Inspection and the Division of Industrial Safety), Advisory Council on Industrial Safety (1951), Safety Codes Commission (1962 - which later becomes the Safety and Health Codes Board), Division of OSHA Voluntary Compliance and Training (1977), Division of State Labor Law Administration (1978), Bureau of Occupational Health (1985 - transferred from Virginia Dept. of Health).
+      <p>The state government reorganization act of April 18, 1927 changed the name of the bureau to the Dept. of Labor and Industry and gave it the status of a regular administrative agency of the state. The governor appoints a commissioner, subject to confirmation by the General Assembly, who exercises supervision and control of the department. Several additional divisions were created in the department: Division of Apprenticeship Training (1938), Division of Factory, Institution and Mercantile Inspection (1951 - in 1967 this becomes the Division of Construction Safety Inspection and the Division of Industrial Safety), Advisory Council on Industrial Safety (1951), Safety Codes Commission (1962 - which later becomes the Safety and Health Codes Board), Division of OSHA Voluntary Compliance and Training (1977), Division of State Labor Law Administration (1978), Bureau of Occupational Health (1985 - transferred from Virginia Dept. of Health).
 </p>
-<p>Commissioners of the Dept. of Labor and Industry include: Archer P. Montague, 1898-1899; James B. Doherty, 1900-1917; C.G. Kizer, 1917-1918; John Hirschberg, 1919-1920; John Hopkins Hall, Jr., 1921-1937; Thomas B. Morton, 1938-1941; John Hopkins Hall, Jr., 1942-1949; Edmond M. Boggs, 1949-1977; Robert F. Beard, 1977-1982; Azie Taylor Morton, 1982-1983; Eva S. Teig, 1983-1985; Carol A. Amato, 1985-1994; Theron J. Bell, 1994-1998; John Mills Barr, 1998-2000; Jeffrey D. Brown 2000-2002; and C. Ray Davenport, 2002 - .
+      <p>Commissioners of the Dept. of Labor and Industry include: Archer P. Montague, 1898-1899; James B. Doherty, 1900-1917; C.G. Kizer, 1917-1918; John Hirschberg, 1919-1920; John Hopkins Hall, Jr., 1921-1937; Thomas B. Morton, 1938-1941; John Hopkins Hall, Jr., 1942-1949; Edmond M. Boggs, 1949-1977; Robert F. Beard, 1977-1982; Azie Taylor Morton, 1982-1983; Eva S. Teig, 1983-1985; Carol A. Amato, 1985-1994; Theron J. Bell, 1994-1998; John Mills Barr, 1998-2000; Jeffrey D. Brown 2000-2002; and C. Ray Davenport, 2002 - .
 </p>
-<p>The Dept. of Labor and Industry's primary responsibility is the administering and enforcing of occupational safety and occupational health activities in both the public and private sectors. The mission of the Dept. is to make Virginia a better place to work by promoting safe and healthful workplaces, best employment practices, and job training opportunities. The Dept. provides Virginians with a broad variety of services to employers and workers that range from workplace safety, assistance to companies in establishing apprenticeships, to collecting unpaid wages for workers.
+      <p>The Dept. of Labor and Industry's primary responsibility is the administering and enforcing of occupational safety and occupational health activities in both the public and private sectors. The mission of the Dept. is to make Virginia a better place to work by promoting safe and healthful workplaces, best employment practices, and job training opportunities. The Dept. provides Virginians with a broad variety of services to employers and workers that range from workplace safety, assistance to companies in establishing apprenticeships, to collecting unpaid wages for workers.
 </p>
-
-</bioghist>
-
-
-
-
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>This collection consists of the correspondence and subject files of Virginia Dept. of Labor and Industy Commissioner Carol A. Amato, 1985-1987.
+      <p>This collection consists of the correspondence and subject files of Virginia Dept. of Labor and Industy Commissioner Carol A. Amato, 1985-1987.
 </p>
-</scopecontent>
-<dsc type="combined">
-<head>Contents List
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-
-
-<c01 level="file">
-<did>
-<unittitle>Agreements - Housing and Community Development, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+      <c01 level="file">
+        <did>
+          <unittitle>Agreements - Housing and Community Development, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>AFL-CIO, 
-<unitdate type="inclusive">1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>AFL-CIO, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Apprenticeship - IASG development, 
-<unitdate type="inclusive">1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Apprenticeship - IASG development, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Apprenticeship - miscellaneous, 
-<unitdate type="inclusive">1987 and prior</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Apprenticeship - miscellaneous, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987 and prior</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Apprenticeship - miscellaneous, 
-<unitdate type="inclusive">1985-1986</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Apprenticeship - miscellaneous, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1986</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Apprenticeship - Regulatory review - Numeric Ratio - Apprenticeship to Journeymen, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Apprenticeship - Regulatory review - Numeric Ratio - Apprenticeship to Journeymen, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Apprenticeship - Regulatory review - Program Sponsorship and evaluation procedures, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Apprenticeship - Regulatory review - Program Sponsorship and evaluation procedures, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Asbestos, 
-<unitdate type="inclusive">1987 and prior</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Asbestos, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987 and prior</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-
-<c01 level="file">
-<did>
-<unittitle>Boiler and Pressure Valve Division, 
-<unitdate type="inclusive">1987 and prior</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Boiler and Pressure Valve Division, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987 and prior</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Center on Environmental Health, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Center on Environmental Health, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Commerce and Resources, Secretary of, 
-<unitdate type="inclusive">1985-1986</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Commerce and Resources, Secretary of, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1986</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Complaints, Strikes, etc., 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Complaints, Strikes, etc., 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Economic Development, Secretary of, 
-<unitdate type="inclusive">1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Economic Development, Secretary of, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Employment Commission, Virginia, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Employment Commission, Virginia, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>EEO, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>EEO, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Fair Labor Standards Act, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Fair Labor Standards Act, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Field Sanitation, 
-<unitdate type="inclusive">1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Field Sanitation, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Field Sanitation, 
-<unitdate type="inclusive">1986</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Field Sanitation, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1986</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Fiscal Study, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Fiscal Study, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Fourth Street Office Building, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Fourth Street Office Building, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>GAO Panel - Washington, DC, 
-<unitdate type="inclusive">1987 December 3</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>GAO Panel - Washington, DC, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987 December 3</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>General Services, Dept. of, 
-<unitdate type="inclusive">1987 and prior</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>General Services, Dept. of, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987 and prior</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Governor's Office, 
-<unitdate type="inclusive">1986-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Governor's Office, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1986-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Grants, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">1
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Grants, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">1
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Hazard Communication, 
-<unitdate type="inclusive">1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Hazard Communication, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Hazard Communication, 
-<unitdate type="inclusive">1985-1986</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Hazard Communication, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1986</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Health, Division of Occupational, 
-<unitdate type="inclusive">1985-1986</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Health, Division of Occupational, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1986</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Information Technology, Dept. of, 
-<unitdate type="inclusive">1987 and prior</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Information Technology, Dept. of, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987 and prior</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Internal Audit/Evaluation System Project, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Internal Audit/Evaluation System Project, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Labor Law Division, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Labor Law Division, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Labor, U.S. Dept. of, 
-<unitdate type="inclusive">1986-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Labor, U.S. Dept. of, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1986-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Legislation, 
-<unitdate type="inclusive">1986-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Legislation, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1986-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Masonry Contractors Association, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Masonry Contractors Association, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Memoranda of Understanding - miscellaneous, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Memoranda of Understanding - miscellaneous, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>NAGLO, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>NAGLO, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>OSHA, 
-<unitdate type="inclusive">1986 and prior</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>OSHA, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1986 and prior</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>OSHA, 
-<unitdate type="inclusive">1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>OSHA, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Personnel - miscellaneous (REVIEW), 
-<unitdate type="inclusive">1986-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Personnel - miscellaneous (REVIEW), 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1986-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Research and Statistics, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Research and Statistics, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Radford Arsenal, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Radford Arsenal, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Safety in the workplace, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Safety in the workplace, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>SCRRRAP (Paperwork Reductuion), 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>SCRRRAP (Paperwork Reductuion), 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Superfund, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Superfund, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Supervisors meetings (REVIEW), 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Supervisors meetings (REVIEW), 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Surry Nuclear Plant, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Surry Nuclear Plant, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Transportation, Dept. of, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Transportation, Dept. of, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Unionization of state employees, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Unionization of state employees, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>V OSH, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>V OSH, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Virginia Society of Professional Engineers, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Virginia Society of Professional Engineers, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>VOC/Technical Education Coordination Council, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>VOC/Technical Education Coordination Council, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-<c01 level="file">
-<did>
-<unittitle>Voluntary Compliance, 
-<unitdate type="inclusive">1985-1987</unitdate>
-</unittitle>
-<container label="Box" type="box">2
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Voluntary Compliance, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1985-1987</unitdate></unittitle>
+          <container label="Box" type="box">2
 </container>
-</did>
-</c01>
-
-
-
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
-
-
-
-
-

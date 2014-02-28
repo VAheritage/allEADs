@@ -1,161 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi01052">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-full-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi01052::A Guide to Virginia State Library, Office of the State Librarian. War Memorial Library Records, 1921-1924)//EN&amp;#34; &amp;#34;vi01052.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01052">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi01052::A Guide to Virginia State Library, Office of the State Librarian. War Memorial Library Records, 1921-1924)//EN&amp;#34; &amp;#34;vi01052.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi01052::A Guide to Virginia State
              Library, Office of the State Librarian. War Memorial
              Library Records, 1921-1924)//EN" "vi01052.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginia State Library, Office
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginia State Library, Office
             of the State Librarian, War Memorial Library Records 
-            <date>1921-1924</date>;</titleproper>
-            <subtitle id="sort">Virginia State Library, Office of the
+            <date era="ce" calendar="gregorian">1921-1924</date>;</titleproper>
+        <subtitle id="sort">Virginia State Library, Office of the
             State Librarian, War Memorial Library Records, 1921-1924 
             <num type="collectionnumber">40256</num></subtitle>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MS Word.
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word.
          Created by Laura E. Drake 
-         <date>23 February 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">23 February 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi01052::A Guide to Virginia State Library, Office
             of the State Librarian. War Memorial Library Records,
             1921-1924)//EN" "vi01052.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia State Library, Office of
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia State Library, Office of
          the State Librarian. War Memorial Library Records, 
-         <date>1921-1924</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1921-1924</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">40256</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Laura E. Drake</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Virginia State Library, Office of the
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Laura E. Drake</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Virginia State Library, Office of the
          State Librarian, War Memorial Library Records, 
-         <unitdate type="inclusive" label="Date">
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1921-1924</unitdate></unittitle>
-         <unitid label="Accession number">40256</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <unitid label="Accession number">40256</unitid>
+      <physloc label="Physical Location">State Records Collection,
          Library of Virginia (Record Group 35).</physloc>
-         <physdesc label="Physical Characteristics">.45 cubic
+      <physdesc label="Physical Characteristics">.45 cubic
          feet.</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia State Library. Office of the State Librarian.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia State Library. Office of the State Librarian.
             War Memorial Library Records, 1921-1924. Accession 40256,
             State Records Collection, The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Transferred.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>For many years, The Library of Virginia had no definitive
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Transferred.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>For many years, The Library of Virginia had no definitive
          home. Valuable early records were kept at Jamestown as early
          as 1676 and were then moved to the College of William and Mary
          for a brief period at the century's end. By 1780, extant
          records were moved to the Capitol in Richmond.</p>
-         <p>Coincidentally, in 1779, the Virginia General Assembly was
+      <p>Coincidentally, in 1779, the Virginia General Assembly was
          presented among its legislation, "A Bill for Establishing a
          Public Library" drawn up by Thomas Jefferson. The bill
          provided for 2000 pounds yearly to be expended to maintain a
          State Library in Richmond. The facility was to be a reference
          library only without books being lent for home use. Perhaps
          ahead of its time, the bill failed to pass.</p>
-         <p>The Virginia State Library was created by an act passed by
+      <p>The Virginia State Library was created by an act passed by
          the General Assembly on January 23, 1823, to establish a
          public library with funds derived from the sale of William W.
          Hening's THE STATUTES AT LARGE. From 1823 to 1828, the Library
@@ -167,7 +147,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          continued until at least 1856. The Secretary of the
          Commonwealth served ex officio as state librarian from 1832 to
          1903.</p>
-         <p>The growth of the State Library was somewhat erratic. Book
+      <p>The growth of the State Library was somewhat erratic. Book
          holdings increased from 1,313 in 1828 to 17,480 in 1856. Lack
          of funds and politics frequently intermingled to slow library
          development. General W.H. Richardson, State Librarian in 1852,
@@ -176,7 +156,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Reconstruction, Dr. George William Bagby, then State
          Librarian, was terminated and his position abolished at the
          hands of Readjusters.</p>
-         <p>Eventually, on May 15, 1903, the General Assembly passed an
+      <p>Eventually, on May 15, 1903, the General Assembly passed an
          act that created a library board to administer the library,
          authorized the deposit of public records in the library,
          provided for the publication of historical records by the
@@ -186,7 +166,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          appointed by the Board of Education. The General Assembly
          passed an act on March 29, 1944, transferring the power to
          appoint the Library Board to the governor.</p>
-         <p>While many public records somehow survived the
+      <p>While many public records somehow survived the
          Commonwealth's early years, many losses occurred due to fires,
          the ravages of war and negligence. When the library was moved,
          for example, in 1895 to a building separate from the Capitol,
@@ -195,13 +175,13 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          dealer who had bought them." The move was poorly planned and
          the library's contents suffered great loss at the hands of
          those very authorities assigned to protect them.</p>
-         <p>The new facility quickly was found to be inadequate and
+      <p>The new facility quickly was found to be inadequate and
          efforts were made both in 1910 and 1920 to construct a proper
          building for the State Library and its collections. Ground was
          broken for the current facility on December 7, 1938. At last,
          on December 23, 1940, the newly completed Virginia State
          Library was opened to the public.</p>
-         <p>The Virginia State Library adopted the name, the Virginia
+      <p>The Virginia State Library adopted the name, the Virginia
          State Library and Archives, in early 1987 to more adequately
          reflect its mission and purpose today. In July 1, 1994 the
          name was changed to The Library of Virginia. It serves as a
@@ -219,10 +199,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          are the quarterly VIRGINIA CAVALCADE and the annual accession
          reports of the Archives and Records Division showing its most
          recent records and manuscript acquisitions.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Contains correspondence and notes related to the planning
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Contains correspondence and notes related to the planning
          of a War Memorial Library to serve as the new home of the
          Virginia State Library. Included in the collection are
          inquiries to other state libraries and major research
@@ -235,236 +215,236 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          constructed, and the Virginia State Library remained in the
          Old Finance Building until 1939, when it moved to the building
          at 11th Street and Capitol Square.</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>Alphabetical.</p>
-         </arrangement>
-         <arrangement>
-            <head>Organization</head>
-            <p>Arranged into one (1) series, Alphabetical Files.</p>
-         </arrangement>
+        <head>Arrangement</head>
+        <p>Alphabetical.</p>
       </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series I.">Alphabetical Files 
-               <unitdate type="inclusive">
+      <arrangement>
+        <head>Organization</head>
+        <p>Arranged into one (1) series, Alphabetical Files.</p>
+      </arrangement>
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series I.">Alphabetical Files 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1921-1924</unitdate></unittitle>
-               <container label="Box" type="Box">1</container>
-            </did>
-            <scopecontent>
-               <p>Contains correspondence and notes regarding the
+          <container label="Box" type="Box">1</container>
+        </did>
+        <scopecontent>
+          <p>Contains correspondence and notes regarding the
                planning of the War Memorial Library.</p>
-            </scopecontent>
-            <arrangement>
-               <p>Alphabetical</p>
-            </arrangement>
-            <c02 level="file">
-               <did>
-                  <unittitle>Call for Proposals</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: A</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: B</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: C</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: D</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: E</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: F</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: G</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: H</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: I</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+        </scopecontent>
+        <arrangement>
+          <p>Alphabetical</p>
+        </arrangement>
+        <c02 level="file">
+          <did>
+            <unittitle>Call for Proposals</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: A</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: B</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: C</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: D</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: E</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: F</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: G</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: H</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: I</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: J</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: J</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: K</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: K</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: L</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: L</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: M</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: M</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: N</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: N</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: P</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: P</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: P</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: P</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: R</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: R</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: S</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: S</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: T</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: T</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence: W</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence: W</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   20</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Correspondence in reference to joint
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Correspondence in reference to joint
                   meeting of the Library Board and War Memorial
                   Committee</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   21</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Inquiries to Other Libraries</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Inquiries to Other Libraries</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Notes</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Notes</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   23</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Oversize: A</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Oversize: A</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   24</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Photographs</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Photographs</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   25</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

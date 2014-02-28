@@ -1,662 +1,694 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01284">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01284::A Guide to the Martha Hill Newell Papers, 1933-2007)//EN" "vi01284.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01284">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01284::A Guide to the Martha Hill Newell Papers, 1933-2007)//EN" "vi01284.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Martha Hill Newell Papers, <date>1933-2007</date>
-</titleproper>
-<subtitle id="sort">Newell, Martha Hill Papers
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Martha Hill Newell Papers, <date era="ce" calendar="gregorian">1933-2007</date></titleproper>
+        <subtitle id="sort">Newell, Martha Hill Papers
 <num type="collectionnumber">43570
-</num>
-</subtitle>
-<author>Renee M. Savits
+</num></subtitle>
+        <author>Renee M. Savits
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2008  By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from being created directly into EAD, created by Renee M. Savits, <date>4 February 2008</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Martha Hill Newell Papers, <date>1933-2007</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">43570
-</num>
-</subtitle>
-<author>Renee M. Savits
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2008 
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Renee M. Savits
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Martha Hill Newell Papers, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1933-2007
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">43570
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">3.05 cu. ft. (7 boxes)
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2008  By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from being created directly into EAD, created by Renee M. Savits, <date era="ce" calendar="gregorian">4 February 2008</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Martha Hill Newell Papers, <date era="ce" calendar="gregorian">1933-2007</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">43570
+</num></subtitle>
+      <author>Renee M. Savits
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008 
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Renee M. Savits
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Martha Hill Newell Papers, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1933-2007
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">43570
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">3.05 cu. ft. (7 boxes)
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>To obtain the rights to produce one of the plays on file please contact the donor (caplay@comcast.net).
+        <p>To obtain the rights to produce one of the plays on file please contact the donor (caplay@comcast.net).
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Martha Hill Newell. Papers, 1933-2007. Personal papers collection, The Library of Virginia, Richmond.
+        <p>Martha Hill Newell. Papers, 1933-2007. Personal papers collection, The Library of Virginia, Richmond.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Gift of Dawn A. Westbrook-Boyd, Mechanicsville, 2007 December.
+        <p>Gift of Dawn A. Westbrook-Boyd, Mechanicsville, 2007 December.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Martha Hill Newell was born 26 July 1921 to Marshall Nelson Newell and Jessie Beatrice Hill in Richmond, Virginia. She received her undergraduate degree from William and Mary and master's degree from Richmond Polytechnic Institute. She was a drama consultant to the special education division of Richmond Public Schools and wrote plays for Richmond Children's Theatre. In 1955 she moved to New York where she worked for The Girl Scouts of America as their events chairwoman and as a book editor and writer for publishing firms. She was a member of The Dramatists Guild and very active in the theatre. In 1995 she returned to Richmond to continue writing, producing, and directing her own plays. She wrote more than twenty plays, including <title render="italic">The Day Joe Montana Retired</title>, <title render="italic">Dogs and Other Actors</title>, <title render="italic">Endings</title>, <title render="italic">Phillis Wheatley</title>, and <title render="italic">Wives, Babies, and VMI</title>. A resident of Westminster Canterbury in Richmond, she passed away 6 June 2007.
+      <p>Martha Hill Newell was born 26 July 1921 to Marshall Nelson Newell and Jessie Beatrice Hill in Richmond, Virginia. She received her undergraduate degree from William and Mary and master's degree from Richmond Polytechnic Institute. She was a drama consultant to the special education division of Richmond Public Schools and wrote plays for Richmond Children's Theatre. In 1955 she moved to New York where she worked for The Girl Scouts of America as their events chairwoman and as a book editor and writer for publishing firms. She was a member of The Dramatists Guild and very active in the theatre. In 1995 she returned to Richmond to continue writing, producing, and directing her own plays. She wrote more than twenty plays, including <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Day Joe Montana Retired</title>, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Dogs and Other Actors</title>, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Endings</title>, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Phillis Wheatley</title>, and <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Wives, Babies, and VMI</title>. A resident of Westminster Canterbury in Richmond, she passed away 6 June 2007.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Papers, 1933-2007, of Martha Hill Newell of Richmond, Virginia, and New York. The bulk of the collection consists of plays written by Newell, including stage notes, revisions, flyers, and programs. The collection also includes clippings, correspondence, teaching notes, and a yearbook from the 1933 class of Patrick Henry School in Richmond.
+      <p>Papers, 1933-2007, of Martha Hill Newell of Richmond, Virginia, and New York. The bulk of the collection consists of plays written by Newell, including stage notes, revisions, flyers, and programs. The collection also includes clippings, correspondence, teaching notes, and a yearbook from the 1933 class of Patrick Henry School in Richmond.
 </p>
-</scopecontent><dsc type="combined">
-<head>Contents List
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-	<c01 level="file">
-	<did>
-	<unittitle>Awards, 
-	<unitdate type="inclusive">1953</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">1
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Clippings, 
-	<unitdate type="inclusive">1938-2002 (bulk 2000-2002)</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">2
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Correspondence, 
-	<unitdate type="inclusive">1974-2003 (bulk 2002-2003)</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">3
-	</container>
-	
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>The Liberty Lovers Annual yearbook, Patrick Henry School, 
-	<unitdate type="inclusive">1933 Feb.</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">4
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Angel from Hell,
-	<unitdate type="inclusive">1949-1950</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">5
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, The Day Joe Montana Retired, 
-	<unitdate type="inclusive">1999-2005</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">6
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Dogs and Other Actors, 
-	<unitdate type="inclusive">2003-2004</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">7
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, The Elephant's Graveyard, 
-	<unitdate type="inclusive">2000-2004</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">8
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Endings, 
-	<unitdate type="inclusive">2001</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">9
-	</container>
-
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Names, 
-	<unitdate type="inclusive">ca. 2000</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">10
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Phillis Wheatley, 
-	<unitdate type="inclusive">1981-2007</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">11
-	</container>
-	
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Two By One, 
-	<unitdate type="inclusive">2002</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">12
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Wives, Babies, and VMI, 
-	<unitdate type="inclusive">2007</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">13
-	</container>
-
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Theatres, Barksdale Theatre, 
-	<unitdate type="inclusive">2006</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">14
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Theatres, Firehouse Theatre, 
-	<unitdate type="inclusive">2004</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">15
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Theatres, Green Mountain Playhouse, 
-	<unitdate type="inclusive">ca. 1960</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">16
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Theatres, Rice Playhouse, 
-	<unitdate type="inclusive">1952</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">17
-	</container>
-	
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Theatres, Virginia High School League, 
-	<unitdate type="inclusive">1976</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">18
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Flyers and programs, Misc. 
-	<unitdate type="inclusive">ca. 2000-2005</unitdate>.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">19
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Notes, Acting.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">20
-	</container>
-
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Notes, Actor-Director Workshop.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">21
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Notes, Playwriting class.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">22
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Notes, Misc.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">23-24
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Notes, Teaching.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">25
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Notes, Westminster-Canterbury.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">26
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Notes, Workshop.</unittitle>
-	<container label="Box" type="box">1
-	</container>
-	<container label="Folder" type="folder">27
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Production notes and research, Dogs and Other Actors.</unittitle>
-	<container label="Box" type="box">2
-	</container>
-	<container label="Folder" type="folder">1
-	</container>
-	
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Production notes and research, Endings.</unittitle>
-	<container label="Box" type="box">2
-	</container>
-	<container label="Folder" type="folder">2
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Production notes and research, Phillis Wheatley.</unittitle>
-	<container label="Box" type="box">2
-	</container>
-	<container label="Folder" type="folder">3-4
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Production notes and research, Miscellaneous.</unittitle>
-	<container label="Box" type="box">2
-	</container>
-	<container label="Folder" type="folder">5-7
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Resume.</unittitle>
-	<container label="Box" type="box">2
-	</container>
-	<container label="Folder" type="folder">8
-	</container>
-	
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Resume, Scrapbook.</unittitle>
-	<container label="Box" type="box">2
-	</container>
-	<container label="Folder" type="folder">9
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Framed program notes, <title render="italic">Manhattan Punch Line presents The Comedy Corps in Friends, Lovers, (And Others Beyond The Fringe)</title>.</unittitle>
-	<container label="Box" type="box">2
-	</container>
-	<container label="Folder" type="folder">10
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>A list of plays.</unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">1
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The Adventure of Herbert, A Story for Very Young People.</title></unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">2
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Alwasia and the Witch.</title></unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">3
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Angel from Hell.</title></unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">4-6
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Bosoms and Rhett Butler.</title></unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">7
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">A Cup of Clay.</title></unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">8
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The Day Joe Montana Retired.</title></unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">9-10
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Dogs and Other Actors.</title></unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">11
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The Elephant's Graveyard</title>.</unittitle>
-	<container label="Box" type="box">3
-	</container>
-	<container label="Folder" type="folder">12
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The Elephant's Graveyard</title>.</unittitle>
-	<container label="Box" type="box">4
-	</container>
-	<container label="Folder" type="folder">1-3
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Endings</title>.</unittitle>
-	<container label="Box" type="box">4
-	</container>
-	<container label="Folder" type="folder">4-9
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The English Lessons</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">1
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Follies</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">2
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The Free and the Brave</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">3-4
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The Frog Prince</title> and <title render="italic">Alwasia and the Witch</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">5
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">The Gift of Belief</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">6
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Mr. Monkey and the Magic Cobra</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">7
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Names</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">8-9
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Names</title>, Photographs.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">10
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, Our Town or <title render="italic">The Booster Club is Doing Our Town But I'm Too Old To Play Emily</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">11-12
-	</container>
-	</did>
-	</c01><c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Phillis, A Story of Phillis Wheatley, 1761-1784</title>.</unittitle>
-	<container label="Box" type="box">5
-	</container>
-	<container label="Folder" type="folder">13-14
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Phillis, A Story of Phillis Wheatley, 1761-1784</title>.</unittitle>
-	<container label="Box" type="box">6
-	</container>
-	<container label="Folder" type="folder">1-3
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Phillis, A Story of Phillis Wheatley, 1761-1784</title>.</unittitle>
-	<container label="Box" type="box">7
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Rumplestiltskin</title>.</unittitle>
-	<container label="Box" type="box">6
-	</container>
-	<container label="Folder" type="folder">4
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Sweet Revenge</title>.</unittitle>
-	<container label="Box" type="box">6
-	</container>
-	<container label="Folder" type="folder">5
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, Two short plays (or revue sketches), <title render="italic">Untitled</title>, and <title render="italic">Fish Gotta Swim Birds Gotta Fly</title>.</unittitle>
-	<container label="Box" type="box">6
-	</container>
-	<container label="Folder" type="folder">6
-	</container>
-	</did>
-	</c01>
-<c01 level="file">
-	<did>
-	<unittitle>Plays, <title render="italic">Wives, Babies, and VMI</title>.</unittitle>
-	<container label="Box" type="box">6
-	</container>
-	<container label="Folder" type="folder">7-11
-	</container>
-	</did>
-	</c01>
-</dsc>
-</archdesc>
+      <c01 level="file">
+        <did>
+          <unittitle>Awards, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1953</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">1
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Clippings, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1938-2002 (bulk 2000-2002)</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">2
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Correspondence, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1974-2003 (bulk 2002-2003)</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">3
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>The Liberty Lovers Annual yearbook, Patrick Henry School, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1933 Feb.</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">4
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Angel from Hell,
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1949-1950</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">5
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, The Day Joe Montana Retired, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1999-2005</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">6
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Dogs and Other Actors, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">2003-2004</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">7
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, The Elephant's Graveyard, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">2000-2004</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">8
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Endings, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">2001</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">9
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Names, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">ca. 2000</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">10
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Phillis Wheatley, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1981-2007</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">11
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Two By One, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">2002</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">12
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Wives, Babies, and VMI, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">2007</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">13
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Theatres, Barksdale Theatre, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">2006</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">14
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Theatres, Firehouse Theatre, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">2004</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">15
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Theatres, Green Mountain Playhouse, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">ca. 1960</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">16
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Theatres, Rice Playhouse, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1952</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">17
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Theatres, Virginia High School League, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">1976</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">18
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Flyers and programs, Misc. 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">ca. 2000-2005</unitdate>.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">19
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Notes, Acting.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">20
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Notes, Actor-Director Workshop.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">21
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Notes, Playwriting class.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">22
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Notes, Misc.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">23-24
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Notes, Teaching.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">25
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Notes, Westminster-Canterbury.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">26
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Notes, Workshop.</unittitle>
+          <container label="Box" type="box">1
+	</container>
+          <container label="Folder" type="folder">27
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Production notes and research, Dogs and Other Actors.</unittitle>
+          <container label="Box" type="box">2
+	</container>
+          <container label="Folder" type="folder">1
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Production notes and research, Endings.</unittitle>
+          <container label="Box" type="box">2
+	</container>
+          <container label="Folder" type="folder">2
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Production notes and research, Phillis Wheatley.</unittitle>
+          <container label="Box" type="box">2
+	</container>
+          <container label="Folder" type="folder">3-4
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Production notes and research, Miscellaneous.</unittitle>
+          <container label="Box" type="box">2
+	</container>
+          <container label="Folder" type="folder">5-7
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Resume.</unittitle>
+          <container label="Box" type="box">2
+	</container>
+          <container label="Folder" type="folder">8
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Resume, Scrapbook.</unittitle>
+          <container label="Box" type="box">2
+	</container>
+          <container label="Folder" type="folder">9
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Framed program notes, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Manhattan Punch Line presents The Comedy Corps in Friends, Lovers, (And Others Beyond The Fringe)</title>.</unittitle>
+          <container label="Box" type="box">2
+	</container>
+          <container label="Folder" type="folder">10
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>A list of plays.</unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">1
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Adventure of Herbert, A Story for Very Young People.</title></unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">2
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Alwasia and the Witch.</title></unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">3
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Angel from Hell.</title></unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">4-6
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Bosoms and Rhett Butler.</title></unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">7
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">A Cup of Clay.</title></unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">8
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Day Joe Montana Retired.</title></unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">9-10
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Dogs and Other Actors.</title></unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">11
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Elephant's Graveyard</title>.</unittitle>
+          <container label="Box" type="box">3
+	</container>
+          <container label="Folder" type="folder">12
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Elephant's Graveyard</title>.</unittitle>
+          <container label="Box" type="box">4
+	</container>
+          <container label="Folder" type="folder">1-3
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Endings</title>.</unittitle>
+          <container label="Box" type="box">4
+	</container>
+          <container label="Folder" type="folder">4-9
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The English Lessons</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">1
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Follies</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">2
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Free and the Brave</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">3-4
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Frog Prince</title> and <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Alwasia and the Witch</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">5
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Gift of Belief</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">6
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Mr. Monkey and the Magic Cobra</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">7
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Names</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">8-9
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Names</title>, Photographs.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">10
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, Our Town or <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Booster Club is Doing Our Town But I'm Too Old To Play Emily</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">11-12
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Phillis, A Story of Phillis Wheatley, 1761-1784</title>.</unittitle>
+          <container label="Box" type="box">5
+	</container>
+          <container label="Folder" type="folder">13-14
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Phillis, A Story of Phillis Wheatley, 1761-1784</title>.</unittitle>
+          <container label="Box" type="box">6
+	</container>
+          <container label="Folder" type="folder">1-3
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Phillis, A Story of Phillis Wheatley, 1761-1784</title>.</unittitle>
+          <container label="Box" type="box">7
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Rumplestiltskin</title>.</unittitle>
+          <container label="Box" type="box">6
+	</container>
+          <container label="Folder" type="folder">4
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Sweet Revenge</title>.</unittitle>
+          <container label="Box" type="box">6
+	</container>
+          <container label="Folder" type="folder">5
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, Two short plays (or revue sketches), <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Untitled</title>, and <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Fish Gotta Swim Birds Gotta Fly</title>.</unittitle>
+          <container label="Box" type="box">6
+	</container>
+          <container label="Folder" type="folder">6
+	</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Plays, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Wives, Babies, and VMI</title>.</unittitle>
+          <container label="Box" type="box">6
+	</container>
+          <container label="Folder" type="folder">7-11
+	</container>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

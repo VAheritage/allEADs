@@ -1,165 +1,145 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00866">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00866::Governor Robert Brooke Executive Papers, 1794-1796)//EN&amp;#34; &amp;#34;vi00866.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00866">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00866::Governor Robert Brooke Executive Papers, 1794-1796)//EN&amp;#34; &amp;#34;vi00866.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00866::Governor Robert Brooke
              Executive Papers, 1794-1796)//EN" "vi00866.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Governor Robert Brooke
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Governor Robert Brooke
             Executive Papers, 
-            <date>1794-1796</date></titleproper>
-            <subtitle id="sort">Brooke, Robert, Executive
+            <date era="ce" calendar="gregorian">1794-1796</date></titleproper>
+        <subtitle id="sort">Brooke, Robert, Executive
             Papers of Governor, 1794-1796 
             <num type="collectionnumber">40723</num></subtitle>
-            <author>Craig S. Moore</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Craig S. Moore</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">4 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from Microsoft
+        </p>
+        <p id="filesize">4 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from Microsoft
          Word 7.0. Created by Craig S. Moore, 
-         <date>2003 July 23</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">2003 July 23</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00866::Governor Robert Brooke Executive Papers,
             1794-1796)//EN" "vi00866.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Governor Robert Brooke Executive
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Governor Robert Brooke Executive
          Papers, 
-         <date>1794-1796</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1794-1796</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">40723</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Craig S. Moore</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository label="Repository">Library of Virginia</repository>
-         <unittitle label="Title">Governor Robert Brooke Executive
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Craig S. Moore</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository label="Repository">Library of Virginia</repository>
+      <unittitle label="Title">Governor Robert Brooke Executive
          Papers, 
-         <unitdate type="inclusive" label="Date">
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1794-1796</unitdate></unittitle>
-         <unitid label="Accession number">40723</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <unitid label="Accession number">40723</unitid>
+      <physloc label="Physical Location">State Records Collection,
          Office of the Governor (Record Group 3)</physloc>
-         <physdesc label="Physical Characteristics">2.23 cubic
+      <physdesc label="Physical Characteristics">2.23 cubic
          feet</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Governor's Office</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Governor's Office</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia. Governor's Office. Robert Brooke Executive
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia. Governor's Office. Robert Brooke Executive
             Papers, 1794-1796 (bulk 1795-1796). Accession 40723. State
             Records Collection, The Library of Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Acquired prior to 1905.</p>
-         </acqinfo>
-  <altformavail>
-<head>Alternative Form Available
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Acquired prior to 1905.</p>
+      </acqinfo>
+      <altformavail>
+        <head>Alternative Form Available
 </head>
-<p>Also available on microfilm - Miscellaneous Reel 5211-5214.
+        <p>Also available on microfilm - Miscellaneous Reel 5211-5214.
 </p>
-<list type="simple">
-<item>Miscellaneous Reel 5211 - 1794 Dec. 1-1795 May 31
+        <list type="simple">
+          <item>Miscellaneous Reel 5211 - 1794 Dec. 1-1795 May 31
 </item>
-<item>Miscellaneous Reel 5212 - 1795 June 2-Dec. 31
+          <item>Miscellaneous Reel 5212 - 1795 June 2-Dec. 31
 </item>
-<item>Miscellaneous Reel 5213 - 1795 County Officers-1796 June 30
+          <item>Miscellaneous Reel 5213 - 1795 County Officers-1796 June 30
 </item>
-<item>Miscellaneous Reel 5214 - 1796 July 1-Nov. 25
+          <item>Miscellaneous Reel 5214 - 1796 July 1-Nov. 25
 </item>
-</list>
-</altformavail>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>Robert Brooke was born in Spotsylvania County to Richard
+        </list>
+      </altformavail>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>Robert Brooke was born in Spotsylvania County to Richard
          Brooke and Ann Hay Taliaferro Brooke around 1760. Educated in
          Edinburgh, Scotland, during the Revolutionary War, Brooke
          returned to Virginia in 1780 where he enlisted in a volunteer
@@ -179,10 +159,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          was elected to replace James Innes as attorney general of
          Virginia on 16 November 1796. He served as attorney general
          until his death on 27 February 1800.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Robert Brooke's Executive papers are organized
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Robert Brooke's Executive papers are organized
          chronologically with undated items arranged at the end of each
          year. These papers primarily consist of incoming
          correspondence during Brooke's two one-year terms as governor
@@ -208,7 +188,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          sundry items. Note that files related to county officers for
          1795 have been arranged alphabetically by county and separated
          to the end of the papers for that year.</p>
-         <p>Noteworthy correspondence originates from the United States
+      <p>Noteworthy correspondence originates from the United States
          government, Virginia State government, and miscellaneous
          sources. Prominent correspondents from the United States
          government include Henry Knox, Timothy Pickering, &amp; James
@@ -217,7 +197,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          District Attorney General, Samuel A. Otis &amp; John
          Beckley, Clerks of the Senate &amp; House of
          Representatives, and President George Washington.</p>
-         <p>Governor Brooke received correspondence on numerous
+      <p>Governor Brooke received correspondence on numerous
          occasions from the United States War Department. On 5 December
          1794, Henry Knox transmitted a resolution by John Beckley,
          Clerk of the U.S. House of Representatives, thanking the
@@ -247,7 +227,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          frontiers (1795 Sept. 17). On 14 March 1796, Simmons encloses
          a statement of differences on examination of the Virginia
          claims for pay, etc., in 1795. A letter from President George Washington dated 1796 Sept. 15 asks that his shares in the James River Company be applied to Liberty Hall Academy in rockbridge County (letter removed to the Vault - George Washington Papers).</p>
-         <p>Edmund Randolph, former Governor of Virginia, corresponds
+      <p>Edmund Randolph, former Governor of Virginia, corresponds
          as Secretary of State. On 3 January 1795, Randolph transmits a
          proclamation of thanksgiving from the President (proclamation
          not included). In another letter of the same date, Randolph
@@ -277,7 +257,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Pickering also encloses a translation of a letter he received
          from Adet regarding the purchase of flour &amp; horses by the
          English in Virginia.</p>
-         <p>Alexander Campbell, District U.S. Attorney, provides his
+      <p>Alexander Campbell, District U.S. Attorney, provides his
          opinion on the following subjects: the unlawful detention of a
          mariner by a British vessel of war (1795 Jan. 25), the
          delivery of a fugitive of justice from Pennsylvania and
@@ -287,7 +267,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          John Beckley periodically transmit journals of the proceedings
          of the U.S. Senate &amp; House of Representatives (1795 April
          13 &amp; 25, &amp; 1796 July 28).</p>
-         <p>Significant correspondents from Virginia State government
+      <p>Significant correspondents from Virginia State government
          include Archibald Blair, Clerk of the Council; Samuel Coleman,
          Assistant Clerk of the Council of State; James Innes, Attorney
          General; Charles Hay, Clerk of the House of Delegates;
@@ -297,7 +277,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Arsenal; Thomas Newton &amp; Willis Wilson, County
          Lieutenants; John Pendleton, Jr., Auditor of Public Accounts;
          and Jacquelin Ambler, Treasurer.</p>
-         <p>Archibald Blair &amp; Samuel Coleman, as Clerk &amp;
+      <p>Archibald Blair &amp; Samuel Coleman, as Clerk &amp;
          Assistant Clerk of the Council, communicate with the Governor
          frequently through the Council Office. Blair offers the advice
          of the Council regarding the account against the U.S. for the
@@ -324,7 +304,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          thereafter, Coleman was appointed Adjutant General and asks
          the Lieutenant Governor for an apartment in the Capitol to
          perform his new duties (1795 Dec. 14).</p>
-         <p>During James Innes' absence in 1794 &amp; 1795, John
+      <p>During James Innes' absence in 1794 &amp; 1795, John
          Marshall provides his opinion on the militia law as Attorney
          General of Virginia (1794 Undated). Upon Innes' return,
          Marshall writes as counsel to Lord Fairfax concerning the case
@@ -344,7 +324,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Mr. Warden to discharge the duties of his office. Innes was
          forced to resign in a letter to the Governor dated 13 November
          1796.</p>
-         <p>Charles Hay, Clerk of the House of Delegates, and Humphrey
+      <p>Charles Hay, Clerk of the House of Delegates, and Humphrey
          Brooke, Clerk of the Senate, often submit legislation and
          qualifications of election to the Governor. Noteworthy
          legislation includes a resolution to inquire about the
@@ -361,7 +341,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Speaker of the House of Delegates, encloses sundry resolutions
          for proposing certain amendments to the U.S. Constitution
          (1795 Dec. 19).</p>
-         <p>William Hay, Robert Goode, &amp; William Foushee, etc.,
+      <p>William Hay, Robert Goode, &amp; William Foushee, etc.,
          Directors of Public Buildings, provide information on work
          done to the Capitol Building and the settlement of accounts.
          On 28 November 1795, William Hay writes regarding the account
@@ -372,7 +352,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          from Dobie indicating the amount of balances due him. On 30
          March 1796, the Directors write regarding the repair of the
          roof of the Capitol and surplus materials.</p>
-         <p>Maj. Robert Quarles submits quarterly returns of ordnance
+      <p>Maj. Robert Quarles submits quarterly returns of ordnance
          &amp; public stores at Point of Fork (1795 Jan. 2, 1795 March
          31, 1795 June 30, 1795 Oct. 6, 1795 Dec. 31, 1796 March 31,
          1796 June 30, &amp; 1796 Sept. 30). In addition, Quarles'
@@ -383,7 +363,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          firewood contract with David Ross (1796 Sept. 12), and the
          bond of Matthew &amp; Elias Wills for the Office of Contractor
          to supply the State Arsenal with rations (1796 Oct. 27).</p>
-         <p>Thomas Newton, Jr., County Lieutenant for Norfolk Borough,
+      <p>Thomas Newton, Jr., County Lieutenant for Norfolk Borough,
          frequently writes the Governor on a variety of concerns. On 11
          January 1795, Newton encloses copies of letters from the
          British &amp; French Consuls regarding disturbances between
@@ -443,7 +423,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          British (1796 Jan. 23). The next day, he encloses one from
          John Hamilton denying that the shipment of horses is a
          military preparation (1795 Jan. 24).</p>
-         <p>Willis Wilson, County Lieutenant for Portsmouth,
+      <p>Willis Wilson, County Lieutenant for Portsmouth,
          corresponds with the Governor regarding similar subjects as
          Thomas Newton. On 29 April 1795, Wilson suggests that a boat
          be armed at Hampton Roads for the purpose of preventing
@@ -463,7 +443,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          regarding the formation of an artillery company in Portsmouth
          under the command of John Cowper (1796 Feb. 23 &amp; March
          27).</p>
-         <p>Governor Randolph corresponds often with John Pendleton,
+      <p>Governor Randolph corresponds often with John Pendleton,
          Jr., Auditor of Public Accounts, and Jaquelin Ambler,
          Treasurer, regarding various financial matters. Pendleton
          regularly encloses lists of warrants issued by him through the
@@ -489,11 +469,11 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Virginia for the settlement of their account for the pay &amp;
          subsistence of militia, scouts, ammunition, and contingent
          expenses in the protection of the frontiers.</p>
-         <p>Notable correspondents from miscellaneous sources include
+      <p>Notable correspondents from miscellaneous sources include
          the following: Andrew Dunscomb, Mayor of Richmond; John
          Hamilton, British Consul at Norfolk; and Thomas Mifflin,
          Governor of Pennsylvania.</p>
-         <p>Andrew Dunscomb mainly writes the Governor regarding the
+      <p>Andrew Dunscomb mainly writes the Governor regarding the
          prevention of infectious disease to the City of Richmond. On
          27 August 1795, he encloses resolutions of the Common Hall
          relative to the quarantine of vessels from Norfolk.
@@ -503,7 +483,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Richardson &amp; Jacob I. Cohen regarding allowing passage of
          vessels from Norfolk, but stopping vessels from New York (1795
          Oct. 6).</p>
-         <p>John Hamilton, British Consul, frequently writes the
+      <p>John Hamilton, British Consul, frequently writes the
          Governor regarding British affairs. On 2 January 1795,
          Hamilton requests permission for the British ships Thetis
          &amp; Cleopatra to make repairs in Norfolk Harbor. Hamilton
@@ -528,7 +508,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          February 1796, Hamilton writes regarding his inquiry to the
          President on the shipment of horses and the neutrality
          laws.</p>
-         <p>As Governor of Pennsylvania, Thomas Mifflin often
+      <p>As Governor of Pennsylvania, Thomas Mifflin often
          corresponds with Governor Brooke with respect to fugitives
          from justice. On 29 December 1794, Mifflin transmits the
          affidavit of Stephen Girard affirming that Joseph Larelle had
@@ -547,7 +527,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          responds to another letter on 22 January 1796 regarding an
          annual interchange of the laws passed by Pennsylvania &amp;
          Virginia.</p>
-         <p>Additional significant correspondence includes the
+      <p>Additional significant correspondence includes the
          following: George Clendenin regarding pay &amp; subsistence of
          a company employed for the defense of Greenbrier &amp; Kanawha
          (1794 Dec. 20); Paul Carrington accepting a commission as
@@ -602,7 +582,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          payment for creating a marble statue of Washington (1796 Oct.
          8); and Edmund Randolph regarding the case of Fairfax versus
          the Commonwealth (1796 Oct. 22).</p>
-         <p>Other noteworthy items include: oath of Robert Brooke by J.
+      <p>Other noteworthy items include: oath of Robert Brooke by J.
          Pendleton as Governor (1794 Dec. 1); a list of persons who
          have migrated to Virginia and given oath to reside therein
          (1794 Dec. 17); receipts from William Morris, Contractor, for
@@ -636,980 +616,980 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          for President &amp; Vice President (1796 Nov. 7); and muster
          fines of the 22nd Regiment Virginia Militia, Mecklenburg
          County (1796 Nov. 5).</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Arranged chronologically by date of document with undated
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Arranged chronologically by date of document with undated
          items arranged to the rear.</p>
-      </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="series">
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Robert Brooke Executive Papers</unittitle>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1794</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>December</unittitle>
+          </did>
+          <c03 level="file">
             <did>
-               <unittitle>Robert Brooke Executive Papers</unittitle>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1794</unittitle>
-            </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>December</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-10</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+              <unittitle>1-10</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      1</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>12-20</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
-                     2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>23-30</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
-                     3</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Undated</unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1795</unittitle>
             </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>January</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-9</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>12-20</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
+                     2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>23-30</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
+                     3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Undated</unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1795</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>January</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-9</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      5</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-30</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-30</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      6</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>February</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-10</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>February</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-10</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      7</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-20</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-20</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      8</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-28</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-28</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      9</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>March</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>2-10</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>March</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>2-10</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      10</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-20</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-20</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      11</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-31</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-31</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      12</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>April</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-10</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>April</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-10</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      13</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-20</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-20</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      14</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-30</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-30</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      15</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>May</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-10</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>May</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-10</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      16</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-20</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-20</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      17</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-31</unittitle>
-                     <container label="Box" type="box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-31</unittitle>
+              <container label="Box" type="box">1</container>
+              <container label="Folder" type="Folder">
                      18</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>June</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>2-19</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>June</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>2-19</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      1</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-30</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-30</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      2</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>July</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-9</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>July</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-9</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      3</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-20</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-20</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      4</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-31</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-31</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      5</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>August</unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>September</unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>October</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-10</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>August</unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>September</unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>October</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-10</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      8</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-20</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-20</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      9</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>23-31</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>23-31</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      10</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>November</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-10</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>November</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-10</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      11</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>12-20</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>12-20</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      12</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-30</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-30</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      13</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>December</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-10</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>December</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-10</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      14</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>11-20</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>11-20</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      15</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>22-31</unittitle>
-                     <container label="Box" type="box">2</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>22-31</unittitle>
+              <container label="Box" type="box">2</container>
+              <container label="Folder" type="Folder">
                      16</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Undated</unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Undated</unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>County Officers</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Accomack-Dinwiddie</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>County Officers</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Accomack-Dinwiddie</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      1</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Elizabeth City-King William</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Elizabeth City-King William</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Lancaster-Prince George</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Lancaster-Prince George</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      3</container>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1796</unittitle>
             </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>January</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-20</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1796</unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>January</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-20</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      4</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-29</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-29</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      5</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>February</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-15</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>February</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-15</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      6</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>18-28</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>18-28</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      7</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>March</unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>April</unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>May</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>3-20</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>March</unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>April</unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>May</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>3-20</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      10</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-30</unittitle>
-                     <container label="Box" type="box">3</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-30</unittitle>
+              <container label="Box" type="box">3</container>
+              <container label="Folder" type="Folder">
                      11</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>June</unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>June</unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>July</unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>August</unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>September</unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>October</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-15</unittitle>
-                     <container label="Box" type="box">4</container>
-                     <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>July</unittitle>
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>August</unittitle>
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>September</unittitle>
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>October</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-15</unittitle>
+              <container label="Box" type="box">4</container>
+              <container label="Folder" type="Folder">
                      4</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>18-31</unittitle>
-                     <container label="Box" type="box">4</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>18-31</unittitle>
+              <container label="Box" type="box">4</container>
+              <container label="Folder" type="Folder">
                      5</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>November</unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1-9</unittitle>
-                     <container label="Box" type="box">4</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>November</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1-9</unittitle>
+              <container label="Box" type="box">4</container>
+              <container label="Folder" type="Folder">
                      6</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>12-17</unittitle>
-                     <container label="Box" type="box">4</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>12-17</unittitle>
+              <container label="Box" type="box">4</container>
+              <container label="Folder" type="Folder">
                      7</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>21-25</unittitle>
-                     <container label="Box" type="box">4</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>21-25</unittitle>
+              <container label="Box" type="box">4</container>
+              <container label="Folder" type="Folder">
                      8</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Undated</unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Oversized (Clamshell Box)</unittitle>
             </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1794</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 2</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 17</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 17</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 19</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 29</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1795</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jan. 15</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Feb. 10</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>March 21</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>March 31</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>April 27</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Undated</unittitle>
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Oversized (Clamshell Box)</unittitle>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1794</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 2</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 17</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 17</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 19</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 29</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1795</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Jan. 15</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Feb. 10</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>March 21</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>March 31</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>April 27</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>May 5</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>May 5</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>May 9</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>May 9</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>May 14</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>May 14</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>May 14</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>May 14</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>June 19</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>June 19</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>June 24</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>June 24</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>July 6</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>July 6</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>July 7</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>July 7</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>July 15</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>July 15</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>July 18</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>July 18</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   20</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Sept. 16</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Sept. 16</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   21</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Oct. 12</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Oct. 12</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Nov. 21</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Nov. 21</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   23</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 19</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 19</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   24</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 29</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 29</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   25</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>County Officers - Amelia
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>County Officers - Amelia
                   County</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   26</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1796</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jan. 6</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1796</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Jan. 6</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   27</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Jan. 22</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Jan. 22</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   28</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>March 14</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>March 14</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   29</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>March 31</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>March 31</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   30</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>March 31</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>March 31</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   31</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>May 20</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>May 20</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   32</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>June 6</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>June 6</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   33</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>June 16</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>June 16</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   34</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>July 30</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>July 30</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   35</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Aug. 5</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Aug. 5</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   36</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Aug. 6</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Aug. 6</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   37</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Aug. 20</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Aug. 20</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   38</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Aug. 25</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Aug. 25</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   39</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Sept. 30</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Sept. 30</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   40</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Sept. 30</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Sept. 30</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   41</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Oct. 1</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Oct. 1</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   42</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Oct. 17</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Oct. 17</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   43</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Nov. 7</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Nov. 7</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   44</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Nov. 17</unittitle>
-                  <container label="Box" type="box">5</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Nov. 17</unittitle>
+            <container label="Box" type="box">5</container>
+            <container label="Folder" type="Folder">
                   45</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Oversized (Newspaper Box)</unittitle>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1795</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>July 13</unittitle>
-                  <container label="Box" type="box">6</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 12</unittitle>
-                  <container label="Box" type="box">6</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Dec. 20</unittitle>
-                  <container label="Box" type="box">6</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>1796</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Feb. 12</unittitle>
-                  <container label="Box" type="box">6</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>May 6</unittitle>
-                  <container label="Box" type="box">6</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Oversized (Newspaper Box)</unittitle>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1795</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>July 13</unittitle>
+            <container label="Box" type="box">6</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 12</unittitle>
+            <container label="Box" type="box">6</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Dec. 20</unittitle>
+            <container label="Box" type="box">6</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1796</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Feb. 12</unittitle>
+            <container label="Box" type="box">6</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>May 6</unittitle>
+            <container label="Box" type="box">6</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

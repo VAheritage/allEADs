@@ -1,248 +1,245 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi01815">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01815::A Guide to the John J. Chandler Letters, 1863-1864)//EN" "vi01815.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01815">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi01815::A Guide to the John J. Chandler Letters, 1863-1864)//EN" "vi01815.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the John J. Chandler Letters, <date>1863-1864</date>
-</titleproper>
-<subtitle id="sort">Chandler, John J., Letters, 1863-1864
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the John J. Chandler Letters, <date era="ce" calendar="gregorian">1863-1864</date></titleproper>
+        <subtitle id="sort">Chandler, John J., Letters, 1863-1864
 <num type="collectionnumber">23984b
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2006 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>6 June 2006</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the John J. Chandler Letters, <date>1863-1864</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">23984b
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">John J. Chandler Letters, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1863-1864
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">23984b
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a">23 leaves, negative photostats
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">6 June 2006</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the John J. Chandler Letters, <date era="ce" calendar="gregorian">1863-1864</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">23984b
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">John J. Chandler Letters, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1863-1864
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">23984b
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">23 leaves, negative photostats
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Creator" encodinganalog="100$a">John J. Chandler
+      </langmaterial>
+      <origination label="Creator" encodinganalog="100$a">John J. Chandler
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>John J. Chandler Letters, 1863-1864.  Accession 23984b.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
+        <p>John J. Chandler Letters, 1863-1864.  Accession 23984b.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Lent for copying, 29 May 1953, by Charles A. Taylor of Urbanna, Virginia.
+        <p>Lent for copying, 29 May 1953, by Charles A. Taylor of Urbanna, Virginia.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>John J. Chandler was born in York County, Virginia, 16 December 1832. During the Civil War, he enlisted in Company B., 55th Virginia infantry. Company B later was detached and made into Fleet's Artillery Company. Chandler also served in Johnson's Artillery Battery in McIntosh's Battalion. After the war, he moved first to Accomack County, Virginia, then Northampton County, Virginia, where he worked as a wheelwright. Chandler and his wife Margaret (1848-1921) had 4 children. Chandler died 20 December 1913 in Northampton County and was buried at Broadwater Church.
+      <p>John J. Chandler was born in York County, Virginia, 16 December 1832. During the Civil War, he enlisted in Company B., 55th Virginia infantry. Company B later was detached and made into Fleet's Artillery Company. Chandler also served in Johnson's Artillery Battery in McIntosh's Battalion. After the war, he moved first to Accomack County, Virginia, then Northampton County, Virginia, where he worked as a wheelwright. Chandler and his wife Margaret (1848-1921) had 4 children. Chandler died 20 December 1913 in Northampton County and was buried at Broadwater Church.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Letters, 1863-1864, from John J. Chandler (1832-1913) to to his sister-in-law Ann E. Chandler (1837-d. by 1880) of Middlesex County, Virginia, sending general war news and personal news. He comments on the battle of Gettysburg, adding that he would never marry a girl from Pennsylvania, and on the siege of Petersburg.
+      <p>Letters, 1863-1864, from John J. Chandler (1832-1913) to to his sister-in-law Ann E. Chandler (1837-d. by 1880) of Middlesex County, Virginia, sending general war news and personal news. He comments on the battle of Gettysburg, adding that he would never marry a girl from Pennsylvania, and on the siege of Petersburg.
 </p>
-</scopecontent>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </scopecontent>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Silas Chandler Letters, 1862-1865 (LVA accession 23984a).
+        <p>Silas Chandler Letters, 1862-1865 (LVA accession 23984a).
 </p>
-</relatedmaterial>
-</descgrp>
-<dsc type="in-depth">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>5 April 1863, 
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">5 April 1863, 
 </unitdate>containing personal news and war news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>27 April 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">27 April 1863, 
 </unitdate>sending personal news and asking her to write.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>19 May 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">19 May 1863, 
 </unitdate>thanking Ann Chandler for her letter and sending news of fighting that he and his brother were in.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>2 June 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">2 June 1863, 
 </unitdate>sending personal news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>17 July 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">17 July 1863, 
 </unitdate>describing the battle of Gettysburg and stating that he would not marry a girl from Pennsylvania.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>21 August 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">21 August 1863, 
 </unitdate>sending general war news and personal news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>29 August 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">29 August 1863, 
 </unitdate>containing personal news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>1 December 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">1 December 1863, 
 </unitdate>sending general war news and personal news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>4 January 1863, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">4 January 1863, 
 </unitdate>containing personal news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>10 September 1864, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">10 September 1864, 
 </unitdate>sending news from the siege of Petersburg, Virginia.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>14 October 1864, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">14 October 1864, 
 </unitdate>containing general war news and personal news.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Letter, 
-<unitdate>4 December 1864, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Letter, 
+<unitdate era="ce" calendar="gregorian">4 December 1864, 
 </unitdate>containing personal news.
 </unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

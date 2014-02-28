@@ -1,789 +1,724 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00424">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00424::A Guide to the Virginia Commandant of the Public Guard Records, 1801-1850)//EN&amp;#34; &amp;#34;vi00424.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00424">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00424::A Guide to the Virginia Commandant of the Public Guard Records, 1801-1850)//EN&amp;#34; &amp;#34;vi00424.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00424::A Guide to the Virginia
              Commandant of the Public Guard Records, 1801-1850)//EN"
              "vi00424.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginia Commandant of the
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginia Commandant of the
             Public Guard Records, 
-            <date>1801-1850</date></titleproper>
-            <subtitle id="sort">Commandant of the Public Guard Records,
+            <date era="ce" calendar="gregorian">1801-1850</date></titleproper>
+        <subtitle id="sort">Commandant of the Public Guard Records,
             Virginia, 1801-1850 
             <num type="collectionnumber">36717</num></subtitle>
-            <author>Description Services Staff</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Description Services Staff</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">10 kb</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">10 kb</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record and paper finding aid. Created by Paige Neal 
-         <date>June 22, 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">June 22, 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00424::A Guide to the Virginia Commandant of the
             Public Guard Records, 1801-1850)//EN" "vi00424.xml"
             converted from EAD 1.0 to 2002 by v1to02.xsl
             (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia Commandant of the Public
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia Commandant of the Public
          Guard Records, 
-         <date>1801-1850</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1801-1850</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">36717</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Craig S. Moore</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Craig S. Moore</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository label="Repository">Library of Virginia</repository>
-         <unittitle label="Title">Virginia Commandant of the Public
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository label="Repository">Library of Virginia</repository>
+      <unittitle label="Title">Virginia Commandant of the Public
          Guard Records, 
-         <unitdate type="inclusive" label="Date">
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1801-1850</unitdate></unittitle>
-         <unitid label="Accession number">36717</unitid>
-         <physloc label="Physical Location">State Records Collection,
+      <unitid label="Accession number">36717</unitid>
+      <physloc label="Physical Location">State Records Collection,
          Virginia Dept. of Military Affairs (Record Group
          46).</physloc>
-         <physdesc label="Physical Characteristics">1.95 cubic
+      <physdesc label="Physical Characteristics">1.95 cubic
          feet.</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia Commandant of the Public Guard Records,
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia Commandant of the Public Guard Records,
             1801-1850. Accession 36717, State Records Collection, The
             Library of Virginia, Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>No acquisition information available.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>On 22 January 1801, in the wake of Gabriel's Insurrection, the General Assembly passed an act to establish a guard in the City of Richmond.  The act decreed that the governor and Council enlist a company of sixty-eight men, including three commissioned officers, to act as a guard for the protection of public property in Richmond.  In addition, the act ordered all arms &amp; military stores to be removed from the Point of Fork Arsenal in Fluvanna County to Richmond.  The Public Guard was quartered at barracks on the southwest corner of Capitol Square until the construction of the Bell Tower in 1824.  Part of the guard was also quartered at the Penitentiary and Manufactory of Arms.</p>
-<p>Alexander Quarrier was appointed the first commandant of the Public Guard by Governor James Monroe on 10 February 1801.  Peter Crutchfield, who served as lieutenant of the Public Guard, replaced Quarrier as commandant between 1811 and 1817.  Blair Bolling also played an important role as commandant serving in that capacity from 1818 until his death in 1839.  During Bolling's tenure, the duties of the Adjutant General as Superintendent of Public Edifices were transferred to the Commandant of the Public Guard by an act of the General Assembly on 6 March 1821.  In addition, the positions of Superintendent of the Armory and Commandant of the Public Guard merged as a result of the closure of the Virginia Manufactory of Arms in Richmond on 1 January 1822.  On 23 February 1822, the General Assembly passed an act providing for the repairs of the Armory and the preservation of the public arms.  The Commandant of the Public Guard received the additional duties of packing and arranging the arms in the Armory subject to the inspection of the Adjutant General.  He was also charged with the preservation of the Armory and its appendages, and of the arms of every description in the armory, and to make returns of the arms as required by the executive.  Bolling was replaced by John B. Richardson who was in turn replaced by Charles Dimmock upon his death in 1843.  The Public Guard remained in the Armory until the building was destroyed by the Richmond evacuation fire of 1865.  The Public Guard was abolished in 1869.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>The records of the Commandant of the Public Guard consist mostly of correspondence to the governor and lieutenant governor, receipts and bonds for arms, vouchers for supplies, returns of arms and equipment, and a few muster rolls.  The correspondence to the governor primarily relate to repairs of the Armory and the condition of arms therein.  The commandant also writes to enclose annual returns of arms and accoutrements and ordnance.  In addition, the correspondence involves arms for the militia, discharges, punishment of soldiers, courts-martial, strength of the guard, requests for funds, soldier's pay, uniforms, supplies, powder to celebrate Independence Day, recommendations, and furloughs.</p>
-         <p>Noteworthy correspondence includes: applications for appointment as lieutenant of the Public Guard (1801);  Governor James Monroe appointing Alexander Quarrier to command the guard (1801 Feb. 10); Governor John Page requesting George Williamson, Master Armorer, to examine all the old arms in the Arsenal at the Capitol (1803 June 3); Governor William Cabell regarding the proposition to have the house in front of the barracks fitted up for the accommodation of the officers of the Public Guard (1806 April 19); Col. John Mayo appointing Alexander Quarrier quartermaster &amp; commissary to the troops under his command ordered to march to Hampton (1807 July 9); Alexander Quarrier enclosing a drawing of a shade to be built to prevent the timber to mount artillery from being damaged by the weather (1808 April 29); Abraham Douglas, Superintendent of the Penitentiary, enclosing an estimate of the cost of clothing for each soldier in the Public Guard for one year (1812 Jan. 22); W. P. Jones, surgeon &amp; physician to the Public Guard &amp; Penitentiary, requesting a room to be fitted up as a general hospital (1816 Feb. 5); Peter Crutchfield regarding repairs to the barracks and punishments to non-commissioned officers (1817 Nov. 5); C. W. Gooch, Adjutant General, enclosing a letter from Ensign E. Brown regarding charges against him for speculating on the soldiers of the Public Guard (1819 Nov. 25); John Staples enclosing a statement of the operations of the Armory (1819 Dec. 21); Blair Bolling regarding a controversy related to the punishment and regulations of the Public Guard (1820 March 8); Bolling regarding the advice of Council to send a detachment of the Public Guard to guard the Armory (1821 Dec. 17); Bolling regarding the repairs to the Armory including an architectural drawing of the Armory's Cupola by A. Bargamin (1822 March 24); improvements in the uniform of the Public Guard (1823 July 24); the disorderly conduct of Capt. Samuel Cary's Company of Militia while safe keeping the convicts after the fire at the Penitentiary (1823 Sept. 8); the charges by Lt. William C. Mosby, 33rd Regiment, against Bolling (1823 Sept. 29); Bolling regarding charges against Lt. Mosby (1823 Oct. 2); Bolling regarding corporal punishment &amp; the discipline of the guard (1824 Jan. 13); Bolling enclosing an estimate of repairs to the Armory (1824 April 7); Bolling regarding repairs to the east wing of the Armory &amp; culvert (1824 May 28); Bolling regarding alterations to the General Court Room (1825 March 15); Bolling enclosing an account of clothing issued to the Public Guard (1825 April 30); Bolling regarding proposals to repair the fire engine at the Armory (1825 May 14); propositions for painting &amp; repairing the Armory (1827 April 11); Bolling enclosing a letter &amp; drawings from D. J. Burr regarding a proposal to cast hydrants for the spring on the west side of the Capitol (1828 March 16); Bolling regarding the mill house below the Boring Mill at the Armory (includes plan) (1828 April 3); the law transferring the duty of the Superintendent of Public Buildings from the Office of the Adjutant General to the Commandant of the Public Guard (1836 July 23); Lt. E. Brown announcing the death of Capt. Blair Bolling (1839 Aug. 12); John B. Richardson accepting his commission as Captain of the Public Guard (1839 Oct. 31); Richardson regarding the repair of arms at the Lexington Arsenal (1841 April 20); William H. Richardson regarding the illness of John B. Richardson (1843 Nov. 28); Brevet Lieutenant P. Henley regarding the death of John B. Richardson (1843 Dec. 28); Charles Dimmock accepting command of the Public Guard (1844 Feb. 13); Dimmock regarding uniform caps (includes drawing of cap) (1844 May 31); and William H. Richardson, Adjutant General, enclosing a letter from Dimmock regarding clothing for the Public Guard (includes samples of cloth) (1845 Feb. 3).</p>
-         <p>Other noteworthy documents include: a muster roll (1811 &amp; 1814); the regulations of the Public Guard (1820); an account of sales for the public barracks (1824 July 16); a plan showing the foundry, boring mill, and culverts leading to the James River (1828 April 3); advice of Council regarding the State Flag (1834); a report by the Superintendent of the Penitentiary on escapes (1848); and a descriptive list from 1848 which includes the names of all the members of the Public Guard, the soldiers' place of birth, and physical description.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>Arranged chronologically.</p>
-      </arrangement>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle><emph render="bold">Records of the Commandant of the Public
-               Guard</emph></unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>1801
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1802
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1803
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1804 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1805
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1806 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1807
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1808
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1809
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1811
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>No acquisition information available.</p>
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>On 22 January 1801, in the wake of Gabriel's Insurrection, the General Assembly passed an act to establish a guard in the City of Richmond.  The act decreed that the governor and Council enlist a company of sixty-eight men, including three commissioned officers, to act as a guard for the protection of public property in Richmond.  In addition, the act ordered all arms &amp; military stores to be removed from the Point of Fork Arsenal in Fluvanna County to Richmond.  The Public Guard was quartered at barracks on the southwest corner of Capitol Square until the construction of the Bell Tower in 1824.  Part of the guard was also quartered at the Penitentiary and Manufactory of Arms.</p>
+      <p>Alexander Quarrier was appointed the first commandant of the Public Guard by Governor James Monroe on 10 February 1801.  Peter Crutchfield, who served as lieutenant of the Public Guard, replaced Quarrier as commandant between 1811 and 1817.  Blair Bolling also played an important role as commandant serving in that capacity from 1818 until his death in 1839.  During Bolling's tenure, the duties of the Adjutant General as Superintendent of Public Edifices were transferred to the Commandant of the Public Guard by an act of the General Assembly on 6 March 1821.  In addition, the positions of Superintendent of the Armory and Commandant of the Public Guard merged as a result of the closure of the Virginia Manufactory of Arms in Richmond on 1 January 1822.  On 23 February 1822, the General Assembly passed an act providing for the repairs of the Armory and the preservation of the public arms.  The Commandant of the Public Guard received the additional duties of packing and arranging the arms in the Armory subject to the inspection of the Adjutant General.  He was also charged with the preservation of the Armory and its appendages, and of the arms of every description in the armory, and to make returns of the arms as required by the executive.  Bolling was replaced by John B. Richardson who was in turn replaced by Charles Dimmock upon his death in 1843.  The Public Guard remained in the Armory until the building was destroyed by the Richmond evacuation fire of 1865.  The Public Guard was abolished in 1869.</p>
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>The records of the Commandant of the Public Guard consist mostly of correspondence to the governor and lieutenant governor, receipts and bonds for arms, vouchers for supplies, returns of arms and equipment, and a few muster rolls.  The correspondence to the governor primarily relate to repairs of the Armory and the condition of arms therein.  The commandant also writes to enclose annual returns of arms and accoutrements and ordnance.  In addition, the correspondence involves arms for the militia, discharges, punishment of soldiers, courts-martial, strength of the guard, requests for funds, soldier's pay, uniforms, supplies, powder to celebrate Independence Day, recommendations, and furloughs.</p>
+      <p>Noteworthy correspondence includes: applications for appointment as lieutenant of the Public Guard (1801);  Governor James Monroe appointing Alexander Quarrier to command the guard (1801 Feb. 10); Governor John Page requesting George Williamson, Master Armorer, to examine all the old arms in the Arsenal at the Capitol (1803 June 3); Governor William Cabell regarding the proposition to have the house in front of the barracks fitted up for the accommodation of the officers of the Public Guard (1806 April 19); Col. John Mayo appointing Alexander Quarrier quartermaster &amp; commissary to the troops under his command ordered to march to Hampton (1807 July 9); Alexander Quarrier enclosing a drawing of a shade to be built to prevent the timber to mount artillery from being damaged by the weather (1808 April 29); Abraham Douglas, Superintendent of the Penitentiary, enclosing an estimate of the cost of clothing for each soldier in the Public Guard for one year (1812 Jan. 22); W. P. Jones, surgeon &amp; physician to the Public Guard &amp; Penitentiary, requesting a room to be fitted up as a general hospital (1816 Feb. 5); Peter Crutchfield regarding repairs to the barracks and punishments to non-commissioned officers (1817 Nov. 5); C. W. Gooch, Adjutant General, enclosing a letter from Ensign E. Brown regarding charges against him for speculating on the soldiers of the Public Guard (1819 Nov. 25); John Staples enclosing a statement of the operations of the Armory (1819 Dec. 21); Blair Bolling regarding a controversy related to the punishment and regulations of the Public Guard (1820 March 8); Bolling regarding the advice of Council to send a detachment of the Public Guard to guard the Armory (1821 Dec. 17); Bolling regarding the repairs to the Armory including an architectural drawing of the Armory's Cupola by A. Bargamin (1822 March 24); improvements in the uniform of the Public Guard (1823 July 24); the disorderly conduct of Capt. Samuel Cary's Company of Militia while safe keeping the convicts after the fire at the Penitentiary (1823 Sept. 8); the charges by Lt. William C. Mosby, 33rd Regiment, against Bolling (1823 Sept. 29); Bolling regarding charges against Lt. Mosby (1823 Oct. 2); Bolling regarding corporal punishment &amp; the discipline of the guard (1824 Jan. 13); Bolling enclosing an estimate of repairs to the Armory (1824 April 7); Bolling regarding repairs to the east wing of the Armory &amp; culvert (1824 May 28); Bolling regarding alterations to the General Court Room (1825 March 15); Bolling enclosing an account of clothing issued to the Public Guard (1825 April 30); Bolling regarding proposals to repair the fire engine at the Armory (1825 May 14); propositions for painting &amp; repairing the Armory (1827 April 11); Bolling enclosing a letter &amp; drawings from D. J. Burr regarding a proposal to cast hydrants for the spring on the west side of the Capitol (1828 March 16); Bolling regarding the mill house below the Boring Mill at the Armory (includes plan) (1828 April 3); the law transferring the duty of the Superintendent of Public Buildings from the Office of the Adjutant General to the Commandant of the Public Guard (1836 July 23); Lt. E. Brown announcing the death of Capt. Blair Bolling (1839 Aug. 12); John B. Richardson accepting his commission as Captain of the Public Guard (1839 Oct. 31); Richardson regarding the repair of arms at the Lexington Arsenal (1841 April 20); William H. Richardson regarding the illness of John B. Richardson (1843 Nov. 28); Brevet Lieutenant P. Henley regarding the death of John B. Richardson (1843 Dec. 28); Charles Dimmock accepting command of the Public Guard (1844 Feb. 13); Dimmock regarding uniform caps (includes drawing of cap) (1844 May 31); and William H. Richardson, Adjutant General, enclosing a letter from Dimmock regarding clothing for the Public Guard (includes samples of cloth) (1845 Feb. 3).</p>
+      <p>Other noteworthy documents include: a muster roll (1811 &amp; 1814); the regulations of the Public Guard (1820); an account of sales for the public barracks (1824 July 16); a plan showing the foundry, boring mill, and culverts leading to the James River (1828 April 3); advice of Council regarding the State Flag (1834); a report by the Superintendent of the Penitentiary on escapes (1848); and a descriptive list from 1848 which includes the names of all the members of the Public Guard, the soldiers' place of birth, and physical description.</p>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>Arranged chronologically.</p>
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>
+            <emph render="bold">Records of the Commandant of the Public
+               Guard</emph>
+          </unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>1801
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1802
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1803
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1804 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1805
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1806 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1807
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1808
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1809
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1811
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1812
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1812
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1814 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1814 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1816 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1816 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1817
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1817
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1818
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1818
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1819
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1819
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1820
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1820
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1821 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1821 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1822
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1822
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1823
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">20</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1824
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">21</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1825
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1826
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">23</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1827
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">1</container>
-                  <container label="Folder" type="Folder">24</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1828
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-		</did>
-         			<c03 level="file">
-         			<did>
-         			<unittitle>January-May
-         			<unitdate>
-         			</unitdate>
-         			</unittitle>
-         			<physloc>
-         			</physloc>
-         			<container label="Box" type="box">1
-         			</container>
-         			<container label="Folder" type="Folder">25
-         			</container>
-         			<physdesc>
-         			</physdesc>
-         			</did>
- 				</c03>
-   	       			<c03 level="file">
-         			<did>
-         			<unittitle>June-December
-         			<unitdate>
-         			</unitdate>
-         			</unittitle>
-         			<physloc>
-         			</physloc>
-         			<container label="Box" type="box">1
-         			</container>
-         			<container label="Folder" type="Folder">26
-         			</container>
-         			<physdesc>
-         			</physdesc>
-         			</did>
- 				</c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1829
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1830
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1831
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1832 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1833
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1834
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1835
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1836
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1837
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">
-                  9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1838 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1839
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1840 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">12</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1841 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">13</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1842 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">14</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1843 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">2</container>
-                  <container label="Folder" type="Folder">15</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1844 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1845 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1846 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1847 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1848 
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-           <c02 level="file">
-               <did>
-                  <unittitle>1850
-                  <unitdate type="inclusive">
-                  </unitdate></unittitle>
-                  <container label="Box" type="box">3</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1823
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">20</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1824
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">21</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1825
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">22</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1826
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">23</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1827
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">1</container>
+            <container label="Folder" type="Folder">24</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1828
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          </did>
+          <c03 level="file">
             <did>
-               <unittitle><emph render="bold">Oversized</emph></unittitle>
+              <unittitle>January-May
+         			<unitdate era="ce" calendar="gregorian"/></unittitle>
+              <physloc/>
+              <container label="Box" type="box">1
+         			</container>
+              <container label="Folder" type="Folder">25
+         			</container>
+              <physdesc/>
             </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Muster Roll, 
-                  <unitdate type="inclusive">
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>June-December
+         			<unitdate era="ce" calendar="gregorian"/></unittitle>
+              <physloc/>
+              <container label="Box" type="box">1
+         			</container>
+              <container label="Folder" type="Folder">26
+         			</container>
+              <physdesc/>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1829
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1830
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1831
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1832 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
+                  4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1833
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
+                  5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1834
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
+                  6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1835
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
+                  7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1836
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
+                  8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1837
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">
+                  9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1838 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">10</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1839
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">11</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1840 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">12</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1841 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">13</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1842 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">14</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1843 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">2</container>
+            <container label="Folder" type="Folder">15</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1844 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1845 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1846 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1847 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1848 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1850
+                  <unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Box" type="box">3</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>
+            <emph render="bold">Oversized</emph>
+          </unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Muster Roll, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1814</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Architectural drawing of Armory Cupola, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Architectural drawing of Armory Cupola, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1822</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Arms and Accoutrements, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Arms and Accoutrements, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1823</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Arms and Accoutrements, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Arms and Accoutrements, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1825</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Arms and Accoutrements, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Arms and Accoutrements, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1826</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Petition of James Edwards to Governor and
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Petition of James Edwards to Governor and
                   Council, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1831</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Arms and Accoutrements, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Arms and Accoutrements, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1833</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Extract of proceedings of the meeting fo
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Extract of proceedings of the meeting fo
                   the Board of Directors of the Penitentiary regarding
                   change in the uniforms of the Public Guard, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1844</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Ordnance and Implements, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Ordnance and Implements, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1845</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Arms and Accoutrements, 
-                  <unitdate type="inclusive">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Arms and Accoutrements, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1846</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Descriptive list of the Public Guard, 
-                  <unitdate type="inclusive">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Descriptive list of the Public Guard, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1848</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Report by the Superintendent of the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Report by the Superintendent of the
                   Penitentiary on Escapes, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1848</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Report of the Superintendent of the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Report of the Superintendent of the
                   Penitentiary on furnishing clothing to the Public
                   Guard, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1848</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Ordnance and Implements, Small
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Ordnance and Implements, Small
                   Arms and Accoutrements, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1848</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Returns of Ordnance and Implements, Small
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Returns of Ordnance and Implements, Small
                   Arms and Accoutrements, 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1850</unitdate></unittitle>
-                  <container label="Box" type="box">4</container>
-                  <container label="Folder" type="Folder">
+            <container label="Box" type="box">4</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

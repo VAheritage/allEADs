@@ -1,151 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00901">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00901::A Guide to the Society of the Cincinnati Papers, 1783-1861)//EN&amp;#34; &amp;#34;vi00901.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00901">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00901::A Guide to the Society of the Cincinnati Papers, 1783-1861)//EN&amp;#34; &amp;#34;vi00901.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00901::A Guide to the Society of
              the Cincinnati Papers, 1783-1861)//EN"
              "vi00901.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Society of the Cincinnati
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Society of the Cincinnati
             Papers, 
-            <date>1783-1861</date></titleproper>
-            <subtitle id="sort">Society of the Cincinnati Papers,
+            <date era="ce" calendar="gregorian">1783-1861</date></titleproper>
+        <subtitle id="sort">Society of the Cincinnati Papers,
             1783-1861 
             <num type="collectionnumber">24646</num></subtitle>
-            <author>Alex Lorch</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Alex Lorch</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">10 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from Microsoft
+        </p>
+        <p id="filesize">10 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from Microsoft
          Word. Created by Alex Lorch 
-         <date>3 February 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">3 February 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00901::A Guide to the Society of the Cincinnati
             Papers, 1783-1861)//EN" "vi00901.xml" converted from EAD
             1.0 to 2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Society of the Cincinnati Papers, 
-         <date>1783-1861</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Society of the Cincinnati Papers, 
+         <date era="ce" calendar="gregorian">1783-1861</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">24646</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Alex Lorch</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Society of the Cincinnati Papers, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Alex Lorch</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Society of the Cincinnati Papers, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1783-1861</unitdate></unittitle>
-         <unitid label="Accession number">24646</unitid>
-         <physloc label="Physical Location">Organization Records
+      <unitid label="Accession number">24646</unitid>
+      <physloc label="Physical Location">Organization Records
          Collection, Accession 24646</physloc>
-         <physdesc label="Physical Characteristics">.225 cubic
+      <physdesc label="Physical Characteristics">.225 cubic
          feet</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Society of the
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Society of the
          Cincinnati</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Society of the Cincinnati Papers, 1783-1861. Accession
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Society of the Cincinnati Papers, 1783-1861. Accession
             24646, Organization Records Collection, The Library of
             Virginia, Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>This collection was loaned to The Library of Virginia by
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>This collection was loaned to The Library of Virginia by
             the Library of Congress for photostat copying in July
             1957.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>The Society of the Cincinnati was formed on 10-13 May 1783
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>The Society of the Cincinnati was formed on 10-13 May 1783
          by American Revolutionary Army officers who met at Mount
          Gulian, the American Army's cantonment on the east bank of the
          Hudson River. After resigning his post as General, George
@@ -167,10 +147,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          not-for-profit organization supporting educational, cultural,
          and literary activities that promote the ideals of liberty and
          constitutional government.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Papers, 1783-1861, of the Society of the Cincinnati
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Papers, 1783-1861, of the Society of the Cincinnati
          principally consisting of correspondence of society leaders,
          state societies, the French chapter of the Society, and Pierre
          Charles L'Enfant, the designer of the society insignia. There
@@ -178,678 +158,678 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          membership certificates, receipts, and minutes. These are the
          papers of the general Society of the Cincinnati and not the
          Society of the Cincinnati in the State of Virginia.</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>Series I-III and V arranged choronologically within the
+        <head>Arrangement</head>
+        <p>Series I-III and V arranged choronologically within the
             series and Series IV arranged by state and then
             chronologically.</p>
-         </arrangement>
-         <arrangement>
-            <head>Organization</head>
-            <p>The collection is organized in five series: 
-            <lb />Series I. Proceedings, 1783, 1788. 
-            <lb />Series II. Correspondence, 1783-1861. 
-            <lb />Series III. Pierre Charles L'Enfant Papers,
-            1783-1790. 
-            <lb />Series IV. State Societies' Papers, 1783-1812. 
-            <lb />Series V. Society of the Cincinnati, French chapter,
-            Papers, 1783-1826.</p>
-         </arrangement>
       </arrangement>
-      <descgrp type="add">
-         <head>Related Material</head>
-         <p>Society of the Cincinnati in the State of Virginia,
+      <arrangement>
+        <head>Organization</head>
+        <p>The collection is organized in five series: 
+            <lb/>Series I. Proceedings, 1783, 1788. 
+            <lb/>Series II. Correspondence, 1783-1861. 
+            <lb/>Series III. Pierre Charles L'Enfant Papers,
+            1783-1790. 
+            <lb/>Series IV. State Societies' Papers, 1783-1812. 
+            <lb/>Series V. Society of the Cincinnati, French chapter,
+            Papers, 1783-1826.</p>
+      </arrangement>
+    </arrangement>
+    <descgrp type="add">
+      <head>Related Material</head>
+      <p>Society of the Cincinnati in the State of Virginia,
          Records, 1783-1941 [bulk 1783-1848], Accession 26102 
-         <lb />Henry Lee, Membership certificate, 10 October 1785,
+         <lb/>Henry Lee, Membership certificate, 10 October 1785,
          Accession 20007a</p>
-      </descgrp>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series I">Proceedings, 
-               <unitdate type="inclusive">1783,
+    </descgrp>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series I">Proceedings, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">1783,
                1788</unitdate></unittitle>
-               <container label="Folder" type="Folder">1</container>
-            </did>
-            <scopecontent>
-               <p>Consists of proceedings, 10 May 1783 and 13 May 1783,
+          <container label="Folder" type="Folder">1</container>
+        </did>
+        <scopecontent>
+          <p>Consists of proceedings, 10 May 1783 and 13 May 1783,
                for the institution of the society and a circular
                letter, 8 May 1788, to the state societies and the
                president of the general society from Thomas Mifflin
                (1744-1800) stating that a general meeting of the
                society could not be held due to a lack of members
                present.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Proceedings and institution of the Society
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Proceedings and institution of the Society
                   of the Cincinnati, 
-                  <unitdate>10-13 May 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">1</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Thomas Mifflin to the state
+                  <unitdate era="ce" calendar="gregorian">10-13 May 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">1</emph>
+            </unitid>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Thomas Mifflin to the state
                   societies and the president of the general society, 
-                  <unitdate>8 May 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">2</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series II">Correspondence, 
-               <unitdate type="inclusive">
+                  <unitdate era="ce" calendar="gregorian">8 May 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">2</emph>
+            </unitid>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series II">Correspondence, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1783-1861</unitdate></unittitle>
-               <container label="Folder" type="Folder">2-4</container>
-            </did>
-            <scopecontent>
-               <p>Principally contains letters and circular letters
+          <container label="Folder" type="Folder">2-4</container>
+        </did>
+        <scopecontent>
+          <p>Principally contains letters and circular letters
                exchanged between leaders and members concerning the
                society. Consists of correspondence by, to, and
                concerning George Washington (1732-1799), Henry Knox
                (1750- 1806), and Alexander W. Johnston.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Return of the different promotions of the
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Return of the different promotions of the
                   officers of the division commanded by Ormand Marquis
                   de la Rouerie, 
-                  <unitdate>1 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">3</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from George Washington to Henry
+                  <unitdate era="ce" calendar="gregorian">1 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">3</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from George Washington to Henry
                   Knox, 
-                  <unitdate>16 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">4</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Partial letter from George Washington to
+                  <unitdate era="ce" calendar="gregorian">16 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">4</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Partial letter from George Washington to
                   the state societies, 
-                  <unitdate>24 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">5</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from George Washington to Henry
+                  <unitdate era="ce" calendar="gregorian">24 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">5</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from George Washington to Henry
                   Knox, 
-                  <unitdate>3 November 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">6</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Segond to Henry Knox, 
-                  <unitdate>18 November 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">7</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from De Brahm to Henry Knox, 
-                  <unitdate>14 December 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">8</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Partial letter from Henry Knox to
+                  <unitdate era="ce" calendar="gregorian">3 November 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">6</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Segond to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">18 November 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">7</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from De Brahm to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">14 December 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">8</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Partial letter from Henry Knox to
                   Alexander McDougall, 
-                  <unitdate>17 December 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">9</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Circular letter from George Washington to
+                  <unitdate era="ce" calendar="gregorian">17 December 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">9</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Circular letter from George Washington to
                   the presidents of the state societies, 
-                  <unitdate>1 January 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">10</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Membership certificate issued to Claude
+                  <unitdate era="ce" calendar="gregorian">1 January 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">10</emph>
+            </unitid>
+            <container label="Folder" type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Membership certificate issued to Claude
                   Antoine Villet de Marcellin, 
-                  <unitdate>20 March 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">11</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from John Allison to George
+                  <unitdate era="ce" calendar="gregorian">20 March 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">11</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from John Allison to George
                   Washington, 
-                  <unitdate>26 April 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">12</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Ormand Marquis de la Rouerie
+                  <unitdate era="ce" calendar="gregorian">26 April 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">12</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Ormand Marquis de la Rouerie
                   to Henry Knox, 
-                  <unitdate>4 May 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">13</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from George Washington to Henry
+                  <unitdate era="ce" calendar="gregorian">4 May 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">13</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from George Washington to Henry
                   Knox, 
-                  <unitdate>27 April 1787</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">14</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Thomas Mifflin to George
+                  <unitdate era="ce" calendar="gregorian">27 April 1787</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">14</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Thomas Mifflin to George
                   Washington, 
-                  <unitdate>8 May 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">15</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Turner to George Washington, 
-                  <unitdate>11 May 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">16</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Paul Bentalon to Henry Knox, 
-                  <unitdate>26 November 1789</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">17</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from George Washington to state
+                  <unitdate era="ce" calendar="gregorian">8 May 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">15</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Turner to George Washington, 
+                  <unitdate era="ce" calendar="gregorian">11 May 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">16</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Paul Bentalon to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">26 November 1789</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">17</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from George Washington to state
                   societies' general convention delegates, 
-                  <unitdate>May 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">18</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Thomas Mifflin to Henry Knox, 
-                  <unitdate>27 April 1791</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">19</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Lear to Henry Knox, 
-                  <unitdate>10 July 1791</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">20</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">3</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Henry Knox to General
+                  <unitdate era="ce" calendar="gregorian">May 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">18</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Thomas Mifflin to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">27 April 1791</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">19</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Lear to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">10 July 1791</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">20</emph>
+            </unitid>
+            <container label="Folder" type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Henry Knox to General
                   McPherson, 
-                  <unitdate>6 November 1798</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">21</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Alexander W. Johnston to
+                  <unitdate era="ce" calendar="gregorian">6 November 1798</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">21</emph>
+            </unitid>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Alexander W. Johnston to
                   Charles Graham, 
-                  <unitdate>1 June 1822</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">22</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from James Glentworth to Alexander
+                  <unitdate era="ce" calendar="gregorian">1 June 1822</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">22</emph>
+            </unitid>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from James Glentworth to Alexander
                   W. Johnston, 
-                  <unitdate>13 November 1845</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">23</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Charles S. Daveis to Alexander
+                  <unitdate era="ce" calendar="gregorian">13 November 1845</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">23</emph>
+            </unitid>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Charles S. Daveis to Alexander
                   W. Johnston, 
-                  <unitdate>15 October 1847</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">24</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Edward P. Marcellin to
+                  <unitdate era="ce" calendar="gregorian">15 October 1847</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">24</emph>
+            </unitid>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Edward P. Marcellin to
                   Alexander W. Johnston, 
-                  <unitdate>18 October 1847</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">25</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from H. A. DeSaussure to Thomas
+                  <unitdate era="ce" calendar="gregorian">18 October 1847</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">25</emph>
+            </unitid>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from H. A. DeSaussure to Thomas
                   McEuen, 
-                  <unitdate>9 May 1856</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">26</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Fish to Thomas McEuen, 
-                  <unitdate>25 January 1861</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">27</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series III">Pierre Charles L'Enfant
+                  <unitdate era="ce" calendar="gregorian">9 May 1856</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">26</emph>
+            </unitid>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Fish to Thomas McEuen, 
+                  <unitdate era="ce" calendar="gregorian">25 January 1861</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">27</emph>
+            </unitid>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series III">Pierre Charles L'Enfant
                Papers, 
-               <unitdate type="inclusive">
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1783-1790</unitdate></unittitle>
-               <container label="Folder" type="Folder">5-8</container>
-            </did>
-            <scopecontent>
-               <p>Contains certificates, letters, and receipts of and
+          <container label="Folder" type="Folder">5-8</container>
+        </did>
+        <scopecontent>
+          <p>Contains certificates, letters, and receipts of and
                concerning Pierre Charles L'Enfant. Correspondence is
                principally exchanged with George Washington, Henry Knox
                and state society leaders. Also contains the minutes of
                L'Enfant's transactions in France, L'Enfant's membership
                certificate, and a letter, 7 January 1786, from Thomas
                Jefferson (1743-1826) to George Washington.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to Friedrich William
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to Friedrich William
                   Steuben, 
-                  <unitdate>10 June 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">28</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to Henry Knox, 
-                  <unitdate>27 September 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">29</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to Henry Knox, 
-                  <unitdate>1 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">30</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Certificate noting an appropriation of
+                  <unitdate era="ce" calendar="gregorian">10 June 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">28</emph>
+            </unitid>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">27 September 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">29</emph>
+            </unitid>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">1 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">30</emph>
+            </unitid>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Certificate noting an appropriation of
                   society monies to L'Enfant, 
-                  <unitdate>15 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">31</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Henry Knox to George
+                  <unitdate era="ce" calendar="gregorian">15 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">31</emph>
+            </unitid>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Henry Knox to George
                   Washington, 
-                  <unitdate>16 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">32</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Receipt noting an appropriation of society
+                  <unitdate era="ce" calendar="gregorian">16 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">32</emph>
+            </unitid>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Receipt noting an appropriation of society
                   monies to L'Enfant, 
-                  <unitdate>15 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">33</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Partial letter from Henry Knox to George
+                  <unitdate era="ce" calendar="gregorian">15 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">33</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Partial letter from Henry Knox to George
                   Washington, 
-                  <unitdate>29 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">34</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Membership certificate issued to L'Enfant,
-                  <unitdate>1 November 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">35</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Henry Knox to George
+                  <unitdate era="ce" calendar="gregorian">29 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">34</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Membership certificate issued to L'Enfant,
+                  <unitdate era="ce" calendar="gregorian">1 November 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">35</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Henry Knox to George
                   Washington, 
-                  <unitdate>29 April 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">36</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Minutes of L'Enfant's transactions in
+                  <unitdate era="ce" calendar="gregorian">29 April 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">36</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Minutes of L'Enfant's transactions in
                   France, 
-                  <unitdate>May 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">37</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to George Washington
+                  <unitdate era="ce" calendar="gregorian">May 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">37</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to George Washington
                   and the general society convention, 
-                  <unitdate>10 May 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">38</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to George Washington,
-                  <unitdate>4 August 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">39</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Thomas Jefferson to George
+                  <unitdate era="ce" calendar="gregorian">10 May 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">38</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to George Washington,
+                  <unitdate era="ce" calendar="gregorian">4 August 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">39</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Thomas Jefferson to George
                   Washington, 
-                  <unitdate>7 January 1786</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">40</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Extract from L'Enfant's memorial, 
-                  <unitdate>17 October 1786</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">41</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Envelope for L'Enfant's memorial, 
-                  <unitdate>1 December 1786</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">42</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to Henry Knox, 
-                  <unitdate>2 May 1787</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">43</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Turner to Henry Knox, 
-                  <unitdate>8 July 1787</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">44</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Fenner to Henry Knox, 
-                  <unitdate>12 July 1787</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">45</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from George Weedon to Henry Knox, 
-                  <unitdate>16 November 1787</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">46</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from James Tilton to Henry Knox, 
-                  <unitdate>22 December 1787</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">47</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">7</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to George Washington,
-                  <unitdate>15 April 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">48</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from George Washington to Henry
+                  <unitdate era="ce" calendar="gregorian">7 January 1786</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">40</emph>
+            </unitid>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Extract from L'Enfant's memorial, 
+                  <unitdate era="ce" calendar="gregorian">17 October 1786</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">41</emph>
+            </unitid>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Envelope for L'Enfant's memorial, 
+                  <unitdate era="ce" calendar="gregorian">1 December 1786</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">42</emph>
+            </unitid>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">2 May 1787</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">43</emph>
+            </unitid>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Turner to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">8 July 1787</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">44</emph>
+            </unitid>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Fenner to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">12 July 1787</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">45</emph>
+            </unitid>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from George Weedon to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">16 November 1787</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">46</emph>
+            </unitid>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from James Tilton to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">22 December 1787</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">47</emph>
+            </unitid>
+            <container label="Folder" type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to George Washington,
+                  <unitdate era="ce" calendar="gregorian">15 April 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">48</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from George Washington to Henry
                   Knox, 
-                  <unitdate>28 April 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">49</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to Henry Knox, 
-                  <unitdate>3 May 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">50</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from G. Turner to Bloomfield, 
-                  <unitdate>25 May 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">51</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Receipt noting payment from Henry Knox, 
-                  <unitdate>22 January 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">52</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Circular letter to the state societies
+                  <unitdate era="ce" calendar="gregorian">28 April 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">49</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">3 May 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">50</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from G. Turner to Bloomfield, 
+                  <unitdate era="ce" calendar="gregorian">25 May 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">51</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Receipt noting payment from Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">22 January 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">52</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Circular letter to the state societies
                   requesting payment of the their quotas, 
-                  <unitdate>4 June 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">53</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Accounts of the payments made to L'Enfant
+                  <unitdate era="ce" calendar="gregorian">4 June 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">53</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Accounts of the payments made to L'Enfant
                   by the state societies, 
-                  <unitdate>ca. July 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">54</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from L'Enfant to Henry Knox, 
-                  <unitdate>11 September 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">55</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle label="Series IV">State Societies' Papers, 
-               <unitdate type="inclusive">
+                  <unitdate era="ce" calendar="gregorian">ca. July 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">54</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from L'Enfant to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">11 September 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">55</emph>
+            </unitid>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series IV">State Societies' Papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1783-1812</unitdate></unittitle>
-               <container label="Folder" type="Folder">9-10</container>
-            </did>
-            <scopecontent>
-               <p>Includes papers for the state societies in New York,
+          <container label="Folder" type="Folder">9-10</container>
+        </did>
+        <scopecontent>
+          <p>Includes papers for the state societies in New York,
                New Jersey, Pennsylvania, Delaware, North Carolina, and
                South Carolina. Principally consists of correspondence
                exchanged between the state societies and the general
@@ -858,369 +838,369 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
                of a New Jersey society meeting and list of members and
                establishment notice, 7 April 1784, for the South
                Carolina society.</p>
-            </scopecontent>
-            <c02 level="subseries">
-               <did>
-                  <unittitle label="Subseries A">New York</unittitle>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Letter from Loomis to Richard Varick 
-                     <unitdate>12 September 1812</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">56</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     9</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle label="Subseries B">New Jersey</unittitle>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Extract from the minutes of the
-                     society, 
-                     <unitdate>4 July 1795</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">57</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     9</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle label="Subseries C">
-                  Pennsylvania</unittitle>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Minutes for a meeting of the society, 
-                     <unitdate>17 August 1790</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">58</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     9</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle label="Subseries D">Delaware</unittitle>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Letter from McKennon to Henry Knox, 
-                     <unitdate>6 November 1783</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">59</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     9</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Circular letter to the other state
-                     societies, 
-                     <unitdate>6 November 1783</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">60</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     9</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle label="Subseries E">North
-                  Carolina</unittitle>
-                  <container label="Folder" type="Folder">
-                  10</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Letter from Adam Boyd to Friedrich
-                     William Steuben, 
-                     <unitdate>20 November 1783</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">61</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     10</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle label="Subseries F">South
-                  Carolina</unittitle>
-                  <container label="Folder" type="Folder">10 and
-                  oversize</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Letter from William Moultrie to
-                     Friedrich William Steuben, 
-                     <unitdate>13 October 1783</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">62</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     10</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>List of members and establishment
-                     notice for the state society, 
-                     <unitdate>7 April 1784</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">63</emph>
-                     </unitid>
-                     <container label="Oversize Box" type="Folder">Oversize
-                     box 105</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>Letter from S. Drayton to Henry Knox, 
-                     <unitdate>20 July 1790</unitdate></unittitle>
-                     <unitid>
-                        <emph render="bold">64</emph>
-                     </unitid>
-                     <container label="Folder" type="Folder">
-                     10</container>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
+        </scopecontent>
+        <c02 level="subseries">
+          <did>
+            <unittitle label="Subseries A">New York</unittitle>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+          <c03 level="file">
             <did>
-               <unittitle label="Series V">Society of the Cincinnati,
-               French chapter, Papers, 
-               <unitdate type="inclusive">
-               1783-1826</unitdate></unittitle>
-               <container label="Folder" type="Folder">
-               11-12</container>
+              <unittitle>Letter from Loomis to Richard Varick 
+                     <unitdate era="ce" calendar="gregorian">12 September 1812</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">56</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     9</container>
             </did>
-            <scopecontent>
-               <p>Consists of French officers' applications for
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle label="Subseries B">New Jersey</unittitle>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Extract from the minutes of the
+                     society, 
+                     <unitdate era="ce" calendar="gregorian">4 July 1795</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">57</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     9</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle label="Subseries C">
+                  Pennsylvania</unittitle>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Minutes for a meeting of the society, 
+                     <unitdate era="ce" calendar="gregorian">17 August 1790</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">58</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     9</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle label="Subseries D">Delaware</unittitle>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Letter from McKennon to Henry Knox, 
+                     <unitdate era="ce" calendar="gregorian">6 November 1783</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">59</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     9</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Circular letter to the other state
+                     societies, 
+                     <unitdate era="ce" calendar="gregorian">6 November 1783</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">60</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     9</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle label="Subseries E">North
+                  Carolina</unittitle>
+            <container label="Folder" type="Folder">
+                  10</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Letter from Adam Boyd to Friedrich
+                     William Steuben, 
+                     <unitdate era="ce" calendar="gregorian">20 November 1783</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">61</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     10</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle label="Subseries F">South
+                  Carolina</unittitle>
+            <container label="Folder" type="Folder">10 and
+                  oversize</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Letter from William Moultrie to
+                     Friedrich William Steuben, 
+                     <unitdate era="ce" calendar="gregorian">13 October 1783</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">62</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     10</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>List of members and establishment
+                     notice for the state society, 
+                     <unitdate era="ce" calendar="gregorian">7 April 1784</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">63</emph>
+              </unitid>
+              <container label="Oversize Box" type="Folder">Oversize
+                     box 105</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Letter from S. Drayton to Henry Knox, 
+                     <unitdate era="ce" calendar="gregorian">20 July 1790</unitdate></unittitle>
+              <unitid>
+                <emph render="bold">64</emph>
+              </unitid>
+              <container label="Folder" type="Folder">
+                     10</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series V">Society of the Cincinnati,
+               French chapter, Papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
+               1783-1826</unitdate></unittitle>
+          <container label="Folder" type="Folder">
+               11-12</container>
+        </did>
+        <scopecontent>
+          <p>Consists of French officers' applications for
                membership, a list of French officers, and
                correspondence exchanged with general society leaders
                Henry Knox and George Washington.</p>
-            </scopecontent>
-            <c02 level="file">
-               <did>
-                  <unittitle>Partial letter from George Washington to
+        </scopecontent>
+        <c02 level="file">
+          <did>
+            <unittitle>Partial letter from George Washington to
                   Marquis de Lafayette, 
-                  <unitdate>20 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">65</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">20 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">65</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Partial circular letter from George
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Partial circular letter from George
                   Washington to the state societies, 
-                  <unitdate>29 October 1783</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">66</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">29 October 1783</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">66</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from the Count of Rochambeau to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from the Count of Rochambeau to
                   George Washington, 
-                  <unitdate>19 January 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">67</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">19 January 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">67</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from the Count of Lilancour to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from the Count of Lilancour to
                   George Washington, 
-                  <unitdate>22 February 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">68</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">22 February 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">68</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from the County of Lilancour to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from the County of Lilancour to
                   George Washington, 
-                  <unitdate>20 February 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">69</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">20 February 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">69</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Partial letter from George Washington to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Partial letter from George Washington to
                   Baron Viomenil, 
-                  <unitdate>15 May 1784</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">70</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">15 May 1784</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">70</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Etat de service (in French), 
-                  <unitdate>1 May 1785</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">71</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Etat de service (in French), 
+                  <unitdate era="ce" calendar="gregorian">1 May 1785</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">71</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from James Perkins to Henry Knox, 
-                  <unitdate>20 April 1787</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">72</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from James Perkins to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">20 April 1787</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">72</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from an unidentified source to
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from an unidentified source to
                   Baron de la Voltiere, 
-                  <unitdate>11 June 1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">73</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">11 June 1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">73</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>List of French officers who joined the
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>List of French officers who joined the
                   American Revolutionary Army and became members of the
                   Society, 
-                  <unitdate>1788</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">74</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">1788</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">74</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Order of the King of France (in French), 
-                  <unitdate>15 May 1785</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">75</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Order of the King of France (in French), 
+                  <unitdate era="ce" calendar="gregorian">15 May 1785</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">75</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Ormand Marquis de la Rouerie
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Ormand Marquis de la Rouerie
                   to Henry Knox, 
-                  <unitdate>2 January 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">76</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">2 January 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">76</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from W. Eustis to Henry Knox, 
-                  <unitdate>14 March 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">77</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from W. Eustis to Henry Knox, 
+                  <unitdate era="ce" calendar="gregorian">14 March 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">77</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>List of diplomas to be sent to France, 
-                  <unitdate>November 1790</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">78</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>List of diplomas to be sent to France, 
+                  <unitdate era="ce" calendar="gregorian">November 1790</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">78</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from Ponteres Gien to Pinkney (in
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from Ponteres Gien to Pinkney (in
                   French), 
-                  <unitdate>17 September 1816</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">79</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">17 September 1816</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">79</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Membership application of Leaumont (in
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Membership application of Leaumont (in
                   French), 
-                  <unitdate>20 October 1820</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">80</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">20 October 1820</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">80</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Letter from George De LaRoche to William
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letter from George De LaRoche to William
                   Jackson, 
-                  <unitdate>27 August 1826</unitdate></unittitle>
-                  <unitid>
-                     <emph render="bold">81</emph>
-                  </unitid>
-                  <container label="Folder" type="Folder">
+                  <unitdate era="ce" calendar="gregorian">27 August 1826</unitdate></unittitle>
+            <unitid>
+              <emph render="bold">81</emph>
+            </unitid>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

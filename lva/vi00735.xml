@@ -1,146 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi00735">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00735::A Guide to the Corbin Family Papers, 1794-1815)//EN&amp;#34; &amp;#34;vi00735.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00735">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00735::A Guide to the Corbin Family Papers, 1794-1815)//EN&amp;#34; &amp;#34;vi00735.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00735::A Guide to the Corbin
              Family Papers, 1794-1815)//EN" "vi00735.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Corbin Family Papers, 
-            <date>1794-1815</date></titleproper>
-            <subtitle id="sort">Corbin Family Papers, 1794-1815 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Corbin Family Papers, 
+            <date era="ce" calendar="gregorian">1794-1815</date></titleproper>
+        <subtitle id="sort">Corbin Family Papers, 1794-1815 
             <num type="collectionnumber">24976</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Trenton Hizer</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">ca. 10 Kilobytes</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">ca. 10 Kilobytes</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Trenton Hizer, 
-         <date>1 May 2003</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">1 May 2003</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00735::A Guide to the Corbin Family Papers,
             1794-1815)//EN" "vi00735.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Corbin Family Papers, 
-         <date>1794-1815</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Corbin Family Papers, 
+         <date era="ce" calendar="gregorian">1794-1815</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">24976</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Papers, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Papers, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1794-1815</unitdate></unittitle>
-         <unitid label="Accession number">24976</unitid>
-         <physloc label="Physical Location">Personal Papers Collection,
+      <unitid label="Accession number">24976</unitid>
+      <physloc label="Physical Location">Personal Papers Collection,
          Acc. 24976</physloc>
-         <physdesc label="Physical Characteristics">11 leaves and 53
+      <physdesc label="Physical Characteristics">11 leaves and 53
          pages</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Corbin family</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Corbin family</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Corbin Family. Papers, 1794-1815. Accession 24976.
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Corbin Family. Papers, 1794-1815. Accession 24976.
             Personal papers collection, The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Gift of Leon M. Bazille, Elmont, Virginia, 28 October
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Gift of Leon M. Bazille, Elmont, Virginia, 28 October
             1951.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical Information</head>
-         <p>John Tayloe Corbin (1739-16 February 1794) served as a
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical Information</head>
+      <p>John Tayloe Corbin (1739-16 February 1794) served as a
          member of the House of Burgesses from King and Queen County,
          Virginia, from 1769 to 1774. He married Maria Waller (14 July
          1752-16 September 1796) 16 February 1771, and they had seven
@@ -155,10 +135,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          married Madison Dillard; and his sister Elizabeth Tayloe
          Corbin married first Richard Henry Corbin, and second, Elliot
          Muse (1778-1818).</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Papers, 1794-1815, of the Corbin family of King and Queen
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Papers, 1794-1815, of the Corbin family of King and Queen
          County, Virginia, consisting correspondence and papers of
          Maria Corbin and her son Richard Corbin and containing
          accounts, bonds, drafts, inventories, letters, propositions,
@@ -174,375 +154,375 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Peter Wiatt, and Richard Corbin. A letter, 17 January 1796,
          and a bond, 1 March 1809 are temporarily unavailable due to
          conservation needs.</p>
-      </scopecontent>
-      <arrangement>
-         <head>Arrangement</head>
-         <p>chronological</p>
-      </arrangement>
-      <dsc type="in-depth">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle>Corbin Family Papers, 
-               <unitdate type="inclusive">
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
+      <p>chronological</p>
+    </arrangement>
+    <dsc type="in-depth">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Corbin Family Papers, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1794-1815</unitdate></unittitle>
-            </did>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>n.d.,</unitdate> from an unknown
+        </did>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> from an unknown
                   correspondent, possibly Maria Corbin, to Samuel
                   Harris.</unittitle>
-                  <unitid>
-                     <emph render="bold">1</emph>
-                  </unitid>
-                  <physdesc>2 p., incomplete.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>n.d.,</unitdate> [Maria Corbin] to Richard
+            <unitid>
+              <emph render="bold">1</emph>
+            </unitid>
+            <physdesc>2 p., incomplete.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">n.d.,</unitdate> [Maria Corbin] to Richard
                   [Corbin].</unittitle>
-                  <unitid>
-                     <emph render="bold">2</emph>
-                  </unitid>
-                  <physdesc>4 p., incomplete.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>1 September 1794,</unitdate> Maria Corbin,
+            <unitid>
+              <emph render="bold">2</emph>
+            </unitid>
+            <physdesc>4 p., incomplete.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">1 September 1794,</unitdate> Maria Corbin,
                   Laneville, [King and Queen County, Virginia], to
                   Richard Corbin, Park Place, Williamsburg,
                   [Virginia].</unittitle>
-                  <unitid>
-                     <emph render="bold">3</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>3 November 1794,</unitdate> Maria Corbin,
+            <unitid>
+              <emph render="bold">3</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">3 November 1794,</unitdate> Maria Corbin,
                   Laneville, to Richard Corbin,
                   Williamsburg.</unittitle>
-                  <unitid>
-                     <emph render="bold">4</emph>
-                  </unitid>
-                  <physdesc>3 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>, 
-                  <unitdate>3 December 1794,</unitdate> Maria Corbin to
+            <unitid>
+              <emph render="bold">4</emph>
+            </unitid>
+            <physdesc>3 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>, 
+                  <unitdate era="ce" calendar="gregorian">3 December 1794,</unitdate> Maria Corbin to
                   Richard Corbin.</unittitle>
-                  <unitid>
-                     <emph render="bold">5</emph>
-                  </unitid>
-                  <physdesc>4 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>7 December 1794,</unitdate> George Turner to
+            <unitid>
+              <emph render="bold">5</emph>
+            </unitid>
+            <physdesc>4 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">7 December 1794,</unitdate> George Turner to
                   Richard Corbin, Williamsburg.</unittitle>
-                  <unitid>
-                     <emph render="bold">6</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>17 March 1795,</unitdate> George Turner,
+            <unitid>
+              <emph render="bold">6</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">17 March 1795,</unitdate> George Turner,
                   Richmond, [Virginia], to [Richard
                   Corbin].</unittitle>
-                  <unitid>
-                     <emph render="bold">7</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>17 March 1795,</unitdate> Maria Corbin,
+            <unitid>
+              <emph render="bold">7</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">17 March 1795,</unitdate> Maria Corbin,
                   Laneville, to Richard [Corbin].</unittitle>
-                  <unitid>
-                     <emph render="bold">8</emph>
-                  </unitid>
-                  <physdesc>4 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>30 April 1795,</unitdate> George Turner,
+            <unitid>
+              <emph render="bold">8</emph>
+            </unitid>
+            <physdesc>4 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">30 April 1795,</unitdate> George Turner,
                   Fredericksburg, [Virginia], to Richard Corbin,
                   Williamsburg.</unittitle>
-                  <unitid>
-                     <emph render="bold">9</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>30 May 1795,</unitdate> George Turner,
+            <unitid>
+              <emph render="bold">9</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">30 May 1795,</unitdate> George Turner,
                   Laneville, to Richard Corbin,
                   Williamsburg.</unittitle>
-                  <unitid>
-                     <emph render="bold">10</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>17 January 1796,</unitdate> George Turner,
+            <unitid>
+              <emph render="bold">10</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">17 January 1796,</unitdate> George Turner,
                   Laneville, to Richard Corbin.</unittitle>
-                  <unitid>
-                     <emph render="bold">11</emph>
-                  </unitid>
-                  <physdesc>4 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>6 August 1796,</unitdate> Richard Corbin to
+            <unitid>
+              <emph render="bold">11</emph>
+            </unitid>
+            <physdesc>4 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">6 August 1796,</unitdate> Richard Corbin to
                   an unknown recipient.</unittitle>
-                  <unitid>
-                     <emph render="bold">12</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>11 January 1797,</unitdate> Charles Young,
+            <unitid>
+              <emph render="bold">12</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">11 January 1797,</unitdate> Charles Young,
                   attorney for Thomas Blane of York [County,
                   Virginia?], to Maria Corbin, Laneville.</unittitle>
-                  <unitid>
-                     <emph render="bold">13</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>7 September 1797,</unitdate> Daniel Turner,
+            <unitid>
+              <emph render="bold">13</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">7 September 1797,</unitdate> Daniel Turner,
                   Moss Neck, [Caroline County, Virginia], to Richard
                   Corbin, Laneville.</unittitle>
-                  <unitid>
-                     <emph render="bold">14</emph>
-                  </unitid>
-                  <physdesc>3 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Draft, 
-                  <unitdate>20 February 1807,</unitdate> John B. Whiting
+            <unitid>
+              <emph render="bold">14</emph>
+            </unitid>
+            <physdesc>3 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Draft, 
+                  <unitdate era="ce" calendar="gregorian">20 February 1807,</unitdate> John B. Whiting
                   on Richard Corbin for 169 p 4 s for the benefit of
                   Captain Peter Wiatt.</unittitle>
-                  <unitid>
-                     <emph render="bold">15</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Draft, 
-                  <unitdate>25 February 1807,</unitdate> John B. Whiting
+            <unitid>
+              <emph render="bold">15</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Draft, 
+                  <unitdate era="ce" calendar="gregorian">25 February 1807,</unitdate> John B. Whiting
                   on Richard Corbin for $950 for the benefit of Thomas
                   Muse.</unittitle>
-                  <unitid>
-                     <emph render="bold">16</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>5 November 1807,</unitdate> John B. Whiting
+            <unitid>
+              <emph render="bold">16</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">5 November 1807,</unitdate> John B. Whiting
                   to Richard Corbin, Laneville, King and Queen
                   County.</unittitle>
-                  <unitid>
-                     <emph render="bold">17</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Receipt, 
-                  <unitdate>19 December 1807,</unitdate> John B. Whiting
+            <unitid>
+              <emph render="bold">17</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Receipt, 
+                  <unitdate era="ce" calendar="gregorian">19 December 1807,</unitdate> John B. Whiting
                   to Richard Corbin, Laneville, King and Queen County,
                   for $1000 and three slaves.</unittitle>
-                  <unitid>
-                     <emph render="bold">18</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>2[8] December 1807,</unitdate> John B.
+            <unitid>
+              <emph render="bold">18</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">2[8] December 1807,</unitdate> John B.
                   Whiting to Richard Corgin, Laneville, King and Queen
                   County.</unittitle>
-                  <unitid>
-                     <emph render="bold">19</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Proposition, 
-                  <unitdate>14 February 1808,</unitdate> to John B.
+            <unitid>
+              <emph render="bold">19</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Proposition, 
+                  <unitdate era="ce" calendar="gregorian">14 February 1808,</unitdate> to John B.
                   Whiting for renting White Hall in Gloucester County,
                   Virginia, from Richard Corbin. Attested by Read
                   Watlington.</unittitle>
-                  <unitid>
-                     <emph render="bold">20</emph>
-                  </unitid>
-                  <physdesc>3 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Inventory, 
-                  <unitdate>14 February [1808],</unitdate> of the
+            <unitid>
+              <emph render="bold">20</emph>
+            </unitid>
+            <physdesc>3 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Inventory, 
+                  <unitdate era="ce" calendar="gregorian">14 February [1808],</unitdate> of the
                   property at White Hall delivered to John B. Whiting.
                   Attested by REad Watlington.</unittitle>
-                  <unitid>
-                     <emph render="bold">21</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Drafts, 
-                  <unitdate>2 April 1808,</unitdate> John B. Whiting on
+            <unitid>
+              <emph render="bold">21</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Drafts, 
+                  <unitdate era="ce" calendar="gregorian">2 April 1808,</unitdate> John B. Whiting on
                   Richard Corbin for $2000 for the benefit of Elliott
                   Muse.</unittitle>
-                  <unitid>
-                     <emph render="bold">22</emph>
-                  </unitid>
-                  <physdesc>2 leaves.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Draft, 
-                  <unitdate>11 June 1808,</unitdate> John B. Whiting on
+            <unitid>
+              <emph render="bold">22</emph>
+            </unitid>
+            <physdesc>2 leaves.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Draft, 
+                  <unitdate era="ce" calendar="gregorian">11 June 1808,</unitdate> John B. Whiting on
                   Elliott Muse for $250 for the benefit of Richard
                   Corbin.</unittitle>
-                  <unitid>
-                     <emph render="bold">23</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>13 February 1809,</unitdate> John B. Whiting
+            <unitid>
+              <emph render="bold">23</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">13 February 1809,</unitdate> John B. Whiting
                   to Richard Corbin, Laneville.</unittitle>
-                  <unitid>
-                     <emph render="bold">24</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Bond, 
-                  <unitdate>1 March 1809,</unitdate> John Beverley
+            <unitid>
+              <emph render="bold">24</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Bond, 
+                  <unitdate era="ce" calendar="gregorian">1 March 1809,</unitdate> John Beverley
                   Whiting and Ralph Wormeley to Richard Corbin of
                   Laneville.</unittitle>
-                  <unitid>
-                     <emph render="bold">25</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Account, 
-                  <unitdate>[November 1809],</unitdate> Richard Corbin
+            <unitid>
+              <emph render="bold">25</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Account, 
+                  <unitdate era="ce" calendar="gregorian">[November 1809],</unitdate> Richard Corbin
                   in account with the estate of George Turner,
                   deceased.</unittitle>
-                  <unitid>
-                     <emph render="bold">26</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>6 November 1812,</unitdate> John B. Whiting
+            <unitid>
+              <emph render="bold">26</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">6 November 1812,</unitdate> John B. Whiting
                   to Richard Corbin, Laneville, King and Queen
                   County.</unittitle>
-                  <unitid>
-                     <emph render="bold">27</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>28 August 1813,</unitdate> John B. Whiting,
+            <unitid>
+              <emph render="bold">27</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">28 August 1813,</unitdate> John B. Whiting,
                   Gloucester Court House, [Virginia], to [Richard
                   Corbin].</unittitle>
-                  <unitid>
-                     <emph render="bold">28</emph>
-                  </unitid>
-                  <physdesc>2 p.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>28 March 1815,</unitdate> Richard Corbin,
+            <unitid>
+              <emph render="bold">28</emph>
+            </unitid>
+            <physdesc>2 p.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">28 March 1815,</unitdate> Richard Corbin,
                   Laneville, to Madison Dillard, Rural Villa, Caroline
                   County, [Virginia].</unittitle>
-                  <unitid>
-                     <emph render="bold">29</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-            <c02 level="item">
-               <did>
-                  <unittitle>Letter, 
-                  <unitdate>3 August 1815,</unitdate> Madison Dillard,
+            <unitid>
+              <emph render="bold">29</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle>Letter, 
+                  <unitdate era="ce" calendar="gregorian">3 August 1815,</unitdate> Madison Dillard,
                   Caroline [County], to Richard Corbin,
                   Laneville.</unittitle>
-                  <unitid>
-                     <emph render="bold">30</emph>
-                  </unitid>
-                  <physdesc>1 leaf.</physdesc>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+            <unitid>
+              <emph render="bold">30</emph>
+            </unitid>
+            <physdesc>1 leaf.</physdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

@@ -1,157 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-]>
-<ead id="vi00186">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00186::A Guide to the Graves Family Papers, 1731-1863)//EN&amp;#34; &amp;#34;vi00186.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00186">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi00186::A Guide to the Graves Family Papers, 1731-1863)//EN&amp;#34; &amp;#34;vi00186.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi00186::A Guide to the Graves
              Family Papers, 1731-1863)//EN" "vi00186.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Graves Family Papers, 
-            <date>1731-1863</date></titleproper>
-            <subtitle id="sort">Graves Family Papers, 1731-1863 
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Graves Family Papers, 
+            <date era="ce" calendar="gregorian">1731-1863</date></titleproper>
+        <subtitle id="sort">Graves Family Papers, 1731-1863 
             <num type="collectionnumber">20563</num></subtitle>
-            <author>Trenton Hizer</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2002 By the Library
+        <author>Trenton Hizer</author>
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2002 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">6 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">6 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Miriam B. Spectre, 
-         <date>28 February 2002</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">28 February 2002</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi00186::A Guide to the Graves Family Papers,
             1731-1863)//EN" "vi00186.xml" converted from EAD 1.0 to
             2002 by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Graves Family Papers, 
-         <date>1731-1863</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Graves Family Papers, 
+         <date era="ce" calendar="gregorian">1731-1863</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">20563</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2002</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Trenton Hizer</item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2002</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Trenton Hizer</item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Graves Family Papers, 
-         <unitdate type="inclusive" label="Date">
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Graves Family Papers, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1731-1863</unitdate></unittitle>
-         <unitid label="Accession number">20563</unitid>
-         <physloc label="Physical Location">Personal Papers Collection,
+      <unitid label="Accession number">20563</unitid>
+      <physloc label="Physical Location">Personal Papers Collection,
          Acc. 20563</physloc>
-         <physdesc label="Physical Characteristics">57
+      <physdesc label="Physical Characteristics">57
          items.</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Graves Family Papers, 1731-1863. Accession 20563,
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Graves Family Papers, 1731-1863. Accession 20563,
             Personal papers collection, The Library of Virginia,
             Richmond, Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Gift of Mrs. William Butler Bonham, Gordonsville,
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Gift of Mrs. William Butler Bonham, Gordonsville,
             Virginia, 23 March 1933.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Biographical/Historical Information</head>
-         <p>The Graves family was among the earliest settlers of what
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Biographical/Historical Information</head>
+      <p>The Graves family was among the earliest settlers of what
          is now Madison County, Virginia. Captain Thomas Graves first
          settled there about. 1732 and built the family home, "Spring
          Hill," near the present community of Graves' Mill. Asa W.
          Graves (d. 1840) served as postmaster.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Papers, 1731-1863, of the Graves family of Madison County,
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Papers, 1731-1863, of the Graves family of Madison County,
          Virginia, consisting of: deeds for property in Madison County,
          Virginia, including when it was part of Spotsylvania, Orange
          and Culpeper Counties, Virginia, as well as deeds for property
@@ -171,7 +156,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Graves; accounts and costs for Sarah Graves in regard to the
          suit Lindsay and wife vs. Sarah Graves; and miscellaneous
          notes.</p>
-         <p>1) Land grant, 26 June 1731, 400 acres in Spotsylvania
+      <p>1) Land grant, 26 June 1731, 400 acres in Spotsylvania
          County, Virginia, from Governor William Gooch to Thomas
          Stanton of Spotsylvania County; 2) deed, 24 March 1747, land
          in Orange County, Virginia, from Henry Downs, Sr., to Richard
@@ -200,7 +185,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          Counties, Virginia, from James Clerk, executor of Thomas
          Graves, Sr., to Benjamin Graves, Thomas Graves, and Asa
          Graves.</p>
-         <p>13) Deed, 20 January 1826, 160 acres in the Arkansas
+      <p>13) Deed, 20 January 1826, 160 acres in the Arkansas
          Territory from Reuben Berry and others to Asa Graves, all of
          Madison County; 14) Military bounty land grant, 17 January
          1825, 160 acres in the Arkansas Territory to Reuben Berry and
@@ -229,7 +214,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          S. Graves to Asa W. Graves for the sale of a slave; and 28)
          receipt, 22 April 1826, for $10 from Morgan Sisk to Asa W.
          Graves for his profit from sale of land.</p>
-         <p>29) Receipts, March-April 1826, for $10 each from Rhodes
+      <p>29) Receipts, March-April 1826, for $10 each from Rhodes
          Berry, John C. Sisk, Rowland Berry, and Susannah Berry to Asa
          W. Graves for their profits from sale of land; 30) deed of
          sale, 27 September 1804, for four slaves sold by John Hisle to
@@ -259,7 +244,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          letter, 2 March 1839, from James Whitcomb of the General Land
          Office to Linn Banks and letter, 2 March 1839, from Banks to
          Asa W. Graves concerning Graves' land in Arkansas.</p>
-         <p>43) Letter, 17 March 1837, from Linn Banks to Asa W. Graves
+      <p>43) Letter, 17 March 1837, from Linn Banks to Asa W. Graves
          concerning property Graves owns, the price of tobacco in
          Richmond, Virginia, and the session of the General Assembly;
          44) Land Office Treasury Warrant, 2 January 1830, to James
@@ -285,6 +270,6 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          with Moore, Payne and Company; and 57) account, 1863, of sale
          of slaves for Francis E. Graves as attorney for the legatees
          of Asa W. Graves by Hill, Dickinson and Company.</p>
-      </scopecontent>
-   </archdesc>
+    </scopecontent>
+  </archdesc>
 </ead>

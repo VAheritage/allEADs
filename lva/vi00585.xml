@@ -1,294 +1,291 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi00585">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00585::A Guide to the Lena Estella Long Collection, 1763-1827)//EN" "vi00585.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi00585">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00585::A Guide to the Lena Estella Long Collection, 1763-1827)//EN" "vi00585.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Lena Estella Long Collection, <date>1763-1827</date>
-</titleproper>
-<subtitle id="sort">Long, Lena Estella, Collection, 1763-1827
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Lena Estella Long Collection, <date era="ce" calendar="gregorian">1763-1827</date></titleproper>
+        <subtitle id="sort">Long, Lena Estella, Collection, 1763-1827
 <num type="collectionnumber">21571
-</num>
-</subtitle>
-<author>Trenton Hizer
+</num></subtitle>
+        <author>Trenton Hizer
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2006 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date>26 April 2006</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Lena Estella Long Collection, <date>1763-1827</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">21571
-</num>
-</subtitle>
-<author>Trenton Hizer
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Trenton Hizer
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Lena Estella Long Collection, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1763-1827
-</unitdate>
-</unittitle>
-<unitid label="Accession Number" encodinganalog="099$a">21571
-</unitid>
-<physdesc label="Physical Description" encodinganalog="300$a">43 leaves
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Trenton Hizer, <date era="ce" calendar="gregorian">26 April 2006</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Lena Estella Long Collection, <date era="ce" calendar="gregorian">1763-1827</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">21571
+</num></subtitle>
+      <author>Trenton Hizer
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Trenton Hizer
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Lena Estella Long Collection, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1763-1827
+</unitdate></unittitle>
+      <unitid label="Accession Number" encodinganalog="099$a">21571
+</unitid>
+      <physdesc label="Physical Description" encodinganalog="300$a">43 leaves
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Collector" encodinganalog="100$a">Lena Estella Long
+      </langmaterial>
+      <origination label="Collector" encodinganalog="100$a">Lena Estella Long
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection is open to research.
+        <p>Collection is open to research.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Lena Estella Long Collection, 1763-1827.  Accession 21571.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
+        <p>Lena Estella Long Collection, 1763-1827.  Accession 21571.  Personal Papers Collection, The Library of Virginia, Richmond, Virginia.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Lent for copying by Lena Estella Long, Luray, Virginia, 24 April 1939.
+        <p>Lent for copying by Lena Estella Long, Luray, Virginia, 24 April 1939.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Lena Estella Long was born 10 December 1878 in Craig, Missouri, and married William Martin Long (1881-1948) 5 September 1900. The Longs lived in Page County, Virginia, where Mrs. Long was a member of the Daughters of the American Revolution. She died 19 December 1968.
+      <p>Lena Estella Long was born 10 December 1878 in Craig, Missouri, and married William Martin Long (1881-1948) 5 September 1900. The Longs lived in Page County, Virginia, where Mrs. Long was a member of the Daughters of the American Revolution. She died 19 December 1968.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Collection, 1763-1827, of Lena Estella Long (1878-1968) of Page County, Virginia, consisting of agreements, bonds, deeds, land grants, powers of attorney, and wills from Frederick, Dunmore, and Shenandoah Counties, Virginia. Much of the land involved in the deeds and land grants is located in present-day Page County, Virginia. Agreements, bonds, and powers of attorney concern individuals from Shenandoah County. One will was recorded in Frederick County, the other in Shenandoah County.
+      <p>Collection, 1763-1827, of Lena Estella Long (1878-1968) of Page County, Virginia, consisting of agreements, bonds, deeds, land grants, powers of attorney, and wills from Frederick, Dunmore, and Shenandoah Counties, Virginia. Much of the land involved in the deeds and land grants is located in present-day Page County, Virginia. Agreements, bonds, and powers of attorney concern individuals from Shenandoah County. One will was recorded in Frederick County, the other in Shenandoah County.
 </p>
-</scopecontent>
-<dsc type="in-depth">
-<head>Contents List
+    </scopecontent>
+    <dsc type="in-depth">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle>Will, 
-<unitdate>dated 8 September 1763 and recorded 1 November 1763, 
+      <c01 level="item">
+        <did>
+          <unittitle>Will, 
+<unitdate era="ce" calendar="gregorian">dated 8 September 1763 and recorded 1 November 1763, 
 </unitdate>of Matthias Selzer of Frederick County, Virginia.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 25 September 1772 and recorded 28 April 1773, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 25 September 1772 and recorded 28 April 1773, 
 </unitdate>for certain lands in Dunmore [Shenandoah] County, Virginia, from John Sulcer to Michael Reader, both of Dunmore County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 23 November 1773 and recorded March 1781, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 23 November 1773 and recorded March 1781, 
 </unitdate>for 15 acres in Shenandoah County, Virginia, from Samuel and Mary Leather to Chisley Shelly, all of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 5 October 1782 and recorded 28 November 1782, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 5 October 1782 and recorded 28 November 1782, 
 </unitdate>for 16 acres in Shenandoah County from Matthias and Eve Selcer to Jacob Strickler, all of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed of lease, 
-<unitdate>dated 20 August 1785 and recorded 25 August 1785, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed of lease, 
+<unitdate era="ce" calendar="gregorian">dated 20 August 1785 and recorded 25 August 1785, 
 </unitdate>for 177 acres in Shenandoah County between Michael Reader and Philip Long, both of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed of release, 
-<unitdate>dated 20 August 1785 and recorded 25 August 1785, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed of release, 
+<unitdate era="ce" calendar="gregorian">dated 20 August 1785 and recorded 25 August 1785, 
 </unitdate>for 177 acres in Shenandoah County between Michael and Catherine Reader and Philip Long, all of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Land grant, 
-<unitdate>23 July 1787, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Land grant, 
+<unitdate era="ce" calendar="gregorian">23 July 1787, 
 </unitdate>for 155 acres in Shenandoah County from Lieutenant Governor Beverley Randolph to Michael Reader.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 25 October 1787 and recorded 26 October 1787, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 25 October 1787 and recorded 26 October 1787, 
 </unitdate>for 36 acres in Shenandoah County from Benjamin and Mary Strickler to John Strickler, all of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Agreement, 
-<unitdate>15 August 1788, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Agreement, 
+<unitdate era="ce" calendar="gregorian">15 August 1788, 
 </unitdate>between Philip Long and George Bungaman of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Land grant, 
-<unitdate>30 July 1782, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Land grant, 
+<unitdate era="ce" calendar="gregorian">30 July 1782, 
 </unitdate>for 177 acres in Shenandoah County from Governor Henry Lee to Jonathan Watson.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 8 April 1794 and recorded 9 April 1794, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 8 April 1794 and recorded 9 April 1794, 
 </unitdate>for 155 acres in Shenandoah County from Michael and Catherine Reader to Philip Long.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated and recorded 14 October 1794, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated and recorded 14 October 1794, 
 </unitdate>for 177 acres in Shenandoah County from Jonathan Watson by his attorney Joseph Strickler to Christian Shelley of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Bond, 
-<unitdate>19 March 1798, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Bond, 
+<unitdate era="ce" calendar="gregorian">19 March 1798, 
 </unitdate>from John Strickler to Philip Long.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 10 April 1798 and recorded 8 October 1799, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 10 April 1798 and recorded 8 October 1799, 
 </unitdate>for four tracts of land in Shenandoah County from John and Barbara Strickler to Philip Long.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 1 February 1809 and recorded 12 June 1809, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 1 February 1809 and recorded 12 June 1809, 
 </unitdate>for four tracts of land in Shenandoah County from Philip Long to Reuben Long of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 5 June 1813, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 5 June 1813, 
 </unitdate>for 250 acres in Shenandoah County from Alexander Hay to Peter Hay, both of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Deed, 
-<unitdate>dated 5 June 1813, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Deed, 
+<unitdate era="ce" calendar="gregorian">dated 5 June 1813, 
 </unitdate>for 311 1/2 acres in Shenandoah County from Alexander Hay to David and John Hay of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Power of attorney, 
-<unitdate>August 1823, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Power of attorney, 
+<unitdate era="ce" calendar="gregorian">August 1823, 
 </unitdate>from George Hetich of Pennsylvania to Paschal Graves of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle>Will, 
-<unitdate>1827, 
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Will, 
+<unitdate era="ce" calendar="gregorian">1827, 
 </unitdate>of Reuben Long of Shenandoah County.
 </unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

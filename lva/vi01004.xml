@@ -1,154 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY catalog SYSTEM "http://eagle.vsla.edu/bible/virtua-basic.html" NDATA html>
-]>
-<ead id="vi01004">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-partial-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi01004::A Guide to the Virginia Public Telecommunications Board, Records, 1962-1997)//EN&amp;#34; &amp;#34;vi01004.xml&amp;#34;"
-             countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi01004">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//Library of Virginia//TEXT (US::Vi::vi01004::A Guide to the Virginia Public Telecommunications Board, Records, 1962-1997)//EN&amp;#34; &amp;#34;vi01004.xml&amp;#34;" countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of
              Virginia//TEXT (US::Vi::vi01004::A Guide to the Virginia
              Public Telecommunications Board, Records, 1962-1997)//EN"
              "vi01004.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>A Guide to the Virginina Public
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Virginina Public
             Telecommunications Board, Records, 
-            <date>1962-1997</date></titleproper>
-            <subtitle id="sort">Public Telecommunications Board,
+            <date era="ce" calendar="gregorian">1962-1997</date></titleproper>
+        <subtitle id="sort">Public Telecommunications Board,
             Virginia, Records, 1962-1997 
             <num type="collectionnumber">36689</num></subtitle>
-            <author>Craig Moore</author>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Library of Virginia</publisher>
-            &address;
-            <date type="publication">&#169; 2003 By the Library
+        <author>Craig Moore</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2003 By the Library
             of Virginia.</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">2 KB</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from MARC
+        </p>
+        <p id="filesize">2 KB</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC
          record. Created by Lois Angeletti 
-         <date>2003 March 18</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">2003 March 18</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-14">Feb 14, 2004</date>
-            <item>PUBLIC "-//Library of Virginia//TEXT
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-14" era="ce" calendar="gregorian">Feb 14, 2004</date>
+        <item>PUBLIC "-//Library of Virginia//TEXT
             (US::Vi::vi01004::A Guide to the Virginia Public
             Telecommunications Board, Records, 1962-1997)//EN"
             "vi01004.xml" converted from EAD 1.0 to 2002 by v1to02.xsl
             (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-27">Feb 27, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-27" era="ce" calendar="gregorian">Feb 27, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>A Guide to the Virginia Public Telecommunications
+      </change>
+      <change>
+        <date normal="2014-01-08">2014-01-08</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Virginia Public Telecommunications
          Board, Records, 
-         <date>1962-1997</date></titleproper>
-         <subtitle>A Collection in 
-         <lb />the Library of Virginia 
+         <date era="ce" calendar="gregorian">1962-1997</date></titleproper>
+      <subtitle>A Collection in 
+         <lb/>the Library of Virginia 
          <num type="Accession Number">36689</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Library of Virginia</publisher>
-         <date type="publication">2003</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>The Library of Virginia</item>
-            <item>800 East Broad Street</item>
-            <item>Richmond, Virginia 23219-8000</item>
-            <item>USA</item>
-            <item>Phone: (804) 692-3888 (Archives Reference)</item>
-            <item>Fax: (804) 692-3556 (Archives Reference)</item>
-            <item id="email">Email: 
-            <extref href="mailto:archdesk@lva.lib.va.us">
-            archdesk@lva.lib.va.us (Archives)</extref></item>
-            <item>URL: 
-            <extref href="http://www.lva.lib.va.us/">
-            http://www.lva.lib.va.us/</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Craig Moore</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Library of Virginia</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Library of Virginia</repository>
-         <unittitle label="Title">Records, 
-         <unitdate type="inclusive" label="Date">
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2003</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Craig Moore</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia</runner>
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Library of Virginia</repository>
+      <unittitle label="Title">Records, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1962-1997</unitdate></unittitle>
-         <unitid label="Accession number">36689</unitid>
-         <physloc label="Physical Location">State Government Records
+      <unitid label="Accession number">36689</unitid>
+      <physloc label="Physical Location">State Government Records
          Collection, Virginia Public Telecommunications Board (Record
          Group 8)</physloc>
-         <physdesc label="Physical Characteristics">1.25 cubic
+      <physdesc label="Physical Characteristics">1.25 cubic
          feet</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <origination label="Creator">Virginia Public
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">Virginia Public
          Telecommunications Board</origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information 
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information 
          </head>
-         <accessrestrict>
-            <head>Access Restrictions</head>
-            <p>There are no restrictions.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Use Restrictions</head>
-            <p>There are no restrictions.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Virginia Public Telecommunications Board, Records,
+      <accessrestrict>
+        <head>Access Restrictions</head>
+        <p>There are no restrictions.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Use Restrictions</head>
+        <p>There are no restrictions.</p>
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Virginia Public Telecommunications Board, Records,
             1962-1997. Accession 36689, State Government Records
             Collection, The Library of Virginia, Richmond,
             Virginia.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Transferred from the Virginia Public Telecommunications
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Transferred from the Virginia Public Telecommunications
             Board on July 1, 1999.</p>
-         </acqinfo>
-      </descgrp>
-      <bioghist>
-         <head>Historical Information</head>
-         <p>The Virginia Public Telecommunications Board had its roots
+      </acqinfo>
+    </descgrp>
+    <bioghist>
+      <head>Historical Information</head>
+      <p>The Virginia Public Telecommunications Board had its roots
          in the Virginia Advisory Council on Educational Television
          which was formed by the General Assembly in 1962. The Council
          developed educational television programs and assisted in
@@ -169,7 +149,7 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          to create a state public telecommunications network. The
          Master Plan for Public Telecommunications was adopted in
          1973-1974.</p>
-         <p>In 1980, the General Assembly, based on recommendations by
+      <p>In 1980, the General Assembly, based on recommendations by
          the Telecommunications Study Commission, replaced the Virginia
          Public Telecommunications Council with an independent
          Department of Telecommunications and a Virginia Public
@@ -189,10 +169,10 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          public programming, oversees planning for public
          telecommunications services, and recommends policies
          pertaining to public telecommunications to the governor.</p>
-      </bioghist>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Includes briefing books, catalogs, correspondence, master
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Includes briefing books, catalogs, correspondence, master
          plans, memos, minutes, newsletters, questionnaires,
          photographs, and reports documenting the work of the Virginia
          Public Telecommunications Board and its predecessors. The
@@ -214,333 +194,333 @@ ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
          questionnaires from 1973 were used by the agency to develop
          its master state plan for improved public
          telecommunications.</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>Arranged alphabetically.</p>
-         </arrangement>
-         <arrangement>
-            <head>Organization</head>
-            <p>Organized into two boxes, the second box is
-            oversized.</p>
-         </arrangement>
+        <head>Arrangement</head>
+        <p>Arranged alphabetically.</p>
       </arrangement>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <did>
-               <unittitle>Advisory Council on Educational
+      <arrangement>
+        <head>Organization</head>
+        <p>Organized into two boxes, the second box is
+            oversized.</p>
+      </arrangement>
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Advisory Council on Educational
                Television</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Catalogs 
-                  <unitdate type="inclusive">
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Catalogs 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1964-1970</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">1</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Minutes</unittitle>
-                  <container label="Box" type="Box">1</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1962-1968</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Minutes</unittitle>
+            <container label="Box" type="Box">1</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1962-1968</unittitle>
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      2</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1968-1972</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1968-1972</unittitle>
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      3</container>
-                  </did>
-               </c03>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Briefing Book</unittitle>
             </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>1985</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">4</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1985</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">5</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1985</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">6</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Jerrold Electronic Corp. 
-               <unitdate>1966</unitdate></unittitle>
-               <container label="Box" type="Box">1</container>
-               <container label="Folder" type="Folder">7</container>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Master Plan for Public
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Briefing Book</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>1985</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1985</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1985</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">6</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Jerrold Electronic Corp. 
+               <unitdate era="ce" calendar="gregorian">1966</unitdate></unittitle>
+          <container label="Box" type="Box">1</container>
+          <container label="Folder" type="Folder">7</container>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Master Plan for Public
                Telecommunications</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>1973-1974(part 1)</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">8</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1973(part 2)</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">9</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1974-1975(part 3)</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>1973-1974(part 1)</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1973(part 2)</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1974-1975(part 3)</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   10</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1991</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1991</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   11</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Memos</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>1973-1976</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Memos</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>1973-1976</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   12</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1977-1980</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1977-1980</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   13</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1981-1984</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1981-1984</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   14</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Minutes</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>1972-1975</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Minutes</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>1972-1975</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   15</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1975-1980</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1975-1980</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   16</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1980-1985</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1980-1985</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   17</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1986-1989</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1986-1989</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   18</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1990-1994</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1990-1994</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   19</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>1995-1997</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>1995-1997</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   20</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Newsletters 
-               <unitdate type="inclusive">
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Newsletters 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">
                1994-1995</unitdate></unittitle>
-               <container label="Box" type="Box">1</container>
-               <container label="Folder" type="Folder">21</container>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Photographs</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>WBRA-TV 
-                  <unitdate>1966</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          <container label="Box" type="Box">1</container>
+          <container label="Folder" type="Folder">21</container>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Photographs</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>WBRA-TV 
+                  <unitdate era="ce" calendar="gregorian">1966</unitdate></unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   22</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>WCVE-TV</unittitle>
-                  <container label="Box" type="Box">1</container>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1965-1969</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>WCVE-TV</unittitle>
+            <container label="Box" type="Box">1</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>1965-1969</unittitle>
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      23</container>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <unittitle>1965-1969</unittitle>
-                     <container label="Box" type="Box">1</container>
-                     <container label="Folder" type="Folder">
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>1965-1969</unittitle>
+              <container label="Box" type="Box">1</container>
+              <container label="Folder" type="Folder">
                      24</container>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>WETA-TV 
-                  <unitdate>1965</unitdate></unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>WETA-TV 
+                  <unitdate era="ce" calendar="gregorian">1965</unitdate></unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   25</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>WHRO-TV</unittitle>
-                  <container label="Box" type="Box">1</container>
-                  <container label="Folder" type="Folder">
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>WHRO-TV</unittitle>
+            <container label="Box" type="Box">1</container>
+            <container label="Folder" type="Folder">
                   26</container>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Proposal 
-               <unitdate>1996</unitdate></unittitle>
-               <container label="Box" type="Box">1</container>
-               <container label="Folder" type="Folder">27</container>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Radio Reading Services Contract 
-               <unitdate>1997</unitdate></unittitle>
-               <container label="Box" type="Box">1</container>
-               <container label="Folder" type="Folder">28</container>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Report on Educational Television for Southern
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Proposal 
+               <unitdate era="ce" calendar="gregorian">1996</unitdate></unittitle>
+          <container label="Box" type="Box">1</container>
+          <container label="Folder" type="Folder">27</container>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Radio Reading Services Contract 
+               <unitdate era="ce" calendar="gregorian">1997</unitdate></unittitle>
+          <container label="Box" type="Box">1</container>
+          <container label="Folder" type="Folder">28</container>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Report on Educational Television for Southern
                Virginia 
-               <unitdate>1966</unitdate></unittitle>
-               <container label="Box" type="Box">1</container>
-               <container label="Folder" type="Folder">29</container>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>State Agency Questionnaires 
-               <unitdate>1973</unitdate></unittitle>
-               <container label="Box" type="Box">1</container>
-               <container label="Folder" type="Folder">30</container>
-            </did>
-         </c01>
-         <c01 level="series">
-            <did>
-               <unittitle>Oversized</unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <unittitle>Map showing locations of TV stations in
+               <unitdate era="ce" calendar="gregorian">1966</unitdate></unittitle>
+          <container label="Box" type="Box">1</container>
+          <container label="Folder" type="Folder">29</container>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>State Agency Questionnaires 
+               <unitdate era="ce" calendar="gregorian">1973</unitdate></unittitle>
+          <container label="Box" type="Box">1</container>
+          <container label="Folder" type="Folder">30</container>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Oversized</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Map showing locations of TV stations in
                   Central Virginia</unittitle>
-                  <container label="Box" type="Box">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Photo Album - Blue Ridge ETV Association 
-                  <unitdate>1981</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <unittitle>Publication - Educational Television in
+            <container label="Box" type="Box">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Photo Album - Blue Ridge ETV Association 
+                  <unitdate era="ce" calendar="gregorian">1981</unitdate></unittitle>
+            <container label="Box" type="Box">2</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Publication - Educational Television in
                   Virginia 
-                  <unitdate type="inclusive">
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">
                   1970-1971</unitdate></unittitle>
-                  <container label="Box" type="Box">2</container>
-               </did>
-            </c02>
-         </c01>
-      </dsc>
-   </archdesc>
+            <container label="Box" type="Box">2</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

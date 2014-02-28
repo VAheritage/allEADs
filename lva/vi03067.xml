@@ -1,252 +1,245 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/lva.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/lva_contact.xml">
-<!ENTITY chancery SYSTEM "http://www.lva.lib.va.us/whatwehave/local/chancery/index.htm" NDATA html>
-<!ENTITY lost SYSTEM "http://www.virginiamemory.com/collections/lost" NDATA html>
-<!ENTITY catalog SYSTEM "http://ajax.lva.lib.va.us/F/?func=file&file_name=find-b-clas05&local_base=CLAS05" NDATA html>
-<!ENTITY microfilm SYSTEM "http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm" NDATA html>
-]><ead id="vi03067">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03067::A Guide to the Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 1826-1920)//EN" "vi03067.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vi03067">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03067::A Guide to the Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 1826-1920)//EN" "vi03067.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, <date>1826-1920</date>
-</titleproper>
-<subtitle id="sort">Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 1826-1920
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, <date era="ce" calendar="gregorian">1826-1920</date></titleproper>
+        <subtitle id="sort">Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 1826-1920
 <num type="collectionnumber">Barcode numbers 1101692,1101699 and 1043058/Westmoreland County (Va.) Reels 74 and 133
-</num>
-</subtitle>
-<author>Callie Lou Freed
+</num></subtitle>
+        <author>Callie Lou Freed
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Library of Virginia
-</publisher> &address;
-<date type="publication">&copy; 2009 By The Library of Virginia. All Rights Reserved. 
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MARC record, created by Callie Lou Freed, <date>30 September 2009</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, <date>1826-1920</date>
-</titleproper>
-<subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Collection numbers:">1101692, 1101699 and 1043058/Westmoreland County (Va.) Reels 74 and 133
-</num>
-</subtitle>
-<author>Callie Lou Freed
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Library of Virginia
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Library of Virginia
 </publisher>
-<date type="publication">2009
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Library of Virginia staff
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Library of Virginia
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1826-1920
-</unitdate>
-</unittitle>
-<unitid label="Collection numbers" encodinganalog="099$a">1101692, 1101699 and 1043058/Westmoreland County (Va.) Reels 74 and 133
-</unitid>
-<physloc label="Location">State Records Center - Archives Annex, Library of Virginia. Folder 1043058 is found at the Library of Virginia.
-</physloc>
-<physdesc label="Physical Characteristics" encodinganalog="300$a">2 v. (331 p.); 2 microfilm reels and 1 folder
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2009 By The Library of Virginia. All Rights Reserved. 
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Callie Lou Freed, <date era="ce" calendar="gregorian">30 September 2009</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, <date era="ce" calendar="gregorian">1826-1920</date></titleproper>
+      <subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Collection numbers:">1101692, 1101699 and 1043058/Westmoreland County (Va.) Reels 74 and 133
+</num></subtitle>
+      <author>Callie Lou Freed
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+      </p>
+      <publisher>Library of Virginia
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2009
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Library of Virginia staff
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Library of Virginia
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1826-1920
+</unitdate></unittitle>
+      <unitid label="Collection numbers" encodinganalog="099$a">1101692, 1101699 and 1043058/Westmoreland County (Va.) Reels 74 and 133
+</unitid>
+      <physloc label="Location">State Records Center - Archives Annex, Library of Virginia. Folder 1043058 is found at the Library of Virginia.
+</physloc>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">2 v. (331 p.); 2 microfilm reels and 1 folder
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<origination label="Collector" encodinganalog="110$a">Westmoreland County (Va.) Circuit Court.
+      </langmaterial>
+      <origination label="Collector" encodinganalog="110$a">Westmoreland County (Va.) Circuit Court.
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>There are no restrictions.
+        <p>There are no restrictions.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>Use microfilm copies, Westmoreland County (Va.) Reels 74 and 133.
+        <p>Use microfilm copies, Westmoreland County (Va.) Reels 74 and 133.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 1826-1920.  Westmoreland County (Va.) Reels 74 and 133, Local government records collection, Westmoreland County Court Records.  The Library of Virginia, Richmond, Virginia 23219.
+        <p>Westmoreland County (Va.) Record of Ministers' Returns and Register of Marriage Licenses with Marriage Certificates, 1826-1920.  Westmoreland County (Va.) Reels 74 and 133, Local government records collection, Westmoreland County Court Records.  The Library of Virginia, Richmond, Virginia 23219.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>These original volumes came to the Library of Virginia in a transfer of court papers from Westmoreland County.
+        <p>These original volumes came to the Library of Virginia in a transfer of court papers from Westmoreland County.
 </p>
-<p>Reel 74 was generated by the Genealogical Society of Utah while filming in the Westmoreland County Circuit Court Clerk's Office.
+        <p>Reel 74 was generated by the Genealogical Society of Utah while filming in the Westmoreland County Circuit Court Clerk's Office.
 </p>
-<p>Reel 133 was generated by Backstage Library Works through the Library of Virginia's Circuit Court Records Preservation Program.
+        <p>Reel 133 was generated by Backstage Library Works through the Library of Virginia's Circuit Court Records Preservation Program.
 </p>
-<p>Items in Folder 1043058 came to the Virginia State Library and Archives (now the Library of Virginia) under accession number 30143.
+        <p>Items in Folder 1043058 came to the Virginia State Library and Archives (now the Library of Virginia) under accession number 30143.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>Westmoreland County was formed from Northumberland County in 1653, and part of King George County was exchanged with Westmoreland in 1778.  The county was named for the English county.
+      <p>Westmoreland County was formed from Northumberland County in 1653, and part of King George County was exchanged with Westmoreland in 1778.  The county was named for the English county.
 </p>
-<p>Prior to 1853, when the Commonwealth began recording vital statistics, Virginia marriages were recorded at the county or city level. Beginning in 1661, in order to be married by license, the groom was required to go before the county clerk and give bond with security that there was no lawful reason to prevent the marriage. The license, issued then by the clerk, was given to the minister who performed the service. Written consent from a parent or guardian was needed for individuals younger than twenty-one years.
+      <p>Prior to 1853, when the Commonwealth began recording vital statistics, Virginia marriages were recorded at the county or city level. Beginning in 1661, in order to be married by license, the groom was required to go before the county clerk and give bond with security that there was no lawful reason to prevent the marriage. The license, issued then by the clerk, was given to the minister who performed the service. Written consent from a parent or guardian was needed for individuals younger than twenty-one years.
 </p>
-<p>Until 1780, marriages could be performed only by ministers of the Established Church, who were required by law to record marriages in the parish register. In 1780, dissenting ministers (only four per county from each sect) were first permitted to perform marriage ceremonies. In order to have a record of all marriages, ministers were required to sign a certificate to be filed with the county clerk. The signed document certified that a minister had performed the actual marriage ceremony between the named individuals on a certain date. Intially, ministers sent marriage certificates to the clerk every three months. Some ministers adopted a custom of making collected returns - a list of marriages performed within a period of time such as a year or several years. Beginning in 1784, marriage certificates were returned annually. The law was rarely enforced, and ministers' returns were sometimes late, incorrect, incomplete, and in many instances, not made at all. County clerks compiled a register of marriages based, in part, on ministers' returns.
+      <p>Until 1780, marriages could be performed only by ministers of the Established Church, who were required by law to record marriages in the parish register. In 1780, dissenting ministers (only four per county from each sect) were first permitted to perform marriage ceremonies. In order to have a record of all marriages, ministers were required to sign a certificate to be filed with the county clerk. The signed document certified that a minister had performed the actual marriage ceremony between the named individuals on a certain date. Intially, ministers sent marriage certificates to the clerk every three months. Some ministers adopted a custom of making collected returns - a list of marriages performed within a period of time such as a year or several years. Beginning in 1784, marriage certificates were returned annually. The law was rarely enforced, and ministers' returns were sometimes late, incorrect, incomplete, and in many instances, not made at all. County clerks compiled a register of marriages based, in part, on ministers' returns.
 </p>
-<p>The original ministers' returns, marriage licenses and marriage certificates, from which these volumes were compiled, were created by the County Court until 1904. After this date, marriages were recorded in the Circuit Court.
+      <p>The original ministers' returns, marriage licenses and marriage certificates, from which these volumes were compiled, were created by the County Court until 1904. After this date, marriages were recorded in the Circuit Court.
 </p>
-<p>Many loose papers were burned during both the Revolutionary War and the Civil War. Volumes that record deeds, court orders except for an order book for the period 1764-1776, and wills exist.
+      <p>Many loose papers were burned during both the Revolutionary War and the Civil War. Volumes that record deeds, court orders except for an order book for the period 1764-1776, and wills exist.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>Westmoreland County (Va.) Record of Ministers' Returns, 1826-1850, notes the returns made by individual ministers of marriages performed within the county in the nineteenth century.   The majority of these returns are in the form of lists which record the date of marriage and the names of both parties. In the process of preparing and sending the returns, the name of the minister and the minister's denomination are also recorded. Only pages 1-9 of the volume are numbered. There is a partial index in the front of the volume which is arranged alphabetically (A-Y) by the groom's surname as it appears in the volume. This volume is found on Microfilm Reel 74.
+      <p>Westmoreland County (Va.) Record of Ministers' Returns, 1826-1850, notes the returns made by individual ministers of marriages performed within the county in the nineteenth century.   The majority of these returns are in the form of lists which record the date of marriage and the names of both parties. In the process of preparing and sending the returns, the name of the minister and the minister's denomination are also recorded. Only pages 1-9 of the volume are numbered. There is a partial index in the front of the volume which is arranged alphabetically (A-Y) by the groom's surname as it appears in the volume. This volume is found on Microfilm Reel 74.
 </p>
-<p>Westmoreland County (Va.) Register of Marriage Licenses with Marriage Certificates, 1850-1919 (pages 1-281), records the marriage licenses issued by the clerk of the County Court. This register includes the date of the license, the name of the male to be married and the name of the female to be married. The register occupies one page of the volume while the corresponding marriage certificates are found on the next page. The pages alternate until the end of 1853. At this time, the certificates were recorded in Marriage Register, 1853-1908. These certficates were part of the ministers' return process. Additional marriage certificates are found for 1855 (p. 52) and 1856 (p. 54). While this volume primarily notes marriages between whites, colored marriages in 1853 and 1854 appear on pages 38 and 45. Loose register pages recording marriages in 1919-1920 (pages 282-286) are found in the rear of the volume. An internal index (A-Z, pages 1-52) is also found at the rear of the volume. The index is arranged alphabetically by the groom's surname as it appears in the volume. Pages 54-62 (B-W) are continuations of this alphabetical arrangement. A blank form for a marriage certificate (1861) and a marriage license (1858) are glued in the rear of the volume.  This volume is found on Microfilm Reel 133.
+      <p>Westmoreland County (Va.) Register of Marriage Licenses with Marriage Certificates, 1850-1919 (pages 1-281), records the marriage licenses issued by the clerk of the County Court. This register includes the date of the license, the name of the male to be married and the name of the female to be married. The register occupies one page of the volume while the corresponding marriage certificates are found on the next page. The pages alternate until the end of 1853. At this time, the certificates were recorded in Marriage Register, 1853-1908. These certficates were part of the ministers' return process. Additional marriage certificates are found for 1855 (p. 52) and 1856 (p. 54). While this volume primarily notes marriages between whites, colored marriages in 1853 and 1854 appear on pages 38 and 45. Loose register pages recording marriages in 1919-1920 (pages 282-286) are found in the rear of the volume. An internal index (A-Z, pages 1-52) is also found at the rear of the volume. The index is arranged alphabetically by the groom's surname as it appears in the volume. Pages 54-62 (B-W) are continuations of this alphabetical arrangement. A blank form for a marriage certificate (1861) and a marriage license (1858) are glued in the rear of the volume.  This volume is found on Microfilm Reel 133.
 </p>
-<p>Folder 1043058 contains Ministers' Returns and Marriage Licenses from 1840-1855.
+      <p>Folder 1043058 contains Ministers' Returns and Marriage Licenses from 1840-1855.
 </p>
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
 </head>
-<p>Arranged chronologically by year.
+      <p>Arranged chronologically by year.
 </p>
-</arrangement>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </arrangement>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>The volumes are found at the State Records Center.  Contact Archives Reference Services for access information, directions and hours.
+        <p>The volumes are found at the State Records Center.  Contact Archives Reference Services for access information, directions and hours.
 </p>
-</relatedmaterial>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </relatedmaterial>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Westmoreland County is one of Virginia's Lost Records Localities.  Additional Westmoreland County Court Records may be found in the Virginia Lost Records Localities Digital Collection at the Library of Virginia. Search the <extref entityref="lost">Lost Records Localites Digital Collection </extref> available on Virginia Memory.
+        <p>Westmoreland County is one of Virginia's Lost Records Localities.  Additional Westmoreland County Court Records may be found in the Virginia Lost Records Localities Digital Collection at the Library of Virginia. Search the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.virginiamemory.com/collections/lost">Lost Records Localites Digital Collection </extref> available on Virginia Memory.
 </p>
-</relatedmaterial>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </relatedmaterial>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Additional Westmoreland County Marriage Records can be found on microfilm  at the Library of Virginia.  Consult <extref entityref="microfilm">A Guide to Virginia County and City Records on Microfilm</extref> found on the Library's web site.
+        <p>Additional Westmoreland County Marriage Records can be found on microfilm  at the Library of Virginia.  Consult <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm">A Guide to Virginia County and City Records on Microfilm</extref> found on the Library's web site.
 </p>
-</relatedmaterial>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </relatedmaterial>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Additional Westmoreland County Marriage Records can also be found on microfilm on the Library of Virginia's site index under Vital Statistics. Additional records are noted in the collection guide, Birth and Marriage (Husband-Wife) Indexes, a statewide index compiled from 1853-1935.
+        <p>Additional Westmoreland County Marriage Records can also be found on microfilm on the Library of Virginia's site index under Vital Statistics. Additional records are noted in the collection guide, Birth and Marriage (Husband-Wife) Indexes, a statewide index compiled from 1853-1935.
 </p>
-</relatedmaterial>
-</descgrp>
-<controlaccess>
-<head>Index Terms</head>
-<controlaccess>
-<head>Corporate Names:</head>
-<corpname encodinganalog="610$a">Westmoreland County (Va.) Circuit Court.</corpname>
-</controlaccess>
-<controlaccess>
-<head>Subjects:</head>
-<subject source="lcsh" encodinganalog="650$a">Christian sects--Virginia--Westmoreland County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Clergy--Virginia--Westmoreland County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Free African Americans--Marriage--Virginia--Westmoreland County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Free African Americans--Virginia--Westmoreland County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Marriage--Virginia--Westmoreland County.</subject>
-</controlaccess>
-<controlaccess>
-<head>Geographical Names:</head>
-<geogname source="lcsh" encodinganalog="651$a">Westmoreland County (Va.)--History.</geogname>
-</controlaccess>
-<controlaccess>
-<head>Genre and Form Terms:</head>
-<genreform source="aat" encodinganalog="655$a">Local government records--Virginia--Westmoreland County.</genreform>
-<genreform source="aat" encodinganalog="655$a">Marriage certificates--Virginia--Westmoreland County.</genreform>
-<subject source="lcsh" encodinganalog="650$a">Marriage records--Virginia--Westmoreland County.</subject>
-<subject source="lcsh" encodinganalog="650$a">Marriage registers--Virginia--Westmoreland County.</subject>
-<genreform source="aat" encodinganalog="655$a">Ministers' returns--Virginia--Westmoreland County.</genreform>
-</controlaccess>
-<controlaccess>
-<head>Added Entry - Corporate Name:</head>
-<corpname encodinganalog="710$a">Westmoreland County (Va.) County Court.</corpname>
-</controlaccess>
-</controlaccess>
-<dsc type="analyticover">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Corporate Names:</head>
+        <corpname encodinganalog="610$a">Westmoreland County (Va.) Circuit Court.</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Christian sects--Virginia--Westmoreland County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Clergy--Virginia--Westmoreland County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Free African Americans--Marriage--Virginia--Westmoreland County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Free African Americans--Virginia--Westmoreland County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Marriage--Virginia--Westmoreland County.</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+        <geogname source="lcsh" encodinganalog="651$a">Westmoreland County (Va.)--History.</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre and Form Terms:</head>
+        <genreform source="aat" encodinganalog="655$a">Local government records--Virginia--Westmoreland County.</genreform>
+        <genreform source="aat" encodinganalog="655$a">Marriage certificates--Virginia--Westmoreland County.</genreform>
+        <subject source="lcsh" encodinganalog="650$a">Marriage records--Virginia--Westmoreland County.</subject>
+        <subject source="lcsh" encodinganalog="650$a">Marriage registers--Virginia--Westmoreland County.</subject>
+        <genreform source="aat" encodinganalog="655$a">Ministers' returns--Virginia--Westmoreland County.</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Added Entry - Corporate Name:</head>
+        <corpname encodinganalog="710$a">Westmoreland County (Va.) County Court.</corpname>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="analyticover">
+      <head>Contents List
 </head>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1101692/Westmoreland County (Va.) Reel 74">Record of Ministers' Returns, 
-<unitdate type="inclusive">1826-1850
-</unitdate>
-</unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1101699/Westmoreland County (Va.) Reel 133">Register of Marriage Licenses with Marriage Certificates, 
-<unitdate type="inclusive">1850-1920
-</unitdate>
-</unittitle>
-</did>
-</c01>
-<c01 level="item">
-<did>
-<unittitle label="Barcode number 1043058">Marriage Licenses and Ministers' Returns,
-<unitdate type="inclusive">1840-1855
-</unitdate>
-</unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1101692/Westmoreland County (Va.) Reel 74">Record of Ministers' Returns, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1826-1850
+</unitdate></unittitle>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1101699/Westmoreland County (Va.) Reel 133">Register of Marriage Licenses with Marriage Certificates, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1850-1920
+</unitdate></unittitle>
+        </did>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1043058">Marriage Licenses and Ministers' Returns,
+<unitdate type="inclusive" era="ce" calendar="gregorian">1840-1855
+</unitdate></unittitle>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
