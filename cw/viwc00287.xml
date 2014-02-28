@@ -1,143 +1,139 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/cw.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/cw_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/cw_contact.xml">
-]>
-<ead id="viwc00287">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-        <eadid countrycode="US" mainagencycode="ViWC">PUBLIC "-//Colonial Williamsburg
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viwc00287">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViWC">PUBLIC "-//Colonial Williamsburg
             Foundation::John D. Rockefeller, Jr. Library//TEXT (US::ViWC::viwc00287:: Pennsylvania
             stores' account books , 1772-1851)//EN" "viwc00287.xml" </eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>A Guide to Pennsylvania stores' account books ,
-                    <date>1772-1851</date>
-                </titleproper>
-                <subtitle id="sort">Pennsylvania stores' account books <num type="collectionnumber"
-                        >MS 1966.2 VOL </num>
-                </subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation
-                </publisher> &address; <date type="publication">&copy; 2008 By The Colonial
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to Pennsylvania stores' account books ,
+                    <date era="ce" calendar="gregorian">1772-1851</date></titleproper>
+        <subtitle id="sort">Pennsylvania stores' account books <num type="collectionnumber">MS 1966.2 VOL </num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation
+                </publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/cw_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2008 By The Colonial
                     Williamsburg Foundation. All Rights Reserved. </date>
-                <p id="usestatement">
-                    <extref entityref="conditions">Conditions of Use </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Machine-readable finding aid derived from MARC record, created by Rebecca
-                Barnhart, <date>03/31/2008</date>
-            </creation>
-            <langusage>Description is in <language langcode="eng">English </language>
-            </langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>A Guide to Pennsylvania stores' account books , <date>1772-1851</date>
-            </titleproper>
-            <subtitle>A Collection in the <lb/>Colonial Williamsburg Foundation`s<lb/>John D.
-                Rockefeller, Jr. Library <num type="Manuscript Number">MS 1966.2 VOL </num>
-            </subtitle>
-            <p id="logostmt">
-                <extptr actuate="onload" show="embed" entityref="logo"/>
-            </p>
-            <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation </publisher>
-            <date type="publication">2008 </date> &contact; <list type="deflist">
-                <defitem>
-                    <label>Processed by: </label>
-                    <item>Special Collections Staff </item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="collection">
-        <runner placement="footer">John D. Rockefeller, Jr. Library, Colonial Williamsburg
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Rebecca
+                Barnhart, <date era="ce" calendar="gregorian">03/31/2008</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to Pennsylvania stores' account books , <date era="ce" calendar="gregorian">1772-1851</date></titleproper>
+      <subtitle>A Collection in the <lb/>Colonial Williamsburg Foundation`s<lb/>John D.
+                Rockefeller, Jr. Library <num type="Manuscript Number">MS 1966.2 VOL </num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/cw.jpg"/>
+      </p>
+      <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008 </date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/cw_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: </label>
+          <item>Special Collections Staff </item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">John D. Rockefeller, Jr. Library, Colonial Williamsburg
             Foundation </runner>
-        <did>
-            <head>Descriptive Summary </head>
-            <repository label="Repository" encodinganalog="852$a">John D. Rockefeller, Jr. Library,
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">John D. Rockefeller, Jr. Library,
                 Colonial Williamsburg Foundation </repository>
-            <unittitle label="Title" encodinganalog="245$a">Pennsylvania stores' account books
-                    <unitdate type="inclusive" label="Date" encodinganalog="245$f">1772-1851
-                </unitdate>
-            </unittitle>
-            <unitid label="Manuscript Number" encodinganalog="099$a">MS 1966.2 VOL </unitid>
-            <physloc label="Location">On site. </physloc>
-            <physdesc label="Physical Characteristics" encodinganalog="300$a">6 vol. and 6 items. </physdesc>
-            <langmaterial label="Language">
-                <language langcode="eng">English </language>
-            </langmaterial>
-            <abstract label="Abstract"> </abstract>
-            <origination label="Creator" encodinganalog="100$a">Eichelberger, Barnet </origination>
-        </did>
-        <descgrp type="admininfo">
-            <head>Administrative Information </head>
-            <accessrestrict encodinganalog="506$a">
-                <head>Access Restrictions </head>
-                <p>Collection is open to research. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540$a">
-                <head>Use Restrictions </head>
-                <p>There are no restrictions. </p>
-            </userestrict>
-            <prefercite encodinganalog="524$a">
-                <head>Preferred Citation </head>
-                <p>Pennsylvania stores' account books, Manuscript #MS 1966.2 VOL,
+      <unittitle label="Title" encodinganalog="245$a">Pennsylvania stores' account books
+                    <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1772-1851
+                </unitdate></unittitle>
+      <unitid label="Manuscript Number" encodinganalog="099$a">MS 1966.2 VOL </unitid>
+      <physloc label="Location">On site. </physloc>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">6 vol. and 6 items. </physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English </language>
+      </langmaterial>
+      <abstract label="Abstract"/>
+      <origination label="Creator" encodinganalog="100$a">Eichelberger, Barnet </origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information </head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions </head>
+        <p>Collection is open to research. </p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions </head>
+        <p>There are no restrictions. </p>
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation </head>
+        <p>Pennsylvania stores' account books, Manuscript #MS 1966.2 VOL,
                     John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation. </p>
-            </prefercite>
-            <acqinfo encodinganalog="541$a">
-                <head>Acquisition Information </head>
-                <p>Purchase, 1966. </p>
-            </acqinfo>
-        </descgrp>
-        <bioghist encodinganalog="545$a">
-            <head>Biographical/Historical Information </head>
-            <p>None available. </p>
-        </bioghist>
-        <scopecontent encodinganalog="520$a">
-            <head>Scope and Content </head>
-            <p>Four account books of general mercantile stores kept in York, Pennsylvania by members
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information </head>
+        <p>Purchase, 1966. </p>
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical/Historical Information </head>
+      <p>None available. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content </head>
+      <p>Four account books of general mercantile stores kept in York, Pennsylvania by members
                 of the Eichelberger family and possibly others, 1772-1798. One includes Commissary
                 Department accounts for the Revolutionary War period. Also ledger (1806-1822), of
                 accounts of Barnet Eichelberger, the settlement of his estate; and a ledger
                 (1842-1851) of John Lawrence of Fayette County, Pennsylvania. </p>
-        </scopecontent>
-        <arrangement encodinganalog="351">
-            <head>Arrangement </head>
-            <p>Arranged chronologically. </p>
-        </arrangement>
-        <controlaccess>
-            <head>Index Terms</head>
-            <controlaccess>
-                <head>Persons:</head>
-                <persname encodinganalog="600$a">Eichelberger, Barnet</persname>
-                <persname encodinganalog="600$a">Laurence, John</persname>
-
-            </controlaccess>
-            <controlaccess>
-                <head>Subjects:</head>
-                <subject source="lcsh" encodinganalog="650$a">Merchants - Pennsylvania - York -
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement </head>
+      <p>Arranged chronologically. </p>
+    </arrangement>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Persons:</head>
+        <persname encodinganalog="600$a">Eichelberger, Barnet</persname>
+        <persname encodinganalog="600$a">Laurence, John</persname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Merchants - Pennsylvania - York -
                     History - 18th century</subject>
-                <subject source="lcsh" encodinganalog="650$a">Merchants - Pennsylvania - York -
+        <subject source="lcsh" encodinganalog="650$a">Merchants - Pennsylvania - York -
                     History - 19th century</subject>
-                <subject source="lcsh" encodinganalog="650$a">Estate records - Pennsylvania - History -
+        <subject source="lcsh" encodinganalog="650$a">Estate records - Pennsylvania - History -
                     19th century</subject>
-
-            </controlaccess>
-            <controlaccess>
-                <head>Geographical Names:</head>
-                <geogname source="lcsh" encodinganalog="651$a">United States - History - Revolution -
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+        <geogname source="lcsh" encodinganalog="651$a">United States - History - Revolution -
                     1775-1783</geogname>
-
-            </controlaccess>
-
-        </controlaccess>
-    </archdesc>
+      </controlaccess>
+    </controlaccess>
+  </archdesc>
 </ead>

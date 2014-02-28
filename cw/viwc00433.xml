@@ -1,1104 +1,1008 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/cw.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/cw_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/cw_contact.xml">
-]>
-<ead id="viwc00433">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-        <eadid countrycode="US" mainagencycode="ViWC">PUBLIC "-//Colonial Williamsburg
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viwc00433">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViWC">PUBLIC "-//Colonial Williamsburg
             Foundation::John D. Rockefeller, Jr. Library//TEXT (US::ViWC::viwc00413::Guide to the
             Washington Family Archives, 1779 - 1934)//EN" "viwc00433.xml" </eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>A Guide to the Washington Family Archives, <date>1779 - 1934</date>
-                </titleproper>
-                <subtitle id="sort">Archives, Washington Family <num type="collectionnumber">MS
-                        2006.4 </num>
-                </subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation
-                </publisher> &address; <date type="publication">&copy; 2008 By The Colonial
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Washington Family Archives, <date era="ce" calendar="gregorian">1779 - 1934</date></titleproper>
+        <subtitle id="sort">Archives, Washington Family <num type="collectionnumber">MS
+                        2006.4 </num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation
+                </publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/cw_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2008 By The Colonial
                     Williamsburg Foundation. All Rights Reserved. </date>
-                <p id="usestatement">
-                    <extref entityref="conditions">Conditions of Use </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Machine-readable finding aid derived from MARC record, created by Jennifer
-                Sharp, <date>01/29/2008.</date>
-            </creation>
-            <langusage>Description is in <language langcode="eng">English </language>
-            </langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>A Guide to the Washington Family Archives, <date>1779-1934</date>
-            </titleproper>
-            <subtitle>A Collection in the <lb/>Colonial Williamsburg Foundation`s<lb/>John D.
-                Rockefeller, Jr. Library <num type="Manuscript Number">MS 2006.4 </num>
-            </subtitle>
-            <p id="logostmt">
-                <extptr actuate="onload" show="embed" entityref="logo"/>
-            </p>
-            <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation </publisher>
-            <date type="publication">2008 </date> &contact; <list type="deflist">
-                <defitem>
-                    <label>Processed by: </label>
-                    <item>Special Collections Staff </item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="collection">
-        <runner placement="footer">John D. Rockefeller, Jr. Library, Colonial Williamsburg
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Jennifer
+                Sharp, <date era="ce" calendar="gregorian">01/29/2008.</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Washington Family Archives, <date era="ce" calendar="gregorian">1779-1934</date></titleproper>
+      <subtitle>A Collection in the <lb/>Colonial Williamsburg Foundation`s<lb/>John D.
+                Rockefeller, Jr. Library <num type="Manuscript Number">MS 2006.4 </num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/cw.jpg"/>
+      </p>
+      <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008 </date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/cw_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: </label>
+          <item>Special Collections Staff </item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">John D. Rockefeller, Jr. Library, Colonial Williamsburg
             Foundation </runner>
-        <did>
-            <head>Descriptive Summary </head>
-            <repository label="Repository" encodinganalog="852$a">John D. Rockefeller, Jr. Library,
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">John D. Rockefeller, Jr. Library,
                 Colonial Williamsburg Foundation </repository>
-            <unittitle label="Title" encodinganalog="245$a">Washington Family Archive <unitdate
-                    type="inclusive" label="Date" encodinganalog="245$f"> 1779-1934</unitdate>
-            </unittitle>
-            <unitid label="Manuscript Number" encodinganalog="099$a">MS 2006.4 </unitid>
-
-            <physdesc label="Physical Characteristics" encodinganalog="300$a">1 box</physdesc>
-            <langmaterial label="Language">
-                <language langcode="eng">English </language>
-            </langmaterial>
-            <abstract label="Abstract">Papers of members of the extended Washington family. </abstract>
-            <origination label="Creator" encodinganalog="100$a">Washington family. </origination>
-        </did>
-        <descgrp type="admininfo">
-            <head>Administrative Information </head>
-            <accessrestrict encodinganalog="506$a">
-                <head>Access Restrictions </head>
-                <p>Collection is open to research. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540$a">
-                <head>Use Restrictions </head>
-                <p>There are no restrictions. </p>
-            </userestrict>
-            <prefercite encodinganalog="524$a">
-                <head>Preferred Citation </head>
-                <p>Washington Family Archives, Manuscript # 2006.4, John D. Rockefeller, Jr.
+      <unittitle label="Title" encodinganalog="245$a">Washington Family Archive <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian"> 1779-1934</unitdate></unittitle>
+      <unitid label="Manuscript Number" encodinganalog="099$a">MS 2006.4 </unitid>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">1 box</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English </language>
+      </langmaterial>
+      <abstract label="Abstract">Papers of members of the extended Washington family. </abstract>
+      <origination label="Creator" encodinganalog="100$a">Washington family. </origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information </head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions </head>
+        <p>Collection is open to research. </p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions </head>
+        <p>There are no restrictions. </p>
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation </head>
+        <p>Washington Family Archives, Manuscript # 2006.4, John D. Rockefeller, Jr.
                     Library, Colonial Williamsburg Foundation. </p>
-            </prefercite>
-            <acqinfo encodinganalog="541$a">
-                <head>Acquisition Information </head>
-                <p>Purchase, 2006. </p>
-            </acqinfo>
-        </descgrp>
-        <bioghist encodinganalog="545$a">
-            <head>Biographical/Historical Information </head>
-            <p>Descendents of George Washington's family. </p>
-        </bioghist>
-        <scopecontent encodinganalog="520$a">
-            <head>Scope and Content </head>
-            <p> A collection of over 120 letters, documents, receipts, and envelopes relating to the
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information </head>
+        <p>Purchase, 2006. </p>
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical/Historical Information </head>
+      <p>Descendents of George Washington's family. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content </head>
+      <p> A collection of over 120 letters, documents, receipts, and envelopes relating to the
                 extended family of George Washington.</p>
-        </scopecontent>
-        <arrangement encodinganalog="351">
-            <head>Arrangement </head>
-            <p>The collection has been inventoried but not arranged. </p>
-        </arrangement>
-
-        <controlaccess>
-            <head>Index Terms</head>
-            <controlaccess>
-                <head>Persons:</head>
-                <persname encodinganalog="600$a">Bassett, George Washington.</persname>
-                <persname encodinganalog="600$a">Greenbaum, Daniel.</persname>
-                <persname encodinganalog="600$a">Lewis, Fielding.</persname>
-                <persname encodinganalog="600$a">Lewis, Henry H.</persname>
-                <persname encodinganalog="600$a">Mitchell, C.F.</persname>
-                <persname encodinganalog="600$a">Washington, Ella Bassett.</persname>
-            </controlaccess>
-            <controlaccess>
-                <head>Family Names:</head>
-                <famname encodinganalog="600$a">Washington family.</famname>
-                <famname encodinganalog="600$a">Bassett family.</famname>
-
-            </controlaccess>
-            <controlaccess>
-                <head>Subjects:</head>
-                <subject source="lcsh" encodinganalog="650$a">Correspondence.</subject>
-            </controlaccess>
-            <controlaccess>
-                <head>Geographical Names:</head>
-                <geogname source="lcsh" encodinganalog="651$a">Baltimore (Md.)</geogname>
-            </controlaccess>
-            <controlaccess>
-                <head>Genre and Form Terms:</head>
-                <genreform source="aat" encodinganalog="655$a">Receipts (financial records)</genreform>
-                <genreform source="aat" encodinganalog="655$a">Invoices</genreform>
-            </controlaccess>
-        </controlaccess>
-        <dsc type="combined">
-            <head>Collection Contents</head>
-            <c01 level="series">
-                <did>
-                    <unittitle>Miscellaneous Papers</unittitle>
-                    <unitdate type="bulk">1881 - 1888</unitdate>
-                    <container type="box" label="Box"> 1</container>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Bassett, Lewis, and Washington Letters</unittitle>
-                        <unitdate type="inclusive">1779-1869</unitdate>
-                        <container type="folder" label="Folder"> 1</container>
-                    </did>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Fielding Lewis Sr. to Fielding Lewis Jr.</unittitle>
-                            <unitdate>1779 September 15 </unitdate>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1826 May 1 </unitdate>(Aunt) Lewis to George
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement </head>
+      <p>The collection has been inventoried but not arranged. </p>
+    </arrangement>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Persons:</head>
+        <persname encodinganalog="600$a">Bassett, George Washington.</persname>
+        <persname encodinganalog="600$a">Greenbaum, Daniel.</persname>
+        <persname encodinganalog="600$a">Lewis, Fielding.</persname>
+        <persname encodinganalog="600$a">Lewis, Henry H.</persname>
+        <persname encodinganalog="600$a">Mitchell, C.F.</persname>
+        <persname encodinganalog="600$a">Washington, Ella Bassett.</persname>
+      </controlaccess>
+      <controlaccess>
+        <head>Family Names:</head>
+        <famname encodinganalog="600$a">Washington family.</famname>
+        <famname encodinganalog="600$a">Bassett family.</famname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Correspondence.</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+        <geogname source="lcsh" encodinganalog="651$a">Baltimore (Md.)</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre and Form Terms:</head>
+        <genreform source="aat" encodinganalog="655$a">Receipts (financial records)</genreform>
+        <genreform source="aat" encodinganalog="655$a">Invoices</genreform>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="combined">
+      <head>Collection Contents</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Miscellaneous Papers</unittitle>
+          <unitdate type="bulk" era="ce" calendar="gregorian">1881 - 1888</unitdate>
+          <container type="box" label="Box"> 1</container>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Bassett, Lewis, and Washington Letters</unittitle>
+            <unitdate type="inclusive" era="ce" calendar="gregorian">1779-1869</unitdate>
+            <container type="folder" label="Folder"> 1</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Fielding Lewis Sr. to Fielding Lewis Jr.</unittitle>
+              <unitdate era="ce" calendar="gregorian">1779 September 15 </unitdate>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1826 May 1 </unitdate>(Aunt) Lewis to George
                                 Washington Bassett</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1832 February 27 </unitdate>GW Bassett to Francis
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1832 February 27 </unitdate>GW Bassett to Francis
                                 Tali[?]ferro, Esq.</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1835 April 24 </unitdate>B. Bassett to GW
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1835 April 24 </unitdate>B. Bassett to GW
                             Bassett</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>180? December 7 </unitdate>Andrew Broaddus to John
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">180? December 7 </unitdate>Andrew Broaddus to John
                                 Bassett</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1833 July 3 </unitdate>Jacob ?? to GW
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1833 July 3 </unitdate>Jacob ?? to GW
                             Bassett</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1869 January 14 </unitdate>Charles Washington to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1869 January 14 </unitdate>Charles Washington to
                                 Eleanor Washington</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1833 August 22 </unitdate> ? Johnson to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1833 August 22 </unitdate> ? Johnson to
                             unknown</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1856 August 28 </unitdate>Land deed: John A. and
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1856 August 28 </unitdate>Land deed: John A. and
                                 Eleanor Washington to David Dillon</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1821 October 15 </unitdate> J.W. Lewis (mother) to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1821 October 15 </unitdate> J.W. Lewis (mother) to
                                 Betty Bassett (daughter)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1803 March 14 </unitdate> Augustine Bougham to John
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1803 March 14 </unitdate> Augustine Bougham to John
                                 Bassett</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Bassett Letters</unittitle>
-                        <unitdate type="inclusive">1871-1876</unitdate>
-                        <container type="folder" label="Folder"> 2</container>
-                    </did>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>1882 February 20 <unitdate/>GW Bassett to HH Lewis (with
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Bassett Letters</unittitle>
+            <unitdate type="inclusive" era="ce" calendar="gregorian">1871-1876</unitdate>
+            <container type="folder" label="Folder"> 2</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>1882 February 20 <unitdate era="ce" calendar="gregorian"/>GW Bassett to HH Lewis (with
                                 envelope)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1886 August 8 </unitdate>GW Bassett to Cousin HH
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1886 August 8 </unitdate>GW Bassett to Cousin HH
                                 Lewis</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1886 March 18 </unitdate>E. Calvin Williams to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1886 March 18 </unitdate>E. Calvin Williams to
                                 Capt. H.H. Lewis</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1879 September 25 </unitdate>Receipt, B.B. Bassett
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1879 September 25 </unitdate>Receipt, B.B. Bassett
                                 and G.W. Bassett to O. Horowitz</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1885 September 4 </unitdate>G.W. Bassett to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1885 September 4 </unitdate>G.W. Bassett to
                                 (cousin) Henry H. Lewis (with envelope)</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1881 March 30 </unitdate>G.W. Bassett to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1881 March 30 </unitdate>G.W. Bassett to
                             unknown</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1881 April 2 </unitdate>G.W. Bassett to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1881 April 2 </unitdate>G.W. Bassett to
                             unknown</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1883 July 7 </unitdate>G.W. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1883 July 7 </unitdate>G.W. Bassett to H.H.
                             Lewis</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1885 July 9 </unitdate>G.W. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1885 July 9 </unitdate>G.W. Bassett to H.H.
                             Lewis</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1885 July 2 </unitdate>E. Calvin Williams to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1885 July 2 </unitdate>E. Calvin Williams to H.H.
                                 Lewis (with envelope)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1881 May 17 </unitdate>R.L. Bassett to H.H. Lewis
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1881 May 17 </unitdate>R.L. Bassett to H.H. Lewis
                                 (with envelope)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1881 December 9 </unitdate>R.L. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1881 December 9 </unitdate>R.L. Bassett to H.H.
                                 Lewis (with envelope)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>188? November 17 </unitdate>G.W. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">188? November 17 </unitdate>G.W. Bassett to H.H.
                                 Lewis (with envelope)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1882 November 10 </unitdate>G.W. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1882 November 10 </unitdate>G.W. Bassett to H.H.
                                 Lewis (with envelope)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1885 October 22 </unitdate>G.W. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1885 October 22 </unitdate>G.W. Bassett to H.H.
                                 Lewis (with envelope)</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1886 January 30 </unitdate>G.W. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1886 January 30 </unitdate>G.W. Bassett to H.H.
                                 Lewis (with envelope)</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1871 December 5 </unitdate> (brother) to Mrs. L.W.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1871 December 5 </unitdate> (brother) to Mrs. L.W.
                                 Washington (with envelope)</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Mitchell Family Letters,</unittitle>
-                        <unitdate type="inclusive">1867-1934</unitdate>
-                        <container type="folder" label="Folder"> 3</container>
-                    </did>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1867 March 13 </unitdate>C.F. Mitchell to (sister)
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Mitchell Family Letters,</unittitle>
+            <unitdate type="inclusive" era="ce" calendar="gregorian">1867-1934</unitdate>
+            <container type="folder" label="Folder"> 3</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1867 March 13 </unitdate>C.F. Mitchell to (sister)
                                 Ella [Washington]</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1875 July 24 </unitdate>C.F. Mitchell to J.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1875 July 24 </unitdate>C.F. Mitchell to J.
                                 Bearsley</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>February 24 </unitdate>envelope to Mrs. E.B.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">February 24 </unitdate>envelope to Mrs. E.B.
                                 Washington</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1892 January 24 </unitdate>C.F. Mitchell to Ella
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1892 January 24 </unitdate>C.F. Mitchell to Ella
                                 (Mrs. E.B. Washington, w/ envelope) </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1880 October 4 </unitdate>Check: B.B. Bassett to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1880 October 4 </unitdate>Check: B.B. Bassett to
                                 Daniel Greenbaum</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1934 May 15 </unitdate>Stock certificate: Virginia
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1934 May 15 </unitdate>Stock certificate: Virginia
                                 L. Mitchell, owner of 29 shares, Bonanza United Mines, Ltd., with
                                 envelope from 1941</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1874 February 23 </unitdate>C.F. Mitchell to Ella
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1874 February 23 </unitdate>C.F. Mitchell to Ella
                                 Washington (with envelope) </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate> July 6 </unitdate>Fannie to (sister)
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian"> July 6 </unitdate>Fannie to (sister)
                                 Ella</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1875 April 26 </unitdate>C.F. Mitchell to Ella [Washington]
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1875 April 26 </unitdate>C.F. Mitchell to Ella [Washington]
                                 (with envelope) </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1875 October 18 </unitdate>C.F. Mitchell to Ella [Washington]
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1875 October 18 </unitdate>C.F. Mitchell to Ella [Washington]
                                 (with envelope) </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1875 May 7 </unitdate>C.F. Mitchell to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1875 May 7 </unitdate>C.F. Mitchell to
                                 Ella [Washington]</unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>March 3 </unitdate>envelope to Mrs. E.B.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">March 3 </unitdate>envelope to Mrs. E.B.
                                 Washington</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Homeowner expenses, Baltimore, MD, </unittitle>
-                        <unitdate type="inclusive">1880-1889</unitdate>
-                        <container type="folder" label="Folder"> 4</container>
-                    </did>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Copy of a receipt, <unitdate> 1884-1885 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill for emptying sink <unitdate>1888 May 1 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt for payment, <unitdate> 1888 June 6  </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt for wallpapering, <unitdate>  1883 December 1
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate> 1886 February 5 </unitdate> E. Calvin Williams to
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Homeowner expenses, Baltimore, MD, </unittitle>
+            <unitdate type="inclusive" era="ce" calendar="gregorian">1880-1889</unitdate>
+            <container type="folder" label="Folder"> 4</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Copy of a receipt, <unitdate era="ce" calendar="gregorian"> 1884-1885 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill for emptying sink <unitdate era="ce" calendar="gregorian">1888 May 1 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt for payment, <unitdate era="ce" calendar="gregorian"> 1888 June 6  </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt for wallpapering, <unitdate era="ce" calendar="gregorian">  1883 December 1
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian"> 1886 February 5 </unitdate> E. Calvin Williams to
                                 H.H. Lewis </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Molasses recipe </unittitle>
-                            <unitdate>undated</unitdate>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, <unitdate> 1888 May 19 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Menu from meal on February 15, written on paper from The
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Molasses recipe </unittitle>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, <unitdate era="ce" calendar="gregorian"> 1888 May 19 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Menu from meal on February 15, written on paper from The
                             Breakers </unittitle>
-                            <unitdate>year unknown</unitdate>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt for carpentry, <unitdate> 1886 November 16
-                                </unitdate>
+              <unitdate era="ce" calendar="gregorian">year unknown</unitdate>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt for carpentry, <unitdate era="ce" calendar="gregorian"> 1886 November 16
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, repairs on 87 Patterson Ave, <unitdate era="ce" calendar="gregorian"> 1880 December 29 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, <unitdate era="ce" calendar="gregorian"> 1881 January 11 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Recipes, from 7 Carroll St., Portland, ME </unittitle>
+              <unitdate era="ce" calendar="gregorian">date unknown</unitdate>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Water bill, Baltimore, <unitdate era="ce" calendar="gregorian"> 1887 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Check: $60 to Daniel Greenbaum from Ella B. Washington
                             </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, repairs on 87 Patterson Ave, <unitdate> 1880 December 29 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, <unitdate> 1881 January 11 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Recipes, from 7 Carroll St., Portland, ME </unittitle>
-                            <unitdate>date unknown</unitdate>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Water bill, Baltimore, <unitdate> 1887 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Check: $60 to Daniel Greenbaum from Ella B. Washington
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bills for rent 87-89 Patterson Ave (6 items) <unitdate
-                                    type="inclusive">1880-1883</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bills for rent 87-89 Patterson Ave (5 items) <unitdate
-                                    type="inclusive">1886-1888 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Promise to pay Daniel Greenbaum, <unitdate> 1882 October 4 </unitdate>                              
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>G.W. Bassett account with B.F. Haines, <unitdate>1881 January 5</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill for plumber, <unitdate> 1886 April 6 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt for paving, <unitdate> 1883 November 17 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt for fence repair, <unitdate> 1884 April 16
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Promise to pay Daniel Greenbaum (2 copies), <unitdate>
-                                1884 October 4 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Promise to pay Daniel Greenbaum (2 copies), <unitdate>
-                                1880 October 4 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Check: Henry H. Lewis to Daniel Greenbaum, 
-                                <unitdate>  1890 October 4 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Promise to pay Daniel Greenbaum, <unitdate>1882 October 4
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Statement <unitdate> (no year) </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate> 1881 September 3 </unitdate> H.H. Lewis to Daniel
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bills for rent 87-89 Patterson Ave (6 items) <unitdate type="inclusive" era="ce" calendar="gregorian">1880-1883</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bills for rent 87-89 Patterson Ave (5 items) <unitdate type="inclusive" era="ce" calendar="gregorian">1886-1888 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promise to pay Daniel Greenbaum, <unitdate era="ce" calendar="gregorian"> 1882 October 4 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>G.W. Bassett account with B.F. Haines, <unitdate era="ce" calendar="gregorian">1881 January 5</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill for plumber, <unitdate era="ce" calendar="gregorian"> 1886 April 6 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt for paving, <unitdate era="ce" calendar="gregorian"> 1883 November 17 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt for fence repair, <unitdate era="ce" calendar="gregorian"> 1884 April 16
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promise to pay Daniel Greenbaum (2 copies), <unitdate era="ce" calendar="gregorian">
+                                1884 October 4 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promise to pay Daniel Greenbaum (2 copies), <unitdate era="ce" calendar="gregorian">
+                                1880 October 4 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Check: Henry H. Lewis to Daniel Greenbaum, 
+                                <unitdate era="ce" calendar="gregorian">  1890 October 4 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promise to pay Daniel Greenbaum, <unitdate era="ce" calendar="gregorian">1882 October 4
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Statement <unitdate era="ce" calendar="gregorian"> (no year) </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian"> 1881 September 3 </unitdate> H.H. Lewis to Daniel
                                 Greenbaum </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate> 1881 September 11 </unitdate> R.L. Bassett to H.H.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian"> 1881 September 11 </unitdate> R.L. Bassett to H.H.
                                 Lewis </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Plumber bill, <unitdate> 1886 May 20 </unitdate>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Plumber bill, <unitdate era="ce" calendar="gregorian"> 1886 May 20 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, B.J. Haines and J.W. Everist </unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill for paperhanging, <unitdate era="ce" calendar="gregorian"> 1880 July 20 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, B.J. Haines to H.G. Moran, <unitdate era="ce" calendar="gregorian"> 1880 June 4
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Statement, Papering one room, <unitdate era="ce" calendar="gregorian"> 1890 June 6
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Balance, Mr. Lewis to A.J. G(??), <unitdate era="ce" calendar="gregorian">1882 December 16</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Recipe, oatmeal wafers </unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Telegram (in envelope), R.J. Bassett to H.H. Lewis,
                             </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, B.J. Haines and J.W. Everist </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill for paperhanging, <unitdate> 1880 July 20 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, B.J. Haines to H.G. Moran, <unitdate> 1880 June 4
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Statement, Papering one room, <unitdate> 1890 June 6
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Balance, Mr. Lewis to A.J. G(??), <unitdate>1882 December 16</unitdate>
-                                    
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Recipe, oatmeal wafers </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Telegram (in envelope), R.J. Bassett to H.H. Lewis,
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Insurance bill, <unitdate> 1882 June 28 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Letter fragment, no names <unitdate> no date </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill for roof repair, <unitdate> 1880 July 10</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill for painting, <unitdate>1882 June 21</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, home insurance, <unitdate> 1887 December 27
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Water bill, Baltimore, <unitdate> 1889 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle> Account, <unitdate> 1890 June 12</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Repair bill, <unitdate> 1888 July 3</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Check: $25, <unitdate> 1889 January 21</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, <unitdate> 1885 September 18</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Water bill, 87 Patterson, <unitdate> 1886 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Water bill, 89 Patterson, <unitdate> 1886 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Check, $25, <unitdate> 1881September 22 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate> 1885 November 12 </unitdate> E. Calvin Williams to
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Insurance bill, <unitdate era="ce" calendar="gregorian"> 1882 June 28 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter fragment, no names <unitdate era="ce" calendar="gregorian"> no date </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill for roof repair, <unitdate era="ce" calendar="gregorian"> 1880 July 10</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill for painting, <unitdate era="ce" calendar="gregorian">1882 June 21</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, home insurance, <unitdate era="ce" calendar="gregorian"> 1887 December 27
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Water bill, Baltimore, <unitdate era="ce" calendar="gregorian"> 1889 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle> Account, <unitdate era="ce" calendar="gregorian"> 1890 June 12</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Repair bill, <unitdate era="ce" calendar="gregorian"> 1888 July 3</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Check: $25, <unitdate era="ce" calendar="gregorian"> 1889 January 21</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, <unitdate era="ce" calendar="gregorian"> 1885 September 18</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Water bill, 87 Patterson, <unitdate era="ce" calendar="gregorian"> 1886 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Water bill, 89 Patterson, <unitdate era="ce" calendar="gregorian"> 1886 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Check, $25, <unitdate era="ce" calendar="gregorian"> 1881September 22 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian"> 1885 November 12 </unitdate> E. Calvin Williams to
                                 H.H. Lewis </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Tax bills, 87-89 Patterson (3 items), <unitdate>1885-1886
-                                </unitdate>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Tax bills, 87-89 Patterson (3 items), <unitdate era="ce" calendar="gregorian">1885-1886
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, $3.25 from H.H. Lewis, <unitdate era="ce" calendar="gregorian"> 1887 July 25
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Hagger and Bennett, <unitdate era="ce" calendar="gregorian"> 188? August 1
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Rent receipt, <unitdate era="ce" calendar="gregorian"> 1884 September 15</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Francis Bibleheiser, <unitdate era="ce" calendar="gregorian"> 1881 December 31
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Francis Bibleheiser, <unitdate era="ce" calendar="gregorian">  1882 March
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, George W. Della Sink Emptying, <unitdate era="ce" calendar="gregorian"> 
+                                    188? December 10 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Philip March Sink Empyting, <unitdate era="ce" calendar="gregorian"> 1887 April 14
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Insurance bill, J.S. Maury &amp; Co., <unitdate era="ce" calendar="gregorian"> 1883  May 3
+                                    </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Water bill, 87-89 Patterson, <unitdate era="ce" calendar="gregorian"> 1879 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Odorless Excavating Appartus Co., <unitdate era="ce" calendar="gregorian">1886  August 23,
+                                    </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, August Miller, <unitdate era="ce" calendar="gregorian"> 1890 April 26</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, hinges and bolt on cellar dome, <unitdate era="ce" calendar="gregorian"> 1883 August 18 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, B.F. Haines to J.H. Everist, <unitdate era="ce" calendar="gregorian"> 1880 January 
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Promise to pay Orville Horowitz, <unitdate era="ce" calendar="gregorian"> 1878 December 26 
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Recipe, Raised Corn Rolls <unitdate era="ce" calendar="gregorian"/></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Capt. Lewis to Alfred High, <unitdate era="ce" calendar="gregorian"> 1890 September 17
+                                     </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Capt. Lewis to Alfred High, <unitdate era="ce" calendar="gregorian"> 1890 May 3 
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, $1.50 received by Strohm from Capt. H.H. Lewis
                             </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, $3.25 from H.H. Lewis, <unitdate> 1887 July 25
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Hagger and Bennett, <unitdate> 188? August 1
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Rent receipt, <unitdate> 1884 September 15</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Francis Bibleheiser, <unitdate> 1881 December 31
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Francis Bibleheiser, <unitdate>  1882 March
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, George W. Della Sink Emptying, <unitdate> 
-                                    188? December 10 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Philip March Sink Empyting, <unitdate> 1887 April 14
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Insurance bill, J.S. Maury &amp; Co., <unitdate> 1883  May 3
-                                    </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Water bill, 87-89 Patterson, <unitdate> 1879 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Odorless Excavating Appartus Co., <unitdate>1886  August 23,
-                                    </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, August Miller, <unitdate> 1890 April 26</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, hinges and bolt on cellar dome, <unitdate> 1883 August 18 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, B.F. Haines to J.H. Everist, <unitdate> 1880 January 
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Promise to pay Orville Horowitz, <unitdate> 1878 December 26 
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Recipe, Raised Corn Rolls <unitdate> </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Capt. Lewis to Alfred High, <unitdate> 1890 September 17
-                                     </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Capt. Lewis to Alfred High, <unitdate> 1890 May 3 
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, $1.50 received by Strohm from Capt. H.H. Lewis
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Bill, Lewis to Jas. A. Myers, <unitdate> 1889 June 8 
-                                </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Dinner menu, <unitdate> February 14 </unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Recipe, on paper from the Hotel Clarendon </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Letters: C. Mitchell to E. Washington, and others.<unitdate
-                                type="inclusive">1867-1881</unitdate></unittitle>
-                        <container type="folder" label="Folder"> 5</container>
-                    </did>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1875 May 10</unitdate>C. Mitchell to Ella
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Bill, Lewis to Jas. A. Myers, <unitdate era="ce" calendar="gregorian"> 1889 June 8 
+                                </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Dinner menu, <unitdate era="ce" calendar="gregorian"> February 14 </unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Recipe, on paper from the Hotel Clarendon </unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Letters: C. Mitchell to E. Washington, and others.<unitdate type="inclusive" era="ce" calendar="gregorian">1867-1881</unitdate></unittitle>
+            <container type="folder" label="Folder"> 5</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1875 May 10</unitdate>C. Mitchell to Ella
                                 Washington (with envelope)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1874 December 18</unitdate>C. Mitchell to Ella
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1874 December 18</unitdate>C. Mitchell to Ella
                                 Washington </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella Washington <unitdate>1875 May 10</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella Washington <unitdate>1874 December
-                                18</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella Washington <unitdate>1873 November
-                                2</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella Washington <unitdate>1867 January
-                                20</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella Washington (with envelope) <unitdate>1875 May
-                                    5</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella [Washington] (with envelope) <unitdate>1871 December
-                                9</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella [Washington] (with envelope) <unitdate>1871 October
-                                18</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>R.L. Bassett to Capt. H.H. Lewis (with envelope)
-                                    <unitdate>1881 September 12</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Willoughby Newton, Jr. to Capt. H.H. Lewis (with envelope)
-                                    <unitdate>1881 November 19</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Charles [Mitchell] to Ella [Washington] <unitdate>1875 April 10</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Ella Bassett Washington Letters and notes and mortgages for
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella Washington <unitdate era="ce" calendar="gregorian">1875 May 10</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella Washington <unitdate era="ce" calendar="gregorian">1874 December
+                                18</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella Washington <unitdate era="ce" calendar="gregorian">1873 November
+                                2</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella Washington <unitdate era="ce" calendar="gregorian">1867 January
+                                20</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella Washington (with envelope) <unitdate era="ce" calendar="gregorian">1875 May
+                                    5</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella [Washington] (with envelope) <unitdate era="ce" calendar="gregorian">1871 December
+                                9</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella [Washington] (with envelope) <unitdate era="ce" calendar="gregorian">1871 October
+                                18</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>R.L. Bassett to Capt. H.H. Lewis (with envelope)
+                                    <unitdate era="ce" calendar="gregorian">1881 September 12</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Willoughby Newton, Jr. to Capt. H.H. Lewis (with envelope)
+                                    <unitdate era="ce" calendar="gregorian">1881 November 19</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Charles [Mitchell] to Ella [Washington] <unitdate era="ce" calendar="gregorian">1875 April 10</unitdate></unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Ella Bassett Washington Letters and notes and mortgages for
                             Mordington (Happy retreat) Clover Lea and other Washington homes.</unittitle>
-                        <unitdate type="bulk">1886-1890</unitdate>
-                        <container type="folder" label="Folder"> 6</container>
-                    </did>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Promise to pay Daniel Greenbaum, <unitdate>1888 October 4</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, $100 received by Ella Washington from H.H. Lewis,
-                                    <unitdate>1887 November 5</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, $50 received by Ella Washington from H.H. Lewis,
-                                    <unitdate>1888 May 23</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Ella Washington to Cousin</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1876 February 10</unitdate>[Landtrob] to Sir with
+            <unitdate type="bulk" era="ce" calendar="gregorian">1886-1890</unitdate>
+            <container type="folder" label="Folder"> 6</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Promise to pay Daniel Greenbaum, <unitdate era="ce" calendar="gregorian">1888 October 4</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, $100 received by Ella Washington from H.H. Lewis,
+                                    <unitdate era="ce" calendar="gregorian">1887 November 5</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, $50 received by Ella Washington from H.H. Lewis,
+                                    <unitdate era="ce" calendar="gregorian">1888 May 23</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Ella Washington to Cousin</unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1876 February 10</unitdate>[Landtrob] to Sir with
                                 envelope addressed to Ms. E.B. Washington</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>Undated, </unitdate>pencil letter from
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">Undated, </unitdate>pencil letter from
                             EBW</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Introduction card, E.B. Washington introducing brother in
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Introduction card, E.B. Washington introducing brother in
                                 law, C.F. Mitchell to John W. [Warrin], in envelope</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Introuction card, E.B. Washington introducing C.F. Mitchell
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Introuction card, E.B. Washington introducing C.F. Mitchell
                                 to Mr. G.A. Leavitz, in envelope</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Check, $20, to Williams &amp; Gibson from G.W. Bassett, ,
-                                with “No Protest” slip.<unitdate>1883 April 7</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Mortgage note, promise to pay Daniel Greenbaum,
-                                    <unitdate>1888 October 4</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Mortgage note, promise to pay Daniel Greenbaum,
-                                    <unitdate>1886 October 4</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Envelope addressed to Mrs. E.B. Washington</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>1888 Sept 26 </unitdate>Henry H. Lewis to Ella B.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Check, $20, to Williams &amp; Gibson from G.W. Bassett, ,
+                                with “No Protest” slip.<unitdate era="ce" calendar="gregorian">1883 April 7</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Mortgage note, promise to pay Daniel Greenbaum,
+                                    <unitdate era="ce" calendar="gregorian">1888 October 4</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Mortgage note, promise to pay Daniel Greenbaum,
+                                    <unitdate era="ce" calendar="gregorian">1886 October 4</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Envelope addressed to Mrs. E.B. Washington</unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">1888 Sept 26 </unitdate>Henry H. Lewis to Ella B.
                                 Washington</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle><unitdate>[year] November 30</unitdate>from C.
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle><unitdate era="ce" calendar="gregorian">[year] November 30</unitdate>from C.
                             Mitchell</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Receipt, check received by Ella B. Washington from Henry H.
-                                Lewis, <unitdate>1890 July 14</unitdate></unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Unlabeled</unittitle>
-                        <container type="folder" label="Folder"> 7</container>
-                    </did>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Article of agreement</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Deed (in two pieces)</unittitle>
-                            <unitdate>1856 September 15 </unitdate>
-                        </did>
-                    </c03>
-                    <c03 level="item">
-                        <did>
-                            <unittitle>Dillon family land deeds (3 leaves)</unittitle>
-                        </did>
-                    </c03>
-
-                </c02>
-            </c01>
-        </dsc>
-
-    </archdesc>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Receipt, check received by Ella B. Washington from Henry H.
+                                Lewis, <unitdate era="ce" calendar="gregorian">1890 July 14</unitdate></unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Unlabeled</unittitle>
+            <container type="folder" label="Folder"> 7</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Article of agreement</unittitle>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Deed (in two pieces)</unittitle>
+              <unitdate era="ce" calendar="gregorian">1856 September 15 </unitdate>
+            </did>
+          </c03>
+          <c03 level="item">
+            <did>
+              <unittitle>Dillon family land deeds (3 leaves)</unittitle>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

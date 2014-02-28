@@ -1,549 +1,529 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/cw.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/cw_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/cw_contact.xml">
-]>
-<ead id="viwc00515">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-        <eadid countrycode="US" mainagencycode="ViWC">PUBLIC "-//Colonial Williamsburg
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viwc00515">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViWC">PUBLIC "-//Colonial Williamsburg
             Foundation::John D. Rockefeller, Jr. Library//TEXT (US::ViWC::viwc00515:: Julia Finette
             Davis Research Files, ca. 1960s)//EN" "viwc00515.xml" </eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>A Guide to the Julia Finette Davis Research Files, <date>ca.
-                    1960s</date>
-                </titleproper>
-                <subtitle id="sort">Research Files, Julia Finette Davis <num type="collectionnumber"
-                        >MS 1996.45 20C </num>
-                </subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation
-                </publisher> &address; <date type="publication">&copy; 2008 By The Colonial
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Julia Finette Davis Research Files, <date era="ce" calendar="gregorian">ca.
+                    1960s</date></titleproper>
+        <subtitle id="sort">Research Files, Julia Finette Davis <num type="collectionnumber">MS 1996.45 20C </num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation
+                </publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/cw_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2008 By The Colonial
                     Williamsburg Foundation. All Rights Reserved. </date>
-                <p id="usestatement">
-                    <extref entityref="conditions">Conditions of Use </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Machine-readable finding aid derived from MARC record, created by Jennifer
-                Sharp, <date>07/22/2008</date>
-            </creation>
-            <langusage>Description is in <language langcode="eng">English </language>
-            </langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>A Guide to the Julia Finette Davis Research Files, <date>ca. 1960s</date>
-            </titleproper>
-            <subtitle>A Collection in the <lb/>Colonial Williamsburg Foundation`s<lb/>John D.
-                Rockefeller, Jr. Library <num type="Manuscript Number">MS 1996.45 20C </num>
-            </subtitle>
-            <p id="logostmt">
-                <extptr actuate="onload" show="embed" entityref="logo"/>
-            </p>
-            <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation </publisher>
-            <date type="publication">2008 </date> &contact; <list type="deflist">
-                <defitem>
-                    <label>Processed by: </label>
-                    <item>Special Collections Staff </item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="collection">
-        <runner placement="footer">John D. Rockefeller, Jr. Library, Colonial Williamsburg
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MARC record, created by Jennifer
+                Sharp, <date era="ce" calendar="gregorian">07/22/2008</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Julia Finette Davis Research Files, <date era="ce" calendar="gregorian">ca. 1960s</date></titleproper>
+      <subtitle>A Collection in the <lb/>Colonial Williamsburg Foundation`s<lb/>John D.
+                Rockefeller, Jr. Library <num type="Manuscript Number">MS 1996.45 20C </num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/cw.jpg"/>
+      </p>
+      <publisher>John D. Rockefeller, Jr. Library, Colonial Williamsburg Foundation </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008 </date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/cw_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: </label>
+          <item>Special Collections Staff </item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">John D. Rockefeller, Jr. Library, Colonial Williamsburg
             Foundation </runner>
-        <did>
-            <head>Descriptive Summary </head>
-            <repository label="Repository" encodinganalog="852$a">John D. Rockefeller, Jr. Library,
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">John D. Rockefeller, Jr. Library,
                 Colonial Williamsburg Foundation </repository>
-            <unittitle label="Title" encodinganalog="245$a">Julia Finette Davis Research Files
-                    <unitdate type="inclusive" label="Date" encodinganalog="245$f">ca. 1960s
-                </unitdate>
-            </unittitle>
-            <unitid label="Manuscript Number" encodinganalog="099$a">MS 1996.45 20C </unitid>
-            <physloc label="Location">On site. </physloc>
-            <physdesc label="Physical Characteristics" encodinganalog="300$a">.5 linear feet. </physdesc>
-            <langmaterial label="Language">
-                <language langcode="eng">English </language>
-            </langmaterial>
-            <abstract label="Abstract"> </abstract>
-            <origination label="Creator" encodinganalog="100$a">Davis, Julia Finette </origination>
-        </did>
-        <descgrp type="admininfo">
-            <head>Administrative Information </head>
-            <accessrestrict encodinganalog="506$a">
-                <head>Access Restrictions </head>
-                <p>Collection is open to research. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540$a">
-                <head>Use Restrictions </head>
-                <p>There are no restrictions. </p>
-            </userestrict>
-            <prefercite encodinganalog="524$a">
-                <head>Preferred Citation </head>
-                <p>Julia Finette Davis Research Files, Manuscript #MS 1996.45 20C, John D.
+      <unittitle label="Title" encodinganalog="245$a">Julia Finette Davis Research Files
+                    <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">ca. 1960s
+                </unitdate></unittitle>
+      <unitid label="Manuscript Number" encodinganalog="099$a">MS 1996.45 20C </unitid>
+      <physloc label="Location">On site. </physloc>
+      <physdesc label="Physical Characteristics" encodinganalog="300$a">.5 linear feet. </physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English </language>
+      </langmaterial>
+      <abstract label="Abstract"/>
+      <origination label="Creator" encodinganalog="100$a">Davis, Julia Finette </origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information </head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions </head>
+        <p>Collection is open to research. </p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions </head>
+        <p>There are no restrictions. </p>
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation </head>
+        <p>Julia Finette Davis Research Files, Manuscript #MS 1996.45 20C, John D.
                     Rockefeller, Jr. Library, Colonial Williamsburg Foundation. </p>
-            </prefercite>
-            <acqinfo encodinganalog="541$a">
-                <head>Acquisition Information </head>
-                <p>Unknown </p>
-            </acqinfo>
-        </descgrp>
-        <bioghist encodinganalog="545$a">
-            <head>Biographical/Historical Information </head>
-            <p>Julia Finette Davis was a consultant to the Colonial Williamsburg Foundation </p>
-        </bioghist>
-        <scopecontent encodinganalog="520$a">
-            <head>Scope and Content </head>
-            <p>Davis' papers focus on the history of fruit growing in the United States. Much of
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information </head>
+        <p>Unknown </p>
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical/Historical Information </head>
+      <p>Julia Finette Davis was a consultant to the Colonial Williamsburg Foundation </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content </head>
+      <p>Davis' papers focus on the history of fruit growing in the United States. Much of
                 the information has been photocopied. </p>
-        </scopecontent>
-        <arrangement encodinganalog="351">
-            <head>Arrangement </head>
-            <p>Arranged in alphabetical order. </p>
-        </arrangement>
-        <controlaccess>
-            <head>Index Terms</head>
-            <controlaccess>
-                <head>Persons:</head>
-                <persname encodinganalog="600$a">Davis, Julia Finette</persname>
-
-            </controlaccess>
-            <controlaccess>
-                <head>Subjects:</head>
-                <subject source="lcsh" encodinganalog="650$a">Fruit - History</subject>
-
-            </controlaccess>
-
-        </controlaccess>
-        <dsc type="combined">
-            <head>Contents List </head>
-            <c01 level="series">
-                <did>
-                    <unittitle>Garden Research Files</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Authors</unittitle>
-                        <container type="box" label="Box">1</container>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Beach, Spencer A., <title render="italic">The Apples of New
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement </head>
+      <p>Arranged in alphabetical order. </p>
+    </arrangement>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Persons:</head>
+        <persname encodinganalog="600$a">Davis, Julia Finette</persname>
+      </controlaccess>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh" encodinganalog="650$a">Fruit - History</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="combined">
+      <head>Contents List </head>
+      <c01 level="series">
+        <did>
+          <unittitle>Garden Research Files</unittitle>
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Authors</unittitle>
+            <container type="box" label="Box">1</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Beach, Spencer A., <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Apples of New
                                     York</title></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Coxe, William</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Copy from manuscript treatise and view of <title
-                                        render="italic">Fruit Trees in America</title></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Index to <title render="italic">A View of Cultivation of
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Coxe, William</unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Copy from manuscript treatise and view of <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Fruit Trees in America</title></unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Index to <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">A View of Cultivation of
                                         Fruit Trees</title></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Notes from A <title render="italic">View of the
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Notes from A <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">View of the
                                         Cultivation of Fruit Trees</title></unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Faureth, "Colonial Gardens and Plants"</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Favretti, Rudy J., "New England Colonial Gardens"</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Fletcher, S.W., "A History of Fruit Growing in
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faureth, "Colonial Gardens and Plants"</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Favretti, Rudy J., "New England Colonial Gardens"</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Fletcher, S.W., "A History of Fruit Growing in
                             America"</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Hornsby, Planting diary</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Humphreys, "Spectacle de la Nature"</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Prince, William Robert, "Treatise on the Vine"</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Quincy, Josiah, Journal, <unitdate type="inclusive"
-                                >1773</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Reuter, C.G., Flore and Fauna in Wachovia, <unitdate
-                                    type="inclusive">1760</unitdate>
-                                <unitdate type="inclusive">1758</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Ritson, Anne, "Political Picture of America"</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Worlidge, "Vinetum Britannicum"</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Carter's Grove</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Proposals</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Purpose, Scope, and Outline of Proposed Research</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Cider</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Directions for making</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>English material</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Extract concerning, <unitdate type="inclusive"
-                                >1721</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Material from Bulmers</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Mills (from Eric Sloane's book)</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Recipes (for wine, also)</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Fruit</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>19th century information, Anderson, Robert
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Hornsby, Planting diary</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Humphreys, "Spectacle de la Nature"</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Prince, William Robert, "Treatise on the Vine"</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Quincy, Josiah, Journal, <unitdate type="inclusive" era="ce" calendar="gregorian">1773</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Reuter, C.G., Flore and Fauna in Wachovia, <unitdate type="inclusive" era="ce" calendar="gregorian">1760</unitdate><unitdate type="inclusive" era="ce" calendar="gregorian">1758</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Ritson, Anne, "Political Picture of America"</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Worlidge, "Vinetum Britannicum"</unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Carter's Grove</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Proposals</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Purpose, Scope, and Outline of Proposed Research</unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Cider</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Directions for making</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>English material</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Extract concerning, <unitdate type="inclusive" era="ce" calendar="gregorian">1721</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Material from Bulmers</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Mills (from Eric Sloane's book)</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Recipes (for wine, also)</unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Fruit</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>19th century information, Anderson, Robert
                             information</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Apples</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Descriptions of old varieties</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Hughes seedlings</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Newtown (Abermarle) Pippin, <unitdate type="inclusive"
-                                        >ca. 1889</unitdate></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Varieties</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Varieties, Kirby, S.F. Account Book, <unitdate
-                                        type="inclusive">1785-1804</unitdate></unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Catalogues</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Baum's Nursery, <unitdate type="inclusive"
-                                    >1960-1970</unitdate></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Furber, <unitdate type="inclusive"
-                                >1732</unitdate></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Prince, William</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Southmeadow and Converse, <unitdate type="inclusive"
-                                    >1968</unitdate></unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Crab apple</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Orchard, account of</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Virginia, account, <unitdate type="inclusive"
-                                    >1814</unitdate></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Williamsburg or Chiswell</unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Grapes</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Forced/Vineyard, "Observations on Culture of Vines",
-                                        <title render="italic">Universal
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Apples</unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Descriptions of old varieties</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Hughes seedlings</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Newtown (Abermarle) Pippin, <unitdate type="inclusive" era="ce" calendar="gregorian">ca. 1889</unitdate></unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Varieties</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Varieties, Kirby, S.F. Account Book, <unitdate type="inclusive" era="ce" calendar="gregorian">1785-1804</unitdate></unittitle>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Catalogues</unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Baum's Nursery, <unitdate type="inclusive" era="ce" calendar="gregorian">1960-1970</unitdate></unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Furber, <unitdate type="inclusive" era="ce" calendar="gregorian">1732</unitdate></unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Prince, William</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Southmeadow and Converse, <unitdate type="inclusive" era="ce" calendar="gregorian">1968</unitdate></unittitle>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Crab apple</unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Orchard, account of</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Virginia, account, <unitdate type="inclusive" era="ce" calendar="gregorian">1814</unitdate></unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Williamsburg or Chiswell</unittitle>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Grapes</unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Forced/Vineyard, "Observations on Culture of Vines",
+                                        <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Universal
                                 Magazine</title></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Varieties</unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Information, species and families</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Kitchen gardens</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>List, Anderson, Robert, <unitdate type="inclusive"
-                                >1835</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Notes</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Ambassador Collection</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>English books</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Jefferson, Thomas, "The Garden Book"</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Jefferson, Thomas, Papers</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Miscellaneous</unittitle>
-                                <container type="box" label="Box"> 2</container>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Skipwith, Joan, Prestwould, <unitdate type="inclusive"
-                                        >ca. 1780</unitdate></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Tucker, St. George, <unitdate type="inclusive"
-                                    >1786-1790</unitdate></unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Washington, George, Papers</unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Nursery ads, "Richmond Inquirer", <unitdate type="inclusive"
-                                    >1823</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Oregon Historical Society Pioneer Orchard</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Peach, Double Blossom, <title render="italic">Universal
-                                    Magazine</title>, <unitdate type="inclusive"
-                            >1754</unitdate></unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Pears, Shapes of Old Sturbridge Village
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Varieties</unittitle>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Information, species and families</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Kitchen gardens</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>List, Anderson, Robert, <unitdate type="inclusive" era="ce" calendar="gregorian">1835</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Notes</unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Ambassador Collection</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>English books</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Jefferson, Thomas, "The Garden Book"</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Jefferson, Thomas, Papers</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Miscellaneous</unittitle>
+                <container type="box" label="Box"> 2</container>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Skipwith, Joan, Prestwould, <unitdate type="inclusive" era="ce" calendar="gregorian">ca. 1780</unitdate></unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Tucker, St. George, <unitdate type="inclusive" era="ce" calendar="gregorian">1786-1790</unitdate></unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Washington, George, Papers</unittitle>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Nursery ads, "Richmond Inquirer", <unitdate type="inclusive" era="ce" calendar="gregorian">1823</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Oregon Historical Society Pioneer Orchard</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Peach, Double Blossom, <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Universal
+                                    Magazine</title>, <unitdate type="inclusive" era="ce" calendar="gregorian">1754</unitdate></unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Pears, Shapes of Old Sturbridge Village
                             Collection</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Varieties</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Desired by Hagley Museum</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <unittitle>Modern, Nelson County Orchards, VA</unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Plants</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Identification of material from Custis well</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>List from Garden Symposium</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>List of plants in Colonial Williamsburg</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Publication materials</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Bibliography, Landscape and Garden Report </unittitle>
-                            <physdesc>
-                                <extent>(2 folders)</extent>
-                            </physdesc>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Plates</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Miscellaneous</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle><title render="italic">Chronicle</title> data on tools to
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Varieties</unittitle>
+            </did>
+            <c04 level="file">
+              <did>
+                <unittitle>Desired by Hagley Museum</unittitle>
+              </did>
+            </c04>
+            <c04 level="file">
+              <did>
+                <unittitle>Modern, Nelson County Orchards, VA</unittitle>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Plants</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Identification of material from Custis well</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>List from Garden Symposium</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>List of plants in Colonial Williamsburg</unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Publication materials</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Bibliography, Landscape and Garden Report </unittitle>
+              <physdesc>
+                <extent>(2 folders)</extent>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Plates</unittitle>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Miscellaneous</unittitle>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Chronicle</title> data on tools to
                                 pare, pit fruits</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Plantation layout, Mount Vernon</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle><title render="italic">Virginia Gazette</title>, references
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Plantation layout, Mount Vernon</unittitle>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Virginia Gazette</title>, references
                                 to outhouses</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-            </c01>
-
-        </dsc>
-    </archdesc>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
