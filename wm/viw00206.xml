@@ -1,878 +1,757 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl" ?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY scrcwiki SYSTEM "http://scrc.swem.wm.edu/wiki/index.php/Courtney Sharpe Ward" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/wm/vivadoc.pl?file=viw00206.xml" NDATA html>
-]>
-<ead id="viw00206">
-<eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
-	<eadid mainagencycode="VWM" countrycode="us">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00206:: Courtney Sharpe Ward Papers, 1950-1969)//EN" "viw00206.xml"</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
 
-	<filedesc>
-
-
-<titlestmt>
-	<titleproper>Inventory of the Courtney Sharpe Ward Papers <date>1950-1969</date>
-	</titleproper>
-	<subtitle id="sort">
-		Ward, Courtney Sharpe		<num type="collectionnumber">Mss. Acc. 2007.25, 2008.106</num>
-	</subtitle>
-</titlestmt>
-
-
-
-<publicationstmt>
-	<publisher>Earl Gregg Swem Library, College of William and Mary</publisher> &address;
-	<date type="publication">&copy; 2010 By the College of William and Mary. All rights reserved.</date>
-	<p id="usestatement">
-		<extref entityref="conditions">Conditions of Use</extref>
-	</p>
-</publicationstmt>
-
-</filedesc>
-
-<profiledesc>
-	<creation>Finding aid created by Special Collections Staff, <date>2008</date></creation>
-	<langusage>Description is in
-		<language langcode="eng">English</language>
-	</langusage>
-</profiledesc>
-</eadheader>
-
-
-
-<frontmatter>
-	<titlepage>
-		<titleproper>Inventory of the Courtney Sharpe Ward Papers, <date>1950-1969</date></titleproper>
-		<subtitle>A Collection in the<lb/>Special Collections Research Center
-			<num type="Accession Number">Mss. Acc. 2007.25, 2008.106</num>
-		</subtitle>
-		<p id="logostmt">
-			<extptr actuate="onload" show="embed" entityref="logo"/>
-		</p>
-		<publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
-		<date type="publication">2010</date> &contact;
-		<list type="deflist">
-			<defitem>
-				<label>Processed By</label>
-				<item>Special Collections Staff.</item>
-			</defitem>
-		</list>
-	</titlepage>
-</frontmatter>
-
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-		<corpname>Special Collections Research Center</corpname>
-</repository>
-
-
-	<unittitle label="Title:" encodinganalog="245$a">Courtney Sharpe Ward Papers	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1950-1969</unitdate>
-</unittitle>
-<unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">01/Mss. Acc. 2007.25, 2008.106</unitid>
-	<physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Boxes">6.00</extent></physdesc>
-	<langmaterial encodinganalog="546" label="Language of Materials">
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00206">
+  <eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
+    <eadid mainagencycode="US-VWM" countrycode="US">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00206:: Courtney Sharpe Ward Papers, 1950-1969)//EN" "viw00206.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the Courtney Sharpe Ward Papers <date era="ce" calendar="gregorian">1950-1969</date></titleproper>
+        <subtitle id="sort">
+		Ward, Courtney Sharpe		<num type="collectionnumber">Mss. Acc. 2007.25, 2008.106</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By the College of William and Mary. All rights reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Finding aid created by Special Collections Staff, <date era="ce" calendar="gregorian">2008</date></creation>
+      <langusage>Description is in
+		<language langcode="eng">English</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the Courtney Sharpe Ward Papers, <date era="ce" calendar="gregorian">1950-1969</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
+			<num type="Accession Number">Mss. Acc. 2007.25, 2008.106</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed By</label>
+          <item>Special Collections Staff.</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">Courtney Sharpe Ward Papers	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1950-1969</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">01/Mss. Acc. 2007.25, 2008.106</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Boxes">6.00</extent>
+      </physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	  The papers are in:
-<language langcode="eng">English</language>
-	</langmaterial>
-	
-	<abstract encodinganalog="520$a" label="Abstract:">Correspondence, notes, papers, newspaper clippings, drafts and  published articles belonging to Courtney Sharpe Ward. Much of the information is information she found while researching for an article.  Many of her articles had a historical connection. She was a writer for the Richmond News Leader in Richmond, Virginia.
+<language langcode="eng">English</language></langmaterial>
+      <abstract encodinganalog="520$a" label="Abstract:">Correspondence, notes, papers, newspaper clippings, drafts and  published articles belonging to Courtney Sharpe Ward. Much of the information is information she found while researching for an article.  Many of her articles had a historical connection. She was a writer for the Richmond News Leader in Richmond, Virginia.
 </abstract>
-
-	<origination label="Creator:">
-
-		<persname encodinganalog="100" source="lcnaf">Ward, Courtney Sharpe</persname>
+      <origination label="Creator:"><persname encodinganalog="100" source="lcnaf">Ward, Courtney Sharpe</persname>
 arrangement
 	</origination>
-
-
-</did>
-
-<descgrp type="admininfo">
-<head>Administrative Information</head>
-<!-- ADMINISTRATIVE INFORMATION -->
-
-<accessrestrict encodinganalog="506">
-	<head>Conditions Governing Access</head>
-	<p>Collection is open to all researchers.</p>
-</accessrestrict>
-
-<userestrict encodinganalog="540">
-	<head>Conditions Governing Use</head>
-	<p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
-</userestrict>
-<prefercite encodinganalog="510">
-	<head>Preferred Citation</head>
-	<p>Courtney Sharpe Ward Papers, Special Collections Research Center, Swem Library, College of William and Mary</p>
-</prefercite>
-<acqinfo encodinganalog="541">
-	<head>Acquisition Information</head>
-	<p>The materials were acquired by Special Collections Research Center on 00/00/2008.</p>
-</acqinfo>
-<processinfo encodinganalog="583">
-	<head>Processing Information</head>
-	<p>An addition to the collection (Mss. Acc. 2008.106) was incorporated into the collection as Box 6 in 2009.</p>
-</processinfo>
-<!-- END ADMINISTRATIVE INFORMATION -->
-
-
-</descgrp>
-
-
-
-<!--COLLECTION LEVEL METADATA: -->
-<bioghist altrender="Biographical Note" encodinganalog="545"><head>Biographical Note</head>
-  <p>Courtney Sharpe Ward was a writer for the Richmond News-Leader in Richmond, Virginia.   Further information about this individual or organization may be available in the <extref entityref="scrcwiki">Special Collections Research Center Wiki</extref></p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>Correspondence, notes, papers, newspaper clippings, drafts and  published articles belonging to Courtney Sharpe Ward. Much of the information is information she found while researching for an article.  Many of her articles had a historical connection. She was a writer for the Richmond News Leader in Richmond, Virginia.
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <!-- ADMINISTRATIVE INFORMATION -->
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>Collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>Courtney Sharpe Ward Papers, Special Collections Research Center, Swem Library, College of William and Mary</p>
+      </prefercite>
+      <acqinfo encodinganalog="541">
+        <head>Acquisition Information</head>
+        <p>The materials were acquired by Special Collections Research Center on 00/00/2008.</p>
+      </acqinfo>
+      <processinfo encodinganalog="583">
+        <head>Processing Information</head>
+        <p>An addition to the collection (Mss. Acc. 2008.106) was incorporated into the collection as Box 6 in 2009.</p>
+      </processinfo>
+      <!-- END ADMINISTRATIVE INFORMATION -->
+    </descgrp>
+    <!--COLLECTION LEVEL METADATA: -->
+    <bioghist altrender="Biographical Note" encodinganalog="545">
+      <head>Biographical Note</head>
+      <p>Courtney Sharpe Ward was a writer for the Richmond News-Leader in Richmond, Virginia.   Further information about this individual or organization may be available in the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Special Collections Research Center Wiki</extref></p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>Correspondence, notes, papers, newspaper clippings, drafts and  published articles belonging to Courtney Sharpe Ward. Much of the information is information she found while researching for an article.  Many of her articles had a historical connection. She was a writer for the Richmond News Leader in Richmond, Virginia.
 </p>
-	<p>An addition to the collection (Mss. Acc. 2008.106) is incorporated into the collection as Box 6.  This addition mostly consists of material on the 1957 350th Anniversary of Jamestown. Includes photograph and 1957 Press Card of Courtney Sharpe Ward.
+      <p>An addition to the collection (Mss. Acc. 2008.106) is incorporated into the collection as Box 6.  This addition mostly consists of material on the 1957 350th Anniversary of Jamestown. Includes photograph and 1957 Press Card of Courtney Sharpe Ward.
 </p>
-	<p>An addition to the collection (Mss. Acc. 2008.106) was incorporated into the collection as Box 6 in 2009.</p>
-</scopecontent>
-
-<descgrp type="add">
-	<head>Additional Information</head>
-
-
-
-
-</descgrp>
-
-<!-- CONTROLLED ACCESS / SUBJECT TERMS -->
-
-<controlaccess>
-<head>Index Terms</head>
-
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Corporate Name:</head>
-			<corpname encodinganalog="610" source="local">Richmond (Va.) News Leader</corpname>
-	</controlaccess>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="aat">Clippings</genreform>
-			<genreform encodinganalog="655" source="aat">Correspondence</genreform>
-			<genreform encodinganalog="655" source="lcsh">Williamsburg (Va.)--History--20th century</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="local">American newspapers--Virginia--Richmond</subject>
-			<subject encodinganalog="650" source="lcsh">College of William and Mary--History--20th century.</subject>
-			<subject encodinganalog="650" source="local">Colonial Williamsburg Foundation--History.</subject>
-			<subject encodinganalog="650" source="local">Jamestown Festival (1957)</subject>
-			<subject encodinganalog="650" source="lcsh">Virginia--History--20th century.</subject>
-	</controlaccess>
-</controlaccess>
-
-
-<!-- END CONTROLLED ACCESS TERMS -->
-
-
-
-<!-- END COLLECTION LEVEL METADATA -->
-
-<!-- BEGIN SUBORDINATE COMPONENTS -->
-<dsc type="combined">
-<head>Detailed Description of the Collection</head>
-<c01 level="file" id="id29050">
-<did>
-		<container label="Box">1</container>
-    </did>
-<c02 level="file" id="id29055">
-<did>
-        <unittitle>Some Favorite Stories,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29056">
-<did>
-        <unittitle>Correspondence with Journalists,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29057">
-<did>
-        <unittitle>Correspondence with Editors,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29058">
-<did>
-        <unittitle>Article to Richmond News Reader,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29059">
-<did>
-        <unittitle>Williamsburg Correspondence and Notes,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29060">
-<did>
-        <unittitle>Correspondence and Notes,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29061">
-<did>
-        <unittitle>Biographical Sketches,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29062">
-<did>
-        <unittitle>Some by-lines,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29063">
-<did>
-        <unittitle>Williamsburg Area General Features,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29064">
-<did>
-        <unittitle>Gloucester File Sent to Gloucester Library,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29065">
-<did>
-        <unittitle>Portraits of William and Mary Staff,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29066">
-<did>
-        <unittitle>Colonial Williamsburg Portraits,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">12</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29067">
-<did>
-        <unittitle>Williamsburg People,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">13</container>
-    </did>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id29051">
-<did>
-		<container label="Box">2</container>
-    </did>
-<c02 level="file" id="id29068">
-<did>
-        <unittitle>Lady Skipwith Ghost,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29069">
-<did>
-        <unittitle>Features,
-        <unitdate>March 1957-October 1957</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29070">
-<did>
-        <unittitle>Features,
-        <unitdate>December 1958</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29071">
-<did>
-        <unittitle>Richmond News Leader,
-        <unitdate>March 1957-October 1957</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29072">
-<did>
-        <unittitle>Features,
-        <unitdate>October 1957-January 1958</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29073">
-<did>
-        <unittitle>Feature Stories,
-        <unitdate>October 1957</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29074">
-<did>
-        <unittitle>People,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29075">
-<did>
-        <unittitle>JOK,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29076">
-<did>
-        <unittitle>Royalty, Heads of State,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29077">
-<did>
-        <unittitle>Student Burgesses,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29078">
-<did>
-        <unittitle>International Assembly,
-        <unitdate>1958</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29079">
-<did>
-        <unittitle>International Assembly #2,
-        <unitdate>1958</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">12</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29080">
-<did>
-        <unittitle>Student Burgesses,
-        <unitdate>1960</unitdate>,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">13</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29081">
-<did>
-        <unittitle>Baptist and Methodist Gatherings,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">14</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29083">
-<did>
-        <unittitle>International Student Retreat Baptist Thanksgiving,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">15</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29084">
-<did>
-        <unittitle>Williamsburg Community,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">16</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29085">
-<did>
-        <unittitle>Churches, Local,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">17</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29086">
-<did>
-        <unittitle>Cultural Institutions,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">18</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29087">
-<did>
-        <unittitle>Post Offices,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">19</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29088">
-<did>
-        <unittitle>Miscellaneous,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">20</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29089">
-<did>
-        <unittitle>James City Count,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">21</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29090">
-<did>
-        <unittitle>Williamsburg-JCC,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">22</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29091">
-<did>
-        <unittitle>Williamsburg-JCC Merger,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">23</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29092">
-<did>
-        <unittitle>Birds/Animals,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">24</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29093">
-<did>
-        <unittitle>Civil War,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">25</container>
-    </did>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id29052">
-<did>
-		<container label="Box">3</container>
-    </did>
-<c02 level="file" id="id29094">
-<did>
-        <unittitle>Eastern State Hospital,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29095">
-<did>
-        <unittitle>Colonial Williamsburg 1,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29096">
-<did>
-        <unittitle>Colonial Williamsburg 2,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29097">
-<did>
-        <unittitle>Colonial Williamsburg 3,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29098">
-<did>
-        <unittitle>Colonial Williambsurg 4,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29099">
-<did>
-        <unittitle>Christmas Williamsburg Area,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29100">
-<did>
-        <unittitle>William and Mary,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">7</container>
-    </did>
-    	<scopecontent>
-					<p>See portraits for teachers</p>
-    	</scopecontent>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id29053">
-<did>
-		<container label="Box">4</container>
-    </did>
-<c02 level="file" id="id29103">
-<did>
-        <unittitle>William and Mary,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">1</container>
-    </did>
-    	<scopecontent>
-					<p>See portraits for teachers</p>
-    	</scopecontent>
-
-</c02>
-<c02 level="file" id="id29104">
-<did>
-        <unittitle>Common Glory/Founders,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29105">
-<did>
-        <unittitle>George Washington,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29106">
-<did>
-        <unittitle>Schools,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29107">
-<did>
-        <unittitle>Yorktown Celebration,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29108">
-<did>
-        <unittitle>Yorktown,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29109">
-<did>
-        <unittitle>Yorktown Day,
-        <unitdate>October 19</unitdate>,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29110">
-<did>
-        <unittitle>Prelude to Independence,
-</unittitle>
-		<container label="Box">4</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id29054">
-<did>
-		<container label="Box">5</container>
-    </did>
-<c02 level="file" id="id29111">
-<did>
-        <unittitle>Prelude to Independence,
-</unittitle>
-		<container label="Box">5</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29112">
-<did>
-        <unittitle>Military Bases/NASA,
-</unittitle>
-		<container label="Box">5</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29113">
-<did>
-        <unittitle>Mariners&#039; Museum/Tidewater Churches,
-</unittitle>
-		<container label="Box">5</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29114">
-<did>
-        <unittitle>Mariners&#039; Museu/Tidewater Churches/Westpoint,
-</unittitle>
-		<container label="Box">5</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id29115">
-<did>
-        <unittitle>Miscellaneous,
-</unittitle>
-		<container label="Box">5</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id48278">
-<did>
-       
-		<container label="Box">6</container>
-		
-    </did>
-    	<scopecontent>
-					<p>Mostly material concerning articles about Jamestown and the Williamsburg area, particularly about the British Royal Visit to Jamestown and Williamsburg on October 16, 1957.  Some letters are from a woman who lived on Jamestown Island and others from the State of Virginia Departments about the Indian Lodge.</p>
-    	</scopecontent>
-<c02 level="file" id="id48291">
-<did>
-        <unittitle>Jamestown 350th Anniversary,
-        <unitdate>March 31, 1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">1</container>
-    </did>
-    	<scopecontent>
-					<p>Daily Press newspaper edition on Jamestown Anniversary.  Newport News, Virginia.</p>
-    	</scopecontent>
-
-</c02>
-<c02 level="file" id="id48292">
-<did>
-        <unittitle>Articles on Jamestown,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">2</container>
-    </did>
-    	<scopecontent>
-					<p>Newspaper articles by Courtney Ward on Jamestown.  News Releases.</p>
-    	</scopecontent>
-
-</c02>
-<c02 level="file" id="id48293">
-<did>
-        <unittitle>Jamestown Island and Area,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id48294">
-<did>
-        <unittitle>Jamestown 1957,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id48295">
-<did>
-        <unittitle>Queen Elizabeth and Prince Philip,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id48296">
-<did>
-        <unittitle>Jamestown Festival,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id48297">
-<did>
-        <unittitle>Jamestown-Resort Issues,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id48298">
-<did>
-        <unittitle>Jamestown - News Leader Features,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id48300">
-<did>
-        <unittitle>Jamestown Foundation/Festival Park,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c02>
-<c02 level="file" id="id48301">
-<did>
-        <unittitle>Queen&#039;s Visit to Jamestown,
-        <unitdate>1957</unitdate>,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c02>
-
-</c01>
-
-</dsc>
-
-<!-- END SUBORDINATE COMPONENTS -->
-</archdesc>
-</ead>
-<!-- footer.inc.php -->
-
+      <p>An addition to the collection (Mss. Acc. 2008.106) was incorporated into the collection as Box 6 in 2009.</p>
+    </scopecontent>
+    <descgrp type="add">
+      <head>Additional Information</head>
+    </descgrp>
+    <!-- CONTROLLED ACCESS / SUBJECT TERMS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Corporate Name:</head>
+        <corpname encodinganalog="610" source="local">Richmond (Va.) News Leader</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="aat">Clippings</genreform>
+        <genreform encodinganalog="655" source="aat">Correspondence</genreform>
+        <genreform encodinganalog="655" source="lcsh">Williamsburg (Va.)--History--20th century</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="local">American newspapers--Virginia--Richmond</subject>
+        <subject encodinganalog="650" source="lcsh">College of William and Mary--History--20th century.</subject>
+        <subject encodinganalog="650" source="local">Colonial Williamsburg Foundation--History.</subject>
+        <subject encodinganalog="650" source="local">Jamestown Festival (1957)</subject>
+        <subject encodinganalog="650" source="lcsh">Virginia--History--20th century.</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- END COLLECTION LEVEL METADATA -->
+    <!-- BEGIN SUBORDINATE COMPONENTS -->
+    <dsc type="combined">
+      <head>Detailed Description of the Collection</head>
+      <c01 level="file" id="id29050">
+        <did>
+          <container label="Box">1</container>
+        </did>
+        <c02 level="file" id="id29055">
+          <did>
+            <unittitle>Some Favorite Stories,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29056">
+          <did>
+            <unittitle>Correspondence with Journalists,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29057">
+          <did>
+            <unittitle>Correspondence with Editors,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29058">
+          <did>
+            <unittitle>Article to Richmond News Reader,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29059">
+          <did>
+            <unittitle>Williamsburg Correspondence and Notes,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29060">
+          <did>
+            <unittitle>Correspondence and Notes,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29061">
+          <did>
+            <unittitle>Biographical Sketches,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29062">
+          <did>
+            <unittitle>Some by-lines,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29063">
+          <did>
+            <unittitle>Williamsburg Area General Features,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29064">
+          <did>
+            <unittitle>Gloucester File Sent to Gloucester Library,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">10</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29065">
+          <did>
+            <unittitle>Portraits of William and Mary Staff,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">11</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29066">
+          <did>
+            <unittitle>Colonial Williamsburg Portraits,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">12</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29067">
+          <did>
+            <unittitle>Williamsburg People,
+</unittitle>
+            <container label="Box">1</container>
+            <container label="Folder">13</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file" id="id29051">
+        <did>
+          <container label="Box">2</container>
+        </did>
+        <c02 level="file" id="id29068">
+          <did>
+            <unittitle>Lady Skipwith Ghost,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29069">
+          <did>
+            <unittitle>Features,
+        <unitdate era="ce" calendar="gregorian">March 1957-October 1957</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29070">
+          <did>
+            <unittitle>Features,
+        <unitdate era="ce" calendar="gregorian">December 1958</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29071">
+          <did>
+            <unittitle>Richmond News Leader,
+        <unitdate era="ce" calendar="gregorian">March 1957-October 1957</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29072">
+          <did>
+            <unittitle>Features,
+        <unitdate era="ce" calendar="gregorian">October 1957-January 1958</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29073">
+          <did>
+            <unittitle>Feature Stories,
+        <unitdate era="ce" calendar="gregorian">October 1957</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29074">
+          <did>
+            <unittitle>People,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29075">
+          <did>
+            <unittitle>JOK,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29076">
+          <did>
+            <unittitle>Royalty, Heads of State,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29077">
+          <did>
+            <unittitle>Student Burgesses,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">10</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29078">
+          <did>
+            <unittitle>International Assembly,
+        <unitdate era="ce" calendar="gregorian">1958</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">11</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29079">
+          <did>
+            <unittitle>International Assembly #2,
+        <unitdate era="ce" calendar="gregorian">1958</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">12</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29080">
+          <did>
+            <unittitle>Student Burgesses,
+        <unitdate era="ce" calendar="gregorian">1960</unitdate>,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">13</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29081">
+          <did>
+            <unittitle>Baptist and Methodist Gatherings,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">14</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29083">
+          <did>
+            <unittitle>International Student Retreat Baptist Thanksgiving,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">15</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29084">
+          <did>
+            <unittitle>Williamsburg Community,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">16</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29085">
+          <did>
+            <unittitle>Churches, Local,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">17</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29086">
+          <did>
+            <unittitle>Cultural Institutions,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">18</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29087">
+          <did>
+            <unittitle>Post Offices,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">19</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29088">
+          <did>
+            <unittitle>Miscellaneous,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">20</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29089">
+          <did>
+            <unittitle>James City Count,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">21</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29090">
+          <did>
+            <unittitle>Williamsburg-JCC,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">22</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29091">
+          <did>
+            <unittitle>Williamsburg-JCC Merger,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">23</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29092">
+          <did>
+            <unittitle>Birds/Animals,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">24</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29093">
+          <did>
+            <unittitle>Civil War,
+</unittitle>
+            <container label="Box">2</container>
+            <container label="Folder">25</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file" id="id29052">
+        <did>
+          <container label="Box">3</container>
+        </did>
+        <c02 level="file" id="id29094">
+          <did>
+            <unittitle>Eastern State Hospital,
+</unittitle>
+            <container label="Box">3</container>
+            <container label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29095">
+          <did>
+            <unittitle>Colonial Williamsburg 1,
+</unittitle>
+            <container label="Box">3</container>
+            <container label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29096">
+          <did>
+            <unittitle>Colonial Williamsburg 2,
+</unittitle>
+            <container label="Box">3</container>
+            <container label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29097">
+          <did>
+            <unittitle>Colonial Williamsburg 3,
+</unittitle>
+            <container label="Box">3</container>
+            <container label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29098">
+          <did>
+            <unittitle>Colonial Williambsurg 4,
+</unittitle>
+            <container label="Box">3</container>
+            <container label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29099">
+          <did>
+            <unittitle>Christmas Williamsburg Area,
+</unittitle>
+            <container label="Box">3</container>
+            <container label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29100">
+          <did>
+            <unittitle>William and Mary,
+</unittitle>
+            <container label="Box">3</container>
+            <container label="Folder">7</container>
+          </did>
+          <scopecontent>
+            <p>See portraits for teachers</p>
+          </scopecontent>
+        </c02>
+      </c01>
+      <c01 level="file" id="id29053">
+        <did>
+          <container label="Box">4</container>
+        </did>
+        <c02 level="file" id="id29103">
+          <did>
+            <unittitle>William and Mary,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">1</container>
+          </did>
+          <scopecontent>
+            <p>See portraits for teachers</p>
+          </scopecontent>
+        </c02>
+        <c02 level="file" id="id29104">
+          <did>
+            <unittitle>Common Glory/Founders,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29105">
+          <did>
+            <unittitle>George Washington,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29106">
+          <did>
+            <unittitle>Schools,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29107">
+          <did>
+            <unittitle>Yorktown Celebration,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29108">
+          <did>
+            <unittitle>Yorktown,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29109">
+          <did>
+            <unittitle>Yorktown Day,
+        <unitdate era="ce" calendar="gregorian">October 19</unitdate>,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29110">
+          <did>
+            <unittitle>Prelude to Independence,
+</unittitle>
+            <container label="Box">4</container>
+            <container label="Folder">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file" id="id29054">
+        <did>
+          <container label="Box">5</container>
+        </did>
+        <c02 level="file" id="id29111">
+          <did>
+            <unittitle>Prelude to Independence,
+</unittitle>
+            <container label="Box">5</container>
+            <container label="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29112">
+          <did>
+            <unittitle>Military Bases/NASA,
+</unittitle>
+            <container label="Box">5</container>
+            <container label="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29113">
+          <did>
+            <unittitle>Mariners' Museum/Tidewater Churches,
+</unittitle>
+            <container label="Box">5</container>
+            <container label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29114">
+          <did>
+            <unittitle>Mariners' Museu/Tidewater Churches/Westpoint,
+</unittitle>
+            <container label="Box">5</container>
+            <container label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id29115">
+          <did>
+            <unittitle>Miscellaneous,
+</unittitle>
+            <container label="Box">5</container>
+            <container label="Folder">5</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file" id="id48278">
+        <did>
+          <container label="Box">6</container>
+        </did>
+        <scopecontent>
+          <p>Mostly material concerning articles about Jamestown and the Williamsburg area, particularly about the British Royal Visit to Jamestown and Williamsburg on October 16, 1957.  Some letters are from a woman who lived on Jamestown Island and others from the State of Virginia Departments about the Indian Lodge.</p>
+        </scopecontent>
+        <c02 level="file" id="id48291">
+          <did>
+            <unittitle>Jamestown 350th Anniversary,
+        <unitdate era="ce" calendar="gregorian">March 31, 1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">1</container>
+          </did>
+          <scopecontent>
+            <p>Daily Press newspaper edition on Jamestown Anniversary.  Newport News, Virginia.</p>
+          </scopecontent>
+        </c02>
+        <c02 level="file" id="id48292">
+          <did>
+            <unittitle>Articles on Jamestown,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">2</container>
+          </did>
+          <scopecontent>
+            <p>Newspaper articles by Courtney Ward on Jamestown.  News Releases.</p>
+          </scopecontent>
+        </c02>
+        <c02 level="file" id="id48293">
+          <did>
+            <unittitle>Jamestown Island and Area,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id48294">
+          <did>
+            <unittitle>Jamestown 1957,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id48295">
+          <did>
+            <unittitle>Queen Elizabeth and Prince Philip,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id48296">
+          <did>
+            <unittitle>Jamestown Festival,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id48297">
+          <did>
+            <unittitle>Jamestown-Resort Issues,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id48298">
+          <did>
+            <unittitle>Jamestown - News Leader Features,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id48300">
+          <did>
+            <unittitle>Jamestown Foundation/Festival Park,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="file" id="id48301">
+          <did>
+            <unittitle>Queen's Visit to Jamestown,
+        <unitdate era="ce" calendar="gregorian">1957</unitdate>,
+</unittitle>
+            <container label="Box">6</container>
+            <container label="Folder">10</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+    <!-- END SUBORDINATE COMPONENTS -->
+  </archdesc>
+</ead><!-- footer.inc.php -->

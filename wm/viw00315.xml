@@ -1,750 +1,618 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl" ?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/wm/vivadoc.pl?file=viw00315.xml" NDATA html>
-]>
-<ead id="viw00315">
-<eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
-	<eadid mainagencycode="VWM" countrycode="us">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00315:: Stephen and Mary Ann Livermore Papers, 1842-1859)//EN" "viw00315.xml"</eadid>
-	<filedesc>
-<titlestmt>
-	<titleproper>Inventory of the Stephen and Mary Ann Livermore Papers <date>1842-1859</date>
-	</titleproper>
-	<subtitle id="sort">
-		Livermore, Stephen and Mary Ann		<num type="collectionnumber">Mss. Acc. 2008.49</num>
-	</subtitle>
-</titlestmt>
-<publicationstmt>
-	<publisher>Earl Gregg Swem Library, College of William and Mary</publisher> &address;
-	<date type="publication">&copy; 2012 By the College of William and Mary. All rights reserved.</date>
-	<p id="usestatement">
-		<extref entityref="conditions">Conditions of Use</extref>
-	</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-	<creation>Finding aid created by Jackie Corley, SCRC Staff, <date>2009</date></creation>
-	<langusage>Description is in
-		<language langcode="eng">English</language>
-	</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-	<titlepage>
-		<titleproper>Inventory of the Stephen and Mary Ann Livermore Papers, <date>1842-1859</date></titleproper>
-		<subtitle>A Collection in the<lb/>Special Collections Research Center
-			<num type="Accession Number">Mss. Acc. 2008.49</num>
-		</subtitle>
-		<p id="logostmt">
-			<extptr actuate="onload" show="embed" entityref="logo"/>
-		</p>
-		<publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
-		<date type="publication">2012</date> &contact;
-		<list type="deflist">
-			<defitem>
-				<label>Processed By</label>
-				<item>Special Collections Staff.</item>
-			</defitem>
-		</list>
-	</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-		<corpname>Special Collections Research Center</corpname>
-</repository>
-	<unittitle label="Title:" encodinganalog="245$a">Stephen and Mary Ann Livermore Papers	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1842-1859</unitdate>
-	<unitdate label="Dates:" encodinganalog="245$g" type="bulk">1842-1859</unitdate>
-</unittitle>
-<unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">01/Mss. Acc. 2008.49</unitid>
-	<physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Cubic Feet">0.25</extent></physdesc>
-	<langmaterial encodinganalog="546" label="Language of Materials">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00315">
+  <eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
+    <eadid mainagencycode="US-VWM" countrycode="US">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00315:: Stephen and Mary Ann Livermore Papers, 1842-1859)//EN" "viw00315.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the Stephen and Mary Ann Livermore Papers <date era="ce" calendar="gregorian">1842-1859</date></titleproper>
+        <subtitle id="sort">
+		Livermore, Stephen and Mary Ann		<num type="collectionnumber">Mss. Acc. 2008.49</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012 By the College of William and Mary. All rights reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Finding aid created by Jackie Corley, SCRC Staff, <date era="ce" calendar="gregorian">2009</date></creation>
+      <langusage>Description is in
+		<language langcode="eng">English</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the Stephen and Mary Ann Livermore Papers, <date era="ce" calendar="gregorian">1842-1859</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
+			<num type="Accession Number">Mss. Acc. 2008.49</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2012</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed By</label>
+          <item>Special Collections Staff.</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">Stephen and Mary Ann Livermore Papers	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1842-1859</unitdate><unitdate label="Dates:" encodinganalog="245$g" type="bulk" era="ce" calendar="gregorian">1842-1859</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">01/Mss. Acc. 2008.49</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Cubic Feet">0.25</extent>
+      </physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	  The papers are in:
-<language langcode="eng">English</language>
-	</langmaterial>
-	<abstract encodinganalog="520$a" label="Abstract:">The papers are a collection of letters written to Mary Ann Brigham Livermore and Stephen G. Livermore from friends and family members throughout the New England region. Stephen Livermore originated out of Marlboro, Mass.  Some of the papers are letters from him to Mary Ann before their marriage.  Many of the letters are from family that live in Massachusetts towns such as Worcester, Boston, Millbury, Marlboro, Harvard, and Holden.  Other locations include Dover, N.H., Wells River, Vt., and Avon, Conn.  While they were still single Mary Ann lived primarily in Worcester and Stephen traveled around the area searching for work.  They spent their early married years in Springfield, Mass. from 1849-1852.  Their most recent letters show that they later moved to Dayton, Ohio.</abstract>
-	<origination label="Creator:">
-		<persname encodinganalog="100">Livermore, Stephen G.</persname>
-		<persname encodinganalog="100">Livermore, Mary Ann Brigham</persname>
+<language langcode="eng">English</language></langmaterial>
+      <abstract encodinganalog="520$a" label="Abstract:">The papers are a collection of letters written to Mary Ann Brigham Livermore and Stephen G. Livermore from friends and family members throughout the New England region. Stephen Livermore originated out of Marlboro, Mass.  Some of the papers are letters from him to Mary Ann before their marriage.  Many of the letters are from family that live in Massachusetts towns such as Worcester, Boston, Millbury, Marlboro, Harvard, and Holden.  Other locations include Dover, N.H., Wells River, Vt., and Avon, Conn.  While they were still single Mary Ann lived primarily in Worcester and Stephen traveled around the area searching for work.  They spent their early married years in Springfield, Mass. from 1849-1852.  Their most recent letters show that they later moved to Dayton, Ohio.</abstract>
+      <origination label="Creator:"><persname encodinganalog="100">Livermore, Stephen G.</persname><persname encodinganalog="100">Livermore, Mary Ann Brigham</persname>
 arrangement
 	</origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information</head>
-<!-- ADMINISTRATIVE INFORMATION -->
-<accessrestrict encodinganalog="506">
-	<head>Conditions Governing Access</head>
-	<p>Collection is open to all researchers.</p>
-</accessrestrict>
-<userestrict encodinganalog="540">
-	<head>Conditions Governing Use</head>
-	<p>Before reproducing or quoting from any materials, in whole or in part, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
-</userestrict>
-<prefercite encodinganalog="510">
-	<head>Preferred Citation</head>
-	<p>Stephen and Mary Ann Livermore Papers, Special collections Research Center, Swem Library, College of William and Mary</p>
-</prefercite>
-<acqinfo encodinganalog="541">
-	<head>Acquisition Information</head>
-	<p>The materials were acquired by Special Collections Research Center on 05/19/2008.</p>
-</acqinfo>
-<processinfo encodinganalog="583">
-	<head>Processing Information</head>
-	<p>Arranged and described by Jackie Corley, SCRC Staff, prior to May 2009.</p>
-</processinfo>
-<!-- END ADMINISTRATIVE INFORMATION -->
-</descgrp>
-<!--COLLECTION LEVEL METADATA: -->
-<bioghist altrender="Biographical Note" encodinganalog="545"><head>Biographical Note</head>
-  <p>Information about this individual or organization may be available in the Special Collections Research Center Wiki: &lt;a href=&quot;http://scrc.swem.wm.edu/wiki/index.php/Stephen G. Livermore&quot;&gt;http://scrc.swem.wm.edu/wiki/index.php/Stephen G. Livermore&lt;/a&gt;.</p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>The papers are a collection of letters written to Mary Ann Brigham Livermore and Stephen G. Livermore from friends and family members throughout the New England region. Stephen Livermore originated out of Marlboro, Mass.  Some of the papers are letters from him to Mary Ann before their marriage.  Many of the letters are from family that live in Massachusetts towns such as Worcester, Boston, Millbury, Marlboro, Harvard, and Holden.  Other locations include Dover, N.H., Wells River, Vt., and Avon, Conn.  While they were still single Mary Ann lived primarily in Worcester and Stephen traveled around the area searching for work.  They spent their early married years in Springfield, Mass. from 1849-1852.  Their most recent letters show that they later moved to Dayton, Ohio.</p>
-</scopecontent>
-<arrangement encodinganalog="351$b">
-	<head>Arrangement of Materials</head>
-	<p>Letters are arranged in chronological order.</p>
-</arrangement>
-<descgrp type="add">
-	<head>Additional Information</head>
-</descgrp>
-<!-- CONTROLLED ACCESS / SUBJECT TERMS -->
-<controlaccess>
-<head>Index Terms</head>
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Geographic Name:</head>
-			<geogname encodinganalog="651" source="lcsh">Connecticut--History--19th century.</geogname>
-			<geogname encodinganalog="651" source="lcsh">Massachusetts--History--19th century.</geogname>
-			<geogname encodinganalog="651" source="lcsh">Massachusetts--Social life and customs</geogname>
-			<geogname encodinganalog="651" source="lcsh">Massachusetts--Social life and customs--19th century.</geogname>
-			<geogname encodinganalog="651" source="lcsh">New Hampshire--History--19th Century.</geogname>
-			<geogname encodinganalog="651" source="lcsh">New Hampshire--Social life and customs--19th century.</geogname>
-			<geogname encodinganalog="651" source="lcsh">New Hampshire--Social life and customs.</geogname>
-			<geogname encodinganalog="651" source="local">Vermont--History--19th century.</geogname>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="local">Agriculture--Massachusetts--History--19th century.</subject>
-	</controlaccess>
-</controlaccess>
-<!-- END CONTROLLED ACCESS TERMS -->
-<!-- END COLLECTION LEVEL METADATA -->
-<!-- BEGIN SUBORDINATE COMPONENTS -->
-<dsc type="combined">
-<head>Detailed Description of the Collection</head>
-<c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id29985</unitid>
-      <unitdate>1842</unitdate>
-            		<container type="Folder">1</container>
-	</did>
-      <c02 level="item">
-   <did>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <!-- ADMINISTRATIVE INFORMATION -->
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>Collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before reproducing or quoting from any materials, in whole or in part, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>Stephen and Mary Ann Livermore Papers, Special collections Research Center, Swem Library, College of William and Mary</p>
+      </prefercite>
+      <acqinfo encodinganalog="541">
+        <head>Acquisition Information</head>
+        <p>The materials were acquired by Special Collections Research Center on 05/19/2008.</p>
+      </acqinfo>
+      <processinfo encodinganalog="583">
+        <head>Processing Information</head>
+        <p>Arranged and described by Jackie Corley, SCRC Staff, prior to May 2009.</p>
+      </processinfo>
+      <!-- END ADMINISTRATIVE INFORMATION -->
+    </descgrp>
+    <!--COLLECTION LEVEL METADATA: -->
+    <bioghist altrender="Biographical Note" encodinganalog="545">
+      <head>Biographical Note</head>
+      <p>Information about this individual or organization may be available in the Special Collections Research Center Wiki: &lt;a href="http://scrc.swem.wm.edu/wiki/index.php/Stephen G. Livermore"&gt;http://scrc.swem.wm.edu/wiki/index.php/Stephen G. Livermore&lt;/a&gt;.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>The papers are a collection of letters written to Mary Ann Brigham Livermore and Stephen G. Livermore from friends and family members throughout the New England region. Stephen Livermore originated out of Marlboro, Mass.  Some of the papers are letters from him to Mary Ann before their marriage.  Many of the letters are from family that live in Massachusetts towns such as Worcester, Boston, Millbury, Marlboro, Harvard, and Holden.  Other locations include Dover, N.H., Wells River, Vt., and Avon, Conn.  While they were still single Mary Ann lived primarily in Worcester and Stephen traveled around the area searching for work.  They spent their early married years in Springfield, Mass. from 1849-1852.  Their most recent letters show that they later moved to Dayton, Ohio.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$b">
+      <head>Arrangement of Materials</head>
+      <p>Letters are arranged in chronological order.</p>
+    </arrangement>
+    <descgrp type="add">
+      <head>Additional Information</head>
+    </descgrp>
+    <!-- CONTROLLED ACCESS / SUBJECT TERMS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="aat">Letters (correspondence)</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographic Name:</head>
+        <geogname encodinganalog="651" source="lcsh">Connecticut--History--19th century.</geogname>
+        <geogname encodinganalog="651" source="lcsh">Massachusetts--History--19th century.</geogname>
+        <geogname encodinganalog="651" source="lcsh">Massachusetts--Social life and customs</geogname>
+        <geogname encodinganalog="651" source="lcsh">Massachusetts--Social life and customs--19th century.</geogname>
+        <geogname encodinganalog="651" source="lcsh">New Hampshire--History--19th Century.</geogname>
+        <geogname encodinganalog="651" source="lcsh">New Hampshire--Social life and customs--19th century.</geogname>
+        <geogname encodinganalog="651" source="lcsh">New Hampshire--Social life and customs.</geogname>
+        <geogname encodinganalog="651" source="local">Vermont--History--19th century.</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="local">Agriculture--Massachusetts--History--19th century.</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- END COLLECTION LEVEL METADATA -->
+    <!-- BEGIN SUBORDINATE COMPONENTS -->
+    <dsc type="combined">
+      <head>Detailed Description of the Collection</head>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id29985</unitid>
+          <unitdate era="ce" calendar="gregorian">1842</unitdate>
+          <container type="Folder">1</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id29984</unitid>
-		<container type="Folder">1</container>
-	</did>
-      <c03 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id29984</unitid>
+            <container type="Folder">1</container>
+          </did>
+          <c03 level="item">
+            <did>
+              <unittitle>Letter</unittitle>
+              <unitid label="ArchonID" audience="internal">id29986</unitid>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id29986</unitid>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30493</unitid>
+            <container type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30493</unitid>
-		<container type="Folder">1</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30496</unitid>
+            <container type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30496</unitid>
-		<container type="Folder">1</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30497</unitid>
+            <container type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30497</unitid>
-		<container type="Folder">1</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30776</unitid>
+            <container type="Folder">1</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30776</unitid>
-		<container type="Folder">1</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30777</unitid>
+            <container type="Folder">1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30778</unitid>
+          <unitdate era="ce" calendar="gregorian">1845</unitdate>
+          <container type="Folder">2</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30777</unitid>
-		<container type="Folder">1</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30778</unitid>
-      <unitdate>1845</unitdate>
-            		<container type="Folder">2</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30779</unitid>
+            <container type="Folder">2</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30779</unitid>
-		<container type="Folder">2</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30782</unitid>
+            <container type="Folder">2</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30784</unitid>
+          <unitdate era="ce" calendar="gregorian">1846</unitdate>
+          <container type="Folder">3</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30782</unitid>
-		<container type="Folder">2</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30784</unitid>
-      <unitdate>1846</unitdate>
-            		<container type="Folder">3</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30786</unitid>
+            <container type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30786</unitid>
-		<container type="Folder">3</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30787</unitid>
+            <container type="Folder">3</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30787</unitid>
-		<container type="Folder">3</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30788</unitid>
+            <container type="Folder">3</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30789</unitid>
+          <unitdate era="ce" calendar="gregorian">1848</unitdate>
+          <container type="Folder">4</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30788</unitid>
-		<container type="Folder">3</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30789</unitid>
-      <unitdate>1848</unitdate>
-            		<container type="Folder">4</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30790</unitid>
+            <container type="Folder">4</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30790</unitid>
-		<container type="Folder">4</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30791</unitid>
+            <container type="Folder">4</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30793</unitid>
+          <unitdate era="ce" calendar="gregorian">1849</unitdate>
+          <container type="Folder">5</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30791</unitid>
-		<container type="Folder">4</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30793</unitid>
-      <unitdate>1849</unitdate>
-            		<container type="Folder">5</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30797</unitid>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30797</unitid>
-		<container type="Folder">5</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30798</unitid>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30798</unitid>
-		<container type="Folder">5</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30799</unitid>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30799</unitid>
-		<container type="Folder">5</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30800</unitid>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30800</unitid>
-		<container type="Folder">5</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30801</unitid>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30801</unitid>
-		<container type="Folder">5</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30802</unitid>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30802</unitid>
-		<container type="Folder">5</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30803</unitid>
+            <container type="Folder">5</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30804</unitid>
+          <unitdate era="ce" calendar="gregorian">1850 (January-May)</unitdate>
+          <container type="Folder">6</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30803</unitid>
-		<container type="Folder">5</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30804</unitid>
-      <unitdate>1850 (January-May)</unitdate>
-            		<container type="Folder">6</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30805</unitid>
+            <container type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30805</unitid>
-		<container type="Folder">6</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30806</unitid>
+            <container type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30806</unitid>
-		<container type="Folder">6</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30807</unitid>
+            <container type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30807</unitid>
-		<container type="Folder">6</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30808</unitid>
+            <container type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30808</unitid>
-		<container type="Folder">6</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30809</unitid>
+            <container type="Folder">6</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30809</unitid>
-		<container type="Folder">6</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30810</unitid>
+            <container type="Folder">6</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30811</unitid>
+          <unitdate era="ce" calendar="gregorian">1850 (June-December)</unitdate>
+          <container type="Folder">7</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30810</unitid>
-		<container type="Folder">6</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30811</unitid>
-      <unitdate>1850 (June-December)</unitdate>
-            		<container type="Folder">7</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30812</unitid>
+            <container type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30812</unitid>
-		<container type="Folder">7</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30813</unitid>
+            <container type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30813</unitid>
-		<container type="Folder">7</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30814</unitid>
+            <container type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30814</unitid>
-		<container type="Folder">7</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30815</unitid>
+            <container type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30815</unitid>
-		<container type="Folder">7</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30816</unitid>
+            <container type="Folder">7</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30816</unitid>
-		<container type="Folder">7</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30817</unitid>
+            <container type="Folder">7</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30818</unitid>
+          <unitdate era="ce" calendar="gregorian">1851</unitdate>
+          <container type="Folder">8</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30817</unitid>
-		<container type="Folder">7</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30818</unitid>
-      <unitdate>1851</unitdate>
-            		<container type="Folder">8</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30819</unitid>
+            <container type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30819</unitid>
-		<container type="Folder">8</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30820</unitid>
+            <container type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30820</unitid>
-		<container type="Folder">8</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30822</unitid>
+            <container type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30822</unitid>
-		<container type="Folder">8</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30824</unitid>
+            <container type="Folder">8</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30824</unitid>
-		<container type="Folder">8</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30826</unitid>
+            <container type="Folder">8</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30828</unitid>
+          <unitdate era="ce" calendar="gregorian">1852</unitdate>
+          <container type="Folder">9</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30826</unitid>
-		<container type="Folder">8</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30828</unitid>
-      <unitdate>1852</unitdate>
-            		<container type="Folder">9</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30829</unitid>
+            <container type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30829</unitid>
-		<container type="Folder">9</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30831</unitid>
+            <container type="Folder">9</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30831</unitid>
-		<container type="Folder">9</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30832</unitid>
+            <container type="Folder">9</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30833</unitid>
+          <unitdate era="ce" calendar="gregorian">1855</unitdate>
+          <container type="Folder">10</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30832</unitid>
-		<container type="Folder">9</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30833</unitid>
-      <unitdate>1855</unitdate>
-            		<container type="Folder">10</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30834</unitid>
+            <container type="Folder">10</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30834</unitid>
-		<container type="Folder">10</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30835</unitid>
+            <container type="Folder">10</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30836</unitid>
+          <unitdate era="ce" calendar="gregorian">1856-1857</unitdate>
+          <container type="Folder">11</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30835</unitid>
-		<container type="Folder">10</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30836</unitid>
-      <unitdate>1856-1857</unitdate>
-            		<container type="Folder">11</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30837</unitid>
+            <container type="Folder">11</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30837</unitid>
-		<container type="Folder">11</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30838</unitid>
+            <container type="Folder">11</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30838</unitid>
-		<container type="Folder">11</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30839</unitid>
+            <container type="Folder">11</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30840</unitid>
+          <unitdate era="ce" calendar="gregorian">1858</unitdate>
+          <container type="Folder">12</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30839</unitid>
-		<container type="Folder">11</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30840</unitid>
-      <unitdate>1858</unitdate>
-            		<container type="Folder">12</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30841</unitid>
+            <container type="Folder">12</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30841</unitid>
-		<container type="Folder">12</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30842</unitid>
+            <container type="Folder">12</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30842</unitid>
-		<container type="Folder">12</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30843</unitid>
+            <container type="Folder">12</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Letters</unittitle>
+          <unitid label="ArchonID" audience="internal">id30844</unitid>
+          <unitdate era="ce" calendar="gregorian">1859</unitdate>
+          <container type="Folder">13</container>
+        </did>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30843</unitid>
-		<container type="Folder">12</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   <c01 level="file">
-   <did>
-            <unittitle>Letters</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30844</unitid>
-      <unitdate>1859</unitdate>
-            		<container type="Folder">13</container>
-	</did>
-      <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30845</unitid>
+            <container type="Folder">13</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30845</unitid>
-		<container type="Folder">13</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
+            <unitid label="ArchonID" audience="internal">id30846</unitid>
+            <container type="Folder">13</container>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
             <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30846</unitid>
-		<container type="Folder">13</container>
-	</did>
-      
-</c02>
-   <c02 level="item">
-   <did>
-            <unittitle>Letter</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id30847</unitid>
-		<container type="Folder">13</container>
-	</did>
-      
-</c02>
-   
-</c01>
-   
-</dsc>
-<!-- END SUBORDINATE COMPONENTS -->
-</archdesc>
+            <unitid label="ArchonID" audience="internal">id30847</unitid>
+            <container type="Folder">13</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+    <!-- END SUBORDINATE COMPONENTS -->
+  </archdesc>
 </ead>

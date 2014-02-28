@@ -1,154 +1,150 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl" ?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/wm/vivadoc.pl?file=viw00366.xml" NDATA html>
-]>
-<ead id="viw00366">
-<eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
-	<eadid mainagencycode="VWM" countrycode="us">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00366:: S. Agnes Kummer Diary, 1863-1968)//EN" "viw00366.xml"</eadid>
-	<filedesc>
-<titlestmt>
-	<titleproper>Inventory of the S. Agnes Kummer Diary <date>1863-1968</date>
-	</titleproper>
-	<subtitle id="sort">
-		Kummer, S. Agnes Diary		<num type="collectionnumber">Mss. Acc. 2009.174</num>
-	</subtitle>
-</titlestmt>
-<publicationstmt>
-	<publisher>Earl Gregg Swem Library, College of William and Mary</publisher> &address;
-	<date type="publication">&copy; 2012 By the College of William and Mary. All rights reserved.</date>
-	<p id="usestatement">
-		<extref entityref="conditions">Conditions of Use</extref>
-	</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-	<creation>Finding aid created by Ute Schechter, Pat Overton, <date>2009</date></creation>
-	<langusage>Description is in
-		<language langcode="eng">English</language>
-	</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-	<titlepage>
-		<titleproper>Inventory of the S. Agnes Kummer Diary, <date>1863-1968</date></titleproper>
-		<subtitle>A Collection in the<lb/>Special Collections Research Center
-			<num type="Accession Number">Mss. Acc. 2009.174</num>
-		</subtitle>
-		<p id="logostmt">
-			<extptr actuate="onload" show="embed" entityref="logo"/>
-		</p>
-		<publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
-		<date type="publication">2012</date> &contact;
-		<list type="deflist">
-			<defitem>
-				<label>Processed By</label>
-				<item>Special Collections Staff.</item>
-			</defitem>
-		</list>
-	</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-		<corpname>Special Collections Research Center</corpname>
-</repository>
-	<unittitle label="Title:" encodinganalog="245$a">S. Agnes Kummer Diary	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1863-1866, 1968</unitdate>
-	<unitdate label="Dates:" encodinganalog="245$g" type="bulk">1863-1866</unitdate>
-</unittitle>
-<unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">01/Mss. Acc. 2009.174</unitid>
-	<physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Cubic Feet">0.03</extent></physdesc>
-	<physdesc label="Alternate Extent Statement:" encodinganalog="300$a">1 vol.</physdesc>
-	<langmaterial encodinganalog="546" label="Language of Materials">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00366">
+  <eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
+    <eadid mainagencycode="US-VWM" countrycode="US">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00366:: S. Agnes Kummer Diary, 1863-1968)//EN" "viw00366.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the S. Agnes Kummer Diary <date era="ce" calendar="gregorian">1863-1968</date></titleproper>
+        <subtitle id="sort">
+		Kummer, S. Agnes Diary		<num type="collectionnumber">Mss. Acc. 2009.174</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012 By the College of William and Mary. All rights reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Finding aid created by Ute Schechter, Pat Overton, <date era="ce" calendar="gregorian">2009</date></creation>
+      <langusage>Description is in
+		<language langcode="eng">English</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the S. Agnes Kummer Diary, <date era="ce" calendar="gregorian">1863-1968</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
+			<num type="Accession Number">Mss. Acc. 2009.174</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2012</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed By</label>
+          <item>Special Collections Staff.</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">S. Agnes Kummer Diary	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1863-1866, 1968</unitdate><unitdate label="Dates:" encodinganalog="245$g" type="bulk" era="ce" calendar="gregorian">1863-1866</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">01/Mss. Acc. 2009.174</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Cubic Feet">0.03</extent>
+      </physdesc>
+      <physdesc label="Alternate Extent Statement:" encodinganalog="300$a">1 vol.</physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	  The papers are in:
-<language langcode="eng">English</language>
-<language langcode="fre">French</language>
-	</langmaterial>
-		<origination label="Creator:">
-		<persname encodinganalog="100">Kummer, S. Agnes</persname>
+<language langcode="eng">English</language><language langcode="fre">French</language></langmaterial>
+      <origination label="Creator:"><persname encodinganalog="100">Kummer, S. Agnes</persname>
 arrangement
 	</origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information</head>
-<!-- ADMINISTRATIVE INFORMATION -->
-<accessrestrict encodinganalog="506">
-	<head>Conditions Governing Access</head>
-	<p>Collection is open to all researchers.</p>
-</accessrestrict>
-<userestrict encodinganalog="540">
-	<head>Conditions Governing Use</head>
-	<p>Before reproducing or quoting from any materials, in whole or in part, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
-</userestrict>
-<prefercite encodinganalog="510">
-	<head>Preferred Citation</head>
-	<p>S. Agnes Kummer Diary, Special Collections Research Center, Swem Library, College of William and Mary.</p>
-</prefercite>
-<acqinfo encodinganalog="541">
-	<head>Acquisition Information</head>
-	<p>The materials were acquired by Special Collections Research Center on 04/21/2009.</p>
-</acqinfo>
-<processinfo encodinganalog="583">
-	<head>Processing Information</head>
-	<p>Accessioned and processed in May 2009 by Ute Schechter, Warren E. Burger Archivist, with further description by Pat Overton, SCRC staff, in August 2009.</p>
-</processinfo>
-<!-- END ADMINISTRATIVE INFORMATION -->
-</descgrp>
-<!--COLLECTION LEVEL METADATA: -->
-<bioghist altrender="Biographical Note" encodinganalog="545"><head>Biographical Note</head>
-  <p>Information about this individual or organization may be available in the Special Collections Research Center Wiki: &lt;a href=&quot;http://scrc.swem.wm.edu/wiki/index.php/S. Agnes Kummer&quot;&gt;http://scrc.swem.wm.edu/wiki/index.php/S. Agnes Kummer&lt;/a&gt;.</p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>Diary, 1863-1866 (132 pp.) of S. Agnes Kummer of Baltimore, Maryland. In addition to her life in Baltimore where S. Agnes Kummer taught school, she documents her travels within the United States, as well as to England and France.&nbsp; Entries are written in English&nbsp; for the most part with some expressions and sentences in French.The diary begins in France on an overseas trip in March 1863 and concludes with her description of a 1866 summer trip through the American Northeast into Canada. She comments on the Civil War and states on April 13, 1865: &quot;The South has gone from bad to worse - Richmond has fallen &amp; the rejoicings thereupon had not ceased when we were stunned with the announcement of Lee&#039;s surrender. All seems to be lost for the poor Confederacy.&quot; On April 15, 1865 she comments on the &quot;frightful crime&quot; of President Lincoln&#039;s assassination: &quot;It is the darkest day of this dark period of American history.&quot; Additional people and events referenced in her diary can be found in the finding aid/inventory link below.Also included in the diary is a typewritten letter from Laurie Leadbeater Hibbert of Nahsville, Tennessee to &#039;cousin Edith.&#039; A relationship to the diary writer is not established.</p>
-</scopecontent>
-<descgrp type="add">
-	<head>Additional Information</head>
-</descgrp>
-<!-- CONTROLLED ACCESS / SUBJECT TERMS -->
-<controlaccess>
-<head>Index Terms</head>
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="aat">Diaries</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Geographic Name:</head>
-			<geogname encodinganalog="651" source="lcsh">Europe--Description and travel.</geogname>
-			<geogname encodinganalog="651" source="lcsh">France--Description and travel--19th century.</geogname>
-			<geogname encodinganalog="651" source="lcsh">Great Britain--Description and travel--19th century.</geogname>
-			<geogname encodinganalog="651" source="lcsh">United States--History--Civil War, 1861-1865--Diaries</geogname>
-			<geogname encodinganalog="651" source="lcsh">United States--History--Civil War, 1861-1865--Women--Sources</geogname>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="lcsh">Women--Diaries.</subject>
-	</controlaccess>
-</controlaccess>
-<!-- END CONTROLLED ACCESS TERMS -->
-<!-- END COLLECTION LEVEL METADATA -->
-<!-- BEGIN SUBORDINATE COMPONENTS -->
-<dsc type="combined">
-<head>Detailed Description of the Collection</head>
-<c01 level="item">
-   <did>
-            <unittitle>Diary</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59332</unitid>
-      <unitdate>1863-1866</unitdate>
-            	</did>
-      
-</c01>
-   
-</dsc>
-<!-- END SUBORDINATE COMPONENTS -->
-</archdesc>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <!-- ADMINISTRATIVE INFORMATION -->
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>Collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before reproducing or quoting from any materials, in whole or in part, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>S. Agnes Kummer Diary, Special Collections Research Center, Swem Library, College of William and Mary.</p>
+      </prefercite>
+      <acqinfo encodinganalog="541">
+        <head>Acquisition Information</head>
+        <p>The materials were acquired by Special Collections Research Center on 04/21/2009.</p>
+      </acqinfo>
+      <processinfo encodinganalog="583">
+        <head>Processing Information</head>
+        <p>Accessioned and processed in May 2009 by Ute Schechter, Warren E. Burger Archivist, with further description by Pat Overton, SCRC staff, in August 2009.</p>
+      </processinfo>
+      <!-- END ADMINISTRATIVE INFORMATION -->
+    </descgrp>
+    <!--COLLECTION LEVEL METADATA: -->
+    <bioghist altrender="Biographical Note" encodinganalog="545">
+      <head>Biographical Note</head>
+      <p>Information about this individual or organization may be available in the Special Collections Research Center Wiki: &lt;a href="http://scrc.swem.wm.edu/wiki/index.php/S. Agnes Kummer"&gt;http://scrc.swem.wm.edu/wiki/index.php/S. Agnes Kummer&lt;/a&gt;.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>Diary, 1863-1866 (132 pp.) of S. Agnes Kummer of Baltimore, Maryland. In addition to her life in Baltimore where S. Agnes Kummer taught school, she documents her travels within the United States, as well as to England and France.  Entries are written in English  for the most part with some expressions and sentences in French.The diary begins in France on an overseas trip in March 1863 and concludes with her description of a 1866 summer trip through the American Northeast into Canada. She comments on the Civil War and states on April 13, 1865: "The South has gone from bad to worse - Richmond has fallen &amp; the rejoicings thereupon had not ceased when we were stunned with the announcement of Lee's surrender. All seems to be lost for the poor Confederacy." On April 15, 1865 she comments on the "frightful crime" of President Lincoln's assassination: "It is the darkest day of this dark period of American history." Additional people and events referenced in her diary can be found in the finding aid/inventory link below.Also included in the diary is a typewritten letter from Laurie Leadbeater Hibbert of Nahsville, Tennessee to 'cousin Edith.' A relationship to the diary writer is not established.</p>
+    </scopecontent>
+    <descgrp type="add">
+      <head>Additional Information</head>
+    </descgrp>
+    <!-- CONTROLLED ACCESS / SUBJECT TERMS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="aat">Diaries</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographic Name:</head>
+        <geogname encodinganalog="651" source="lcsh">Europe--Description and travel.</geogname>
+        <geogname encodinganalog="651" source="lcsh">France--Description and travel--19th century.</geogname>
+        <geogname encodinganalog="651" source="lcsh">Great Britain--Description and travel--19th century.</geogname>
+        <geogname encodinganalog="651" source="lcsh">United States--History--Civil War, 1861-1865--Diaries</geogname>
+        <geogname encodinganalog="651" source="lcsh">United States--History--Civil War, 1861-1865--Women--Sources</geogname>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="lcsh">Women--Diaries.</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- END COLLECTION LEVEL METADATA -->
+    <!-- BEGIN SUBORDINATE COMPONENTS -->
+    <dsc type="combined">
+      <head>Detailed Description of the Collection</head>
+      <c01 level="item">
+        <did>
+          <unittitle>Diary</unittitle>
+          <unitid label="ArchonID" audience="internal">id59332</unitid>
+          <unitdate era="ce" calendar="gregorian">1863-1866</unitdate>
+        </did>
+      </c01>
+    </dsc>
+    <!-- END SUBORDINATE COMPONENTS -->
+  </archdesc>
 </ead>

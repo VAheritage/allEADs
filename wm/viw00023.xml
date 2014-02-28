@@ -1,611 +1,386 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE 
-ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd"
-[
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-]>
-<ead id="viw00023">
-   <eadheader audience="internal" langencoding="iso639-2b"
-   findaidstatus="edited-full-draft" scriptencoding="iso15924"
-   dateencoding="iso8601" countryencoding="iso3166-1"
-   repositoryencoding="iso15511">
-      <eadid publicid="PUBLIC &amp;#34;-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00023::Inventory of the Samuel H. McNutt Papers)//EN&amp;#34; &amp;#34;viw00023.xml&amp;#34;"
-             countrycode="US" mainagencycode="ViW">PUBLIC "-//College
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00023">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid publicid="PUBLIC &amp;#34;-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00023::Inventory of the Samuel H. McNutt Papers)//EN&amp;#34; &amp;#34;viw00023.xml&amp;#34;" countrycode="US" mainagencycode="US-ViW">PUBLIC "-//College
              of William and Mary::Earl Gregg Swem Library::Special
              Collections//TEXT (US::ViW::viw00023::Inventory of the
              Samuel H. McNutt Papers)//EN" "viw00023.xml"</eadid>
-      <filedesc>
-         <titlestmt>
-            <titleproper>Inventory of the Samuel H. McNutt Papers 
-            <date>1861-1864</date></titleproper>
-            <subtitle id="sort">McNutt, Samuel H. Papers, 1861-1864 
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the Samuel H. McNutt Papers 
+            <date era="ce" calendar="gregorian">1861-1864</date></titleproper>
+        <subtitle id="sort">McNutt, Samuel H. Papers, 1861-1864 
             <num type="collectionnumber">Mss. Acc.
             1997.51</num></subtitle>
-         </titlestmt>
-         <publicationstmt>
-            <publisher>Earl Gregg Swem Library, College of William and
+        <sponsor>Web version of the finding aid funded in part by a
+               grant from the National Endowment for the
+               Humanities.</sponsor>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and
             Mary</publisher>
-            <address>
-               <addressline>Special Collections</addressline>
-               <addressline>Earl Gregg Swem Library</addressline>
-               <addressline>College of William and Mary</addressline>
-               <addressline>Williamsburg, Virginia
-               23187-8794</addressline>
-               <addressline>USA</addressline>
-               <addressline>Phone: (757) 253-4841</addressline>
-               <addressline>Fax: (757) 566-3493</addressline>
-               <addressline>Email: spcoll@mail.wm.edu</addressline>
-               <addressline>URL:
-               http://www.swem.wm.edu/SPCOL/spcolhp.html</addressline>
-            </address>
-            <date type="publication">&#169; 2000 By the College
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2000 By the College
             of William and Mary</date>
-            <p id="usestatement">
-               <extref entityref="conditions">Conditions of
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
                Use</extref>
-            </p>
-            <p id="filesize">4 kb</p>
-         </publicationstmt>
-      </filedesc>
-      <profiledesc>
-         <creation>Machine-readable finding aid derived from paper by
+        </p>
+        <p id="filesize">4 kb</p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from paper by
          rekeying into notetab. Machine-readable finding aid created by
          Victoria Yoder, 
-         <date>01/22/2001.</date></creation>
-         <langusage>Description is in 
+         <date era="ce" calendar="gregorian">01/22/2001.</date></creation>
+      <langusage>Description is in 
          <language>English</language></langusage>
-      </profiledesc>
-      <revisiondesc>
-         <change>
-            <date normal="2004-02-16">Feb 16, 2004</date>
-            <item>PUBLIC "-//College of William and Mary::Earl Gregg
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2004-02-16" era="ce" calendar="gregorian">Feb 16, 2004</date>
+        <item>PUBLIC "-//College of William and Mary::Earl Gregg
             Swem Library::Special Collections//TEXT
             (US::ViW::viw00023::Inventory of the Samuel H. McNutt
             Papers)//EN" "viw00023.xml" converted from EAD 1.0 to 2002
             by v1to02.xsl (sy2003-10-15).</item>
-         </change>
-         <change>
-            <date normal="2004-02-26">Feb 26, 2004</date>
-            <item>converted to conform to eadVIVA.dtd by
+      </change>
+      <change>
+        <date normal="2004-02-26" era="ce" calendar="gregorian">Feb 26, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by
             vivastrict.xsl</item>
-         </change>
-      </revisiondesc>
-   </eadheader>
-   <frontmatter>
-      <titlepage>
-         <titleproper>Inventory of the Samuel H. McNutt Papers 
-         <date>1861-1864</date></titleproper>
-         <subtitle>A Collection in the 
-         <lb />Manuscripts and Rare Books Department 
+      </change>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the Samuel H. McNutt Papers 
+         <date era="ce" calendar="gregorian">1861-1864</date></titleproper>
+      <subtitle>A Collection in the 
+         <lb/>Manuscripts and Rare Books Department 
          <num type="Collection Number">Mss. Acc.
          1997.51</num></subtitle>
-         <p id="logostmt">
-            <extptr actuate="onload" show="embed" entityref="logo" />
-         </p>
-         <publisher>Earl Gregg Swem Library, College of William and
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and
          Mary</publisher>
-         <date type="publication">2000</date>
-         <list type="simple">
-            <head>Contact Information:</head>
-            <item>Earl Gregg Swem Library</item>
-            <item>College of William and Mary</item>
-            <item>Williamsburg, Virginia 23187-8794</item>
-            <item>USA</item>
-            <item>Phone: (757) 253-4841</item>
-            <item>Fax: (757) 566-3493</item>
-            <item id="email">Email: 
-            <extref href="mailto:spcoll@mail.wm.edu">
-            spcoll@mail.wm.edu</extref></item>
-            <item>URL: 
-            <extref href="http://www.swem.wm.edu/SpColl/index.html">
-            http://www.swem.wm.edu/SpColl/index.html</extref></item>
-         </list>
-         <list type="deflist">
-            <defitem>
-               <label>Processed by:</label>
-               <item>Ellen Strong, 
-               <date>1998.</date></item>
-            </defitem>
-            <defitem>
-               <label>Funding:</label>
-               <item>Web version of the finding aid funded in part by a
+      <date type="publication" era="ce" calendar="gregorian">2000</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Ellen Strong, 
+               <date era="ce" calendar="gregorian">1998.</date></item>
+        </defitem>
+        <defitem>
+          <label>Funding:</label>
+          <item>Web version of the finding aid funded in part by a
                grant from the National Endowment for the
                Humanities.</item>
-            </defitem>
-         </list>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection">
-      <runner placement="footer">Special Collections, Earl Gregg Swem
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem
       Library, College of William and Mary</runner>
-      <did>
-         <head>Descriptive Summary</head>
-         <repository>Special Collections, College of William and
+    <did>
+      <head>Descriptive Summary</head>
+      <repository>Special Collections, College of William and
          Mary</repository>
-         <unittitle label="Title">Samuel H. McNutt Papers, 
-         <unitdate type="inclusive" label="Date">
+      <unittitle label="Title">Samuel H. McNutt Papers, 
+         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
          1861-1864.</unitdate></unittitle>
-         <unitid label="Collection number">Mss. Acc. 1997.51</unitid>
-         <physdesc label="Extent">92 items.</physdesc>
-         <langmaterial label="Language">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <abstract label="Abstract">Sixty-six letters home from
+      <unitid label="Collection number">Mss. Acc. 1997.51</unitid>
+      <physdesc label="Extent">92 items.</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <abstract label="Abstract">Sixty-six letters home from
          Corporal Samuel H. McNutt of Company H, 12th Pennsylvania
          Reserves from camps in Maryland and Virginia. Includes
          comments on battles of Mechanicsville, Gaines Mill, Malvern
          Hill and Gettysburg.</abstract>
-         <origination label="Creator">
-            <persname>Samuel H. McNutt.</persname>
-         </origination>
-      </did>
-      <descgrp type="admininfo">
-         <head>Administrative Information</head>
-         <accessrestrict>
-            <head>Restrictions on Access</head>
-            <p>Collection is open to all researchers.</p>
-         </accessrestrict>
-         <userestrict>
-            <head>Publication Rights/ Restrictions on Use</head>
-            <p>Before publishing quotations or excerpts from any
+      <origination label="Creator">
+        <persname>Samuel H. McNutt.</persname>
+      </origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <accessrestrict>
+        <head>Restrictions on Access</head>
+        <p>Collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict>
+        <head>Publication Rights/ Restrictions on Use</head>
+        <p>Before publishing quotations or excerpts from any
             materials, permission must be obtained from the Curator of
             Manuscripts and Rare Books, and the holder of the
             copyright, if not Swem Library.</p>
-         </userestrict>
-         <prefercite>
-            <head>Preferred Citation</head>
-            <p>Samuel H. McNutt Letters, 1861-1865, Manuscripts and
+      </userestrict>
+      <prefercite>
+        <head>Preferred Citation</head>
+        <p>Samuel H. McNutt Letters, 1861-1865, Manuscripts and
             Rare Books Department, Swem Library, College of William and
             Mary.</p>
-         </prefercite>
-         <acqinfo>
-            <head>Acquisition Information</head>
-            <p>Purchased: 92 items, 
-            <date>08/20/1997.</date></p>
-         </acqinfo>
-         <altformavail>
-            <head>Alternative Form</head>
-            <p>There are typescripts available for twenty of the
+      </prefercite>
+      <acqinfo>
+        <head>Acquisition Information</head>
+        <p>Purchased: 92 items, 
+            <date era="ce" calendar="gregorian">08/20/1997.</date></p>
+      </acqinfo>
+      <altformavail>
+        <head>Alternative Form</head>
+        <p>There are typescripts available for twenty of the
             sixty-six letters.</p>
-         </altformavail>
-      </descgrp>
-      <scopecontent>
-         <head>Scope and Content Information</head>
-         <p>Sixty-six letters home from Corporal Samuel H. McNutt of
+      </altformavail>
+    </descgrp>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>Sixty-six letters home from Corporal Samuel H. McNutt of
          Company H, 12th Pennsylvania Reserves from camps in Maryland
          and Virginia. Includes comments on battles of Mechanicsville,
          Gaines Mill, Malvern Hill and Gettysburg.</p>
-         <p>A history of the 12th Regiment Reserves Infantry can be
+      <p>A history of the 12th Regiment Reserves Infantry can be
          found in Folder 1 of this collection.</p>
-      </scopecontent>
+    </scopecontent>
+    <arrangement>
+      <head>Arrangement</head>
       <arrangement>
-         <head>Arrangement</head>
-         <arrangement>
-            <head>Organization</head>
-            <p>This collection is organized into three series: 1.
+        <head>Organization</head>
+        <p>This collection is organized into three series: 1.
             Introduction, 2. Letters, 3. Typescripts.</p>
-         </arrangement>
-         <arrangement>
-            <head>Arrangement</head>
-            <p>Series 2. Letters is arranged by date. Information about
+      </arrangement>
+      <arrangement>
+        <head>Arrangement</head>
+        <p>Series 2. Letters is arranged by date. Information about
             the one photograph in this collection can be found between
             the second and third series.</p>
-         </arrangement>
       </arrangement>
-      <descgrp type="add">
-         <head>Samuel McNutt Letter Index</head>
-         <p>List of letters written home from Samuel McNutt of
+    </arrangement>
+    <descgrp type="add">
+      <head>Samuel McNutt Letter Index</head>
+      <p>List of letters written home from Samuel McNutt of
          Company H, 12th Pennsylvania Reserves, at camps Maryland
          and Virginia.
-         <list>
-            <item>
-               <subject>Hagerstown, Maryland, 26 June 1861 - Camp
-               Negley, Washington County, Maryland.</subject>
-            </item>
-            <item>
-               <subject>Camp Curtain - Sunday, Probably July,
-               1851.</subject>
-            </item>
-            <item>
-               <subject>Camp Georgetown Heights - 14 August
-               1851.</subject>
-            </item>
-            <item>
-               <subject>Camp McCall - 19 August 1861.</subject>
-            </item>
-            <item>
-               <subject>Washington City, D.C. - 12th Regt Co.H
+         <list><item><subject>Hagerstown, Maryland, 26 June 1861 - Camp
+               Negley, Washington County, Maryland.</subject></item><item><subject>Camp Curtain - Sunday, Probably July,
+               1851.</subject></item><item><subject>Camp Georgetown Heights - 14 August
+               1851.</subject></item><item><subject>Camp McCall - 19 August 1861.</subject></item><item><subject>Washington City, D.C. - 12th Regt Co.H
                Pennsylvania R.C. Vols. Headquarters Co. McCall, 22
-               August 1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Curtain - 26 August 1861.</subject>
-            </item>
-            <item>
-               <subject>Monday, 28 [1861].</subject>
-            </item>
-            <item>
-               <subject>Camp Tenally, Headquarters Company - 27 August
-               1861.</subject>
-            </item>
-            <item>
-               <subject>Partial Letter, n.d., probably August
-               1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Tenally, Headquarters - 8 September
-               1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Tenally, Headquarters of the Army of the
-               Potomac - 17 September 1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Tenally, U.S.A. Headquarters, 20 September
-               1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Tenally - 28 September 1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Tenallytown, Headquarters of the Army of
-               the Potomac Camps - 6 October 1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont, Headquarters of Penn.R.C. - 15
-               October 1861.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 15 December 1861,
-               poem.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 11 January 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 12 January 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 20 January 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 11 February 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 15 February 1862.</subject>
-            </item>
-            <item>
-               <subject>26 February 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 27 February 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - 12 March 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp Pierpont - Sunday, 15 March
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp at Bull Run Bridge - 19 March
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp at Bull Run Bridge - n.d.</subject>
-            </item>
-            <item>
-               <subject>Camp near Alexandria - 22 March 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Alexandria -Sabbath Morning, 28 March
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp at Manassas Junction - 14 April
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp at Capital Hill - 22 April 1862.</subject>
-            </item>
-            <item>
-               <subject>Catlett Station - 23 April 1862.</subject>
-            </item>
-            <item>
-               <subject>Catlett Station - 28 April 1862.</subject>
-            </item>
-            <item>
-               <subject>May 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Falmouth, Virginia - 20 May
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Fredericksburg, Virginia - 1 June
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Peninsula Campaign - Tuesday Morning, 17 June
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Mechanicsville, Virginia - Sabbath,
-               22 June 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Supply Point, James River, Battle of
+               August 1861.</subject></item><item><subject>Camp Curtain - 26 August 1861.</subject></item><item><subject>Monday, 28 [1861].</subject></item><item><subject>Camp Tenally, Headquarters Company - 27 August
+               1861.</subject></item><item><subject>Partial Letter, n.d., probably August
+               1861.</subject></item><item><subject>Camp Tenally, Headquarters - 8 September
+               1861.</subject></item><item><subject>Camp Tenally, Headquarters of the Army of the
+               Potomac - 17 September 1861.</subject></item><item><subject>Camp Tenally, U.S.A. Headquarters, 20 September
+               1861.</subject></item><item><subject>Camp Tenally - 28 September 1861.</subject></item><item><subject>Camp Tenallytown, Headquarters of the Army of
+               the Potomac Camps - 6 October 1861.</subject></item><item><subject>Camp Pierpont, Headquarters of Penn.R.C. - 15
+               October 1861.</subject></item><item><subject>Camp Pierpont - 15 December 1861,
+               poem.</subject></item><item><subject>Camp Pierpont - 11 January 1862.</subject></item><item><subject>Camp Pierpont - 12 January 1862.</subject></item><item><subject>Camp Pierpont - 20 January 1862.</subject></item><item><subject>Camp Pierpont - 11 February 1862.</subject></item><item><subject>Camp Pierpont - 15 February 1862.</subject></item><item><subject>26 February 1862.</subject></item><item><subject>Camp Pierpont - 27 February 1862.</subject></item><item><subject>Camp Pierpont - 12 March 1862.</subject></item><item><subject>Camp Pierpont - Sunday, 15 March
+               1862.</subject></item><item><subject>Camp at Bull Run Bridge - 19 March
+               1862.</subject></item><item><subject>Camp at Bull Run Bridge - n.d.</subject></item><item><subject>Camp near Alexandria - 22 March 1862.</subject></item><item><subject>Camp near Alexandria -Sabbath Morning, 28 March
+               1862.</subject></item><item><subject>Camp at Manassas Junction - 14 April
+               1862.</subject></item><item><subject>Camp at Capital Hill - 22 April 1862.</subject></item><item><subject>Catlett Station - 23 April 1862.</subject></item><item><subject>Catlett Station - 28 April 1862.</subject></item><item><subject>May 1862.</subject></item><item><subject>Camp near Falmouth, Virginia - 20 May
+               1862.</subject></item><item><subject>Camp near Fredericksburg, Virginia - 1 June
+               1862.</subject></item><item><subject>Peninsula Campaign - Tuesday Morning, 17 June
+               1862.</subject></item><item><subject>Camp near Mechanicsville, Virginia - Sabbath,
+               22 June 1862.</subject></item><item><subject>Camp near Supply Point, James River, Battle of
                Mechanicsville, Gaines Mill, and Malvern Hill - 4 July
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Harrison's Landing, James River,
+               1862.</subject></item><item><subject>Camp near Harrison's Landing, James River,
                Battle of Mechanicsville and Gaines Mill - 8 July
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Harrison's Landing, James River - 17
-               July 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Rappahannock Station - 12 August
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Fredericksburg, Virginia - 21 August
-               1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Sharpsburg - 15 October
-               1862.</subject>
-            </item>
-            <item>
-               <subject>31 October 1862.</subject>
-            </item>
-            <item>
-               <subject>Brooks Station - 4 December 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp in the Battlefield of Fredericksburg - 16
-               December 1862.</subject>
-            </item>
-            <item>
-               <subject>Camp near Belle Plain, Virginia - 18 January
-               1863.</subject>
-            </item>
-            <item>
-               <subject>Camp near Belle Plain - 24 January
-               1863.</subject>
-            </item>
-            <item>
-               <subject>Camp near Belle Plain, Virginia - 14 April
-               1863.</subject>
-            </item>
-            <item>
-               <subject>Camp Capital Hill, Washington D.C. - 28 April
-               1863.</subject>
-            </item>
-            <item>
-               <subject>Camp Capital Hill, Washington D.C. - [5 May
-               1863.]</subject>
-            </item>
-            <item>
-               <subject>Camp Upton Hill, Virginia - 3 June
-               1863.</subject>
-            </item>
-            <item>
-               <subject>Upton Hill, Virginia - 18 June 1863.</subject>
-            </item>
-            <item>
-               <subject>Camp near Gettysburg, Account of the Battle of
-               Gettysburg - 5 July 1863</subject>
-            </item>
-            <item>
-               <subject>Camp near Washington - 2 August 1863.</subject>
-            </item>
-            <item>
-               <subject>Camp near Bealton Station, on the railroad - 6
-               August 1863.</subject>
-            </item>
-            <item>
-               <subject>Camp Rappahannock, Concerning the Battle of
-               Gettysburg - 14 August 1863.</subject>
-            </item>
-            <item>
-               <subject>Camp Rappahannock, Concerning shooting
-               deserters - Sunday, 30 August 1863.</subject>
-            </item>
-            <item>
-               <subject>Camp near Culpeper, Bristoe Campaign - 16
-               October 1863, also 22 October 1863.</subject>
-            </item>
-            <item>
-               <subject>Camp Germania Mills, Virginia - 17 November
-               1863.</subject>
-            </item>
-            <item>
-               <subject>Camp Germania Mills, Virginia - 20 November
-               1863.</subject>
-            </item>
-            <item>
-               <subject>Partial Letter - Probably March 1864.</subject>
-            </item>
-            <item>
-               <subject>Camp of Company "H", 12th P.R., Concerning
-               bushwhackers killing troops - 16 April 1863.</subject>
-            </item>
-            <item>
-               <subject>Camp on the battle line near Spottsylvania
-               Court House - Friday, 10 o'clock a.m., 20 May.</subject>
-            </item>
-            <item>
-               <subject>Letter Fragment - n.d.</subject>
-            </item>
-         </list></p>
-      </descgrp>
+               1862.</subject></item><item><subject>Camp near Harrison's Landing, James River - 17
+               July 1862.</subject></item><item><subject>Camp near Rappahannock Station - 12 August
+               1862.</subject></item><item><subject>Camp near Fredericksburg, Virginia - 21 August
+               1862.</subject></item><item><subject>Camp near Sharpsburg - 15 October
+               1862.</subject></item><item><subject>31 October 1862.</subject></item><item><subject>Brooks Station - 4 December 1862.</subject></item><item><subject>Camp in the Battlefield of Fredericksburg - 16
+               December 1862.</subject></item><item><subject>Camp near Belle Plain, Virginia - 18 January
+               1863.</subject></item><item><subject>Camp near Belle Plain - 24 January
+               1863.</subject></item><item><subject>Camp near Belle Plain, Virginia - 14 April
+               1863.</subject></item><item><subject>Camp Capital Hill, Washington D.C. - 28 April
+               1863.</subject></item><item><subject>Camp Capital Hill, Washington D.C. - [5 May
+               1863.]</subject></item><item><subject>Camp Upton Hill, Virginia - 3 June
+               1863.</subject></item><item><subject>Upton Hill, Virginia - 18 June 1863.</subject></item><item><subject>Camp near Gettysburg, Account of the Battle of
+               Gettysburg - 5 July 1863</subject></item><item><subject>Camp near Washington - 2 August 1863.</subject></item><item><subject>Camp near Bealton Station, on the railroad - 6
+               August 1863.</subject></item><item><subject>Camp Rappahannock, Concerning the Battle of
+               Gettysburg - 14 August 1863.</subject></item><item><subject>Camp Rappahannock, Concerning shooting
+               deserters - Sunday, 30 August 1863.</subject></item><item><subject>Camp near Culpeper, Bristoe Campaign - 16
+               October 1863, also 22 October 1863.</subject></item><item><subject>Camp Germania Mills, Virginia - 17 November
+               1863.</subject></item><item><subject>Camp Germania Mills, Virginia - 20 November
+               1863.</subject></item><item><subject>Partial Letter - Probably March 1864.</subject></item><item><subject>Camp of Company "H", 12th P.R., Concerning
+               bushwhackers killing troops - 16 April 1863.</subject></item><item><subject>Camp on the battle line near Spottsylvania
+               Court House - Friday, 10 o'clock a.m., 20 May.</subject></item><item><subject>Letter Fragment - n.d.</subject></item></list></p>
+    </descgrp>
+    <controlaccess>
+      <head>Index Terms</head>
       <controlaccess>
-         <head>Index Terms</head>
-         <controlaccess>
-            <head>Subjects:</head>
-            <subject encodinganalog="650">United States. Army.
+        <head>Subjects:</head>
+        <subject encodinganalog="650">United States. Army.
             Pennsylvania Infantry Regiment, 12th. Company H.</subject>
-            <subject encodinganalog="650">Malvern Hill (Va.), Battle
+        <subject encodinganalog="650">Malvern Hill (Va.), Battle
             of, 1862.</subject>
-            <subject encodinganalog="650">Gettysburg (Pa.), Battle of,
+        <subject encodinganalog="650">Gettysburg (Pa.), Battle of,
             1863.</subject>
-            <subject encodinganalog="650">Seven Days' Battles,
+        <subject encodinganalog="650">Seven Days' Battles,
             1862.</subject>
-         </controlaccess>
       </controlaccess>
-      <dsc type="combined">
-         <head>Contents List</head>
-         <c01 level="series">
-            <head>Series 1: Introduction</head>
-            <did>
-               <unittitle>Introduction, 
-               <unitdate type="inclusive">n.d.</unitdate></unittitle>
-               <container type="Folder" label="Folder">1</container>
-               <physdesc>
-                  <extent>5 items.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <p>Items includes a signature of Samuel H. McNutt, a
+    </controlaccess>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 level="series">
+        <head>Series 1: Introduction</head>
+        <did>
+          <unittitle>Introduction, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">n.d.</unitdate></unittitle>
+          <container type="Folder" label="Folder">1</container>
+          <physdesc>
+            <extent>5 items.</extent>
+          </physdesc>
+        </did>
+        <scopecontent>
+          <p>Items includes a signature of Samuel H. McNutt, a
                copy of McNutt's service record, a list of letters with
                dates written by Samuel H. McNutt, and a brief history
                of the 12th Regiment Reserves infantry.</p>
-            </scopecontent>
-         </c01>
-         <c01 level="series">
-            <head>Series 2: Letters</head>
-            <did>
-               <unittitle>Letters of Samuel H. McNutt, 
-               <unitdate type="inclusive">26 June 1861 - 16 April 1864,
+        </scopecontent>
+      </c01>
+      <c01 level="series">
+        <head>Series 2: Letters</head>
+        <did>
+          <unittitle>Letters of Samuel H. McNutt, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">26 June 1861 - 16 April 1864,
                n.d.</unitdate></unittitle>
-               <container type="Folder" label="Folder">2-8</container>
-               <physdesc>
-                  <extent>66 items.</extent>
-               </physdesc>
-            </did>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Letters of Samuel H. McNutt, 
-                  <unitdate type="inclusive">26 June 1861 - 8 September
+          <container type="Folder" label="Folder">2-8</container>
+          <physdesc>
+            <extent>66 items.</extent>
+          </physdesc>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Letters of Samuel H. McNutt, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">26 June 1861 - 8 September
                   1861.</unitdate></unittitle>
-                  <container label="Folder" type="Folder">2</container>
-                  <physdesc>10 items.</physdesc>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Letters of Samuel H. McNutt, 
-                  <unitdate type="inclusive">17 September 1861 - 11
+            <container label="Folder" type="Folder">2</container>
+            <physdesc>10 items.</physdesc>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Letters of Samuel H. McNutt, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">17 September 1861 - 11
                   February 1862.</unitdate></unittitle>
-                  <container label="Folder" type="Folder">3</container>
-                  <physdesc>10 items.</physdesc>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Letters of Samuel H. McNutt, 
-                  <unitdate type="inclusive">15 February 1862 - 14
+            <container label="Folder" type="Folder">3</container>
+            <physdesc>10 items.</physdesc>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Letters of Samuel H. McNutt, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">15 February 1862 - 14
                   April 1862.</unitdate></unittitle>
-                  <container label="Folder" type="Folder">4</container>
-                  <physdesc>10 items.</physdesc>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Letters of Samuel H. McNutt, 
-                  <unitdate type="inclusive">22 April 1862 - July 8,
+            <container label="Folder" type="Folder">4</container>
+            <physdesc>10 items.</physdesc>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Letters of Samuel H. McNutt, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">22 April 1862 - July 8,
                   1862.</unitdate></unittitle>
-                  <container label="Folder" type="Folder">5</container>
-                  <physdesc>10 items.</physdesc>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Letters of Samuel H. McNutt, 
-                  <unitdate type="inclusive">17 July 1862 - 14 April
+            <container label="Folder" type="Folder">5</container>
+            <physdesc>10 items.</physdesc>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Letters of Samuel H. McNutt, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">17 July 1862 - 14 April
                   1863.</unitdate></unittitle>
-                  <container label="Folder" type="Folder">6</container>
-                  <physdesc>10 items.</physdesc>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Letters of Samuel H. McNutt, 
-                  <unitdate type="inclusive">28 April 1863 - 16 October
+            <container label="Folder" type="Folder">6</container>
+            <physdesc>10 items.</physdesc>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Letters of Samuel H. McNutt, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">28 April 1863 - 16 October
                   1863.</unitdate></unittitle>
-                  <container label="Folder" type="Folder">7</container>
-                  <physdesc>10 items.</physdesc>
-               </did>
-            </c02>
-            <c02 level="subseries">
-               <did>
-                  <unittitle>Letters of Samuel H. McNutt, 
-                  <unitdate type="inclusive">17 November 1863 - 16
+            <container label="Folder" type="Folder">7</container>
+            <physdesc>10 items.</physdesc>
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>Letters of Samuel H. McNutt, 
+                  <unitdate type="inclusive" era="ce" calendar="gregorian">17 November 1863 - 16
                   April 1864, n.d.</unitdate></unittitle>
-                  <container label="Folder" type="Folder">8</container>
-                  <physdesc>6 items.</physdesc>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="item">
-            <did>
-               <unittitle>Photograph of Samuel H. McNutt, 
-               <unitdate type="inclusive">n.d.</unitdate></unittitle>
-               <container type="Folder" label="Folder">9</container>
-               <physdesc>
-                  <extent>1 item.</extent>
-                  <dimensions>2.5" x 4.75".</dimensions>
-                  <physfacet type="color">Black and white
+            <container label="Folder" type="Folder">8</container>
+            <physdesc>6 items.</physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle>Photograph of Samuel H. McNutt, 
+               <unitdate type="inclusive" era="ce" calendar="gregorian">n.d.</unitdate></unittitle>
+          <container type="Folder" label="Folder">9</container>
+          <physdesc>
+            <extent>1 item.</extent>
+            <dimensions>2.5" x 4.75".</dimensions>
+            <physfacet type="color">Black and white
                   photograph.</physfacet>
-               </physdesc>
-            </did>
-         </c01>
-         <c01 level="series">
-            <head>Series 3: Typescripts</head>
-            <did>
-               <unittitle>Typescripts of the letters of Samuel H.
+          </physdesc>
+        </did>
+      </c01>
+      <c01 level="series">
+        <head>Series 3: Typescripts</head>
+        <did>
+          <unittitle>Typescripts of the letters of Samuel H.
                McNutt, 
-               <unitdate type="inclusive">26 June 1861 - 16 April
+               <unitdate type="inclusive" era="ce" calendar="gregorian">26 June 1861 - 16 April
                1864.</unitdate></unittitle>
-               <container type="Folder" label="Folder">10</container>
-               <physdesc>
-                  <extent>20 items.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <list><head>The following letters are available as typescripts:</head>
-                  <item>26 June 1861.</item>
-                  <item>18 Jan. [1862].</item>
-                  <item>26 Feb. 1862.</item>
-                  <item>28 March 1862.</item>
-                  <item>14 April 1862.</item>
-                  <item>1 June 1862.</item>
-                  <item>17 June 1862.</item>
-                  <item>22 June 1862.</item>
-                  <item>4 July 1862.</item>
-                  <item>8 July 1862.</item>
-                  <item>17 July 1862.</item>
-                  <item>15 October 1862.</item>
-                  <item>16 Dec. 1862.</item>
-                  <item>14 April 1863.</item>
-                  <item>5 July 1863.</item>
-                  <item>2 August [1863].</item>
-                  <item>14 August [1863].</item>
-                  <item>16 Oct. 1863.</item>
-                  <item>17 Nov. 1863.</item>
-                  <item>16 April 1864.</item>
-               </list>
-            </scopecontent>
-         </c01>
-      </dsc>
-   </archdesc>
+          <container type="Folder" label="Folder">10</container>
+          <physdesc>
+            <extent>20 items.</extent>
+          </physdesc>
+        </did>
+        <scopecontent>
+          <list>
+            <head>The following letters are available as typescripts:</head>
+            <item>26 June 1861.</item>
+            <item>18 Jan. [1862].</item>
+            <item>26 Feb. 1862.</item>
+            <item>28 March 1862.</item>
+            <item>14 April 1862.</item>
+            <item>1 June 1862.</item>
+            <item>17 June 1862.</item>
+            <item>22 June 1862.</item>
+            <item>4 July 1862.</item>
+            <item>8 July 1862.</item>
+            <item>17 July 1862.</item>
+            <item>15 October 1862.</item>
+            <item>16 Dec. 1862.</item>
+            <item>14 April 1863.</item>
+            <item>5 July 1863.</item>
+            <item>2 August [1863].</item>
+            <item>14 August [1863].</item>
+            <item>16 Oct. 1863.</item>
+            <item>17 Nov. 1863.</item>
+            <item>16 April 1864.</item>
+          </list>
+        </scopecontent>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

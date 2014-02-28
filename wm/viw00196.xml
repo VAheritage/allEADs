@@ -1,187 +1,143 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl" ?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY scrcwiki SYSTEM "http://scrc.swem.wm.edu/wiki/index.php/Anonymous" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/wm/vivadoc.pl?file=viw00196.xml" NDATA html>
-]>
-<ead id="viw00196">
-<eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
-	<eadid mainagencycode="VWM" countrycode="us">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00196:: Colorado River Relocation Center Scrapbook, 1943-1944)//EN" "viw00196.xml"</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
 
-	<filedesc>
-
-
-<titlestmt>
-	<titleproper>Inventory of the Colorado River Relocation Center Scrapbook <date>1943-1944</date>
-	</titleproper>
-	<subtitle id="sort">
-		Colorado River Relocation Center Scrapbook		<num type="collectionnumber">Mss. Acc. 2008.127</num>
-	</subtitle>
-</titlestmt>
-
-
-
-<publicationstmt>
-	<publisher>Earl Gregg Swem Library, College of William and Mary</publisher> &address;
-	<date type="publication">&copy; 2010 By the College of William and Mary. All rights reserved.</date>
-	<p id="usestatement">
-		<extref entityref="conditions">Conditions of Use</extref>
-	</p>
-</publicationstmt>
-
-</filedesc>
-
-<profiledesc>
-	<creation>Finding aid created by Anne T. Johnson, <date>2009</date></creation>
-	<langusage>Description is in
-		<language langcode="eng">English</language>
-	</langusage>
-</profiledesc>
-</eadheader>
-
-
-
-<frontmatter>
-	<titlepage>
-		<titleproper>Inventory of the Colorado River Relocation Center Scrapbook, <date>1943-1944</date></titleproper>
-		<subtitle>A Collection in the<lb/>Special Collections Research Center
-			<num type="Accession Number">Mss. Acc. 2008.127</num>
-		</subtitle>
-		<p id="logostmt">
-			<extptr actuate="onload" show="embed" entityref="logo"/>
-		</p>
-		<publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
-		<date type="publication">2010</date> &contact;
-		<list type="deflist">
-			<defitem>
-				<label>Processed By</label>
-				<item>Special Collections Staff.</item>
-			</defitem>
-		</list>
-	</titlepage>
-</frontmatter>
-
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-		<corpname>Special Collections Research Center</corpname>
-</repository>
-
-
-	<unittitle label="Title:" encodinganalog="245$a">Colorado River Relocation Center Scrapbook	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1943-1944</unitdate>
-</unittitle>
-<unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">01/Mss. Acc. 2008.127</unitid>
-	<physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Cubic Feet">0.10</extent></physdesc>
-	<physdesc label="Alternate Extent Statement:" encodinganalog="300$a">1 item</physdesc>
-	<langmaterial encodinganalog="546" label="Language of Materials">
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00196">
+  <eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
+    <eadid mainagencycode="US-VWM" countrycode="US">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00196:: Colorado River Relocation Center Scrapbook, 1943-1944)//EN" "viw00196.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the Colorado River Relocation Center Scrapbook <date era="ce" calendar="gregorian">1943-1944</date></titleproper>
+        <subtitle id="sort">
+		Colorado River Relocation Center Scrapbook		<num type="collectionnumber">Mss. Acc. 2008.127</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By the College of William and Mary. All rights reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Finding aid created by Anne T. Johnson, <date era="ce" calendar="gregorian">2009</date></creation>
+      <langusage>Description is in
+		<language langcode="eng">English</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the Colorado River Relocation Center Scrapbook, <date era="ce" calendar="gregorian">1943-1944</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
+			<num type="Accession Number">Mss. Acc. 2008.127</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed By</label>
+          <item>Special Collections Staff.</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">Colorado River Relocation Center Scrapbook	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1943-1944</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">01/Mss. Acc. 2008.127</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Cubic Feet">0.10</extent>
+      </physdesc>
+      <physdesc label="Alternate Extent Statement:" encodinganalog="300$a">1 item</physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	  The papers are in:
-<language langcode="eng">English</language>
-	</langmaterial>
-	
-	<abstract encodinganalog="520$a" label="Abstract:">This scrapbook of a female employee at the Colorado River Relocation Center in Poston, Arizona includes photographs, a poem, programs, correspondence, and other material. The Colorado River Relocation Center is also known as the Poston Relocation Center and was one of the sites internment camps created for Japanese Americans and Japanese nationals by the U.S. government during World War II. Poston is located in present day La Paz County, Arizona. The woman who created this scrapbook, which has been disassembled, is presumed to have been a white federal employee.
+<language langcode="eng">English</language></langmaterial>
+      <abstract encodinganalog="520$a" label="Abstract:">This scrapbook of a female employee at the Colorado River Relocation Center in Poston, Arizona includes photographs, a poem, programs, correspondence, and other material. The Colorado River Relocation Center is also known as the Poston Relocation Center and was one of the sites internment camps created for Japanese Americans and Japanese nationals by the U.S. government during World War II. Poston is located in present day La Paz County, Arizona. The woman who created this scrapbook, which has been disassembled, is presumed to have been a white federal employee.
 </abstract>
-
-	<origination label="Creator:">
-
-		<famname encodinganalog="100">Anonymous</famname>
+      <origination label="Creator:"><famname encodinganalog="100">Anonymous</famname>
 arrangement
 	</origination>
-
-
-</did>
-
-<descgrp type="admininfo">
-<head>Administrative Information</head>
-<!-- ADMINISTRATIVE INFORMATION -->
-
-<accessrestrict encodinganalog="506">
-	<head>Conditions Governing Access</head>
-	<p>Collection is open to all researchers.</p>
-</accessrestrict>
-
-<userestrict encodinganalog="540">
-	<head>Conditions Governing Use</head>
-	<p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
-</userestrict>
-<prefercite encodinganalog="510">
-	<head>Preferred Citation</head>
-	<p>Colorado River Relocation Center Scrapbook, Special Collections Research Center, Swem Library, College of William and Mary.</p>
-</prefercite>
-<acqinfo encodinganalog="541">
-	<head>Acquisition Information</head>
-	<p>The materials were acquired by Special Collections Research Center on 00/00/2008.</p>
-</acqinfo>
-<processinfo encodinganalog="583">
-	<head>Processing Information</head>
-	<p>The contents of the scrapbook were removed from the scrapbook for preservation reasons. The original order of the materials was maintained.</p>
-</processinfo>
-<!-- END ADMINISTRATIVE INFORMATION -->
-
-
-</descgrp>
-
-
-
-<!--COLLECTION LEVEL METADATA: -->
-<bioghist altrender="Biographical Note" encodinganalog="545"><head>Biographical Note</head>
-  <p>Information about this individual or organization may be available in the <extref entityref="scrcwiki">Special Collections Research Center Wiki</extref></p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>This scrapbook of a female employee at the Colorado River Relocation Center in Poston, Arizona includes photographs, a poem, programs, correspondence, and other material. The Colorado River Relocation Center is also known as the Poston Relocation Center and was one of the sites internment camps created for Japanese Americans and Japanese nationals by the U.S. government during World War II. Poston is located in present day La Paz County, Arizona. The woman who created this scrapbook, which has been disassembled, is presumed to have been a white federal employee.
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <!-- ADMINISTRATIVE INFORMATION -->
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>Collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>Colorado River Relocation Center Scrapbook, Special Collections Research Center, Swem Library, College of William and Mary.</p>
+      </prefercite>
+      <acqinfo encodinganalog="541">
+        <head>Acquisition Information</head>
+        <p>The materials were acquired by Special Collections Research Center on 00/00/2008.</p>
+      </acqinfo>
+      <processinfo encodinganalog="583">
+        <head>Processing Information</head>
+        <p>The contents of the scrapbook were removed from the scrapbook for preservation reasons. The original order of the materials was maintained.</p>
+      </processinfo>
+      <!-- END ADMINISTRATIVE INFORMATION -->
+    </descgrp>
+    <!--COLLECTION LEVEL METADATA: -->
+    <bioghist altrender="Biographical Note" encodinganalog="545">
+      <head>Biographical Note</head>
+      <p>Information about this individual or organization may be available in the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://scrc.swem.wm.edu/wiki/index.php/Anonymous">Special Collections Research Center Wiki</extref></p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>This scrapbook of a female employee at the Colorado River Relocation Center in Poston, Arizona includes photographs, a poem, programs, correspondence, and other material. The Colorado River Relocation Center is also known as the Poston Relocation Center and was one of the sites internment camps created for Japanese Americans and Japanese nationals by the U.S. government during World War II. Poston is located in present day La Paz County, Arizona. The woman who created this scrapbook, which has been disassembled, is presumed to have been a white federal employee.
 </p>
-	<p>The collection includes an undated handwritten description of Poston, Arizona, which makes reference to earlier mostly unsuccessful attempts to settle the town. A letter dated July 20, 1944, is written to Duncan Mills, Project Director from Pauline Bates Brown, Reports Officer of the Colorado River Relocation Project requesting a Junior Reports Officer to assist with clerical work. 
+      <p>The collection includes an undated handwritten description of Poston, Arizona, which makes reference to earlier mostly unsuccessful attempts to settle the town. A letter dated July 20, 1944, is written to Duncan Mills, Project Director from Pauline Bates Brown, Reports Officer of the Colorado River Relocation Project requesting a Junior Reports Officer to assist with clerical work. 
 </p>
-	<p>The photographs in the collection are mostly of a woman or a group of women in what appears to be Colorado with some photographs of Japanese American internees in groups, performing on stage, and some groups of those presumed to be employees and internees. Subjects include: Snow scenes, woman in bed and at window of brick house, women sitting in front of housing units, women with horses, three women beside a river and inside a photo booth, family groups, women in the city, group of 20 Japanese American young people, a stage set for a performance by the Japanese American young people, Grandview Hotel, pueblo ruins, and small group and individual photos of Japanese American internees. Only one photograph is labeled, &quot;Marie and Dorothy.&quot;
+      <p>The photographs in the collection are mostly of a woman or a group of women in what appears to be Colorado with some photographs of Japanese American internees in groups, performing on stage, and some groups of those presumed to be employees and internees. Subjects include: Snow scenes, woman in bed and at window of brick house, women sitting in front of housing units, women with horses, three women beside a river and inside a photo booth, family groups, women in the city, group of 20 Japanese American young people, a stage set for a performance by the Japanese American young people, Grandview Hotel, pueblo ruins, and small group and individual photos of Japanese American internees. Only one photograph is labeled, "Marie and Dorothy."
 </p>
-	<p>Further items included in the scrapbook: “Amusements, Where to Go and What to See, Atlantic City” brochure for the week of December 23, 1944; a program for “Porter, Please,” written and produced by Masqueraders, December 10-11, 1943; and a program for the “Political Platform Luncheon, Basic Recreation Class No. 25, American University,” November 4, 1944, with the names of women attendees on the cover. 
+      <p>Further items included in the scrapbook: “Amusements, Where to Go and What to See, Atlantic City” brochure for the week of December 23, 1944; a program for “Porter, Please,” written and produced by Masqueraders, December 10-11, 1943; and a program for the “Political Platform Luncheon, Basic Recreation Class No. 25, American University,” November 4, 1944, with the names of women attendees on the cover. 
 </p>
-	<p>Four employment bulletins from the Red Cross are in the collection: Red Cross, “General Guide for Selecting Recreation Workers for Service in Hospitals of the Army and Navy”…Women, June 1943; Red Cross, “General Guide for Selecting Recreation Workers for Able-Bodied Troops on Military Posts and Naval Stations” …Women, June 1943; Red Cross, Employment Opportunities, November 1943; Red Cross, “General Guide for Selecting Assistant Program Directors, American Red Cross Clubs Overseas…Woman,” June 1943.</p>
-</scopecontent>
-
-<descgrp type="add">
-	<head>Additional Information</head>
-
-
-
-
-</descgrp>
-
-<!-- CONTROLLED ACCESS / SUBJECT TERMS -->
-
-<controlaccess>
-<head>Index Terms</head>
-
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="aat">Scrapbooks</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="lcsh">Japanese Americans--Evacuation and relocation--1939-1945</subject>
-			<subject encodinganalog="650" source="lcsh">World War, 1939-1945--United States--Scrapbooks</subject>
-			<subject encodinganalog="650" source="lcsh">World War, 1939-1945--Women--United States</subject>
-	</controlaccess>
-</controlaccess>
-
-
-<!-- END CONTROLLED ACCESS TERMS -->
-
-
-
-<!-- END COLLECTION LEVEL METADATA -->
-
-
-<!-- END SUBORDINATE COMPONENTS -->
-</archdesc>
-</ead>
-<!-- footer.inc.php -->
-
+      <p>Four employment bulletins from the Red Cross are in the collection: Red Cross, “General Guide for Selecting Recreation Workers for Service in Hospitals of the Army and Navy”…Women, June 1943; Red Cross, “General Guide for Selecting Recreation Workers for Able-Bodied Troops on Military Posts and Naval Stations” …Women, June 1943; Red Cross, Employment Opportunities, November 1943; Red Cross, “General Guide for Selecting Assistant Program Directors, American Red Cross Clubs Overseas…Woman,” June 1943.</p>
+    </scopecontent>
+    <descgrp type="add">
+      <head>Additional Information</head>
+    </descgrp>
+    <!-- CONTROLLED ACCESS / SUBJECT TERMS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="aat">Scrapbooks</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="lcsh">Japanese Americans--Evacuation and relocation--1939-1945</subject>
+        <subject encodinganalog="650" source="lcsh">World War, 1939-1945--United States--Scrapbooks</subject>
+        <subject encodinganalog="650" source="lcsh">World War, 1939-1945--Women--United States</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- END COLLECTION LEVEL METADATA -->
+    <!-- END SUBORDINATE COMPONENTS -->
+  </archdesc>
+</ead><!-- footer.inc.php -->

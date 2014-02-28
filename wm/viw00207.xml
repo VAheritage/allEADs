@@ -1,3151 +1,2812 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl" ?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY scrcwiki SYSTEM "http://scrc.swem.wm.edu/wiki/index.php/Thomas E. Pugh" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/wm/vivadoc.pl?file=viw00207.xml" NDATA html>
-]>
-<ead id="viw00207">
-<eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
-	<eadid mainagencycode="VWM" countrycode="us">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00207:: Thomas E. Pugh Papers, 1916-1999)//EN" "viw00207.xml"</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
 
-	<filedesc>
-
-
-<titlestmt>
-	<titleproper>Inventory of the Thomas E. Pugh Papers <date>1916-1999</date>
-	</titleproper>
-	<subtitle id="sort">
-		Thomas Pugh		<num type="collectionnumber">Mss. Acc. 1999.07</num>
-	</subtitle>
-</titlestmt>
-
-
-
-<publicationstmt>
-	<publisher>Earl Gregg Swem Library, College of William and Mary</publisher> &address;
-	<date type="publication">&copy; 2010 By the College of William and Mary. All rights reserved.</date>
-	<p id="usestatement">
-		<extref entityref="conditions">Conditions of Use</extref>
-	</p>
-</publicationstmt>
-
-</filedesc>
-
-<profiledesc>
-	<creation>Finding aid created by Ben Bromley, <date>2009</date></creation>
-	<langusage>Description is in
-		<language langcode="eng">English</language>
-	</langusage>
-</profiledesc>
-</eadheader>
-
-
-
-<frontmatter>
-	<titlepage>
-		<titleproper>Inventory of the Thomas E. Pugh Papers, <date>1916-1999</date></titleproper>
-		<subtitle>A Collection in the<lb/>Special Collections Research Center
-			<num type="Accession Number">Mss. Acc. 1999.07</num>
-		</subtitle>
-		<p id="logostmt">
-			<extptr actuate="onload" show="embed" entityref="logo"/>
-		</p>
-		<publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
-		<date type="publication">2010</date> &contact;
-		<list type="deflist">
-			<defitem>
-				<label>Processed By</label>
-				<item>Special Collections Staff.</item>
-			</defitem>
-		</list>
-	</titlepage>
-</frontmatter>
-
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-		<corpname>Special Collections Research Center</corpname>
-</repository>
-
-
-	<unittitle label="Title:" encodinganalog="245$a">Thomas E. Pugh Papers	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1916-1999</unitdate>
-</unittitle>
-<unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">01/Mss. Acc. 1999.07</unitid>
-	<physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Cubic Feet">13.00</extent></physdesc>
-	<langmaterial encodinganalog="546" label="Language of Materials">
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00207">
+  <eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
+    <eadid mainagencycode="US-VWM" countrycode="US">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00207:: Thomas E. Pugh Papers, 1916-1999)//EN" "viw00207.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the Thomas E. Pugh Papers <date era="ce" calendar="gregorian">1916-1999</date></titleproper>
+        <subtitle id="sort">
+		Thomas Pugh		<num type="collectionnumber">Mss. Acc. 1999.07</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By the College of William and Mary. All rights reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Finding aid created by Ben Bromley, <date era="ce" calendar="gregorian">2009</date></creation>
+      <langusage>Description is in
+		<language langcode="eng">English</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the Thomas E. Pugh Papers, <date era="ce" calendar="gregorian">1916-1999</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
+			<num type="Accession Number">Mss. Acc. 1999.07</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed By</label>
+          <item>Special Collections Staff.</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">Thomas E. Pugh Papers	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1916-1999</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">01/Mss. Acc. 1999.07</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Cubic Feet">13.00</extent>
+      </physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	  The papers are in:
-<language langcode="eng">English</language>
-	</langmaterial>
-	
-	<abstract encodinganalog="520$a" label="Abstract:">The papers of Rev. Thomas E. Pugh, a minister of the Williamsburg Baptist Church in Williamsburg, Virginia from 1952-1981. 
+<language langcode="eng">English</language></langmaterial>
+      <abstract encodinganalog="520$a" label="Abstract:">The papers of Rev. Thomas E. Pugh, a minister of the Williamsburg Baptist Church in Williamsburg, Virginia from 1952-1981. 
 </abstract>
-
-	<origination label="Creator:">
-
-		<persname encodinganalog="100" source="lcnaf">Thomas E. Pugh, 1917-2006</persname>
-		<corpname encodinganalog="110" source="lcnaf">Williamsburg Historic Records Association (Williamsburg, Va.)</corpname>
+      <origination label="Creator:"><persname encodinganalog="100" source="lcnaf">Thomas E. Pugh, 1917-2006</persname><corpname encodinganalog="110" source="lcnaf">Williamsburg Historic Records Association (Williamsburg, Va.)</corpname>
 arrangement
 	</origination>
-
-
-</did>
-
-<descgrp type="admininfo">
-<head>Administrative Information</head>
-<!-- ADMINISTRATIVE INFORMATION -->
-
-<accessrestrict encodinganalog="506">
-	<head>Conditions Governing Access</head>
-	<p>Collection is open to all researchers.</p>
-</accessrestrict>
-
-<userestrict encodinganalog="540">
-	<head>Conditions Governing Use</head>
-	<p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
-</userestrict>
-<prefercite encodinganalog="510">
-	<head>Preferred Citation</head>
-	<p>Thomas E. Pugh Papers, Special Collections Research Center, Swem Library, College of William and Mary</p>
-</prefercite>
-<acqinfo encodinganalog="541">
-	<head>Acquisition Information</head>
-	<p>The materials were acquired by Special Collections Research Center from Thomas Pugh and Mark Pugh. on 03/25/1999.</p>
-</acqinfo>
-<processinfo encodinganalog="583">
-	<head>Processing Information</head>
-	<p>Collection is partially processed as of September 2009.</p>
-</processinfo>
-<!-- END ADMINISTRATIVE INFORMATION -->
-
-
-</descgrp>
-
-
-
-<!--COLLECTION LEVEL METADATA: -->
-<bioghist altrender="Biographical Note" encodinganalog="545"><head>Biographical Note</head>
-  <p>Thomas E. Pugh was born on November 9, 1917 in Spotsylvania County, Virginia and died June 17, 2006 in Williamsburg, Virginia.
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <!-- ADMINISTRATIVE INFORMATION -->
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>Collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>Thomas E. Pugh Papers, Special Collections Research Center, Swem Library, College of William and Mary</p>
+      </prefercite>
+      <acqinfo encodinganalog="541">
+        <head>Acquisition Information</head>
+        <p>The materials were acquired by Special Collections Research Center from Thomas Pugh and Mark Pugh. on 03/25/1999.</p>
+      </acqinfo>
+      <processinfo encodinganalog="583">
+        <head>Processing Information</head>
+        <p>Collection is partially processed as of September 2009.</p>
+      </processinfo>
+      <!-- END ADMINISTRATIVE INFORMATION -->
+    </descgrp>
+    <!--COLLECTION LEVEL METADATA: -->
+    <bioghist altrender="Biographical Note" encodinganalog="545">
+      <head>Biographical Note</head>
+      <p>Thomas E. Pugh was born on November 9, 1917 in Spotsylvania County, Virginia and died June 17, 2006 in Williamsburg, Virginia.
 </p>
-  <p>Pugh was pastor of Williamsburg Baptist Church for 29 years, 1952-1981. His tenure was the longest in the history of the church. When he retired, Pugh was named pastor emeritus. 
+      <p>Pugh was pastor of Williamsburg Baptist Church for 29 years, 1952-1981. His tenure was the longest in the history of the church. When he retired, Pugh was named pastor emeritus. 
 </p>
-  <p>When Pugh accepted the pastor position, one of his objectives was to embrace the students of the College of William and Mary. He sought to provide a ministry which would aid in their development during the formative college years.
+      <p>When Pugh accepted the pastor position, one of his objectives was to embrace the students of the College of William and Mary. He sought to provide a ministry which would aid in their development during the formative college years.
 </p>
-  <p>Outside of the church community, Pugh served many organizations such as the American Red Cross and the Rotary Club. One of his most significant contributions to the Williamsburg community was his 25 year membership on the board of the Williamsburg Community Hospital. 
+      <p>Outside of the church community, Pugh served many organizations such as the American Red Cross and the Rotary Club. One of his most significant contributions to the Williamsburg community was his 25 year membership on the board of the Williamsburg Community Hospital. 
 </p>
-  <p> Further information about this individual or organization may be available in the <extref entityref="scrcwiki">Special Collections Research Center Wiki</extref></p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>The papers of Rev. Thomas E. Pugh, a minister of the Williamsburg Baptist Church in Williamsburg, Virginia from 1952-1981. 
+      <p> Further information about this individual or organization may be available in the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Special Collections Research Center Wiki</extref></p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>The papers of Rev. Thomas E. Pugh, a minister of the Williamsburg Baptist Church in Williamsburg, Virginia from 1952-1981. 
 </p>
-	<p>Collection includes sermons, church bulletins, scrapbooks, correspondence, essays, other writings, and photographs encompassing both the business and personal life of Rev. Thomas Pugh.  Box 8 includes a genealogical lineage of the Pugh Family.</p>
-</scopecontent>
-<arrangement encodinganalog="351$b">
-	<head>Arrangement of Materials</head>
-	<p>Each accession is arranged separately, though most accessions have only been partially processed with a detailed list of contents.</p>
-</arrangement>
-
-
-<descgrp type="add">
-	<head>Additional Information</head>
-
-
-
-
-</descgrp>
-
-<!-- CONTROLLED ACCESS / SUBJECT TERMS -->
-
-<controlaccess>
-<head>Index Terms</head>
-
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Corporate Name:</head>
-			<corpname encodinganalog="610" source="local">Williamsburg Baptist Church (Williamsburg, Va.)</corpname>
-	</controlaccess>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="local">Church bulletins</genreform>
-			<genreform encodinganalog="655" source="aat">Clippings</genreform>
-			<genreform encodinganalog="655" source="aat">Correspondence</genreform>
-			<genreform encodinganalog="655" source="aat">Diaries</genreform>
-			<genreform encodinganalog="655" source="aat">Photographs</genreform>
-			<genreform encodinganalog="655" source="aat">Scrapbooks</genreform>
-			<genreform encodinganalog="655" source="aat">Sermons</genreform>
-			<genreform encodinganalog="655" source="lcsh">Williamsburg (Va.)--History--20th century</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="local">Baptist Church--Virginia--History.</subject>
-			<subject encodinganalog="650" source="local">Baptists--United States--Clergy.</subject>
-	</controlaccess>
-</controlaccess>
-
-
-<!-- END CONTROLLED ACCESS TERMS -->
-
-
-
-<!-- END COLLECTION LEVEL METADATA -->
-
-<!-- BEGIN SUBORDINATE COMPONENTS -->
-<dsc type="combined">
-<head>Detailed Description of the Collection</head>
-<c01 level="item" id="id24939">
-<did>
-        <unittitle>Mss. Acc. 1999.07 (Sermons and The Spire Bulletin),
+      <p>Collection includes sermons, church bulletins, scrapbooks, correspondence, essays, other writings, and photographs encompassing both the business and personal life of Rev. Thomas Pugh.  Box 8 includes a genealogical lineage of the Pugh Family.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$b">
+      <head>Arrangement of Materials</head>
+      <p>Each accession is arranged separately, though most accessions have only been partially processed with a detailed list of contents.</p>
+    </arrangement>
+    <descgrp type="add">
+      <head>Additional Information</head>
+    </descgrp>
+    <!-- CONTROLLED ACCESS / SUBJECT TERMS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Corporate Name:</head>
+        <corpname encodinganalog="610" source="local">Williamsburg Baptist Church (Williamsburg, Va.)</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="local">Church bulletins</genreform>
+        <genreform encodinganalog="655" source="aat">Clippings</genreform>
+        <genreform encodinganalog="655" source="aat">Correspondence</genreform>
+        <genreform encodinganalog="655" source="aat">Diaries</genreform>
+        <genreform encodinganalog="655" source="aat">Photographs</genreform>
+        <genreform encodinganalog="655" source="aat">Scrapbooks</genreform>
+        <genreform encodinganalog="655" source="aat">Sermons</genreform>
+        <genreform encodinganalog="655" source="lcsh">Williamsburg (Va.)--History--20th century</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="local">Baptist Church--Virginia--History.</subject>
+        <subject encodinganalog="650" source="local">Baptists--United States--Clergy.</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- END COLLECTION LEVEL METADATA -->
+    <!-- BEGIN SUBORDINATE COMPONENTS -->
+    <dsc type="combined">
+      <head>Detailed Description of the Collection</head>
+      <c01 level="item" id="id24939">
+        <did>
+          <unittitle>Mss. Acc. 1999.07 (Sermons and The Spire Bulletin),
 </unittitle>
-    </did>
-    	<scopecontent>
-					<p>Sermons.
+        </did>
+        <scopecontent>
+          <p>Sermons.
 </p>
-					<p>These folders contain sermon outlines on different subject matter.  They were preached from the outlines by Rev. Pugh at Williamsburg Baptist Church.  Also included are notebooks with the sermon titles arranged by date.  The dates range from the 1950s, when Pugh took up the pulpit, to the 1980s, when he retired.
+          <p>These folders contain sermon outlines on different subject matter.  They were preached from the outlines by Rev. Pugh at Williamsburg Baptist Church.  Also included are notebooks with the sermon titles arranged by date.  The dates range from the 1950s, when Pugh took up the pulpit, to the 1980s, when he retired.
 </p>
-					<p>The Spire.</p>
-    	</scopecontent>
-<c02 level="series" id="id61022">
-<head>Series 1: Sermons</head><did>
-        <unittitle>Sermons,
-</unittitle>
-    </did>
-<c03 level="file" id="id24940">
-<did>
-        <unittitle>Advent - Evangelism (Personal),
-</unittitle>
-		<container label="Box">1</container>
-    </did>
-<c04 level="file" id="id24941">
-<did>
-        <unittitle>Advent,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24942">
-<did>
-        <unittitle>Adversity,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24943">
-<did>
-        <unittitle>Anniversary,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24944">
-<did>
-        <unittitle>Art, Christian,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24945">
-<did>
-        <unittitle>Authority,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24946">
-<did>
-        <unittitle>Baccalaureate Sermon,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24947">
-<did>
-        <unittitle>Baptist,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24948">
-<did>
-        <unittitle>Baptism,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24949">
-<did>
-        <unittitle>Beliefs,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">9</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24950">
-<did>
-        <unittitle>Bible,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">10</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24951">
-<did>
-        <unittitle>Biography - non-biblical,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24952">
-<did>
-        <unittitle>Biography – biblical,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">12</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24953">
-<did>
-        <unittitle>(Unmarked),
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">13</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24954">
-<did>
-        <unittitle>Book Review,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">14</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24955">
-<did>
-        <unittitle>Character – Personal,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">15</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24956">
-<did>
-        <unittitle>Children,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">16</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24957">
-<did>
-        <unittitle>Christ – As Lord of life,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">17</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24958">
-<did>
-        <unittitle>Christ – Mind(?) of,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">18</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24959">
-<did>
-        <unittitle>Christ – Work of,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">19</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24960">
-<did>
-        <unittitle>Christian Citizenship,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">20</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24961">
-<did>
-        <unittitle>Christian Experience,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">21</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24962">
-<did>
-        <unittitle>Christian Education,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">22</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24963">
-<did>
-        <unittitle>Christian Identity,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">23</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24964">
-<did>
-        <unittitle>Christian Living,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">24</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24965">
-<did>
-        <unittitle>Christians in the Church,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">25</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24966">
-<did>
-        <unittitle>Christianity – as freedom,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">26</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24967">
-<did>
-        <unittitle>Christianity in contemporary society,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">27</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24968">
-<did>
-        <unittitle>Christianity – mind of,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">28</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24969">
-<did>
-        <unittitle>Christianity - (blank),
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">29</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24970">
-<did>
-        <unittitle>Christianity – Reliance of,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">30</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24971">
-<did>
-        <unittitle>Christianity – As vocation,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">31</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24972">
-<did>
-        <unittitle>Christians,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">32</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24973">
-<did>
-        <unittitle>Church, Body of Christ,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">33</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24974">
-<did>
-        <unittitle>Church Membership,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">34</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24975">
-<did>
-        <unittitle>Church -  Local,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">35</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24976">
-<did>
-        <unittitle>Church - (blank),
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">36</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24977">
-<did>
-        <unittitle>The Commandments,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">37</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24978">
-<did>
-        <unittitle>Consecration,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">38</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24979">
-<did>
-        <unittitle>Criticism,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">39</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24980">
-<did>
-        <unittitle>Cross,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">40</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24981">
-<did>
-        <unittitle>Culture,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">41</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24982">
-<did>
-        <unittitle>Death,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">42</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24983">
-<did>
-        <unittitle>Decision - Choice,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">43</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24984">
-<did>
-        <unittitle>Democracy,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">44</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24985">
-<did>
-        <unittitle>Devotional,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">45</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24986">
-<did>
-        <unittitle>Discipleship,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">46</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24987">
-<did>
-        <unittitle>Discipleship – Evangelistic and Missionary,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">47</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24988">
-<did>
-        <unittitle>Drinking,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">48</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24989">
-<did>
-        <unittitle>Easter,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">49</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id24990">
-<did>
-        <unittitle>Economics,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">50</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24991">
-<did>
-        <unittitle>Emotional(?) factors in life,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">51</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24992">
-<did>
-        <unittitle>Ecumenical,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">52</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24993">
-<did>
-        <unittitle>Ecology,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">53</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24994">
-<did>
-        <unittitle>Education,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">54</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24995">
-<did>
-        <unittitle>Evangelism,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">55</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24996">
-<did>
-        <unittitle>Evangelistic,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">56</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id24997">
-<did>
-        <unittitle>Evangelism – Personal,
-</unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">57</container>
-    </did>
-
-</c04>
-
-</c03>
-<c03 level="file" id="id24999">
-<did>
-        <unittitle>Evil - Problem of Evil,
-</unittitle>
-		<container label="Box">2</container>
-    </did>
-<c04 level="file" id="id25001">
-<did>
-        <unittitle>Evil,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25002">
-<did>
-        <unittitle>Expository,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25003">
-<did>
-        <unittitle>Faith-Personal,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25004">
-<did>
-        <unittitle>Faith,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25005">
-<did>
-        <unittitle>Fellowship,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25006">
-<did>
-        <unittitle>Forgiveness,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25007">
-<did>
-        <unittitle>Freedom,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25008">
-<did>
-        <unittitle>Friendship,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25009">
-<did>
-        <unittitle>Fruits of Christian living,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25010">
-<did>
-        <unittitle>Gifts from God,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25011">
-<did>
-        <unittitle>God,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25012">
-<did>
-        <unittitle>God in Christ,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">12</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25013">
-<did>
-        <unittitle>God – Concept of,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">13</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25014">
-<did>
-        <unittitle>God – Love of,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">14</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25015">
-<did>
-        <unittitle>God – Nature of,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">15</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25016">
-<did>
-        <unittitle>God – Purpose and Will,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">16</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25017">
-<did>
-        <unittitle>Grace,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">17</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25018">
-<did>
-        <unittitle>History – Church and Biblical,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">18</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25019">
-<did>
-        <unittitle>Holy Spirit,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">19</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25020">
-<did>
-        <unittitle>Holy Week,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">20</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25021">
-<did>
-        <unittitle>Home and Family,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">21</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25022">
-<did>
-        <unittitle>Incarnation,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">22</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25023">
-<did>
-        <unittitle>Influence,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">23</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25024">
-<did>
-        <unittitle>Inspirational,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">24</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25025">
-<did>
-        <unittitle>Immortality,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">25</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25026">
-<did>
-        <unittitle>Integrity,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">26</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25027">
-<did>
-        <unittitle>Jesus Christ, Person of,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">27</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25028">
-<did>
-        <unittitle>Jesus – Man,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">28</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25029">
-<did>
-        <unittitle>Jesus – Ministry,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">29</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25030">
-<did>
-        <unittitle>Jesus Christ – Savior,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">30</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25031">
-<did>
-        <unittitle>Kingdom of God,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">31</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25032">
-<did>
-        <unittitle>Leadership – Christian,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">32</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25033">
-<did>
-        <unittitle>Leadership – Responsibility as Christians,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">33</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25034">
-<did>
-        <unittitle>Lent,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">34</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25035">
-<did>
-        <unittitle>Lent and Holy Week,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">35</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25036">
-<did>
-        <unittitle>Lenten Series,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">36</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25037">
-<did>
-        <unittitle>Life and Death,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">37</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25038">
-<did>
-        <unittitle>Lord’s Supper – General,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">38</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25039">
-<did>
-        <unittitle>Lord’s Supper - liturgical,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">39</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25040">
-<did>
-        <unittitle>Love,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">40</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25041">
-<did>
-        <unittitle>Love – Christian,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">41</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25042">
-<did>
-        <unittitle>Man,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">42</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25043">
-<did>
-        <unittitle>Man – Doctrine of,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">43</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25044">
-<did>
-        <unittitle>Maturity,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">44</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25045">
-<did>
-        <unittitle>Memorial,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">45</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25046">
-<did>
-        <unittitle>Mental Health,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">46</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25047">
-<did>
-        <unittitle>Ministry,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">47</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25049">
-<did>
-        <unittitle>Misfortune,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">48</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25050">
-<did>
-        <unittitle>Miracles,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">49</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25051">
-<did>
-        <unittitle>Miscellaneous,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">50</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25052">
-<did>
-        <unittitle>Missions,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">51</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25053">
-<did>
-        <unittitle>Morality and Ethics,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">52</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25054">
-<did>
-        <unittitle>Morality,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">53</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25055">
-<did>
-        <unittitle>Music,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">54</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25056">
-<did>
-        <unittitle>Nature,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">55</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25057">
-<did>
-        <unittitle>New Year,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">56</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25058">
-<did>
-        <unittitle>Occasional,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">57</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25059">
-<did>
-        <unittitle>Occult,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">58</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25060">
-<did>
-        <unittitle>Old Year,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">59</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25061">
-<did>
-        <unittitle>Palm Sunday,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">60</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25062">
-<did>
-        <unittitle>Pastoral (?),
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">61</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25063">
-<did>
-        <unittitle>Pastoral Ministry,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">62</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25064">
-<did>
-        <unittitle>Parenthood and Personality Development,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">63</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25065">
-<did>
-        <unittitle>Patriotic,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">64</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25066">
-<did>
-        <unittitle>Personal Identity,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">65</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25067">
-<did>
-        <unittitle>Person of Christ,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">66</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25068">
-<did>
-        <unittitle>Personal Living,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">67</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25069">
-<did>
-        <unittitle>Philosophy of Life,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">68</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25070">
-<did>
-        <unittitle>Preaching,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">69</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25071">
-<did>
-        <unittitle>Prayer,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">70</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25072">
-<did>
-        <unittitle>Principles,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">71</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25073">
-<did>
-        <unittitle>Problem of Evil,
-</unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">72</container>
-    </did>
-
-</c04>
-
-</c03>
-<c03 level="file" id="id25074">
-<did>
-        <unittitle>Providence (God’s Intervention in life) - Youth and the Church,
-</unittitle>
-		<container label="Box">3</container>
-    </did>
-    	<scopecontent>
-					<p>Box 3a and 3b
+          <p>The Spire.</p>
+        </scopecontent>
+        <c02 level="series" id="id61022">
+          <head>Series 1: Sermons</head>
+          <did>
+            <unittitle>Sermons,
+</unittitle>
+          </did>
+          <c03 level="file" id="id24940">
+            <did>
+              <unittitle>Advent - Evangelism (Personal),
+</unittitle>
+              <container label="Box">1</container>
+            </did>
+            <c04 level="file" id="id24941">
+              <did>
+                <unittitle>Advent,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">1</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24942">
+              <did>
+                <unittitle>Adversity,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">2</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24943">
+              <did>
+                <unittitle>Anniversary,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">3</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24944">
+              <did>
+                <unittitle>Art, Christian,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">4</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24945">
+              <did>
+                <unittitle>Authority,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">5</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24946">
+              <did>
+                <unittitle>Baccalaureate Sermon,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">6</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24947">
+              <did>
+                <unittitle>Baptist,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">7</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24948">
+              <did>
+                <unittitle>Baptism,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">8</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24949">
+              <did>
+                <unittitle>Beliefs,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">9</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24950">
+              <did>
+                <unittitle>Bible,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">10</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24951">
+              <did>
+                <unittitle>Biography - non-biblical,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">11</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24952">
+              <did>
+                <unittitle>Biography – biblical,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">12</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24953">
+              <did>
+                <unittitle>(Unmarked),
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">13</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24954">
+              <did>
+                <unittitle>Book Review,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">14</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24955">
+              <did>
+                <unittitle>Character – Personal,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">15</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24956">
+              <did>
+                <unittitle>Children,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">16</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24957">
+              <did>
+                <unittitle>Christ – As Lord of life,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">17</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24958">
+              <did>
+                <unittitle>Christ – Mind(?) of,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">18</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24959">
+              <did>
+                <unittitle>Christ – Work of,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">19</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24960">
+              <did>
+                <unittitle>Christian Citizenship,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">20</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24961">
+              <did>
+                <unittitle>Christian Experience,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">21</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24962">
+              <did>
+                <unittitle>Christian Education,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">22</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24963">
+              <did>
+                <unittitle>Christian Identity,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">23</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24964">
+              <did>
+                <unittitle>Christian Living,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">24</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24965">
+              <did>
+                <unittitle>Christians in the Church,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">25</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24966">
+              <did>
+                <unittitle>Christianity – as freedom,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">26</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24967">
+              <did>
+                <unittitle>Christianity in contemporary society,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">27</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24968">
+              <did>
+                <unittitle>Christianity – mind of,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">28</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24969">
+              <did>
+                <unittitle>Christianity - (blank),
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">29</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24970">
+              <did>
+                <unittitle>Christianity – Reliance of,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">30</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24971">
+              <did>
+                <unittitle>Christianity – As vocation,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">31</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24972">
+              <did>
+                <unittitle>Christians,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">32</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24973">
+              <did>
+                <unittitle>Church, Body of Christ,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">33</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24974">
+              <did>
+                <unittitle>Church Membership,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">34</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24975">
+              <did>
+                <unittitle>Church -  Local,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">35</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24976">
+              <did>
+                <unittitle>Church - (blank),
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">36</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24977">
+              <did>
+                <unittitle>The Commandments,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">37</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24978">
+              <did>
+                <unittitle>Consecration,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">38</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24979">
+              <did>
+                <unittitle>Criticism,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">39</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24980">
+              <did>
+                <unittitle>Cross,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">40</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24981">
+              <did>
+                <unittitle>Culture,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">41</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24982">
+              <did>
+                <unittitle>Death,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">42</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24983">
+              <did>
+                <unittitle>Decision - Choice,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">43</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24984">
+              <did>
+                <unittitle>Democracy,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">44</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24985">
+              <did>
+                <unittitle>Devotional,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">45</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24986">
+              <did>
+                <unittitle>Discipleship,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">46</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24987">
+              <did>
+                <unittitle>Discipleship – Evangelistic and Missionary,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">47</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24988">
+              <did>
+                <unittitle>Drinking,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">48</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24989">
+              <did>
+                <unittitle>Easter,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">49</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id24990">
+              <did>
+                <unittitle>Economics,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">50</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24991">
+              <did>
+                <unittitle>Emotional(?) factors in life,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">51</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24992">
+              <did>
+                <unittitle>Ecumenical,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">52</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24993">
+              <did>
+                <unittitle>Ecology,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">53</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24994">
+              <did>
+                <unittitle>Education,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">54</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24995">
+              <did>
+                <unittitle>Evangelism,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">55</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24996">
+              <did>
+                <unittitle>Evangelistic,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">56</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id24997">
+              <did>
+                <unittitle>Evangelism – Personal,
+</unittitle>
+                <container label="Box">1</container>
+                <container label="Folder">57</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file" id="id24999">
+            <did>
+              <unittitle>Evil - Problem of Evil,
+</unittitle>
+              <container label="Box">2</container>
+            </did>
+            <c04 level="file" id="id25001">
+              <did>
+                <unittitle>Evil,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">1</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25002">
+              <did>
+                <unittitle>Expository,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">2</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25003">
+              <did>
+                <unittitle>Faith-Personal,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">3</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25004">
+              <did>
+                <unittitle>Faith,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">4</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25005">
+              <did>
+                <unittitle>Fellowship,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">5</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25006">
+              <did>
+                <unittitle>Forgiveness,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">6</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25007">
+              <did>
+                <unittitle>Freedom,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">7</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25008">
+              <did>
+                <unittitle>Friendship,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">8</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25009">
+              <did>
+                <unittitle>Fruits of Christian living,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">9</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25010">
+              <did>
+                <unittitle>Gifts from God,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">10</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25011">
+              <did>
+                <unittitle>God,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">11</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25012">
+              <did>
+                <unittitle>God in Christ,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">12</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25013">
+              <did>
+                <unittitle>God – Concept of,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">13</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25014">
+              <did>
+                <unittitle>God – Love of,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">14</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25015">
+              <did>
+                <unittitle>God – Nature of,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">15</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25016">
+              <did>
+                <unittitle>God – Purpose and Will,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">16</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25017">
+              <did>
+                <unittitle>Grace,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">17</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25018">
+              <did>
+                <unittitle>History – Church and Biblical,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">18</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25019">
+              <did>
+                <unittitle>Holy Spirit,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">19</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25020">
+              <did>
+                <unittitle>Holy Week,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">20</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25021">
+              <did>
+                <unittitle>Home and Family,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">21</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25022">
+              <did>
+                <unittitle>Incarnation,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">22</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25023">
+              <did>
+                <unittitle>Influence,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">23</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25024">
+              <did>
+                <unittitle>Inspirational,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">24</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25025">
+              <did>
+                <unittitle>Immortality,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">25</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25026">
+              <did>
+                <unittitle>Integrity,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">26</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25027">
+              <did>
+                <unittitle>Jesus Christ, Person of,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">27</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25028">
+              <did>
+                <unittitle>Jesus – Man,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">28</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25029">
+              <did>
+                <unittitle>Jesus – Ministry,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">29</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25030">
+              <did>
+                <unittitle>Jesus Christ – Savior,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">30</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25031">
+              <did>
+                <unittitle>Kingdom of God,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">31</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25032">
+              <did>
+                <unittitle>Leadership – Christian,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">32</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25033">
+              <did>
+                <unittitle>Leadership – Responsibility as Christians,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">33</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25034">
+              <did>
+                <unittitle>Lent,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">34</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25035">
+              <did>
+                <unittitle>Lent and Holy Week,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">35</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25036">
+              <did>
+                <unittitle>Lenten Series,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">36</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25037">
+              <did>
+                <unittitle>Life and Death,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">37</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25038">
+              <did>
+                <unittitle>Lord’s Supper – General,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">38</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25039">
+              <did>
+                <unittitle>Lord’s Supper - liturgical,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">39</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25040">
+              <did>
+                <unittitle>Love,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">40</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25041">
+              <did>
+                <unittitle>Love – Christian,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">41</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25042">
+              <did>
+                <unittitle>Man,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">42</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25043">
+              <did>
+                <unittitle>Man – Doctrine of,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">43</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25044">
+              <did>
+                <unittitle>Maturity,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">44</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25045">
+              <did>
+                <unittitle>Memorial,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">45</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25046">
+              <did>
+                <unittitle>Mental Health,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">46</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25047">
+              <did>
+                <unittitle>Ministry,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">47</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25049">
+              <did>
+                <unittitle>Misfortune,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">48</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25050">
+              <did>
+                <unittitle>Miracles,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">49</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25051">
+              <did>
+                <unittitle>Miscellaneous,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">50</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25052">
+              <did>
+                <unittitle>Missions,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">51</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25053">
+              <did>
+                <unittitle>Morality and Ethics,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">52</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25054">
+              <did>
+                <unittitle>Morality,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">53</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25055">
+              <did>
+                <unittitle>Music,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">54</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25056">
+              <did>
+                <unittitle>Nature,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">55</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25057">
+              <did>
+                <unittitle>New Year,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">56</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25058">
+              <did>
+                <unittitle>Occasional,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">57</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25059">
+              <did>
+                <unittitle>Occult,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">58</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25060">
+              <did>
+                <unittitle>Old Year,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">59</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25061">
+              <did>
+                <unittitle>Palm Sunday,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">60</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25062">
+              <did>
+                <unittitle>Pastoral (?),
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">61</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25063">
+              <did>
+                <unittitle>Pastoral Ministry,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">62</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25064">
+              <did>
+                <unittitle>Parenthood and Personality Development,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">63</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25065">
+              <did>
+                <unittitle>Patriotic,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">64</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25066">
+              <did>
+                <unittitle>Personal Identity,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">65</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25067">
+              <did>
+                <unittitle>Person of Christ,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">66</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25068">
+              <did>
+                <unittitle>Personal Living,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">67</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25069">
+              <did>
+                <unittitle>Philosophy of Life,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">68</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25070">
+              <did>
+                <unittitle>Preaching,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">69</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25071">
+              <did>
+                <unittitle>Prayer,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">70</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25072">
+              <did>
+                <unittitle>Principles,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">71</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25073">
+              <did>
+                <unittitle>Problem of Evil,
+</unittitle>
+                <container label="Box">2</container>
+                <container label="Folder">72</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="file" id="id25074">
+            <did>
+              <unittitle>Providence (God’s Intervention in life) - Youth and the Church,
+</unittitle>
+              <container label="Box">3</container>
+            </did>
+            <scopecontent>
+              <p>Box 3a and 3b
 </p>
-					<p>Also contains 7 notebooks, which contain a chronological list of sermons and topics from 1952 to 1985.</p>
-    	</scopecontent>
-<c04 level="file" id="id25075">
-<did>
-        <unittitle>Providence-God’s Intervention in life,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25076">
-<did>
-        <unittitle>Race Relations,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25077">
-<did>
-        <unittitle>Radio,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25078">
-<did>
-        <unittitle>Redemption,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25079">
-<did>
-        <unittitle>Religion,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25080">
-<did>
-        <unittitle>Repentance,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25081">
-<did>
-        <unittitle>Respect for Persons,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25082">
-<did>
-        <unittitle>Responsibility,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25083">
-<did>
-        <unittitle>Resurrection,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25084">
-<did>
-        <unittitle>Rewards,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25085">
-<did>
-        <unittitle>Sacrifice,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25086">
-<did>
-        <unittitle>Salvation,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">12</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25087">
-<did>
-        <unittitle>Second Coming,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">13</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25088">
-<did>
-        <unittitle>Separation of Church and State,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">14</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25089">
-<did>
-        <unittitle>Science of Religion,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">15</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25090">
-<did>
-        <unittitle>Series,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">16</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25091">
-<did>
-        <unittitle>Sermon on the Mount,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">17</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25092">
-<did>
-        <unittitle>Sex,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">18</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25093">
-<did>
-        <unittitle>Sin,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">19</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25094">
-<did>
-        <unittitle>(Unknown),
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">20</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25095">
-<did>
-        <unittitle>Social work not from the…,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">21</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25096">
-<did>
-        <unittitle>Social Righteousness,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">22</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25097">
-<did>
-        <unittitle>Social (?) of Christianity,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">23</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25098">
-<did>
-        <unittitle>Southern Baptist Convention,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">24</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25099">
-<did>
-        <unittitle>Special Occasions,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">25</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25100">
-<did>
-        <unittitle>Stewardship,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">26</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25101">
-<did>
-        <unittitle>Student Sermons,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">27</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25102">
-<did>
-        <unittitle>Success,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">28</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25103">
-<did>
-        <unittitle>Thanksgiving,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">29</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25104">
-<did>
-        <unittitle>Theology,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">30</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25105">
-<did>
-        <unittitle>Trinity,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">31</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25106">
-<did>
-        <unittitle>Truth,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">32</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25107">
-<did>
-        <unittitle>Viewpoints,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">33</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25108">
-<did>
-        <unittitle>War and Peace,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">34</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25109">
-<did>
-        <unittitle>World Affairs,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">35</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25110">
-<did>
-        <unittitle>Words of the Christian Life,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">36</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25111">
-<did>
-        <unittitle>Worship,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">37</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25112">
-<did>
-        <unittitle>Youth,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">38</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25113">
-<did>
-        <unittitle>Youth and the Church,
-</unittitle>
-		<container label="Box">3</container>
-		<container label="Folder">39</container>
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-<c02 level="series" id="id61023">
-<head>Series 2: The Spire</head><did>
-        <unittitle>The Spire,
-</unittitle>
-    </did>
-<c03 level="file" id="id60950">
-<did>
-        <unittitle>The Spire,
-</unittitle>
-		<container label="Box">4</container>
-    </did>
-    	<scopecontent>
-					<p>Church Bulletin.</p>
-    	</scopecontent>
-
-</c03>
-
-</c02>
-
-</c01>
-<c01 level="item" id="id25114">
-<did>
-        <unittitle>Mss. Acc. 1999.30A Addition (Church Papers),
-</unittitle>
-    </did>
-    	<scopecontent>
-					<p>Papers of Thomas Pugh directly related to Williamsburg Baptist Church.</p>
-    	</scopecontent>
-<c02 level="file" id="id25116">
-<did>
-		<container label="Box">5</container>
-    </did>
-<c03 level="series" id="id25127">
-<head>Series 1: Attendance registry cards with notes or drawings on them</head><did>
-        <unittitle>Attendance registry cards with notes or drawings on them,
-</unittitle>
-		<container label="Box">5</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25128">
-<head>Series 2: Records of sale of “The Parson’s Page”</head><did>
-        <unittitle>Records of sale of “The Parson’s Page”,
-</unittitle>
-		<container label="Box">5</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25129">
-<head>Series 3: Cards from Thomas and Mary Pugh’s 50th wedding anniversary</head><did>
-        <unittitle>Cards from Thomas and Mary Pugh’s 50th wedding anniversary,
-</unittitle>
-		<container label="Box">5</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25130">
-<head>Series 4: General Thank you notes</head><did>
-        <unittitle>General Thank you notes,
-</unittitle>
-		<container label="Box">5</container>
-    </did>
-
-</c03>
-
-</c02>
-<c02 level="file" id="id25117">
-<did>
-		<container label="Box">6</container>
-    </did>
-<c03 level="series" id="id61019">
-<head>Series 5: Sermons, Speeches and Papers</head><did>
-        <unittitle>Sermons, Speeches and Papers,
-</unittitle>
-		<container label="Box">6</container>
-    </did>
-<c04 level="subseries" id="id25139">
-<head>Subseries 1: Speaking occasions in Community life</head><did>
-        <unittitle>Speaking occasions in Community life,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">1</container>
-    </did>
-
-</c04>
-<c04 level="subseries" id="id25140">
-<head>Subseries 2: Sermons</head><did>
-        <unittitle>Sermons,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">2</container>
-    </did>
-
-</c04>
-<c04 level="subseries" id="id25141">
-<head>Subseries 3: Sermon Manuscripts</head><did>
-        <unittitle>Sermon Manuscripts,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">3</container>
-    </did>
-
-</c04>
-<c04 level="subseries" id="id25147">
-<head>Subseries 9: Paper on cremation</head><did>
-        <unittitle>Paper on cremation,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">9</container>
-    </did>
-
-</c04>
-
-</c03>
-<c03 level="series" id="id61020">
-<head>Series 6: Correspondence</head><did>
-        <unittitle>Correspondence,
-</unittitle>
-		<container label="Box">6</container>
-    </did>
-<c04 level="subseries" id="id25144">
-<head>Subseries 1: Jim Windsor Correspondence</head><did>
-        <unittitle>Jim Windsor Correspondence,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">1</container>
-    </did>
-
-</c04>
-<c04 level="subseries" id="id25142">
-<head>Subseries 2: Birthday Cards</head><did>
-        <unittitle>Birthday Cards,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">2</container>
-    </did>
-
-</c04>
-<c04 level="subseries" id="id25143">
-<head>Subseries 4: Fathers’ Day Cards</head><did>
-        <unittitle>Fathers’ Day Cards,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">4</container>
-    </did>
-
-</c04>
-<c04 level="subseries" id="id25131">
-<head>Subseries 5: Letters to Thomas Pugh</head><did>
-        <unittitle>Letters to Thomas Pugh,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-    </did>
-<c05 level="file" id="id25132">
-<did>
-        <unittitle>1940s,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c05>
-<c05 level="file" id="id25133">
-<did>
-        <unittitle>1950s,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c05>
-<c05 level="file" id="id25134">
-<did>
-        <unittitle>1960s,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c05>
-<c05 level="file" id="id25135">
-<did>
-        <unittitle>1970s,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c05>
-<c05 level="file" id="id25136">
-<did>
-        <unittitle>1980s,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c05>
-<c05 level="file" id="id25137">
-<did>
-        <unittitle>Letters received re: retirement,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c05>
-<c05 level="file" id="id25138">
-<did>
-        <unittitle>1990s,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Sub-Series">5</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c05>
-
-</c04>
-
-</c03>
-<c03 level="series" id="id25146">
-<head>Series 7: Community life</head><did>
-        <unittitle>Community life,
-</unittitle>
-		<container label="Box">6</container>
-    </did>
-<c04 level="file" id="id61021">
-<did>
-        <unittitle>Community Life,
-</unittitle>
-		<container label="Box">6</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-<c02 level="file" id="id25118">
-<did>
-		<container label="Box">7</container>
-    </did>
-<c03 level="series" id="id61018">
-<head>Series 9: Printed Material in Folders</head><did>
-        <unittitle>Printed Material in Folders,
-</unittitle>
-		<container label="Box">7</container>
-    </did>
-<c04 level="file" id="id25149">
-<did>
-        <unittitle>Letters of E. Lloyd Pugh, 1992-2000,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25150">
-<did>
-        <unittitle>Copies of Marriage Ceremonies Used,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25151">
-<did>
-        <unittitle>2 Picture albums,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">3</container>
-    </did>
-    	<scopecontent>
-					<p>Includes pictures from Pugh’s service in World War II as a chaplain through to the 1990s.</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25152">
-<did>
-        <unittitle>“The Parson’s Page,” by Thomas E. Pugh,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c04>
-
-</c03>
-<c03 level="series" id="id25153">
-<head>Series 10: 4 sermons on magnetic tape (1/4 in)</head><did>
-        <unittitle>4 sermons on magnetic tape (1/4 in),
-</unittitle>
-		<container label="Box">7</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25154">
-<head>Series 11: Cards</head><did>
-        <unittitle>Cards,
-</unittitle>
-		<container label="Box">7</container>
-    </did>
-<c04 level="file" id="id25155">
-<did>
-        <unittitle>1990s,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">5</container>
-    </did>
-    	<scopecontent>
-					<p>Two folders</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="file" id="id25156">
-<did>
-        <unittitle>1980s,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25157">
-<did>
-        <unittitle>1970s,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25158">
-<did>
-        <unittitle>1960s,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25159">
-<did>
-        <unittitle>1950s,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25160">
-<did>
-        <unittitle>Prior to 1950,
-</unittitle>
-		<container label="Box">7</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-<c02 level="file" id="id25119">
-<did>
-		<container label="Box">8</container>
-    </did>
-
-</c02>
-<c02 level="series" id="id61065">
-<head>Series 12: Personal and Business Papers</head><did>
-        <unittitle>Personal and Business Papers,
-</unittitle>
-    </did>
-<c03 level="file" id="id25163">
-<did>
-        <unittitle>Williamsburg Baptist Church programs,
-</unittitle>
-		<container label="Folder">1</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25164">
-<did>
-        <unittitle>Pugh Papers,
-</unittitle>
-		<container label="Folder">2</container>
-    </did>
-    	<scopecontent>
-					<p>Included a Pugh Family lineage and a biographical sketch</p>
-    	</scopecontent>
-
-</c03>
-<c03 level="file" id="id25165">
-<did>
-        <unittitle>Churches,
-</unittitle>
-		<container label="Folder">3</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25166">
-<did>
-        <unittitle>University of Richmond,
-</unittitle>
-		<container label="Folder">4</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25167">
-<did>
-        <unittitle>Rotary Club,
-</unittitle>
-		<container label="Folder">5</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25168">
-<did>
-        <unittitle>50th Anniversary Reception,
-</unittitle>
-		<container label="Folder">6</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25169">
-<did>
-        <unittitle>Biographical,
-</unittitle>
-		<container label="Folder">7</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25170">
-<did>
-        <unittitle>Summer Place,
-</unittitle>
-		<container label="Folder">8</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25171">
-<did>
-        <unittitle>Yard Sale,
-</unittitle>
-		<container label="Folder">9</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25172">
-<did>
-        <unittitle>Fredericksburg Property,
-</unittitle>
-		<container label="Folder">10</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25173">
-<did>
-        <unittitle>Community,
-</unittitle>
-		<container label="Folder">11</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25174">
-<did>
-        <unittitle>The Parson’s Page reviews,
-</unittitle>
-		<container label="Folder">12</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25175">
-<did>
-        <unittitle>Sermons: Marriage and Family Life,
-</unittitle>
-		<container label="Folder">13</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25176">
-<did>
-        <unittitle>Miscellany,
-</unittitle>
-		<container label="Folder">14</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25177">
-<did>
-        <unittitle>Churches, letters and miscellany,
-</unittitle>
-		<container label="Folder">15</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25178">
-<did>
-        <unittitle>Diary-Summer, 1939,
-</unittitle>
-		<container label="Folder">16</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25179">
-<did>
-        <unittitle>Letters,
-</unittitle>
-		<container label="Folder">17</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25180">
-<did>
-        <unittitle>Letters of Recommendation,
-</unittitle>
-		<container label="Folder">18</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25181">
-<did>
-        <unittitle>Funeral Services and Related Materials,
-</unittitle>
-		<container label="Folder">19</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25182">
-<did>
-        <unittitle>Funeral Services Conducted,
-</unittitle>
-		<container label="Folder">20</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25183">
-<did>
-        <unittitle>Sermons,
-</unittitle>
-		<container label="Folder">21</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25184">
-<did>
-        <unittitle>Clergy Records of Funerals,
-</unittitle>
-		<container label="Folder">22</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25185">
-<did>
-        <unittitle>Services Conducted and/or Speaking occasions,
-</unittitle>
-		<container label="Folder">23</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25186">
-<did>
-        <unittitle>Williamsburg Baptist Conflict 1996-1999,
-</unittitle>
-		<container label="Folder">24</container>
-    </did>
-
-</c03>
-
-</c02>
-
-</c01>
-<c01 level="item" id="id25115">
-<did>
-        <unittitle>Mss. Acc. 1999.57A Addition (Personal Papers),
-</unittitle>
-    </did>
-    	<scopecontent>
-					<p>Personal Papers
+              <p>Also contains 7 notebooks, which contain a chronological list of sermons and topics from 1952 to 1985.</p>
+            </scopecontent>
+            <c04 level="file" id="id25075">
+              <did>
+                <unittitle>Providence-God’s Intervention in life,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">1</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25076">
+              <did>
+                <unittitle>Race Relations,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">2</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25077">
+              <did>
+                <unittitle>Radio,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">3</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25078">
+              <did>
+                <unittitle>Redemption,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">4</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25079">
+              <did>
+                <unittitle>Religion,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">5</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25080">
+              <did>
+                <unittitle>Repentance,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">6</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25081">
+              <did>
+                <unittitle>Respect for Persons,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">7</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25082">
+              <did>
+                <unittitle>Responsibility,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">8</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25083">
+              <did>
+                <unittitle>Resurrection,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">9</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25084">
+              <did>
+                <unittitle>Rewards,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">10</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25085">
+              <did>
+                <unittitle>Sacrifice,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">11</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25086">
+              <did>
+                <unittitle>Salvation,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">12</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25087">
+              <did>
+                <unittitle>Second Coming,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">13</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25088">
+              <did>
+                <unittitle>Separation of Church and State,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">14</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25089">
+              <did>
+                <unittitle>Science of Religion,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">15</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25090">
+              <did>
+                <unittitle>Series,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">16</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25091">
+              <did>
+                <unittitle>Sermon on the Mount,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">17</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25092">
+              <did>
+                <unittitle>Sex,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">18</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25093">
+              <did>
+                <unittitle>Sin,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">19</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25094">
+              <did>
+                <unittitle>(Unknown),
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">20</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25095">
+              <did>
+                <unittitle>Social work not from the…,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">21</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25096">
+              <did>
+                <unittitle>Social Righteousness,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">22</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25097">
+              <did>
+                <unittitle>Social (?) of Christianity,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">23</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25098">
+              <did>
+                <unittitle>Southern Baptist Convention,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">24</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25099">
+              <did>
+                <unittitle>Special Occasions,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">25</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25100">
+              <did>
+                <unittitle>Stewardship,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">26</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25101">
+              <did>
+                <unittitle>Student Sermons,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">27</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25102">
+              <did>
+                <unittitle>Success,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">28</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25103">
+              <did>
+                <unittitle>Thanksgiving,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">29</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25104">
+              <did>
+                <unittitle>Theology,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">30</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25105">
+              <did>
+                <unittitle>Trinity,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">31</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25106">
+              <did>
+                <unittitle>Truth,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">32</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25107">
+              <did>
+                <unittitle>Viewpoints,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">33</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25108">
+              <did>
+                <unittitle>War and Peace,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">34</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25109">
+              <did>
+                <unittitle>World Affairs,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">35</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25110">
+              <did>
+                <unittitle>Words of the Christian Life,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">36</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25111">
+              <did>
+                <unittitle>Worship,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">37</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25112">
+              <did>
+                <unittitle>Youth,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">38</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25113">
+              <did>
+                <unittitle>Youth and the Church,
+</unittitle>
+                <container label="Box">3</container>
+                <container label="Folder">39</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="series" id="id61023">
+          <head>Series 2: The Spire</head>
+          <did>
+            <unittitle>The Spire,
+</unittitle>
+          </did>
+          <c03 level="file" id="id60950">
+            <did>
+              <unittitle>The Spire,
+</unittitle>
+              <container label="Box">4</container>
+            </did>
+            <scopecontent>
+              <p>Church Bulletin.</p>
+            </scopecontent>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="item" id="id25114">
+        <did>
+          <unittitle>Mss. Acc. 1999.30A Addition (Church Papers),
+</unittitle>
+        </did>
+        <scopecontent>
+          <p>Papers of Thomas Pugh directly related to Williamsburg Baptist Church.</p>
+        </scopecontent>
+        <c02 level="file" id="id25116">
+          <did>
+            <container label="Box">5</container>
+          </did>
+          <c03 level="series" id="id25127">
+            <head>Series 1: Attendance registry cards with notes or drawings on them</head>
+            <did>
+              <unittitle>Attendance registry cards with notes or drawings on them,
+</unittitle>
+              <container label="Box">5</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25128">
+            <head>Series 2: Records of sale of “The Parson’s Page”</head>
+            <did>
+              <unittitle>Records of sale of “The Parson’s Page”,
+</unittitle>
+              <container label="Box">5</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25129">
+            <head>Series 3: Cards from Thomas and Mary Pugh’s 50th wedding anniversary</head>
+            <did>
+              <unittitle>Cards from Thomas and Mary Pugh’s 50th wedding anniversary,
+</unittitle>
+              <container label="Box">5</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25130">
+            <head>Series 4: General Thank you notes</head>
+            <did>
+              <unittitle>General Thank you notes,
+</unittitle>
+              <container label="Box">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file" id="id25117">
+          <did>
+            <container label="Box">6</container>
+          </did>
+          <c03 level="series" id="id61019">
+            <head>Series 5: Sermons, Speeches and Papers</head>
+            <did>
+              <unittitle>Sermons, Speeches and Papers,
+</unittitle>
+              <container label="Box">6</container>
+            </did>
+            <c04 level="subseries" id="id25139">
+              <head>Subseries 1: Speaking occasions in Community life</head>
+              <did>
+                <unittitle>Speaking occasions in Community life,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">1</container>
+              </did>
+            </c04>
+            <c04 level="subseries" id="id25140">
+              <head>Subseries 2: Sermons</head>
+              <did>
+                <unittitle>Sermons,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">2</container>
+              </did>
+            </c04>
+            <c04 level="subseries" id="id25141">
+              <head>Subseries 3: Sermon Manuscripts</head>
+              <did>
+                <unittitle>Sermon Manuscripts,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">3</container>
+              </did>
+            </c04>
+            <c04 level="subseries" id="id25147">
+              <head>Subseries 9: Paper on cremation</head>
+              <did>
+                <unittitle>Paper on cremation,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">9</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="series" id="id61020">
+            <head>Series 6: Correspondence</head>
+            <did>
+              <unittitle>Correspondence,
+</unittitle>
+              <container label="Box">6</container>
+            </did>
+            <c04 level="subseries" id="id25144">
+              <head>Subseries 1: Jim Windsor Correspondence</head>
+              <did>
+                <unittitle>Jim Windsor Correspondence,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">1</container>
+              </did>
+            </c04>
+            <c04 level="subseries" id="id25142">
+              <head>Subseries 2: Birthday Cards</head>
+              <did>
+                <unittitle>Birthday Cards,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">2</container>
+              </did>
+            </c04>
+            <c04 level="subseries" id="id25143">
+              <head>Subseries 4: Fathers’ Day Cards</head>
+              <did>
+                <unittitle>Fathers’ Day Cards,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">4</container>
+              </did>
+            </c04>
+            <c04 level="subseries" id="id25131">
+              <head>Subseries 5: Letters to Thomas Pugh</head>
+              <did>
+                <unittitle>Letters to Thomas Pugh,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Sub-Series">5</container>
+              </did>
+              <c05 level="file" id="id25132">
+                <did>
+                  <unittitle>1940s,
+</unittitle>
+                  <container label="Box">6</container>
+                  <container label="Sub-Series">5</container>
+                  <container label="Folder">1</container>
+                </did>
+              </c05>
+              <c05 level="file" id="id25133">
+                <did>
+                  <unittitle>1950s,
+</unittitle>
+                  <container label="Box">6</container>
+                  <container label="Sub-Series">5</container>
+                  <container label="Folder">2</container>
+                </did>
+              </c05>
+              <c05 level="file" id="id25134">
+                <did>
+                  <unittitle>1960s,
+</unittitle>
+                  <container label="Box">6</container>
+                  <container label="Sub-Series">5</container>
+                  <container label="Folder">3</container>
+                </did>
+              </c05>
+              <c05 level="file" id="id25135">
+                <did>
+                  <unittitle>1970s,
+</unittitle>
+                  <container label="Box">6</container>
+                  <container label="Sub-Series">5</container>
+                  <container label="Folder">4</container>
+                </did>
+              </c05>
+              <c05 level="file" id="id25136">
+                <did>
+                  <unittitle>1980s,
+</unittitle>
+                  <container label="Box">6</container>
+                  <container label="Sub-Series">5</container>
+                  <container label="Folder">5</container>
+                </did>
+              </c05>
+              <c05 level="file" id="id25137">
+                <did>
+                  <unittitle>Letters received re: retirement,
+</unittitle>
+                  <container label="Box">6</container>
+                  <container label="Sub-Series">5</container>
+                  <container label="Folder">6</container>
+                </did>
+              </c05>
+              <c05 level="file" id="id25138">
+                <did>
+                  <unittitle>1990s,
+</unittitle>
+                  <container label="Box">6</container>
+                  <container label="Sub-Series">5</container>
+                  <container label="Folder">7</container>
+                </did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="series" id="id25146">
+            <head>Series 7: Community life</head>
+            <did>
+              <unittitle>Community life,
+</unittitle>
+              <container label="Box">6</container>
+            </did>
+            <c04 level="file" id="id61021">
+              <did>
+                <unittitle>Community Life,
+</unittitle>
+                <container label="Box">6</container>
+                <container label="Folder">8</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file" id="id25118">
+          <did>
+            <container label="Box">7</container>
+          </did>
+          <c03 level="series" id="id61018">
+            <head>Series 9: Printed Material in Folders</head>
+            <did>
+              <unittitle>Printed Material in Folders,
+</unittitle>
+              <container label="Box">7</container>
+            </did>
+            <c04 level="file" id="id25149">
+              <did>
+                <unittitle>Letters of E. Lloyd Pugh, 1992-2000,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">1</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25150">
+              <did>
+                <unittitle>Copies of Marriage Ceremonies Used,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">2</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25151">
+              <did>
+                <unittitle>2 Picture albums,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">3</container>
+              </did>
+              <scopecontent>
+                <p>Includes pictures from Pugh’s service in World War II as a chaplain through to the 1990s.</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25152">
+              <did>
+                <unittitle>“The Parson’s Page,” by Thomas E. Pugh,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">4</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="series" id="id25153">
+            <head>Series 10: 4 sermons on magnetic tape (1/4 in)</head>
+            <did>
+              <unittitle>4 sermons on magnetic tape (1/4 in),
+</unittitle>
+              <container label="Box">7</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25154">
+            <head>Series 11: Cards</head>
+            <did>
+              <unittitle>Cards,
+</unittitle>
+              <container label="Box">7</container>
+            </did>
+            <c04 level="file" id="id25155">
+              <did>
+                <unittitle>1990s,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">5</container>
+              </did>
+              <scopecontent>
+                <p>Two folders</p>
+              </scopecontent>
+            </c04>
+            <c04 level="file" id="id25156">
+              <did>
+                <unittitle>1980s,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">6</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25157">
+              <did>
+                <unittitle>1970s,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">7</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25158">
+              <did>
+                <unittitle>1960s,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">8</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25159">
+              <did>
+                <unittitle>1950s,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">9</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25160">
+              <did>
+                <unittitle>Prior to 1950,
+</unittitle>
+                <container label="Box">7</container>
+                <container label="Folder">10</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file" id="id25119">
+          <did>
+            <container label="Box">8</container>
+          </did>
+        </c02>
+        <c02 level="series" id="id61065">
+          <head>Series 12: Personal and Business Papers</head>
+          <did>
+            <unittitle>Personal and Business Papers,
+</unittitle>
+          </did>
+          <c03 level="file" id="id25163">
+            <did>
+              <unittitle>Williamsburg Baptist Church programs,
+</unittitle>
+              <container label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25164">
+            <did>
+              <unittitle>Pugh Papers,
+</unittitle>
+              <container label="Folder">2</container>
+            </did>
+            <scopecontent>
+              <p>Included a Pugh Family lineage and a biographical sketch</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id25165">
+            <did>
+              <unittitle>Churches,
+</unittitle>
+              <container label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25166">
+            <did>
+              <unittitle>University of Richmond,
+</unittitle>
+              <container label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25167">
+            <did>
+              <unittitle>Rotary Club,
+</unittitle>
+              <container label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25168">
+            <did>
+              <unittitle>50th Anniversary Reception,
+</unittitle>
+              <container label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25169">
+            <did>
+              <unittitle>Biographical,
+</unittitle>
+              <container label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25170">
+            <did>
+              <unittitle>Summer Place,
+</unittitle>
+              <container label="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25171">
+            <did>
+              <unittitle>Yard Sale,
+</unittitle>
+              <container label="Folder">9</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25172">
+            <did>
+              <unittitle>Fredericksburg Property,
+</unittitle>
+              <container label="Folder">10</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25173">
+            <did>
+              <unittitle>Community,
+</unittitle>
+              <container label="Folder">11</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25174">
+            <did>
+              <unittitle>The Parson’s Page reviews,
+</unittitle>
+              <container label="Folder">12</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25175">
+            <did>
+              <unittitle>Sermons: Marriage and Family Life,
+</unittitle>
+              <container label="Folder">13</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25176">
+            <did>
+              <unittitle>Miscellany,
+</unittitle>
+              <container label="Folder">14</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25177">
+            <did>
+              <unittitle>Churches, letters and miscellany,
+</unittitle>
+              <container label="Folder">15</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25178">
+            <did>
+              <unittitle>Diary-Summer, 1939,
+</unittitle>
+              <container label="Folder">16</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25179">
+            <did>
+              <unittitle>Letters,
+</unittitle>
+              <container label="Folder">17</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25180">
+            <did>
+              <unittitle>Letters of Recommendation,
+</unittitle>
+              <container label="Folder">18</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25181">
+            <did>
+              <unittitle>Funeral Services and Related Materials,
+</unittitle>
+              <container label="Folder">19</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25182">
+            <did>
+              <unittitle>Funeral Services Conducted,
+</unittitle>
+              <container label="Folder">20</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25183">
+            <did>
+              <unittitle>Sermons,
+</unittitle>
+              <container label="Folder">21</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25184">
+            <did>
+              <unittitle>Clergy Records of Funerals,
+</unittitle>
+              <container label="Folder">22</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25185">
+            <did>
+              <unittitle>Services Conducted and/or Speaking occasions,
+</unittitle>
+              <container label="Folder">23</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25186">
+            <did>
+              <unittitle>Williamsburg Baptist Conflict 1996-1999,
+</unittitle>
+              <container label="Folder">24</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="item" id="id25115">
+        <did>
+          <unittitle>Mss. Acc. 1999.57A Addition (Personal Papers),
+</unittitle>
+        </did>
+        <scopecontent>
+          <p>Personal Papers
 </p>
-					<p>These are papers of Thomas Pugh that are not directly related to Williamsburg Baptist Church</p>
-    	</scopecontent>
-<c02 level="file" id="id25120">
-<did>
-		<container label="Box">9</container>
-    </did>
-<c03 level="series" id="id25187">
-<head>Series 1: Pictures of the entire chaplain school from when Pugh was there during WWII</head><did>
-        <unittitle>Pictures of the entire chaplain school from when Pugh was there during WWII,
+          <p>These are papers of Thomas Pugh that are not directly related to Williamsburg Baptist Church</p>
+        </scopecontent>
+        <c02 level="file" id="id25120">
+          <did>
+            <container label="Box">9</container>
+          </did>
+          <c03 level="series" id="id25187">
+            <head>Series 1: Pictures of the entire chaplain school from when Pugh was there during WWII</head>
+            <did>
+              <unittitle>Pictures of the entire chaplain school from when Pugh was there during WWII,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25188">
-<head>Series 2: &quot;Our Leave in Switzerland&quot;</head><did>
-        <unittitle>&quot;Our Leave in Switzerland&quot;,
+              <container label="Box">9</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25188">
+            <head>Series 2: "Our Leave in Switzerland"</head>
+            <did>
+              <unittitle>"Our Leave in Switzerland",
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25189">
-<head>Series 3: An issue of Cosmopolitan given to him by a member of the church</head><did>
-        <unittitle>An issue of Cosmopolitan given to him by a member of the church,
+              <container label="Box">9</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25189">
+            <head>Series 3: An issue of Cosmopolitan given to him by a member of the church</head>
+            <did>
+              <unittitle>An issue of Cosmopolitan given to him by a member of the church,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25190">
-<head>Series 4: Military Records and Memorabilia folder</head><did>
-        <unittitle>Military Records and Memorabilia folder,
+              <container label="Box">9</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25190">
+            <head>Series 4: Military Records and Memorabilia folder</head>
+            <did>
+              <unittitle>Military Records and Memorabilia folder,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25191">
-<head>Series 5: Various newspapers</head><did>
-        <unittitle>Various newspapers,
+              <container label="Box">9</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25191">
+            <head>Series 5: Various newspapers</head>
+            <did>
+              <unittitle>Various newspapers,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-<c04 level="item" id="id25192">
-<did>
-        <unittitle>Nixon’s Resignation,
+              <container label="Box">9</container>
+            </did>
+            <c04 level="item" id="id25192">
+              <did>
+                <unittitle>Nixon’s Resignation,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25193">
-<did>
-        <unittitle>1st Apollo moon landing,
+                <container label="Box">9</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25193">
+              <did>
+                <unittitle>1st Apollo moon landing,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25194">
-<did>
-        <unittitle>Assassination of JFK,
+                <container label="Box">9</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25194">
+              <did>
+                <unittitle>Assassination of JFK,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25195">
-<did>
-        <unittitle>Hurricane Floyd,
+                <container label="Box">9</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25195">
+              <did>
+                <unittitle>Hurricane Floyd,
 </unittitle>
-		<container label="Box">9</container>
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-<c02 level="file" id="id25121">
-<did>
-		<container label="Box">10</container>
-    </did>
-<c03 level="series" id="id61024">
-<head>Series 6: Personal Papers</head><did>
-        <unittitle>Personal Papers,
+                <container label="Box">9</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file" id="id25121">
+          <did>
+            <container label="Box">10</container>
+          </did>
+          <c03 level="series" id="id61024">
+            <head>Series 6: Personal Papers</head>
+            <did>
+              <unittitle>Personal Papers,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-<c04 level="item" id="id25196">
-<did>
-        <unittitle>25th anniversary of serving as pastor,
+              <container label="Box">10</container>
+            </did>
+            <c04 level="item" id="id25196">
+              <did>
+                <unittitle>25th anniversary of serving as pastor,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25197">
-<did>
-        <unittitle>Buchanan County Va.,
+                <container label="Box">10</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25197">
+              <did>
+                <unittitle>Buchanan County Va.,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25198">
-<did>
-        <unittitle>Life of Mary Decker Pugh,
+                <container label="Box">10</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25198">
+              <did>
+                <unittitle>Life of Mary Decker Pugh,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25199">
-<did>
-        <unittitle>Life of Thomas E. Pugh,
+                <container label="Box">10</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25199">
+              <did>
+                <unittitle>Life of Thomas E. Pugh,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-    	<scopecontent>
-					<p>Includes a picture of Bill Clinton</p>
-    	</scopecontent>
-
-</c04>
-<c04 level="item" id="id25200">
-<did>
-        <unittitle>Life of the Church,
+                <container label="Box">10</container>
+              </did>
+              <scopecontent>
+                <p>Includes a picture of Bill Clinton</p>
+              </scopecontent>
+            </c04>
+            <c04 level="item" id="id25200">
+              <did>
+                <unittitle>Life of the Church,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25201">
-<did>
-        <unittitle>Life in the Community,
+                <container label="Box">10</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25201">
+              <did>
+                <unittitle>Life in the Community,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c04>
-
-</c03>
-<c03 level="series" id="id61025">
-<head>Series 7: Travel</head><did>
-        <unittitle>Travel,
+                <container label="Box">10</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="series" id="id61025">
+            <head>Series 7: Travel</head>
+            <did>
+              <unittitle>Travel,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-<c04 level="file" id="id25204">
-<did>
-        <unittitle>Miscellany of Ted’s Bits,
+              <container label="Box">10</container>
+            </did>
+            <c04 level="file" id="id25204">
+              <did>
+                <unittitle>Miscellany of Ted’s Bits,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25213">
-<did>
-        <unittitle>Nova Scotia trip 1989,
+                <container label="Box">10</container>
+                <container label="Folder">1</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25213">
+              <did>
+                <unittitle>Nova Scotia trip 1989,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25214">
-<did>
-        <unittitle>Virginia,
+                <container label="Box">10</container>
+                <container label="Folder">2</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25214">
+              <did>
+                <unittitle>Virginia,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25215">
-<did>
-        <unittitle>New England,
+                <container label="Box">10</container>
+                <container label="Folder">3</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25215">
+              <did>
+                <unittitle>New England,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25216">
-<did>
-        <unittitle>South Carolina,
+                <container label="Box">10</container>
+                <container label="Folder">4</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25216">
+              <did>
+                <unittitle>South Carolina,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25217">
-<did>
-        <unittitle>Travel information-miscellaneous,
+                <container label="Box">10</container>
+                <container label="Folder">5</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25217">
+              <did>
+                <unittitle>Travel information-miscellaneous,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25218">
-<did>
-        <unittitle>Georgia,
+                <container label="Box">10</container>
+                <container label="Folder">6</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25218">
+              <did>
+                <unittitle>Georgia,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25219">
-<did>
-        <unittitle>North Carolina,
+                <container label="Box">10</container>
+                <container label="Folder">7</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25219">
+              <did>
+                <unittitle>North Carolina,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25220">
-<did>
-        <unittitle>Blue Ridge Parkway,
+                <container label="Box">10</container>
+                <container label="Folder">8</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25220">
+              <did>
+                <unittitle>Blue Ridge Parkway,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25221">
-<did>
-        <unittitle>Maps from different trips,
+                <container label="Box">10</container>
+                <container label="Folder">9</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25221">
+              <did>
+                <unittitle>Maps from different trips,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c04>
-
-</c03>
-<c03 level="series" id="id61027">
-<head>Series 8: Church related</head><did>
-        <unittitle>Church related,
+                <container label="Box">10</container>
+                <container label="Folder">10</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="series" id="id61027">
+            <head>Series 8: Church related</head>
+            <did>
+              <unittitle>Church related,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-<c04 level="file" id="id25222">
-<did>
-        <unittitle>Peninsula Baptist Association,
+              <container label="Box">10</container>
+            </did>
+            <c04 level="file" id="id25222">
+              <did>
+                <unittitle>Peninsula Baptist Association,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25203">
-<did>
-        <unittitle>Drawing of Cannon Memorial Chapel, University of Richmond,
+                <container label="Box">10</container>
+                <container label="Folder">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25203">
+              <did>
+                <unittitle>Drawing of Cannon Memorial Chapel, University of Richmond,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25208">
-<did>
-        <unittitle>Character of the Clergy of Colonial Virginia,
+                <container label="Box">10</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25208">
+              <did>
+                <unittitle>Character of the Clergy of Colonial Virginia,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c04>
-
-</c03>
-<c03 level="series" id="id25207">
-<head>Series 9: Williamsburg Community Hospital and Williamsburg Community Health Foundation</head><did>
-        <unittitle>Williamsburg Community Hospital and Williamsburg Community Health Foundation,
+                <container label="Box">10</container>
+              </did>
+            </c04>
+          </c03>
+          <c03 level="series" id="id25207">
+            <head>Series 9: Williamsburg Community Hospital and Williamsburg Community Health Foundation</head>
+            <did>
+              <unittitle>Williamsburg Community Hospital and Williamsburg Community Health Foundation,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25205">
-<head>Series 10: Concerning Pugh&#039;s Book</head><did>
-        <unittitle>Concerning Pugh&#039;s Book,
+              <container label="Box">10</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25205">
+            <head>Series 10: Concerning Pugh's Book</head>
+            <did>
+              <unittitle>Concerning Pugh's Book,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25206">
-<head>Series 11: Clippings</head><did>
-        <unittitle>Clippings,
+              <container label="Box">10</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25206">
+            <head>Series 11: Clippings</head>
+            <did>
+              <unittitle>Clippings,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-
-</c03>
-<c03 level="series" id="id25209">
-<head>Series 12: Mary Decker Pugh folders</head><did>
-        <unittitle>Mary Decker Pugh folders,
+              <container label="Box">10</container>
+            </did>
+          </c03>
+          <c03 level="series" id="id25209">
+            <head>Series 12: Mary Decker Pugh folders</head>
+            <did>
+              <unittitle>Mary Decker Pugh folders,
 </unittitle>
-		<container label="Box">10</container>
-    </did>
-<c04 level="file" id="id25211">
-<did>
-        <unittitle>Bettie Grey correspondence,
+              <container label="Box">10</container>
+            </did>
+            <c04 level="file" id="id25211">
+              <did>
+                <unittitle>Bettie Grey correspondence,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25210">
-<did>
-        <unittitle>Binder of papers written by Mary and Thomas,
+                <container label="Box">10</container>
+                <container label="Folder">1</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25210">
+              <did>
+                <unittitle>Binder of papers written by Mary and Thomas,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c04>
-<c04 level="file" id="id25212">
-<did>
-        <unittitle>David Little correspondence,
+                <container label="Box">10</container>
+                <container label="Folder">2</container>
+              </did>
+            </c04>
+            <c04 level="file" id="id25212">
+              <did>
+                <unittitle>David Little correspondence,
 </unittitle>
-		<container label="Box">10</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-<c02 level="file" id="id25123">
-<did>
-		<container label="Box">11</container>
-    </did>
-<c03 level="series" id="id61067">
-<head>Series 13: Personal Papers</head><did>
-        <unittitle>Personal Papers,
+                <container label="Box">10</container>
+                <container label="Folder">3</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file" id="id25123">
+          <did>
+            <container label="Box">11</container>
+          </did>
+          <c03 level="series" id="id61067">
+            <head>Series 13: Personal Papers</head>
+            <did>
+              <unittitle>Personal Papers,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-<c04 level="item" id="id25224">
-<did>
-        <unittitle>Picture of “Summer home on Piankitank River across from Gwynn’s Island”,
+              <container label="Box">11</container>
+            </did>
+            <c04 level="item" id="id25224">
+              <did>
+                <unittitle>Picture of “Summer home on Piankitank River across from Gwynn’s Island”,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25225">
-<did>
-        <unittitle>Guest book for the 25th anniversary of Mary and Tom Pugh,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25225">
+              <did>
+                <unittitle>Guest book for the 25th anniversary of Mary and Tom Pugh,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25226">
-<did>
-        <unittitle>Scrapbook of newspaper clippings, drivers licenses, and other personal items,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25226">
+              <did>
+                <unittitle>Scrapbook of newspaper clippings, drivers licenses, and other personal items,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25227">
-<did>
-        <unittitle>Wedding gift registry,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25227">
+              <did>
+                <unittitle>Wedding gift registry,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25228">
-<did>
-        <unittitle>Picture of Pugh in his “Wedding suit”,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25228">
+              <did>
+                <unittitle>Picture of Pugh in his “Wedding suit”,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25229">
-<did>
-        <unittitle>Life Magazine from the Kennedy Assassination,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25229">
+              <did>
+                <unittitle>Life Magazine from the Kennedy Assassination,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25230">
-<did>
-        <unittitle>Life Magazine from Kennedy’s funeral,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25230">
+              <did>
+                <unittitle>Life Magazine from Kennedy’s funeral,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-<c04 level="item" id="id25231">
-<did>
-        <unittitle>Copy of Pugh’s parents’ marriage license,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+            <c04 level="item" id="id25231">
+              <did>
+                <unittitle>Copy of Pugh’s parents’ marriage license,
 </unittitle>
-		<container label="Box">11</container>
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-<c02 level="file" id="id60957">
-<did>
-		<container label="Box">12</container>
-    </did>
-<c03 level="series" id="id61017">
-<head>Series 14: Scrapbooks</head><did>
-        <unittitle>Scrapbooks,
+                <container label="Box">11</container>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="file" id="id60957">
+          <did>
+            <container label="Box">12</container>
+          </did>
+          <c03 level="series" id="id61017">
+            <head>Series 14: Scrapbooks</head>
+            <did>
+              <unittitle>Scrapbooks,
 </unittitle>
-		<container label="Box">12</container>
-    </did>
-    	<scopecontent>
-					<p>Scrapbooks of photographs and other items.  Labels include &quot;Church,&quot; &quot;Community,&quot; &quot;MDP&quot; and &quot;TEP.&quot;</p>
-    	</scopecontent>
-
-</c03>
-
-</c02>
-
-</c01>
-<c01 level="item" id="id60941">
-<did>
-        <unittitle>Mss. Acc.  2000.62A Addition (Personal Papers, Memo Books),
+              <container label="Box">12</container>
+            </did>
+            <scopecontent>
+              <p>Scrapbooks of photographs and other items.  Labels include "Church," "Community," "MDP" and "TEP."</p>
+            </scopecontent>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="item" id="id60941">
+        <did>
+          <unittitle>Mss. Acc.  2000.62A Addition (Personal Papers, Memo Books),
 </unittitle>
-    </did>
-    	<scopecontent>
-					<p>Personal Papers  and memo books.
+        </did>
+        <scopecontent>
+          <p>Personal Papers  and memo books.
 </p>
-					<p>Items from Pugh&#039;s days at the University of Richmond and his post-retirement years in Williamsburg.  Includes Memo books from 1950-1998.</p>
-    	</scopecontent>
-<c02 level="file" id="id25126">
-<did>
-		<container label="Box">13</container>
-    </did>
-<c03 level="file" id="id25233">
-<did>
-        <unittitle>Peninsula Association History,
+          <p>Items from Pugh's days at the University of Richmond and his post-retirement years in Williamsburg.  Includes Memo books from 1950-1998.</p>
+        </scopecontent>
+        <c02 level="file" id="id25126">
+          <did>
+            <container label="Box">13</container>
+          </did>
+          <c03 level="file" id="id25233">
+            <did>
+              <unittitle>Peninsula Association History,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25234">
-<did>
-        <unittitle>Sermon: Reflections on politics and religion,
+              <container label="Box">13</container>
+              <container label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25234">
+            <did>
+              <unittitle>Sermon: Reflections on politics and religion,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25235">
-<did>
-        <unittitle>Religious Emphasis: Mary Washington College,
+              <container label="Box">13</container>
+              <container label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25235">
+            <did>
+              <unittitle>Religious Emphasis: Mary Washington College,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25236">
-<did>
-        <unittitle>Race Relations,
+              <container label="Box">13</container>
+              <container label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25236">
+            <did>
+              <unittitle>Race Relations,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25237">
-<did>
-        <unittitle>Paper on cremation,
+              <container label="Box">13</container>
+              <container label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25237">
+            <did>
+              <unittitle>Paper on cremation,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25238">
-<did>
-        <unittitle>Hands,
+              <container label="Box">13</container>
+              <container label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25238">
+            <did>
+              <unittitle>Hands,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25239">
-<did>
-        <unittitle>Introductory notes on The Philosopher Motse,
+              <container label="Box">13</container>
+              <container label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25239">
+            <did>
+              <unittitle>Introductory notes on The Philosopher Motse,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25240">
-<did>
-        <unittitle>Main Themes in the Tao The Ching,
+              <container label="Box">13</container>
+              <container label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25240">
+            <did>
+              <unittitle>Main Themes in the Tao The Ching,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25241">
-<did>
-        <unittitle>The Buddhist Parable of the Seeking Father,
+              <container label="Box">13</container>
+              <container label="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25241">
+            <did>
+              <unittitle>The Buddhist Parable of the Seeking Father,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25242">
-<did>
-        <unittitle>Motse’s Essay on “Universal Reciprocal Love”,
+              <container label="Box">13</container>
+              <container label="Folder">9</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25242">
+            <did>
+              <unittitle>Motse’s Essay on “Universal Reciprocal Love”,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25243">
-<did>
-        <unittitle>The Christian Faith and American Science,
+              <container label="Box">13</container>
+              <container label="Folder">10</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25243">
+            <did>
+              <unittitle>The Christian Faith and American Science,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25244">
-<did>
-        <unittitle>An Outline of “Beliefs that Matter”,
+              <container label="Box">13</container>
+              <container label="Folder">11</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25244">
+            <did>
+              <unittitle>An Outline of “Beliefs that Matter”,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">12</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25245">
-<did>
-        <unittitle>Church Management,
+              <container label="Box">13</container>
+              <container label="Folder">12</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25245">
+            <did>
+              <unittitle>Church Management,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">13</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25246">
-<did>
-        <unittitle>Jesus’ Conception of God…,
+              <container label="Box">13</container>
+              <container label="Folder">13</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25246">
+            <did>
+              <unittitle>Jesus’ Conception of God…,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">14</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25247">
-<did>
-        <unittitle>The Christian Revelation of God through Jesus,
+              <container label="Box">13</container>
+              <container label="Folder">14</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25247">
+            <did>
+              <unittitle>The Christian Revelation of God through Jesus,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">15</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25248">
-<did>
-        <unittitle>Historical Sketch of the Peninsula Baptist Association,
+              <container label="Box">13</container>
+              <container label="Folder">15</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25248">
+            <did>
+              <unittitle>Historical Sketch of the Peninsula Baptist Association,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">16</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25249">
-<did>
-        <unittitle>Williamsburg Baptist Church Pastor 1952-1981,
+              <container label="Box">13</container>
+              <container label="Folder">16</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25249">
+            <did>
+              <unittitle>Williamsburg Baptist Church Pastor 1952-1981,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">17</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25250">
-<did>
-        <unittitle>1916 Flat Hat,
+              <container label="Box">13</container>
+              <container label="Folder">17</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25250">
+            <did>
+              <unittitle>1916 Flat Hat,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">18</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25251">
-<did>
-        <unittitle>Notes and Quotes – Miscellaneous Subjects,
+              <container label="Box">13</container>
+              <container label="Folder">18</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25251">
+            <did>
+              <unittitle>Notes and Quotes – Miscellaneous Subjects,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">19</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25252">
-<did>
-        <unittitle>Miscellaneous Letters and Cards,
+              <container label="Box">13</container>
+              <container label="Folder">19</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25252">
+            <did>
+              <unittitle>Miscellaneous Letters and Cards,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">20</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25253">
-<did>
-        <unittitle>WBC – History, etc.,
+              <container label="Box">13</container>
+              <container label="Folder">20</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25253">
+            <did>
+              <unittitle>WBC – History, etc.,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">21</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25254">
-<did>
-        <unittitle>WBC Miscellaneous items,
+              <container label="Box">13</container>
+              <container label="Folder">21</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25254">
+            <did>
+              <unittitle>WBC Miscellaneous items,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">22</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25255">
-<did>
-        <unittitle>Letters – Miscellaneous of Special Interest,
+              <container label="Box">13</container>
+              <container label="Folder">22</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25255">
+            <did>
+              <unittitle>Letters – Miscellaneous of Special Interest,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">23</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25256">
-<did>
-        <unittitle>Funeral of R. Lawrence Caldwell,
+              <container label="Box">13</container>
+              <container label="Folder">23</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25256">
+            <did>
+              <unittitle>Funeral of R. Lawrence Caldwell,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">24</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25257">
-<did>
-        <unittitle>Golf,
+              <container label="Box">13</container>
+              <container label="Folder">24</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25257">
+            <did>
+              <unittitle>Golf,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">25</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25258">
-<did>
-        <unittitle>Health Foundation of Wmbg. Community,
+              <container label="Box">13</container>
+              <container label="Folder">25</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25258">
+            <did>
+              <unittitle>Health Foundation of Wmbg. Community,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">26</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25259">
-<did>
-        <unittitle>Notes and Quotes,
+              <container label="Box">13</container>
+              <container label="Folder">26</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25259">
+            <did>
+              <unittitle>Notes and Quotes,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">27</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id25260">
-<did>
-        <unittitle>Williamsburg Community Hospital,
+              <container label="Box">13</container>
+              <container label="Folder">27</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id25260">
+            <did>
+              <unittitle>Williamsburg Community Hospital,
 </unittitle>
-		<container label="Box">13</container>
-		<container label="Folder">28</container>
-    </did>
-
-</c03>
-
-</c02>
-
-</c01>
-<c01 level="item" id="id60942">
-<did>
-        <unittitle>Mss. Acc. 2000.32 Addition (WHRA Speech, News Clipping),
+              <container label="Box">13</container>
+              <container label="Folder">28</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="item" id="id60942">
+        <did>
+          <unittitle>Mss. Acc. 2000.32 Addition (WHRA Speech, News Clipping),
 </unittitle>
-    </did>
-    	<scopecontent>
-					<p>Copy of outline of speech given to Williamsburg Historic Records Association by Rev. Thomas Pugh in 2000.  Newspaper clipping reminiscences of Williamsburg before the restoration by Mayor Henry Stryker.</p>
-    	</scopecontent>
-
-</c01>
-<c01 level="item" id="id60944">
-<did>
-        <unittitle>Mss. Acc. 2004.38 Addition (Mary Decker Pugh Death),
-        <unitdate>2004</unitdate>,
+        </did>
+        <scopecontent>
+          <p>Copy of outline of speech given to Williamsburg Historic Records Association by Rev. Thomas Pugh in 2000.  Newspaper clipping reminiscences of Williamsburg before the restoration by Mayor Henry Stryker.</p>
+        </scopecontent>
+      </c01>
+      <c01 level="item" id="id60944">
+        <did>
+          <unittitle>Mss. Acc. 2004.38 Addition (Mary Decker Pugh Death),
+        <unitdate era="ce" calendar="gregorian">2004</unitdate>,
 </unittitle>
-    </did>
-    	<scopecontent>
-					<p>Obituaries of Mary Decker Pugh from the Daily Press, 6/22/2004 and the Virginia Gazette, 6/23/2004, Bulletin from the funeral service and a photocopy of the hymn sung at the funeral service.</p>
-    	</scopecontent>
-
-</c01>
-<c01 level="item" id="id61015">
-<did>
-        <unittitle>Mss. Acc. 2007.33 Addition,
-        <unitdate>1999-2002</unitdate>,
+        </did>
+        <scopecontent>
+          <p>Obituaries of Mary Decker Pugh from the Daily Press, 6/22/2004 and the Virginia Gazette, 6/23/2004, Bulletin from the funeral service and a photocopy of the hymn sung at the funeral service.</p>
+        </scopecontent>
+      </c01>
+      <c01 level="item" id="id61015">
+        <did>
+          <unittitle>Mss. Acc. 2007.33 Addition,
+        <unitdate era="ce" calendar="gregorian">1999-2002</unitdate>,
 </unittitle>
-    </did>
-    	<scopecontent>
-					<p>Williamsburg Community Hospital&#039;s resolution in honor of Thomas Pugh, plus other material relating to the Hospital.  Correspondence, news clippings and other material relating to Thomas Pugh&#039;s Williamsburg activities.</p>
-    	</scopecontent>
-
-</c01>
-
-</dsc>
-
-<!-- END SUBORDINATE COMPONENTS -->
-</archdesc>
-</ead>
-<!-- footer.inc.php -->
-
+        </did>
+        <scopecontent>
+          <p>Williamsburg Community Hospital's resolution in honor of Thomas Pugh, plus other material relating to the Hospital.  Correspondence, news clippings and other material relating to Thomas Pugh's Williamsburg activities.</p>
+        </scopecontent>
+      </c01>
+    </dsc>
+    <!-- END SUBORDINATE COMPONENTS -->
+  </archdesc>
+</ead><!-- footer.inc.php -->

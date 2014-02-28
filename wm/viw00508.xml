@@ -1,1233 +1,1026 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl" ?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/wm/vivadoc.pl?file=viw00508.xml" NDATA html>
-]>
-<ead id="viw00508">
-<eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
-	<eadid mainagencycode="VWM" countrycode="us">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00508:: School of Arts and Sciences Records, 1926-2008)//EN" "viw00508.xml"</eadid>
-	<filedesc>
-<titlestmt>
-	<titleproper>Inventory of the School of Arts and Sciences Records <date>1926-2008</date>
-	</titleproper>
-	<subtitle id="sort">
-		Arts and Science, Dept. of		<num type="collectionnumber">UA 310</num>
-	</subtitle>
-</titlestmt>
-<publicationstmt>
-	<publisher>Earl Gregg Swem Library, College of William and Mary</publisher> &address;
-	<date type="publication">&copy; 2012 By the College of William and Mary. All rights reserved.</date>
-	<p id="usestatement">
-		<extref entityref="conditions">Conditions of Use</extref>
-	</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-	<creation>Finding aid created by Special Collections Staff, <date>2007</date></creation>
-	<langusage>Description is in
-		<language langcode="eng">English</language>
-	</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-	<titlepage>
-		<titleproper>Inventory of the School of Arts and Sciences Records, <date>1926-2008</date></titleproper>
-		<subtitle>A Collection in the<lb/>Special Collections Research Center
-			<num type="Accession Number">UA 310</num>
-		</subtitle>
-		<p id="logostmt">
-			<extptr actuate="onload" show="embed" entityref="logo"/>
-		</p>
-		<publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
-		<date type="publication">2012</date> &contact;
-		<list type="deflist">
-			<defitem>
-				<label>Processed By</label>
-				<item>Special Collections Staff.</item>
-			</defitem>
-		</list>
-	</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-		<corpname>Special Collections Research Center</corpname>
-</repository>
-	<unittitle label="Title:" encodinganalog="245$a">School of Arts and Sciences Records	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1926-[ongoing]</unitdate>
-</unittitle>
-<unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">00/02/01/22/UA 310</unitid>
-	<physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Cubic Feet">32.60</extent></physdesc>
-	<langmaterial encodinganalog="546" label="Language of Materials">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00508">
+  <eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
+    <eadid mainagencycode="US-VWM" countrycode="US">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00508:: School of Arts and Sciences Records, 1926-2008)//EN" "viw00508.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the School of Arts and Sciences Records <date era="ce" calendar="gregorian">1926-2008</date></titleproper>
+        <subtitle id="sort">
+		Arts and Science, Dept. of		<num type="collectionnumber">UA 310</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012 By the College of William and Mary. All rights reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Finding aid created by Special Collections Staff, <date era="ce" calendar="gregorian">2007</date></creation>
+      <langusage>Description is in
+		<language langcode="eng">English</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the School of Arts and Sciences Records, <date era="ce" calendar="gregorian">1926-2008</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
+			<num type="Accession Number">UA 310</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2012</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed By</label>
+          <item>Special Collections Staff.</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">School of Arts and Sciences Records	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1926-[ongoing]</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">00/02/01/22/UA 310</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Cubic Feet">32.60</extent>
+      </physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	  The records are in:
-<language langcode="eng">English</language>
-	</langmaterial>
-		<origination label="Creator:">
-		<corpname encodinganalog="110">School of Arts and Sciences</corpname>
-		<corpname encodinganalog="110">College of William and Mary. Dean of the Faculty of Arts and Sciences</corpname>
+<language langcode="eng">English</language></langmaterial>
+      <origination label="Creator:"><corpname encodinganalog="110">School of Arts and Sciences</corpname><corpname encodinganalog="110">College of William and Mary. Dean of the Faculty of Arts and Sciences</corpname>
 arrangement
 	</origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information</head>
-<!-- ADMINISTRATIVE INFORMATION -->
-<accessrestrict encodinganalog="506">
-	<head>Conditions Governing Access</head>
-	<p>This collection contains material which may be restricted related to personnel matters, student records, or other reasons. A Special Collections Research Center staff member must review the collection for restricted material before any researchers may use the collection. Consult a staff member for assistance.</p>
-</accessrestrict>
-<userestrict encodinganalog="540">
-	<head>Conditions Governing Use</head>
-	<p>Before reproducing or quoting from any materials, in whole or in part, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
-</userestrict>
-<prefercite encodinganalog="510">
-	<head>Preferred Citation</head>
-	<p>Dept. of Arts and Science Records, Special Collections Research Center, Earl Gregg Swem Library, College of William and Mary.</p>
-</prefercite>
-<custodhist encodinganalog="561">
-	<head>Custodial History</head>
-	<p>This material was previously part of the University Archives Publications Collection.</p>
-</custodhist>
-<processinfo encodinganalog="583">
-	<head>Processing Information</head>
-	<p>A box and folder list was created by Patricia Sanabria, SCRC Staff, in August 2009.</p>
-</processinfo>
-<!-- END ADMINISTRATIVE INFORMATION -->
-</descgrp>
-<!--COLLECTION LEVEL METADATA: -->
-<bioghist altrender="Historical Note" encodinganalog="545"><head>Historical Note</head>
-  <p>The arts and sciences comprise humanity&#039;s most fundamental and esoteric knowledge, and embrace the creative, reasoning, and analytical processes that are central to shaping our future.Arts &amp; Sciences is the College&#039;s largest academic unit, with several dozen departments and interdisciplinary programs. Further information about this individual or organization may be available in the Special Collections Research Center Wiki: &lt;a href=&quot;http://scrc.swem.wm.edu/wiki/index.php/School of Arts and Sciences&quot;&gt;http://scrc.swem.wm.edu/wiki/index.php/School of Arts and Sciences&lt;/a&gt;.</p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>The collection contains minutes, by-laws, correspondence, and subject files from Arts and Sciences. Included in the collection are Faculty Minutes from 1926 to the present; American Culture Cluster lectures; by-laws; and material from various committees. &lt;p&gt;	Also present in the collection is correspondence from the Dean, as well as subject files on degree requirements, the Sharpe Community Partnership Program, and other topics.&lt;p&gt;	Acc. 2010.434: Contains correspondence from the Dean of Arts and Sciences to various professors in departments at the College of William  Mary from 1964 to 2004.&lt;p&gt;	Acc. 2010.435: Contains correspondence from the Dean of Arts and Sciences to various departments in the School of Arts and Sciences at the College of William and Mary from 1988 to 2008. &lt;p&gt;	Acc. 2010.632: Contains correspondence between the Dean of Arts and Sciences and various faculty members; minutes from meetings of the faculty of Arts and Sciences; and subject files related to strategic planning from 1994 to 1996. A box list inventory for this accession is available in the digital content line below. &lt;p&gt;</p>
-</scopecontent>
-<descgrp type="add">
-	<head>Additional Information</head>
-<relatedmaterial encodinganalog="544 1">
-	<head>Related Materials</head>
-	<p>Dean of the Faculty of Arts and Sciences (UA 22); Office of the Dean of Undergraduate Studies (UA 108).</p>
-</relatedmaterial>
-</descgrp>
-<!-- CONTROLLED ACCESS / SUBJECT TERMS -->
-<controlaccess>
-<head>Index Terms</head>
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Corporate Name:</head>
-			<corpname encodinganalog="610" source="lcnaf">College of William and Mary. College of Arts and Sciences</corpname>
-			<corpname encodinganalog="610" source="lcnaf">College of William and Mary. Dept. of Fine Arts</corpname>
-	</controlaccess>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="aat">Bylaws</genreform>
-			<genreform encodinganalog="655" source="aat">Correspondence</genreform>
-			<genreform encodinganalog="655" source="aat">Minutes</genreform>
-			<genreform encodinganalog="655" source="aat">Vertical Files</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="lcsh">College of William and Mary--History--20th century.</subject>
-	</controlaccess>
-</controlaccess>
-<!-- END CONTROLLED ACCESS TERMS -->
-<!-- END COLLECTION LEVEL METADATA -->
-<!-- BEGIN SUBORDINATE COMPONENTS -->
-<dsc type="combined">
-<head>Detailed Description of the Collection</head>
-<c01 level="series">
-   <did>
-            <unittitle>Publications</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id72178</unitid>
-      <unitdate>1926-[ongoing]</unitdate>
-            	</did>
-      <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id59456</unitid>
-		<container type="box">13</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Dept. of Russian and Post-Soviet Studies</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59457</unitid>
-      <unitdate>2009</unitdate>
-            		<container type="box">13</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Sharpe Community Partnership Program</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59458</unitid>
-      <unitdate>2001-2008</unitdate>
-            		<container type="box">13</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Division of Social Sciences</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59459</unitid>
-      <unitdate>January 5, 1955</unitdate>
-            		<container type="box">13</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45578</unitid>
-		<container type="box">7</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45579</unitid>
-      <unitdate>1956</unitdate>
-            		<container type="box">7</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45580</unitid>
-      <unitdate>1968</unitdate>
-            		<container type="box">7</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45581</unitid>
-      <unitdate>1968-1969</unitdate>
-            		<container type="box">7</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45582</unitid>
-      <unitdate>1970</unitdate>
-            		<container type="box">7</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45583</unitid>
-      <unitdate>1970</unitdate>
-            		<container type="box">7</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45584</unitid>
-      <unitdate>1969-1970</unitdate>
-            		<container type="box">7</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45585</unitid>
-      <unitdate>1971</unitdate>
-            		<container type="box">7</container>
-		<container type="Folder">7</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45586</unitid>
-		<container type="box">8</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45587</unitid>
-      <unitdate>1971</unitdate>
-            		<container type="box">8</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45588</unitid>
-      <unitdate>1972</unitdate>
-            		<container type="box">8</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45589</unitid>
-      <unitdate>1972</unitdate>
-            		<container type="box">8</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45590</unitid>
-      <unitdate>1973</unitdate>
-            		<container type="box">8</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45591</unitid>
-      <unitdate>1973</unitdate>
-            		<container type="box">8</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes with index</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45592</unitid>
-      <unitdate>1973-1974</unitdate>
-            		<container type="box">8</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45593</unitid>
-      <unitdate>1973-1974</unitdate>
-            		<container type="box">8</container>
-		<container type="Folder">7</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45594</unitid>
-		<container type="box">9</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45595</unitid>
-      <unitdate>October 1, 1974-Aril 1, 1975</unitdate>
-            		<container type="box">9</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45596</unitid>
-      <unitdate>April 24, 1975-November 4, 1975</unitdate>
-            		<container type="box">9</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes (indexed)</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45597</unitid>
-      <unitdate>Oct. 1, 1974-May 13, 1975</unitdate>
-            		<container type="box">9</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes (indexed)</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45598</unitid>
-      <unitdate>Oct. 7, 1975-May 4, 1976</unitdate>
-            		<container type="box">9</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45599</unitid>
-      <unitdate>Dec. 2, 1975-May 4, 1976</unitdate>
-            		<container type="box">9</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id59433</unitid>
-		<container type="box">10</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59434</unitid>
-      <unitdate>Oct. 5, 1976- May 6, 1977</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59435</unitid>
-      <unitdate>Oct. 5, 1976- May 6, 1977</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59436</unitid>
-      <unitdate>Oct. 4, 1977-April 4, 1978</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59437</unitid>
-      <unitdate>Oct. 4, 1977- April 4, 1978</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59438</unitid>
-      <unitdate>Oct. 3, 1978- May 1, 1979</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59439</unitid>
-      <unitdate>Oct. 2, 1979- Sept. 28, 1981</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59440</unitid>
-      <unitdate>Nov. 3, 1981- May 3, 1983</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">7</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59441</unitid>
-      <unitdate>Oct. 4, 1983- Dec. 3, 1985</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">8</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59442</unitid>
-      <unitdate>Feb. 4, 1986- Oct. 8, 1986</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">9</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59443</unitid>
-      <unitdate>Oct. 9, 1986- Dec. 2, 1986</unitdate>
-            		<container type="box">10</container>
-		<container type="Folder">10</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id59444</unitid>
-		<container type="box">11</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59445</unitid>
-      <unitdate>Dec. 3, 1986- Dec. 1987</unitdate>
-            		<container type="box">11</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59446</unitid>
-      <unitdate>Jan. 1988- May 1988</unitdate>
-            		<container type="box">11</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59447</unitid>
-      <unitdate>Sept. 1988- May 1989</unitdate>
-            		<container type="box">11</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59448</unitid>
-      <unitdate>Oct. 1989- May 1990</unitdate>
-            		<container type="box">11</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59449</unitid>
-      <unitdate>Oct. 1990- May 1991</unitdate>
-            		<container type="box">11</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59450</unitid>
-      <unitdate>Oct. 1991- May 1992</unitdate>
-            		<container type="box">11</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id59451</unitid>
-		<container type="box">12</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59452</unitid>
-      <unitdate>Oct. 1992- Dec. 1993</unitdate>
-            		<container type="box">12</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59453</unitid>
-      <unitdate>Jan. 1994- May 1995</unitdate>
-            		<container type="box">12</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59454</unitid>
-      <unitdate>Oct. 1995- Dec. 1996</unitdate>
-            		<container type="box">12</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id59455</unitid>
-      <unitdate>Feb. 4, 1997- March 2, 1999</unitdate>
-            		<container type="box">12</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45528</unitid>
-		<container type="box">1</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>American Culture Cluster</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45529</unitid>
-      <unitdate>1995-1996</unitdate>
-            		<container type="box">1</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Bylaws of the Faculty of Arts and Sciences</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45530</unitid>
-      <unitdate>1938-1996</unitdate>
-            		<container type="box">1</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Committees</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45531</unitid>
-      <unitdate>1970-1995</unitdate>
-            		<container type="box">1</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Academic Status, Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45532</unitid>
-      <unitdate>1970-1986</unitdate>
-            		<container type="box">1</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45533</unitid>
-		<container type="box">2</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Admissions Policy Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45534</unitid>
-      <unitdate>1943-1983</unitdate>
-            		<container type="box">2</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Admissions Policy Committee Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45535</unitid>
-      <unitdate>1970-1983</unitdate>
-            		<container type="box">2</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Admissions Policy Committee Reports, Annual</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45536</unitid>
-      <unitdate>1967-1980</unitdate>
-            		<container type="box">2</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Admissions Policy Committee Reports, Special</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45537</unitid>
-      <unitdate>1970-1980</unitdate>
-            		<container type="box">2</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Affirmative Action Advisory Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45538</unitid>
-      <unitdate>1988-1990</unitdate>
-            		<container type="box">2</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Assessment Steering Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45539</unitid>
-      <unitdate>1993-1994</unitdate>
-            		<container type="box">2</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Assessment Steering Committee Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45540</unitid>
-      <unitdate>1998-2000</unitdate>
-            		<container type="box">2</container>
-		<container type="Folder">7</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45541</unitid>
-		<container type="box">3</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>College Assembly, Steering Committee for</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45542</unitid>
-      <unitdate>1972</unitdate>
-            		<container type="box">3</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>College Calendar, Ad Hoc Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45543</unitid>
-      <unitdate>1974-1991</unitdate>
-            		<container type="box">3</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>College Disciplinary Regulations, Special Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45544</unitid>
-      <unitdate>1969</unitdate>
-            		<container type="box">3</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Computer Planning, Ad Hoc Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45545</unitid>
-      <unitdate>1979-1988</unitdate>
-            		<container type="box">3</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Educational Policy Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45546</unitid>
-      <unitdate>1969-1980</unitdate>
-            		<container type="box">3</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Educational Policy Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45547</unitid>
-      <unitdate>1980-1992</unitdate>
-            		<container type="box">3</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45548</unitid>
-		<container type="box">4</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Educational Policy Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45549</unitid>
-      <unitdate>1993</unitdate>
-            		<container type="box">4</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Educational Policy Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45550</unitid>
-      <unitdate>1994-1996</unitdate>
-            		<container type="box">4</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Affairs, Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45551</unitid>
-      <unitdate>undated</unitdate>
-            		<container type="box">4</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Athletic Policy Advisory Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45552</unitid>
-      <unitdate>1984-1996</unitdate>
-            		<container type="box">4</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45553</unitid>
-		<container type="box">5</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Faculty Research, Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45554</unitid>
-      <unitdate>1969-1984</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Foreign Studies Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45555</unitid>
-      <unitdate>1974-1975</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Gender Equality, Ad Hoc Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45556</unitid>
-      <unitdate>1989</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Graduate Studies, Commitee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45557</unitid>
-      <unitdate>1970-2003</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Honors and Experimental Programs, Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45558</unitid>
-      <unitdate>1969-1996</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>International Studies Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45559</unitid>
-      <unitdate>1983-1996</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Lectures, Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45560</unitid>
-      <unitdate>1974-2000</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">7</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Library Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45561</unitid>
-      <unitdate>1948-1983</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">8</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Library Committee, Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45562</unitid>
-      <unitdate>1971-1975</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">9</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Library Committee Reports</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45563</unitid>
-      <unitdate>1946-1996</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">10</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Nominating Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45564</unitid>
-      <unitdate>1974-1996</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">11</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Registration Advisory Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45565</unitid>
-      <unitdate>1974</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">12</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Retention, Promotion, and Tenure, Advisory Committee on</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45566</unitid>
-      <unitdate>1974-1996</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">13</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Writing Committee</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45567</unitid>
-      <unitdate>1982</unitdate>
-            		<container type="box">5</container>
-		<container type="Folder">14</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   <c02 level="file">
-   <did>
-      
-      <unitid label="ArchonID" audience="internal">id45568</unitid>
-		<container type="box">6</container>
-	</did>
-      <c03 level="file">
-   <did>
-            <unittitle>Dean of the Faculty of Arts and Sciences</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45569</unitid>
-      <unitdate>1981-1997</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">1</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Dean of the Faculty of Arts and Sciences, Communications to Faculty</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45570</unitid>
-      <unitdate>1968-1979</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">2</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Dean of Faculty of Arts and Sciences, Communications to Faculty</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45571</unitid>
-      <unitdate>1980-1995</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">3</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Dean of Faculty of Arts andSciences, Degree Requirements, Academic Regulations</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45572</unitid>
-      <unitdate>1970-1972</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">4</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Registration Instructions</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45573</unitid>
-      <unitdate>1967-1973</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">5</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Dean of Graduate Studies</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45574</unitid>
-      <unitdate>1981-1985</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">6</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Dean of Undergraduate Studies</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45575</unitid>
-      <unitdate>1986-1988</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">7</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Development, &quot;William and Mary Alumni in the Arts&quot;</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45576</unitid>
-      <unitdate>2004</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">8</container>
-	</did>
-      
-</c03>
-   <c03 level="file">
-   <did>
-            <unittitle>Faculty Minutes</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id45577</unitid>
-      <unitdate>1926</unitdate>
-            		<container type="box">6</container>
-		<container type="Folder">9</container>
-	</did>
-      
-</c03>
-   
-</c02>
-   
-</c01>
-   <c01 level="series">
-   <did>
-            <unittitle>Accession 2010.434</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id72179</unitid>
-      <unitdate>1964-2004</unitdate>
-            	</did>
-      
-</c01>
-   <c01 level="series">
-   <did>
-            <unittitle>Accession 2010.435</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id72180</unitid>
-      <unitdate>1988-2008</unitdate>
-            	</did>
-      
-</c01>
-   <c01 level="series">
-   <did>
-            <unittitle>Accession 2010.632</unittitle>
-            
-      <unitid label="ArchonID" audience="internal">id78616</unitid>
-      <unitdate>1966-2010</unitdate>
-            	</did>
-      
-</c01>
-   
-</dsc>
-<!-- END SUBORDINATE COMPONENTS -->
-</archdesc>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <!-- ADMINISTRATIVE INFORMATION -->
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>This collection contains material which may be restricted related to personnel matters, student records, or other reasons. A Special Collections Research Center staff member must review the collection for restricted material before any researchers may use the collection. Consult a staff member for assistance.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before reproducing or quoting from any materials, in whole or in part, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>Dept. of Arts and Science Records, Special Collections Research Center, Earl Gregg Swem Library, College of William and Mary.</p>
+      </prefercite>
+      <custodhist encodinganalog="561">
+        <head>Custodial History</head>
+        <p>This material was previously part of the University Archives Publications Collection.</p>
+      </custodhist>
+      <processinfo encodinganalog="583">
+        <head>Processing Information</head>
+        <p>A box and folder list was created by Patricia Sanabria, SCRC Staff, in August 2009.</p>
+      </processinfo>
+      <!-- END ADMINISTRATIVE INFORMATION -->
+    </descgrp>
+    <!--COLLECTION LEVEL METADATA: -->
+    <bioghist altrender="Historical Note" encodinganalog="545">
+      <head>Historical Note</head>
+      <p>The arts and sciences comprise humanity's most fundamental and esoteric knowledge, and embrace the creative, reasoning, and analytical processes that are central to shaping our future.Arts &amp; Sciences is the College's largest academic unit, with several dozen departments and interdisciplinary programs. Further information about this individual or organization may be available in the Special Collections Research Center Wiki: &lt;a href="http://scrc.swem.wm.edu/wiki/index.php/School of Arts and Sciences"&gt;http://scrc.swem.wm.edu/wiki/index.php/School of Arts and Sciences&lt;/a&gt;.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>The collection contains minutes, by-laws, correspondence, and subject files from Arts and Sciences. Included in the collection are Faculty Minutes from 1926 to the present; American Culture Cluster lectures; by-laws; and material from various committees. &lt;p&gt;	Also present in the collection is correspondence from the Dean, as well as subject files on degree requirements, the Sharpe Community Partnership Program, and other topics.&lt;p&gt;	Acc. 2010.434: Contains correspondence from the Dean of Arts and Sciences to various professors in departments at the College of William  Mary from 1964 to 2004.&lt;p&gt;	Acc. 2010.435: Contains correspondence from the Dean of Arts and Sciences to various departments in the School of Arts and Sciences at the College of William and Mary from 1988 to 2008. &lt;p&gt;	Acc. 2010.632: Contains correspondence between the Dean of Arts and Sciences and various faculty members; minutes from meetings of the faculty of Arts and Sciences; and subject files related to strategic planning from 1994 to 1996. A box list inventory for this accession is available in the digital content line below. &lt;p&gt;</p>
+    </scopecontent>
+    <descgrp type="add">
+      <head>Additional Information</head>
+      <relatedmaterial encodinganalog="544 1">
+        <head>Related Materials</head>
+        <p>Dean of the Faculty of Arts and Sciences (UA 22); Office of the Dean of Undergraduate Studies (UA 108).</p>
+      </relatedmaterial>
+    </descgrp>
+    <!-- CONTROLLED ACCESS / SUBJECT TERMS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Corporate Name:</head>
+        <corpname encodinganalog="610" source="lcnaf">College of William and Mary. College of Arts and Sciences</corpname>
+        <corpname encodinganalog="610" source="lcnaf">College of William and Mary. Dept. of Fine Arts</corpname>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="aat">Bylaws</genreform>
+        <genreform encodinganalog="655" source="aat">Correspondence</genreform>
+        <genreform encodinganalog="655" source="aat">Minutes</genreform>
+        <genreform encodinganalog="655" source="aat">Vertical Files</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="lcsh">College of William and Mary--History--20th century.</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- END COLLECTION LEVEL METADATA -->
+    <!-- BEGIN SUBORDINATE COMPONENTS -->
+    <dsc type="combined">
+      <head>Detailed Description of the Collection</head>
+      <c01 level="series">
+        <did>
+          <unittitle>Publications</unittitle>
+          <unitid label="ArchonID" audience="internal">id72178</unitid>
+          <unitdate era="ce" calendar="gregorian">1926-[ongoing]</unitdate>
+        </did>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id59456</unitid>
+            <container type="box">13</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Dept. of Russian and Post-Soviet Studies</unittitle>
+              <unitid label="ArchonID" audience="internal">id59457</unitid>
+              <unitdate era="ce" calendar="gregorian">2009</unitdate>
+              <container type="box">13</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Sharpe Community Partnership Program</unittitle>
+              <unitid label="ArchonID" audience="internal">id59458</unitid>
+              <unitdate era="ce" calendar="gregorian">2001-2008</unitdate>
+              <container type="box">13</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Division of Social Sciences</unittitle>
+              <unitid label="ArchonID" audience="internal">id59459</unitid>
+              <unitdate era="ce" calendar="gregorian">January 5, 1955</unitdate>
+              <container type="box">13</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45578</unitid>
+            <container type="box">7</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45579</unitid>
+              <unitdate era="ce" calendar="gregorian">1956</unitdate>
+              <container type="box">7</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45580</unitid>
+              <unitdate era="ce" calendar="gregorian">1968</unitdate>
+              <container type="box">7</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45581</unitid>
+              <unitdate era="ce" calendar="gregorian">1968-1969</unitdate>
+              <container type="box">7</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45582</unitid>
+              <unitdate era="ce" calendar="gregorian">1970</unitdate>
+              <container type="box">7</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45583</unitid>
+              <unitdate era="ce" calendar="gregorian">1970</unitdate>
+              <container type="box">7</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45584</unitid>
+              <unitdate era="ce" calendar="gregorian">1969-1970</unitdate>
+              <container type="box">7</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45585</unitid>
+              <unitdate era="ce" calendar="gregorian">1971</unitdate>
+              <container type="box">7</container>
+              <container type="Folder">7</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45586</unitid>
+            <container type="box">8</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45587</unitid>
+              <unitdate era="ce" calendar="gregorian">1971</unitdate>
+              <container type="box">8</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45588</unitid>
+              <unitdate era="ce" calendar="gregorian">1972</unitdate>
+              <container type="box">8</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45589</unitid>
+              <unitdate era="ce" calendar="gregorian">1972</unitdate>
+              <container type="box">8</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45590</unitid>
+              <unitdate era="ce" calendar="gregorian">1973</unitdate>
+              <container type="box">8</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45591</unitid>
+              <unitdate era="ce" calendar="gregorian">1973</unitdate>
+              <container type="box">8</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes with index</unittitle>
+              <unitid label="ArchonID" audience="internal">id45592</unitid>
+              <unitdate era="ce" calendar="gregorian">1973-1974</unitdate>
+              <container type="box">8</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45593</unitid>
+              <unitdate era="ce" calendar="gregorian">1973-1974</unitdate>
+              <container type="box">8</container>
+              <container type="Folder">7</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45594</unitid>
+            <container type="box">9</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45595</unitid>
+              <unitdate era="ce" calendar="gregorian">October 1, 1974-Aril 1, 1975</unitdate>
+              <container type="box">9</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45596</unitid>
+              <unitdate era="ce" calendar="gregorian">April 24, 1975-November 4, 1975</unitdate>
+              <container type="box">9</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes (indexed)</unittitle>
+              <unitid label="ArchonID" audience="internal">id45597</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 1, 1974-May 13, 1975</unitdate>
+              <container type="box">9</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes (indexed)</unittitle>
+              <unitid label="ArchonID" audience="internal">id45598</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 7, 1975-May 4, 1976</unitdate>
+              <container type="box">9</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45599</unitid>
+              <unitdate era="ce" calendar="gregorian">Dec. 2, 1975-May 4, 1976</unitdate>
+              <container type="box">9</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id59433</unitid>
+            <container type="box">10</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59434</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 5, 1976- May 6, 1977</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59435</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 5, 1976- May 6, 1977</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59436</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 4, 1977-April 4, 1978</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59437</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 4, 1977- April 4, 1978</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59438</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 3, 1978- May 1, 1979</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59439</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 2, 1979- Sept. 28, 1981</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59440</unitid>
+              <unitdate era="ce" calendar="gregorian">Nov. 3, 1981- May 3, 1983</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59441</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 4, 1983- Dec. 3, 1985</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59442</unitid>
+              <unitdate era="ce" calendar="gregorian">Feb. 4, 1986- Oct. 8, 1986</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">9</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59443</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 9, 1986- Dec. 2, 1986</unitdate>
+              <container type="box">10</container>
+              <container type="Folder">10</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id59444</unitid>
+            <container type="box">11</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59445</unitid>
+              <unitdate era="ce" calendar="gregorian">Dec. 3, 1986- Dec. 1987</unitdate>
+              <container type="box">11</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59446</unitid>
+              <unitdate era="ce" calendar="gregorian">Jan. 1988- May 1988</unitdate>
+              <container type="box">11</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59447</unitid>
+              <unitdate era="ce" calendar="gregorian">Sept. 1988- May 1989</unitdate>
+              <container type="box">11</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59448</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 1989- May 1990</unitdate>
+              <container type="box">11</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59449</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 1990- May 1991</unitdate>
+              <container type="box">11</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59450</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 1991- May 1992</unitdate>
+              <container type="box">11</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id59451</unitid>
+            <container type="box">12</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59452</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 1992- Dec. 1993</unitdate>
+              <container type="box">12</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59453</unitid>
+              <unitdate era="ce" calendar="gregorian">Jan. 1994- May 1995</unitdate>
+              <container type="box">12</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59454</unitid>
+              <unitdate era="ce" calendar="gregorian">Oct. 1995- Dec. 1996</unitdate>
+              <container type="box">12</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id59455</unitid>
+              <unitdate era="ce" calendar="gregorian">Feb. 4, 1997- March 2, 1999</unitdate>
+              <container type="box">12</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45528</unitid>
+            <container type="box">1</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>American Culture Cluster</unittitle>
+              <unitid label="ArchonID" audience="internal">id45529</unitid>
+              <unitdate era="ce" calendar="gregorian">1995-1996</unitdate>
+              <container type="box">1</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Bylaws of the Faculty of Arts and Sciences</unittitle>
+              <unitid label="ArchonID" audience="internal">id45530</unitid>
+              <unitdate era="ce" calendar="gregorian">1938-1996</unitdate>
+              <container type="box">1</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Committees</unittitle>
+              <unitid label="ArchonID" audience="internal">id45531</unitid>
+              <unitdate era="ce" calendar="gregorian">1970-1995</unitdate>
+              <container type="box">1</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Academic Status, Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45532</unitid>
+              <unitdate era="ce" calendar="gregorian">1970-1986</unitdate>
+              <container type="box">1</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45533</unitid>
+            <container type="box">2</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Admissions Policy Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45534</unitid>
+              <unitdate era="ce" calendar="gregorian">1943-1983</unitdate>
+              <container type="box">2</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Admissions Policy Committee Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45535</unitid>
+              <unitdate era="ce" calendar="gregorian">1970-1983</unitdate>
+              <container type="box">2</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Admissions Policy Committee Reports, Annual</unittitle>
+              <unitid label="ArchonID" audience="internal">id45536</unitid>
+              <unitdate era="ce" calendar="gregorian">1967-1980</unitdate>
+              <container type="box">2</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Admissions Policy Committee Reports, Special</unittitle>
+              <unitid label="ArchonID" audience="internal">id45537</unitid>
+              <unitdate era="ce" calendar="gregorian">1970-1980</unitdate>
+              <container type="box">2</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Affirmative Action Advisory Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45538</unitid>
+              <unitdate era="ce" calendar="gregorian">1988-1990</unitdate>
+              <container type="box">2</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Assessment Steering Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45539</unitid>
+              <unitdate era="ce" calendar="gregorian">1993-1994</unitdate>
+              <container type="box">2</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Assessment Steering Committee Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45540</unitid>
+              <unitdate era="ce" calendar="gregorian">1998-2000</unitdate>
+              <container type="box">2</container>
+              <container type="Folder">7</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45541</unitid>
+            <container type="box">3</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>College Assembly, Steering Committee for</unittitle>
+              <unitid label="ArchonID" audience="internal">id45542</unitid>
+              <unitdate era="ce" calendar="gregorian">1972</unitdate>
+              <container type="box">3</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>College Calendar, Ad Hoc Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45543</unitid>
+              <unitdate era="ce" calendar="gregorian">1974-1991</unitdate>
+              <container type="box">3</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>College Disciplinary Regulations, Special Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45544</unitid>
+              <unitdate era="ce" calendar="gregorian">1969</unitdate>
+              <container type="box">3</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Computer Planning, Ad Hoc Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45545</unitid>
+              <unitdate era="ce" calendar="gregorian">1979-1988</unitdate>
+              <container type="box">3</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Educational Policy Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45546</unitid>
+              <unitdate era="ce" calendar="gregorian">1969-1980</unitdate>
+              <container type="box">3</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Educational Policy Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45547</unitid>
+              <unitdate era="ce" calendar="gregorian">1980-1992</unitdate>
+              <container type="box">3</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45548</unitid>
+            <container type="box">4</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Educational Policy Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45549</unitid>
+              <unitdate era="ce" calendar="gregorian">1993</unitdate>
+              <container type="box">4</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Educational Policy Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45550</unitid>
+              <unitdate era="ce" calendar="gregorian">1994-1996</unitdate>
+              <container type="box">4</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Affairs, Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45551</unitid>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+              <container type="box">4</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Athletic Policy Advisory Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45552</unitid>
+              <unitdate era="ce" calendar="gregorian">1984-1996</unitdate>
+              <container type="box">4</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45553</unitid>
+            <container type="box">5</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Research, Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45554</unitid>
+              <unitdate era="ce" calendar="gregorian">1969-1984</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Foreign Studies Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45555</unitid>
+              <unitdate era="ce" calendar="gregorian">1974-1975</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Gender Equality, Ad Hoc Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45556</unitid>
+              <unitdate era="ce" calendar="gregorian">1989</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Graduate Studies, Commitee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45557</unitid>
+              <unitdate era="ce" calendar="gregorian">1970-2003</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Honors and Experimental Programs, Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45558</unitid>
+              <unitdate era="ce" calendar="gregorian">1969-1996</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>International Studies Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45559</unitid>
+              <unitdate era="ce" calendar="gregorian">1983-1996</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Lectures, Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45560</unitid>
+              <unitdate era="ce" calendar="gregorian">1974-2000</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Library Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45561</unitid>
+              <unitdate era="ce" calendar="gregorian">1948-1983</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Library Committee, Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45562</unitid>
+              <unitdate era="ce" calendar="gregorian">1971-1975</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">9</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Library Committee Reports</unittitle>
+              <unitid label="ArchonID" audience="internal">id45563</unitid>
+              <unitdate era="ce" calendar="gregorian">1946-1996</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">10</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Nominating Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45564</unitid>
+              <unitdate era="ce" calendar="gregorian">1974-1996</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">11</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Registration Advisory Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45565</unitid>
+              <unitdate era="ce" calendar="gregorian">1974</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">12</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Retention, Promotion, and Tenure, Advisory Committee on</unittitle>
+              <unitid label="ArchonID" audience="internal">id45566</unitid>
+              <unitdate era="ce" calendar="gregorian">1974-1996</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">13</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Writing Committee</unittitle>
+              <unitid label="ArchonID" audience="internal">id45567</unitid>
+              <unitdate era="ce" calendar="gregorian">1982</unitdate>
+              <container type="box">5</container>
+              <container type="Folder">14</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unitid label="ArchonID" audience="internal">id45568</unitid>
+            <container type="box">6</container>
+          </did>
+          <c03 level="file">
+            <did>
+              <unittitle>Dean of the Faculty of Arts and Sciences</unittitle>
+              <unitid label="ArchonID" audience="internal">id45569</unitid>
+              <unitdate era="ce" calendar="gregorian">1981-1997</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Dean of the Faculty of Arts and Sciences, Communications to Faculty</unittitle>
+              <unitid label="ArchonID" audience="internal">id45570</unitid>
+              <unitdate era="ce" calendar="gregorian">1968-1979</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Dean of Faculty of Arts and Sciences, Communications to Faculty</unittitle>
+              <unitid label="ArchonID" audience="internal">id45571</unitid>
+              <unitdate era="ce" calendar="gregorian">1980-1995</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Dean of Faculty of Arts andSciences, Degree Requirements, Academic Regulations</unittitle>
+              <unitid label="ArchonID" audience="internal">id45572</unitid>
+              <unitdate era="ce" calendar="gregorian">1970-1972</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Registration Instructions</unittitle>
+              <unitid label="ArchonID" audience="internal">id45573</unitid>
+              <unitdate era="ce" calendar="gregorian">1967-1973</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Dean of Graduate Studies</unittitle>
+              <unitid label="ArchonID" audience="internal">id45574</unitid>
+              <unitdate era="ce" calendar="gregorian">1981-1985</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Dean of Undergraduate Studies</unittitle>
+              <unitid label="ArchonID" audience="internal">id45575</unitid>
+              <unitdate era="ce" calendar="gregorian">1986-1988</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Development, "William and Mary Alumni in the Arts"</unittitle>
+              <unitid label="ArchonID" audience="internal">id45576</unitid>
+              <unitdate era="ce" calendar="gregorian">2004</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file">
+            <did>
+              <unittitle>Faculty Minutes</unittitle>
+              <unitid label="ArchonID" audience="internal">id45577</unitid>
+              <unitdate era="ce" calendar="gregorian">1926</unitdate>
+              <container type="box">6</container>
+              <container type="Folder">9</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Accession 2010.434</unittitle>
+          <unitid label="ArchonID" audience="internal">id72179</unitid>
+          <unitdate era="ce" calendar="gregorian">1964-2004</unitdate>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Accession 2010.435</unittitle>
+          <unitid label="ArchonID" audience="internal">id72180</unitid>
+          <unitdate era="ce" calendar="gregorian">1988-2008</unitdate>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Accession 2010.632</unittitle>
+          <unitid label="ArchonID" audience="internal">id78616</unitid>
+          <unitdate era="ce" calendar="gregorian">1966-2010</unitdate>
+        </did>
+      </c01>
+    </dsc>
+    <!-- END SUBORDINATE COMPONENTS -->
+  </archdesc>
 </ead>

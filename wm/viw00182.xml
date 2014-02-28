@@ -1,425 +1,357 @@
-<?xml version="1.0" ?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl" ?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/wm/vivadoc.pl?file=viw00182.xml" NDATA html>
-]>
-<ead id="viw00182">
-<eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
-	<eadid mainagencycode="VWM" countrycode="us">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00182:: Christopher Newport College Records, 1959-1977)//EN" "viw00182.xml"</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
 
-	<filedesc>
-
-
-<titlestmt>
-	<titleproper>Inventory of the Christopher Newport College Records <date>1959-1977</date>
-	</titleproper>
-	<subtitle id="sort">
-		Christopher Newport College Records		<num type="collectionnumber">UA 87</num>
-	</subtitle>
-</titlestmt>
-
-
-
-<publicationstmt>
-	<publisher>Earl Gregg Swem Library, College of William and Mary</publisher> &address;
-	<date type="publication">&copy; 2009 By the College of William and Mary. All rights reserved.</date>
-	<p id="usestatement">
-		<extref entityref="conditions">Conditions of Use</extref>
-	</p>
-</publicationstmt>
-
-</filedesc>
-
-<profiledesc>
-	<creation>Finding aid created by Special Collections Staff, <date>2007</date></creation>
-	<langusage>Description is in
-		<language langcode="eng">English</language>
-	</langusage>
-</profiledesc>
-</eadheader>
-
-
-
-<frontmatter>
-	<titlepage>
-		<titleproper>Inventory of the Christopher Newport College Records, <date>1959-1977</date></titleproper>
-		<subtitle>A Collection in the<lb/>Special Collections Research Center
-			<num type="Collection Number">UA 87</num>
-		</subtitle>
-		<p id="logostmt">
-			<extptr actuate="onload" show="embed" entityref="logo"/>
-		</p>
-		<publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
-		<date type="publication">2009</date> &contact;
-		<list type="deflist">
-			<defitem>
-				<label>Processed By</label>
-				<item>Special Collections Staff.</item>
-			</defitem>
-		</list>
-	</titlepage>
-</frontmatter>
-
-<archdesc level="collection">
-<runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-		<corpname>Special Collections Research Center</corpname>
-</repository>
-
-
-	<unittitle label="Title:" encodinganalog="245$a">Christopher Newport College Records	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1959-1977</unitdate>
-</unittitle>
-<unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">00/01/UA 87</unitid>
-	<physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Cubic Feet">1.20</extent></physdesc>
-	<langmaterial encodinganalog="546" label="Language of Materials">
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00182">
+  <eadheader langencoding="iso639-2b" audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" findaidstatus="edited-full-draft">
+    <eadid mainagencycode="US-VWM" countrycode="US">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00182:: Christopher Newport College Records, 1959-1977)//EN" "viw00182.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the Christopher Newport College Records <date era="ce" calendar="gregorian">1959-1977</date></titleproper>
+        <subtitle id="sort">
+		Christopher Newport College Records		<num type="collectionnumber">UA 87</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2009 By the College of William and Mary. All rights reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Finding aid created by Special Collections Staff, <date era="ce" calendar="gregorian">2007</date></creation>
+      <langusage>Description is in
+		<language langcode="eng">English</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the Christopher Newport College Records, <date era="ce" calendar="gregorian">1959-1977</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
+			<num type="Collection Number">UA 87</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2009</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed By</label>
+          <item>Special Collections Staff.</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary</runner>
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">Christopher Newport College Records	<unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1959-1977</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">00/01/UA 87</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Cubic Feet">1.20</extent>
+      </physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	  The records are in:
-<language langcode="eng">English</language>
-	</langmaterial>
-	
-	<abstract encodinganalog="520$a" label="Abstract:">Series 1: Acc. 1984.069: This series contains Budgets, from 1963-1976, and capital outlay requests from 1966-1972, that were submitted to the Virginia State Legislature. They include appropriations requests and justifications. 
+<language langcode="eng">English</language></langmaterial>
+      <abstract encodinganalog="520$a" label="Abstract:">Series 1: Acc. 1984.069: This series contains Budgets, from 1963-1976, and capital outlay requests from 1966-1972, that were submitted to the Virginia State Legislature. They include appropriations requests and justifications. 
 </abstract>
-
-	<origination label="Creator:">
-
-		<corpname encodinganalog="110" source="lcnaf">College of William and Mary. Christopher Newport College</corpname>
+      <origination label="Creator:"><corpname encodinganalog="110" source="lcnaf">College of William and Mary. Christopher Newport College</corpname>
 arrangement
 	</origination>
-
-
-</did>
-
-<descgrp type="admininfo">
-<head>Administrative Information</head>
-<!-- ADMINISTRATIVE INFORMATION -->
-
-<accessrestrict encodinganalog="506">
-	<head>Conditions Governing Access</head>
-	<p>This collection is open to all researchers.</p>
-</accessrestrict>
-
-<userestrict encodinganalog="540">
-	<head>Conditions Governing Use</head>
-	<p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
-</userestrict>
-
-<prefercite encodinganalog="510">
-	<head>Preferred Citation</head>
-	<p>Christopher Newport College Records, Special Collections Research Center, Earl Gregg Swem Library, College of William and Mary.</p>
-</prefercite>
-<acqinfo encodinganalog="541">
-	<head>Acquisition Information</head>
-	<p>The materials were acquired by Special Collections Research Center from Various transfers and gifts. on 09/26/1984.</p>
-</acqinfo>
- 
-<accruals encodinganalog="584">
-	<head>Accruals</head>
-	<p>Future accruals are not expected.</p>
-</accruals>
-    <custodhist encodinganalog="561">
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information</head>
+      <!-- ADMINISTRATIVE INFORMATION -->
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>This collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Special Collections Research Center, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>Christopher Newport College Records, Special Collections Research Center, Earl Gregg Swem Library, College of William and Mary.</p>
+      </prefercite>
+      <acqinfo encodinganalog="541">
+        <head>Acquisition Information</head>
+        <p>The materials were acquired by Special Collections Research Center from Various transfers and gifts. on 09/26/1984.</p>
+      </acqinfo>
+      <accruals encodinganalog="584">
+        <head>Accruals</head>
+        <p>Future accruals are not expected.</p>
+      </accruals>
+      <custodhist encodinganalog="561">
         <head>Custodial History</head>
         <p>The provenance of the material that was removed from the University Archives Publications Collection related to the Norfolk Division is not documented.</p>
-    </custodhist>
-
-<!-- END ADMINISTRATIVE INFORMATION -->
-
-
-</descgrp>
-
-
-
-<!--COLLECTION LEVEL METADATA: -->
-<bioghist altrender="Historical Note" encodinganalog="545"><head>Historical Note</head>
-  <p>The General Assembly of Virginia established Christopher Newport College as a non-residential branch college of The College of William and Mary in 1960. Christopher Newport College was authorized by the Board of Visitors of The College of William and Mary to offer a lower-level undergraduate liberal arts curriculum. In 1969, the Board of Visitors received approval from the General Assembly to add upper-level bachelor&#039;s programs and award Bachelor of Arts and Bachelor of Science Degrees. Christopher Newport College was established as a four-year baccalaureate institution independent of The College of William and Mary in 1976. CNC&#039;s first Board of Visitors was appointed by the Governor on July 1, 1977. In 1990, the General Assembly authorized CNC to offer degrees at the master&#039;s level. Christopher Newport College became Christopher Newport University July 1, 1992.</p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>Series 1: Acc. 1984.069: This series contains Budgets, from 1963-1976, and capital outlay requests from 1966-1972, that were submitted to the Virginia State Legislature. They include appropriations requests and justifications. 
+      </custodhist>
+      <!-- END ADMINISTRATIVE INFORMATION -->
+    </descgrp>
+    <!--COLLECTION LEVEL METADATA: -->
+    <bioghist altrender="Historical Note" encodinganalog="545">
+      <head>Historical Note</head>
+      <p>The General Assembly of Virginia established Christopher Newport College as a non-residential branch college of The College of William and Mary in 1960. Christopher Newport College was authorized by the Board of Visitors of The College of William and Mary to offer a lower-level undergraduate liberal arts curriculum. In 1969, the Board of Visitors received approval from the General Assembly to add upper-level bachelor's programs and award Bachelor of Arts and Bachelor of Science Degrees. Christopher Newport College was established as a four-year baccalaureate institution independent of The College of William and Mary in 1976. CNC's first Board of Visitors was appointed by the Governor on July 1, 1977. In 1990, the General Assembly authorized CNC to offer degrees at the master's level. Christopher Newport College became Christopher Newport University July 1, 1992.</p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>Series 1: Acc. 1984.069: This series contains Budgets, from 1963-1976, and capital outlay requests from 1966-1972, that were submitted to the Virginia State Legislature. They include appropriations requests and justifications. 
 </p>
-	<p>Series 2: This series contains publications produced by Christopher Newport from 1959-1977. The inventory for this accession is available below in the finding aid/inventory section of this finding aid.</p>
-</scopecontent>
-
-<descgrp type="add">
-	<head>Additional Information</head>
-
-    <phystech encodinganalog="340">
+      <p>Series 2: This series contains publications produced by Christopher Newport from 1959-1977. The inventory for this accession is available below in the finding aid/inventory section of this finding aid.</p>
+    </scopecontent>
+    <descgrp type="add">
+      <head>Additional Information</head>
+      <phystech encodinganalog="340">
         <head>Physical Characteristics or Technical Requirements</head>
         <p>Portions of this collection are stored offsite. Consult staff for assistance.</p>
-    </phystech>
-
-
-
-<relatedmaterial encodinganalog="544 1">
-	<head>Related Materials</head>
-	<p>See also the University Archives Photograph Collection (UA 8), records of the Office of the President (UA 2), and other administrative records.</p>
-</relatedmaterial>
-</descgrp>
-
-<!-- CONTROLLED ACCESS / SUBJECT TERMS -->
-
-<controlaccess>
-<head>Index Terms</head>
-
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="aat">Financial records</genreform>
-			<genreform encodinganalog="655" source="aat">Publications</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="local">Associated and Branch Campuses--Christopher Newport College</subject>
-			<subject encodinganalog="650" source="lcsh">College of William and Mary--History--20th century.</subject>
-			<subject encodinganalog="650" source="lcsh">Education, Higher--Virginia--History.</subject>
-			<subject encodinganalog="650" source="local">Newport News (Va.)--History.</subject>
-	</controlaccess>
-</controlaccess>
-
-
-<!-- END CONTROLLED ACCESS TERMS -->
-
-
-
-<!-- END COLLECTION LEVEL METADATA -->
-
-<!-- BEGIN SUBORDINATE COMPONENTS -->
-<dsc type="combined">
-<head>Detailed Description of the Collection</head>
-<c01 level="series" id="id61707">
-<head>Series 1: Acc. 1984.069</head><did>
-        <unittitle>Acc. 1984.069,
-        <unitdate>1963-1976</unitdate>,
+      </phystech>
+      <relatedmaterial encodinganalog="544 1">
+        <head>Related Materials</head>
+        <p>See also the University Archives Photograph Collection (UA 8), records of the Office of the President (UA 2), and other administrative records.</p>
+      </relatedmaterial>
+    </descgrp>
+    <!-- CONTROLLED ACCESS / SUBJECT TERMS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="aat">Financial records</genreform>
+        <genreform encodinganalog="655" source="aat">Publications</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="local">Associated and Branch Campuses--Christopher Newport College</subject>
+        <subject encodinganalog="650" source="lcsh">College of William and Mary--History--20th century.</subject>
+        <subject encodinganalog="650" source="lcsh">Education, Higher--Virginia--History.</subject>
+        <subject encodinganalog="650" source="local">Newport News (Va.)--History.</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- END COLLECTION LEVEL METADATA -->
+    <!-- BEGIN SUBORDINATE COMPONENTS -->
+    <dsc type="combined">
+      <head>Detailed Description of the Collection</head>
+      <c01 level="series" id="id61707">
+        <head>Series 1: Acc. 1984.069</head>
+        <did>
+          <unittitle>Acc. 1984.069,
+        <unitdate era="ce" calendar="gregorian">1963-1976</unitdate>,
 </unittitle>
-    </did>
-    	<scopecontent>
-					<p>Series 1: Acc. 1984.069: This series contains Budgets, from 1963-1976, and capital outlay requests from 1966-1972, that were submitted to the Virginia State Legislature. They include appropriations requests and justifications. This accession is not yet fully described here.</p>
-    	</scopecontent>
-
-</c01>
-<c01 level="series" id="id40905">
-<head>Series 2: Publications</head><did>
-        <unittitle>Publications,
-        <unitdate>1959-1977</unitdate>,
+        </did>
+        <scopecontent>
+          <p>Series 1: Acc. 1984.069: This series contains Budgets, from 1963-1976, and capital outlay requests from 1966-1972, that were submitted to the Virginia State Legislature. They include appropriations requests and justifications. This accession is not yet fully described here.</p>
+        </scopecontent>
+      </c01>
+      <c01 level="series" id="id40905">
+        <head>Series 2: Publications</head>
+        <did>
+          <unittitle>Publications,
+        <unitdate era="ce" calendar="gregorian">1959-1977</unitdate>,
 </unittitle>
-    </did>
-    	<scopecontent>
-					<p>This series contains publications produced by Christopher Newport from 1959-1977.</p>
-    	</scopecontent>
-<c02 level="file" id="id35376">
-<did>
-		<container label="Box">1</container>
-    </did>
-<c03 level="file" id="id35377">
-<did>
-        <unittitle>Christopher Newport College,
-        <unitdate>1959-1977</unitdate>,
+        </did>
+        <scopecontent>
+          <p>This series contains publications produced by Christopher Newport from 1959-1977.</p>
+        </scopecontent>
+        <c02 level="file" id="id35376">
+          <did>
+            <container label="Box">1</container>
+          </did>
+          <c03 level="file" id="id35377">
+            <did>
+              <unittitle>Christopher Newport College,
+        <unitdate era="ce" calendar="gregorian">1959-1977</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35378">
-<did>
-        <unittitle>Budget,
-        <unitdate>1964-1966</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35378">
+            <did>
+              <unittitle>Budget,
+        <unitdate era="ce" calendar="gregorian">1964-1966</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35379">
-<did>
-        <unittitle>Faculty, By-Laws, and Salaries,
-        <unitdate>1966</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35379">
+            <did>
+              <unittitle>Faculty, By-Laws, and Salaries,
+        <unitdate era="ce" calendar="gregorian">1966</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35380">
-<did>
-        <unittitle>Faculty Handbook,
-        <unitdate>1976</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35380">
+            <did>
+              <unittitle>Faculty Handbook,
+        <unitdate era="ce" calendar="gregorian">1976</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35381">
-<did>
-        <unittitle>Film Festival,
-        <unitdate>1968</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35381">
+            <did>
+              <unittitle>Film Festival,
+        <unitdate era="ce" calendar="gregorian">1968</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35382">
-<did>
-        <unittitle>Financial Reports,
-        <unitdate>1973-1975</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35382">
+            <did>
+              <unittitle>Financial Reports,
+        <unitdate era="ce" calendar="gregorian">1973-1975</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35383">
-<did>
-        <unittitle>Library,
-        <unitdate>1964-1966</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35383">
+            <did>
+              <unittitle>Library,
+        <unitdate era="ce" calendar="gregorian">1964-1966</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35384">
-<did>
-        <unittitle>Registration,
-        <unitdate>1964-1966</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35384">
+            <did>
+              <unittitle>Registration,
+        <unitdate era="ce" calendar="gregorian">1964-1966</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35385">
-<did>
-        <unittitle>Self-Study,
-        <unitdate>1975</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">8</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35385">
+            <did>
+              <unittitle>Self-Study,
+        <unitdate era="ce" calendar="gregorian">1975</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">9</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35386">
-<did>
-        <unittitle>Statement of Purposes and Programs,
-        <unitdate>1961</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">9</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35386">
+            <did>
+              <unittitle>Statement of Purposes and Programs,
+        <unitdate era="ce" calendar="gregorian">1961</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">10</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35387">
-<did>
-        <unittitle>Trident,
-        <unitdate>1964-1965</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">10</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35387">
+            <did>
+              <unittitle>Trident,
+        <unitdate era="ce" calendar="gregorian">1964-1965</unitdate>,
 </unittitle>
-		<container label="Box">1</container>
-		<container label="Folder">11</container>
-    </did>
-
-</c03>
-
-</c02>
-<c02 level="file" id="id35388">
-<did>
-		<container label="Box">2</container>
-    </did>
-<c03 level="file" id="id35389">
-<did>
-        <unittitle>Trident,
-        <unitdate>1965</unitdate>,
+              <container label="Box">1</container>
+              <container label="Folder">11</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="file" id="id35388">
+          <did>
+            <container label="Box">2</container>
+          </did>
+          <c03 level="file" id="id35389">
+            <did>
+              <unittitle>Trident,
+        <unitdate era="ce" calendar="gregorian">1965</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">1</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35390">
-<did>
-        <unittitle>Trident,
-        <unitdate>1966</unitdate>,
+              <container label="Box">2</container>
+              <container label="Folder">1</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35390">
+            <did>
+              <unittitle>Trident,
+        <unitdate era="ce" calendar="gregorian">1966</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">2</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35391">
-<did>
-        <unittitle>Trident,
-        <unitdate>1969</unitdate>,
+              <container label="Box">2</container>
+              <container label="Folder">2</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35391">
+            <did>
+              <unittitle>Trident,
+        <unitdate era="ce" calendar="gregorian">1969</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">3</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35392">
-<did>
-        <unittitle>Trident,
-        <unitdate>1970</unitdate>,
+              <container label="Box">2</container>
+              <container label="Folder">3</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35392">
+            <did>
+              <unittitle>Trident,
+        <unitdate era="ce" calendar="gregorian">1970</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">4</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35393">
-<did>
-        <unittitle>Trident,
-        <unitdate>1970</unitdate>,
+              <container label="Box">2</container>
+              <container label="Folder">4</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35393">
+            <did>
+              <unittitle>Trident,
+        <unitdate era="ce" calendar="gregorian">1970</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">5</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35394">
-<did>
-        <unittitle>Trident,
-        <unitdate>1971</unitdate>,
+              <container label="Box">2</container>
+              <container label="Folder">5</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35394">
+            <did>
+              <unittitle>Trident,
+        <unitdate era="ce" calendar="gregorian">1971</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">6</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35395">
-<did>
-        <unittitle>The Undertow,
-        <unitdate>1970</unitdate>,
+              <container label="Box">2</container>
+              <container label="Folder">6</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35395">
+            <did>
+              <unittitle>The Undertow,
+        <unitdate era="ce" calendar="gregorian">1970</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">7</container>
-    </did>
-
-</c03>
-<c03 level="file" id="id35396">
-<did>
-        <unittitle>Virginia&#039;s Boundaries,
-        <unitdate>1973</unitdate>,
+              <container label="Box">2</container>
+              <container label="Folder">7</container>
+            </did>
+          </c03>
+          <c03 level="file" id="id35396">
+            <did>
+              <unittitle>Virginia's Boundaries,
+        <unitdate era="ce" calendar="gregorian">1973</unitdate>,
 </unittitle>
-		<container label="Box">2</container>
-		<container label="Folder">8</container>
-    </did>
-
-</c03>
-
-</c02>
-
-</c01>
-
-</dsc>
-
-<!-- END SUBORDINATE COMPONENTS -->
-</archdesc>
-</ead>
-<!-- footer.inc.php -->
-
+              <container label="Box">2</container>
+              <container label="Folder">8</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+    <!-- END SUBORDINATE COMPONENTS -->
+  </archdesc>
+</ead><!-- footer.inc.php -->

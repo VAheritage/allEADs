@@ -1,771 +1,597 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/wm.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/wm_contact.xml">
-<!ENTITY zknlva SYSTEM "http://ead.lib.virginia.edu/vivaead/published/lva/vivadoc.pl?file=vi01141.xml" NDATA html>
-]><ead id="viw00143">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-        <eadid countrycode="US" mainagencycode="ViW">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00143:: Inventory of the Richard H. Patchin Papers)//EN" "viw00143.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viw00143">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViW">PUBLIC "-//College of William and Mary::Earl Gregg Swem Library::Special Collections//TEXT (US::ViW::viw00143:: Inventory of the Richard H. Patchin Papers)//EN" "viw00143.xml"
         </eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Inventory of the Richard H. Patchin Papers, <date>1829-1902</date>
-                </titleproper>
-                <subtitle id="sort">
-                    <num type="collectionnumber">Richard H. Patchin Papers, Mss. 2008.57
+    <filedesc>
+      <titlestmt>
+        <titleproper>Inventory of the Richard H. Patchin Papers, <date era="ce" calendar="gregorian">1829-1902</date></titleproper>
+        <subtitle id="sort">
+          <num type="collectionnumber">Richard H. Patchin Papers, Mss. 2008.57
                     </num>
-                </subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Earl Gregg Swem Library, College of William and Mary
-                </publisher> &address;
-                <date type="publication">&copy; 2008 By the College of William and Mary. All rights reserved.
+        </subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Earl Gregg Swem Library, College of William and Mary
+                </publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2008 By the College of William and Mary. All rights reserved.
                 </date>
-                <p id="usestatement">
-                    <extref entityref="conditions">Conditions of Use
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
                     </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Machine-readable finding aid derived from MS Word, created by Sarah M. Dorpinghaus, <date>07/17/2008</date>
-            </creation>
-            <langusage>Description is in
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Sarah M. Dorpinghaus, <date era="ce" calendar="gregorian">07/17/2008</date></creation>
+      <langusage>Description is in
                 <language langcode="eng">English
-                </language>
-            </langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>Inventory of the Richard H. Patchin Papers, <date>1829-1902</date>
-            </titleproper>
-            <subtitle>A Collection in the<lb/>Special Collections Research Center
+                </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Inventory of the Richard H. Patchin Papers, <date era="ce" calendar="gregorian">1829-1902</date></titleproper>
+      <subtitle>A Collection in the<lb/>Special Collections Research Center
                 <num type="Accession Number">Mss. 2008.57
-                </num>
-            </subtitle>
-            <p id="logostmt">
-                <extptr actuate="onload" show="embed" entityref="logo"/>
-            </p>
-            <publisher>Earl Gregg Swem Library, College of William and Mary
+                </num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/wm.jpg"/>
+      </p>
+      <publisher>Earl Gregg Swem Library, College of William and Mary
             </publisher>
-            <date type="publication">2008
-            </date> &contact;
-            <list type="deflist">
-                <defitem>
-                    <label>Processed by:
+      <date type="publication" era="ce" calendar="gregorian">2008
+            </date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/wm_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
                     </label>
-                    <item>Sarah M. Dorpinghaus
+          <item>Sarah M. Dorpinghaus
                     </item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-
-        <archdesc level="collection" type="admininfo"> 
-            <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection" type="admininfo">
+    <runner placement="footer">Special Collections, Earl Gregg Swem Library, College of William and Mary
             </runner>
-       
-<did>
-	<head>Overview of the Collection</head>
-	<repository label="Repository:" encodinganalog="852$a">
-	    <corpname>Special Collections Research Center</corpname>
-	</repository>
-	    <unittitle label="Title:" encodinganalog="245$a">Richard H. Patchin Papers
-	    <unitdate label="Dates:" encodinganalog="245$f" type="inclusive">1829-1902</unitdate>
-	        <unitdate label="Dates:" encodinganalog="245$g" type="bulk">1860-1890</unitdate> </unittitle>
-	    <unitid encodinganalog="099" label="Identification:" countrycode="us" repositorycode="VWM">Mss. Acc. 2008.57</unitid>
-	    <physdesc label="Quantity:" encodinganalog="300$a"><extent unit="Boxes">4.00 Boxes</extent></physdesc>
-	    <langmaterial encodinganalog="546" label="Language of Materials">
+    <did>
+      <head>Overview of the Collection</head>
+      <repository label="Repository:" encodinganalog="852$a">
+        <corpname>Special Collections Research Center</corpname>
+      </repository>
+      <unittitle label="Title:" encodinganalog="245$a">Richard H. Patchin Papers
+	    <unitdate label="Dates:" encodinganalog="245$f" type="inclusive" era="ce" calendar="gregorian">1829-1902</unitdate><unitdate label="Dates:" encodinganalog="245$g" type="bulk" era="ce" calendar="gregorian">1860-1890</unitdate></unittitle>
+      <unitid encodinganalog="099" label="Identification:" countrycode="US" repositorycode="US-VWM">Mss. Acc. 2008.57</unitid>
+      <physdesc label="Quantity:" encodinganalog="300$a">
+        <extent unit="Boxes">4.00 Boxes</extent>
+      </physdesc>
+      <langmaterial encodinganalog="546" label="Language of Materials">
 	        The papers are in:
-	        <language langcode="eng">English</language>
-	    </langmaterial>
-	    <abstract encodinganalog="520$a" label="Abstract:">The Richard H. Patchin papers largely includes accounts of Patchin’s daily activities and personal reflections.  Correspondence and professional documents also make up a portion of the collection.  The materials document Patchin’s work as a teacher, farmer, clothing sales clerk, and lecturer in and around Marlborough, New York during the mid and late 19th century.  The documents also address religion, relationships, business activities, and personal aspirations.  Some of Patchin's writings suggest that he had periods of mental instability that appear to have increased with age. </abstract>
-	    <origination label="Creator:">
-	        
-	        <persname encodinganalog="100">Richard H. Patchin;</persname>
-	        <persname encodinganalog="100" source="lcnaf">Patchin, John;</persname>
-	        <persname encodinganalog="100" source="lcnaf">Patchin, Leah;</persname>
-	        <persname encodinganalog="100" source="lcnaf">Stevens, Sarah.</persname>
-	    </origination>
-</did>
-            <!-- ADMINISTRATIVE INFORMATION GOES HERE: -->
-            <descgrp>
-                <head>Information About Using the Collection</head>
-                <accessrestrict encodinganalog="506">
-                    <head>Conditions Governing Access</head>
-                    <p>Collection is open to all researchers.</p>
-                </accessrestrict>
-                <userestrict encodinganalog="540">
-                    <head>Conditions Governing Use</head>
-                    <p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Curator of Manuscripts and Rare Books, and the holder of the copyright, if not Swem Library.</p>
-                </userestrict>
-                <prefercite encodinganalog="510">
-                    <head>Preferred Citation</head>
-                    <p>Richard H. Patchin Papers, Accession # Mss. 2008.57, Special Collections Research Center, Swem Library, College of William and Mary.</p>
-                </prefercite>
-                <processinfo encodinganalog="583">
-                    <head>Processing Information</head>
-                    <p>Machine-readable finding aid derived from MS Word, created by Sarah M. Dorpinghaus.</p>
-                </processinfo>
-            </descgrp>
-     
-            
-
-<!-- TOP LEVEL METADATA GO HERE: -->
-<bioghist altrender="Biographical Note" encodinganalog="545"><head>Biographical Note</head>
-  <p>Richard H. Patchin worked as a teacher, farmer, clothing sales clerk, and lecturer in New York during the 1870s. </p>
-</bioghist>
-<scopecontent encodinganalog="520">
-	<head>Scope and Contents</head>
-	<p>The Richard H. Patchin papers largely includes accounts of Patchin’s daily activities and personal reflections.  Correspondence and professional documents also make up a portion of the collection.  The materials document Patchin’s work as a teacher, farmer, clothing sales clerk, and lecturer in and around Marlborough, New York during the mid and late 19th century.  The documents also address religion, relationships, business activities, and personal aspirations.  Some of Patchin's writings suggest that he had periods of mental instability that appear to have increased with age. </p>
-</scopecontent>
-<arrangement encodinganalog="351$b">
-	<head>Arrangement of Materials</head>
-	<p>The materials are arranged in nine series: Personal Writings, Correspondence, Teaching, Business, Poetry and Lyrics, Public Lectures, Miscellaneous Materials, Bound Volumes, and Photographs.  Within each series folders are arranged chronologically with undated and miscellaneous material placed last.  The Public Lectures series has two subseries: Lectures and Notes and Ephemera. </p>
-</arrangement>
-
-            <!-- END ADMINISTRATIVE INFORMATION -->
-
-<!-- CONTROLLED ACCESS TERMS GO HERE: These are all repeatable  THESE SHOULD BE PUT INTO APPROPRIATE TAGS AS PER BELOW AND MARC INSTRUCTONS -->
-
-<controlaccess>
-<head>Index Terms</head>
-
-<p>This Collection is indexed under the following controlled access subject terms.</p>
-	<controlaccess>
-		<head>Genre/Form of Material:</head>
-			<genreform encodinganalog="655" source="aat">Account books</genreform>
-			<genreform encodinganalog="655" source="aat">Certificates</genreform>
-			<genreform encodinganalog="655" source="aat">Clippings</genreform>
-			<genreform encodinganalog="655" source="aat">Diaries</genreform>
-			<genreform encodinganalog="655" source="local">Invoices</genreform>
-	</controlaccess>
-	<controlaccess>
-		<head>Occupation:</head>
-			<occupation encodinganalog="656" source="lcsh">Farmer </occupation>
-			<occupation encodinganalog="656" source="lcnaf">Lecturer</occupation>
-			<occupation encodinganalog="656" source="lcsh">Teacher </occupation>
-	</controlaccess>
-	<controlaccess>
-		<head>Topical Term:</head>
-			<subject encodinganalog="650" source="local">Mental illness--United States.</subject>
-			<subject encodinganalog="650" source="local">New York (N.Y.)--History--19th century.</subject>
-	</controlaccess>
-</controlaccess>
-
-
-<!-- END CONTROLLED ACCESS TERMS -->
-
-<!-- ADMINISTRATIVE INFORMATION GOES HERE: -->
-
-
-<!-- START DESCRIPTION OF SUBORDINATE COMPONENTS -->
-<dsc type="combined">
-<head>Detailed Description of the Collection</head>
-<c01 level="file" id="id27144">
-	<did>
-	    <unittitle>Box 1</unittitle>
-	</did>
- 
-<c02 level="series" id="id27145">
-	<did>
-	    <unittitle>Personal Writings,</unittitle>
-	    <unitdate>1857-1898 and undated</unitdate>
+	        <language langcode="eng">English</language></langmaterial>
+      <abstract encodinganalog="520$a" label="Abstract:">The Richard H. Patchin papers largely includes accounts of Patchin’s daily activities and personal reflections.  Correspondence and professional documents also make up a portion of the collection.  The materials document Patchin’s work as a teacher, farmer, clothing sales clerk, and lecturer in and around Marlborough, New York during the mid and late 19th century.  The documents also address religion, relationships, business activities, and personal aspirations.  Some of Patchin's writings suggest that he had periods of mental instability that appear to have increased with age. </abstract>
+      <origination label="Creator:">
+        <persname encodinganalog="100">Richard H. Patchin;</persname>
+        <persname encodinganalog="100" source="lcnaf">Patchin, John;</persname>
+        <persname encodinganalog="100" source="lcnaf">Patchin, Leah;</persname>
+        <persname encodinganalog="100" source="lcnaf">Stevens, Sarah.</persname>
+      </origination>
+    </did>
+    <!-- ADMINISTRATIVE INFORMATION GOES HERE: -->
+    <descgrp>
+      <head>Information About Using the Collection</head>
+      <accessrestrict encodinganalog="506">
+        <head>Conditions Governing Access</head>
+        <p>Collection is open to all researchers.</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540">
+        <head>Conditions Governing Use</head>
+        <p>Before publishing quotations or excerpts from any materials, permission must be obtained from the Curator of Manuscripts and Rare Books, and the holder of the copyright, if not Swem Library.</p>
+      </userestrict>
+      <prefercite encodinganalog="510">
+        <head>Preferred Citation</head>
+        <p>Richard H. Patchin Papers, Accession # Mss. 2008.57, Special Collections Research Center, Swem Library, College of William and Mary.</p>
+      </prefercite>
+      <processinfo encodinganalog="583">
+        <head>Processing Information</head>
+        <p>Machine-readable finding aid derived from MS Word, created by Sarah M. Dorpinghaus.</p>
+      </processinfo>
+    </descgrp>
+    <!-- TOP LEVEL METADATA GO HERE: -->
+    <bioghist altrender="Biographical Note" encodinganalog="545">
+      <head>Biographical Note</head>
+      <p>Richard H. Patchin worked as a teacher, farmer, clothing sales clerk, and lecturer in New York during the 1870s. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520">
+      <head>Scope and Contents</head>
+      <p>The Richard H. Patchin papers largely includes accounts of Patchin’s daily activities and personal reflections.  Correspondence and professional documents also make up a portion of the collection.  The materials document Patchin’s work as a teacher, farmer, clothing sales clerk, and lecturer in and around Marlborough, New York during the mid and late 19th century.  The documents also address religion, relationships, business activities, and personal aspirations.  Some of Patchin's writings suggest that he had periods of mental instability that appear to have increased with age. </p>
+    </scopecontent>
+    <arrangement encodinganalog="351$b">
+      <head>Arrangement of Materials</head>
+      <p>The materials are arranged in nine series: Personal Writings, Correspondence, Teaching, Business, Poetry and Lyrics, Public Lectures, Miscellaneous Materials, Bound Volumes, and Photographs.  Within each series folders are arranged chronologically with undated and miscellaneous material placed last.  The Public Lectures series has two subseries: Lectures and Notes and Ephemera. </p>
+    </arrangement>
+    <!-- END ADMINISTRATIVE INFORMATION -->
+    <!-- CONTROLLED ACCESS TERMS GO HERE: These are all repeatable  THESE SHOULD BE PUT INTO APPROPRIATE TAGS AS PER BELOW AND MARC INSTRUCTONS -->
+    <controlaccess>
+      <head>Index Terms</head>
+      <p>This Collection is indexed under the following controlled access subject terms.</p>
+      <controlaccess>
+        <head>Genre/Form of Material:</head>
+        <genreform encodinganalog="655" source="aat">Account books</genreform>
+        <genreform encodinganalog="655" source="aat">Certificates</genreform>
+        <genreform encodinganalog="655" source="aat">Clippings</genreform>
+        <genreform encodinganalog="655" source="aat">Diaries</genreform>
+        <genreform encodinganalog="655" source="local">Invoices</genreform>
+      </controlaccess>
+      <controlaccess>
+        <head>Occupation:</head>
+        <occupation encodinganalog="656" source="lcsh">Farmer </occupation>
+        <occupation encodinganalog="656" source="lcnaf">Lecturer</occupation>
+        <occupation encodinganalog="656" source="lcsh">Teacher </occupation>
+      </controlaccess>
+      <controlaccess>
+        <head>Topical Term:</head>
+        <subject encodinganalog="650" source="local">Mental illness--United States.</subject>
+        <subject encodinganalog="650" source="local">New York (N.Y.)--History--19th century.</subject>
+      </controlaccess>
+    </controlaccess>
+    <!-- END CONTROLLED ACCESS TERMS -->
+    <!-- ADMINISTRATIVE INFORMATION GOES HERE: -->
+    <!-- START DESCRIPTION OF SUBORDINATE COMPONENTS -->
+    <dsc type="combined">
+      <head>Detailed Description of the Collection</head>
+      <c01 level="file" id="id27144">
+        <did>
+          <unittitle>Box 1</unittitle>
         </did>
-    
-    
-<c03 level="file" id="id27146">
-	<did>
-	    <unittitle>Folder 1: Religion,</unittitle>
-	    <unitdate>1857-1894,</unitdate>  
-    </did>
-    <scopecontent>
-			<p>reflections of the role of religion in patchin's life and his ambitions to become more religious</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27147">
-	<did>
-	    <unittitle>Folder 2: Mental health,</unittitle>
-	    <unitdate>1863-1889 and undated,</unitdate>
-
-
-    </did>
-    <scopecontent>
-			<p>writings about  the state of his mental health</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27148">
-	<did>
-	    <unittitle>Folder 3: Occupations,</unittitle>
-	    <unitdate>1864-1871,</unitdate>
-
-
-    </did>
-    <scopecontent>
-			<p>thoughts about his various professions- a majority of the documents focus on his teaching and farming career</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27149">
-	<did>
-	    <unittitle>Folder 4: Marriage,</unittitle>
-	    <unitdate>1864-1875 and undated,</unitdate>
-
-    </did>
-    <scopecontent>
-			<p>writings on Patchin's relationships with women, especially finding a suitable wife</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27150">
-	<did>
-	    <unittitle>Folder 5: Mother,</unittitle>
-	    <unitdate>1866-1871 and undated,</unitdate>
-
-    </did>
-    <scopecontent>
-        <p> reflections on Patchin’s mother, whom he finds frustrating and irritating</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27151">
-	<did>
-	    <unittitle>Folder 6: Acquaintances,</unittitle>
-	    <unitdate>1870-1880,</unitdate>
-
-
-    </did>
-    <scopecontent>
-			<p>documentation of friends and acquaintances, often detailing the times when people are unkind to Patchin</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27152">
-	<did>
-	    <unittitle>Folder 7: Miscellaneous,</unittitle>
-	    <unitdate>1863-1898, </unitdate>
-
-
-    </did>
-    <scopecontent>
-			<p>writings about Patchin’s daily activities, goals, and decisions</p>
-    </scopecontent>
-
-</c03>
-
-</c02>
-<c02 level="series" id="id27153">
-	<did>
-	    <unittitle>Correspondence,</unittitle>
-	    <unitdate>1832-1902</unitdate>
-      
-    </did>
- 
-<c03 level="file" id="id27154">
-	<did>
-	    <unittitle>Folder 8: Letters to Richard Patchin from others,</unittitle>
-	    <unitdate>1832-1902,</unitdate>
-
-
-    </did>
-    <scopecontent>
-			<p>A majority of these letters are from Patchin’s mother, sister, and brother.  Also included are several response letters from school board members whom Patchin contacted in hopes of securing a teaching position.</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27155">
-	<did>
-	    <unittitle>Folder 9: Letters to others from Richard Patchin,</unittitle>
-	    <unitdate>1853-1884,</unitdate>
-
-  
-    </did>
-    <scopecontent>
-			<p>including letters asking for employment, requesting money, and letters to the editors of several newspapers correcting errors noted in previous issues</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27156">
-	<did>
-	    <unittitle>Folder 10: Letters to Leah Patchin (mother) and Sarah Stevens (sister) from Richard Patchin,</unittitle>
-	    <unitdate>1843-1863,</unitdate>
-
-
-    </did>
-    <scopecontent>
-			<p>provide insight to the period before Patchin’s writings became more eccentric</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27157">
-	<did>
-	    <unittitle>Folder 11: Letters to Leah Patchin (mother) from others,</unittitle>
-	    <unitdate>1844-1868</unitdate>
-
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27158">
-	<did>
-	    <unittitle>Folder 12: Letters to Richard Patchin from family,</unittitle>
-	    <unitdate>1846-1861</unitdate>
-
-
-    </did>
-  
-
-</c03>
-<c03 level="file" id="id27159">
-	<did>
-	    <unittitle>Folder 13: Envelopes,</unittitle>
-	    <unitdate>undated,</unitdate>
-
-
-    </did>
-    <scopecontent>
-			<p>included with Patchin’s papers, but were separated from the letters that they held</p>
-    </scopecontent>
-
-</c03>
-
-</c02>
-<c02 level="series" id="id27160">
-	<did>
-	    <unittitle>Teaching,</unittitle>
-	    <unitdate>1846-1879,</unitdate>
-
-    </did>
-    <scopecontent>
-			<p>documents relating to Patchin’s teaching career in Ulster and Orange counties, New York </p>
-    </scopecontent>
-<c03 level="file" id="id27161">
-	<did>
-	    <unittitle>Folder 14: Compositions,</unittitle>
-	    <unitdate>1846 and undated</unitdate>
-
-  
-    </did>
- 
-
-</c03>
-<c03 level="file" id="id27162">
-	<did>
-	    <unittitle>Folder 15: Licenses and contracts,</unittitle>
-	    <unitdate>1847-1879</unitdate>
- 
-    </did>
-
-</c03>
-<c03 level="file" id="id27163">
-	<did>
-	    <unittitle>Folder 16: Notes,</unittitle>
-	    <unitdate>1857-1870 and undated,</unitdate>
-
-    </did>
-    <scopecontent>
-			<p>of a reflective nature about daily issues as a teacher, such as student behavior and lesson plans, as well as personal reflections</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27164">
-	<did>
-	    <unittitle>Folder 17: Letters of recommendation,</unittitle>
-	    <unitdate>1863 and undated</unitdate>
-
-    </did>
-
-
-</c03>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id27166">
-    <did>
-        <unittitle>Box 2</unittitle>
-    </did>
-<c02 level="series" id="id27165">
-	<did>
-	    <unittitle>Business,</unittitle>
-	    <unitdate>1849-1889</unitdate>
-
-    </did>
-
-<c03 level="file" id="id27167">
-	<did>
-	    <unittitle>Folder 1: Receipts and invoices,</unittitle>
-	    <unitdate>1849-1881 and undated</unitdate>
-
-    </did>
-
-</c03>
-<c03 level="file" id="id27168">
-	<did>
-	    <unittitle>Folder 2: Licenses, certificates, and contracts,</unittitle>
-	    <unitdate>1850-1897 and undated,</unitdate>
-
-    </did>
-    <scopecontent>
-			<p>hand-written business contracts and city-issued peddler’s licenses</p>
-    </scopecontent>
-
-</c03>
-<c03 level="file" id="id27169">
-	<did>
-	    <unittitle>Folder 3: Accounts,</unittitle>
-	    <unitdate>1856-1881 and undated</unitdate>
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27170">
-	<did>
-	    <unittitle>Folder 4: Daily notes (folder 1),</unittitle>
-	    <unitdate>1863-1889 and undated</unitdate>
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27171">
-	<did>
-	    <unittitle>Folder 5: Daily notes (folder 2),</unittitle>
-	    <unitdate>1863-1889 and undated</unitdate>
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27172">
-	<did>
-	    <unittitle>Folder 6: Business philosophy,</unittitle>
-	    <unitdate>1863-1889 and undated</unitdate>
-
-    </did>
-
-</c03>
-<c03 level="file" id="id27173">
-	<did>
-	    <unittitle>Folder 7: Hired help,</unittitle>
-	    <unitdate>1868-1872</unitdate>
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27174">
-	<did>
-	    <unittitle>Folder 8: Farming,</unittitle>
-	    <unitdate>1868-1875 and undated</unitdate>
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27175">
-	<did>
-	    <unittitle>Folder 9: Clothing,</unittitle>
-	    <unitdate>1881-1888 and undated</unitdate>
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27176">
-	<did>
-	    <unittitle>Folder 10: Miscellaneous,</unittitle>
-	    <unitdate>1856-1888 and undated,</unitdate>
-
-    </did>
-    <scopecontent>
-			<p>the majority  are scraps of paper on which Patchin used for business calculations</p>
-    </scopecontent>
-
-</c03>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id27177">
-    <did>
-        <unittitle>Box 3</unittitle>
-    </did>
-<c02 level="series" id="id27178">
-	<did>
-	    <unittitle>Poetry and Lyrics,</unittitle>
-	    <unitdate>1846-1880 and undated</unitdate>
-   
-    </did>
-
-<c03 level="file" id="id27179">
-	<did>
-	    <unittitle>Folder 1: “Clothing Song” materials,</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-
-
-</c03>
-<c03 level="file" id="id27180">
-	<did>
-	    <unittitle>Folder 2: Darius Green and his Flying-Machine”,</unittitle>
-	    <unitdate>undated</unitdate>
- 
-    </did>
-
-</c03>
-<c03 level="file" id="id27181">
-	<did>
-	    <unittitle>Folder 3: Various poems,</unittitle>
-	    <unitdate>1846-1880 and undated</unitdate>
-
-    </did>
- 
-</c03>
-
-</c02>
-<c02 level="series" id="id27182">
-	<did>
-	    <unittitle>Public Lectures,</unittitle>
-	    <unitdate>1870-1898</unitdate>
-
-    </did>
- 
-<c03 level="subseries" id="id27183">
-	<did>
-	    <unittitle>Lectures</unittitle>
-	    <unitdate>1870-1898</unitdate>
-
-    </did>
-
-<c04 level="file" id="id27184">
-	<did>
-	    <unittitle>Folder 4: “The Characteristics for the Highest Human Happiness,”</unittitle>
-	    <unitdate>1871</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27185">
-	<did>
-	    <unittitle>Folder 5: “Variation and Variety,”</unittitle>
-	    <unitdate>1871</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27186">
-	<did>
-	    <unittitle>Folder 6: “Miscellanies,”</unittitle>
-	    <unitdate>1883 and undated</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27187">
-	<did>
-	    <unittitle>Folder 7: “Debate over the American Indian,”</unittitle>
-	    <unitdate>1898 and undated</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27188">
-	<did>
-	    <unittitle>Folder 8: Crusades,</unittitle>
-	    <unitdate>undated</unitdate>
- 
-    </did>
-
-</c04>
-<c04 level="file" id="id27189">
-	<did>
-	    <unittitle>Folder 9: “Anecdotes,”</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27190">
-	<did>
-	    <unittitle>Folder 10: “A Little of Several Things,”</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27191">
-	<did>
-	    <unittitle>Folder 11: Order,</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27192">
-	<did>
-	    <unittitle>Folder 12: Various,</unittitle>
-	    <unitdate>undated,</unitdate>
-  
-    </did>
-    <scopecontent>
-			<p>Various lectures written by Patchin.</p>
-    </scopecontent>
-
-</c04>
-
-</c03>
-<c03 level="subseries" id="id27193">
-	<did>
-	    <unittitle>Notes and Ephemera,</unittitle>
-	    <unitdate>1870-1882</unitdate>
-
-    </did>
-
-<c04 level="file" id="id27194">
-	<did>
-	    <unittitle>Folder 13: Notes and reflections,</unittitle>
-	    <unitdate>1870-1882 and undated</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27195">
-	<did>
-	    <unittitle>Folder 14: Handbill notes,</unittitle>
-	    <unitdate>1871-1881</unitdate>
-
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-
-</c01>
-<c01 level="file" id="id27227">
-    <did>
-        <unittitle>Box 4</unittitle>
-    </did>
-<c02 level="series" id="id27228">
-	<did>
-	    <unittitle>Public Lectures, continued,</unittitle>
-	    <unitdate>1870-1879 and undated</unitdate>
-
-    </did>
-    
-<c03 level="subseries" id="id27229">
-	<did>
-	    <unittitle>Notes and Ephemera, continued,</unittitle>
-	    <unitdate>1870-1879 and undated</unitdate>
-  
-    </did>
-
-<c04 level="file" id="id27230">
-	<did>
-	    <unittitle>Folder 1: Temperance notes,</unittitle>
-	    <unitdate>1870-1879 and undated</unitdate>
-
-    </did>
-
-</c04>
-<c04 level="file" id="id27231">
-	<did>
-	    <unittitle>Folder 2: Printed handbills,</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-
-</c04>
-
-</c03>
-
-</c02>
-<c02 level="series" id="id27232">
-	<did>
-	    <unittitle>Miscellaneous Materials,</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-<c03 level="file" id="id27233">
-	<did>
-	    <unittitle>Folder 3: Miscellaneous materials,</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-
-</c03>
-
-</c02>
-<c02 level="series" id="id27234">
-	<did>
-	    <unittitle>Bound Volumes,</unittitle>
-	    <unitdate>1829-1881 and undated</unitdate>
-
-    </did>
-<c03 level="file" id="id27235">
-	<did>
-	    <unittitle>Folder 4: Newspaper clippings,</unittitle>
-	    <unitdate>1829 and undated</unitdate>
-
-    </did>
-
-</c03>
-<c03 level="file" id="id27236">
-	<did>
-	    <unittitle>Folder 5: Notes and newspaper clippings,</unittitle>
-	    <unitdate>1859-1881 and undated</unitdate>
-
-    </did>
-
-</c03>
-<c03 level="file" id="id27237">
-	<did>
-	    <unittitle>Folder 6: Notes,</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-
-</c03>
-
-</c02>
-<c02 level="series" id="id27238">
-	<did>
-	    <unittitle>Photographs,</unittitle>
-	    <unitdate>undated</unitdate>
-
-    </did>
-<c03 level="file" id="id27239">
-	<did>
-	    <unittitle>Folder 7: Unidentified man,</unittitle>
-	    <unitdate>undated,</unitdate>
-
-    </did>
-    <scopecontent>
-			<p>possibly Richard H. Patchin</p>
-    </scopecontent>
-
-</c03>
-
-</c02>
-
-</c01>
-
-</dsc>
-
-<!-- END DESCRIPTION OF SUBORDINATE COMPONENTS -->
-</archdesc>
-</ead>
-<!-- footer.inc.php -->
-
+        <c02 level="series" id="id27145">
+          <did>
+            <unittitle>Personal Writings,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1857-1898 and undated</unitdate>
+          </did>
+          <c03 level="file" id="id27146">
+            <did>
+              <unittitle>Folder 1: Religion,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1857-1894,</unitdate>
+            </did>
+            <scopecontent>
+              <p>reflections of the role of religion in patchin's life and his ambitions to become more religious</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27147">
+            <did>
+              <unittitle>Folder 2: Mental health,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1863-1889 and undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p>writings about  the state of his mental health</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27148">
+            <did>
+              <unittitle>Folder 3: Occupations,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1864-1871,</unitdate>
+            </did>
+            <scopecontent>
+              <p>thoughts about his various professions- a majority of the documents focus on his teaching and farming career</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27149">
+            <did>
+              <unittitle>Folder 4: Marriage,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1864-1875 and undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p>writings on Patchin's relationships with women, especially finding a suitable wife</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27150">
+            <did>
+              <unittitle>Folder 5: Mother,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1866-1871 and undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p> reflections on Patchin’s mother, whom he finds frustrating and irritating</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27151">
+            <did>
+              <unittitle>Folder 6: Acquaintances,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1870-1880,</unitdate>
+            </did>
+            <scopecontent>
+              <p>documentation of friends and acquaintances, often detailing the times when people are unkind to Patchin</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27152">
+            <did>
+              <unittitle>Folder 7: Miscellaneous,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1863-1898, </unitdate>
+            </did>
+            <scopecontent>
+              <p>writings about Patchin’s daily activities, goals, and decisions</p>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="series" id="id27153">
+          <did>
+            <unittitle>Correspondence,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1832-1902</unitdate>
+          </did>
+          <c03 level="file" id="id27154">
+            <did>
+              <unittitle>Folder 8: Letters to Richard Patchin from others,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1832-1902,</unitdate>
+            </did>
+            <scopecontent>
+              <p>A majority of these letters are from Patchin’s mother, sister, and brother.  Also included are several response letters from school board members whom Patchin contacted in hopes of securing a teaching position.</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27155">
+            <did>
+              <unittitle>Folder 9: Letters to others from Richard Patchin,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1853-1884,</unitdate>
+            </did>
+            <scopecontent>
+              <p>including letters asking for employment, requesting money, and letters to the editors of several newspapers correcting errors noted in previous issues</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27156">
+            <did>
+              <unittitle>Folder 10: Letters to Leah Patchin (mother) and Sarah Stevens (sister) from Richard Patchin,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1843-1863,</unitdate>
+            </did>
+            <scopecontent>
+              <p>provide insight to the period before Patchin’s writings became more eccentric</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27157">
+            <did>
+              <unittitle>Folder 11: Letters to Leah Patchin (mother) from others,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1844-1868</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27158">
+            <did>
+              <unittitle>Folder 12: Letters to Richard Patchin from family,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1846-1861</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27159">
+            <did>
+              <unittitle>Folder 13: Envelopes,</unittitle>
+              <unitdate era="ce" calendar="gregorian">undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p>included with Patchin’s papers, but were separated from the letters that they held</p>
+            </scopecontent>
+          </c03>
+        </c02>
+        <c02 level="series" id="id27160">
+          <did>
+            <unittitle>Teaching,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1846-1879,</unitdate>
+          </did>
+          <scopecontent>
+            <p>documents relating to Patchin’s teaching career in Ulster and Orange counties, New York </p>
+          </scopecontent>
+          <c03 level="file" id="id27161">
+            <did>
+              <unittitle>Folder 14: Compositions,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1846 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27162">
+            <did>
+              <unittitle>Folder 15: Licenses and contracts,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1847-1879</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27163">
+            <did>
+              <unittitle>Folder 16: Notes,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1857-1870 and undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p>of a reflective nature about daily issues as a teacher, such as student behavior and lesson plans, as well as personal reflections</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27164">
+            <did>
+              <unittitle>Folder 17: Letters of recommendation,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1863 and undated</unitdate>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="file" id="id27166">
+        <did>
+          <unittitle>Box 2</unittitle>
+        </did>
+        <c02 level="series" id="id27165">
+          <did>
+            <unittitle>Business,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1849-1889</unitdate>
+          </did>
+          <c03 level="file" id="id27167">
+            <did>
+              <unittitle>Folder 1: Receipts and invoices,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1849-1881 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27168">
+            <did>
+              <unittitle>Folder 2: Licenses, certificates, and contracts,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1850-1897 and undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p>hand-written business contracts and city-issued peddler’s licenses</p>
+            </scopecontent>
+          </c03>
+          <c03 level="file" id="id27169">
+            <did>
+              <unittitle>Folder 3: Accounts,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1856-1881 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27170">
+            <did>
+              <unittitle>Folder 4: Daily notes (folder 1),</unittitle>
+              <unitdate era="ce" calendar="gregorian">1863-1889 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27171">
+            <did>
+              <unittitle>Folder 5: Daily notes (folder 2),</unittitle>
+              <unitdate era="ce" calendar="gregorian">1863-1889 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27172">
+            <did>
+              <unittitle>Folder 6: Business philosophy,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1863-1889 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27173">
+            <did>
+              <unittitle>Folder 7: Hired help,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1868-1872</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27174">
+            <did>
+              <unittitle>Folder 8: Farming,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1868-1875 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27175">
+            <did>
+              <unittitle>Folder 9: Clothing,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1881-1888 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27176">
+            <did>
+              <unittitle>Folder 10: Miscellaneous,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1856-1888 and undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p>the majority  are scraps of paper on which Patchin used for business calculations</p>
+            </scopecontent>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="file" id="id27177">
+        <did>
+          <unittitle>Box 3</unittitle>
+        </did>
+        <c02 level="series" id="id27178">
+          <did>
+            <unittitle>Poetry and Lyrics,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1846-1880 and undated</unitdate>
+          </did>
+          <c03 level="file" id="id27179">
+            <did>
+              <unittitle>Folder 1: “Clothing Song” materials,</unittitle>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27180">
+            <did>
+              <unittitle>Folder 2: Darius Green and his Flying-Machine”,</unittitle>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27181">
+            <did>
+              <unittitle>Folder 3: Various poems,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1846-1880 and undated</unitdate>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="series" id="id27182">
+          <did>
+            <unittitle>Public Lectures,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1870-1898</unitdate>
+          </did>
+          <c03 level="subseries" id="id27183">
+            <did>
+              <unittitle>Lectures</unittitle>
+              <unitdate era="ce" calendar="gregorian">1870-1898</unitdate>
+            </did>
+            <c04 level="file" id="id27184">
+              <did>
+                <unittitle>Folder 4: “The Characteristics for the Highest Human Happiness,”</unittitle>
+                <unitdate era="ce" calendar="gregorian">1871</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27185">
+              <did>
+                <unittitle>Folder 5: “Variation and Variety,”</unittitle>
+                <unitdate era="ce" calendar="gregorian">1871</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27186">
+              <did>
+                <unittitle>Folder 6: “Miscellanies,”</unittitle>
+                <unitdate era="ce" calendar="gregorian">1883 and undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27187">
+              <did>
+                <unittitle>Folder 7: “Debate over the American Indian,”</unittitle>
+                <unitdate era="ce" calendar="gregorian">1898 and undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27188">
+              <did>
+                <unittitle>Folder 8: Crusades,</unittitle>
+                <unitdate era="ce" calendar="gregorian">undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27189">
+              <did>
+                <unittitle>Folder 9: “Anecdotes,”</unittitle>
+                <unitdate era="ce" calendar="gregorian">undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27190">
+              <did>
+                <unittitle>Folder 10: “A Little of Several Things,”</unittitle>
+                <unitdate era="ce" calendar="gregorian">undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27191">
+              <did>
+                <unittitle>Folder 11: Order,</unittitle>
+                <unitdate era="ce" calendar="gregorian">undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27192">
+              <did>
+                <unittitle>Folder 12: Various,</unittitle>
+                <unitdate era="ce" calendar="gregorian">undated,</unitdate>
+              </did>
+              <scopecontent>
+                <p>Various lectures written by Patchin.</p>
+              </scopecontent>
+            </c04>
+          </c03>
+          <c03 level="subseries" id="id27193">
+            <did>
+              <unittitle>Notes and Ephemera,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1870-1882</unitdate>
+            </did>
+            <c04 level="file" id="id27194">
+              <did>
+                <unittitle>Folder 13: Notes and reflections,</unittitle>
+                <unitdate era="ce" calendar="gregorian">1870-1882 and undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27195">
+              <did>
+                <unittitle>Folder 14: Handbill notes,</unittitle>
+                <unitdate era="ce" calendar="gregorian">1871-1881</unitdate>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+      </c01>
+      <c01 level="file" id="id27227">
+        <did>
+          <unittitle>Box 4</unittitle>
+        </did>
+        <c02 level="series" id="id27228">
+          <did>
+            <unittitle>Public Lectures, continued,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1870-1879 and undated</unitdate>
+          </did>
+          <c03 level="subseries" id="id27229">
+            <did>
+              <unittitle>Notes and Ephemera, continued,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1870-1879 and undated</unitdate>
+            </did>
+            <c04 level="file" id="id27230">
+              <did>
+                <unittitle>Folder 1: Temperance notes,</unittitle>
+                <unitdate era="ce" calendar="gregorian">1870-1879 and undated</unitdate>
+              </did>
+            </c04>
+            <c04 level="file" id="id27231">
+              <did>
+                <unittitle>Folder 2: Printed handbills,</unittitle>
+                <unitdate era="ce" calendar="gregorian">undated</unitdate>
+              </did>
+            </c04>
+          </c03>
+        </c02>
+        <c02 level="series" id="id27232">
+          <did>
+            <unittitle>Miscellaneous Materials,</unittitle>
+            <unitdate era="ce" calendar="gregorian">undated</unitdate>
+          </did>
+          <c03 level="file" id="id27233">
+            <did>
+              <unittitle>Folder 3: Miscellaneous materials,</unittitle>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="series" id="id27234">
+          <did>
+            <unittitle>Bound Volumes,</unittitle>
+            <unitdate era="ce" calendar="gregorian">1829-1881 and undated</unitdate>
+          </did>
+          <c03 level="file" id="id27235">
+            <did>
+              <unittitle>Folder 4: Newspaper clippings,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1829 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27236">
+            <did>
+              <unittitle>Folder 5: Notes and newspaper clippings,</unittitle>
+              <unitdate era="ce" calendar="gregorian">1859-1881 and undated</unitdate>
+            </did>
+          </c03>
+          <c03 level="file" id="id27237">
+            <did>
+              <unittitle>Folder 6: Notes,</unittitle>
+              <unitdate era="ce" calendar="gregorian">undated</unitdate>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="series" id="id27238">
+          <did>
+            <unittitle>Photographs,</unittitle>
+            <unitdate era="ce" calendar="gregorian">undated</unitdate>
+          </did>
+          <c03 level="file" id="id27239">
+            <did>
+              <unittitle>Folder 7: Unidentified man,</unittitle>
+              <unitdate era="ce" calendar="gregorian">undated,</unitdate>
+            </did>
+            <scopecontent>
+              <p>possibly Richard H. Patchin</p>
+            </scopecontent>
+          </c03>
+        </c02>
+      </c01>
+    </dsc>
+    <!-- END DESCRIPTION OF SUBORDINATE COMPONENTS -->
+  </archdesc>
+</ead><!-- footer.inc.php -->
