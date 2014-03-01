@@ -1,196 +1,187 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_contact.xml">
-<!ENTITY detail SYSTEM "http://www.lib.jmu.edu/special/manuscripts/2040Heatwole_Detail.pdf" NDATA html>
-<!ENTITY dehart SYSTEM "http://leo.jmu.edu/record=b2081550~S0" NDATA html>
-<!ENTITY voices SYSTEM "http://leo.jmu.edu/record=b1353377~S0" NDATA html>
-]><ead id="vihart00086">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00086:: John L. Heatwole Collection, 1802-1901)//EN" "vihart00086.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00086">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00086:: John L. Heatwole Collection, 1802-1901)//EN" "vihart00086.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the John L. Heatwole Collection, <date>1802-1901</date>
-</titleproper>
-<subtitle id="sort">Heatwole, John L. Collection
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the John L. Heatwole Collection, <date era="ce" calendar="gregorian">1802-1901</date></titleproper>
+        <subtitle id="sort">Heatwole, John L. Collection
 <num type="collectionnumber">2040
-</num>
-</subtitle>
-</titlestmt>
-<publicationstmt>
-<publisher>Special Collections, Carrier Library, James Madison University
-</publisher> &address;
-<date type="publication">&copy; 2010 By JMU Libraries. All rights reserved.
-</date>
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MS Word, created by Special Collections Staff, <date>1/20/2010</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>Guide to the John L. Heatwole Collection, <date>1802-1901</date>
-</titleproper>
-<subtitle>A Collection in <lb/>Special Collections
-<num type="Collection Number "> SC# 2040
-</num>
-</subtitle>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Special Collections, Carrier Library, James Madison University
+</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Carrier Library, James Madison University
 </publisher>
-<date type="publication">2008
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Special Collections
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, James Madison University
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
-</repository>
-<unittitle label="Title" encodinganalog="245$a">John L. Heatwole Collection
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1802-1901
-</unitdate>
-</unittitle>
-<unitid label="Collection Number SC# " encodinganalog="099$a">2040
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">3 folders, .21 linear feet
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By JMU Libraries. All rights reserved.
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Special Collections Staff, <date era="ce" calendar="gregorian">1/20/2010</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Guide to the John L. Heatwole Collection, <date era="ce" calendar="gregorian">1802-1901</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections
+<num type="Collection Number"> SC# 2040
+</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+      </p>
+      <publisher>Special Collections, Carrier Library, James Madison University
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Special Collections
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, James Madison University
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">John L. Heatwole Collection
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1802-1901
+</unitdate></unittitle>
+      <unitid label="Collection Number SC#" encodinganalog="099$a">2040
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">3 folders, .21 linear feet
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<abstract label="Abstract">The John L. Heatwole Collection, 1802-1901, consists of three folders containing 102 items pertaining to Shenandoah Valley history.  The collection is arranged into three series:  General Valley Documents, Page County Documents, and Recipes.
+      </langmaterial>
+      <abstract label="Abstract">The John L. Heatwole Collection, 1802-1901, consists of three folders containing 102 items pertaining to Shenandoah Valley history.  The collection is arranged into three series:  General Valley Documents, Page County Documents, and Recipes.
 </abstract>
-<origination label="Collector" encodinganalog="100$a">John L. Heatwole
+      <origination label="Collector" encodinganalog="100$a">John L. Heatwole
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>None.
+        <p>None.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>None.
+        <p>None.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Heatwole, John L. Collection, 1802-1901, SC# 2040, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA., SC# 2040, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
+        <p>Heatwole, John L. Collection, 1802-1901, SC# 2040, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA., SC# 2040, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Donated to Carrier Library by John L. Heatwole of Bridgewater, Va. on several occasions beginning in December 1987.
+        <p>Donated to Carrier Library by John L. Heatwole of Bridgewater, Va. on several occasions beginning in December 1987.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Born in Washington D.C., John L. Heatwole (1948-2006) was an artist, woodcarver, tour guide, local historian and folklorist.  After serving in the U.S. Marine Corps and working at the Library of Congress, Heatwole moved to Dayton in 1974 with his wife, Miriam.  Throughout his lifetime he sat on various committees and boards related to both art and history, and received several awards for his work.  He chaired the Rockingham County Bicentennial Committee and in 1991 he was the first Virginian to display art in the National Capital Rotunda.  Heatwole also authored several books relating to superstitions, folkways, and the Civil War.  Heatwole was dedicated to preserving Shenandoah Valley history and folklore as is reflected in this collection of materials.
+      <p>Born in Washington D.C., John L. Heatwole (1948-2006) was an artist, woodcarver, tour guide, local historian and folklorist.  After serving in the U.S. Marine Corps and working at the Library of Congress, Heatwole moved to Dayton in 1974 with his wife, Miriam.  Throughout his lifetime he sat on various committees and boards related to both art and history, and received several awards for his work.  He chaired the Rockingham County Bicentennial Committee and in 1991 he was the first Virginian to display art in the National Capital Rotunda.  Heatwole also authored several books relating to superstitions, folkways, and the Civil War.  Heatwole was dedicated to preserving Shenandoah Valley history and folklore as is reflected in this collection of materials.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>The John L. Heatwole Collection, 1802-1901, consists of three folders containing 102 items pertaining to Shenandoah Valley history.  The collection is arranged into three series:  General Valley Documents, Page County Documents, and Recipes.
+      <p>The John L. Heatwole Collection, 1802-1901, consists of three folders containing 102 items pertaining to Shenandoah Valley history.  The collection is arranged into three series:  General Valley Documents, Page County Documents, and Recipes.
 </p>
-<p>Series I, General Valley Documents, includes arrest warrants, summons, orders for seizure of goods for non-payment of debt, legal reciepts, tax receipts, and business letterheads.  Individual items are chronologically arranged and described to the item level as per the donor's explanatory notes.  Documents related to the Zigler Family of Timberville have been placed at the front of the folder and consist of five receipts for muster fines and orders granting private entertainment to John or David Zigler, 1828-1850.
+      <p>Series I, General Valley Documents, includes arrest warrants, summons, orders for seizure of goods for non-payment of debt, legal reciepts, tax receipts, and business letterheads.  Individual items are chronologically arranged and described to the item level as per the donor's explanatory notes.  Documents related to the Zigler Family of Timberville have been placed at the front of the folder and consist of five receipts for muster fines and orders granting private entertainment to John or David Zigler, 1828-1850.
 </p>
-<p>Series II, Page County Documents, contains various court documents, summons, treasury receipts, handwritten receipts, and orders for the seizure of goods for non-payment of debt.
+      <p>Series II, Page County Documents, contains various court documents, summons, treasury receipts, handwritten receipts, and orders for the seizure of goods for non-payment of debt.
 </p>
-<p>Series III, Recipes, consists of two handwritten and two printed recipes for herbal cures and a recipe for making gunpowder.  One recipe, printed in Pennsylvania Dutch or a variation of German, gives steps for curing a "mad dog bite" (i.e. rabies).  A second recipe, also written in Pennsylvania Dutch, describes an incantation against sties.  For complete translations see John L. Heatwole's <extref entityref="voices"><title render="italic">Shenandoah Voices:  Folklore, Legends and Traditions of the Valley</title></extref> (Berryville, Va.:  Rockbridge Publishing Company, 1995), 47, 57-59.
+      <p>Series III, Recipes, consists of two handwritten and two printed recipes for herbal cures and a recipe for making gunpowder.  One recipe, printed in Pennsylvania Dutch or a variation of German, gives steps for curing a "mad dog bite" (i.e. rabies).  A second recipe, also written in Pennsylvania Dutch, describes an incantation against sties.  For complete translations see John L. Heatwole's <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1353377~S0"><title xlink:type="simple" render="italic" xlink:href="">Shenandoah Voices:  Folklore, Legends and Traditions of the Valley</title></extref> (Berryville, Va.:  Rockbridge Publishing Company, 1995), 47, 57-59.
 </p>
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
 </head>
-<p>The collection is arranged in three series:  I. General Valley Documents, 1802-1901 II. Page County Documents, 1854-1879 III. Recipes, n.d.
+      <p>The collection is arranged in three series:  I. General Valley Documents, 1802-1901 II. Page County Documents, 1854-1879 III. Recipes, n.d.
 </p>
-</arrangement>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </arrangement>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<bibliography encodinganalog="581$a">
-<head>Bibliography
+      <bibliography encodinganalog="581$a">
+        <head>Bibliography
 </head>
-<bibref>Heatwole, John L.  <extref entityref="voices"><title render="italic">Shenandoah Voices:  Folklore, Legends and Traditions of the Valley.</title></extref>  Berryville, Va.:  Rockbridge Publishing Company, 1995.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Heatwole, John L.  <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1353377~S0"><title xlink:type="simple" render="italic" xlink:href="">Shenandoah Voices:  Folklore, Legends and Traditions of the Valley.</title></extref>  Berryville, Va.:  Rockbridge Publishing Company, 1995.
 </bibref>
-<bibref>DeHart, Carol Maureen.  <extref entityref="dehart"><title render="italic">John L. Heatwole:  The Word Gatherer, Oral History Interview.</title></extref>  Staunton, Va.:  Lot's Wife Publishing, 2007.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">DeHart, Carol Maureen.  <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b2081550~S0"><title xlink:type="simple" render="italic" xlink:href="">John L. Heatwole:  The Word Gatherer, Oral History Interview.</title></extref>  Staunton, Va.:  Lot's Wife Publishing, 2007.
 </bibref>
-</bibliography>
-</descgrp>
-<dsc type="combined">
-<head>Contents List
+      </bibliography>
+    </descgrp>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="file"> 
-<did>
-<unittitle>For item-level description of Series I, <extref entityref="detail">click here</extref>
-<unitdate type="inclusive">
-</unitdate>
-</unittitle>
-</did>
-</c01>
-<c01 level="file"> 
-<did>
-<unittitle label="Series I">General Valley Documents
-<unitdate type="inclusive">1802-1901
-</unitdate>
-</unittitle>
-</did>
-</c01>
-<c01 level="file"> 
-<did>
-<unittitle label="Series II">Page County Documents
-<unitdate type="inclusive">1854-1879
-</unitdate>
-</unittitle>
-</did>
-</c01>
-<c01 level="file"> 
-<did>
-<unittitle label="Series III">Recipes
-<unitdate type="inclusive">undated
-</unitdate>
-</unittitle>
-</did>
-</c01>
-</dsc>
-</archdesc>
+      <c01 level="file">
+        <did>
+          <unittitle>For item-level description of Series I, <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/2040Heatwole_Detail.pdf">click here</extref><unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle label="Series I">General Valley Documents
+<unitdate type="inclusive" era="ce" calendar="gregorian">1802-1901
+</unitdate></unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle label="Series II">Page County Documents
+<unitdate type="inclusive" era="ce" calendar="gregorian">1854-1879
+</unitdate></unittitle>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle label="Series III">Recipes
+<unitdate type="inclusive" era="ce" calendar="gregorian">undated
+</unitdate></unittitle>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

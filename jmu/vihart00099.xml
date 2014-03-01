@@ -1,749 +1,736 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_contact.xml">
-<!NOTATION aspx SYSTEM "">
-<!ENTITY Weaver SYSTEM "http://www.lib.jmu.edu/special/manuscripts/weaver.aspx" NDATA aspx>
-<!ENTITY ItemList SYSTEM "http://www.lib.jmu.edu/special/manuscripts/5016HRHistProp_contents.pdf" NDATA aspx>
-<!ENTITY LincPenn1 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_03_LincPenn_01.jpg" NDATA aspx>
-<!ENTITY LincPenn2 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_03_LincPenn_02.jpg" NDATA aspx>
-<!ENTITY Sterling1 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_05_Sterling_01.jpg" NDATA aspx>
-<!ENTITY Sterling2 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_05_Sterling_02.jpg" NDATA aspx>
-<!ENTITY Kiser1 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_01.jpg" NDATA aspx>
-<!ENTITY Kiser2 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_02.jpg" NDATA aspx>
-<!ENTITY Kiser3 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_03.jpg" NDATA aspx>
-<!ENTITY Kiser4 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_04.jpg" NDATA aspx>
-<!ENTITY Kiser5 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_05.jpg" NDATA aspx>
-<!ENTITY Kiser6 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_06a.jpg" NDATA aspx>
-<!ENTITY Kiser7 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_06b.jpg" NDATA aspx>
-<!ENTITY Liskey1 SYSTEM "http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_16_Liskey_01.jpg" NDATA aspx>
-]><ead id="vihart00099">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00099:: Harrisonburg-Rockingham Historic Properties Collection, 1989-2006)//EN" "vihart00099.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00099">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00099:: Harrisonburg-Rockingham Historic Properties Collection, 1989-2006)//EN" "vihart00099.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Harrisonburg-Rockingham Historic Properties Collection, <date>1989-2006</date>
-</titleproper>
-<subtitle id="sort">Harrisonburg-Rockingham Historic Properties Collection
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Harrisonburg-Rockingham Historic Properties Collection, <date era="ce" calendar="gregorian">1989-2006</date></titleproper>
+        <subtitle id="sort">Harrisonburg-Rockingham Historic Properties Collection
 <num type="collectionnumber">5016
-</num>
-</subtitle>
-</titlestmt>
-<publicationstmt>
-<publisher>Special Collections, Carrier Library, James Madison University
-</publisher> &address;
-<date type="publication">&copy; 2008 By JMU Libraries. All rights reserved.
-</date>
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MS Word, created by Heather Browne, <date>8/8/2008</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>Guide to the Harrisonburg-Rockingham Historic Properties Collection, <date>1989-2006</date>
-</titleproper>
-<subtitle>A Collection in <lb/>Special Collections
-<num type="SC#">5016
-</num>
-</subtitle>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Special Collections, Carrier Library, James Madison University
+</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Carrier Library, James Madison University
 </publisher>
-<date type="publication">2008
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Margaux Zanelli, May 2007
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, James Madison University
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Harrisonburg-Rockingham Historic Properties Collection,
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1989-2006
-</unitdate>
-</unittitle>
-<unitid label="Collection Number SC# " encodinganalog="099$a">5016
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">2.8 linear feet; three Hollinger boxes and one oversized box, 18" x 23" x 3"
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2008 By JMU Libraries. All rights reserved.
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Heather Browne, <date era="ce" calendar="gregorian">8/8/2008</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Guide to the Harrisonburg-Rockingham Historic Properties Collection, <date era="ce" calendar="gregorian">1989-2006</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections
+<num type="SC#">5016
+</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+      </p>
+      <publisher>Special Collections, Carrier Library, James Madison University
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Margaux Zanelli, May 2007
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, James Madison University
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Harrisonburg-Rockingham Historic Properties Collection,
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1989-2006
+</unitdate></unittitle>
+      <unitid label="Collection Number SC#" encodinganalog="099$a">5016
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">2.8 linear feet; three Hollinger boxes and one oversized box, 18" x 23" x 3"
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<abstract label="Abstract">The collection contains National Register of Historic Places nomination forms for properties in the vicinity of Rockingham County and the City of Harrisonburg created by students in James Madison University's Historic Preservation class, 1989-2006; includes supporting documents: maps, floor plans and images used to supplement the nomination forms. 
+      </langmaterial>
+      <abstract label="Abstract">The collection contains National Register of Historic Places nomination forms for properties in the vicinity of Rockingham County and the City of Harrisonburg created by students in James Madison University's Historic Preservation class, 1989-2006; includes supporting documents: maps, floor plans and images used to supplement the nomination forms. 
 </abstract>
-<origination label="Creator" encodinganalog="100$a">Students in Mr. Darryl Nash's Historic Preservation class, HIST 463/693, ARTH 493, James Madison University.
+      <origination label="Creator" encodinganalog="100$a">Students in Mr. Darryl Nash's Historic Preservation class, HIST 463/693, ARTH 493, James Madison University.
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>None.
+        <p>None.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>None.
+        <p>None.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>[Item][Box__, Folder__],Harrisonburg-Rockingham Historic Properties Collection, SC# 5016, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
+        <p>[Item][Box__, Folder__],Harrisonburg-Rockingham Historic Properties Collection, SC# 5016, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Received from Mr. Darryl Nash in June 2006.
+        <p>Received from Mr. Darryl Nash in June 2006.
 </p>
-</acqinfo><accruals>
-<head>Accruals
+      </acqinfo>
+      <accruals>
+        <head>Accruals
 </head>
-<p>May receive regular additions of material
+        <p>May receive regular additions of material
 </p>
-</accruals>
-<custodhist>
-<head>Custodial History
+      </accruals>
+      <custodhist>
+        <head>Custodial History
 </head>
-<p>Provenance: The Harrisonburg-Rockingham Historic Properties Collection came into existence in 1989 when HIST 493/693 was first offered at James Madison University.  Taught by Dr. Darryl Nash since its inception, the purpose of the course was to teach students historic preservation techniques, while providing a hands on project solidifying those objectives taught in class.  At the end of term, students were expected to complete a Nomination form ready for submittal to the Department of Historic Places.  Mr. Nash had retained a sizeable collection of student projects, and donated them to Special Collections in the Fall of 2006. 
+        <p>Provenance: The Harrisonburg-Rockingham Historic Properties Collection came into existence in 1989 when HIST 493/693 was first offered at James Madison University.  Taught by Dr. Darryl Nash since its inception, the purpose of the course was to teach students historic preservation techniques, while providing a hands on project solidifying those objectives taught in class.  At the end of term, students were expected to complete a Nomination form ready for submittal to the Department of Historic Places.  Mr. Nash had retained a sizeable collection of student projects, and donated them to Special Collections in the Fall of 2006. 
 </p>
-</custodhist>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+      </custodhist>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>Properties represented in the Harrisonburg-Rockingham Historic Properties Collection provides lasting documentation of significant properties in the Harrisonburg-Rockingham County area. The unique architecture and historical significance of these properties provided the foundation for consideration for nomination of the National Register of Historic Places.
+      <p>Properties represented in the Harrisonburg-Rockingham Historic Properties Collection provides lasting documentation of significant properties in the Harrisonburg-Rockingham County area. The unique architecture and historical significance of these properties provided the foundation for consideration for nomination of the National Register of Historic Places.
 </p>
-<p>Architectural styles in Rockingham County and the City of Harrisonburg differ from eastern Virginia largely due to early settlement patterns. Rockingham County was formally established in 1777 from Augusta and Orange counties. The physical geography of Rockingham County, located west of the Blue Ridge Mountains, deterred most settlers on the eastern coast from crossing the mountains to explore western Virginia. The emigrants of Rockingham County thus hearkened from Northern states, such as Pennsylvania and Maryland, bringing with them architectural styles from their Germanic, Swiss, and Scots-Irish heritage. 
+      <p>Architectural styles in Rockingham County and the City of Harrisonburg differ from eastern Virginia largely due to early settlement patterns. Rockingham County was formally established in 1777 from Augusta and Orange counties. The physical geography of Rockingham County, located west of the Blue Ridge Mountains, deterred most settlers on the eastern coast from crossing the mountains to explore western Virginia. The emigrants of Rockingham County thus hearkened from Northern states, such as Pennsylvania and Maryland, bringing with them architectural styles from their Germanic, Swiss, and Scots-Irish heritage. 
 </p>
-<p>There were two distinct periods of development in America, both of which influenced architectural choices in Rockingham County and Harrisonburg; the Antebellum period from 1830-1860 and the Reconstruction and Growth period from 1865 to 1917. The dominating styles in Rockingham County ranged from 19th century Colonial (as seen in the <title render="italic">Mannheim House</title>,) 19th century Georgian (as seen in the <title render="italic">Emanuel Roller House</title> and the <title render="italic">Contentment House</title>,) 19th century Federal (as seen in the <title render="italic">Jacob Yount House</title>,) to 20th century Modern. Transitional styles include the Queen Anne Style, Gothic and Greek Revival, Italianate, and Colonial Revival. All of these distinct styles were modified to reflect local traditions and customs. This change of style, due to local materials, craftsmen, and traditions, is known as <title render="doublequote">vernacular style.</title> All of the houses in this collection represent some form of vernacular styles, while reflecting the national architecture as well. 
+      <p>There were two distinct periods of development in America, both of which influenced architectural choices in Rockingham County and Harrisonburg; the Antebellum period from 1830-1860 and the Reconstruction and Growth period from 1865 to 1917. The dominating styles in Rockingham County ranged from 19th century Colonial (as seen in the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Mannheim House</title>,) 19th century Georgian (as seen in the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Emanuel Roller House</title> and the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Contentment House</title>,) 19th century Federal (as seen in the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Jacob Yount House</title>,) to 20th century Modern. Transitional styles include the Queen Anne Style, Gothic and Greek Revival, Italianate, and Colonial Revival. All of these distinct styles were modified to reflect local traditions and customs. This change of style, due to local materials, craftsmen, and traditions, is known as <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="doublequote" xlink:href="">vernacular style.</title> All of the houses in this collection represent some form of vernacular styles, while reflecting the national architecture as well. 
 </p>
-<p><title render="bold">Some of the more notable properties in the collection include:</title>
+      <p>
+        <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Some of the more notable properties in the collection include:</title>
+      </p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Thomas Harrison House:</title> The historical context of the Thomas Harrison House is vital to the Harrisonburg community as it was the home of its founder, Thomas Harrison. The house represents the first permanent structure of the area, as well as one of the only surviving vernacular stone structures. This circa 1750 house reflects the 18th century vernacular style to its fullest extent. The house, built of limestone rubble, is a one and half story single pile structure over a raised basement with an attic. The basement was built over a spring, which is characteristic of many early Rockingham County houses. 
 </p>
-<p><title render="italic">The Thomas Harrison House:</title> The historical context of the Thomas Harrison House is vital to the Harrisonburg community as it was the home of its founder, Thomas Harrison. The house represents the first permanent structure of the area, as well as one of the only surviving vernacular stone structures. This circa 1750 house reflects the 18th century vernacular style to its fullest extent. The house, built of limestone rubble, is a one and half story single pile structure over a raised basement with an attic. The basement was built over a spring, which is characteristic of many early Rockingham County houses. 
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Mannheim:</title> This property serves as an example of 18th century farm life and the institution of slavery, which was not widespread in Rockingham County as in central and eastern Virginia. Architecturally, the Mannheim house represents the Germanic influence. Built in 1750 with a massive central chimney, this two story house displays fine Germanic craftsmanship. The property also includes several examples of outbuildings, including a springhouse, icehouse, and slave quarters. 
 </p>
-<p><title render="italic">Mannheim:</title> This property serves as an example of 18th century farm life and the institution of slavery, which was not widespread in Rockingham County as in central and eastern Virginia. Architecturally, the Mannheim house represents the Germanic influence. Built in 1750 with a massive central chimney, this two story house displays fine Germanic craftsmanship. The property also includes several examples of outbuildings, including a springhouse, icehouse, and slave quarters. 
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Contentment:</title> The historical context of Contentment has both political and social elements. Members of the Grattan family, the original builders of the house, served in the Virginia House of Delegates. In 1864, the land surrounding Contentment was used during the Civil War as Confederate troops organized these prior to the Battle of Piedmont. Socially, the Grattan family represents one of the most prominent Scots-Irish families in Rockingham County, as the family has resided in Contentment since 1761 and helped support Revolutionary War efforts. The Contentment House is a large, two-story Georgian style farmhouse built in 1823. With the traditional pattern of two windows aside a central door, a second story aligned with the same layout, and fireplaces on the gable end, the house remains relatively unchanged. 
 </p>
-<p><title render="italic">Contentment:</title> The historical context of Contentment has both political and social elements. Members of the Grattan family, the original builders of the house, served in the Virginia House of Delegates. In 1864, the land surrounding Contentment was used during the Civil War as Confederate troops organized these prior to the Battle of Piedmont. Socially, the Grattan family represents one of the most prominent Scots-Irish families in Rockingham County, as the family has resided in Contentment since 1761 and helped support Revolutionary War efforts. The Contentment House is a large, two-story Georgian style farmhouse built in 1823. With the traditional pattern of two windows aside a central door, a second story aligned with the same layout, and fireplaces on the gable end, the house remains relatively unchanged. 
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">John Paul House:</title> This property, as its name suggests, is significant largely due to the significance of its inhabitants. The Paul family boasts two federal judges and one state judge. Most prominent was Peter Paul, Jr. who was appointed Justice of the Peace in 1855. The John Paul House, also known as the Ottobine Farm, is representative of the changing architectural styles of the nineteenth century as it reflects both Late Victorian Gothic style and Greek Revival portico to match the family's growing prosperity in Harrisonburg. 
 </p>
-<p><title render="italic">John Paul House:</title> This property, as its name suggests, is significant largely due to the significance of its inhabitants. The Paul family boasts two federal judges and one state judge. Most prominent was Peter Paul, Jr. who was appointed Justice of the Peace in 1855. The John Paul House, also known as the Ottobine Farm, is representative of the changing architectural styles of the nineteenth century as it reflects both Late Victorian Gothic style and Greek Revival portico to match the family's growing prosperity in Harrisonburg. 
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Peale House:</title> Jonathan Peale, the owner, was a wealthy farmer and prominent citizen in early Harrisonburg history. However, its historical significance stems from its association with General Thomas <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="doublequote" xlink:href="">Stonewall</title> Jackson, who was said to have set up base at the Peale House prior to the Battle of Cross Keys and Port Republic. The Peale house is a unique example of Gothic Revival architectural style incorporated with vernacular style built in the 1840s. Constructed of brick, the house boasts Doric columns supporting a two story portico on the front and two story columns supporting the back porches; these features are reminiscent of ancient Greek temples hence the style name. 
 </p>
-<p><title render="italic">Peale House:</title> Jonathan Peale, the owner, was a wealthy farmer and prominent citizen in early Harrisonburg history. However, its historical significance stems from its association with General Thomas <title render="doublequote">Stonewall</title> Jackson, who was said to have set up base at the Peale House prior to the Battle of Cross Keys and Port Republic. The Peale house is a unique example of Gothic Revival architectural style incorporated with vernacular style built in the 1840s. Constructed of brick, the house boasts Doric columns supporting a two story portico on the front and two story columns supporting the back porches; these features are reminiscent of ancient Greek temples hence the style name. 
-</p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>The Harrisonburg-Rockingham Historic Properties Collection consists of 2.8 linear feet of material, c. 1989 to 2006. The collection was generated by students in Mr. Darryl Nash's Historic Preservation Class (HIST 493,693, ARTH 493) at James Madison University. The only exception to this is the Graves Chapel Property which was completed by Mr. Nash himself. The collection primarily contains National Register Nomination Forms and supporting material for potential property candidates for the National Register of Historic places in Harrisonburg and Rockingham County, supported by a wide array of documents and images relating to each property. It is arranged chronologically by date generated, then alphabetically by property with the following subseries: Forms, Supporting Documents, Images, and Oversized. For more a more detailed list for each property please see <extref entityref="ItemList">itemized contents list.</extref>
+      <p>The Harrisonburg-Rockingham Historic Properties Collection consists of 2.8 linear feet of material, c. 1989 to 2006. The collection was generated by students in Mr. Darryl Nash's Historic Preservation Class (HIST 493,693, ARTH 493) at James Madison University. The only exception to this is the Graves Chapel Property which was completed by Mr. Nash himself. The collection primarily contains National Register Nomination Forms and supporting material for potential property candidates for the National Register of Historic places in Harrisonburg and Rockingham County, supported by a wide array of documents and images relating to each property. It is arranged chronologically by date generated, then alphabetically by property with the following subseries: Forms, Supporting Documents, Images, and Oversized. For more a more detailed list for each property please see <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/5016HRHistProp_contents.pdf">itemized contents list.</extref></p>
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
+</head>
+      <p>The collection is arranged chronologically by the date the project was completed, then alphabetically.  Within project folders, documents are arranged according to the following series: Forms, Supporting Documents and Images. For more a more detailed list for each property please see <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/5016HRHistProp_contents.pdf">itemized contents list</extref>. Asterisks before a project title in the finding aid indicate that there are materials in the oversized series relating to that project.
 </p>
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+    </arrangement>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<p>The collection is arranged chronologically by the date the project was completed, then alphabetically.  Within project folders, documents are arranged according to the following series: Forms, Supporting Documents and Images. For more a more detailed list for each property please see <extref entityref="ItemList">itemized contents list</extref>. Asterisks before a project title in the finding aid indicate that there are materials in the oversized series relating to that project.
-</p>
-</arrangement>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+      <bibliography encodinganalog="581$a">
+        <head>Bibliography
 </head>
-<bibliography encodinganalog="581$a">
-<head>Bibliography
-</head>
-<bibref>Massey, James C. Shirley et. al. <title render="italic">Shenandoah County Historic resources survey: survey report.</title> Richmond, VA: The Virginia Department of Historic Resources, 1995.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Massey, James C. Shirley et. al. <title xlink:type="simple" render="italic" xlink:href="">Shenandoah County Historic resources survey: survey report.</title> Richmond, VA: The Virginia Department of Historic Resources, 1995.
 </bibref>
-<bibref>National Register of Historic Places. SED/JJ. 2 February 2007. http://www.cr.nps.gov/nr, National Park Service.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">National Register of Historic Places. SED/JJ. 2 February 2007. http://www.cr.nps.gov/nr, National Park Service.
 </bibref>
-<bibref>Suter, Scott H. and Cheryl Lyon. <title render="italic">Harrisonburg</title>. Chicago: Arcadia, 2003.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Suter, Scott H. and Cheryl Lyon. <title xlink:type="simple" render="italic" xlink:href="">Harrisonburg</title>. Chicago: Arcadia, 2003.
 </bibref>
-<bibref>Suter, Scott H. and Cheryl Lyon. <title render="italic">Places, Faces, and Traces: Historical Photographs of Harrisonburg and Rockingham County</title>. Dayton, VA: Silver Lake Mill, 2005.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Suter, Scott H. and Cheryl Lyon. <title xlink:type="simple" render="italic" xlink:href="">Places, Faces, and Traces: Historical Photographs of Harrisonburg and Rockingham County</title>. Dayton, VA: Silver Lake Mill, 2005.
 </bibref>
-<bibref>Terrell, Isaac Long. <title render="italic">Old Houses in Rockingham County, 1750-1850</title>. Verona, VA: McClure Printing Company, 1970. 
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Terrell, Isaac Long. <title xlink:type="simple" render="italic" xlink:href="">Old Houses in Rockingham County, 1750-1850</title>. Verona, VA: McClure Printing Company, 1970. 
 </bibref>
-</bibliography>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </bibliography>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>See also the Margaret Grattan Weaver collection, <extref entityref="Weaver">SC# 2030</extref>
+        <p>See also the Margaret Grattan Weaver collection, <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/weaver.aspx">SC# 2030</extref></p>
+      </relatedmaterial>
+      <separatedmaterial encodinganalog="544$a">
+        <head>Separated Material
+</head>
+        <p>Photocopied and/or duplicated material was separated from the collection. Original wallpaper samples from the Kiser-Roller House (1993) and the Liskey House (1995) were scanned and discarded. Two irregularly sized floor plans for the Lincoln-Pennybacker House (1989) had been pieced with tape, and thus were scanned and discarded. Images for the O.C. Sterling House (1989) had been pasted on mat board, which were scanned. 
 </p>
-</relatedmaterial>
-<separatedmaterial encodinganalog="544$a">
-<head>Separated Material
+      </separatedmaterial>
+    </descgrp>
+    <dsc type="combined">
+      <head>Contents List (Box:Folder)
 </head>
-<p>Photocopied and/or duplicated material was separated from the collection. Original wallpaper samples from the Kiser-Roller House (1993) and the Liskey House (1995) were scanned and discarded. Two irregularly sized floor plans for the Lincoln-Pennybacker House (1989) had been pieced with tape, and thus were scanned and discarded. Images for the O.C. Sterling House (1989) had been pasted on mat board, which were scanned. 
-</p>
-</separatedmaterial>
-</descgrp>
-<dsc type="combined">
-<head>Contents List (Box:Folder)
-</head>
-<c01 level="series"> 
-<did>
-<unittitle><extref entityref="ItemList">Itemized Contents List</extref>
+      <c01 level="series">
+        <did>
+          <unittitle>
+            <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/5016HRHistProp_contents.pdf">Itemized Contents List</extref>
+          </unittitle>
+        </did>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>Undated
 </unittitle>
-</did>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>Undated
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Lethe Property
+	</unittitle>
+            <container>1:1
+	</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1989
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Lethe Property
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Herringford
 	</unittitle>
-	<container>1:1
+            <container>1:2
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1989
-</unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Herringford
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Lincoln-Pennybacker House
 	</unittitle>
-	<container>1:2
+            <container>1:3
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Lincoln-Pennybacker House
-	</unittitle>
-	<container>1:3
-	</container>
-	<physdesc>Hand drafted floor plans, 4 pp, 2 scanned: <extref entityref="LincPenn1">Image 1</extref>(1.54mb) <extref entityref="LincPenn2">Image 2</extref>(1.5mb)
+            <physdesc>Hand drafted floor plans, 4 pp, 2 scanned: <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_03_LincPenn_01.jpg">Image 1</extref>(1.54mb) <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_03_LincPenn_02.jpg">Image 2</extref>(1.5mb)
 	</physdesc>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Maplewood: John Hopkins House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Maplewood: John Hopkins House
 	</unittitle>
-	<container>1:4
+            <container>1:4
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>O.C. Sterling House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>O.C. Sterling House
 	</unittitle>
-	<container>1:5
+            <container>1:5
 	</container>
-	<physdesc><extref entityref="Sterling1">Link to images 1-3</extref> (940kb), <extref entityref="Sterling2">Link to images 4-7</extref>(.98mb)
+            <physdesc><extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_05_Sterling_01.jpg">Link to images 1-3</extref> (940kb), <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_05_Sterling_02.jpg">Link to images 4-7</extref>(.98mb)
 	</physdesc>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Thomas Harrison House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Thomas Harrison House
 	</unittitle>
-	<container>1:6
+            <container>1:6
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1991
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1991
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Rockingham Motor Company
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Rockingham Motor Company
 	</unittitle>
-	<container>1:7
+            <container>1:7
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Twin Maples
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>*Twin Maples
 	</unittitle>
-	<container>1:8
+            <container>1:8
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1993
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1993
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>John Roller, Sr. 
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>John Roller, Sr. 
 	</unittitle>
-	<container>1:9
+            <container>1:9
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Kiser-Roller House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Kiser-Roller House
 	</unittitle>
-	<container>1:10
+            <container>1:10
 	</container>
-	<physdesc>Scans of plaster and wallpaper samples from parlor room: <extref entityref="Kiser1">1</extref> (1.38mb) <extref entityref="Kiser2">2</extref> (1.42mb) <extref entityref="Kiser3">3</extref> (1.29mb) <extref entityref="Kiser4">4</extref> (1.42mb) <extref entityref="Kiser5">5</extref> (2.07mb) <extref entityref="Kiser6">6</extref> (962kb) <extref entityref="Kiser7">7</extref> (625kb)
+            <physdesc>Scans of plaster and wallpaper samples from parlor room: <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_01.jpg">1</extref> (1.38mb) <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_02.jpg">2</extref> (1.42mb) <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_03.jpg">3</extref> (1.29mb) <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_04.jpg">4</extref> (1.42mb) <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_05.jpg">5</extref> (2.07mb) <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_06a.jpg">6</extref> (962kb) <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_10_Kiser_06b.jpg">7</extref> (625kb)
 	</physdesc>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Seller's House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Seller's House
 	</unittitle>
-	<container>1:11
+            <container>1:11
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Jacob Yount House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>*Jacob Yount House
 	</unittitle>
-	<container>1:12
+            <container>1:12
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1994
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1994
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Idlewood Farm
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Idlewood Farm
 	</unittitle>
-	<container>1:13
+            <container>1:13
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Long's Chapel (Zenda)
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Long's Chapel (Zenda)
 	</unittitle>
-	<container>1:14
+            <container>1:14
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1995
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1995
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Barrybuck House
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Barrybuck House
 	</unittitle>
-	<container>1:15
+            <container>1:15
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Liskey Buildings (See also Liskey Farm, 2005)
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Liskey Buildings (See also Liskey Farm, 2005)
 	</unittitle>
-	<container>1:16
+            <container>1:16
 	</container>
-	<physdesc><extref entityref="Liskey1">Link to wallpaper sample</extref>(2mb)
+            <physdesc><extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/images/5016HRHistProp/M5016_01_16_Liskey_01.jpg">Link to wallpaper sample</extref>(2mb)
 	</physdesc>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1996
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1996
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Isaac Hardesty House
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Isaac Hardesty House
 	</unittitle>
-	<container>1:17
+            <container>1:17
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Peale House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Peale House
 	</unittitle>
-	<container>2:1
+            <container>2:1
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1997
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1997
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Contentment
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Contentment
 	</unittitle>
-	<container>2:2
+            <container>2:2
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Mannheim
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Mannheim
 	</unittitle>
-	<container>2:3
+            <container>2:3
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1998
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1998
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>First National Bank
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>First National Bank
 	</unittitle>
-	<container>2:4
+            <container>2:4
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Graves Chapel
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Graves Chapel
 	</unittitle>
-	<container>2:5
+            <container>2:5
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>1999
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>1999
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Greenland Home
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Greenland Home
 	</unittitle>
-	<container>1:6
+            <container>1:6
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Shoe Factory
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Shoe Factory
 	</unittitle>
-	<container>2:7-8
+            <container>2:7-8
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Tide Spring 
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Tide Spring 
 	</unittitle>
-	<container>2:9
+            <container>2:9
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>2000
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>2000
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Breneman's Mill (see also 2003)
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Breneman's Mill (see also 2003)
 	</unittitle>
-	<container>2:10
+            <container>2:10
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Paul House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Paul House
 	</unittitle>
-	<container>2:11-12
+            <container>2:11-12
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Saufley-Frysinger House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Saufley-Frysinger House
 	</unittitle>
-	<container>2:13
+            <container>2:13
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Train Depot and Gas Stations
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Train Depot and Gas Stations
 	</unittitle>
-	<container>2:14
+            <container>2:14
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>2001
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>2001
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Hardesty-Higgins House Committee
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Hardesty-Higgins House Committee
 	</unittitle>
-	<container>2:15
+            <container>2:15
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Pence Farm/Spring
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Pence Farm/Spring
 	</unittitle>
-	<container>2:16
+            <container>2:16
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Whitmore House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Whitmore House
 	</unittitle>
-	<container>2:17
+            <container>2:17
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>2002
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>2002
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Greenmount Farm
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Greenmount Farm
 	</unittitle>
-	<container>3:1-2
+            <container>3:1-2
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>2003
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>2003
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Breneman's Mill (see also 2000)
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Breneman's Mill (see also 2000)
 	</unittitle>
-	<container>3:3
+            <container>3:3
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Burkeholder-Myers House
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>*Burkeholder-Myers House
 	</unittitle>
-	<container>3:4
+            <container>3:4
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Fawley Homeplace
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>*Fawley Homeplace
 	</unittitle>
-	<container>3:5
+            <container>3:5
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>2004
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>2004
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Blosser House
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Blosser House
 	</unittitle>
-	<container>3:6-7
+            <container>3:6-7
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Shepherd of the Valley Lutheran Church <title render="doublequote">Dayton Chapel</title>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>*Shepherd of the Valley Lutheran Church <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="doublequote" xlink:href="">Dayton Chapel</title></unittitle>
+            <container>3:8
+	</container>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Showalter
 	</unittitle>
-	<container>3:8
+            <container>3:9
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Showalter
-	</unittitle>
-	<container>3:9
-	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>2005
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>2005
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Liskey Farm (see also Liskey Buildings, 1995)
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Liskey Farm (see also Liskey Buildings, 1995)
 	</unittitle>
-	<container>3:10
+            <container>3:10
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle>2006
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle>2006
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>*Craney Island
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>*Craney Island
 	</unittitle>
-	<container>3:11
+            <container>3:11
 	</container>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Winston-Liskey House Project
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Winston-Liskey House Project
 	</unittitle>
-	<container>3:12
+            <container>3:12
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle label="Box 4">Oversized
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Box 4">Oversized
 </unittitle>
-</did>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Blosser House, 2004, hand drafted floor plans [18"x24", 3pp]
+        </did>
+        <c02 level="file">
+          <did>
+            <unittitle>Blosser House, 2004, hand drafted floor plans [18"x24", 3pp]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Burkeholder-Myers House, 2003, hand drafted floor plans [18"x24"]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Burkeholder-Myers House, 2003, hand drafted floor plans [18"x24"]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Contentment, 1997, hand drafted floor plans [17"x22", 3pp]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Contentment, 1997, hand drafted floor plans [17"x22", 3pp]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Craney Island, 2006, hand drafted floor plans [18"x24", 4 pp]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Craney Island, 2006, hand drafted floor plans [18"x24", 4 pp]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Fawley Homeplace, 2003, hand drafted floor plans [18"x24"]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Fawley Homeplace, 2003, hand drafted floor plans [18"x24"]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Herringford, 1989, hand drafted floor plans [16"x19", 3pp]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Herringford, 1989, hand drafted floor plans [16"x19", 3pp]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Idlewood Farm, 1994: Hand drafted floor plans [18"x24", 5pp] and Land Survey circa 1989 [11"x17"]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Idlewood Farm, 1994: Hand drafted floor plans [18"x24", 5pp] and Land Survey circa 1989 [11"x17"]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Liskey Buildings, 1995, hand drafted floor plans [18"x24", 9pp]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Liskey Buildings, 1995, hand drafted floor plans [18"x24", 9pp]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Liskey Farm, 2005, hand drafted floor plans [18"x24", 4pp]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Liskey Farm, 2005, hand drafted floor plans [18"x24", 4pp]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Rockingham Motor Company, 1991, blueprints [24"x36", 3pp]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Rockingham Motor Company, 1991, blueprints [24"x36", 3pp]
 	</unittitle>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Shepherd of the Valley Lutheran Church Dayton Chapel 2004, blueprints [26 1/2"x31 1/2"]
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Shepherd of the Valley Lutheran Church Dayton Chapel 2004, blueprints [26 1/2"x31 1/2"]
 	</unittitle>
-	<physloc><emph render="bold">Map Drawer</emph>
-	</physloc>
-	</did>
-	</c02>
-	<c02 level="file"> 
-	<did>
-	<unittitle>Showalter, 2004, hand drafted floor plans [24"x36"]
+            <physloc>
+              <emph render="bold">Map Drawer</emph>
+            </physloc>
+          </did>
+        </c02>
+        <c02 level="file">
+          <did>
+            <unittitle>Showalter, 2004, hand drafted floor plans [24"x36"]
 	</unittitle>
-	<physloc><emph render="bold">Map Drawer</emph>
-	</physloc>
-	</did>
-	</c02>
-</c01>
-</dsc>
-</archdesc>
+            <physloc>
+              <emph render="bold">Map Drawer</emph>
+            </physloc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

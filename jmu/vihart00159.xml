@@ -1,114 +1,115 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_contact.xml">
-]>
-<ead id="vihart00159">
-	<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-		<eadid countrycode="US" mainagencycode="ViHarT">PUBLIC "-//James Madison University::Carrier
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00159">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
 			Library::Special Collections//TEXT (US::ViHarT::vihart00NUMBER::COLLECTION NAME AND
 			DESCRIPTION [i.e. vihart00129::Wampler Business records, 1918-1972])//EN"
 			"vihart00NUMBER.xml" </eadid>
-		<filedesc>
-			<titlestmt>
-				<titleproper>A Guide to the Rockingham County Ledger, <date>1878-1892</date>
-				</titleproper>
-				<subtitle id="sort">Rockingham County Ledger<num type="collectionnumber">5045</num>
-				</subtitle>
-			</titlestmt>
-			<publicationstmt>
-				<publisher>Special Collections, Carrier Library, James Madison University
-				</publisher> &address; <date type="publication">&copy; 2012 By JMU Libraries. All
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Rockingham County Ledger, <date era="ce" calendar="gregorian">1878-1892</date></titleproper>
+        <subtitle id="sort">Rockingham County Ledger<num type="collectionnumber">5045</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Carrier Library, James Madison University
+				</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
 					rights reserved. </date>
-				<p id="usestatement">
-					<extref entityref="conditions">Conditions of Use </extref>
-				</p>
-			</publicationstmt>
-		</filedesc>
-		<profiledesc>
-			<creation>Machine-readable finding aid derived from MS Word, created by Jordan Smith and
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Jordan Smith and
 				Trip Gibson, </creation>
-			<langusage>Description is in <language langcode="eng">English </language>
-			</langusage>
-		</profiledesc>
-	</eadheader>
-	<frontmatter>
-		<titlepage>
-			<titleproper>A Guide to the Rockingham County Ledger<date>1878-1892</date>
-			</titleproper>
-			<subtitle>A Collection in <lb/>Special Collections <num type="Collection Number ">SC
-					5045</num>
-			</subtitle>
-			<p id="logostmt">
-				<extptr actuate="onload" show="embed" entityref="logo"/>
-			</p>
-			<publisher>Special Collections, Carrier Library, James Madison University </publisher>
-			<date type="publication">2013</date> &contact; <list type="deflist">
-				<defitem>
-					<label>Processed by:</label>
-					<item>Jordan Smith and Trip Gibson</item>
-				</defitem>
-			</list>
-		</titlepage>
-	</frontmatter>
-	<archdesc level="collection">
-		<runner placement="footer">Special Collections, James Madison University </runner>
-		<did>
-			<head>Descriptive Summary </head>
-			<repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-12-03">2013-12-03</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Rockingham County Ledger<date era="ce" calendar="gregorian">1878-1892</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">SC
+					5045</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+      </p>
+      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2013</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Jordan Smith and Trip Gibson</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, James Madison University </runner>
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
 				University </repository>
-			<unittitle label="Title" encodinganalog="245$a">Rockingham County Ledger<unitdate
-					type="inclusive" label="Date" encodinganalog="245$f">1878-1892</unitdate>
-			</unittitle>
-			<unitid label="Collection Number SC# " encodinganalog="099$a">SC 5045</unitid>
-			<physdesc label="Extent" encodinganalog="300$a">1 folder </physdesc>
-			<langmaterial label="Language">
-				<language langcode="eng">English </language>
-			</langmaterial>
-			<abstract label="Abstract">The Rockingham County Ledger is a single ledger that was
+      <unittitle label="Title" encodinganalog="245$a">Rockingham County Ledger<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1878-1892</unitdate></unittitle>
+      <unitid label="Collection Number SC#" encodinganalog="099$a">SC 5045</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">1 folder </physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English </language>
+      </langmaterial>
+      <abstract label="Abstract">The Rockingham County Ledger is a single ledger that was
 				purchased by James Madison University Special Collections. It contains business
 				related accounts pertaining to the sale and purchase of goods and livestock, general
 				farm accounts, employee payments, and debts owed/paid by individuals within
 				Rockingham County. </abstract>
-			<origination label="Creator" encodinganalog="100$a">Unknown</origination>
-		</did>
-		<descgrp type="admininfo">
-			<head>Administrative Information </head>
-			<accessrestrict encodinganalog="506$a">
-				<head>Access Restrictions </head>
-				<p>None</p>
-			</accessrestrict>
-			<userestrict encodinganalog="540$a">
-				<head>Use Restrictions </head>
-				<p>The ledger is in poor shape and requires careful handling. The binding is worn
+      <origination label="Creator" encodinganalog="100$a">Unknown</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information </head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions </head>
+        <p>None</p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions </head>
+        <p>The ledger is in poor shape and requires careful handling. The binding is worn
 					and fragile, the cover has water damage, is warped and falling apart, some of
 					the pages show signs of water damage and mold, there are several pages that have
 					been torn out, and the ink on some pages has bled through to other pages making
 					the writing illegible. </p>
-			</userestrict>
-			<prefercite encodinganalog="524$a">
-				<head>Preferred Citation </head>
-				<p>[Identification of Item], The Rockingham County Ledger, 1878-1892, SC# 5045,
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation </head>
+        <p>[Identification of Item], The Rockingham County Ledger, 1878-1892, SC# 5045,
 					Special Collections, Carrier Library, James Madison University, Harrisonburg,
 					VA.</p>
-			</prefercite>
-			<acqinfo encodinganalog="541$a">
-				<head>Acquisition Information </head>
-				<p>Purchased on July 26, 2009 from Larry Carrier, 3287 Lee Highway, Weyer’s Cave,
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information </head>
+        <p>Purchased on July 26, 2009 from Larry Carrier, 3287 Lee Highway, Weyer’s Cave,
 					VA</p>
-			</acqinfo>
-			<processinfo>
-				<head></head>
-				<p></p>
-			</processinfo>
-		</descgrp>
-		<bioghist encodinganalog="545$a">
-			<head>Biographical Information </head>
-			<p>The Rockingham County ledger was purchased from Larry Carrier on July 26, 2009. It
+      </acqinfo>
+      <processinfo>
+        <head/>
+        <p/>
+      </processinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information </head>
+      <p>The Rockingham County ledger was purchased from Larry Carrier on July 26, 2009. It
 				came by itself as a single ledger. As a business ledger from a prominent livestock
 				company from the late 19th century ca. 1878-1892 it contains the day-to-day
 				transactions of multiple farms and individuals within Rockingham County. The most
@@ -119,26 +120,24 @@
 				ledger as well; Nelson Nash, James Chapman, Dudley Proffitt, Jerry Nash, William
 				Beasley, and Robert Scot, however none of these records were kept for longer than a
 				few months. Each item that was sold or purchased was noted in this ledger. </p>
-		</bioghist>
-		<scopecontent encodinganalog="520$a">
-			<head>Scope and Content </head>
-			<p>Rockingham County Ledger, 1878-1890 consists of 1 ledger which includes 172 pages of
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content </head>
+      <p>Rockingham County Ledger, 1878-1890 consists of 1 ledger which includes 172 pages of
 				handwritten business accounts. It measures 6 ½” x 13”.</p>
-		</scopecontent>
-		<arrangement encodinganalog="351">
-			<head>Arrangement </head>
-			<p>1 folder with ledger inside.</p>
-		</arrangement>
-		<dsc type="combined">
-			<head>Contents List </head>
-
-			<c01 level="series">
-				<did>
-					<unittitle>Rockingham County Ledger</unittitle>
-					<container label="Box:Folder" type="box-folder">1:1</container>
-				</did>
-			</c01>
-
-		</dsc>
-	</archdesc>
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement </head>
+      <p>1 folder with ledger inside.</p>
+    </arrangement>
+    <dsc type="combined">
+      <head>Contents List </head>
+      <c01 level="series">
+        <did>
+          <unittitle>Rockingham County Ledger</unittitle>
+          <container label="Box:Folder" type="box-folder">1:1</container>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

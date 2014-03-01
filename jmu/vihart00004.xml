@@ -1,267 +1,245 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_contact.xml">
-<!ENTITY wayland SYSTEM
-"http://leo.jmu.edu/record=b1022039~S0" NDATA html>
-<!ENTITY couper SYSTEM
-"http://leo.jmu.edu/record=b1183739~S0" NDATA html>
-]><ead id="vihart00004">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00004:: Acker Family Diaries, 1880-1906)//EN" "vihart00004.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00004">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00004:: Acker Family Diaries, 1880-1906)//EN" "vihart00004.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Acker Family Diaries, <date>1880-1906</date>
-</titleproper>
-<subtitle id="sort">Acker Family Diaries
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Acker Family Diaries, <date era="ce" calendar="gregorian">1880-1906</date></titleproper>
+        <subtitle id="sort">Acker Family Diaries
 <num type="collectionnumber">2050
-</num>
-</subtitle>
-</titlestmt>
-<publicationstmt>
-<publisher>Special Collections, Carrier Library, James Madison University
-</publisher> &address;
-<date type="publication">&copy; 2010 By JMU Libraries. All rights reserved.
-</date>
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MS Word, created by Tiffany W. Cole, <date>1/28/2010</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>Guide to the Acker Family Diaries, <date>1880-1906</date>
-</titleproper>
-<subtitle>A Collection in <lb/>Special Collections
-<num type="Collection Number "> SC# 2050
-</num>
-</subtitle>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Special Collections, Carrier Library, James Madison University
+</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Carrier Library, James Madison University
 </publisher>
-<date type="publication">2008
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Scott DeNoon, April 1988; Revised Jan. 2010 by Tiffany Cole
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Special Collections, James Madison University
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Acker Family Diaries
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1880-1906
-</unitdate>
-</unittitle>
-<unitid label="Collection Number SC# " encodinganalog="099$a">2050
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">One Hollinger box; .42 linear feet
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2010 By JMU Libraries. All rights reserved.
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Tiffany W. Cole, <date era="ce" calendar="gregorian">1/28/2010</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Guide to the Acker Family Diaries, <date era="ce" calendar="gregorian">1880-1906</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections
+<num type="Collection Number"> SC# 2050
+</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+      </p>
+      <publisher>Special Collections, Carrier Library, James Madison University
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Scott DeNoon, April 1988; Revised Jan. 2010 by Tiffany Cole
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, James Madison University
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Acker Family Diaries
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1880-1906
+</unitdate></unittitle>
+      <unitid label="Collection Number SC#" encodinganalog="099$a">2050
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">One Hollinger box; .42 linear feet
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<abstract label="Abstract">The Acker Family Diaries, 1880-1906, consist of one Hollinger box and contains the personal diaries of Rockingham County residents Isaac Acker and his son David.  The elder Acker's diaries span the years 1880-1906, while his son's cover 1889-1900.  The diaries of both men are similar in that they discuss the day-to-day events in the lives of the Acker family.  The collection is arranged in three series:  Isaac Acker Diaries, David C. Acker Diaries, and Indices.
+      </langmaterial>
+      <abstract label="Abstract">The Acker Family Diaries, 1880-1906, consist of one Hollinger box and contains the personal diaries of Rockingham County residents Isaac Acker and his son David.  The elder Acker's diaries span the years 1880-1906, while his son's cover 1889-1900.  The diaries of both men are similar in that they discuss the day-to-day events in the lives of the Acker family.  The collection is arranged in three series:  Isaac Acker Diaries, David C. Acker Diaries, and Indices.
 </abstract>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>None.
+        <p>None.
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>None.
+        <p>None.
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Acker Family Diaries, 1880-1906, SC #2050, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
+        <p>Acker Family Diaries, 1880-1906, SC #2050, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>The collection is on deposit by contract from the Harrisonburg-Rockingham Historical Society.
+        <p>The collection is on deposit by contract from the Harrisonburg-Rockingham Historical Society.
 </p>
-</acqinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Biographical Information
+      </acqinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information
 </head>
-<p>Both Isaac and David Acker were avid farmers, devoted to agriculture, with an interest in carpentry.  Isaac (1832-1908), born near Broadway, served in the Confederate Army as an orderly sergeant in the 7th Virginia Cavalry under Generals Turner Ashby and Thomas L. Rosser.  He married Sallie V. Shoup (nee Shirkey), widow of Captain J.C. Shoup on November 11, 1868.
+      <p>Both Isaac and David Acker were avid farmers, devoted to agriculture, with an interest in carpentry.  Isaac (1832-1908), born near Broadway, served in the Confederate Army as an orderly sergeant in the 7th Virginia Cavalry under Generals Turner Ashby and Thomas L. Rosser.  He married Sallie V. Shoup (nee Shirkey), widow of Captain J.C. Shoup on November 11, 1868.
 </p>
-<p>David C. Acker (1869-1959), son of Isaac, was influential in founding the Rockingham County Farm Bureau, where he served as president for many years.  He also served as director of the Virginia Farm Bureau Federation and was a member of both the Agricultural Advisory Council of Rockingham County and the Agricultural Conference Board of Virginia.  In addition, David was president of the First National Bank of Broadway and secretary-treasurer of the Rockingham Mutual Telephone and Telegraph Company.  David married Martha M.B Sellers on April 6, 1906 and fathered three children with her.
+      <p>David C. Acker (1869-1959), son of Isaac, was influential in founding the Rockingham County Farm Bureau, where he served as president for many years.  He also served as director of the Virginia Farm Bureau Federation and was a member of both the Agricultural Advisory Council of Rockingham County and the Agricultural Conference Board of Virginia.  In addition, David was president of the First National Bank of Broadway and secretary-treasurer of the Rockingham Mutual Telephone and Telegraph Company.  David married Martha M.B Sellers on April 6, 1906 and fathered three children with her.
 </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>The Acker Family Diaries, 1880-1906, consist of one Hollinger box and contains the personal diaries of Rockingham County residents Isaac Acker and his son David.  The elder Acker' s diaries span the years 1880-1906, while his son's cover 1889-1900.  The diaries of both men are similar in that they discuss the day-to-day events in the lives of the Acker family.  There is much overlap in the diaries as topics such as farming, weather, visiting, and daily chores appear frequently in both works.  Other topics discussed in the diaries include weddings, funerals, church activities, and trips.  The collection is arranged in three seires:  Isaac Acker Diaries, David C. Acker Diaries, and Indices.
+      <p>The Acker Family Diaries, 1880-1906, consist of one Hollinger box and contains the personal diaries of Rockingham County residents Isaac Acker and his son David.  The elder Acker' s diaries span the years 1880-1906, while his son's cover 1889-1900.  The diaries of both men are similar in that they discuss the day-to-day events in the lives of the Acker family.  There is much overlap in the diaries as topics such as farming, weather, visiting, and daily chores appear frequently in both works.  Other topics discussed in the diaries include weddings, funerals, church activities, and trips.  The collection is arranged in three seires:  Isaac Acker Diaries, David C. Acker Diaries, and Indices.
 </p>
-<p>Series I, Isaac Acker Diaries, 1880-1906, comprises of brief entries describing daily family life, weather related observations, names of visitors, and work activities.  There are numerous accounts of Isaac and his family going to the "Babtist Church" or the "Creek Church" on Sundays.
+      <p>Series I, Isaac Acker Diaries, 1880-1906, comprises of brief entries describing daily family life, weather related observations, names of visitors, and work activities.  There are numerous accounts of Isaac and his family going to the "Babtist Church" or the "Creek Church" on Sundays.
 </p>
-<p>Series II, David C. Acker Diaries, 1889-1900, consists of short accounts on farming, family, weather descriptions, and general day-to-day activities.  There are no diary entries between September 3, 1889 and May 15, 1890.
+      <p>Series II, David C. Acker Diaries, 1889-1900, consists of short accounts on farming, family, weather descriptions, and general day-to-day activities.  There are no diary entries between September 3, 1889 and May 15, 1890.
 </p>
-<p>Series III, Indices, was compiled by local historian Agnes Kline and the Eastern Mennonite University Historical Library staff based on their copies of the diaries.  The assistance of EMU is necessary to correlate entries from the index to the original diaries at JMU.  The indices correspond to the Isaac Acker Diaries, 1880-1906, and the David C. Acker Diaries, 1897-1903, some of which are owned by the EMU Historical Library.
+      <p>Series III, Indices, was compiled by local historian Agnes Kline and the Eastern Mennonite University Historical Library staff based on their copies of the diaries.  The assistance of EMU is necessary to correlate entries from the index to the original diaries at JMU.  The indices correspond to the Isaac Acker Diaries, 1880-1906, and the David C. Acker Diaries, 1897-1903, some of which are owned by the EMU Historical Library.
 </p>
-</scopecontent>
-<arrangement encodinganalog="351">
-<head>Arrangement
+    </scopecontent>
+    <arrangement encodinganalog="351">
+      <head>Arrangement
 </head>
-<p>The collection is arranged in three series:  I. Isaac Acker Diaries, 1880-1906 II. David C. Acker Diaries, 1889-1900 III.  Indices.
+      <p>The collection is arranged in three series:  I. Isaac Acker Diaries, 1880-1906 II. David C. Acker Diaries, 1889-1900 III.  Indices.
 </p>
-</arrangement>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+    </arrangement>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<bibliography encodinganalog="581$a">
-<head>Bibliography
+      <bibliography encodinganalog="581$a">
+        <head>Bibliography
 </head>
-<bibref>Couper, William.  <extref entityref="couper"><title render="italic">History of the Shenandoah Valley:  Family and Personal Records, V.3.</title></extref>  New York:  Lewis Historical Publishing Company, 1952.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Couper, William.  <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1183739~S0"><title xlink:type="simple" render="italic" xlink:href="">History of the Shenandoah Valley:  Family and Personal Records, V.3.</title></extref>  New York:  Lewis Historical Publishing Company, 1952.
 </bibref>
-<bibref>Wayland, John W.  <extref entityref="wayland"><title render="italic">Men of Mark and representative citizens of Harrisonburg and Rockingham County, Virginia.</title></extref>  Staunton, Va.:  The McClure Company, Inc., 1943.
+        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Wayland, John W.  <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1022039~S0"><title xlink:type="simple" render="italic" xlink:href="">Men of Mark and representative citizens of Harrisonburg and Rockingham County, Virginia.</title></extref>  Staunton, Va.:  The McClure Company, Inc., 1943.
 </bibref>
-</bibliography>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </bibliography>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>See also the Acker Diaries Collection, 1880-1959, Eastern Mennonite University Historical Library, Harrisonburg, Va.
+        <p>See also the Acker Diaries Collection, 1880-1959, Eastern Mennonite University Historical Library, Harrisonburg, Va.
 </p>
-</relatedmaterial>
-</descgrp>
-<dsc type="combined">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-<c01 level="series"> 
-<did>
-<unittitle label="Series I">Isaac Acker Diaries
-<unitdate type="inclusive">1880-1906
-</unitdate>
-</unittitle>
-</did>
-	<c02 level="subseries"> 
-	<did>
-	<unittitle>1880-1885
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Folder" type="folder">1
+      <c01 level="series">
+        <did>
+          <unittitle label="Series I">Isaac Acker Diaries
+<unitdate type="inclusive" era="ce" calendar="gregorian">1880-1906
+</unitdate></unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>1880-1885
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Folder" type="folder">1
 	</container>
-	</did>
-	</c02>
-	<c02 level="subseries"> 
-	<did>
-	<unittitle>1886-1891
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Folder" type="folder">2
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>1886-1891
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Folder" type="folder">2
 	</container>
-	</did>
-	</c02>
-	<c02 level="subseries"> 
-	<did>
-	<unittitle>1892-1896
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Folder" type="folder">3
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>1892-1896
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Folder" type="folder">3
 	</container>
-	</did>
-	</c02>
-	<c02 level="subseries"> 
-	<did>
-	<unittitle>1897-1902
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Folder" type="folder">4
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>1897-1902
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Folder" type="folder">4
 	</container>
-	</did>
-	</c02>
-	<c02 level="subseries"> 
-	<did>
-	<unittitle>1903-December 1906
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Folder" type="folder">5
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>1903-December 1906
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Folder" type="folder">5
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle label="Series II">David C. Acker
-<unitdate type="inclusive">1889-1900
-</unitdate>
-</unittitle>
-</did>
-	<c02 level="subseries"> 
-	<did>
-	<unittitle>1889-1894
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Folder" type="folder">6
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series II">David C. Acker
+<unitdate type="inclusive" era="ce" calendar="gregorian">1889-1900
+</unitdate></unittitle>
+        </did>
+        <c02 level="subseries">
+          <did>
+            <unittitle>1889-1894
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Folder" type="folder">6
 	</container>
-	</did>
-	</c02>
-	<c02 level="subseries"> 
-	<did>
-	<unittitle>1895-1900
-	<unitdate type="inclusive">
-	</unitdate>
-	</unittitle>
-	<container label="Folder" type="folder">7
+          </did>
+        </c02>
+        <c02 level="subseries">
+          <did>
+            <unittitle>1895-1900
+	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <container label="Folder" type="folder">7
 	</container>
-	</did>
-	</c02>
-</c01>
-<c01 level="series"> 
-<did>
-<unittitle label="Series III">Indices
-<unitdate type="inclusive">
-</unitdate>
-</unittitle>
-<container label="Folder" type="folder">8
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <unittitle label="Series III">Indices
+<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+          <container label="Folder" type="folder">8
 </container>
-</did>
-</c01>
-</dsc>
-</archdesc>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>

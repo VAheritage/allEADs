@@ -1,291 +1,259 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/jmu_contact.xml">
-]>
-<ead id="vihart00135">
-	<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-		<eadid countrycode="US" mainagencycode="ViHarT">PUBLIC "-//James Madison University::Carrier
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00135">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
 			Library::Special Collections//TEXT (US::ViHarT::vihart00135::Kurt Kehr Collection//EN" "vihart00135.xml" </eadid>
-		<filedesc>
-			<titlestmt>
-				<titleproper>A Guide to the Kurt Kehr Collection <date>1970s-1990s</date>
-				</titleproper>
-				<subtitle id="sort">Kurt Kehr Collection<num type="collectionnumber">SC# 5028</num>
-				</subtitle>
-			</titlestmt>
-			<publicationstmt>
-				<publisher>Special Collections, Carrier Library, James Madison University
-				</publisher> &address; <date type="publication">&copy; 2012 By JMU Libraries. All
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Kurt Kehr Collection <date era="ce" calendar="gregorian">1970s-1990s</date></titleproper>
+        <subtitle id="sort">Kurt Kehr Collection<num type="collectionnumber">SC# 5028</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections, Carrier Library, James Madison University
+				</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
 					rights reserved. </date>
-				<p id="usestatement">
-					<extref entityref="conditions">Conditions of Use </extref>
-				</p>
-			</publicationstmt>
-		</filedesc>
-		<profiledesc>
-			<creation>Machine-readable finding aid derived from MS Word, created by David Black,
-				<date>08/2012</date>
-			</creation>
-			<langusage>Description is in <language langcode="eng">English </language>
-			</langusage>
-		</profiledesc>
-	</eadheader>
-	<frontmatter>
-		<titlepage>
-			<titleproper>A Guide to the Kurt Kehr Collection <date>1970s-1990s</date>
-			</titleproper>
-			<subtitle>A Collection in <lb/>Special Collections <num type="Collection Number "> SC#5028</num>
-			</subtitle>
-			<p id="logostmt">
-				<extptr actuate="onload" show="embed" entityref="logo"/>
-			</p>
-			<publisher>Special Collections, Carrier Library, James Madison University </publisher>
-			<date type="publication">2012</date> &contact; <list type="deflist">
-				<defitem>
-					<label>Processed by:</label>
-					<item>Elizabeth Davis, May 2012</item>
-				</defitem>
-			</list>
-		</titlepage>
-	</frontmatter>
-	<archdesc level="collection">
-		<runner placement="footer">Special Collections, James Madison University </runner>
-		<did>
-			<head>Descriptive Summary </head>
-			<repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by David Black,
+				<date era="ce" calendar="gregorian">08/2012</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Kurt Kehr Collection <date era="ce" calendar="gregorian">1970s-1990s</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"> SC#5028</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+      </p>
+      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2012</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:</label>
+          <item>Elizabeth Davis, May 2012</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections, James Madison University </runner>
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
 				University </repository>
-			<unittitle label="Title" encodinganalog="245$a">Kurt Kehr Collection<unitdate
-				type="inclusive" label="Date" encodinganalog="245$f">1970s-1990s</unitdate>
-			</unittitle>
-			<unitid label="Collection Number SC# " encodinganalog="099$a">5028</unitid>
-			<physdesc label="Extent" encodinganalog="300$a">1.5 boxes (.63 linear feet)</physdesc>
-			<langmaterial label="Language">
-				<language langcode="eng">English, German, &amp; Virginia German </language>
-			</langmaterial>
-			<abstract label="Abstract">This collection contains 24 CDs, 18 tapes, and 13 articles</abstract>
-			<origination label="Creator" encodinganalog="100$a">Kehr, Kurt</origination>
-		</did>
-		<descgrp type="admininfo">
-			<head>Administrative Information </head>
-			<accessrestrict encodinganalog="506$a">
-				<head>Access Restrictions </head>
-				<p>None. </p>
-			</accessrestrict>
-			<userestrict encodinganalog="540$a">
-				<head>Use Restrictions </head>
-				<p>None</p>
-			</userestrict>
-			<prefercite encodinganalog="524$a">
-				<head>Preferred Citation </head>
-				<p> [Identification of item], The Kurt Kehr Collection, 1970s-1990s, SC#
+      <unittitle label="Title" encodinganalog="245$a">Kurt Kehr Collection<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1970s-1990s</unitdate></unittitle>
+      <unitid label="Collection Number SC#" encodinganalog="099$a">5028</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">1.5 boxes (.63 linear feet)</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English, German, &amp; Virginia German </language>
+      </langmaterial>
+      <abstract label="Abstract">This collection contains 24 CDs, 18 tapes, and 13 articles</abstract>
+      <origination label="Creator" encodinganalog="100$a">Kehr, Kurt</origination>
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information </head>
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions </head>
+        <p>None. </p>
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions </head>
+        <p>None</p>
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation </head>
+        <p> [Identification of item], The Kurt Kehr Collection, 1970s-1990s, SC#
 					5028, Special Collections, Carrier Library, James Madison University,
 					Harrisonburg, Va.</p>
-			</prefercite>
-			<acqinfo encodinganalog="541$a">
-				<head>Acquisition Information </head>
-				<p>Donated by Dr. Kurt Kehr of the Research Institute for German Language at the Philipps-University in Marburg.</p>
-			</acqinfo>
-			<custodhist>
-				<head>Provenance </head>
-				<p>These materials were donated by Dr. Kehr to the Special Collections Librarian, Chris Bogliano, in 1994.</p>
-			</custodhist>
-			<processinfo>
-				<head>Processing Information</head>
-				<p>Dr. Kehr's audio cassette tapes were transferred to gold compact discs for preservation in 2010. Some material had already been lost.</p>
-			</processinfo>
-		</descgrp>
-		<bioghist encodinganalog="545$a">
-			<head>Biographical Information </head>
-			<p>Dr. Kurt Kehr worked at Mary Baldwin College and interviewed people throughout the Shenandoah Valley and West Virginia areas to learn about the differences and similarities between the various Virginia German dialects. He conducted these interviews in the 1970s and then again in the 1990s and wrote multiple articles concerning his findings. Many of the participants in these interviews refer to the various Pennsylvania and Virginia dialects as “Dutch.”</p>
-		
-		</bioghist>
-		<scopecontent encodinganalog="520$a">
-			<head>Scope and Content </head>
-			<p>"Johann Georg Estors (1699-1773) Kulturhistorische und Germanistische Beitraege," German (1969). On the origin of the Virginia German dialect as well as the work of Johann Georg Estors.</p>
-			<p>"Jagdmethoden und Jagdwortschatz der 'Pennsylvania Germans' im Shenandoah Valley/Virginia," German (1971). On the effect of English and German on the dialect of "Pennsylvania Germans" in the Shenandoah Valley/Virginia in terms of hunting terminology.</p>
-			<p>"Virginia German between Shenandoah and Potomac," English (1979). On the immigration of German settlers to the Virginia area. Kehr describes the effects that English has had on the dialect as well as mentioning multiple other scholars on the topic and their findings.</p>		
-			<p>"'Deutsche' Dialekte in Virginia und West Virginia," German (1979). On the geography and demography of the area, as well as how they affected the various dialects which developed. He also breaks it up into specific geographic areas and shows how they differ from one another in terms of dialect.</p>
-			<p>"'Deutsche' Sprache bei Mennoniten und Amischen im Shenandoah Valley/Virginia," German (1982). On the various religions in the area and their effect on the dialect of the people in that region.</p>
-			<p>"Deutsche Zaubersprueche in Virginia und West Virginia (U.S.A.)," German (1982/1983). On German spells, which were used in Virginia and West Virginia. </p>
-			<p>"Deutsche Dialekte in Nordamerika: Woher, Wohin?," German (1983). On where German people immigrated to and the various dialects that they brought with them which developed into local variations as a result of the regions they moved into.</p>
-			<p>"Sprachliche Untersuchungen bei Mennoniten und Amischen in Virginia (U.S.A.)," German (1984). On what Kehr is trying to accomplish through his study and how he intends to do so.</p>
-			<p>"Pennsylvaniendeutsch ausserhalb Pennsylvania," German (1986). On how the Pennsylvania German dialect came about and what specific factors influenced it. </p>
-			<p>"Lebenszeichen fuer Morgen- Bemerkungen zur Gegenwaertigen Pennsylvaniendeutschen Dialektliteratur," German (1988). On the Pennsylvania German dialect in terms of literature and its use in writing.</p>
-			<p>"Besondere Sprache,"German (1992). On variances in people's dialects and speech depending on their "home" and culture and how that can be interesting to translators and other people who may study dialects.</p>
-			<p><title render="bold">CD#1 (Set A): </title> Interview with Byron Frankhauser in Jerome, Virginia in Shenandoah County, in 1969 with John Stewart and Kurt Kehr. This CD contains Pennsylvania German Dictionary Questionnaire #1, a story read in Virginia German, and then a few questions concerning Frankhauser's demographic information. Stewart begins with reading English sentences, which Frankhauser then translates in his Virginia German dialect. Then Frankhauser reads aloud a short story in Virginia German. Lastly, they close the interview with some questions about the background and childhood of Frankhauser.</p>
-			<p><title render="bold">CD#2 (Set A):</title>  Interview with Hattie Fultz, Olli Miller, Kirby Fultz, and Wilma Miller from Jerome, Shenandoah County, Virginia in February 1970.  This begins with a conversation in Virginia German between the interviewees. Then they are asked to provide terms  for a variety of colors and animals. They are then asked multiple questions in English and asked to respond in their Virginia German dialect.</p>
-			<p><title render="bold">CD#3a (Set A): </title> This CD has no formal introduction but contains examples of people speaking Virginia German. It appears to be a group of people such as in CD#2 and Kehr is conducting the informal interview. Kehr asks the informant on this CD to describe old recipes, sayings, cures, songs, and superstitions in order to gain a sense of local traditions in the Virginia German dialect.</p>
-			<p><title render="bold">CD#3b (Set A):</title> Informants: Hattie and Kirby Fultz and Olli and Wilma Miller from Jerome, Shenandoah County, Virginia in February 1970. Interviewed by Kurt Kehr from Mary Baldwin College. When these four interviewees get together they speak Virginia German for the entire day. In this tape Kehr states sentences in English and then the informants repeat the sentence in Virginia German. Kehr alternates between different informants so as to gain an understanding of their various abilities with the language. He also asks for basic words such as counting to twenty, listing days of the week and months of the year. They spend the rest of the interview discussing everyday things such as cooking recipes.</p>
-			<p><title render="bold">CD#4 (Set A):</title> Granville Moyers and his brother Stanley interviewed on 7 June 1975 in Rockingham County Virginia. First they discuss how often he spoke Virginia German as a child. Then Kehr spends the rest of the interview reading sentences in English and Granville attempts to translate them into dialect.</p>
-			<p><title render="bold">CD#5 (Set A):</title> 2 tracks are on this CD. Track 1 includes an interview in which the informant is 84-year-old male, Ira Wilfon in Montezuma, VA on 9 June 1969 done by John Stewart and Kurt Kehr. He originally comes from Pendleton County, West Virginia. The CD contains 1) a story about how he built a log cabin 2) word identification in Virginia German from a German dictionary and 3) sentence identification in which Kehr provides the English translation of common German phrases and Ira provides the Virginia German version from his dialect.  The tape should also include stories and a summation of Ira's life, however it goes silent after the sentence identification. Track 2 is the same as the beginning of Track 1.</p>
-			<p><title render="bold">CD#6 (Set A):</title> Interviewer is Kurt Kehr and the informant is 84-year-old Ira Wilfon in Montezuma, VA on 3 February 1970. Ira tells stories in Virginia German on this CD. At first they discuss bear hunting. Kehr speaks in English and Ira speaks in his Virginia German dialect. Then Kehr asks Ira to identify words for various body parts and characteristics of the bear. Toward the end of the tape (approx. 25 minutes) they switch to the other side of the tape and discuss the background of Ira. </p>
-			<p><title render="bold">CD#7 (Set A):</title>  Informant is Ira Wilfon on 10 February 1970. Ira describes various animals that he has hunted, such as turkeys and rabbits. All of Ira's descriptions are in Virginia German and Kehr requests more details at the end of each segment. Kehr addresses the informant in English. They also discuss how hunting was accomplished as well as other animals that could be hunted such as the opossum.</p>
-			<p><title render="bold">CD#8:</title> The three interviewees are apparently Henry Granville Puffinbarger from Wilfolktown, Pendleton County; Roy Puffinbarger from Brashie Fork, WV; and Granville Frye Puffinbarger from the Sugar Grove area, West Virginia. Interview begins with Kehr reading sentences in English and HG Puffinbarger translating the sentences into his Virginia German dialect.  He is also asked to identify the days of the week, the months, numbers, and other such basic words. Kehr then runs through demographic information with HG Puffinbarger who answers questions about his upbringing and his family and their languages. The interviewer also asks many questions about who still lives in the area, who speaks Virginia German, if children still know it, in what situations it is spoken in, and the general history of the area. Kehr runs through the same questions with another unidentified interviewee but then the CD goes silent after approximately 38 minutes.</p>
-			<p><title render="bold">CD#9 (Set A):</title> Interview with Roy Wesley Puffinbarger from Brashie Fork, WV who now lives in Mount Solon, Virginia and another with Floyd and Sally Crummet from Sugar Grove, West Virginia in the beginning of July 1975. In the interview with Roy Wesley Puffinbarger, Kehr reads English words and Puffinbarger translates them into his Virginia German dialect. He asks him to translate some sentences and then Kehr asks which are his most memorable words from the language. Kehr then interviews Floyd Crummet who was born in the 1880's. Kehr reads English words out and Sally and Floyd both attempt to translate the words into dialect. Kehr also asks Floyd and Sally to translate sentences and to identify basics such as numbers, months, and days of the week. </p>
-			<p><title render="bold">CD#10:</title> Interview with Floyd Crummet from Sugar Grove, WV, on 6 August 1975. They begin with 40 sentences in which Kehr says a sentence in English and Crummet translates it back into Virginia German. Then Kehr reads words in English and Floyd responds in dialect.</p>
-			<p><title render="bold">CD#11 (Set A):</title>  Interview with 1) Eda Simmons from Franklin, WV; 2) Floyd E Probst from Brandywine, WV; and 3) Ella and Hubert Hall from Doe Hill, VA on 25 August 1975. Kehr begins by asking Eda for the Virginia German version of some English words. Then he reads sentences in English, which she translates. He also asks Eda some questions about her family and where she came from. They dedicate a long time to discussing her childhood and family history. This interview also explains the concept of "slop bucket Dutch" which is a term introduced in Kehr's article, "Virginia German between Shenandoah and Potomac." After his interview with Eda, he has Floyd sing a song in Virginia German and identify a few words. Lastly, Kehr interviews Ella and Hubert and they begin with a story about Granville Puffinbarger who recently died. Kehr asks them a few questions about their childhood and upbringing and then ends the interview by asking them for the dialect translation of a few English words.</p>
-			<p><title render="bold">CD#12 side A (Set A): </title>This CD has the interview with Lewis Martin from Dayton, VA (originally from Ohio but his mother was from Dayton) and Wenkel who gives some personal remarks, numbers, sentences, and finally more selected words in Virginia German. The tape was damaged so all that is actually on this CD is a short interview in which they discuss some words and Kehr asks the interviewee to count in dialect. Around 23 minutes it comes back on and they do some sentence translation where Kehr reads English sentences and the interviewee translates. </p>
-			<p><title render="bold">CD#12 side B (Set A): </title>Begins at 28 minutes and continues with the Martin interview. Martin works as an interpreter and refers to his language as Pennsylvania Dutch. Kehr reads him sentences in English and he translates them. Kehr also states animal names and other words in English and asks Martin to provide the dialect word for them. They also discuss words that would have been commonly used in their local vocabulary, for example, day-to-day words such as their types of horses or feed or sicknesses. </p>
-			<p><title render="bold">CD#13 (Set A): </title>This CD contains an interview with (Irene?) who is 21 years old and was born in Delaware but lives in Fishersville, VA.  Her parents belong to the Mennonite church. Kehr begins the interview by reading sentences in English and having her repeat them in her Virginia German. He also asks her to count and to provide the dialect terms for some English words. They also discuss her religious background in the Pilgrim Christian Fellowship and where her family came from. </p>
-			<p><title render="bold">CD#1 side A (Set D): </title>This CD begins with music playing and informants are asked to recognize the song and sing it if they remember it. Throughout this tape one earphone seems to repeat what the other one already said as if they accidentally taped it twice and it echoes itself, which makes it very difficult to understand. The corresponding cassette identifies the people as Lewis Martin, Henry Martin, and Granville Moyers.</p>
-			<p><title render="bold">CD#1 side B (Set D): </title>This CD has similar repetition problems.  It begins with an interview between [Granville Moyers] a husband and wife and the husband says a word in Virginia German and the wife attempts to translate it into English. Then Kehr points at objects and the husband gives the dialect word and the wife announces whether or not she understood the word or had heard it before.  After word identification they discuss the area in which the husband was raised and whether or not they spoke Virginia German. They finish with Kehr asking for the words for various plants and animals. </p>
-			<p>After that comes an interview with Wilda Beary, who is 65 years old. Kehr reads her English sentences, which she then repeats in dialect. Then Kehr asks her for other Virginia German vocabulary by asking questions such as "what will you find in your garden?" They discuss the background of her and her mother in the Virginia German dialect. He also asks her to count numbers, as well as the days of the week and months. Lastly he asks for the Virginia/Pennsylvania Dutch terms for a variety of common household items.</p>
-			<p><title render="bold">CD#2 side A (Set D): </title>Interview with Warren James Souder who is 80 years old and lives in Virginia. They begin by discussing his family and ethnic origins. Their discussion of how he and his family came to live in the area takes place in the English language. The majority of this CD actually uses English and mainly discusses who might have spoken the German dialect and in what situations it might have been used. He does identify a few words in the Virginia German dialect though, which were commonly used in his vocabulary while he was growing up. He also gives a quick background on the Lutheran church and his community. Then Kehr moves on to interview Mrs. Souder (Warren's wife) who grew up in southwest Virginia. He interviews her on her background for a short while and asks about why she chose to marry a German. Lastly he switches back to Mr. Souder and they continue to discuss the area (Broadway, Virginia) and the impact of the church and the German dialect. There is also an interview with Roger Smith from Burgton, Virginia. He is 48 years old. They discuss where in Germany his ancestors came from and why they came to Virginia, as well as which people in the area used to speak the Virginia German dialect and who in the town was able to speak it. They also discuss the churches in the area and the role that language played with the churches. </p>
-			<p><title render="bold">CD#2 side B (Set D): </title>This CD continues the interview at the end of the last CD with Roger Smith. He begins by continuing to list names of people in the area who may have been of German descent. Kehr asks Smith some questions about the settlement patterns of immigrant families in the area. Smith does not seem to be familiar with many of the Virginia German dialect words and Kehr tests him to see which ones he might recognize and if he knows any proverbs or stories from the culture. He also questions Smith on the products in the area and local agriculture, animal life, and business. They also discuss the festivals and other unique characteristics of the area. 
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information </head>
+        <p>Donated by Dr. Kurt Kehr of the Research Institute for German Language at the Philipps-University in Marburg.</p>
+      </acqinfo>
+      <custodhist>
+        <head>Provenance </head>
+        <p>These materials were donated by Dr. Kehr to the Special Collections Librarian, Chris Bogliano, in 1994.</p>
+      </custodhist>
+      <processinfo>
+        <head>Processing Information</head>
+        <p>Dr. Kehr's audio cassette tapes were transferred to gold compact discs for preservation in 2010. Some material had already been lost.</p>
+      </processinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Biographical Information </head>
+      <p>Dr. Kurt Kehr worked at Mary Baldwin College and interviewed people throughout the Shenandoah Valley and West Virginia areas to learn about the differences and similarities between the various Virginia German dialects. He conducted these interviews in the 1970s and then again in the 1990s and wrote multiple articles concerning his findings. Many of the participants in these interviews refer to the various Pennsylvania and Virginia dialects as “Dutch.”</p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content </head>
+      <p>"Johann Georg Estors (1699-1773) Kulturhistorische und Germanistische Beitraege," German (1969). On the origin of the Virginia German dialect as well as the work of Johann Georg Estors.</p>
+      <p>"Jagdmethoden und Jagdwortschatz der 'Pennsylvania Germans' im Shenandoah Valley/Virginia," German (1971). On the effect of English and German on the dialect of "Pennsylvania Germans" in the Shenandoah Valley/Virginia in terms of hunting terminology.</p>
+      <p>"Virginia German between Shenandoah and Potomac," English (1979). On the immigration of German settlers to the Virginia area. Kehr describes the effects that English has had on the dialect as well as mentioning multiple other scholars on the topic and their findings.</p>
+      <p>"'Deutsche' Dialekte in Virginia und West Virginia," German (1979). On the geography and demography of the area, as well as how they affected the various dialects which developed. He also breaks it up into specific geographic areas and shows how they differ from one another in terms of dialect.</p>
+      <p>"'Deutsche' Sprache bei Mennoniten und Amischen im Shenandoah Valley/Virginia," German (1982). On the various religions in the area and their effect on the dialect of the people in that region.</p>
+      <p>"Deutsche Zaubersprueche in Virginia und West Virginia (U.S.A.)," German (1982/1983). On German spells, which were used in Virginia and West Virginia. </p>
+      <p>"Deutsche Dialekte in Nordamerika: Woher, Wohin?," German (1983). On where German people immigrated to and the various dialects that they brought with them which developed into local variations as a result of the regions they moved into.</p>
+      <p>"Sprachliche Untersuchungen bei Mennoniten und Amischen in Virginia (U.S.A.)," German (1984). On what Kehr is trying to accomplish through his study and how he intends to do so.</p>
+      <p>"Pennsylvaniendeutsch ausserhalb Pennsylvania," German (1986). On how the Pennsylvania German dialect came about and what specific factors influenced it. </p>
+      <p>"Lebenszeichen fuer Morgen- Bemerkungen zur Gegenwaertigen Pennsylvaniendeutschen Dialektliteratur," German (1988). On the Pennsylvania German dialect in terms of literature and its use in writing.</p>
+      <p>"Besondere Sprache,"German (1992). On variances in people's dialects and speech depending on their "home" and culture and how that can be interesting to translators and other people who may study dialects.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#1 (Set A): </title> Interview with Byron Frankhauser in Jerome, Virginia in Shenandoah County, in 1969 with John Stewart and Kurt Kehr. This CD contains Pennsylvania German Dictionary Questionnaire #1, a story read in Virginia German, and then a few questions concerning Frankhauser's demographic information. Stewart begins with reading English sentences, which Frankhauser then translates in his Virginia German dialect. Then Frankhauser reads aloud a short story in Virginia German. Lastly, they close the interview with some questions about the background and childhood of Frankhauser.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#2 (Set A):</title>  Interview with Hattie Fultz, Olli Miller, Kirby Fultz, and Wilma Miller from Jerome, Shenandoah County, Virginia in February 1970.  This begins with a conversation in Virginia German between the interviewees. Then they are asked to provide terms  for a variety of colors and animals. They are then asked multiple questions in English and asked to respond in their Virginia German dialect.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#3a (Set A): </title> This CD has no formal introduction but contains examples of people speaking Virginia German. It appears to be a group of people such as in CD#2 and Kehr is conducting the informal interview. Kehr asks the informant on this CD to describe old recipes, sayings, cures, songs, and superstitions in order to gain a sense of local traditions in the Virginia German dialect.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#3b (Set A):</title> Informants: Hattie and Kirby Fultz and Olli and Wilma Miller from Jerome, Shenandoah County, Virginia in February 1970. Interviewed by Kurt Kehr from Mary Baldwin College. When these four interviewees get together they speak Virginia German for the entire day. In this tape Kehr states sentences in English and then the informants repeat the sentence in Virginia German. Kehr alternates between different informants so as to gain an understanding of their various abilities with the language. He also asks for basic words such as counting to twenty, listing days of the week and months of the year. They spend the rest of the interview discussing everyday things such as cooking recipes.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#4 (Set A):</title> Granville Moyers and his brother Stanley interviewed on 7 June 1975 in Rockingham County Virginia. First they discuss how often he spoke Virginia German as a child. Then Kehr spends the rest of the interview reading sentences in English and Granville attempts to translate them into dialect.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#5 (Set A):</title> 2 tracks are on this CD. Track 1 includes an interview in which the informant is 84-year-old male, Ira Wilfon in Montezuma, VA on 9 June 1969 done by John Stewart and Kurt Kehr. He originally comes from Pendleton County, West Virginia. The CD contains 1) a story about how he built a log cabin 2) word identification in Virginia German from a German dictionary and 3) sentence identification in which Kehr provides the English translation of common German phrases and Ira provides the Virginia German version from his dialect.  The tape should also include stories and a summation of Ira's life, however it goes silent after the sentence identification. Track 2 is the same as the beginning of Track 1.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#6 (Set A):</title> Interviewer is Kurt Kehr and the informant is 84-year-old Ira Wilfon in Montezuma, VA on 3 February 1970. Ira tells stories in Virginia German on this CD. At first they discuss bear hunting. Kehr speaks in English and Ira speaks in his Virginia German dialect. Then Kehr asks Ira to identify words for various body parts and characteristics of the bear. Toward the end of the tape (approx. 25 minutes) they switch to the other side of the tape and discuss the background of Ira. </p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#7 (Set A):</title>  Informant is Ira Wilfon on 10 February 1970. Ira describes various animals that he has hunted, such as turkeys and rabbits. All of Ira's descriptions are in Virginia German and Kehr requests more details at the end of each segment. Kehr addresses the informant in English. They also discuss how hunting was accomplished as well as other animals that could be hunted such as the opossum.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#8:</title> The three interviewees are apparently Henry Granville Puffinbarger from Wilfolktown, Pendleton County; Roy Puffinbarger from Brashie Fork, WV; and Granville Frye Puffinbarger from the Sugar Grove area, West Virginia. Interview begins with Kehr reading sentences in English and HG Puffinbarger translating the sentences into his Virginia German dialect.  He is also asked to identify the days of the week, the months, numbers, and other such basic words. Kehr then runs through demographic information with HG Puffinbarger who answers questions about his upbringing and his family and their languages. The interviewer also asks many questions about who still lives in the area, who speaks Virginia German, if children still know it, in what situations it is spoken in, and the general history of the area. Kehr runs through the same questions with another unidentified interviewee but then the CD goes silent after approximately 38 minutes.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#9 (Set A):</title> Interview with Roy Wesley Puffinbarger from Brashie Fork, WV who now lives in Mount Solon, Virginia and another with Floyd and Sally Crummet from Sugar Grove, West Virginia in the beginning of July 1975. In the interview with Roy Wesley Puffinbarger, Kehr reads English words and Puffinbarger translates them into his Virginia German dialect. He asks him to translate some sentences and then Kehr asks which are his most memorable words from the language. Kehr then interviews Floyd Crummet who was born in the 1880's. Kehr reads English words out and Sally and Floyd both attempt to translate the words into dialect. Kehr also asks Floyd and Sally to translate sentences and to identify basics such as numbers, months, and days of the week. </p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#10:</title> Interview with Floyd Crummet from Sugar Grove, WV, on 6 August 1975. They begin with 40 sentences in which Kehr says a sentence in English and Crummet translates it back into Virginia German. Then Kehr reads words in English and Floyd responds in dialect.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#11 (Set A):</title>  Interview with 1) Eda Simmons from Franklin, WV; 2) Floyd E Probst from Brandywine, WV; and 3) Ella and Hubert Hall from Doe Hill, VA on 25 August 1975. Kehr begins by asking Eda for the Virginia German version of some English words. Then he reads sentences in English, which she translates. He also asks Eda some questions about her family and where she came from. They dedicate a long time to discussing her childhood and family history. This interview also explains the concept of "slop bucket Dutch" which is a term introduced in Kehr's article, "Virginia German between Shenandoah and Potomac." After his interview with Eda, he has Floyd sing a song in Virginia German and identify a few words. Lastly, Kehr interviews Ella and Hubert and they begin with a story about Granville Puffinbarger who recently died. Kehr asks them a few questions about their childhood and upbringing and then ends the interview by asking them for the dialect translation of a few English words.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#12 side A (Set A): </title>This CD has the interview with Lewis Martin from Dayton, VA (originally from Ohio but his mother was from Dayton) and Wenkel who gives some personal remarks, numbers, sentences, and finally more selected words in Virginia German. The tape was damaged so all that is actually on this CD is a short interview in which they discuss some words and Kehr asks the interviewee to count in dialect. Around 23 minutes it comes back on and they do some sentence translation where Kehr reads English sentences and the interviewee translates. </p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#12 side B (Set A): </title>Begins at 28 minutes and continues with the Martin interview. Martin works as an interpreter and refers to his language as Pennsylvania Dutch. Kehr reads him sentences in English and he translates them. Kehr also states animal names and other words in English and asks Martin to provide the dialect word for them. They also discuss words that would have been commonly used in their local vocabulary, for example, day-to-day words such as their types of horses or feed or sicknesses. </p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#13 (Set A): </title>This CD contains an interview with (Irene?) who is 21 years old and was born in Delaware but lives in Fishersville, VA.  Her parents belong to the Mennonite church. Kehr begins the interview by reading sentences in English and having her repeat them in her Virginia German. He also asks her to count and to provide the dialect terms for some English words. They also discuss her religious background in the Pilgrim Christian Fellowship and where her family came from. </p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#1 side A (Set D): </title>This CD begins with music playing and informants are asked to recognize the song and sing it if they remember it. Throughout this tape one earphone seems to repeat what the other one already said as if they accidentally taped it twice and it echoes itself, which makes it very difficult to understand. The corresponding cassette identifies the people as Lewis Martin, Henry Martin, and Granville Moyers.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#1 side B (Set D): </title>This CD has similar repetition problems.  It begins with an interview between [Granville Moyers] a husband and wife and the husband says a word in Virginia German and the wife attempts to translate it into English. Then Kehr points at objects and the husband gives the dialect word and the wife announces whether or not she understood the word or had heard it before.  After word identification they discuss the area in which the husband was raised and whether or not they spoke Virginia German. They finish with Kehr asking for the words for various plants and animals. </p>
+      <p>After that comes an interview with Wilda Beary, who is 65 years old. Kehr reads her English sentences, which she then repeats in dialect. Then Kehr asks her for other Virginia German vocabulary by asking questions such as "what will you find in your garden?" They discuss the background of her and her mother in the Virginia German dialect. He also asks her to count numbers, as well as the days of the week and months. Lastly he asks for the Virginia/Pennsylvania Dutch terms for a variety of common household items.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#2 side A (Set D): </title>Interview with Warren James Souder who is 80 years old and lives in Virginia. They begin by discussing his family and ethnic origins. Their discussion of how he and his family came to live in the area takes place in the English language. The majority of this CD actually uses English and mainly discusses who might have spoken the German dialect and in what situations it might have been used. He does identify a few words in the Virginia German dialect though, which were commonly used in his vocabulary while he was growing up. He also gives a quick background on the Lutheran church and his community. Then Kehr moves on to interview Mrs. Souder (Warren's wife) who grew up in southwest Virginia. He interviews her on her background for a short while and asks about why she chose to marry a German. Lastly he switches back to Mr. Souder and they continue to discuss the area (Broadway, Virginia) and the impact of the church and the German dialect. There is also an interview with Roger Smith from Burgton, Virginia. He is 48 years old. They discuss where in Germany his ancestors came from and why they came to Virginia, as well as which people in the area used to speak the Virginia German dialect and who in the town was able to speak it. They also discuss the churches in the area and the role that language played with the churches. </p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#2 side B (Set D): </title>This CD continues the interview at the end of the last CD with Roger Smith. He begins by continuing to list names of people in the area who may have been of German descent. Kehr asks Smith some questions about the settlement patterns of immigrant families in the area. Smith does not seem to be familiar with many of the Virginia German dialect words and Kehr tests him to see which ones he might recognize and if he knows any proverbs or stories from the culture. He also questions Smith on the products in the area and local agriculture, animal life, and business. They also discuss the festivals and other unique characteristics of the area. 
 				Then there is an interview with Karl Moyer who is 58 years old. They discuss how Karl's father taught all of his sons the Virginia German dialect. Kehr examines Moyer's familiarity with and ability to identify a multitude of words in the dialect in relation to household products, body parts, numbers, days, hunting, and plants. They also talk more about his family and which members of his family may be able to speak it well and which cannot. 
 			</p>
-			<p><title render="bold">CD#3 side A (set D): </title>Interview with Edna Smith who is 81 years old. She married into the Smith family and her husband's mother spoke the Virginia German dialect, which they referred to as Dutch. Kehr reads some words in the Virginia German dialect to test her recognition of the words.  Kehr also interviews a very old man (Delmer Moyer's father?) about his history in the area and who could or could not speak the Virginia German dialect. They are in Burgton and the man was a farmer for most of his life. This man tells stories from his life and the interview is entirely in English. They also interview 53–year-old Delmer Moyer. His father taught him how to speak the Virginia German dialect. Kehr asks him for the translation for multiple English words of common household items, counting, animals, and other words he remembers from his childhood. They discuss his various family members and which ones spoke the dialect. There is then an interview of 34-year-old Jesse Hershberger. Kehr reads him 40 sentences, which Hershberger then translates into his Virginia German dialect. Then Kehr asks for identification of basic words. Finally they run through his history in the area. For the remainder of the CD he tells a story about his past in the area in his Virginia German dialect.</p>
-			<p><title render="bold">CD#3 side B (Set D):  </title>This contains an interview with 67-year-old Stanley Moyer. Kehr begins by reading English sentences and Moyer translates them to the dialect. Then Kehr lists some words in English and asks Moyer to provide the Virginia German word. This list includes grains, animals, plants, etc. Kehr also asks him to explain in dialect how he would plant and care for certain foods.</p>
-			<p><title render="bold">CD#4 side A (Set D): </title>This CD contains an interview with John Beery who is 15 years old. John speaks the Virginia German dialect with his father.  Kehr begins by reading sentences in English and asking John to translate them. Next Kehr asks him to identify individual words and numbers. Then Kehr asks him to explain in dialect his background and how he came to speak the dialect. He also asks about the use of the dialect in the community.  Then Kehr asks Beery to identify the word in dialect for some of the items in the room. This CD also contains another interview with a man [Irvin Propst] and it begins with Kehr reading sentences in English, which the man repeats in his Virginia German dialect.  He had interviewed this same man 20 years earlier, according to the CD. They discuss whether it was easier or harder and what difference 20 years has made in his speaking of the dialect. Kehr also has him count and identify some words in the dialect.</p>
-			<p><title render="bold">CD#5 side A (Set D): </title>This CD contains an interview with Irvin Propst (who was born on 1 July 1926 in West Virginia) that begins with Kehr asking him for the translation of various English words. Kehr also asks the man to explain certain things in his dialect such as Groundhog's Day.  Mr. Propst explains a little about his mother who taught him the dialect. They speak about different people in the community and their effect on and use of the dialect.</p>
-			<p><title render="bold">CD#5 side B (Set D): </title>This CD begins with an interview with Olli Miller who is 78 years old. Sentences are read in English and Miller restates them in his Virginia German dialect. The voices are distorted in this CD, which makes it difficult to understand the interview after a while.</p>
-		</scopecontent>
-		<dsc type="combined">
-			<head>Contents List </head>
-			
-				<c01 level="file">
-					<did>
-						<unittitle>24 CDs</unittitle>
-						<container label="Box" type="box"
-							>1</container>
-						
-					</did>
-				</c01>				
-			<c01 level="file">
-				<did>
-					<unittitle>18 Tapes</unittitle>
-					<container label="Box" type="box"
-						>1</container>
-					
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>Set A Documentation</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>1</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>Set D Documentation</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>2</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Johann Georg Estors (1699-1773) Kulturhistorische und Germanistische Beitraege" (1969)
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#3 side A (set D): </title>Interview with Edna Smith who is 81 years old. She married into the Smith family and her husband's mother spoke the Virginia German dialect, which they referred to as Dutch. Kehr reads some words in the Virginia German dialect to test her recognition of the words.  Kehr also interviews a very old man (Delmer Moyer's father?) about his history in the area and who could or could not speak the Virginia German dialect. They are in Burgton and the man was a farmer for most of his life. This man tells stories from his life and the interview is entirely in English. They also interview 53–year-old Delmer Moyer. His father taught him how to speak the Virginia German dialect. Kehr asks him for the translation for multiple English words of common household items, counting, animals, and other words he remembers from his childhood. They discuss his various family members and which ones spoke the dialect. There is then an interview of 34-year-old Jesse Hershberger. Kehr reads him 40 sentences, which Hershberger then translates into his Virginia German dialect. Then Kehr asks for identification of basic words. Finally they run through his history in the area. For the remainder of the CD he tells a story about his past in the area in his Virginia German dialect.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#3 side B (Set D):  </title>This contains an interview with 67-year-old Stanley Moyer. Kehr begins by reading English sentences and Moyer translates them to the dialect. Then Kehr lists some words in English and asks Moyer to provide the Virginia German word. This list includes grains, animals, plants, etc. Kehr also asks him to explain in dialect how he would plant and care for certain foods.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#4 side A (Set D): </title>This CD contains an interview with John Beery who is 15 years old. John speaks the Virginia German dialect with his father.  Kehr begins by reading sentences in English and asking John to translate them. Next Kehr asks him to identify individual words and numbers. Then Kehr asks him to explain in dialect his background and how he came to speak the dialect. He also asks about the use of the dialect in the community.  Then Kehr asks Beery to identify the word in dialect for some of the items in the room. This CD also contains another interview with a man [Irvin Propst] and it begins with Kehr reading sentences in English, which the man repeats in his Virginia German dialect.  He had interviewed this same man 20 years earlier, according to the CD. They discuss whether it was easier or harder and what difference 20 years has made in his speaking of the dialect. Kehr also has him count and identify some words in the dialect.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#5 side A (Set D): </title>This CD contains an interview with Irvin Propst (who was born on 1 July 1926 in West Virginia) that begins with Kehr asking him for the translation of various English words. Kehr also asks the man to explain certain things in his dialect such as Groundhog's Day.  Mr. Propst explains a little about his mother who taught him the dialect. They speak about different people in the community and their effect on and use of the dialect.</p>
+      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">CD#5 side B (Set D): </title>This CD begins with an interview with Olli Miller who is 78 years old. Sentences are read in English and Miller restates them in his Virginia German dialect. The voices are distorted in this CD, which makes it difficult to understand the interview after a while.</p>
+    </scopecontent>
+    <dsc type="combined">
+      <head>Contents List </head>
+      <c01 level="file">
+        <did>
+          <unittitle>24 CDs</unittitle>
+          <container label="Box" type="box">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>18 Tapes</unittitle>
+          <container label="Box" type="box">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Set A Documentation</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>Set D Documentation</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Johann Georg Estors (1699-1773) Kulturhistorische und Germanistische Beitraege" (1969)
 					</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>3</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Jagdmethoden und Jagdwortschatz der 'Pennsylvania Germans' im Shenandoah Valley" (1971)
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Jagdmethoden und Jagdwortschatz der 'Pennsylvania Germans' im Shenandoah Valley" (1971)
 					</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>4</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Virginia German Between Shenandoah and Potomac" (1979)</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>5</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"'Deutsche' Dialekte in Virginia and West Virginia" (1979)</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>6</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Deutsche Sprache bei Mennoniten und Amischen im Shenandoah Valley/Virginia" (1982)
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Virginia German Between Shenandoah and Potomac" (1979)</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"'Deutsche' Dialekte in Virginia and West Virginia" (1979)</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Deutsche Sprache bei Mennoniten und Amischen im Shenandoah Valley/Virginia" (1982)
 					</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>7</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Deutsche Zaubersprueche in Virginia und West Virginia" (1982/83)</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>8</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Deutsche Dialekte in Nordamerika: Woher, Wohin?" (1983)</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>9</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Sprachliche Untersuchungen bei Mennoniten und Amischen in Virginia (U.S.A.)" (1984)
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Deutsche Zaubersprueche in Virginia und West Virginia" (1982/83)</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Deutsche Dialekte in Nordamerika: Woher, Wohin?" (1983)</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Sprachliche Untersuchungen bei Mennoniten und Amischen in Virginia (U.S.A.)" (1984)
 					</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>10</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"'Pennsylvaniendeutsch' Ausserhalb von Pennsylvanien (U.S.A.)" (1986)</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>11</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Lebenszeichen fuer Morgen- Bemerkungen zur Gewaertigen Pennsylvaniendeutschen Dialektliteratur" (1988)
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">10</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"'Pennsylvaniendeutsch' Ausserhalb von Pennsylvanien (U.S.A.)" (1986)</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">11</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Lebenszeichen fuer Morgen- Bemerkungen zur Gewaertigen Pennsylvaniendeutschen Dialektliteratur" (1988)
 					</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>12</container>
-				</did>
-			</c01>	
-			<c01 level="file">
-				<did>
-					<unittitle>"Besondere Sprache" (1992)</unittitle>
-					<container label="Box" type="box"
-						>2</container>
-					<container label="Folder" type="folder"
-						>13</container>
-				</did>
-			</c01>	
-		</dsc>
-	</archdesc>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">12</container>
+        </did>
+      </c01>
+      <c01 level="file">
+        <did>
+          <unittitle>"Besondere Sprache" (1992)</unittitle>
+          <container label="Box" type="box">2</container>
+          <container label="Folder" type="folder">13</container>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
