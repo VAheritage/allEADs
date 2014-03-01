@@ -1,1517 +1,1225 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="http://ead.lib.virginia.edu/vivaead/published/document.xsl" type="text/xsl"?>
-<!DOCTYPE ead SYSTEM "http://text.lib.virginia.edu/bin/dtd/eadVIVA/eadVIVA.dtd" [
-<!ENTITY % xmlchar "INCLUDE">
-<!ENTITY logo SYSTEM "http://ead.lib.virginia.edu/vivaead/logos/tbl.jpg" NDATA jpeg>
-<!ENTITY conditions SYSTEM "http://www.lib.virginia.edu/speccol/vhp/conditions.html" NDATA html>
-<!ENTITY address SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/tbl_address.xml">
-<!ENTITY contact SYSTEM "http://ead.lib.virginia.edu/vivaead/add_con/tbl_contact.xml">
-]><ead id="viletbl00026">
-<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
-<eadid countrycode="US" mainagencycode="ViLeTBL">PUBLIC "-//Thomas Balch Library//TEXT (US::ViLeTBL::viletbl00026:: Loudoun County, VA Cemetery Collection 1990-2004)//EN" "viletbl00026.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Converted with dtd2schema.vh.xsl -->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" id="viletbl00026">
+  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViLeTBL">PUBLIC "-//Thomas Balch Library//TEXT (US::ViLeTBL::viletbl00026:: Loudoun County, VA Cemetery Collection 1990-2004)//EN" "viletbl00026.xml"
 </eadid>
-<filedesc>
-<titlestmt>
-<titleproper>A Guide to the Loudoun County, VA Cemetery Collection, <date>1990-2004</date>
-</titleproper>
-<subtitle id="sort">Loudoun County, VA Cemetery Collection
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Loudoun County, VA Cemetery Collection, <date era="ce" calendar="gregorian">1990-2004</date></titleproper>
+        <subtitle id="sort">Loudoun County, VA Cemetery Collection
 <num type="collectionnumber">M 017
-</num>
-</subtitle>
-<author>Emily Hershman 
+</num></subtitle>
+        <author>Emily Hershman 
 </author>
-</titlestmt>
-<publicationstmt>
-<publisher>Thomas Balch Library
-</publisher> &address;
-<date type="publication">&copy; 2006 By Thomas Balch Library. All rights reserved.
-</date> 
-<p id="usestatement">
-<extref entityref="conditions">Conditions of Use
-</extref>
-</p>
-</publicationstmt>
-</filedesc>
-<profiledesc>
-<creation>Machine-readable finding aid derived from MS Word, created by Beth Schuster, <date>22 February 2008</date>
-</creation>
-<langusage>Description is in
-<language langcode="eng">English
-</language>
-</langusage>
-</profiledesc>
-</eadheader>
-<frontmatter>
-<titlepage>
-<titleproper>A Guide to the Loudoun County, VA Cemetery Collection, <date>1990-2004</date>
-</titleproper>
-<subtitle>A Collection in the<lb/>Thomas Balch Library
-<num type="Collection Number">M 017
-</num>
-</subtitle>
-<author>Emily Hershman 
-</author>
-<p id="logostmt">
-<extptr actuate="onload" show="embed" entityref="logo"/>
-</p>
-<publisher>Thomas Balch Library
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Thomas Balch Library
 </publisher>
-<date type="publication">2006
-</date> &contact;
-<list type="deflist">
-<defitem>
-<label>Processed by:
-</label>
-<item>Emily Hershman 
-</item>
-</defitem>
-</list>
-</titlepage>
-</frontmatter>
-<archdesc level="collection">
-<runner placement="footer">Thomas Balch Library
-</runner>
-<did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">Thomas Balch Library
-</repository>
-<unittitle label="Title" encodinganalog="245$a">Loudoun County, VA Cemetery Collection
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1990-2004
-</unitdate>
-</unittitle>
-<unitid label="Collection number" encodinganalog="099$a">M 017
-</unitid>
-<physdesc label="Extent" encodinganalog="300$a">1.33 cu. ft.
-</physdesc>
-<langmaterial label="Language">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/tbl_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">© 2006 By Thomas Balch Library. All rights reserved.
+</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+</extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Machine-readable finding aid derived from MS Word, created by Beth Schuster, <date era="ce" calendar="gregorian">22 February 2008</date></creation>
+      <langusage>Description is in
 <language langcode="eng">English
+</language></langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2013-11-21">2013-11-21</date>
+        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>A Guide to the Loudoun County, VA Cemetery Collection, <date era="ce" calendar="gregorian">1990-2004</date></titleproper>
+      <subtitle>A Collection in the<lb/>Thomas Balch Library
+<num type="Collection Number">M 017
+</num></subtitle>
+      <author>Emily Hershman 
+</author>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/tbl.jpg"/>
+      </p>
+      <publisher>Thomas Balch Library
+</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2006
+</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/tbl_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by:
+</label>
+          <item>Emily Hershman 
+</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Thomas Balch Library
+</runner>
+    <did>
+      <head>Descriptive Summary
+</head>
+      <repository label="Repository" encodinganalog="852$a">Thomas Balch Library
+</repository>
+      <unittitle label="Title" encodinganalog="245$a">Loudoun County, VA Cemetery Collection
+<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1990-2004
+</unitdate></unittitle>
+      <unitid label="Collection number" encodinganalog="099$a">M 017
+</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">1.33 cu. ft.
+</physdesc>
+      <langmaterial label="Language">
+        <language langcode="eng">English
 </language>
-</langmaterial>
-<abstract label="Abstract">In 1995 Thomas Balch Library sponsored a project to map, identify, photograph, and transcribe gravestone inscriptions in Loudoun cemeteries.  A committee was created that consisted of Jeff Ball, Ned Douglass, Mary Fishback, Marty Hiatt, David Via, and Wynne Saffer as chairman for that purpose.  The following year (1996), the committee published a list of known cemeteries in Loudoun County.  
+      </langmaterial>
+      <abstract label="Abstract">In 1995 Thomas Balch Library sponsored a project to map, identify, photograph, and transcribe gravestone inscriptions in Loudoun cemeteries.  A committee was created that consisted of Jeff Ball, Ned Douglass, Mary Fishback, Marty Hiatt, David Via, and Wynne Saffer as chairman for that purpose.  The following year (1996), the committee published a list of known cemeteries in Loudoun County.  
 </abstract>
-<origination label="Collector" encodinganalog="100$a">Committee on Old Cemeteries, Preservation Society of Loudoun County 
+      <origination label="Collector" encodinganalog="100$a">Committee on Old Cemeteries, Preservation Society of Loudoun County 
 </origination>
-</did>
-<descgrp type="admininfo">
-<head>Administrative Information
+    </did>
+    <descgrp type="admininfo">
+      <head>Administrative Information
 </head>
-<accessrestrict encodinganalog="506$a">
-<head>Access Restrictions
+      <accessrestrict encodinganalog="506$a">
+        <head>Access Restrictions
 </head>
-<p>Collection open for research 
+        <p>Collection open for research 
 </p>
-</accessrestrict>
-<userestrict encodinganalog="540$a">
-<head>Use Restrictions
+      </accessrestrict>
+      <userestrict encodinganalog="540$a">
+        <head>Use Restrictions
 </head>
-<p>No physical characteristics affect use of this material.  
+        <p>No physical characteristics affect use of this material.  
 </p>
-</userestrict>
-<prefercite encodinganalog="524$a">
-<head>Preferred Citation
+      </userestrict>
+      <prefercite encodinganalog="524$a">
+        <head>Preferred Citation
 </head>
-<p>Loudoun County, VA Cemetery Collection (M 017), Thomas Balch Library, Leesburg, VA.
+        <p>Loudoun County, VA Cemetery Collection (M 017), Thomas Balch Library, Leesburg, VA.
 </p>
-</prefercite>
-<acqinfo encodinganalog="541$a">
-<head>Acquisition Information
+      </prefercite>
+      <acqinfo encodinganalog="541$a">
+        <head>Acquisition Information
 </head>
-<p>Aurelia Jewell; Committee on Old Cemeteries; Thomas Balch Library Cemetery Committee
+        <p>Aurelia Jewell; Committee on Old Cemeteries; Thomas Balch Library Cemetery Committee
 </p>
-</acqinfo>
-<altformavail>
-<head>Alternative Form Available
+      </acqinfo>
+      <altformavail>
+        <head>Alternative Form Available
 </head>
-<p><title render="italic">Cemeteries of Loudoun County, Virginia: Copied by Mrs. Walter Towner Jewell</title> (V REF 929.3 JEW); <title render="italic">Loudoun County, Virginia Cemeteries: A Preliminary Index</title> (V REF 929.50975528)
+        <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Cemeteries of Loudoun County, Virginia: Copied by Mrs. Walter Towner Jewell</title> (V REF 929.3 JEW); <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Loudoun County, Virginia Cemeteries: A Preliminary Index</title> (V REF 929.50975528)
 </p>
-</altformavail>
-<accruals>
-<head>Accruals
+      </altformavail>
+      <accruals>
+        <head>Accruals
 </head>
-<p>2005.0112, 2005.0113
+        <p>2005.0112, 2005.0113
 </p>
-</accruals>
-<processinfo>
-<head>Processing Information</head>
-<p>Processed by Emily Hershman, 8 August 2007.</p>
-<p>This collection is open; there may be additional entries.</p>
-</processinfo>
-</descgrp>
-<bioghist encodinganalog="545$a">
-<head>Historical Information
+      </accruals>
+      <processinfo>
+        <head>Processing Information</head>
+        <p>Processed by Emily Hershman, 8 August 2007.</p>
+        <p>This collection is open; there may be additional entries.</p>
+      </processinfo>
+    </descgrp>
+    <bioghist encodinganalog="545$a">
+      <head>Historical Information
 </head>
-<p>The Loudoun County Cemetery Collection project was initiated by Aurelia McCormick Jewell, who from approximately 1945 to 1950 made detailed listings of the cemeteries throughout the county.  Rather than being listed alphabetically, Mrs. Jewell's data was sorted according to the location of each grave in individual cemeteries.    </p>
-<p>After Joint Resolution 177 by the 1989 Virginia General Assembly, an ordinance recognizing the significance and vulnerability of small Virginia cemeteries to development, the Preservation Society of Loudoun County resumed the cemetery project.  A "Committee on Old Cemeteries," consisting of Alvin Titus, Wynne Saffer, David Via, Louis Jett, Mr. and Mrs. Bill Miner, and Alice Calhoun, was created to examine the small cemeteries throughout the county and determine their condition and the necessity for state action.  The data compiled by this committee may often contain numerical measurements of graves as well as the number and condition of graves in a cemetery, but do not all contain names and birth and death dates. </p>
-<p>In 1995 Thomas Balch Library sponsored a project to map, identify, photograph, and transcribe gravestone inscriptions in Loudoun cemeteries.  A committee was created that consisted of Jeff Ball, Ned Douglass, Mary Fishback, Marty Hiatt, David Via, and Wynne Saffer as chairman for that purpose.  The following year (1996), the committee published a list of known cemeteries in Loudoun County.  The Committee has not been disbanded but is no longer active. </p>
-</bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
+      <p>The Loudoun County Cemetery Collection project was initiated by Aurelia McCormick Jewell, who from approximately 1945 to 1950 made detailed listings of the cemeteries throughout the county.  Rather than being listed alphabetically, Mrs. Jewell's data was sorted according to the location of each grave in individual cemeteries.    </p>
+      <p>After Joint Resolution 177 by the 1989 Virginia General Assembly, an ordinance recognizing the significance and vulnerability of small Virginia cemeteries to development, the Preservation Society of Loudoun County resumed the cemetery project.  A "Committee on Old Cemeteries," consisting of Alvin Titus, Wynne Saffer, David Via, Louis Jett, Mr. and Mrs. Bill Miner, and Alice Calhoun, was created to examine the small cemeteries throughout the county and determine their condition and the necessity for state action.  The data compiled by this committee may often contain numerical measurements of graves as well as the number and condition of graves in a cemetery, but do not all contain names and birth and death dates. </p>
+      <p>In 1995 Thomas Balch Library sponsored a project to map, identify, photograph, and transcribe gravestone inscriptions in Loudoun cemeteries.  A committee was created that consisted of Jeff Ball, Ned Douglass, Mary Fishback, Marty Hiatt, David Via, and Wynne Saffer as chairman for that purpose.  The following year (1996), the committee published a list of known cemeteries in Loudoun County.  The Committee has not been disbanded but is no longer active. </p>
+    </bioghist>
+    <scopecontent encodinganalog="520$a">
+      <head>Scope and Content
 </head>
-<p>The Loudoun County Cemetery Collection is comprised of four boxes and over one hundred folders.  Cemeteries throughout the county are alphabetically listed, and each folder is headed according to the name of the cemetery and its location in the collection.   Information in the folders ranges from single page lists to extensive indexes.  </p>
-<p> Folders in the cemetery collection include known information about cemeteries in places such as Hamilton, Middleburg, Purcellville, Leesburg, and other locations throughout the county.  Some contain pictures of individual gravesites, names, birth and death dates on gravestones, and locations of the cemeteries.  The folders are comprised of the combined information from Aurelia Jewell's and the "Committee on Old Cemeteries" data. The six notebooks from Thomas Balch Library Cemetery Committee Records of Loudoun County, VA (V REF 929.50975528) are also included in this collection.  The notebooks consist of state cemetery questionnaires, photographs of individual graves, maps of each cemetery, and indexes of all gravestone inscriptions. A separate index from this project can also be used for further research.  </p>
-<p>The Cemetery Collection records are the only items in this collection.  </p>
-</scopecontent>
-<descgrp type="add">
-<head>Adjunct Descriptive Data
+      <p>The Loudoun County Cemetery Collection is comprised of four boxes and over one hundred folders.  Cemeteries throughout the county are alphabetically listed, and each folder is headed according to the name of the cemetery and its location in the collection.   Information in the folders ranges from single page lists to extensive indexes.  </p>
+      <p> Folders in the cemetery collection include known information about cemeteries in places such as Hamilton, Middleburg, Purcellville, Leesburg, and other locations throughout the county.  Some contain pictures of individual gravesites, names, birth and death dates on gravestones, and locations of the cemeteries.  The folders are comprised of the combined information from Aurelia Jewell's and the "Committee on Old Cemeteries" data. The six notebooks from Thomas Balch Library Cemetery Committee Records of Loudoun County, VA (V REF 929.50975528) are also included in this collection.  The notebooks consist of state cemetery questionnaires, photographs of individual graves, maps of each cemetery, and indexes of all gravestone inscriptions. A separate index from this project can also be used for further research.  </p>
+      <p>The Cemetery Collection records are the only items in this collection.  </p>
+    </scopecontent>
+    <descgrp type="add">
+      <head>Adjunct Descriptive Data
 </head>
-<bibliography encodinganalog="581$a">
-<head>Bibliography
+      <bibliography encodinganalog="581$a">
+        <head>Bibliography
 </head>
-<p><bibref>Wynne Saffer, interview with Emily Rebecca Hershman, 8 August 2007</bibref></p>
-<p><bibref>Loudoun County, VA Cemetery Collection (M 017), Thomas Balch Library, Leesburg, VA </bibref></p>
-</bibliography>
-<otherfindaid>
-<head>Other Finding Aid
+        <p>
+          <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Wynne Saffer, interview with Emily Rebecca Hershman, 8 August 2007</bibref>
+        </p>
+        <p>
+          <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Loudoun County, VA Cemetery Collection (M 017), Thomas Balch Library, Leesburg, VA </bibref>
+        </p>
+      </bibliography>
+      <otherfindaid>
+        <head>Other Finding Aid
 </head>
-<p>Loudoun County Cemetery Database, http://www.leesburgva.org/services/library/cemetery/default.aspx, uncatalogued Loudoun Cemetery Directory and Location Map Guide (2002 edition) located in open stacks.
+        <p>Loudoun County Cemetery Database, http://www.leesburgva.org/services/library/cemetery/default.aspx, uncatalogued Loudoun Cemetery Directory and Location Map Guide (2002 edition) located in open stacks.
 </p>
-</otherfindaid>
-<relatedmaterial encodinganalog="544$a">
-<head>Related Material
+      </otherfindaid>
+      <relatedmaterial encodinganalog="544$a">
+        <head>Related Material
 </head>
-<p>Preservation Society of Loudoun County, Cemetery Records (M 006/OMB 001)
+        <p>Preservation Society of Loudoun County, Cemetery Records (M 006/OMB 001)
 </p>
-</relatedmaterial>
-</descgrp>
-<dsc type="combined">
-<head>Contents List
+      </relatedmaterial>
+    </descgrp>
+    <dsc type="combined">
+      <head>Contents List
 </head>
-
-<c01 level="series">
-<did>
-<container label="Box" type="box">1
+      <c01 level="series">
+        <did>
+          <container label="Box" type="box">1
 </container>
-</did>
-
-	<c02 level="item">
-	<did>
-	<unittitle label = "Folder 1">Adams, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 2">African American-Lovettsville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 3">Ashburn Presbyterian, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 4">Baley (Baily-Bailey) Cemetery, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label = "Folder 5">Ball Cemetery, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02>
- 
-	<c02 level="item">
-	<did>
-	<unittitle label = "Folder 6">Beaver/Spence-Arcola, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label = "Folder 7">Belmont, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label = "Folder 8">Belmont Chapel, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 9">Bowman Pet Cemetery, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 10">Broad Run/Hillside, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 11">Bethel-Stumptown, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 12">Carr Mausoleum, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 13">Carter Tomb-Oatlands, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 14">Carter-St. Louis, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 15">Carter Crednal, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 16">Catoctin Free-Paeonian Springs, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 17">Chestnut Grove Cemetery-Herndon, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 18">Chinn-Bittersweet, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 19">Cleveland, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 20">Cochran Cemetery, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 21">Collier-Langollen, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 22">Confederate Graves (Loudoun), 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 23">Cooksville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 24">Corum Cemetery, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 25">Craven, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-	<c02 level="item">	
-	<did>
-	<unittitle label="Folder 26">Davis at Morven Park, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02>  
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 27">Denham, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 28">Dishman, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 29">Dulin/Keene, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 30">Ebenezer-Bloomfield, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 31">Ebenezer New-Round Hill, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 32">Ebenezer Old-Neersville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 33">Elgin (Fauquier), 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 34">Elgin (Sycolin), 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 35">Ellzey (Mt. Middleton), 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 36">Fadely, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 37">Fairfax Friends Meeting, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 38">Faith Chapel, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>	
-	<unittitle label="Folder 39">First Baptist-Watson, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 40">Fouche, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 41">Fox (empty), 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02>  
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 42">Fox-Waterford, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 43">Freeman, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 44">Furnace Mountain Presbyterian, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 45">German Reform/St. James United Church of Christ, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 46">Gleedsville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 47">Glenloche, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 48">Goose Creek Burial Grounds-Lincoln, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 49">Grayson, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 50">Grove Methodist Meeting, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 51">Grubb-Hillsboro, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 52">Gulick, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 53">Gum Springs-Arcola, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 54">Harmony-Hamilton, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 55">Heater Graveyard, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 56">Henkle, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 57">Hillsboro, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 58">Hixson, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 59">Ish, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 60">Jackson, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 61">Ketoctin-Round Hill, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-</c01>
-
-<c01 level="series">
-<did>
-<container label="Box" type="box">2
+        </did>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 1">Adams, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 2">African American-Lovettsville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 3">Ashburn Presbyterian, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 4">Baley (Baily-Bailey) Cemetery, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 5">Ball Cemetery, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 6">Beaver/Spence-Arcola, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 7">Belmont, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 8">Belmont Chapel, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 9">Bowman Pet Cemetery, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 10">Broad Run/Hillside, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 11">Bethel-Stumptown, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 12">Carr Mausoleum, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 13">Carter Tomb-Oatlands, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 14">Carter-St. Louis, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 15">Carter Crednal, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 16">Catoctin Free-Paeonian Springs, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 17">Chestnut Grove Cemetery-Herndon, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 18">Chinn-Bittersweet, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 19">Cleveland, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 20">Cochran Cemetery, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 21">Collier-Langollen, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 22">Confederate Graves (Loudoun), 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 23">Cooksville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 24">Corum Cemetery, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 25">Craven, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 26">Davis at Morven Park, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 27">Denham, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 28">Dishman, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 29">Dulin/Keene, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 30">Ebenezer-Bloomfield, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 31">Ebenezer New-Round Hill, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 32">Ebenezer Old-Neersville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 33">Elgin (Fauquier), 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 34">Elgin (Sycolin), 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 35">Ellzey (Mt. Middleton), 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 36">Fadely, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 37">Fairfax Friends Meeting, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 38">Faith Chapel, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 39">First Baptist-Watson, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 40">Fouche, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 41">Fox (empty), 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 42">Fox-Waterford, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 43">Freeman, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 44">Furnace Mountain Presbyterian, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 45">German Reform/St. James United Church of Christ, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 46">Gleedsville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 47">Glenloche, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 48">Goose Creek Burial Grounds-Lincoln, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 49">Grayson, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 50">Grove Methodist Meeting, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 51">Grubb-Hillsboro, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 52">Gulick, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 53">Gum Springs-Arcola, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 54">Harmony-Hamilton, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 55">Heater Graveyard, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 56">Henkle, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 57">Hillsboro, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 58">Hixson, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 59">Ish, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 60">Jackson, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 61">Ketoctin-Round Hill, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <container label="Box" type="box">2
 </container>
-</did>
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 1">Lakeview-Hamilton, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 2">Lane, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 3">Lee, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 4">Leigh-Mt. Gilead, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 5">Loudoun Heights, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 6">Lucas-Hillsboro, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 7">Lunette, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 8">Lynn, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 9">Lyon-Brambleton, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 10">Lyon-Route 643, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 11">Maffett, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 12">Mansfield, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 13">Matthew/James, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 14">McIlhany/Ithaca-Hillsboro, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 15">McKim, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 16">Middleburg Memorial Gardens, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 17">Moore, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 18">Moran, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 19">Mount, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 20">Mount Hope, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 21">Mount Olivet, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 22">Mt. Pleasant-Taylorstown, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 23">Mt. Pleasant Baptist-Aldie, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 24">Mt. Sinai/Britain, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 25">Mt. Zion-Aldie, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 26">Mt. Zion Community-Leesburg, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 27">Mountain Chapel, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 28">New Jerusalem-Lovettsville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 29">New Valley Church-Lucketts, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 30">Nixon, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 31">North Fork Regular Baptist, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 32">Oak Grove Baptist-Sterling, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>	
-	<unittitle label="Folder 33">Old Abel, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
- 
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 34">Old Baptist-Middleburg, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02>  
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 35">Old Bethesda Methodist-Unison, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did><unittitle label="Folder 36">Old Darnes, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 37">Old Episcopal-Leesburg, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 38">Old Methodist-Leesburg, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 39">Old Presbyterian-Leesburg, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 40">Old Presbyterian-Lovettsville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 41">Old Welbourne, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 42">Orrison-Rt. 50, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 43">Oxley, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 44">Palmer, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 45">Pleasant Valley-Hamilton, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-</c01>
-
-<c01 level="series">
-<did>
-<container label="Box" type="box">3
+        </did>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 1">Lakeview-Hamilton, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 2">Lane, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 3">Lee, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 4">Leigh-Mt. Gilead, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 5">Loudoun Heights, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 6">Lucas-Hillsboro, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 7">Lunette, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 8">Lynn, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 9">Lyon-Brambleton, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 10">Lyon-Route 643, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 11">Maffett, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 12">Mansfield, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 13">Matthew/James, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 14">McIlhany/Ithaca-Hillsboro, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 15">McKim, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 16">Middleburg Memorial Gardens, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 17">Moore, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 18">Moran, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 19">Mount, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 20">Mount Hope, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 21">Mount Olivet, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 22">Mt. Pleasant-Taylorstown, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 23">Mt. Pleasant Baptist-Aldie, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 24">Mt. Sinai/Britain, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 25">Mt. Zion-Aldie, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 26">Mt. Zion Community-Leesburg, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 27">Mountain Chapel, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 28">New Jerusalem-Lovettsville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 29">New Valley Church-Lucketts, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 30">Nixon, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 31">North Fork Regular Baptist, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 32">Oak Grove Baptist-Sterling, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 33">Old Abel, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 34">Old Baptist-Middleburg, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 35">Old Bethesda Methodist-Unison, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 36">Old Darnes, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 37">Old Episcopal-Leesburg, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 38">Old Methodist-Leesburg, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 39">Old Presbyterian-Leesburg, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 40">Old Presbyterian-Lovettsville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 41">Old Welbourne, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 42">Orrison-Rt. 50, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 43">Oxley, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 44">Palmer, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 45">Pleasant Valley-Hamilton, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <container label="Box" type="box">3
 </container>
-</did>
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 1">Potts, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 2">Powell-Empty, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 3">Powellton-Airmont, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 4">Private Cemetery-Rt. 606-636, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 5">Private-Rt.606/775, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 6">Prosperity-Rt. 620-621, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 7">Rehobeth, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 8">Rock Hill-Airmont, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 9">Rusk, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 10">Rust/Moss, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 11">Saffer, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 12">Salem, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 13">Saunders-Camp High Road, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 14">Saudners-Prosperwell Farm/Lucketts, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 15">Second Shiloh Baptist, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 16">Sharon-Middleburg, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 17">Shreve, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 18">Skinner, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 19">Skinner/Oden, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 20">Smith, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 21">Solon 1, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 22">Solon 2, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-</c01>
-
-<c01 level="series">
-<did>
-<container label="Box" type="box">4
+        </did>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 1">Potts, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 2">Powell-Empty, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 3">Powellton-Airmont, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 4">Private Cemetery-Rt. 606-636, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 5">Private-Rt.606/775, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 6">Prosperity-Rt. 620-621, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 7">Rehobeth, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 8">Rock Hill-Airmont, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 9">Rusk, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 10">Rust/Moss, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 11">Saffer, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 12">Salem, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 13">Saunders-Camp High Road, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 14">Saudners-Prosperwell Farm/Lucketts, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 15">Second Shiloh Baptist, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 16">Sharon-Middleburg, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 17">Shreve, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 18">Skinner, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 19">Skinner/Oden, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 20">Smith, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 21">Solon 1, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 22">Solon 2, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+      </c01>
+      <c01 level="series">
+        <did>
+          <container label="Box" type="box">4
 </container>
-</did>
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 1">Solon 3, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 2">South Fork Meeting, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 3">St. Paul's-Neersville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 4">Sterling Cemetery (Old), 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 5">Sterling Cemetery, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 6">Throckmorton, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 7">Umbaugh Cemtery at site of Old Ironside Baptist, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 8">Union-Leesburg, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 9">Union Cemetery-Lovettsville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 10">Upperville Methodist, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 11">Waterford Union, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 12">Williams/Brown, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 13">Willis,  
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 14">Willisville, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 15">Wilson, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 16">Wilson-Empty, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02>  
-
-	<c02 level="item">
-	<did>
-	<unittitle label="Folder 17">Wolf/Gaines, 
-	<unitdate type="inclusive">n.d.
-	</unitdate>
-	</unittitle>
-	</did>
-	</c02> 
-
-</c01>
-
-</dsc>
-</archdesc>
+        </did>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 1">Solon 3, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 2">South Fork Meeting, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 3">St. Paul's-Neersville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 4">Sterling Cemetery (Old), 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 5">Sterling Cemetery, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 6">Throckmorton, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 7">Umbaugh Cemtery at site of Old Ironside Baptist, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 8">Union-Leesburg, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 9">Union Cemetery-Lovettsville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 10">Upperville Methodist, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 11">Waterford Union, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 12">Williams/Brown, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 13">Willis,  
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 14">Willisville, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 15">Wilson, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 16">Wilson-Empty, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+        <c02 level="item">
+          <did>
+            <unittitle label="Folder 17">Wolf/Gaines, 
+	<unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
+	</unitdate></unittitle>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
