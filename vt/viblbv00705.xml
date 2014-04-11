@@ -5,7 +5,8 @@
 		schematypens="http://relaxng.org/ns/structure/1.0" 
 		title="extended EAD relaxng schema" ?>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv00705">
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv00705">
   <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
     <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and State University::University Libraries::Special Collections//TEXT (US::ViBlbV::viblbv00705:: Squire Bosworth Papers, 1848-1892)//EN" "viblbv00705.xml"
 </eadid>
@@ -77,7 +78,10 @@
 <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1848-1892
 </unitdate></unittitle>
       <unitid label="Collection Number" encodinganalog="099$a">Ms2010-060
-</unitid>
+      </unitid>
+      <physdesc label="DIGITAL CONTENT">
+        <emph render="bold">This collection has been digitized and is available 
+          <extref xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" xlink:href="http://omeka.lib.vt.edu/collections/show/59">online</extref></emph>.</physdesc>
       <physdesc label="Physical Characteristics" encodinganalog="300$a">1 container; 0.1 cu. ft.
 </physdesc>
       <langmaterial label="Language">
@@ -114,6 +118,12 @@
         <p>The Squire Bosworth Papers were purchased in three lots from the same source. The first two lots (one comprised entirely of materials dated prior to 1865; another, of materials dated from 1865 to 1892, and a single undated letter) were purchased in May 2010. The third lot, consisting of the September 6, 1864 letter of Squire Newton Bosworth, was purchased in May 2012.
 </p>
       </acqinfo>
+      <altformavail id="ref52">
+        <head>Alternate Form Available</head>
+        <p>This collection has been digitized and is available 
+          <extref xlink:type="simple" xlink:show="new" xlink:href="http://omeka.lib.vt.edu/collections/show/59" xlink:actuate="onRequest">online</extref>.</p>
+      </altformavail>
+      
       <processinfo>
         <head>Processing Information
 </head>
@@ -144,7 +154,11 @@
     </arrangement>
     <dsc type="combined">
       <head>Contents List
-</head>
+      </head>
+      <blockquote>
+        <p><emph render="bold">This collection has been digitized and is available 
+          <extref xlink:type="simple" xlink:show="new" xlink:href="http://omeka.lib.vt.edu/collections/show/59" xlink:actuate="onRequest">online</extref></emph>.</p>
+      </blockquote>
       <c01 level="collection">
         <did>
           <unittitle>Papers
@@ -155,8 +169,7 @@
         </did>
         <c02 level="series">
           <did>
-            <unittitle>Correspondence
-	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <unittitle>Correspondence</unittitle>
           </did>
           <c03 level="item">
             <did>
@@ -294,8 +307,7 @@
         </c02>
         <c02 level="series">
           <did>
-            <unittitle>Business and Personal Financial Records
-	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <unittitle>Business and Personal Financial Records</unittitle>
           </did>
           <c03 level="item">
             <did>
@@ -316,8 +328,7 @@
         </c02>
         <c02 level="series">
           <did>
-            <unittitle>Legal Papers
-	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
+            <unittitle>Legal Papers</unittitle>
           </did>
           <c03 level="item">
             <did>
