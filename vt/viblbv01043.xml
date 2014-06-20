@@ -1,53 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ead xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <eadheader findaidstatus="Completed" repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b">
-        <eadid countrycode="US" mainagencycode="US-ViBlbV" url="http://ead.lib.virginia.edu/vivaxtd/view?docId=vt/viblbv01043.xml">viblbv01043</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv01043">
+    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="completed"
+        scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
+        repositoryencoding="iso15511">
+        <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
+            State University::University Libraries::Special Collections//TEXT
+            (US::ViBlbV::viblbv01043::Montgomery County/Christiansburg Vertical Files, 1960s-present)//EN" "viblbv01043.xml"</eadid>
         <filedesc>
             <titlestmt>
-                <titleproper>Montgomery County/Christiansburg Vertical Files, 
-                    <date>1960s-present</date>
-                    <num>VerticalFile.002</num>
-                </titleproper>
-                <titleproper type="filing">Montgomery County/Christiansburg Vertical Files</titleproper>
-                <author>Finding aid prepared by Special Collections Staff</author>
+                <titleproper>A Guide to the Montgomery County/Christiansburg Vertical Files, <date era="ce" calendar="gregorian"
+                    >1960s-present</date></titleproper>
+                <subtitle id="sort">Montgomery County/Christiansburg Vertical Files <num type="collectionnumber">VerticalFile.002</num></subtitle>
             </titlestmt>
             <publicationstmt>
-                <p>
-                    <extref ns2:type="simple" ns2:actuate="onLoad" ns2:show="embed" ns2:href="http://spec.lib.vt.edu/VT_logo.jpg"/>
+                <publisher>Special Collections, Virginia Tech</publisher>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+                <date type="publication" era="ce" calendar="gregorian">©2013 By Virginia Tech. All rights
+                    reserved.</date>
+                <p id="usestatement">
+                    <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                        xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+                    </extref>
                 </p>
-                <publisher>Special Collections</publisher>
-                <address>
-                    <addressline>University Libraries</addressline>
-                    <addressline>P.O. Box 90001</addressline>
-                    <addressline>Blacksburg, Virginia, 24062-9001</addressline>
-                    <addressline>540-231-6308</addressline>
-                    <addressline>specref@vt.edu</addressline>
-                </address>
-                <date>© 2013 Virginia Tech. All rights reserved.</date>
             </publicationstmt>
         </filedesc>
         <profiledesc>
-            <creation>This finding aid was produced using the Archivists' Toolkit
-                <date>2014-06-20T11:34-0400</date>
-            </creation>
-            <langusage>English</langusage>
+            <creation>This finding aid was produced using the Archivists' Toolkit <date era="ce"
+                calendar="gregorian">2014-06-20T11:34-0400</date></creation>
+            <langusage>Description is in <language langcode="eng">English </language></langusage>
         </profiledesc>
     </eadheader>
+    <frontmatter>
+        <titlepage>
+            <titleproper>Montgomery County/Christiansburg Vertical Files, <date era="ce" calendar="gregorian">1960s-present</date></titleproper>
+            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
+                VerticalFile.002</num></subtitle>
+            <p id="logostmt">
+                <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                    xlink:actuate="onLoad" xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+            </p>
+            <publisher>Special Collections, Virginia Tech</publisher>
+            <date type="publication" era="ce" calendar="gregorian">2013 </date>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+            <list type="deflist">
+                <defitem>
+                    <label>Processed by: </label>
+                    <item> Special Collections Staff</item>
+                </defitem>
+            </list>
+        </titlepage>
+    </frontmatter>    
     <archdesc level="collection">
+        <runner placement="footer">Special Collections, Virginia Tech </runner>
         <did>
-            <unittitle>Montgomery County / Christiansburg Vertical Files (List of Subjects),</unittitle>
+            <head>Descriptive Summary </head>
+            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia Tech,
+                Blacksburg, Va. </repository>
+            <unittitle label="Title">Montgomery County / Christiansburg Vertical Files (List of Subjects), <unitdate>1960s-present</unitdate></unittitle>
             <unitid>VerticalFile.002</unitid>
-            <repository>
-                <corpname>Special Collections</corpname>
-            </repository>
-            <langmaterial>
-                <language langcode="eng"/>
-            </langmaterial>
             <physdesc>
                 <extent>11.2 cu. ft.</extent>
                 <extent>8 boxes</extent>
             </physdesc>
-            <unitdate>1960s-present</unitdate>
+            <langmaterial>
+                <language langcode="eng">English</language>
+            </langmaterial>           
         </did>
         <accessrestrict id="ref173">
             <head>Access Restrictions</head>
@@ -85,12 +111,23 @@
                 </list></p>
         </relatedmaterial>
         <controlaccess>
-            <geogname source="lcsh">Christiansburg (Va.)</geogname>
-            <subject source="local">Local/Regional History and Appalachian South</subject>
+            <head>Index Terms</head>
+            <controlaccess>
+                <head>Subjects:</head>
+                            <subject source="local">Local/Regional History and Appalachian South</subject>
             <subject source="local">Montgomery County (Va.)</subject>
+            </controlaccess>
+            <controlaccess>
+                <head>Georgraphical Names:</head>                
+            <geogname source="lcsh">Christiansburg (Va.)</geogname>
+            </controlaccess>
+            <controlaccess>
+                <head>Genre and Form Terms:</head>
             <genreform source="aat">Vertical files</genreform>
+            </controlaccess>
         </controlaccess>
-        <dsc>
+        <dsc type="combined">
+            <head>Contents List</head>
             <c01 id="ref180" level="file">
                 <did>
                     <unittitle>Abner's Knob (see History - Specific Areas)</unittitle>
