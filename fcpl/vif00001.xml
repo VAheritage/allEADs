@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" title="extended EAD relaxng schema" ?>
-<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" id="vif00002">
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" id="vif00001">
 <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="US-ViF">PUBLIC "-//Fairfax County Public Library//TEXT (US::ViF::vif00002::A Guide to the Annandale, Virginia Collection, 1743-1993)//EN" "vif00002.xml"
+<eadid countrycode="US" mainagencycode="US-ViF">PUBLIC "-//Fairfax County Public Library//TEXT (US::ViF::vif00001::A Guide to the Annandale, Virginia Collection, 1743-1993)//EN" "vif00001.xml"
 </eadid>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <filedesc>
@@ -13,14 +13,22 @@
 <num type="collectionnumber">2014.004
 </num>
 </subtitle>
-
 </titlestmt>
+
 <publicationstmt>
-
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu/vivaead/add_con/fairfax_address.xi.xml"/>
-
+<!-- This puts in text for the boilerplate information about FCPL - address, phone number, etc.
+     These live in a separate file -->
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+ href="http://ead.lib.virginia.edu/vivaead/add_con/fairfax_address.xi.xml"/>
+ 
+<!-- This must be here so that the publication date appears in search results -->
+<date type="publication">
+© 2015 Fairfax County Public Library. All rights reserved.
+</date>
 </publicationstmt>
+
 </filedesc>
+
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <profiledesc>
 <creation>Machine-readable finding aid created in a text editor by Ross Landis, <date>28 February 2015</date>
