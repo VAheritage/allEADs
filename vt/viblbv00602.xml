@@ -1,1283 +1,1987 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
 <?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
 		type="application/xml" 
 		schematypens="http://relaxng.org/ns/structure/1.0" 
 		title="extended EAD relaxng schema" ?>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv00602">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute
-            and State University::University Libraries::Special Collections//TEXT
-            (US::ViBlbV::viblbv00602::Virginia Junior Academy of Science Records, 1931-1999)//EN"
-            "viblbv00602.xml"</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Virginia Junior Academy of Science Records, <date era="ce" calendar="gregorian">1931-1999</date></titleproper>
-        <subtitle id="sort">Virginia Junior Academy of Science Records <num type="collectionnumber">Ms1981-094</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Virginia Polytechnic Institute and State
-                    University</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2010 By Virginia
-                    Polytechnic Institute and State University. All rights reserved.</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid created in oXygen from HTML inventory by Kira A.
-                Dietz, <date era="ce" calendar="gregorian">February 17, 2010</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>Virginia Junior Academy of Science Records, <date era="ce" calendar="gregorian">1931-1999</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">Ms1981-094</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
-      </p>
-      <publisher>Special Collections, Virginia Polytechnic Institute and State
-                University</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2010 </date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by: Gina Ellis, student assisant, and Laura Katz Smith,
-                        Manuscripts Curator,</label>
-          <item>Special Collections</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, Virginia Polytechnic Institute and State
-            University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia
-                Polytechnic Institute and State University, Blacksburg, Va. </repository>
-      <unittitle label="Title" encodinganalog="245$a">Virginia Junior Academy of Science
-                Records <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1931-1999</unitdate></unittitle>
-      <unitid label="Collection Number" encodinganalog="099$a">Ms1981-094</unitid>
-      <physloc label="Location">
-        <emph render="bold">Note: This collection is in off-site
-                    storage and requires 2-3 days notice for retrieval. Please contact Special
-                    Collections for more information.</emph>
-      </physloc>
-      <physdesc label="Physical Characteristics" encodinganalog="300$a">8 boxes; 11.2 cu.
-                ft.</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">The Virginia Junior Academy of Science Records include
-                correspondence (including some correspondence antedating the founding of the VJAS);
-                notes and minutes from committees and general meetings, reports, publications,
-                memorabilia, and subject files.</abstract>
-      <origination label="Creator" encodinganalog="100$a">Virginia Junior Academy of
-                Sciences</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information</head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions</head>
-        <p>Collection is open to research.</p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions</head>
-        <p>Permission to publish from the Virginia Junior Academy of Science Records must be
-                    obtained from Special Collections, Virginia Tech.</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation</head>
-        <p>Researchers wishing to cite this collection should include the following
-                    information: Virginia Junior Academy of Science Records, Ms1981-094, Special
-                    Collections, Virginia Polytechnic Institute and State University, Blacksburg,
-                    Va.</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information</head>
-        <p>The intial Virginia Junior Academy of Science Records were donated to Special
-                    Collections in 1981. Additional donations occurred through 1999.</p>
-      </acqinfo>
-      <processinfo>
-        <head>Processing Information</head>
-        <p>The processing, arrangement, and description of the Virginia Junior Academy of
-                    Science Records commenced in September 1998 and was completed in March 1999.
-                    Additional description was completed in February 2010.</p>
-      </processinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Historical Information</head>
-      <p>The Virginia Academy of Science (VAS) organized the first Virginia Junior Academy of
-                Science (VJAS) meeting in 1941, after several years of discussions about how best to
-                discover and promote scientific aptitude in the secondary schools of Virginia.
-                Though the VJAS ceased to meet during World War II, it was reorganized after the
-                war. Beginning in 1946, the VAS sponsored a statewide science competition for high
-                school students known as the Virginia Science Talent Search. Since 1952, a VJAS
-                newspaper (the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Junior Science Bulletin</title>) has been
-                published; and since 1963 the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Virginia Junior Academy of
-                    Science Proceedings</title> have served as a record of papers presented at VJAS
-                meetings.</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content</head>
-      <p>The Virginia Junior Academy of Science Archives include correspondence (including
-                some correspondence antedating the founding of the VJAS); notes and minutes from
-                committees and general meetings, reports, publications, memorabilia, and
-                miscellaneous files.</p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement</head>
-      <p>The collection is arranged by chronologically in subject files.</p>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data </head>
-      <relatedmaterial encodinganalog="544$a">
-        <head>Related Material </head>
-        <p>Virginia Academy of Science Records, 1920-1999, Ms81-096. <emph render="bold">Note: This collection is in off-site storage and requires 2-3 days notice
-                        for retrieval. Please contact Special Collections for more
-                        information.</emph></p>
-      </relatedmaterial>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List</head>
-      <c01 level="otherlevel" otherlevel="box">
-        <did>
-          <unittitle>Box 1, <unitdate type="inclusive" era="ce" calendar="gregorian">1931-1979 (Bulk
-                            1931-1964).</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Correspondence about founding a junior academy,
-                                <unitdate era="ce" calendar="gregorian">1931-1940.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Historic photos, documents, etc., used in VJAS history exhibits,
-                                <unitdate era="ce" calendar="gregorian">1940-1947.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>AAAS awards, <unitdate era="ce" calendar="gregorian">1940-1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VAS honorary membership awards, <unitdate era="ce" calendar="gregorian">1940-1974.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Historical information on awards, etc.,
-                                <unitdate era="ce" calendar="gregorian">1941-1968.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Historic files, correspondence, etc.,
-                                <unitdate era="ce" calendar="gregorian">1942-1960.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>E. C. L. Miller award recipients, <unitdate era="ce" calendar="gregorian">1943-1963.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>History and general information, <unitdate era="ce" calendar="gregorian">1943-1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Major Catesby Jones award recipients,
-                                <unitdate era="ce" calendar="gregorian">1943-1963.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous correspondence, <unitdate era="ce" calendar="gregorian">1946-1947.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Radio program on scientific vocations, <unitdate era="ce" calendar="gregorian">1946.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Teacher sponsor scholarships, <unitdate era="ce" calendar="gregorian">1947-1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Exhibit contest, <unitdate era="ce" calendar="gregorian">1948-1949.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Science club reports, <unitdate era="ce" calendar="gregorian">1948-1949.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Constitution, <unitdate era="ce" calendar="gregorian">c.1950.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee of VAS--Reports, <unitdate era="ce" calendar="gregorian">1956-1960.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee of VAS--Minutes, etc., <unitdate era="ce" calendar="gregorian">1959.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS history--Thelma J. Heatwole, <unitdate era="ce" calendar="gregorian">1960-1961.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Minutes, agendas, and miscellaneous,
-                                <unitdate era="ce" calendar="gregorian">1960-1961.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous correspondence, <unitdate era="ce" calendar="gregorian">1960-1961.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files, <unitdate era="ce" calendar="gregorian">1960-1961.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Judges for VJAS exhibits, <unitdate era="ce" calendar="gregorian">1962.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Lexington, <unitdate era="ce" calendar="gregorian">1961.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>New business, <unitdate era="ce" calendar="gregorian">1961-1962.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files, <unitdate era="ce" calendar="gregorian">1961-1964. </unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Norfolk, <unitdate era="ce" calendar="gregorian">1962.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>National Science Seminars, <unitdate era="ce" calendar="gregorian">1962-1963.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Information on creating a VJAS brochure,
-                                <unitdate era="ce" calendar="gregorian">1962-1963.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Attendance at the AAAS meetings, <unitdate era="ce" calendar="gregorian">1962-1968.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Roanoke, <unitdate era="ce" calendar="gregorian">1963.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS affiliation with the National Science Foundation,
-                                <unitdate era="ce" calendar="gregorian">1963-1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Visiting Scientist Program, <unitdate era="ce" calendar="gregorian">1963-1976.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>List of VJAS affiliated clubs, <unitdate era="ce" calendar="gregorian">1963-1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Educational materials, <unitdate era="ce" calendar="gregorian">1964.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Charlottesville, <unitdate era="ce" calendar="gregorian">1964.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Charlottesville--Awards, <unitdate era="ce" calendar="gregorian">1964.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files, <unitdate era="ce" calendar="gregorian">1964-1965.</unitdate></unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="otherlevel" otherlevel="box">
-        <did>
-          <unittitle>Box 2, <unitdate type="inclusive" era="ce" calendar="gregorian">1964-1979 (Bulk
-                            1964-1966).</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files, including meeting at Richmond,
-                                <unitdate era="ce" calendar="gregorian">1964-1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS committee of VAS, <unitdate era="ce" calendar="gregorian">1964-1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Information on Virginia Junior Science, Humanities, and
-                            Engineering, <unitdate era="ce" calendar="gregorian">1964-1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>National Science Teachers Association--Information on Science
-                            Conferences, <unitdate era="ce" calendar="gregorian">1964-1967.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Science Services, Inc. and Science Clubs of America,
-                                <unitdate era="ce" calendar="gregorian">1964-1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Grant No. GE-4281, <unitdate era="ce" calendar="gregorian">1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Richmond, <unitdate era="ce" calendar="gregorian">1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Photos of the meeting at Richmond, <unitdate era="ce" calendar="gregorian">1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files, <unitdate era="ce" calendar="gregorian">1965.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee of VAS, <unitdate era="ce" calendar="gregorian">1965-1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Research Committee, <unitdate era="ce" calendar="gregorian">1965-1967.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Virginia High School League requesting calendar of events from
-                            VJAS, <unitdate era="ce" calendar="gregorian">1965-1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Certificates and citations--Blank forms,
-                                <unitdate era="ce" calendar="gregorian">1965-1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS information on AAAS, <unitdate era="ce" calendar="gregorian">1956-1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman, <unitdate era="ce" calendar="gregorian">1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Twenty-fifth anniversary meeting at Harrisonburg,
-                                <unitdate era="ce" calendar="gregorian">1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Twenty-fifth anniversary meeting--Awards,
-                                <unitdate era="ce" calendar="gregorian">1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Twenty-fifth anniversary meeting--Correspondence,
-                                <unitdate era="ce" calendar="gregorian">1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Twenty-fifth anniversary meeting--Invitations and badges,
-                                <unitdate era="ce" calendar="gregorian">1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Twenty-fifth anniversary meeting--Key rings,
-                                <unitdate era="ce" calendar="gregorian">1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Twenty-fifth anniversary meeting--Regrets to invitations,
-                                <unitdate era="ce" calendar="gregorian">1966.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman,
-                                <unitdate era="ce" calendar="gregorian">1966-1967.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Grant GW-1129, 1967. <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="otherlevel" otherlevel="box">
-        <did>
-          <unittitle>Box 3, <unitdate era="ce" calendar="gregorian">1966-1979 (Bulk 1966-1970).</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Letters from high schools requesting VJAS films,
-                                <unitdate era="ce" calendar="gregorian">1966-1967.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Virginia Talent Search information and programs,
-                                <unitdate era="ce" calendar="gregorian">1966-1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman, <unitdate era="ce" calendar="gregorian">1967.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman,
-                                <unitdate era="ce" calendar="gregorian">1967-1968.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Research Grant Committee, <unitdate era="ce" calendar="gregorian">1967-1968.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous clippings, <unitdate era="ce" calendar="gregorian">1968.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman, <unitdate era="ce" calendar="gregorian">1968.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>R. C. Berry Chemistry Award, <unitdate era="ce" calendar="gregorian">1968.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--V. B. Remsburg,
-                                <unitdate era="ce" calendar="gregorian">1968-1969.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman,
-                                <unitdate era="ce" calendar="gregorian">1968-1969.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files and clippings,
-                                <unitdate era="ce" calendar="gregorian">1968-1969.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS research grants, <unitdate era="ce" calendar="gregorian">1968-1969.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Distinguished Service Awards, <unitdate era="ce" calendar="gregorian">1968-1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>List of judges for VJAS, <unitdate era="ce" calendar="gregorian">1968-1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Letters of gratitude to people who gave presentations at VJAS
-                            events, <unitdate era="ce" calendar="gregorian">1968-1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman, <unitdate era="ce" calendar="gregorian">1969.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--M. B. Rowe, <unitdate era="ce" calendar="gregorian">1969-1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman,
-                                <unitdate era="ce" calendar="gregorian">1969-1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Newspaper clippings, <unitdate era="ce" calendar="gregorian">1969-1970. </unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS research grants, <unitdate era="ce" calendar="gregorian">1969-1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Scrapbook, <unitdate era="ce" calendar="gregorian">1969-1973.</unitdate></unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="otherlevel" otherlevel="box">
-        <did>
-          <unittitle>Box 4, <unitdate era="ce" calendar="gregorian">1970-1979 (Bulk 1970-1973).</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman, <unitdate era="ce" calendar="gregorian">1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Student follow-ups--Newspaper Articles,
-                                <unitdate era="ce" calendar="gregorian">1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Revisions for VJAS Handbook, <unitdate era="ce" calendar="gregorian">1970.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>E. C. L. Miller Award, <unitdate era="ce" calendar="gregorian">1970-1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Richmond, <unitdate era="ce" calendar="gregorian">1970-1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--V. B. Remsburg,
-                                <unitdate era="ce" calendar="gregorian">1970-1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--M. B. Rowe, <unitdate era="ce" calendar="gregorian">1970-1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Research grant records, <unitdate era="ce" calendar="gregorian">1970-1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Blacksburg, <unitdate era="ce" calendar="gregorian">1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman, <unitdate era="ce" calendar="gregorian">1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>List of public and private schools, division and science
-                            superintendents, and VJAS committee members, <unitdate era="ce" calendar="gregorian">1971.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Research grant materials, <unitdate era="ce" calendar="gregorian">1971-1972.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS budget, <unitdate era="ce" calendar="gregorian">1971-1972.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee notes and papers, <unitdate era="ce" calendar="gregorian">1971-1972.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee members, <unitdate era="ce" calendar="gregorian">1971-1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Vouchers, requests for checks, and financial reports,
-                                <unitdate era="ce" calendar="gregorian">1971-1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at the Natural Bridge, <unitdate era="ce" calendar="gregorian">1972.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--E. L. Wisman, <unitdate era="ce" calendar="gregorian">1972.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Research grant records, <unitdate era="ce" calendar="gregorian">1972.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1972.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files, <unitdate era="ce" calendar="gregorian">1972-1973.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--L. S. Anthony, <unitdate era="ce" calendar="gregorian">1973.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Minutes and papers from the Annual Meeting,
-                                <unitdate era="ce" calendar="gregorian">1973.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1973.</unitdate></unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="otherlevel" otherlevel="box">
-        <did>
-          <unittitle>Box 5, <unitdate era="ce" calendar="gregorian">1973-1980.</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Meetings at Williamsburg and Norfolk,
-                                <unitdate era="ce" calendar="gregorian">1973-1974.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--V. B. Remsburg,
-                                <unitdate era="ce" calendar="gregorian">1973-1974.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Photos from the meeting at Norfolk, <unitdate era="ce" calendar="gregorian">1974.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Research grants, <unitdate era="ce" calendar="gregorian">1974.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS awards, <unitdate era="ce" calendar="gregorian">1974.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files, <unitdate era="ce" calendar="gregorian">1974-1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee of VAS, <unitdate era="ce" calendar="gregorian">1974-1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Pre-registration information for the annual meeting,
-                                <unitdate era="ce" calendar="gregorian">1974-1978.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Harrionsburg, <unitdate era="ce" calendar="gregorian">1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--A. W. Burke, <unitdate era="ce" calendar="gregorian">1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee of VAS, <unitdate era="ce" calendar="gregorian">1975-1976.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Meeting at Fairfax, <unitdate era="ce" calendar="gregorian">1976.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Photographs and negatives of the VJAS Annual Meeting,
-                                <unitdate era="ce" calendar="gregorian">1936.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1976.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Organization of readers for VJAS papers,
-                                <unitdate era="ce" calendar="gregorian">1976-1978.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Fundraising for VJAS, <unitdate era="ce" calendar="gregorian">1976-1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Duties and work schedule for VJAS Committee members,
-                                <unitdate era="ce" calendar="gregorian">1977.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Thirty sixth Annual VJAS Meeting, <unitdate era="ce" calendar="gregorian">1977.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--V. B. Remsburg,
-                                <unitdate era="ce" calendar="gregorian">1977-1978.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Thirty seventh Annual VJAS Meeting, <unitdate era="ce" calendar="gregorian">1978.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--V. B. Remsburg,
-                                <unitdate era="ce" calendar="gregorian">1978-1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Annual Meeting, <unitdate era="ce" calendar="gregorian">1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--A. B. Niemeyer, Jr.,
-                                <unitdate era="ce" calendar="gregorian">1979.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--V. B. Remsburg,
-                                <unitdate era="ce" calendar="gregorian">1979-1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous files--A. B. Niemeyer, Jr.,
-                                <unitdate era="ce" calendar="gregorian">1980.</unitdate></unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="otherlevel" otherlevel="box">
-        <did>
-          <unittitle>Box 6, <unitdate era="ce" calendar="gregorian">1980-1997, undated.</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>January 62 Meeting of VJAS, <unitdate era="ce" calendar="gregorian">1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Annual Meeting and miscellaneous information,
-                                <unitdate era="ce" calendar="gregorian">1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Award winners, <unitdate era="ce" calendar="gregorian">1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Donor list of the VJAS, <unitdate era="ce" calendar="gregorian">1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1980.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Winter and Summer VJAS meetings, <unitdate era="ce" calendar="gregorian">1981.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>List of VJAS student who have presented papers at annual
-                            meetings, <unitdate era="ce" calendar="gregorian">1981.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Committee of VAS, <unitdate era="ce" calendar="gregorian">1981-1982.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Letters and lists of possible donors of VJAS,
-                                <unitdate era="ce" calendar="gregorian">1981-1985.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>January 23 meeting of VJAS, <unitdate era="ce" calendar="gregorian">1982.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>April 20-22 meeting at Virginia Tech, <unitdate era="ce" calendar="gregorian">1982.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Summer meeting at Peaks of Otter, <unitdate era="ce" calendar="gregorian">1982.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1983.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>American Junior Academy of Science Annual Conference papers,
-                                <unitdate era="ce" calendar="gregorian">1983-1984.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Minutes and papers from the July 21 VJAS meeting at Graves
-                            Mountain Lodge, <unitdate era="ce" calendar="gregorian">1984.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Scholarship information awarded by the VJAS,
-                                <unitdate era="ce" calendar="gregorian">1984.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Scholarship information awarded by the VJAS,
-                                <unitdate era="ce" calendar="gregorian">1984.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Minutes of meetings and lists of VJAS Committee members,
-                                <unitdate era="ce" calendar="gregorian">1984.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1984.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Letters of invitation to the VJAS Sponsor's reception,
-                                <unitdate era="ce" calendar="gregorian">1984-1985.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous newspaper articles, <unitdate era="ce" calendar="gregorian">1984-1986.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Information and agendas for VJAS meetings,
-                                <unitdate era="ce" calendar="gregorian">1985.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1985.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>VJAS Section Awards, <unitdate era="ce" calendar="gregorian">1986.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Information about Astronaut Robert A. Parker speaking to the VAS
-                            and VJAS at the annual meeting, <unitdate era="ce" calendar="gregorian">1986.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1986.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Papers on the winner of the Frances and Sydney Lewis
-                            Environmental Science Scholarship, <unitdate era="ce" calendar="gregorian">1987.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Special Award Nominations and winners, <unitdate era="ce" calendar="gregorian">1987.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Nominations for the VJAS Sponsor Award,
-                                <unitdate era="ce" calendar="gregorian">1987.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Section Award Forms, <unitdate era="ce" calendar="gregorian">1987.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Information about VJAS Meetings, <unitdate era="ce" calendar="gregorian">1987.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Student applications for the Frances and Sydney Lewis
-                            Environmental Science Scholarship, <unitdate era="ce" calendar="gregorian">1987.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1987.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Nominations for the Science Club Award and the VAS Science
-                            Teacher Award, <unitdate era="ce" calendar="gregorian">1987-1988.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Special Awards Nominations, <unitdate era="ce" calendar="gregorian">1988.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Papers from the Section Awards, <unitdate era="ce" calendar="gregorian">1988.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Letters to and from Dr. Dean Decker, Director of the VJAS,
-                                <unitdate era="ce" calendar="gregorian">1988.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Applications from students applying for the Frances and Sydney
-                            Lewis Environmental Science Scholarship, <unitdate era="ce" calendar="gregorian">1988.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1988.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Invoices paid, <unitdate era="ce" calendar="gregorian">1989.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>History of VJAS and "Fifty Years of VJAS,"
-                                <unitdate era="ce" calendar="gregorian">1991.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Awards script, <unitdate era="ce" calendar="gregorian">1991.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>"Galaxies in Collision" by Debra Meloy Elmgreen--The
-                            first George W. Jeffers Memorial Lecture, <unitdate era="ce" calendar="gregorian">1992.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Information about registration to attend the VJAS awards ceremony
-                            at James Madison University, <unitdate era="ce" calendar="gregorian">1994.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Letter for VJAS membership, <unitdate era="ce" calendar="gregorian">1994.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Annual meeting information and registration,
-                                <unitdate era="ce" calendar="gregorian">1995.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Annual meeting information and registration,
-                                <unitdate era="ce" calendar="gregorian">1996.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Annual meeting information and registration,
-                                <unitdate era="ce" calendar="gregorian">1997.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Junior Science Bulletin</title>,
-                                <unitdate era="ce" calendar="gregorian">1952-1979</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>"Characterization of Junior Academy of Science
-                            Participation" <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>"Award of Honor" certificates. <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Science Supervisors Superintendents. <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Periodic table. <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Biographical and VJAS information about Edgar V. Russell,
-                            Jr.--Photograph also included. <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Listing of VJAS Committee members, officers, and other members.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>"VJAS Hall of Fame" general revision. <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="otherlevel" otherlevel="box">
-        <did>
-          <unittitle>Box 7, <unitdate era="ce" calendar="gregorian">1963-1993.</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>
-              <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">The Virginia Junior Academy of Science
-                                Proceedings.</title>
-              <unitdate era="ce" calendar="gregorian"/>
-            </unittitle>
-          </did>
-          <scopecontent>
-            <list>
-              <item>Volume 1-14, 1963-1976</item>
-              <item>Volume 16-23, 1978-1985.</item>
-              <item>Volume 26-31, 1988-1993.</item>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv00602">
+    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="completed"
+        scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
+        repositoryencoding="iso15511">
+        <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
+            State University::University Libraries::Special Collections//TEXT
+            (US::ViBlbV::viblbv00602::Virginia Junior Academy of Science Records, 1931-1999)//EN" "viblbv00602.xml"</eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper>A Guide to the Virginia Junior Academy of Science Records, <date era="ce" calendar="gregorian"
+                    >1931-1999</date></titleproper>
+                <subtitle id="sort">Virginia Junior Academy of Science Records <num type="collectionnumber">Ms1981-094</num></subtitle>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>Special Collections, Virginia Tech</publisher>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+                <date type="publication" era="ce" calendar="gregorian">©2015 By Virginia Tech. All rights
+                    reserved.</date>
+                <p id="usestatement">
+                    <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                        xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+                    </extref>
+                </p>
+            </publicationstmt>
+        </filedesc>
+        <profiledesc>
+            <creation>This finding aid was produced using the Archivists' Toolkit <date era="ce"
+                calendar="gregorian">2016-01-05T15:50-0500</date></creation>
+            <langusage>Description is in <language langcode="eng">English </language></langusage>
+        </profiledesc>
+    </eadheader>
+    <frontmatter>
+        <titlepage>
+            <titleproper>Virginia Junior Academy of Science Records, <date era="ce" calendar="gregorian">1931-1999</date></titleproper>
+            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
+                Ms1981-094</num></subtitle>
+            <p id="logostmt">
+                <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                    xlink:actuate="onLoad" xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+            </p>
+            <publisher>Special Collections, Virginia Tech</publisher>
+            <date type="publication" era="ce" calendar="gregorian">2015 </date>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+            <list type="deflist">
+                <defitem>
+                    <label>Processed by: </label>
+                    <item> Special Collections Staff</item>
+                </defitem>
             </list>
-          </scopecontent>
-        </c02>
-      </c01>
-      <c01 level="otherlevel" otherlevel="box">
+        </titlepage>
+    </frontmatter>                
+    <archdesc level="collection">
+        <runner placement="footer">Special Collections, Virginia Tech </runner>
         <did>
-          <unittitle>Box 8, <unitdate era="ce" calendar="gregorian">1942-1992, undated.</unitdate></unittitle>
+            <head>Descriptive Summary </head>
+            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia Tech,
+                Blacksburg, Va. </repository>
+            <unittitle label="Title">Virginia Junior Academy of Science Records, <unitdate normal="1931/1999" type="inclusive">1931-1999</unitdate></unittitle>
+            <unitid label="Collection Number">Ms1981-094</unitid>
+            <langmaterial label="Language">
+                <language langcode="eng">English</language>
+            </langmaterial>
+            <physdesc label="Physical Characteristics">
+                <extent>15.4 cu. ft.</extent>
+                <extent>11 boxes</extent>
+            </physdesc>           
+            <physloc id="ref1" label="Location">
+                <emph render="bold">Note: This collection is in off-site storage and requires 2-3 days notice for retrieval. Please contact Special Collections for more information.</emph></physloc>
+            <abstract id="ref3" label="Abstract">The Virginia Junior Academy of Science Records include correspondence (including some correspondence antedating the founding of the VJAS); notes and minutes from committees and general meetings, reports, publications, memorabilia, and subject files.</abstract>
+  
+            <origination label="Creator">
+                <corpname rules="dacs" source="local">Virginia. Junior Academy of Sciences.</corpname>
+            </origination>
         </did>
-        <c02 level="file">
-          <did>
-            <unittitle><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Virginia Junior Academy of Science
-                                Handbook</title>, <unitdate era="ce" calendar="gregorian">1963, 1965-1966, 1968, 1970, 1972, 1975,
-                                1977, 1987, and 1992.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>"History of the VJAS" as presented at the 50th Anniversary
-                            Meeting of the VAS. The slides and narration were prepared by Vera
-                            Remsburg, <unitdate era="ce" calendar="gregorian">1942-1973.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Pictures taken of members of the VJAS Committee Meetings --Judges, recipients of awards, etc.,
-                            <unitdate era="ce" calendar="gregorian">1975.</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Strip of photographic film possibly of the 1976 VJAS Summer meeting at Peaks of Otter.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>"VJAS in Action"--Four filmstrips.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>"Story of the VJAS"--Slides.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Two card holders of the 30th Anniversary of the VJAS.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Two key chains of the 25th Anniversary of the VJAS.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Three souvenir T-shirts of the 50th Anniversary of the VJAS.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Souvenir pencil of the 50th Anniversary of the VJAS.
-                            <unitdate era="ce" calendar="gregorian"/></unittitle>
-          </did>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+        <descgrp type="admininfo">
+            <head>Administrative Information</head>
+        <accessrestrict id="ref4">
+            <head>Access Restrictions</head>
+            <p>Collection is open to research.</p>
+        </accessrestrict>
+        <userestrict id="ref5">
+            <head>Use Restrictions</head>
+            <p>Permission to publish from the Virginia Junior Academy of Science Records must be obtained from Special Collections, Virginia Tech.</p>
+        </userestrict>
+        <prefercite id="ref6">
+            <head>Preferred Citation</head>
+            <p>Researchers wishing to cite this collection should include the following information: Virginia Junior Academy of Science Records, Ms1981-094, Special Collections, Virginia Polytechnic Institute and State University, Blacksburg, Va.</p>
+        </prefercite>
+        <acqinfo id="ref7">
+            <head>Acquisition Information</head>
+            <p>The intial Virginia Junior Academy of Science Records were donated to Special Collections in 1981. Additional donations occurred through 1999.</p>
+        </acqinfo>
+        <processinfo id="ref8">
+            <head>Processing Information</head>
+            <p>The processing, arrangement, and description of the Virginia Junior Academy of Science Records commenced in September 1998 and was completed in March 1999. Additional description was completed in February 2010.</p>
+        </processinfo>
+        </descgrp>
+        <bioghist id="ref9">
+            <head>Historical Information</head>
+            <p>The Virginia Academy of Science (VAS) organized the first Virginia Junior Academy of Science (VJAS) meeting in 1941, after several years of discussions about how best to discover and promote scientific aptitude in the secondary schools of Virginia. Though the VJAS ceased to meet during World War II, it was reorganized after the war. Beginning in 1946, the VAS sponsored a statewide science competition for high school students known as the Virginia Science Talent Search. Since 1952, a VJAS newspaper (the 
+                <title render="italic">Junior Science Bulletin</title>) has been published; and since 1963 the 
+                <title render="italic">Virginia Junior Academy of Science Proceedings</title> have served as a record of papers presented at VJAS meetings.</p>
+        </bioghist>
+        <scopecontent id="ref10">
+            <head>Scope and Content</head>
+            <p>The Virginia Junior Academy of Science Archives include correspondence (including some correspondence antedating the founding of the VJAS); notes and minutes from committees and general meetings, reports, publications, memorabilia, and miscellaneous files.</p>
+        </scopecontent>
+        <arrangement id="ref11">
+            <head>Arrangement</head>
+            <p>The collection is arranged by chronologically in subject files.</p>
+        </arrangement>
+        <descgrp type="add">
+            <head>Adjunct Descriptive Data</head>
+        <relatedmaterial id="ref12">
+            <head>Related Material</head>
+            <p>Virginia Academy of Science Records, 1920-1999, Ms1981-096. <extref xlink:type="simple" xlink:actuate="onRequest" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=vt/viblbv00630.xml" xlink:show="new">Finding aid</extref> available online. <emph render="bold">Note: This collection is in off-site storage and requires 2-3 days notice for retrieval. Please contact Special Collections for more information.</emph></p>
+            </relatedmaterial>
+        </descgrp>
+        <controlaccess>
+            <head>Index Terms</head>
+            <controlaccess>
+                <head>Corporate Names:</head>
+            <corpname rules="dacs" source="local">Virginia. Junior Academy of Sciences.</corpname>
+            </controlaccess>
+            <controlaccess>
+                <head>Subjects:</head>
+            <subject source="local">Local/Regional History and Appalachian South</subject>
+            <subject source="local">Science and Technology</subject>
+            </controlaccess>
+        </controlaccess>
+        <dsc type="combined">
+            <head>Contents List</head>
+            <c01 otherlevel="box" id="ref13" level="otherlevel">
+                <did>
+                    <unittitle>Records, <unitdate>1931-1979 (Bulk 1931-1964)</unitdate></unittitle>
+                    <container id="cid2190008" type="Box" label="Box">1</container>
+                   
+                </did>
+                <c02 id="ref14" level="file">
+                    <did>
+                        <unittitle>Correspondence about founding a junior academy,
+                        <unitdate>1931-1940</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref15" level="file">
+                    <did>
+                        <unittitle>Historic photos, documents, etc., used in VJAS history exhibits,
+                        <unitdate>1940-1947</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref16" level="file">
+                    <did>
+                        <unittitle>AAAS awards,
+                        <unitdate>1940-1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref17" level="file">
+                    <did>
+                        <unittitle>VAS honorary membership awards,
+                        <unitdate>1940-1974</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref18" level="file">
+                    <did>
+                        <unittitle>Historical information on awards, etc.,
+                        <unitdate>1941-1968</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref19" level="file">
+                    <did>
+                        <unittitle>Historic files, correspondence, etc.,
+                        <unitdate>1942-1960</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref20" level="file">
+                    <did>
+                        <unittitle>E. C. L. Miller award recipients,
+                        <unitdate>1943-1963</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref21" level="file">
+                    <did>
+                        <unittitle>History and general information,
+                        <unitdate>1943-1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref22" level="file">
+                    <did>
+                        <unittitle>Major Catesby Jones award recipients,
+                        <unitdate>1943-1963</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref23" level="file">
+                    <did>
+                        <unittitle>Miscellaneous correspondence,
+                        <unitdate>1946-1947</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref24" level="file">
+                    <did>
+                        <unittitle>Radio program on scientific vocations,
+                        <unitdate>1946</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref25" level="file">
+                    <did>
+                        <unittitle>Teacher sponsor scholarships,
+                        <unitdate>1947-1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref26" level="file">
+                    <did>
+                        <unittitle>Exhibit contest,
+                        <unitdate>1948-1949</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref27" level="file">
+                    <did>
+                        <unittitle>Science club reports,
+                        <unitdate>1948-1949</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref28" level="file">
+                    <did>
+                        <unittitle>VJAS Constitution,
+                        <unitdate>c.1950</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref29" level="file">
+                    <did>
+                        <unittitle>VJAS Committee of VAS--Reports,
+                        <unitdate>1956-1960</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref30" level="file">
+                    <did>
+                        <unittitle>VJAS Committee of VAS--Minutes, etc.,
+                        <unitdate>1959</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref31" level="file">
+                    <did>
+                        <unittitle>VJAS history--Thelma J. Heatwole,
+                        <unitdate>1960-1961</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref32" level="file">
+                    <did>
+                        <unittitle>Minutes, agendas, and miscellaneous,
+                        <unitdate>1960-1961</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref33" level="file">
+                    <did>
+                        <unittitle>Miscellaneous correspondence,
+                        <unitdate>1960-1961</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref34" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files,
+                        <unitdate>1960-1961</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref35" level="file">
+                    <did>
+                        <unittitle>Judges for VJAS exhibits,
+                        <unitdate>1962</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref36" level="file">
+                    <did>
+                        <unittitle>Meeting at Lexington,
+                        <unitdate>1961</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref37" level="file">
+                    <did>
+                        <unittitle>New business,
+                        <unitdate>1961-1962</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref38" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files,
+                        <unitdate>1961-1964</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref39" level="file">
+                    <did>
+                        <unittitle>Meeting at Norfolk,
+                        <unitdate>1962</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref40" level="file">
+                    <did>
+                        <unittitle>National Science Seminars,
+                        <unitdate>1962-1963</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref41" level="file">
+                    <did>
+                        <unittitle>Information on creating a VJAS brochure,
+                        <unitdate>1962-1963</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref42" level="file">
+                    <did>
+                        <unittitle>Attendance at the AAAS meetings,
+                        <unitdate>1962-1968</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref43" level="file">
+                    <did>
+                        <unittitle>Meeting at Roanoke,
+                        <unitdate>1963</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref44" level="file">
+                    <did>
+                        <unittitle>VJAS affiliation with the National Science Foundation,
+                        <unitdate>1963-1975</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref45" level="file">
+                    <did>
+                        <unittitle>Visiting Scientist Program,
+                        <unitdate>1963-1976</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref46" level="file">
+                    <did>
+                        <unittitle>List of VJAS affiliated clubs,
+                        <unitdate>1963-1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref47" level="file">
+                    <did>
+                        <unittitle>Educational materials,
+                        <unitdate>1964</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref48" level="file">
+                    <did>
+                        <unittitle>Meeting at Charlottesville,
+                        <unitdate>1964</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref49" level="file">
+                    <did>
+                        <unittitle>Meeting at Charlottesville--Awards,
+                        <unitdate>1964</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref50" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files,
+                        <unitdate>1964-1965</unitdate></unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="box" id="ref51" level="otherlevel">
+                <did>
+                    <unittitle>Records, <unitdate>1964-1979 (Bulk 1964-1966)</unitdate></unittitle>
+                    <container id="cid2190007" type="Box" label="Box">2</container>
+                   
+                </did>
+                <c02 id="ref52" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files, including meeting at Richmond, 
+                        <unitdate>1964-1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref53" level="file">
+                    <did>
+                        <unittitle>VJAS committee of VAS, 
+                        <unitdate>1964-1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref54" level="file">
+                    <did>
+                        <unittitle>Information on Virginia Junior Science, Humanities, and Engineering, 
+                        <unitdate>1964-1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref55" level="file">
+                    <did>
+                        <unittitle>National Science Teachers Association--Information on Science Conferences, 
+                        <unitdate>1964-1967</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref56" level="file">
+                    <did>
+                        <unittitle>Science Services, Inc. and Science Clubs of America, 
+                        <unitdate>1964-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref57" level="file">
+                    <did>
+                        <unittitle>Grant No. GE-4281, 
+                        <unitdate>1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref58" level="file">
+                    <did>
+                        <unittitle>Meeting at Richmond, 
+                        <unitdate>1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref59" level="file">
+                    <did>
+                        <unittitle>Photos of the meeting at Richmond, 
+                        <unitdate>1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref60" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files, 
+                        <unitdate>1965</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref61" level="file">
+                    <did>
+                        <unittitle>VJAS Committee of VAS, 
+                        <unitdate>1965-1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref62" level="file">
+                    <did>
+                        <unittitle>Research Committee, 
+                        <unitdate>1965-1967</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref63" level="file">
+                    <did>
+                        <unittitle>Virginia High School League requesting calendar of events from VJAS, 
+                        <unitdate>1965-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref64" level="file">
+                    <did>
+                        <unittitle>Certificates and citations--Blank forms, 
+                        <unitdate>1965-1975</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref65" level="file">
+                    <did>
+                        <unittitle>VJAS information on AAAS, 
+                        <unitdate>1956-1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref66" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman, 
+                        <unitdate>1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref67" level="file">
+                    <did>
+                        <unittitle>Twenty-fifth anniversary meeting at Harrisonburg, 
+                        <unitdate>1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref68" level="file">
+                    <did>
+                        <unittitle>Twenty-fifth anniversary meeting--Awards, 
+                        <unitdate>1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref69" level="file">
+                    <did>
+                        <unittitle>Twenty-fifth anniversary meeting--Correspondence, 
+                        <unitdate>1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref70" level="file">
+                    <did>
+                        <unittitle>Twenty-fifth anniversary meeting--Invitations and badges, 
+                        <unitdate>1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref71" level="file">
+                    <did>
+                        <unittitle>Twenty-fifth anniversary meeting--Key rings, 
+                        <unitdate>1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref72" level="file">
+                    <did>
+                        <unittitle>Twenty-fifth anniversary meeting--Regrets to invitations, 
+                        <unitdate>1966</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref73" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman, 
+                        <unitdate>1966-1967</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref74" level="file">
+                    <did>
+                        <unittitle>Grant GW-1129, 1967.</unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="box" id="ref75" level="otherlevel">
+                <did>
+                    <unittitle>Records, <unitdate>1966-1979 (Bulk 1966-1970)</unitdate></unittitle>
+                    <container id="cid2190006" type="Box" label="Box">3</container>
+                   
+                </did>
+                <c02 id="ref76" level="file">
+                    <did>
+                        <unittitle>Letters from high schools requesting VJAS films,
+                        <unitdate>1966-1967</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref77" level="file">
+                    <did>
+                        <unittitle>Virginia Talent Search information and programs,
+                        <unitdate>1966-1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref78" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1967</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref79" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1967-1968</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref80" level="file">
+                    <did>
+                        <unittitle>Research Grant Committee,
+                        <unitdate>1967-1968</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref81" level="file">
+                    <did>
+                        <unittitle>Miscellaneous clippings,
+                        <unitdate>1968</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref82" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1968</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref83" level="file">
+                    <did>
+                        <unittitle>R. C. Berry Chemistry Award,
+                        <unitdate>1968</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref84" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--V. B. Remsburg,
+                        <unitdate>1968-1969</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref85" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1968-1969</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref86" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files and clippings,
+                        <unitdate>1968-1969</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref87" level="file">
+                    <did>
+                        <unittitle>VJAS research grants,
+                        <unitdate>1968-1969</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref88" level="file">
+                    <did>
+                        <unittitle>Distinguished Service Awards,
+                        <unitdate>1968-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref89" level="file">
+                    <did>
+                        <unittitle>List of judges for VJAS,
+                        <unitdate>1968-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref90" level="file">
+                    <did>
+                        <unittitle>Letters of gratitude to people who gave presentations at VJAS events,
+                        <unitdate>1968-1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref91" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1969</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref92" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--M. B. Rowe,
+                        <unitdate>1969-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref93" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1969-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref94" level="file">
+                    <did>
+                        <unittitle>Newspaper clippings,
+                        <unitdate>1969-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref95" level="file">
+                    <did>
+                        <unittitle>VJAS research grants,
+                        <unitdate>1969-1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref96" level="file">
+                    <did>
+                        <unittitle>Scrapbook,
+                        <unitdate>1969-1973</unitdate></unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="box" id="ref97" level="otherlevel">
+                <did>
+                    <unittitle>Records, <unitdate>1970-1979 (Bulk 1970-1973)</unitdate></unittitle>
+                    <container id="cid2190005" type="Box" label="Box">4</container>
+                   
+                </did>
+                <c02 id="ref98" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref99" level="file">
+                    <did>
+                        <unittitle>Student follow-ups--Newspaper Articles,
+                        <unitdate>1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref100" level="file">
+                    <did>
+                        <unittitle>Revisions for VJAS Handbook,
+                        <unitdate>1970</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref101" level="file">
+                    <did>
+                        <unittitle>E. C. L. Miller Award,
+                        <unitdate>1970-1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref102" level="file">
+                    <did>
+                        <unittitle>Meeting at Richmond,
+                        <unitdate>1970-1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref103" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--V. B. Remsburg,
+                        <unitdate>1970-1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref104" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--M. B. Rowe,
+                        <unitdate>1970-1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref105" level="file">
+                    <did>
+                        <unittitle>Research grant records,
+                        <unitdate>1970-1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref106" level="file">
+                    <did>
+                        <unittitle>Meeting at Blacksburg,
+                        <unitdate>1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref107" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref108" level="file">
+                    <did>
+                        <unittitle>List of public and private schools, division and science superintendents, and VJAS committee members,
+                        <unitdate>1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref109" level="file">
+                    <did>
+                        <unittitle>Research grant materials,
+                        <unitdate>1971-1972</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref110" level="file">
+                    <did>
+                        <unittitle>VJAS budget,
+                        <unitdate>1971-1972</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref111" level="file">
+                    <did>
+                        <unittitle>VJAS Committee notes and papers,
+                        <unitdate>1971-1972</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref112" level="file">
+                    <did>
+                        <unittitle>VJAS Committee members,
+                        <unitdate>1971-1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref113" level="file">
+                    <did>
+                        <unittitle>Vouchers, requests for checks, and financial reports,
+                        <unitdate>1971-1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref114" level="file">
+                    <did>
+                        <unittitle>Meeting at the Natural Bridge,
+                        <unitdate>1972</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref115" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--E. L. Wisman,
+                        <unitdate>1972</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref116" level="file">
+                    <did>
+                        <unittitle>Research grant records,
+                        <unitdate>1972</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref117" level="file">
+                    <did>
+                        <unittitle>Invoices paid,
+                        <unitdate>1972</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref118" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files,
+                        <unitdate>1972-1973</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref119" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--L. S. Anthony,
+                        <unitdate>1973</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref120" level="file">
+                    <did>
+                        <unittitle>Minutes and papers from the Annual Meeting,
+                        <unitdate>1973</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref121" level="file">
+                    <did>
+                        <unittitle>Invoices paid,
+                        <unitdate>1973</unitdate></unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="box" id="ref122" level="otherlevel">
+                <did>
+                    <unittitle>Records, <unitdate>1973-1980</unitdate></unittitle>
+                    <container id="cid2190004" type="Box" label="Box">5</container>
+                   
+                </did>
+                <c02 id="ref123" level="file">
+                    <did>
+                        <unittitle>Meetings at Williamsburg and Norfolk,
+                        <unitdate>1973-1974</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref124" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--V. B. Remsburg,
+                        <unitdate>1973-1974</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref125" level="file">
+                    <did>
+                        <unittitle>Photos from the meeting at Norfolk,
+                        <unitdate>1974</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref126" level="file">
+                    <did>
+                        <unittitle>Research grants,
+                        <unitdate>1974</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref127" level="file">
+                    <did>
+                        <unittitle>VJAS awards,
+                        <unitdate>1974</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref128" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files,
+                        <unitdate>1974-1975</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref129" level="file">
+                    <did>
+                        <unittitle>VJAS Committee of VAS,
+                        <unitdate>1974-1975</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref130" level="file">
+                    <did>
+                        <unittitle>Pre-registration information for the annual meeting,
+                        <unitdate>1974-1978</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref131" level="file">
+                    <did>
+                        <unittitle>Meeting at Harrionsburg,
+                        <unitdate>1975</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref132" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--A. W. Burke,
+                        <unitdate>1975</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref133" level="file">
+                    <did>
+                        <unittitle>Invoices paid,
+                        <unitdate>1975</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref134" level="file">
+                    <did>
+                        <unittitle>VJAS Committee of VAS,
+                        <unitdate>1975-1976</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref135" level="file">
+                    <did>
+                        <unittitle>Meeting at Fairfax,
+                        <unitdate>1976</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref136" level="file">
+                    <did>
+                        <unittitle>Photographs and negatives of the VJAS Annual Meeting,
+                        <unitdate>1936</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref137" level="file">
+                    <did>
+                        <unittitle>Invoices paid,
+                        <unitdate>1976</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref138" level="file">
+                    <did>
+                        <unittitle>Organization of readers for VJAS papers,
+                        <unitdate>1976-1978</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref139" level="file">
+                    <did>
+                        <unittitle>Fundraising for VJAS,
+                        <unitdate>1976-1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref140" level="file">
+                    <did>
+                        <unittitle>Duties and work schedule for VJAS Committee members,
+                        <unitdate>1977</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref141" level="file">
+                    <did>
+                        <unittitle>Thirty sixth Annual VJAS Meeting,
+                        <unitdate>1977</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref142" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--V. B. Remsburg,
+                        <unitdate>1977-1978</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref143" level="file">
+                    <did>
+                        <unittitle>Thirty seventh Annual VJAS Meeting,
+                        <unitdate>1978</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref144" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--V. B. Remsburg,
+                        <unitdate>1978-1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref145" level="file">
+                    <did>
+                        <unittitle>Annual Meeting,
+                        <unitdate>1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref146" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--A. B. Niemeyer, Jr.,
+                        <unitdate>1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref147" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--V. B. Remsburg,
+                        <unitdate>1979-1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref148" level="file">
+                    <did>
+                        <unittitle>Miscellaneous files--A. B. Niemeyer, Jr.,
+                        <unitdate>1980</unitdate></unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="box" id="ref149" level="otherlevel">
+                <did>
+                    <unittitle>Records, <unitdate>1980-1997, undated</unitdate></unittitle>
+                    <container id="cid2190003" type="Box" label="Box">6</container>
+                   
+                </did>
+                <c02 id="ref150" level="file">
+                    <did>
+                        <unittitle>January 62 Meeting of VJAS,
+                        <unitdate>1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref151" level="file">
+                    <did>
+                        <unittitle>Annual Meeting and miscellaneous information,
+                        <unitdate>1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref152" level="file">
+                    <did>
+                        <unittitle>VJAS Award winners,
+                        <unitdate>1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref153" level="file">
+                    <did>
+                        <unittitle>Donor list of the VJAS,
+                        <unitdate>1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref154" level="file">
+                    <did>
+                        <unittitle>Invoices paid,
+                        <unitdate>1980</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref155" level="file">
+                    <did>
+                        <unittitle>Winter and Summer VJAS meetings,
+                        <unitdate>1981</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref156" level="file">
+                    <did>
+                        <unittitle>List of VJAS student who have presented papers at annual meetings,
+                        <unitdate>1981</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref157" level="file">
+                    <did>
+                        <unittitle>VJAS Committee of VAS,
+                        <unitdate>1981-1982</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref158" level="file">
+                    <did>
+                        <unittitle>Letters and lists of possible donors of VJAS,
+                        <unitdate>1981-1985</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref159" level="file">
+                    <did>
+                        <unittitle>January 23 meeting of VJAS,
+                        <unitdate>1982</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref160" level="file">
+                    <did>
+                        <unittitle>April 20-22 meeting at Virginia Tech,
+                        <unitdate>1982</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref161" level="file">
+                    <did>
+                        <unittitle>Summer meeting at Peaks of Otter, <unitdate>1982</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref162" level="file">
+                    <did>
+                        <unittitle>Invoices paid, <unitdate>1983</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref163" level="file">
+                    <did>
+                        <unittitle>American Junior Academy of Science Annual Conference papers, <unitdate>1983-1984</unitdate></unittitle>
+                      
+                    </did>
+                </c02>
+                <c02 id="ref164" level="file">
+                    <did>
+                        <unittitle>Minutes and papers from the July 21 VJAS meeting at Graves Mountain Lodge,<unitdate>1984</unitdate></unittitle>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref165" level="file">
+                    <did>
+                        <unittitle>Scholarship information awarded by the VJAS, <unitdate>1984</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref166" level="file">
+                    <did>
+                        <unittitle>Scholarship information awarded by the VJAS, <unitdate>1984</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref167" level="file">
+                    <did>
+                        <unittitle>Minutes of meetings and lists of VJAS Committee members, <unitdate>1984</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref168" level="file">
+                    <did>
+                        <unittitle>Invoices paid, <unitdate>1984</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref169" level="file">
+                    <did>
+                        <unittitle>Letters of invitation to the VJAS Sponsor's reception, <unitdate>1984-1985</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref170" level="file">
+                    <did>
+                        <unittitle>Miscellaneous newspaper articles, <unitdate>1984-1986</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref171" level="file">
+                    <did>
+                        <unittitle>Information and agendas for VJAS meetings, <unitdate>1985</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref172" level="file">
+                    <did>
+                        <unittitle>Invoices paid, <unitdate>1985</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref173" level="file">
+                    <did>
+                        <unittitle>VJAS Section Awards, <unitdate>1986</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref174" level="file">
+                    <did>
+                        <unittitle>Information about Astronaut Robert A. Parker speaking to the VAS and VJAS at the annual meeting, <unitdate>1986</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref175" level="file">
+                    <did>
+                        <unittitle>Invoices paid, <unitdate>1986</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref176" level="file">
+                    <did>
+                        <unittitle>Papers on the winner of the Frances and Sydney Lewis Environmental Science Scholarship, <unitdate>1987</unitdate></unittitle>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref177" level="file">
+                    <did>
+                        <unittitle>Special Award Nominations and winners, <unitdate>1987</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref178" level="file">
+                    <did>
+                        <unittitle>Nominations for the VJAS Sponsor Award, <unitdate>1987</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref179" level="file">
+                    <did>
+                        <unittitle>Section Award Forms, <unitdate>1987</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref180" level="file">
+                    <did>
+                        <unittitle>Information about VJAS Meetings, <unitdate>1987</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref181" level="file">
+                    <did>
+                        <unittitle>Student applications for the Frances and Sydney Lewis Environmental Science Scholarship, <unitdate>1987</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref182" level="file">
+                    <did>
+                        <unittitle>Invoices paid, <unitdate>1987</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref183" level="file">
+                    <did>
+                        <unittitle>Nominations for the Science Club Award and the VAS Science Teacher Award, <unitdate>1987-1988</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref184" level="file">
+                    <did>
+                        <unittitle>Special Awards Nominations, <unitdate>1988</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref185" level="file">
+                    <did>
+                        <unittitle>Papers from the Section Awards, <unitdate>1988</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref186" level="file">
+                    <did>
+                        <unittitle>Letters to and from Dr. Dean Decker, Director of the VJAS, <unitdate>1988</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref187" level="file">
+                    <did>
+                        <unittitle>Applications from students applying for the Frances and Sydney Lewis Environmental Science Scholarship, <unitdate>1988</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref188" level="file">
+                    <did>
+                        <unittitle>Invoices paid, <unitdate>1988</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref189" level="file">
+                    <did>
+                        <unittitle>Invoices paid, <unitdate>1989</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref190" level="file">
+                    <did>
+                        <unittitle>History of VJAS and "Fifty Years of VJAS," <unitdate>1991</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref191" level="file">
+                    <did>
+                        <unittitle>Awards script,
+                        <unitdate>1991</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref192" level="file">
+                    <did>
+                        <unittitle>"Galaxies in Collision" by Debra Meloy Elmgreen--The first George W. Jeffers Memorial Lecture, <unitdate>1992</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref193" level="file">
+                    <did>
+                        <unittitle>Information about registration to attend the VJAS awards ceremony at James Madison University, <unitdate>1994</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref194" level="file">
+                    <did>
+                        <unittitle>Letter for VJAS membership, <unitdate>1994</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref195" level="file">
+                    <did>
+                        <unittitle>Annual meeting information and registration, <unitdate>1995</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref196" level="file">
+                    <did>
+                        <unittitle>Annual meeting information and registration, <unitdate>1996</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref197" level="file">
+                    <did>
+                        <unittitle>Annual meeting information and registration, <unitdate>1997</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref198" level="file">
+                    <did>
+                        <unittitle>
+                            <title render="italic">Junior Science Bulletin</title>, <unitdate>1952-1979</unitdate></unittitle>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref199" level="file">
+                    <did>
+                        <unittitle>"Characterization of Junior Academy of Science Participation"</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref200" level="file">
+                    <did>
+                        <unittitle>"Award of Honor" certificates.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref201" level="file">
+                    <did>
+                        <unittitle>Science Supervisors Superintendents.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref202" level="file">
+                    <did>
+                        <unittitle>Periodic table.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref203" level="file">
+                    <did>
+                        <unittitle>Biographical and VJAS information about Edgar V. Russell, Jr.--Photograph also included.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref204" level="file">
+                    <did>
+                        <unittitle>Listing of VJAS Committee members, officers, and other members.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref205" level="file">
+                    <did>
+                        <unittitle>"VJAS Hall of Fame" general revision.</unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="box" id="ref206" level="otherlevel">
+                <did>
+                    <unittitle>Publications, <unitdate>1963-1993</unitdate></unittitle>
+                    <container id="cid2190002" type="Box" label="Box">7</container>
+                    
+                </did>
+                <c02 id="ref207" level="file">
+                    <did>
+                        <unittitle>
+                            <title render="italic">The Virginia Junior Academy of Science Proceedings</title>,<unitdate>1963-1993</unitdate></unittitle>
+                        
+                    </did>
+                    <c03 id="ref321" level="item">
+                        <did>
+                            <unittitle>Volumes 1-24, 1963-1986</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref322" level="item">
+                        <did>
+                            <unittitle>Volumes 26-31, 1988-1993</unittitle>
+                        </did>
+                    </c03>
+                </c02>
+            </c01>
+            <c01 otherlevel="box" id="ref210" level="otherlevel">
+                <did>
+                    <unittitle>Publications and Records, <unitdate>1942-1992, undated</unitdate></unittitle>
+                    <container id="cid2190001" type="Box" label="Box">8</container>
+                   
+                </did>
+                <c02 id="ref211" level="file">
+                    <did>
+                        <unittitle>
+                            <title render="italic">Virginia Junior Academy of Science Handbook</title></unittitle>
+                    </did>
+                    <c03 id="ref310" level="item">
+                        <did>
+                            <unittitle>1963</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref311" level="item">
+                        <did>
+                            <unittitle>1965-1966</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref312" level="item">
+                        <did>
+                            <unittitle>1968</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref313" level="item">
+                        <did>
+                            <unittitle>1970</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref314" level="item">
+                        <did>
+                            <unittitle>1972</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref315" level="item">
+                        <did>
+                            <unittitle>1975</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref316" level="item">
+                        <did>
+                            <unittitle>1977</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref317" level="item">
+                        <did>
+                            <unittitle>1980?</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref320" level="item">
+                        <did>
+                            <unittitle>1982?</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref318" level="item">
+                        <did>
+                            <unittitle>1987</unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref319" level="item">
+                        <did>
+                            <unittitle>1992</unittitle>
+                        </did>
+                    </c03>
+                </c02>
+                <c02 id="ref212" level="file">
+                    <did>
+                        <unittitle>"History of the VJAS" as presented at the 50th Anniversary Meeting of the VAS. The slides and narration were prepared by Vera Remsburg,<unitdate>1942-1973</unitdate></unittitle>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref213" level="file">
+                    <did>
+                        <unittitle>Pictures taken of members of the VJAS Committee Meetings --Judges, recipients of awards, etc.,<unitdate>1975</unitdate></unittitle>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref214" level="file">
+                    <did>
+                        <unittitle>Strip of photographic film possibly of the 1976 VJAS Summer meeting at Peaks of Otter.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref215" level="file">
+                    <did>
+                        <unittitle>"VJAS in Action"--Four filmstrips.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref216" level="file">
+                    <did>
+                        <unittitle>"Story of the VJAS"--Slides.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref217" level="file">
+                    <did>
+                        <unittitle>Two card holders of the 30th Anniversary of the VJAS.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref218" level="file">
+                    <did>
+                        <unittitle>Two key chains of the 25th Anniversary of the VJAS.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref219" level="file">
+                    <did>
+                        <unittitle>Three souvenir T-shirts of the 50th Anniversary of the VJAS.</unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref220" level="file">
+                    <did>
+                        <unittitle>Souvenir pencil of the 50th Anniversary of the VJAS.</unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="Box" id="ref221" level="otherlevel">
+                <did>
+                    <unittitle>Publications and Records, <unitdate>1970-1990, n.d.</unitdate></unittitle>
+                    <container id="cid2082001" type="Box" label="Box">9</container>
+                    
+                </did>
+                <c02 id="ref224" level="file">
+                    <did>
+                        <unittitle>Adult and Student Forms, Philadelphia, <unitdate normal="1986/1986">1986</unitdate></unittitle>
+                        <container id="cid2086001" type="Box-folder" label="Box-folder">9-1</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref225" level="file">
+                    <did>
+                        <unittitle>AJAS/AAAS Annual Meeting, Los Angeles, <unitdate normal="1985/1985">1985</unitdate></unittitle>
+                        <container id="cid2086002" type="Box-folder" label="Box-folder">9-2</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref226" level="file">
+                    <did>
+                        <unittitle>Annual Meeting Programs (1971 and 1974)</unittitle>
+                        <container id="cid2086003" type="Box-folder" label="Box-folder">9-3</container>
+                   
+                    </did>
+                </c02>
+                <c02 id="ref227" level="file">
+                    <did>
+                        <unittitle>Annual Meeting Programs (1983 and 1985)</unittitle>
+                        <container id="cid2086004" type="Box-folder" label="Box-folder">9-4</container>
+                    
+                    </did>
+                </c02>
+                <c02 id="ref228" level="file">
+                    <did>
+                        <unittitle>Annual Meeting Programs (1986 and 1987)</unittitle>
+                        <container id="cid2086005" type="Box-folder" label="Box-folder">9-5</container>
+               
+                    </did>
+                </c02>
+                <c02 id="ref229" level="file">
+                    <did>
+                        <unittitle>Annual Meeting Programs (1988-1990)</unittitle>
+                        <container id="cid2086006" type="Box-folder" label="Box-folder">9-6</container>
+                      
+                    </did>
+                </c02>
+                <c02 id="ref230" level="file">
+                    <did>
+                        <unittitle>Applications</unittitle>
+                        <container id="cid2086007" type="Box-folder" label="Box-folder">9-7</container>
+                    </did>
+                </c02>
+                <c02 id="ref231" level="file">
+                    <did>
+                        <unittitle>Award of Honor Certificate</unittitle>
+                        <container id="cid2086008" type="Box-folder" label="Box-folder">9-8</container>
+                    </did>
+                </c02>
+                <c02 id="ref232" level="file">
+                    <did>
+                        <unittitle>Banquet Booklet (1985)</unittitle>
+                        <container id="cid2086009" type="Box-folder" label="Box-folder">9-9</container>
+                        <unitdate normal="1985/1985">1985</unitdate>
+                    </did>
+                </c02>
+                <c02 id="ref233" level="file">
+                    <did>
+                        <unittitle>Chairs</unittitle>
+                        <container id="cid2086010" type="Box-folder" label="Box-folder">9-10</container>
+                    </did>
+                </c02>
+                <c02 id="ref234" level="file">
+                    <did>
+                        <unittitle>Charter Certificate</unittitle>
+                        <container id="cid2086011" type="Box-folder" label="Box-folder">9-11</container>
+                    </did>
+                </c02>
+                <c02 id="ref235" level="file">
+                    <did>
+                        <unittitle>Commission Task Force</unittitle>
+                        <container id="cid2086012" type="Box-folder" label="Box-folder">9-12</container>
+                    </did>
+                </c02>
+                <c02 id="ref236" level="file">
+                    <did>
+                        <unittitle>Directories, <unitdate normal="1982/1986" type="inclusive">1982-1986</unitdate></unittitle>
+                        <container id="cid2086013" type="Box-folder" label="Box-folder">9-13</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref237" level="file">
+                    <did>
+                        <unittitle>D.O.E (1988 UVA VJAS Annual Meeting)</unittitle>
+                        <container id="cid2086014" type="Box-folder" label="Box-folder">9-14</container>
+                  
+                    </did>
+                </c02>
+                <c02 id="ref238" level="file">
+                    <did>
+                        <unittitle>Election Slate, <unitdate>1987, 1989</unitdate></unittitle>
+                        <container id="cid2086015" type="Box-folder" label="Box-folder">9-15</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref239" level="file">
+                    <did>
+                        <unittitle>General Program Schedule, <unitdate normal="1985/1985">1985</unitdate></unittitle>
+                        <container id="cid2086016" type="Box-folder" label="Box-folder">9-16</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref240" level="file">
+                    <did>
+                        <unittitle>Golden Anniversary Meeting Letterhead Paper, <unitdate normal="1973/1973">1973</unitdate></unittitle>
+                        <container id="cid2086017" type="Box-folder" label="Box-folder">9-17</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref241" level="file">
+                    <did>
+                        <unittitle>Handbooks (1970 and 1974)</unittitle>
+                        <container id="cid2086018" type="Box-folder" label="Box-folder">9-18</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref242" level="file">
+                    <did>
+                        <unittitle>Handbooks (1975, 1977, and n.d.)</unittitle>
+                        <container id="cid2086019" type="Box-folder" label="Box-folder">9-19</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref243" level="file">
+                    <did>
+                        <unittitle>Housing</unittitle>
+                        <container id="cid2086020" type="Box-folder" label="Box-folder">9-20</container>
+                    </did>
+                </c02>
+                <c02 id="ref244" level="file">
+                    <did>
+                        <unittitle>Jr. Committee</unittitle>
+                        <container id="cid2086021" type="Box-folder" label="Box-folder">9-21</container>
+                    </did>
+                </c02>
+                <c02 id="ref245" level="file">
+                    <did>
+                        <unittitle>Junior Science Bulletin (v. 20, no. 1,2), <unitdate normal="1970/1971" type="inclusive">1970-1971</unitdate></unittitle>
+                        <container id="cid2086022" type="Box-folder" label="Box-folder">9-22</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref246" level="file">
+                    <did>
+                        <unittitle>Names and Addresses</unittitle>
+                        <container id="cid2086023" type="Box-folder" label="Box-folder">9-23</container>
+                    </did>
+                </c02>
+                <c02 id="ref247" level="file">
+                    <did>
+                        <unittitle>PA Junior Academy of Science 40th State Meeting Handbook, <unitdate normal="1974/1974">1974</unitdate></unittitle>
+                        <container id="cid2086024" type="Box-folder" label="Box-folder">9-24</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref248" level="file">
+                    <did>
+                        <unittitle>Paper Readers</unittitle>
+                        <container id="cid2086025" type="Box-folder" label="Box-folder">9-25</container>
+                    </did>
+                </c02>
+                <c02 id="ref249" level="file">
+                    <did>
+                        <unittitle>Photos</unittitle>
+                        <container id="cid2086026" type="Box-folder" label="Box-folder">9-26</container>
+                    </did>
+                </c02>
+                <c02 id="ref250" level="file">
+                    <did>
+                        <unittitle>Proposed Budget for <unitdate normal="1985/1987" type="inclusive">1985-1987</unitdate></unittitle>
+                        <container id="cid2086027" type="Box-folder" label="Box-folder">9-27</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref251" level="file">
+                    <did>
+                        <unittitle>VAS Ballots and Envelopes</unittitle>
+                        <container id="cid2086028" type="Box-folder" label="Box-folder">9-28</container>
+                    </did>
+                </c02>
+                <c02 id="ref252" level="file">
+                    <did>
+                        <unittitle>VJAS Affiliate Your School Letters, <unitdate normal="1982/1986" type="inclusive">1982-1986</unitdate></unittitle>
+                        <container id="cid2086029" type="Box-folder" label="Box-folder">9-29</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref253" level="file">
+                    <did>
+                        <unittitle>VJAS Annual Meeting Info, Chicago, <unitdate normal="1987/1987">1987</unitdate></unittitle>
+                        <container id="cid2086030" type="Box-folder" label="Box-folder">9-30</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref254" level="file">
+                    <did>
+                        <unittitle>VJAS Booklet</unittitle>
+                        <container id="cid2086031" type="Box-folder" label="Box-folder">9-31</container>
+                    </did>
+                </c02>
+                <c02 id="ref255" level="file">
+                    <did>
+                        <unittitle>VJAS Correspondence</unittitle>
+                        <container id="cid2086032" type="Box-folder" label="Box-folder">9-32</container>
+                    </did>
+                </c02>
+                <c02 id="ref256" level="file">
+                    <did>
+                        <unittitle>VJAS Friends Letters</unittitle>
+                        <container id="cid2086033" type="Box-folder" label="Box-folder">9-33</container>
+                    </did>
+                </c02>
+                <c02 id="ref257" level="file">
+                    <did>
+                        <unittitle>VJAS General Info</unittitle>
+                        <container id="cid2086034" type="Box-folder" label="Box-folder">9-34</container>
+                    </did>
+                </c02>
+                <c02 id="ref258" level="file">
+                    <did>
+                        <unittitle>VJAS Meeting Agenda, Graves Mt. Lodge, <unitdate normal="1986/1986">1986</unitdate></unittitle>
+                        <container id="cid2086035" type="Box-folder" label="Box-folder">9-35</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref259" level="file">
+                    <did>
+                        <unittitle>VJAS Membership Cards</unittitle>
+                        <container id="cid2086036" type="Box-folder" label="Box-folder">9-36</container>
+                    </did>
+                </c02>
+                <c02 id="ref260" level="file">
+                    <did>
+                        <unittitle>VJAS Member Certificates</unittitle>
+                        <container id="cid2086037" type="Box-folder" label="Box-folder">9-37</container>
+                    </did>
+                </c02>
+                <c02 id="ref261" level="file">
+                    <did>
+                        <unittitle>VJAS Member Letters, <unitdate>1984, 1985, 1987</unitdate></unittitle>
+                        <container id="cid2086038" type="Box-folder" label="Box-folder">9-38</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref262" level="file">
+                    <did>
+                        <unittitle>VJAS Member Letters from Election Committee, <unitdate>1989, 1990</unitdate></unittitle>
+                        <container id="cid2086039" type="Box-folder" label="Box-folder">9-39</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref263" level="file">
+                    <did>
+                        <unittitle>VJAS Video Tape Script,</unittitle>
+                        <container id="cid2086040" type="Box-folder" label="Box-folder">9-40</container>
+                    </did>
+                </c02>
+                <c02 id="ref264" level="file">
+                    <did>
+                        <unittitle>VJAS 1983 Meeting at GMU, <unitdate normal="1983/1983">1983</unitdate></unittitle>
+                        <container id="cid2086041" type="Box-folder" label="Box-folder">9-41</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref265" level="file">
+                    <did>
+                        <unittitle>VJAS 1984 Meeting at the University of Richmond, <unitdate normal="1984/1984">1984</unitdate></unittitle>
+                        <container id="cid2086042" type="Box-folder" label="Box-folder">9-42</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref266" level="file">
+                    <did>
+                        <unittitle>VJAS 1986 Meeting at JMU, <unitdate normal="1986/1986">1986</unitdate></unittitle>
+                        <container id="cid2086043" type="Box-folder" label="Box-folder">9-43</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref267" level="file">
+                    <did>
+                        <unittitle>VAS 1987 Meeting at ODU, <unitdate normal="1987/1987">1987</unitdate></unittitle>
+                        <container id="cid2086044" type="Box-folder" label="Box-folder">9-44</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref268" level="file">
+                    <did>
+                        <unittitle>VAS 1989 Meeting at VCU, <unitdate normal="1989/1989">1989</unitdate></unittitle>
+                        <container id="cid2086045" type="Box-folder" label="Box-folder">9-45</container>
+                       
+                    </did>
+                </c02>
+                <c02 id="ref269" level="file">
+                    <did>
+                        <unittitle>VAS 1990 Meeting at GMU, <unitdate normal="1990/1990">1990</unitdate></unittitle>
+                        <container id="cid2086046" type="Box-folder" label="Box-folder">9-46</container>
+                        
+                    </did>
+                </c02>
+                <c02 id="ref270" level="file">
+                    <did>
+                        <unittitle>William and Mary Papers</unittitle>
+                        <container id="cid2086047" type="Box-folder" label="Box-folder">9-47</container>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="Box" id="ref222" level="otherlevel">
+                <did>
+                    <unittitle>Publications and Scrapbooks,<unitdate>1971-1986, n.d.</unitdate></unittitle>
+                    <container id="cid2082002" type="Box" label="Box">10</container>
+                    
+                </did>
+                <c02 id="ref271" level="file">
+                    <did>
+                        <unittitle>Proceedings of the Virginia Junior Academy of Science</unittitle>
+                    </did>
+                    <c03 id="ref272" level="item">
+                        <did>
+                            <unittitle>Volume 1, Roanoke, Virginia,
+                            <unitdate>May 1963</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref277" level="item">
+                        <did>
+                            <unittitle>Volume 2, Charlottesville, Virginia,
+                            <unitdate>May 1964</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref278" level="item">
+                        <did>
+                            <unittitle>Volume 3, Richmond, Virginia,
+                            <unitdate>May 1965</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref279" level="item">
+                        <did>
+                            <unittitle>Volume 4, Harrisonburg, Virginia,
+                            <unitdate>May 1966</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref280" level="item">
+                        <did>
+                            <unittitle>Volume 5, Norfolk, Virginia,
+                            <unitdate>May 1967</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref281" level="item">
+                        <did>
+                            <unittitle>Volume 6, Roanoke, Virginia,
+                            <unitdate>May 1968</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref282" level="item">
+                        <did>
+                            <unittitle>Volume 7, Fredericksburg, Virginia,
+                            <unitdate>May 1969</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref283" level="item">
+                        <did>
+                            <unittitle>Volume 8, Richmond, Virginia,
+                            <unitdate>May 1970</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref284" level="item">
+                        <did>
+                            <unittitle>Volume 9, Blacksburg, Virginia,
+                            <unitdate>May 1971</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref285" level="item">
+                        <did>
+                            <unittitle>Volume 10, Lexington, Virginia,
+                            <unitdate>May 1972</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref286" level="file">
+                        <did>
+                            <unittitle>Volume 11, Williamsburg, Virginia,
+                            <unitdate>May 1973</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref287" level="item">
+                        <did>
+                            <unittitle>Volume 12, Norfolk, Virginia,
+                            <unitdate>May 1974</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref288" level="item">
+                        <did>
+                            <unittitle>Volume 13, Harrisonburg, Virginia,
+                            <unitdate>May 1975</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref289" level="item">
+                        <did>
+                            <unittitle>Volume 14, Fairfax, Virginia,
+                            <unitdate>May 1976</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref290" level="item">
+                        <did>
+                            <unittitle>Volume 15, Petersburg, Virginia,
+                            <unitdate>May 1977</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref291" level="item">
+                        <did>
+                            <unittitle>Volume 16, Blacksburg, Virginia,
+                            <unitdate>May 1978</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref292" level="item">
+                        <did>
+                            <unittitle>Volume 17, Richmond, Virginia,
+                            <unitdate>May 1979</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref293" level="item">
+                        <did>
+                            <unittitle>Volume 18, Richmond, Virginia,
+                            <unitdate>May 1980</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref294" level="item">
+                        <did>
+                            <unittitle>Volume 19, Norfolk, Virginia,
+                            <unitdate>May 1981</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref295" level="item">
+                        <did>
+                            <unittitle>Volume 20, Blacksburg, Virginia,
+                            <unitdate>April 1982</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref296" level="item">
+                        <did>
+                            <unittitle>Volume 21, Fairfax, Virginia,
+                            <unitdate>May 1983</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref297" level="item">
+                        <did>
+                            <unittitle>Volume 22, Richmond, Virginia,
+                            <unitdate>May 1984</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref298" level="item">
+                        <did>
+                            <unittitle>Volume 23, Williamsburg, Virginia,
+                            <unitdate>May 1985</unitdate></unittitle>
+                        </did>
+                    </c03>
+                    <c03 id="ref299" level="item">
+                        <did>
+                            <unittitle>Volume 24, Harrisonburg, Virginia,
+                            <unitdate>May 1986</unitdate></unittitle>
+                        </did>
+                    </c03>
+                </c02>
+                <c02 id="ref273" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Program, VPI&amp;SU,
+                        <unitdate>April 20-22, 1982</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref274" level="item">
+                    <did>
+                        <unittitle>Directory and Proceedings, Association of Science,
+                        <unitdate>1970-1971</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref301" level="item">
+                    <did>
+                        <unittitle>Binder of Virginia Academy of Science Correspondence,
+                        <unitdate normal="1982/1985" type="inclusive">1982-1985</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref302" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate normal="1976/1977" type="inclusive">1976-1977</unitdate></unittitle>
+                    </did>
+                </c02>
+            </c01>
+            <c01 otherlevel="Box" id="ref223" level="otherlevel">
+                <did>
+                    <unittitle>Scrapbooks, <unitdate normal="1975/1984" type="inclusive">1975-1984</unitdate></unittitle>
+                    <container id="cid2082003" type="Box" label="Box">11</container>
+                   
+                </did>
+                <c02 id="ref303" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate normal="1975/1976" type="inclusive">1975-1976</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref304" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate normal="1977/1978" type="inclusive">1977-1978</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref305" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate>1979</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref306" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate normal="1980/1981" type="inclusive">1980-1981</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref307" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate normal="1981/1982" type="inclusive">1981-1982</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref308" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate normal="1982/1983" type="inclusive">1982-1983</unitdate></unittitle>
+                    </did>
+                </c02>
+                <c02 id="ref309" level="item">
+                    <did>
+                        <unittitle>Virginia Junior Academy of Science Scrapbook,
+                        <unitdate normal="1983/1984" type="inclusive">1983-1984</unitdate></unittitle>
+                    </did>
+                </c02>
+            </c01>
+        </dsc>
+    </archdesc>
 </ead>
