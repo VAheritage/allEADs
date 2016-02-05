@@ -1,969 +1,1023 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
 <?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
 		type="application/xml" 
 		schematypens="http://relaxng.org/ns/structure/1.0" 
 		title="extended EAD relaxng schema" ?>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv01042">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute
-            and State University::University Libraries::Special Collections//TEXT
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv01042">
+    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="completed"
+        scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
+        repositoryencoding="iso15511">
+        <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
+            State University::University Libraries::Special Collections//TEXT
             (US::ViBlbV::viblbv01042::Blacksburg Vertical Files (List of Subjects), 1960s-present)//EN" "viblbv01042.xml"</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Blacksburg Vertical Files (List of Subjects), <date era="ce" calendar="gregorian">1960s-present</date></titleproper>
-        <subtitle id="sort">Blacksburg Vertical Files (List of Subjects)
-                    <num type="collectionnumber">VerticalFile.001</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Virginia Tech</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2013 By Virginia Tech. All rights reserved.</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>This finding aid was produced using the Archivists' Toolkit <date era="ce" calendar="gregorian">2013-07-03T11:59-0400</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>Blacksburg Vertical Files (List of Subjects), 
-                <date era="ce" calendar="gregorian">1960s-present</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
+        <filedesc>
+            <titlestmt>
+                <titleproper>A Guide to the Blacksburg Vertical Files (List of Subjects), <date era="ce" calendar="gregorian"
+                    >1960s-present</date></titleproper>
+                <subtitle id="sort">Blacksburg Vertical Files (List of Subjects) <num type="collectionnumber">VerticalFile.001</num></subtitle>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>Special Collections, Virginia Tech</publisher>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+                <date type="publication" era="ce" calendar="gregorian">©2013 By Virginia Tech. All rights
+                    reserved.</date>
+                <p id="usestatement">
+                    <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                        xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+                    </extref>
+                </p>
+            </publicationstmt>
+        </filedesc>
+        <profiledesc>
+            <creation>This finding aid was produced using the Archivists' Toolkit <date era="ce"
+                calendar="gregorian">2016-02-04T10:25-0500</date></creation>
+            <langusage>Description is in <language langcode="eng">English </language></langusage>
+        </profiledesc>
+    </eadheader>
+    <frontmatter>
+        <titlepage>
+            <titleproper>Blacksburg Vertical Files (List of Subjects), <date era="ce" calendar="gregorian">1960s-present</date></titleproper>
+            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
                 VerticalFile.001</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
-      </p>
-      <publisher>Special Collections, Virginia Tech</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2013 </date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by: </label>
-          <item>Special Collections Staff</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, Virginia Tech </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia
-                Tech, Blacksburg, Va. </repository>
-      <unittitle label="Title" encodinganalog="245$a">Blacksburg Vertical Files (List of Subjects), <unitdate label="Date" era="ce" calendar="gregorian">1960s-present</unitdate></unittitle>
-      <unitid label="Collection Number">VerticalFile.001</unitid>
-      <physdesc label="Physical Characteristics">
-        <extent>11.21 cu. ft.</extent>
-        <extent>20 boxes</extent>
-      </physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English</language>
-      </langmaterial>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information</head>
-      <accessrestrict id="ref173">
-        <head>Access Restrictions</head>
-        <p>Collection is open for research.</p>
-      </accessrestrict>
-      <userestrict id="ref174">
-        <head>Use Restrictions</head>
-        <p>Permission to publish material from the Blacksburg Vertical Files must be obtained from Special Collections, Virginia Tech.</p>
-      </userestrict>
-      <prefercite id="ref175">
-        <head>Preferred Citation</head>
-        <p>Researchers wishing to cite this collection should include the following information: [Item-specific information], Blacksburg Vertical File, Special Collections, Virginia Tech, Blacksburg, Va.</p>
-      </prefercite>
-      <acqinfo id="ref176">
-        <head>Acquisition Information</head>
-        <p>Newman Library staff began collection materials for vertical files during the 1960s. Special Collections staff add to existing files and continue to create new files as the need arises.</p>
-      </acqinfo>
-    </descgrp>
-    <scopecontent id="ref171">
-      <head>Scope and Content</head>
-      <p>In general, vertical files at Special Collections include newspaper clippings, photocopies, ephemera, unpublished and/or informal publications, and other papers relating to a specific subject area. Files in this collection relate to Blacksburg and its history. Each topic below has at least one folder and many include cross references.</p>
-    </scopecontent>
-    <arrangement id="ref172">
-      <head>Arrangement</head>
-      <p>Vertical files are arranged alphabetically by subject.</p>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data</head>
-      <relatedmaterial id="ref179">
-        <head>Related Materials</head>
-        <p>
-          <list>
-            <item>Montgomery County/Christiansburg Vertical Files</item>
-            <item>Southwest Virginia Vertical Files</item>
-            <item>Biographical Vertical Files (mostly relating to Virginia Tech and/or local history)</item>
-            <item>Record Group Vertical Files (history of Virginia Tech colleges, departments, administrative units, and organizations)</item>
-            <item>Virginia Tech and Local History Mounted Clippings (precursor to the vertical files, with materials dating back to the 1870s)</item>
-          </list>
-        </p>
-      </relatedmaterial>
-    </descgrp>
-    <controlaccess>
-      <head>Index Terms</head>
-      <controlaccess>
-        <head>Subjects:</head>
-        <subject source="local">Blacksburg (Va.)</subject>
-        <subject source="local">Local/Regional History and Appalachian South</subject>
-        <subject source="local">Montgomery County (Va.)</subject>
-      </controlaccess>
-      <controlaccess>
-        <head>Genre and Form Terms:</head>
-        <genreform source="aat">Vertical files</genreform>
-      </controlaccess>
-    </controlaccess>
-    <dsc type="combined">
-      <head>Blacksburg Vertical Files (List of Subjects)</head>
-      <c01 id="ref3" level="file">
-        <did>
-          <unittitle>Airport - VPI / Blacksburg (see also Record Group 6/3/3)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref5" level="file">
-        <did>
-          <unittitle>American National Red Cross</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref6" level="file">
-        <did>
-          <unittitle>Animal Control</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref7" level="file">
-        <did>
-          <unittitle>Annexation</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref8" level="file">
-        <did>
-          <unittitle>Art</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref9" level="file">
-        <did>
-          <unittitle>Athletics</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref10" level="file">
-        <did>
-          <unittitle>Awards (see also Blacksburg in the Eighties)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref11" level="file">
-        <did>
-          <unittitle>Banks (see also National Bank of Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref12" level="file">
-        <did>
-          <unittitle>Baptist Church - Blacksburg (see Blacksburg Baptist Church)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref13" level="file">
-        <did>
-          <unittitle>Bi-Centennial - Blacksburg</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref14" level="file">
-        <did>
-          <unittitle>Bike Club (see Blacksburg Bike Club)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref15" level="file">
-        <did>
-          <unittitle>Bikeways (see also Huckleberry Trail)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref16" level="file">
-        <did>
-          <unittitle>Black History</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref17" level="file">
-        <did>
-          <unittitle>Black (Alexander) House (see also Buildings and Houses</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref18" level="file">
-        <did>
-          <unittitle>Blacksburg Baptist Church (see also Blacksburg Baptist Church, black, pre-1959; Churches - Blacksburg; Community Federation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref19" level="file">
-        <did>
-          <unittitle>Blacksburg Baptist Church, black, pre-1959 (see also Blacksburg Baptist Church; Churches - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref20" level="file">
-        <did>
-          <unittitle>Blacksburg Bike Club</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref21" level="file">
-        <did>
-          <unittitle>Blacksburg Christian Church</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref22" level="file">
-        <did>
-          <unittitle>Blacksburg Comprehensive Plan</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref23" level="file">
-        <did>
-          <unittitle>Blacksburg Electronic Village</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref24" level="file">
-        <did>
-          <unittitle>Blacksburg Group</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref25" level="file">
-        <did>
-          <unittitle>Blacksburg in the Eighties (BITE) (see also Awards - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref26" level="file">
-        <did>
-          <unittitle>Blacksburg Lions Club (see also Community Federation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref27" level="file">
-        <did>
-          <unittitle>Blacksburg Methodist Church (see also Blacksburg United Methodist Church; Churches - Blacksburg; Community Federation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref28" level="file">
-        <did>
-          <unittitle>Blacksburg Museum of History (see Price House and Alexander Black House)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref29" level="file">
-        <did>
-          <unittitle>Blacksburg Music Club</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref30" level="file">
-        <did>
-          <unittitle>Blacksburg Presbyterian Church (see also Churches - Blacksburg; Northside Presbyterian Church)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref31" level="file">
-        <did>
-          <unittitle>Blacksburg Transit (see Mass Transit)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref32" level="file">
-        <did>
-          <unittitle>Blacksburg United Methodist Church (see also Blacksburg Methodist Church; Churches - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref33" level="file">
-        <did>
-          <unittitle>Blacksburg-Roanoke Link - Blacksburg (see Smart Road - Construction)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref34" level="file">
-        <did>
-          <unittitle>Blacksburg-Roanoke Link - Smart Road (see Smart Road - Technology)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref35" level="file">
-        <did>
-          <unittitle>Block Party Ordinance Controversy</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref36" level="file">
-        <did>
-          <unittitle>Boy and Girl Scouts</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref37" level="file">
-        <did>
-          <unittitle>Budget and Financing</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref38" level="file">
-        <did>
-          <unittitle>Buildings and Houses (3 folders) (see also Catholic Churches - Blacksburg); (Pagoda House: see also bio file on Leonard J Currie; Solitude: see Record Group 6/2/3b; Five Chimneys: see Five Chimneys in Blacksburg Vertical File) (see also Business and Industry; on the subject of Renovations, see also Downtown Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref39" level="file">
-        <did>
-          <unittitle>Business and Industry (6 folders) (see also Chamber of Commerce - Blacksburg; Awards - Blacksburg; Buildings and Houses - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref40" level="file">
-        <did>
-          <unittitle>Catholic Churches (see also Buildings Houses, Folder 2, 3-Way Property Exchange Between St Mary's, Francis Anglican and Odd Fellows Lodge)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref41" level="file">
-        <did>
-          <unittitle>Cemeteries (see also Montgomery Co - Cemeteries)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref42" level="file">
-        <did>
-          <unittitle>Chamber of Commerce (see also Business &amp; Industry - Blacksburg, Folder 1, loose clippings; Awards - Blacksburg; Community Federation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref43" level="file">
-        <did>
-          <unittitle>Christ Episcopal Church (see also Churches - Blacksburg; Community Federation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref44" level="file">
-        <did>
-          <unittitle>Christian Church (see Blacksburg Christian Church)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref45" level="file">
-        <did>
-          <unittitle>Christian Science</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref46" level="file">
-        <did>
-          <unittitle>Church of Jesus Christ of Latter-Day Saints Clippings start in 1981, with some information on the church's history in Blacksburg</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref47" level="file">
-        <did>
-          <unittitle>Churches Baptist churches (see also Blacksburg Baptist Church; Blacksburg Baptist Church, black, pre-1959); Church of Christ; Church of God (see also Slusser's Chapel Church of God); Living Word Church; Lutheran churches (see also Luther Memorial Lutheran Church); miscellaneous churches (see also Blacksburg Christian Church; Blacksburg Methodist Church; Blacksburg Presbyterian Church; Blacksburg United Methodist Church; Catholic Churches; Christ Episcopal Church; Church of Jesus Christ of Latter-Day Saints; Good Shepherd Church of the Brethren; Northside Presbyterian Church); "Wesleyan" churches</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref48" level="file">
-        <did>
-          <unittitle>Citizen's Forum</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref49" level="file">
-        <did>
-          <unittitle>City Status (3 folders)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref50" level="file">
-        <did>
-          <unittitle>Cloning (see PPL Therapeutics)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref51" level="file">
-        <did>
-          <unittitle>Clubs (see also Community Federation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref52" level="file">
-        <did>
-          <unittitle>Clubs, pre-1959 (see also Community Federation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref53" level="file">
-        <did>
-          <unittitle>Community Center</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref54" level="file">
-        <did>
-          <unittitle>Community Federation</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref55" level="file">
-        <did>
-          <unittitle>Comprehensive Plan (see Blacksburg Comprehensive Plan)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref56" level="file">
-        <did>
-          <unittitle>Corning Glass Works</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref57" level="file">
-        <did>
-          <unittitle>Crime and Law Enforcement (see also Police Department - Blacksburg; Fire Department - Blacksburg; bio files, using person's name)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref58" level="file">
-        <did>
-          <unittitle>Data Services Corporation</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref59" level="file">
-        <did>
-          <unittitle>Deadwood Days (see also Steppin' Out Festival)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref60" level="file">
-        <did>
-          <unittitle>Development (see Planning, Zoning and Development)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref61" level="file">
-        <did>
-          <unittitle>Downtown Blacksburg (see also Buildings and Houses - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref62" level="file">
-        <did>
-          <unittitle>Draper's Meadow (see also History, to 1900; Smithfield; bio file on Ingles, Mary; bio file on Patton, James; Preston Family Papers)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref63" level="file">
-        <did>
-          <unittitle>Economy and Economic Development (see also Awards - Blacksburg, Blacksburg Comprehensive Plan; Business and Industry - Blacksburg; Blacksburg-VPI&amp;SU Relations, Record Group 6/5-f)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref64" level="file">
-        <did>
-          <unittitle>Elections (see Voting &amp; Elections)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref65" level="file">
-        <did>
-          <unittitle>Electro Tec (see also Litton Industries' Polyscientific Corp)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref66" level="file">
-        <did>
-          <unittitle>Electronic Village (see Blacksburg Electronic Village)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref67" level="file">
-        <did>
-          <unittitle>Federal Mogul Corporation</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref68" level="file">
-        <did>
-          <unittitle>Federation of Neighborhoods (see Blacksburg Federation of Neighborhoods)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref69" level="file">
-        <did>
-          <unittitle>Festivals (see also Arts; Deadwood Days; and Steppin' Out Festival)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref70" level="file">
-        <did>
-          <unittitle>Fire Department</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref71" level="file">
-        <did>
-          <unittitle>Fires</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref72" level="file">
-        <did>
-          <unittitle>First Aid &amp; Life Saving Crew (see Fire Department)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref73" level="file">
-        <did>
-          <unittitle>Five Chimneys</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref74" level="file">
-        <did>
-          <unittitle>460 Corridor (see also Smart Road - Construction; Smart Road - Technology; ; Route 460/114 Corridor Development Plans &amp; Standards (HT393 V82 R68 1988); Shopping Centers - Montgomery County; Business and Industry - Montgomery County; Business and Industry - Christiansburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref75" level="file">
-        <did>
-          <unittitle>Girl Scouts (see Boy and Girl Scouts)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref76" level="file">
-        <did>
-          <unittitle>Good Shepherd Church of the Brethren</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref77" level="file">
-        <did>
-          <unittitle>Government, 1976- (see also Blacksburg Comprehensive Plan; Economy and Economic Development - Blacksburg; Planning, Development, and Zoning - Blacksburg; Town Council - Blacksburg; Voting and Elections - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref78" level="file">
-        <did>
-          <unittitle>Government, Pre-1975</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref79" level="file">
-        <did>
-          <unittitle>Health and Safety</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref80" level="file">
-        <did>
-          <unittitle>Heritage Hall</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref81" level="file">
-        <did>
-          <unittitle>Historic Homes</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref82" level="file">
-        <did>
-          <unittitle>Historical Museums - Blacksburg (see Price House and Alexander Black House)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref83" level="file">
-        <did>
-          <unittitle>History - Photographs (2 folders) (see also Buildings and Houses - Blacksburg; Business and Industry - Blacksburg; History - Blacksburg; specific subject heading)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref84" level="file">
-        <did>
-          <unittitle>History, 1901-1950 (see also Buildings and Houses - Blacksburg; Business and Industry - Blacksburg; Civilian Defense Council, WWII; Housing - Blacksburg (Housing Problems for Tech students after WWII); Goodridge Wilson, "Notes on Blacksburg")</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref85" level="file">
-        <did>
-          <unittitle>History, 1951-present (see also Blacksburg Comprehensive Plan, Blacksburg-Roanoke Link; Buildings and Houses - Blacksburg; Downtown Blacksburg; Business and Industry - Blacksburg; City Status - Blacksburg; Military - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref86" level="file">
-        <did>
-          <unittitle>History, to 1900 (2 folders) (see also Buildings and Houses - Blacksburg; Business and Industry - Blacksburg; Smithfield; bio file on Ingles, Mary; bio file on Patton, James; Preston Family Papers)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref87" level="file">
-        <did>
-          <unittitle>Hotels and Motels</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref88" level="file">
-        <did>
-          <unittitle>Housing (see also Hotels and Motels - Blacksburg; Planning, Development &amp; Zoning; on the topic of Greek Housing, see RG 82/1)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref89" level="file">
-        <did>
-          <unittitle>Hoy Funeral Home (see Alexander Black House)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref90" level="file">
-        <did>
-          <unittitle>Huckleberry</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref91" level="file">
-        <did>
-          <unittitle>Huckleberry Trail (see also Bikeways)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref92" level="file">
-        <did>
-          <unittitle>Jewish Community Center (see Blacksburg Jewish Community Center)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref93" level="file">
-        <did>
-          <unittitle>Land Swap - '86-'87 (see also 460 Corridor - Blacksburg; Shopping Centers - Montgomery County; bio file on Matthews, William)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref94" level="file">
-        <did>
-          <unittitle>Legal Actions (see also Annexation - Blacksburg; Buildings and Houses - Blacksburg, Folder 2 (Thomas-Conner House); Housing - Blacksburg (Cluster Housing); Planning, Development, &amp; Zoning, Folders 1 and 2; for Greek Housing, see Record Group 8/2/1)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref95" level="file">
-        <did>
-          <unittitle>Licenses</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref96" level="file">
-        <did>
-          <unittitle>Lions Club (see Blacksburg Lions Club)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref97" level="file">
-        <did>
-          <unittitle>Liquor By The Drink (see also Blue Laws - Montgomery Co)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref98" level="file">
-        <did>
-          <unittitle>Litton Industries' Poly-Scientific Division (see also Electro Tec)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref99" level="file">
-        <did>
-          <unittitle>Luther Memorial Lutheran Church (see also Churches -Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref100" level="file">
-        <did>
-          <unittitle>Lyric Theatre (see also Buildings and Houses - Blacksburg, Folder 1)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref101" level="file">
-        <did>
-          <unittitle>Maps Various street maps of Blacksburg published by realtors and the town</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref102" level="file">
-        <did>
-          <unittitle>Mass Transit System, 1982 and earlier (see also Transportation - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref103" level="file">
-        <did>
-          <unittitle>Mass Transit System, 1983-88</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref104" level="file">
-        <did>
-          <unittitle>Mass Transit System, 1989- (see also Two-Town Trolley - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref105" level="file">
-        <did>
-          <unittitle>Media</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref106" level="file">
-        <did>
-          <unittitle>Methodist Church (see Blacksburg Methodist Church)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref107" level="file">
-        <did>
-          <unittitle>Military (see also Building and Houses - Blacksburg, Folder 2 (Armory); History - Blacksburg, 1901-1950; Civilian Defense Council WWII - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref108" level="file">
-        <did>
-          <unittitle>Municipal Building</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref109" level="file">
-        <did>
-          <unittitle>Municipal Complex Design Competition</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref110" level="file">
-        <did>
-          <unittitle>Museums (see Price House - Blacksburg and Alexander Black House)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref111" level="file">
-        <did>
-          <unittitle>National Bank of Blacksburg (see also Banks - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref112" level="file">
-        <did>
-          <unittitle>Nellie's Cave</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref113" level="file">
-        <did>
-          <unittitle>Newcomers' Club Two articles from the 1980s List of members from 1962-63</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref114" level="file">
-        <did>
-          <unittitle>Nicewonder</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref115" level="file">
-        <did>
-          <unittitle>Northside Presbyterian Church (see also Churches - Blacksburg; Blacksburg Presbyterian Church)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref116" level="file">
-        <did>
-          <unittitle>Oil Well, Price Mountain</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref117" level="file">
-        <did>
-          <unittitle>Parking</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref118" level="file">
-        <did>
-          <unittitle>Parks</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref119" level="file">
-        <did>
-          <unittitle>Performing Arts (see also Blacksburg Music Club)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref120" level="file">
-        <did>
-          <unittitle>Photographs (see History - Photographs)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref121" level="file">
-        <did>
-          <unittitle>Planning, Zoning and Development (2 folders) (see also Housing - Blacksburg; for Greek Housing, see Record Group 8/2/l)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref122" level="file">
-        <did>
-          <unittitle>Police Department (see also Crime and Law Enforcement - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref123" level="file">
-        <did>
-          <unittitle>Politics (see also Voting and Elections - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref124" level="file">
-        <did>
-          <unittitle>Poly-Scientific (see Litton Industries' Poly-Scientific Division)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref125" level="file">
-        <did>
-          <unittitle>Population (see also Blacksburg Comprehensive Plan; Blacksburg in the Eighties; Smart Road - Construction; Buildings and Houses - Blacksburg (Folder 3); Chamber of Commerce - Blacksburg; City Status - Blacksburg; Economy and Economic Development - Blacksburg; 460 Corridor; History - Blacksburg, 1951-present; Housing - Blacksburg; Mass Transit - Blacksburg; Parting - Blacksburg; Planning, Development, and Zoning - Blacksburg; Roads - Blacksburg; Two Town Trolley)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref126" level="file">
-        <did>
-          <unittitle>Post Office</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref127" level="file">
-        <did>
-          <unittitle>PPL Therapeutics (Cloning)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref128" level="file">
-        <did>
-          <unittitle>Presbyterian Church (see Blacksburg Presbyterian Church)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref129" level="file">
-        <did>
-          <unittitle>Price House</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref130" level="file">
-        <did>
-          <unittitle>Prices Fork (see Prices Fork - Montgomery County)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref131" level="file">
-        <did>
-          <unittitle>Public Works (see also Awards; Blacksburg Comprehensive Plan; Downtown Blacksburg; Huckleberry Trail; Mass Transit System; Steppin' Out; and Utilities)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref132" level="file">
-        <did>
-          <unittitle>Racial and Ethnic Minorities (see also Black History)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref133" level="file">
-        <did>
-          <unittitle>RAFT</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref134" level="file">
-        <did>
-          <unittitle>Recreation (see also Community Center)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref135" level="file">
-        <did>
-          <unittitle>Recreation, pre-1959</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref136" level="file">
-        <did>
-          <unittitle>Red Cross (see American National Red Cross)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref137" level="file">
-        <did>
-          <unittitle>Rescue Squad (see Fire Department)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref138" level="file">
-        <did>
-          <unittitle>Restaurants (2 folders)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref139" level="file">
-        <did>
-          <unittitle>Retirement</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref140" level="file">
-        <did>
-          <unittitle>Roads (2 folders) (see also Smart Road - Construction; Smart Road - Technology; 460 Corridor; Downtown Blacksburg; Nellie's Cave Road; Planning, Development and Zoning - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref141" level="file">
-        <did>
-          <unittitle>School Controversies (see also Buildings and Houses - Blacksburg, Folder 2 (Armory))</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref142" level="file">
-        <did>
-          <unittitle>Schools (2 folders)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref143" level="file">
-        <did>
-          <unittitle>Scouts (see Boy and Girl Scouts)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref144" level="file">
-        <did>
-          <unittitle>Shopping Centers</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref145" level="file">
-        <did>
-          <unittitle>Signs</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref146" level="file">
-        <did>
-          <unittitle>Sister City</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref147" level="file">
-        <did>
-          <unittitle>Slusser's Chapel Church of God</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref148" level="file">
-        <did>
-          <unittitle>Smart Road - Construction (see also Smart Road - Technology; 460 Corridor - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref149" level="file">
-        <did>
-          <unittitle>Smart Road - Technology (see also Smart Road - Construction; 460 Corridor - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref150" level="file">
-        <did>
-          <unittitle>Smithfield (2 folders)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref151" level="file">
-        <did>
-          <unittitle>Sports (see Athletics - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref152" level="file">
-        <did>
-          <unittitle>Spring Houses</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref153" level="file">
-        <did>
-          <unittitle>Steppin' Out Festival (see also Deadwood Days)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref154" level="file">
-        <did>
-          <unittitle>Taxes and Bonds</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref155" level="file">
-        <did>
-          <unittitle>Top 10 Stories of Year</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref156" level="file">
-        <did>
-          <unittitle>Tour DuPont</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref157" level="file">
-        <did>
-          <unittitle>Town Council (see also Blacksburg Comprehensive Plan; Blacksburg in the Eighties; Budget and Financing - Blacksburg; City Status - Blacksburg; Community Federation - Blacksburg; Downtown Blacksburg; Economy and Economic Development - Blacksburg; Legal Actions - Blacksburg; Planning, Development, and Zoning - Blacksburg; Taxes and Bonds - Blacksburg; Telecommunications Towers - Montgomery County)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref158" level="file">
-        <did>
-          <unittitle>Town Personnel (see also Awards - Blacksburg; Police Department - Blacksburg; Fire Department - Blacksburg; Mass Transit System - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref159" level="file">
-        <did>
-          <unittitle>Transportation (see also Mass Transit - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref160" level="file">
-        <did>
-          <unittitle>Two-Town Trolley (see also Mass Transit System - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref161" level="file">
-        <did>
-          <unittitle>United Methodist Church (see Blacksburg United Methodist Church)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref162" level="file">
-        <did>
-          <unittitle>United Way</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref163" level="file">
-        <did>
-          <unittitle>Utilities (see also Blacksburg-VPI Electric Service (Record Group 6/3); Blacksburg-VPI Sanitation Authority (Record Group 6/3/6-a); A New Water System : Blacksburg, Christiansburg, Virginia Polytechnic Institute (TD224 V8 B5 1957 Spec/Genealogy); Public Works - Blacksburg)</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref164" level="file">
-        <did>
-          <unittitle>Virginia College of Osteopathic Medicine</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref165" level="file">
-        <did>
-          <unittitle>Voting and Elections</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref166" level="file">
-        <did>
-          <unittitle>Warm Hearth, Inc</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref167" level="file">
-        <did>
-          <unittitle>Weather</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref168" level="file">
-        <did>
-          <unittitle>Weather Station</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref169" level="file">
-        <did>
-          <unittitle>Women</unittitle>
-        </did>
-      </c01>
-      <c01 id="ref170" level="file">
-        <did>
-          <unittitle>Zoning (see also Planning, Zoning and Development)</unittitle>
-        </did>
-      </c01>
-    </dsc>
-  </archdesc>
+            <p id="logostmt">
+                <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                    xlink:actuate="onLoad" xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+            </p>
+            <publisher>Special Collections, Virginia Tech</publisher>
+            <date type="publication" era="ce" calendar="gregorian">2013 </date>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+            <list type="deflist">
+                <defitem>
+                    <label>Processed by: </label>
+                    <item> Special Collections Staff</item>
+                </defitem>
+            </list>
+        </titlepage>
+    </frontmatter>
+    <archdesc level="collection">
+        <runner placement="footer">Special Collections, Virginia Tech </runner>
+        <did>
+            <head>Descriptive Summary </head>
+            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia Tech,
+                Blacksburg, Va. </repository>
+            <unittitle label="Title">Blacksburg Vertical Files (List of Subjects), <unitdate>1960s-present</unitdate></unittitle>
+            <unitid label="Collection Numbe">VerticalFile.001</unitid>
+     
+            <langmaterial label="Language">
+                <language langcode="eng">English</language>
+            </langmaterial>
+            <physdesc label="Physical Characteristics">
+                <extent>11.21 cu. ft.</extent>
+                <extent>20 boxes</extent>
+            </physdesc>           
+        </did>
+        <descgrp type="admininfo">
+            <head>Administrative Information</head>
+        <accessrestrict id="ref173">
+            <head>Access Restrictions</head>
+            <p>Collection is open for research.</p>
+        </accessrestrict>
+        <userestrict id="ref174">
+            <head>Use Restrictions</head>
+            <p>Permission to publish material from the Blacksburg Vertical Files must be obtained from Special Collections, Virginia Tech.</p>
+        </userestrict>
+        <prefercite id="ref175">
+            <head>Preferred Citation</head>
+            <p>Researchers wishing to cite this collection should include the following information: [Item-specific information], Blacksburg Vertical File, Special Collections, Virginia Tech, Blacksburg, Va.</p>
+        </prefercite>
+        <acqinfo id="ref176">
+            <head>Acquisition Information</head>
+            <p>Newman Library staff began collection materials for vertical files during the 1960s. Special Collections staff add to existing files and continue to create new files as the need arises.</p>
+        </acqinfo>
+        </descgrp>
+        <scopecontent id="ref171">
+            <head>Scope and Content</head>
+            <p>In general, vertical files at Special Collections include newspaper clippings, photocopies, ephemera, unpublished and/or informal publications, and other papers relating to a specific subject area. Files in this collection relate to Blacksburg and its history. Each topic below has at least one folder and many include cross references.</p>
+        </scopecontent>
+        <arrangement id="ref172">
+            <head>Arrangement</head>
+            <p>Vertical files are arranged alphabetically by subject.</p>
+        </arrangement>
+        <descgrp type="add">
+            <head>Adjunct Descriptive Data</head>
+        <relatedmaterial id="ref179">
+            <head>Related Materials</head>
+            <p>
+                <list>
+                    <item>Montgomery County/Christiansburg Vertical Files</item>
+                    <item>Southwest Virginia Vertical Files</item>
+                    <item>Biographical Vertical Files (mostly relating to Virginia Tech and/or local history)</item>
+                    <item>Record Group Vertical Files (history of Virginia Tech colleges, departments, administrative units, and organizations)</item>
+                    <item>Virginia Tech and Local History Mounted Clippings (precursor to the vertical files, with materials dating back to the 1870s)</item>
+                </list></p>
+        </relatedmaterial>
+        </descgrp>
+        <controlaccess>
+            <head>Index Terms</head>
+            <controlaccess>
+                <head>Subjects:</head>
+            <subject source="local">Blacksburg (Va.)</subject>
+            <subject source="local">Local/Regional History and Appalachian South</subject>
+            <subject source="local">Montgomery County (Va.)</subject>
+            <subject source="lcsh">Women--History</subject>
+            </controlaccess>
+            <controlaccess>
+                <head>Genre and Form Terms:</head>
+                <genreform source="aat">Vertical files</genreform>
+            </controlaccess>
+        </controlaccess>
+        <dsc type="combined">
+            <head>Contents List</head>
+            <c01 id="ref3" level="file">
+                <did>
+                    <unittitle>Airport - VPI / Blacksburg (see also University Archives Record Group 6/3/3)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref184" level="file">
+                <did>
+                    <unittitle>Alexander Black House (see Black (Alexander) House)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref5" level="file">
+                <did>
+                    <unittitle>American National Red Cross</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref6" level="file">
+                <did>
+                    <unittitle>Animal Control</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref7" level="file">
+                <did>
+                    <unittitle>Annexation</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref8" level="file">
+                <did>
+                    <unittitle>Art</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref185" level="file">
+                <did>
+                    <unittitle>Arts and Crafts (see Art)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref9" level="file">
+                <did>
+                    <unittitle>Athletics</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref10" level="file">
+                <did>
+                    <unittitle>Awards and Rankings (see also Blacksburg in the Eighties)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref11" level="file">
+                <did>
+                    <unittitle>Banks (see also National Bank of Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref12" level="file">
+                <did>
+                    <unittitle>Baptist Church, Blacksburg (see also Baptist Church, Blacksburg - black, pre-1959; Churches; Community Federation)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref186" level="file">
+                <did>
+                    <unittitle>Baptist Church, Blacksburg - black, pre 1959 (see also Baptist Church, Blacksburg; Churches)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref13" level="file">
+                <did>
+                    <unittitle>Bicentennial</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref14" level="file">
+                <did>
+                    <unittitle>Bike Club, Blacksburg</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref15" level="file">
+                <did>
+                    <unittitle>Bikeways (see also Huckleberry Trail)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref17" level="file">
+                <did>
+                    <unittitle>Black (Alexander) House (see also Buildings and Houses; Museums)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref16" level="file">
+                <did>
+                    <unittitle>Black History</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref18" level="file">
+                <did>
+                    <unittitle>Blacksburg Baptist Church (see Baptist Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref19" level="file">
+                <did>
+                    <unittitle>Blacksburg Baptist Church - black, pre-1959 (see Baptist Church, Blacksburg - black, pre-1959)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref20" level="file">
+                <did>
+                    <unittitle>Blacksburg Bike Club (see Bike Club, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref21" level="file">
+                <did>
+                    <unittitle>Blacksburg Christian Church (see Christian Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref22" level="file">
+                <did>
+                    <unittitle>Blacksburg Comprehensive Plan (see Comprehensive Plan, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref23" level="file">
+                <did>
+                    <unittitle>Blacksburg Electronic Village</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref187" level="file">
+                <did>
+                    <unittitle>Blacksburg Federation of Neighborhoods (see Federation of Neighborhoods, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref24" level="file">
+                <did>
+                    <unittitle>Blacksburg Group</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref25" level="file">
+                <did>
+                    <unittitle>Blacksburg in the Eighties (BITE) (see also Awards and Rankings)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref26" level="file">
+                <did>
+                    <unittitle>Blacksburg Lions Club (see Lions Club, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref27" level="file">
+                <did>
+                    <unittitle>Blacksburg Methodist Church (see Methodist Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref28" level="file">
+                <did>
+                    <unittitle>Blacksburg Museum of History (see Price House; Black (Alexander) House)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref29" level="file">
+                <did>
+                    <unittitle>Blacksburg Music Club (see Music Club, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref30" level="file">
+                <did>
+                    <unittitle>Blacksburg Presbyterian Church (see Presbyterian Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref33" level="file">
+                <did>
+                    <unittitle>Blacksburg-Roanoke Link - Blacksburg (see Smart Road - Construction)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref34" level="file">
+                <did>
+                    <unittitle>Blacksburg-Roanoke Link - Smart Road (see Smart Road - Technology)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref31" level="file">
+                <did>
+                    <unittitle>Blacksburg Transit (see Mass Transit)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref32" level="file">
+                <did>
+                    <unittitle>Blacksburg United Methodist Church (see United Methodist Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref35" level="file">
+                <did>
+                    <unittitle>Block Party Ordinance Controversy</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref36" level="file">
+                <did>
+                    <unittitle>Boy and Girl Scouts</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref37" level="file">
+                <did>
+                    <unittitle>Budget and Financing</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref38" level="file">
+                <did>
+                    <unittitle>Buildings and Houses (4 folders) (see also Business and Industry; Catholic Churches; Downtown Blacksburg; Five Chimneys; Historic Homes; Kent Square; for Pagoda House, see also Currie, Leonard J. biographical file; for Solitude, see University Archives Record Group 6/2/3b)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref39" level="file">
+                <did>
+                    <unittitle>Business and Industry (7 folders) (see also Chamber of Commerce; Awards and Rankings; Buildings and Houses)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref40" level="file">
+                <did>
+                    <unittitle>Catholic Churches (see also Buildings Houses, Folder 2, 3-Way Property Exchange Between St Mary's, Francis Anglican and Odd Fellows Lodge)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref41" level="file">
+                <did>
+                    <unittitle>Cemeteries (see also Cemeteries - Montgomery County)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref42" level="file">
+                <did>
+                    <unittitle>Chamber of Commerce (see also Business and Industry; Awards and Rankings; Community Federation)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref43" level="file">
+                <did>
+                    <unittitle>Christ Episcopal Church (see also Churches; Community Federation)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref44" level="file">
+                <did>
+                    <unittitle>Christian Church, Blacksburg</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref45" level="file">
+                <did>
+                    <unittitle>Christian Science</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref46" level="file">
+                <did>
+                    <unittitle>Church of Jesus Christ of Latter-Day Saints</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref47" level="file">
+                <did>
+                    <unittitle>Churches Baptist churches (see also Baptist Church, Blacksburg; Baptist Church, Blacksburg - black, pre-1959; Catholic Churches; Christ Episcopal Church; Christian Church, Blacksburg; Church of Jesus Christ of Latter-Day Saints; Good Shepherd Church of the Brethren; Luther Memorial Lutheran Church; Northside Presbyterian Church; Methodist Church, Blacksburg; Presbyterian Church, Blacksburg; Slusser's Chapel Church of God; United Methodist Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref48" level="file">
+                <did>
+                    <unittitle>Citizen's Forum</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref49" level="file">
+                <did>
+                    <unittitle>City Status (3 folders)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref50" level="file">
+                <did>
+                    <unittitle>Cloning (see PPL Therapeutics)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref51" level="file">
+                <did>
+                    <unittitle>Clubs (2 folders) (see also Community Federation; names of individual clubs)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref52" level="file">
+                <did>
+                    <unittitle>Clubs, pre-1959 (see also Community Federation - Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref53" level="file">
+                <did>
+                    <unittitle>Community Center</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref54" level="file">
+                <did>
+                    <unittitle>Community Federation</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref180" level="file">
+                <did>
+                    <unittitle>Community Organizations and Programs (see also United Way)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref55" level="file">
+                <did>
+                    <unittitle>Comprehensive Plan, Blacksburg</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref56" level="file">
+                <did>
+                    <unittitle>Corning Glass Works</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref57" level="file">
+                <did>
+                    <unittitle>Crime and Law Enforcement (2 folders) (see also Police Department; Fire Department; biographical files under individual names)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref58" level="file">
+                <did>
+                    <unittitle>Data Services Corporation</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref59" level="file">
+                <did>
+                    <unittitle>Deadwood Days (see also Steppin' Out Festival)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref60" level="file">
+                <did>
+                    <unittitle>Development (see Planning, Zoning and Development)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref61" level="file">
+                <did>
+                    <unittitle>Downtown Blacksburg (see also Buildings and Houses; Historic Homes; Kent Square)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref62" level="file">
+                <did>
+                    <unittitle>Draper's Meadow (see also History, to 1900; Smithfield; biographical file on Ingles, Mary; biographical file on Patton, James; Preston Family Papers)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref63" level="file">
+                <did>
+                    <unittitle>Economy and Economic Development (see also Awards and Rankings, Comprehensive Plan, Blacksburg; Business and Industry; Blacksburg-VPI&amp;SU Relations, Record Group 6/5-f)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref64" level="file">
+                <did>
+                    <unittitle>Elections (see Voting and Elections)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref65" level="file">
+                <did>
+                    <unittitle>Electro Tec (see also Litton Industries' Polyscientific Corp)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref66" level="file">
+                <did>
+                    <unittitle>Electronic Village (see Blacksburg Electronic Village)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref181" level="file">
+                <did>
+                    <unittitle>Environment</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref188" level="file">
+                <did>
+                    <unittitle>Farmer's Market</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref67" level="file">
+                <did>
+                    <unittitle>Federal Mogul Corporation</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref68" level="file">
+                <did>
+                    <unittitle>Federation of Neighborhoods, Blacksburg</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref69" level="file">
+                <did>
+                    <unittitle>Festivals (see also Art; Deadwood Days; Steppin' Out Festival)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref70" level="file">
+                <did>
+                    <unittitle>Fire Department</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref71" level="file">
+                <did>
+                    <unittitle>Fires</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref72" level="file">
+                <did>
+                    <unittitle>First Aid &amp; Life Saving Crew (see Fire Department)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref189" level="file">
+                <did>
+                    <unittitle>First and Main Shopping Center</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref73" level="file">
+                <did>
+                    <unittitle>Five Chimneys</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref74" level="file">
+                <did>
+                    <unittitle>460 Corridor (see also Smart Road - Construction; Smart Road - Technology; ; Route 460/114 Corridor Development Plans &amp; Standards (HT393 V82 R68 1988); Shopping Centers - Montgomery County; Business and Industry - Montgomery County; Business and Industry - Christiansburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref190" level="file">
+                <did>
+                    <unittitle>Garden Club</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref75" level="file">
+                <did>
+                    <unittitle>Girl Scouts (see Boy and Girl Scouts)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref76" level="file">
+                <did>
+                    <unittitle>Good Shepherd Church of the Brethren</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref77" level="file">
+                <did>
+                    <unittitle>Government, 1976- (see also Comprehensive Plan, Blacksburg; Economy and Economic Development; Planning, Zoning and Development; Town Council; Voting and Elections)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref78" level="file">
+                <did>
+                    <unittitle>Government, Pre-1975</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref191" level="file">
+                <did>
+                    <unittitle>Haleos Technology, Inc.</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref79" level="file">
+                <did>
+                    <unittitle>Health and Safety</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref80" level="file">
+                <did>
+                    <unittitle>Heritage Hall</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref81" level="file">
+                <did>
+                    <unittitle>Historic Homes (see also Buildings and Houses)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref82" level="file">
+                <did>
+                    <unittitle>Historical Museums (see Black (Alexander) House; Museums; Price House)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref86" level="file">
+                <did>
+                    <unittitle>History, to 1900 (2 folders) (see also Buildings and Houses - Blacksburg; Business and Industry - Blacksburg; Smithfield; bio file on Ingles, Mary; bio file on Patton, James; Preston Family Papers)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref84" level="file">
+                <did>
+                    <unittitle>History, 1901-1950 (see also Buildings and Houses - Blacksburg; Business and Industry - Blacksburg; Civilian Defense Council, WWII; Housing - Blacksburg (Housing Problems for Tech students after WWII); Goodridge Wilson, "Notes on Blacksburg")</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref85" level="file">
+                <did>
+                    <unittitle>History, 1951-present (see also Blacksburg Comprehensive Plan, Blacksburg-Roanoke Link; Buildings and Houses - Blacksburg; Downtown Blacksburg; Business and Industry - Blacksburg; City Status - Blacksburg; Military - Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref87" level="file">
+                <did>
+                    <unittitle>Hotels and Motels</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref88" level="file">
+                <did>
+                    <unittitle>Housing (2 folders) (see also Hotels and Motels; Planning, Zoning and Development; for Greek Housing, see University Archives Record Group 8/2/1)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref89" level="file">
+                <did>
+                    <unittitle>Hoy Funeral Home (see Black (Alexander) House)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref90" level="file">
+                <did>
+                    <unittitle>Huckleberry Railroad</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref91" level="file">
+                <did>
+                    <unittitle>Huckleberry Trail (see also Bikeways)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref192" level="file">
+                <did>
+                    <unittitle>Kent Square</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref93" level="file">
+                <did>
+                    <unittitle>Land Swap - '86-'87 (see also 460 Corridor; Shopping Centers - Montgomery County; biographical file on Matthews, William)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref94" level="file">
+                <did>
+                    <unittitle>Legal Actions (see also Annexation; Buildings and Houses, folder 2 (Thomas-Conner House); Housing (Cluster Housing); Planning, Zoning and Development, folders 1 and 2; for Greek Housing, see University Archives Record Group 8/2/1)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref95" level="file">
+                <did>
+                    <unittitle>Licenses</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref96" level="file">
+                <did>
+                    <unittitle>Lions Club, Blacksburg</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref97" level="file">
+                <did>
+                    <unittitle>Liquor By The Drink (see also Blue Laws - Montgomery Co)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref98" level="file">
+                <did>
+                    <unittitle>Litton Industries' Poly-Scientific Division (see also Electro Tec)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref99" level="file">
+                <did>
+                    <unittitle>Luther Memorial Lutheran Church (see also Churches -Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref100" level="file">
+                <did>
+                    <unittitle>Lyric Theatre (see also Buildings and Houses)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref101" level="file">
+                <did>
+                    <unittitle>Maps</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref102" level="file">
+                <did>
+                    <unittitle>Mass Transit System, pre-1983 (see also Transportation)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref103" level="file">
+                <did>
+                    <unittitle>Mass Transit System, 1983-1988 (see also Transportation)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref104" level="file">
+                <did>
+                    <unittitle>Mass Transit System, 1989- (see also Transportation; Two-Town Trolley)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref105" level="file">
+                <did>
+                    <unittitle>Media</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref106" level="file">
+                <did>
+                    <unittitle>Methodist Church, Blacksburg (see also United Methodist Church, Blacksburg; Churches; Community Federation)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref107" level="file">
+                <did>
+                    <unittitle>Military (see also Building and Houses (Armory); History, 1901-1950)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref108" level="file">
+                <did>
+                    <unittitle>Municipal Building</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref109" level="file">
+                <did>
+                    <unittitle>Municipal Complex Design Competition</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref110" level="file">
+                <did>
+                    <unittitle>Museums (see also Black (Alexander) House; Price House)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref193" level="file">
+                <did>
+                    <unittitle>Music Club, Blacksburg</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref111" level="file">
+                <did>
+                    <unittitle>National Bank of Blacksburg (see also Banks)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref112" level="file">
+                <did>
+                    <unittitle>Nellie's Cave</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref113" level="file">
+                <did>
+                    <unittitle>Newcomers' Club</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref114" level="file">
+                <did>
+                    <unittitle>Nicewonder</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref115" level="file">
+                <did>
+                    <unittitle>Northside Presbyterian Church (see also Churches; Presbyterian Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref116" level="file">
+                <did>
+                    <unittitle>Oil Well, Price Mountain</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref194" level="file">
+                <did>
+                    <unittitle>PPL Therapeutics (Cloning)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref117" level="file">
+                <did>
+                    <unittitle>Parking</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref118" level="file">
+                <did>
+                    <unittitle>Parks (see also Recreation)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref119" level="file">
+                <did>
+                    <unittitle>Performing Arts (see also Music Club, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref121" level="file">
+                <did>
+                    <unittitle>Planning, Zoning and Development (2 folders) (see also Housing; for Greek Housing, see University Archives Record Group 8/2/l)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref122" level="file">
+                <did>
+                    <unittitle>Police Department (see also Crime and Law Enforcement)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref123" level="file">
+                <did>
+                    <unittitle>Politics (see also Voting and Elections)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref124" level="file">
+                <did>
+                    <unittitle>Poly-Scientific (see Litton Industries' Poly-Scientific Division)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref125" level="file">
+                <did>
+                    <unittitle>Population (see also Blacksburg in the Eighties (BITE); Comprehensive Plan, Blacksburg; Buildings and Houses; Chamber of Commerce; City Status; Economy and Economic Development; 460 Corridor; History - 1951-present; Housing; Mass Transit; Parking; Planning, Zoning and Development; Roads; Smart Road - Construction; Two-Town Trolley)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref126" level="file">
+                <did>
+                    <unittitle>Post Office</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref128" level="file">
+                <did>
+                    <unittitle>Presbyterian Church, Blacksburg</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref129" level="file">
+                <did>
+                    <unittitle>Price House</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref130" level="file">
+                <did>
+                    <unittitle>Price's Fork (see Price's Fork - Montgomery County)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref131" level="file">
+                <did>
+                    <unittitle>Public Works (see also Awards and Rankings; Comprehensive Plan, Blacksburg; Downtown Blacksburg; Huckleberry Trail; Mass Transit System; Steppin' Out; Utilities)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref132" level="file">
+                <did>
+                    <unittitle>Racial and Ethnic Minorities (see also Black History)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref133" level="file">
+                <did>
+                    <unittitle>Raft Community Crisis Center</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref135" level="file">
+                <did>
+                    <unittitle>Recreation, pre-1959</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref134" level="file">
+                <did>
+                    <unittitle>Recreation (see also Community Center; Parks)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref136" level="file">
+                <did>
+                    <unittitle>Red Cross (see American National Red Cross)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref137" level="file">
+                <did>
+                    <unittitle>Rescue Squad (see Fire Department)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref138" level="file">
+                <did>
+                    <unittitle>Restaurants (3 folders)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref139" level="file">
+                <did>
+                    <unittitle>Retirement</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref140" level="file">
+                <did>
+                    <unittitle>Roads (2 folders) (see also Smart Road - Construction; Smart Road - Technology; 460 Corridor; Downtown Blacksburg; Nellie's Cave Road; Planning, Zoning and Development)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref195" level="file">
+                <did>
+                    <unittitle>Rotary Club</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref141" level="file">
+                <did>
+                    <unittitle>School Controversies (see also Buildings and Houses - Blacksburg (Armory); Schools)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref142" level="file">
+                <did>
+                    <unittitle>Schools (6 folders) (see also School Controversies)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref143" level="file">
+                <did>
+                    <unittitle>Scouts (see Boy and Girl Scouts)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref144" level="file">
+                <did>
+                    <unittitle>Shopping Centers (see also First and Main Shopping Center; Kent Square)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref145" level="file">
+                <did>
+                    <unittitle>Signs</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref146" level="file">
+                <did>
+                    <unittitle>Sister City</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref147" level="file">
+                <did>
+                    <unittitle>Slusser's Chapel Church of God</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref148" level="file">
+                <did>
+                    <unittitle>Smart Road - Construction (3 folders) (see also 460 Corridor; Smart Road - Technology)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref149" level="file">
+                <did>
+                    <unittitle>Smart Road - Technology (see also 460 Corridor; Smart Road - Construction)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref150" level="file">
+                <did>
+                    <unittitle>Smithfield (3 folders)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref151" level="file">
+                <did>
+                    <unittitle>Sports (see Athletics)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref152" level="file">
+                <did>
+                    <unittitle>Spring Houses</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref153" level="file">
+                <did>
+                    <unittitle>Steppin' Out Festival (see also Deadwood Days)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref154" level="file">
+                <did>
+                    <unittitle>Taxes and Bonds</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref155" level="file">
+                <did>
+                    <unittitle>Top 10 Stories of Year</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref156" level="file">
+                <did>
+                    <unittitle>Tour DuPont</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref157" level="file">
+                <did>
+                    <unittitle>Town Council (see also Blacksburg in the Eighties (BITE); Budget and Financing; City Status; Community Federation; Comprehensive Plan, Blacksburg; Downtown Blacksburg; Economy and Economic Development; Government; Legal Actions; Planning, Zoning and Development; Taxes and Bonds; Telecommunications Towers - Montgomery County)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref158" level="file">
+                <did>
+                    <unittitle>Town Personnel (see also Awards and Rankings; Police Department; Fire Department; Mass Transit System)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref159" level="file">
+                <did>
+                    <unittitle>Transportation (see also Mass Transit System)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref160" level="file">
+                <did>
+                    <unittitle>Two-Town Trolley (see also Mass Transit System)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref161" level="file">
+                <did>
+                    <unittitle>United Methodist Church (see Churches; United Methodist Church, Blacksburg)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref162" level="file">
+                <did>
+                    <unittitle>United Way</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref163" level="file">
+                <did>
+                    <unittitle>Utilities (see also Blacksburg-VPI Electric Service (University Archives Record Group 6/3); Blacksburg-VPI Sanitation Authority (University Archives Record Group 6/3/6-a); A New Water System: Blacksburg, Christiansburg, Virginia Polytechnic Institute (TD224 V8 B5 1957 Large Spec); Public Works)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref164" level="file">
+                <did>
+                    <unittitle>Virginia College of Osteopathic Medicine</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref165" level="file">
+                <did>
+                    <unittitle>Voting and Elections</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref166" level="file">
+                <did>
+                    <unittitle>Warm Hearth, Inc</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref167" level="file">
+                <did>
+                    <unittitle>Weather</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref168" level="file">
+                <did>
+                    <unittitle>Weather Station</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref169" level="file">
+                <did>
+                    <unittitle>Women</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref170" level="file">
+                <did>
+                    <unittitle>Zoning (see also Planning, Zoning and Development)</unittitle>
+                </did>
+            </c01>
+        </dsc>
+    </archdesc>
 </ead>
