@@ -1,55 +1,82 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ead xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <eadheader findaidstatus="Completed" repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b">
-        <eadid countrycode="US" mainagencycode="US-ViBlbV" url="http://ead.lib.virginia.edu/vivaxtd/view?docId=vt/viblbv01043.xml">viblbv01043</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv01043">
+    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="completed"
+        scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
+        repositoryencoding="iso15511">
+        <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
+            State University::University Libraries::Special Collections//TEXT
+            (US::ViBlbV::viblbv01043::Montgomery County/Christiansburg Vertical Files, 1960s-present)//EN" "viblbv01043.xml"</eadid>
         <filedesc>
             <titlestmt>
-                <titleproper>Montgomery County/Christiansburg Vertical Files, 
-                    <date>1960s-present</date>
-                    <num>VerticalFile.002</num>
-                </titleproper>
-                <titleproper type="filing">Montgomery County/Christiansburg Vertical Files</titleproper>
-                <author>Finding aid prepared by Special Collections Staff</author>
+                <titleproper>A Guide to the Montgomery County/Christiansburg Vertical Files, <date era="ce" calendar="gregorian"
+                    >1960s-present</date></titleproper>
+                <subtitle id="sort">Montgomery County/Christiansburg Vertical Files <num type="collectionnumber">VerticalFile.002</num></subtitle>
             </titlestmt>
             <publicationstmt>
-                <p>
-                    <extref ns2:type="simple" ns2:actuate="onLoad" ns2:show="embed" ns2:href="http://spec.lib.vt.edu/VT_logo.jpg"/>
+                <publisher>Special Collections, Virginia Tech</publisher>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+                <date type="publication" era="ce" calendar="gregorian">©2016 By Virginia Tech. All rights
+                    reserved.</date>
+                <p id="usestatement">
+                    <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                        xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+                    </extref>
                 </p>
-                <publisher>Special Collections</publisher>
-                <address>
-                    <addressline>Special Collections, University Libraries (0434)</addressline>
-                    <addressline>Newman Library, Virginia Tech</addressline>
-                    <addressline>560 Drillfield Drive</addressline>
-                    <addressline>Blacksburg, Virginia, 24061</addressline>
-                    <addressline>540-231-6308</addressline>
-                    <addressline>specref@vt.edu</addressline>
-                </address>
-                <date>© 2013 Virginia Tech. All rights reserved.</date>
             </publicationstmt>
         </filedesc>
         <profiledesc>
-            <creation>This finding aid was produced using the Archivists' Toolkit
-                <date>2015-08-03T09:30-0400</date>
-            </creation>
-            <langusage>English</langusage>
+            <creation>This finding aid was produced using the Archivists' Toolkit <date era="ce"
+                calendar="gregorian">2016-02-18T15:24-0500</date></creation>
+            <langusage>Description is in <language langcode="eng">English </language></langusage>
         </profiledesc>
     </eadheader>
+    <frontmatter>
+        <titlepage>
+            <titleproper>Montgomery County/Christiansburg Vertical Files, <date era="ce" calendar="gregorian">1960s-present</date></titleproper>
+            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
+                VerticalFile.002</num></subtitle>
+            <p id="logostmt">
+                <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                    xlink:actuate="onLoad" xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+            </p>
+            <publisher>Special Collections, Virginia Tech</publisher>
+            <date type="publication" era="ce" calendar="gregorian">2016 </date>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+            <list type="deflist">
+                <defitem>
+                    <label>Processed by: </label>
+                    <item> Special Collections Staff</item>
+                </defitem>
+            </list>
+        </titlepage>
+    </frontmatter>               
     <archdesc level="collection">
+        <runner placement="footer">Special Collections, Virginia Tech </runner>
         <did>
-            <unittitle>Montgomery County / Christiansburg Vertical Files (List of Subjects),</unittitle>
-            <unitid>VerticalFile.002</unitid>
-            <repository>
-                <corpname>Special Collections</corpname>
-            </repository>
-            <langmaterial>
-                <language langcode="eng"/>
+            <head>Descriptive Summary </head>
+            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia Tech,
+                Blacksburg, Va. </repository>
+            <unittitle label="Title">Montgomery County / Christiansburg Vertical Files (List of Subjects), <unitdate>1960s-present</unitdate></unittitle>
+            <unitid label="Collection Number">VerticalFile.002</unitid>
+            <langmaterial label="Language">
+                <language langcode="eng">English</language>
             </langmaterial>
-            <physdesc>
+            <physdesc label="Physical Characteristics">
                 <extent>11.2 cu. ft.</extent>
                 <extent>18 boxes</extent>
-            </physdesc>
-            <unitdate>1960s-present</unitdate>
+            </physdesc>           
         </did>
+        <descgrp type="admininfo">
+            <head>Administrative Information</head>
         <accessrestrict id="ref173">
             <head>Access Restrictions</head>
             <p>Collection is open for research.</p>
@@ -66,6 +93,7 @@
             <head>Acquisition Information</head>
             <p>Newman Library staff began collection materials for vertical files during the 1960s. Special Collections staff add to existing files and continue to create new files as the need arises.</p>
         </acqinfo>
+        </descgrp>
         <scopecontent id="ref171">
             <head>Scope and Content</head>
             <p>In general, vertical files at Special Collections include newspaper clippings, photocopies, ephemera, unpublished and/or informal publications, and other papers relating to a specific subject area. Files in this collection relate to Christiansburg, Montgomery County, and their history. Each topic below has at least one folder and many include cross references.</p>
@@ -74,6 +102,8 @@
             <head>Arrangement</head>
             <p>Vertical files are arranged alphabetically by subject.</p>
         </arrangement>
+        <descgrp type="add">
+            <head>Adjunct Descriptive Data</head>
         <relatedmaterial id="ref178">
             <head>Related Materials</head>
             <p>
@@ -85,17 +115,29 @@
                     <item>Virginia Tech and Local History Mounted Clippings (precursor to the vertical files, with materials dating back to the 1870s)</item>
                 </list></p>
         </relatedmaterial>
+        </descgrp>
         <controlaccess>
+            <head>Index Terms</head>
+            <controlaccess>
+                <head>Geographical Names:</head>
             <geogname source="lcsh">Christiansburg (Va.)</geogname>
+            </controlaccess>
+            <controlaccess>
+                <head>Subjects:</head>
             <subject source="local">Local/Regional History and Appalachian South</subject>
             <subject source="local">Montgomery County (Va.)</subject>
-            <genreform source="aat">Vertical files</genreform>
             <subject source="lcsh">Women--History</subject>
+            </controlaccess>
+            <controlaccess>
+                <head>Genre and Form Terms:</head>
+            <genreform source="aat">Vertical files</genreform>
+            </controlaccess>
         </controlaccess>
-        <dsc>
+        <dsc type="combined">
+            <head>Contents List</head>
             <c01 id="ref180" level="file">
                 <did>
-                    <unittitle>Abner's Knob (see History - Specific Areas)</unittitle>
+                    <unittitle>Abner's Knob (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref3" level="file">
@@ -118,9 +160,14 @@
                     <unittitle>American National Red Cross</unittitle>
                 </did>
             </c01>
+            <c01 id="ref232" level="file">
+                <did>
+                    <unittitle>Amtrak (see Hilltopper - Amtrak)</unittitle>
+                </did>
+            </c01>
             <c01 id="ref7" level="file">
                 <did>
-                    <unittitle>Animal Welfare</unittitle>
+                    <unittitle>Animal Welfare (see also Humane Society)</unittitle>
                 </did>
             </c01>
             <c01 id="ref8" level="file">
@@ -140,7 +187,7 @@
             </c01>
             <c01 id="ref181" level="file">
                 <did>
-                    <unittitle>Baptist Churches</unittitle>
+                    <unittitle>Baptist Churches (see also Schaeffer Memorial Baptist Church)</unittitle>
                 </did>
             </c01>
             <c01 id="ref11" level="file">
@@ -150,7 +197,7 @@
             </c01>
             <c01 id="ref182" level="file">
                 <did>
-                    <unittitle>Basham (see History - Specific Areas)</unittitle>
+                    <unittitle>Basham (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref183" level="file">
@@ -170,7 +217,7 @@
             </c01>
             <c01 id="ref14" level="file">
                 <did>
-                    <unittitle>Board of Supervisors</unittitle>
+                    <unittitle>Board of Supervisors (see also Government)</unittitle>
                 </did>
             </c01>
             <c01 id="ref15" level="file">
@@ -193,9 +240,14 @@
                     <unittitle>Buildings and Houses</unittitle>
                 </did>
             </c01>
+            <c01 id="ref233" level="file">
+                <did>
+                    <unittitle>Buildings and Houses - Christiansburg</unittitle>
+                </did>
+            </c01>
             <c01 id="ref20" level="file">
                 <did>
-                    <unittitle>Business and Industry (2 folders)</unittitle>
+                    <unittitle>Business and Industry (2 folders) (see also Economy and Economic Development)</unittitle>
                 </did>
             </c01>
             <c01 id="ref19" level="file">
@@ -235,12 +287,12 @@
             </c01>
             <c01 id="ref186" level="file">
                 <did>
-                    <unittitle>Childress (see History - Specific Areas)</unittitle>
+                    <unittitle>Childress (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref187" level="file">
                 <did>
-                    <unittitle>Chrisman Mill (see History - Specific Areas)</unittitle>
+                    <unittitle>Chrisman Mill (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref27" level="file">
@@ -280,17 +332,17 @@
             </c01>
             <c01 id="ref32" level="file">
                 <did>
-                    <unittitle>Churches (see also names of denominations and individual churches)</unittitle>
+                    <unittitle>Churches (see also names of denominations and specific churches)</unittitle>
                 </did>
             </c01>
             <c01 id="ref188" level="file">
                 <did>
-                    <unittitle>Clubs</unittitle>
+                    <unittitle>Clubs (see also names of specific clubs)</unittitle>
                 </did>
             </c01>
             <c01 id="ref189" level="file">
                 <did>
-                    <unittitle>Coal Bank Hollow (see History - Specific Areas)</unittitle>
+                    <unittitle>Coal Bank Hollow (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref33" level="file">
@@ -340,7 +392,12 @@
             </c01>
             <c01 id="ref190" level="file">
                 <did>
-                    <unittitle>Devil's Den (see History - Specific Areas)</unittitle>
+                    <unittitle>Devil's Den (see History - Specific Communities)</unittitle>
+                </did>
+            </c01>
+            <c01 id="ref234" level="file">
+                <did>
+                    <unittitle>Dialogue on Race Summit</unittitle>
                 </did>
             </c01>
             <c01 id="ref43" level="file">
@@ -355,7 +412,7 @@
             </c01>
             <c01 id="ref191" level="file">
                 <did>
-                    <unittitle>Dry Valley (see History - Specific Areas)</unittitle>
+                    <unittitle>Dry Valley (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref45" level="file">
@@ -400,7 +457,7 @@
             </c01>
             <c01 id="ref192" level="file">
                 <did>
-                    <unittitle>Fagg (see History - Specific Areas)</unittitle>
+                    <unittitle>Fagg (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref231" level="file">
@@ -465,12 +522,12 @@
             </c01>
             <c01 id="ref62" level="file">
                 <did>
-                    <unittitle>Government</unittitle>
+                    <unittitle>Government (see also Board of Supervisors)</unittitle>
                 </did>
             </c01>
             <c01 id="ref193" level="file">
                 <did>
-                    <unittitle>Graysontown (see History - Specific Areas)</unittitle>
+                    <unittitle>Graysontown (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref63" level="file">
@@ -485,7 +542,7 @@
             </c01>
             <c01 id="ref227" level="file">
                 <did>
-                    <unittitle>Hi-top (see History - Specific Areas)</unittitle>
+                    <unittitle>Hi-top (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref65" level="file">
@@ -535,7 +592,7 @@
             </c01>
             <c01 id="ref75" level="file">
                 <did>
-                    <unittitle>Humane Society</unittitle>
+                    <unittitle>Humane Society (see also Animal Welfare)</unittitle>
                 </did>
             </c01>
             <c01 id="ref195" level="file">
@@ -555,7 +612,7 @@
             </c01>
             <c01 id="ref77" level="file">
                 <did>
-                    <unittitle>Kentland - VPI Farm (see Buildings and Houses)</unittitle>
+                    <unittitle>Kentland - VPI Farm</unittitle>
                 </did>
             </c01>
             <c01 id="ref197" level="file">
@@ -590,7 +647,7 @@
             </c01>
             <c01 id="ref199" level="file">
                 <did>
-                    <unittitle>Luster's Gate (see History - Specific Areas)</unittitle>
+                    <unittitle>Luster's Gate (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref81" level="file">
@@ -610,7 +667,7 @@
             </c01>
             <c01 id="ref201" level="file">
                 <did>
-                    <unittitle>McDonald's Mill (see History - Specific Areas)</unittitle>
+                    <unittitle>McDonald's Mill (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref83" level="file">
@@ -618,9 +675,14 @@
                     <unittitle>Media</unittitle>
                 </did>
             </c01>
+            <c01 id="ref235" level="file">
+                <did>
+                    <unittitle>Methodist Churches</unittitle>
+                </did>
+            </c01>
             <c01 id="ref84" level="file">
                 <did>
-                    <unittitle>Montgomery (see History - Specific Areas)</unittitle>
+                    <unittitle>Montgomery (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref85" level="file">
@@ -670,7 +732,7 @@
             </c01>
             <c01 id="ref96" level="file">
                 <did>
-                    <unittitle>Museums (see Historical Museums)</unittitle>
+                    <unittitle>Museums (see also Historical Museums)</unittitle>
                 </did>
             </c01>
             <c01 id="ref98" level="file">
@@ -685,7 +747,7 @@
             </c01>
             <c01 id="ref202" level="file">
                 <did>
-                    <unittitle>Norris Run (see History - Specific Areas)</unittitle>
+                    <unittitle>Norris Run (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref101" level="file">
@@ -715,7 +777,7 @@
             </c01>
             <c01 id="ref204" level="file">
                 <did>
-                    <unittitle>Plum Creek (see History - Specific Areas)</unittitle>
+                    <unittitle>Plum Creek (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref105" level="file">
@@ -825,7 +887,7 @@
             </c01>
             <c01 id="ref208" level="file">
                 <did>
-                    <unittitle>Rough and Ready (see History - Specific Areas)</unittitle>
+                    <unittitle>Rough and Ready (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref149" level="file">
@@ -975,7 +1037,7 @@
             </c01>
             <c01 id="ref213" level="file">
                 <did>
-                    <unittitle>Sugar Grove (see History - Specific Areas)</unittitle>
+                    <unittitle>Sugar Grove (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref228" level="file">
@@ -995,7 +1057,7 @@
             </c01>
             <c01 id="ref214" level="file">
                 <did>
-                    <unittitle>Texas Hollow</unittitle>
+                    <unittitle>Texas Hollow (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref215" level="file">
@@ -1025,7 +1087,7 @@
             </c01>
             <c01 id="ref216" level="file">
                 <did>
-                    <unittitle>Union Valley (see History - Specific Areas)</unittitle>
+                    <unittitle>Union Valley (see History - Specific Communities)</unittitle>
                 </did>
             </c01>
             <c01 id="ref154" level="file">
@@ -1060,7 +1122,7 @@
             </c01>
             <c01 id="ref159" level="file">
                 <did>
-                    <unittitle>Voting Districts</unittitle>
+                    <unittitle>Voting Districts (see also Voting and Elections)</unittitle>
                 </did>
             </c01>
             <c01 id="ref218" level="file">
