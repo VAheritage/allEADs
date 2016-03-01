@@ -1,53 +1,83 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ead xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <eadheader findaidstatus="Completed" repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b">
-        <eadid countrycode="US" mainagencycode="US-ViBlbV" url="http://ead.lib.virginia.edu/vivaxtd/view?docId=vt/viblbv01044.xml">viblbv01044</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv01044">
+    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="completed"
+        scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
+        repositoryencoding="iso15511">
+        <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
+            State University::University Libraries::Special Collections//TEXT
+            (US::ViBlbV::viblbv01044::Southwest Virginia Vertical Files (List of Subjects), 1960s-present)//EN" "viblbv01044.xml"</eadid>
         <filedesc>
             <titlestmt>
-                <titleproper>Southwest Virginia Vertical Files (List of Subjects), 
-                    <date>1960s-present</date>
-                    <num>VerticalFile.003</num>
-                </titleproper>
-                <titleproper type="filing">Southwest Virginia Vertical Files</titleproper>
-                <author>Finding aid prepared by Special Collections Staff</author>
+                <titleproper>A Guide to the Southwest Virginia Vertical Files (List of Subjects), <date era="ce" calendar="gregorian"
+                    >1960s-present</date></titleproper>
+                <subtitle id="sort">Southwest Virginia Vertical Files (List of Subjects) <num type="collectionnumber">VerticalFile.003</num></subtitle>
             </titlestmt>
             <publicationstmt>
-                <p>
-                    <extref ns2:type="simple" ns2:actuate="onLoad" ns2:show="embed" ns2:href="http://spec.lib.vt.edu/VT_logo.jpg"/>
+                <publisher>Special Collections, Virginia Tech</publisher>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+                <date type="publication" era="ce" calendar="gregorian">©2016 By Virginia Tech. All rights
+                    reserved.</date>
+                <p id="usestatement">
+                    <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                        xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+                    </extref>
                 </p>
-                <publisher>Special Collections</publisher>
-                <address>
-                    <addressline>University Libraries</addressline>
-                    <addressline>P.O. Box 90001</addressline>
-                    <addressline>Blacksburg, Virginia, 24062-9001</addressline>
-                    <addressline>540-231-6308</addressline>
-                    <addressline>specref@vt.edu</addressline>
-                </address>
-                <date>© 2013 Virginia Tech. All rights reserved.</date>
             </publicationstmt>
         </filedesc>
         <profiledesc>
-            <creation>This finding aid was produced using the Archivists' Toolkit
-                <date>2015-07-30T09:15-0400</date>
-            </creation>
+            <creation>This finding aid was produced using the Archivists' Toolkit <date era="ce"
+                calendar="gregorian">2016-02-26T13:04-0500</date></creation>
+            <langusage>Description is in <language langcode="eng">English </language></langusage>
         </profiledesc>
     </eadheader>
+    <frontmatter>
+        <titlepage>
+            <titleproper>Southwest Virginia Vertical Files (List of Subjects), <date era="ce" calendar="gregorian">1960s-present</date></titleproper>
+            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
+                VerticalFile.003</num></subtitle>
+            <p id="logostmt">
+                <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                    xlink:actuate="onLoad" xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+            </p>
+            <publisher>Special Collections, Virginia Tech</publisher>
+            <date type="publication" era="ce" calendar="gregorian">2016 </date>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+            <list type="deflist">
+                <defitem>
+                    <label>Processed by: </label>
+                    <item> Special Collections Staff</item>
+                </defitem>
+            </list>
+        </titlepage>
+    </frontmatter>
     <archdesc level="collection">
+        <runner placement="footer">Special Collections, Virginia Tech </runner>
         <did>
-            <unittitle>Southwest Virginia Vertical Files (List of Subjects),</unittitle>
-            <unitid>VerticalFile.003</unitid>
-            <repository>
-                <corpname>Special Collections</corpname>
-            </repository>
-            <langmaterial>
-                <language langcode="eng"/>
+            <head>Descriptive Summary </head>
+            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia Tech,
+                Blacksburg, Va. </repository>
+            <unittitle label="Title">Southwest Virginia Vertical Files (List of Subjects), <unitdate>1960s-present</unitdate></unittitle>
+            <unitid label="Collection Number">VerticalFile.003</unitid>
+  
+            <langmaterial label="Language">
+                <language langcode="eng">English</language>
             </langmaterial>
-            <physdesc>
+            <physdesc label="Physical Characteristics">
                 <extent>14.0 cu. ft.</extent>
                 <extent>10 boxes</extent>
-            </physdesc>
-            <unitdate>1960s-present</unitdate>
+            </physdesc>           
         </did>
+        <descgrp type="admininfo">
+            <head>Administrative Information</head>
         <accessrestrict id="ref321">
             <head>Access Restrictions</head>
             <p>Collection is open for research.</p>
@@ -64,6 +94,7 @@
             <head>Acquisition Information</head>
             <p>Newman Library staff began collection materials for vertical files during the 1960s. Special Collections staff add to existing files and continue to create new files as the need arises.</p>
         </acqinfo>
+        </descgrp>
         <scopecontent id="ref318">
             <head>Scope and Content</head>
             <p>In general, vertical files at Special Collections include newspaper clippings, photocopies, ephemera, unpublished and/or informal publications, and other papers relating to a specific subject area. Files in this collection relate to the New River Valley and counties and locations throughout Southwest Virginia. Each topic below has at least one folder and many include cross references.</p>
@@ -72,6 +103,8 @@
             <head>Arrangement</head>
             <p>Vertical files are arranged alphabetically by subject.</p>
         </arrangement>
+        <descgrp type="add">
+            <head>Adjunct Descriptive Data</head>
         <relatedmaterial id="ref325">
             <head>Related Materials</head>
             <p>
@@ -83,12 +116,21 @@
                     <item>Virginia Tech and Local History Mounted Clippings (precursor to the vertical files, with materials dating back to the 1870s)</item>
                 </list></p>
         </relatedmaterial>
+        </descgrp>
         <controlaccess>
+            <head>Index Terms</head>
+            <controlaccess>
+                <head>Subjects:</head>
             <subject source="local">Local/Regional History and Appalachian South</subject>
-            <genreform source="aat">Vertical files</genreform>
             <subject source="lcsh">Women--History</subject>
+            </controlaccess>
+            <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Vertical files</genreform>
+            </controlaccess>
         </controlaccess>
-        <dsc>
+        <dsc type="combined">
+            <head>Contents List</head>
             <c01 id="ref3" level="file">
                 <did>
                     <unittitle>Agriculture (2 folders) (see also Food and Foodways)</unittitle>
@@ -289,14 +331,9 @@
                     <unittitle>Church of the Brethren</unittitle>
                 </did>
             </c01>
-            <c01 id="ref52" level="file">
-                <did>
-                    <unittitle>Churches - New River Valley (see also names of specific churches)</unittitle>
-                </did>
-            </c01>
             <c01 id="ref53" level="file">
                 <did>
-                    <unittitle>Churches (see also names of specific churches)</unittitle>
+                    <unittitle>Churches (see also names of specific churches; Religion)</unittitle>
                 </did>
             </c01>
             <c01 id="ref54" level="file">
@@ -431,7 +468,7 @@
             </c01>
             <c01 id="ref86" level="file">
                 <did>
-                    <unittitle>Education (see Education, Higher; Schools)</unittitle>
+                    <unittitle>Education (2 folders) (see Education, Higher; Schools)</unittitle>
                 </did>
             </c01>
             <c01 id="ref330" level="file">
@@ -632,11 +669,6 @@
             <c01 id="ref123" level="file">
                 <did>
                     <unittitle>Ground Zero</unittitle>
-                </did>
-            </c01>
-            <c01 id="ref124" level="file">
-                <did>
-                    <unittitle>Habitat for Humanity</unittitle>
                 </did>
             </c01>
             <c01 id="ref125" level="file">
@@ -994,11 +1026,6 @@
                     <unittitle>Protests and Peace Movements</unittitle>
                 </did>
             </c01>
-            <c01 id="ref216" level="file">
-                <did>
-                    <unittitle>Public Service Authority - New River Valley</unittitle>
-                </did>
-            </c01>
             <c01 id="ref217" level="file">
                 <did>
                     <unittitle>Pulaski - History</unittitle>
@@ -1046,7 +1073,7 @@
             </c01>
             <c01 id="ref227" level="file">
                 <did>
-                    <unittitle>Religion</unittitle>
+                    <unittitle>Religion (see also Churches)</unittitle>
                 </did>
             </c01>
             <c01 id="ref228" level="file">
