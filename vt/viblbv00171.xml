@@ -1,1945 +1,264 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv00171">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft"
-    scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
-    repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
-      State University::University Libraries::Special Collections//TEXT
-      (US::ViBlbV::viblbv00171::James I. Robertson Jr. Papers)//EN" "viblbv00171.xml" </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to theJames I. Robertson Papers <date era="ce" calendar="gregorian"
-            >1862-2001 (bulk 1981-2001)</date></titleproper>
-        <subtitle id="sort">Robertson, James I., Papers <num type="collectionnumber">Ms 94-021
-          </num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Virginia Polytechnic Institute and State University </publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-          href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2005 By Virginia Polytechnic
-          Institute and State University. All rights reserved. </date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-          </extref>
-        </p>
-        <p id="filesize">[ca. ## Kilobytes] </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from word, created by Paul Pugliese, <date
-          era="ce" calendar="gregorian">7/5/2005 </date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the James I. Robertson, Jr. Papers <date era="ce" calendar="gregorian"
-          >1862-2001 (bulk 1981-2001)</date></titleproper>
-      <subtitle>A Collection in <lb/>the Special Collections <num type="Collection Number">Ms 94-021
-        </num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-          xlink:actuate="onLoad" xlink:show="embed"
-          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
-      </p>
-      <publisher>Special Collections, Virginia Polytechnic Institute and State University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2005 </date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-        href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by: </label>
-          <item>Special Collections Staff </item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, Virginia Polytechnic Institute and State
-      University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository">Special Collections, Virginia Polytechnic Institute and State
-        University, Blacksburg, Va. </repository>
-      <unittitle label="Title">James I. Robertson Jr. Papers <unitdate type="inclusive" label="Date"
-          era="ce" calendar="gregorian">1862-2001 (bulk 1981-2001) </unitdate></unittitle>
-      <unitid label="Accession number">Ms 94-021 </unitid>
-      <physdesc label="Size">36 containers; 22 cu. ft. </physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">Research notes, manuscripts, typescript drafts, working copies and
-        galley proofs for books and articles written by Virginia Tech's Alumni Distinguished
-        Professor of History James I. Robertson Jr., 1982-2001. Also contains a small set of general
-        materials which includes items related to the preservation of lands adjacent to Manassas
-        National Battlefield Park. </abstract>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict>
-        <head>Access Restrictions </head>
-        <p>Collection is open to research. </p>
-      </accessrestrict>
-      <userestrict>
-        <head>Use Restrictions </head>
-        <p>There are no restrictions. </p>
-      </userestrict>
-      <prefercite>
-        <head>Preferred Citation </head>
-        <p>James I. Robertson Jr. Papers, Accession #Ms 94-021. Special Collections, Virginia
-          Polytechnic Institute and State University, Blacksburg, Va. </p>
-      </prefercite>
-      <acqinfo>
-        <head>Acquisition Information </head>
-        <p>The Robertson Papers were donated by James I. and Elizabeth Robertson in two accessions:
-          May 1996 and July 2002. </p>
-      </acqinfo>
-      <processinfo>
-        <head>Processing Information </head>
-        <p>Accession I was processed in May 1996 by Helen Harrison, student assistant, and Laura
-          Katz Smith, manuscripts curator. Processing, arrangement and description of Accession II
-          commenced in September 2002 and was completed in November 2002. The two accessions were
-          merged at this time. </p>
-      </processinfo>
-    </descgrp>
-    <bioghist>
-      <head>Biographical/Historical Information </head>
-      <p>James I. "Bud" Robertson Jr., Civil War historian, author and Alumni Distinguished
-        Professor of History at Virginia Tech, was born in Danville, Virginia, in 1930. After
-        graduating from Randolph-Macon College (B.A., 1955), Robertson obtained his M.A. (1956) and
-        Ph.D. (1959) at Emory University and served as a teaching fellow (instructor in history) at
-        Emory from 1958 to 1959. From 1959 to 1961, Robertson served as editor of Civil War History,
-        a quarterly journal published by the University of Iowa. In 1961, he was appointed executive
-        director of the National Civil War Centennial Commission by President John F. Kennedy and
-        served until 1965, supervising the national observance of the Civil War centenary. Robertson
-        served as professor of history at the University of Montana from 1965 until 1967, when he
-        joined the faculty of Virginia Tech. He served as History Department head from 1969 to 1977,
-        and was C. P. Miles Professor of History from 1977 to 1992. He became Alumni Distinguished
-        Professor of History in 1992. </p>
-      <p>Robertson has authored many award-winning scholarly books on Civil War-related topics,
-        including <title render="italic">Soldiers Blue and Gray</title> (1988) (nominated for the
-        Pulitzer Prize in History), <title rules="italic">Civil War Virginia: Battleground for a
-          Nation</title> (1991), <title render="italic">General A. P. Hill: The Story of a
-          Confederate Warrior</title>; and <title render="italic">Stonewall Jackson: The Man, the
-          Soldier, the Legend</title> (1997). He has also written two books for younger readers:
-          <title render="italic">Civil War! America Becomes One Nation</title> (1992) and <title
-          render="italic">Standing Like a Stone Wall: the Life of General Thomas J. Jackson</title>
-        (2001). Robertson has been a contributing author and editor for several other works; his
-        articles, too numerous to list here, have appeared in many encyclopedias, Civil War
-        magazines and historical society journals. </p>
-    </bioghist>
-    <scopecontent>
-      <head>Scope and Content </head>
-      <p>The papers of James I. Robertson Jr., Civil War historian, author and Alumni Distinguished
-        Professor of History at Virginia Tech, span the dates 1862 to 2001 and are comprised of
-        writings and general materials. The writings consist largely of materials (research notes,
-        manuscript drafts, typescript drafts and galley proofs) related to the writing and
-        publication of a portion of Robertson's books and articles between 1982 and 2001. The small
-        number of general materials includes items related to the preservation of lands adjacent to
-        Manassas National Battlefield Park and a few manuscript drafts for various speeches made by
-        Robertson. </p>
-    </scopecontent>
-    <arrangement>
-      <head>Arrangement </head>
-      <p><emph render="bold">Series I: Writings, 1981-2001, Boxes 1-34</emph><lb/> This series contains
-        research notes, manuscript and typescript drafts, edited working copies, master copies and
-        galley proofs for 9 books and two articles published between 1982 and 2001. The series is
-        arranged by the works' chronological order of publication. The materials for each work are
-        arranged in chronological order, according to the dates supplied. (Where dates were
-        unavailable, the sequence was determined by comparing the different drafts.) The drafts
-        include revisions made by Robertson and others (identified in the individual folder
-        descriptions, when possible). The series' holdings are not comprehensive and do not include
-        every draft of every work. The subseries for <title render="italic">Jackson &amp;
-          Lee</title>, for example, contains only a typescript draft of a single chapter. </p>
-      <p><emph render="bold">Series II: General Materials, 1862-1996, Box 35</emph><lb/> All materials
-        not directly related to the writing and publication of Robertson's works are assembled
-        within this series, which includes items pertaining to the preservation of lands adjacent to
-        Manassas National Battlefield Park, manuscript drafts for various speeches made by
-        Robertson, a list of articles written by Robertson and assorted ephemera. Materials are
-        arranged by function. </p>
-      <p><emph render="bold">Series III: Oversize Materials, 1982-1990, Box 36</emph><lb/> This series
-        consists of oversize galley proofs which were too large to be filed in Series I. Items in
-        this series are arranged according to the order in which they would have been filed had they
-        remained in Series I. </p>
-    </arrangement>
-    <descgrp type="add">
-      <head>Separated Material </head>
-      <p>The following books in Accession II were transferred to Special Collections' Rare Book
-        Room: </p>
-      <list type="simple">
-        <item>Barringer, Paul B. <title render="italic">Narrative of Pilgrimage to Cedar Mountain
-            and Manassas Battlefields, September 4-5, 1968</title> ([Richmond?: s.n., 1968?])
-          E472.183 N377 1968 Civil War Spec </item>
-        <item>Johnston, J. Ambler. <title render="italic">Echoes of 1861-1961</title> ([Richmond]:
-          privately printed, 1970) F227 .J6 1970 c.3 Civil War Spec </item>
-        <item>Johnston, J. Ambler. <title render="italic">The Civil War 1861-1865 in Arkansas and
-            Missouri: Notes on the April, 1967 Trip of the Chicago Civil War Round Table</title>
-          ([Richmond]: Distributed by the Virginia State Penitentiary, 1967) E470.4 .J647 1967 c.2
-          Civil War Spec </item>
-        <item>Wilshin, Francis. <title render="italic">Manassas (Bull Run) National Battlefield
-            Park, Virginia</title> (Washington D.C., 1957) Docs I 29.58:15/2 Civil War Spec </item>
-      </list>
-    </descgrp>
-    <controlaccess>
-      <head>Index Terms</head>
-      <controlaccess>
-        <head>Subjects:</head>
-        <subject source="local">Civil War</subject>
-        <subject source="local">Faculty</subject>
-        <subject source="lcsh">United States--History--Civil War, 1861-1865</subject>
-        <subject source="local">University Archives</subject>
-        <subject source="lcsh">Virginia Polytechnic Institute</subject>
-        <subject source="lcsh">Virginia Polytechnic Institute and State University</subject>
-      </controlaccess>
-    </controlaccess>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01 level="series">
-        <did>
-          <unittitle>Series I: Writings </unittitle>
-          <container label="Boxes" type="box">1-34 </container>
-        </did>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">Civil War Sites in Virginia: A Tour Guide </title>
-              (1982) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Typescript draft <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">1:1 </container>
-              <physdesc>Photocopy </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Final copy with publisher's comments <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1981 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">1:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Master copy <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >[1982?] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">1:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >[1982?] </unitdate></unittitle>
-            </did>
-            <scopecontent>
-              <p>See Oversize Materials, Box 36 </p>
-            </scopecontent>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">General A.P. Hill: The Story of a Confederate Warrior
-              </title> (1987) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Research notecards </unittitle>
-              <container label="Boxes" type="box">2-8 </container>
-            </did>
-            <scopecontent>
-              <p>Introduction; Pre-1848; Post-Mexican War; Coming of War; Williamsburg; Promotion to
-                Brigadier General; Mechanicsville; Gaines' Mill; Frayser's Farm; End of Seven Days'
-                Campaign; Cedar Mountain; Second Manassas; Antietam Creek; Fredericksburg;
-                Chancellorsville; Gettysburg; Bristoe Station; Wilderness; Petersburg; 1865 </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original typescript draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1985?] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:1 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original typescript draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1985?] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:2 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Preface - First draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1985] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:3 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Elizabeth Robertson, Beth Brown, Richard Harwell and Random
-                House </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 1 - First working copy <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Dec 29 [1985] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:4 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Richard Harwell </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 1 - Final working copy <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Apr 18 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 2 - First draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Jan 5 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:6 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Richard Harwell </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 3 - First working copy <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Feb 12 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:7 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Beth Brown </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 3 - Final copy <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:8 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Richard Harwell </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 4 - Copy of original typescript draft <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:9 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Ed Raus </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 4 - First draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Apr 8 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:10 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Robert Krick and Ed Raus </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 4 - Third draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">May 8 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:11 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Richard Harwell </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 5 - Typescript draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Apr 7 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:12 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Dennis Frye </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 5 - First working copy <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Mar 28 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:13 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 5 - Second draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Apr 11 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:14 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Richard Harwell </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 6 - First draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Apr 24 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">9:15 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 7 - Copy of original typescript draft <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">[Apr 1986] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">10:1 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Elizabeth Robertson, Harry Pfanz and Beth Brown </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 8 - First draft (incomplete) <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">May 16 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">10:2 </container>
-              <physdesc>with corrections by Robert Krick </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 9 - Copy of original typescript draft with corrections <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">10:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chapter 9 - First draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Jun 6 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">10:4 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Beth Brown and Chris Calkins </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Complete draft <unitdate type="inclusive" era="ce" calendar="gregorian">Jul
-                  15 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">10:5 </container>
-            </did>
-            <scopecontent>
-              <p>with author's final corrections; 4 folders </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Complete draft <unitdate type="inclusive" era="ce" calendar="gregorian">Aug
-                  29 1986 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">10:6 </container>
-            </did>
-            <scopecontent>
-              <p>with publisher's final corrections; 2 folders </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Setting copy I <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >[1986] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">11:1 </container>
-              <physdesc>4 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Master galleys <unitdate type="inclusive" era="ce" calendar="gregorian">Dec
-                  15 [1986] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">11:2 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Master copy <unitdate type="inclusive" era="ce" calendar="gregorian">Jan 23
-                  [1987] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">12:1 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >[1987] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">12:2 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Setting copy II <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >[1987] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">12:3 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Unbound signatures <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >1987 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">12:4 </container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">Soldiers Blue and Gray </title> (1988) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Outline <unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">13:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Rough typescript <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">13:2 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft <unitdate type="inclusive" era="ce" calendar="gregorian">1987
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">13:3 </container>
-              <physdesc>3 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Revisions (chapters 6, 8-9 only) <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1987 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">13:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Second draft <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >[1987] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">13:5 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Third draft (chapter 1 only) <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Sep 22 1987 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">14:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Final draft <unitdate type="inclusive" era="ce" calendar="gregorian">May 13
-                  1988 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">14:2 </container>
-            </did>
-            <scopecontent>
-              <p>with publisher's comments </p>
-            </scopecontent>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle>"The Boy Artillerist: Letters of Colonel William Pegram" (1990) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Original typescript draft with author's corrections <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">[1990] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">14:3 </container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">Civil War Virginia: Battleground For a Nation </title>
-              (1991) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Outline <unitdate type="inclusive" era="ce" calendar="gregorian">[1989?]
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">14:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original draft <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >1989 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">14:5 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft <unitdate type="inclusive" era="ce" calendar="gregorian">1989
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:1 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft <unitdate type="inclusive" era="ce" calendar="gregorian">1989
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:2 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Ludwell Johnson (chapters 1-5 only) </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft <unitdate type="inclusive" era="ce" calendar="gregorian">1989
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:3 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Charles Roland </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Second draft <unitdate type="inclusive" era="ce" calendar="gregorian">1990
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:4 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Gary Gallagher </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Third draft <unitdate type="inclusive" era="ce" calendar="gregorian">1990
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Final draft <unitdate type="inclusive" era="ce" calendar="gregorian">1990
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:6 </container>
-            </did>
-            <scopecontent>
-              <p>with publisher's comments; 2 folders </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Final draft <unitdate type="inclusive" era="ce" calendar="gregorian">[1990]
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:7 </container>
-            </did>
-            <scopecontent>
-              <p>incorporating publisher's revisions </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First galley proofs <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">May 15 1990 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">15:8 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Final galley proofs <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Aug 24 1990 </unitdate></unittitle>
-            </did>
-            <scopecontent>
-              <p>see Oversize Materials, Box 36 </p>
-            </scopecontent>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle>"Stonewall Jackson: Molding the Man and Making a General" (1992) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Typescript draft <unitdate type="inclusive" era="ce" calendar="gregorian"
-                  >n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's layouts <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1992 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:2 </container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">Civil War! America Becomes One Nation </title> (1992)
-            </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Typescript text of <title render="italic">The Civil War </title> (published
-                1963) <unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original manuscript <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original typescript draft <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Original version <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Nov 13 1988 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:6 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Revised version <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Dec 8 1988 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working copy <unitdate type="inclusive" era="ce" calendar="gregorian">[Feb
-                  1989?] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">16:8 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft sent to publisher <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Feb 16 1990 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:1 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Final draft <unitdate type="inclusive" era="ce" calendar="gregorian">May
-                  1991 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:2 </container>
-            </did>
-            <scopecontent>
-              <p>with publisher's comments; 2 folders </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First galley proofs <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Oct 1991 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Second galley proofs <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Nov 1991 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Map labels <unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
-                </unitdate></unittitle>
-            </did>
-            <scopecontent>
-              <p>see Oversize Materials, Box 36 </p>
-            </scopecontent>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">The Civil War's Common Soldiers </title> (1994)
-            </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft <unitdate type="inclusive" era="ce" calendar="gregorian">1993
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Second draft <unitdate type="inclusive" era="ce" calendar="gregorian">1993
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Final draft <unitdate type="inclusive" era="ce" calendar="gregorian">1993
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:7 </container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">Jackson &amp; Lee: Legends in Gray </title> (1995)
-            </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Typescript draft of chapter 3 ("Virginia Orphan") <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">17:8 </container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">Stonewall Jackson: The Man, The Soldier, The Legend
-              </title> (1997) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Introduction <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">18:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 1 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">18:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 2 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">18:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 3 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">18:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 4 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">18:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 5 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">18:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 6 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">18:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 7 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">19:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 8 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">19:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 9 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">19:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 10 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">19:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 11 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">19:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 12 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">19:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 13 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 14 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 15 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 16 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 17 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 18 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 19 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 20 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">20:8 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 21 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 22 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 23 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 24 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Original working draft - Chapter 25 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 3 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:6 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapters 5-7 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:7 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapters 8-9 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:8 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 10 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:9 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 11 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">21:10 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 12 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:1 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 13 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:2 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 14 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:3 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 15 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:4 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 16-17 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:5 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 18 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:6 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 19 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:7 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 20 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:8 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 21 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:9 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 23 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">22:10 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapter 23 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">23:1 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working draft - Chapters 24-25 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">1993-1994 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">23:2 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by Lowell Reidenbaugh </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 1-2 </unittitle>
-              <container label="Box-folder" type="box-folder">23:3 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 3-4 </unittitle>
-              <container label="Box-folder" type="box-folder">23:4 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 5-6 </unittitle>
-              <container label="Box-folder" type="box-folder">23:5 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 7-8 </unittitle>
-              <container label="Box-folder" type="box-folder">23:6 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 9 </unittitle>
-              <container label="Box-folder" type="box-folder">23:7 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 10 </unittitle>
-              <container label="Box-folder" type="box-folder">23:8 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 11 </unittitle>
-              <container label="Box-folder" type="box-folder">23:9 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 12 </unittitle>
-              <container label="Box-folder" type="box-folder">24:1 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 13 </unittitle>
-              <container label="Box-folder" type="box-folder">24:2 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 14-15 </unittitle>
-              <container label="Box-folder" type="box-folder">24:3 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 16-17 </unittitle>
-              <container label="Box-folder" type="box-folder">24:4 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 18 </unittitle>
-              <container label="Box-folder" type="box-folder">24:5 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 19 </unittitle>
-              <container label="Box-folder" type="box-folder">24:6 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 20 </unittitle>
-              <container label="Box-folder" type="box-folder">24:7 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 21 </unittitle>
-              <container label="Box-folder" type="box-folder">24:8 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 22 </unittitle>
-              <container label="Box-folder" type="box-folder">24:9 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 23-24 </unittitle>
-              <container label="Box-folder" type="box-folder">25:1 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapter 25, Abbreviations and Bibliography </unittitle>
-              <container label="Box-folder" type="box-folder">25:2 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by author </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 5-6 </unittitle>
-              <container label="Box-folder" type="box-folder">25:3 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by unidentified person </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First draft - Chapters 7-8 </unittitle>
-              <container label="Box-folder" type="box-folder">25:4 </container>
-            </did>
-            <scopecontent>
-              <p>with corrections by unidentified person </p>
-            </scopecontent>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 1-2 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">25:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 3-4 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">25:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 5-6 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">25:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapter 7 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">25:8 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 8-9 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 10-11 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 12-13 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 14-15 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapter 16 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 17-18 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapter 19 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapter 20 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">26:8 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapters 21-22 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">27:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Chapter 23 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">27:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Endnotes, Foreward-Chapter 12 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">27:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Draft submitted to publisher - Endnotes, Chapters 13-25 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">n.d. </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">27:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 1 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">27:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 2 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">27:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 3 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">27:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapters 4-5 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapters 6-7 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 8 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 9 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 10 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 11 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 12 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 13 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">28:8 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 14 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapters 15-16 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapters 17-18 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 19 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 20 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 21 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapter 22 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Chapters 23-25 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:8 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Publisher's laser proof with corrections - Bibliography <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">Feb 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">29:9 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 1-2 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">30:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 3-5 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">30:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 6-8 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">30:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 9-11 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">30:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 12-14 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">30:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 15-17 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">30:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 18-19 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">31:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 20-21 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">31:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 22-24 <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">31:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Chapters 25, Abbreviations and Bibliography <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">31:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Endnotes, Chapters 1-13 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">31:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working proof [?] - Endnotes, Chapters 14-25 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">31:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Working copies for Abbreviations and Bibliography sections <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">[1996] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">31:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (author's copy) - Chapters 1-5 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">32:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (author's copy) - Chapters 6-10 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">32:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (author's copy) - Chapters 11-14 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">32:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (author's copy) - Chapters 15-19 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">32:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (author's copy) - Chapters 20-23 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">32:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (author's copy) - Chapters 24-25, Bibliography and End Notes
-                  <unitdate type="inclusive" era="ce" calendar="gregorian">Jul 15 1996
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">32:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (master copy) - Chapters 1-5 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">32:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (master copy) - Chapters 6-10 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:1 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (master copy) - Chapters 11-15 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (master copy) - Chapters 15-19 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:3 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (master copy) - Chapters 20-23 <unitdate type="inclusive"
-                  era="ce" calendar="gregorian">Jul 15 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:4 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Galley proof (master copy) - Chapters 24-25, Bibliography and End Notes
-                  <unitdate type="inclusive" era="ce" calendar="gregorian">Jul 15 1996
-                </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:5 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Revisions to galley proof - First set <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Sep 25 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:6 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Revisions to galley proof - Second set <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Dec 3 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:7 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Revisions to galley proof - Third set <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Dec 23 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">33:8 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Index draft with corrections <unitdate type="inclusive" era="ce"
-                  calendar="gregorian">Oct 21 1996 </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">34:1 </container>
-              <physdesc>2 folders </physdesc>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><title render="italic">Standing Like a Stone Wall: The Life of General Thomas
-                J. Jackson </title> (2001) </unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Manuscript (with publisher's revisions) - Chapters 1-7 <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">[2001?] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">34:2 </container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Manuscript (with publisher's revisions) - Chapters 8-end <unitdate
-                  type="inclusive" era="ce" calendar="gregorian">[2001?] </unitdate></unittitle>
-              <container label="Box-folder" type="box-folder">34:3 </container>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle>Series II: General Materials </unittitle>
-          <container label="Box" type="box">35 </container>
-        </did>
-        <c02 level="item">
-          <did>
-            <unittitle>Manassas Battlefield Park Preservation <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1988 </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">35:1 </container>
-            <physdesc>2 folders </physdesc>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>Drafts of assorted speeches by Robertson <unitdate type="inclusive" era="ce"
-                calendar="gregorian">n.d. </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">35:2 </container>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>List of articles by Robertson <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1957-1991 </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">35:3 </container>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>Ephemera - "La Mode Illustree" prints <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1862 </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">35:4 </container>
-            <physdesc>2 items </physdesc>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>Ephemera - assorted postcards from Abingdon, Virginia and envelopes addressed
-              to Vicki Heilig <unitdate type="inclusive" era="ce" calendar="gregorian">1989-1996
-              </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">35:4 </container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle>Series III: Oversize Materials </unittitle>
-          <container label="Boxes" type="box">36-37 </container>
-        </did>
-        <c02 level="item">
-          <did>
-            <unittitle><title render="italic">Civil War Sites in Virginia: a Tour Guide </title> -
-              galley proofs <unitdate type="inclusive" era="ce" calendar="gregorian">[1982?]
-              </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">36:1 </container>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle><title render="italic">Civil War in Virginia: Battleground for a Nation
-              </title> - final galley proof <unitdate type="inclusive" era="ce" calendar="gregorian"
-                >1990 </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">36:2 </container>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle><title render="italic">Civil War! America Becomes One Nation </title> -
-              galley map labels <unitdate type="inclusive" era="ce" calendar="gregorian">n.d.
-              </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">36:3 </container>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle> "Bold Reconnaissance: General Stonewall Jackson at Brawner's Farm, Battle of
-              Second Manassas, August 28, 1862" <unitdate type="inclusive" era="ce"
-                calendar="gregorian">2000 </unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">37:1 </container>
-          </did>
-          <scopecontent>
-            <p>limited edition signed print by Brian Kraus </p>
-          </scopecontent>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd"><eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed" langencoding="iso639-2b" repositoryencoding="iso15511"><eadid countrycode="US" mainagencycode="US-US-viblbv" url="http://ead.lib.virginia.edu/vivaead/published/vt/viblbv00171.xml.frame">viblbv00171</eadid><filedesc><titlestmt><titleproper>A Guide to theJames I. Robertson Papers <date calendar="gregorian" era="ce">1862-2001 (bulk 1981-2001)</date> <num>Ms.1994.021</num></titleproper><subtitle>Robertson, James I., Papers</subtitle></titlestmt><publicationstmt><publisher>Special Collections, Virginia Tech</publisher><p id="logostmt"><extref xlink:actuate="onLoad" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg" xlink:show="embed" xlink:type="simple"/></p><p><date>© 2005 By Virginia Polytechnic Institute and State University. All rights reserved.</date></p><address><addressline>Special Collections, University Libraries (0434)</addressline><addressline>560 Drillfield Drive</addressline><addressline>Newman Library, Virginia Tech</addressline><addressline>Blacksburg, Virginia 24061</addressline><addressline>specref@vt.edu</addressline><addressline>URL: <extptr xlink:href="http://spec.lib.vt.edu" xlink:show="new" xlink:title="http://spec.lib.vt.edu" xlink:type="simple"/></addressline></address></publicationstmt></filedesc><profiledesc><creation>This finding aid was produced using ArchivesSpace on <date>2016-09-08 11:33:21 -0400</date>.</creation><langusage>Description is in <language langcode="eng">English </language></langusage></profiledesc><revisiondesc><change><date>2016-09-08</date><item>Box 35 added; boxes 36 and 37 updated.</item></change></revisiondesc></eadheader><archdesc level="collection">
+  <did>
+    <langmaterial>
+      <language langcode="eng">English</language>
+    </langmaterial>
+    <repository>
+      <corpname>Special Collections, Virginia Tech</corpname>
+    </repository>
+    <unittitle>James I. Robertson Jr. Papers</unittitle>
+    <origination label="creator">
+      <persname role="col" source="naf">Robertson, James I., Jr.</persname>
+    </origination>
+    <origination label="creator">
+      <persname source="naf">Robertson, James I., Jr.</persname>
+    </origination>
+    <unitid>Ms.1994.021</unitid>
+    <physdesc altrender="whole">
+      <extent altrender="materialtype spaceoccupied">22 Cubic Feet</extent>
+      <extent altrender="carrier">37 boxes</extent>
+    </physdesc>
+    <unitdate normal="1862/2001" type="inclusive">1862-2001</unitdate>
+    <unitdate normal="1981/2001" type="bulk">bulk</unitdate>
+    <abstract id="aspace_591a58887f476736372340a2230c0d66">Research notes, manuscripts, typescript drafts, working copies and galley proofs for books and articles written by Virginia Tech's Alumni Distinguished Professor of History James I. Robertson Jr., 1982-2001. Also contains a small set of general materials which includes items related to the preservation of lands adjacent to Manassas National Battlefield Park.</abstract>
+    <physdesc id="aspace_ca067a9b953dbb731345d0b50205b70c">376 containers; 22 cu. ft.</physdesc>
+  </did>
+  <accessrestrict id="aspace_ec12ca4cbfb5f8d912f9f282a022415f">
+    <head>Access Restrictions</head>
+<p>Collection is open to research.</p>  </accessrestrict>
+  <userestrict id="aspace_9b031f012f9e70949c29f2f9ef86ad5c">
+    <head>Use Restrictions</head>
+<p>There are no restrictions.</p>  </userestrict>
+  <prefercite id="aspace_623f36d2c6b78131f9ed14f5768ee800">
+    <head>Preferred Citation</head>
+<p>James I. Robertson Jr. Papers, Accession #Ms 94-021. Special Collections, Virginia Polytechnic Institute and State University, Blacksburg, Va.</p>  </prefercite>
+  <acqinfo id="aspace_0e9e9748945f89fb44d2768e7e554d8b">
+    <head>Acquisition Information</head>
+<p>The Robertson Papers were donated by James I. and Elizabeth Robertson in two accessions: May 1996 and July 2002.</p>  </acqinfo>
+  <processinfo id="aspace_ec216300f2c448a7fb90f2ff36f625a0">
+    <head>Processing Information</head>
+<p>Accession I was processed in May 1996 by Helen Harrison, student assistant, and Laura Katz Smith, manuscripts curator. Processing, arrangement and description of Accession II commenced in September 2002 and was completed in November 2002. The two accessions were merged at this time.</p>  </processinfo>
+  <bioghist id="aspace_0b4c575f7baa45162c2fb34d77614166">
+    <head>Biographical/Historical Information</head>
+<p>James I. "Bud" Robertson Jr., Civil War historian, author and Alumni Distinguished Professor of History at Virginia Tech, was born in Danville, Virginia, in 1930. After graduating from Randolph-Macon College (B.A., 1955), Robertson obtained his M.A. (1956) and Ph.D. (1959) at Emory University and served as a teaching fellow (instructor in history) at Emory from 1958 to 1959. From 1959 to 1961, Robertson served as editor of Civil War History, a quarterly journal published by the University of Iowa. In 1961, he was appointed executive director of the National Civil War Centennial Commission by President John F. Kennedy and served until 1965, supervising the national observance of the Civil War centenary. Robertson served as professor of history at the University of Montana from 1965 until 1967, when he joined the faculty of Virginia Tech. He served as History Department head from 1969 to 1977, and was C. P. Miles Professor of History from 1977 to 1992. He became Alumni Distinguished Professor of History in 1992. </p><p>Robertson has authored many award-winning scholarly books on Civil War-related topics, including <title render="italic">Soldiers Blue and Gray</title> (1988) (nominated for the Pulitzer Prize in History), <title render="italic">Civil War Virginia: Battleground for a Nation</title> (1991), <title render="italic">General A. P. Hill: The Story of a Confederate Warrior</title>; and <title render="italic">Stonewall Jackson: The Man, the Soldier, the Legend</title> (1997). He has also written two books for younger readers: <title render="italic">Civil War! America Becomes One Nation</title> (1992) and <title render="italic">Standing Like a Stone Wall: the Life of General Thomas J. Jackson</title> (2001). Robertson has been a contributing author and editor for several other works; his articles, too numerous to list here, have appeared in many encyclopedias, Civil War magazines and historical society journals. </p>  </bioghist>
+  <scopecontent id="aspace_e7044cb3a254cb00fc0ef252f0d3f59e">
+    <head>Scope and Content</head>
+<p>The papers of James I. Robertson Jr., Civil War historian, author and Alumni Distinguished Professor of History at Virginia Tech, span the dates 1862 to 2001 and are comprised of writings and general materials. The writings consist largely of materials (research notes, manuscript drafts, typescript drafts and galley proofs) related to the writing and publication of a portion of Robertson's books and articles between 1982 and 2001. The small number of general materials includes items related to the preservation of lands adjacent to Manassas National Battlefield Park and a few manuscript drafts for various speeches made by Robertson.</p>  </scopecontent>
+  <arrangement id="aspace_5263458f609e8789b0fbd42a760689a6">
+    <head>Arrangement</head>
+<p><title render="bold">Series I: Writings, 1981-2001, Boxes 1-34</title><lb/> This series contains research notes, manuscript and typescript drafts, edited working copies, master copies and galley proofs for 10 books and two articles published between 1982 and 20041. The series is arranged by the works' chronological order of publication. The materials for each work are arranged in chronological order, according to the dates supplied. (Where dates were unavailable, the sequence was determined by comparing the different drafts.) The drafts include revisions made by Robertson and others (identified in the individual folder descriptions, when possible). The series' holdings are not comprehensive and do not include every draft of every work. The subseries for <title render="italic">Jackson &amp; Lee</title>, for example, contains only a typescript draft of a single chapter. </p><p><title render="bold">Series II: General Materials, 1862-1996, Box 35</title><lb/> All materials not directly related to the writing and publication of Robertson's works are assembled within this series, which includes items pertaining to the preservation of lands adjacent to Manassas National Battlefield Park, manuscript drafts for various speeches made by Robertson, a list of articles written by Robertson and assorted ephemera. Materials are arranged by function. </p><p><title render="bold">Series III: Oversize Materials, 1982-1990, Box 36</title><lb/> This series consists of oversize galley proofs which were too large to be filed in Series I. Items in this series are arranged according to the order in which they would have been filed had they remained in Series I. </p>    <list type="ordered">
+      <head>Missing Title</head>
+      <item>Barringer, Paul B. <title render="italic">Narrative of Pilgrimage to Cedar Mountain and Manassas Battlefields, September 4-5, 1968</title> ([Richmond?: s.n., 1968?]) E472.183 N377 1968 Civil War Spec</item>
+      <item>Johnston, J. Ambler. <title render="italic">Echoes of 1861-1961</title> ([Richmond]: privately printed, 1970) F227 .J6 1970 c.3 Civil War Spec</item>
+      <item>Johnston, J. Ambler. <title render="italic">The Civil War 1861-1865 in Arkansas and Missouri: Notes on the April, 1967 Trip of the Chicago Civil War Round Table</title> ([Richmond]: Distributed by the Virginia State Penitentiary, 1967) E470.4 .J647 1967 c.2 Civil War Spec</item>
+      <item>Wilshin, Francis. <title render="italic">Manassas (Bull Run) National Battlefield Park, Virginia</title> (Washington D.C., 1957) Docs I 29.58:15/2 Civil War Spec</item>
+    </list>
+  </arrangement>
+  <controlaccess>
+    <subject source="lcsh">Virginia Polytechnic Institute</subject>
+    <subject source="lcsh">Virginia Polytechnic Institute and State University</subject>
+    <subject source="local">Civil War</subject>
+    <subject source="local">Faculty</subject>
+    <subject source="local">University Archives</subject>
+    <subject source="lcsh">United States -- History -- Civil War, 1861-1865</subject>
+    <persname role="col" source="naf">Robertson, James I., Jr.</persname>
+    <persname source="naf">Robertson, James I., Jr.</persname>
+  </controlaccess>
+  <dsc><c01 id="aspace_ref12_1x5" level="series"><did><unittitle>Series I: Writings</unittitle></did><c02 id="aspace_ref13_5ya" level="subseries"><did><unittitle><title render="italic">Civil War Sites in Virginia: A Tour Guide </title> (1982)</unittitle></did><c03 id="aspace_ref14_upt" level="item"><did><unittitle>Typescript draft</unittitle><unitdate type="inclusive">n.d.</unitdate><physdesc id="aspace_5894b63cede3c8bde166bb1f17a717a6">Photocopy</physdesc><container id="aspace_7fcda731f7bf34940f416c65764b7588" label="box-folder" type="box-folder">1:1
+</container></did></c03><c03 id="aspace_ref16_e0m" level="item"><did><unittitle>Final copy with publisher's comments</unittitle><unitdate type="inclusive">1981</unitdate><container id="aspace_67a4c5289d591169e007af9ed1f7121f" label="box-folder" type="box-folder">1:2
+</container></did></c03><c03 id="aspace_ref17_dyt" level="item"><did><unittitle>Master copy</unittitle><unitdate type="inclusive">[1982?]</unitdate><container id="aspace_539b8689a5f08f2833aac747b46c3433" label="box-folder" type="box-folder">1:3
+</container></did></c03><c03 id="aspace_ref18_4qx" level="item"><did><unittitle>Galley proof</unittitle><unitdate type="inclusive">[1982?]</unitdate></did><scopecontent id="aspace_5864a492a0569e34cf8ef0330943c755"><head>Scope and Contents note</head><p>See Oversize Materials, Box 36</p></scopecontent></c03></c02><c02 id="aspace_ref20_azy" level="subseries"><did><unittitle><title render="italic">General A.P. Hill: The Story of a Confederate Warrior </title> (1987)</unittitle></did><c03 id="aspace_ref21_g5l" level="item"><did><unittitle>Research notecards</unittitle><container id="aspace_6a599720e8f1946dc5617095db3de07d" label="box" type="box">2-8</container></did><scopecontent id="aspace_e7c40eaa86298e254c9b513cc0359a56"><head>Scope and Contents note</head><p>Introduction; Pre-1848; Post-Mexican War; Coming of War; Williamsburg; Promotion to Brigadier General; Mechanicsville; Gaines' Mill; Frayser's Farm; End of Seven Days' Campaign; Cedar Mountain; Second Manassas; Antietam Creek; Fredericksburg; Chancellorsville; Gettysburg; Bristoe Station; Wilderness; Petersburg; 1865</p></scopecontent></c03><c03 id="aspace_ref23_iwc" level="item"><did><unittitle>Original typescript draft</unittitle><unitdate type="inclusive">[1985?]</unitdate><physdesc id="aspace_e19bcaaa23df2638a571446be1e78c7c">2 folders</physdesc><container id="aspace_b74c42337118041d3a51ea18d57da6bc" label="box-folder" type="box-folder">9:1
+</container></did></c03><c03 id="aspace_ref25_16m" level="item"><did><unittitle>Original typescript draft</unittitle><unitdate type="inclusive">[1985?]</unitdate><physdesc id="aspace_720ea4502e0bd2c19e7a8c5ca50aff3f">2 folders</physdesc><container id="aspace_a189c2118fc8de0f56a607b91dda45db" label="box-folder" type="box-folder">9:2
+</container></did></c03><c03 id="aspace_ref27_7pu" level="item"><did><unittitle>Preface - First draft</unittitle><unitdate type="inclusive">[1985]</unitdate><container id="aspace_cd61c59843c5b3091039d46f8fa140df" label="box-folder" type="box-folder">9:3
+</container></did><scopecontent id="aspace_3f84040ca8edbc0d3ec31905ccd74e55"><head>Scope and Contents note</head><p>with corrections by Elizabeth Robertson, Beth Brown, Richard Harwell and Random House</p></scopecontent></c03><c03 id="aspace_ref29_9ds" level="item"><did><unittitle>Chapter 1 - First working copy</unittitle><unitdate type="inclusive">Dec 29 [1985]</unitdate><container id="aspace_e5c42fc3c195d1aca6b5ccc99d64aed1" label="box-folder" type="box-folder">9:4
+</container></did><scopecontent id="aspace_7b85c537d16f8ff8750d98f82210c637"><head>Scope and Contents note</head><p>with corrections by Richard Harwell</p></scopecontent></c03><c03 id="aspace_ref31_wcw" level="item"><did><unittitle>Chapter 1 - Final working copy</unittitle><unitdate type="inclusive">Apr 18 1986</unitdate><container id="aspace_b9f9527962f2238eb8f317d5660a9e1e" label="box-folder" type="box-folder">9:5
+</container></did></c03><c03 id="aspace_ref32_ybe" level="item"><did><unittitle>Chapter 2 - First draft</unittitle><unitdate type="inclusive">Jan 5 1986</unitdate><container id="aspace_989df58bd66e966b9fe06f948f4db135" label="box-folder" type="box-folder">9:6
+</container></did><scopecontent id="aspace_ab016569ec6985611bdf040cdff106a0"><head>Scope and Contents note</head><p>with corrections by Richard Harwell</p></scopecontent></c03><c03 id="aspace_ref34_n67" level="item"><did><unittitle>Chapter 3 - First working copy</unittitle><unitdate type="inclusive">Feb 12 1986</unitdate><container id="aspace_a59967838f40f2333b1e7faa83a2c73e" label="box-folder" type="box-folder">9:7
+</container></did><scopecontent id="aspace_07c77dae4a981f93e14293896ee6bd58"><head>Scope and Contents note</head><p>with corrections by Beth Brown</p></scopecontent></c03><c03 id="aspace_ref36_wov" level="item"><did><unittitle>Chapter 3 - Final copy</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_5adf7b5fbe85a163f27aa2e64c29b9fe" label="box-folder" type="box-folder">9:8
+</container></did><scopecontent id="aspace_ed15f2fe280bdc04461136861b82c1fc"><head>Scope and Contents note</head><p>with corrections by Richard Harwell</p></scopecontent></c03><c03 id="aspace_ref38_0a7" level="item"><did><unittitle>Chapter 4 - Copy of original typescript draft</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_4480763680dd24a280b1c86a6bd47cff" label="box-folder" type="box-folder">9:9
+</container></did><scopecontent id="aspace_370b6ef2c63f7a0bb074249a1d24c2a9"><head>Scope and Contents note</head><p>with corrections by Ed Raus</p></scopecontent></c03><c03 id="aspace_ref40_eyr" level="item"><did><unittitle>Chapter 4 - First draft</unittitle><unitdate type="inclusive">Apr 8 1986</unitdate><container id="aspace_b81c6af0b3791dbd87fe448dede40f02" label="box-folder" type="box-folder">9:10
+</container></did><scopecontent id="aspace_18e7904a614f5f41909166deb1736b37"><head>Scope and Contents note</head><p>with corrections by Robert Krick and Ed Raus</p></scopecontent></c03><c03 id="aspace_ref42_2wq" level="item"><did><unittitle>Chapter 4 - Third draft</unittitle><unitdate type="inclusive">May 8 1986</unitdate><container id="aspace_6ebddf972f586876d0a718a341caabbb" label="box-folder" type="box-folder">9:11
+</container></did><scopecontent id="aspace_77789fa8558b7a95a1c716a2be6596fa"><head>Scope and Contents note</head><p>with corrections by Richard Harwell</p></scopecontent></c03><c03 id="aspace_ref44_w1o" level="item"><did><unittitle>Chapter 5 - Typescript draft</unittitle><unitdate type="inclusive">Apr 7 1986</unitdate><container id="aspace_8f7be2d6d19fd113ad357ad1c0e62690" label="box-folder" type="box-folder">9:12
+</container></did><scopecontent id="aspace_84cffdae32981867147e9bafe59a849f"><head>Scope and Contents note</head><p>with corrections by Dennis Frye</p></scopecontent></c03><c03 id="aspace_ref46_e8p" level="item"><did><unittitle>Chapter 5 - First working copy</unittitle><unitdate type="inclusive">Mar 28 1986</unitdate><container id="aspace_fc887c5c541c31e32c8fb609e1199349" label="box-folder" type="box-folder">9:13
+</container></did></c03><c03 id="aspace_ref47_g2h" level="item"><did><unittitle>Chapter 5 - Second draft</unittitle><unitdate type="inclusive">Apr 11 1986</unitdate><container id="aspace_a46b46b1b72b0ad440b6097e0c59acc2" label="box-folder" type="box-folder">9:14
+</container></did><scopecontent id="aspace_47ff5464bfd9a1bdf90bcaa079434dd4"><head>Scope and Contents note</head><p>with corrections by Richard Harwell</p></scopecontent></c03><c03 id="aspace_ref49_85i" level="item"><did><unittitle>Chapter 6 - First draft</unittitle><unitdate type="inclusive">Apr 24 1986</unitdate><container id="aspace_b94efc9bbb590ec9f9ce0e46cddf2d78" label="box-folder" type="box-folder">9:15
+</container></did><scopecontent id="aspace_ac9f836dd0520c40d63e160ac7b427ac"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref51_lw5" level="item"><did><unittitle>Chapter 7 - Copy of original typescript draft</unittitle><unitdate type="inclusive">[Apr 1986]</unitdate><container id="aspace_399332a9f9b67c91ae80cd78d7cf25e6" label="box-folder" type="box-folder">10:1
+</container></did><scopecontent id="aspace_6ac7648469b4fd764da9ea75139f08aa"><head>Scope and Contents note</head><p>with corrections by Elizabeth Robertson, Harry Pfanz and Beth Brown</p></scopecontent></c03><c03 id="aspace_ref53_yg2" level="item"><did><unittitle>Chapter 8 - First draft (incomplete)</unittitle><unitdate type="inclusive">May 16 1986</unitdate><physdesc id="aspace_d255692e08d6d99cf64570d62b8cef07">with corrections by Robert Krick</physdesc><container id="aspace_2ab0e2bb67ce6619bd978cd474640129" label="box-folder" type="box-folder">10:2
+</container></did></c03><c03 id="aspace_ref55_tmb" level="item"><did><unittitle>Chapter 9 - Copy of original typescript draft with corrections</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_b891725488030cd25854ea9a124eff4d" label="box-folder" type="box-folder">10:3
+</container></did></c03><c03 id="aspace_ref56_jo8" level="item"><did><unittitle>Chapter 9 - First draft</unittitle><unitdate type="inclusive">Jun 6 1986</unitdate><container id="aspace_2af62e5ef93cc740c6dd9cc24a0ccbe8" label="box-folder" type="box-folder">10:4
+</container></did><scopecontent id="aspace_f2b718d6da2de7648af7c579263b7747"><head>Scope and Contents note</head><p>with corrections by Beth Brown and Chris Calkins</p></scopecontent></c03><c03 id="aspace_ref58_nln" level="item"><did><unittitle>Complete draft</unittitle><unitdate type="inclusive">Jul 15 1986</unitdate><container id="aspace_6d43d085b05b62b2a6ba42f3aab907cc" label="box-folder" type="box-folder">10:5
+</container></did><scopecontent id="aspace_f5414a46fe9b4235190e38b415c9159c"><head>Scope and Contents note</head><p>with author's final corrections; 4 folders</p></scopecontent></c03><c03 id="aspace_ref60_7sr" level="item"><did><unittitle>Complete draft</unittitle><unitdate type="inclusive">Aug 29 1986</unitdate><container id="aspace_7ff710b17210c3bff0c8cf326822e3b9" label="box-folder" type="box-folder">10:6
+</container></did><scopecontent id="aspace_c9d443721c00b08d6924947ad1bb8beb"><head>Scope and Contents note</head><p>with publisher's final corrections; 2 folders</p></scopecontent></c03><c03 id="aspace_ref62_n48" level="item"><did><unittitle>Setting copy I</unittitle><unitdate type="inclusive">[1986]</unitdate><physdesc id="aspace_662a80749612e08cba8c71977111baf5">4 folders</physdesc><container id="aspace_2a0da001800e797cac04b0efb3fc907d" label="box-folder" type="box-folder">11:1
+</container></did></c03><c03 id="aspace_ref64_r1w" level="item"><did><unittitle>Master galleys</unittitle><unitdate type="inclusive">Dec 15 [1986]</unitdate><physdesc id="aspace_37cde1181435da7da076722d2a294489">2 folders</physdesc><container id="aspace_4de304762a25a96bb4ac06500cd7c576" label="box-folder" type="box-folder">11:2
+</container></did></c03><c03 id="aspace_ref66_c60" level="item"><did><unittitle>Master copy</unittitle><unitdate type="inclusive">Jan 23 [1987]</unitdate><physdesc id="aspace_454ab66cabc1a884541236312b5794d5">2 folders</physdesc><container id="aspace_a99c5e2380cbd1be175e905382f0dcdd" label="box-folder" type="box-folder">12:1
+</container></did></c03><c03 id="aspace_ref68_qmj" level="item"><did><unittitle>Galley proof</unittitle><unitdate type="inclusive">[1987]</unitdate><physdesc id="aspace_63f87aaa1f152deb038341bbe130d558">2 folders</physdesc><container id="aspace_5725494b6ed1f9caefc507bb16542dfd" label="box-folder" type="box-folder">12:2
+</container></did></c03><c03 id="aspace_ref70_m52" level="item"><did><unittitle>Setting copy II</unittitle><unitdate type="inclusive">[1987]</unitdate><physdesc id="aspace_70503e4f7b292ab58dc1140540bd343b">2 folders</physdesc><container id="aspace_b5d29503e0bc2dee4863294df8472127" label="box-folder" type="box-folder">12:3
+</container></did></c03><c03 id="aspace_ref72_s51" level="item"><did><unittitle>Unbound signatures</unittitle><unitdate type="inclusive">1987</unitdate><container id="aspace_0240a656a12e0fc10e5b24a0e0554df0" label="box-folder" type="box-folder">12:4
+</container></did></c03></c02><c02 id="aspace_ref73_z8p" level="subseries"><did><unittitle><title render="italic">Soldiers Blue and Gray </title> (1988)</unittitle></did><c03 id="aspace_ref74_ily" level="item"><did><unittitle>Outline</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_cf5f6aa10a1c44dc7e9b166e2915811a" label="box-folder" type="box-folder">13:1
+</container></did></c03><c03 id="aspace_ref75_o9y" level="item"><did><unittitle>Rough typescript</unittitle><unitdate type="inclusive">n.d.</unitdate><physdesc id="aspace_3fd1df5304c9b8b4956959d9bb0a6d8d">2 folders</physdesc><container id="aspace_4de40380039a615707fee7baed992911" label="box-folder" type="box-folder">13:2
+</container></did></c03><c03 id="aspace_ref77_dx3" level="item"><did><unittitle>First draft</unittitle><unitdate type="inclusive">1987</unitdate><physdesc id="aspace_91918d3c6408925a4ea7d8540850e61b">3 folders</physdesc><container id="aspace_588c3036f71755daa1b38b963d7a837d" label="box-folder" type="box-folder">13:3
+</container></did></c03><c03 id="aspace_ref79_uia" level="item"><did><unittitle>Revisions (chapters 6, 8-9 only)</unittitle><unitdate type="inclusive">1987</unitdate><container id="aspace_4878686f451c73d6d79e0f0b64571e78" label="box-folder" type="box-folder">13:4
+</container></did></c03><c03 id="aspace_ref80_d8b" level="item"><did><unittitle>Second draft</unittitle><unitdate type="inclusive">[1987]</unitdate><physdesc id="aspace_261b183cd1d40d03deda993943cd18f9">2 folders</physdesc><container id="aspace_77485f26a6ecb7cdbea294752506c465" label="box-folder" type="box-folder">13:5
+</container></did></c03><c03 id="aspace_ref82_82u" level="item"><did><unittitle>Third draft (chapter 1 only)</unittitle><unitdate type="inclusive">Sep 22 1987</unitdate><container id="aspace_0800b14741731ab95811e15a70999a0b" label="box-folder" type="box-folder">14:1
+</container></did></c03><c03 id="aspace_ref83_t5l" level="item"><did><unittitle>Final draft</unittitle><unitdate type="inclusive">May 13 1988</unitdate><container id="aspace_f989d835496d287c9ab633e5b72e4f04" label="box-folder" type="box-folder">14:2
+</container></did><scopecontent id="aspace_ceabe07f711e857030f7da83d4804f0c"><head>Scope and Contents note</head><p>with publisher's comments</p></scopecontent></c03></c02><c02 id="aspace_ref85_cou" level="subseries"><did><unittitle>"The Boy Artillerist: Letters of Colonel William Pegram" (1990)</unittitle></did><c03 id="aspace_ref86_jqf" level="item"><did><unittitle>Original typescript draft with author's corrections</unittitle><unitdate type="inclusive">[1990]</unitdate><container id="aspace_a39fd76b857f7a3e2d46565fe4c19e7e" label="box-folder" type="box-folder">14:3
+</container></did></c03></c02><c02 id="aspace_ref87_v1h" level="subseries"><did><unittitle><title render="italic">Civil War Virginia: Battleground For a Nation </title> (1991)</unittitle></did><c03 id="aspace_ref88_rof" level="item"><did><unittitle>Outline</unittitle><unitdate type="inclusive">[1989?]</unitdate><container id="aspace_bddb101cc46f0fc6666ddd1be9f28410" label="box-folder" type="box-folder">14:4
+</container></did></c03><c03 id="aspace_ref89_cuy" level="item"><did><unittitle>Original draft</unittitle><unitdate type="inclusive">1989</unitdate><physdesc id="aspace_ce760ba0f973e2feb8b2a7fef242be3b">2 folders</physdesc><container id="aspace_6ff1843798b0ceb357f76c4686d5cf61" label="box-folder" type="box-folder">14:5
+</container></did></c03><c03 id="aspace_ref91_4ss" level="item"><did><unittitle>First draft</unittitle><unitdate type="inclusive">1989</unitdate><container id="aspace_4c2f7e51ab29783af9d3827741c88f69" label="box-folder" type="box-folder">15:1
+</container></did><scopecontent id="aspace_b3359313b2a9deb23b70f29bebf41702"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref93_8xd" level="item"><did><unittitle>First draft</unittitle><unitdate type="inclusive">1989</unitdate><container id="aspace_8181d9597e8bcccbe85e4631befe56f8" label="box-folder" type="box-folder">15:2
+</container></did><scopecontent id="aspace_a5365ca08da92965f2e3284a55372f6a"><head>Scope and Contents note</head><p>with corrections by Ludwell Johnson (chapters 1-5 only)</p></scopecontent></c03><c03 id="aspace_ref95_iwx" level="item"><did><unittitle>First draft</unittitle><unitdate type="inclusive">1989</unitdate><container id="aspace_0301d81a2dc3c9e617f847764d8d1bea" label="box-folder" type="box-folder">15:3
+</container></did><scopecontent id="aspace_60098b6d825a3890ea743265a522fadd"><head>Scope and Contents note</head><p>with corrections by Charles Roland</p></scopecontent></c03><c03 id="aspace_ref97_kgh" level="item"><did><unittitle>Second draft</unittitle><unitdate type="inclusive">1990</unitdate><container id="aspace_5c3c939ab2311447c6c897ebf2f3cfdb" label="box-folder" type="box-folder">15:4
+</container></did><scopecontent id="aspace_b9465e092ae2bd56cd918fec268cf74b"><head>Scope and Contents note</head><p>with corrections by Gary Gallagher</p></scopecontent></c03><c03 id="aspace_ref99_33a" level="item"><did><unittitle>Third draft</unittitle><unitdate type="inclusive">1990</unitdate><container id="aspace_e2c85015a02f3a0519cacecba042fbe3" label="box-folder" type="box-folder">15:5
+</container></did></c03><c03 id="aspace_ref100_egf" level="item"><did><unittitle>Final draft</unittitle><unitdate type="inclusive">1990</unitdate><container id="aspace_b7f3ffec12c801342559c5d4aaab25f8" label="box-folder" type="box-folder">15:6
+</container></did><scopecontent id="aspace_781b55f4693cb05ed9e433bf64484176"><head>Scope and Contents note</head><p>with publisher's comments; 2 folders</p></scopecontent></c03><c03 id="aspace_ref102_7dt" level="item"><did><unittitle>Final draft</unittitle><unitdate type="inclusive">[1990]</unitdate><container id="aspace_65af149ff1ab621bc3506e650a066572" label="box-folder" type="box-folder">15:7
+</container></did><scopecontent id="aspace_2ac6792ee1f080c3e2f490c8db0b1d28"><head>Scope and Contents note</head><p>incorporating publisher's revisions</p></scopecontent></c03><c03 id="aspace_ref104_qlz" level="item"><did><unittitle>First galley proofs</unittitle><unitdate type="inclusive">May 15 1990</unitdate><container id="aspace_aaedeb16a2e7b62f8d7395dcd10f2edd" label="box-folder" type="box-folder">15:8
+</container></did></c03><c03 id="aspace_ref105_6wx" level="item"><did><unittitle>Final galley proofs</unittitle><unitdate type="inclusive">Aug 24 1990</unitdate></did><scopecontent id="aspace_c39dcbb4f11fbeb2e146658ba043dd15"><head>Scope and Contents note</head><p>see Oversize Materials, Box 36</p></scopecontent></c03></c02><c02 id="aspace_ref107_shg" level="subseries"><did><unittitle>"Stonewall Jackson: Molding the Man and Making a General" (1992)</unittitle></did><c03 id="aspace_ref108_1b0" level="item"><did><unittitle>Typescript draft</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_fdb263ed88be0a4fedb16261287719f0" label="box-folder" type="box-folder">16:1
+</container></did></c03><c03 id="aspace_ref109_p58" level="item"><did><unittitle>Publisher's layouts</unittitle><unitdate type="inclusive">1992</unitdate><container id="aspace_1002c80cfc2a13c4ee52cbf1623a5744" label="box-folder" type="box-folder">16:2
+</container></did></c03></c02><c02 id="aspace_ref110_lis" level="subseries"><did><unittitle><title render="italic">Civil War! America Becomes One Nation </title> (1992)</unittitle></did><c03 id="aspace_ref111_azz" level="item"><did><unittitle>Typescript text of <title render="italic">The Civil War </title> (published 1963)</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_59ad09b5822f6af5275521b8dfda9279" label="box-folder" type="box-folder">16:3
+</container></did></c03><c03 id="aspace_ref112_cln" level="item"><did><unittitle>Original manuscript</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_802a326cbff4acff9aa8d51b686d2754" label="box-folder" type="box-folder">16:4
+</container></did></c03><c03 id="aspace_ref113_md8" level="item"><did><unittitle>Original typescript draft</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_4ebbb070673d5a681f61c3f6f3342719" label="box-folder" type="box-folder">16:5
+</container></did></c03><c03 id="aspace_ref114_77a" level="item"><did><unittitle>First draft - Original version</unittitle><unitdate type="inclusive">Nov 13 1988</unitdate><physdesc id="aspace_4f14959a1aef07c394ae6c47b5a986e0">2 folders</physdesc><container id="aspace_0a4b3012283702faaaca51f74ecc397a" label="box-folder" type="box-folder">16:6
+</container></did></c03><c03 id="aspace_ref116_z00" level="item"><did><unittitle>First draft - Revised version</unittitle><unitdate type="inclusive">Dec 8 1988</unitdate><container id="aspace_70217f199e59109bd15df98e7e34e944" label="box-folder" type="box-folder">16:7
+</container></did></c03><c03 id="aspace_ref117_joe" level="item"><did><unittitle>Working copy</unittitle><unitdate type="inclusive">[Feb 1989?]</unitdate><container id="aspace_aff25aa7cff1963ffec75df8bab662a2" label="box-folder" type="box-folder">16:8
+</container></did></c03><c03 id="aspace_ref118_tyc" level="item"><did><unittitle>Draft sent to publisher</unittitle><unitdate type="inclusive">Feb 16 1990</unitdate><physdesc id="aspace_67510777e9657cd9b7f3140d3c037dfa">2 folders</physdesc><container id="aspace_ef3ec9a73459ba4aa4cdf796b0f65116" label="box-folder" type="box-folder">17:1
+</container></did></c03><c03 id="aspace_ref120_4gd" level="item"><did><unittitle>Final draft</unittitle><unitdate type="inclusive">May 1991</unitdate><container id="aspace_3e7f46d0b0671904de069edb1846cfae" label="box-folder" type="box-folder">17:2
+</container></did><scopecontent id="aspace_aa67de8d3fb805d484687d1d9ea4e458"><head>Scope and Contents note</head><p>with publisher's comments; 2 folders</p></scopecontent></c03><c03 id="aspace_ref122_3ld" level="item"><did><unittitle>First galley proofs</unittitle><unitdate type="inclusive">Oct 1991</unitdate><container id="aspace_d5f623963d2567c97193a3361b109bc5" label="box-folder" type="box-folder">17:3
+</container></did></c03><c03 id="aspace_ref123_al3" level="item"><did><unittitle>Second galley proofs</unittitle><unitdate type="inclusive">Nov 1991</unitdate><container id="aspace_6e29bbbe459cdff99ac2f6908fbfffc4" label="box-folder" type="box-folder">17:4
+</container></did></c03><c03 id="aspace_ref124_8nr" level="item"><did><unittitle>Map labels</unittitle><unitdate type="inclusive">n.d.</unitdate></did><scopecontent id="aspace_cd63334a96f04d3538d78477f01e1c9e"><head>Scope and Contents note</head><p>see Oversize Materials, Box 36</p></scopecontent></c03></c02><c02 id="aspace_ref126_ovh" level="subseries"><did><unittitle><title render="italic">The Civil War's Common Soldiers </title> (1994)</unittitle></did><c03 id="aspace_ref127_a60" level="item"><did><unittitle>First draft</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_cf59f80348d28e28715cba2aa96ac683" label="box-folder" type="box-folder">17:5
+</container></did></c03><c03 id="aspace_ref128_b39" level="item"><did><unittitle>Second draft</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_a3a97943c557296f7294b646bf02cbe1" label="box-folder" type="box-folder">17:6
+</container></did></c03><c03 id="aspace_ref129_sr8" level="item"><did><unittitle>Final draft</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_d2048c680d2b79f22aafd822a8453e30" label="box-folder" type="box-folder">17:7
+</container></did></c03></c02><c02 id="aspace_ref130_an4" level="subseries"><did><unittitle><title render="italic">Jackson &amp; Lee: Legends in Gray </title> (1995)</unittitle></did><c03 id="aspace_ref131_vwc" level="item"><did><unittitle>Typescript draft of chapter 3 ("Virginia Orphan")</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_a8cbae933da322b2b08c85d24327680f" label="box-folder" type="box-folder">17:8
+</container></did></c03></c02><c02 id="aspace_ref132_8xg" level="subseries"><did><unittitle><title render="italic">Stonewall Jackson: The Man, The Soldier, The Legend </title> (1997)</unittitle></did><c03 id="aspace_ref133_o6a" level="item"><did><unittitle>Original working draft - Introduction</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_aef53e39b1c7ae16ab9541b806dec886" label="box-folder" type="box-folder">18:1
+</container></did></c03><c03 id="aspace_ref134_5jl" level="item"><did><unittitle>Original working draft - Chapter 1</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_8c1187810dcf70ca32cba7b770a61067" label="box-folder" type="box-folder">18:2
+</container></did></c03><c03 id="aspace_ref135_rvn" level="item"><did><unittitle>Original working draft - Chapter 2</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_3bdbf426c9396b7c84b31934b1a568ea" label="box-folder" type="box-folder">18:3
+</container></did></c03><c03 id="aspace_ref136_78b" level="item"><did><unittitle>Original working draft - Chapter 3</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_22c269573e8ca3bbf100e408190573a6" label="box-folder" type="box-folder">18:4
+</container></did></c03><c03 id="aspace_ref137_7ou" level="item"><did><unittitle>Original working draft - Chapter 4</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_9485d889ae4a34dc913e6a97ba51d383" label="box-folder" type="box-folder">18:5
+</container></did></c03><c03 id="aspace_ref138_oc7" level="item"><did><unittitle>Original working draft - Chapter 5</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_8e17e5e3356c5088c2b68c3f9826813c" label="box-folder" type="box-folder">18:6
+</container></did></c03><c03 id="aspace_ref139_me6" level="item"><did><unittitle>Original working draft - Chapter 6</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_d01547f9f23d2ef4e97ec973e9922234" label="box-folder" type="box-folder">18:7
+</container></did></c03><c03 id="aspace_ref140_zhd" level="item"><did><unittitle>Original working draft - Chapter 7</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_242d9877876210b1f8fb3937a9a44407" label="box-folder" type="box-folder">19:1
+</container></did></c03><c03 id="aspace_ref141_l4v" level="item"><did><unittitle>Original working draft - Chapter 8</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_79c5a5f599282fac57c1b177017fb84c" label="box-folder" type="box-folder">19:2
+</container></did></c03><c03 id="aspace_ref142_m9h" level="item"><did><unittitle>Original working draft - Chapter 9</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_9ba076c93218a7ae3e71b8cda4f242a9" label="box-folder" type="box-folder">19:3
+</container></did></c03><c03 id="aspace_ref143_h19" level="item"><did><unittitle>Original working draft - Chapter 10</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_ab108893f8a0a1f79713fbae27584b9b" label="box-folder" type="box-folder">19:4
+</container></did></c03><c03 id="aspace_ref144_mvl" level="item"><did><unittitle>Original working draft - Chapter 11</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_3b660d4360840d5cd984e4fadae09353" label="box-folder" type="box-folder">19:5
+</container></did></c03><c03 id="aspace_ref145_hs3" level="item"><did><unittitle>Original working draft - Chapter 12</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_e7ca3926b5b577ed40b09c8a9e1b0e1a" label="box-folder" type="box-folder">19:6
+</container></did></c03><c03 id="aspace_ref146_p0k" level="item"><did><unittitle>Original working draft - Chapter 13</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_47fc9717850591589f8f16cacb0f6d8b" label="box-folder" type="box-folder">20:1
+</container></did></c03><c03 id="aspace_ref147_xpe" level="item"><did><unittitle>Original working draft - Chapter 14</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_2a27b0c5ad5a4161c785bcffebedea30" label="box-folder" type="box-folder">20:2
+</container></did></c03><c03 id="aspace_ref148_lci" level="item"><did><unittitle>Original working draft - Chapter 15</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_abb3a2c4131dd165e536e4bd46f231c3" label="box-folder" type="box-folder">20:3
+</container></did></c03><c03 id="aspace_ref149_itm" level="item"><did><unittitle>Original working draft - Chapter 16</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_a9dcde308300fe802522c69e2e09e055" label="box-folder" type="box-folder">20:4
+</container></did></c03><c03 id="aspace_ref150_z4q" level="item"><did><unittitle>Original working draft - Chapter 17</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_4d60138818677c2d4880a8811f7c34fb" label="box-folder" type="box-folder">20:5
+</container></did></c03><c03 id="aspace_ref151_gbm" level="item"><did><unittitle>Original working draft - Chapter 18</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_93e11cd27732ec26c8c253dc0da68faf" label="box-folder" type="box-folder">20:6
+</container></did></c03><c03 id="aspace_ref152_w5g" level="item"><did><unittitle>Original working draft - Chapter 19</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_e179a130ef3b47de8205ad8ae7e8e984" label="box-folder" type="box-folder">20:7
+</container></did></c03><c03 id="aspace_ref153_oja" level="item"><did><unittitle>Original working draft - Chapter 20</unittitle><unitdate type="inclusive">1993</unitdate><physdesc id="aspace_d691db6c8cf1726b6096ea3f3ec73038">2 folders</physdesc><container id="aspace_921520468f11c3ccc56f7fc6e6254c30" label="box-folder" type="box-folder">20:8
+</container></did></c03><c03 id="aspace_ref155_n67" level="item"><did><unittitle>Original working draft - Chapter 21</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_0df02a7c0ed9975989ffe34c3d80136b" label="box-folder" type="box-folder">21:1
+</container></did></c03><c03 id="aspace_ref156_ygu" level="item"><did><unittitle>Original working draft - Chapter 22</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_8f916d9c486935ceac0d3635fbb1b427" label="box-folder" type="box-folder">21:2
+</container></did></c03><c03 id="aspace_ref157_fgh" level="item"><did><unittitle>Original working draft - Chapter 23</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_2e9dcafed9446175e3af79b97efe9abe" label="box-folder" type="box-folder">21:3
+</container></did></c03><c03 id="aspace_ref158_v3m" level="item"><did><unittitle>Original working draft - Chapter 24</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_390af81657223a81f7a06d390eddd990" label="box-folder" type="box-folder">21:4
+</container></did></c03><c03 id="aspace_ref159_9i3" level="item"><did><unittitle>Original working draft - Chapter 25</unittitle><unitdate type="inclusive">1993</unitdate><container id="aspace_0aa02010d98afd5872f34b505b3d6630" label="box-folder" type="box-folder">21:5
+</container></did></c03><c03 id="aspace_ref160_0e7" level="item"><did><unittitle>Working draft - Chapter 3</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_2e596d8f3ce7cfe78031a29fba9aca0c" label="box-folder" type="box-folder">21:6
+</container></did><scopecontent id="aspace_93f294936dd7ffb826546a535580e1d1"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref162_6jk" level="item"><did><unittitle>Working draft - Chapters 5-7</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_3cf2f821d5e9ca2a97577f1c69a76161" label="box-folder" type="box-folder">21:7
+</container></did><scopecontent id="aspace_676b8ca91f312f7ca30f910e3b3bd040"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref164_0g3" level="item"><did><unittitle>Working draft - Chapters 8-9</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_e92f3067ef53cbbc9b9c556a644b59b3" label="box-folder" type="box-folder">21:8
+</container></did><scopecontent id="aspace_1c4cefb401cbf4765b741194935fec0d"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref166_u2u" level="item"><did><unittitle>Working draft - Chapter 10</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_e7d7fa4b008ffad102355916e21e77d0" label="box-folder" type="box-folder">21:9
+</container></did><scopecontent id="aspace_450aeaa686277a60f8a0db3a1dcd7ec4"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref168_l39" level="item"><did><unittitle>Working draft - Chapter 11</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_9880052cfab93fa25ef955497dd64a59" label="box-folder" type="box-folder">21:10
+</container></did><scopecontent id="aspace_e547bf66e2327246d0265aa0fbb1ac83"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref170_82y" level="item"><did><unittitle>Working draft - Chapter 12</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_e036dd257c853ea11792d4f77fb6bf73" label="box-folder" type="box-folder">22:1
+</container></did><scopecontent id="aspace_3d4ee4934fd784eceb857ee5f4c9f805"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref172_fdd" level="item"><did><unittitle>Working draft - Chapter 13</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_3803c350a8807f9d2675d0cba4fd1d03" label="box-folder" type="box-folder">22:2
+</container></did><scopecontent id="aspace_fb963eeb0e37d5e9b7934a5d6bb00954"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref174_v90" level="item"><did><unittitle>Working draft - Chapter 14</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_db0176f453fdd2403998d3743adaab91" label="box-folder" type="box-folder">22:3
+</container></did><scopecontent id="aspace_bc784e96d26a795138bf95613f2350e0"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref176_arj" level="item"><did><unittitle>Working draft - Chapter 15</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_32139941f34d3b2ed0cf8f4b9347db49" label="box-folder" type="box-folder">22:4
+</container></did><scopecontent id="aspace_900a7b4a04a18fd0e8fcf8a114ade1ea"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref178_zmg" level="item"><did><unittitle>Working draft - Chapter 16-17</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_3ccc846d6361ff3b7fbc37872991dcec" label="box-folder" type="box-folder">22:5
+</container></did><scopecontent id="aspace_780d0f244a2bab2ff1724dff8c8773f1"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref180_x83" level="item"><did><unittitle>Working draft - Chapter 18</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_346546d75b76f7b641e9aac12e285d60" label="box-folder" type="box-folder">22:6
+</container></did><scopecontent id="aspace_68f1ab461cc547a6fbbaa3b37d963cd4"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref182_p6t" level="item"><did><unittitle>Working draft - Chapter 19</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_5c53bd7c376fd7dfef07dbd4f7516eb9" label="box-folder" type="box-folder">22:7
+</container></did><scopecontent id="aspace_46473228e338e7d2407f748081db5bd0"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref184_8so" level="item"><did><unittitle>Working draft - Chapter 20</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_88cd9825e6e2f43f48c50fc3bfbc8dc8" label="box-folder" type="box-folder">22:8
+</container></did><scopecontent id="aspace_3932d384cbf8d75f6d77db6cb1fbdc45"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref186_c5w" level="item"><did><unittitle>Working draft - Chapter 21</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_81a7116357af655754dc09bad5c97ca5" label="box-folder" type="box-folder">22:9
+</container></did><scopecontent id="aspace_46013e624e84358a06adc48663c91423"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref188_ukz" level="item"><did><unittitle>Working draft - Chapter 23</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_f4cf11cd130147940c16f4c0d1668ca2" label="box-folder" type="box-folder">22:10
+</container></did><scopecontent id="aspace_8aabfb5ac7d5caf901d4a011195fca3b"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref190_fws" level="item"><did><unittitle>Working draft - Chapter 23</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_3896fb689c22dda6ee64c6e08dd1c540" label="box-folder" type="box-folder">23:1
+</container></did><scopecontent id="aspace_905c1e75269a7edcad12c8bb773b20fa"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref192_fup" level="item"><did><unittitle>Working draft - Chapters 24-25</unittitle><unitdate type="inclusive">1993-1994</unitdate><container id="aspace_5dfc9ad3acf2507a82430a83126b9ed5" label="box-folder" type="box-folder">23:2
+</container></did><scopecontent id="aspace_2b74b3e910f5cf105bc579a540391893"><head>Scope and Contents note</head><p>with corrections by Lowell Reidenbaugh</p></scopecontent></c03><c03 id="aspace_ref194_i21" level="item"><did><unittitle>First draft - Chapters 1-2</unittitle><container id="aspace_4b4f67930af221670838d877c0748eeb" label="box-folder" type="box-folder">23:3
+</container></did><scopecontent id="aspace_2f8c1b47a3c989265ed67a3781316bf5"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref196_cxt" level="item"><did><unittitle>First draft - Chapters 3-4</unittitle><container id="aspace_d87643b633d6097acc0ff67f5b080baa" label="box-folder" type="box-folder">23:4
+</container></did><scopecontent id="aspace_a486db57d608a5e9bfc412150d90f9f4"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref198_bsg" level="item"><did><unittitle>First draft - Chapters 5-6</unittitle><container id="aspace_0b368c82342550315957b1c4e497b09f" label="box-folder" type="box-folder">23:5
+</container></did><scopecontent id="aspace_3551722ebb22da9b449c95535d058849"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref200_ets" level="item"><did><unittitle>First draft - Chapters 7-8</unittitle><container id="aspace_48d5b7f543df5d152696f2834934865e" label="box-folder" type="box-folder">23:6
+</container></did><scopecontent id="aspace_3043feb8ff01e8a0c744d7b5d744f1a1"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref202_m3z" level="item"><did><unittitle>First draft - Chapter 9</unittitle><container id="aspace_264f8f165c6f9bd0cfdf86c35e3c0dc2" label="box-folder" type="box-folder">23:7
+</container></did><scopecontent id="aspace_697c09649d20891f8b20071b683363f0"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref204_w26" level="item"><did><unittitle>First draft - Chapter 10</unittitle><container id="aspace_6fc8bef4985876a90349acdbed131ef3" label="box-folder" type="box-folder">23:8
+</container></did><scopecontent id="aspace_2de290ce083a841d863df897d96816cb"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref206_z2v" level="item"><did><unittitle>First draft - Chapter 11</unittitle><container id="aspace_9d3fab203b6b424e9d6a2e1ddfc7e1c2" label="box-folder" type="box-folder">23:9
+</container></did><scopecontent id="aspace_58b2b1d9070b7021adadc57f441ae643"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref208_mfm" level="item"><did><unittitle>First draft - Chapter 12</unittitle><container id="aspace_1ebb6c5f1c6d0c0039fec1f1b7dd4e4e" label="box-folder" type="box-folder">24:1
+</container></did><scopecontent id="aspace_aa4972a23d55c18e35cc4e354ea8e722"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref210_227" level="item"><did><unittitle>First draft - Chapter 13</unittitle><container id="aspace_20c9ffd24ba42a10e14032f9a12800c3" label="box-folder" type="box-folder">24:2
+</container></did><scopecontent id="aspace_dd51c3c83024853d9ab0751f3a1fb78d"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref212_txo" level="item"><did><unittitle>First draft - Chapters 14-15</unittitle><container id="aspace_3d62aebbe1000bbdefd6731b4d1f584e" label="box-folder" type="box-folder">24:3
+</container></did><scopecontent id="aspace_21eb95002a361b817121a9cf8222ff4f"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref214_wgk" level="item"><did><unittitle>First draft - Chapters 16-17</unittitle><container id="aspace_d227f7772e74c7f42ac550ebbbb78c46" label="box-folder" type="box-folder">24:4
+</container></did><scopecontent id="aspace_a99f16b9cbac21435490dacc5470c36c"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref216_q89" level="item"><did><unittitle>First draft - Chapter 18</unittitle><container id="aspace_746175f3c21662b6adb3e34dd42c4573" label="box-folder" type="box-folder">24:5
+</container></did><scopecontent id="aspace_7dc424dd801a261a0aef0b6ef9aa380c"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref218_7p9" level="item"><did><unittitle>First draft - Chapter 19</unittitle><container id="aspace_99298a17929c072bc1a251ffd103d419" label="box-folder" type="box-folder">24:6
+</container></did><scopecontent id="aspace_d59063e435bb81577bd6518bd37202f4"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref220_qix" level="item"><did><unittitle>First draft - Chapter 20</unittitle><container id="aspace_1e75556745513611c96b68e21413b4a8" label="box-folder" type="box-folder">24:7
+</container></did><scopecontent id="aspace_6842097ba0367ac749cf10e15bed39f1"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref222_5v2" level="item"><did><unittitle>First draft - Chapter 21</unittitle><container id="aspace_e9bb1ddfd29b4bb1645b58f54e7e78f7" label="box-folder" type="box-folder">24:8
+</container></did><scopecontent id="aspace_f4f16bc944c3bd5d8a92241251add6b5"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref224_io8" level="item"><did><unittitle>First draft - Chapter 22</unittitle><container id="aspace_7df6576a633cc0f97c6e7aa211dee6a4" label="box-folder" type="box-folder">24:9
+</container></did><scopecontent id="aspace_2e919199848aa1026689cec781a52b95"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref226_50u" level="item"><did><unittitle>First draft - Chapter 23-24</unittitle><container id="aspace_13667ebf5c28c699558c247a9546db81" label="box-folder" type="box-folder">25:1
+</container></did><scopecontent id="aspace_544f875893cbe27900884b2a07a973cb"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref228_8hn" level="item"><did><unittitle>First draft - Chapter 25, Abbreviations and Bibliography</unittitle><container id="aspace_a86dc76057469217044e776aafe6d244" label="box-folder" type="box-folder">25:2
+</container></did><scopecontent id="aspace_6ab449a7a91e55f7b8ea1a4b7ebb3534"><head>Scope and Contents note</head><p>with corrections by author</p></scopecontent></c03><c03 id="aspace_ref230_po6" level="item"><did><unittitle>First draft - Chapters 5-6</unittitle><container id="aspace_20f5dde2d99d5fdfbb230c8598fcae7f" label="box-folder" type="box-folder">25:3
+</container></did><scopecontent id="aspace_21be3418dc64c2ae190118863a04fbdc"><head>Scope and Contents note</head><p>with corrections by unidentified person</p></scopecontent></c03><c03 id="aspace_ref232_b83" level="item"><did><unittitle>First draft - Chapters 7-8</unittitle><container id="aspace_48b2a00ee3c9649f0c7509af6309ee4c" label="box-folder" type="box-folder">25:4
+</container></did><scopecontent id="aspace_94373705d4b5cf10d7160935e5ba0e6b"><head>Scope and Contents note</head><p>with corrections by unidentified person</p></scopecontent></c03><c03 id="aspace_ref234_xl2" level="item"><did><unittitle>Draft submitted to publisher - Chapters 1-2</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_fcafba64b9ee292277d77ad2c70a0a74" label="box-folder" type="box-folder">25:5
+</container></did></c03><c03 id="aspace_ref235_mik" level="item"><did><unittitle>Draft submitted to publisher - Chapters 3-4</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_0432a8f30710ce432cb7cd637ad33aa1" label="box-folder" type="box-folder">25:6
+</container></did></c03><c03 id="aspace_ref236_4xa" level="item"><did><unittitle>Draft submitted to publisher - Chapters 5-6</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_076da2a0a8cc6588de9c395e7669da03" label="box-folder" type="box-folder">25:7
+</container></did></c03><c03 id="aspace_ref237_u9u" level="item"><did><unittitle>Draft submitted to publisher - Chapter 7</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_00da6ffb0e82a8e24258d221fe4146b5" label="box-folder" type="box-folder">25:8
+</container></did></c03><c03 id="aspace_ref238_ytj" level="item"><did><unittitle>Draft submitted to publisher - Chapters 8-9</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_a021c0d67bbd0cddcb2db73218b55e94" label="box-folder" type="box-folder">26:1
+</container></did></c03><c03 id="aspace_ref239_eri" level="item"><did><unittitle>Draft submitted to publisher - Chapters 10-11</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_22ff8a4c8d7e5cc55047148273486686" label="box-folder" type="box-folder">26:2
+</container></did></c03><c03 id="aspace_ref240_omn" level="item"><did><unittitle>Draft submitted to publisher - Chapters 12-13</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_33a5ffb64e408c123b9716f8b4f5d1f8" label="box-folder" type="box-folder">26:3
+</container></did></c03><c03 id="aspace_ref241_r97" level="item"><did><unittitle>Draft submitted to publisher - Chapters 14-15</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_1ca20de13151fd0293c8df03f5a41d44" label="box-folder" type="box-folder">26:4
+</container></did></c03><c03 id="aspace_ref242_yew" level="item"><did><unittitle>Draft submitted to publisher - Chapter 16</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_fcefdd67c9bb8406cf33fad97d222963" label="box-folder" type="box-folder">26:5
+</container></did></c03><c03 id="aspace_ref243_yix" level="item"><did><unittitle>Draft submitted to publisher - Chapters 17-18</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_fa688d4791638b76546f758d022b5511" label="box-folder" type="box-folder">26:6
+</container></did></c03><c03 id="aspace_ref244_l8d" level="item"><did><unittitle>Draft submitted to publisher - Chapter 19</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_2fe72afba8b4ec11e5b0d747b4180ff4" label="box-folder" type="box-folder">26:7
+</container></did></c03><c03 id="aspace_ref245_nhx" level="item"><did><unittitle>Draft submitted to publisher - Chapter 20</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_94b7f4b1f70c82dbfd33205ce83169db" label="box-folder" type="box-folder">26:8
+</container></did></c03><c03 id="aspace_ref246_sly" level="item"><did><unittitle>Draft submitted to publisher - Chapters 21-22</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_54dd85632014d4b62b50a6bccf1f0807" label="box-folder" type="box-folder">27:1
+</container></did></c03><c03 id="aspace_ref247_4q5" level="item"><did><unittitle>Draft submitted to publisher - Chapter 23</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_97006c8448dd570c44a2b987a984e549" label="box-folder" type="box-folder">27:2
+</container></did></c03><c03 id="aspace_ref248_vwn" level="item"><did><unittitle>Draft submitted to publisher - Endnotes, Foreward-Chapter 12</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_2132eef6153ae80934735de0a3999cd4" label="box-folder" type="box-folder">27:3
+</container></did></c03><c03 id="aspace_ref249_345" level="item"><did><unittitle>Draft submitted to publisher - Endnotes, Chapters 13-25</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_3df07c9ce7016f6f96a23488488e6317" label="box-folder" type="box-folder">27:4
+</container></did></c03><c03 id="aspace_ref250_rtc" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 1</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_3f32d977fef28f668400becd86f35263" label="box-folder" type="box-folder">27:5
+</container></did></c03><c03 id="aspace_ref251_rjr" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 2</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_8b5f31007f4c01db44dda89a664a2a66" label="box-folder" type="box-folder">27:6
+</container></did></c03><c03 id="aspace_ref252_nnm" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 3</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_0d00d5905d8c2d2b3ccdb14f74c9c708" label="box-folder" type="box-folder">27:7
+</container></did></c03><c03 id="aspace_ref253_tzg" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapters 4-5</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_efaa22ee574b0fd2142253611c212bcf" label="box-folder" type="box-folder">28:1
+</container></did></c03><c03 id="aspace_ref254_tx3" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapters 6-7</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_d045da1ba81f9c018ddd3113cb3bfce3" label="box-folder" type="box-folder">28:2
+</container></did></c03><c03 id="aspace_ref255_e9k" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 8</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_7f0cc80bb9f12942f362edf5fd6aef5c" label="box-folder" type="box-folder">28:3
+</container></did></c03><c03 id="aspace_ref256_td3" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 9</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_15793aee6cfde070554bf02c6849e219" label="box-folder" type="box-folder">28:4
+</container></did></c03><c03 id="aspace_ref257_hhm" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 10</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_d474240437e2285908124d450720013e" label="box-folder" type="box-folder">28:5
+</container></did></c03><c03 id="aspace_ref258_ek3" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 11</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_f2b76f0348d6641c287330ead097eadd" label="box-folder" type="box-folder">28:6
+</container></did></c03><c03 id="aspace_ref259_u5m" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 12</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_44a6cb97fda0c2b597e090de54c9a6ae" label="box-folder" type="box-folder">28:7
+</container></did></c03><c03 id="aspace_ref260_co8" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 13</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_904e27f7433a1dd085e90afd6088aba1" label="box-folder" type="box-folder">28:8
+</container></did></c03><c03 id="aspace_ref261_yqi" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 14</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_e97ce156baff5cc255a429fd5602c464" label="box-folder" type="box-folder">29:1
+</container></did></c03><c03 id="aspace_ref262_tcd" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapters 15-16</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_fb4e2705aae12419e90a09e364eb9c0a" label="box-folder" type="box-folder">29:2
+</container></did></c03><c03 id="aspace_ref263_ose" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapters 17-18</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_b2d40bca9b52f75fa20beb3aa6950dfd" label="box-folder" type="box-folder">29:3
+</container></did></c03><c03 id="aspace_ref264_1xs" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 19</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_14f32c9c2586e7aa4d3aa62975629f72" label="box-folder" type="box-folder">29:4
+</container></did></c03><c03 id="aspace_ref265_rde" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 20</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_2707648102cc0a014b673e56f750e8c1" label="box-folder" type="box-folder">29:5
+</container></did></c03><c03 id="aspace_ref266_xyv" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 21</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_04b955a2a1cddcbe7a419d2a4266bcaa" label="box-folder" type="box-folder">29:6
+</container></did></c03><c03 id="aspace_ref267_1q7" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapter 22</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_ebc5cd491175abd9fdbc1bad9ea3c7b2" label="box-folder" type="box-folder">29:7
+</container></did></c03><c03 id="aspace_ref268_y37" level="item"><did><unittitle>Publisher's laser proof with corrections - Chapters 23-25</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_6d972bb6e7be0da5c9021ebe41fc494e" label="box-folder" type="box-folder">29:8
+</container></did></c03><c03 id="aspace_ref269_1d6" level="item"><did><unittitle>Publisher's laser proof with corrections - Bibliography</unittitle><unitdate type="inclusive">Feb 1996</unitdate><container id="aspace_cccce8213d3b0059c20867c8ac828b47" label="box-folder" type="box-folder">29:9
+</container></did></c03><c03 id="aspace_ref270_hg6" level="item"><did><unittitle>Working proof [?] - Chapters 1-2</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_f03a05da4f8457ee7ef77b73d6790571" label="box-folder" type="box-folder">30:1
+</container></did></c03><c03 id="aspace_ref271_brm" level="item"><did><unittitle>Working proof [?] - Chapters 3-5</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_9ece51a70755788dda5aa432fd6655b8" label="box-folder" type="box-folder">30:2
+</container></did></c03><c03 id="aspace_ref272_7cu" level="item"><did><unittitle>Working proof [?] - Chapters 6-8</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_01d8a009248a1965bead4347a33d3624" label="box-folder" type="box-folder">30:3
+</container></did></c03><c03 id="aspace_ref273_9a2" level="item"><did><unittitle>Working proof [?] - Chapters 9-11</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_373525ebe3778990068f78b9399312ef" label="box-folder" type="box-folder">30:4
+</container></did></c03><c03 id="aspace_ref274_h74" level="item"><did><unittitle>Working proof [?] - Chapters 12-14</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_cbd2b70b285c0c8aa5a55a9525799955" label="box-folder" type="box-folder">30:5
+</container></did></c03><c03 id="aspace_ref275_dij" level="item"><did><unittitle>Working proof [?] - Chapters 15-17</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_bd66c317599d2794265cf03de3ba7df5" label="box-folder" type="box-folder">30:6
+</container></did></c03><c03 id="aspace_ref276_ghc" level="item"><did><unittitle>Working proof [?] - Chapters 18-19</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_a8ccb5f0dda510296bb4e26ceb230cdc" label="box-folder" type="box-folder">31:1
+</container></did></c03><c03 id="aspace_ref277_s99" level="item"><did><unittitle>Working proof [?] - Chapters 20-21</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_b9b274ee5aecfec65d9de69091e18d2d" label="box-folder" type="box-folder">31:2
+</container></did></c03><c03 id="aspace_ref278_lwt" level="item"><did><unittitle>Working proof [?] - Chapters 22-24</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_a428db75a26ac359d5bb5fc733208515" label="box-folder" type="box-folder">31:3
+</container></did></c03><c03 id="aspace_ref279_fdf" level="item"><did><unittitle>Working proof [?] - Chapters 25, Abbreviations and Bibliography</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_ec7b5b836f4e617f7e01393d675f7e17" label="box-folder" type="box-folder">31:4
+</container></did></c03><c03 id="aspace_ref280_6ge" level="item"><did><unittitle>Working proof [?] - Endnotes, Chapters 1-13</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_6298879a7a976d7c0d11c4cd7a79368b" label="box-folder" type="box-folder">31:5
+</container></did></c03><c03 id="aspace_ref281_euu" level="item"><did><unittitle>Working proof [?] - Endnotes, Chapters 14-25</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_c16d21898eb0e24773018281bd862e43" label="box-folder" type="box-folder">31:6
+</container></did></c03><c03 id="aspace_ref282_0bk" level="item"><did><unittitle>Working copies for Abbreviations and Bibliography sections</unittitle><unitdate type="inclusive">[1996]</unitdate><container id="aspace_2d11d6f4c1a94ec22dfc04912eccdee9" label="box-folder" type="box-folder">31:6
+</container></did></c03><c03 id="aspace_ref283_s4v" level="item"><did><unittitle>Galley proof (author's copy) - Chapters 1-5</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_419431db41aed17025542c7dd643d790" label="box-folder" type="box-folder">32:1
+</container></did></c03><c03 id="aspace_ref284_bhl" level="item"><did><unittitle>Galley proof (author's copy) - Chapters 6-10</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_c2c39141b6cd595563481c3068da1e0b" label="box-folder" type="box-folder">32:2
+</container></did></c03><c03 id="aspace_ref285_vz9" level="item"><did><unittitle>Galley proof (author's copy) - Chapters 11-14</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_18e41fe80f8969a81014151dd9129733" label="box-folder" type="box-folder">32:3
+</container></did></c03><c03 id="aspace_ref286_fcr" level="item"><did><unittitle>Galley proof (author's copy) - Chapters 15-19</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_92ca50fc92c58277f200be087040568c" label="box-folder" type="box-folder">32:4
+</container></did></c03><c03 id="aspace_ref287_dbi" level="item"><did><unittitle>Galley proof (author's copy) - Chapters 20-23</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_95e4aac85335c321d4799ce075424915" label="box-folder" type="box-folder">32:5
+</container></did></c03><c03 id="aspace_ref288_8m8" level="item"><did><unittitle>Galley proof (author's copy) - Chapters 24-25, Bibliography and End Notes</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_02b3004e97ef86cc12939cb90a64f63e" label="box-folder" type="box-folder">32:6
+</container></did></c03><c03 id="aspace_ref289_0te" level="item"><did><unittitle>Galley proof (master copy) - Chapters 1-5</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_a0d7457f5416bfed5df2cec2ef44db20" label="box-folder" type="box-folder">32:7
+</container></did></c03><c03 id="aspace_ref290_gy4" level="item"><did><unittitle>Galley proof (master copy) - Chapters 6-10</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_17499badd5ccc66e73aefafdbc1fd72c" label="box-folder" type="box-folder">33:1
+</container></did></c03><c03 id="aspace_ref291_b8v" level="item"><did><unittitle>Galley proof (master copy) - Chapters 11-15</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_b86c7c32d4f42be712799afb0a133ab3" label="box-folder" type="box-folder">33:2
+</container></did></c03><c03 id="aspace_ref292_x0v" level="item"><did><unittitle>Galley proof (master copy) - Chapters 15-19</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_a70499fa2990ecf8631f909cf9d43e29" label="box-folder" type="box-folder">33:3
+</container></did></c03><c03 id="aspace_ref293_jny" level="item"><did><unittitle>Galley proof (master copy) - Chapters 20-23</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_65bec46803ddc8b73e972376e55c5279" label="box-folder" type="box-folder">33:4
+</container></did></c03><c03 id="aspace_ref294_ld7" level="item"><did><unittitle>Galley proof (master copy) - Chapters 24-25, Bibliography and End Notes</unittitle><unitdate type="inclusive">Jul 15 1996</unitdate><container id="aspace_990ee089d5e2403edf269f0b03de869a" label="box-folder" type="box-folder">33:5
+</container></did></c03><c03 id="aspace_ref295_ooy" level="item"><did><unittitle>Revisions to galley proof - First set</unittitle><unitdate type="inclusive">Sep 25 1996</unitdate><container id="aspace_c673211c7e8944a0f493ea3f16860ef8" label="box-folder" type="box-folder">33:6
+</container></did></c03><c03 id="aspace_ref296_2gf" level="item"><did><unittitle>Revisions to galley proof - Second set</unittitle><unitdate type="inclusive">Dec 3 1996</unitdate><container id="aspace_b73eb76995a0e339789e805cd18d332b" label="box-folder" type="box-folder">33:7
+</container></did></c03><c03 id="aspace_ref297_er7" level="item"><did><unittitle>Revisions to galley proof - Third set</unittitle><unitdate type="inclusive">Dec 23 1996</unitdate><container id="aspace_5e064220456228165eba597dcfac64f9" label="box-folder" type="box-folder">33:8
+</container></did></c03><c03 id="aspace_ref298_6cp" level="item"><did><unittitle>Index draft with corrections</unittitle><unitdate type="inclusive">Oct 21 1996</unitdate><physdesc id="aspace_dcec5edf7162468d1bc4df968b3bfe50">2 folders</physdesc><container id="aspace_b95618205fc870f49d9f82e803803618" label="box-folder" type="box-folder">34:1
+</container></did></c03></c02><c02 id="aspace_ref300_zw2" level="subseries"><did><unittitle><title render="italic">Standing Like a Stone Wall: The Life of General Thomas J. Jackson </title> (2001)</unittitle></did><c03 id="aspace_ref301_ejk" level="item"><did><unittitle>Manuscript (with publisher's revisions) - Chapters 1-7</unittitle><unitdate type="inclusive">[2001?]</unitdate><container id="aspace_ab49a1e09160078ae0585d4798aaeb21" label="box-folder" type="box-folder">34:2
+</container></did></c03><c03 id="aspace_ref302_b83" level="item"><did><unittitle>Manuscript (with publisher's revisions) - Chapters 8-end</unittitle><unitdate type="inclusive">[2001?]</unitdate><container id="aspace_050231a07f7d4c0ef4dfd1fc4ec19f50" label="box-folder" type="box-folder">34:3
+</container></did></c03></c02><c02 audience="internal" id="aspace_33b3e1b30cf32b59e3326d02cd0dd151" level="subseries"><did><unittitle><title render="italic">Soldier of Southwestern Virginia: the Civil War Letters of Captain John Preston Sheffey </title> (2004)</unittitle></did><c03 audience="internal" id="aspace_59ce28bb22969f046e51bc34b05e889e" level="file"><did><unittitle>Seager transcripts and notes for 1861 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_27dbe8f0dcbaaa7196eb113197299f69" label="box-folder" type="box-folder">35-1</container></did></c03><c03 audience="internal" id="aspace_4b9f56dbff136cfd93a9152484903162" level="file"><did><unittitle>Seager transcripts and notes for 1862 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_4bad8e1cbdefe3f6ba5e7f17131e61fc" label="box-folder" type="box-folder">35-2</container></did></c03><c03 audience="internal" id="aspace_8b04dd20126bd88ab991f2954c292402" level="file"><did><unittitle>Seager transcripts and notes for 1863 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_8966d15bb85cae9bc32f7bfb1aed6db9" label="box-folder" type="box-folder">35-3</container></did></c03><c03 audience="internal" id="aspace_83c2973e0a4c58aba545dbe1ba976036" level="file"><did><unittitle>Seager transcripts and notes for 1864 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_eae7bbc3a77cad1f4b123ca1daf02b4e" label="box-folder" type="box-folder">35-4</container></did></c03><c03 audience="internal" id="aspace_728f92f115accd29cd929a7a2d039ccf" level="file"><did><unittitle>Seager transcripts and notes for 1865 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_2de28ba871ff3ba324dfcfe4bffab4c4" label="box-folder" type="box-folder">35-5</container></did></c03><c03 audience="internal" id="aspace_adc3e94fd00d31ae63ed6bb2e158731e" level="file"><did><unittitle>Seager maps and illustrations</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_d5eb620eb0b1bafe45fb89c67591adf3" label="box-folder" type="box-folder">35-6</container></did></c03><c03 audience="internal" id="aspace_75184775d00004879dc46579268ee125" level="file"><did><unittitle>Seager essays</unittitle><unitdate type="inclusive">1997-1998, n.d.</unitdate><container id="aspace_ac2c4169138b504b935cd8f6ddd41033" label="box-folder" type="box-folder">35-7</container></did></c03><c03 audience="internal" id="aspace_b3e4bb2bbe93203bc437a9114bc845cd" level="file"><did><unittitle>Sheffey family genealogy notes and sources</unittitle><unitdate type="inclusive">1982-2002, n.d.</unitdate><container id="aspace_99b08aaacf75e945a32f6efa7283c1ef" label="box-folder" type="box-folder">35-8</container></did></c03><c03 audience="internal" id="aspace_cc35031cf584d0294bff2586b5f4a7e3" level="file"><did><unittitle>Robertson transcripts of Jan-Jun 1861 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_6750f590339a08b5cb12909cfdde0c35" label="box-folder" type="box-folder">35-9</container></did></c03><c03 audience="internal" id="aspace_878147010af82bb6b0b9b7186d60539b" level="file"><did><unittitle>Robertson transcripts of Jul-Dec 1861 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_6c38a2562b3dd85a8e3cbc8f7d60ee6c" label="box-folder" type="box-folder">35-10</container></did></c03><c03 audience="internal" id="aspace_dcc4449b517441e88791e2ee86a9ade2" level="file"><did><unittitle>Robertson transcripts of 1862 letters</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_4c71d8f828e53c94c3fdcb86c355e81a" label="box-folder" type="box-folder">35-11</container></did></c03></c02></c01><c01 id="aspace_ref303_bcr" level="series"><did><unittitle>Series II: General Materials</unittitle></did><c02 id="aspace_ref304_bz0" level="item"><did><unittitle>Manassas Battlefield Park Preservation</unittitle><unitdate type="inclusive">1988</unitdate><physdesc id="aspace_1901925b459a49ce43c6b98ee5d43ccc">2 folders</physdesc><container id="aspace_12deeca2f21fcded50236fcfc63ac083" label="box-folder" type="box-folder">36-1</container></did></c02><c02 id="aspace_ref306_art" level="item"><did><unittitle>Drafts of assorted speeches by Robertson</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_60181f29c0bc1b50192f94a02b1f09d0" label="box-folder" type="box-folder">36-2</container></did></c02><c02 id="aspace_ref307_0zx" level="item"><did><unittitle>List of articles by Robertson</unittitle><unitdate type="inclusive">1957-1991</unitdate><container id="aspace_d152e1d0aea5f8626d6166155d79c592" label="box-folder" type="box-folder">36-3</container></did></c02><c02 id="aspace_ref308_p1k" level="item"><did><unittitle>Ephemera - "La Mode Illustree" prints</unittitle><unitdate type="inclusive">1862</unitdate><physdesc id="aspace_77da019ff0732b4c11c0f01f085c023f">2 items</physdesc><container id="aspace_ebddcdb40d9d17141b569cf437bfe520" label="box-folder" type="box-folder">36-4</container></did></c02><c02 id="aspace_ref310_32j" level="item"><did><unittitle>Ephemera - assorted postcards from Abingdon, Virginia and envelopes addressed to Vicki Heilig</unittitle><unitdate type="inclusive">1989-1996</unitdate><container id="aspace_5ff984e93ed2c66631b34c83c225b1ee" label="box-folder" type="box-folder">36-4</container></did></c02></c01><c01 id="aspace_ref311_zj1" level="series"><did><unittitle>Series III: Oversize Materials</unittitle></did><c02 id="aspace_ref312_mqp" level="item"><did><unittitle><title render="italic">Civil War Sites in Virginia: a Tour Guide </title> - galley proofs</unittitle><unitdate type="inclusive">[1982?]</unitdate><container id="aspace_97a7f0818f7cf1551480d4dd64d152f6" label="box-folder" type="box-folder">37-1</container></did></c02><c02 id="aspace_ref313_836" level="item"><did><unittitle><title render="italic">Civil War in Virginia: Battleground for a Nation </title> - final galley proof</unittitle><unitdate type="inclusive">1990</unitdate><container id="aspace_64b0bfe0377f9b668c11731b88e515b7" label="box-folder" type="box-folder">37-2</container></did></c02><c02 id="aspace_ref314_c8o" level="item"><did><unittitle><title render="italic">Civil War! America Becomes One Nation </title> - galley map labels</unittitle><unitdate type="inclusive">n.d.</unitdate><container id="aspace_eda1675c93cbd4f442c3a19c9d3f1b15" label="box-folder" type="box-folder">37-3</container></did></c02><c02 id="aspace_ref315_vt8" level="item"><did><unittitle>"Bold Reconnaissance: General Stonewall Jackson at Brawner's Farm, Battle of Second Manassas, August 28, 1862"</unittitle><unitdate type="inclusive">2000</unitdate><container id="aspace_514441b57c88185c664ad058433964ef" label="box-folder" type="box-folder">38-1</container></did><scopecontent id="aspace_16e4e23b515b53e2789b2ba8418573ce"><head>Scope and Contents note</head><p>limited edition signed print by Brian Kraus</p></scopecontent></c02></c01></dsc>
+</archdesc>
 </ead>
