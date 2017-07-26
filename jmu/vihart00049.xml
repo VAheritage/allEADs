@@ -1,544 +1,619 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00049">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00049::Letters of Turner Ashby)//EN" "vihart00049.xml"
-</eadid>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+    langencoding="iso639-2b" repositoryencoding="iso15511">
+    <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00049.xml"
+      >vihart00049</eadid>
     <filedesc>
       <titlestmt>
-        <titleproper>A Guide to the Letters of Turner Ashby, <date era="ce" calendar="gregorian"> 1852-1863 and undated</date></titleproper>
-        <subtitle id="sort">Ashby, Turner, Letters of
-<num type="collectionnumber">2087
-</num></subtitle>
+        <titleproper>A Guide to the Turner Ashby Letters, 1852-1863: <num>SC
+          0107</num></titleproper>
+        <author>Barbara Padgett, December 1992; Cara Lundgren, March 2014</author>
       </titlestmt>
       <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2004 By JMU Libraries. All rights reserved.
-</date>
+        <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian"> © 2014 By JMU Libraries. All rights
+          reserved. </date>
         <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+            Use</extref>
         </p>
-        <p id="filesize">[ca. ##35.5 Kilobytes]
-</p>
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>Machine-readable finding aid derived from [...], created by niyi, <date era="ce" calendar="gregorian"> 12/15/2004</date></creation>
-      <langusage>Description is in
-<language langcode="eng">English
-</language></langusage>
+      <creation>This finding aid was produced using ArchivesSpace and hand encoding by Tiffany Cole
+        on <date>2017-07-26 11:04:35 -0400</date>.</creation>
+      <langusage>English</langusage>
+      <descrules>Describing Archives: A Content Standard</descrules>
     </profiledesc>
     <revisiondesc>
       <change>
-        <date normal="2013-11-21">2013-11-21</date>
+        <date>2013-11-21</date>
         <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+      <change>
+        <date>March 2014</date>
+        <item>Edited by Cara Lundgren</item>
       </change>
     </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
-      <titleproper>A Guide to the Letters of Turner Ashby, <date era="ce" calendar="gregorian"> 1852-1863 and undated</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections
-<num type="Accession Number">2087
-</num></subtitle>
-      <author>Barbara Padgett, December 1992
-</author>
+      <titleproper> A Guide to the Turner Ashby Letters, <date era="ce" calendar="gregorian"
+          >1852-1863</date>
+      </titleproper>
+      <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+          0107</num>
+      </subtitle>
       <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
       </p>
-      <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2004
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
       <list type="deflist">
         <defitem>
-          <label>Processed by:
-</label>
-          <item>Special Collections Staff
-</item>
+          <label>Processed by:</label>
+          <item>Barbara Padgett, December 1992; Cara Lundgren, March 2014</item>
         </defitem>
       </list>
     </titlepage>
   </frontmatter>
   <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University
-</runner>
     <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository">Special Collections, James Madison University
-</repository>
-      <unittitle label="Title">Letters of Turner Ashby
-<unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">1852-1863 and undated
-</unitdate></unittitle>
-      <unitid label="Accession number">2087
-</unitid>
-      <physdesc label="Physical Characteristics">This collection consists of 28 letters (a few with envelopes), a petition, and two photographs of portraits of Turner Ashby.
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
-</language>
+      <langmaterial>
+        <language langcode="eng">English</language>
       </langmaterial>
+      <repository>
+        <corpname>Special Collections, James Madison University</corpname>
+      </repository>
+      <unittitle>Turner Ashby Letters, </unittitle>
+      <origination label="Creator">
+        <famname rules="local" source="local">Ashby Family</famname>
+      </origination>
+      <unitid label="Collection Number" encodinganalog="099$a">SC 0107</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">.16 cubic feet; 3 folders</physdesc>
+      <unitdate normal="1852/1863" type="inclusive">1852-1863</unitdate>
+      <abstract id="aspace_9d79d25d02ae2bc4bd0a29fb1e8c117f">The Turner Ashby Letters consist of 28
+        letters, a petition, and two portrait photographs of Turner Ashby.</abstract>
     </did>
     <descgrp type="admininfo">
-      <head>Administrative Information
-</head>
-      <accessrestrict>
-        <head>Access Restrictions
-</head>
-        <p>Collection is open to research.
-</p>
+      <head>Administrative Information</head>
+      <accessrestrict id="aspace_3ac5047601c0a351474990abfd02128c">
+        <head>Access Restrictions</head>
+        <p>Collection is open for research. Researchers must register and agree to copyright and
+          privacy laws before using this collection. Please contact Research Services staff before
+          visiting the James Madison University Special Collections Library to use this
+          collection.</p>
       </accessrestrict>
-      <userestrict>
-        <head>Use Restrictions
-</head>
-        <p>There are no restrictions.
-</p>
+      <userestrict id="aspace_55497fed9b5b0855c7fc172c892d842d">
+        <head>Use Restrictions</head>
+        <p>The copyright interests in this collection have not been transferred to the James Madison
+          University Special Collections Library. For more information, contact the Special
+          Collections Library Reference Desk (library-special@jmu.edu).</p>
       </userestrict>
-      <prefercite>
-        <head>Preferred Citation
-</head>
-        <p>Letters of Turner Ashby, Accession #2087, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
-</p>
+      <prefercite id="aspace_0405c7e1fe170fbb777b88d9cbfaabe3">
+        <head>Preferred Citation</head>
+        <p>[identification of item], [box #, folder #], Turner Ashby Letters, SC 0107, Special
+          Collections, Carrier Library, James Madison University, Harrisonburg Va.</p>
       </prefercite>
-      <acqinfo>
-        <head>Acquisition Information
-</head>
-        <p>Placed on deposit by the Harrisonburg-Rockingham Historical Society in September, 1992.
-</p>
+      <acqinfo id="aspace_8e5c96ecc3ab842fabc98fe308490acb">
+        <head>Acquisition Information</head>
+        <p>Placed on deposit by the Harrisonburg-Rockingham Historical Society in September
+          1992.</p>
       </acqinfo>
+      <altformavail id="aspace_02dbe3f29fe8425c2866132eba960c91">
+        <head>Other Formats Available</head>
+        <p>Transcriptions of a selection of letters are included in the collection.</p>
+      </altformavail>
+      <processinfo id="aspace_a8e43b09c062fe30da01e28308c360b6">
+        <head>Processing Information</head>
+        <p>In order to streamline the process of applying collection numbers, Special Collections
+          staff completed a large-scale renumbering campaign in the spring of 2017. <emph
+            render="bold">This collection was previously cataloged as SC 2087</emph>.</p>
+      </processinfo>
     </descgrp>
-    <bioghist>
-      <head>Biographical/Historical Information
-</head>
-      <p>Bushong, Millard K. General Turner Ashby and Stonewall's Campaign (Verona, VA: McClure Printing Co. Inc., 1980).
-</p>
-      <p>Cunningham, Frank. Knight of the Confederacy: General Turner Ashby, (San Antonio, TX: Naylor Co., 1960).
-</p>
+    <bioghist id="aspace_28180eb634c5e85350e3694d42f8cae5">
+      <head>Bio/Historical Note</head>
+      <p>Turner Ashby was a Confederate cavalry commander during the Civil War. He was born in
+        Fauquier County Virginia. where he became an accomplished horseman. Sometimes called the
+        "Black Knight of the Confederacy" Ashby was responsible for guarding the Potomac River from
+        Harpers Ferry to Maryland. This was in part to help Maryland men with Confederate leanings
+        join the Confederacy. Ashby was to serve with Stonewall Jackson. During the Valley Campaign,
+        Ashby was shot in the Battle of Good's Farm. He had been appointed Brigadier General at this
+        time, but it was never confirmed by the Confederate Senate.</p>
     </bioghist>
-    <scopecontent>
-      <head>Scope and Content
-</head>
-      <p>This collection consists of 28 letters (a few with envelopes), a petition, and two photographs of portraits of Turner Ashby, 1852-1863 and undated. The letters comprise correspondence between relatives of
-Turner Ashby including his mother, Dorothea F. Ashby; his sisters, Mary and Dora (both later married to Moncures); cousins; and friends of the family. Two letters are from Turner himself.
-</p>
+    <scopecontent id="aspace_5fd4972aebc5b5d2b66d4dd2d761ae8e">
+      <head>Scope and Content</head>
+      <p>This collection consists of 28 letters (a few with envelopes), a petition, and two portrait
+        photographs of Turner Ashby. The letters comprise correspondence between relatives of Turner
+        Ashby including his mother, Dorothea F. Ashby; his sisters, Mary and Dora (both later
+        married to Moncures); cousins; and friends of the family. Two letters are penned by Turner
+        Ashby. These two letters plus one from "D.A.M." have been transcribed; transcriptions are
+        available in the folder.</p>
     </scopecontent>
-    <dsc type="combined">
-      <head>Contents List
-</head>
-      <c01 level="series">
+    <bibliography id="aspace_832076c0027f579ed393afd8ad1c4697">
+      <head>Bibliography</head>
+      <p>Bushong, Millard K. General Turner Ashby and Stonewall's Campaign. Verona, VA: McClure
+        Printing Co. Inc., 1980.</p>
+      <p>Cunningham, Frank. Knight of the Confederacy: General Turner Ashby. San Antonio, TX: Naylor
+        Co., 1960.</p>
+    </bibliography>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh">Ashby, Turner, 1828-1862</subject>
+        <subject source="lcsh">Ashby, Turner, 1828-1862 -- Correspondence</subject>
+        <subject source="lcsh">Ashby, Richard, 1831-1861</subject>
+        <subject source="lcsh">Ashby, Richard, 1831-1861 -- Correspondence</subject>
+        <subject source="lcsh">Ashby family -- Correspondence</subject>
+        <subject source="lcsh">Moncure family -- Correspondence</subject>
+        <subject source="lcsh">Confederate States of America. Army. Virginia Cavalry Regiment,
+          7th</subject>
+        <subject source="lcsh">Confederate States of America. Army -- Biography</subject>
+        <subject source="lcsh">Slaves -- Shenandoah River Valley (Va. and W. Va.) -- History -- 19th
+          century</subject>
+        <subject source="lcsh">Plantation life -- Shenandoah River Valley (Va. and W. Va.) --
+          History -- 19th century</subject>
+        <subject source="lcsh">Generals -- Southern States -- Biography</subject>
+        <subject source="lcsh">Bull Run, 1st Battle of, Va., 1861</subject>
+        <subject source="lcsh">Shenandoah Valley Campaign, 1861</subject>
+        <subject source="lcsh">Shenandoah Valley Campaign, 1862</subject>
+        <subject source="lcsh">Harrisonburg (Va.), Battle of, 1862</subject>
+        <subject source="lcsh">Confederate States of America -- History, Military --
+          Sources</subject>
+        <subject source="lcsh">United States -- Armed Forces -- Biography</subject>
+        <subject source="lcsh">United States -- History -- Civil War, 1861-1865 -- Sources</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- History --
+          Sources</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- History -- Civil War,
+          1861-1865 -- Sources</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- Social life and customs
+          -- 19th century</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- Genealogy --
+          Sources</subject>
+        <subject source="lcsh">Virginia -- History, Local -- 19th century -- Sources</subject>
+        <subject source="lcsh">Virginia -- History, Local -- Civil War, 1861-1865 --
+          Sources</subject>
+        <subject source="lcsh">Virginia -- History -- 19th century -- Social life and
+          customs</subject>
+        <subject source="lcsh">Rockingham County (Va.) -- History -- Civil War, 1861-1865</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Genre and Form Terms:</head>
+        <genreform source="aat">Letters (correspondence)</genreform>
+      </controlaccess>
+    </controlaccess>
+    <dsc>
+      <c01 id="aspace_11927c193ad49d8f019efbae4157af91" level="file">
         <did>
-          <unittitle>Dated Letters.
-</unittitle>
+          <unittitle>Folder 1: Dated Letters, <unitdate normal="1852/1863" type="inclusive"
+              >1852-1863</unitdate></unittitle>
         </did>
-        <c02 level="series">
+        <c02 id="aspace_d039b06317c72b82fb96b7b00ce1b2c1" level="item">
           <did>
-            <unittitle>D.F.A to "My dear Child".
-<unitdate type="inclusive" era="ce" calendar="gregorian">August 1852
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"D.F.A" to "My dear Child", <unitdate normal="1852-08/1852-08">August
+                1852</unitdate></unittitle>
+            <container id="aspace_9d1dfc986262dde000b8ad288cab5251" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Explains what Turner Ashby is doing as he stays at Mrs.Grayson's house. There is mention of a gathering at the Spring and the expected arrival of Mary. [D.F.A. is probably Dorothea F. Ashby, Turner's mother.]
-</p>
+          <scopecontent id="aspace_390be5512eb7b0bb9d0c4ba3062d514a">
+            <head>Scope and Content</head>
+            <p>Explains what Turner Ashby is doing as he stays at Mrs.Grayson's house. There is
+              mention of a gathering at the Spring and the expected arrival of Mary. [D.F.A. is
+              probably Dorothea F. Ashby, Turner's mother.]</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_46da6fb97ddca52e48c203b6ef9198fe" level="item">
           <did>
-            <unittitle>M Allen to "My dear Madam".
-<unitdate type="inclusive" era="ce" calendar="gregorian">Aug. 9th, 1853
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"M Allen" to "My dear Madam", <unitdate normal="1853-08-09/1853-08-09">Aug.
+                9, 1853</unitdate></unittitle>
+            <container id="aspace_56a9e8785c2f2887f3e58097fa48f764" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Reply to a letter to Bettie who was ill; plans of different friends; some speakers from Baltimore.
-</p>
+          <scopecontent id="aspace_eb845ed87732a3b9c08e27f5e02bd01c">
+            <head>Scope and Content</head>
+            <p>Reply to a letter to Bettie who was ill; plans of different friends; some speakers
+              from Baltimore.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_d7595d57b35492623ab8e97b29104b66" level="item">
           <did>
-            <unittitle>Dora to "My darling Mother".
-<unitdate type="inclusive" era="ce" calendar="gregorian">Oct. 27, 1853
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Dora" to "My darling Mother", <unitdate normal="1853-10-27/1853-10-27">Oct.
+                27, 1853</unitdate></unittitle>
+            <container id="aspace_ba972ea1a9ddc99a6699d5e4523928a0" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>A recount of opera, Crystal Palace, &amp; Lt. Nicholas' house suggest trip to New York City. [Dora is the sister of Turner Ashby.]
-</p>
+          <scopecontent id="aspace_987a0a6e5b698af52c72e9e9edd10fe7">
+            <head>Scope and Content</head>
+            <p>A recount of opera, Crystal Palace, &amp; Lt. Nicholas' house suggest trip to New
+              York City. [Dora is the sister of Turner Ashby.]</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_0983554128832afcd5802609e197d416" level="item">
           <did>
-            <unittitle>From unsigned to "My dearest Mol-".
-<unitdate type="inclusive" era="ce" calendar="gregorian">July 28, 1854
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>From unsigned to "My dearest Mol-", <unitdate normal="1854-07-28/1854-07-28"
+                >July 28, 1854</unitdate></unittitle>
+            <container id="aspace_5e43a51fd3beac0d5829288f621035b7" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Written at Argyle; concerns home affairs at Clarke including a drought in the corn, sickness, babies, and servants.
-</p>
+          <scopecontent id="aspace_bf387b0e9b743c8dec36a84cc4b35484">
+            <head>Scope and Content</head>
+            <p>Written at Argyle; concerns home affairs at Clarke including a drought in the corn,
+              sickness, babies, and servants.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_49422af5e42a2a8ca921d152e2114d21" level="item">
           <did>
-            <unittitle>Turner Ashby to "Dear Dora" written at Raven's Craig.
-<unitdate type="inclusive" era="ce" calendar="gregorian">Jan. 14, 1861
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Turner Ashby" to "Dear Dora", <unitdate normal="1861-01-14/1861-01-14">Jan.
+                14, 1861</unitdate></unittitle>
+            <container id="aspace_a0e48569120da69055d4f9412fb50041" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Hopes to get off for a couple of weeks; gives Dora authority to sign his name concerning the sale of a servant, Louisa; engagement of Milly Stribling [a friend of the family].
-</p>
+          <scopecontent id="aspace_686af65cc0692a6b5e7e8d77f306ece1">
+            <head>Scope and Content</head>
+            <p>written at Raven's Craig. Hopes to get off for a couple of weeks; gives Dora
+              authority to sign his name concerning the sale of a servant, Louisa; engagement of
+              Milly Stribling [a friend of the family]. TRANSCRIPTION available in folder.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_f2419c1e373e53fae7278a995141bea6" level="item">
           <did>
-            <unittitle>Richard Ashby to "Dear Mama" written from Richmond.
-<unitdate type="inclusive" era="ce" calendar="gregorian">March 12th, [1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Richard Ashby" to "Dear Mama", <unitdate certainty="inferred"
+                normal="1861-03-12/1861-03-12">March 12, [1861]</unitdate></unittitle>
+            <container id="aspace_0f608b4cd968c446a97c52393460fc6f" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Expresses sadness because won't be coming to Stafford although happy in Richmond. Special remembrances to the servants. [Richard is brother of Turner.]
-</p>
+          <scopecontent id="aspace_cd6863760ed3210d8f4a61686c3edcb7">
+            <head>Scope and Content</head>
+            <p>written from Richmond. Expresses sadness because won't be coming to Stafford although
+              happy in Richmond. Special remembrances to the servants. [Richard is brother of
+              Turner.]</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_fc32c8eebda688ee9934b03398acea72" level="item">
           <did>
-            <unittitle>We the undersigned Ladies of Shepherdstown, Jefferson County, Va to "Lt. Col. Ashby", written at a camp near Duffins Depot.
-<unitdate type="inclusive" era="ce" calendar="gregorian">[After June 16, 1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"We the undersigned Ladies of Shepherdstown, Jefferson County, Va" to "Lt.
+              Col. Ashby", <unitdate certainty="questionable" normal="1861-06-16/1861-06-16">[After
+                June 16, 1861]</unitdate></unittitle>
+            <container id="aspace_3af4b40dd8fdd7d899d3999f19d4d7d3" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Petition for protection from the enemy by having one or two companies stationed there.
-</p>
+          <scopecontent id="aspace_0bcdd41a97c4ae9e9edb60de1db1a05b">
+            <head>Scope and Content</head>
+            <p>written at a camp near Duffins Depot. Petition for protection from the enemy by
+              having one or two companies stationed there.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_5221ef4b848113218a3c1d3192665e21" level="item">
           <did>
-            <unittitle>Wednesday morning "Dora" to "My Dear Beck" at Markham. Report of weddings, response to kind letter and trip.
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Before July 3, 1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>Wednesday morning "Dora" to "My Dear Beck" at Markham, <unitdate
+                certainty="approximate" normal="1861-07-03/1861-07-03">[Before July 3,
+                1861]</unitdate></unittitle>
+            <container id="aspace_5908900f797fb0cb5f28bbd7fffa67c8" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Describes bachelor dinners given to TA before his return to Washington.
-</p>
+          <scopecontent id="aspace_6c7142de22e297ddbf7a512d24ff3db9">
+            <head>Scope and Content</head>
+            <p>Report of weddings, response to kind letter and trip. Describes bachelor dinners
+              given to TA before his return to Washington.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_66e8badaf830e2a6fc99a561fa706c0b" level="item">
           <did>
-            <unittitle>Mary C. Braxton to "Mr. Ashby" [Turner] written from Elmwood.
-<unitdate type="inclusive" era="ce" calendar="gregorian">July 15, 1861
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Mary C. Braxton" to "Mr. Ashby" [Turner], <unitdate
+                normal="1861-07-15/1861-07-15" type="inclusive">July 15, 1861</unitdate></unittitle>
+            <container id="aspace_81e2a49a6d32879b8dbeacb1f5e7460c" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Condolences for the death of the recipient's brother [probably Richard, on July 3, 1861] during battle; faith of her sister, Harrity, who is taking the death of her idol very hard. [Mary C. Braxton is a friend
-of the family.]
-</p>
+          <scopecontent id="aspace_3a6f6f1c247a2fa487e7a441a7a387a4">
+            <head>Scope and Content</head>
+            <p>written from Elmwood. Condolences for the death of the recipient's brother [probably
+              Richard, on July 3, 1861] during battle; faith of her sister, Harrity, who is taking
+              the death of her idol very hard. [Mary C. Braxton is a friend of the family.]</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_8797d06b9b6739fcae7f288604591f3b" level="item">
           <did>
-            <unittitle>Dora Ashby to "Dearest Mary" [on back: Mrs. Mary Moncure] written from Ravenswood to Chelsea.
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Before July 22, 1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Dora Ashby" to "Dearest Mary", <unitdate certainty="approximate"
+                normal="1861-07-22/1861-07-22">[Before July 22, 1861]</unitdate></unittitle>
+            <container id="aspace_10a27d43edd59310554363a8635bac1a" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Bad weather has kept her from going back to school [to teach]; a party where Annie is flirting like a belle; hi to Mammy and all the servants. In an additional note, D. F. Ashby accepts invitation to move to
-Chelsea. [Mary is also Turner's sister.]
-</p>
+          <scopecontent id="aspace_3a6f7d0a699f6445431fc07cdb695abd">
+            <head>Scope and Content</head>
+            <p>[on back: Mrs. Mary Moncure] written from Ravenswood to Chelsea. Bad weather has kept
+              her from going back to school [to teach]; a party where Annie is flirting like a
+              belle; hi to Mammy and all the servants. In an additional note, D. F. Ashby accepts
+              invitation to move to Chelsea. [Mary is also Turner's sister.]</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_020c4b504e11729a154a364ebc0e2944" level="item">
           <did>
-            <unittitle>Dora Moncure to "My dearest brother"[Turner] written at Ravenswood.
-<unitdate type="inclusive" era="ce" calendar="gregorian">July 22nd, [1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Dora Moncure" to "My dearest brother" [Turner], <unitdate
+                certainty="inferred" normal="1861-07-22/1861-07-22">July 22,
+              [1861]</unitdate></unittitle>
+            <container id="aspace_7185ddf0329be2b79481768f61e52293" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Expresses thanks for the sparing of brother's life at Manassas. Death of brother, Dick, [Richard] who was engaged. Mr. [Powhatan] Moncure is too sick to be drafted.
-</p>
+          <scopecontent id="aspace_fc862b9d8df9af6c7285bbdb26b94ddd">
+            <head>Scope and Content</head>
+            <p>written at Ravenswood. Expresses thanks for the sparing of brother's life at
+              Manassas. Death of brother, Dick, [Richard] who was engaged. Mr. [Powhatan] Moncure is
+              too sick to be drafted.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_f358a5d903a35070cdf3bf4691a7c17f" level="item">
           <did>
-            <unittitle>Dora to "My Dear Mother" at Chelsea[on back: Mrs. D. F. Ashby].
-<unitdate type="inclusive" era="ce" calendar="gregorian">[July, 1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Dora" to "My Dear Mother" at Chelsea [on back: Mrs. D. F. Ashby], <unitdate
+                normal="1861-07/1861-07">[July 1861]</unitdate></unittitle>
+            <container id="aspace_e1df84185d48bed4b26b2cfc172c7943" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Suggests moving and in Dora's state of health cannot take care of the servants. Mentions an overseer; news of Manassas.
-</p>
+          <scopecontent id="aspace_280cffa8ad04b5cea3667081e81b126b">
+            <head>Scope and Content</head>
+            <p>Suggests moving and in Dora's state of health cannot take care of the servants.
+              Mentions an overseer; news of Manassas.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_02cbf43a36c52b69741cfe1a2d8ca8c9" level="item">
           <did>
-            <unittitle>Fanny Ashby to "My Dear Mary" [on back: Mrs. Mary Moncure].
-<unitdate type="inclusive" era="ce" calendar="gregorian">[July, 1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Fanny Ashby" to "My Dear Mary" [on back: Mrs. Mary Moncure], <unitdate
+                certainty="inferred" normal="1861-07/1861-07">[July 1861]</unitdate></unittitle>
+            <container id="aspace_5ab1aa02747da90512df812f269b18a5" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Concerns about family members; sadness at Mary not coming to Ravenswood. [Cousin of Turner] waiting to hear news of Manassas.
-</p>
+          <scopecontent id="aspace_203d04fc3346dbbbe6177a4debaabd07">
+            <head>Scope and Content</head>
+            <p>Concerns about family members; sadness at Mary not coming to Ravenswood. [Cousin of
+              Turner] waiting to hear news of Manassas.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_47c37fea21f685152ef9da57e0b5667e" level="item">
           <did>
-            <unittitle>Harriette Caputon[?] to [on envelope dated Sept. 5 from Union Va: Mrs. Dora A. Moncure], from Elwood.
-<unitdate type="inclusive" era="ce" calendar="gregorian">Sept. 4, [1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Harriette Caputon"[?] to [on envelope dated Sept. 5 from Union Va: Mrs. Dora
+              A. Moncure], from Elwood, <unitdate certainty="inferred"
+                normal="1861-09-04/1861-09-04">Sept. 4, [1861]</unitdate></unittitle>
+            <container id="aspace_cdfbad6c53acbda79814ff9adb19240b" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Grief at loss of Dora's brother [probably Richard], her "life's happiness". Concern for D.F.A.'s illness.
-</p>
+          <scopecontent id="aspace_c5403ca7dad1277b112db0ff67d985d6">
+            <head>Scope and Content</head>
+            <p>Grief at loss of Dora's brother [probably Richard], her "life's happiness". Concern
+              for D.F.A.'s illness.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_a6b4de25b3926bc9f4c91e442e9a8845" level="item">
           <did>
-            <unittitle>Turner Ashby to "Dear Dora" written at Camp Lookout.
-<unitdate type="inclusive" era="ce" calendar="gregorian">Sept. 6, 1861
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Turner Ashby" to "Dear Dora" written at Camp Lookout, <unitdate
+                normal="1861-09-06/1861-09-06">Sept. 6, 1861</unitdate></unittitle>
+            <container id="aspace_62263cd49d1d9728d362a0314b1c5376" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Tells of camp duties, skirmishes with the enemy and casualties Ends with "give love to Mary."
-</p>
+          <scopecontent id="aspace_319b0f9d8ae02a08cf6af3a23910f89d">
+            <head>Scope and Content</head>
+            <p>Tells of camp duties, skirmishes with the enemy and casualties Ends with "give love
+              to Mary." TRANSCRIPTION available in folder.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_22f11bc9063a82f0e3862d879c92874a" level="item">
           <did>
-            <unittitle>Harriette Caputon[?] to [D.F.Ashby] from Elmwoood.
-<unitdate type="inclusive" era="ce" calendar="gregorian">Oct. 4, [1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Harriette Caputon"[?] to [D.F.Ashby] from Elmwoood, <unitdate
+                certainty="inferred" normal="1861-10-04/1861-10-04">Oct. 4,
+              [1861]</unitdate></unittitle>
+            <container id="aspace_c502c0ab73e23023dfede81af8774479" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Grieves over loss of [Richard]; encouragement that remaining children can be her comfort.
-</p>
+          <scopecontent id="aspace_2c52f00e7be87a05fd031747e7eeefba">
+            <head>Scope and Content</head>
+            <p>Grieves over loss of [Richard]; encouragement that remaining children can be her
+              comfort.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_4799da18e5e65ea543385ba88c45a988" level="item">
           <did>
-            <unittitle>Friday Evening "Harriete Caputon"[?] to [on envelope: Mrs. Dora A. Moncure] written from Elmwood.
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Oct. 5 1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>Friday Evening "Harriete Caputon"[?] to [on envelope: Mrs. Dora A. Moncure]
+              written from Elmwood, <unitdate certainty="inferred" normal="1861-10-05/1861-10-05"
+                >[Oct. 5 1861]</unitdate></unittitle>
+            <container id="aspace_3609449b460ba515ed44b3b55af1a2c5" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Response to Dora's letter. Encouraging thoughts for families; grief over [Richard's] death.
-</p>
+          <scopecontent id="aspace_14b09d4d37db2499fc8b2a5bf022aeb8">
+            <head>Scope and Content</head>
+            <p>Response to Dora's letter. Encouraging thoughts for families; grief over [Richard's]
+              death.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_4d89735cf642448463bcfde5ec429a7c" level="item">
           <did>
-            <unittitle>Dora to "my sweet sister."
-<unitdate type="inclusive" era="ce" calendar="gregorian">Oct 21st, [1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Dora" to "my sweet sister", <unitdate certainty="inferred"
+                normal="1861-10-21/1861-10-21" type="inclusive">Oct. 21,
+              [1861]</unitdate></unittitle>
+            <container id="aspace_bc403858bc0afa17e8a863cfa376f103" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Describes home life &amp; having enough to get by. Mentions Fanny as a sister. Good relations with neighbors and friends.
-</p>
+          <scopecontent id="aspace_1420ab8272f2e4c9dc82870fb1cc62d8">
+            <head>Scope and Content</head>
+            <p>Describes home life &amp; having enough to get by. Mentions Fanny as a sister. Good
+              relations with neighbors and friends.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_3a616cd6e6c842ff0372e8fcb4318ce3" level="item">
           <did>
-            <unittitle>Dora Moncure to "My Dear Sister" [on back: Mrs. George W. Moncure Chelsea].
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Dec. 25th, 1861]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Dora Moncure" to "My Dear Sister" [on back: Mrs. George W. Moncure Chelsea],
+                <unitdate certainty="inferred" normal="1861-12-25/1861-12-25">[Dec. 25,
+                1861]</unitdate></unittitle>
+            <container id="aspace_8e71fded6729fa2160d882a07d38726d" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Family matters. Gift exchange on Christmas and bad road conditions. Prescription from Dr. Rase for mother.
-</p>
+          <scopecontent id="aspace_e19705146a529df3eb12bdbb48590060">
+            <head>Scope and Content</head>
+            <p>Family matters. Gift exchange on Christmas and bad road conditions. Prescription from
+              Dr. Rase for mother.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_91b27576a8ca2f7ea8d8721d4253318c" level="item">
           <did>
-            <unittitle>Tuesday "Dora Moncure" to "My Dearest Sister" written from Ravenswood.
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Before June 6, 1862]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>Tuesday "Dora Moncure" to "My Dearest Sister" written from Ravenswood,
+                <unitdate certainty="approximate" normal="1862-06-06/1862-06-06">[Before June 6,
+                1862]</unitdate></unittitle>
+            <container id="aspace_235331bb1b5fca685fd7285887a873fb" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Tells of letters from Robbie and news of Turner and George dispelling rumors of Turner's death. A visit from a Presbyterian Chaplain and other family matters.
-</p>
+          <scopecontent id="aspace_4e7d264426bc93aa6e33afd64ca0623f">
+            <head>Scope and Content</head>
+            <p>Tells of letters from Robbie and news of Turner and George dispelling rumors of
+              Turner's death. A visit from a Presbyterian Chaplain and other family matters.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_d23c92e840df491b500543586cb51484" level="item">
           <did>
-            <unittitle>Monday "Susan Shacklett" to "My dear Dora" written from Richmond.
-<unitdate type="inclusive" era="ce" calendar="gregorian">[After June 6, 1862]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>Monday "Susan Shacklett" to "My dear Dora" written from Richmond, <unitdate
+                certainty="approximate" normal="1862-06-02/1862-06-02">[After June 6,
+                1862]</unitdate></unittitle>
+            <container id="aspace_7a90f7ca230d4e17e8cb4a16e85dbe31" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Inquiry about the family since the Yankees had raided them; Turner as one of the greatly loved Generals; the place where he fell near Harrisonburg.
-</p>
+          <scopecontent id="aspace_e681ed3dc810db6db17558757100897a">
+            <head>Scope and Content</head>
+            <p>Inquiry about the family since the Yankees had raided them; Turner as one of the
+              greatly loved Generals; the place where he fell near Harrisonburg.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_01b3a803bfedc1358e9b1907844c746a" level="item">
           <did>
-            <unittitle>Bettie A.[?] Green [cousin] to "My dear Dora" written from Mountain View.
-<unitdate type="inclusive" era="ce" calendar="gregorian">March 2nd, [1863?]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:1
-</container>
+            <unittitle>"Bettie A.[?] Green" [cousin] to "My dear Dora" written from Mountain View,
+                <unitdate certainty="inferred" normal="1863-03-02/1863-03-02">March 2,
+                [1863?]</unitdate></unittitle>
+            <container id="aspace_b0a25eac5b04e787630f87479e23db87" label="Folder" type="folder"
+              >1</container>
           </did>
-          <scopecontent>
-            <p>Dining at Markham [previously Rose Bank, home of the Ashbys]. Acquaintances and health of herself and mother. [Green was D.F.A.'s maiden name.]
-</p>
+          <scopecontent id="aspace_1c7e01c7b0b03f289622b038285bba6f">
+            <head>Scope and Content</head>
+            <p>Dining at Markham [previously Rose Bank, home of the Ashbys]. Acquaintances and
+              health of herself and mother. [Green was D.F.A.'s maiden name.]</p>
           </scopecontent>
         </c02>
       </c01>
-      <c01 level="series">
+      <c01 id="aspace_7d9e78e9066b374f4d0a8fe666e03819" level="file">
         <did>
-          <unittitle>Undated Letters.
-</unittitle>
+          <unittitle>Folder 2: Undated Letters, <unitdate type="inclusive">Undated</unitdate></unittitle>
         </did>
-        <c02 level="series">
+        <c02 id="aspace_d41195c592ac809adfeb1baf6ce1304c" level="item">
           <did>
-            <unittitle>Dora to "My Own Dear Sister" [on back:Mrs. George Moncure].
-<unitdate type="inclusive" era="ce" calendar="gregorian">Monday Eve
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:2
-</container>
+            <unittitle>Monday Eve "Dora" to "My Own Dear Sister" [on back:Mrs. George Moncure],
+                <unitdate type="inclusive">Undated</unitdate></unittitle>
+            <container id="aspace_53188b4ba85d5b460de3d1320a97f70d" label="Folder" type="folder"
+              >2</container>
           </did>
-          <scopecontent>
-            <p>Story of soldier's death at sister's home. Concern for sister's health and Robbie.
-</p>
+          <scopecontent id="aspace_ece5925e39e65d6996705f04eddcbeba">
+            <head>Scope and Content</head>
+            <p>Story of soldier's death at sister's home. Concern for sister's health and
+              Robbie.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_f3ec4add1db75972c853ab9eca919652" level="item">
           <did>
-            <unittitle> [Dec.] "Dora" to "My Dear Sister" written from Chestnut Hill.
-<unitdate type="inclusive" era="ce" calendar="gregorian">Friday Eve
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:2
-</container>
+            <unittitle>Friday Eve [Dec.] "Dora" to "My Dear Sister" written from Chestnut Hill,
+                <unitdate type="inclusive">Undated</unitdate></unittitle>
+            <container id="aspace_a3e8a81cbc3f54b8eb817e3bdd13bf6a" label="Folder" type="folder"
+              >2</container>
           </did>
-          <scopecontent>
-            <p>Moving back to Ravenswood. Christmas dinner, exhausted after childbirth, impatience with Milly, a black woman.
-</p>
+          <scopecontent id="aspace_f2ac249c177e28b5dbf631dc0b65d7df">
+            <head>Scope and Content</head>
+            <p>Moving back to Ravenswood. Christmas dinner, exhausted after childbirth, impatience
+              with Milly, a black woman.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_991e1746b6933ed2859396d81d8ef078" level="item">
           <did>
-            <unittitle>D.A.M. [Dora A. Moncure] to "My own Dear Sister" [Mary].
-<unitdate type="inclusive" era="ce" calendar="gregorian">Tuesday night
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:2
-</container>
+            <unittitle>Tuesday night "D.A.M." [Dora A. Moncure] to "My own Dear Sister" [Mary],
+                <unitdate type="inclusive">Undated</unitdate></unittitle>
+            <container id="aspace_e7f5d000ce04a05552021733a0e46dd2" label="Folder" type="folder"
+              >2</container>
           </did>
-          <scopecontent>
-            <p>Describes cough and sickness. Neighbors helping, talk of servants leaving but can't get along without one. George is in Mountain View.
-</p>
+          <scopecontent id="aspace_b4ff16fbefe3ffe6c7fc3741c3444479">
+            <head>Scope and Content</head>
+            <p>Describes cough and sickness. Neighbors helping, talk of servants leaving but can't
+              get along without one. George is in Mountain View. TRANSCRIPTION available in
+              folder.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_a7a185399d754eae6448a72fb855e22b" level="item">
           <did>
-            <unittitle>Dora Moncure to "My Dearest Sister" [Mary] written from Ravenswood.
-<unitdate type="inclusive" era="ce" calendar="gregorian">Tuesday
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:2
-</container>
+            <unittitle>Tuesday "Dora Moncure" to "My Dearest Sister" [Mary] witten from Ravenswood,
+                <unitdate type="inclusive">Undated</unitdate></unittitle>
+            <container id="aspace_476ef10260ab3c346936a9773526f944" label="Folder" type="folder"
+              >2</container>
           </did>
-          <scopecontent>
-            <p>Newborn baby of Mary; asks her to consider having Miss Eliza Harry come up to take care of the family and nurse the child. Describes food sent.
-</p>
+          <scopecontent id="aspace_29ca79cd001e7f250782171dfcb9b4d6">
+            <head>Scope and Content</head>
+            <p>Newborn baby of Mary; asks her to consider having Miss Eliza Harry come up to take
+              care of the family and nurse the child. Describes food sent.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_ba7164fdf22b02365e3f9e55c417550f" level="item">
           <did>
-            <unittitle>Dora to "My Dear Mother".
-<unitdate type="inclusive" era="ce" calendar="gregorian">Saturday, the 10th
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:2
-</container>
+            <unittitle>Saturday, the 10th "Dora" to "My Dear Mother", <unitdate type="inclusive"
+                >Undated</unitdate></unittitle>
+            <container id="aspace_4d1bba6e15bbf5305c79d4c20a8384ea" label="Folder" type="folder"
+              >2</container>
           </did>
-          <scopecontent>
-            <p>Log of the trip back from Chelsea. Explains house chores and visitors.
-</p>
+          <scopecontent id="aspace_df0d25547304aa03e70f79c6ca5429c0">
+            <head>Scope and Content</head>
+            <p>Log of the trip back from Chelsea. Explains house chores and visitors.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_0ad963dde4b6c94507eac261d1dbe9e8" level="item">
           <did>
-            <unittitle>Vic[?] to "Dear Cousin Mary" [on back: Mrs. George V. Moncure Chelsea].
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Undated]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:2
-</container>
+            <unittitle>[Undated] "Vic"[?] to "Dear Cousin Mary" [on back: Mrs. George V. Moncure
+              Chelsea], <unitdate type="inclusive">Undated</unitdate></unittitle>
+            <container id="aspace_2395760bc01c6689f8c9378dba8c3ca6" label="Folder" type="folder"
+              >2</container>
           </did>
-          <scopecontent>
-            <p>Staying with Aunt Ashby; mentions family members; an invitation to come to their house after children's sickness; Dora's baby boy.
-</p>
+          <scopecontent id="aspace_f7261b4376e87ee818ee23d01db221e5">
+            <head>Scope and Content</head>
+            <p>Staying with Aunt Ashby; mentions family members; an invitation to come to their
+              house after children's sickness; Dora's baby boy.</p>
           </scopecontent>
         </c02>
-        <c02 level="series">
+        <c02 id="aspace_d3266a729ba627a42a0eaab989735be7" level="item">
           <did>
-            <unittitle>PM [possibly Powhatan Moncure, Dora's husband] to "My Dearest Bet".
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Undated]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:2
-</container>
+            <unittitle>[Undated] "PM" [possibly Powhatan Moncure, Dora's husband] to "My Dearest
+              Bet", <unitdate type="inclusive">Undated</unitdate></unittitle>
+            <container id="aspace_55db4c4e9a32f7f59a6515f29e6b8fb1" label="Folder" type="folder"
+              >2</container>
           </did>
-          <scopecontent>
-            <p>An invitation to D.F. Ashby to come with Dora and convalesce in quietude.
-</p>
+          <scopecontent id="aspace_d5a297b5b860c04db5718f834cefa44a">
+            <head>Scope and Content</head>
+            <p>An invitation to D.F. Ashby to come with Dora and convalesce in quietude.</p>
           </scopecontent>
         </c02>
       </c01>
-      <c01 level="series">
+      <c01 id="aspace_b1d9c7ab3a4c83eb92dd7a3ccb70eddb" level="file">
         <did>
-          <unittitle>Photographs.
-</unittitle>
+          <unittitle>Folder 3: Photographs, <unitdate type="inclusive">Undated</unitdate></unittitle>
         </did>
-        <c02 level="series">
+        <c02 id="aspace_d72d98996832c684fb00e0d7f12db06f" level="file">
           <did>
-            <unittitle>Two photos of portraits of Turner Ashby--one with "C.W. Alexander" in lower right corner.
-<unitdate type="inclusive" era="ce" calendar="gregorian">[Undated]
-</unitdate></unittitle>
-            <container label="Box-folder" type="box-folder">1:3
-</container>
+            <unittitle>Photographs, <unitdate type="inclusive">Undated</unitdate></unittitle>
+            <container id="aspace_cf32e13722ab488d70defdb1f2fb57c0" label="Folder" type="folder"
+              >3</container>
           </did>
+          <scopecontent id="aspace_998f13a28af0a65495bb52dc665c3f1a">
+            <head>Scope and Content</head>
+            <p>Two photos of portraits of Turner Ashby--one with "C.W. Alexander" in lower right
+              corner.</p>
+          </scopecontent>
         </c02>
       </c01>
     </dsc>
