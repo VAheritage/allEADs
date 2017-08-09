@@ -1,1195 +1,1332 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00021">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid publicid="PUBLIC &amp;#34;-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00021::The Harrisonburg-Rockingham Historical Society Collection)//EN&amp;#34;&amp;#34;vihart00020.xml&amp;#34;" countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James
-             Madison University::Carrier Library::Special
-             Collections//TEXT (US::ViHarT::vihart00021::The
-             Harrisonburg-Rockingham Historical Society
-             Collection)//EN" "vihart00020.xml"</eadid>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+    langencoding="iso639-2b" repositoryencoding="iso15511">
+    <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00073.xml"
+      >vihart00021</eadid>
     <filedesc>
       <titlestmt>
-        <titleproper>A Guide to the Harrisonburg-Rockingham
-            Historical Society Collection, 
-            <date era="ce" calendar="gregorian">1740-1950</date></titleproper>
-        <subtitle id="sort">Harrisonburg-Rockingham Historical
-            Society Collection 
-            <num type="collectionnumber">2095</num></subtitle>
-        <author>Initially compiled by Sandra Joyner &amp; Don
-            Lambert, April, 1987 
-            <lb/>Additions by Marie Green, Scott DeNoon, Chris
-            Bolgiano, May, 1988 
-            <lb/>Revised May, 1989; Nov. 1989; April 1990 
-            <lb/>Additions and Revisions by Mindy Tanner April
-            1991</author>
+        <titleproper>A Guide to the Harrisonburg-Rockingham Historical Society Collection,
+          1740-1950: <num>SC 0117</num></titleproper>
+        <author>Sandra Joyner and Don Lambert, April 1987; Cara Lundgren, 2014 </author>
       </titlestmt>
       <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James
-            Madison University</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2003 JMU Libraries.
-            All rights reserved.</date>
+        <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian"> © 2014 By JMU Libraries. All rights
+          reserved. </date>
         <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
-               Use</extref>
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+            Use</extref>
         </p>
-        <p id="filesize">[ca. ##89 Kilobytes]</p>
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>Machine-readable finding aid derived from HTML,
-         created by niyi, 
-         <date era="ce" calendar="gregorian">6/4/2003</date></creation>
-      <langusage>Description is in 
-         <language>English</language></langusage>
+      <creation>This finding aid was produced using ArchivesSpace and hand encoding by Tiffany Cole
+        on <date>2017-08-09 09:37:33 -0400</date>.</creation>
+      <descrules>Describing Archives: A Content Standard</descrules>
     </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2004-02-19" era="ce" calendar="gregorian">Feb 19, 2004</date>
-        <item>PUBLIC "-//James Madison University::Carrier
-            Library::Special Collections//TEXT
-            (US::ViHarT::vihart00021::The Harrisonburg-Rockingham
-            Historical Society Collection)//EN" "vihart00020.xml"
-            converted from EAD 1.0 to 2002 by v1to02.xsl
-            (sy2003-10-15).</item>
-      </change>
-      <change>
-        <date normal="2004-02-25" era="ce" calendar="gregorian">Feb 25, 2004</date>
-        <item>converted to conform to eadVIVA.dtd by
-            vivastrict.xsl</item>
-      </change>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
-      <titleproper>A Guide to the Harrisonburg-Rockingham Historical
-         Society Collection, 
-         <date era="ce" calendar="gregorian">1740-1950</date></titleproper>
-      <subtitle>A Collection in 
-         <lb/>Special Collections 
-         <num type="Collection Number">2095</num></subtitle>
+      <titleproper> A Guide to the Harrisonburg-Rockingham Historical Society Collection, <date
+          era="ce" calendar="gregorian">1740-1950</date>
+      </titleproper>
+      <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+          0117</num>
+      </subtitle>
       <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
       </p>
-      <publisher>Special Collections, Carrier Library, James Madison
-         University</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2003</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2010</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
       <list type="deflist">
         <defitem>
           <label>Processed by:</label>
-          <item>Special Collections</item>
+          <item>Sandra Joyner and Don Lambert, April 1987; Cara Lundgren, 2014</item>
         </defitem>
       </list>
     </titlepage>
   </frontmatter>
   <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison
-      University</runner>
     <did>
-      <head>Descriptive Summary</head>
-      <repository>Special Collections, James Madison
-         University</repository>
-      <unittitle>The Harrisonburg-Rockingham Historical Society
-         Collection 
-         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
-         1740-1950</unitdate></unittitle>
-      <unitid label="Collection number">2095</unitid>
-      <physdesc label="Physical Characteristics">This collection
-         consists of approximately 1,700 items, in five Hollinger boxes
-         and one Flat box.</physdesc>
-      <langmaterial label="Language">
+      <langmaterial>
         <language langcode="eng">English</language>
       </langmaterial>
+      <repository>
+        <corpname>Special Collections, James Madison University</corpname>
+      </repository>
+      <unittitle>Harrisonburg-Rockingham Historical Society Collection, </unittitle>
+      <unitid label="Collection Number" encodinganalog="099$a">SC 0104</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">3.0 cubic feet; 6 boxes, 1 flat
+        folder</physdesc>
+      <unitdate type="inclusive">1740-1950</unitdate>
+      <abstract id="aspace_8b0c0cf7d8d4e5e3173df401b85e0033">This collection consists of
+        approximately 1,700 items, in six boxes and one flat folder, and covers the dates 1740-1950.
+        The collection is comprised of a very wide variety of legal, governmental, business, school,
+        and church records, as well as personal papers, all primarily from the Central Shenandoah
+        Valley (Rockingham, Shenandoah, Augusta, and Page counties). Most are originals, but some
+        facsimiles are included.</abstract>
     </did>
     <descgrp type="admininfo">
-      <head>Administrative Information 
-         </head>
-      <accessrestrict>
-        <head>Access</head>
-        <p>There are no restrictions.</p>
+      <head>Administrative Information</head>
+      <accessrestrict id="aspace_29a8cd1825eb80a7eaf4f268335b871b">
+        <head>Access Restrictions</head>
+        <p>Collection is open for research. Researchers must register and agree to copyright and
+          privacy laws before using this collection. Please contact Research Services staff before
+          visiting the James Madison University Special Collections Library to use this
+          collection.</p>
       </accessrestrict>
-      <userestrict>
+      <userestrict id="aspace_da913ec4ae0e28ef082e2747b19c376d">
         <head>Use Restrictions</head>
-        <p>There are no restrictions.</p>
+        <p>The copyright interests in this collection have not been transferred to the James Madison
+          University Special Collections Library. For more information, contact the Special
+          Collections Library Reference Desk (library-special@jmu.edu).</p>
       </userestrict>
-      <prefercite>
+      <prefercite id="aspace_69d10f0454c09a42ca11db4a1605993c">
         <head>Preferred Citation</head>
-        <p>The Harrisonburg-Rockingham Historical Society
-            Collection, Collection #2095, Special Collections, Carrier
-            Library, James Madison University, Harrisonburg, Va.</p>
+        <p>[Identification of item], [box #, folder #], Harrisonburg-Rockingham Historical Society
+          Collection, 1740-1950, SC 0117, Special Collections, Carrier Library, James Madison
+          University, Harrisonburg, Va.</p>
       </prefercite>
-      <acqinfo>
+      <acqinfo id="aspace_49647f13ce0d581603849215af202200">
         <head>Acquisition Information</head>
-        <p>This collection was compiled from many boxes of
-            miscellaneous papers placed on deposit at the Library by
-            the Harrisonburg-Rockingham Historical Society.</p>
+        <p>This collection was compiled from many boxes of miscellaneous papers placed on deposit at
+          the library by the Harrisonburg-Rockingham Historical Society.</p>
       </acqinfo>
+      <processinfo id="aspace_69effde8121ad4511d9f83d96c030ac7">
+        <head>Processing Information</head>
+        <p>In order to streamline the process of applying collection numbers, Special Collections
+          staff completed a large-scale renumbering campaign in the spring of 2017. <emph
+            render="bold">This collection was previously cataloged as SC 2095</emph>.</p>
+      </processinfo>
     </descgrp>
-    <scopecontent>
-      <head>Scope and Content Information</head>
-      <p>This collection consists of approximately 1,700 items, in
-         five Hollinger boxes and one Flat box, and covers the dates
-         1740-1950. The collection is comprised of a very wide variety
-         of legal, governmental, business, school, and church records,
-         as well as personal papers, all primarily from the Central
-         Shenandoah Valley (Rockingham, Shenandoah, Augusta, and Page
-         Counties). Most are originals, but some photocopies are
-         included.</p>
-      <p>The Legal/Governmental Documents Series includes summonses,
-         road documents, juror lists, delivery bonds, papers from the
-         Sheriff's Office and the Circuit Courts of Rockingham and
-         Shenandoah Counties, CSA Telegraph Reports, postal accounts,
-         and miscellaneous other official reports, claims,
-         applications, etc.</p>
-      <p>The Business/Institutional Documents Series includes church
-         histories and other church documents, school catalogs, slave
-         purchase documents, records of Cootes' Store, and other
-         miscellaneous business papers which are not related to
-         families, such as the merger of the News Register Co. and
-         Rockingham Publishing Co.</p>
-      <p>The Individual/Family Documents Series contains deeds and
-         indentures; letters; receipts; promissory notes and other
-         financial papers, including those related to family
-         businesses; certificates; and miscellaneous other documents.
-         Of particular interest are the Harrison and Lincoln folders,
-         which include several noteworthy deeds; and the Winfield
-         folder, which includes several items relating to the Civil
-         War.</p>
+    <scopecontent id="aspace_5fc05096bc1740ce397002fdd77a932c">
+      <head>Scope and Content</head>
+      <p>This collection consists of approximately 1,700 items, in six boxes and one flat folder,
+        and covers the dates 1740-1950. The collection is comprised of a very wide variety of legal,
+        governmental, business, school, and church records, as well as personal papers, all
+        primarily from the Central Shenandoah Valley (Rockingham, Shenandoah, Augusta, and Page
+        Counties). Most are originals, but some photocopies are included.</p>
+      <p>The Legal/Governmental Documents Series includes summonses, road documents, juror lists,
+        delivery bonds, papers from the Sheriff's Office and the Circuit Courts of Rockingham and
+        Shenandoah Counties, CSA Telegraph Reports, postal accounts, and miscellaneous other
+        official reports, claims, applications, etc.</p>
+      <p>The Business/Institutional Documents Series includes church histories and other church
+        documents, school catalogs, slave purchase documents, records of Cootes' Store, and other
+        miscellaneous business papers which are not related to families, such as the merger of the
+        News Register Co. and Rockingham Publishing Co. Significantly the collection includes a
+        complete issue of the Rockingham Weekly Register from April 26, 1828, that is not extant
+        elsewhere.</p>
+      <p>The Individual/Family Documents Series contains deeds and indentures; letters; receipts;
+        promissory notes and other financial papers, including those related to family businesses;
+        certificates; and miscellaneous other documents. Of particular interest are the Harrison and
+        Lincoln family folders, which include several noteworthy deeds; and the Winfield family
+        folder, which includes several items relating to the Civil War.</p>
     </scopecontent>
-    <arrangement>
+    <arrangement id="aspace_71aec8d4fcbe69977c7a96ece7056cef">
       <head>Arrangement</head>
-      <p>Documents are arranged chronologically within folders,
-         except in the Miscellaneous folders of the Individual/Family
-         series, where they are filed alphabetically.</p>
+      <p>Most of the papers were received in no order. A few packets were labeled with family names.
+        Documents are arranged chronologically within folders, except in the Miscellaneous folders
+        of the Individual/Family series, where they are filed alphabetically. The documents were
+        sorted into the following series and sub series:</p>
+      <list type="ordered">
+        <item>1. Legal/Governmental Documents</item>
+        <item>2. Business/Institutional Documents</item>
+        <item>3. Individual/Family Documents</item>
+        <item>3.1. Individual Families</item>
+        <item>3.2. Miscellaneous Families</item>
+        <item>4. Oversize</item>
+        <item>4.1. Legal/Governmental Documents</item>
+        <item>4.2. Business/Institutional Documents</item>
+        <item>4.3. Individual/Family Documents</item>
+        <item>4.4. Maps</item>
+      </list>
     </arrangement>
-    <dsc type="combined">
-      <head>Contents List</head>
-      <c01 level="item">
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh">Virginia -- History, Local -- Sources</subject>
+        <subject source="lcsh">Virginia -- History -- Sources</subject>
+        <subject source="lcsh">Virginia -- Genealogy -- Sources</subject>
+        <subject source="lcsh">Virginia -- History -- Colonial period, ca. 1600-1775</subject>
+        <title source="local">Virginia--History--Civil War, 1861-1865</title>
+        <subject source="lcsh">Virginia -- Politics and government -- 1775-1865</subject>
+        <subject source="lcsh">Virginia -- Politics and government -- 1861-1865</subject>
+        <subject source="lcsh">Virginia -- Politics and government -- 1865-1950</subject>
+        <subject source="lcsh">Virginia -- Social life and customs</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- History --
+          Sources</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- Religious life and
+          customs</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- Social life and
+          customs</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- Genealogy --
+          Sources</subject>
+        <subject source="lcsh">Rockingham County (Va.) -- History -- Sources</subject>
+        <subject source="lcsh">Shenandoah County (Va.) -- History -- Sources</subject>
+        <subject source="lcsh">Augusta County (Va.) -- History -- Sources</subject>
+        <subject source="lcsh">Page County (Va.) -- History -- Sources</subject>
+        <subject source="local">Rockingham County (Va.) -- Genealogy -- Sources</subject>
+        <subject source="lcsh">Shenandoah County (Va.) -- Genealogy -- Sources</subject>
+        <subject source="lcsh">Page County (Va.) -- Genealogy -- Sources</subject>
+        <subject source="lcsh">Augusta County (Va.) -- Genealogy -- Sources</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc>
+      <c01 id="aspace_6eb5259969a99343af47d75ab572c4c5" level="series">
         <did>
-          <unittitle label="Series">1: Legal/Governmental
-               Documents</unittitle>
+          <unittitle>Series 1: Legal/Governmental Documents</unittitle>
         </did>
-        <c02 level="item">
+        <c02 id="aspace_3a8cae35ef3b169d989fb8e310d90e7c" level="file">
           <did>
-            <unittitle>Account book, J. H. Shue, Clerk of Circuit
-                  Ct. 
-                  <unitdate era="ce" calendar="gregorian">1875-1881</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:1</container>
-            <physdesc>1 item</physdesc>
+            <unittitle>Account book, J. H. Shue, Clerk of Circuit Ct. (1 item), <unitdate
+                normal="1875/1881" type="inclusive">1875-1881</unitdate></unittitle>
+            <container id="aspace_64398ea8263a51d4b2b74ba4671f4b2f" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_a50ca35b7bd96c08111e9dc3454a50a6"
+              parent="aspace_64398ea8263a51d4b2b74ba4671f4b2f" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_1ae08be8db4031e80f1ff2de04d654e7" level="file">
           <did>
-            <unittitle>Applications to create voting precincts 
-                  <unitdate era="ce" calendar="gregorian">1922</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:2</container>
-            <physdesc>2 items.</physdesc>
+            <unittitle>Applications to create voting precincts (2 items), <unitdate
+                normal="1922/1922">1875-1881</unitdate></unittitle>
+            <container id="aspace_2703b0e7e1ddef8211592ea9082cb2bc" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_d077be33a1bd8296371401ef3dc2ceac"
+              parent="aspace_2703b0e7e1ddef8211592ea9082cb2bc" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_ffbc30e044aadba4a060131fa5da9560" level="file">
           <did>
-            <unittitle>Applications for soft-drink licenses 
-                  <unitdate era="ce" calendar="gregorian">1916-1931</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:3</container>
-            <physdesc>78 items.</physdesc>
+            <unittitle>Applications for soft-drink licenses (78 items), <unitdate normal="1916/1931"
+                type="inclusive">1916-1931</unitdate></unittitle>
+            <container id="aspace_30eb2f59fa3e2323d797c7d1311f47b9" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_103540599a77ac7955ea80a497bb7871"
+              parent="aspace_30eb2f59fa3e2323d797c7d1311f47b9" type="folder">3</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_b815f465221a3f2769e0266dd66f2c73" level="file">
           <did>
-            <unittitle>Appointments to office 
-                  <unitdate era="ce" calendar="gregorian">1876-1887</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:4</container>
-            <physdesc>7 items.</physdesc>
+            <unittitle>Appointments to office (7 items), <unitdate normal="1876/1887"
+                type="inclusive">1876-1887</unitdate></unittitle>
+            <container id="aspace_1fee41d44210897160c31642441568b8" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_1056cc8c1f0cd5d5cd968ccb5da10cfe"
+              parent="aspace_1fee41d44210897160c31642441568b8" type="folder">4</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_4d598d23c1157086fc4812131ee10895" level="file">
           <did>
-            <unittitle>Arrest warrants 
-                  <unitdate era="ce" calendar="gregorian">1890-1920</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:5</container>
-            <physdesc>6 items.</physdesc>
+            <unittitle>Arrest warrants (6 items), <unitdate normal="1890/1920" type="inclusive"
+                >1890-1920</unitdate></unittitle>
+            <container id="aspace_12d1b8640dbc4b4525ad503e21508744" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_31f1e135d56d89c6dacbbf18bed25f92"
+              parent="aspace_12d1b8640dbc4b4525ad503e21508744" type="folder">5</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_73b1789e9157467592d7cd00e8e23162" level="file">
           <did>
-            <unittitle>Articles of agreement, 1861 Militia draft
-                  substitute agreement 
-                  <unitdate era="ce" calendar="gregorian">1821-1894</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:6</container>
-            <physdesc>11 items.</physdesc>
+            <unittitle>Articles of agreement, 1861 Militia draft substitute agreement (11 items),
+                <unitdate normal="1821/1894" type="inclusive">1821-1894</unitdate></unittitle>
+            <container id="aspace_f8362bd5ba05402d07645f549cbb13a9" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_da70afb6903b5a92904cfe00e685af61"
+              parent="aspace_f8362bd5ba05402d07645f549cbb13a9" type="folder">6</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_97db376a08fba938ee672f9784fa0599" level="file">
           <did>
-            <unittitle>Black voters, Rockingham County 
-                  <unitdate era="ce" calendar="gregorian">1902-1903</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:7</container>
-            <physdesc>1 item.</physdesc>
+            <unittitle>Black voters, Rockingham County (1 item), <unitdate normal="1902/1903"
+                type="inclusive">1902-1903</unitdate></unittitle>
+            <container id="aspace_fb953c8d54fd616e6682147191d69814" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_05bc5b60db4d1d6f300a14f6dfa3bac0"
+              parent="aspace_fb953c8d54fd616e6682147191d69814" type="folder">7</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_8efaa1421e2081a3f98625b313d45124" level="file">
           <did>
-            <unittitle>Civilian Defense, 1941-1944, 1
-                  item.</unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:7.5</container>
+            <unittitle>Complaints of illegal sales of poison (14 items), <unitdate
+                normal="1906/1907" type="inclusive">1906-1907</unitdate></unittitle>
+            <container id="aspace_d10715c3abd444dabe96e2340b5b24c9" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_162c193554df95751f7430f9c817979e"
+              parent="aspace_d10715c3abd444dabe96e2340b5b24c9" type="folder">8</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_48348df828684cd007c173e20e9e7a79" level="file">
           <did>
-            <unittitle>Complaints of illegal sales of poison 
-                  <unitdate era="ce" calendar="gregorian">1906-1907</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:8</container>
-            <physdesc>14 items.</physdesc>
+            <unittitle>Complaints to the court (5 items), <unitdate normal="1778/1825"
+                type="inclusive">1778-1825</unitdate></unittitle>
+            <container id="aspace_6f630438bf7630b23166ca2f45b7fbd2" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_ccd24812469e914e876bfc3347125a7f"
+              parent="aspace_6f630438bf7630b23166ca2f45b7fbd2" type="folder">9</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_df78f7d0a0d1ef6e503c89c9fe790e90" level="file">
           <did>
-            <unittitle>Complaints to the court. One document
-                  deals with a Negro escaping from jail 
-                  <unitdate era="ce" calendar="gregorian">1778-1825</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:9</container>
-            <physdesc>5 items.</physdesc>
+            <unittitle>Court Actions: court decisions and grand jury presentments (7 items),
+                <unitdate normal="1779/1897" type="inclusive">1779-1897</unitdate></unittitle>
+            <container id="aspace_630f8a44f0495abac1e9e66186ca9934" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_e2d3b6e2b6df4e1280a52c6f8bf4672d"
+              parent="aspace_630f8a44f0495abac1e9e66186ca9934" type="folder">10</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_ce995e3bd54f7500485112b7b6197d5c" level="file">
           <did>
-            <unittitle>Court Actions: court decisions and grand
-                  jury presentments 
-                  <unitdate era="ce" calendar="gregorian">1779-1879</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:10</container>
-            <physdesc>5 items.</physdesc>
+            <unittitle>Courthouse and Public Square; papers dealing with the building of a new
+              courthouse (12 items), <unitdate normal="1832/1838" type="inclusive"
+                >1832-1838</unitdate></unittitle>
+            <container id="aspace_b9de4ab41149189b4acf0ddad916d37b" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_da85f03ac40ff1c4ce06b93973fc9301"
+              parent="aspace_b9de4ab41149189b4acf0ddad916d37b" type="folder">11</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_a7eb32a146116914168ba8341c24fffd" level="file">
           <did>
-            <unittitle>Courthouse and Public Square; papers
-                  dealing with the building of a new courthouse 
-                  <unitdate era="ce" calendar="gregorian">1832-1838</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:11</container>
-            <physdesc>12 items.</physdesc>
+            <unittitle>Court Petitions (5 items), <unitdate normal="1798/1899" type="inclusive"
+                >1798-1899</unitdate></unittitle>
+            <container id="aspace_b1e7288073ab4e5e5aa4ff3cd42fa38a" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_7ca5bac83757ec0427635b549aea9461"
+              parent="aspace_b1e7288073ab4e5e5aa4ff3cd42fa38a" type="folder">12</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_d232c1617f5bc8f187b289b0a7468f7c" level="file">
           <did>
-            <unittitle>Court Petitions 
-                  <unitdate era="ce" calendar="gregorian">1798-1899</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:12</container>
-            <physdesc>5 items.</physdesc>
+            <unittitle>CSA Military telegraph reports, Confederate Bonds (5 items), <unitdate
+                normal="1864/1864">1864</unitdate></unittitle>
+            <container id="aspace_fce78e11ad60468e2017f69cc549b3d7" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_1a8b51ee4bfe92e82ac3cdfe9b2cfed9"
+              parent="aspace_fce78e11ad60468e2017f69cc549b3d7" type="folder">13</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_fe7623a8b88441e1a8d8e583ff791a64" level="file">
           <did>
-            <unittitle>CSA Military telegraph reports, 1864 , 2
-                  items.</unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:13</container>
+            <unittitle>Debt contracts (19 items), <unitdate normal="1797/1907" type="inclusive"
+                >1797-1907</unitdate></unittitle>
+            <container id="aspace_6fd17b821e3ce8f9c440bcf76576b58f" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_21f2798fa449e7c9b3b62edd96731071"
+              parent="aspace_6fd17b821e3ce8f9c440bcf76576b58f" type="folder">14</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_1ddc2bd3ad73af14062e3664d97d5bf5" level="file">
           <did>
-            <unittitle>Debt contracts, 1797-1907, 19
-                  items.</unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:14</container>
+            <unittitle>Delivery bonds (90 items), <unitdate normal="1844/1893" type="inclusive"
+                >1844-1893</unitdate></unittitle>
+            <container id="aspace_b3ce77307ceb49d56a5a0722135a6db3" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_00112b3d0216af68f14dcc0a2145dcdb"
+              parent="aspace_b3ce77307ceb49d56a5a0722135a6db3" type="folder">15</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_935a6886dfcb3a8aa95e235999238000" level="file">
           <did>
-            <unittitle>Delivery bonds, 1844-1893, 90
-                  items.</unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:15</container>
+            <unittitle>Inquests (10 items), <unitdate normal="1790/1823" type="inclusive"
+                >1790-1823</unitdate></unittitle>
+            <container id="aspace_9bc81b798bd35c4d37dde006472d192d" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_6b3f3a91c21e49287ec6557f18c4504e"
+              parent="aspace_9bc81b798bd35c4d37dde006472d192d" type="folder">16</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_77c7ff2984ff5d9d2dce17dac52c30c0" level="file">
           <did>
-            <unittitle>Inquests, 1790-1823, 10 items.</unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:16</container>
+            <unittitle>Jail: Reports on the condition of the jail (3 items), <unitdate
+                normal="1824/1916" type="inclusive">1824-1916</unitdate></unittitle>
+            <container id="aspace_db13c947866dbd8bf6a8d6fa472bd29a" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_aa8eec8938d57524723961d8fde8f2a9"
+              parent="aspace_db13c947866dbd8bf6a8d6fa472bd29a" type="folder">17</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_4ba6611d063b6521721531e385991cda" level="file">
           <did>
-            <unittitle>Jail: Reports on the condition of the jail
-                  <unitdate era="ce" calendar="gregorian">1824-1916</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:17</container>
-            <physdesc>3 items.</physdesc>
+            <unittitle>Juror lists. See also Oversize Series (63 items), <unitdate
+                normal="1871/1902" type="inclusive">1871-1902</unitdate></unittitle>
+            <container id="aspace_298468062aabe882ab88875cae27bccb" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_01eb5a42362ec6ed0dee196106ae96b5"
+              parent="aspace_298468062aabe882ab88875cae27bccb" type="folder">18</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_040d9a9c44a156bd125e10d02974ecdc" level="file">
           <did>
-            <unittitle>Juror lists. See also Oversize Series.
-                  1871-1902, 63 items.</unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:18</container>
+            <unittitle>Lawsuit: Haga vs. Bradley; Article of agreement and depositions concerning
+              this lawsuit (13 items), <unitdate normal="1829/1835" type="inclusive"
+                >1829-1835</unitdate></unittitle>
+            <container id="aspace_c6a76c24da6815e92d483a3e99dc692b" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_33ec02139e204dc8a1b2d2797d6b8f10"
+              parent="aspace_c6a76c24da6815e92d483a3e99dc692b" type="folder">19</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_a1a460039ccd374b7255fd961380c17c" level="file">
           <did>
-            <unittitle>Lawsuit: Haga vs. Bradley. Article of
-                  agreement and depositions concerning this lawsuit. 
-                  <unitdate era="ce" calendar="gregorian">1829-1835</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:19</container>
-            <physdesc>13 items.</physdesc>
+            <unittitle>Licenses; To sell merchandise, keep private entertainment, practice as
+              physician or attorney, operate as daguerrian artist, 1929 list of stills (53 items),
+                <unitdate normal="1760/1929" type="inclusive">1760-1929</unitdate></unittitle>
+            <container id="aspace_8aa8bc855d52fec81619c27d545067f1" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_021bcbe03c550b20ee680c3dcc2d54e0"
+              parent="aspace_8aa8bc855d52fec81619c27d545067f1" type="folder">20</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_fd601b5d44e5edc946ef27564c20e544" level="file">
           <did>
-            <unittitle>Licenses: to sell merchandise, keep
-                  private entertainment, practice as physician or
-                  attorney, operate as daguerrian artist, 1929 list of
-                  stills. 
-                  <unitdate era="ce" calendar="gregorian">1760-1929</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:20</container>
-            <physdesc>53 items.</physdesc>
+            <unittitle>Oaths of office (7 items), <unitdate normal="1779/1893" type="inclusive"
+                >1779-1893</unitdate></unittitle>
+            <container id="aspace_a89b68ec4ddee23a91d127e3325a71bb" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_a6c3996e7e0d9ffd02a6830f38f3ac98"
+              parent="aspace_a89b68ec4ddee23a91d127e3325a71bb" type="folder">21</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_9dc252812069de6dc57edf6a72d196b5" level="file">
           <did>
-            <unittitle>Oaths of office 
-                  <unitdate era="ce" calendar="gregorian">1779-1893</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:21</container>
-            <physdesc>7 items.</physdesc>
+            <unittitle>Pleas of the Commonwealth (7 items), <unitdate normal="1855/1860"
+                type="inclusive">1855-1860</unitdate></unittitle>
+            <container id="aspace_296e1e7517c746d039715d22ad0bd3da" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_738d72366f41e1b1f06640e3ca884ea2"
+              parent="aspace_296e1e7517c746d039715d22ad0bd3da" type="folder">22</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_aca2998500b8c2d8b67787bfa3f6cbc4" level="file">
           <did>
-            <unittitle>Pleas of the Commonwealth 
-                  <unitdate era="ce" calendar="gregorian">1855-1860</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:22</container>
-            <physdesc>7 items.</physdesc>
+            <unittitle>Postal accounts, Parnassus, Va. (25 items), <unitdate normal="1875/1881"
+                type="inclusive">1875-1881</unitdate></unittitle>
+            <container id="aspace_11aeb965f372496d9b4a68699e9cfc89" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_54dab8f5af4a9907df42d80450856e84"
+              parent="aspace_11aeb965f372496d9b4a68699e9cfc89" type="folder">23</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_e9c865fe3bead3291f45feda2a871a4b" level="file">
           <did>
-            <unittitle>Postal accounts, Parnassus, Va. 
-                  <unitdate era="ce" calendar="gregorian">1875-1881</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  1:23</container>
-            <physdesc>25 items.</physdesc>
+            <unittitle>Assessments of Clerks of the Court (93 items), <unitdate normal="1880/1914"
+                type="inclusive">1880-1914</unitdate></unittitle>
+            <container id="aspace_9cc9bf5d62663866270d314b227a5193" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_450e9343810d8895d62a1af96798df8e"
+              parent="aspace_9cc9bf5d62663866270d314b227a5193" type="folder">24</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_17aa4802ed26996d8a0397cc5def71a8" level="file">
           <did>
-            <unittitle>Prohibition petition 
-                  <unitdate era="ce" calendar="gregorian">1914</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:1</container>
-            <physdesc>1 item.</physdesc>
+            <unittitle>Civilian Defense (1 item), <unitdate normal="1941/1944" type="inclusive"
+                >1941-1944</unitdate></unittitle>
+            <container id="aspace_9f8c1e4619ef0a1b56c87e0bcdd8c677" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_6e48e4e7ad29f5bcbb409824f4fe6f90"
+              parent="aspace_9f8c1e4619ef0a1b56c87e0bcdd8c677" type="folder">25</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_0685e117a61b64604f69d55327e64766" level="file">
           <did>
-            <unittitle>Promises to pay 
-                  <unitdate era="ce" calendar="gregorian">1817-1910</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:2</container>
-            <physdesc>28 items.</physdesc>
+            <unittitle>Prohibition petition (1 item), <unitdate normal="1914/1914"
+              >1914</unitdate></unittitle>
+            <container id="aspace_87f203ef19f9ba4569c87726438663d8" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_a48e60312ad25e0447886ebea3ddae2b"
+              parent="aspace_87f203ef19f9ba4569c87726438663d8" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_fad9406b06c8ef69c04c6cbb0a81207a" level="file">
           <did>
-            <unittitle>Receipts &amp; applications for business
-                  charters 
-                  <unitdate era="ce" calendar="gregorian">1875-1903</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:3</container>
-            <physdesc>51 items.</physdesc>
+            <unittitle>Promises to pay (28 items), <unitdate normal="1817/1910" type="inclusive"
+                >1817-1910</unitdate></unittitle>
+            <container id="aspace_c82639d466dfdfad41dd7d70aec5fcd1" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_55b171468c8b6e33fb627a7828043bd7"
+              parent="aspace_c82639d466dfdfad41dd7d70aec5fcd1" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_e2fe0d29ea54bc05a229986a136d44d7" level="file">
           <did>
-            <unittitle>Records &amp; claims against estates 
-                  <unitdate era="ce" calendar="gregorian">1792-1890</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:4</container>
-            <physdesc>9 items.</physdesc>
+            <unittitle>Receipts &amp; applications for business charters (51 items), <unitdate
+                normal="1875/1903" type="inclusive">1875-1903</unitdate></unittitle>
+            <container id="aspace_af5b202ecc2027527bd3b056d4a1f99d" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_973a8dec8eb342f6c26589a609e5d9bb"
+              parent="aspace_af5b202ecc2027527bd3b056d4a1f99d" type="folder">3</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_200052d0e0ee12c8f6d05ea98fdfbfe1" level="file">
           <did>
-            <unittitle>Recognizance bonds 
-                  <unitdate era="ce" calendar="gregorian">1883-1889</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:5</container>
-            <physdesc>50 items.</physdesc>
+            <unittitle>Records &amp; claims against estates (9 items), <unitdate normal="1792/1890"
+                type="inclusive">1792-1890</unitdate></unittitle>
+            <container id="aspace_cb0fe471d6ee9669ef6a3a20a722eb4f" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_ccbbcde86d5c775a8bc42739eea1b4e4"
+              parent="aspace_cb0fe471d6ee9669ef6a3a20a722eb4f" type="folder">4</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_6f827bbd66b3fe4b1411ec5941c8084c" level="file">
           <did>
-            <unittitle>Recognizance bonds, promises to keep the
-                  peace 
-                  <unitdate era="ce" calendar="gregorian">1890-1897</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:6</container>
-            <physdesc>77 items.</physdesc>
+            <unittitle>Recognizance bonds (50 items), <unitdate normal="1883/1889" type="inclusive"
+                >1883-1889</unitdate></unittitle>
+            <container id="aspace_289bb49bbd43233a621e1c31878b7766" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_ee47e35934354771070808c8b94b75e4"
+              parent="aspace_289bb49bbd43233a621e1c31878b7766" type="folder">5</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_bc432ce7f0bde5e69c7632aaa446a5ec" level="file">
           <did>
-            <unittitle>Road documents. See also Oversize Series. 
-                  <unitdate era="ce" calendar="gregorian">1793-1927</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:7</container>
-            <physdesc>57 items.</physdesc>
+            <unittitle>Recognizance bonds, promises to keep the peace (77 items), <unitdate
+                normal="1890/1897" type="inclusive">1890-1897</unitdate></unittitle>
+            <container id="aspace_4f7e543b68b4a81060acb40dc28d403e" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_a8d2428f36d93be6fc3e4d713dfb4978"
+              parent="aspace_4f7e543b68b4a81060acb40dc28d403e" type="folder">6</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_2b67ae0431938afa8e02a52eecc4b2b0" level="file">
           <did>
-            <unittitle>Summonses and subpoenas 
-                  <unitdate era="ce" calendar="gregorian">1801-1930</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:8</container>
-            <physdesc>36 items.</physdesc>
+            <unittitle>Road documents. See also Oversize Series (57 items), <unitdate
+                normal="1793/1927" type="inclusive">1793-1927</unitdate></unittitle>
+            <container id="aspace_bebdff5f110347b92e623590f712da37" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_cccc64512da2ee66ac9af238d360c3ce"
+              parent="aspace_bebdff5f110347b92e623590f712da37" type="folder">7</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_d561dab824bdbf6e2d418ee14988703e" level="file">
           <did>
-            <unittitle>Tax Data. See also Oversize Series. 
-                  <unitdate era="ce" calendar="gregorian">1801-1861</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:9</container>
-            <physdesc>4 items.</physdesc>
+            <unittitle>Summonses and subpoenas (36 items), <unitdate normal="1801/1930"
+                type="inclusive">1801-1930</unitdate></unittitle>
+            <container id="aspace_ba0784f1f67a4cb373b5172584426194" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_a83ca97b9bfab595d1591686e096e313"
+              parent="aspace_ba0784f1f67a4cb373b5172584426194" type="folder">8</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_294aaa4d28d9b99acb757024ad4df52c" level="file">
           <did>
-            <unittitle>Miscellaneous legal documents: Claims,
-                  judgments of court, deposition notice, program from
-                  dedication ceremony of W.G. Myers Armory. 
-                  <unitdate era="ce" calendar="gregorian">1797-1954</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:10</container>
-            <physdesc>4 items.</physdesc>
+            <unittitle>Tax Data. See also Oversize Series (4 items), <unitdate normal="1801/1861"
+                type="inclusive">1801-1861</unitdate></unittitle>
+            <container id="aspace_6422756c92d5267a661c05acbd0d72ae" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_d8d36977ea369b42ca69dcaa9030df4a"
+              parent="aspace_6422756c92d5267a661c05acbd0d72ae" type="folder">9</container>
+          </did>
+        </c02>
+        <c02 id="aspace_1b9c95549ee993ad0a06264030f3e64a" level="file">
+          <did>
+            <unittitle>Miscellaneous legal documents: Claims, judgments of court, deposition notice,
+              program from dedication ceremony of W. G. Myers Armory (6 items), <unitdate
+                normal="1797/1954" type="inclusive">1797-1954</unitdate></unittitle>
+            <container id="aspace_126a8fb14ee75f7dd191e558f294035c" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_cd949e6db9e2fc2b902150628de601fc"
+              parent="aspace_126a8fb14ee75f7dd191e558f294035c" type="folder">10</container>
           </did>
         </c02>
       </c01>
-      <c01 level="item">
+      <c01 id="aspace_79318c61f8a20c02678cae1916913662" level="series">
         <did>
-          <unittitle label="Series">2: Business/Institutional
-               Documents</unittitle>
+          <unittitle>Series 2: Business/Institutional Documents</unittitle>
         </did>
-        <c02 level="item">
+        <c02 id="aspace_719cb0707ceb5519a64a8bafd3027035" level="file">
           <did>
-            <unittitle>C &amp; W Railroad Company. See also
-                  Oversize Series. 
-                  <unitdate era="ce" calendar="gregorian">1895</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:11</container>
-            <physdesc>3 items</physdesc>
+            <unittitle>C&amp;W Railroad Company. See also Oversize Series (3 items), <unitdate
+                normal="1895/1895">1895</unitdate></unittitle>
+            <container id="aspace_41007271b73551e78f9a28329786105d" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_d57c8da14d12650a6d4544ba046e9fda"
+              parent="aspace_41007271b73551e78f9a28329786105d" type="folder">11</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_3090b628d0da5fe065b21b6c5b263ccd" level="file">
           <did>
-            <unittitle>Cootes' Store: legal &amp; financial
-                  records 
-                  <unitdate era="ce" calendar="gregorian">1857-1923.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:12</container>
+            <unittitle>Cootes Store: legal &amp; financial records, <unitdate normal="1857/1923"
+                type="inclusive">1857-1923</unitdate></unittitle>
+            <container id="aspace_9520346a19c1bb32dbf773173c1e196a" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_8a11a933a0381a81461d8f0d0a696ee9"
+              parent="aspace_9520346a19c1bb32dbf773173c1e196a" type="folder">12</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_790434155db20fe42bde1c38fac5b688" level="file">
           <did>
-            <unittitle>Cootes' Store Horse Co. ledger 
-                  <unitdate era="ce" calendar="gregorian">1911.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:12.5</container>
+            <unittitle>Cootes Store Horse Co. ledger, <unitdate normal="1911/1911"
+              >1911</unitdate></unittitle>
+            <container id="aspace_8f84b6820940a199693fcc978d646fea" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_70ffd5a8a1d6871a527d3bdc0ce0f887"
+              parent="aspace_8f84b6820940a199693fcc978d646fea" type="folder">12.5</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_7173ae3907bd89fd2eb7440b9db50037" level="file">
           <did>
-            <unittitle>Cootes' Store: charges receipts 
-                  <unitdate era="ce" calendar="gregorian">1839-1898.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:13</container>
+            <unittitle>Cootes Store: charges, receipts, <unitdate normal="1839/1898"
+                type="inclusive">1839-1898</unitdate></unittitle>
+            <container id="aspace_391cf05f6d5e669e4e22d432324f6672" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_f9f7bbab00a22f85bb55880305e178e9"
+              parent="aspace_391cf05f6d5e669e4e22d432324f6672" type="folder">13</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_6536fab4485a9b0c2cbf734bbec1bd5b" level="file">
           <did>
-            <unittitle>Cootes' Store: Post office records 
-                  <unitdate era="ce" calendar="gregorian">1866-1895.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:14</container>
+            <unittitle>Cootes Store: Post office records, <unitdate normal="1866/1895"
+                type="inclusive">1866-1895</unitdate></unittitle>
+            <container id="aspace_68b6bea8f4a489c19a6177cb77b5b33f" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_a18794fbf981f194ff07c6ba6c3f3406"
+              parent="aspace_68b6bea8f4a489c19a6177cb77b5b33f" type="folder">14</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_02de3f55bb26a38afb3f6963f987b8fb" level="file">
           <did>
-            <unittitle>Cootes' Store: Bark business 
-                  <unitdate era="ce" calendar="gregorian">1890-1892.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:15</container>
+            <unittitle>Cootes Store: Bark business, <unitdate normal="1890/1892" type="inclusive"
+                >1890-1892</unitdate></unittitle>
+            <container id="aspace_54548197eb88393078edd9fdda64cdf1" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_776c4ecaa77f020ff819d2ac42ab9494"
+              parent="aspace_54548197eb88393078edd9fdda64cdf1" type="folder">15</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_8726ce5253f201f8367b4654e153c28f" level="file">
           <did>
-            <unittitle>Currency: Bills issued from banks and
-                  counties. 
-                  <unitdate era="ce" calendar="gregorian">1860-1861</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:16</container>
-            <physdesc>2 items.</physdesc>
+            <unittitle>Currency: Bills issued from banks and counties (2 items), <unitdate
+                normal="1860/1861" type="inclusive">1860-1861</unitdate></unittitle>
+            <container id="aspace_d725a7db97b665fd6a53f013cbee9839" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_48d774d256e0cdc693099a5a381c8eeb"
+              parent="aspace_d725a7db97b665fd6a53f013cbee9839" type="folder">16</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_b80b710978591e1407bd63b91a171094" level="file">
           <did>
-            <unittitle>Gilbert, Felix. Extracts by Warren
-                  Skidmore from Account book 
-                  <unitdate era="ce" calendar="gregorian">1768-9.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:16.3</container>
+            <unittitle>Gilbert, Felix. Extracts by Warren Skidmore from Account book, <unitdate
+                normal="1768/1769" type="inclusive">1768-1769</unitdate></unittitle>
+            <container id="aspace_0e5c865c188b97fdd39d83bd0a77342b" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_b74d8149ba70c819d55b664b4a9774c7"
+              parent="aspace_0e5c865c188b97fdd39d83bd0a77342b" type="folder">16.3</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_0592c7482b0d84c6ae8ed4a33c7db170" level="file">
           <did>
-            <unittitle>Harrisonburg Chamber of Commerce 
-                  <unitdate era="ce" calendar="gregorian">1925-1944.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:16.5</container>
+            <unittitle>Harrisonburg Chamber of Commerce, <unitdate normal="1925/1944"
+                type="inclusive">1925-1944</unitdate></unittitle>
+            <container id="aspace_0d4a978c987dd1d874745be904dae448" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_d944747beae9a4ab10f6fa8b4b64f0e6"
+              parent="aspace_0d4a978c987dd1d874745be904dae448" type="folder">16.5</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_e9a91e1de68b8e9216cd201b9fbfcc3c" level="file">
           <did>
-            <unittitle>Mossy Creek Iron Works 
-                  <unitdate era="ce" calendar="gregorian">1801</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:17</container>
-            <physdesc>1 item.</physdesc>
+            <unittitle>Mossy Creek Iron Works (1 item), <unitdate normal="1801/1801"
+              >1801</unitdate></unittitle>
+            <container id="aspace_d5e0c917026aafbadff47281d6978c71" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_5f8efb3b02d896eaab01fe3cda68fe9b"
+              parent="aspace_d5e0c917026aafbadff47281d6978c71" type="folder">17</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_d1c00ec5a02b6b4352f051896f12e670" level="file">
           <did>
-            <unittitle>Rawley Springs Tonic Water Co. 
-                  <unitdate era="ce" calendar="gregorian">1896</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:18</container>
-            <physdesc>3 items.</physdesc>
+            <unittitle>Rawley Springs Tonic Water Co., Rawley Springs Turnpike Co. (4 items),
+                <unitdate normal="1890/1896" type="inclusive">1890, 1896</unitdate></unittitle>
+            <container id="aspace_499a87bcdfdaa29b502b59123f3aee06" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_0c0e9e3a2e6f871533f411e1ea3b8cc4"
+              parent="aspace_499a87bcdfdaa29b502b59123f3aee06" type="folder">18</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_ea1027fb62c0c783881b1815578dcd06" level="file">
           <did>
-            <unittitle>River Bank Bridge Co. 
-                  <unitdate era="ce" calendar="gregorian">1867</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:18.5</container>
-            <physdesc>3 items.</physdesc>
+            <unittitle>River Bank Bridge Co. (3 items), <unitdate normal="1867/1867"
+              >1867</unitdate></unittitle>
+            <container id="aspace_06c8b2f708074227d6cd3ad25dc31bc3" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_7c4ab056939e0c5eacd023a823b13689"
+              parent="aspace_06c8b2f708074227d6cd3ad25dc31bc3" type="folder">18.5</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_e540f395c2097007de066ded9489ce8d" level="file">
           <did>
-            <unittitle>Rockingham Thespian Society 
-                  <unitdate era="ce" calendar="gregorian">1866</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:18.7</container>
-            <physdesc>1 item.</physdesc>
+            <unittitle>Rockingham Thespian Society (1 item), <unitdate normal="1866/1866"
+                >1866</unitdate></unittitle>
+            <container id="aspace_49e77672a4c9175565e2e0dfffb54419" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_b73582c2bde88b4ce640fd7bf5dca754"
+              parent="aspace_49e77672a4c9175565e2e0dfffb54419" type="folder">18.7</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_3fe83ab8ebae308444e6d7654e3ad0ba" level="file">
           <did>
-            <unittitle>Telephone companies: Receipts from
-                  Harrisonburg Mutual Telephone Co.; by-laws of Page
-                  Co. Telephone Company. 
-                  <unitdate era="ce" calendar="gregorian">1902-1904</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:19</container>
-            <physdesc>3 items.</physdesc>
+            <unittitle>Telephone companies: Receipts from Harrisonburg Mutual Telephone Co.; by-laws
+              of Page Co. Telephone Company (3 items), <unitdate normal="1902/1904" type="inclusive"
+                >1902-1904</unitdate></unittitle>
+            <container id="aspace_d10170a414f89fa709696be589767792" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_35e44573c695107c83429b64ffd726cc"
+              parent="aspace_d10170a414f89fa709696be589767792" type="folder">19</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_0852d9f87a7363bfa29f408a97fae46e" level="file">
           <did>
-            <unittitle>General Church documents: Contains und. TM
-                  "Some Old Churches of R'ham &amp; Neighboring
-                  Counties" by Ruebush &amp; Wayland; M.E. Church S.,
-                  R'ham Dist. Steward's Bk. 1884; 1911 R'ham Sunday
-                  Sch. Assn. Constitution; [Peaked Mtn. Church] list,
-                  1920. 
-                  <unitdate era="ce" calendar="gregorian">1884-1920 &amp; und.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  2:20</container>
-            <physdesc>4 items.</physdesc>
+            <unittitle>General Church documents: Contains undated typed manuscript "Some Old
+              Churches of Rockingham&amp; Neighboring Counties" by Ruebush &amp; Wayland; M. E.
+              Church S., Rockingham Dist. Steward's Bk. 1884; 1911 Rockingham Sunday School
+              Association Constitution; [Peaked Mountain Church] list, 1920 (4 items), <unitdate
+                normal="1884/1920" type="inclusive">1884-1920, undated</unitdate></unittitle>
+            <container id="aspace_281e53ee3caefffa2adc844be7bd7746" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_8e20a64cf3972c3d4349010ea024c905"
+              parent="aspace_281e53ee3caefffa2adc844be7bd7746" type="folder">20</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_28bddb0497577bdd2b2d28eee067bca2" level="file">
           <did>
-            <unittitle>Trustees and officers of churches 
-                  <unitdate era="ce" calendar="gregorian">1875-1918.</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  3:1</container>
+            <unittitle>Trustees and officers of churches, <unitdate normal="1875/1918"
+                type="inclusive">1875-1918</unitdate></unittitle>
+            <container id="aspace_8b756f79971918f944d31ace87b8ed28" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_ea8407fffd4a4b747be0c815a0c53913"
+              parent="aspace_8b756f79971918f944d31ace87b8ed28" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_190184d85d2b26245278cb41993f3501" level="file">
           <did>
-            <unittitle>Church histories and directories,
-                  1927-1950: Cook's Creek Pres. Church, 2 booklets,
-                  1927, 1951; Hebrew Friendship congregation, booklet
-                  1952, TM [1950?]; Methodist Church of Dayton, booklet
-                  1951; Mt. Hebron, booklet 1950; Port Republic
-                  Methodist Church, booklet 1957; New St. Stephen's
-                  Reformed Church, booklet 1941; Trissels Mennonite
-                  Congregation, TM 1950.</unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  3:2</container>
+            <unittitle>Church histories and directories, Cook's Creek Presbyterian, Hebrew
+              Friendship congregation, Methodist Church of Dayton, Mt. Hebron, Port Republic
+              Methodist Church, New St. Stephen's Reformed Church, Trissels Mennonite Congregation,
+                <unitdate normal="1927/1952" type="inclusive">1927-1952</unitdate></unittitle>
+            <container id="aspace_bd8c1cd8bf17f05de9c11ae6715b9ba3" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_1458262612c66256a63e34b8ad664419"
+              parent="aspace_bd8c1cd8bf17f05de9c11ae6715b9ba3" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_0dcf6346d44fa5e14fb1467225f0f8fa" level="file">
           <did>
-            <unittitle>School documents: Catalogs from Girls'
-                  Home School, Prospectus for Industrial School at
-                  Massanetta Springs, Program from McGaheysville H.S.,
-                  Teacher's District Meeting, Timberville, 1908
-                  program. 
-                  <unitdate era="ce" calendar="gregorian">1889-1926</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  3:3</container>
-            <physdesc>5 items.</physdesc>
+            <unittitle>School documents: Catalogs from Girls' Home School, Prospectus for Industrial
+              School at Massanetta Springs, Program from McGaheysville H. S., Teacher's District
+              Meeting, Timberville, 1908 program (5 items), <unitdate normal="1889/1926"
+                type="inclusive">1889-1926</unitdate></unittitle>
+            <container id="aspace_57edf4e3f9aa5e56663cba00b7515089" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_d09848ec4b699d19c28719c8ccb8252e"
+              parent="aspace_57edf4e3f9aa5e56663cba00b7515089" type="folder">3</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_baa554c3fc5230b8326fa3b9d29cec76" level="file">
           <did>
-            <unittitle>Mossy Creek Academy Lists of subscribers,
-                  Constitution (with transcription). 
-                  <unitdate era="ce" calendar="gregorian">[1850?]</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  3:4</container>
-            <physdesc>5 items.</physdesc>
+            <unittitle>Mossy Creek Academy: Lists of subscribers, Constitution (with transcription)
+              (5 items), <unitdate normal="1850/1850">1850</unitdate></unittitle>
+            <container id="aspace_fbe3075ce819928b5a10bc624db0d16c" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_74a6e1491fa926ed2ab7de065b5813ef"
+              parent="aspace_fbe3075ce819928b5a10bc624db0d16c" type="folder">4</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_80d52dcfebc3079d28fff4498bde3d38" level="file">
           <did>
-            <unittitle>Slave Purchase Documents 
-                  <unitdate era="ce" calendar="gregorian">1794-1825</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  3:5</container>
-            <physdesc>3 items.</physdesc>
+            <unittitle>Slave Purchase Documents (3 items), <unitdate normal="1794/1825"
+                type="inclusive">1794-1825</unitdate></unittitle>
+            <container id="aspace_20c5e3c92072ca94b1f60fa524145669" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_7dda7d796fdf552a2be68dc0a72c6879"
+              parent="aspace_20c5e3c92072ca94b1f60fa524145669" type="folder">5</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_118f39b75ea7e187cf69e96e81b80af4" level="file">
           <did>
-            <unittitle>Miscellaneous business documents: 1901
-                  timber contract; 1816 &amp; other sale notices; 1843
-                  Elk Run tentholders agreement; subscription form,
-                  Golden Horseshoe Tavern, Elkton; 1855 R'ham Mutual
-                  Fire Ins. Co. policy for A. Sprinkel; 1913 (?) merger
-                  of News Register Co. &amp; R'ham Pub. Co., Account
-                  with J.P. Houck; Minutebook of Weyers Cave Telephone
-                  Exchange, 1898-1952. 
-                  <unitdate era="ce" calendar="gregorian">1816-1919</unitdate></unittitle>
-            <container label="Box-folder" type="Box-folder">
-                  3:6</container>
-            <physdesc>10 items.</physdesc>
+            <unittitle>Miscellaneous business documents; 1901 timber contract; 1816 &amp; other sale
+              notices; 1843 Elk Run tent holders agreement; subscription form, Golden Horseshoe
+              Tavern, Elkton; 1855 Rockingham Mutual Fire Ins. Co. policy for A. Sprinkel; 1913 (?)
+              merger of News Register Co. &amp; Rockingham Pub. Co., Account with J.P. Houck; Minute
+              book of Weyers Cave Telephone Exchange, 1898-1952; Receipts of P.H. Myers (29 items),
+                <unitdate normal="1816/1919" type="inclusive">1816-1919</unitdate></unittitle>
+            <container id="aspace_f121b0c574b6488a0f0ee9d35fc9a8fb" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_2ff3756f61641f20be6f57b8274e575a"
+              parent="aspace_f121b0c574b6488a0f0ee9d35fc9a8fb" type="folder">6</container>
           </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle label="Subseries">A: Individual
-                  Families</unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Basford, Thomas. Includes summonses,
-                     tax data, and business accounts. 
-                     <unitdate era="ce" calendar="gregorian">1868-1874</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Bas-1</container>
-              <physdesc>8 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Conrad, Edward. Contains deeds &amp;
-                     plat for downtown Harrisonburg; other deeds; &amp;
-                     receipt for Valley Telephone Co. shares. See also
-                     Folder Con-1 Oversize. 
-                     <unitdate era="ce" calendar="gregorian">1895-1908</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Con-1</container>
-              <physdesc>12 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Crawford, William. Contains tax
-                     information. 
-                     <unitdate era="ce" calendar="gregorian">1867-1877</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Cra-1</container>
-              <physdesc>13 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Eversole Family. Contains letters; road
-                     tax toll; RR stock receipts; &amp; misc. 
-                     <unitdate era="ce" calendar="gregorian">1832-1879</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Eve-1</container>
-              <physdesc>70 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Gaither Family. 
-                     <unitdate era="ce" calendar="gregorian">1834-1907</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Gai-1</container>
-              <physdesc>25 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Garber Family. Includes tax data,
-                     muster fines, tax paper for the Confederacy, and
-                     receipts from shares of stock. 
-                     <unitdate era="ce" calendar="gregorian">1834-1886</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Gar-1</container>
-              <physdesc>5 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Gibbons Family. Contains letters
-                     written by Mary Gibbons, including 1 dated 20 Jn
-                     1862 describing battles of Pt. Republic &amp;
-                     Cross Keys. 
-                     <unitdate era="ce" calendar="gregorian">1838-1895</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Gib-1</container>
-              <physdesc>17 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrison Family. Includes an indenture
-                     that transferred land from T. Harrison to
-                     Rockingham County for a courthouse. 
-                     <unitdate era="ce" calendar="gregorian">1779-1831</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Har-1</container>
-              <physdesc>3 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harnsbarger Family. Indentures,
-                     surveys. 
-                     <unitdate era="ce" calendar="gregorian">1815-1824</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Har-2</container>
-              <physdesc>6 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Kemper Family. Letters, mostly written
-                     to Fanny Kemper before Civil War. 
-                     <unitdate era="ce" calendar="gregorian">1843-1862</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Kem-1</container>
-              <physdesc>34 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Kite, Joesph H. Bankruptcy papers. 
-                     <unitdate era="ce" calendar="gregorian">1873-1875</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Kit-1</container>
-              <physdesc>30 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Koontz, John. Includes 1812 grant to
-                     land where Koontz built the house later occupied
-                     by Lincolns. See also Oversize Series. 
-                     <unitdate era="ce" calendar="gregorian">1805-1832</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Koo-1</container>
-              <physdesc>24 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Lincoln Family. Includes land
-                     indentures and typescript of genealogy. See also
-                     Oversize Series. 
-                     <unitdate era="ce" calendar="gregorian">1780-1831</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Lin-1</container>
-              <physdesc>6 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Martz Family. Business letters from E.
-                     R. Shue, F. H. Bowman, etc. and letter to Hiram
-                     Martz commenting on politics and the recent
-                     elections. 
-                     <unitdate era="ce" calendar="gregorian">1840-1914</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:Mar-1</container>
-              <physdesc>31 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>McGahey Family. Letters, deed, survey,
-                     &amp; appraisal of estate of Tobias R. McGahey,
-                     1845; blacksmithing accounts; 1862 note from John
-                     Letcher; 1884 note from J.R. Jones; churn patents,
-                     &amp; misc. 
-                     <unitdate era="ce" calendar="gregorian">1809-1944</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     3:McG-1</container>
-              <physdesc>45 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Miller Family. 
-                     <unitdate era="ce" calendar="gregorian">1837-1882</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Mil-1</container>
-              <physdesc>6 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Morrison Family. 
-                     <unitdate era="ce" calendar="gregorian">1876-1898</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Mor-1</container>
-              <physdesc>12 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Nicholas Family. See also Oversize
-                     Series. 
-                     <unitdate era="ce" calendar="gregorian">1839-1843</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Nic-1</container>
-              <physdesc>5 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Reherd, William, 
-                     <unitdate era="ce" calendar="gregorian">1834-1881</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Reh-1</container>
-              <physdesc>17 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Roller, John Edwin. Letters; descr. of
-                     military drill; tax receipts &amp; other business
-                     papers. 
-                     <unitdate era="ce" calendar="gregorian">1846-1908</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Rol-1</container>
-              <physdesc>55 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Senger, Daniel. 
-                     <unitdate era="ce" calendar="gregorian">1899-1905</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Sen-1</container>
-              <physdesc>5 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Shacklett Family. Letters. 
-                     <unitdate era="ce" calendar="gregorian">1834-1872</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Sha-1</container>
-              <physdesc>65 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Shacklett &amp; Gibbons. Invoices. 
-                     <unitdate era="ce" calendar="gregorian">1855-1858</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Sha-2</container>
-              <physdesc>16 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Shacklett &amp; Others. Invoices. 
-                     <unitdate era="ce" calendar="gregorian">1827-1888</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Sha-3</container>
-              <physdesc>57 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Showalter, Jacob. Includes 1840
-                     indenture of John Showalter; other docs. relevant
-                     to estate of Jacob. 
-                     <unitdate era="ce" calendar="gregorian">1826-1876</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Sho-1</container>
-              <physdesc>31 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Shue, J. H. 3 Confederate bills; docs.
-                     relating to Shue estate. 
-                     <unitdate era="ce" calendar="gregorian">1864-1886</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Shu-1</container>
-              <physdesc>15 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Spader, John, and relatives. Deeds,
-                     loan bonds. 
-                     <unitdate era="ce" calendar="gregorian">1866-1917</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Spa-1</container>
-              <physdesc>Ca. 12 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Winfield Family. Includes many
-                     documents relating to the Civil War, business
-                     documents, indenture for servitude of a free boy
-                     of color. 
-                     <unitdate era="ce" calendar="gregorian">1823-1944</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Win-1</container>
-              <physdesc>37 items</physdesc>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Zirkle, Crawford. 
-                     <unitdate era="ce" calendar="gregorian">1865-1876</unitdate></unittitle>
-              <container label="Box-folder" type="Box-folder">
-                     4:Zir-1</container>
-              <physdesc>11 items</physdesc>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle label="Subseries">B: Misceallaneous.
-                  Families</unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <container label="Box-folder" type="Box-folder">
-                     4:A-C</container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <container label="Box-folder" type="Box-folder">
-                     4:D-G</container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <container label="Box-folder" type="Box-folder">
-                     5:H-K</container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <container label="Box-folder" type="Box-folder">
-                     5:L-Q</container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <container label="Box-folder" type="Box-folder">
-                     5:R-Z</container>
-            </did>
-          </c03>
         </c02>
       </c01>
-      <c01 level="item">
+      <c01 id="aspace_aa15db7a2e43d3d72e2c6742aac1ddaf" level="series">
         <did>
-          <unittitle label="Series">4: Oversize</unittitle>
+          <unittitle>Series 3: Individual/Family Documents</unittitle>
         </did>
-        <c02 level="item">
+        <c02 id="aspace_a18ef5a573b44ed9ee2597c80c5c4fcc" level="subseries">
           <did>
-            <unittitle label="Subseries">A Legal/Governmental
-                  Documents.</unittitle>
+            <unittitle>Series 3.1: Individual Families</unittitle>
           </did>
-          <c03 level="item">
+          <scopecontent id="aspace_1aaa0e29f1162f652fc497efc4f336b1">
+            <head>Scope and Content</head>
+            <p>Separate folders under each family or individual for which 5 or more relevant items
+              are held.</p>
+          </scopecontent>
+          <c03 id="aspace_04a283626d87c3d3c4c71db2d0b2f248" level="file">
             <did>
-              <unittitle>Assessments of clerks of the Court 
-                     <unitdate era="ce" calendar="gregorian">1880-1914</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:1</container>
-              <physdesc>100 items.</physdesc>
+              <unittitle>Basford, Thomas. Includes summonses, tax data, and business accounts (8
+                items), <unitdate normal="1868/1874" type="inclusive"
+                >1868-1874</unitdate></unittitle>
+              <container id="aspace_86ebbfeec2257004ebaa6b90326920a9" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_36d890f795775dd91330c438a0c11bda"
+                parent="aspace_86ebbfeec2257004ebaa6b90326920a9" type="folder">7</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_538f08443664da40525cbe6b0e288e8f" level="file">
             <did>
-              <unittitle>Public road papers 
-                     <unitdate era="ce" calendar="gregorian">1794-ca.1870</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:2</container>
-              <physdesc>4 items.</physdesc>
+              <unittitle>Conrad, Edward. Contains deeds &amp; plat for downtown Harrisonburg; other
+                deeds; &amp; receipt for Valley Telephone Co. shares. See also Oversize (12 items),
+                  <unitdate normal="1895/1908" type="inclusive">1895-1908</unitdate></unittitle>
+              <container id="aspace_58ae9405e3ed10e0cdd770ea1cfdb47c" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_8edb9ba171909094d40e7844ed0a34ab"
+                parent="aspace_58ae9405e3ed10e0cdd770ea1cfdb47c" type="folder">8</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_55f5ba392d3aba59842a7b48f614a333" level="file">
             <did>
-              <unittitle>Reports of business of the Courts 
-                     <unitdate era="ce" calendar="gregorian">1883-1914</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:3</container>
-              <physdesc>30 items.</physdesc>
+              <unittitle>Crawford, William. Contains tax information (13 items), <unitdate
+                  normal="1867/1877" type="inclusive">1867-1877</unitdate></unittitle>
+              <container id="aspace_9f0cab7d2c14a6a0c25149ba425c9026" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_35744ba3505250afcadd1e620c635919"
+                parent="aspace_9f0cab7d2c14a6a0c25149ba425c9026" type="folder">9</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_ae2511be11c271b5871cb729428a75f0" level="file">
             <did>
-              <unittitle>Tax Data 
-                     <unitdate era="ce" calendar="gregorian">1833</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:4</container>
-              <physdesc>1 item.</physdesc>
+              <unittitle>Eversole Family. Contains letters; road tax toll; RR stock receipts; &amp;
+                misc (70 items), <unitdate normal="1832/1879" type="inclusive"
+                >1832-1879</unitdate></unittitle>
+              <container id="aspace_0843032e0f64b8568df78bb0fcb9b516" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_2810c7e8a771537754d66acd1a60b380"
+                parent="aspace_0843032e0f64b8568df78bb0fcb9b516" type="folder">10</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_84f5b3296c1c32a28f128480028025d1" level="file">
             <did>
-              <unittitle>Miscellaneous legal documents: Juror
-                     list, list of Rockingham County officers; lists of
-                     county pensioners 1920, '21. 
-                     <unitdate era="ce" calendar="gregorian">1874-1921</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:5</container>
-              <physdesc>3 items.</physdesc>
+              <unittitle>Gaither Family (25 items), <unitdate normal="1834/1907" type="inclusive"
+                  >1834-1907</unitdate></unittitle>
+              <container id="aspace_c2dd2265761b4eed721ee81dba6a1c91" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_702594f948cc0646a7ab25f2ffcffe56"
+                parent="aspace_c2dd2265761b4eed721ee81dba6a1c91" type="folder">11</container>
+            </did>
+          </c03>
+          <c03 id="aspace_a7f478df5d0c386df527899e20278da4" level="file">
+            <did>
+              <unittitle>Garber Family. Includes tax data, muster fines, tax paper for the
+                Confederacy, and receipts from shares of stock (5 items), <unitdate
+                  normal="1834/1886" type="inclusive">1834-1886</unitdate></unittitle>
+              <container id="aspace_08ae100ed67d2e409d7278375c95a572" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_0b5725c564e2bf1b10811549b128a148"
+                parent="aspace_08ae100ed67d2e409d7278375c95a572" type="folder">12</container>
+            </did>
+          </c03>
+          <c03 id="aspace_5a7a364993768e32f20ccebc40734b65" level="file">
+            <did>
+              <unittitle>Gibbons Family. Contains letters written by Mary Gibbons, including one
+                dated 20 June 1862 describing battles of Pt. Republic &amp; Cross Keys (17 items),
+                  <unitdate normal="1838/1895" type="inclusive">1838-1895</unitdate></unittitle>
+              <container id="aspace_48bc482046738bd3c827f1f92cc0f8ef" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_b13381e78b69f1ec62d7ed20e1db2140"
+                parent="aspace_48bc482046738bd3c827f1f92cc0f8ef" type="folder">13</container>
+            </did>
+          </c03>
+          <c03 id="aspace_121586628085fc3eff01c291f9485a1d" level="file">
+            <did>
+              <unittitle>Harrison Family. Includes an indenture that transferred land from T.
+                Harrison to Rockingham County for a courthouse (3 items), <unitdate
+                  normal="1779/1831" type="inclusive">1779-1831</unitdate></unittitle>
+              <container id="aspace_88969004865d0a834c7b785099af2d2d" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_5c584e8905820d9685d58192a1283ae8"
+                parent="aspace_88969004865d0a834c7b785099af2d2d" type="folder">14</container>
+            </did>
+          </c03>
+          <c03 id="aspace_caa10a582c8920e8486e7602c9a244bc" level="file">
+            <did>
+              <unittitle>Harnsbarger Family. Indentures, surveys (6 items), <unitdate
+                  normal="1815/1824" type="inclusive">1815-1824</unitdate></unittitle>
+              <container id="aspace_78cc041c81fdb91886626ca058de7a2e" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_2c135e2bb63e0b6a133a71695482f611"
+                parent="aspace_78cc041c81fdb91886626ca058de7a2e" type="folder">15</container>
+            </did>
+          </c03>
+          <c03 id="aspace_45a728d7b33456e3f46f90ec7b3c2e38" level="file">
+            <did>
+              <unittitle>Kemper Family. Letters, mostly written to Fanny Kemper before Civil War (34
+                items), <unitdate normal="1843/1862" type="inclusive"
+                >1843-1862</unitdate></unittitle>
+              <container id="aspace_42c23d7949df47a939f5eedcd686da1a" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_2b649416d6d8882fa94127955fb899e9"
+                parent="aspace_42c23d7949df47a939f5eedcd686da1a" type="folder">16</container>
+            </did>
+          </c03>
+          <c03 id="aspace_1bfecacbf0ea905f4ca604c41e0b21d7" level="file">
+            <did>
+              <unittitle>Kite, Joseph H. Bankruptcy papers (30 items), <unitdate normal="1873/1875"
+                  type="inclusive">1873-1875</unitdate></unittitle>
+              <container id="aspace_1cf7d5cb486a492f2f8a8e83d6dc4cc8" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_2b1b82feac4c08d8dc4575fc53420df0"
+                parent="aspace_1cf7d5cb486a492f2f8a8e83d6dc4cc8" type="folder">17</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d5999bde9a242d45cb32e6a29842ae5f" level="file">
+            <did>
+              <unittitle>Koontz, John. Includes 1812 grant to land where Koontz built the house
+                later occupied by Lincoln's. See also Oversize Series (24 items), <unitdate
+                  normal="1805/1832" type="inclusive">1805-1832</unitdate></unittitle>
+              <container id="aspace_c8d2c78d0c776bb10681a9052ab69e76" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_351d27d5ce864f3e5e55a49412b0c4a5"
+                parent="aspace_c8d2c78d0c776bb10681a9052ab69e76" type="folder">18</container>
+            </did>
+          </c03>
+          <c03 id="aspace_8f1cf451825a9efb61ff0ebfbea7f88e" level="file">
+            <did>
+              <unittitle>Lincoln Family. Includes land indentures and typescript of genealogy. See
+                also Oversize Series (6 items), <unitdate normal="1780/1831" type="inclusive"
+                  >1780-1831</unitdate></unittitle>
+              <container id="aspace_5834f58a40adf9f741bfd00ecfec7b1a" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_ceda4c981ed06b1a296b7a5c4e568a0d"
+                parent="aspace_5834f58a40adf9f741bfd00ecfec7b1a" type="folder">19</container>
+            </did>
+          </c03>
+          <c03 id="aspace_64866d0667d1fb9b4314a696b7446270" level="file">
+            <did>
+              <unittitle>Martz Family. Business letters from E. R. Shue, F. H. Bowman, etc. and
+                letter to Hiram Martz commenting on politics and the recent elections (34 items),
+                  <unitdate normal="1840/1914" type="inclusive">1840-1914</unitdate></unittitle>
+              <container id="aspace_10e41d4148f4ba97828191e2ef2a2600" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_1c15038aeebd19a79529629d407ceee1"
+                parent="aspace_10e41d4148f4ba97828191e2ef2a2600" type="folder">20</container>
+            </did>
+          </c03>
+          <c03 id="aspace_7b759d06c111effddbee0cc651525b86" level="file">
+            <did>
+              <unittitle>McGahey Family. Letters, deed, survey, &amp; appraisal of estate of Tobias
+                R. McGahey, 1845; blacksmithing accounts; 1862 note from John Letcher; 1884 note
+                from J. R. Jones; churn patents, &amp; misc (45 items), <unitdate normal="1809/1944"
+                  type="inclusive">1809-1944</unitdate></unittitle>
+              <container id="aspace_cefe51b503e0e5281db9ccfeaaf43691" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_e3bcaba5036a687c4902e59772a647a7"
+                parent="aspace_cefe51b503e0e5281db9ccfeaaf43691" type="folder">21</container>
+            </did>
+          </c03>
+          <c03 id="aspace_351e9635bb3f5a4525fbde58b0c0df2a" level="file">
+            <did>
+              <unittitle>Miller Family (6 items), <unitdate normal="1837/1882" type="inclusive"
+                  >1837-1882</unitdate></unittitle>
+              <container id="aspace_5054af06621b0c67129e87b375cc9a7f" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_428e599a1d69fda6f60bce971af9bf7a"
+                parent="aspace_5054af06621b0c67129e87b375cc9a7f" type="folder">1</container>
+            </did>
+          </c03>
+          <c03 id="aspace_2a9b8804f7c08726920f002e7e91c6c5" level="file">
+            <did>
+              <unittitle>Morrison Family (12 items), <unitdate normal="1876/1898" type="inclusive"
+                  >1876-1898</unitdate></unittitle>
+              <container id="aspace_6642a6d4638382e6a489b095ed2370f3" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_28872a250ddb29b0103d7bca1945b5ec"
+                parent="aspace_6642a6d4638382e6a489b095ed2370f3" type="folder">2</container>
+            </did>
+          </c03>
+          <c03 id="aspace_8ca20feda234677afbedd05aaa9dfd79" level="file">
+            <did>
+              <unittitle>Nicholas Family. See also Oversize Series (5 items), <unitdate
+                  normal="1839/1843" type="inclusive">1839-1843</unitdate></unittitle>
+              <container id="aspace_8c0d72a40773722492a83bedeef06327" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_50bbdefa0225180bfcdf75cb66d6f34a"
+                parent="aspace_8c0d72a40773722492a83bedeef06327" type="folder">3</container>
+            </did>
+          </c03>
+          <c03 id="aspace_4686e8f1d1f2e2adc5d2935bf10ef8de" level="file">
+            <did>
+              <unittitle>Reherd, William (17 items), <unitdate normal="1834/1881" type="inclusive"
+                  >1834-1881</unitdate></unittitle>
+              <container id="aspace_f2609b753cb6d01b403a135458af0d73" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_ff2f0dca0595a7322010e1166cf0acec"
+                parent="aspace_f2609b753cb6d01b403a135458af0d73" type="folder">4</container>
+            </did>
+          </c03>
+          <c03 id="aspace_125299d85cf9733b55fc54358a18a775" level="file">
+            <did>
+              <unittitle>Roller, John Edwin. Letters; description of military drill; tax receipts
+                &amp; other business papers (55 items), <unitdate normal="1846/1908"
+                  type="inclusive">1846-1908</unitdate></unittitle>
+              <container id="aspace_9bb2d461bae58eb369a5e470233e54ad" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_56869ba813653ebecb9c2329a3ddd026"
+                parent="aspace_9bb2d461bae58eb369a5e470233e54ad" type="folder">5</container>
+            </did>
+          </c03>
+          <c03 id="aspace_f7f28d4cdac0d64f66a5c602b74842c3" level="file">
+            <did>
+              <unittitle>Senger, Daniel (5 items), <unitdate normal="1899/1905" type="inclusive"
+                  >1899-1905</unitdate></unittitle>
+              <container id="aspace_b643a0f48a495669bc89ba85884cbd74" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_df731b89b77a4f061139c3f25274127e"
+                parent="aspace_b643a0f48a495669bc89ba85884cbd74" type="folder">6</container>
+            </did>
+          </c03>
+          <c03 id="aspace_3d09f363ba93efd43dcee6e884796fc1" level="file">
+            <did>
+              <unittitle>Shacklett Family. Letters (65 items), <unitdate normal="1834/1872"
+                  type="inclusive">1834-1872</unitdate></unittitle>
+              <container id="aspace_fc5d6e99050d820356f2c689dec67505" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_36c44e2d2ed4a2be96971fc32dad32ab"
+                parent="aspace_fc5d6e99050d820356f2c689dec67505" type="folder">7</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d683e6341b232b4946dc2cc8dcfed997" level="file">
+            <did>
+              <unittitle>Shacklett &amp; Gibbons. Invoices (16 items), <unitdate normal="1855/1858"
+                  type="inclusive">1855-1858</unitdate></unittitle>
+              <container id="aspace_a188ceca27b928ded49b0a5b3472e665" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_3340c5d447dc204bc1ccfde056939e3e"
+                parent="aspace_a188ceca27b928ded49b0a5b3472e665" type="folder">8</container>
+            </did>
+          </c03>
+          <c03 id="aspace_9393604a04c197d72f9353bb432a9632" level="file">
+            <did>
+              <unittitle>Shacklett &amp; Others. Invoices (57 items), <unitdate normal="1827/1888"
+                  type="inclusive">1827-1888</unitdate></unittitle>
+              <container id="aspace_2fbddc718f80c48f0f3886159b38b996" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_6ba67d14449c135f33e603efb9d7a277"
+                parent="aspace_2fbddc718f80c48f0f3886159b38b996" type="folder">9</container>
+            </did>
+          </c03>
+          <c03 id="aspace_56b38c7894b238f1a1c7ccd3894779b1" level="file">
+            <did>
+              <unittitle>Showalter, Jacob. Includes 1840 indenture of John Showalter; other docs.
+                relevant to estate of Jacob (31 items), <unitdate normal="1826/1876"
+                  type="inclusive">1826-1876</unitdate></unittitle>
+              <container id="aspace_bf7e91b62ab6a76bc681d3423facfc0f" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_02cffa9d96edf42afe0fdc9a96a5aad4"
+                parent="aspace_bf7e91b62ab6a76bc681d3423facfc0f" type="folder">10</container>
+            </did>
+          </c03>
+          <c03 id="aspace_92af3bf1a0c80d6a2a2ad26877447a8d" level="file">
+            <did>
+              <unittitle>Shue, J. H. 3 Confederate bills; docs. relating to Shue estate (15 items),
+                  <unitdate normal="1864/1886" type="inclusive">1864-1886</unitdate></unittitle>
+              <container id="aspace_ae0d8355b5ad72f3585e93af91bf3e9b" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_97bace37570e8ab4c0d0ce9847573c9a"
+                parent="aspace_ae0d8355b5ad72f3585e93af91bf3e9b" type="folder">11</container>
+            </did>
+          </c03>
+          <c03 id="aspace_27e187aa9e0208938689520469bc692f" level="file">
+            <did>
+              <unittitle>Spader, John, and relatives. Deeds, loan bonds (ca. 12 items), <unitdate
+                  normal="1866/1917" type="inclusive">1866-1917</unitdate></unittitle>
+              <container id="aspace_0589d9092affaba827f6116f54e7dd8d" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_db2ecae80ac197f64b968058164bd006"
+                parent="aspace_0589d9092affaba827f6116f54e7dd8d" type="folder">12</container>
+            </did>
+          </c03>
+          <c03 id="aspace_023599d9f0e74dae43e7e54bf88c6de2" level="file">
+            <did>
+              <unittitle>Winfield Family. Includes many documents relating to the Civil War,
+                business documents, indenture for servitude of a free boy of color (37 items),
+                  <unitdate normal="1823/1944" type="inclusive">1823-1944</unitdate></unittitle>
+              <container id="aspace_243377a17cefa469338c721112593292" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_78cd20a230b2caf91e94d0b20bccfeb8"
+                parent="aspace_243377a17cefa469338c721112593292" type="folder">13</container>
+            </did>
+          </c03>
+          <c03 id="aspace_5b99d4cdc933751b85896679f3a81990" level="file">
+            <did>
+              <unittitle>Zirkle, Crawford (11 items), <unitdate normal="1865/1876" type="inclusive"
+                  >1865-1876</unitdate></unittitle>
+              <container id="aspace_c8fc32fa91db3ddf57a8b24cb6532885" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_54ba017401e130363ea3fc005d0a0441"
+                parent="aspace_c8fc32fa91db3ddf57a8b24cb6532885" type="folder">14</container>
             </did>
           </c03>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_3c9b9e085d5ae8f3c15773187e19b426" level="subseries">
           <did>
-            <unittitle label="Subseries">B:
-                  Business/Institutional Documents</unittitle>
+            <unittitle>Series 3.2: Miscellaneous Families</unittitle>
           </did>
-          <c03 level="item">
+          <scopecontent id="aspace_d302571d374169ea168bb6a8737a2883">
+            <head>Scope and Content</head>
+            <p>Combined folders in one alphabetical sequence for four or less documents per name.
+              See Cross Index for names.</p>
+          </scopecontent>
+          <c03 id="aspace_e89ad0b1f212bf5328293c3d5d6dc4cc" level="file">
             <did>
-              <unittitle>C &amp; W Railroad Company (1 page from
-                     Bridgewater Herald Sept. 14, 1895) 
-                     <unitdate era="ce" calendar="gregorian">1895</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:6</container>
-              <physdesc>1 item.</physdesc>
+              <unittitle>A-C</unittitle>
+              <container id="aspace_d4bce7fcd76f39a26b963a438b56ece2" label="Box:Folder" type="box"
+                >5</container>
+              <container id="aspace_bfd37c209a1430839e43e4b232c21900"
+                parent="aspace_d4bce7fcd76f39a26b963a438b56ece2" type="folder">1</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_4a9b97c9c931e3394042566c73cc1687" level="file">
             <did>
-              <unittitle>Church documents 
-                     <unitdate era="ce" calendar="gregorian">1794</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:7</container>
-              <physdesc>2 items.</physdesc>
+              <unittitle>D-G</unittitle>
+              <container id="aspace_6ee7c1ea3970f199510d9860a9406d8b" label="Box:Folder" type="box"
+                >5</container>
+              <container id="aspace_2c04eb075609a920971ebfb6d5cd9713"
+                parent="aspace_6ee7c1ea3970f199510d9860a9406d8b" type="folder">2</container>
             </did>
           </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle label="Subseries">C: Individual/Family
-                  Documents</unittitle>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>A-G</unittitle>
-              <container type="Box-folder">Flax Box
-                     1:8</container>
-            </did>
-          </c03>
-          <c03 level="item">
+          <c03 id="aspace_d3b24365ce0a7d890104b30f965ba5e1" level="file">
             <did>
               <unittitle>H-K</unittitle>
-              <container type="Box-folder">Flax Box
-                     1:9</container>
+              <container id="aspace_782fd0d16c349812a7ac331ab027c8c2" label="Box:Folder" type="box"
+                >5</container>
+              <container id="aspace_afecd9b14738286df8eb6b26e3017345"
+                parent="aspace_782fd0d16c349812a7ac331ab027c8c2" type="Folder">3</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_b672eac075d969686662445a4c0d68c1" level="file">
             <did>
-              <unittitle>L-R</unittitle>
-              <container type="Box-folder">Flax Box
-                     1:10</container>
+              <unittitle>L-Q</unittitle>
+              <container id="aspace_fce81c72f132a2dac26d2610113ff78a" label="Box:Folder" type="box"
+                >5</container>
+              <container id="aspace_494a958f4bbf948ca86e5d961c8014fb"
+                parent="aspace_fce81c72f132a2dac26d2610113ff78a" type="folder">4</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_93e4e26246dec5381083210a851d7f5c" level="file">
             <did>
-              <unittitle>S-Z</unittitle>
-              <container type="Box-folder">Flax Box
-                     1:11</container>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <physloc>Oversize</physloc>
-              <container type="Box-folder">Flax Box
-                     1:Con-1</container>
+              <unittitle>R-Z</unittitle>
+              <container id="aspace_1fced23b67b6fcaa8a7d192e2168d896" label="Box:Folder" type="box"
+                >5</container>
+              <container id="aspace_803ce857c61c28bffc7e3f02cd243571"
+                parent="aspace_1fced23b67b6fcaa8a7d192e2168d896" type="Folder">5</container>
             </did>
           </c03>
         </c02>
-        <c02 level="item">
+      </c01>
+      <c01 id="aspace_c3c5129b9e4e406c3be333e70ca001d8" level="series">
+        <did>
+          <unittitle>Series 4: Oversize</unittitle>
+        </did>
+        <c02 id="aspace_17e1ffa989a8b6d53e1c5bdb6a420164" level="subseries">
           <did>
-            <unittitle label="Subseries">D: Maps,
-                  miscellaneous</unittitle>
+            <unittitle>Series 4.1: Legal/Governmental Documents</unittitle>
           </did>
-          <c03 level="item">
+          <c03 id="aspace_d34247908ea8abe1e3bb44576eac57a0" level="file">
             <did>
-              <unittitle>Plat of Hall lands, Harrisonburg. 
-                     <unitdate era="ce" calendar="gregorian">1883</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:12</container>
-              <physdesc>1 item.</physdesc>
+              <unittitle>Assessments of clerks of the Court (8 items), <unitdate normal="1880/1914"
+                  type="inclusive">1880-1914</unitdate></unittitle>
+              <container id="aspace_82bd832dc1e6c87bd85b0307a65dfc19" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_81096e973e5f777b474877acb8d4cb5b"
+                parent="aspace_82bd832dc1e6c87bd85b0307a65dfc19" type="folder">1</container>
             </did>
           </c03>
-          <c03 level="item">
+          <c03 id="aspace_0d89ecccaec49ecdbcfd7bc99f8ae1f5" level="file">
             <did>
-              <unittitle>Himmelsbrief, Rockingham County 
-                     <unitdate era="ce" calendar="gregorian">ca. 1800</unitdate></unittitle>
-              <container type="Box-folder">Flax Box
-                     1:13</container>
-              <physdesc>1 item.</physdesc>
+              <unittitle>Public road papers (4 items) [MISSING], <unitdate normal="1794/1870"
+                  type="inclusive">1794-ca.1870</unitdate></unittitle>
+              <container id="aspace_a339a5fcd0d1e008b04da42f185f362a" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_4752aac65ab6e5d50697440cff1285a5"
+                parent="aspace_a339a5fcd0d1e008b04da42f185f362a" type="folder">2</container>
+            </did>
+          </c03>
+          <c03 id="aspace_0b2eb619c74e8db286ae9046839482f1" level="file">
+            <did>
+              <unittitle>Reports of business of the Courts (35 items), <unitdate normal="1883/1914"
+                  type="inclusive">1883-1914</unitdate></unittitle>
+              <container id="aspace_a14663ec2f6130f9539db21dd79a0896" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_8d420581e5cdd83d90cfbffa5479c6a5"
+                parent="aspace_a14663ec2f6130f9539db21dd79a0896" type="folder">3</container>
+            </did>
+          </c03>
+          <c03 id="aspace_1afb7cc8f631d9e528818b4ef52c11a2" level="file">
+            <did>
+              <unittitle>Tax Data (1 items), <unitdate normal="1833/1833"
+                >1833</unitdate></unittitle>
+              <container id="aspace_6c18add47f6a1b5c7a8bfcaeee1a3121" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_20dadec51ee8a4d66541e6bcd5617f06"
+                parent="aspace_6c18add47f6a1b5c7a8bfcaeee1a3121" type="folder">4</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d736dea66d160e9830ae0f6eb55b98ae" level="file">
+            <did>
+              <unittitle>Miscellaneous legal documents: Juror list, list of Rockingham county
+                officers; lists of county pensioners 1920, '21 (5 items), <unitdate
+                  normal="1874/1921" type="inclusive">1874-1921</unitdate></unittitle>
+              <container id="aspace_10e4c0218ce94683b7e0c06d13b0bbba" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_63ff53e2ce4a66085d7f9813ff942d54"
+                parent="aspace_10e4c0218ce94683b7e0c06d13b0bbba" type="folder">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_dfab951713ac70aca99f256d2ec1cfde" level="subseries">
+          <did>
+            <unittitle>Series 4.2: Business/Institutional Documents</unittitle>
+          </did>
+          <c03 id="aspace_ae80c9e1ffca5f94d27bcfffe71f03ac" level="file">
+            <did>
+              <unittitle>Chesapeake &amp; Western Railroad Company: complete issue of <emph
+                  render="italic">Rockingham Weekly Register</emph>, <unitdate normal="1828/1828"
+                  >April 28, 1828</unitdate></unittitle>
+              <container id="aspace_76e57ac98a7b8260a214303f0c21356a" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_5a4eadf21ef702a11bb413849a9f6017"
+                parent="aspace_76e57ac98a7b8260a214303f0c21356a" type="folder">6</container>
+            </did>
+          </c03>
+          <c03 id="aspace_91bf14b81e972e0f1aba112865c74a4b" level="file">
+            <did>
+              <unittitle>Chesapeake &amp; Western Railroad Company: 1 page from <emph
+                  render="italic">Bridgewater Herald</emph>, <unitdate normal="1895/1895">September
+                  14, 1895</unitdate></unittitle>
+              <container id="aspace_0253e66d974c45e0ffe6b4d95f714729" label="Map Case" type="case"
+                >1:3</container>
+              <container id="aspace_fa15011b157c88b220702efafc6aa009"
+                parent="aspace_0253e66d974c45e0ffe6b4d95f714729" type="folder">Flat Folder
+                1</container>
+            </did>
+          </c03>
+          <c03 id="aspace_45ab7891284445399d91a3cd019cb171" level="file">
+            <did>
+              <unittitle>Church documents (2 items), <unitdate normal="1794/1794"
+                >1794</unitdate></unittitle>
+              <container id="aspace_c3b10e5c5b4980faf82502567b4b9b43" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_43df175e1aa5d08976436bb7b063343d"
+                parent="aspace_c3b10e5c5b4980faf82502567b4b9b43" type="folder">7</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_fb4fb8e97eb9a06d8b59309cd744c394" level="subseries">
+          <did>
+            <unittitle>Series 4.3: Individual/Family Documents</unittitle>
+          </did>
+          <c03 id="aspace_5db98b63ea5c86e21570b8e06ade7888" level="file">
+            <did>
+              <unittitle>A-G</unittitle>
+              <container id="aspace_188e471ee10825f2ad64d4bdcfdc31f1" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_e845274437c6f6fb39618a155a95bf87"
+                parent="aspace_188e471ee10825f2ad64d4bdcfdc31f1" type="folder">8</container>
+            </did>
+          </c03>
+          <c03 id="aspace_729dbbfdf3a8b69dc23bd3a5828df660" level="file">
+            <did>
+              <unittitle>H-K</unittitle>
+              <container id="aspace_7b7caad3a4649758fde89e9747c23682" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_768f019d02c8d0ff1ba4f1221a84e058"
+                parent="aspace_7b7caad3a4649758fde89e9747c23682" type="folder">9</container>
+            </did>
+          </c03>
+          <c03 id="aspace_ad6331105238c65486f5d68ddf3476d4" level="file">
+            <did>
+              <unittitle>L-R</unittitle>
+              <container id="aspace_f844500af1a32b3b862fa6b233337c92" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_97d79ae7150e0ed43da660cb3f40bbf3"
+                parent="aspace_f844500af1a32b3b862fa6b233337c92" type="folder">10</container>
+            </did>
+          </c03>
+          <c03 id="aspace_93ba5503a94f37fa9e185a611457f902" level="file">
+            <did>
+              <unittitle>L-R</unittitle>
+              <container id="aspace_cc40a9bcd64e69e27321e3b0a52acbb9" label="Map Case" type="case"
+                >1:3</container>
+              <container id="aspace_40e30c800921632ed47c8c670e957b72"
+                parent="aspace_cc40a9bcd64e69e27321e3b0a52acbb9" type="folder">Flat Folder
+                1</container>
+            </did>
+          </c03>
+          <c03 id="aspace_e97053292c23e708e7a8e8f654b4df91" level="file">
+            <did>
+              <unittitle>S-Z (several large items in map drawer including a March 19, 1777 deed
+                between Michael Bowyer and Sebastian March in Augusta County, in the Colony of
+                Virginia.)</unittitle>
+              <container id="aspace_4b0d75e5804343555f96c80f1bcf70b5" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_ffc5a55b19d65726f587f1ecf12f9ad1"
+                parent="aspace_4b0d75e5804343555f96c80f1bcf70b5" type="folder">11</container>
+            </did>
+          </c03>
+          <c03 id="aspace_b5e328235cedc7747b20f36ddc3ab4b0" level="file">
+            <did>
+              <unittitle>Conrad Family land grants and indentures</unittitle>
+              <container id="aspace_8f425f7540fa9dc3113fa4c79a6c12d4" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_7a63f6d78f3ed657f0cde88f33fbe310"
+                parent="aspace_8f425f7540fa9dc3113fa4c79a6c12d4" type="folder">12</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_022f2e4577d479ce69495e896cd0a664" level="subseries">
+          <did>
+            <unittitle>Series 4.4: Maps</unittitle>
+          </did>
+          <c03 id="aspace_b286ba81db24b4641c57a8709d5f8c18" level="file">
+            <did>
+              <unittitle>Plat of Hall lands, Harrisonburg (1 item),
+                <unitdate>1883</unitdate></unittitle>
+              <container id="aspace_685d074f1a0e2bea0b25b8312ca956cb" label="Map Case" type="case"
+                >1:3</container>
+              <container id="aspace_6f054a1b7027f748bcf09723e9c4aba9"
+                parent="aspace_685d074f1a0e2bea0b25b8312ca956cb" type="folder">Flat Folder
+                1</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d3dc04b7830b4e4c39817a8ab5a77f0c" level="file">
+            <did>
+              <unittitle>Himmelsbrief, Rockingham County (1 item), <unitdate normal="1800/1800">ca.
+                  1800</unitdate></unittitle>
+              <container id="aspace_fba87eb0685ca9b56c68f2b361f6ca93" label="Box:Folder" type="box"
+                >OV 1</container>
+              <container id="aspace_a52a7028baedaeda4e38cdaeb27bcbc0"
+                parent="aspace_fba87eb0685ca9b56c68f2b361f6ca93" type="folder">13</container>
             </did>
           </c03>
         </c02>
