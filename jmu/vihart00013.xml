@@ -1,202 +1,501 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00013">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid publicid="PUBLIC &amp;#34;-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00013::Margaret B. Burruss Collection)//EN&amp;#34; &amp;#34;vihart00013.xml&amp;#34;" countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James
-             Madison University::Carrier Library::Special
-             Collections//TEXT (US::ViHarT::vihart00013::Margaret B.
-             Burruss Collection)//EN" "vihart00013.xml"</eadid>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+    langencoding="iso639-2b" repositoryencoding="iso15511">
+    <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00013.xml"
+      >vihart00013</eadid>
     <filedesc>
       <titlestmt>
-        <titleproper>A Guide to the Margaret B. Burruss Collection,
-            <date era="ce" calendar="gregorian">1786-1912</date></titleproper>
-        <subtitle id="sort">Burruss, Margaret B. , Collection 
-            <num type="collectionnumber">2097</num></subtitle>
-        <author>Chris Bolgiano</author>
-        <sponsor>Web version of the finding aid funded in part by a
-               grant from the National Endowment for the
-               Humanities.</sponsor>
+        <titleproper>A Guide to the Margaret B. Burruss Collection of Scott and Saufley Family
+          Papers, 1786-1912 <num>SC 0118</num></titleproper>
+        <author>Chris Bolgiano, September 1990; Alicia Henneberry, October 2013; Tiffany Cole,
+          January 2018</author>
       </titlestmt>
       <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James
-            Madison University</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2001 JMU Libraries.
-            All rights reserved.</date>
+        <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All rights
+          reserved. </date>
         <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
-               Use</extref>
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+            Use</extref>
         </p>
-        <p id="filesize">9 kb</p>
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>Machine-readable finding aid derived from HTML
-         document, created by Darlene Newman, 
-         <date era="ce" calendar="gregorian">12/04/01</date></creation>
-      <langusage>Description is in 
-         <language>English</language></langusage>
+      <creation>This finding aid was produced using ArchivesSpace and hand encoding by Tiffany Cole
+        on <date>2018-01-12 13:25:22 -0500</date>.</creation>
+      <langusage>English</langusage>
+      <descrules>Describing Archives: A Content Standard</descrules>
     </profiledesc>
     <revisiondesc>
       <change>
-        <date normal="2004-02-19" era="ce" calendar="gregorian">Feb 19, 2004</date>
-        <item>PUBLIC "-//James Madison University::Carrier
-            Library::Special Collections//TEXT
-            (US::ViHarT::vihart00013::Margaret B. Burruss
-            Collection)//EN" "vihart00013.xml" converted from EAD 1.0
-            to 2002 by v1to02.xsl (sy2003-10-15).</item>
+        <date>Feb 19, 2004</date>
+        <item>PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT
+          (US::ViHarT::vihart00013::Margaret B. Burruss Collection)//EN" "vihart00013.xml" converted
+          from EAD 1.0 to 2002 by v1to02.xsl (sy2003-10-15).</item>
       </change>
       <change>
-        <date normal="2004-02-25" era="ce" calendar="gregorian">Feb 25, 2004</date>
-        <item>converted to conform to eadVIVA.dtd by
-            vivastrict.xsl</item>
+        <date>Feb 25, 2004</date>
+        <item>converted to conform to eadVIVA.dtd by vivastrict.xsl</item>
       </change>
       <change>
-        <date normal="2013-11-21">2013-11-21</date>
+        <date>2013-11-21</date>
         <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+      <change>
+        <date>October 2013</date>
+        <item>Revised by Alicia Henneberry</item>
       </change>
     </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
-      <titleproper>A Guide to the Margaret B. Burruss Collection, 
-         <date era="ce" calendar="gregorian">1786-1912</date></titleproper>
-      <subtitle>A Collection in 
-         <lb/>Special Collections 
-         <num type="Collection Number">2097</num></subtitle>
+      <titleproper> A Guide to the Margaret B. Burruss Collection of Scott and Saufley Family
+        Papers, <date era="ce" calendar="gregorian">1786-1912</date>
+      </titleproper>
+      <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+          0118</num>
+      </subtitle>
       <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
       </p>
-      <publisher>Special Collections, Carrier Library, James Madison
-         University</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2001</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2017</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
       <list type="deflist">
         <defitem>
           <label>Processed by:</label>
-          <item>Chris Bolgiano, September 1990</item>
-        </defitem>
-        <defitem>
-          <label>Funding:</label>
-          <item>Web version of the finding aid funded in part by a
-               grant from the National Endowment for the
-               Humanities.</item>
+          <item>Chris Bolgiano, September 1990; Alicia Henneberry, October 2013; Tiffany Cole, January 2018</item>
         </defitem>
       </list>
     </titlepage>
   </frontmatter>
   <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison
-      University</runner>
     <did>
-      <head>Descriptive Summary</head>
-      <repository>Special Collections, James Madison
-         University</repository>
-      <unittitle>Margaret B. Burruss Collection, 
-         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
-         1786-1912</unitdate></unittitle>
-      <unitid label="Collection number">2097</unitid>
-      <physdesc label="Physical Characteristics">This collection
-         consists of 2.5 Hollinger boxes.</physdesc>
-      <langmaterial label="Language">
+      <langmaterial>
         <language langcode="eng">English</language>
       </langmaterial>
-      <abstract label="Abstract">This collection consists primarily
-         of letters, records and photos of Reuben A. Scott and his
-         fiancee Mary Catherine Saufley of Port Republic in Rockingham
-         County, Virginia.</abstract>
-      <origination label="Creators">
-        <persname>Reuben A. Scott,</persname>
-        <persname>Mary Catherine Saufley,</persname>
-        <famname>Scott family,</famname>
-        <famname>Saufley family,</famname>
+      <repository>
+        <corpname>Special Collections, James Madison University</corpname>
+      </repository>
+      <unittitle>Margaret B. Burruss Collection of Scott and Saufley Family Papers, </unittitle>
+      <origination audience="internal" label="Creator">
+        <persname source="ingest">Scott, Reuben A., 1838-1912</persname>
       </origination>
+      <origination audience="internal" label="Creator">
+        <persname source="ingest">Scott, Mary Catherine Saufley, 1833-1920</persname>
+      </origination>
+      <origination audience="internal" label="Creator">
+        <famname source="ingest">Scott family</famname>
+      </origination>
+      <origination audience="internal" label="Creator">
+        <famname source="ingest">Saufley family</famname>
+      </origination>
+      <unitid label="Collection Number" encodinganalog="099$a">SC 0118</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">1.10 cubic feet; 3 boxes</physdesc>
+      <unitdate calendar="gregorian" era="ce" normal="1786/1991" type="inclusive">1786-1912,
+        1991</unitdate>
+      <abstract id="aspace_f05fb671c2719cd9fcfcb9d829aa2133">The Margaret B. Burruss Collection of
+        Scott and Saufley Family Papers, 1786-1912, 1991, is comprised of correspondence,
+        transcripts, photographs, and the Hanna family Bible.</abstract>
     </did>
     <descgrp type="admininfo">
-      <head>Administrative Information 
-         </head>
-      <accessrestrict>
+      <head>Administrative Information</head>
+      <accessrestrict id="aspace_495474657f38d822579736f2e613cbfe">
         <head>Access</head>
-        <p>There are no restrictions.</p>
+        <p>Collection is open for research. Researchers must register and agree to copyright and
+          privacy laws before using this collection. Please contact Research Services staff before
+          visiting the James Madison University Special Collections Library to use this
+          collection.</p>
       </accessrestrict>
-      <userestrict>
+      <userestrict id="aspace_a80dc460cfc575085063823563d2d107">
         <head>Use Restrictions</head>
-        <p>There are no restrictions.</p>
+        <p>The copyright interests in this collection have been transferred to the James Madison
+          University Special Collection Library. For more information, contact the Special
+          Collections Library Reference Desk (library-special@jmu.edu).</p>
       </userestrict>
-      <prefercite>
+      <prefercite id="aspace_1e7732fb97a31b2c0226559f4bbb22c5">
         <head>Preferred Citation</head>
-        <p>Margaret B. Burruss Collection, Collection #2097,
-            Special Collections, Carrier Library, James Madison
-            University, Harrisonburg, Va.</p>
+        <p>[identification of item], [box #, folder #], Margaret B. Burruss Collection of Scott and
+          Saufley Family Papers, 1786-1912, 1991, SC 0118, Special Collections, Carrier Library,
+          James Madison University, Harrisonburg, VA</p>
       </prefercite>
-      <acqinfo>
+      <acqinfo id="aspace_12432e4b4b6fb89ef1791c219c81ed69">
         <head>Acquisition Information</head>
-        <p>Donated to the Library in July 1990 by Mrs. Margaret B.
-            Burruss, a great granddaughter of R.A. and M.C. Scott.</p>
+        <p>Donated in July 1990 by Mrs. Margaret B. Burruss, a great-granddaughter of Reuben A.
+          Scott and Mary (Mollie) Saufley Scott.</p>
       </acqinfo>
+      <processinfo id="aspace_ccf94a55c3aa480e7040778976ad5960">
+        <head>Processing Information</head>
+        <p>At some point after acquiring this collection, Special Collections staff separated the
+          correspondence from their corresponding envelopes. The separated envelopes have penciled
+          notations on them referring back to their original letter. In an effort to not further
+          lose original order by trying to marry each letter with an envelope, the two remain
+          separated. In order to streamline the process of applying collection numbers, Special
+          Collections staff completed a large-scale renumbering campaign in the spring of 2017. (The
+          collection was also minimally reprocessed during this time.) <emph render="bold">This
+            collection was previously cataloged as SC 2097</emph>.</p>
+      </processinfo>
     </descgrp>
-    <bioghist>
-      <head>Biographical/Historical Information</head>
-      <p>Reuben A. Scott and his fiancee and (after September 12,
-         1861) his wife, Mary Catherine Saufley (called Mollie) were
-         married in their twenties and lived near Port Republic in
-         Rockingham County, VA. Mollie was slightly older than Reuben,
-         and was well educated, having attended Fair View Academy and
-         Miami Seminary in Missouri while living with an uncle there.
-         Scott had joined the Confederate forces (private, Company B,
-         10th Regiment, Virginia Infantry) at least by April, 1861; was
-         wounded in the arm at Chancellorsville in May, 1863; was taken
-         prisoner of war at Port Republic in September, 1864; and was
-         paroled May 23, 1865. Scott returned to live a prosperous life
-         as a farmer at Port Republic, where he died in 1912.</p>
+    <bioghist id="aspace_6794b609713670c584095eb868075239">
+      <head>Bio/Historical Information</head>
+      <p>Rueben A. Scott and his fiancée, later wife, Mary (Mollie) Catherine Saufley, lived near
+        Port Republic in Rockingham County, Virginia. She was slightly older than Reuben, and was
+        well educated, having attended Fair View Academy and Miami Seminary in Missouri. Reuben
+        Scott joined the Confederate forces as a private in the Company B, 10th Regiment, Virginia
+        Infantry, at least by April 1861 when he was in his twenties. He suffered a wound to the arm
+        at the Battle of Chancellorsville in May 1863. He was then taken prisoner of war at Port
+        Republic in September 1864, and later paroled on May 23, 1865. He returned to live a
+        prosperous life as a farmer in Port Republic, where he died in 1912.</p>
     </bioghist>
-    <scopecontent>
-      <head>Scope and Content Information</head>
-      <p>This collection consists of one Hollinger box of letters
-         and a few family records and photos, 1786 to 1912; one 1/2
-         Hollinger box of Civil War letter transcripts; and the Hanna
-         family Bible. The bulk of the collection is in Series 1, which
-         is composed of six folders of Civil War correspondence between
-         Reuben A. Scott and his fiancee and (after September 12, 1861)
-         his wife, Mary Catherine Saufley (called Mollie). His letters
-         describe camp life, preparation for battles, and his
-         assignment to search out and arrest deserters. Mollie answered
-         with news of family members. Series 1 also contains a few
-         documents relevant to the correspondence, such as the April 7,
-         1861 note from Mollie's father giving permission to marry, a
-         leave of absence for Scott in September, 1861, and copies of
-         Scott's muster rolls. Transcripts of letters in Series 1 are
-         filed in Box 1A.</p>
-      <p>Series 2 contains miscellaneous letters (most from 1850's
-         &amp; 60's) from members of the Whitmer, Ewing, Brown, Graham,
-         and other families, including the Scott and Saufley families.
-         Letters from both R.A.Scott and M.C.Saufley to various
-         relatives are filed here. Also filed here are miscellaneous
-         documents such as notes of debt, as well as R.A. Scott's will
-         and obituary. Transcripts of these letters are also filed in
-         Box 1A.</p>
-      <p>Series 3, Miscellaneous, contains M.C.Saufley's Daybook,
-         1859-1867[?] (prayers, notes on weather, occasional list of
-         letters); and a pamphlet, The Soldier's Mission in the Crisis
-         of 1861, with a note by R.S.Scott, "found on battlefield..."
-         This folder also holds the originals of several clippings that
-         were photocopied onto preservation paper for placement with
-         the letters they accompanied.</p>
-      <p>The photographs in Series 4 consist of three cased photos
-         (one daguerreotype) of R.A.Scott; one cased photo of Mollie
-         Scott identified and dated by the donor as 1861; and one
-         mounted photo of R.S.Scott in his casket. Envelopes are filed
-         in Series 5.</p>
+    <scopecontent id="aspace_5142ac5ea11f754fd17501d570c1386b">
+      <head>Scope and Content</head>
+      <p>The Margaret B. Burruss Collection of Scott and Saufley Family Papers, 1789-1912, consists
+        of three boxes containing letters, family records, photos, letter transcripts, and the Hanna
+        family Bible. The collection relates to the Scott and Saufley families of Rockingham County,
+        Virginia.</p>
     </scopecontent>
-    <arrangement>
-      <head>NOTE</head>
-      <p>Some further genealogical information from the donor is
-         available in the control file.</p>
+    <arrangement id="aspace_d5831fbad9ec6d2697440c9b2f3a0b23">
+      <head>Arrangement</head>
+      <p>This collection is arranged in five series:</p>
+      <p>Series 1: Scott-Saufley Correspondence, 1861-1865</p>
+      <p>Series 2: Family Letters, 1768-1912</p>
+      <p>Series 3: Miscellaneous, 1859-1861</p>
+      <p>Series 4: Photographs, ca. 1860s, 1912</p>
+      <p>Series 5: Envelopes, 1861-1912</p>
+      <p>Series 6: Transcripts, 1991</p>
     </arrangement>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh">Scott, Reuben A., 1838-1912</subject>
+        <subject source="lcsh">Scott, Mary Catherine Saufley, 1833-1920</subject>
+        <subject source="lcsh">Scott, Reuben A., 1838-1912 -- Correspondence</subject>
+        <subject source="lcsh">Scott, Mary Catherine Saufley, 1833-1920 -- Correspondence</subject>
+        <subject source="lcsh">Scott family -- Correspondence</subject>
+        <subject source="lcsh">Saufley family -- Correspondence</subject>
+        <subject source="lcsh">Hanna family -- Sources</subject>
+        <subject source="lcsh">Whitmer family -- Correspondence</subject>
+        <subject source="lcsh">Ewing family -- Correspondence</subject>
+        <subject source="lcsh">Brown family -- Correspondence</subject>
+        <subject source="lcsh">Graham family -- Correspondence</subject>
+        <subject source="lcsh">Confederate States of America. Army. Virginia Infantry Regiment,
+          10th</subject>
+        <subject source="lcsh">Chancellorsville, Battle of, Chancellorsville, Va., 1863</subject>
+        <subject source="lcsh">Virginia -- History -- Civil War, 1861-1865 -- Personal
+          narratives</subject>
+        <subject source="lcsh">Virginia -- Social life and customs</subject>
+        <subject source="lcsh">Port Republic (Va.) -- History</subject>
+        <subject source="local">United States -- History -- Civil War, 1861-1865 -- Personal
+          narratives, Confederate</subject>
+        <subject source="lcsh">United States -- History -- Civil War, 1861-1865 --
+          Campaigns</subject>
+        <subject source="lcsh">United States -- History -- Civil War, 1861-1865 -- Regimental
+          histories</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc>
+      <c01 audience="internal" id="aspace_3c5146cb9e65aaca40914c97061a4647" level="series">
+        <did>
+          <unittitle>Series 1: Scott-Saufley Correspondence, <unitdate type="inclusive"
+              >1861-1865</unitdate></unittitle>
+        </did>
+        <scopecontent audience="internal" id="aspace_782dd6b4af9ce2b51e0e1437c8362eec">
+          <head>Scope and Content</head>
+          <p>Series 1: Scott-Saufley Correspondence, 1861-1865, is comprised of six folders of Civil
+            War correspondence between Reuben A. Scott and his wife Mary Catherine Saufley Scott
+            (called Mollie). His letters describe camp life, preparation for battles, and his
+            assignment of searching out and arresting deserters. Her letters describe events and
+            news about family members and home. There are also several documents included that are
+            relevant to the correspondence, such as the April 7, 1861 letter from Mollie's father
+            giving her permission to marry, a leave of absence for Scott in Septmeber 1861, and
+            copies of his muster rolls.</p>
+        </scopecontent>
+        <c02 audience="internal" id="aspace_ac8c2b96d9c5cecd01b04a485e457885" level="file">
+          <did>
+            <unittitle>Reuben A. Scott/Mollie Catherine Saufley Scott correspondence, <unitdate
+                type="inclusive">April 7, 1861-June 5, 1861</unitdate></unittitle>
+            <container id="aspace_319e2e9c3f5283b29ae1a65898025de0" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_d46c0df90e465d4a3f71e270947859a7"
+              parent="aspace_319e2e9c3f5283b29ae1a65898025de0" type="folder">1</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_fb64b10bebd2edac266e814215ad7aa5" level="file">
+          <did>
+            <unittitle>Reuben A. Scott/Mollie Catherine Saufley Scott correspondence, <unitdate
+                type="inclusive">June 8, 1861-July 20, 1861</unitdate></unittitle>
+            <container id="aspace_35dd57ba336dcc4fb5e4c4a6bbbbe403" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_f92ed59fa1b85334d68390d803cd8e96"
+              parent="aspace_35dd57ba336dcc4fb5e4c4a6bbbbe403" type="folder">2</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_cc460e5e1255529443dc5a847b9e4e09" level="file">
+          <did>
+            <unittitle>Reuben A. Scott/Mollie Catherine Saufley Scott correspondence, <unitdate
+                type="inclusive">July 23, 1861-September 8, 1861</unitdate></unittitle>
+            <container id="aspace_c9dced9134659e4237265b71a236cd58" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_5137d0bddae7753f4603ec8fe76153fd"
+              parent="aspace_c9dced9134659e4237265b71a236cd58" type="folder">3</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_1b4170b48e018e90c5599c44a79acedd" level="file">
+          <did>
+            <unittitle>Reuben A. Scott/Mollie Catherine Saufley Scott correspondence, <unitdate
+                type="inclusive">September 26, 1861-December 23, 1861</unitdate></unittitle>
+            <container id="aspace_e4e1528450eaeaf96c49887868c07915" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_f9034023b4bc023540c187ade1b0b56f"
+              parent="aspace_e4e1528450eaeaf96c49887868c07915" type="folder">4</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_30cff39268ada587adde9c6266ee0cfa" level="file">
+          <did>
+            <unittitle>Reuben A. Scott/Mollie Catherine Saufley Scott correspondence, <unitdate
+                type="inclusive">January 5, 1862-March 24, 1862</unitdate></unittitle>
+            <container id="aspace_4571f3a3e0d15e799a406c77c26ea53c" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_8b3368fd731fb90383d63990ece43a06"
+              parent="aspace_4571f3a3e0d15e799a406c77c26ea53c" type="folder">5</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_e3deb71214fa5f281f660e3572feeffe" level="file">
+          <did>
+            <unittitle>Reuben A. Scott/Mollie Catherine Saufley Scott correspondence, <unitdate
+                type="inclusive">April 12, 18662-May 23, 1865, undated</unitdate></unittitle>
+            <container id="aspace_442af4405b452b2e32b6f083cee5f3ec" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_974a1cc4072b6e020100d1b80ab2b6d3"
+              parent="aspace_442af4405b452b2e32b6f083cee5f3ec" type="folder">6</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 audience="internal" id="aspace_1944de96b37f6d87f62e86e86d875a85" level="series">
+        <did>
+          <unittitle>Series 2: Family Letters, <unitdate type="inclusive"
+            >1768-1912</unitdate></unittitle>
+        </did>
+        <scopecontent audience="internal" id="aspace_2d7283720a18946a81fb03e0280e91a3">
+          <head>Scope and Content</head>
+          <p>Series 2: Family Letters, 1786-1912, contains miscellaneous letters from members of the
+            Whitmer, Ewing, Brown, Graham, as well as the Scott and Saufley family. Letter from both
+            R.A. Scott and M.C. Saufley to various relatives are filed here. Also filed here are
+            notes of debts and R.A. Scott's obituary and will.</p>
+        </scopecontent>
+        <c02 audience="internal" id="aspace_69599d2959a8cecdb684d730ec8ede52" level="file">
+          <did>
+            <unittitle>Family letters, <unitdate type="inclusive">1786-1857</unitdate></unittitle>
+            <container id="aspace_cf15eb30ca5e47ebb46b913a7a05954c" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_59a1696fac7fd1d90a6e4f91526dbb4b"
+              parent="aspace_cf15eb30ca5e47ebb46b913a7a05954c" type="folder">7</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_dd85883f3287a920c2255026372b4981" level="file">
+          <did>
+            <unittitle>Family letters, <unitdate type="inclusive">1858-1861</unitdate></unittitle>
+            <container id="aspace_db88e508d62d75d03eef64a5cf45f926" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_d42bf77a6bb75d8123545e080ba805a5"
+              parent="aspace_db88e508d62d75d03eef64a5cf45f926" type="folder">8</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_dce2823576c7855cf75aad4b0a020be4" level="file">
+          <did>
+            <unittitle>Family letters, <unitdate type="inclusive">1861-1912,
+              undated</unitdate></unittitle>
+            <container id="aspace_d4b5a465250cf097de8dda9b0a3ce45f" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_3c8647c85462d9a67a6433025941f21b"
+              parent="aspace_d4b5a465250cf097de8dda9b0a3ce45f" type="folder">9</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 audience="internal" id="aspace_28facd6462e4b8ac67de6ae36fdbaa8f" level="series">
+        <did>
+          <unittitle>Series 3: Miscellaneous, <unitdate type="inclusive"
+            >1859-1861</unitdate></unittitle>
+        </did>
+        <scopecontent audience="internal" id="aspace_e0450bac81f6bb90c8f3205d4bfb4491">
+          <head>Scope and Content</head>
+          <p>Series 3: Miscellaneous, 1859-1861, contains M.C. Saufley's daybook and pamphlet, The
+            Soldier's Mission in the Crisis of 1861 that contains a note by R. A. Scott ("found on
+            battlefield"). This folder also holds several clippings that were photocopied onto
+            preservation paper for placement with the letters they accompanied. The Hanna Family
+            Bible also forms part of this series and includes two pages of genealogical data.</p>
+        </scopecontent>
+        <c02 audience="internal" id="aspace_89c6013282ff6cff809e2cd1462fce72" level="file">
+          <did>
+            <unittitle>Miscellaneous, <unitdate type="inclusive">1859-1861</unitdate></unittitle>
+            <container id="aspace_28af602084195024339d133721483541" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_2ea99de145b166e71cb8cf4c5bffcd5e"
+              parent="aspace_28af602084195024339d133721483541" type="folder">10</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_c01db9a697c3313b9ccbadd063508e1e" level="file">
+          <did>
+            <unittitle>Hanna family Bible, <unitdate type="inclusive">undated</unitdate></unittitle>
+            <container id="aspace_338a406463a56ad0ed634d46aaf02487" label="Box" type="box">OV
+              1</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 audience="internal" id="aspace_76c28ffc81b8da60217d85ecad448b21" level="series">
+        <did>
+          <unittitle>Series 4: Photographs, <unitdate type="inclusive">ca. 1860s,
+            1912</unitdate></unittitle>
+        </did>
+        <scopecontent audience="internal" id="aspace_554fd4cfbc72a7c89de15fc903a12353">
+          <head>Scope and Content</head>
+          <p>Series 4: Photographs, ca. 1860s, 1912, consists of three cases photos of R.A. Scott,
+            one cased photo of Mollie Scott identified and dated by the donor as 1861, and one
+            mounted photo of R. A. Scott in his casket.</p>
+        </scopecontent>
+        <c02 audience="internal" id="aspace_b33f1220ae9ef258ffc2103cd4caf561" level="file">
+          <did>
+            <unittitle>Photographs, <unitdate type="inclusive">ca. 1860s,
+              1912</unitdate></unittitle>
+            <container id="aspace_5c75d188754bad6ca10fb013657385b5" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_cebc6b33e4f27698134e558784c09e85"
+              parent="aspace_5c75d188754bad6ca10fb013657385b5" type="folder">11</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 audience="internal" id="aspace_4e98703e79a1e7e924004a28ba1d1125" level="series">
+        <did>
+          <unittitle>Series 5: Envelopes, <unitdate type="inclusive"
+            >1861-1912</unitdate></unittitle>
+        </did>
+        <scopecontent audience="internal" id="aspace_a0133447072465bd0463e4810e19f295">
+          <head>Scope and Content</head>
+          <p>Series 5: Envelopes, 1861-1912, correspond to the letters in Series 1 and Series 2.
+            They were separated from their letters during an initial processing campaign. The
+            separated envelopes have penciled notations on them referring back to their original
+            letter.</p>
+        </scopecontent>
+        <c02 audience="internal" id="aspace_60be00f658b237a1429be4fc2010fc0b" level="file">
+          <did>
+            <unittitle>Envelopes, <unitdate type="inclusive">1861-1912</unitdate></unittitle>
+            <container id="aspace_1c9840cdbcb4928550444cc805a67ff1" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_52726992ce65c1e9f076004190be614b"
+              parent="aspace_1c9840cdbcb4928550444cc805a67ff1" type="folder">12</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 audience="internal" id="aspace_7f578fd39d174416915740870ba2b959" level="series">
+        <did>
+          <unittitle>Series 6: Transcripts, <unitdate>1991</unitdate></unittitle>
+        </did>
+        <scopecontent audience="internal" id="aspace_cbc98272e7af47a1cc86855daf71700e">
+          <head>Scope and Content</head>
+          <p>Series 6: Transcripts, undated, is comprised of typed transcripts of all correspondence
+            located in Series 1 and Series 2.</p>
+        </scopecontent>
+        <c02 audience="internal" id="aspace_3b3f63d93192b0e5447bc9587be2be5a" level="file">
+          <did>
+            <unittitle>Transcripts to Reuben A. Scott/Mollie Catherine Saufley Scott correspondence
+              dated April 7, 1861-June 5, 1861, <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_2e99d667784b1181d7b301c173c06135" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_93e635b97d1af12e6856a692e0c1b29f"
+              parent="aspace_2e99d667784b1181d7b301c173c06135" type="folder">1</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_02d130b5446126d0a8cf5c699205f6c2" level="file">
+          <did>
+            <unittitle>Transcripts to Reuben A. Scott/Mollie Catherine Saufley Scott correspondence
+              dated June 8, 1861-July 20, 1861, <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_e533558b18c55f76968c322694f75819" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_33f0bd97701d10cd76dfc49c40671ef7"
+              parent="aspace_e533558b18c55f76968c322694f75819" type="folder">2</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_e2b507236dfb52d83846fc32eaaabaf1" level="file">
+          <did>
+            <unittitle>Transcripts to Reuben A. Scott/Mollie Catherine Saufley Scott correspondence
+              dated July 23, 1861-September 8, 1861, <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_2d4a99dd3130f349a6a172c00051ac03" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_be25e100f3e5acbbaecc87e0389bb9e1"
+              parent="aspace_2d4a99dd3130f349a6a172c00051ac03" type="folder">3</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_fe4637b99010905dcb2e655b46deebfb" level="file">
+          <did>
+            <unittitle>Transcripts to Reuben A. Scott/Mollie Catherine Saufley Scott correspondence
+              dated September 26, 1861-December 23, 1861, <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_7fef7ac3f9fd5094fc3d898182e3b662" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_db457d00c6215d618b199f7c99d96729"
+              parent="aspace_7fef7ac3f9fd5094fc3d898182e3b662" type="folder">4</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_4de391984fe2abc306ead0efc610a99b" level="file">
+          <did>
+            <unittitle>Transcripts to Reuben A. Scott/Mollie Catherine Saufley Scott correspondence
+              dated January 5, 1862-March 24, 1862, <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_d9091e3c49f3ba089a5f709964dd1e53" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_ab1d7024b07695d0358f9f16aecd86dd"
+              parent="aspace_d9091e3c49f3ba089a5f709964dd1e53" type="folder">5</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_b2040bd729eee9b142db20d04fc61b70" level="file">
+          <did>
+            <unittitle>Transcripts to Reuben A. Scott/Mollie Catherine Saufley Scott correspondence
+              dated April 12, 18662-May 23, 1865, undated, <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_d4ef2a10ea49ae76794b3b9cb30248f3" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_4903eca834deb0f0c4d4950ad5225c49"
+              parent="aspace_d4ef2a10ea49ae76794b3b9cb30248f3" type="folder">6</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_084def04189704d4ad1fd8e49718fcc7" level="file">
+          <did>
+            <unittitle>Transcripts to Family letters dated 1786-1857,
+              <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_0b0f8c1f5270b84c3c2eaecd972c6768" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_757f99f078d70d42c1452d9d84c533b2"
+              parent="aspace_0b0f8c1f5270b84c3c2eaecd972c6768" type="folder">7</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_d4e50ea2b5676db1fd52a1d121217f81" level="file">
+          <did>
+            <unittitle>Transcripts to Family letters dated 1858-1861,
+              <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_a4f9cf272074abd2a48d9ce582a64632" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_425c8f1a97031243a6c296b2683bf4cd"
+              parent="aspace_a4f9cf272074abd2a48d9ce582a64632" type="folder">8</container>
+          </did>
+        </c02>
+        <c02 audience="internal" id="aspace_b193cea465a3a27e01f1cc00eac013ce" level="file">
+          <did>
+            <unittitle>Transcripts to Family letters dated 1861-1912, undated,
+                <unitdate>1991</unitdate></unittitle>
+            <container id="aspace_b0649b183b2aa0282220db09b597cd4c" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_4635e265190104f3ebd77ecbcdee2d99"
+              parent="aspace_b0649b183b2aa0282220db09b597cd4c" type="folder">9</container>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
   </archdesc>
 </ead>
