@@ -1,300 +1,388 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00035">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00035::Marianne L. Garber Collection)//EN" "vihart00035.xml"
-</eadid>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+    langencoding="iso639-2b" repositoryencoding="iso15511">
+    <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00035.xml"
+      >vihart00035</eadid>
     <filedesc>
       <titlestmt>
-        <titleproper>A Guide to the Marianne L. Garber Collection <date era="ce" calendar="gregorian">1780-1899</date></titleproper>
-        <subtitle id="sort">Marianne L. Garber Collection
-<num type="collectionnumber">3066
-</num></subtitle>
+        <titleproper>A Guide to the Marianne L. Garber Collection of Shenandoah Valley Documents,
+          1780-1899: <num>SC 0138</num></titleproper>
+        <author>Cara Lundgren, February 2014</author>
       </titlestmt>
       <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2004 By JMU Libraries. All rights reserved.
-</date>
+        <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All rights
+          reserved. </date>
         <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+            Use</extref>
         </p>
-        <p id="filesize">3 kb
-</p>
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>Machine-readable finding aid derived from HTML Document, created by Maggie Keller, <date era="ce" calendar="gregorian">10/1/2004</date></creation>
-      <langusage>Description is in
-<language langcode="eng">English
-</language></langusage>
+      <creation>This finding aid was produced using ArchivesSpace and hand encoding by Tiffany Cole
+        on <date>2018-02-02 13:49:00 -0500</date>.</creation>
+      <langusage>English</langusage>
+      <descrules>Describing Archives: A Content Standard</descrules>
     </profiledesc>
     <revisiondesc>
       <change>
-        <date era="ce" calendar="gregorian">2004
-</date>
-        <item>none
-</item>
+        <date>February 2014</date>
+        <item>Revised by Cara Lundgren</item>
       </change>
       <change>
-        <date normal="2013-11-21">2013-11-21</date>
+        <date>2013-11-21</date>
         <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
       </change>
     </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
-      <titleproper>A Guide to the Marianne L. Garber Collection <date era="ce" calendar="gregorian">1780-1899</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections
-<num type="Collection Number">3066
-</num></subtitle>
+      <titleproper>A Guide to the Marianne L. Garber Collection of Shenandoah Valley Documents,
+          <date era="ce" calendar="gregorian">1780-1899</date>
+      </titleproper>
+      <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+          0138</num>
+      </subtitle>
       <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
       </p>
-      <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2004
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2018</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
       <list type="deflist">
         <defitem>
-          <label>Processed by:
-</label>
-          <item>Special Collections Staff
-</item>
+          <label>Processed by:</label>
+          <item>Cara Lundgren, February 2014</item>
         </defitem>
       </list>
     </titlepage>
   </frontmatter>
   <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University
-</runner>
     <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository">Special Collections, James Madison University
-</repository>
-      <unittitle label="Title">Marianne L. Garber Collection
-<unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">1780-1899
-</unitdate></unittitle>
-      <unitid label="Collection number">3066
-</unitid>
-      <physdesc label="Physical Characteristics">This collection consists of 19 items in 1 Hollinger box and 1 oversize box.
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
-</language>
+      <langmaterial>
+        <language langcode="eng">English</language>
       </langmaterial>
+      <repository>
+        <corpname>Special Collections, James Madison University</corpname>
+      </repository>
+      <unittitle>Marianne L. Garber Collection of Shenandoah Valley Documents, </unittitle>
+      <origination audience="internal" label="Creator">
+        <persname rules="local" source="local">Garber, Marianne L., 1927-2015</persname>
+      </origination>
+      <unitid label="Collection Number" encodinganalog="099$a">SC 0138</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">.22 cubic feet; 2 boxes</physdesc>
+      <unitdate calendar="gregorian" era="ce" normal="1780/1899" type="inclusive"
+        >1780-1899</unitdate>
+      <abstract id="aspace_2fc5b718cf56d02e72889e14f6422530">The Marianne L. Garber Collection of
+        Shenandoah Valley Documents, 1780-1899, contains one journal written by William Mathias
+        Harner from 1847-1861, eight legal and business documents dating from 1815- 1899, and ten
+        land deeds and indentures dating from 1780-1887.</abstract>
     </did>
     <descgrp type="admininfo">
-      <head>Administrative Information
-</head>
-      <accessrestrict>
-        <head>Access Restrictions
-</head>
-        <p>Collection is open to research.
-</p>
+      <head>Administrative Information</head>
+      <accessrestrict id="aspace_23111e434f875e6cfaec0eefc56bfa55">
+        <head>Access Restrictions</head>
+        <p>Collection is open for research. Researchers must register and agree to copyright and
+          privacy laws before using this collection. Please contact Research Services staff before
+          visiting the James Madison University Special Collections Library to use this
+          collection.</p>
       </accessrestrict>
-      <userestrict>
-        <head>Use Restrictions
-</head>
-        <p>There are no restrictions.
-</p>
+      <userestrict id="aspace_566f4eb1e3464bd0752ebb9e5c2fbb8b">
+        <head>Use Restrictions</head>
+        <p>The copyright interests in this collection have been transferred to the James Madison
+          University Special Collection Library. For more information, contact the Special
+          Collections Library Reference Desk (library-special@jmu.edu).</p>
       </userestrict>
-      <prefercite>
-        <head>Preferred Citation
-</head>
-        <p>Marianne L. Garber Collection, Collection #3066, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
-</p>
+      <prefercite id="aspace_3f8ba63689939470fab621a0ba9f5743">
+        <head>Preferred Citation</head>
+        <p>[identification of item], [box #, folder #], Marianne L. Garber Collection of Shenandoah
+          Valley Documents, 1780-1899, SC 0138, Special Collections, Carrier Library, James Madison
+          University, Harrisonburg, Va.</p>
       </prefercite>
-      <acqinfo>
-        <head>Acquisition Information
-</head>
-        <p>This collection was donated to the Library in January, 1995 by Marianne L. Garber of Timberville, VA.
-</p>
+      <acqinfo id="aspace_8d5ac2b6883451a8814bdb47ff57a1e7">
+        <head>Acquisition Information</head>
+        <p>This collection was donated to Special Collections in January 1995 by Marianne L. Garber
+          of Timberville, Virginia. According to the donor, the journal was written by William
+          Mathias Harner of McGaheysville, Virginia, born November 24, 1823 and married January
+          1852.</p>
       </acqinfo>
+      <altformavail id="aspace_51aad270cd8e19adacd890ebfaf1d971">
+        <head>Other Formats Available</head>
+        <p>The farm journal of William Mathias Harner has been transcribed and is in the first
+          folder.</p>
+      </altformavail>
+      <processinfo id="aspace_e1a88e9ce2eed84b5b16d078f1232926">
+        <head>Processing Information</head>
+        <p>In order to streamline the process of applying collection numbers, Special Collections
+          staff completed a large-scale renumbering campaign in the spring of 2017. <emph
+            render="bold">This collection was previously cataloged as SC 3066.</emph></p>
+      </processinfo>
     </descgrp>
-    <bioghist>
-      <head>Biographical/Historical Information
-</head>
-      <p>According to the donor, the journal was written by William Mathias Harner of McGaheysville, VA, born Nov. 24, 1823 and married Jan. 1852.
-</p>
+    <bioghist id="aspace_6a986a8a11da0531a9b143cf404d2b9d">
+      <head>Bio/Historical Note</head>
+      <p>William Harner was born to George and Margaret Harner on November 25, 1823. He was baptized
+        at Peak Mountain Church on January 10, 1824. It is believed that the name Harner might have
+        originally been Hares. He attended Peak Mountain Church, a Lutheran and Reform church all of
+        his life. Harner was the youngest of eight children. He lived on his family's farm according
+        to the 1850 United States census. This census places them in the 56 1/2 District in October
+        16, 1850.</p>
     </bioghist>
-    <scopecontent>
-      <head>Scope and Content
-</head>
-      <p>This collection contains 19 items from 1780 to 1899, the majority of which are land deeds and miscellaneous legal and business documents for Rockingham and Shenandoah Counties, VA. Also included in the
-collection is a farm journal with one-line entries describing agricultural activities almost daily for most of the time period from August, 1847 to May, 1861.
-</p>
+    <scopecontent id="aspace_ab1fd2f8c9fb2d72d82720a618d3a4bc">
+      <head>Scope and Content</head>
+      <p>The Marianne L. Garber Collection of Shenandoah Valley Documents, 1780-1899, contains one
+        journal written by William Mathias Harner from 1847-1861, eight legal and business documents
+        dating from 1815- 1899, and ten land deeds and indentures dating from 1780-1887. The bulk of
+        the documents are land deeds and miscellaneous legal and business documents for Rockingham
+        and Shenandoah counties. Also included in the collection is a farm journal with one-line
+        entries describing agricultural activities almost daily for most of the time period from
+        August 1847 to May 1861.</p>
     </scopecontent>
-    <arrangement>
-      <head>Arrangement
-</head>
-      <p>Box 1: Farm Journal, Legal and Business documents, Oversize Box 1: Land deeds and Indentures.
-</p>
+    <arrangement id="aspace_d48fd98737eaf176c973b360e26a848f">
+      <head>Arrangement</head>
+      <p>The collection is arranged topically.</p>
     </arrangement>
-    <dsc type="combined">
-      <head>Contents List
-</head>
-      <c01 level="item">
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh">Harner, William Mathias</subject>
+        <subject source="lcsh">Shirley, C., Major</subject>
+        <subject source="lcsh">Lee, Henry, 1756-1818 -- Autograph</subject>
+        <subject source="lcsh">Randolph, Beverly 1754-1797 -- Autograph</subject>
+        <subject source="lcsh">Pence family</subject>
+        <subject source="lcsh">Frye family</subject>
+        <subject source="lcsh">Linhoss family</subject>
+        <subject source="lcsh">Homan family</subject>
+        <subject source="lcsh">L. P. Henkel &amp; Co</subject>
+        <subject source="lcsh">Debt -- Virginia</subject>
+        <subject source="lcsh">Deeds -- Virginia -- Rockingham County</subject>
+        <subject source="lcsh">Deeds -- Virginia -- Shenandoah County</subject>
+        <subject source="lcsh">Land titles -- Virginia -- Sources</subject>
+        <subject source="lcsh">Land titles -- Registration and transfer -- Virginia --
+          Sources</subject>
+        <subject source="lcsh">Farm life -- Virginia -- 19th century</subject>
+        <subject source="lcsh">Farmers -- Virginia -- 19th century</subject>
+        <subject source="lcsh">Agriculture -- Virginia -- 19th century</subject>
+        <subject source="lcsh">Indentured servants -- Virginia</subject>
+        <subject source="lcsh">Rockingham County (Va.) -- History -- Sources</subject>
+        <subject source="lcsh">Shenandoah County (Va.) -- History -- Sources</subject>
+        <subject source="lcsh">Virginia -- Genealogy -- Sources</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc>
+      <c01 id="aspace_be00b93a867dd7ae4822d4e2f888d487" level="file">
         <did>
-          <unittitle label="Farm Journal, Wm. M. Harner">
-            <unitdate type="inclusive" era="ce" calendar="gregorian">1847-1861
-</unitdate>
-          </unittitle>
-          <container label="Box-folder" type="box-folder">1:1
-</container>
+          <unittitle>Farm journal, William Mathias Harner, <unitdate calendar="gregorian" era="ce"
+              normal="1847/1861" type="inclusive">1847-1861</unitdate></unittitle>
+          <container id="aspace_416da56309b91203156028cd1cc1e4de" label="Box:Folder" type="box"
+            >1</container>
+          <container id="aspace_52967548d5031e8eae143aa3450eb1af"
+            parent="aspace_416da56309b91203156028cd1cc1e4de" type="folder">1</container>
         </did>
+        <scopecontent id="aspace_21ac0c1044762db8c167cb50df7f57c0">
+          <head>Scope and Contents</head>
+          <p>Includes transcript with biographical note and footnotes.</p>
+        </scopecontent>
       </c01>
-      <c01 level="item">
+      <c01 id="aspace_ace9c6032bf6e1fd5576f083c0c57391" level="file">
         <did>
-          <unittitle>Legal and Business Documents
-</unittitle>
-          <container label="Box-folder" type="box-folder">1:2
-</container>
+          <unittitle>Legal and Business Documents, <unitdate calendar="gregorian" era="ce"
+              normal="1815/1899" type="inclusive">1815-1899, undated</unitdate></unittitle>
         </did>
-        <c02 level="item">
+        <c02 id="aspace_7cd1facedadc0158c11cf6efa568da17" level="item">
           <did>
-            <unittitle>Debt obligation of Philip and George Pence
-<unitdate type="inclusive" era="ce" calendar="gregorian">1815
-</unitdate></unittitle>
+            <unittitle>Debt obligation of Philip and George Pence, <unitdate calendar="gregorian"
+                era="ce" normal="1815/1815" type="inclusive">1815</unitdate></unittitle>
+            <container id="aspace_576ebf8a365d86fc60dd1ed927a6fa89" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_3f220999eeb04487f6e386c984e2f4d1"
+              parent="aspace_576ebf8a365d86fc60dd1ed927a6fa89" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_9381cc5bac362ec2feb45e022f630f3e" level="item">
           <did>
-            <unittitle>Deposition on behalf of Samuel and Rebecca Fry
-<unitdate type="inclusive" era="ce" calendar="gregorian">1854
-</unitdate></unittitle>
+            <unittitle>Deposition on behalf of Samuel and Rebecca Fry, <unitdate
+                calendar="gregorian" era="ce" normal="1854/1854" type="inclusive"
+              >1854</unitdate></unittitle>
+            <container id="aspace_07a0891adeb1192c44c188ccf73498bd" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_2de7a33ccb5cc76b1e754f066e2bf903"
+              parent="aspace_07a0891adeb1192c44c188ccf73498bd" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="subseries">
+        <c02 id="aspace_0b5f7031892bc874b4e38ddd07176b6e" level="item">
           <did>
-            <unittitle>July 1 Letter from Major C. Shirley to "Dear Friend"
-<unitdate type="inclusive" era="ce" calendar="gregorian">1865
-</unitdate></unittitle>
+            <unittitle>Letter from Major C. Shirley to "Dear Friend", <unitdate calendar="gregorian"
+                era="ce" normal="1865/1865" type="inclusive">July 1, 1865</unitdate></unittitle>
+            <container id="aspace_d4fa15c86084cd25d7b5aeaf4e8aa256" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_6e15840c6512e26cd0239f8242715df3"
+              parent="aspace_d4fa15c86084cd25d7b5aeaf4e8aa256" type="folder">2</container>
           </did>
-          <scopecontent>
-            <p>(probably a contemporary copy)
-</p>
+          <scopecontent id="aspace_e42183967d954ed4a64ce14d62fd0f28">
+            <head>Scope and Contents</head>
+            <p>probably a contemporary copy</p>
           </scopecontent>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_e644c509c5825f080bb19b0a231ddaef" level="item">
           <did>
-            <unittitle>Purchase list, Fred Offman to Coffman Zirkle, New Market
-<unitdate type="inclusive" era="ce" calendar="gregorian">1877
-</unitdate></unittitle>
+            <unittitle>Purchase list, Fred Offman to Coffman Zirkle, New Market, <unitdate
+                calendar="gregorian" era="ce" normal="1877/1877" type="inclusive"
+              >1877</unitdate></unittitle>
+            <container id="aspace_904a1a8e9346fcb73011d4561310d2eb" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_717281e4a6bf363db5603d25b6839b2e"
+              parent="aspace_904a1a8e9346fcb73011d4561310d2eb" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_74504e1e80f5b5fe85b0c27fccd65c55" level="item">
           <did>
-            <unittitle>Purchase list, Daniel Shirley in acc't with L.P. Henkel &amp; Co.
-<unitdate type="inclusive" era="ce" calendar="gregorian">1887
-</unitdate></unittitle>
+            <unittitle>Purchase list, Daniel Shirley in acc't with L.P. Henkel Co., <unitdate
+                calendar="gregorian" era="ce" normal="1877/1877" type="inclusive"
+              >1877</unitdate></unittitle>
+            <container id="aspace_b6b099bd6c900c5bb156f5ba9525c6ea" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_9691a802ff4e2fcbd2f894036169d617"
+              parent="aspace_b6b099bd6c900c5bb156f5ba9525c6ea" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_47eb84f5aa3029f9940ca68f08857983" level="item">
           <did>
-            <unittitle>Debt obligation of John Linhoss to Charles K. Urner[?] for land
-<unitdate type="inclusive" era="ce" calendar="gregorian">1897
-</unitdate></unittitle>
+            <unittitle>Debt obligation of John Linhoss to Charles K. Urner[?] for land, <unitdate
+                calendar="gregorian" era="ce" normal="1877/1877" type="inclusive"
+              >1877</unitdate></unittitle>
+            <container id="aspace_03488927cf17af8589785ff99aa50d6f" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_25fcac72acf3c29e6b163359f27f0215"
+              parent="aspace_03488927cf17af8589785ff99aa50d6f" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_2f17f23569c9f579d3761dbdde6ce496" level="item">
           <did>
-            <unittitle>Debt release of John Linhoss by W.P. Crickenberger
-<unitdate type="inclusive" era="ce" calendar="gregorian">1899
-</unitdate></unittitle>
+            <unittitle>Debt release of John Linhoss by W.P. Crickenberger, <unitdate
+                calendar="gregorian" era="ce" normal="1899/1899" type="inclusive"
+              >1899</unitdate></unittitle>
+            <container id="aspace_35647abbfe54e929ef9385a577bfed02" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_7758c03899495b317f899bfb2a6f1168"
+              parent="aspace_35647abbfe54e929ef9385a577bfed02" type="folder">2</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_82f36b623c74aa0c7eced483931bb58f" level="item">
           <did>
-            <unittitle>Undated Land resurvey for David Homan
-</unittitle>
+            <unittitle>Land resurvey for David Homan, <unitdate calendar="gregorian"
+                certainty="approximate" era="ce" type="inclusive">undated</unitdate></unittitle>
+            <container id="aspace_1f23afdbdbfd42d471cd28e843d24421" label="Box:Folder" type="box"
+              >1</container>
+            <container id="aspace_5abb5d77a9be8e06d6dc9ec4dfabb870"
+              parent="aspace_1f23afdbdbfd42d471cd28e843d24421" type="folder">2</container>
           </did>
         </c02>
       </c01>
-      <c01 level="item">
+      <c01 id="aspace_7f3216070366c3f2cf59184ca31186cf" level="file">
         <did>
-          <unittitle>Land Deeds and Indentures
-</unittitle>
-          <container label="Oversize" type="oversize">1
-</container>
+          <unittitle>Land Deeds and Indentures, <unitdate calendar="gregorian" era="ce"
+              normal="1780/1887" type="inclusive">1780-1887</unitdate></unittitle>
         </did>
-        <c02 level="item">
+        <c02 id="aspace_2ac662a9992609179dd6440480e8c954" level="item">
           <did>
-            <unittitle>Richard Campfield, "A Copy from Record"
-<unitdate type="inclusive" era="ce" calendar="gregorian">1780
-</unitdate></unittitle>
+            <unittitle>Richard Campfield, "A Copy from Record", <unitdate calendar="gregorian"
+                era="ce" normal="1780/1780" type="inclusive">1780</unitdate></unittitle>
+            <container id="aspace_ab7c6bfaa9c7c4a08f2fdd10ef39b733" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_5cdf1bd6dd8416f80bbc833ace013b88"
+              parent="aspace_ab7c6bfaa9c7c4a08f2fdd10ef39b733" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_9294a082a557ec0bc80b3987afd3c0f4" level="item">
           <did>
-            <unittitle>John Petner [Pitner], signed Beverley Randolph
-<unitdate type="inclusive" era="ce" calendar="gregorian">1787
-</unitdate></unittitle>
+            <unittitle>John Petner [Pitner], signed Beverley Randolph, <unitdate
+                calendar="gregorian" era="ce" normal="1787/1787" type="inclusive"
+              >1787</unitdate></unittitle>
+            <container id="aspace_d5fa7804b6cc148af817fec4e288b480" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_6257cad113195a52b767c93db39b3a62"
+              parent="aspace_d5fa7804b6cc148af817fec4e288b480" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_40f5aea8e125299980513802f682cec6" level="item">
           <did>
-            <unittitle>Henry Mave [Nave], signed by Henry Lee
-<unitdate type="inclusive" era="ce" calendar="gregorian">1793
-</unitdate></unittitle>
+            <unittitle>Henry Mave [Nave], signed by Henry Lee, <unitdate calendar="gregorian"
+                era="ce" normal="1793/1793" type="inclusive">1793</unitdate></unittitle>
+            <container id="aspace_2e122ee9ebd340dbe9cecb4735124fad" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_80ccb2761742c421fbb48746a0755487"
+              parent="aspace_2e122ee9ebd340dbe9cecb4735124fad" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_4c9eb3ba4ac44d040e05be7145669a82" level="item">
           <did>
-            <unittitle>John &amp; Barbara Pitner to John Nave
-<unitdate type="inclusive" era="ce" calendar="gregorian">1794
-</unitdate></unittitle>
+            <unittitle>John Barbara Pitner to John Nave, <unitdate calendar="gregorian" era="ce"
+                normal="1794/1794" type="inclusive">1794</unitdate></unittitle>
+            <container id="aspace_a59e1850d0c89c9c5b7811c2d5554532" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_f0577a95afb5a421b9cb5c9b185f4e68"
+              parent="aspace_a59e1850d0c89c9c5b7811c2d5554532" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_008e6e02eb3a1517a29e9dd322f2379e" level="item">
           <did>
-            <unittitle>Adam &amp; Liza Pitner to John Levich
-<unitdate type="inclusive" era="ce" calendar="gregorian">1796
-</unitdate></unittitle>
+            <unittitle>Adam Liza Pitner to John Levich, <unitdate calendar="gregorian" era="ce"
+                normal="1796/1796" type="inclusive">1796</unitdate></unittitle>
+            <container id="aspace_a7cca81524879918bfb634771ca945f4" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_c83f8454cba801f27e99678b16e2f471"
+              parent="aspace_a7cca81524879918bfb634771ca945f4" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_ebb8c3ddf82ebf1826e9b09ac5db3077" level="item">
           <did>
-            <unittitle>Michael &amp; Rachel Humble &amp; others to John Livy
-<unitdate type="inclusive" era="ce" calendar="gregorian">1801
-</unitdate></unittitle>
+            <unittitle>Michael Rachel Humble others to John Livy, <unitdate calendar="gregorian"
+                era="ce" normal="1801/1801" type="inclusive">1801</unitdate></unittitle>
+            <container id="aspace_5db9a0d553d9eff6d2cf1f96b441e65f" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_56dd930d493a098793b587fb6d2e0591"
+              parent="aspace_5db9a0d553d9eff6d2cf1f96b441e65f" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_9d3b158b6d11c438d8cf0d4136914807" level="item">
           <did>
-            <unittitle>John Homan &amp; others to David Homan
-<unitdate type="inclusive" era="ce" calendar="gregorian">1824
-</unitdate></unittitle>
+            <unittitle>John Homan others to David Homan, <unitdate calendar="gregorian" era="ce"
+                normal="1824/1824" type="inclusive">1824</unitdate></unittitle>
+            <container id="aspace_48be7e8037abad06e842e91fa285801b" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_9426b0ec2186ab74c784f4ee94d05d0d"
+              parent="aspace_48be7e8037abad06e842e91fa285801b" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_143fa934b79a1411507c814d1a6afd2a" level="item">
           <did>
-            <unittitle>Gideon &amp; Regina Pentz to Jonas Pentz
-<unitdate type="inclusive" era="ce" calendar="gregorian">1847
-</unitdate></unittitle>
+            <unittitle>Gideon Regina Pentz to Jonas Pentz, <unitdate calendar="gregorian" era="ce"
+                normal="1847/1847" type="inclusive">1847</unitdate></unittitle>
+            <container id="aspace_235e510723a52297d77ef338dd7a5726" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_1b5f56a944637131176e5c901361c865"
+              parent="aspace_235e510723a52297d77ef338dd7a5726" type="folder">1</container>
           </did>
         </c02>
-        <c02 level="item">
+        <c02 id="aspace_9261fc5fd2357306137373135e4588b2" level="item">
           <did>
-            <unittitle>Samuel &amp; Rebecca Fry to Lewis Will
-<unitdate type="inclusive" era="ce" calendar="gregorian">1854
-</unitdate></unittitle>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>Daniel Shirley to Joseph Roller
-<unitdate type="inclusive" era="ce" calendar="gregorian">1887
-</unitdate></unittitle>
+            <unittitle>Daniel Shirley to Joseph Roller, <unitdate calendar="gregorian" era="ce"
+                normal="1854/1854" type="inclusive">1854</unitdate></unittitle>
+            <container id="aspace_c9191ecf31f6c051bc958f8474f2372d" label="Box:Folder" type="box">OV
+              1</container>
+            <container id="aspace_568618ce7242bb6e10f0adbc58ed7175"
+              parent="aspace_c9191ecf31f6c051bc958f8474f2372d" type="folder">1</container>
           </did>
         </c02>
       </c01>
