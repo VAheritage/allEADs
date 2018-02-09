@@ -1,118 +1,214 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00080">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
-			Library::Special Collections//TEXT (US::ViHarT::vihart00080::Rockingham County Circuit Court Receipts, 1875-1882)//EN" "vihart00080.xml" </eadid>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+    langencoding="iso639-2b" repositoryencoding="iso15511">
+    <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00080.xml"
+      >vihart00080</eadid>
     <filedesc>
       <titlestmt>
-        <titleproper>A Guide to the Rockingham County Circuit Court Receipts, <date era="ce" calendar="gregorian">1875-1882</date></titleproper>
-        <subtitle id="sort">Rockingham County Circuit Court Receipts<num type="collectionnumber">SC#3086</num></subtitle>
+        <titleproper>A Guide to the Rockingham County Circuit Court Receipts, 1875-1882: <num>SC
+            0144</num></titleproper>
+        <author>Chris Bolgiano, 1996; Kayla Payne, June 2012</author>
       </titlestmt>
       <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-				</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
-					rights reserved. </date>
+        <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All rights
+          reserved. </date>
         <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+            Use</extref>
         </p>
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by David Black,
-				<date era="ce" calendar="gregorian">08/2012</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
+      <creation>This finding aid was produced using ArchivesSpace and hand encoding by Tiffany Cole
+        on <date>2018-02-09 09:30:20 -0500</date>.</creation>
+      <langusage>English</langusage>
+      <descrules>Describing Archives: A Content Standard</descrules>
     </profiledesc>
     <revisiondesc>
       <change>
-        <date normal="2013-11-21">2013-11-21</date>
+        <date>2013-11-21</date>
         <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+      </change>
+      <change>
+        <date>June 2012</date>
+        <item>Edited by Kayla Payne</item>
       </change>
     </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
-      <titleproper>A Guide to the Rockingham County Circuit Court Receipts, <date era="ce" calendar="gregorian">1875-1882</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"> SC#3086</num></subtitle>
+      <titleproper>A Guide to the Rockingham County Circuit Court Receipts, <date era="ce"
+          calendar="gregorian">1875-1882</date>
+      </titleproper>
+      <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+          0144</num>
+      </subtitle>
       <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
       </p>
-      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2012</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2018</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
       <list type="deflist">
         <defitem>
           <label>Processed by:</label>
-          <item>Chris Bolgiano, 1996; Revised June 2012 by Kayla Payne</item>
+          <item>Chris Bolgiano, 1996; Kayla Payne, June 2012</item>
         </defitem>
       </list>
     </titlepage>
   </frontmatter>
   <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University </runner>
     <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
-				University </repository>
-      <unittitle label="Title" encodinganalog="245$a">Rockingham County Circuit Court Receipts<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1875-7882</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">3086</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">1 box (0.5 linear feet)</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
+      <langmaterial>
+        <language langcode="eng">English</language>
       </langmaterial>
-      <abstract label="Abstract">Circuit court receipts from 1875-1882 for Rockingham County, Virginia.</abstract>
-      <origination label="Creator" encodinganalog="100$a">Rockingham County.|bCircuit Court (Harrisonburg, Va.)</origination>
+      <repository>
+        <corpname>Special Collections, James Madison University</corpname>
+      </repository>
+      <unittitle>Rockingham County Circuit Court Receipts, </unittitle>
+      <origination label="Creator">
+        <corpname source="local">Rockingham County Circuit Court</corpname>
+      </origination>
+      <unitid label="Collection Number" encodinganalog="099$a">SC 0144</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">.17 cubic feet; 1 box</physdesc>
+      <unitdate calendar="gregorian" era="ce" normal="1875/1882" type="inclusive"
+        >1875-1882</unitdate>
+      <abstract id="aspace_4c0a110feb383a40411942e536042474">Circuit court receipts from 1875-1882
+        for Rockingham County, Virginia.</abstract>
     </did>
     <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions </head>
-        <p>None. </p>
+      <head>Administrative Information</head>
+      <accessrestrict id="aspace_d93e769088d896a9306016fc4580b06a">
+        <head>Access Restrictions</head>
+        <p>Collection is open for research. Researchers must register and agree to copyright and
+          privacy laws before using this collection. Please contact Research Services staff before
+          visiting the James Madison University Special Collections Library to use this
+          collection.</p>
       </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions </head>
-        <p>None</p>
+      <userestrict id="aspace_60ce92abed55b8d63eba4270f1a0ef03">
+        <head>Use Restrictions</head>
+        <p>The copyright interests in this collection have not been transferred to the James Madison
+          University Special Collections Library. For more information, contact the Special
+          Collections Library Reference Desk. (library-special@jmu.edu).</p>
       </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation </head>
-        <p>[Identification of Item], The Rockingham County Circuit Court Receipts, 1875-1882, SC#
-					3086, Special Collections, Carrier Library, James Madison University,
-					Harrisonburg, Va.</p>
+      <prefercite id="aspace_90d7d246b37de9863c778194dcb75f4d">
+        <head>Preferred Citation</head>
+        <p>[identification of item], [box #, folder #], Rockingham County Circuit Court Receipts,
+          1875-1882, SC 0144, Special Collections, Carrier Library, James Madison University,
+          Harrisonburg, Va.</p>
       </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information </head>
-        <p>Deposited by Scott Suter for the Harrisonburg-Rockingham Historical Society in January 1996.</p>
+      <acqinfo id="aspace_09b84c434169ba4e1b30ca9fe52b20ed">
+        <head>Acquisition Information</head>
+        <p>Deposited by Scott Suter on behalf of the Harrisonburg-Rockingham Historical Society in
+          January 1996.</p>
       </acqinfo>
-      <processinfo>
+      <processinfo id="aspace_70709f0a0e83a1bfb5254350c44a9946">
         <head>Processing Information</head>
-        <p>Original order has been retained.</p>
+        <p>These documents came in alphabetically-designated pockets in a cloth apron designed for
+          the purpose. Original order has been retained. In order to streamline the process of
+          applying collection numbers, Special Collections staff completed a large-scale renumbering
+          campaign in the spring of 2017. <emph render="bold">This collection was previously
+            cataloged as SC 3086.</emph></p>
       </processinfo>
     </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information </head>
-      <p>These documents show court fees for Rockingham County, Virginia during the late 1870s and early 1880s.</p>
+    <bioghist id="aspace_06f43a4529545a6f5f418e1bc2bc03e8">
+      <head>Bio/Historical Note</head>
+      <p>These documents show court fees for Rockingham County, Virginia during the late 1870s and
+        early 1880s.</p>
     </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content </head>
-      <p>The Rockingham County Circuit Court Receipts collection contains 4.5 inches of receipts from the Clerk of the Circuit Court, Rockingham County, VA, for payment of "order and continuance" and other court fees, 1875-1882. These documents came in alphabetically-designated pockets in a cloth apron designed for the purpose. </p>
+    <scopecontent id="aspace_16b16a83499037d7223d72eb4e9c3639">
+      <head>Scope and Content</head>
+      <p>The Rockingham County Circuit Court Receipts, 1875-1882, contain receipts from the Clerk of
+        the Circuit Court, Rockingham County, Virginia, for payment of "order and continuance" and
+        other court fees.</p>
     </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement </head>
-      <p>Receipts are enclosed in six sleeves within the box</p>
+    <arrangement id="aspace_fc062977440d4b85ea7f77159fce1ba7">
+      <head>Arrangement</head>
+      <p>Receipts are arranged alphabetically by surname and housed in groupings in six envelopes
+        within the box.</p>
     </arrangement>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01 level="series">
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh">Virginia. Circuit Court (Harrisonburg, Va.)</subject>
+        <subject source="lcsh">County government -- Virginia -- Harrisonburg</subject>
+        <subject source="lcsh">Public records -- Virginia -- Rockingham County</subject>
+        <subject source="lcsh">Court records -- Virginia -- Rockingham County</subject>
+        <subject source="lcsh">Courts -- Virginia -- Rockingham County</subject>
+        <subject source="lcsh">Justice, Administration of -- Virginia -- Sources</subject>
+        <subject source="lcsh">Local government</subject>
+        <subject source="lcsh">Rockingham County (Va.) -- Sources</subject>
+        <subject source="lcsh">Harrisonburg (Va.) -- Sources</subject>
+        <subject source="lcsh">Harrisonburg (Va.) -- History -- Sources</subject>
+        <subject source="lcsh">Virginia -- History, Local -- Sources</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc>
+      <c01 audience="internal" id="aspace_8e70e278ca632d25c85d1d8a977cffbb" level="file">
         <did>
-          <unittitle label="Series I">Rockingham Country Circuit Court Receipts</unittitle>
-          <container label="Box" type="box">1</container>
+          <unittitle>Applegate-Croushorn, <unitdate type="inclusive"
+            >1875-1882</unitdate></unittitle>
+          <container id="aspace_1e414266e62e1419bd6da46d80d1dfe2" label="Box:Folder" type="box"
+            >1</container>
+          <container id="aspace_4c5b7083e8c52015b923622819514f1d"
+            parent="aspace_1e414266e62e1419bd6da46d80d1dfe2" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 audience="internal" id="aspace_15d93dc9a151585118ea90d94fad814e" level="file">
+        <did>
+          <unittitle>Devier-Holler, <unitdate type="inclusive">1875-1882</unitdate></unittitle>
+          <container id="aspace_f2c6a7ce8d8d440c9e5e3971738d89f1" label="Box:Folder" type="box"
+            >1</container>
+          <container id="aspace_344514281d28cb046f99f59fb9cb51ac"
+            parent="aspace_f2c6a7ce8d8d440c9e5e3971738d89f1" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 audience="internal" id="aspace_1803c4194e8182a03602aef72f9f98f0" level="file">
+        <did>
+          <unittitle>James-Omohundro, <unitdate type="inclusive">1875-1882</unitdate></unittitle>
+          <container id="aspace_eb1ff9d360ea7c770e03ceaa1439e207" label="Box:Folder" type="box"
+            >1</container>
+          <container id="aspace_2a649ec0a1c4e1e7b9ac5090b76b7b0b"
+            parent="aspace_eb1ff9d360ea7c770e03ceaa1439e207" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 audience="internal" id="aspace_670d8194fc3918fafc02a287771516df" level="file">
+        <did>
+          <unittitle>Pharis-Slade, <unitdate type="inclusive">1875-1882</unitdate></unittitle>
+          <container id="aspace_45106719572eb84e6df0472d2e89c8c4" label="Box:Folder" type="box"
+            >1</container>
+          <container id="aspace_bf307a48e7709f637cc274475fe571e1"
+            parent="aspace_45106719572eb84e6df0472d2e89c8c4" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 audience="internal" id="aspace_58af12bc8da48551010ddd540eb9b9af" level="file">
+        <did>
+          <unittitle>Sangeton-Shenandoah Land, <unitdate type="inclusive"
+            >1875-1882</unitdate></unittitle>
+          <container id="aspace_298adcf0d174bcc6fb8b3a47615e6e12" label="Box:Folder" type="box"
+            >1</container>
+          <container id="aspace_968d439f74d7703c73fde699513adfb7"
+            parent="aspace_298adcf0d174bcc6fb8b3a47615e6e12" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 audience="internal" id="aspace_aebad16109f1f01f6c70f580b800b550" level="file">
+        <did>
+          <unittitle>Turley-Zirkle, <unitdate type="inclusive">1875-1882</unitdate></unittitle>
+          <container id="aspace_cb22a7c0325a26ff9daea9606bac459b" label="Box:Folder" type="box"
+            >1</container>
+          <container id="aspace_881fe781799ddaaa3693277f74d213eb"
+            parent="aspace_cb22a7c0325a26ff9daea9606bac459b" type="folder">6</container>
         </did>
       </c01>
     </dsc>
