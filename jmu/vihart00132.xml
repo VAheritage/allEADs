@@ -1,732 +1,1111 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     audience="internal"
+     xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00132.xml">vihart00132</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Office of the President: G. Tyler Miller Papers, 1941-1998:<num>UA 0025</num>
+            </titleproper>
+            <author>Sarah Roth-Mullet, March 2018</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink"
+                       xlink:type="simple"
+                       xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with ASpace2VaHeritage.xsl on <date>2018-05-14 13:27:17 -0400</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Office of the President: G. Tyler Miller Papers, <date era="ce" calendar="gregorian">1941-1998 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">UA 0025</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:type="simple"
+                    xlink:actuate="onLoad"
+                    xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2018</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                     href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Sarah Roth-Mullet, March 2018</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Special Collections, James Madison University</corpname>
+         </repository>
+         <unittitle>Office of the President: G. Tyler Miller Papers, </unittitle>
+         <origination audience="internal" label="Creator">
+            <persname role="cre" rules="local" source="local">Miller, G. Tyler (George Tyler), 1902 – 1988</persname>
+         </origination>
+         <origination audience="internal" label="source">
+            <persname role="dnr" rules="local" source="local">Burch, Donna</persname>
+         </origination>
+         <origination audience="internal" label="source">
+            <corpname rules="local" source="local">JMU Office of the President</corpname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">UA 0025</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">3.2 cubic feet; 8 boxes</physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1941/1998"
+                   type="inclusive">1941-1998</unitdate>
+         <abstract audience="internal" id="aspace_164fb40f2b225685eea3aafc3dba7a89">The Office of the President: G. Tyler Miller Papers are comprised of interviews, correspondence, minutes, reports, court documents and judiciary transcripts created during Miller's tenure as president of Madison College from 1949-1971. The collection is comprised of three series: Professional Papers, Court Documents, and Disciplinary Papers.</abstract>
+         <physloc audience="internal" id="aspace_77a8ac95a149937d5e383ceb93f0dfd6">Special Collections, Carrier Library, James Madison University</physloc>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict audience="internal" id="aspace_f92a55319f3322dc4478854ea96c6029">
+            <head>Access Restrictions</head>
+            <p>Collection is open for research with the exception of Series 3: Disciplinary Papers, which is closed due to FERPA restrictions. Researchers must register and agree to copyright and privacy laws before using this collection. Please contact Research Services staff before visiting the James Madison University Special Collections Library to use this collection.</p>  
+         </accessrestrict>
+         <userestrict audience="internal" id="aspace_6b9ad33be626724ee706edb623192bac">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison University Special Collections Library. Staff have taken special care to identify and remove sensitive materials, particularly those relating to students' academic records, found within this collection. However, in rare instances, privacy protected information may be revealed during use of this collection. Researchers agree to make no notes or other recordation of privacy protected information if found within this collection, and further agree not to publish or disclose such information for any purpose. Researchers agree to alert Special Collections staff if potentially privacy protected information is found within this collection. For more information, contact the Special Collections Library Reference Desk (library-special@jmu.edu).</p>  
+         </userestrict>
+         <prefercite audience="internal" id="aspace_ec9791998a770018923cc939a048af67">
+            <head>Preferred Citation</head>
+            <p>[identification of item] [box #, folder #], Office of the President: G. Tyler Miller Papers, 1941-1998, UA 0025, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA.</p>  
+         </prefercite>
+         <acqinfo audience="internal" id="aspace_bc0caf067939c1a53d0ca1eae24e7055">
+            <head>Acquisition Information</head>
+            <p>This collection consists of several accessions: documents from the Office of the President on January 1, 1996; files from the Chancellor's Office (President Emeritus, Ronald Carrier) February 17, 2004.</p>  
+         </acqinfo>
+         <processinfo audience="internal" id="aspace_19010245076e3a54b085d2b17385edfa">
+            <head>Processing Information</head>
+            <p>This collection was formerly given collection number PR 2004-0217. Sound recordings from formerly cataloged as RE 93-0427.</p>  
+         </processinfo>
+      </descgrp>
+  
+  
+  
+  
+  
+      <bioghist audience="internal" id="aspace_0806a03c088362d038d85974e1bf01a6">
+         <head>Bio/Historical Note</head>
+         <p>George Tyler Miller was born July 25, 1902 in Washington, Virginia. He earned a B.S. from Virginia Military Academy in 1923. He was the third president of Madison College, serving from 1949-1971. During his administration, enrollment increased from 1,000 students to 4,300. The campus was enlarged by 240 acres, and twenty-one major buildings were constructed during his tenure. During his tenure, he served as director of the National Commission on Accreditation and President of the American Association of State Colleges and Universities. President Miller died in 1988.</p>  
+      </bioghist>
+      <scopecontent audience="internal" id="aspace_c279c7cee8180fa31a321090b46fd756">
+         <head>Scope and Content</head>
+         <p>The G. Tyler Miller Papers are comprised of interviews, correspondence, minutes, reports, court documents and judiciary transcripts created during Miller's tenure as president of Madison College from 1949-1971. The collection is comprised of three series: Professional Papers, Court Documents, and Disciplinary Papers.</p>  
+      </scopecontent>
+      <arrangement audience="internal" id="aspace_b0e3dd0f156226c0c78c6078950c7493">
+         <head>Arrangement</head>
+<p>The collection is arranged into three series, and are arranged by subject matter and chronology.</p>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00132">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft"
-    scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
-    repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
-      Library::Special Collections//TEXT (US::ViHarT::vihart00132::G. Tyler Miller Collection,
-      1949-2005)//EN" "vihart00132.xml" </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the G. Tyler Miller Collection, <date era="ce" calendar="gregorian"
-            >1949-2005</date></titleproper>
-        <subtitle id="sort">G. Tyler Miller Collection<num type="collectionnumber">PR
-            2004-0217</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-          href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All rights
-          reserved. </date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-          </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by David Black, <date
-          era="ce" calendar="gregorian">08/2012</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the G. Tyler Miller Collection, <date era="ce" calendar="gregorian"
-          >1949-2005</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"> PR
-          2004-0217</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-          xlink:actuate="onLoad" xlink:show="embed"
-          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2012</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:</label>
-          <item>Jeanette Shapiro and Julia Merkel, April 2004; Updated July 2008; Revised July, 2012
-            by Alicia Henneberry</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
-        University </repository>
-      <unittitle label="Title" encodinganalog="245$a">G. Tyler Miller Collection<unitdate
-          type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian"
-          >1949-2005</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">PR 2004-0217</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">2 record storage boxes (2.0 linear
-        feet)</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">This collection contains materials from G. Tyler Miller’s tenure as
-        president of Madison College, 1949-1970 documenting his involvement in Virginia and National
-        Higher Education, the expansion of Madison College, and primary sources concerning a student
-        demonstration in April, 1970. Also reminiscences, interviews, and memorials created during
-        his retirement are represented. </abstract>
-      <origination label="Creator" encodinganalog="100$a">G. Tyler Miller, President of Madison
-        College, 1949-1970 </origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions </head>
-        <p>None. </p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions </head>
-        <p>None</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation </head>
-        <p>[Identification of Item], The G. Tyler Miller Collection, 1949-2005, PR 2004-0217,
-          Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information </head>
-        <p>This collection was formed from the merger of several groups of materials: PR 94-1207, PR
-          96-0130, materials received February, 2004 from the Chancellor’s Office (President
-          Emeritus, Ronald Carrier), an article from Pam Brock at Montpelier in January, 2005 and
-          sound recordings from RE 93-0427. Collection was reorganized in July, 2008.</p>
-      </acqinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information </head>
-      <p>Dr. G. Tyler Miller, 1902-1988, was born July 25 in Washington, Virginia. He earned a B. S.
-        from Virginia Military Academy in 1923, and an LL. D. from Bridgewater College in 1955. He
-        was the third president of Madison College, serving from 1949-1970. During his
-        administration, enrollment increased from 1,000 students to 4,300. Twenty-one major
-        buildings were also constructed during his tenure. He is also responsible for making the
-        college co-ed in 1966. President Miller died in 1988.</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content </head>
-      <p>This collection contains interviews, correspondence, minutes, and reports relevant to G.
-        Tyler Miller’s tenure as president of Madison College from 1949-1970, including judiciary
-        transcripts of the student protest in 1970. The collection is housed in two record storage
-        boxes and has been arranged into ten series: Inauguration and Retirement, Virginia Council
-        of Higher Education, Virginia Presidents’ Council of State-Aided Institutions, Virginia
-        Pupil Placement Board, Virginia Board of Education, United States Office of Education,
-        United States and Virginia Civil Defense, Student Protests, Miscellaneous Reports and
-        Correspondence, and Oversize materials.</p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 1: Inauguration and Retirement, 1949-2005:</title> This series
-        consists of two folders, the first containing President Miller’s inauguration speech, and
-        ephemera from the event. The second folder contains reminiscences of Miller’s secretary
-        Carolyn Caracofe Rabunsky; transcripts of a 1982 interview with faculty members, Raymond
-        Dingledine and Martha Caldwell about Miller; correspondence to Miller congratulating him on
-        his retirement; and memorial services that were held in 1988 after President Miller’s death.
-        Also included here is a copy of Mr. Paul C. Cline’s article, “Madison College in the 1960s.”
-        Sound recordings of the 1975 dedication of Miller hall and the 1982 interview with faculty
-        members are located in the media cabinet. </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 2: Virginia Council of Higher Education, 1956-1966:</title> Comprised
-        of five folders, this series contains comparisons and examples of other Virginia higher
-        education institutions. Some of the topics covered are: salaries, budgets, food service,
-        coeducation, enrollment and admissions, teacher supply studies, educational television, and
-        instructional spaces. See the contents list below for a more detailed list. </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 3: Virginia Presidents’ Council of State-Aided Institutions of Higher
-          Learning, 1956-1965:</title> Divided into two folders, this series is generally a
-        comparison of Virginia institutions' presidents. Some of the issues documented are
-        presidential roles, tactics, salaries, etc. </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 4: Virginia Pupil Placement Board, 1958-1961:</title> One folder
-        containing student applications for the Anthony Seeger Elementary School. The original
-        applications were photocopied and discarded due to their acidic nature. </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 5: Virginia Board of Education, 1950-1969:</title> The six folders in
-        series five encompasses miscellaneous concerns of Madison College and the VA Board of
-        Education. They cover issues such as the admittance of men and the naming of buildings. Also
-        included here are reports from specific directors and coordinators from the Board of
-        Education, such as the Coordinator of Teacher Education, Director of the Budget, and
-        Director of Personnel. </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 6: United States Office of Education, 1954-1964:</title> Similar to
-        series five, this series consists of one folder of materials dealing with facilities, summer
-        sessions, enrollment, testing, student loans, etc. </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 7: United States and Virginia Civil Defense, 1950-1965:</title> This
-        series is comprised of three folders that demonstrate how Madison College dealt with defense
-        strategies during the Cold War. For example, bomb shelter plans and coordination between
-        Rockingham Memorial Hospital and Madison College if an attack should have occurred. </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 8: Student Protests, 1964-1977:</title> Thirty folders containing
-        several news clippings on a protest in 1964 and a variety of materials documenting the
-        tumultuous relationship between Madison College and student Jay Rainey. Also included are
-        thirteen Faculty Judiciary Hearing transcripts and two Federal Court transcripts that
-        resulted from the April, 1970 student demonstration. See also "Events leading to strike"
-        folder in the JMU SGA Records <extref xmlns:xlink="http://www.w3.org/1999/xlink"
-          xlink:type="simple" xlink:href="https://www.lib.jmu.edu/special/manuscripts/0007sga.aspx"
-            ><title xlink:type="simple" xlink:href="">UA 0007,</title></extref>student demonstrator
-        Jay G. Rainey's papers,<extref xmlns:xlink="http://www.w3.org/1999/xlink"
-          xlink:type="simple"
-          xlink:href="https://www.lib.jmu.edu/special/manuscripts/SC0024Rainey.aspx"><title
-            xlink:type="simple" xlink:href="">SC 0024</title></extref> and an oral history done by
-        student Jeremy Turner in 1998 with Mr. Rainey, <extref
-          xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-          xlink:href="http://catalog.lib.jmu.edu/record=b1626325"><title xlink:type="simple" xlink:href=""
-            >SdArch 11-2.</title></extref></p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 9: Miscellaneous Reports and Correspondence, 1944-1970:</title> This
-        series of seven folders includes material on the observance of “Madison Day” in 1951 to
-        celebrate the 200th anniversary of James Madison’s birth; a faculty study for a general
-        education program; a proposal for a student chapel; a fire insurance report with valuations
-        and black and white photographs of campus buildings; correspondence with architects J.
-        Binford Walford and O. Pendleton Wright on local limestone and a greenhouse for the new
-        science building; report entitle “The Origin and Development of the Graduate Program.” </p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold"
-          xlink:href="">Series 10: Oversize:</title> Four 33 1/2 rpm 78s recorded by WSVA of
-        President Miller’s 1949 inauguration speech. </p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement </head>
-      <p>The collection is arranged in ten series:</p>
-      <blockquote>
-        <p>I: Inauguration and Retirement, 1949-2005</p>
-      </blockquote>
-      <blockquote>
-        <p>II: Virginia Council of Higher Education, 1956-1966</p>
-      </blockquote>
-      <blockquote>
-        <p>III: Virginia Presidents’ Council of State-Aided Institutions of Higher Learning,
-          1956-1965</p>
-      </blockquote>
-      <blockquote>
-        <p>IV: Virginia Pupil Placement Board, 1958-1961</p>
-      </blockquote>
-      <blockquote>
-        <p>V: Virginia Board of Education, 1950-1969</p>
-      </blockquote>
-      <blockquote>
-        <p>VI: United States Office of Education, 1954-1964</p>
-      </blockquote>
-      <blockquote>
-        <p>VII: United States and Virginia Civil Defense, 1950-1965</p>
-      </blockquote>
-      <blockquote>
-        <p>VIII: Student Protests, 1964-1977</p>
-      </blockquote>
-      <blockquote>
-        <p>IX: Miscellaneous Reports and Correspondence, 1944-1970</p>
-      </blockquote>
-      <blockquote>
-        <p>X: Oversize</p>
-      </blockquote>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data </head>
-      <bibliography encodinganalog="581$a">
-        <head>Bibliography </head>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""
-          >Dingledine, Raymond C. <extref xlink:type="simple"
-            xlink:href="http://catalog.lib.jmu.edu/record=b1149362"><title xlink:type="simple"
-              render="italic" xlink:href=""> Madison College, the First Fifty Years,
-              1908-1958.</title></extref> Harrisonburg, VA: Madison College, 1959.</bibref>
-      </bibliography>
-      <relatedmaterial>
-        <head>Related Material</head>
-        <p><extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-            xlink:href="https://www.lib.jmu.edu/special/manuscripts/0007sga.aspx">JMU Student
-            Government Association Records, UA 0007, Special Collections, Carrier Library, James
-            Madison University, Harrisonburg, VA.</extref></p>
-        <p><extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-            xlink:href="https://www.lib.jmu.edu/special/manuscripts/SC0024Rainey.aspx">Jay G. Rainey
-            Papers, 1970-1996, bulk 1970-1977, SC 0024, Special Collections, Carrier Library, James
-            Madison University, Harrisonburg, VA.</extref></p>
-        <p> Oral history interview with Jay Rainey; interviewed by Jeremy Turner, <extref
-            xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-            xlink:href="http://catalog.lib.jmu.edu/record=b1626325">SdArch 11-2</extref></p>
+<p>Series 1: Professional Papers, 1940-1983</p>
+         <p>Series 2: Court Documents, 1969-1998 (bulk 1969-1971)</p>
+         <p>Series 3: Disciplinary Papers, 1965-1971 (Restricted)</p>
+      </arrangement>
+      <relatedmaterial audience="internal" id="aspace_1be855440a5cf1e1e36b48babbf28eac">
+         <head>Related Materials</head>
+         <p>Events leading to strike of 1970, Box 1: Folder 10, JMU Student Government Association Records, UA 0007, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA. https://www.lib.jmu.edu/special/manuscripts/0007sga.aspx.</p>
+         <p>
+Jay G. Rainey Papers, 1970-1996, bulk 1970-1977, SC 0024, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA. https://www.lib.jmu.edu/special/manuscripts/SC0024Rainey.aspx
+</p>
+         <p>Rainey, Jay. Oral History Interview by Jeremy Turner, 1998. SdArch 11-2., Special Collections, Carrier Library, James Madison University, Harrisonburg, VA. http://catalog.lib.jmu.edu/record=b1626325
+</p>  
       </relatedmaterial>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series I">Inauguration and Retirement, <unitdate type="inclusive"
-              era="ce" calendar="gregorian">1949-2005</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Inauguration speech, invitation, and other inaugural materials <unitdate
-                type="inclusive" era="ce" calendar="gregorian">1949-1971</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Reminiscences of Dr. Miller’s secretary Carolyn Caracofe Rabunsky, 1988;
-              transcripts of 1982 interview with faculty members, Raymond Dingeldine and Martha
-              Caldwell; retirement resolution and correspondence, 1970; memorials 1988; and Paul C.
-              Cline’s article “Madison College in the 1960s” </unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">2</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series II">Virginia Council of Higher Education, <unitdate
-              type="inclusive" era="ce" calendar="gregorian">1956-1966</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Salaries, Visitations, Budgets, Capital Outlay Requests, Food Service,
-                <unitdate type="inclusive" era="ce" calendar="gregorian"
-              >1956-1957</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">3</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Dining Facilities, Capital Outlay Requests, Instructional Space, Library
-              Science, Scholarships, Campus Maps, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1958</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">4</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Coeducation, 1959 Annual Report, Budget Procedures, Instructional Space,
-              Community Colleges, Advisory Committees, Enrollment and Admissions, <unitdate
-                type="inclusive" era="ce" calendar="gregorian">1959-1961</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">5</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Enrollment and Admissions, Teacher Supply Study, Educational Television,
-              Dining Facilities, 1963 Biennial Visit, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1962-1963</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">6</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Position Analysis, Enrollment and Admissions, State Coding Agencies
-              Legislation, <unitdate type="inclusive" era="ce" calendar="gregorian"
-                >1964-1966</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">23</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series III">Virginia Presidents’ Council of State-Aided Institutions of
-            Higher Learning, <unitdate type="inclusive" era="ce" calendar="gregorian"
-              >1956-1965</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Salary Ranges, Admissions Processing, Legislation, Cost Studies, Revised
-              Budgets, <unitdate type="inclusive" era="ce" calendar="gregorian"
-                >1956-[1962]</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">7</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Revenues, Special Tuition and Fees, Salaries, Minutes and Reports, <unitdate
-                type="inclusive" era="ce" calendar="gregorian">1963-1965</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">8</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series IV">Virginia Pupil Placement Board, <unitdate type="inclusive"
-              era="ce" calendar="gregorian">1958-1961</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Student applications for Anthony Seeger Elementary School, 1958-1961,
-                <unitdate type="inclusive" era="ce" calendar="gregorian"
-              >1956-[1962]</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">9</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series V">Virginia Board of Education, <unitdate type="inclusive"
-              era="ce" calendar="gregorian">1950-1969</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Admittance of men, naming of buildings, salaries, miscellaneous, <unitdate
-                type="inclusive" era="ce" calendar="gregorian">1950-1960</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">10</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Qualifications of students, new dining hall and dorms, miscellaneous,
-                <unitdate type="inclusive" era="ce" calendar="gregorian"
-              >1961-1965</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">11</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Coordinator of Teacher Education, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1952-1954</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">12</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Director of the Budget, 1952-1969/Governor’s Office, Division of the Budget,
-              1958-1960 </unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">13</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Director of Personnel, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1960-1964</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">14</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous Members of the Department of Education, <unitdate
-                type="inclusive" era="ce" calendar="gregorian">1593-1954</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">24</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series VI">United States Office of Education, <unitdate type="inclusive"
-              era="ce" calendar="gregorian">1954-1964</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Facilities, Summer Sessions, Enrollment, Testing, Student Services, National
-              Defense Student Loans, Foreign Languages, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1954-1964</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">15</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series VII">United States and Virginia Civil Defense, <unitdate
-              type="inclusive" era="ce" calendar="gregorian">1950-1965</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Civil defense planning at Madison College, <unitdate type="inclusive"
-                era="ce" calendar="gregorian">1950-1965</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">25</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Civil defense planning in VA, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1954-1965</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">16</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>State Legislation Affecting Madison College, <unitdate type="inclusive"
-                era="ce" calendar="gregorian">1941-1954</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">17</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series VIII">Student Protests, <unitdate type="inclusive" era="ce"
-              calendar="gregorian">1964-1977</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>News clippings on 1964 protest and reports and correspondence on student Jay
-              Rainey’s dismissal and lawsuit for re-admittance, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1965-1969</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">26</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Reports and correspondence documenting student protest, <unitdate
-                type="inclusive" era="ce" calendar="gregorian">1970</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">18</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Reports and correspondence documenting student protest, <unitdate
-                type="inclusive" era="ce" calendar="gregorian">1970</unitdate></unittitle>
-            <container label="Box" type="box">1</container>
-            <container label="Folder" type="folder">19</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Student Protest; Federal Court documents, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">Feb. 1969-Sept. 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">27</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Student Protest; Federal Court documents, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">Feb. 1969-Sept. 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">28</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Federal Court Documents (transcripts) <unitdate type="inclusive" era="ce"
-                calendar="gregorian">October, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Federal Court Documents (transcripts) <unitdate type="inclusive" era="ce"
-                calendar="gregorian">October, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">2</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">May 12, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">3</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">May 12, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">4</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">May 13, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">5</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 1, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">6</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 1, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">7</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 1, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">8</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 2, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">9</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 2, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">10</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 2, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">11</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 3, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">12</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 3, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">13</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 4, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">14</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Faculty Judiciary Hearing Transcripts, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">June 4, 1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">15</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series IX">Miscellaneous Reports and Correspondence, <unitdate
-              type="inclusive" era="ce" calendar="gregorian">1944-1970</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Madison Day, March 16, 1951</unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">16</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Report on Curriculum Studies by Faculty Leading to General Education Program,
-                <unitdate type="inclusive" era="ce" calendar="gregorian">1950</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">29</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Chapel (Proposed)<unitdate type="inclusive" era="ce" calendar="gregorian"
-                >1955-1990s</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">17</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Fire Insurance Report, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1950</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">18</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Fire Insurance Report (photos), <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1950</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">19</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Correspondence with architects, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1949-1970</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">20</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Percy Warren, <unitdate type="inclusive" era="ce" calendar="gregorian"
-                >1962-1971</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">21</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Madison College Overviews, <unitdate type="inclusive" era="ce"
-                calendar="gregorian">1944-1949</unitdate></unittitle>
-            <container label="Box" type="box">2</container>
-            <container label="Folder" type="folder">22</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series X">Oversize</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Four 33 1/2 rpm 78s recorded by WSVA of President Miller’s 1949 inauguration
-              speech <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-                render="bold" xlink:href="">Oversize</title></unittitle>
-          </did>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+      <bibliography audience="internal" id="aspace_92dd3e93d5143dda28a23ab923d14e71">
+         <head>Bibliography</head>
+         <p>Dingledine, Raymond C. "Madison College, the First Fifty Years, 1908-1958." Harrisonburg, VA:  Madison College, 1959.</p>
+      </bibliography>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcnaf">Miller, G. Tyler (George Tyler), 1902-1988</subject>
+            <subject source="lcsh">Madison College -- History</subject>
+            <subject source="local">James Madison University -- History</subject>
+            <subject source="lcsh">Education, Higher -- Virginia -- Harrisonburg -- History</subject>
+            <subject source="lcsh">Universities and colleges -- Virginia -- Harrisonburg -- History</subject>
+            <subject source="lcsh">Madison College -- Presidents</subject>
+            <subject source="lcsh">Education, Higher -- Administration</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Minutes (administrative records)</genreform>
+            <genreform source="aat">Letters (correspondence)</genreform>
+            <genreform source="aat">Administrative reports</genreform>
+            <genreform source="aat">Legal documents</genreform>
+            <genreform source="aat">Newspaper clippings</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 audience="internal"
+              id="aspace_ed94ce0f8dcacb7b902ac51c05abde9f"
+              level="series">
+            <did>
+               <unittitle>1: Professional Papers, <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1998"
+                            type="inclusive">1941-1998</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent audience="internal" id="aspace_f2a2e2bbdbdb7e96750617e79af72dc7">
+               <head>Scope and Content</head>
+               <p>Series 1. Professional Papers, 1941-1998, chiefly contains correspondence, reports. It is arranged by subject, which is how the files were organized at the time of reprocessing. </p>
+               <p>The Virginia Council on Higher Education files are comprised of correspondences and reports. The bulk of the correspondences are between President Miller and Paul Farrier, Executive Secretary of the State Council of Higher Education until 1957, and subsequently, with William Hugh McFarlane Director of the State Council of Higher Education. Interfiled with the correspondence are reports, studies, questionnaires, other forms that pertained to Virginia Council matters. Some topics covered are: capital outlay requests, coeducation, enrollment and admission policy, dining facilities, budgets, salaries, campus visit by members of the state Council of Higher Education, scholarships, space utilization studies and questionnaires, teacher supply studies, and educational television.</p>
+               <p>The Virginia Presidents' Council of State Aided Institutions files contain correspondence between Miller and other presidents and administrative staff of Virginia colleges and universities. Topics include a cost study of state-supported institutions of higher learning, and a committee to study admission problems of state-supported institutions of higher learning, and a budget proposal for the state. The 1963 file includes correspondences, agendas, meeting minutes, and a 1963 issue of "The School Administrator." It also contains several reports: The Council of Presidents Economic Development Report (1963), Statement of the Council of Presidents State-Aided Institutions of Higher Learning in Virginia to the Commission on State and Local Revenues and Expenditures and Related Matters (1963), Higher Education and Economic Development in Virginia" report, a report on "admission problems" (1963), and faculty salary guides. Other items include a report called "Virginia's Crisis in Higher Education," a budget and capital outlay questionnaire regarding instructional maintenance and operations budget, invoices, correspondence with L.M. Kuhn of the State Governor's budget office, and Association of University Professor report on Academic Salary data and compensation indices for 1964-1965. </p>
+               <p>The Virginia Board of Education files, 1950-1964, are largely comprised of correspondence with state officials. Topics include preparations for a visit with Virginia governor, John S. Battle, to contest state budget appropriations; the admittance of men students and coeducation; proposed graduate programs (1954); and the naming of buildings. A 1954 report of local public school divisions in Virginia; Elementary School Principals conference (1954). Also included here are reports and correspondence with J.L, Blair Buck, Coordinator of Teacher education; Nannie Mae M. Williams, Assistant Supervisor of Teacher Education; J.H. Bradford, Director of the Budget; Senator Robert Button; Thomas T. Hamilton, Associate Director of Instruction; Dowell J. Howard, Superintendent of Public Instruction; Alfred L. Wingo, Supervisor of Research; Dr. Woodrow Wilkerson, Supervisor of Secondary Education; Llyod S. Myer, State Records Administrator; Rosa H. Loving, State Supervisor Home economics Education; Percy H. Warren, Madison College Academic Dean; Leonard G. Muse; and Senator Robert Button. </p>
+               <p>The Civil Defense files contain correspondence, questionnaires and reports documenting how Madison College dealt with defense strategies during the Cold War. Files includes blueprints of many Madison College buildings on campus, and the use of other Harrisonburg buildings, such as Rockingham Memorial Hospital, as bomb shelter sites.</p>
+               <p>The folder, "Biographical sketches of Miller Presidency" contains reminiscences of Miller's secretary Carolyn Caracofe Rabunsky; memorial services that were held in 1988 after President Miller's death; and Paul C. Cline's article, "Madison College in the 1960s." </p>
+            </scopecontent>
+            <c02 audience="internal"
+                 id="aspace_578ab32391ae672c36ed25c0db38d06a"
+                 level="file">
+               <did>
+                  <unittitle>G. Tyler Miller Inauguration Papers, <unitdate normal="1949/1949">1949</unitdate>
+                  </unittitle>
+                  <container id="aspace_3652534e791cd57840566d8a33b8c223"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_fb1d23a3e5d773331898d1889eb01596"
+                             parent="aspace_3652534e791cd57840566d8a33b8c223"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_651079343a5ee9e6e07bdd54cd320ae4"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate normal="1954/1957" type="inclusive">1954-1957</unitdate>
+                  </unittitle>
+                  <container id="aspace_8bc312d2207cf1ad839cb082beee8d52"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_6382ed3e57fff14d88b8dd5bc495672a"
+                             parent="aspace_8bc312d2207cf1ad839cb082beee8d52"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_4ad304d672bf4da1e50987662ad84bc3"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate>1958</unitdate>
+                  </unittitle>
+                  <container id="aspace_f01bf50901193c83060d530cb83de4f8"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_0e9fe525668303fdc8dde04782abca67"
+                             parent="aspace_f01bf50901193c83060d530cb83de4f8"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_b78fd025c82b981aaf901f832a7f889d"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate type="inclusive">1959-1960</unitdate>
+                  </unittitle>
+                  <container id="aspace_4276be1a0664e59952d59747f665aaf4"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_f8f59ed0df5280179ff5667d6ff2ecd3"
+                             parent="aspace_4276be1a0664e59952d59747f665aaf4"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_8742ebef64264d4e07565bbb3a0804da"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate>1961</unitdate>
+                  </unittitle>
+                  <container id="aspace_b3a24c381cdd3bea7c2f28d4a5262128"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_817e48e2685e4ca749a8ab6f0f8cfd35"
+                             parent="aspace_b3a24c381cdd3bea7c2f28d4a5262128"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_717e91694db02e2e9141875fccdefc44"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate>1962</unitdate>
+                  </unittitle>
+                  <container id="aspace_8aa7f8fea39a8d51bf6c2ece52885ff6"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_5ee0cec902bc1297c2ee2353c40311c6"
+                             parent="aspace_8aa7f8fea39a8d51bf6c2ece52885ff6"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_e2df360149d27e73beae4a0a009b10f4"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate>1963</unitdate>
+                  </unittitle>
+                  <container id="aspace_fb42ad8495d607e5435f52c1844bb14e"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_006ae54a1837e9d6096aa32c44d188d9"
+                             parent="aspace_fb42ad8495d607e5435f52c1844bb14e"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_94ed9d09e851b3caa74ecbcf47d38bd8"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate>1964</unitdate>
+                  </unittitle>
+                  <container id="aspace_ca83e32b5e393d0f0017a14096884c05"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_f0132e5054c4f09d1404cd7525a91142"
+                             parent="aspace_ca83e32b5e393d0f0017a14096884c05"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_63e61a4b66133de4cfdc0fa8b137e1d9"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Council of Higher Education, <unitdate type="inclusive">1965-1966</unitdate>
+                  </unittitle>
+                  <container id="aspace_6db2b0498bc36e2861f9752476757859"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_cf734e32657c3439431e0691fa50c631"
+                             parent="aspace_6db2b0498bc36e2861f9752476757859"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_d8a996c8c2d5e74084d39507ff441172"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Presidents' Council of State Aided Institutions, <unitdate>1956, 1962</unitdate>
+                  </unittitle>
+                  <container id="aspace_ab0357595632c85c4eedc3b2a9cfd507"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_4801540f44a973e2f9c4a50cdabb9e4d"
+                             parent="aspace_ab0357595632c85c4eedc3b2a9cfd507"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_145b053fb493e6062b70f759af2c1573"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Presidents' Council of State Aided Institutions, <unitdate>1963</unitdate>
+                  </unittitle>
+                  <container id="aspace_217e3b6bca51f1650e1845729a223dfc"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_095a99e399bebcacbfde905024ec9be3"
+                             parent="aspace_217e3b6bca51f1650e1845729a223dfc"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_bc7c39178b62a5054afa3fcbc494f5b5"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Presidents' Council of State Aided Institutions, <unitdate type="inclusive">1964-1965</unitdate>
+                  </unittitle>
+                  <container id="aspace_bba97c027afbc8a0653a8d7b56ef4ace"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_d3f4f04a6ce596626e732f95efe47b06"
+                             parent="aspace_bba97c027afbc8a0653a8d7b56ef4ace"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_96d57da7332724457db6db19d6e8d3e7"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, <unitdate type="inclusive">1950-1952</unitdate>
+                  </unittitle>
+                  <container id="aspace_99c84a491563cf015e7deaaa05f3d713"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_a9fc8063fe965fbba179f209685c8e45"
+                             parent="aspace_99c84a491563cf015e7deaaa05f3d713"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_03d172bd069d21f5d559ba6f8b168b86"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, <unitdate>1953</unitdate>
+                  </unittitle>
+                  <container id="aspace_7144a64a5849f4d1d39b968286a188a6"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_b3312933a1c4b9cba6c7965ae619802f"
+                             parent="aspace_7144a64a5849f4d1d39b968286a188a6"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_2383ba51aa6a435b8820e9068e2a5bb8"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, <unitdate>1954</unitdate>
+                  </unittitle>
+                  <container id="aspace_c65ceba28837a7f09386899b1ef236e0"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_b8787b516b1e567c3c5ce611d7834d1e"
+                             parent="aspace_c65ceba28837a7f09386899b1ef236e0"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_f60046258481e2ff17350bf99d998e1c"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, <unitdate type="inclusive">1955-1956</unitdate>
+                  </unittitle>
+                  <container id="aspace_14d4d3289b6ecfe53457f125ef43581c"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_8994ee66b3be3b935863559d2e005d08"
+                             parent="aspace_14d4d3289b6ecfe53457f125ef43581c"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_5e170dd917de8158c722d3d7a9ec606d"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, <unitdate type="inclusive">1957-1958</unitdate>
+                  </unittitle>
+                  <container id="aspace_4607d0b43725a5dcdcf1da9009b55468"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_2a17b2cae1ffaac1795c546b112c6a06"
+                             parent="aspace_4607d0b43725a5dcdcf1da9009b55468"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_73f95053d914f94c213ecbbaa1882561"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, <unitdate type="inclusive">1959-1960</unitdate>
+                  </unittitle>
+                  <container id="aspace_1f9c00ad13cff9a3d3b0c336f22f58c4"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_83cc40b9bea658b07eef493d7c23ddc4"
+                             parent="aspace_1f9c00ad13cff9a3d3b0c336f22f58c4"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_4646017c1cfb14a966072f6b863f2d69"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, <unitdate type="inclusive">1961-1965</unitdate>
+                  </unittitle>
+                  <container id="aspace_a5ae0e1923701f9a09d645eae6bfe52f"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_b077457a5c8550d90f51e73821d50620"
+                             parent="aspace_a5ae0e1923701f9a09d645eae6bfe52f"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_9ed33182ba47f9291f7ff9ca548a94db"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Board of Higher Education, Director of Personnel, <unitdate type="inclusive">1960-1964</unitdate>
+                  </unittitle>
+                  <container id="aspace_401f9b9cd3c14ed1eed94a5f72f82312"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_8741601fc65d0a6340ee74bf06076138"
+                             parent="aspace_401f9b9cd3c14ed1eed94a5f72f82312"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_3ec68ad577e41b556b73b415d1d48c44"
+                 level="file">
+               <did>
+                  <unittitle>State Legislation Affecting Madison College, <unitdate type="inclusive">1941-1969</unitdate>
+                  </unittitle>
+                  <container id="aspace_402accec8aa467c8245b58eb374c06de"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_ecf9867d26f1d3f6821d5e574b4faf38"
+                             parent="aspace_402accec8aa467c8245b58eb374c06de"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_3f9c2c3ef8a66479bb095101c5415a2a"
+                 level="file">
+               <did>
+                  <unittitle>US Office of Education, <unitdate type="inclusive">1947-1964</unitdate>
+                  </unittitle>
+                  <container id="aspace_95a5126b78a827dfb24e1982a544f55a"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_0e6ba2a0fc86c09df211ae4917dbca26"
+                             parent="aspace_95a5126b78a827dfb24e1982a544f55a"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_ea0ca9f4b9e570ec12de7f85a0403ce9"
+                 level="file">
+               <did>
+                  <unittitle>Fire Insurance Report on Madison College buildings, <unitdate type="inclusive">1950</unitdate>
+                  </unittitle>
+                  <container id="aspace_1327de60ce59aff18df663bab1832e66"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_46af5bacfed4b7bde00273f9e0598cc6"
+                             parent="aspace_1327de60ce59aff18df663bab1832e66"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_5f60a5be1181975499e59f516ad329b1"
+                 level="file">
+               <did>
+                  <unittitle>Fire Insurance Report on Madison College buildings, <unitdate type="inclusive">1950</unitdate>
+                  </unittitle>
+                  <container id="aspace_7dba993e484c1cf46514673925665c1a"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_6aa87ec15df3abf32a1c58395f532ce8"
+                             parent="aspace_7dba993e484c1cf46514673925665c1a"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_2ce158256bbb513508f79347f434c626"
+                 level="file">
+               <did>
+                  <unittitle>Civil Defense Planning at Madison College, <unitdate type="inclusive">1950-1959</unitdate>
+                  </unittitle>
+                  <container id="aspace_010ef732409f194ecd48efbf776a5b15"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_1b980540ac5270e39dce7545ee87c741"
+                             parent="aspace_010ef732409f194ecd48efbf776a5b15"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_92f8524bcfa36a46aeec5e3a9ef41e4f"
+                 level="file">
+               <did>
+                  <unittitle>Civil Defense Planning at Madison College, <unitdate type="inclusive">1961-1965</unitdate>
+                  </unittitle>
+                  <container id="aspace_2e6c70b646594dffefb2eda6a972c950"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_86a68741e30e50953ff59fcc4d732c45"
+                             parent="aspace_2e6c70b646594dffefb2eda6a972c950"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_158b063ca0e6ca78060aff0e1d14d59f"
+                 level="file">
+               <did>
+                  <unittitle>Madison Day, <unitdate type="inclusive">1951</unitdate>
+                  </unittitle>
+                  <container id="aspace_389a0d2f9e58ba52ca8440770b78d6c0"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_8927d80eb905cb36bd1977e3f831a6b3"
+                             parent="aspace_389a0d2f9e58ba52ca8440770b78d6c0"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_4ae6f5e150fd6270637d9d62399985e8"
+                 level="file">
+               <did>
+                  <unittitle>Correspondence with Architects regarding Burruss Science Hall, <unitdate type="inclusive">1952-1953</unitdate>
+                  </unittitle>
+                  <container id="aspace_c7e5560c446b8a7405d9f03f8b03cffd"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_5537e4bfb7ae86caeed97f316f2b7921"
+                             parent="aspace_c7e5560c446b8a7405d9f03f8b03cffd"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_4472d82400adce1c7f168768f4f35bb3"
+                 level="file">
+               <did>
+                  <unittitle>General Education Program Report, <unitdate type="inclusive">1953</unitdate>
+                  </unittitle>
+                  <container id="aspace_4c08b6b0de11958237592207e7c1266b"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_256637d14be252cc06229c25bbe28b02"
+                             parent="aspace_4c08b6b0de11958237592207e7c1266b"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_491ac0428c81f254d59f4106dc54aa87"
+                 level="file">
+               <did>
+                  <unittitle>Proposed Chapel, <unitdate type="inclusive">1954-1962, 1990</unitdate>
+                  </unittitle>
+                  <container id="aspace_533261842c6a64306eed80f32b0344ec"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_2a6fbd2b52d22f6779cda6826c4876a3"
+                             parent="aspace_533261842c6a64306eed80f32b0344ec"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_da1734406220b544d5f7dead1a032d50"
+                 level="file">
+               <did>
+                  <unittitle>National Education Association, <unitdate type="inclusive">1955-1966</unitdate>
+                  </unittitle>
+                  <container id="aspace_9ff508f07af817f8bd2b8510c7dcf897"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_acd4985e151e8a3cef8fe83dcc9c6036"
+                             parent="aspace_9ff508f07af817f8bd2b8510c7dcf897"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_628148c4b8f616294d760303abd9144d"
+                 level="file">
+               <did>
+                  <unittitle>Virginia Pupil Placement Board, <unitdate type="inclusive">1958-1962</unitdate>
+                  </unittitle>
+                  <container id="aspace_51ff3f255d15f0d66b6f67db04c671d6"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_b9460565af07dbe5c420d54a16b52e0e"
+                             parent="aspace_51ff3f255d15f0d66b6f67db04c671d6"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_5f71ea608bb0c2f7b09f98c208fdf257"
+                 level="file">
+               <did>
+                  <unittitle>Percy Warren, <unitdate type="inclusive">1962-1971</unitdate>
+                  </unittitle>
+                  <container id="aspace_40e46c29e6b47114b1633f80c39531a5"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_c1b12ea9d2b2a74dad300ffcaa8fa701"
+                             parent="aspace_40e46c29e6b47114b1633f80c39531a5"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_46d7f22de229899cd2a9089dbcb00714"
+                 level="file">
+               <did>
+                  <unittitle>Correspondence regarding Retirement, <unitdate>1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_43db66808fa553dae50a34cc218b60c8"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_ff9b453a9247ad0b41e8cfe316b15613"
+                             parent="aspace_43db66808fa553dae50a34cc218b60c8"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_fcbd9aedca8481da4fc77a996e9c7ff7"
+                 level="file">
+               <did>
+                  <unittitle>G. Tyler Miller Interview Transcript, Raymond Dingledine and Martha Caldwell, <unitdate>1982</unitdate>
+                  </unittitle>
+                  <container id="aspace_ed8ae081da087f0ab307f714c0a27046"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_d3c07c737d15685ecbd0f8cbb57a8596"
+                             parent="aspace_ed8ae081da087f0ab307f714c0a27046"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_2b8eeed7b45866b252adf120f55cc0dd"
+                 level="file">
+               <did>
+                  <unittitle>Reflections on Miller Presidency , <unitdate>1982-1998</unitdate>
+                  </unittitle>
+                  <container id="aspace_049d93243377110cb82fa6648cff23d9"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_348503b349fdf652278506e09268c401"
+                             parent="aspace_049d93243377110cb82fa6648cff23d9"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_d4c60b8639fb3bbcd76dcc5805242d0a"
+                 level="file">
+               <did>
+                  <unittitle>G. Tyler Miller Inauguration Recording, Four 78 RPM Records, <unitdate>December 10, 1949</unitdate>
+                  </unittitle>
+                  <container id="aspace_3d38e9689ad1e286d06bb4e5206a8712"
+                             label="Box:Folder"
+                             type="box">OV1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 audience="internal"
+              id="aspace_365e425e7b68f1125dc504530f54d98e"
+              level="series">
+            <did>
+               <unittitle>2: Court Documents, <unitdate normal="1964/1998" type="inclusive">1964-1998 (bulk 1969-1971)</unitdate>
+                  <unitdate normal="1969/1971" type="bulk">1969-1971</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent audience="internal" id="aspace_eb33f8c22f9061c2e992046bfd025be6">
+               <head>Scope and Content</head>
+               <p>Series 2: Court Documents, 1964-1998 (bulk 1969-1971), is comprised of documents related to a lawsuit filed by Madison College student, Jay Rainey against G. Tyler Miller and members of the Board of Visitors in 1969, as  well as a lawsuit filed by Madison College student Lewis Sword against Dean of Madison College, James Fox. The series includes newspaper clippings regarding the court proceedings and protests conducted on campus from 1969-1970, memos and press releases from the administration, and correspondence.</p>
+            </scopecontent>
+            <c02 audience="internal"
+                 id="aspace_b7f7272baad4a76bddbef75c10b490c2"
+                 level="file">
+               <did>
+                  <unittitle>Jay Rainey et. al. v. G. Tyler Miller et. al (No. 69-C-H-6) Court Documents, <unitdate type="inclusive">1969-1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_ac6ed6bd4323f004e0ef115f78979ea8"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_df172e748bbe556120e8362483a03395"
+                             parent="aspace_ac6ed6bd4323f004e0ef115f78979ea8"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_9ae1330954e4bf06dde17f6e4e889785"
+                 level="file">
+               <did>
+                  <unittitle>Jay Rainey et. al. v. G. Tyler Miller et. al (No. 69-C-H-6)  Depositions, <unitdate>October 19, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_f767f82e319c1cce8c6fda0e41911dde"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_2914b15f90409b60e7b2725e5b9dea5f"
+                             parent="aspace_f767f82e319c1cce8c6fda0e41911dde"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_631ce36a52a2b48281bd1370f0d9aae3"
+                 level="file">
+               <did>
+                  <unittitle>Jay Rainey et. al. v. G. Tyler Miller et. al (No. 69-C-H-6)  Depositions, <unitdate>October 27, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_cf3731857d8a8bf864cfb5e1c35bd518"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_2e9130c61e8b4cec12d7c0f72068ef3b"
+                             parent="aspace_cf3731857d8a8bf864cfb5e1c35bd518"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_b91e1dff01d4d8275782abd3dcfbc209"
+                 level="file">
+               <did>
+                  <unittitle>Lewis Sword et. al. v. James Fox et. al. (No. 282-70-R) Court Documents, <unitdate>1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_1dae8079e32dfe11184a488f197c7009"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_b926f54dcc79a455b358cfdc05d25caf"
+                             parent="aspace_1dae8079e32dfe11184a488f197c7009"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_228e9601ad3dd7e23a75b5c4582cf3b0"
+                 level="file">
+               <did>
+                  <unittitle>Lewis Sword et. al. v. James Fox et. al. (No. 70-C-26-H) Court Documents, <unitdate type="inclusive">1970-1971</unitdate>
+                  </unittitle>
+                  <container id="aspace_c0124489958ac336d86a8fa4a0e396d5"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_9960c8162b243f4819dd6d5f8c7594bd"
+                             parent="aspace_c0124489958ac336d86a8fa4a0e396d5"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_d57942a3dc7087d89242ab230ccebe9f"
+                 level="file">
+               <did>
+                  <unittitle>Newspaper Clipping Photocopies, 1964-1970, 1977, 1998, <unitdate type="inclusive">1964-1998</unitdate>
+                  </unittitle>
+                  <container id="aspace_066977a5c2f785fd756a7df5f24c2d54"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_84ef18cc7c5a21d54ffa1996c713c3cf"
+                             parent="aspace_066977a5c2f785fd756a7df5f24c2d54"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_1497233810fd02a0d369f6546053e28b"
+                 level="file">
+               <did>
+                  <unittitle>Correspondence and Memorandum regarding protests, <unitdate type="inclusive">1968-1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_ad75e861f6c719b1b49d3e17798437f4"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_193865c595e934f721b45308b15fa84a"
+                             parent="aspace_ad75e861f6c719b1b49d3e17798437f4"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_dc8fd111a211a1f7bbfcc8dada8f0c47"
+                 level="file">
+               <did>
+                  <unittitle>Trial Procedure for Faculty Judiciary Committee Hearing, <unitdate type="inclusive">1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_3ae9671f4668b8f09bb0360c79bbc66a"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_b09dc26af73a50819cc00be2c0a88898"
+                             parent="aspace_3ae9671f4668b8f09bb0360c79bbc66a"
+                             type="folder">5</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 audience="internal"
+              id="aspace_76f6a08c1db8bee7c30f2ad5ede1ad29"
+              level="series">
+            <did>
+               <unittitle>3: Disciplinary Papers, <unitdate normal="1964/1971" type="inclusive">1964-1971</unitdate>
+               </unittitle>
+            </did>
+            <accessrestrict audience="internal" id="aspace_37d9cc26284763cb04653ba1c82ea5e4">
+               <head>Conditions Governing Access</head>
+               <p>Restricted</p>
+            </accessrestrict>
+            <scopecontent audience="internal" id="aspace_78bb48feb8d3480d3a014c0ef4c036fc">
+               <head>Scope and Content</head>
+               <p>Series 3: Disciplinary Papers, 1965-1971 is closed due to FERPA restrictions. It is comprised of documents that chronicle the disciplinary proceedings of students charged with various infractions, with the bulk of the materials related to a protest at Wilson Hall in 1969 that resulted in the arrests of students and faculty. The Faculty Judiciary Committee Hearings were conducted in a trial style and transcribed by court stenographer, Lane's Court Reporters, of Charlottesville Virginia.</p>
+            </scopecontent>
+            <c02 audience="internal"
+                 id="aspace_7867ad2d6c91402501add9b9d56b5531"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate normal="1970/1970">May 12, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_b4bf30a2634fb35ba1a3f451dc1d7163"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_e62ed5d7b088c7fd9f0d4d9da0f256c8"
+                             parent="aspace_b4bf30a2634fb35ba1a3f451dc1d7163"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_5a3eb8760b56b5e3c56961f7358f3d28"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>May 12, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_ee943629cdb33f824a865b0c0f24981b"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_2879a4be3cb85e64ad51d1d305594c61"
+                             parent="aspace_ee943629cdb33f824a865b0c0f24981b"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_68640c89e6b44a6f807c3273d47806e5"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>May 13, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_672aef2bd2d4c6845bf0e252535487c2"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_d18146dafc85fd4634efb990fdaa6c8c"
+                             parent="aspace_672aef2bd2d4c6845bf0e252535487c2"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_ced3690699084f3c226365cee1a32e20"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 1, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_e4b598d5865a1479e534ba3463814feb"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_17483731fa5a7186cb71be6792e94cf1"
+                             parent="aspace_e4b598d5865a1479e534ba3463814feb"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_2cf947bd132d37874f39936fdd2fa7fc"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 1, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_fd058250b4811082b60052e714f562bc"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_05f321af8a21d9fc3ac0e3723c1306d9"
+                             parent="aspace_fd058250b4811082b60052e714f562bc"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_4094170aa5c0d2a67bd216df3df444d9"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 1, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_960e0eaff79f69c8610e9b7c05a75320"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_a0803e13d7c48155bfeaef83e51a70f5"
+                             parent="aspace_960e0eaff79f69c8610e9b7c05a75320"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_6451384376680f8a9f985f45c7465a0e"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 2, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_7c59f90fc8d2f3c51c4f8f3a1e7dc976"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_1d510165b53f81dbbefb51cdc52726e2"
+                             parent="aspace_7c59f90fc8d2f3c51c4f8f3a1e7dc976"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_6dd7dc3581d389597cdf672da55882d2"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 2, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_cf0b61be77b311074e21fde12b854ad4"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_445c97bbf8352fb22b8fb9269749971f"
+                             parent="aspace_cf0b61be77b311074e21fde12b854ad4"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_de618bde2cc1bc3045bf1c4e528c27f5"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 2, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_429dad710118a537efd74f782c987a64"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_7fe75dfb4983d968d22ce1c08aae3c78"
+                             parent="aspace_429dad710118a537efd74f782c987a64"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_143871660d7da852907b68dabc65f883"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 3, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_54336a3f04902cfdad744eac1a44041f"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_6fdba6ce98cb9ce907a8cf1e74cb7cb0"
+                             parent="aspace_54336a3f04902cfdad744eac1a44041f"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_08e4db385200543a8a0bc0a44c565f5d"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 3, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_d516dd3b6c78cb11584e51f705e6a124"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_36c055a6504caed432249b4b0f696211"
+                             parent="aspace_d516dd3b6c78cb11584e51f705e6a124"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_65ee7d04d4aef61fdf724e5d94f22a46"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 4, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_0edf3291c9f6320197229b86cc346ccf"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_ab6c385d6cc93b9c7303880d04f35f9e"
+                             parent="aspace_0edf3291c9f6320197229b86cc346ccf"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_d8485629a59b9a0860968a1aa99760aa"
+                 level="file">
+               <did>
+                  <unittitle>Faculty Judiciary Committee Hearing Transcript, <unitdate>June 4, 1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_557c204f2c66861012d63e9a76a8a5fe"
+                             label="Box:Folder"
+                             type="box">7</container>
+                  <container id="aspace_606215505d7f6f614ae6e31a5745c0ac"
+                             parent="aspace_557c204f2c66861012d63e9a76a8a5fe"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_435c1b463694b4cf8ad5dfdf67288451"
+                 level="file">
+               <did>
+                  <unittitle>G. Tyler Miller File Labelled, "Jay Rainey", <unitdate type="inclusive">1965-1969</unitdate>
+                  </unittitle>
+                  <container id="aspace_76b2aed1e594fde672c3f638fda7d609"
+                             label="Box:Folder"
+                             type="box">8</container>
+                  <container id="aspace_847f49ffecea4c189939a76a6dc7778b"
+                             parent="aspace_76b2aed1e594fde672c3f638fda7d609"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_dafa258afe6e2c885571ade82f3614cf"
+                 level="file">
+               <did>
+                  <unittitle>Excerpts of Minutes from Board of Visitors Meetings, <unitdate type="inclusive">1968-1969 </unitdate>
+                  </unittitle>
+                  <container id="aspace_53ea52639a7c81e807b04429fb41b241"
+                             label="Box:Folder"
+                             type="box">8</container>
+                  <container id="aspace_a9ba1ac9f260d0c6c9c5df5f4ec4fa24"
+                             parent="aspace_53ea52639a7c81e807b04429fb41b241"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_d1e1f28d84877909abc8cb383366f4e8"
+                 level="file">
+               <did>
+                  <unittitle>Correspondence with Attorneys, <unitdate type="inclusive">1969-1970 </unitdate>
+                  </unittitle>
+                  <container id="aspace_02b43a10c95e1a963377a98f180ffbca"
+                             label="Box:Folder"
+                             type="box">8</container>
+                  <container id="aspace_6d75c4c44361fdc6c99d4a1d97d639a3"
+                             parent="aspace_02b43a10c95e1a963377a98f180ffbca"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_f3d3dcc72918bdc2d94f1fe6efb5fab6"
+                 level="file">
+               <did>
+                  <unittitle>Correspondence and Reports, <unitdate type="inclusive">1970-1971 </unitdate>
+                  </unittitle>
+                  <container id="aspace_0ad97123ad41b639a2b13c4ec5e382e7"
+                             label="Box:Folder"
+                             type="box">8</container>
+                  <container id="aspace_5d249648730f0701b04ebfb752b24e3b"
+                             parent="aspace_0ad97123ad41b639a2b13c4ec5e382e7"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_22adcc4873c3571111d4b0a873927cff"
+                 level="file">
+               <did>
+                  <unittitle>Correspondence Re: Faculty Judiciary Committee Hearings, <unitdate>1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_241419cbfe965716ac6cc432a42d20a6"
+                             label="Box:Folder"
+                             type="box">8</container>
+                  <container id="aspace_e4fca7b6e856a31d36f5363cf0d8b63f"
+                             parent="aspace_241419cbfe965716ac6cc432a42d20a6"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 audience="internal"
+                 id="aspace_a29a2c55f65154f94ae0cf7d90e1ebc0"
+                 level="file">
+               <did>
+                  <unittitle>Minutes of the Faculty Judiciary Committee, <unitdate>1970</unitdate>
+                  </unittitle>
+                  <container id="aspace_69b53a848d937d7f5a734f2556a4dce3"
+                             label="Box:Folder"
+                             type="box">8</container>
+                  <container id="aspace_8cfd9e0bc3410496c6dd4cef7abf332e"
+                             parent="aspace_69b53a848d937d7f5a734f2556a4dce3"
+                             type="folder">6</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
