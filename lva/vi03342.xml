@@ -1,177 +1,361 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vi03342">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi03342::A Guide to the Westmoreland County (Va.) Records, 1693-1832)//EN" "vi03342.xml"
+<?xml version="1.0"?>
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" title="extended EAD relaxng schema" ?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" id="vi00782">
+<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
+<eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00782::A Guide to the Westmoreland County (Va.) Records, 1786-1979)//EN" "vi03342.xml"
 </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Westmoreland County (Va.) Records, <date era="ce" calendar="gregorian">1693-1832</date></titleproper>
-        <subtitle id="sort">Westmoreland County (Va.) Records, 1693-1832
-<num type="collectionnumber">0007326996 
-</num></subtitle>
-        <author>Sam Walters
+<filedesc>
+<titlestmt>
+<titleproper>A Guide to the Westmoreland County (Va.) Records, <date>1693-1959</date>
+</titleproper>
+<subtitle id="sort">Westmoreland County (Va.) Records
+<num type="collectionnumber">0007326996, 1042833-1176643 circa   
+</num>
+</subtitle>
+<author>Greg Crawford
 </author>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Library of Virginia
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By The Library of Virginia. All Rights Reserved. 
-</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MARC record, created by Sam Walters, <date era="ce" calendar="gregorian">30 March 2012</date></creation>
-      <langusage>Description is in
+</titlestmt>
+<publicationstmt>
+<publisher>Library of Virginia
+</publisher><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"  href="http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xi.xml" />
+<date type="publication">&#169; 2018  By The Library of Virginia. All Rights Reserved. 
+</date> 
+</publicationstmt>
+</filedesc>
+<profiledesc>
+<creation>Machine-readable finding aid created in EAD by Greg Crawford, <date>30 May 2018</date>
+</creation>
+<langusage>Description is in
 <language langcode="eng">English
-</language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the Westmoreland County (Va.) Records, <date era="ce" calendar="gregorian">1693-1832</date></titleproper>
-      <subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Barcode number:">0007326996 
-</num></subtitle>
-      <author>Sam Walters
-</author>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
-      </p>
-      <publisher>Library of Virginia
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2012
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:
-</label>
-          <item>Sam Walters
-</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Library of Virginia
-</runner>
-    <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-      <unittitle label="Title" encodinganalog="245$a">Westmoreland County (Va.) Records, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1693-1832
-</unitdate></unittitle>
-      <unitid label="Barcode number" encodinganalog="099$a">0007326996 
-</unitid>
-      <physloc label="Location">Library of Virginia
-</physloc>
-      <physdesc label="Physical Characteristics" encodinganalog="300$a">0.1 cu. ft. (1 folder)
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
 </language>
-      </langmaterial>
-      <origination label="Collector" encodinganalog="110$a">Westmoreland County (Va.) Circuit Court
+</langusage>
+</profiledesc>
+</eadheader>
+<frontmatter>
+<titlepage>
+<titleproper>A Guide to the Westmoreland County (Va.) Records, <date>1693-1959</date>
+</titleproper>
+<subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Collection Number">0007326996, 1042833-1176643 circa  
+</num>
+</subtitle>
+<p id="logostmt">
+<extptr xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+</p>
+<publisher>Library of Virginia
+</publisher>
+<date type="publication">2018 
+</date>
+<list type="deflist">
+<defitem>
+<label>Processed by:
+</label>
+<item>Partially processed.
+</item>
+</defitem>
+</list>
+</titlepage>
+</frontmatter>
+<archdesc level="collection">
+<runner placement="footer">Library of Virginia
+</runner>
+<did>
+<head>Descriptive Summary
+</head>
+<repository label="Repository" encodinganalog="852$a">Library of Virginia
+</repository>
+<unittitle label="Title" encodinganalog="245$a">Westmoreland County (Va.) Records, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f">1693-1959
+</unitdate>
+</unittitle>
+<unitid label="Collection Number" encodinganalog="099$a">0007326996, 1042833-1176643 circa  
+</unitid>
+<physloc label="Location">Library of Virginia
+</physloc>
+<physdesc label="Extent" encodinganalog="300$a"><extent>53 boxes and volumes</extent>
+</physdesc>
+<langmaterial label="Language">
+<language langcode="eng">English
+</language>
+</langmaterial>
+<origination label="Collector" encodinganalog="100$a">Westmoreland County (Va.) Circuit Court
 </origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information
+</did>
+<descgrp type="admininfo">
+<head>Administrative Information
 </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions
+<accessrestrict encodinganalog="506$a">
+<head>Access Restrictions
 </head>
-        <p>There are no restrictions.
+<p>There are no restrictions.
 </p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions
+</accessrestrict>
+<userestrict encodinganalog="540$a">
+<head>Use Restrictions
 </head>
-        <p>There are no restrictions.
+<p>There are no restrictions.
 </p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation
+</userestrict>
+<prefercite encodinganalog="524$a">
+<head>Preferred Citation
 </head>
-        <p>Westmoreland County (Va.) Records, 1693-1832. Local government records collection, Westmoreland County Court Records. The Library of Virginia, Richmond, Virginia 23219.
+<p>Westmoreland County (Va.) Records, 1693-1959. Local government records collection, Westmoreland County (Va.) Court Records. The Library of Virginia, Richmond, Va. 23219.
 </p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information
+</prefercite>
+<acqinfo encodinganalog="541$a">
+<head>Acquisition Information
 </head>
-        <p>These items came to the Library of Virginia in transfers of court papers from Westmoreland County.
+<p>A portion of these records came to the Library of Virginia in shipments of court papers from Westmoreland County under the accession numbers 33162f, 33503, 34602, 41894 and 41897.
 </p>
-      </acqinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Historical Information
+</acqinfo>
+</descgrp>
+<bioghist encodinganalog="545$a">
+<head>Historical Information
 </head>
-      <p>Westmoreland County was named for the English county. It was formed from Northumberland County in 1653, and part of King George County was added in 1777.
+<p>Westmoreland County was named for the English county. It was formed from Northumberland County in 1653. The county seat is Montross.
 </p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content
+</bioghist>
+<scopecontent encodinganalog="520$a">
+<head>Scope and Content
 </head>
-      <p>Westmoreland County (Va.) Records, 1693-1832, consist of the following series: Court Records, Fiduciary Records, Tax and Fiscal Records, and Wills. 
+<p>Westmoreland County (Va.) Records, 1693-1959, includes miscellaneous records from the following series: Board of Supervisors Records; Bonds,Commissions,Oaths; Court Records; Election Records; Fiduciary Records;  Land Records; Marriage Records and Vital Statistics; Miscellaneous Records; Military and Pension Records; Public Buildings and Grounds; Road and Bridge Records; School Records; Tax and Fiscal Records; Wills.
 </p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement
+</scopecontent>
+<descgrp type="add">
+<head>Adjunct Descriptive Data
 </head>
-      <p>Arranged by records series.
-</p>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data
+<relatedmaterial encodinganalog="544$a">
+<head>Related Material
 </head>
-      <relatedmaterial encodinganalog="544$a">
-        <head>Related Material
-</head>
-        <p>Additional court records for Westmoreland County can be found on microfilm at the Library of Virginia. Consult <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm">A Guide to Virginia County and City Records on Microfilm</extref>.
-</p>
-      </relatedmaterial>
-    </descgrp>
-    <controlaccess>
+      <p>Additional Westmoreland County Records can be found on microfilm at the Library of Virginia.  Consult <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lva.lib.va.us/whatwehave/local/local_rec/index.htm">"A Guide to Virginia County and City Records on Microfilm."</extref></p>
+<p>See the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.virginiamemory.com/collections/lost">Lost Records Localities Digital Collection</extref> available at Virginia Memory.
+</p>        
+</relatedmaterial>
+</descgrp>
+<controlaccess>
       <head>Index Terms</head>
       <controlaccess>
         <head>Corporate Names:</head>
-        <corpname encodinganalog="610$a">Westmoreland County (Va.) Circuit Court. </corpname>
+        <corpname encodinganalog="610$a">Westmoreland County (Va.) Circuit Court.</corpname>
       </controlaccess>
       <controlaccess>
         <head>Subjects:</head>
-        <subject source="lcsh" encodinganalog="650$a">Public records -- Virginia -- Westmoreland County. </subject>
-      </controlaccess>
-      <controlaccess>
-        <head>Geographical Names:</head>
-        <geogname source="lcsh" encodinganalog="651$a">Westmoreland County (Va.) -- History. </geogname>
+        <subject source="lcsh" encodinganalog="650$a">Public records--Virginia--Westmoreland County.</subject>
       </controlaccess>
       <controlaccess>
         <head>Genre and Form Terms:</head>
-        <genreform source="aat" encodinganalog="655$a">Court records -- Virginia -- Westmoreland County. </genreform>
-        <genreform source="aat" encodinganalog="655$a">Fiduciary records -- Virginia -- Westmoreland County. </genreform>
-        <genreform source="aat" encodinganalog="655$a">Judicial records -- Virginia -- Westmoreland County. </genreform>
-        <genreform source="aat" encodinganalog="655$a">Local government records -- Virginia -- Westmoreland County. </genreform>
-        <genreform source="aat" encodinganalog="655$a">Tax and Fiscal records -- Virginia -- Westmoreland County. </genreform>
-        <genreform source="aat" encodinganalog="655$a">Wills -- Virginia -- Westmoreland County. </genreform>
+        <genreform source="aat" encodinganalog="655$a">Local government records--Virginia--Westmoreland County.</genreform>
       </controlaccess>
     </controlaccess>
-  </archdesc>
+<dsc type="analyticover">
+      <head>Contents List
+</head>
+      
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 0007326996">Records,  
+<unitdate type="inclusive" era="ce" calendar="gregorian">1693-1832: 
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Court Records, Fiduciary Records, Tax and Fiscal Records, and Wills.
+</p>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1042833">Court Records; Tax and Fiscal Records; Fiduciary Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1795-1804: 
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Court Records: Executions; Tax and Fiscal Records: List of Insolvents; Levy Papers; Fiduciary Records; Inventories and Accounts; Administrator's Accounts
+</p>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1042947">Land Records; Miscellaneous Records; Fiduciary Records,   
+<unitdate type="inclusive" era="ce" calendar="gregorian">1772-1920: 
+</unitdate></unittitle>
+        </did>
+<scopecontent>
+          <p>Deeds, affidavits, mechanics' liens, guardian bonds, powers of attorney</p>
+        </scopecontent>
+        </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1042948">Miscellaneous Records; Land Records; Marriage Records and Vital Statistics,  
+<unitdate type="inclusive" era="ce" calendar="gregorian">1779-1959: 
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Crow and fox scalp certificates, abstracts of title Colonial Beach School, marriages
+</p>
+        </scopecontent>
+      </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1042958">Tax and Fiscal Records; Fiduciary Records; Miscellaneous Records,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1782-1892
+</unitdate></unittitle>
+        </did>
+<scopecontent>
+          <p>Sales of Delinquent Lands, 1876-1883; Guardian, Administrator and Executor Bonds; Miscellaneous Papers; Ordinary Bonds</p>
+        </scopecontent>
+        </c01>
+
+ <c01 level="item">
+        <did>
+          <unittitle label="Barcode numbers 1042967-1042968">Commissioner of Accounts Papers;  Executor's and Administrator's Acounts,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1836-1843
+</unitdate></unittitle>
+        </did>
+        </c01>
+
+ <c01 level="item">
+        <did>
+          <unittitle label="Barcode numbers 1101726-1101766 circa">Index to Deeds and Wills,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">undated
+</unitdate></unittitle>
+        </did>
+        </c01>
+
+ <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1101782">Conditional Sales; Record of Capitation Tax Received by Clerk,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1881-1914
+</unitdate></unittitle>
+        </did>
+        </c01>
+
+ <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1101788">Liber (Deeds and Wills),    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1747-1753
+</unitdate></unittitle>
+        </did>
+        </c01>
+
+ <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1101800">Deeds and Orders,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1795-1797
+</unitdate></unittitle>
+        </did>
+        </c01>
+
+<c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1120099">Bonds; Liquor Licenses,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1904-1914
+</unitdate></unittitle>
+        </did>
+<scopecontent>
+          <p>Bonds,Oaths,Commissions: Bonds (Administrators, Guardians, Executors, Officials, Chancery Commissioners); Tax and Fiscal Records: Liquor Licenses</p>
+        </scopecontent>
+        </c01>
+
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1164129">School Records; Court Records; Election Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1846-1861: 
+</unitdate></unittitle>
+        </did>
+<scopecontent>
+          <p>School Records: School Commissioners Reports, 1846-1861; Court Records: Summons to answer suggestions filed, 1856-1858; Election Records, 1850s. Accession 41894. Unprocessed.</p>
+        </scopecontent>
+
+        </c01>
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1164131">Bonds,Commissions,Oaths; Tax and Fiscal Records; Land Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1820-1908 circa:   
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Bonds,Commissions,Oaths: appointments and qualifications of county officers before military officer; oaths of allegeiance, 1869-1870; Tax and Fiscal Records: pedlars receipts, 1820s-1850s; Land Records: Oyster Inspector Reports, 1907-1908; deed of trust appointments, substitutions, resignations in re: Colonial Beach Improvement Company, 1887. Accession 41894. Unprocessed
+</p>
+        </scopecontent>
+      </c01>
+
+      <c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1164137">Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1861-1909: 
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Board of Supervisors Records; Election Records;  Birth Records; Road and Bridge Records; Accession 41897.
+</p>
+        </scopecontent>
+      </c01>
+<c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1176631">Bonds, Commissions, Oaths; Court Records; Fiduciary Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1790-1924: 
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Bonds,Oaths,Commissions: officials' bonds, appointments and resignations (constable, sheriff, tobacco inspector, overseer of poor, tavern, surveyor, clerks, superintendent of schools, treasurer, coroner, justice of peace, etc.), militia appointments and resignations, apprentice indentures/bonds, etc., 1897-1924; Court Records: Injunction Bonds, 1802-1824; Fiduciary Records: Adminstrators and Executors Bonds, 1790s-early 1800s; 1872-1874. Unprocessed.
+</p>
+        </scopecontent>
+      </c01>
+<c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1176632">Military and Pension Records Records; Public Buildings and Grounds,  
+<unitdate type="inclusive" era="ce" calendar="gregorian">1806-1913: 
+</unitdate></unittitle>
+        </did>
+ <scopecontent>
+          <p>Military and Pension Records: pension papers (Revolutionary War, War of 1812, Civil War), 1806-1913, Lists of indigent families of soldiers, 1861-1865, militia fines and exemptions, 1861-1864, letter in re: military bounty land, 1816, public service claim, 1821, petition to make Civil War muster rolls official records, 1907) Public Buildings and Grounds: Architectural Drawings and Plans: clerk's office, 1822-1900, courthouse, 1824-1848, jail, 1811-1832, jail inspectors reports, 1810-1912, undated, portrait of Lord Chatham, 1821-1847, painting of George Washington, 1902, stone for Washington Monument in D.C., 1852, shade trees planted in public square, 1905, petition for a bell, undated.
+</p>
+        </scopecontent>
+            </c01>
+<c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1176643">Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1783-1912 circa: 
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Justice of the Peace Records, 1868; Election Records, 1797-1912 circa; Court Records: dockets, orders setting court dates, writs of ad quod damnum, 1783-1856; Board of Supervisors Records, 1873-1910, undated; Sheriff's Records, 1789-1822; School Records, 1873-1877, undated. Unprocessed.
+</p>
+        </scopecontent>
+      </c01>
+<c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1043053">Records, 
+<unitdate type="inclusive" era="ce" calendar="gregorian">1762-1850: 
+</unitdate></unittitle>
+        </did>
+        <scopecontent>
+          <p>Military and Pension Records: Military Discharge of Charles Poore, 1762; Fiduciary Records: Inventory of James Degges, 1778, Inventory of James Washington, 1782, Guardian settlement of Elijah Moore, 1787; Road and Bridge Rcords: Report of road petition, 1780; Tax and Fiscal Records: Slave Patrol Accounts, 1780; Land Records: Survey and division of the estate of Willoughby Newton, 1823, 1846; Court Records: Exhibits and bonds, 1784-1850. Accession numbers 33162f, 33503, 34602 
+</p>
+        </scopecontent>
+      </c01>
+<c01 level="item">
+        <did>
+          <unittitle label="Barcode numbers 1176622-1176627">Fiduciary Records and Wills,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1700-1912 circa
+</unitdate></unittitle>
+        </did>
+<scopecontent>
+          <p>Box 1 includes Will of Richard Lee (1795); lists of slaves emancipated by Robert Carter (1790s) 
+</p>
+        </scopecontent>
+         </c01>
+<c01 level="item">
+        <did>
+          <unittitle label="Barcode number 1176634">Coroner's appointment; slave patrol commissions and accounts,    
+<unitdate type="inclusive" era="ce" calendar="gregorian">1776-1857
+</unitdate></unittitle>
+        </did>
+<scopecontent>
+          <p>Bonds,Oaths,Commissions: Coroner's Appointment, 1851;  Slave patrol commissions, 1812-1857; Tax and Fiscal Records: Slave patrol accounts submitted for payment, 1776-1850
+</p>
+        </scopecontent>
+         </c01>
+    </dsc>
+</archdesc>
 </ead>
