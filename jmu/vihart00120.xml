@@ -1,194 +1,610 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00120">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00120:: Network for Peace and Justice Collection, , 1983-1987)//EN" "vihart00120.xml"
-</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Network for Peace and Justice Collection, <date era="ce" calendar="gregorian">1983-1987</date></titleproper>
-        <subtitle id="sort">Network for Peace and Justice Collection
-<num type="collectionnumber">3020
-</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2010 By JMU Libraries. All rights reserved.
-</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Tiffany W. Cole, <date era="ce" calendar="gregorian">8/4/2010</date></creation>
-      <langusage>Description is in
-<language langcode="eng">English
-</language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>Guide to the Network for Peace and Justice Collection,  <date era="ce" calendar="gregorian">1983-1987</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections
-<num type="Collection Number"> SC# 3020
-</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2008
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:
-</label>
-          <item>Julia Merkel
-</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University
-</runner>
-    <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
-</repository>
-      <unittitle label="Title" encodinganalog="245$a">Network for Peace and Justice Collection,
-<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1983-1987
-</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">3020
-</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">.25 Hollinger boxes; .1 linear feet
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
-</language>
-      </langmaterial>
-      <abstract label="Abstract">The Network for Peace and Justice Collection, 1983-1987, is comprised of three folders of newsletters published or distributed by the now defunct Harrisonburg, Virginia area Network for Peace and Justice.
-</abstract>
-      <origination label="Creator" encodinganalog="100$a">Network for Peace and Justice
-</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information
-</head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions
-</head>
-        <p>None.
-</p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions
-</head>
-        <p>None.
-</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation
-</head>
-        <p>Network for Peace and Justice, 1983-1987, SC# 3020, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
-</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information
-</head>
-        <p>Robert Bersson donated this collection in July 2010.
-</p>
-      </acqinfo>
-      <processinfo>
-        <head>Processing Notes
-</head>
-        <p>The newsletters were migrated to photocopy format upon receipt due to environmental damage and inherent vice i.e. vinyl line tape, acidic adhesives and chemical deterioriation of master photographic copies.
-</p>
-      </processinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Historical Information
-</head>
-      <p>The Harrisonburg area Network for Peace and Justice is the predecessor of the Common Ground Network for Peace, Justice and the Environment.  Originally conceived of as a vehicle for "communication, cooperation and consciousness-raising" among twelve socially progressive local groups or chapters of national groups, the participating organizations listed in the inaugural October 1983 newsletter are:  Choose Life; Christians for Peace; Church Women United, Harrisonburg/Rockingham County; Citizens Party, Harrisonburg/Rockingham County; Community Mediation Center; National Association for the Advancement of Colored People; National Organization of Women, Harrisonburg/Rockingham County and James Madison University chapters; Peacemakers, Trinity Presbyterian Church; Peace Ministry Committee, Church of the Brethren; and Womens Caucus, Church of the Brethren.  Information may be gleaned here on topics of local historical interest such as Ground Zero Week; the first Harrisonburg area food cooperative, Earthwise; housing issues; equal opportunity issues; migrant and illegal alien issues; and local reaction and response to energy crises, nuclear proliferation and military operations in such countries as Grenada, Lebanon, and Nicaragua.  Local artists and proprietors, Keith Mills and Kathy Kraft of Laughing Dog T-shirts contributed illustrations in many of the newsletters beginning in 1985.  Robert Bersson, JMU art professor emeritus, was the newsletter's first editor.  Contributions of articles came from representatives of member organizations.
-</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content
-</head>
-      <p>The Network for Peace and Justice Collection, 1983-1987, consists of .25 Hollinger boxes, measuring .1 linear feet of bimonthly newsletters published or distributed by the now defunct Harrisonburg area Peace and Justice Network.  Topics include announcements for upcoming events such as peace vigils, demonstrations, and local contacts.  This collection is arranged chronologically in three folders within a single series.
-</p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement
-</head>
-      <p>The collection is arranged in one series:
-</p>
-      <blockquote>
-        <p>I.  Newsletters, 1983-1987
-</p>
-      </blockquote>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data
-</head>
-      <relatedmaterial encodinganalog="544$a">
-        <head>Related Material
-</head>
-        <p>
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/3019CommonGround.aspx">Common Ground Collection, 1984-1996, SC# 3019</extref>
-        </p>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="published"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00120.xml">vihart00120</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Bob Bersson Collection, 1981-2017:<num>SC 0272</num>
+            </titleproper>
+            <author>Sarah Roth-Mullet, May 2018</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink"
+                       xlink:type="simple"
+                       xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with ASpace2VaHeritage.xsl on <date>2018-06-19 12:56:32 -0400</date>.</creation>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Bob Bersson Collection, <date era="ce" calendar="gregorian">1981-2017 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC 0272</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:type="simple"
+                    xlink:actuate="onLoad"
+                    xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2018</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                     href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Sarah Roth-Mullet, May 2018</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Special Collections, James Madison University</corpname>
+         </repository>
+         <unittitle>Bob Bersson Collection, </unittitle>
+         <origination audience="internal" label="Creator">
+            <persname source="local">Robert Bersson (Bob)</persname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0272</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">3.13 cubic feet; 7 boxes</physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1981/2017"
+                   type="inclusive">1981-2017</unitdate>
+         <physloc id="aspace_df9f5d6a97a4360c2bdcdac09b7fb6d0">Special Collections, Carrier Library, James Madison University</physloc>
+         <abstract id="aspace_3892b0b4ce59b541c8d67f762470a1ed">The Bob Bersson Collection, 1981-2017, is comprised of documents and media related to Bersson's work as a community activist in Harrisonburg, and professor of art at James Madison University. It contains Bersson's professional papers, material related to the Citizens for Downtown organization, Taxpayers against Golf Spending (TAGS), WMRA's "Our Little Radio Show," and images of downtown Harrisonburg and JMU Campus.</abstract>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_8c604d9d810349e5c2c5557b2c1ca009">
+            <head>Access Restrictions</head>
+            <p>Collection open to research. Researchers must register and agree to copyright and privacy laws before using this collection.</p>  
+         </accessrestrict>
+         <userestrict id="aspace_f71d058aedd93b251b91c3ead32a5d5e">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have not been transferred to the James Madison University Special Collections Library. For more information, contact the Special Collections Library Reference Desk (library-special@jmu.edu).</p>  
+         </userestrict>
+         <prefercite id="aspace_01d3fc8ea775dbb3c04a7c6a2c582197">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box#, folder #], Bob Bersson Collection, 1981-2017, SC 0272, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA.</p>  
+         </prefercite>
+         <acqinfo id="aspace_9e50fa0dec67311049b888ee8c90c15d">
+            <head>Acquisition Information</head>
+            <p>Items were donated by Bob Bersson in five separate accessions between 2014 and 2018.</p>  
+         </acqinfo>
+         <processinfo id="aspace_7f1ebe55bd0718c8b2f64b2c5dc42866">
+            <head>Processing Information</head>
+            <p>Duplicate copies of materials were disposed. Newspaper clippings related to the JMU Faculty and restructuring were returned to donor. Cassette tapes containing WMRA recordings of "Our Little Radio Show" were digitized and returned to the donor.</p>  
+         </processinfo>
+      </descgrp>
+  
+  
+  
+  
+  
+      <bioghist id="aspace_edd2a0ebe2329c3229944e8cd8526cb6">
+         <head>Bio/Historical Note</head>
+         <p>Bob Bersson was a professor of Art at James Madison University from 1983 until his retirement in 2003. He taught modern and contemporary art history, art criticism, aesthetics, and art appreciation. He wrote two art history/art appreciation text books: "Worlds of Art," published by Mayfield in 1991, and "Responding to Art," published by McGraw-Hill in 2004. Bersson founded the Interfaith Initiative for Peace and Justice in Harrisonburg, and remains active in local interfaith activities. In 2016, Bersson served as visiting Jewish Scholar for the Center for Interfaith Engagement at Eastern Mennonite University.</p>  
+      </bioghist>
+      <scopecontent id="aspace_10ab7723415b56f8813318465dc308f9">
+         <head>Scope and Content</head>
+         <p>The collection is comprised of documents and media related to Robert Bersson's work as an art professor at JMU and community organizer in Harrisonburg, Virginia. It is arranged into four series: Citizens for Downtown (CFD) in Harrisonburg, Taxpayers against Golf Spending (TAGS), WMRA "Our Little Radio Show," and Professional Papers.</p>  
+      </scopecontent>
+      <arrangement id="aspace_fe3375edbf3f529a730d85dc278639ec">
+         <head>Arrangement</head>
+         <p>The collection is arranged into 4 series:</p>
+         <p> Series 1: Citizens for Downtown (CFD), 1989-2017</p>
+         <p> Subseries 1: Administrative Files, 1989-2017</p>
+         <p> Subseries 2: Subject Files, 1989-2017</p>
+         <p> Series 2: Taxpayers against Golf Spending (TAGS), 1992-2002</p>
+         <p> Series 3: WMRA "Our Little Radio Show," 1987-1988</p>
+         <p> Series 4: Professional Papers, 1991-2004</p>  
+      </arrangement>
+      <relatedmaterial id="aspace_0bb203d6b8a06f0afd2c8c61dd92b7da">
+         <head>Related Materials</head>
+         <p>[identification of item], [box #, folder #], Common Ground Records, 1983-2000, SC 0126, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA.</p>  
       </relatedmaterial>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List
-</head>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series I">Newsletters, 1983-1987
-<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-        </did>
-        <c02 level="subseries">
-          <did>
-            <unittitle>1983-1984
-	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-            <container label="Folder" type="folder">1
-	</container>
-          </did>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle>1985
-	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-            <container label="Folder" type="folder">2
-	</container>
-          </did>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle>1986-1987
-	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-            <container label="Folder" type="folder">3
-	</container>
-          </did>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Art -- Study and teaching (Higher) -- United States</subject>
+            <subject source="lcsh">Art appreciation  -- Study and teaching (Higher) -- United States</subject>
+            <subject source="lcsh">Religions -- Relations</subject>
+            <subject source="lcsh">Community organizations -- Virginia -- Harrisonburg</subject>
+            <subject source="lcsh">Citizens' associations -- Virginia -- Harrisonburg</subject>
+            <subject source="lcsh">Social action -- Virginia -- Harrisonburg</subject>
+            <subject source="local">James Madison University. Department of Art</subject>
+            <subject source="lcsh">James Madison University. School of Art and Art History </subject>
+            <subject source="lcsh">James Madison University. School of Art</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Membership lists</genreform>
+            <genreform source="aat">Reports</genreform>
+            <genreform source="aat">Letters (correspondence)</genreform>
+            <genreform source="aat">Floppy Discs</genreform>
+            <genreform source="aat">Color slides</genreform>
+            <genreform source="aat">Slides (photographs)</genreform>
+            <genreform source="aat">VHS</genreform>
+            <genreform source="aat">Maps (documents)</genreform>
+            <genreform source="aat">Newspaper clippings</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_b8b53c9ce43359509082ce9bd09fee23" level="series">
+            <did>
+               <unittitle>Citizens for Downtown, <unitdate normal="1989/2017" type="inclusive">1989-2017</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_9a7779b5abb1ba9462434563842a911e">
+               <head>Scope and Contents</head>
+               <p>The Citizens for Downtown files contain meeting minutes, correspondence, financial reports, newspaper clippings, speeches, membership information, advertisements, and slides related to the historic preservation and revitalization of downtown Harrisonburg. A summary of the history of CFD and the Blacks Run clean-up and restoration project, written by Bob Bersson, can be found in Box 1:8.</p>
+               <p> The series contains over 900 slides with images of downtown Harrisonburg and Rockingham County. Specific locations include Hillandale Park, Blacks Run, Purcell Park, and JMU buildings and campus (Box 6). One slide deck is labelled, "Good Models for Downtown Development," and contains images of Charlottesville, Roanoke, Richmond, Alexandria, among other locales. Another slide deck is labelled, JMU Architecture, 1909-2003 (Box 7). The series contains three VHS tapes with interviews with Bersson related to Harrisonburg downtown revitalization, as well as two 3.5 inch floppy discs labelled "Citizens for Downtown" (4:1).</p>
+            </scopecontent>
+            <arrangement id="aspace_a19037d152912469123a218981ff0c46">
+               <head>Arrangement</head>
+               <p>Arranged into two subseries: Administrative Files, 1989-2017, arranged chronologically, and Subject Files, 1989-2017, arranged alphabetically.</p>
+            </arrangement>
+            <c02 id="aspace_326e04853ae4128695cfdf82bd33b8c1" level="subseries">
+               <did>
+                  <unittitle>Administrative Files, <unitdate normal="1989/2017" type="inclusive">1989-2017</unitdate>
+                  </unittitle>
+               </did>
+               <c03 id="aspace_956acc62974a2c189151dddbeb410120" level="file">
+                  <did>
+                     <unittitle>Prehistory of CFD, <unitdate normal="1981/1989" type="inclusive">1981-1989, undated</unitdate>
+                     </unittitle>
+                     <container id="aspace_1e08ff255ed337842002892f0bfddff8"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_05261b5a709745720c8a6ca8eb8b9d6c"
+                                parent="aspace_1e08ff255ed337842002892f0bfddff8"
+                                type="Folder">1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_49b826b9a3f61d9c1c90fb9c6578b87c" level="file">
+                  <did>
+                     <unittitle>CFD Documents, <unitdate normal="1989/1989" type="inclusive">1989, undated</unitdate>
+                     </unittitle>
+                     <container id="aspace_98e6d3bf94ee51201f183e0de5124f90"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_18640d73dbef565e7ea9c8f4bb66f86d"
+                                parent="aspace_98e6d3bf94ee51201f183e0de5124f90"
+                                type="Folder">2</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_cce0e2209abc5398e6a14323b7a317ab" level="file">
+                  <did>
+                     <unittitle>Bob Bersson Notebook, <unitdate normal="1989/1990" type="inclusive">1989-1990</unitdate>
+                     </unittitle>
+                     <container id="aspace_94d9eb95e4dc6f5ae863fde3019ddb7b"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_008208886e98693b1db9f67fd790a935"
+                                parent="aspace_94d9eb95e4dc6f5ae863fde3019ddb7b"
+                                type="folder">3</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_0ab1ddb1532b66ab1eed64caeb9394c6" level="file">
+                  <did>
+                     <unittitle>CFD Documents, <unitdate type="inclusive">1990</unitdate>
+                     </unittitle>
+                     <container id="aspace_b0a11dc01757f5ebe8352669e0e997a2"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_13ddbed0c47ebd2efc4c02b8faabcf25"
+                                parent="aspace_b0a11dc01757f5ebe8352669e0e997a2"
+                                type="Folder">3</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_2eda549eb7f5bfb5a3b6671a7286252e" level="file">
+                  <did>
+                     <unittitle>CFD Documents, <unitdate type="inclusive">1991</unitdate>
+                     </unittitle>
+                     <container id="aspace_3bfdd90c7299fba8c7b4c4013e137909"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_7b08d38033ff7f11473413d478facf45"
+                                parent="aspace_3bfdd90c7299fba8c7b4c4013e137909"
+                                type="Folder">4</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_e52ae6904c21d80ee15dd6204fe718e7" level="file">
+                  <did>
+                     <unittitle>CFD Documents, <unitdate normal="1992/1994" type="inclusive">1992-1994</unitdate>
+                     </unittitle>
+                     <container id="aspace_bd36d9e1bd2b5a118de3e3a9ce333971"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_a732e6e70312ccc0b03d9c59583397a0"
+                                parent="aspace_bd36d9e1bd2b5a118de3e3a9ce333971"
+                                type="Folder">5</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_39082eec1341c1f6d302746539c7fc78" level="file">
+                  <did>
+                     <unittitle>CFD Documents, <unitdate normal="1995/2000" type="inclusive">1995-2000</unitdate>
+                     </unittitle>
+                     <container id="aspace_908705893da35a8d7e0f7e9a2a694bfe"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_747f280cddd90c039ea77138cec0ab0e"
+                                parent="aspace_908705893da35a8d7e0f7e9a2a694bfe"
+                                type="Folder">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_d31094b56b310af46765a9de605456bf" level="file">
+                  <did>
+                     <unittitle>CFD Documents, <unitdate normal="2004/2006" type="inclusive">2004, 2006</unitdate>
+                     </unittitle>
+                     <container id="aspace_1950145973f8952639df6aec05ab4a1c"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_7d54de0df5069718a057b2f78b357031"
+                                parent="aspace_1950145973f8952639df6aec05ab4a1c"
+                                type="Folder">7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_930a64312034266857650b57253646b2" level="file">
+                  <did>
+                     <unittitle>CFD Narrative and Blacks Run Clean-up Narratives, <unitdate normal="2014/2017" type="inclusive">2014, 2017</unitdate>
+                     </unittitle>
+                     <container id="aspace_669a7f3d25fedd894e0449a720f824ac"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_d3ee0eac43e3d3653b13e65169c6dfaa"
+                                parent="aspace_669a7f3d25fedd894e0449a720f824ac"
+                                type="Folder">8</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_a7dd43f338a2cb1698fbdcce83ea061d" level="subseries">
+               <did>
+                  <unittitle>Subject Files, <unitdate normal="1989/2017" type="inclusive">1989-2017</unitdate>
+                  </unittitle>
+               </did>
+               <c03 id="aspace_26452bdc5573184681553f01160504e6" level="file">
+                  <did>
+                     <unittitle>Architectural Awards, <unitdate normal="1990/2002" type="inclusive">1990-2002, undated</unitdate>
+                     </unittitle>
+                     <container id="aspace_41417dd74cc5b29a17c9042b23c585e6"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_213d4e22c1532f0bfdd1278f8ee3d7f0"
+                                parent="aspace_41417dd74cc5b29a17c9042b23c585e6"
+                                type="Folder">9</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_03f48f1bf14ccd04f2aa68166c150add" level="file">
+                  <did>
+                     <unittitle>Blacks Run Restoration Project Documents, <unitdate normal="1989/2003" type="inclusive">1989-2003</unitdate>
+                     </unittitle>
+                     <container id="aspace_2cddbf79bde715a9558df0cf3d80fd5f"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_0824fdfbdc4d8af75c6d8862b6c94304"
+                                parent="aspace_2cddbf79bde715a9558df0cf3d80fd5f"
+                                type="Folder">10</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_9136e9c24d0b47a5f2d1a10b80bf1ed6" level="file">
+                  <did>
+                     <unittitle>Blacks Run Restoration Project Photos, <unitdate normal="1992/1992" type="inclusive">ca. 1992</unitdate>
+                     </unittitle>
+                     <container id="aspace_70e5e32fa9f98c7d43e47862e8e557fe"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_7b6f1e0abd5da1379a4ca193c9a9dfdf"
+                                parent="aspace_70e5e32fa9f98c7d43e47862e8e557fe"
+                                type="Folder">11</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_39c2e3f86eaae05452aeb8cff5586c3a" level="file">
+                  <did>
+                     <unittitle>Blacks Run Restoration Project Newspaper Clippings, <unitdate normal="1990/2017" type="inclusive">1990-2017</unitdate>
+                     </unittitle>
+                     <container id="aspace_51027e887d5bd8a29571783934e07b87"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_2771fec89db4c1a8f246e039a7d3c4bb"
+                                parent="aspace_51027e887d5bd8a29571783934e07b87"
+                                type="Folder">12</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_6ab78e42fecb8a67efc4692fc3dd397e" level="file">
+                  <did>
+                     <unittitle>Fridays on the Square, <unitdate normal="1992/2013" type="inclusive">1992-2013</unitdate>
+                     </unittitle>
+                     <container id="aspace_685e8a93f5b768e911c52d55e75d8823"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_4f5551d2e4cbb0b4b708c4652b5796c2"
+                                parent="aspace_685e8a93f5b768e911c52d55e75d8823"
+                                type="Folder">13</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_fbdc1dc73945e059475201e80271dc0c" level="file">
+                  <did>
+                     <unittitle>Gallery Walk, <unitdate normal="1989/1990" type="inclusive">1989-1990</unitdate>
+                     </unittitle>
+                     <container id="aspace_9b473457da32fb458d14723941cd3036"
+                                label="Box:Folder"
+                                type="Box">1</container>
+                     <container id="aspace_65fb411918ac4c2db5e56a60221fe07f"
+                                parent="aspace_9b473457da32fb458d14723941cd3036"
+                                type="Folder">14</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_26ff8dc3c9dd8d23b15d08429627c202" level="file">
+                  <did>
+                     <unittitle>Media: VHS and disks, <unitdate normal="1981/1989" type="inclusive">1981-1989</unitdate>
+                     </unittitle>
+                     <container id="aspace_15ffa1957633c9f4060063d757aa11e8"
+                                label="Box:Folder"
+                                type="Box">4</container>
+                     <container id="aspace_4de4d6ac1b1d3d14c48b7b60279a22d3"
+                                parent="aspace_15ffa1957633c9f4060063d757aa11e8"
+                                type="Folder">1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_22778df46190532ee724c8e1a8f1eaf3" level="file">
+                  <did>
+                     <unittitle>Slides of downtown Harrisonburg, <unitdate normal="1989/2002" type="inclusive">1981-2000</unitdate>
+                     </unittitle>
+                     <container id="aspace_aee199f448574cba98580ae09faea491"
+                                label="Box:Folder"
+                                type="Box">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_aec6a39a100e1d2dbede6ec3b8964b27" level="file">
+                  <did>
+                     <unittitle>Slides of downtown Harrisonburg, Rockingham County, Region, <unitdate normal="1980/2005" type="inclusive">1980-2005</unitdate>
+                     </unittitle>
+                     <container id="aspace_345fc5a453f642c6ba6d61e27f890b12"
+                                label="Box:Folder"
+                                type="Box">7</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 id="aspace_43ae6bf8d2220cab9390b5e041e9c003" level="series">
+            <did>
+               <unittitle>Taxpayers Against Golf Spending (TAGS), <unitdate type="inclusive">1992-2002</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_d5e5d04f3f3b8e4ca7f455f346941489">
+               <head>Scope and Contents</head>
+               <p>TAGS is comprised reports, memos, maps, studies, advertisements, newspaper clippings, correspondence, and cassette tapes related to a campaign against the Harrisonburg City Council's plans to build a municipal golf course in the Hillandale Park in Harrisonburg. The organization eventually formed the Citizens of Harrisonburg Advocating New Government for the Electorate (CHANGE) in 2000, who endorsed three candidates for city council -- Dorn Peterson, Carolyn Frank, and Joe Fitzgerald – all of whom were elected in May 2000.</p>
+            </scopecontent>
+            <arrangement id="aspace_417a0054e398ccb9b1136e216a240843">
+               <head>Arrangement</head>
+               <p>Arranged chronologically.</p>
+            </arrangement>
+            <c02 id="aspace_b8cf1b469de38453c88837d02d9b6512" level="file">
+               <did>
+                  <unittitle>Harrisonburg Golf Course Feasability study, <unitdate normal="1992/1992" type="inclusive">1992</unitdate>
+                  </unittitle>
+                  <container id="aspace_75abc6c4f51fccdc59c94f7aadde3cf9"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_a802a1575d6ccaa2da7f683e58d45e07"
+                             parent="aspace_75abc6c4f51fccdc59c94f7aadde3cf9"
+                             type="Folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e39fa38ec185a68fc12ec91daee6081a" level="file">
+               <did>
+                  <unittitle>Studies and Reports by City of Harrisonburg, <unitdate normal="1994/2000" type="inclusive">1994-2000</unitdate>
+                  </unittitle>
+                  <container id="aspace_0dc04bc47706a3871d0aaffe3f7ad12f"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_1824a30a05f9113aa30e953393f16e42"
+                             parent="aspace_0dc04bc47706a3871d0aaffe3f7ad12f"
+                             type="Folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d8729f1be8c3c53e203ef80140aa5f7a" level="file">
+               <did>
+                  <unittitle>Advertisements, <unitdate normal="1999/1999" type="inclusive">1999</unitdate>
+                  </unittitle>
+                  <container id="aspace_995386cad9087c0d707a9145bfca24eb"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_a15a5c0fcf3da0ac18ae0506a7da1011"
+                             parent="aspace_995386cad9087c0d707a9145bfca24eb"
+                             type="Folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e8d968acda8639a872b690f2ca309fce" level="file">
+               <did>
+                  <unittitle>Correspondence, <unitdate normal="1999/1999" type="inclusive">1999</unitdate>
+                  </unittitle>
+                  <container id="aspace_c02f6f15ab617097f9e636ff2cb9129f"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_deab33bb6f487a647a975aa0f43d67c5"
+                             parent="aspace_c02f6f15ab617097f9e636ff2cb9129f"
+                             type="Folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_13d23e8d54307c3cab4e0bfa476b76e0" level="file">
+               <did>
+                  <unittitle>Financial Analysis of Golf Course, <unitdate normal="1999/1999" type="inclusive">1999</unitdate>
+                  </unittitle>
+                  <container id="aspace_2cb9b68c7f45753144ab5bbd4b5fa9fe"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_e143638eee84fae3a3d3516552475edf"
+                             parent="aspace_2cb9b68c7f45753144ab5bbd4b5fa9fe"
+                             type="Folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ba6de02ff65086b9af3608f79f0b034b" level="file">
+               <did>
+                  <unittitle>Newspaper clippings, <unitdate normal="1999/1999" type="inclusive">1999</unitdate>
+                  </unittitle>
+                  <container id="aspace_272d1e65366f5e6af79485dbfb7669b2"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_b873c9b90bb0429941be102e1a4942fc"
+                             parent="aspace_272d1e65366f5e6af79485dbfb7669b2"
+                             type="Folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bde3ffc9a5a59d35c3a53162988e6bf8" level="file">
+               <did>
+                  <unittitle>Correspondence, <unitdate normal="2000/2000" type="inclusive">2000</unitdate>
+                  </unittitle>
+                  <container id="aspace_a7906e1eb07da213d6013187b5c22baa"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_970eeddb9a15168b2cd11db1b2da955f"
+                             parent="aspace_a7906e1eb07da213d6013187b5c22baa"
+                             type="Folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7733b82eeb2ccbd64a2e0e64c716678b" level="file">
+               <did>
+                  <unittitle>Newspaper clippings, <unitdate normal="2000/2000" type="inclusive">2000</unitdate>
+                  </unittitle>
+                  <container id="aspace_9cdcaceca67d923711a0d1d8c00de847"
+                             label="Box:Folder"
+                             type="Box">2</container>
+                  <container id="aspace_e0ce84449ae3ba4dcbc6a9c15277d4d4"
+                             parent="aspace_9cdcaceca67d923711a0d1d8c00de847"
+                             type="Folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0f35015efc2b80a5377a72a151329864" level="file">
+               <did>
+                  <unittitle>CHANGE Campaign Material, <unitdate normal="2000/2000" type="inclusive">2000</unitdate>
+                  </unittitle>
+                  <container id="aspace_0d98069c5de19ce8d91e48077ab5f7e5"
+                             label="Box:Folder"
+                             type="Box">3</container>
+                  <container id="aspace_52c53bb365ba818537f11d46908d7904"
+                             parent="aspace_0d98069c5de19ce8d91e48077ab5f7e5"
+                             type="Folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f8677914c1ef5e69e226bdff5b113325" level="file">
+               <did>
+                  <unittitle>CHANGE Documents, <unitdate normal="2000/2002" type="inclusive">2000-2002</unitdate>
+                  </unittitle>
+                  <container id="aspace_9c60b76ea9f42ec2fc2eb48a068d767a"
+                             label="Box:Folder"
+                             type="Box">3</container>
+                  <container id="aspace_e167322a7bb8f72d26af79d904737d43"
+                             parent="aspace_9c60b76ea9f42ec2fc2eb48a068d767a"
+                             type="Folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2ed3349ee629a672daa3e7694f949146" level="file">
+               <did>
+                  <unittitle>Cassettes with Carolyn Frank, Ben Fordney and Warren Dillenbeck, <unitdate normal="2002/2002" type="inclusive">2002</unitdate>
+                  </unittitle>
+                  <container id="aspace_547686122555ef1a19471dd22e7cf78c"
+                             label="Box:Folder"
+                             type="Box">4</container>
+                  <container id="aspace_1f2239013d8eb8133c1ff56264445464"
+                             parent="aspace_547686122555ef1a19471dd22e7cf78c"
+                             type="Folder">2</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_0e6c2adef006bab462c18de5a7326b5c" level="series">
+            <did>
+               <unittitle>WMRA - Our Little Radio Show, <unitdate normal="1987/1988" type="inclusive">1987-1988</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_9209f82c14ac08c4cacf2d395b5bd2d4">
+               <head>Scope and Contents</head>
+               <p>The series, "Our Little Radio Show," contains documents related to a variety show co-founded by Bersson in 1987, and hosted at JMU. Audio cassettes with episodes of the show have been digitized and returned to Bersson, and will be made available.</p>
+            </scopecontent>
+            <c02 id="aspace_4bb52a57116b59bb70275faa18883d63" level="file">
+               <did>
+                  <unittitle>Our Little Radio Show Documents, <unitdate normal="1987/1987" type="inclusive">1987</unitdate>
+                  </unittitle>
+                  <container id="aspace_882b6c44564bc1c817ed96ccac80589e"
+                             label="Box:Folder"
+                             type="Box">3</container>
+                  <container id="aspace_3b5053666e909b22f31eefa6468f55a7"
+                             parent="aspace_882b6c44564bc1c817ed96ccac80589e"
+                             type="Folder">3</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_5ffadb3b97f174dc0bebde11108fdeb9" level="series">
+            <did>
+               <unittitle>Professional Papers, <unitdate normal="1991/2004" type="inclusive">1991-2004</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_523588bf189dcda37c5e6d84782a0a19">
+               <head>Scope and Contents</head>
+               <p>Professional Papers contain the papers and media created by Bersson during his tenure as a professor of Art at James Madison University. There are two folders contain documents related to significant and controversial restructuring under the Carrier Administration in 1993. Files include comments made by President Carrier during a JMU Faculty Senate Meeting in October 14, 1993, as well as other articles and reports related to faculty governance and structure.</p>
+               <p> The series contains 3.5 inch floppy discs and zip discs which contain drafts of Bersson's two books, "Worlds of Art," published by Mayfield Publishing Company in 1991, and "Responding to Art: Form, Content and Context", published by McGraw Hill in 2003, as well as other academic work.</p>
+            </scopecontent>
+            <c02 id="aspace_7378e93b4d769c59d09fb8c60a67e4bb" level="file">
+               <did>
+                  <unittitle>AAUP Committee Documents, <unitdate type="inclusive">1993</unitdate>
+                  </unittitle>
+                  <container id="aspace_264596f69cbae4585d49cdc55141e61a"
+                             label="Box:Folder"
+                             type="Box">3</container>
+                  <container id="aspace_efdb5eea1f55d08294572f6395c50cdc"
+                             parent="aspace_264596f69cbae4585d49cdc55141e61a"
+                             type="Folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7bac2e1ba156f366e4d19b90c490d0c6" level="file">
+               <did>
+                  <unittitle>Faculty Senate Documents, <unitdate normal="1993/2007" type="inclusive">1993-2007</unitdate>
+                  </unittitle>
+                  <container id="aspace_f72fb7b4a62e467f3316cabdd43544e8"
+                             label="Box:Folder"
+                             type="Box">3</container>
+                  <container id="aspace_fd8c6f57f4057a25a45f27a9ee9c62ee"
+                             parent="aspace_f72fb7b4a62e467f3316cabdd43544e8"
+                             type="Folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a48bb14fd0642435f8bd559aca0c0a98" level="file">
+               <did>
+                  <unittitle>Media containing work for two art textbooks, <unitdate normal="2004/2004" type="inclusive">1991</unitdate>
+                  </unittitle>
+                  <container id="aspace_5dea1c6303eec6c88ee9e9de12fed106"
+                             label="Box:Folder"
+                             type="Box">5</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
