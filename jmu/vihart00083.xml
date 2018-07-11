@@ -1,1395 +1,1836 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00083">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::vihart00083:: John G. Stewart Collection, 1761-2002)//EN" "vihart00083.xml"
-</eadid>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+    langencoding="iso639-2b" repositoryencoding="iso15511">
+    <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00083.xml"
+      >vihart00083</eadid>
     <filedesc>
       <titlestmt>
-        <titleproper>A Guide to the John G. Stewart Collection, <date era="ce" calendar="gregorian">1761-2002</date></titleproper>
-        <subtitle id="sort">Stewart, John G.
-<num type="collectionnumber">SC# 4016
-</num></subtitle>
+        <titleproper>A Guide to the John G. Stewart Papers, 1761-2002 (bulk 1953-1973): <num>SC
+            0157</num></titleproper>
+        <author>Kristie Kendall and Tracy Harter, December 2008; Tiffany Cole, March 2010</author>
       </titlestmt>
       <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2008 By JMU Libraries. All rights reserved.
-</date>
+        <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All rights
+          reserved. </date>
         <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+            Use</extref>
         </p>
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Tracy Harter, <date era="ce" calendar="gregorian">11/12/08</date></creation>
-      <langusage>Description is in
-<language langcode="eng">English
-</language></langusage>
+      <creation>This finding aid was produced using ArchivesSpace and hand encoding by Tiffany Cole
+        on <date>2018-07-11 09:11:04 -0400</date>.</creation>
+      <langusage>English</langusage>
+      <descrules>Describing Archives: A Content Standard</descrules>
     </profiledesc>
     <revisiondesc>
       <change>
-        <date normal="2013-11-21">2013-11-21</date>
+        <date>2013-11-21</date>
         <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
       </change>
     </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
-      <titleproper>Guide to the John G. Stewart Collection, <date era="ce" calendar="gregorian">1761-2002</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections
-<num type="Collection Number">SC# 4016
-</num></subtitle>
+      <titleproper> A Guide to the John G. Stewart Papers, <date era="ce" calendar="gregorian"
+          >1761-2002 (bulk 1953-1973)</date>
+      </titleproper>
+      <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+          0157</num>
+      </subtitle>
       <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
       </p>
-      <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2008
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+      <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+      <date type="publication" era="ce" calendar="gregorian">2017</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
       <list type="deflist">
         <defitem>
-          <label>Processed by:
-</label>
-          <item>Kristie Kendall and Tracy Harter, December 2008; Addition:  Tiffany W. Cole, March 2010
-</item>
+          <label>Processed by:</label>
+          <item>Kristie Kendall and Tracy Harter, December 2008; Tiffany Cole, March 2010</item>
         </defitem>
       </list>
     </titlepage>
   </frontmatter>
   <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University
-</runner>
     <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
-</repository>
-      <unittitle label="Title" encodinganalog="245$a">John G. Stewart Collection, 1761-2002 (bulk 1953-1973)
-<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian"/></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">4016
-</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">5 Holllinger boxes; 2.09 linear feet
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
-</language>
-        <language langcode="ger">German
-</language>
-      </langmaterial>
-      <abstract label="Abstract">Research materials and topical files pertaining to Shenandoah Valley folk culture including recipes, cures for ailments, folklore stories, and other traditions gathered and documented by John G. Stewart and Elmer Smith, former professors at Madison College (James Madison University).
-</abstract>
-      <origination label="Collector" encodinganalog="110$a">John G. Stewart
-</origination>
+      <repository>
+        <corpname>Special Collections, James Madison University</corpname>
+      </repository>
+      <unittitle>John G. Stewart Papers, </unittitle>
+      <origination label="Creator">
+        <persname source="local">John G. Stewart, 1918-2010</persname>
+      </origination>
+      <unitid label="Collection Number" encodinganalog="099$a">SC 0157</unitid>
+      <physdesc label="Extent" encodinganalog="300$a">2.29 cubic feet; 5 boxes, 1 flat
+        file</physdesc>
+      <unitdate calendar="gregorian" era="ce" normal="1761/2002" type="inclusive">1761-2002 (bulk
+        1953-1973)</unitdate>
+      <langmaterial id="aspace_bac86b24aac9e5945b3291fd829b79b0">English, German</langmaterial>
+      <abstract id="aspace_beabbba5fac955facf321ab09201801f">Research materials and topical files
+        pertaining to Shenandoah Valley folk culture including recipes, cures for ailments, folklore
+        stories, and other traditions gathered and documented by John G. Stewart and Elmer Smith,
+        former professors at Madison College (James Madison University).</abstract>
     </did>
     <descgrp type="admininfo">
-      <head>Administrative Information
-</head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions
-</head>
-        <p>None.
-</p>
+      <head>Administrative Information</head>
+      <accessrestrict id="aspace_128858a0f59facd0ec7de06b2d8390ba">
+        <head>Access Restrictions</head>
+        <p>Collection is open for research. Researchers must register and agree to copyright and
+          privacy laws before using this collection. Please contact Research Services staff before
+          visiting the James Madison University Special Collections Library to use this
+          collection.</p>
       </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions
-</head>
-        <p>Photocopied unpublished materials from other individuals in the collection may be used and reproduced under the terms of Title 17, Section 108 of U.S. Code.  The user is responsible for determining whether a work has passed into the public domain or obtaining copyright clearance from the copyright holder for permission to use the materials in excess of fair use.
-</p>
+      <userestrict id="aspace_a2fd327a2144ce72565cc13f29d0193a">
+        <head>Use Restrictions</head>
+        <p>The copyright interests in this collection have been transferred to the James Madison
+          University Special Collections Library. For more information, contact the Special
+          Collections Library Reference Desk (library-special@jmu.edu).</p>
       </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation
-</head>
-        <p>The John G. Stewart Collection, 1761-2002, SC# 4016, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
-</p>
+      <prefercite id="aspace_03a6fef3e27b9aa318a139e28bc7395a">
+        <head>Preferred Citation</head>
+        <p>[identification of item], [box #, folder #], John G. Stewart Papers, 1761-2002 (bulk
+          1953-1973, SC 0157, Special Collections, Carrier Library, James Madison University,
+          Harrisonburg, Va.</p>
       </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information
-</head>
-        <p>John Stewart donated this collection of research material and notes in August 2007 and June 2009.
-</p>
+      <acqinfo id="aspace_e87c05da5ba55216adc2160e48aefc88">
+        <head>Acquisition Information</head>
+        <p>John Stewart donated this collection of research material and notes in August 2007 and
+          June 2009.</p>
       </acqinfo>
+      <processinfo id="aspace_bf88ad2d2c745cad6756be2aa6dc0941">
+        <head>Processing Information</head>
+        <p>Original newspaper clippings were photocopied onto archival paper and acidic originals
+          discarded. In order to streamline the process of applying collection numbers, Special
+          Collections staff completed a large-scale renumbering campaign in 2017-2018. <emph
+            render="bold">This collection was previously cataloged as SC 4016</emph>.</p>
+      </processinfo>
     </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information
-</head>
-      <p>John G. Stewart was born in 1918 in Vienna, Austria under the name Hans Gideon Stein to Wilhelm Stein and Margarethe Pick Stein.  Practicing Jews, the family was subject to scrutiny and Hans was arrested during <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Kristallnacht</title>.  Fearing for their safety, the family obtained visas to come to the United States soon after Hitler invaded Austria in 1938.  Hans Gideon Stein attended the College of the Pacific, now called the University of the Pacific, from 1939 until he was drafted into the United States Army in October 1941, where he served as Staff Sergeant in Military Intelligence. He became a United States citizen in 1943 and officially changed his name to John Stewart.  After World War II, Stewart decided to complete his education.  He attended Columbia University from 1945 to 1948, obtaining a masters degree. Stewart taught at Harrisonburg High School from 1951 to 1958, when he was offered a teaching position at Madison College in the language department, for which he taught German and Latin until 1973. Until 1989, he continued to teach classes on folklore and folk culture in the Department of Sociology. After retirement, Stewart continued to research and write about Shenandoah Valley German folklore and culture. He passed away August 27, 2010.  
-</p>
-      <p>Elmer L. Smith was born in 1920 in Newark, NJ.  After earning a B.S. at Florida Southern College, an M.A. at Western Reserve University, and a Ph.D. at Syracuse University, he taught government, economics, and sociology in several Pennsylvania colleges and universities.  In 1958 he came to James Madison University (then Madison College) as Director of the Social Sciences Division, serving until his death in 1981.  Smith recognized that there was a large German-speaking segment of the population that had settled in the Shenandoah Valley.  He conducted research and interviews to document the folk culture of the Shenandoah Valley, and published a wide variety of books and papers.  Most of Smith's papers and many of his publications are available at the <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.blueridgeinstitute.org/heritage.htm">Blue Ridge Institute</extref> of Ferrum College in Ferrum, VA.
-</p>
-      <p> Smith and Stewart collaborated on research and conducted interviews with descendants of the German settlers in the Valley, much of which is documented in this collection. Together, Stewart and Smith established the Valley Folklore Society in the early 1960s.  They compiled and published information on many folk traditions of the Shenandoah Valley Germans, including holiday traditions, food recipes, medicinal remedies and favorite pastimes.  
-</p>
+    <bioghist id="aspace_10cf5180d5c6ead93283db8582ef22c4">
+      <head>Bio/Historical Note</head>
+      <p>John G. Stewart was born in 1918 in Vienna, Austria under the name Hans Gideon Stein to
+        Wilhelm Stein and Margarethe Pick Stein. Practicing Jews, the family was subject to scrutiny
+        and Hans was arrested during <emph render="italic">Kristallnacht</emph>. Fearing for their
+        safety, the family obtained visas to come to the United States soon after Hitler invaded
+        Austria in 1938. Hans Gideon Stein attended the College of the Pacific, now called the
+        University of the Pacific, from 1939 until he was drafted into the United States Army in
+        October 1941, where he served as Staff Sergeant in Military Intelligence. He became a United
+        States citizen in 1943 and officially changed his name to John Stewart. After World War II,
+        Stewart decided to complete his education. He attended Columbia University from 1945 to
+        1948, obtaining a masters degree. Stewart taught at Harrisonburg High School from 1951 to
+        1958, when he was offered a teaching position at Madison College in the language department,
+        for which he taught German and Latin until 1973. Until 1989, he continued to teach classes
+        on folklore and folk culture in the Department of Sociology. After retirement, Stewart
+        continued to research and write about Shenandoah Valley German folklore and culture. He
+        passed away August 27, 2010. </p>
+      <p>Elmer L. Smith was born in 1920 in Newark, New Jersey. After earning a B.S. at Florida
+        Southern College, an M.A. at Western Reserve University, and a Ph.D. at Syracuse University,
+        he taught government, economics, and sociology in several Pennsylvania colleges and
+        universities. In 1958 he came to James Madison University (then Madison College) as Director
+        of the Social Sciences Division, serving until his death in 1981. Smith recognized that
+        there was a large German-speaking segment of the population that had settled in the
+        Shenandoah Valley. He conducted research and interviews to document the folk culture of the
+        Shenandoah Valley, and published a wide variety of books and papers. Most of Smith's papers
+        and many of his publications are available at the Blue Ridge Institute of Ferrum College in
+        Ferrum, Virginia. </p>
+      <p>Smith and Stewart collaborated on research and conducted interviews with descendants of the
+        German settlers in the Valley, much of which is documented in this collection. Together,
+        Stewart and Smith established the Valley Folklore Society in the early 1960s. They compiled
+        and published information on many folk traditions of the Shenandoah Valley Germans,
+        including holiday traditions, food recipes, medicinal remedies and favorite pastimes.</p>
     </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content
-</head>
-      <p>The John G. Stewart Collection consists of 5 Hollinger boxes, measuring 2.09 linear feet, spanning the years 1761 to 2002.  The collection contains a wide array of facsimile documents pertaining to Germanic folklore and culture in the Shenandoah Valley including notes from Stewart's own lectures and presentations on particular Valley topics.  Documents consist of photocopies and drafts of articles written by Stewart and his colleague Elmer L. Smith, information compiled from interviews with Valley residents, as well as photocopies of primary source materials such as images, recipes, correspondence and medicinal remedies from individuals living in Rockingham, Augusta, Wythe and Shenandoah Counties in Virginia and Pendleton County in West Virginia.  Most of the photocopied articles are reprints from the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Pennsylvaanisch Dietsch Eck</title>  and "Valley Folklore" articles from the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Highland Recorder</title> (Highland County, Va.) spanning from November 1953 to November 1973. A detailed list of those articles is included in the Contents List below, as a link to a pdf document, and is also on file in Special Collections. The collection has been left largely in the order in which Mr. Stewart used it, with minor exceptions.  It is arranged in six series: Topical Research Files, Folk Medicine and Remedies, Pow-Wow Documents, Lectures and Administrative Files, Henkel Materials, and Folk Culture Posters.  Numbers in brackets in the contents list below indicate item count within a folder.
-</p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Topical Research Files, 1961-1995</title>, are further divided into subseries:  Calendar Events and Other.  The series consists of drafts of articles written by Elmer L. Smith and John Stewart, reprinted articles from the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Pennsylvaanisch Dietsch Eck</title> (1953-1963), and "Valley Folklore" columns from the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Highland Recorder</title> (1965-1973), and miscellaneous notes taken by John Stewart.  Of particular interest in the Calendar Events subseries are folders pertaining to traditional German holidays such as Belsnickeling and Martinmas. The Belsnickel was the Christmas gift giver, who disguised himself as an evil man.  For good children he gave presents, but for naughty ones he carried whips or sticks.  Martinmas, or the Feast of Saint Martin, was celebrated on November 11th and typically marked the first day of winter.  Materials in the "Other" category cover a wide range of topics and are arranged alphabetically.
-</p>
-      <p>Materials in the <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Folk Medicine and Remedies, 1790-1984</title>, were left in the donor's original order and primarily consist of photocopies or photographs of original primary source documents obtained from individuals in Rockingham, Shenandoah, Augusta and Wythe Counties in Virginia and Pendleton County, West Virginia. Also represented are articles by John Stewart, Kurt Kehr, Elmer Smith, and Billie Jo Monger.  Documents include medicinal remedies for ailments such as arthritis, dog bites, and blisters.  Information regarding provenance of various items in this series, if available, resides in the administrative file for this collection in the Special Collections office.
-</p>
-      <p>The series <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Pow Wow Documents, 1883-1900</title>, contains materials pertaining to the handwritten, unpublished Pendleton County Pow-Wow Book of West Virginia and other related materials. The Pow-Wow Book demonstrated the art of healing people through prayer and the placing of hands on the body, which was ostensibly a custom among the Pennsylvania Germans. The series contains the following: photographs of the original Pow Wow book, which was written in German; English translations of part of the book; an undated typed article by Elmer L. Smith and John G. Stewart entitled An Occult Remedy Manuscript from Pendleton County, W.VA; a reprint of Elmer Smith's c.1976 article "The Medical Therapy of Powwowing: Early History in Europe to Surviving Practices in Modern America," typed notes taken from <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Folk-Medicine: a Chapter in the History of Culture</title> (1883), by William George Black, and <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Der Deutsche Volksaberglaube der Gegenwart</title> (1900) by Adolf Wuttke, regarding folk healing practices.
-</p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Lectures and Administrative Files, 1966-2002</title>, include various papers and notes on topics Stewart presented at conferences, seminars, and other speaking engagements in the Valley and abroad.  Topics generally concern Valley folklife and folklore.  Material pertaining to his teaching and research obligations include course syllabi, a grant application, an oral history program proposal, and bibliographies.
-</p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Henkel Materials, 1796-1963</title>, document the general history of the Henkel Family and Henkel Press of New Market, Virginia and consist of photocopies of publications and medicine labels printed at the press.  Materials pertaining to Paul Henkel include an index and trascriptions from his daybook and diary as well as materials documenting his sermons and correspondence.  A list of Solomon Henkel correspondence is also included.  Photographic images of broadsides printed at the Henkel Press and woodcuts and impriints used in various publications are present.  The donor's research nots concerning materials at Special Collections at JMU are also contained within this series.
-</p>
-      <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="bold" xlink:href="">Folk Culture Posters, undated</title>, is a collection of oversized photographs taken by the donor of Frakturs, tomb stone rubbings, folk medicine recipes, and Henkel Press broadsides.  The images are mounted on cardstock and numbered according to the donor's <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/4016_StewartFrakturs.pdf">description list</extref>.
-</p>
+    <scopecontent id="aspace_8cc025eb98dca365f5e9c4a8ba8b63bf">
+      <head>Scope and Content</head>
+      <p>The John G. Stewart Papers consists of five boxes, measuring 2.12 cubic feet, spanning the
+        years 1761 to 2002. The collection contains a wide array of facsimile documents pertaining
+        to Germanic folklore and culture in the Shenandoah Valley including notes from Stewart's own
+        lectures and presentations on particular Valley topics. Documents consist of photocopies and
+        drafts of articles written by Stewart and his colleague Elmer L. Smith, information compiled
+        from interviews with Valley residents, as well as photocopies of primary source materials
+        such as images, recipes, correspondence and medicinal remedies from individuals living in
+        Rockingham, Augusta, Wythe and Shenandoah Counties in Virginia and Pendleton County in West
+        Virginia. Most of the photocopied articles are reprints from the <emph render="italic"
+          >Pennsylvaanisch Dietsch Eck</emph> and "Valley Folklore" articles from the <emph
+          render="italic">Highland Recorder</emph> (Highland County, Virginia.) spanning from
+        November 1953 to November 1973. A detailed list of those articles is included in the
+        Contents List below, as a link to a pdf document, and is also on file in Special
+        Collections. The collection has been left largely in the order in which Mr. Stewart used it,
+        with minor exceptions. It is arranged in six series: Topical Research Files, Folk Medicine
+        and Remedies, Pow-Wow Documents, Lectures and Administrative Files, Henkel Materials, and
+        Folk Culture Posters. Numbers in brackets in the contents list below indicate item count
+        within a folder. </p>
+      <p>Topical Research Files, 1961-1995, are further divided into subseries: Calendar Events and
+        Other. The series consists of drafts of articles written by Elmer L. Smith and John Stewart,
+        reprinted articles from the <emph render="italic">Pennsylvaanisch Dietsch Eck</emph>
+        (1953-1963), and "Valley Folklore" columns from the <emph render="italic">Highland
+          Recorder</emph> (1965-1973), and miscellaneous notes taken by John Stewart. Of particular
+        interest in the Calendar Events subseries are folders pertaining to traditional German
+        holidays such as Belsnickeling and Martinmas. The Belsnickel was the Christmas gift giver,
+        who disguised himself as an evil man. For good children he gave presents, but for naughty
+        ones he carried whips or sticks. Martinmas, or the Feast of Saint Martin, was celebrated on
+        November 11th and typically marked the first day of winter. Materials in the "Other"
+        category cover a wide range of topics and are arranged alphabetically. </p>
+      <p>Materials in Folk Medicine and Remedies, 1790-1984, were left in the donor's original order
+        and primarily consist of photocopies or photographs of original primary source documents
+        obtained from individuals in Rockingham, Shenandoah, Augusta and Wythe Counties in Virginia
+        and Pendleton County, West Virginia. Also represented are articles by John Stewart, Kurt
+        Kehr, Elmer Smith, and Billie Jo Monger. Documents include medicinal remedies for ailments
+        such as arthritis, dog bites, and blisters. Information regarding provenance of various
+        items in this series, if available, resides in the administrative file for this collection
+        in the Special Collections office. </p>
+      <p>The series Pow Wow Documents, 1883-1900, contains materials pertaining to the handwritten,
+        unpublished Pendleton County Pow-Wow Book of West Virginia and other related materials. The
+        Pow-Wow Book demonstrated the art of healing people through prayer and the placing of hands
+        on the body, which was ostensibly a custom among the Pennsylvania Germans. The series
+        contains the following: photographs of the original Pow Wow book, which was written in
+        German; English translations of part of the book; an undated typed article by Elmer L. Smith
+        and John G. Stewart entitled An Occult Remedy Manuscript from Pendleton County, W.VA; a
+        reprint of Elmer Smith's c.1976 article "The Medical Therapy of Powwowing: Early History in
+        Europe to Surviving Practices in Modern America," typed notes taken from <emph
+          render="italic">Folk-Medicine: a Chapter in the History of Culture</emph> (1883), by
+        William George Black, and <emph render="italic">Der Deutsche Volksaberglaube der
+          Gegenwart</emph> (1900) by Adolf Wuttke, regarding folk healing practices. </p>
+      <p>Lectures and Administrative Files, 1966-2002, include various papers and notes on topics
+        Stewart presented at conferences, seminars, and other speaking engagements in the Valley and
+        abroad. Topics generally concern Valley folklife and folklore. Material pertaining to his
+        teaching and research obligations include course syllabi, a grant application, an oral
+        history program proposal, and bibliographies. </p>
+      <p>Henkel Materials, 1796-1963, document the general history of the Henkel Family and Henkel
+        Press of New Market, Virginia and consist of photocopies of publications and medicine labels
+        printed at the press. Materials pertaining to Paul Henkel include an index and trascriptions
+        from his daybook and diary as well as materials documenting his sermons and correspondence.
+        A list of Solomon Henkel correspondence is also included. Photographic images of broadsides
+        printed at the Henkel Press and woodcuts and impriints used in various publications are
+        present. The donor's research nots concerning materials at Special Collections at JMU are
+        also contained within this series. </p>
+      <p>Folk Culture Posters, undated, is a collection of oversized photographs taken by the donor
+        of Frakturs, tomb stone rubbings, folk medicine recipes, and Henkel Press broadsides. The
+        images are mounted on cardstock and numbered according to the donor's <extref
+          xlink:type="simple" xlink:actuate="onRequest" xlink:show="new"
+          xlink:href="http://www.lib.jmu.edu/special/manuscripts/4016_StewartFrakturs.pdf"
+          >description list.</extref></p>
     </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement
-</head>
-      <p>The collection is arranged in six series:
-</p>
-      <p>I. Topical Research Files, 1761-1995
-</p>
-      <p>
-        <blockquote>
-          <p>A. Calendar Events, 1953-1973 </p>
-        </blockquote>
-      </p>
-      <p>
-        <blockquote>
-          <p>B. Other, 1761-1995</p>
-        </blockquote>
-      </p>
-      <p>II. Folk Medicine and Remedies, 1790-1984
-</p>
-      <p>III. "Pow-Wow" Documents, 1883-1900
-</p>
-      <p>IV. Lectures and Administrative Files, 1966-2002
-</p>
-      <p>V. Henkel Materials, 1796-1963
-</p>
-      <p>VI. Folk Culture Posters, undated
-</p>
+    <arrangement id="aspace_a1ee0f6a8c5233797052ea6b3c297bdf">
+      <head>Arrangement</head>
+      <p>The collection is arranged in six series:</p>
+      <p>Series 1: Topical Research Files, 1761-1995</p>
+      <p>Series 1.1: Calendar Events, 1953-1973</p>
+      <p>Series 1.2: Other, 1761-1995</p>
+      <p>Series 2: Folk Medicine and Remedies, 1790-1984</p>
+      <p>Series 3: "Pow-Wow" Documents, 1883-1900</p>
+      <p>Series 4: Lectures and Administrative Files, 1966-2002</p>
+      <p>Series 5: Henkel Materials, 1796-1963</p>
+      <p>Series 6: Folk Culture Posters, undated</p>
     </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data
-</head>
-      <bibliography encodinganalog="581$a">
-        <head>Bibliography
-</head>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Aurand, A. Monroe. <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1147416~S0"><title xlink:type="simple" render="italic" xlink:href="">The "Pow-Wow" Book; A Treatise of the Art of "Healing by Prayer" and "Laying on of Hands", etc...</title></extref> Harrisburg, Pa.: Aurand Press, 1929. 
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""><title xlink:type="simple" render="italic" xlink:href="">Daily News-Record</title>. <extref xlink:type="simple" xlink:href="http://www.dnronline.com/search_obitdetails.php?OID=19179&amp;name=Stewart&amp;date1=2010-08-28&amp;date2=2010-09-13">Obituary of John Gideon Stewart</extref>. August 30, 2010. 
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""><extref xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/smithelmer.aspx">Elmer Lewis Smith Collection, SC# 4038</extref>, Special Collections, Carrier Library, James Madison University. 
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">"John Gideon Stewart" <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1356781~S0"><title xlink:type="simple" render="italic" xlink:href="">Shenandoah Valley Folklife Society</title></extref> 23, no. 3 (Sept. 2010):1-2. 
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Smith, Elmer Lewis and John G. Stewart. <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1215669~S0"><title xlink:type="simple" render="italic" xlink:href="">A Collection of Papers from the Virginia Folklore Collection, Valley Folklore, and Specialized Collection of Pennsylvania Dutch Folklore from the Region, 1965-1967.</title></extref></bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Smith, Elmer Lewis, John G. Stewart, and M. Ellswo. <extref xlink:type="simple" xlink:href="http://leo.jmu.edu:80/record=b1153472~S0"><title xlink:type="simple" render="italic" xlink:href="">The Pennsylvania Germans of the Shenandoah Valley</title></extref>. Allentown, Pa.: Pennsylvania German Folklore Society, 1962. 
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Stewart, John G. <extref xlink:type="simple" xlink:href="http://leo.jmu.edu:80/record=b1907081~S0"><title xlink:type="simple" render="italic" xlink:href="">Memoirs of Hans Stein/John Stewart</title>.</extref></bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Stewart, John G. <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1909816~S0">Oral History Interview, John G. Stewart; interviewed by Carol Maureen DeHart, 2003. </extref>SdArch no. 25-1.</bibref>
-      </bibliography>
-      <originalsloc encodinganalog="535$a">
-        <head>Location of Originals
-</head>
-        <p>Many original documents may still be in the hands of the owners cited by Mr. Stewart in his notes, or their heirs.
-</p>
-      </originalsloc>
-      <relatedmaterial encodinganalog="544$a">
-        <head>Related Material
-</head>
-        <p>See also:
-</p>
-        <p>
-          <blockquote>
-            <p>
-              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/smithelmer.aspx">Elmer Lewis Smith Collection, SC# 4038</extref>
-            </p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>
-              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1909816~S0">Oral History Interview with John G. Stewart, SdArch no. 25-1</extref>
-            </p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>
-              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/henkel.aspx">Henkel Family Papers Collection, SC# 2065</extref>
-            </p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>
-              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.hrl.lib.state.va.us/Handley/Archives/Henkel,%20Paul%20Family%20Papers%20896.htm">Paul Henkel Family Papers, 1781-1990</extref>
-            </p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>
-              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.hrl.lib.state.va.us/TLCScripts/interpac.dll?LabelDisplay&amp;LastResult=Search&amp;Config=ysm&amp;FormId=-5497&amp;Branch=,0,&amp;LimitsId=0&amp;StartIndex=10&amp;SearchField=7&amp;SearchType=1&amp;SearchData=henkel&amp;NotAddToHistory=1&amp;ItemsPerPage=10&amp;SortField=0&amp;PeriodLimit=-1&amp;SearchAvailableOnly=0&amp;DataNumber=3106&amp;RecordNumber=3106&amp;SearchAvailableOnly=0&amp;FormId=-5497&amp;ItemField=1&amp;Config=ysm&amp;Branch=,0,">Socrates Henkel Papers, 1848-1894</extref>
-            </p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>
-              <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/published/lva/vi01287.xml.frame">Henkel Family Records, 1838-1903</extref>
-            </p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>Henkel Family Papers Collection at Small Special Collections Library, University of Virginia</p>
-          </blockquote>
-        </p>
-      </relatedmaterial>
-      <separatedmaterial encodinganalog="544$a">
-        <head>Separated Material
-</head>
-        <p>Original newspaper clippings were photocopied onto archival paper and acidic originals discarded.
-</p>
-        <p>Due to copyright restrictions, photocpoied materials from the following collections were removed:
-</p>
-        <p>
-          <blockquote>
-            <p>Henry Z. Jones, <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1301693~S0">German Origins of Jost Hite:  Virginia Pioneer, 1685-1761</extref> (Edinburg, Va.:  Shenandoah History, 1979).</p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>John Brown, <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1300491~S0">Circular-schreiben an die deutschen Einwohner von Rockingham und Augusta, und den benachbarten Caunties. Erster band. Von Johannes Braun. Prediger des Evangelii in den Caunties Rockingham und Augusta, Virginia</extref> (Harrisonburg, Va.:  Gedruckt bey Laurentz Wartmann, Rockingham County, Virginia, 1818).</p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>Adolf Spamer, <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://virgo.lib.virginia.edu/uhtbin/cgisirsi/0/UVA-LIB/0/60/1180/X">Romanusbuchlein: historisch-philogischer Kommentar zu einem deutschen Zauberbuch. Aus seinem Nachlass bearb. von Johanna Nickel</extref> (Berlin:  Akademie-Verag, 1958).</p>
-          </blockquote>
-        </p>
-        <p>
-          <blockquote>
-            <p>"Schreiben eines deutschen Juden, an den Prasidenten des Kongresses der vereinigten Staaten von Amerika," <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Deutsches Museum</title> 1.6 (1783):  558-566.</p>
-          </blockquote>
-        </p>
-        <p>The map <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Deutsche Einwanderung 1750-1850 entlang shenandoah und Potomac sowie heutige Dialektinseln des Virginiadeutschen</title> has been removed from folder German Immigration and placed in the map drawer.  
-</p>
-      </separatedmaterial>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List
-</head>
-      <c01 level="series">
+    <originalsloc id="aspace_ca6e1b7d1855ce03d7848075383d1d08">
+      <head>Location of Originals</head>
+      <p>Many original documents may still be in the hands of the owners cited by Mr. Stewart in his
+        notes, or their heirs.</p>
+    </originalsloc>
+    <relatedmaterial id="aspace_0735d9006859be246916965fac1517c8">
+      <head>Related Material</head>
+      <p>Elmer L. Smith Papers, undated, SC 0166, Special Collections, Carrier Library, James
+        Madison University, Harrisonburg, Va.</p>
+    </relatedmaterial>
+    <separatedmaterial id="aspace_6a2276b846fc4772831aeb9bb3290120">
+      <head>Separated Material</head>
+      <p>Due to copyright restrictions, photocpoied materials from the following collections were
+        removed: Henry Z. Jones, <emph render="italic">German Origins of Jost Hite: Virginia
+          Pioneer, 1685-1761</emph> (Edinburg, Va.: Shenandoah History, 1979); John Brown, <emph
+          render="italic">Circular-schreiben an die deutschen Einwohner von Rockingham und Augusta,
+          und den benachbarten Caunties. Erster band. Von Johannes Braun. Prediger des Evangelii in
+          den Caunties Rockingham und Augusta, Virginia</emph> (Harrisonburg, Va.: Gedruckt bey
+        Laurentz Wartmann, Rockingham County, Virginia, 1818); Adolf Spamer, <emph render="italic"
+          >Romanusbuchlein: historisch-philogischer Kommentar zu einem deutschen Zauberbuch. Aus
+          seinem Nachlass bearb. von Johanna Nickel</emph> (Berlin: Akademie-Verag, 1958);
+        "Schreiben eines deutschen Juden, an den Prasidenten des Kongresses der vereinigten Staaten
+        von Amerika," <emph render="italic">Deutsches Museum</emph> 1.6 (1783): 558-566. The map
+          <emph render="italic">Deutsche Einwanderung 1750-1850 entlang shenandoah und Potomac sowie
+          heutige Dialektinseln des Virginiadeutschen</emph> has been removed from folder German
+        Immigration and placed in the map drawer.</p>
+    </separatedmaterial>
+    <bibliography id="aspace_103b82f9d3637ee5f214761367d6c873">
+      <head>Bibliography</head>
+      <p>Aurand, A. Monroe. <emph render="italic">The "Pow-Wow" Book; A Treatise of the Art of
+          "Healing by Prayer" and "Laying on of Hands", etc...</emph> Harrisburg, Pa.: Aurand Press,
+        1929.</p>
+      <p>Obituary of John Gideon Stewart. <emph render="italic">Daily News-Record</emph> August 30,
+        2010.</p>
+      <p>"John Gideon Stewart," <emph render="italic">Shenandoah Valley Folklife Society
+          Newsletter</emph> 23, no. 3 (Sept. 2010): 1-2.</p>
+      <p>Stewart, John G. Oral History Interview, John G. Stewart; interviewed by Carol Maureen
+        DeHart, 2003. SdArch no. 25-1. Special Collections, Carrier Library, James Madison
+        University, Harrisonburg, Va.</p>
+      <p>Stewart, John G. <emph render="italic">Memoirs of Hans Stein/John Stewart</emph>, 2003.</p>
+      <p>Smith, Elmer Lewis, John G. Stewart and M. Ellsworth Kyger. <emph render="italic">The
+          Pennsylvania Germans in the Shenandoah Valley</emph>. Allentown, Pa.: Pennsylvania German
+        Folklore Society, 1962.</p>
+      <p>Smith, Elmer Lewis and John G. Stewart. <emph render="italic">A Collection of Papers from
+          the Virginia Folklore Collection, Valley Folklore, and Specialized Collection of
+          Pennsylvania Dutch Folklore from the Region, 1965-1967</emph>.</p>
+    </bibliography>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="lcsh">Cooking, American -- Shenandoah River Valley (Va. and W.
+          Va.)</subject>
+        <subject source="lcsh">Holidays -- Shenandoah River Valley (Va. and W. Va.)</subject>
+        <subject source="lcsh">Vernacular architecture -- Shenandoah River Valley (Va. and W.
+          Va.)</subject>
+        <subject source="lcsh">Pennsylvania Dutch -- Sources</subject>
+        <subject source="lcsh">Folklore -- Virginia -- Sources</subject>
+        <subject source="lcsh">Folklore -- West Virginia -- Sources</subject>
+        <genreform source="lcsh">Folklore -- Pennsylvania -- Sources</genreform>
+        <subject source="lcsh">Folk art -- Shenandoah River Valley (Va. and W. Va.)</subject>
+        <subject source="lcsh">Traditional medicine -- Shenandoah River Valley (Va. and W.
+          Va.)</subject>
+        <subject source="lcsh">Spiritual healing -- Shenandoah River Valley (Va. and W.
+          Va.)</subject>
+        <subject source="lcsh"> Manners and customs -- Shenandoah River Valley (Va. and W.
+          Va.)</subject>
+        <subject source="lcsh">Superstition -- Shenandoah River Valley (Va. and W. Va.)</subject>
+        <subject source="lcsh">Folk music -- Shenandoah River Valley (Va. and W. Va.)</subject>
+        <subject source="lcsh">Marriage customs and rites -- Shenandoah River Valley (Va. and W.
+          Va.)</subject>
+        <subject source="lcsh">Funeral rites and ceremonies -- Shenandoah River Valley (Va. and W.
+          Va.)</subject>
+        <subject source="lcsh">Mennonites -- Shenandoah River Valley (Va. and W. Va.)</subject>
+        <subject source="lcsh">Rockingham County (Va.) -- History</subject>
+        <subject source="lcsh">Augusta County (Va.) -- History</subject>
+        <subject source="lcsh">Wythe County (Va.) -- History</subject>
+        <subject source="lcsh">Shenandoah County (Va.) -- History</subject>
+        <subject source="lcsh">Highland County (Va.) -- History</subject>
+        <subject source="lcsh">Pendleton County (W. Va.) -- History</subject>
+        <subject source="lcsh">Shenandoah River Valley (Va. and W. Va.) -- History</subject>
+        <subject source="lcsh">Virginia -- History</subject>
+        <subject source="lcsh">West Virginia -- History</subject>
+      </controlaccess>
+    </controlaccess>
+    <dsc>
+      <c01 id="aspace_2f1f0cefc188758d1d377669a2a03a34" level="series">
         <did>
-          <unittitle>
-            <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/4016_NewsClips.pdf">Detailed List of Newspaper Clippings</extref>
-          </unittitle>
+          <unittitle>Series 1: Topical Research Files, <unitdate type="inclusive"
+              >1761-1995</unitdate></unittitle>
         </did>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series I">Topical Research Files: Calendar Events, 
-<unitdate type="inclusive" era="ce" calendar="gregorian">1953-1973
-</unitdate></unittitle>
-          <container>Box:Folder
-</container>
-        </did>
-        <c02 level="file">
+        <c02 id="aspace_e870ef6f541fdcee9b36627dace11d25" level="subseries">
           <did>
-            <unittitle>General Holidays, Customs, Traditions [29 items]
-	</unittitle>
-            <container>1:1
-	</container>
+            <unittitle>Subseries 1.1: Calendar Events, <unitdate type="inclusive"
+                >1953-1973</unitdate></unittitle>
           </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Christmas, Belsnickeling, Shanghaiing [36 items]
-	</unittitle>
-            <container>1:2
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Easter [13 items]
-	</unittitle>
-            <container>1:33
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Ground Hog Day, Candlemas [12 items]
-	</unittitle>
-            <container>1:4
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Halloween [6 items]
-	</unittitle>
-            <container>1:5
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Lent, Fastnacht, Shrove Tuesday [19 items]
-	</unittitle>
-            <container>1:6
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>May 1st [5 items]
-	</unittitle>
-            <container>1:7
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Martinmas (Michaelmass) [1 item]
-	</unittitle>
-            <container>1:8
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>New Year, Shooting in the New Year [41 items]
-	</unittitle>
-            <container>1:9
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>St. Patrick's Day [1 item]
-	</unittitle>
-            <container>1:10
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Seasons [10 items]
-	</unittitle>
-            <container>1:11
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Thanksgiving [3 items]
-	</unittitle>
-            <container>1:12
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Valentine's Day [18 items]
-	</unittitle>
-            <container>1:13
-	</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series I">Topical Research Files: Other, 
-<unitdate type="inclusive" era="ce" calendar="gregorian">1761-1995
-</unitdate></unittitle>
-          <container>Box:Folder
-</container>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Almanac [3 items]
-	</unittitle>
-            <container>1:14
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Amish and Mennonites [26 items]
-	</unittitle>
-            <container>1:15
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Apple Butter, Sugaring [7 items]
-	</unittitle>
-            <container>1:16
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Ballads, Poetry [17 items]
-	</unittitle>
-            <container>1:17
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bottles, Springs [6 items]
-	</unittitle>
-            <container>1:18
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Churches, Preachers, Religion [91 items]
-	</unittitle>
-            <container>1:19
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Civil War [12 items]
-	</unittitle>
-            <container>1:20
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Domestic and Arts and Crafts [37 items]
-	</unittitle>
-            <container>1:21
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Folk Architecture, Barns, Folk Art [50 items]
-	</unittitle>
-            <container>1:22	
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Folk Beliefs [45 items]
-	</unittitle>
-            <container>1:23
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Folk Expressions (Language) [9 items]
-	</unittitle>
-            <container>1:24
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Folk Humor [18 items]
-	</unittitle>
-            <container>1:25
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Folk and Plant Medicine [92 items]
-	</unittitle>
-            <container>1:26
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Folklore [44 items]
-	</unittitle>
-            <container>1:27
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Funerals, Tombstones [39 items, inc. photographs]
-	</unittitle>
-            <container>1:28
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Furniture [1 item]
-	</unittitle>
-            <container>1:29
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Genealogy, Surnames, and Place Names [59 items]
-	</unittitle>
-            <container>1:30
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>German Immigration: 
-	</unittitle>
-          </did>
-          <c03 level="subseries">
+          <c03 id="aspace_75462ddd58a07e7787fc77f9c875b81e" level="file">
             <did>
-              <unittitle>Research Files [34 items]
-			<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>1:31
-			</container>
+              <unittitle>General Holidays, Customs, Traditions</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">29
+                  items</extent></physdesc>
+              <container id="aspace_d5e38454003f48bc95a81b0b31241fbd" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_4c9a18b826e909a2b8845687c4062baf"
+                parent="aspace_d5e38454003f48bc95a81b0b31241fbd" type="folder">1</container>
             </did>
           </c03>
-          <c03 level="subseries">
+          <c03 id="aspace_8ec1c756e427e4eec82e117487637ddd" level="file">
             <did>
-              <unittitle>Map <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Deutsche Einwanderung 1750-1850 entlang Shenandoah und Potomac sowie heutige Dialektinself des Virginiadeutschen</title><unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <physloc/>
-              <container>map drawer
-				</container>
-              <physdesc/>
-            </did>
-            <scopecontent>
-              <p/>
-            </scopecontent>
-            <arrangement>
-              <p/>
-            </arrangement>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Guns, Gunsmiths [9 items]
-	</unittitle>
-            <container>1:32
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Henkel Press, New Market [37 items]
-	</unittitle>
-            <container>1:33
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>History, General [42 items]
-	</unittitle>
-            <container>1:34
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Hunting, Fishing [10 items]
-	</unittitle>
-            <container>2:1
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Interviews [7 items]
-	</unittitle>
-            <container>2:2
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Language, Dialects [33 items]
-	</unittitle>
-            <container>2:3
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Legends [4 items]
-	</unittitle>
-            <container>2:4
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Proverbs [13 items]
-	</unittitle>
-            <container>2:5
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Mail Musings, Letters from Readers [7 items]
-	</unittitle>
-            <container>2:6
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Marriage [12 items]
-	</unittitle>
-            <container>2:7
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Moonshine, Whiskey [2 items]
-	</unittitle>
-            <container>2:8
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Pottery [12 items]
-	</unittitle>
-            <container>2:9
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Probst Luteran-Reformed Church, Pendleton County, WV [10 items]
-	</unittitle>
-            <container>2:10
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Puzzles, Religious [12 items]
-	</unittitle>
-            <container>2:11
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Public Events [8 items]
-	</unittitle>
-            <container>2:12
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Reading [42 items]
-	</unittitle>
-            <container>2:13
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Recipes [10 items]
-	</unittitle>
-            <container>2:14
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Rhymes, Riddles, Tongue Twisters [18 items]
-	</unittitle>
-            <container>2:15
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>School Days, Memory Album [15 items]
-	</unittitle>
-            <container>2:16
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Solomon's Church, Forestville, Shenandoah County [27 items]
-	</unittitle>
-            <container>2:17
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>St. Michael's Lutheran-Reformed Church, Pendleton County, WV [10 items]
-	</unittitle>
-            <container>2:18
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>St. Paul's Lutheran Church, Grove Hill, Page County [83 items]
-	</unittitle>
-            <container>2:19
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Superstitions, Letters from Heaven (Himmelsbrief) [33 items]
-	</unittitle>
-            <container>2:20
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Superstitions, Witchcraft [57 items]
-	</unittitle>
-            <container>2:21
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Translations, Various Documents [25 items]
-	</unittitle>
-            <container>2:22
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Travelers Accounts (18th-19th Century) [77 items]
-	</unittitle>
-            <container>2:23
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Trinity Lutheran Church, Keezletown [18 items]
-	</unittitle>
-            <container>2:24
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>T.V. Set, Shenandoah Valley [15 items]
-	</unittitle>
-            <container>2:25
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Unclassified [10 items]
-	</unittitle>
-            <container>2:26
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Water Witching [9 items]
-	</unittitle>
-            <container>2:27
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Weather [38 items]
-	</unittitle>
-            <container>2:28
-	</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series II">Folk Medicine and Remedies, 
-<unitdate type="inclusive" era="ce" calendar="gregorian">1790-1984
-</unitdate></unittitle>
-          <container>Box:Folder
-</container>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Folk Medicine Recipes, 1850-1939 [7 items]
-	</unittitle>
-            <container>2:29
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Andrew Hess' Notebook containing Recipes for Common Ailments and Diseases, 1849-1853 [24 items]
-	</unittitle>
-            <container>2:30
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Recipes for Arthritis, Pendleton County, W. VA [4 items]
-	</unittitle>
-            <container>2:31
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Letters from Heaven (Himmelsbrief), May 1908 and n.d. [18 items]
-	</unittitle>
-            <container>2:32
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Dr. Wilhelm Stoy's Dog Bite Remedy [4 items]
-	</unittitle>
-            <container>2:33
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Sator Formula to Protect Against Disease [5 items]
-	</unittitle>
-            <container>2:34
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Recipes for Ailments (Horses, etc.) [5 items]
-	</unittitle>
-            <container>2:35
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>How to Prepare Blue Color [2 items]
-	</unittitle>
-            <container>2:36
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Medical Prescriptions, New Market/Mt. Solon [8 items]
-	</unittitle>
-            <container>2:37
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Medical and Personal Advice, sent from Henrich Muhlenberg to Mr. Henkel, 1800-1817 [19 items]
-	</unittitle>
-            <container>2:38
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Articles re Herbal Medicine by John Stewart, Kurt Kehr, Elmer Smith, Billie Jo Monger, 1970s-1980s [96 pages]
-	</unittitle>
-            <container>2:39
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Four Recipes for Common Ailments, from Shavers School House, Linville Creek, Virginia [2 items]
-	</unittitle>
-            <container>2:40
-	</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series III">"Pow-Wow" Documents, 
-<unitdate type="inclusive" era="ce" calendar="gregorian">1883-1900
-</unitdate></unittitle>
-          <container>Box:Folder
-</container>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Pendleton County Pow Wow Book [25 items]
-	</unittitle>
-            <container>3:1
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>English Translations, Part 1 [37 items]
-	</unittitle>
-            <container>3:2
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>English Translations, Part 2 [13 items]
-	</unittitle>
-            <container>3:3
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>E.L. Smith and J.G. Stewart, "Occult Remedy" [11 items]
-	</unittitle>
-            <container>3:4
-	</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous Pow Wow Materials [87 items]
-	</unittitle>
-            <container>3:5
-	</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series IV">Lectures and Administrative Files, 1966-2002, 
-<unitdate type="inclusive" era="ce" calendar="gregorian">1966-2002
-</unitdate></unittitle>
-          <container>Box:Folder
-</container>
-        </did>
-        <c02 level="subseries">
-          <did>
-            <unittitle>Lectures and Presentations:
-	<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>The Dumb Dutch of the Shenandoah Valley, 1966 [22 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:6
-		</container>
+              <unittitle>Christmas, Belsnickeling, Shanghaiing</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">36
+                  items</extent></physdesc>
+              <container id="aspace_77fe2820817fae64f54f729a7d084305" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_054359f9910a68722e5d0a28d23b9047"
+                parent="aspace_77fe2820817fae64f54f729a7d084305" type="folder">2</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_0222e746d4975799caa2dd964869c1a6" level="file">
             <did>
-              <unittitle>How and When:  Literature in the Foreign Language Curriculum, 1969 [16 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:7
-		</container>
+              <unittitle>Easter</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">13
+                  items</extent></physdesc>
+              <container id="aspace_eed7dd74193bf6117f2d3e66d83bc804" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_1cf575caf950123d01d0c94c027c2216"
+                parent="aspace_eed7dd74193bf6117f2d3e66d83bc804" type="folder">3</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_8f3e4a70c6d2ef86ca484192807805e3" level="file">
             <did>
-              <unittitle>The German  Element in Shenandoah Valley Folklore, 1975 [22 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:8
-		</container>
+              <unittitle>Ground Hog Day, Candlemas</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">12
+                  items</extent></physdesc>
+              <container id="aspace_53076fcf48644d73a9eb3f731d74216c" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_5b203deab04815b84b0879552d473c79"
+                parent="aspace_53076fcf48644d73a9eb3f731d74216c" type="folder">4</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_222d4d41c7f06fa08e7548755ebd62ba" level="file">
             <did>
-              <unittitle>The Valey Germans in the Revolutionary War, 1976 [16 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:9
-		</container>
+              <unittitle>Halloween</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">6
+                  items</extent></physdesc>
+              <container id="aspace_ca34b03b898fd6937d2ea8feb2b4123c" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_cd0ece30c84729cca6484ad28e57cf5a"
+                parent="aspace_ca34b03b898fd6937d2ea8feb2b4123c" type="folder">5</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_c524d271c42962d3574de6bdfd9718a8" level="file">
             <did>
-              <unittitle>Folklore and Nationalism, Politics, Ideology, 1980 [17 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:10
-		</container>
+              <unittitle>Lent, Fastnacht, Shrove Tuesday</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">19
+                  items</extent></physdesc>
+              <container id="aspace_daf96e2bc4d67012825a51a8011c4255" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_e6157bf7b12278dc68e228c6657ff54c"
+                parent="aspace_daf96e2bc4d67012825a51a8011c4255" type="folder">6</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_1ba6e74816ba4a23cf566c97a0d6f3ec" level="file">
             <did>
-              <unittitle>Shenandoah Valley Folklife, 1980 [10 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:11
-		</container>
+              <unittitle>May 1st</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">5
+                  items</extent></physdesc>
+              <container id="aspace_05eda3c141d93326222ae39ba788fd31" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_df481d1bffe9b0f2852e76126afab7ba"
+                parent="aspace_05eda3c141d93326222ae39ba788fd31" type="folder">7</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_d4341d580530051426745ea3eae57351" level="file">
             <did>
-              <unittitle>Naturalization Ceremony Speech, 1982 [3 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:12
-		</container>
+              <unittitle>Martinmas (Michaelmass)</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">1
+                  item</extent></physdesc>
+              <container id="aspace_a0b800aab6d7cfb3638e9867fbcc926c" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_d4d80d92d3ae155d8dc21d55b604a166"
+                parent="aspace_a0b800aab6d7cfb3638e9867fbcc926c" type="folder">8</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_9ddff02053a4752129bc31954a218002" level="file">
             <did>
-              <unittitle>Folklore and Linguistics, 1982 [16 items]
-		<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-              <container>3:13
-		</container>
+              <unittitle>New Year, Shooting in the New Year</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">41
+                  items</extent></physdesc>
+              <container id="aspace_bcb306ca655f4313d08fc6da2a1c4f5e" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_b3aa3c4701f22390aadfed658c4f8602"
+                parent="aspace_bcb306ca655f4313d08fc6da2a1c4f5e" type="folder">9</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_4d9734503428bbbad4ee0d1c52479069" level="file">
             <did>
-              <unittitle>German Settlers in teh Shenandoah Valley in the American Revolution, 1985 [20 items]
-		</unittitle>
-              <container>3:14
-		</container>
+              <unittitle>St. Patrick's Day</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">1
+                  item</extent></physdesc>
+              <container id="aspace_3080aed81219e7e46a51ac491a4d04ff" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_d389720c98b3c5daa9fa604aff87c8b0"
+                parent="aspace_3080aed81219e7e46a51ac491a4d04ff" type="folder">10</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_c9a1b5847f192133492305492405b7af" level="file">
             <did>
-              <unittitle>How and When?  Literature in the Foreign Language Curriculum, 1988 [20 items]
-		</unittitle>
-              <container>3:15
-		</container>
+              <unittitle>Seasons</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">10
+                  items</extent></physdesc>
+              <container id="aspace_b66649dd37325be41eba266a5b81f9c8" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_e2ddbaaf058241f011280017177e4d44"
+                parent="aspace_b66649dd37325be41eba266a5b81f9c8" type="folder">11</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_6df033d6301ca546be244f5226c2fd16" level="file">
             <did>
-              <unittitle>German Folk Culture in the Shenandoah Valley, 1988 [29 items]
-		</unittitle>
-              <container>3:16
-		</container>
+              <unittitle>Thanksgiving</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">3
+                  items</extent></physdesc>
+              <container id="aspace_c7a48058472f5b0fcd1d87e1db2eaad8" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_aca35535b884ca61a1f5f6d08f13f698"
+                parent="aspace_c7a48058472f5b0fcd1d87e1db2eaad8" type="folder">12</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_023aec315c53f70cb4263335c983e9b1" level="file">
             <did>
-              <unittitle>The Zirkle Family:  Historical Perspective, 1989 [31 items]
-		</unittitle>
-              <container>3:17
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>The Germans of New Market, Va., 1990 [26 items]
-		</unittitle>
-              <container>3:18
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Shenandoah Valley Folk Culture, 1991 [24 items]
-		</unittitle>
-              <container>3:19
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Early Books of the Shenandoah Valley, 1992 [20 items]
-		</unittitle>
-              <container>3:20
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Fraktur Writing in the Shenandoah Valley, 1992 [31 items]
-		</unittitle>
-              <container>3:21
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Popular Beliefs and Superstitutions in the Valley of Virginia, 1993 [30 items]
-		</unittitle>
-              <container>3:22
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Folk Culture and Medicine, 1993 [8 items]
-		</unittitle>
-              <container>3:23
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Shenandoah Valley Folklore Fieldwork, 1993 [21 items]
-		</unittitle>
-              <container>3:24
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Our Trip to Israel, 1995 [24 items]
-		</unittitle>
-              <container>3:25
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Shenandoah Valley Fraktur, 1995 [13 items]
-		</unittitle>
-              <container>3:26
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>The New Market Henkels, 1999 [3 items]
-		</unittitle>
-              <container>3:27
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Valley Germans in the Revolutionary War, 2000 [35 items]
-		</unittitle>
-              <container>3:28
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Valley Germans, Customs, Traditions, 2000 [2 items]
-		</unittitle>
-              <container>3:29
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Price Rotary Speech, 2000 [4 items]
-		</unittitle>
-              <container>3:30
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Shenandoah Valley Fraktur, 2002 [29 items]
-		</unittitle>
-              <container>3:31
-		</container>
+              <unittitle>Valentine's Day</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">18
+                  items</extent></physdesc>
+              <container id="aspace_882ddf854c54728d610dee38a7789ad3" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_8080c89bcb2e94481991ce1ed7236572"
+                parent="aspace_882ddf854c54728d610dee38a7789ad3" type="folder">13</container>
             </did>
           </c03>
         </c02>
-        <c02 level="subseries">
+        <c02 id="aspace_28802b22429eb10080d6fad2ac606dd2" level="subseries">
           <did>
-            <unittitle>Teaching and Administrative Files:
-	</unittitle>
+            <unittitle>Subseries 1.2: Other, <unitdate type="inclusive"
+              >1761-1995</unitdate></unittitle>
           </did>
-          <c03 level="file">
+          <c03 id="aspace_97e1f6487c4d9e1cd585441f5c024c17" level="file">
             <did>
-              <unittitle>Bibliographies [34 items]
-		</unittitle>
-              <container>4:1
-		</container>
+              <unittitle>Almanac</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">3
+                  items</extent></physdesc>
+              <container id="aspace_e716fdd9eb312668b2ba1ffd9f5808ae" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_8185cf9903bd17cbbc8d28e87fb31e6e"
+                parent="aspace_e716fdd9eb312668b2ba1ffd9f5808ae" type="folder">14</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_c3df483e6116a2a96a78a2f786b5f95b" level="file">
             <did>
-              <unittitle>Syllabi [34 items]
-		</unittitle>
-              <container>4:2
-		</container>
+              <unittitle>Amish and Mennonites</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">26
+                  items</extent></physdesc>
+              <container id="aspace_a20b0893b6ab112beecb22ff5b84c612" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_a56d5392089691a8f2eb7b14c0b61188"
+                parent="aspace_a20b0893b6ab112beecb22ff5b84c612" type="folder">15</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_cf34f8b11f146645bdf20c091b3c9eb0" level="file">
             <did>
-              <unittitle>Proposal for a Madison College Oral History Program [16 items]
-		</unittitle>
-              <container>4:3
-		</container>
+              <unittitle>Apple Butter, Sugaring</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">7
+                  items</extent></physdesc>
+              <container id="aspace_d003daa57b479239f2985fb8205ec10b" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_9e3ac6a81c41828c915474536a54f97e"
+                parent="aspace_d003daa57b479239f2985fb8205ec10b" type="folder">16</container>
             </did>
           </c03>
-          <c03 level="file">
+          <c03 id="aspace_866b7c06f3d81f47596fdccadeb926ea" level="file">
             <did>
-              <unittitle>Grant Application, A New Age in Shenandoah Valley History:  A Cultural Resource Symposium [12 items]
-		</unittitle>
-              <container>4:4
-		</container>
+              <unittitle>Ballads, Poetry</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">17
+                  items</extent></physdesc>
+              <container id="aspace_15b753d0c1bbbf5d2fe71e20556cfa56" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_67f888a4e1940c54ec7ac8b6595f3314"
+                parent="aspace_15b753d0c1bbbf5d2fe71e20556cfa56" type="folder">17</container>
+            </did>
+          </c03>
+          <c03 id="aspace_486a4230b76160dbea89805d4ad473b0" level="file">
+            <did>
+              <unittitle>Bottles, Springs</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">6
+                  items</extent></physdesc>
+              <container id="aspace_70bbb2068f0a752a20c166a355f1149e" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_ac2fcaed8dc8841b60da03cb5af8aec9"
+                parent="aspace_70bbb2068f0a752a20c166a355f1149e" type="folder">18</container>
+            </did>
+          </c03>
+          <c03 id="aspace_034296b571e8f4b1c4ec81f27b5d3b0f" level="file">
+            <did>
+              <unittitle>Churches, Preachers, Religion</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">91
+                  items</extent></physdesc>
+              <container id="aspace_f3f76f04398b796e8eb8c00d3c5851d2" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_4fd81a4c7a20ce977e46eb53e2f12f40"
+                parent="aspace_f3f76f04398b796e8eb8c00d3c5851d2" type="folder">19</container>
+            </did>
+          </c03>
+          <c03 id="aspace_9b887da784fc538d066a3a75965e288a" level="file">
+            <did>
+              <unittitle>Civil War</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">12
+                  items</extent></physdesc>
+              <container id="aspace_7876706cf3879e5aba05ad73b74dd531" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_2fcde7b3cd0175b5f64a64fcb8548407"
+                parent="aspace_7876706cf3879e5aba05ad73b74dd531" type="folder">20</container>
+            </did>
+          </c03>
+          <c03 id="aspace_6c1ede91baa8eaecec87cd8fb5173bf9" level="file">
+            <did>
+              <unittitle>Domestic and Arts and Crafts</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">37
+                  items</extent></physdesc>
+              <container id="aspace_629006e0de0b5730bdf125b9715568a4" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_df988b825c3fb167ffa8fd59085c92bd"
+                parent="aspace_629006e0de0b5730bdf125b9715568a4" type="folder">21</container>
+            </did>
+          </c03>
+          <c03 id="aspace_8c9c5c167c550ccd29c326b6668f789e" level="file">
+            <did>
+              <unittitle>Folk Architecture, Barns, Folk Art</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">50
+                  items</extent></physdesc>
+              <container id="aspace_618af8fc12931014f5416802428b18c6" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_b48471b1b054e7b20c9e7c2f2da995b1"
+                parent="aspace_618af8fc12931014f5416802428b18c6" type="folder">22</container>
+            </did>
+          </c03>
+          <c03 id="aspace_2cb1821ed00882075ece7e5f4b93ca1b" level="file">
+            <did>
+              <unittitle>Folk Beliefs</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">45
+                  items</extent></physdesc>
+              <container id="aspace_8578a1941e00e31a36a6a94ee8c1a516" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_443406095cdc175976d51029330e66e3"
+                parent="aspace_8578a1941e00e31a36a6a94ee8c1a516" type="folder">23</container>
+            </did>
+          </c03>
+          <c03 id="aspace_6188fe82cd81a9990994ece523f5e37b" level="file">
+            <did>
+              <unittitle>Folk Expressions (Language)</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">9
+                  items</extent></physdesc>
+              <container id="aspace_b7fe988f8a43ff310200d13943d19ee1" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_4454f57ac9be737ac0d394721a9caffa"
+                parent="aspace_b7fe988f8a43ff310200d13943d19ee1" type="folder">24</container>
+            </did>
+          </c03>
+          <c03 id="aspace_687e219c9b9b23aa57e29d055ac57ad1" level="file">
+            <did>
+              <unittitle>Folk Humor</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">18
+                  items</extent></physdesc>
+              <container id="aspace_3530c2dc8d95fc1417294ee276681746" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_a3ba59af310096d676368a7612a21610"
+                parent="aspace_3530c2dc8d95fc1417294ee276681746" type="folder">25</container>
+            </did>
+          </c03>
+          <c03 id="aspace_a94613f8b07104b1fd90182617039b40" level="file">
+            <did>
+              <unittitle>Folk and Plant Medicine</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">92
+                  items</extent></physdesc>
+              <container id="aspace_fa4ea8c5fd11bc6e0e74ef7a004d2753" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_ff92bad8920edcaa375ce8c7c1d9562f"
+                parent="aspace_fa4ea8c5fd11bc6e0e74ef7a004d2753" type="folder">26</container>
+            </did>
+          </c03>
+          <c03 id="aspace_437d9e8f2d4ed8a2967077dc709cfa6b" level="file">
+            <did>
+              <unittitle>Folklore</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">44
+                  items</extent></physdesc>
+              <container id="aspace_ef239a10a9f271bdd40ac28b6890554b" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_bcec20ac8a309eefb33d860a108c69f1"
+                parent="aspace_ef239a10a9f271bdd40ac28b6890554b" type="folder">27</container>
+            </did>
+          </c03>
+          <c03 id="aspace_e2a2e9e63d32416a8c19a33e8317b552" level="file">
+            <did>
+              <unittitle>Funerals, Tombstones</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">39 items,
+                  inc. photographs</extent></physdesc>
+              <container id="aspace_e6a8690443f529ea11d8705a9240d7fc" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_7b252387897afcbde01d8549cbb66a35"
+                parent="aspace_e6a8690443f529ea11d8705a9240d7fc" type="folder">28</container>
+            </did>
+          </c03>
+          <c03 id="aspace_30204c1d8053abb844efac4e75cea8b9" level="file">
+            <did>
+              <unittitle>Furniture</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">1
+                  item</extent></physdesc>
+              <container id="aspace_2f69c961a87cd20cac377fd318f98544" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_517bb11392bc52ae727708027d2fa5d0"
+                parent="aspace_2f69c961a87cd20cac377fd318f98544" type="folder">29</container>
+            </did>
+          </c03>
+          <c03 id="aspace_487ca56846e65e691e9e359cda9da83c" level="file">
+            <did>
+              <unittitle>Genealogy, Surnames, and Place Names</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">59
+                  items</extent></physdesc>
+              <container id="aspace_dc856ad796977de03f74d8540cb9c867" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_c32b066972ef3a3450aa4710f8349562"
+                parent="aspace_dc856ad796977de03f74d8540cb9c867" type="folder">30</container>
+            </did>
+          </c03>
+          <c03 id="aspace_09f4e5c409a44ec90e169ba36927c48e" level="file">
+            <did>
+              <unittitle>German Immigration: Research Files</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">34
+                  items</extent></physdesc>
+              <container id="aspace_d2d971e0425dd581612f79f2268b40ea" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_c1e6becce92561fb3ff5fc3b2d974e20"
+                parent="aspace_d2d971e0425dd581612f79f2268b40ea" type="folder">31</container>
+            </did>
+          </c03>
+          <c03 id="aspace_39481e9d3ba62cc057033872a4aea5d1" level="file">
+            <did>
+              <unittitle>German Immigration Map: <emph render="italic">Deutsche Einwanderung
+                  1750-1850 entlang Shenandoah und Potomac sowie heutige Dialektinseln des
+                  Virginiadeutschen</emph></unittitle>
+              <container label="Map Case" type="MapCase"
+                id="aspace_a9fc0614a08d7df5d53276eca8c3f67a">1</container>
+              <container type="Drawer" id="aspace_b841fa96bd2b09c7001b389dc8ce0ee8"
+                parent="aspace_a9fc0614a08d7df5d53276eca8c3f67a">3</container>
+            </did>
+          </c03>
+          <c03 id="aspace_3d71f0e213df9a473cfd8f265d8a7934" level="file">
+            <did>
+              <unittitle>Guns, Gunsmiths</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">9
+                  items</extent></physdesc>
+              <container id="aspace_4d6114c6c2c3db179587b3230c2be929" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_0b606e04450090d115ac8dc5202ed7d1"
+                parent="aspace_4d6114c6c2c3db179587b3230c2be929" type="folder">32</container>
+            </did>
+          </c03>
+          <c03 id="aspace_7489b021af9f2d833df9d59a70f32052" level="file">
+            <did>
+              <unittitle>Henkel Press, New Market</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">37
+                  items</extent></physdesc>
+              <container id="aspace_b60b72a0568f00fc12ccb2d1e68bfcdf" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_2f74ae110a49485428a6e4041684027c"
+                parent="aspace_b60b72a0568f00fc12ccb2d1e68bfcdf" type="folder">33</container>
+            </did>
+          </c03>
+          <c03 id="aspace_0a9129d4cf14e6fa48d62d95e97ba1ad" level="file">
+            <did>
+              <unittitle>History, General</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">42
+                  items</extent></physdesc>
+              <container id="aspace_93ec0adab7a1cd220b2144b86e978058" label="Box:Folder" type="box"
+                >1</container>
+              <container id="aspace_b7e1fce58e4ead10ede0f2a985e580a2"
+                parent="aspace_93ec0adab7a1cd220b2144b86e978058" type="folder">34</container>
+            </did>
+          </c03>
+          <c03 id="aspace_a724ae9c0127829472dd18d618382107" level="file">
+            <did>
+              <unittitle>Hunting, Fishing</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">10
+                  items</extent></physdesc>
+              <container id="aspace_f5e280f5930d6ff15561e17ff63670ea" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_33f6e56e41850101e311e2e299ab1c6d"
+                parent="aspace_f5e280f5930d6ff15561e17ff63670ea" type="folder">1</container>
+            </did>
+          </c03>
+          <c03 id="aspace_7806cdaf0de019a16fd863193d5fdf23" level="file">
+            <did>
+              <unittitle>Interviews</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">7
+                  items</extent></physdesc>
+              <container id="aspace_81c340a8a64df7d7f1d6f1f7141e3104" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_7981aa22ef4be89a2e7fddb9a356370d"
+                parent="aspace_81c340a8a64df7d7f1d6f1f7141e3104" type="folder">2</container>
+            </did>
+          </c03>
+          <c03 id="aspace_c126f01fc0f4b92efd7be80f750a4d50" level="file">
+            <did>
+              <unittitle>Language, Dialects</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">33
+                  items</extent></physdesc>
+              <container id="aspace_9438c46255b24215d51831ba995c8591" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_b43ef8e43c14c3e02475f06887fe5145"
+                parent="aspace_9438c46255b24215d51831ba995c8591" type="folder">3</container>
+            </did>
+          </c03>
+          <c03 id="aspace_cc4fd27e1d9be39955302149b9601a32" level="file">
+            <did>
+              <unittitle>Legends</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">4
+                  items</extent></physdesc>
+              <container id="aspace_faabb28229a86c0d056b3c4c949b97bb" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_0269561fdce8ba11ee261516faadfc14"
+                parent="aspace_faabb28229a86c0d056b3c4c949b97bb" type="folder">4</container>
+            </did>
+          </c03>
+          <c03 id="aspace_e6815755093ab12946b265094ddd14e0" level="file">
+            <did>
+              <unittitle>Proverbs</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">13
+                  items</extent></physdesc>
+              <container id="aspace_ad640abbab41d6efa5614e8a81a8d858" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_90972b2d9c2d68423946dc34250c2a8b"
+                parent="aspace_ad640abbab41d6efa5614e8a81a8d858" type="folder">5</container>
+            </did>
+          </c03>
+          <c03 id="aspace_9a9b4c7606c4de06955b0b887c4b0fbe" level="file">
+            <did>
+              <unittitle>Mail Musings, Letters from Readers</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">7
+                  items</extent></physdesc>
+              <container id="aspace_f5a8c988bfdb3cb12c5dc19e91127bbb" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_4f90c24fb27bb9649ba7929fa6f13f1f"
+                parent="aspace_f5a8c988bfdb3cb12c5dc19e91127bbb" type="folder">6</container>
+            </did>
+          </c03>
+          <c03 id="aspace_6fc8d43570c4882d32045049f1a8c1ae" level="file">
+            <did>
+              <unittitle>Marriage</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">12
+                  items</extent></physdesc>
+              <container id="aspace_3a746a7fba43e3ac8e4df15ba32c3824" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_77bcfb6584de4d0159091e73404bffd1"
+                parent="aspace_3a746a7fba43e3ac8e4df15ba32c3824" type="folder">7</container>
+            </did>
+          </c03>
+          <c03 id="aspace_605ca73ee9d97bf15796d4777a672fa4" level="file">
+            <did>
+              <unittitle>Moonshine, Whiskey</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">2
+                  items</extent></physdesc>
+              <container id="aspace_c610e7475a9a454af26456e9120e0d4a" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_4295b7ac1bc5b37bc8d93e0a2a1532d0"
+                parent="aspace_c610e7475a9a454af26456e9120e0d4a" type="folder">8</container>
+            </did>
+          </c03>
+          <c03 id="aspace_cc413f3496f10678320f002b0ea9ebe0" level="file">
+            <did>
+              <unittitle>Pottery</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">12
+                  items</extent></physdesc>
+              <container id="aspace_348ff31d10d80ebcfa784e5254671ac5" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_7074cc7cb046e1b573afa75c5a33c8f3"
+                parent="aspace_348ff31d10d80ebcfa784e5254671ac5" type="folder">9</container>
+            </did>
+          </c03>
+          <c03 id="aspace_dc5e3ad01cda37f32b6e83bd3d124346" level="file">
+            <did>
+              <unittitle>Probst Lutheran-Reformed Church, Pendleton County, WV</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">10
+                  items</extent></physdesc>
+              <container id="aspace_5b87de08d313a8ad217d255d37ca2611" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_068ccffc69ebb8339febc9861804fd89"
+                parent="aspace_5b87de08d313a8ad217d255d37ca2611" type="folder">10</container>
+            </did>
+          </c03>
+          <c03 id="aspace_fd58aee51936c3dc5eb5e0311706c679" level="file">
+            <did>
+              <unittitle>Puzzles, Religious</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">12
+                  items</extent></physdesc>
+              <container id="aspace_7c4ad8a56790a8ebd30369ffa6922cec" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_98c40034660dfc1e2b8cc536466d5995"
+                parent="aspace_7c4ad8a56790a8ebd30369ffa6922cec" type="folder">11</container>
+            </did>
+          </c03>
+          <c03 id="aspace_162834a220878f08250a95b24de531b4" level="file">
+            <did>
+              <unittitle>Public Events</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">8
+                  items</extent></physdesc>
+              <container id="aspace_cd3c47343ca50dc8242d7f3887911b17" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_08ccd851c26fb49bdc3e9ca84c2e6c02"
+                parent="aspace_cd3c47343ca50dc8242d7f3887911b17" type="folder">12</container>
+            </did>
+          </c03>
+          <c03 id="aspace_7e465fbabf2b3f17c4150773c1bfa5a8" level="file">
+            <did>
+              <unittitle>Reading</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">42
+                  items</extent></physdesc>
+              <container id="aspace_88226c2d07ccd974670fba27b390ae34" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_2fc0e60cf2906ba6d5543bc29a19e004"
+                parent="aspace_88226c2d07ccd974670fba27b390ae34" type="folder">13</container>
+            </did>
+          </c03>
+          <c03 id="aspace_882eb830461e76706b0796d5898bdfab" level="file">
+            <did>
+              <unittitle>Recipes</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">10
+                  items</extent></physdesc>
+              <container id="aspace_707f0cf5cb7afb32f939db302ec33986" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_d1ecf708bddb99e892496278b99b9a9a"
+                parent="aspace_707f0cf5cb7afb32f939db302ec33986" type="folder">14</container>
+            </did>
+          </c03>
+          <c03 id="aspace_977386fe2bd1a19a6cc7f406dff7d298" level="file">
+            <did>
+              <unittitle>Rhymes, Riddles, Tongue Twisters</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">18
+                  items</extent></physdesc>
+              <container id="aspace_fcb3e13ae8f6bcbe308ea12e1a645623" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_21da7656986566737f32646f3419e975"
+                parent="aspace_fcb3e13ae8f6bcbe308ea12e1a645623" type="folder">15</container>
+            </did>
+          </c03>
+          <c03 id="aspace_02cba60cfdcf3d5883770a1eb1783554" level="file">
+            <did>
+              <unittitle>School Days, Memory Album</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">15
+                  items</extent></physdesc>
+              <container id="aspace_88523b8034ce6a5857aa0eb21acbecf2" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_5b2528d4df546b8f24125df8090027fa"
+                parent="aspace_88523b8034ce6a5857aa0eb21acbecf2" type="folder">16</container>
+            </did>
+          </c03>
+          <c03 id="aspace_5d353372da0f8b9884b42df072dcede6" level="file">
+            <did>
+              <unittitle>Solomon's Church, Forestville, Shenandoah County</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">27
+                  items</extent></physdesc>
+              <container id="aspace_eac34f4d4a8760901b5bb7dabddcd557" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_9628b2be904f9596d0be8bd9eed3194e"
+                parent="aspace_eac34f4d4a8760901b5bb7dabddcd557" type="folder">17</container>
+            </did>
+          </c03>
+          <c03 id="aspace_fce55c4b6f61d02b67968252d22f9c84" level="file">
+            <did>
+              <unittitle>St. Michael's Lutheran-Reformed Church, Pendleton County, WV</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">10
+                  items</extent></physdesc>
+              <container id="aspace_6cb4d9746412f867e8ae31b02bb607fa" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_ddaeb12af318845d5732df29ef776759"
+                parent="aspace_6cb4d9746412f867e8ae31b02bb607fa" type="folder">18</container>
+            </did>
+          </c03>
+          <c03 id="aspace_e2218597c4bef1f3c3ac0bf091488ba1" level="file">
+            <did>
+              <unittitle>St. Paul's Lutheran Church, Grove Hill, Page County</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">83
+                  items</extent></physdesc>
+              <container id="aspace_9408a6cde7f80651ebd0fdd28947bee8" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_fe35d1a71234b05c1f9744452d5fce5a"
+                parent="aspace_9408a6cde7f80651ebd0fdd28947bee8" type="folder">19</container>
+            </did>
+          </c03>
+          <c03 id="aspace_a6a24f0b8d4dcd0eac8fcb1f0dc134b2" level="file">
+            <did>
+              <unittitle>Superstitions, Letters from Heaven (Himmelsbrief)</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">33
+                  items</extent></physdesc>
+              <container id="aspace_4e07e81cfd9315dc183d387d95394f75" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_3bc7b0259d43dc8dd4d63ca43c451981"
+                parent="aspace_4e07e81cfd9315dc183d387d95394f75" type="folder">20</container>
+            </did>
+          </c03>
+          <c03 id="aspace_710c7664abd3dc022c857b3ffa588bdc" level="file">
+            <did>
+              <unittitle>Superstitions, Witchcraft</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">57
+                  items</extent></physdesc>
+              <container id="aspace_8386540a9453f1d89260da7c78e89800" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_0b840c4be3d556344a4af0a1bf88274e"
+                parent="aspace_8386540a9453f1d89260da7c78e89800" type="folder">21</container>
+            </did>
+          </c03>
+          <c03 id="aspace_1d1f30fbf08f7a61df668991ed6a0e96" level="file">
+            <did>
+              <unittitle>Translations, Various Documents</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">25
+                  items</extent></physdesc>
+              <container id="aspace_9355bd9f36e4adebd60b465575b2aa56" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_8b1063f4fc8b4436e8266eeca46381ca"
+                parent="aspace_9355bd9f36e4adebd60b465575b2aa56" type="folder">22</container>
+            </did>
+          </c03>
+          <c03 id="aspace_bc3f6e71de4972a236c9b0b4cae39e09" level="file">
+            <did>
+              <unittitle>Traveler's Accounts (18th-19th Century)</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">77
+                  items</extent></physdesc>
+              <container id="aspace_d2c0dfe3a077dd337529ea834b986474" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_478fe80493c602dd16600f3006d12b24"
+                parent="aspace_d2c0dfe3a077dd337529ea834b986474" type="folder">23</container>
+            </did>
+          </c03>
+          <c03 id="aspace_5d9c60e24b6a70f1179d585900b608d1" level="file">
+            <did>
+              <unittitle>Trinity Lutheran Church, Keezletown</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">18
+                  items</extent></physdesc>
+              <container id="aspace_1ff0ad3c36af5497b678a72608dd3acf" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_b5ce6da514e97c8590a965c427af17ad"
+                parent="aspace_1ff0ad3c36af5497b678a72608dd3acf" type="folder">24</container>
+            </did>
+          </c03>
+          <c03 id="aspace_905cefa72ebe03d99570b50d69738f8e" level="file">
+            <did>
+              <unittitle>T.V. Set, Shenandoah Valley</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">15
+                  items</extent></physdesc>
+              <container id="aspace_4f17bcd91327c757aa8b3fbcca5b65c5" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_835a63e05923a28e2fce00ad066b7599"
+                parent="aspace_4f17bcd91327c757aa8b3fbcca5b65c5" type="folder">25</container>
+            </did>
+          </c03>
+          <c03 id="aspace_aa5d1f800ec0b021e27ec0a63a9f85e5" level="file">
+            <did>
+              <unittitle>Unclassified</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">10
+                  items</extent></physdesc>
+              <container id="aspace_e933d5b64f752430f9d638e9c6944cfd" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_b5f00660b56e166603f173540db0057b"
+                parent="aspace_e933d5b64f752430f9d638e9c6944cfd" type="folder">26</container>
+            </did>
+          </c03>
+          <c03 id="aspace_0945713e0a197d5c85805c2e26a62d54" level="file">
+            <did>
+              <unittitle>Water Witching</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">9
+                  items</extent></physdesc>
+              <container id="aspace_e5299894f5bf597ab7f0d33eb5faf961" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_766d4b769f5a8ae2cf128e65ec5071a6"
+                parent="aspace_e5299894f5bf597ab7f0d33eb5faf961" type="folder">27</container>
+            </did>
+          </c03>
+          <c03 id="aspace_4658a296ace657b1fde423ca8ff4afcb" level="file">
+            <did>
+              <unittitle>Weather</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">38
+                  items</extent></physdesc>
+              <container id="aspace_397804b2a9f656a3cc45fd2377114a46" label="Box:Folder" type="box"
+                >2</container>
+              <container id="aspace_8f35e3b164b14b45eb34487dddb63498"
+                parent="aspace_397804b2a9f656a3cc45fd2377114a46" type="folder">28</container>
             </did>
           </c03>
         </c02>
       </c01>
-      <c01 level="series">
+      <c01 id="aspace_b1a06f48da5be10614e9d6b0b48aee5f" level="series">
         <did>
-          <unittitle label="Series V">Henkel Materials
-<unitdate type="inclusive" era="ce" calendar="gregorian">1796-1963
-</unitdate></unittitle>
-          <container>Box:Folder
-</container>
+          <unittitle>Series 2: Folk Medicine and Remedies, <unitdate type="inclusive"
+              >1790-1984</unitdate></unittitle>
         </did>
-        <c02 level="subseries">
+        <c02 id="aspace_7d350aa8017e1fdb71aaf36580b808fa" level="file">
           <did>
-            <unittitle>German Books and Printers [16 items]
-	</unittitle>
-            <container>4:5
-	</container>
+            <unittitle>Folk Medicine Recipes, <unitdate type="inclusive">1850-1939</unitdate></unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">7
+                items</extent></physdesc>
+                        <container id="aspace_8d57a8f8763919bc1cc9ba2689c04f7a" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_2487afebd9d5055d481b35700fe6e27a"
+              parent="aspace_8d57a8f8763919bc1cc9ba2689c04f7a" type="folder">29</container>
           </did>
         </c02>
-        <c02 level="subseries">
+        <c02 id="aspace_40b7d321e6945f91b5b012ab641b62dd" level="file">
           <did>
-            <unittitle>Henkel Family:
-	</unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>General History [36 items]
-		</unittitle>
-              <container>4:6
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Paul Henkel Materials [101 items]
-		</unittitle>
-              <container>4:7
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Solomon Henkel Materials [73 items]
-		</unittitle>
-              <container>4:8
-		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle>Henkel Press:
-	</unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>General History [42 items]
-		</unittitle>
-              <container>4:9
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Ballads [18 items]
-		</unittitle>
-              <container>4:10
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Der Virginische Volkberichter und Neumarketer Wochenschrift [27 items]
-		</unittitle>
-              <container>4:11
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Miscellaneous Publications [48 items]
-		</unittitle>
-              <container>4:12
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Translations [25 items]
-		</unittitle>
-              <container>4:13
-		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle>Images:
-	</unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Broadsides [38 items]
-		</unittitle>
-              <container>4:14
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Imprints [25 items]
-		</unittitle>
-              <container>4:15
-		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Woodcuts [26 items]
-		</unittitle>
-              <container>4:16
-		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle>Medicine; Directions, Uses, and Bottle Labels [26 items]
-	</unittitle>
-            <container>4:17
-	</container>
+            <unittitle>Andrew Hess' Notebook containing Recipes for Common Ailments and
+              Diseases], <unitdate type="inclusive">1849-1853</unitdate></unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">24
+                items</extent></physdesc>
+                        <container id="aspace_73689e991d6b70b93c210767084f77bc" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_73c0d8c04b2bf3fec737de74c00b7cef"
+              parent="aspace_73689e991d6b70b93c210767084f77bc" type="folder">30</container>
           </did>
         </c02>
-        <c02 level="subseries">
+        <c02 id="aspace_449154fcaa8f02b76540b2af25bd2fa3" level="file">
           <did>
-            <unittitle>JMU Special Collections Research Notes [13 items]
-	</unittitle>
-            <container>4:18
-	</container>
+            <unittitle>Recipes for Arthritis, Pendleton County, W. VA</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">4
+                items</extent></physdesc>
+            <container id="aspace_0234e2dbcfddd85b5cfeebc7a6d551d6" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_5173bf035b47302261ead31a37d0b018"
+              parent="aspace_0234e2dbcfddd85b5cfeebc7a6d551d6" type="folder">31</container>
+          </did>
+        </c02>
+        <c02 id="aspace_6e415b7fb8ef22f3e64b3791e47280b9" level="file">
+          <did>
+            <unittitle>Letters from Heaven (Himmelsbrief), <unitdate type="inclusive">May 1908, undated</unitdate></unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">18
+                items</extent></physdesc>
+                        <container id="aspace_ae9a0033d6adf50eaaf280aed7850107" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_f96103ef80d9bd323e9367a3c1c335ab"
+              parent="aspace_ae9a0033d6adf50eaaf280aed7850107" type="folder">32</container>
+          </did>
+        </c02>
+        <c02 id="aspace_0b10a455a221e5cf490159ded9824241" level="file">
+          <did>
+            <unittitle>Dr. Wilhelm Stoy's Dog Bite Remedy</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">4
+                items</extent></physdesc>
+            <container id="aspace_f9002e4cbc21cfaf4ab892cbbcd782df" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_0d785e5e39c0e058c6f2a32be7876a41"
+              parent="aspace_f9002e4cbc21cfaf4ab892cbbcd782df" type="folder">33</container>
+          </did>
+        </c02>
+        <c02 id="aspace_42c6cabe7afa1284dc059dfe7960fd8b" level="file">
+          <did>
+            <unittitle>Sator Formula to Protect Against Disease</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">5
+                items</extent></physdesc>
+            <container id="aspace_acf355e5b422d6661774149b41cba3ed" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_23ac3d73a4ce593928431ee4602999f5"
+              parent="aspace_acf355e5b422d6661774149b41cba3ed" type="folder">34</container>
+          </did>
+        </c02>
+        <c02 id="aspace_52b69559a3d9413e3617b057226dcdec" level="file">
+          <did>
+            <unittitle>Recipes for Ailments (Horses, etc.)</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">5
+                items</extent></physdesc>
+            <container id="aspace_b544b516241216b15c4edc45910a5acc" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_c35e5e009554e5462c7dbf48b76885b6"
+              parent="aspace_b544b516241216b15c4edc45910a5acc" type="folder">35</container>
+          </did>
+        </c02>
+        <c02 id="aspace_2da5ffb9dbb77fd5d3536ae644b80bec" level="file">
+          <did>
+            <unittitle>How to Prepare Blue Color</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">2
+                items</extent></physdesc>
+            <container id="aspace_96b5a7cf8f92accd8cace5d731b54853" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_dbdc6615acb807407fd4dabc0824f31e"
+              parent="aspace_96b5a7cf8f92accd8cace5d731b54853" type="folder">36</container>
+          </did>
+        </c02>
+        <c02 id="aspace_e36a11af9ce01d9d89dac894dc354eca" level="file">
+          <did>
+            <unittitle>Medical Prescriptions, New Market/Mt. Solon</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">8
+                items</extent></physdesc>
+            <container id="aspace_6d28d607f433eb5a3ea72d96a61d357d" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_123e3d3bed7fe688f011fbf8990ddba2"
+              parent="aspace_6d28d607f433eb5a3ea72d96a61d357d" type="folder">37</container>
+          </did>
+        </c02>
+        <c02 id="aspace_19cad5e35e2f056e80c7a0e43e2f79c2" level="file">
+          <did>
+            <unittitle>Medical and Personal Advice, sent from Henrich Muhlenberg to Mr.
+              Henkel</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">19
+                items</extent></physdesc>
+            <unitdate type="inclusive">1800-1817</unitdate>
+            <container id="aspace_6f464b717af32fb76c9bb6dc8cedae20" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_9ad430e54e0a1e692e3117aab47af847"
+              parent="aspace_6f464b717af32fb76c9bb6dc8cedae20" type="folder">38</container>
+          </did>
+        </c02>
+        <c02 id="aspace_863693e846060aedfed1f0f684185d79" level="file">
+          <did>
+            <unittitle>Articles re Herbal Medicine by John Stewart, Kurt Kehr, Elmer Smith, Billie
+              Jo Monger</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">96
+                pages</extent></physdesc>
+            <unitdate type="inclusive">1970s-1980s</unitdate>
+            <container id="aspace_d411a00435e451f6eeff3f5a4107b9f3" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_419ec43f4b2aa7cad0de3e6cc042ba6d"
+              parent="aspace_d411a00435e451f6eeff3f5a4107b9f3" type="folder">39</container>
+          </did>
+        </c02>
+        <c02 id="aspace_4e7071308a530537f88cbbbf12a4b314" level="file">
+          <did>
+            <unittitle>Four Recipes for Common Ailments, from Shavers School House, Linville Creek,
+              Virginia</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">2
+                items</extent></physdesc>
+            <container id="aspace_33de22d81060c9cf87e4bd5f55514472" label="Box:Folder" type="box"
+              >2</container>
+            <container id="aspace_19af8a69a6c4b7ad991eaeac21c6d68a"
+              parent="aspace_33de22d81060c9cf87e4bd5f55514472" type="folder">40</container>
           </did>
         </c02>
       </c01>
-      <c01 level="series">
+      <c01 id="aspace_b5e54868d2c7bc0804ca435604916f46" level="series">
         <did>
-          <unittitle label="Series VI">Folk Culture Posters, undated (<extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.jmu.edu/special/manuscripts/4016_StewartFrakturs.pdf">description list</extref>) [60 items]
-</unittitle>
-          <container>Box 5
-</container>
+          <unittitle>"Pow-Wow" Documents</unittitle>
+          <unitid>Series 3</unitid>
+          <unitdate type="inclusive">1883-1900</unitdate>
         </did>
+        <c02 id="aspace_922f6c04e071261092c72868e5f570e1" level="file">
+          <did>
+            <unittitle>Pendleton County Pow Wow Book</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">25
+                items</extent></physdesc>
+            <container id="aspace_95e6c8d52983fb6e44626c23b197f586" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_815b010bf69b0cc6581039cf6c64c272"
+              parent="aspace_95e6c8d52983fb6e44626c23b197f586" type="folder">1</container>
+          </did>
+        </c02>
+        <c02 id="aspace_13a0870779bdb9f98dd1ad1fb5bec010" level="file">
+          <did>
+            <unittitle>English Translations, Part 1</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">37
+                items</extent></physdesc>
+            <container id="aspace_30ac8f9f661e3f23360f06c764750e37" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_d8700e64a0ccc1231fe32538c8f33be3"
+              parent="aspace_30ac8f9f661e3f23360f06c764750e37" type="folder">2</container>
+          </did>
+        </c02>
+        <c02 id="aspace_cad7586761e3509ddbe7736f0f390b30" level="file">
+          <did>
+            <unittitle>English Translations, Part 2</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">13
+                items</extent></physdesc>
+            <container id="aspace_974caef8c3d48e8d9fc3b8f76f02d458" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_065cbe9316a67dd425e26f5b8aa915ed"
+              parent="aspace_974caef8c3d48e8d9fc3b8f76f02d458" type="folder">3</container>
+          </did>
+        </c02>
+        <c02 id="aspace_fe1f50b2ce55068ad4da9619bbb97abc" level="file">
+          <did>
+            <unittitle>E.L. Smith and J.G. Stewart, "Occult Remedy"</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">11
+                items</extent></physdesc>
+            <container id="aspace_c8dc7802e20974dabacd00a14be3dedf" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_679c114ed41ff7193fd6d4d80aa0f4f1"
+              parent="aspace_c8dc7802e20974dabacd00a14be3dedf" type="folder">4</container>
+          </did>
+        </c02>
+        <c02 id="aspace_4129ff8d97ab5ffc5640563fada12b0f" level="file">
+          <did>
+            <unittitle>E.L. Smith and J.G. Stewart, "Occult Remedy"</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">87
+                items</extent></physdesc>
+            <container id="aspace_a029afa7deddfec0c3add3fdb5621a88" label="Box:Folder" type="box"
+              >3</container>
+            <container id="aspace_aca5d270bac21482da44f66a2ccded66"
+              parent="aspace_a029afa7deddfec0c3add3fdb5621a88" type="folder">5</container>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="aspace_81f3fb15fa40b90bbc7eefff7998ef2c" level="series">
+        <did>
+          <unittitle>Lectures and Administrative Files</unittitle>
+          <unitid>Series 4</unitid>
+          <unitdate type="inclusive">1966-2002</unitdate>
+        </did>
+        <c02 id="aspace_20aeeaf806c7417424c6ba860a50fa53" level="subseries">
+          <did>
+            <unittitle>Lectures and presentations</unittitle>
+            <unitid>4A</unitid>
+            <unitdate type="inclusive">1966-2002</unitdate>
+          </did>
+          <c03 id="aspace_c824e9984ef324ff91438e0671dd4708" level="file">
+            <did>
+              <unittitle>The Dumb Dutch of the Shenandoah Valley</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">32
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1966</unitdate>
+              <container id="aspace_3c37af21267d70477543e395018c8c67" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_073ab7ca5f62c757707ff6261c39c186"
+                parent="aspace_3c37af21267d70477543e395018c8c67" type="folder">6</container>
+            </did>
+          </c03>
+          <c03 id="aspace_65cfa8a5c9c328ecaf9d0a4f198bc4ba" level="file">
+            <did>
+              <unittitle>How and When: Literature in the Foreign Language Curriculum</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">16
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1969</unitdate>
+              <container id="aspace_749aafa8bbeee9977691c9d6fa8c0b98" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_771b1113a2826f506bf5fe67f7497673"
+                parent="aspace_749aafa8bbeee9977691c9d6fa8c0b98" type="folder">7</container>
+            </did>
+          </c03>
+          <c03 id="aspace_ff53ed8b94e39213020f15d266452664" level="file">
+            <did>
+              <unittitle>The German Element in Shenandoah Valley Folklore</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">22
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1975</unitdate>
+              <container id="aspace_16ba5ee217874c53d78447e5e0a18c44" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_97d8fc22b4612868acecaf006f052c0c"
+                parent="aspace_16ba5ee217874c53d78447e5e0a18c44" type="folder">8</container>
+            </did>
+          </c03>
+          <c03 id="aspace_7a92a0ee0b128f1611d58f47a72697f5" level="file">
+            <did>
+              <unittitle>The Valley Germans in the Revolutionary War</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">16
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1976</unitdate>
+              <container id="aspace_598902754fb9974793838480eecea84d" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_a6a1700e3ce5a0db3d07590714d7cee9"
+                parent="aspace_598902754fb9974793838480eecea84d" type="folder">9</container>
+            </did>
+          </c03>
+          <c03 id="aspace_2ec814fc5df6226568fdb88606b79cc5" level="file">
+            <did>
+              <unittitle>Folklore and Nationalism, Politics, Ideology</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">17
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1980</unitdate>
+              <container id="aspace_ea64aeca754ab03cb52ba78c7c2f9dd8" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_40c48ac145660dfa4bff847a2f4a1630"
+                parent="aspace_ea64aeca754ab03cb52ba78c7c2f9dd8" type="folder">10</container>
+            </did>
+          </c03>
+          <c03 id="aspace_823b1ab0ce589ea936570dd5494bf967" level="file">
+            <did>
+              <unittitle>Shenandoah Valley Folklife</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">10
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1980</unitdate>
+              <container id="aspace_b616669b1e3f367fea8899b6977eb82a" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_2b7f895559688a8b49b8e0ac7956b12f"
+                parent="aspace_b616669b1e3f367fea8899b6977eb82a" type="folder">11</container>
+            </did>
+          </c03>
+          <c03 id="aspace_61613c23497cb2f67a600051703624f1" level="file">
+            <did>
+              <unittitle>Naturalization Ceremony Speech</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">3
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1982</unitdate>
+              <container id="aspace_7282b5900938a65f6428499b816bfc5c" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_9d608d86ce76382c639fd2d86cb8c549"
+                parent="aspace_7282b5900938a65f6428499b816bfc5c" type="folder">12</container>
+            </did>
+          </c03>
+          <c03 id="aspace_7b8eab2fe2b6a798dbdd8f264d1c664c" level="file">
+            <did>
+              <unittitle>Folklore and Linguistics</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">16
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1982</unitdate>
+              <container id="aspace_2e08a55f1a427193bf12ff1590613331" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_0a4022c583846c83df4e8e8fdadacd51"
+                parent="aspace_2e08a55f1a427193bf12ff1590613331" type="folder">13</container>
+            </did>
+          </c03>
+          <c03 id="aspace_1f512275cbdc7463423c088224fba9aa" level="file">
+            <did>
+              <unittitle>German Settlers in the Shenandoah Valley in the American
+                Revolution</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">20
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1985</unitdate>
+              <container id="aspace_314dfb5065ecf0ed8727ea752dad4d0d" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_bb38b5a9cc9a395a008f3e5b74b35a81"
+                parent="aspace_314dfb5065ecf0ed8727ea752dad4d0d" type="folder">14</container>
+            </did>
+          </c03>
+          <c03 id="aspace_29ff1ecc802ea9c6a43c0d33e43847dd" level="file">
+            <did>
+              <unittitle>How and When? Literature in the Foreign Language Curriculum</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">20
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1988</unitdate>
+              <container id="aspace_189cf7a5e9f9fc345e26d1ee67094cb4" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_fabdc3310cce149d0fedc44794c96685"
+                parent="aspace_189cf7a5e9f9fc345e26d1ee67094cb4" type="folder">15</container>
+            </did>
+          </c03>
+          <c03 id="aspace_c2ba66e9e0846cc28984290457b21b39" level="file">
+            <did>
+              <unittitle>German Folk Culture in the Shenandoah Valley</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">29
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1988</unitdate>
+              <container id="aspace_5df692147e5fc83596765d88ce1cc958" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_5e0b8093278f81963e698c38aa937926"
+                parent="aspace_5df692147e5fc83596765d88ce1cc958" type="folder">16</container>
+            </did>
+          </c03>
+          <c03 id="aspace_e5ecb789101f304fb1f870d86c83bfb4" level="file">
+            <did>
+              <unittitle>The Zirkle Family: Historical Perspective</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">31
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1989</unitdate>
+              <container id="aspace_119cd5e2601508ad1ee8e024cc681eec" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_4faeb0ca680e8769b11455600dd32c33"
+                parent="aspace_119cd5e2601508ad1ee8e024cc681eec" type="folder">17</container>
+            </did>
+          </c03>
+          <c03 id="aspace_14d6f0bd9f8df22fefec66dbc783a871" level="file">
+            <did>
+              <unittitle>The Germans of New Market, Va.</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">26
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1990</unitdate>
+              <container id="aspace_ee6310963d04899aaf70af591cb38ca4" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_f7e9e75fe08c404e33d9e36a3c5fc631"
+                parent="aspace_ee6310963d04899aaf70af591cb38ca4" type="folder">18</container>
+            </did>
+          </c03>
+          <c03 id="aspace_5e42381a311ca413c2e11f7b0cfd4cc2" level="file">
+            <did>
+              <unittitle>Shenandoah Valley Folk Culture</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">24
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1991</unitdate>
+              <container id="aspace_eb1ae55ebad088664cc87b556ab2e651" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_4cd9ca18410454b28afce4c79376a1b2"
+                parent="aspace_eb1ae55ebad088664cc87b556ab2e651" type="folder">19</container>
+            </did>
+          </c03>
+          <c03 id="aspace_360d4a82db48bac7ffbe098c18322117" level="file">
+            <did>
+              <unittitle>Early Books of the Shenandoah Valley</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">20
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1992</unitdate>
+              <container id="aspace_5c070497d402d062417a380d68de9bdd" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_6449da5ceaa81eacee29ae92bc860019"
+                parent="aspace_5c070497d402d062417a380d68de9bdd" type="folder">20</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d6061b22081d4c209d8a1bf3479c28fa" level="file">
+            <did>
+              <unittitle>Fraktur Writing in the Shenandoah Valley</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">31
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1992</unitdate>
+              <container id="aspace_cfee4431c34b330ee698ee80c75901c6" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_64866ed4352431aa472907af0097e7fe"
+                parent="aspace_cfee4431c34b330ee698ee80c75901c6" type="folder">21</container>
+            </did>
+          </c03>
+          <c03 id="aspace_6fd092e6162f149d119ae1cb7c43bc95" level="file">
+            <did>
+              <unittitle>Popular Beliefs and Superstitions in the Valley of Virginia</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">30
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1993</unitdate>
+              <container id="aspace_7592fb26b2c5addce622d52c32cd5262" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_a0f9f2bc84e465158015b1dabea9e89b"
+                parent="aspace_7592fb26b2c5addce622d52c32cd5262" type="folder">22</container>
+            </did>
+          </c03>
+          <c03 id="aspace_a8be78ee69f2e5aa8978735dbf06db5c" level="file">
+            <did>
+              <unittitle>Folk Culture and Medicine</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">8
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1993</unitdate>
+              <container id="aspace_86a13e38aa42bc1a8150879e4fc6145b" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_7fc49cfb466687a059a0f835cdac3aef"
+                parent="aspace_86a13e38aa42bc1a8150879e4fc6145b" type="folder">23</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d04e5862e737d1423a3d146e00d0a355" level="file">
+            <did>
+              <unittitle>Shenandoah Valley Folklore Fieldwork</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">21
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1993</unitdate>
+              <container id="aspace_4fb1220e75bc5c936087b5ae140defa1" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_fdf03d020a76a0e3a7c68df78428cfe5"
+                parent="aspace_4fb1220e75bc5c936087b5ae140defa1" type="folder">24</container>
+            </did>
+          </c03>
+          <c03 id="aspace_1db33b8daefdd35c47084823debf9683" level="file">
+            <did>
+              <unittitle>Our Trip to Israel</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">24
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1995</unitdate>
+              <container id="aspace_553bf7037a338444d8b19fbad77ede65" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_52a3c107fcf456b39c52664535dcfa82"
+                parent="aspace_553bf7037a338444d8b19fbad77ede65" type="folder">25</container>
+            </did>
+          </c03>
+          <c03 id="aspace_ea20ffe76c9d7811474784efcba286a8" level="file">
+            <did>
+              <unittitle>Shenandoah Valley Fraktur</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">13
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1995</unitdate>
+              <container id="aspace_8db3c6ce0ba1c643dc5f92d02d3ec706" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_687e9fa0b2a19408e410fe16ac5d273e"
+                parent="aspace_8db3c6ce0ba1c643dc5f92d02d3ec706" type="folder">26</container>
+            </did>
+          </c03>
+          <c03 id="aspace_eb93727940fe38f70d6914aca96426f9" level="file">
+            <did>
+              <unittitle>The New Market Henkels</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">3
+                  items</extent></physdesc>
+              <unitdate type="inclusive">1999</unitdate>
+              <container id="aspace_283d76df8c5c51bb27d6988573db0063" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_6c062a38c815dcf2a51a475744cd4f88"
+                parent="aspace_283d76df8c5c51bb27d6988573db0063" type="folder">27</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d813e0fdf854257d2b3df907bc370357" level="file">
+            <did>
+              <unittitle>Valley Germans in the Revolutionary War</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">35
+                  items</extent></physdesc>
+              <unitdate type="inclusive">2000</unitdate>
+              <container id="aspace_9e31f08e908f05151bda08482329e084" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_e5f656c173e21d24378641188f7b0528"
+                parent="aspace_9e31f08e908f05151bda08482329e084" type="folder">28</container>
+            </did>
+          </c03>
+          <c03 id="aspace_394f947c830d0f3b6a557f8cbf403e75" level="file">
+            <did>
+              <unittitle>Valley Germans, Customs, Traditions</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">2
+                  items</extent></physdesc>
+              <unitdate type="inclusive">2000</unitdate>
+              <container id="aspace_708ecc85b9297a93a45ed90dfee58acb" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_fbade60aa082a331a1723ec58583e8d4"
+                parent="aspace_708ecc85b9297a93a45ed90dfee58acb" type="folder">29</container>
+            </did>
+          </c03>
+          <c03 id="aspace_9175f31b1515c3c3ca78039f1521807d" level="file">
+            <did>
+              <unittitle>Price Rotary Speech</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">4
+                  items</extent></physdesc>
+              <unitdate type="inclusive">2000</unitdate>
+              <container id="aspace_ca525dff36d71ceba5e720304d16fb0e" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_bdb3215f3e1d04d4c1e497b3eb4dbf50"
+                parent="aspace_ca525dff36d71ceba5e720304d16fb0e" type="folder">30</container>
+            </did>
+          </c03>
+          <c03 id="aspace_a51b87c62cf7837d05af378b8f396654" level="file">
+            <did>
+              <unittitle>Shenandoah Valley Fraktur</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">29
+                  items</extent></physdesc>
+              <unitdate type="inclusive">2002</unitdate>
+              <container id="aspace_7b4bdfca093bf8ac5dd57ed54eddbf19" label="Box:Folder" type="box"
+                >3</container>
+              <container id="aspace_6b0457d3ab025b3ce8dfc88d709c2a58"
+                parent="aspace_7b4bdfca093bf8ac5dd57ed54eddbf19" type="folder">31</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_37ebe3d485bf22c3ee0df9928a89c013" level="subseries">
+          <did>
+            <unittitle>Teaching and Administrative Files</unittitle>
+            <unitid>4B</unitid>
+          </did>
+          <c03 id="aspace_18b579cb0189af0a9d0a8e4000fbb81c" level="file">
+            <did>
+              <unittitle>Bibliographies</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">34
+                  items</extent></physdesc>
+              <container id="aspace_01ddd393ba9b4c083d5d6b678f06f1be" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_4ddf3adc757cc10d77a68882069d42b6"
+                parent="aspace_01ddd393ba9b4c083d5d6b678f06f1be" type="folder">1</container>
+            </did>
+          </c03>
+          <c03 id="aspace_75b6e60c72ebadc540c6d4e77ba3ed70" level="file">
+            <did>
+              <unittitle>Syllabi</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">34
+                  items</extent></physdesc>
+              <container id="aspace_2e1bd09abc3278b758bfc57f09bab578" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_5db450ed07b94b843f8ed53f9dd4fbcb"
+                parent="aspace_2e1bd09abc3278b758bfc57f09bab578" type="folder">2</container>
+            </did>
+          </c03>
+          <c03 id="aspace_80d2be123ad5baa1ee5c9452455ba62d" level="file">
+            <did>
+              <unittitle>Proposal for a Madison College Oral History Program</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">16
+                  items</extent></physdesc>
+              <container id="aspace_3b9217e39693017d088dd84b5adb319a" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_09d04c8701a9b4b0786960bf2a632560"
+                parent="aspace_3b9217e39693017d088dd84b5adb319a" type="folder">3</container>
+            </did>
+          </c03>
+          <c03 id="aspace_37b82fdf10b5f1a7902127a4026a8919" level="file">
+            <did>
+              <unittitle>Grant Application, A New Age in Shenandoah Valley History: A Cultural
+                Resource Symposium</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">12
+                  items</extent></physdesc>
+              <container id="aspace_62c0a0695563825cb53f084e089d4fc9" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_463efe692aa5e5c5b76b215e3107077b"
+                parent="aspace_62c0a0695563825cb53f084e089d4fc9" type="folder">4</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 id="aspace_7c42df397339c83b8e876380e124f62b" level="series">
+        <did>
+          <unittitle>Henkel Materials</unittitle>
+          <unitid>Series 5</unitid>
+          <unitdate type="inclusive">1796-1963</unitdate>
+        </did>
+        <c02 id="aspace_162f415226ee076d381851e9b48e998d" level="subseries">
+          <did>
+            <unittitle>German Books and Printers</unittitle>
+            <unitid>5A</unitid>
+          </did>
+          <c03 id="aspace_53fc56246a245ef92296b0e633a2ffa8" level="file">
+            <did>
+              <unittitle>German Books and Printers</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">16
+                  items</extent></physdesc>
+              <container id="aspace_828c4eaad023e73dfcba6e6b92d606f6" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_37811b117ea1ed1cccd0a3eb9d856904"
+                parent="aspace_828c4eaad023e73dfcba6e6b92d606f6" type="folder">5</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_cd227f8f2158e8c6696876246f6795df" level="subseries">
+          <did>
+            <unittitle>Henkel Family</unittitle>
+            <unitid>5B</unitid>
+          </did>
+          <c03 id="aspace_e7be5926ecabaacd2b649317bfac0c57" level="file">
+            <did>
+              <unittitle>General History</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">36
+                  items</extent></physdesc>
+              <container id="aspace_5891d6b16d5e484cdf93180a9dcbeb51" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_0d717b4eb025a8724dbd0f4a2e5c7a5f"
+                parent="aspace_5891d6b16d5e484cdf93180a9dcbeb51" type="folder">6</container>
+            </did>
+          </c03>
+          <c03 id="aspace_f9c87cc0b45d76b1ed9e0a15238a37fb" level="file">
+            <did>
+              <unittitle>Paul Henkel Materials</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">101
+                  items</extent></physdesc>
+              <container id="aspace_1d01b837416a2d6559a658710eeef758" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_d598f15f41c8f7eaeeefb677854d63e8"
+                parent="aspace_1d01b837416a2d6559a658710eeef758" type="folder">7</container>
+            </did>
+          </c03>
+          <c03 id="aspace_3b5168e6a60bde2cd6c94c1c269e4527" level="file">
+            <did>
+              <unittitle>Solomon Henkel Materials</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">73
+                  items</extent></physdesc>
+              <container id="aspace_67a96192a27b5af41a057db569ffd815" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_55d09581c1e83f2008676ab329dc432a"
+                parent="aspace_67a96192a27b5af41a057db569ffd815" type="folder">8</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_2d39492424cdfed1899141b3fd62b4c0" level="subseries">
+          <did>
+            <unittitle>Henkel Press</unittitle>
+            <unitid>5C</unitid>
+          </did>
+          <c03 id="aspace_25b9ecff3f2190b9d91a2f6cab68de0e" level="file">
+            <did>
+              <unittitle>General History</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">42
+                  items</extent></physdesc>
+              <container id="aspace_1fde8e0de6acfc16492682261a8e3855" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_46453f6ad27e6cb3de0ca5219d7436d9"
+                parent="aspace_1fde8e0de6acfc16492682261a8e3855" type="folder">9</container>
+            </did>
+          </c03>
+          <c03 id="aspace_af54e322a8975281ba3eca0c86c4b9f8" level="file">
+            <did>
+              <unittitle>Ballads</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">18
+                  items</extent></physdesc>
+              <container id="aspace_e8ea6f5e103d507cf84962c26f542d4e" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_3aa7f1617112059f9a9233e8d4b030bc"
+                parent="aspace_e8ea6f5e103d507cf84962c26f542d4e" type="folder">10</container>
+            </did>
+          </c03>
+          <c03 id="aspace_0db938ab8b700a017d7d75423fe3feef" level="file">
+            <did>
+              <unittitle>Der Virginische Volkberichter und Neumarketer Wochenschrift</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">27
+                  items</extent></physdesc>
+              <container id="aspace_b0dd51741a55e55ec1aee909606dd430" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_28c43e386c4503e34be5b52be80ab16f"
+                parent="aspace_b0dd51741a55e55ec1aee909606dd430" type="folder">11</container>
+            </did>
+          </c03>
+          <c03 id="aspace_5755618a5e870cd58661b7edf8c00f97" level="file">
+            <did>
+              <unittitle>Miscellaneous Publications</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">48
+                  items</extent></physdesc>
+              <container id="aspace_d159a59fb9e47939142415f3fd9c9598" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_453b78fc7f970bdb216bb68434775d13"
+                parent="aspace_d159a59fb9e47939142415f3fd9c9598" type="folder">12</container>
+            </did>
+          </c03>
+          <c03 id="aspace_dbd1c494acc9c95939ee99475f19b4db" level="file">
+            <did>
+              <unittitle>Translations</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">25
+                  items</extent></physdesc>
+              <container id="aspace_7d05e8af8af18a76c1a2481def964d2e" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_a07d9dab69790bba98530c2bdf2d1674"
+                parent="aspace_7d05e8af8af18a76c1a2481def964d2e" type="folder">13</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_9eefa3c7e9fec45045efae4a41afde05" level="subseries">
+          <did>
+            <unittitle>Images</unittitle>
+            <unitid>5D</unitid>
+          </did>
+          <c03 id="aspace_0e78d3860bc5174447bfb48292f36004" level="file">
+            <did>
+              <unittitle>Broadsides</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">38
+                  items</extent></physdesc>
+              <container id="aspace_56bc4ddecd5c85fc37b555950ebfadeb" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_2f962aca542cfba2b24d90a078a38428"
+                parent="aspace_56bc4ddecd5c85fc37b555950ebfadeb" type="folder">14</container>
+            </did>
+          </c03>
+          <c03 id="aspace_d386f091cbd45d287f73936f7fa9ffb3" level="file">
+            <did>
+              <unittitle>Imprints</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">25
+                  items</extent></physdesc>
+              <container id="aspace_2e25aa2b9eed9d9b3084a9577d6a7c15" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_f7bea0de1441c12516b28e2fc1f183e1"
+                parent="aspace_2e25aa2b9eed9d9b3084a9577d6a7c15" type="folder">15</container>
+            </did>
+          </c03>
+          <c03 id="aspace_e66aec0414543e5f591fbed49b2fa6eb" level="file">
+            <did>
+              <unittitle>Woodcuts</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">26
+                  items</extent></physdesc>
+              <container id="aspace_bf55d321497f7c6224f02022d410188d" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_38163534122fc69791bc275f0e5be925"
+                parent="aspace_bf55d321497f7c6224f02022d410188d" type="folder">16</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_fea88d6e2fda2ffcc6146dc59e29647b" level="subseries">
+          <did>
+            <unittitle>Medicine</unittitle>
+            <unitid>5E</unitid>
+          </did>
+          <c03 id="aspace_5b3aee44c40394047b539319d971e619" level="file">
+            <did>
+              <unittitle>Directions, Uses, and Bottle Labels</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">26
+                  items</extent></physdesc>
+              <container id="aspace_e94208e5af7337e4a8a4917e410ebb0c" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_4a347ffad2179a74ac5ea55dd0841cc4"
+                parent="aspace_e94208e5af7337e4a8a4917e410ebb0c" type="folder">17</container>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="aspace_4c5db0f0022b17f8907dcffb215d15db" level="subseries">
+          <did>
+            <unittitle>JMU Special Collections Research Notes</unittitle>
+            <unitid>5F</unitid>
+          </did>
+          <c03 id="aspace_c5d4f8413639d4c718fc17d90780b151" level="file">
+            <did>
+              <unittitle>JMU Special Collections Research Notes</unittitle>
+              <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">13
+                  items</extent></physdesc>
+              <container id="aspace_53ddf64aaa327893b29eca2db78f88be" label="Box:Folder" type="box"
+                >4</container>
+              <container id="aspace_42b981630d2a68a1032ad523b8708126"
+                parent="aspace_53ddf64aaa327893b29eca2db78f88be" type="folder">18</container>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 id="aspace_c95d6b82526009ffbcbf36e3533f8ee7" level="series">
+        <did>
+          <unittitle>Folk Culture Posters</unittitle>
+          <unitid>Series 6</unitid>
+          <unitdate type="inclusive">undated</unitdate>
+        </did>
+        <c02 id="aspace_8506fe3b6c983abf367e2ba5f04664c0" level="file">
+          <did>
+            <unittitle>Folk Culture Posters</unittitle>
+            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">60
+                items</extent></physdesc>
+            <unitdate type="inclusive">undated</unitdate>
+          </did>
+          <scopecontent id="aspace_430f57ab540d0eac1e938c79ef88cd9b">
+            <head>Scope and Contents</head>
+            <p><extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                xlink:href="http://www.lib.jmu.edu/special/manuscripts/4016_StewartFrakturs.pdf">See
+                description list</extref>)</p>
+          </scopecontent>
+        </c02>
       </c01>
     </dsc>
   </archdesc>
