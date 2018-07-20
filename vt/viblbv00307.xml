@@ -1,38 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
+
 <ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
-  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
-    langencoding="iso639-2b" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-viblbv">viblbv00307</eadid>
+  xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv00307">
+  <eadheader langencoding="iso639-2b" findaidstatus="completed"
+    scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
+    repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
+      State University::University Libraries::Special Collections//TEXT
+      (US::ViBlbV::viblbv00307::Southside Garden Club Record, 1914-2009)//EN" "viblbv00307.xml"</eadid>
     <filedesc>
       <titlestmt>
-        <titleproper type="filing">Southside Garden Club Records</titleproper>
-        <titleproper>A Guide to the Southside Garden Club Records, <date calendar="gregorian"
-            era="ce">1914-2009</date>
-          <num>Ms.2007.032</num></titleproper>
-        <author>Jennifer Vipperman</author>
+        <titleproper>A Guide to the Southside Garden Club Record, <date era="ce" calendar="gregorian"
+          >1914-2009</date></titleproper>
+        <subtitle id="sort">Southside Garden Club Record <num type="collectionnumber">Ms2007-032</num></subtitle>
       </titlestmt>
       <publicationstmt>
         <publisher>Special Collections, Virginia Tech</publisher>
-        <p id="logostmt"><extref xlink:actuate="onLoad"
-            xlink:href="http://spec.lib.vt.edu/images/vtlogo_vh.jpg" xlink:show="embed"
-            xlink:type="simple"/></p>
-        <p><date>© 2008 By Virginia Polytechnic Institute and State University. All rights
-            reserved.</date></p>
-        <address>
-          <addressline>Special Collections, University Libraries (0434)</addressline>
-          <addressline>560 Drillfield Drive</addressline>
-          <addressline>Newman Library, Virginia Tech</addressline>
-          <addressline>Blacksburg, Virginia 24061</addressline>
-          <addressline>specref@vt.edu</addressline>
-          <addressline>URL: <extptr xlink:href="http://spec.lib.vt.edu" xlink:show="new"
-              xlink:title="http://spec.lib.vt.edu" xlink:type="simple"/></addressline>
-        </address>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">©2008 By Virginia Tech. All rights
+          reserved.</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+          </extref>
+        </p>
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>This finding aid was produced using ArchivesSpace on <date>2018-07-20 09:19:38-0400</date>.</creation>
+      <creation>This finding aid was produced using ArchivesSpace <date era="ce"
+        calendar="gregorian">2018-07-20 09:19:38-0400</date></creation>
       <langusage>Description is in <language langcode="eng">English </language></langusage>
     </profiledesc>
     <revisiondesc>
@@ -42,6 +43,28 @@
       </change>
     </revisiondesc>
   </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Southside Garden Club Record, <date era="ce" calendar="gregorian">1914-2009</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
+        Ms2007-032</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+      </p>
+      <publisher>Special Collections, Virginia Tech</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2008</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: Jennifer Vipperman, </label>
+          <item> Special Collections</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
   <archdesc level="collection">
     <did>
       <langmaterial>
@@ -51,15 +74,12 @@
         <corpname>Special Collections, Virginia Tech</corpname>
       </repository>
       <unittitle>Southside Garden Club Records</unittitle>
-      <origination label="creator">
+      <origination label="Creator">
         <corpname rules="dacs" source="local">Southside Garden Club (1928/1930-) (Blacksburg,
-          Va.)</corpname>
+          Va.)</corpname>;         <corpname rules="dacs" source="local">Blacksburg Women's Club (1914-1970) (Blacksburg,
+            Va.)</corpname>
       </origination>
-      <origination label="creator">
-        <corpname rules="dacs" source="local">Blacksburg Women's Club (1914-1970) (Blacksburg,
-          Va.)</corpname>
-      </origination>
-      <unitid>Ms.2007.032</unitid>
+      <unitid>Ms2007-032</unitid>
       <physdesc altrender="whole">
         <extent altrender="materialtype spaceoccupied">7.6 Cubic Feet</extent>
         <extent altrender="carrier">14 boxes</extent>
@@ -72,6 +92,7 @@
         Club. Southside Garden Club materials include organization reports, minutes, pressbooks,
         yearbooks, and scrapbooks.</abstract>
     </did>
+    <descgrp type="admininfo">
     <accessrestrict id="aspace_1082345bbb2295f78af17caa4005daa2">
       <head>Access Restrictions</head>
       <p>Collection is open to research.</p>
@@ -96,6 +117,7 @@
       <p>The original donation of materials was processed, arranged, and described in 2008.
         Accessions received in 2011 and 2018 were processed in July 2018.</p>
     </processinfo>
+    </descgrp>
     <bioghist id="aspace_2b5cf5f70083a81a03fb04a99172c06a">
       <head>Historical Information</head>
       <p>The Southside Garden Club began as a committee under the governance of the Blacksburg
@@ -156,14 +178,14 @@
     <dsc>
       <c01 id="aspace_ref10_yg4" level="series">
         <did>
-          <unittitle>Blacksburg Women's Club Materials</unittitle>
-          <unitdate normal="1914/1957" type="inclusive">1914-1957</unitdate>
+          <unittitle>Blacksburg Women's Club Materials,
+          <unitdate normal="1914/1957" type="inclusive">1914-1957</unitdate></unittitle>
         </did>
         <c02 id="aspace_ref11_b74" level="file">
           <did>
-            <unittitle>Blacksburg Women's Club</unittitle>
-            <unitdate normal="1914/1957" type="inclusive">1914-1957</unitdate>
-            <container id="aspace_50178127cb776ee642742132e5df9fe0" label="box-folder" type="box"
+            <unittitle>Blacksburg Women's Club,
+            <unitdate normal="1914/1957" type="inclusive">1914-1957</unitdate></unittitle>
+            <container id="aspace_50178127cb776ee642742132e5df9fe0" label="Box-Folder" type="box"
               >1</container>
             <container id="aspace_1754f0106400b93c25dec309b00c8e0c"
               parent="aspace_50178127cb776ee642742132e5df9fe0" type="folder">1</container>
@@ -171,9 +193,9 @@
         </c02>
         <c02 id="aspace_ref12_pf5" level="file">
           <did>
-            <unittitle>Yearbooks</unittitle>
-            <unitdate normal="1939/1953" type="inclusive">1939-1953</unitdate>
-            <container id="aspace_6153d9d8d07a60bd160ddfa1bbc7cf0d" label="box-folder" type="box"
+            <unittitle>Yearbooks,
+            <unitdate normal="1939/1953" type="inclusive">1939-1953</unitdate></unittitle>
+            <container id="aspace_6153d9d8d07a60bd160ddfa1bbc7cf0d" label="Box-Folder" type="box"
               >1</container>
             <container id="aspace_997e291e42fa6d052ad131f92a6e1d64"
               parent="aspace_6153d9d8d07a60bd160ddfa1bbc7cf0d" type="folder">2</container>
@@ -181,9 +203,9 @@
         </c02>
         <c02 id="aspace_ref13_6lt" level="file">
           <did>
-            <unittitle>Scrapbook - Newspaper Clippings and Correspondence</unittitle>
-            <unitdate normal="1940/1941" type="inclusive">1940-1941</unitdate>
-            <container id="aspace_8a4acd750d6170b7e27aaf4a57881610" label="box-folder" type="box"
+            <unittitle>Scrapbook - Newspaper Clippings and Correspondence,
+            <unitdate normal="1940/1941" type="inclusive">1940-1941</unitdate></unittitle>
+            <container id="aspace_8a4acd750d6170b7e27aaf4a57881610" label="Box-Folder" type="box"
               >1</container>
             <container id="aspace_9952d419d746c9b58f866729904449fe"
               parent="aspace_8a4acd750d6170b7e27aaf4a57881610" type="folder">3</container>
@@ -191,9 +213,9 @@
         </c02>
         <c02 id="aspace_ref14_3mj" level="file">
           <did>
-            <unittitle>Presidential Speech</unittitle>
-            <unitdate normal="1941/1941">1941</unitdate>
-            <container id="aspace_6b44ecce899c953e624efc9d6ef83ab7" label="box-folder" type="box"
+            <unittitle>Presidential Speech,
+            <unitdate normal="1941/1941">1941</unitdate></unittitle>
+            <container id="aspace_6b44ecce899c953e624efc9d6ef83ab7" label="Box-Folder" type="box"
               >1</container>
             <container id="aspace_5ed6f08df3ad2f2a0944603fccbed4e8"
               parent="aspace_6b44ecce899c953e624efc9d6ef83ab7" type="folder">4</container>
@@ -201,9 +223,9 @@
         </c02>
         <c02 id="aspace_ref15_32l" level="file">
           <did>
-            <unittitle><title render="italic">The Virginia Club Woman</title></unittitle>
-            <unitdate>April 1957</unitdate>
-            <container id="aspace_6bdcf7ad9f92d4ce07ad313a48ad569c" label="box-folder" type="box"
+            <unittitle><title render="italic">The Virginia Club Woman</title>,
+            <unitdate>April 1957</unitdate></unittitle>
+            <container id="aspace_6bdcf7ad9f92d4ce07ad313a48ad569c" label="Box-Folder" type="box"
               >1</container>
             <container id="aspace_40a8dd5159ee8db8e030e902fb95ebae"
               parent="aspace_6bdcf7ad9f92d4ce07ad313a48ad569c" type="folder">5</container>
@@ -212,19 +234,19 @@
       </c01>
       <c01 id="aspace_ref16_qti" level="series">
         <did>
-          <unittitle>Southside Garden Club Material</unittitle>
-          <unitdate normal="1947/2005" type="inclusive">1947-2005</unitdate>
+          <unittitle>Southside Garden Club Material,
+          <unitdate normal="1947/2005" type="inclusive">1947-2005</unitdate></unittitle>
         </did>
         <c02 id="aspace_ref17_3w5" level="subseries">
           <did>
-            <unittitle>Records and Minutes</unittitle>
-            <unitdate normal="1947/2005" type="inclusive">1947-2005</unitdate>
+            <unittitle>Records and Minutes,
+            <unitdate normal="1947/2005" type="inclusive">1947-2005</unitdate></unittitle>
           </did>
           <c03 id="aspace_ref18_5jf" level="file">
             <did>
-              <unittitle>Membership Procedures</unittitle>
-              <unitdate>c.1985-1997</unitdate>
-              <container id="aspace_14fac162e74efce2ca1908e97c68e7e0" label="box-folder" type="box"
+              <unittitle>Membership Procedures,
+              <unitdate>c.1985-1997</unitdate></unittitle>
+              <container id="aspace_14fac162e74efce2ca1908e97c68e7e0" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_4e2af412e73e587e847ce7b29434d457"
                 parent="aspace_14fac162e74efce2ca1908e97c68e7e0" type="folder">6</container>
@@ -232,9 +254,9 @@
           </c03>
           <c03 id="aspace_ref19_qhf" level="file">
             <did>
-              <unittitle>Annual Reports</unittitle>
-              <unitdate normal="1954/1988" type="inclusive">1954-1988</unitdate>
-              <container id="aspace_619fd1a10e476257e4752e460389beac" label="box-folder" type="box"
+              <unittitle>Annual Reports,
+              <unitdate normal="1954/1988" type="inclusive">1954-1988</unitdate></unittitle>
+              <container id="aspace_619fd1a10e476257e4752e460389beac" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_4a277b945062f1d34399050cfe7c4559"
                 parent="aspace_619fd1a10e476257e4752e460389beac" type="folder">7</container>
@@ -242,9 +264,9 @@
           </c03>
           <c03 id="aspace_ref20_gmp" level="file">
             <did>
-              <unittitle>Annual Reports</unittitle>
-              <unitdate normal="1989/2000" type="inclusive">1989-2000</unitdate>
-              <container id="aspace_21698e809ff9e2697a0b476c78b666ad" label="box-folder" type="box"
+              <unittitle>Annual Reports,
+              <unitdate normal="1989/2000" type="inclusive">1989-2000</unitdate></unittitle>
+              <container id="aspace_21698e809ff9e2697a0b476c78b666ad" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_a66e3408f686534cfa8ae70b65872d3c"
                 parent="aspace_21698e809ff9e2697a0b476c78b666ad" type="folder">8</container>
@@ -253,9 +275,9 @@
           <c03 id="aspace_ref21_vq4" level="file">
             <did>
               <unittitle>Virginia Federation of Garden Clubs, "Golden Memories and Parliamentary
-                Hints"</unittitle>
-              <unitdate>n.d.</unitdate>
-              <container id="aspace_78812a85b12a280f4199b8cbbc2fb800" label="box-folder" type="box"
+                Hints,"
+              <unitdate>n.d.</unitdate></unittitle>
+              <container id="aspace_78812a85b12a280f4199b8cbbc2fb800" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_b012470337e3abd7c4d6b09242c09ed8"
                 parent="aspace_78812a85b12a280f4199b8cbbc2fb800" type="folder">9</container>
@@ -263,13 +285,13 @@
           </c03>
           <c03 id="aspace_0959be7002340e5591671a2edf7a38a5" level="subseries">
             <did>
-              <unittitle>Minutes</unittitle>
-              <unitdate normal="1947/2002" type="inclusive">1947-2002</unitdate>
+              <unittitle>Minutes,
+              <unitdate normal="1947/2002" type="inclusive">1947-2002</unitdate></unittitle>
             </did>
             <c04 id="aspace_ref22_sr9" level="file">
               <did>
                 <unitdate normal="1947/1954" type="inclusive">1947-1954</unitdate>
-                <container id="aspace_4f4dfb4ad29a7dde3edd500d2131bc6a" label="box-folder"
+                <container id="aspace_4f4dfb4ad29a7dde3edd500d2131bc6a" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_e8dd862b5d0e989b44f0bbbb4dc2827b"
                   parent="aspace_4f4dfb4ad29a7dde3edd500d2131bc6a" type="folder">10</container>
@@ -278,7 +300,7 @@
             <c04 id="aspace_ref23_d9t" level="file">
               <did>
                 <unitdate normal="1954/1961" type="inclusive">1954-1961</unitdate>
-                <container id="aspace_2be351a39b382d1adbd67ba91bc15891" label="box-folder"
+                <container id="aspace_2be351a39b382d1adbd67ba91bc15891" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_42c40b10376c0093be3d1df22ca65aca"
                   parent="aspace_2be351a39b382d1adbd67ba91bc15891" type="folder">11</container>
@@ -287,7 +309,7 @@
             <c04 id="aspace_ref24_xqn" level="file">
               <did>
                 <unitdate normal="1961/1964" type="inclusive">1961-1964</unitdate>
-                <container id="aspace_7a7562986d953c68d745c2fd20358dd1" label="box-folder"
+                <container id="aspace_7a7562986d953c68d745c2fd20358dd1" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_2699381a66a0a35525a026d541730110"
                   parent="aspace_7a7562986d953c68d745c2fd20358dd1" type="folder">12</container>
@@ -296,7 +318,7 @@
             <c04 id="aspace_ref25_2js" level="file">
               <did>
                 <unitdate normal="1965/1973" type="inclusive">1965-1973</unitdate>
-                <container id="aspace_3222a8ecec598d09e8fe0afd472cb2b6" label="box-folder"
+                <container id="aspace_3222a8ecec598d09e8fe0afd472cb2b6" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_2b9e1dd4895d8d108de6d0a7f0f39fc8"
                   parent="aspace_3222a8ecec598d09e8fe0afd472cb2b6" type="folder">13</container>
@@ -305,7 +327,7 @@
             <c04 id="aspace_ref26_phe" level="file">
               <did>
                 <unitdate normal="1974/1976" type="inclusive">1974-1976</unitdate>
-                <container id="aspace_5fb5e0857241ae4381d88906ce2a6341" label="box-folder"
+                <container id="aspace_5fb5e0857241ae4381d88906ce2a6341" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_15dd40700594b803a6fbb61a73b3e034"
                   parent="aspace_5fb5e0857241ae4381d88906ce2a6341" type="folder">14</container>
@@ -314,7 +336,7 @@
             <c04 id="aspace_ref27_471" level="file">
               <did>
                 <unitdate normal="1976/1980" type="inclusive">1976-1980</unitdate>
-                <container id="aspace_50ae4012e97d3913a1eaba83f0c4bd17" label="box-folder"
+                <container id="aspace_50ae4012e97d3913a1eaba83f0c4bd17" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_06506ecaeccedadee8d90c6c015f50fd"
                   parent="aspace_50ae4012e97d3913a1eaba83f0c4bd17" type="folder">15</container>
@@ -323,7 +345,7 @@
             <c04 id="aspace_ref28_uq9" level="file">
               <did>
                 <unitdate normal="1982/1985" type="inclusive">1982-1985</unitdate>
-                <container id="aspace_fa34c6d86dbce8bbeeb40cc7f170e93f" label="box-folder"
+                <container id="aspace_fa34c6d86dbce8bbeeb40cc7f170e93f" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_7b8eeb28b35317d749879bf20c1c6798"
                   parent="aspace_fa34c6d86dbce8bbeeb40cc7f170e93f" type="folder">16</container>
@@ -332,7 +354,7 @@
             <c04 id="aspace_ref29_nu3" level="file">
               <did>
                 <unitdate normal="1986/1989" type="inclusive">1986-1989</unitdate>
-                <container id="aspace_31b5f1785c1b12f95722906fe7a7ed23" label="box-folder"
+                <container id="aspace_31b5f1785c1b12f95722906fe7a7ed23" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_a5cd6245cf913da48ab538b87b9ee7a7"
                   parent="aspace_31b5f1785c1b12f95722906fe7a7ed23" type="folder">17</container>
@@ -341,7 +363,7 @@
             <c04 id="aspace_ref30_srh" level="file">
               <did>
                 <unitdate normal="1990/1992" type="inclusive">1990-1992</unitdate>
-                <container id="aspace_d2a87458f419058ff9e9774ec330d385" label="box-folder"
+                <container id="aspace_d2a87458f419058ff9e9774ec330d385" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_c585ad96c0d9c22ff3837d911c9ed266"
                   parent="aspace_d2a87458f419058ff9e9774ec330d385" type="folder">18</container>
@@ -350,7 +372,7 @@
             <c04 id="aspace_ref31_2ux" level="file">
               <did>
                 <unitdate normal="1993/1996" type="inclusive">1993-1996</unitdate>
-                <container id="aspace_29a5289fccd505bfd207bd1fa400a66d" label="box-folder"
+                <container id="aspace_29a5289fccd505bfd207bd1fa400a66d" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_f09afd43ee17f9ecb34fd59d335c6b40"
                   parent="aspace_29a5289fccd505bfd207bd1fa400a66d" type="folder">19</container>
@@ -359,7 +381,7 @@
             <c04 id="aspace_ref32_x49" level="file">
               <did>
                 <unitdate normal="1997/1999" type="inclusive">1997-1999</unitdate>
-                <container id="aspace_e086ba3285e984f87d1ffc238e74e2c0" label="box-folder"
+                <container id="aspace_e086ba3285e984f87d1ffc238e74e2c0" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_4d0663d3f20510c80423961b27e049b8"
                   parent="aspace_e086ba3285e984f87d1ffc238e74e2c0" type="folder">20</container>
@@ -368,7 +390,7 @@
             <c04 id="aspace_ref33_t3i" level="file">
               <did>
                 <unitdate normal="2000/2000">2000</unitdate>
-                <container id="aspace_1680823c86ea7767e7d9d8e11c1ea752" label="box-folder"
+                <container id="aspace_1680823c86ea7767e7d9d8e11c1ea752" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_96910f0ca810ee682dda2bf4e2f64b22"
                   parent="aspace_1680823c86ea7767e7d9d8e11c1ea752" type="folder">21</container>
@@ -377,7 +399,7 @@
             <c04 id="aspace_ref34_qoi" level="file">
               <did>
                 <unitdate normal="2001/2002" type="inclusive">2001-2002</unitdate>
-                <container id="aspace_d71d0e1b57df186cc110261d953918da" label="box-folder"
+                <container id="aspace_d71d0e1b57df186cc110261d953918da" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_a3054b64e9fee03eb5bcaf8b715d9608"
                   parent="aspace_d71d0e1b57df186cc110261d953918da" type="folder">22</container>
@@ -386,13 +408,13 @@
           </c03>
           <c03 id="aspace_e57268430a36b903623567c5f78de247" level="subseries">
             <did>
-              <unittitle>Yearbooks</unittitle>
-              <unitdate normal="1954/2005" type="inclusive">1954-2005</unitdate>
+              <unittitle>Yearbooks,
+              <unitdate normal="1954/2005" type="inclusive">1954-2005</unitdate></unittitle>
             </did>
             <c04 id="aspace_ref35_oly" level="file">
               <did>
                 <unitdate normal="1954/1963" type="inclusive">1954-1963</unitdate>
-                <container id="aspace_49cb37fc375dd86c2f191fcfca7562ab" label="box-folder"
+                <container id="aspace_49cb37fc375dd86c2f191fcfca7562ab" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_bf7c9d73fed47b267f2b4f96f60417b4"
                   parent="aspace_49cb37fc375dd86c2f191fcfca7562ab" type="folder">23</container>
@@ -401,7 +423,7 @@
             <c04 id="aspace_ref36_ihu" level="file">
               <did>
                 <unitdate normal="1966/1971" type="inclusive">1966-1971</unitdate>
-                <container id="aspace_0dc267c16770547623205aca881c18b2" label="box-folder"
+                <container id="aspace_0dc267c16770547623205aca881c18b2" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_23b3f14c86068858b167c47c86793aa4"
                   parent="aspace_0dc267c16770547623205aca881c18b2" type="folder">24</container>
@@ -410,7 +432,7 @@
             <c04 id="aspace_ref37_45i" level="file">
               <did>
                 <unitdate normal="1974/1980" type="inclusive">1974-1980</unitdate>
-                <container id="aspace_7951f90c9d6a6baf44b92a5be0a4c4c0" label="box-folder"
+                <container id="aspace_7951f90c9d6a6baf44b92a5be0a4c4c0" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_bfa662693c6ab1f9f89b1b02dcbb8dff"
                   parent="aspace_7951f90c9d6a6baf44b92a5be0a4c4c0" type="folder">25</container>
@@ -419,7 +441,7 @@
             <c04 id="aspace_ref38_ys6" level="file">
               <did>
                 <unitdate normal="1980/1986" type="inclusive">1980-1986</unitdate>
-                <container id="aspace_d95f04904c6c4277998bc21c0150836c" label="box-folder"
+                <container id="aspace_d95f04904c6c4277998bc21c0150836c" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_bbb9c70f62901faf9880faa60923fdb1"
                   parent="aspace_d95f04904c6c4277998bc21c0150836c" type="folder">26</container>
@@ -428,7 +450,7 @@
             <c04 id="aspace_ref39_1al" level="file">
               <did>
                 <unitdate normal="1986/1993" type="inclusive">1986-1993</unitdate>
-                <container id="aspace_5ff99521a296ab3536b6427f911711f7" label="box-folder"
+                <container id="aspace_5ff99521a296ab3536b6427f911711f7" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_db79ea4373c035e5e75dec40043fa4e9"
                   parent="aspace_5ff99521a296ab3536b6427f911711f7" type="folder">27</container>
@@ -437,24 +459,32 @@
             <c04 id="aspace_ref40_6ey" level="file">
               <did>
                 <unitdate normal="1993/2005" type="inclusive">1993-2005</unitdate>
-                <container id="aspace_458bf1d015de2ea4e860a36889091179" label="box-folder"
+                <container id="aspace_458bf1d015de2ea4e860a36889091179" label="Box-Folder"
                   type="box">1</container>
                 <container id="aspace_d6186cde6b6e7d8ecf9c72996f9fcca2"
                   parent="aspace_458bf1d015de2ea4e860a36889091179" type="folder">28</container>
               </did>
             </c04>
           </c03>
+          <c03  id="aspace_bff9fce7b629966c74a61a1c31e8f2ce" level="item">
+            <did>
+              <unittitle>Guest Book,
+              <unitdate normal="1973/1995" type="inclusive">1973-1995</unitdate></unittitle>
+              <container id="aspace_50a4f05bd97a7009be8b8df7343732eb" label="Box" type="box"
+                >14</container>
+            </did>
+          </c03>
         </c02>
         <c02 id="aspace_ref41_50p" level="subseries">
           <did>
-            <unittitle>Garden Club Awards and Pressbooks</unittitle>
-            <unitdate normal="1964/2001" type="inclusive">1964-2001</unitdate>
+            <unittitle>Garden Club Awards and Pressbooks,
+            <unitdate normal="1964/2001" type="inclusive">1964-2001</unitdate></unittitle>
           </did>
           <c03 id="aspace_ref42_i8o" level="file">
             <did>
-              <unittitle>Flower Shows</unittitle>
-              <unitdate normal="1964/2000" type="inclusive">1964-2000</unitdate>
-              <container id="aspace_e51d97f895300355b7d03110c4edf1f4" label="box-folder" type="box"
+              <unittitle>Flower Shows,
+              <unitdate normal="1964/2000" type="inclusive">1964-2000</unitdate></unittitle>
+              <container id="aspace_e51d97f895300355b7d03110c4edf1f4" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_4679ff4d7501151f45c979bf4f0d0dea"
                 parent="aspace_e51d97f895300355b7d03110c4edf1f4" type="folder">29</container>
@@ -462,9 +492,9 @@
           </c03>
           <c03 id="aspace_ref43_vg2" level="file">
             <did>
-              <unittitle>Pressbooks - Publicity Contest</unittitle>
-              <unitdate normal="1982/1982">1982</unitdate>
-              <container id="aspace_3afe8f6b1d9dbd1184998858e55e215f" label="box-folder" type="box"
+              <unittitle>Pressbooks - Publicity Contest,
+              <unitdate normal="1982/1982">1982</unitdate></unittitle>
+              <container id="aspace_3afe8f6b1d9dbd1184998858e55e215f" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_0b9a0cd68802142dc851ab8d2e73a97c"
                 parent="aspace_3afe8f6b1d9dbd1184998858e55e215f" type="folder">30</container>
@@ -472,9 +502,9 @@
           </c03>
           <c03 id="aspace_ref44_xcl" level="file">
             <did>
-              <unittitle>Horticulture Award</unittitle>
-              <unitdate normal="1983/1983">1983</unitdate>
-              <container id="aspace_a34d52103f9e2525d01220a4c68c52ce" label="box-folder" type="box"
+              <unittitle>Horticulture Award,
+              <unitdate normal="1983/1983">1983</unitdate></unittitle>
+              <container id="aspace_a34d52103f9e2525d01220a4c68c52ce" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_032c94a4670aaaef27908724ac7a417a"
                 parent="aspace_a34d52103f9e2525d01220a4c68c52ce" type="folder">31</container>
@@ -482,9 +512,9 @@
           </c03>
           <c03 id="aspace_ref45_u1i" level="file">
             <did>
-              <unittitle>Garden Therapy Award</unittitle>
-              <unitdate normal="1986/1988" type="inclusive">1986-1988</unitdate>
-              <container id="aspace_1dbbe2f4fa0fa670222ad2e5900c4f65" label="box-folder" type="box"
+              <unittitle>Garden Therapy Award,
+              <unitdate normal="1986/1988" type="inclusive">1986-1988</unitdate></unittitle>
+              <container id="aspace_1dbbe2f4fa0fa670222ad2e5900c4f65" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_820fe5b0e84e3496cbdcfc3acdf249ae"
                 parent="aspace_1dbbe2f4fa0fa670222ad2e5900c4f65" type="folder">32</container>
@@ -492,9 +522,9 @@
           </c03>
           <c03 id="aspace_ref46_la2" level="file">
             <did>
-              <unittitle>Conservation of Water Award</unittitle>
-              <unitdate normal="1987/1987">1987</unitdate>
-              <container id="aspace_9cfeb5b56cde134ff1fbe984e012abed" label="box-folder" type="box"
+              <unittitle>Conservation of Water Award,
+              <unitdate normal="1987/1987">1987</unitdate></unittitle>
+              <container id="aspace_9cfeb5b56cde134ff1fbe984e012abed" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_b7dd30554365939b5dc88f3fb5e5d513"
                 parent="aspace_9cfeb5b56cde134ff1fbe984e012abed" type="folder">33</container>
@@ -502,9 +532,9 @@
           </c03>
           <c03 id="aspace_ref47_rqx" level="file">
             <did>
-              <unittitle>Civic Project Award</unittitle>
-              <unitdate normal="1987/1988" type="inclusive">1987-1988</unitdate>
-              <container id="aspace_53f50463ad4aa74a0de47c2f7c69f3c7" label="box-folder" type="box"
+              <unittitle>Civic Project Award,
+              <unitdate normal="1987/1988" type="inclusive">1987-1988</unitdate></unittitle>
+              <container id="aspace_53f50463ad4aa74a0de47c2f7c69f3c7" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_6b980c49a73573a9ee501c02213e28d9"
                 parent="aspace_53f50463ad4aa74a0de47c2f7c69f3c7" type="folder">34</container>
@@ -512,9 +542,9 @@
           </c03>
           <c03 id="aspace_ref48_qol" level="file">
             <did>
-              <unittitle>Newspaper Clippings</unittitle>
-              <unitdate normal="1987/1996" type="inclusive">1987-1996</unitdate>
-              <container id="aspace_e64498b5ec452e4bb09c17e863dac7af" label="box-folder" type="box"
+              <unittitle>Newspaper Clippings,
+              <unitdate normal="1987/1996" type="inclusive">1987-1996</unitdate></unittitle>
+              <container id="aspace_e64498b5ec452e4bb09c17e863dac7af" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_1af1fcafd666f3e00013e94b5d150d80"
                 parent="aspace_e64498b5ec452e4bb09c17e863dac7af" type="folder">35</container>
@@ -522,9 +552,9 @@
           </c03>
           <c03 id="aspace_ref49_33a" level="file">
             <did>
-              <unittitle>Horticulture Award</unittitle>
-              <unitdate>November 1988</unitdate>
-              <container id="aspace_f12569895dd03ff8e98cb8f47911313e" label="box-folder" type="box"
+              <unittitle>Horticulture Award,
+              <unitdate>November 1988</unitdate></unittitle>
+              <container id="aspace_f12569895dd03ff8e98cb8f47911313e" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_1af62e952514534e89e324d1b3256fc4"
                 parent="aspace_f12569895dd03ff8e98cb8f47911313e" type="folder">36</container>
@@ -532,9 +562,9 @@
           </c03>
           <c03 id="aspace_ref50_9zd" level="file">
             <did>
-              <unittitle>Garden Therapy Service Award</unittitle>
-              <unitdate>October 1989</unitdate>
-              <container id="aspace_4f6933068a82755ff212e5fa4498816a" label="box-folder" type="box"
+              <unittitle>Garden Therapy Service Award,
+              <unitdate>October 1989</unitdate></unittitle>
+              <container id="aspace_4f6933068a82755ff212e5fa4498816a" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_c3cf2f720f05eafcc6bb869bf8f7854a"
                 parent="aspace_4f6933068a82755ff212e5fa4498816a" type="folder">37</container>
@@ -542,9 +572,9 @@
           </c03>
           <c03 id="aspace_ref51_c4c" level="file">
             <did>
-              <unittitle>Garden Therapy Beautification and/or Education Award</unittitle>
-              <unitdate>October 1989</unitdate>
-              <container id="aspace_d1295a8596420e58f9927322a09f0a30" label="box-folder" type="box"
+              <unittitle>Garden Therapy Beautification and/or Education Award,
+              <unitdate>October 1989</unitdate></unittitle>
+              <container id="aspace_d1295a8596420e58f9927322a09f0a30" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_f7aed23f10bfc19490a1c5d0c7ea0357"
                 parent="aspace_d1295a8596420e58f9927322a09f0a30" type="folder">38</container>
@@ -552,9 +582,9 @@
           </c03>
           <c03 id="aspace_ref52_qfk" level="file">
             <did>
-              <unittitle>Newspaper Clippings - Award S-6</unittitle>
-              <unitdate normal="1990/1990">1990</unitdate>
-              <container id="aspace_b8fc8d923060b82663532b99caee57d3" label="box-folder" type="box"
+              <unittitle>Newspaper Clippings - Award S-6,
+              <unitdate normal="1990/1990">1990</unitdate></unittitle>
+              <container id="aspace_b8fc8d923060b82663532b99caee57d3" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_b6fa5a816d57130d6a4613b044e90eb7"
                 parent="aspace_b8fc8d923060b82663532b99caee57d3" type="folder">39</container>
@@ -562,9 +592,9 @@
           </c03>
           <c03 id="aspace_ref53_qdq" level="file">
             <did>
-              <unittitle>Birds Habitat Award</unittitle>
-              <unitdate>December 1991</unitdate>
-              <container id="aspace_805d8247a66db6ec2102ced0e66b25b1" label="box-folder" type="box"
+              <unittitle>Birds Habitat Award,
+              <unitdate>December 1991</unitdate></unittitle>
+              <container id="aspace_805d8247a66db6ec2102ced0e66b25b1" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_32b52704751ce15a5a36a9d0113d9e50"
                 parent="aspace_805d8247a66db6ec2102ced0e66b25b1" type="folder">40</container>
@@ -572,9 +602,9 @@
           </c03>
           <c03 id="aspace_ref54_n9i" level="file">
             <did>
-              <unittitle>Garden Therapy Services Award</unittitle>
-              <unitdate>November 1993</unitdate>
-              <container id="aspace_c3099d5bd76f4b23ed263442bb08cb11" label="box-folder" type="box"
+              <unittitle>Garden Therapy Services Award,
+              <unitdate>November 1993</unitdate></unittitle>
+              <container id="aspace_c3099d5bd76f4b23ed263442bb08cb11" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_4dcfe348e24b274503c96288a4302a95"
                 parent="aspace_c3099d5bd76f4b23ed263442bb08cb11" type="folder">41</container>
@@ -582,9 +612,9 @@
           </c03>
           <c03 id="aspace_ref55_hsv" level="file">
             <did>
-              <unittitle>Garden Therapy Beautification and/or Education Award</unittitle>
-              <unitdate>November 1993</unitdate>
-              <container id="aspace_31764f14f0cca16da281185a98258364" label="box-folder" type="box"
+              <unittitle>Garden Therapy Beautification and/or Education Award,
+              <unitdate>November 1993</unitdate></unittitle>
+              <container id="aspace_31764f14f0cca16da281185a98258364" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_7f4daf8c1fd9be6d49a47d44568c4e29"
                 parent="aspace_31764f14f0cca16da281185a98258364" type="folder">42</container>
@@ -592,9 +622,9 @@
           </c03>
           <c03 id="aspace_ref56_hwj" level="file">
             <did>
-              <unittitle>Tree Award</unittitle>
-              <unitdate>November 1994</unitdate>
-              <container id="aspace_b0ac23f1a01d8cb826f3cc1cb9e12b49" label="box-folder" type="box"
+              <unittitle>Tree Award,
+              <unitdate>November 1994</unitdate></unittitle>
+              <container id="aspace_b0ac23f1a01d8cb826f3cc1cb9e12b49" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_eba3e490467521cee5712d828cd1a85d"
                 parent="aspace_b0ac23f1a01d8cb826f3cc1cb9e12b49" type="folder">43</container>
@@ -602,9 +632,9 @@
           </c03>
           <c03 id="aspace_ref57_emi" level="file">
             <did>
-              <unittitle>Roadside Improvement Award</unittitle>
-              <unitdate>November 1994</unitdate>
-              <container id="aspace_2876c9610196b492796d53e38be898eb" label="box-folder" type="box"
+              <unittitle>Roadside Improvement Award,
+              <unitdate>November 1994</unitdate></unittitle>
+              <container id="aspace_2876c9610196b492796d53e38be898eb" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_63537988945eed63ff820eec02cb5909"
                 parent="aspace_2876c9610196b492796d53e38be898eb" type="folder">44</container>
@@ -612,9 +642,9 @@
           </c03>
           <c03 id="aspace_ref58_712" level="file">
             <did>
-              <unittitle>Garden Therapy Beautification and/or Education Award</unittitle>
-              <unitdate normal="1994/1994">1994</unitdate>
-              <container id="aspace_70b95eaaff0fa873a147a230f76af5e8" label="box-folder" type="box"
+              <unittitle>Garden Therapy Beautification and/or Education Award,
+              <unitdate normal="1994/1994">1994</unitdate></unittitle>
+              <container id="aspace_70b95eaaff0fa873a147a230f76af5e8" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_d70a24189aae6a228c1819e39ff2e10a"
                 parent="aspace_70b95eaaff0fa873a147a230f76af5e8" type="folder">45</container>
@@ -622,9 +652,9 @@
           </c03>
           <c03 id="aspace_ref59_piw" level="file">
             <did>
-              <unittitle>National Award - Holiday Show</unittitle>
-              <unitdate>December 1996</unitdate>
-              <container id="aspace_c6af63a2362a3d29aee26ea4424e709f" label="box-folder" type="box"
+              <unittitle>National Award - Holiday Show,
+              <unitdate>December 1996</unitdate></unittitle>
+              <container id="aspace_c6af63a2362a3d29aee26ea4424e709f" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_1d8945175ea043ccdee02ba2b3001383"
                 parent="aspace_c6af63a2362a3d29aee26ea4424e709f" type="folder">46</container>
@@ -632,9 +662,9 @@
           </c03>
           <c03 id="aspace_ref60_1xd" level="file">
             <did>
-              <unittitle>Membership Award</unittitle>
-              <unitdate>November 2000</unitdate>
-              <container id="aspace_1a0f6316272845e09b14933cae7efe6f" label="box-folder" type="box"
+              <unittitle>Membership Award,
+              <unitdate>November 2000</unitdate></unittitle>
+              <container id="aspace_1a0f6316272845e09b14933cae7efe6f" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_33d10f530f8037cb3bada21ab5116717"
                 parent="aspace_1a0f6316272845e09b14933cae7efe6f" type="folder">47</container>
@@ -642,9 +672,9 @@
           </c03>
           <c03 id="aspace_ref61_gko" level="file">
             <did>
-              <unittitle>Horticulture - Herb Award</unittitle>
-              <unitdate>November 2001</unitdate>
-              <container id="aspace_2f0dd4e649f5747639da041920bd569c" label="box-folder" type="box"
+              <unittitle>Horticulture - Herb Award,
+              <unitdate>November 2001</unitdate></unittitle>
+              <container id="aspace_2f0dd4e649f5747639da041920bd569c" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_0a684f5fa0843f45d572d68f5dcfe4de"
                 parent="aspace_2f0dd4e649f5747639da041920bd569c" type="folder">48</container>
@@ -653,14 +683,14 @@
         </c02>
         <c02 id="aspace_ref62_j5x" level="subseries">
           <did>
-            <unittitle>Garden Club Scrapbooks</unittitle>
-            <unitdate normal="1962/2009" type="inclusive">1962-2009</unitdate>
+            <unittitle>Garden Club Scrapbooks,
+            <unitdate normal="1962/2009" type="inclusive">1962-2009</unitdate></unittitle>
           </did>
           <c03 id="aspace_ref63_0lm" level="file">
             <did>
-              <unittitle>Loose Scrapbook Items - Newspaper Clippings and Photographs</unittitle>
-              <unitdate>n.d.</unitdate>
-              <container id="aspace_001efb87b4000ead98c6805795763169" label="box-folder" type="box"
+              <unittitle>Loose Scrapbook Items - Newspaper Clippings and Photographs,
+              <unitdate>n.d.</unitdate></unittitle>
+              <container id="aspace_001efb87b4000ead98c6805795763169" label="Box-Folder" type="box"
                 >1</container>
               <container id="aspace_2b894c61b9a10b5ddf66266ec782183b"
                 parent="aspace_001efb87b4000ead98c6805795763169" type="folder">49</container>
@@ -668,241 +698,285 @@
           </c03>
           <c03 id="aspace_283ace1b66223329c2d20fb7ff755180" level="subseries">
             <did>
-              <unittitle>Scrapbooks</unittitle>
-              <unitdate normal="1962/2005" type="inclusive">1962-2005</unitdate>
+              <unittitle>Scrapbooks,
+              <unitdate normal="1962/2005" type="inclusive">1962-2005</unitdate></unittitle>
             </did>
             <c04 id="aspace_ref64_6hk" level="file">
               <did>
                 <unitdate normal="1962/1963" type="inclusive">1962-1963</unitdate>
-                <container id="aspace_d281d144b5bec78107c3b54380686004" label="box-folder"
+                <container id="aspace_786fc4924290b5c6df0ac12859bb4c8a" label="Box-Folder"
                   type="box">2</container>
-                <container id="aspace_24800aec1f369056e0e1befe96bc9c99"
-                  parent="aspace_d281d144b5bec78107c3b54380686004" type="folder">1</container>
+                <container id="aspace_a025d4da8a351e0bf6c1889abd7ae4fe"
+                  parent="aspace_786fc4924290b5c6df0ac12859bb4c8a" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref66_mj4" level="file">
               <did>
                 <unitdate normal="1971/1972" type="inclusive">1971-1972</unitdate>
-                <container id="aspace_30d98d787bbb9180ee224c51f2249d55" label="box-folder"
+                <container id="aspace_ae493753167bc1fa1b61da838455f35f" label="Box-Folder"
                   type="box">2</container>
-                <container id="aspace_07c5487998a6428be4de6ce637ee8844"
-                  parent="aspace_30d98d787bbb9180ee224c51f2249d55" type="folder">2</container>
+                <container id="aspace_a26d850599fa2e2ffe36f6b9b4621c68"
+                  parent="aspace_ae493753167bc1fa1b61da838455f35f" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref67_ra5" level="file">
               <did>
                 <unitdate normal="1972/1972">1972</unitdate>
-                <container id="aspace_55e5d87d868b28c41a6862d8ebc91e2c" label="box-folder"
+                <container id="aspace_3af68185dca230e685d09eae9d5d45eb" label="Box-Folder"
                   type="box">2</container>
-                <container id="aspace_876cd74015d3ac27dbd354fb54a48360"
-                  parent="aspace_55e5d87d868b28c41a6862d8ebc91e2c" type="folder">3</container>
+                <container id="aspace_479bc35514a897e249fc2c2ce9d46eab"
+                  parent="aspace_3af68185dca230e685d09eae9d5d45eb" type="folder">3</container>
               </did>
             </c04>
             <c04 id="aspace_ref68_uqs" level="file">
               <did>
                 <unitdate normal="1978/1979" type="inclusive">1978-1979</unitdate>
-                <container id="aspace_8b41c244a93ee76c71d98d69710ce01e" label="box-folder"
+                <container id="aspace_f37987e430e1206f4d2aab1be7294ddc" label="Box-Folder"
                   type="box">3</container>
-                <container id="aspace_a9591bcc6c23ca7664a1a6082b09ace9"
-                  parent="aspace_8b41c244a93ee76c71d98d69710ce01e" type="folder">1</container>
+                <container id="aspace_033d99317c846316debc894e5ba64284"
+                  parent="aspace_f37987e430e1206f4d2aab1be7294ddc" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref69_61b" level="file">
               <did>
                 <unitdate normal="1979/1979">1979</unitdate>
-                <container id="aspace_46745c342bca2a7ac486f1879bccd0b1" label="box-folder"
+                <container id="aspace_161682de0430d7f450c2f1715d37595c" label="Box-Folder"
                   type="box">3</container>
-                <container id="aspace_d97a735c18d21ee0f32f34aae628c055"
-                  parent="aspace_46745c342bca2a7ac486f1879bccd0b1" type="folder">2</container>
+                <container id="aspace_b6b3061eff785ffcd087873d4732878d"
+                  parent="aspace_161682de0430d7f450c2f1715d37595c" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref70_idk" level="file">
               <did>
                 <unitdate normal="1982/1983" type="inclusive">1982-1983</unitdate>
-                <container id="aspace_050796e413ec81f9cdb349bdc3c6e7f4" label="box-folder"
+                <container id="aspace_19c4317213794a629d51e6dd25e1c1d7" label="Box-Folder"
                   type="box">3</container>
-                <container id="aspace_10e4fe78dfe1a0bfad1bc2cab7aff205"
-                  parent="aspace_050796e413ec81f9cdb349bdc3c6e7f4" type="folder">3</container>
+                <container id="aspace_d1de3a4c669578203629c89a73b2c077"
+                  parent="aspace_19c4317213794a629d51e6dd25e1c1d7" type="folder">3</container>
               </did>
             </c04>
             <c04 id="aspace_ref71_mr5" level="file">
               <did>
                 <unitdate normal="1983/1984" type="inclusive">1983-1984</unitdate>
-                <container id="aspace_66a99e61e24ad306bf041322814bc2b7" label="box-folder"
+                <container id="aspace_e6c5c30c93be61269e6938541a0841c0" label="Box-Folder"
                   type="box">4</container>
-                <container id="aspace_2f9267537f37872a74421eb187a25dab"
-                  parent="aspace_66a99e61e24ad306bf041322814bc2b7" type="folder">1</container>
+                <container id="aspace_8fb196dc602a458e69b80d3077c88174"
+                  parent="aspace_e6c5c30c93be61269e6938541a0841c0" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref72_735" level="file">
               <did>
                 <unitdate normal="1984/1985" type="inclusive">1984-1985</unitdate>
-                <container id="aspace_a13a903f784bedf29cc9ed430b179160" label="box-folder"
+                <container id="aspace_662463f471e914158d688387aedf1b9d" label="Box-Folder"
                   type="box">4</container>
-                <container id="aspace_f4fcf47b4bbe7035e897ad1d8667c702"
-                  parent="aspace_a13a903f784bedf29cc9ed430b179160" type="folder">2</container>
+                <container id="aspace_f85f5ad5ccf6a0e4a2a55cfee7592560"
+                  parent="aspace_662463f471e914158d688387aedf1b9d" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref73_434" level="file">
               <did>
                 <unitdate normal="1985/1986" type="inclusive">1985-1986</unitdate>
-                <container id="aspace_44436432ea0aa7bb233184a49674a809" label="box-folder"
+                <container id="aspace_7bb172f5f4ef602b1e2361a66e2f2819" label="Box-Folder"
                   type="box">5</container>
-                <container id="aspace_1f14110eb9443da715418e8982f01727"
-                  parent="aspace_44436432ea0aa7bb233184a49674a809" type="folder">2</container>
+                <container id="aspace_35066658952578ac39918776c2db15a7"
+                  parent="aspace_7bb172f5f4ef602b1e2361a66e2f2819" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref74_wlj" level="file">
               <did>
                 <unitdate normal="1986/1987" type="inclusive">1986-1987</unitdate>
-                <container id="aspace_f61ba8de14544885e68e36aeb5d78c84" label="box-folder"
+                <container id="aspace_0cae5bc22cf3b39e1843367c982e4c12" label="Box-Folder"
                   type="box">6</container>
-                <container id="aspace_3ccf7e02e37899560169ae04754e26ef"
-                  parent="aspace_f61ba8de14544885e68e36aeb5d78c84" type="folder">1</container>
+                <container id="aspace_b3396bea460992d023a1ca101e71704f"
+                  parent="aspace_0cae5bc22cf3b39e1843367c982e4c12" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref75_j90" level="file">
               <did>
                 <unitdate normal="1987/1988" type="inclusive">1987-1988</unitdate>
-                <container id="aspace_e786d4b3db41fb4d60f0aa4d5c2f42af" label="box-folder"
+                <container id="aspace_1cb4618e744988e47f0dade133127c9d" label="Box-Folder"
                   type="box">7</container>
-                <container id="aspace_3fb09de4a541b3404774b3cb50816dd6"
-                  parent="aspace_e786d4b3db41fb4d60f0aa4d5c2f42af" type="folder">1</container>
+                <container id="aspace_3987935eba5bd27992b06806d6748481"
+                  parent="aspace_1cb4618e744988e47f0dade133127c9d" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref76_x8c" level="file">
               <did>
                 <unitdate normal="1988/1989" type="inclusive">1988-1989</unitdate>
-                <container id="aspace_f99f34a820c14256957bc4ec96973ef1" label="box-folder"
+                <container id="aspace_5119f4fbce721fc9883ec2211d03c1e3" label="Box-Folder"
                   type="box">6</container>
-                <container id="aspace_03bce6d00dbc6c03a5d9f9bbda2cb0db"
-                  parent="aspace_f99f34a820c14256957bc4ec96973ef1" type="folder">2</container>
+                <container id="aspace_26e1a733528b71ae021ec92dc0eb939f"
+                  parent="aspace_5119f4fbce721fc9883ec2211d03c1e3" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref77_zf3" level="file">
               <did>
                 <unitdate normal="1989/1990" type="inclusive">1989-1990</unitdate>
-                <container id="aspace_d9113477cdb755b6a5a5a76484eed1b8" label="box-folder"
+                <container id="aspace_4e387a43612d0aaf46656f7bd02ccffe" label="Box-Folder"
                   type="box">5</container>
-                <container id="aspace_3618f85d4d83fa0448dcd82641d5157e"
-                  parent="aspace_d9113477cdb755b6a5a5a76484eed1b8" type="folder">2</container>
+                <container id="aspace_5d9a25a8917402a9a651eb01a39ccd2b"
+                  parent="aspace_4e387a43612d0aaf46656f7bd02ccffe" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref78_wpy" level="file">
               <did>
+                <unitid  identifier="1558"
+                  type="Archivists Toolkit Database::RESOURCE_COMPONENT">1558</unitid>
                 <unitdate normal="1990/1991" type="inclusive">1990-1991</unitdate>
-                <container id="aspace_361af5851d503d8ee66e0c8f572bf697" label="box-folder"
+                <container id="aspace_2ecad2bd05437ead6e483c3ff93f20ab" label="Box-Folder"
                   type="box">8</container>
-                <container id="aspace_37434d32111ed57be69950142b046be7"
-                  parent="aspace_361af5851d503d8ee66e0c8f572bf697" type="folder">1</container>
+                <container id="aspace_7daecfb7c4f6a7ca71bca78c28fb18ef"
+                  parent="aspace_2ecad2bd05437ead6e483c3ff93f20ab" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref79_zuf" level="file">
               <did>
                 <unitdate normal="1991/1992" type="inclusive">1991-1992</unitdate>
-                <container id="aspace_c1a07ad39af46869c1df3e9820eaeebb" label="box-folder"
+                <container id="aspace_0d9f597fb15469658bcf5c4d82ea7265" label="Box-Folder"
                   type="box">9</container>
-                <container id="aspace_6c30eba0cf181c5229d63a70a7c5d78b"
-                  parent="aspace_c1a07ad39af46869c1df3e9820eaeebb" type="folder">1</container>
+                <container id="aspace_2a688cb400f63bfd9a18f2b4184c060e"
+                  parent="aspace_0d9f597fb15469658bcf5c4d82ea7265" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref80_ma6" level="file">
               <did>
                 <unitdate normal="1992/1993" type="inclusive">1992-1993</unitdate>
-                <container id="aspace_720bc9c279649a2570b5141a406fcc17" label="box-folder"
+                <container id="aspace_0585bb16f56dca521b430ac091c5c3ac" label="Box-Folder"
                   type="box">8</container>
-                <container id="aspace_7f5b1bce6c873e263a4b26f27ad34bb8"
-                  parent="aspace_720bc9c279649a2570b5141a406fcc17" type="folder">2</container>
+                <container id="aspace_6667635e43db5aa130678d9a3b29fc9f"
+                  parent="aspace_0585bb16f56dca521b430ac091c5c3ac" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref81_jwl" level="file">
               <did>
                 <unitdate normal="1993/1994" type="inclusive">1993-1994</unitdate>
-                <container id="aspace_c14cd1bdeead126f2f28c33d15e2951f" label="box-folder"
+                <container id="aspace_c376ab44b0e69eca34c89ed2ca9e8e8c" label="Box-Folder"
                   type="box">9</container>
-                <container id="aspace_9283994c122792e467755b5d0196cf5a"
-                  parent="aspace_c14cd1bdeead126f2f28c33d15e2951f" type="folder">2</container>
+                <container id="aspace_5e8901f99b7e71d15a35ad8995735ae3"
+                  parent="aspace_c376ab44b0e69eca34c89ed2ca9e8e8c" type="folder">2</container>
+              </did>
+            </c04>
+            <c04  id="aspace_7606841298af7c5d6296bf2da1cd2a94" level="item">
+              <did>
+                <unittitle>1994-1995</unittitle>
+                <container id="aspace_ac5d4c3ae09f3912c73c403612a70003" label="Box" type="box"
+                  >14</container>
+              </did>
+            </c04>
+            <c04  id="aspace_b9272b0446583e534b8acadca7342cde" level="item">
+              <did>
+                <unittitle>1995-1996</unittitle>
+                <container id="aspace_0a6cc76a66564cee31c53f1ce0447a3b" label="Box" type="box"
+                  >14</container>
               </did>
             </c04>
             <c04 id="aspace_ref82_e81" level="file">
               <did>
                 <unitdate normal="1996/1997" type="inclusive">1996-1997</unitdate>
-                <container id="aspace_a32a5cf5e4ae9830af537b0ec46431db" label="box-folder"
+                <container id="aspace_b36479d608328122c873c229d09cc42a" label="Box-Folder"
                   type="box">10</container>
-                <container id="aspace_4de59ddfe32ad09b4ea9af70e7eae052"
-                  parent="aspace_a32a5cf5e4ae9830af537b0ec46431db" type="folder">1</container>
+                <container id="aspace_635b88cc5f9b03f4c344faa325bdc3d7"
+                  parent="aspace_b36479d608328122c873c229d09cc42a" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref83_8v1" level="file">
               <did>
                 <unitdate normal="1997/1998" type="inclusive">1997-1998</unitdate>
-                <container id="aspace_00201a12b974c4450825a6b908ca834d" label="box-folder"
+                <container id="aspace_5639659165cebfef9fcb43849812ee64" label="Box-Folder"
                   type="box">10</container>
-                <container id="aspace_897435141ee61a2024df3adc4b57dabc"
-                  parent="aspace_00201a12b974c4450825a6b908ca834d" type="folder">2</container>
+                <container id="aspace_ead1957f60d257887895482e0ab0ad40"
+                  parent="aspace_5639659165cebfef9fcb43849812ee64" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref84_a0l" level="file">
               <did>
                 <unitdate normal="1998/1999" type="inclusive">1998-1999</unitdate>
-                <container id="aspace_b9eb1d5acd3697ffac26cf5f443052a4" label="box-folder"
+                <container id="aspace_1266fabc2871f8cbf6f585161d755997" label="Box-Folder"
                   type="box">11</container>
-                <container id="aspace_0e2608609ea36d4078ccaaeb4f9d3185"
-                  parent="aspace_b9eb1d5acd3697ffac26cf5f443052a4" type="folder">1</container>
+                <container id="aspace_d17632ef34a26f3127e097524634596c"
+                  parent="aspace_1266fabc2871f8cbf6f585161d755997" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref85_d5k" level="file">
               <did>
                 <unitdate normal="1999/2000" type="inclusive">1999-2000</unitdate>
-                <container id="aspace_c26e1165a4020e55c9e796b2e36d6cae" label="box-folder"
+                <container id="aspace_e2dad709f5bfb97252a66825ba718e5b" label="Box-Folder"
                   type="box">11</container>
-                <container id="aspace_e62a5bae990ad9802e8126df62a1033a"
-                  parent="aspace_c26e1165a4020e55c9e796b2e36d6cae" type="folder">2</container>
+                <container id="aspace_575046fe839134b37bd142a78a30bb5b"
+                  parent="aspace_e2dad709f5bfb97252a66825ba718e5b" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref86_j8g" level="file">
               <did>
                 <unitdate normal="2000/2001" type="inclusive">2000-2001</unitdate>
-                <container id="aspace_782df7b7b361b45392d8405ca2ed617f" label="box-folder"
+                <container id="aspace_1d22a37d053183ad31f83047554ac5f6" label="Box-Folder"
                   type="box">11</container>
-                <container id="aspace_9fcf9c63a4a67a15eb5071925b685140"
-                  parent="aspace_782df7b7b361b45392d8405ca2ed617f" type="folder">3</container>
+                <container id="aspace_4f8630f7c1f1f7e319e9786973ad09d8"
+                  parent="aspace_1d22a37d053183ad31f83047554ac5f6" type="folder">3</container>
               </did>
             </c04>
             <c04 id="aspace_ref87_a5y" level="file">
               <did>
                 <unitdate normal="2001/2002" type="inclusive">2001-2002</unitdate>
-                <container id="aspace_e1833ca58adef866a7057ffe1ab2cf68" label="box-folder"
+                <container id="aspace_6b039900e5b62323d4ac4161046ff8db" label="Box-Folder"
                   type="box">12</container>
-                <container id="aspace_6c5c7d7698fdf09ba60c00e11041ec1c"
-                  parent="aspace_e1833ca58adef866a7057ffe1ab2cf68" type="folder">1</container>
+                <container id="aspace_39549dc9be5af5487ff2f07d0d540f1b"
+                  parent="aspace_6b039900e5b62323d4ac4161046ff8db" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref88_57o" level="file">
               <did>
                 <unitdate normal="2002/2003" type="inclusive">2002-2003</unitdate>
-                <container id="aspace_9fa6fecae86b159ea5081d6d9c6ef98a" label="box-folder"
+                <container id="aspace_0f2cd8470d875d5c926d94624ef63e0e" label="Box-Folder"
                   type="box">12</container>
-                <container id="aspace_27ac5f0b28a40804ad9346b2083f66bc"
-                  parent="aspace_9fa6fecae86b159ea5081d6d9c6ef98a" type="folder">2</container>
+                <container id="aspace_b36acd466392eee7067e034cc3aaf6d1"
+                  parent="aspace_0f2cd8470d875d5c926d94624ef63e0e" type="folder">2</container>
               </did>
             </c04>
             <c04 id="aspace_ref89_w62" level="file">
               <did>
                 <unitdate normal="2003/2004" type="inclusive">2003-2004</unitdate>
-                <container id="aspace_fc0ccce1ca32485574c373d3c06cc151" label="box-folder"
+                <container id="aspace_7230961289900a3da822effd18300237" label="Box-Folder"
                   type="box">13</container>
-                <container id="aspace_e25b7ee82818c10c73e8d275cf6c5ea6"
-                  parent="aspace_fc0ccce1ca32485574c373d3c06cc151" type="folder">1</container>
+                <container id="aspace_81f01c1eab6396a4fe22e3017553a490"
+                  parent="aspace_7230961289900a3da822effd18300237" type="folder">1</container>
               </did>
             </c04>
             <c04 id="aspace_ref90_0gy" level="file">
               <did>
                 <unitdate normal="2004/2005" type="inclusive">2004-2005</unitdate>
-                <container id="aspace_6d52625b05d646b226da1cd60d8b2baa" label="box-folder"
+                <container id="aspace_a2c22c6b0389f77c39d1d235d2b41786" label="Box-Folder"
                   type="box">13</container>
-                <container id="aspace_adefe9fef92b1972dd6271f42c652ed7"
-                  parent="aspace_6d52625b05d646b226da1cd60d8b2baa" type="folder">2</container>
+                <container id="aspace_9d12650838753b497abfc27cd3466dce"
+                  parent="aspace_a2c22c6b0389f77c39d1d235d2b41786" type="folder">2</container>
+              </did>
+            </c04>
+            <c04  id="aspace_d82b27b969778980ef40c6cd69291a88" level="item">
+              <did>
+                <unittitle>2005-2006</unittitle>
+                <container id="aspace_59ec9d0ac8f079d9db2413ed4ca8d3fc" label="Box" type="box"
+                  >14</container>
+              </did>
+            </c04>
+            <c04  id="aspace_b2a40c6699c44f842fd190ade4b5a300" level="item">
+              <did>
+                <unittitle>2006-2007</unittitle>
+                <container id="aspace_aa10bea13ba392279a6a7ee0edb36abc" label="Box" type="box"
+                  >14</container>
+              </did>
+            </c04>
+            <c04  id="aspace_254a04f98882a931c4e178ca2a71bd79" level="item">
+              <did>
+                <unittitle>2007-2008</unittitle>
+                <container id="aspace_0cac4387b75f0278a34f3b1ec0c46c04" label="Box" type="box"
+                  >14</container>
+              </did>
+            </c04>
+            <c04 id="aspace_2673df1b9caeb8146d97c590fdc6cb37" level="item">
+              <did>
+                <unittitle>2008-2009</unittitle>
+                <container id="aspace_a062da8bc7247411f638df799df5714f" label="Box" type="box"
+                  >14</container>
               </did>
             </c04>
           </c03>
