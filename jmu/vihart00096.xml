@@ -1,157 +1,202 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+      langencoding="iso639-2b" repositoryencoding="iso15511">
+      <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00096.xml"
+         >vihart00096</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Timberville Farmers' Exchange Minute Book, 1919-1929:<num>SC
+                  0197</num>
+            </titleproper>
+            <author>Kristie Kendall, April 2008</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+               href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All
+               rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                  xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+                  Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with
+            ASpace2VaHeritage.xsl on <date>2018-09-04 13:05:42 -0400</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>2013-11-21</date>
+            <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Timberville Farmers' Exchange Minute Book, <date era="ce"
+               calendar="gregorian">1919-1929 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+               0197</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+               xlink:actuate="onLoad" xlink:show="embed"
+               xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2018</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Kristie Kendall, April 2008</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Special Collections, James Madison University</corpname>
+         </repository>
+         <unittitle>Timberville Farmers' Exchange Minute Book, </unittitle>
+         <origination label="Creator">
+            <corpname rules="local" source="local">Timberville Farmers' Exchange</corpname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0197</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">.3 cubic feet; 1 ledger</physdesc>
+         <unitdate calendar="gregorian" era="ce" normal="1919/1929" type="inclusive"
+            >1919-1929</unitdate>
+         <abstract id="aspace_05dbbe0aecb0a724de3bd7cf8013fff2">The collection consists of one 8
+            3/4" x 14" x 1 1/4" minute book and one folder of loose recorded minutes and other
+            inserts, 1919-1929, for the Timberville Farmers' Exchange, located in Timberville,
+            Virginia.</abstract>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_c4e4ad388f592a554e1b89919f11cf76">
+            <head>Access Restrictions</head>
+            <p>Collection is open for research. Researchers must register and agree to copyright and
+               privacy laws before using this collection. Please contact Research Services staff
+               before visiting the James Madison University Special Collections Library to use this
+               collection.</p>
+         </accessrestrict>
+         <userestrict id="aspace_e55c22695f8327c190a1750a4c1b7299">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison
+               University Special Collections Library. For more information, contact the Special
+               Collections Library Reference Desk. (library-special@jmu.edu).</p>
+         </userestrict>
+         <prefercite id="aspace_5e4f631375e421d0b44fed4c4572de74">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box #, folder #], Timberville Farmers' Exchange Minute
+               Book, 1919-1929, SC 0197, Special Collections, Carrier Library, James Madison
+               University, Harrisonburg, Va.</p>
+         </prefercite>
+         <acqinfo id="aspace_9a2e6bc549382e61625cb2d79bb60ff4">
+            <head>Acquisition Information</head>
+            <p>Purchased from a private seller in November 2007.</p>
+         </acqinfo>
+         <processinfo id="aspace_b367f0c4b2ddcf76a7964dc1f0ab5500">
+            <head>Processing Information</head>
+            <p>Loose sheets from minute book placed in separate folder in chronological order.</p>
+            <p>In order to streamline the process of applying collection numbers, Special
+               Collections staff completed a large-scale renumbering campaign in 2017-2018. <emph
+                  render="bold">This collection was previously cataloged as SC 5018</emph>.</p>
+         </processinfo>
+      </descgrp>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00096">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::00096:: Timberville Farmers' Exchange Minutes Book, 1919-1929)//EN" "vihart00096.xml"
-</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Timberville Farmers' Exchange Minute Book, <date era="ce" calendar="gregorian">1919-1929</date></titleproper>
-        <subtitle id="sort"> Timberville Farmers' Exchange Minute Book, 1919-1929
-<num type="collectionnumber">5018
-</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2008 By JMU Libraries. All rights reserved.
-</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Heather Browne, <date era="ce" calendar="gregorian">4/24/2008</date></creation>
-      <langusage>Description is in
-<language langcode="eng">English
-</language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>Guide to the Timberville Farmers' Exchange Minute Book, <date era="ce" calendar="gregorian">1919-1929</date></titleproper>
-      <subtitle>A Collection in the<lb/>Special Collections
-<num type="SC#">5018
-</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2008
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:
-</label>
-          <item>Kristie Kendall
-</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University
-</runner>
-    <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
-</repository>
-      <unittitle label="Title" encodinganalog="245$a">Timberville Farmers' Exchange Minute Book
-<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1919-1929
-</unitdate></unittitle>
-      <unitid label="Accession Number" encodinganalog="099$a">5018
-</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">One 8 3/4" x 14" x 1 1/4" minute book and one folder
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
-</language>
-      </langmaterial>
-      <abstract label="Abstract">The collection consists of one 8 3/4" x 14" x 1 1/4" minute book and one folder of loose recorded minutes and other inserts, 1919-1929, for the Timberville Farmers' Exchange, located in Timberville, Virginia. 
-</abstract>
-      <origination label="Creator" encodinganalog="100$a">Timberville Farmers' Exchange, Timberville, Va.
-</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information
-</head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions
-</head>
-        <p>None.
-</p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions
-</head>
-        <p>None.
-</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation
-</head>
-        <p>Timberville Farmers' Exchange Minute Book, 1919-1929, SC# 5018, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
-</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information
-</head>
-        <p>Purchased from a private seller in November 2007.
-</p>
-      </acqinfo>
-      <processinfo>
-        <head>Processing Information
-</head>
-        <p>Loose sheets from minute book placed in separate folder in chronological order.
-</p>
-      </processinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Historical Information
-</head>
-      <p>According to the 1923 Sanborn Fire Insurance map for Timberville, Virginia, the Timberville Farmers' Exchange warehouse was located on the west side of Main Street, north of what was then the Southern and Baltimore Railroad, now the Norfolk Southern Railroad.  Letterhead stationery records the names of the Board of Directors, and states that the Timberville Farmers' Exchange were "Dealers in Flour, Feeds of All Kinds, Hay, Coal, Fertilizers, Lime, Etc."
-</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content
-</head>
-      <p>The Timberville Farmers' Exchange Minute Book consists of one book and one folder of loose pages and inserts, 1919-1929. The minute book records meetings of the Board of Directors, stock transactions, resolutions passed, as well as descriptions of items sold by the company, including lumber and hog, horse, and dairy feed.
-</p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement
-</head>
-      <p>The collection is arranged in two folders: folder one contains the ledger, folder two contains loose pages and inserts.
-</p>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data
-</head>
-      <bibliography encodinganalog="581$a">
-        <head>Bibliography
-</head>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""><extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1922720">Sanborn Map Company</extref>, Timberville, Virginia (1923), Microfilm #1716, Carrier Library, James Madison University, Harrisonburg, Virginia, 22807. 
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">Garber, Beverly L. <extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1293420"><title xlink:type="simple" render="italic" xlink:href="">Timberville: The Early Years.</title></extref> [S.I.:s.n.], 1993.
-</bibref>
+
+
+
+
+      <bioghist id="aspace_6eab013336282f1d7da64ea55d675555">
+         <head>Bio/Historical Note</head>
+         <p>According to the 1923 Sanborn Fire Insurance map for Timberville, Virginia, the
+            Timberville Farmers' Exchange warehouse was located on the west side of Main Street,
+            north of what was then the Southern and Baltimore Railroad, now the Norfolk Southern
+            Railroad. Letterhead stationery records the names of the Board of Directors, and states
+            that the Timberville Farmers' Exchange were "Dealers in Flour, Feeds of All Kinds, Hay,
+            Coal, Fertilizers, Lime, Etc."</p>
+      </bioghist>
+      <scopecontent id="aspace_22aa953eb23b1d0a774a385d98e921d0">
+         <head>Scope and Content</head>
+         <p>The Timberville Farmers' Exchange Minute Book consists of one book and one folder of
+            loose pages and inserts, 1919-1929. The minute book records meetings of the Board of
+            Directors, stock transactions, resolutions passed, as well as descriptions of items sold
+            by the company, including lumber and hog, horse, and dairy feed.</p>
+      </scopecontent>
+      <arrangement id="aspace_52c2b7a660c60d1024892321b328625a">
+         <head>Arrangement</head>
+         <p>The collection is arranged in two folders: folder one contains the ledger, folder two
+            contains loose pages and inserts.</p>
+      </arrangement>
+      <bibliography id="aspace_5af673952d1bd2aa548bee1540800855">
+         <head>Bibliography</head>
+         <p>Sanborn Map Company, Timberville, Virginia (1923), Microfilm #1716, Carrier Library,
+            James Madison University, Harrisonburg, Va.</p>
+         <p>Garber, Beverly L. <emph render="italic">Timberville: The Early Years.</emph>
+            [S.I.:s.n.], 1993.</p>
       </bibliography>
-    </descgrp>
-  </archdesc>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Timberville Farmers Exchange (Timberville, Va.)</subject>
+            <subject source="lcsh">Merchants -- Virginia -- Timberville -- Records and
+               correspondence</subject>
+            <subject source="lcsh">Account books -- Sources</subject>
+            <subject source="lcsh">Business records -- Sources</subject>
+            <subject source="lcsh">Farm supplies</subject>
+            <subject source="lcsh">Rockingham County (Va.) -- Economic conditions --
+               Sources</subject>
+            <subject source="lcsh">Agriculture -- Virginia -- Rockingham County -- History --
+               Sources</subject>
+            <subject source="lcsh">Farm supply industries -- Virginia -- Rockingham County</subject>
+            <subject source="lcsh">Virginia -- History, Local -- Sources</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Minutes (administrative records)</genreform>
+            <genreform source="aat">Minute books</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_0bf96634e096486bc1bae7aeeb1caa40" level="file">
+            <did>
+               <unittitle>Minute Book, <unitdate normal="1919/1929" type="inclusive"
+                     >1919-1929</unitdate>
+               </unittitle>
+               <container id="aspace_805e40cda6c600e53ed124bbc1156660" label="Box:Folder" type="box"
+                  >1</container>
+               <container id="aspace_beee4094c4e1081241d6850c0fed1673"
+                  parent="aspace_805e40cda6c600e53ed124bbc1156660" type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c51e0ce410d8647b0e8800f919ac8a6b" level="file">
+            <did>
+               <unittitle>Loose pages and inserts, <unitdate normal="1922/1927" type="inclusive"
+                     >1922-1927</unitdate>
+               </unittitle>
+               <container id="aspace_5f75153ca8c174ecc01b10a151c958f3" label="Box:Folder" type="box"
+                  >1</container>
+               <container id="aspace_331400eb8bf55e375085e714e32e6983"
+                  parent="aspace_5f75153ca8c174ecc01b10a151c958f3" type="folder">2</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
