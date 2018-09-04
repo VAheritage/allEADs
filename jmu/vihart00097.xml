@@ -1,147 +1,191 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+      langencoding="iso639-2b" repositoryencoding="iso15511">
+      <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00097.xml"
+         >vihart00097</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Snell Grocery and Hardware Company Ledger, 1913-1916:<num>SC
+                  0196</num>
+            </titleproper>
+            <author>Kristie Kendall, April 2008</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+               href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian"> © 2018 By JMU Libraries. All
+               rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                  xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+                  Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with
+            ASpace2VaHeritage.xsl on <date>2018-09-04 10:57:50 -0400</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>2013-11-21</date>
+            <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Snell Grocery and Hardware Company Ledger, <date era="ce"
+               calendar="gregorian">1913-1916 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+               0196</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+               xlink:actuate="onLoad" xlink:show="embed"
+               xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2018</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Kristie Kendall, April 2008</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Special Collections, James Madison University</corpname>
+         </repository>
+         <unittitle>Snell Grocery and Hardware Company Ledger, </unittitle>
+         <origination label="Creator">
+            <corpname source="local">Snell Grocery and Hardware</corpname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0196</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">.3 cubic feet; 1 ledger</physdesc>
+         <unitdate calendar="gregorian" era="ce" normal="1913/1916" type="inclusive"
+            >1913-1916</unitdate>
+         <abstract id="aspace_eadcc86566aad9a78a42578f63ad265d">The collection consists of one 10
+            3/4" x 16" x 2 1/4" account ledger for Snell Grocery and Hardware Company in
+            Harrisonburg, Virginia, 1913-1916.</abstract>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_d8db3167721263d7578c332bf42fac02">
+            <head>Access Restrictions</head>
+            <p>Collection is open for research. Researchers must register and agree to copyright and
+               privacy laws before using this collection. Please contact Research Services staff
+               before visiting the James Madison University Special Collections Library to use this
+               collection.</p>
+         </accessrestrict>
+         <userestrict id="aspace_0ad8e33e8331047a425f30f32e7d5909">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison
+               University Special Collections Library. For more information, contact the Special
+               Collections Library Reference Desk. (library-special@jmu.edu).</p>
+         </userestrict>
+         <prefercite id="aspace_6467756dffda2f52edda19a1e9a1bfef">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box #, folder #], Snell Grocery and Hardware Company
+               Ledger, 1913-1916, SC 0196, Special Collections, Carrier Library, James Madison
+               University, Harrisonburg, Va.</p>
+         </prefercite>
+         <acqinfo id="aspace_15c778c27642fe44c8a238410ca4fadc">
+            <head>Acquisition Information</head>
+            <p>Purchased from a private seller in November 2007.</p>
+         </acqinfo>
+         <custodhist id="aspace_9b338b925bde89d3d8ff9f245abc7c89">
+            <head>Provenance</head>
+            <p>The ledger was sold at Green Valley Auctions, Inc. on June 26, 2004.</p>
+         </custodhist>
+         <processinfo id="aspace_423abbe64715721da24fdcf1da8b17e5">
+            <head>Processing Information</head>
+            <p>In order to streamline the process of applying collection numbers, Special
+               Collections staff completed a large-scale renumbering campaign in 2017-2018. <emph
+                  render="bold">This collection was previously cataloged as SC 5017</emph>.</p>
+         </processinfo>
+      </descgrp>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00097">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier Library::Special Collections//TEXT (US::ViHarT::00097:: Snell Grocery and Hardware Company Ledger, 1913-1916)//EN" "vihart00097.xml"
-</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Snell Grocery and Hardware Company Ledger, <date era="ce" calendar="gregorian">1913-1916</date></titleproper>
-        <subtitle id="sort"> Snell Grocery and Hardware Company Ledger, 1913-1916
-<num type="collectionnumber">5017
-</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2008 By JMU Libraries. All rights reserved.
-</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Heather Browne, <date era="ce" calendar="gregorian">May 2008</date></creation>
-      <langusage>Description is in
-<language langcode="eng">English
-</language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>Guide to the Snell Grocery and Hardware Company Ledger, <date era="ce" calendar="gregorian">1913-1916</date></titleproper>
-      <subtitle>A Collection in the<lb/>Special Collections
-<num type="SC#">5017
-</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2008
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:
-</label>
-          <item>Kristie Kendall
-</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University
-</runner>
-    <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison University
-</repository>
-      <unittitle label="Title" encodinganalog="245$a">Snell Grocery and Hardware Company Ledger
-<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1913-1916
-</unitdate></unittitle>
-      <unitid label="Accession Number" encodinganalog="099$a">5017
-</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">One 10 3/4" x 16" x 2 1/4" ledger
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
-</language>
-      </langmaterial>
-      <abstract label="Abstract">The collection consists of one 10 3/4" x 16" x 2 1/4" account ledger for Snell Grocery and Hardware Company in Harrisonburg, Virginia, 1913-1916.
-</abstract>
-      <origination label="Creator" encodinganalog="100$a">Snell Grocery and Hardware Company
-</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information
-</head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions
-</head>
-        <p>None.
-</p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions
-</head>
-        <p>None. 
-</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation
-</head>
-        <p>Snell Grocery and Hardware Company Ledger, 1913-1916, SC# 5017, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.
-</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information
-</head>
-        <p>Purchased from a private seller in November 2007.
-</p>
-      </acqinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Historical Information
-</head>
-      <p>Using the Sanborn Fire Insurance maps for Harrisonburg, Virginia, from 1891 to 1930, it was determined that this ledger belonged to the Snell Grocery and Hardware Company. The 1891 Sanborn map shows Yancey, Snell &amp; Company, Wholesale Grocer's plaster mill and warehouse at 541 North Main Street. By 1907, the company was known as Snell &amp; Berry Grocery Company. By 1918, the company was renamed J.M. Snell Grocery. The company is known to have operated from at least 1891 to 1924. Sometime between 1919 and 1924, J.M. Snell Grocery was acquired by Merchants Grocery and Hardware. An additional warehouse was located at 135 West Market Street, but was acquired by Merchants Grocery and Hardware Company between 1919 and 1924, the structure of which still stands. The main warehouse on North Main Street near Kratzer Avenue has since been demolished.
-</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content
-</head>
-      <p>The Snell Grocery and Hardware Company ledger consists of one book, 1913-1916. The ledger contains a list of all customers during that period, detailed lists of their purchases, whether their purchases were by cash, credit or check, as well as expenses of the company per month. The company sold grocery items such as: dairy products, meats, grains, fruits and vegetables, as well as fertilizer, cement, coal and livestock feed. The Long's Store Records Collection includes bills and receipts for items purchased from Snell Grocery Company in 1908.
-</p>
-    </scopecontent>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data
-</head>
-      <bibliography encodinganalog="581$a">
-        <head>Bibliography
-</head>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""><extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1879034">Sanborn Map Company, Harrisonburg, Virginia (1891-1924)</extref>, Microfilm #1685, Carrier Library, James Madison University, Harrisonburg, Virginia, 22807.
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""><extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b1913760~S0">Long's Store Records, Mt. Clinton, VA, 1877-1929, SC# 4032</extref>, Carrier Library Special Collections, James Madison University, Harrisonburg, Virginia, 22807. 
-</bibref>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""><extref xlink:type="simple" xlink:href="http://leo.jmu.edu/record=b2098707~S0">Long's Store Account Books, 1869-1906, SC# 4056</extref>, Carrier Library Special Collections, James Madison University, Harrisonburg, Virginia, 22807. 
-</bibref>
+
+
+
+
+
+      <bioghist id="aspace_43b13e69b2583ba5dfcc8f98a81a24da">
+         <head>Bio/Historical Note</head>
+         <p>Using the Sanborn Fire Insurance maps for Harrisonburg, Virginia, from 1891 to 1930, it
+            was determined that this ledger belonged to the Snell Grocery and Hardware Company. The
+            1891 Sanborn map shows Yancey, Snell &amp; Company, Wholesale Grocer's plaster mill and
+            warehouse at 541 North Main Street. By 1907, the company was known as Snell &amp; Berry
+            Grocery Company. By 1918, the company was renamed J.M. Snell Grocery. The company is
+            known to have operated from at least 1891 to 1924. Sometime between 1919 and 1924, J.M.
+            Snell Grocery was acquired by Merchants Grocery and Hardware. An additional warehouse
+            was located at 135 West Market Street, but was acquired by Merchants Grocery and
+            Hardware Company between 1919 and 1924, the structure of which still stands. The main
+            warehouse on North Main Street near Kratzer Road has since been demolished.</p>
+      </bioghist>
+      <scopecontent id="aspace_8abcc7433d01214048f52088bf1b38e3">
+         <head>Scope and Content</head>
+         <p>The Snell Grocery and Hardware Company ledger consists of one book, 1913-1916. The
+            ledger contains a list of all customers during that period, detailed lists of their
+            purchases, whether their purchases were by cash, credit or check, as well as expenses of
+            the company per month. The company sold grocery items such as: dairy products, meats,
+            grains, fruits and vegetables, as well as fertilizer, cement, coal and livestock feed.
+            The Long's Store Records (SC 0218) includes bills and receipts for items purchased from
+            Snell Grocery Company in 1908.</p>
+      </scopecontent>
+      <bibliography id="aspace_dc20559624e7e8a1f4277f26007e8b13">
+         <head>Bibliography</head>
+         <p>Sanborn Map Company, Harrisonburg, Virginia (1891-1924), Microfilm #1685, Carrier
+            Library, James Madison University, Harrisonburg, Va.</p>
+         <p>W.E. Long &amp; Sons General Store Records, 1865-1971, SC 0218, Special Collections,
+            Carrier Library, James Madison University, Harrisonburg, VA.</p>
       </bibliography>
-    </descgrp>
-  </archdesc>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Snell Grocery and Hardware Company (Harrisonburg, Va.)</subject>
+            <subject source="lcsh">General stores -- Virginia -- Harrisonburg</subject>
+            <subject source="lcsh">Merchants -- Virginia -- Harrisonburg -- Records and
+               correspondence</subject>
+            <subject source="local">Account books -- Sources</subject>
+            <subject source="lcsh">Business records -- Sources</subject>
+            <subject source="lcsh">Rockingham County (Va.) -- History -- Sources</subject>
+            <subject source="lcsh">Virginia -- History, Local -- Sources</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Ledgers (account books)</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_7d07cc7d52cf67ab85c51f13ead78aa9" level="file">
+            <did>
+               <unittitle>Snell Grocery and Hardware Company Ledger, <unitdate normal="1913/1916"
+                     type="inclusive">1913-1916</unitdate>
+               </unittitle>
+               <container id="aspace_94815816a2b122384b29ae0e03d77e84" label="Box:Folder" type="box"
+                  >1</container>
+               <container id="aspace_64f467416601aa1d787e37476d2f6742"
+                  parent="aspace_94815816a2b122384b29ae0e03d77e84" type="folder">1</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
