@@ -1,1082 +1,819 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+      langencoding="iso639-2b" repositoryencoding="iso15511">
+      <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00153.xml"
+         >vihart00153</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Dudley and Rexrode Family Papers, 1873-2005:<num>SC
+                  0213</num>
+            </titleproper>
+            <author>Paula Weddle and Molly Schwanz, December 2012; Tiffany Cole, February
+               2019</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+               href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian"> © 2019 By JMU Libraries. All
+               rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                  xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+                  Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with
+            ASpace2VaHeritage.xsl on <date>2019-02-14 11:40:18 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Dudley and Rexrode Family Papers, <date era="ce"
+               calendar="gregorian">1873-2005 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+               0213</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+               xlink:actuate="onLoad" xlink:show="embed"
+               xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2019</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Paula Weddle and Molly Schwanz, December 2012; Tiffany Cole, February
+                  2019</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Special Collections, James Madison University</corpname>
+         </repository>
+         <unittitle>Dudley and Rexrode Family Papers, </unittitle>
+         <origination label="Creator">
+            <famname rules="local" source="local">Dudley and Rexrode families</famname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0213</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">1.26 cubic feet; 4 boxes</physdesc>
+         <unitdate normal="1873/2005" type="inclusive">1873-2005</unitdate>
+         <abstract id="aspace_c13e03ea522acc67ad26287ff1de9f0c">Personal papers and ledgers relating
+            to the Dudley and Rexrode families of Augusta County, Virginia. Included in this
+            collection are the receipts, invoices, and tax documents of Edward Alexander Dudley;
+            ledgers from the practice and pharmacy of Dr. Charles Pinkey Rexrode; ledgers from the
+            agricultural business of Arthur B. Dudley; family photographs; and documents from the
+            Mossy Creek Presbyterian Church in Mt. Solon, Virginia.</abstract>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_d41340f05f156e669a28d065805f627b">
+            <head>Access Restrictions</head>
+            <p>Collection open to research. Researchers must register and agree to copyright and
+               privacy laws before using this collection. Please contact Research Services staff
+               before visiting the James Madison University Special Collections Library to use this
+               collection.</p>
+         </accessrestrict>
+         <userestrict id="aspace_2ec3e17fea11db370f3e06e7cae2ba17">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison
+               University Special Collection Library. For more information, contact the Special
+               Collections Library Reference Desk (library-special@jmu.edu).</p>
+         </userestrict>
+         <prefercite id="aspace_50eec9468c3b3890ac314214f4bc8a52">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box #, folder #], Dudley and Rexrode Family Papers, SC
+               0213, Special Collections, Carrier Library, James Madison University, Harrisonburg,
+               VA.</p>
+         </prefercite>
+         <acqinfo id="aspace_dd3d3ace4dd1799dfbec1d6ca46f8ff7">
+            <head>Acquisition Information</head>
+            <p>The materials in this collection were purchased by Special Collections at the March
+               24, 2008 estate sale of Marshall Dudley Rexrode. The sale took place in Mt. Solon,
+               Virginia and was auctioneered by Charley Whetzel.</p>
+         </acqinfo>
+         <processinfo id="aspace_89945510ca8467cdb278b4efe6f75b2d">
+            <head>Processing Information</head>
+            <p>In order to streamline the process of applying collection numbers, Special
+               Collections staff completed a large-scale renumbering campaign in 2017-2018. <emph
+                  render="bold">This collection was previously cataloged as SC 5039.</emph> During
+               this time, the collection was minimally reprocessed in order to simplify the
+               arrangement and description, and rehoused to remove unnecessary oversize boxes. The
+               collection was originally processed in 2012 and described in minute detail, often at
+               the item-level (e.g. obituaries). Some of this description was retained. Description
+               that was deemed irrelevant or superfluous was not retained during reprocessing.
+               Photographs were grouped according to identifications made by the original processor
+               and were housed in plastic sleeves. During reprocessing in 2019, the photographs were
+               removed and housed in archival folders.</p>
+         </processinfo>
+      </descgrp>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00153">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
-			Library::Special Collections//TEXT (US::ViHarT::vihart00NUMBER::COLLECTION NAME AND DESCRIPTION [i.e. vihart00129::Wampler Business records,
-			1918-1972])//EN" "vihart00NUMBER.xml" </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Dudley-Rexrode Collection, <date era="ce" calendar="gregorian">1873-1998</date></titleproper>
-        <subtitle id="sort">Dudley Rexrode Collection<num type="collectionnumber"> SC 5039</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-				</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
-					rights reserved. </date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Paula Weddle and Molly Schwanz,
-				<date era="ce" calendar="gregorian">04/2013</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-12-02">2013-12-02</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the Dudley-Rexrode Collection<date era="ce" calendar="gregorian">1873-1998</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">SC 5039</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2012</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:</label>
-          <item>Paula Weddle and Molly Schwanz</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
-				University </repository>
-      <unittitle label="Title" encodinganalog="245$a">Duxley Rexrode Collection<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1873-1998</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">SC 5039</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">3 boxes (1.5 linear feet)</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">Collection of personal papers and ledgers relating to the Dudley and Rexrode families. Included in this collection are the receipts, invoices, and tax documents of E.A. Dudley; ledgers from the practice and pharmacy of C.P. Rexrode; ledgers from the agricultural business of A.B. Dudley; family photographs; and documents from the Mossy Creek Presbyterian Church in Augusta County, Virginia.</abstract>
-      <origination label="Creator" encodinganalog="100$a"> E.A. Dudley, M. Dudley Rexrode, C.P. Rexrode, A.B. Dudley, Agnes Rexrode, Alberta Dudley Brand</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions </head>
-        <p>None</p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions </head>
-        <p>None</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation </head>
-        <p>[Identification of Item], The Dudley-Rexrode Collection, 1873-1998, SC#
-					 5039, Special Collections, Carrier Library, James Madison University,
-					Harrisonburg, VA.</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information </head>
-        <p>Acquired at Public Auction in 2008</p>
-      </acqinfo>
-      <custodhist>
-        <head>Provenance </head>
-        <p> The Estate of M. Dudley Rexrode</p>
-      </custodhist>
-      <processinfo>
-        <head>Processing Information</head>
-        <p> Processed by Paula Weddle and Molly Schwanz, Dec. 2012</p>
-      </processinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information </head>
-      <p> The papers were acquired from the estate of Marshall Dudley Rexrode(1905-2006). Mr. Rexrode graduated from Bridgewater College and attended Virginia Tech.  He was a prominent farmer and member of the community in Mt. Solon, Augusta County, Virginia. He was a charter member of the North River Ruritan Club and served as their treasurer for 45 years. Mr. Rexrode was an elder, deacon and chairman of the board of trustees for Mossy Creek Presbyterian Church (a historic church established in 1768 in Augusta County).  Mr. Rexrode was also the secretary-treasurer of the Rockingham County Land Bank Association and assistant secretary-treasurer of Staunton Production Credit Association.  He served on the Augusta County Planning Commission three times. Additionally, he was director and president of the Augusta County Farm Bureau Federation, as well as director and president of the Augusta County Petroleum Co-op. His work on various boards, social organizations and church related activities is evidence of his active community involvement. 
-				M. Dudley Rexrode was in possession of the papers of Dr. Charles P. Rexrode (his father) and Edward Alexander Dudley(his maternal grandfather), which were also acquired with this collection.  Charles P. Rexrode, M.D. was a physician and pharmacist in Crab Bottom, Highland County, Virginia (now Blue Grass, VA).  The Highland Recorder (a local newspaper) contains references to Dr. Rexrode treating patients and making house calls during times of emergency.  Edward A. Dudley(1850-1927) was a prominent farmer and cattle raiser in Highland County and Augusta County, Virginia. Mr. Dudley was living in the Churchville area of Augusta County when he passed away in May 1927. 
-				Also included in this collection are photographs and correspondence relating to M. Dudley Rexrode’s Aunt, Alberta Dudley Brand. Mrs. Brand and her husband Dr. Louis Christian Brand were Presbyterian Missionaries in Japanese Korea from 1924-1938, during the time that Korea was occupied by Japan. Dr. Brand was a physician and third director of the Ellen-Lavine Graham Hospital (now the Kwangju Christian Hospital) in Kwangju, Korea, where he was devoted to the elimination of tuberculosis.
-			</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content </head>
-      <p>The collection contains financial records of the Dudley-Rexrode family, including tax records, insurance records, and ledgers of family businesses, that included C.P. Rexrode's medical practice and A.B and E.A. Dudley's agricultural business. This collection also includes 139 family photographs (including photographs of the Dudley-Brand family in Korea in the 1930s). Additionally, there is a large collection of documents from the Mossy Creek Presbyterian Church, where M. Dudley Rexrode served as a Deacon and Elder.  The content mainly deals with economic and religious life in the Shenandoah Valley during the late 19th and early 20th Century. </p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement </head>
-      <p>Items have been arranged chronologically and by creator.  </p>
-      <p>The collection is arranged in 5 series:</p>
-      <blockquote>
-        <p>I: The Papers of E.A. Dudley, 1876-1920</p>
-      </blockquote>
-      <blockquote>
-        <p>II: The Papers of C.P Rexrode, 1907-1925</p>
-      </blockquote>
-      <blockquote>
-        <p>III: The Papers of A.B. Dudley, 1915-1961</p>
-      </blockquote>
-      <blockquote>
-        <p>The Papers of M. Dudley Rexrode, 1963-2005</p>
-      </blockquote>
-      <blockquote>
-        <p>Miscellaneous, 1913-1985</p>
-      </blockquote>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data </head>
-      <bibliography encodinganalog="581$a">
-        <head>Bibliography </head>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href=""> “Attempted Suicide” Highland Recorder. 1903 December 18. p.3.
-					Blair, Charles William. A History of Mossy Creek Presbyterian Church. Bridgewater Beacon       Printing, Inc. Bridgewater, VA. 2000.
-					“Edward A. Dudley” Staunton News Leader. 1927 May 31. p.4.
-					“History” Kwangju Christian Hospital Website. Accessed 2012 Dec. 5. http://kch.or.kr/eng/history.html. 
-					“M.Dudley Rexrode” Daily News-Record. 2006 January 30. p.10.
-					“Nonagenarian Rexrode is Ruritans’ Citizen of Year”. Daily News-Record. 1995 October 23. p.16
-					“Staunton Man Dies in Korea” Daily News-Record. 1938 March 2. p.8.
-				</bibref>
+
+
+
+
+      <bioghist id="aspace_3cd9a098cac29802eb799b781177ab2d">
+         <head>Bio/Historical Note</head>
+         <p>The papers were acquired from the estate of Marshall Dudley Rexrode (1905-2006). Rexrode
+            graduated from Bridgewater College and attended Virginia Tech. He was a prominent farmer
+            and member of the community in Mt. Solon, Virginia. He was a charter member of the North
+            River Ruritan Club and served as their treasurer for 45 years. Rexrode was an elder,
+            deacon, and chairman of the board of trustees for Mossy Creek Presbyterian Church (a
+            historic church established in 1768 in Augusta County). Rexrode was also the
+            secretary-treasurer of the Rockingham County Land Bank Association and assistant
+            secretary-treasurer of Staunton Production Credit Association. He served on the Augusta
+            County Planning Commission three times. Additionally, he was director and president of
+            the Augusta County Farm Bureau Federation, as well as director and president of the
+            Augusta County Petroleum Co-op. His work on various boards, social organizations, and
+            church related activities is evidence of his active community involvement.</p>
+         <p>Marshall Dudley Rexrode was in possession of his family's papers including those of his
+            father, Dr. Charles Pinkey Rexrode (1871-1929), and his maternal grandfather, Edward
+            Alexander Dudley (1850-1927), and Arthur B. Dudley (1870-1946). Charles P. Rexrode, M.D.
+            was a physician and pharmacist in Crab Bottom, Highland County, Virginia (now Blue
+            Grass, Virginia). The Highland Recorder contains references to Dr. Rexrode treating
+            patients and making house calls during times of emergency. Edward A. Dudley was a
+            prominent farmer and cattle raiser in Highland County and Augusta County, Virginia.
+            Dudley was living in the Churchville area of Augusta County at the time of his death in
+            May 1927.</p>
+         <p>Also included in this collection are photographs and correspondence relating to Marshall
+            Dudley Rexrode's aunt, Mary Alberta Dudley Brand (1894-1973). Brand and her husband Dr.
+            Louis Christian Brand were Presbyterian Missionaries in Korea from 1924-1938, during the
+            time that Korea was occupied by Japan. Dr. Brand was a physician and third director of
+            the Ellen-Lavine Graham Hospital (now the Kwangju Christian Hospital) in Kwangju, Korea,
+            where he was devoted to the elimination of tuberculosis. The Brand's daughter, Mary
+            Alice Brand Boyle 1924-2006), and son-in-law, Lewis Venable Boyle (1923-2005), are also
+            documented in this collection.</p>
+      </bioghist>
+      <scopecontent id="aspace_b9696f023c922c350789695af13af477">
+         <head>Scope and Content</head>
+         <p>The Dudley and Rexrode Family Papers contain personal and financial records,
+            photographs, and ephemera related to the Dudely and Rexrode families of Augusta County,
+            Virginia, as well as the related Brand and Boyle families. Tax records, insurance
+            records, and ledgers of family businesses, including C.P. Rexrode's medical practice and
+            A.B and E.A. Dudley's agricultural business, are present. This collection also includes
+            Rexrode, Dudley, and Brand family photographs including photographs of Virginia Tech and
+            the Dudley-Brand family in Korea in the 1930s. Many are unidentified or presumed to be
+            identified. Additionally, the collection contains documents related to community
+            organizations including local ruritan clubs and the Mossy Creek Presbyterian Church in
+            Mt. Solon, Virginia where M. Dudley Rexrode served as a deacon and elder. Printed
+            ephemera in the collection includes a postcard with the label "The summer resort of
+            foreigner at Katsuma Peninsula (Korea)," newspaper clippings of local interest articles
+            and obituaries, and ticket stubs for Magic Kingdom and Disney World.</p>
+      </scopecontent>
+      <arrangement id="aspace_9ca5b02047bf6b61e2555e3d3b21075e">
+         <head>Arrangement</head>
+         <p>The collection is arranged into four series:</p>
+         <p>Series 1: Family Papers, 1873-1984</p>
+         <p>Sub-Series 1.1: Edward Alexander Dudley Papers, 1873-1920</p>
+         <p>Sub-Series 1.2: Charles Pinkey Rexrode Papers, 1902-1959</p>
+         <p>Sub-Series 1.3: Arthur B. Dudley Papers, 1914-1961</p>
+         <p>Sub-Series 1.4: Marshall Dudley Rexrode Papers, 1936-1980</p>
+         <p>Series 2: Photographs, 1923-1969</p>
+         <p>Series 3: Community Organizations and Events, 1939-1998</p>
+         <p>Series 4: Ephemera, 1913-2005</p>
+      </arrangement>
+      <bibliography id="aspace_7584679f334ebbcf3f641c3864176931">
+         <head>Bibliography</head>
+         <p>"Attempted Suicide" <emph render="italic">Highland Recorder</emph>. 1903 December 18.
+            p.3.</p>
+         <p>Blair, Charles William. <emph render="italic">A History of Mossy Creek Presbyterian
+               Church</emph>. Bridgewater Beacon Printing, Inc. Bridgewater, VA. 2000.</p>
+         <p>"Edward A. Dudley" <emph render="italic">Staunton News Leader</emph>. 1927 May 31.
+            p.4.</p>
+         <p>"History" Kwangju Christian Hospital Website. Accessed 2012 Dec. 5.
+            http://kch.or.kr/eng/history.html.</p>
+         <p>"M.Dudley Rexrode" <emph render="italic">Daily News-Record</emph>. 2006 January 30.
+            p.10.</p>
+         <p>"Nonagenarian Rexrode is Ruritans' Citizen of Year." <emph render="italic">Daily
+               News-Record</emph>. 1995 October 23. p.16</p>
+         <p>"Staunton Man Dies in Korea" <emph render="italic">Daily News-Record</emph>. 1938 March
+            2. p.8.</p>
       </bibliography>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series I"> Papers of E.A. Dudley<unitdate type="inclusive" era="ce" calendar="gregorian">1876-1920</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>IOUs and Person to Person Tansactional Notes<unitdate type="inclusive" era="ce" calendar="gregorian">1884-1912</unitdate></unittitle>
-            <container label="Box:Folder" type="box-folder">1:1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Mutual Insurance Company</unittitle>
-            <container label="Box:Folder" type="box-folder">1:2</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Copy of Mutual Insurance Policy-</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> June 15, 1888</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Payment Receipts</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1893, 1896 and 1897</unitdate>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Tax Payments</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1887-1912</unitdate>
-            <container label="Box:Folder" type="box-folder">1:3</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Commercial Invoices and Receipts</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1876-1915</unitdate>
-            <container label="Box:Folder" type="box-folder">1:4</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Land Deeds</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1873-1904</unitdate>
-            <container label="Box:Folder" type="box-folder">1:5</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Correspondence</unittitle>
-            <container label="Box:Folder" type="box-folder">1:6</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle> Letter from Congressman Henry D. Flood</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">March 3, 1908</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Letter concerns the "Blackleg" vaccine for cattle</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Letter from J.P. Russel to E.A. Dudley- 1920 Sept. 15</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Letter is in regards to cattle sales</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Empty Envelope Addressed to E.A. Dudley</unittitle>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series II">Papers of C.P. Rexrode <unitdate type="inclusive" era="ce" calendar="gregorian"> 1907-1925</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1909-1913</unitdate>
-            <container label="Box:Folder" type="box-folder">1:7</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1912</unitdate>
-            <container type="Box:Folder" label="box-folder">1:8</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1913</unitdate>
-            <container label="Box:Folder" type="box-folder">1:9</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1922-1924</unitdate>
-            <container label="Box:Folder" type="box-folder">1:10</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1923-1924</unitdate>
-            <container label="Box:Folder" type="box-folder">1:11</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Medical Examiner's Report, Life Insurance Co. of Pittsburgh</unittitle>
-            <container label="Box:Folder" type="box-folder">1:12</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> C.P. Rexrode Correspondence</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1909-1913</unitdate>
-            <container label="Box:Folder" type="box-folder">1:13</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Thank You Letter</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1916</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Check-1917</unittitle>
-            </did>
-            <note audience="external">
-              <p> Made to Dr. Rexrode in 1917 for examination fees</p>
-            </note>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle> Bank Receipt</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1924</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Pamphlet-National Balsam Ointment</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1924</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Bill from Bridgewater College</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1924</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Card- Endocrine Preparations</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1924</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Receipt for Neodyne</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1925</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Receipt from automotive Dealer</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1925</unitdate>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> C.P. and Agnes Rexrode Receipts</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1907-1959</unitdate>
-            <container label="Box:Folder" type="box-folder">1:14</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series III"> Papers of A.B. Dudley<unitdate type="inclusive" era="ce" calendar="gregorian"> 1915-1961</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1915-1930</unitdate>
-            <container label="Box:Folder" type="box-folder">2:1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 121-1922</unitdate>
-            <container label="Box:Folder" type="box-folder">2:2</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1925-1927</unitdate>
-            <container label="Box:Folder" type="box-folder">2:3</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1957-1961</unitdate>
-            <container label="Box:Folder" type="box-folder">2:4</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Financial Documents</unittitle>
-            <container label="Box:Folder" type="box:folder">2:5</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle> Check- 1916</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Section 225 of the Code of VA</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Note from E.P Harvey </unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1917</unitdate>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series IV"> Papers of Dudley Rexrode <unitdate type="inclusive" era="ce" calendar="gregorian"> 1936-2005</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle> Diary</unittitle>
-            <container label="Box:Folder" type="box-folder"> 2:6</container>
-          </did>
-          <note audience="external">
-            <p> Inscribed "This book was give (sic) me by Mary Lee Long as guest prize at Polly Ann engagement party. 1936 May 29th." Diary desiged to cover five years, sparsely used in 1936. May have belonged to Alice of Agnes Rexrode.</p>
-          </note>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Checkbook Stubs</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian"> 1936</unitdate>
-            <container label="Box:Folder" type="box-folder">2:7</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Notebook - Farm Operations</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian">1946</unitdate>
-            <container label="Box:Folder" type="box-Folder">2:8</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Receipt - Pioneer Corn Co.</unittitle>
-            <unitdate type="inclusive" era="ce" calendar="gregorian">1962</unitdate>
-            <container label="Box:Folder" type="box-folder">2:9</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Ledger-Personal Finances</unittitle>
-            <container label="Box:Folder" type="box-folder">2:10</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Dudley/Rexrode Family Photographs</unittitle>
-            <container label="Box:Folder" type="box:folder">3:1</container>
-            <physdesc>
-              <extent encodinganalog="format">4 Negatives; 104 Photos</extent>
-            </physdesc>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle> 4 Negatives</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 15 VA Tech. takem by M. Dudley Rexrode</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 10 Agricultural Photos</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 5 Taken at a mountain retreat, 1930s</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 17 Photos of Agnes Rexrode (possible)</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 5 Photos of Agnes and her Mother, Margaret</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 5 Rexrode Family pictures from the 1930s</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 5 Potentially Identified Photos</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 25 Unidentified Photographs</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 3 Unidentified Group Photos</unittitle>
-            </did>
-            <note audience="external">
-              <p>Possibly at Mossy Creek Presbyterian Church</p>
-            </note>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 1 Christmas Greeting Photo</unittitle>
-            </did>
-            <note audience="external">
-              <p>Ernest M. Rexrode Family, 1969</p>
-            </note>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Two Donkeys (1 Photo)</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Young woman in cardboard frame- circa late 1920s</unittitle>
-            </did>
-            <note audience="external">
-              <p> Dean Studio, Harrisonburg, VA</p>
-            </note>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Dr. Louis and Alberta Dudley Brand Photographs and Correspondence</unittitle>
-            <container label="Box:Folder" type="box-folder">3:2</container>
-            <physdesc>
-              <extent encodinganalog="format">35 Photographs; 1 Postcard; 2 letters</extent>
-            </physdesc>
-          </did>
-          <note audience="external">
-            <p> Alberta Dudley Brand was the younger sister of Margaret Dudley Rexrode. Alberta and her husband, Dr. Louis Christian Brand, were Presbyterian missionaries in Korea from 1924-1938. Additionally, Dr. Brand was a physician 3rd directory of the Ellen-Lavine Graham Hospital in Kwangju</p>
-          </note>
-          <c03 level="item">
-            <did>
-              <unittitle>7 Hand-colored photos of the Brand Children, Korea</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1927-1938</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>10 Photos of Alice and Martha Brand, Korea</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> 1933-1938</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 2 Photos of the "Kwangju Graduates" Korea</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1936</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 1 Martha Brand and Jim Rodgers, Korea, Christmas 1993</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 1 Alice Brand and "the elders babay" Korea</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 5 Photos of Louis "Dudley" Brand, Korea <unitdate type="inclusive" era="ce" calendar="gregorian"> 1934-1935</unitdate></unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 4 Photos of Louis "Dudley" Brand, Virginia <unitdate type="inclusive" era="ce" calendar="gregorian"> 1942</unitdate></unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> 1 Postcard, unused</unittitle>
-            </did>
-            <note audience="external">
-              <p> "The Summer resort of foreigner at Katsuma Peninsula (Korea)"</p>
-            </note>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Letter from Alice, Kwangju, Korea</unittitle>
-              <unitdate era="ce" calendar="gregorian"> December 1935</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Alberta Dudley Brand Letter, Korea</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Newspaper Clippings and Funeral Memory Books</unittitle>
-            <container label="Box:Folder" type="Box:Folder">3:3</container>
-          </did>
-          <c03 level="subgrp">
-            <did>
-              <unittitle>Funeral Memory Books</unittitle>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Luther Charles Fultz</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1947</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> J. Wayne Fairburn</unittitle>
-                <unitdate era="ce" calendar="gregorian"> February 1993</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Agnes Rexrode</unittitle>
-                <unitdate era="ce" calendar="gregorian"> October 1993</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Maggie Elizabeth Props</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1995</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Richard Craig Dudley</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1998</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Luther Charles Fultz</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1947</unitdate>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="subgrp">
-            <did>
-              <unittitle>Clipped Newspaper Obituaries</unittitle>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>John H. Earhart</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> Mabel Rexrode</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1995 December 14</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>S. Newton Karicofe</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1996 September 10</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> Earl T. Swink</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1996 September 10</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Clarence E. May</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1997 April 15</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Kathleen C. McFall</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1997 December 7</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> Richard C. Dudley</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1998 May 23</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Nancy R. Lewis</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1998 August 25</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> Garland Miller</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1998 September 7</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Rudolph B. Alexander</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1999 June 6</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>William A Brooks</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1999 November 16</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> Francis Dudley</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2000 April 8</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Hiram C. Arey</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2000 April 30</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Hiwana C. Crompton</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2000 May 4</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Richard J. Hevener</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2000 June 12</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Roy R. Smith</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 200 November 28</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Arthur V. Bartenslayer</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2002 August 11</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> William J. Moffett, Jr.</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2002 August 10</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Dr. John H. Guss</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2004 September 28</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>John A Horn</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 2005 May 15</unitdate>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="subgrp">
-            <did>
-              <unittitle>2 Wedding Announcement</unittitle>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Charlotte Leww Reeves Graham</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Betty Jean Simmons Young</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1950 February 10</unitdate>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="subgrp">
-            <did>
-              <unittitle>7 Local Interest Articles</unittitle>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Hightown Bank President Reminisces on 85th Birthday</unittitle>
-                <unitdate era="ce" calendar="gregorian"> May 1948</unitdate>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Mrs. Fred Whipple wind Creativity Award</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle> Retiring Teachers Honored</unittitle>
-              </did>
-            </c04>
-            <c04>
-              <did>
-                <unittitle>Augusta Co. Farm Bureau</unittitle>
-              </did>
-            </c04>
-            <c04>
-              <did>
-                <unittitle>Mt Solon Mail Carrier Leaves Post</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Churchville Bears</unittitle>
-                <unitdate era="ce" calendar="gregorian"> 1955 July 10</unitdate>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="subgrp">
-            <did>
-              <unittitle>Richmond Times-Dispatch Section F</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1968 February 4</unitdate>
-            </did>
-          </c03>
-          <c03 level="subgrp">
-            <did>
-              <unittitle>4 "Dear Abby" and Letter to the Editor Clippings</unittitle>
-            </did>
-          </c03>
-          <c03 level="subgrp">
-            <did>
-              <unittitle>2 Miscellaneous Clippings</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Mossy Creek Presbyterian Church Materials</unittitle>
-            <container label="Box:Folder" type="box-folder">3:4</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Handbook and Directory</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Minutes of the Board of Directors Meeting</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1968 December 16</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>United Presbyterian Church of the USA Staff Information</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>"Confessions of our Church" Manual</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Board of Directors Resolution </unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1960 June 12</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Regarding Mrs. Georgia Williams Whisman's Property</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1970 October 10</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>From Mrs. George W. Whisman to Board of Directors</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1970 April 18</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>From the Broad of Directors to Mrs. Georgia Whisman</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Mossy Creek Church Service Bulletin</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1992 April 16</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>M. Dudley Rexrode Trust and Will</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1993 April 2</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Handwritten Instructions for Arranging Flowers</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Mossy Creek, 200th Anniversary Celebrations </unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1968</unitdate>
-            <container label="Box:Folder" type="box-folder">3:5</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Program</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Script</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Stage Directions</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Draft of Article for Newspaper or Newsletter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Ruritan Club Publications</unittitle>
-            <container label="Box:Folder" type="box:folder">3:6</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>North River Ruritan Club Handbook</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1998</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Woodrow Wilson District Convention</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1995</unitdate>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series V">Miscellaneous<unitdate type="inclusive" era="ce" calendar="gregorian">1913-1985</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Correspondences 1960s</unittitle>
-            <container label="Box:folder" type="box-folder">3:7</container>
-          </did>
-          <note audience="external">
-            <p>Addressed to Joe and Ed, concerning the illness of Alice</p>
-          </note>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Correspondence of Martha Rexrode</unittitle>
-            <container label="Box:Folder" type="box-folder">3:8</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>"Flora Manor"- Parnassus VA Poem and Letter</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1947</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Card</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1984</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Card</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle> Miscellaneous</unittitle>
-            <container label="Box:Folder" type="box-folder">3:9</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Farm Co Op News</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1970</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Certificate of Incorporation, North River Telephone Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Disney Magic Kingdom Ticket Stubs</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Handwriting Character Analysis</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Beverly Manor Academy Final Exercises</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1913</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Christmas Card</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Thinking of You Card</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Envelope Addressed to M. Dudley</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Calling Card- Blanche A. Corrie</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Postage Stamps, 3 cents</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Postcard- Fort Matanzas</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>North River Augusta Fair and Horse Show</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1939</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>"Table Grace You Can See"</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>W-A Intestinal Antiseptic announcement</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> "Tested Light Conditioning Recipes</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Envelope Addressed to Agnes Rexrode</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Picture "Pals" (Girl and Puppy)</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1925</unitdate>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Picture "Autumn"</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1925</unitdate>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Mossy Creek Presbyterian Church (Mr. Solon, Va.) -- Records and
+               correspondence</subject>
+            <subject source="lcsh">Physicians -- Virginia -- Records and correspondence</subject>
+            <subject source="lcsh">Merchants -- Virginia -- Records and correspondence</subject>
+            <subject source="lcsh">Business records -- Virginia -- Sources</subject>
+            <subject source="lcsh">Rockingham County (Va.) -- History -- Sources</subject>
+            <subject source="lcsh">Highland County (Va.) -- History -- Sources</subject>
+            <subject source="lcsh">Virginia -- History, Local -- Sources</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Ledgers (account books)</genreform>
+            <genreform source="aat">Letters (correspondence)</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_b7a888bd88d8c1ab3bd093327b89eb44" level="series">
+            <did>
+               <unittitle>Series 1: Family Papers, <unitdate normal="1873/1984" type="inclusive"
+                     >1873-1984</unitdate>
+               </unittitle>
+            </did>
+            <c02 id="aspace_9ce8f81ac7957be68413fa51a4c88a25" level="subseries">
+               <did>
+                  <unittitle>Sub-Series 1.1: Edward Alexander Dudley Papers, <unitdate
+                        normal="1873/1920" type="inclusive">1873-1920</unitdate>
+                  </unittitle>
+               </did>
+               <c03 id="aspace_3d04f4c6d93808abda68204ba9fa66d2" level="file">
+                  <did>
+                     <unittitle>Land deeds, <unitdate type="inclusive">1873-1904</unitdate>
+                     </unittitle>
+                     <container id="aspace_de85e8c98b48ce24d2fb19034b66fb00" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_2786d66790e73621763a7821bd4a2d37"
+                        parent="aspace_de85e8c98b48ce24d2fb19034b66fb00" type="folder">1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_fb1d66f3bfec677d0499d008473920c5" level="file">
+                  <did>
+                     <unittitle>Invoices and receipts, <unitdate type="inclusive"
+                           >1876-1915</unitdate>
+                     </unittitle>
+                     <container id="aspace_dbda4246a9173f2c8d9e70a6bed59b54" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_c69417fae4bce7e81b09e93ef1301c0d"
+                        parent="aspace_dbda4246a9173f2c8d9e70a6bed59b54" type="folder">2</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_949d19142e6efc48ea8ba199975bc4ed" level="file">
+                  <did>
+                     <unittitle>Promissory notes, <unitdate type="inclusive">1884-1912</unitdate>
+                     </unittitle>
+                     <container id="aspace_50832fe3d54ea49e3269a4cdf0d609ad" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_dd75a888c055a906e83cded78f18e739"
+                        parent="aspace_50832fe3d54ea49e3269a4cdf0d609ad" type="folder">3</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_402896728159d3ad4463029e20079321" level="file">
+                  <did>
+                     <unittitle>Tax payments, <unitdate type="inclusive">1887-1912</unitdate>
+                     </unittitle>
+                     <container id="aspace_fc1db03089feb1dae9f7a6123a092ec4" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_7219552b1ab98a49e15756c2df9bd9ed"
+                        parent="aspace_fc1db03089feb1dae9f7a6123a092ec4" type="folder">4</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_e0152dfc86240cf13605914d2724fb89" level="file">
+                  <did>
+                     <unittitle>Mutual Insurance Company, <unitdate type="inclusive"
+                           >1888-1897</unitdate>
+                     </unittitle>
+                     <container id="aspace_9904bb3afb71bd45eb0ac87f1b72f3d5" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_0021db72bd06f834d513138d19799c27"
+                        parent="aspace_9904bb3afb71bd45eb0ac87f1b72f3d5" type="folder">5</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_9183eafa1f148ca888f758058f2f298f" level="file">
+                  <did>
+                     <unittitle>Correspondence, <unitdate type="inclusive">1908, 1920</unitdate>
+                     </unittitle>
+                     <container id="aspace_7a686edf656cfdf91bc853b21e83a7df" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_14b958f128f30430fddeb6ac156d30df"
+                        parent="aspace_7a686edf656cfdf91bc853b21e83a7df" type="folder">6</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_14fd0e0da37c9e8f3dc6a051ae519bb1" level="subseries">
+               <did>
+                  <unittitle>Sub-Series 1.2: Charles Pinkey Rexrode Papers, <unitdate
+                        normal="1902/1959" type="inclusive">1902-1959</unitdate>
+                  </unittitle>
+               </did>
+               <c03 id="aspace_1faa1ad8f83f3e1c7e757b03dd453a4a" level="file">
+                  <did>
+                     <unittitle>Invoices and receipts, <unitdate type="inclusive"
+                           >1902-1959</unitdate>
+                     </unittitle>
+                     <container id="aspace_e656e57afd3f51533bd26f19df1f7e4f" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_474e90fa5a778bb32269a1b66c10e075"
+                        parent="aspace_e656e57afd3f51533bd26f19df1f7e4f" type="folder">7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_22c9e9fe549daf02d4c79b87d5316100" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1909-1913</unitdate>
+                     </unittitle>
+                     <container id="aspace_54568439703cdfc851ece198668fa22a" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_98ca50d827697e508d7cca39cda5e715"
+                        parent="aspace_54568439703cdfc851ece198668fa22a" type="folder">8</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_2b3ccc93cb65544cd60e597d196c24bc" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1912-1913</unitdate>
+                     </unittitle>
+                     <container id="aspace_55d4b3ce1124c5c3271a488a5cf7f9b4" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_768483ccab7efd6a19ebf89c00f1e5e8"
+                        parent="aspace_55d4b3ce1124c5c3271a488a5cf7f9b4" type="folder">9</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_55a0155cacc0a3aa3c659cb125c4a3a1" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1913-1918</unitdate>
+                     </unittitle>
+                     <container id="aspace_5b917f3b4804722a2d5e205f45d5d41a" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_b1f30144a384d1584bae3f6c05ebf5de"
+                        parent="aspace_5b917f3b4804722a2d5e205f45d5d41a" type="folder"
+                        >10</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_90dfd5447185c8b225e1e740c3a21e63" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1922-1924</unitdate>
+                     </unittitle>
+                     <container id="aspace_a2b7bb232b8dbdcdd44adbbc9db84a90" label="Box"
+                        type="box">2</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_097cbc5bc4798b2ef05cfae4b81eda79" level="file">
+                  <did>
+                     <unittitle>Medical advertisements, <unitdate>1924</unitdate>
+                     </unittitle>
+                     <container id="aspace_fa58893570aeaf9fa6c0df49c035ef6b" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_3ef1af180721d46cbee04fc73393d5ee"
+                        parent="aspace_fa58893570aeaf9fa6c0df49c035ef6b" type="folder"
+                        >11</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_ec5f8e09571582752f3cf5e8df00bf79" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1924-1928</unitdate>
+                     </unittitle>
+                     <container id="aspace_8f3bba28304134a9f499952d5ba87d66" label="Box:Folder"
+                        type="box">1</container>
+                     <container id="aspace_046fa705948f3e0ad3a9f22e44a2d1cc"
+                        parent="aspace_8f3bba28304134a9f499952d5ba87d66" type="folder"
+                        >12</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_fb0ba02baf93217f7aaf993dbe9a2c66" level="subseries">
+               <did>
+                  <unittitle>Sub-Series 1.3: Arthur B. Dudley Papers, <unitdate normal="1914/1961"
+                        type="inclusive">1914-1961</unitdate>
+                  </unittitle>
+               </did>
+               <c03 id="aspace_1cdeb5d209b755353daef62c83e716cf" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1914-1930</unitdate>
+                     </unittitle>
+                     <container id="aspace_cc05fb335ffcdefcb4570c0144e70bba" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_0f07b03f1a4161ebe1f5ebde91781763"
+                        parent="aspace_cc05fb335ffcdefcb4570c0144e70bba" type="folder">1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_3310ddc9577ff0b99cb539aaf7eae4f4" level="file">
+                  <did>
+                     <unittitle>Financial documents, <unitdate type="inclusive">1916-1917</unitdate>
+                     </unittitle>
+                     <container id="aspace_21fe9e7423ee8c33675fa942aa452654" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_fc571baedd26623b8dd04c84a6e1ea3f"
+                        parent="aspace_21fe9e7423ee8c33675fa942aa452654" type="folder">2</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_9758790c27d55a57431a8d394e4868bb" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1921-1922</unitdate>
+                     </unittitle>
+                     <container id="aspace_9fb0d6e829b1d1177841e43c01382362" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_d9e6d0029a3ebfd73cfba58fd94a33f7"
+                        parent="aspace_9fb0d6e829b1d1177841e43c01382362" type="folder">3</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_3e0e83a5d4003f254af42333d7026ed6" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1925-1927</unitdate>
+                     </unittitle>
+                     <container id="aspace_99867a53699e460de4f921c72ed88c2f" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_6d0c0e5dc48301d417d89138d52044c2"
+                        parent="aspace_99867a53699e460de4f921c72ed88c2f" type="folder">4</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_801931d7ea155fe924a45c34ef1d101c" level="file">
+                  <did>
+                     <unittitle>Ledger, <unitdate type="inclusive">1957-1961</unitdate>
+                     </unittitle>
+                     <container id="aspace_06cd1b3722d6d7c437ffbb838c6beef7" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_1af284af597b7115319308e20d9755ba"
+                        parent="aspace_06cd1b3722d6d7c437ffbb838c6beef7" type="folder">5</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_1d78bdb9f25cb3abb5361513ba090968" level="subseries">
+               <did>
+                  <unittitle>Sub-Series 1.4: Marshall Dudley Rexrode Papers, <unitdate
+                        normal="1936/1980" type="inclusive">1936-1980</unitdate>
+                  </unittitle>
+               </did>
+               <c03 id="aspace_d412beb6377c473875be3cbdf6c79504" level="file">
+                  <did>
+                     <unittitle>Diary, <unitdate>1936</unitdate>
+                     </unittitle>
+                     <container id="aspace_cdaea66e753e93762823c1a7655791bd" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_6b357b08459194cf5d567bb1d43b7fa7"
+                        parent="aspace_cdaea66e753e93762823c1a7655791bd" type="folder">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_7b9ab10b427569e8022d5abab022911c" level="file">
+                  <did>
+                     <unittitle>Financial documents, <unitdate type="inclusive">1936,
+                           1962</unitdate>
+                     </unittitle>
+                     <container id="aspace_c89802feb59ebce01f0f469cfbec5672" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_0c4b0c4caf20e4f59c7375e6a78ee2f7"
+                        parent="aspace_c89802feb59ebce01f0f469cfbec5672" type="folder">7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_0a40c374672c1f1e9693b1b31227d297" level="file">
+                  <did>
+                     <unittitle>Farm operations novebook, <unitdate>1946</unitdate>
+                     </unittitle>
+                     <container id="aspace_7ff357169ae58f55066e6d93eb2a4ab5" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_018a60db63825cd4902518300f0d3dd2"
+                        parent="aspace_7ff357169ae58f55066e6d93eb2a4ab5" type="folder">8</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_f02ff54544dc757136ea67bd4fd93249" level="file">
+                  <did>
+                     <unittitle>Ledger - personal finances, <unitdate type="inclusive"
+                           >1963-1980</unitdate>
+                     </unittitle>
+                     <container id="aspace_028cef0529292088a7aad0e5817bfdd8" label="Box:Folder"
+                        type="box">3</container>
+                     <container id="aspace_fd5bec7b272c1e3318443ab739c6427d"
+                        parent="aspace_028cef0529292088a7aad0e5817bfdd8" type="folder">9</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_3c27f333e4a3d2f520973efd6ce03740" level="file">
+               <did>
+                  <unittitle>Assorted Dudley/Rexrode/Boyle family correspondence, <unitdate
+                        normal="1935/1984" type="inclusive">1935-1984, undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_9eef903cc126e1e600cc10d2ea4be927" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_25bdc2819841a077b90af3e5fadcf002"
+                     parent="aspace_9eef903cc126e1e600cc10d2ea4be927" type="folder">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_7cd5a82bb563144e3a07dd3b92afa11e" level="series">
+            <did>
+               <unittitle>Series 2: Photographs, <unitdate normal="1923/1969" type="inclusive"
+                     >1923-1969</unitdate>
+               </unittitle>
+            </did>
+            <c02 id="aspace_4924ed57df98212bac7bfe2cc0ff190b" level="file">
+               <did>
+                  <unittitle>Virginia Tech, <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_bc80bb0c4987137d898a20a3829df273" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_569827bcd5c3508d82843894ed6f3f8a"
+                     parent="aspace_bc80bb0c4987137d898a20a3829df273" type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3688f217046c05c7ec6261ae83dd0aa2" level="file">
+               <did>
+                  <unittitle>Agriculture, <unitdate type="inclusive">1926, undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_df1c043c6c93f59add002b26473930cb" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_5ef4aad8adb6601851b39e0802859193"
+                     parent="aspace_df1c043c6c93f59add002b26473930cb" type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_df3076b015cecbd25806174f2931cb71" level="file">
+               <did>
+                  <unittitle>Possibly Charles Pinkey Rexrode family, <unitdate type="inclusive"
+                        >undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_e461b0d257577ebc864c8f04dd65b55f" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_2d6cad3fbc8b0a882dee96c8f7f6dd07"
+                     parent="aspace_e461b0d257577ebc864c8f04dd65b55f" type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3096c71da8c1cb31ec99a62fa3dd6a40" level="file">
+               <did>
+                  <unittitle>Mountain retreat, <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_65aa9af14d8b3e426020daa6edb059ab" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_f1fc9ef43de7c6ed1d9015506a78b068"
+                     parent="aspace_65aa9af14d8b3e426020daa6edb059ab" type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dc363dffe8f512bffc3c8387ee4b7e48" level="file">
+               <did>
+                  <unittitle>Possibly Agnes Rexrode, <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_fcdbc1295283e173b344c1349e80339e" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_8cf7f7ac8ff1616ab6b214a58972d493"
+                     parent="aspace_fcdbc1295283e173b344c1349e80339e" type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_043a8da7b3fad890e54153f87745960b" level="file">
+               <did>
+                  <unittitle>Possibly Agnes Rexrode and Margaret Dudley Rexrode, <unitdate
+                        type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_2899b91e933a41a6f637b7d1b1a3e2f2" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_428d44ab7760c5dfad973f6e18f6ad82"
+                     parent="aspace_2899b91e933a41a6f637b7d1b1a3e2f2" type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_670360d50654369e9630e636b6a7787e" level="file">
+               <did>
+                  <unittitle>Possibly Margaret Dudley Rexrode, <unitdate type="inclusive"
+                        >undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_41a85800914d3196ad467494b35acdea" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_349fa6eb9e7e3ebb0d4c840bcba0867f"
+                     parent="aspace_41a85800914d3196ad467494b35acdea" type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_45ccddfcfae73bb476d8fab46cf3a679" level="file">
+               <did>
+                  <unittitle>Rexrode family with possible identification, <unitdate type="inclusive"
+                        >1969, undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_8189c4df8205e3c598e7c16e0bbc96bd" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_e69cb06f9436831184aad7c2ebf031d2"
+                     parent="aspace_8189c4df8205e3c598e7c16e0bbc96bd" type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e256baa5b173326597070cffd22abe01" level="file">
+               <did>
+                  <unittitle>Possibly identified, <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_eaa1536b18c38a5f5663156888fd59a7" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_626aa1a286dd65d6f3db3da68a4e0b9c"
+                     parent="aspace_eaa1536b18c38a5f5663156888fd59a7" type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a6e42610f4cce968076b52b084710029" level="file">
+               <did>
+                  <unittitle>Unidentified, <unitdate type="inclusive">1923, undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_f53aa9d13b454db82e6402b79476112a" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_097097d7948ea1a6193aeb2d049af541"
+                     parent="aspace_f53aa9d13b454db82e6402b79476112a" type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c32272f6fa13a22248f9a7bcabb28807" level="file">
+               <did>
+                  <unittitle>Possibly at Mossy Creek Presbyterian Church, Mt. Solon, Virginia,
+                        <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_7be255e8b1dc5b742224eb7060383b3c" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_6345d2da6f8dafaec3d9c669cd1c8cdc"
+                     parent="aspace_7be255e8b1dc5b742224eb7060383b3c" type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a4e890c83bf8512788f3564780954864" level="file">
+               <did>
+                  <unittitle>Negatives, <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_ecd2d30983d32979fed7cee144f3bf38" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_ec9e920ffb4344fe01e35f426d0f7b87"
+                     parent="aspace_ecd2d30983d32979fed7cee144f3bf38" type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_40fc55cb55d2adfcd2f1b91fa4657647" level="file">
+               <did>
+                  <unittitle>Dr. Louis Brand and Alberta Dudley Brand hand-colored photographs taken
+                     in Korea, <unitdate type="inclusive">ca. 1927-1934</unitdate>
+                  </unittitle>
+                  <container id="aspace_281677955e91d1c6e05597c90dafb3b2" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_2f751341def0c3909cd721f4dfe0aa96"
+                     parent="aspace_281677955e91d1c6e05597c90dafb3b2" type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2b2ff5899e0f8a078e03a889d782e224" level="file">
+               <did>
+                  <unittitle>Alice Brand and Martha Brand, <unitdate>ca. 1928</unitdate>
+                  </unittitle>
+                  <container id="aspace_92b16de7d767f8e773132b08f694c518" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_dc78340185de4c5f449f17372eb462e0"
+                     parent="aspace_92b16de7d767f8e773132b08f694c518" type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_123ac1e0345164bc3f32332cac5fe0d4" level="file">
+               <did>
+                  <unittitle>Brand family in Korea, <unitdate type="inclusive">ca.
+                        1928-1938</unitdate>
+                  </unittitle>
+                  <container id="aspace_161118870cd704c654b81eedb594bada" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_dddca6b0c2fd9f9ec9209d9723958f7d"
+                     parent="aspace_161118870cd704c654b81eedb594bada" type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_80aef1f5f11539d8b30c21c3cac1ade7" level="file">
+               <did>
+                  <unittitle>Brand family in Virginia, <unitdate>ca. 1942</unitdate>
+                  </unittitle>
+                  <container id="aspace_d277861ceb2741fc89fb0d5b9fbabe2d" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_dc45e4e36990e5559a0baa350730ff7e"
+                     parent="aspace_d277861ceb2741fc89fb0d5b9fbabe2d" type="folder">17</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_40cd603a63e3bb430ea8a9f4c8e90ec1" level="series">
+            <did>
+               <unittitle>Series 3: Community Organizations and Events, <unitdate normal="1939/1998"
+                     type="inclusive">1939-1998</unitdate>
+               </unittitle>
+            </did>
+            <c02 id="aspace_c226c5a51cfb05682eceb47695892b3c" level="file">
+               <did>
+                  <unittitle>North River District Fair and Horse Show, <unitdate>October 11,
+                        1939</unitdate>
+                  </unittitle>
+                  <container id="aspace_3daa410456f5ed078153d1f96250e727" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_11fc00fa1fdc2093759fc171283dfe60"
+                     parent="aspace_3daa410456f5ed078153d1f96250e727" type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e116c5b890d9ab27b6f3c12ff69968ae" level="file">
+               <did>
+                  <unittitle>Mossy Creek Presbyterian Church (Mt. Solon) documents, <unitdate
+                        type="inclusive">1952-1993</unitdate>
+                  </unittitle>
+                  <container id="aspace_583071c9273e211110e13b4a1bb0b1e6" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_58d29b951dffa71e661cc8a6e912eb79"
+                     parent="aspace_583071c9273e211110e13b4a1bb0b1e6" type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5010ff20e2a68b5e0a5306630f6d37de" level="file">
+               <did>
+                  <unittitle>Mossy Creek Presbyterian Church (Mt. Solon), 200th Anniversary
+                     Celebrations, <unitdate>1968</unitdate>
+                  </unittitle>
+                  <container id="aspace_7a16ab1a0e598bb73fe3d99d228b7b48" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_072f053ec072639b0921b777b1c309ac"
+                     parent="aspace_7a16ab1a0e598bb73fe3d99d228b7b48" type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_559060c5cc309a6391fab19dd262380f" level="file">
+               <did>
+                  <unittitle>Woodrow Wilson District Ruritan Convention and North River Ruritan Club
+                     Handbook, <unitdate type="inclusive">October 28, 1995; 1998</unitdate>
+                  </unittitle>
+                  <container id="aspace_81874e96105a46bc59b9efae8c8ddc19" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_77c1bec56c73773b5161623394b83e12"
+                     parent="aspace_81874e96105a46bc59b9efae8c8ddc19" type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1f973463698fd904a22b333c61abb89c" level="file">
+               <did>
+                  <unittitle>Certificate of Incorporation of the North River Telephone Cooperative,
+                        <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_f8262b56f0b4841e01fb7169e0ca2a43" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_646d5534404938db37b455493a743605"
+                     parent="aspace_f8262b56f0b4841e01fb7169e0ca2a43" type="folder">22</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_6aa8dcacc5672f2b958cea143b1dfc78" level="series">
+            <did>
+               <unittitle>Series 4: Ephemera, <unitdate normal="1913/2005" type="inclusive"
+                     >1913-2005</unitdate>
+               </unittitle>
+            </did>
+            <c02 id="aspace_0e39a6e4210318d51f5ecaab9fa6c78a" level="file">
+               <did>
+                  <unittitle>Assorted printed ephemera, <unitdate type="inclusive">1913-1970,
+                        undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_4aa1e46ea512ce59d313f21a2547bc3c" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_f6d432a1d14a83b8d76ddfa04a11c0aa"
+                     parent="aspace_4aa1e46ea512ce59d313f21a2547bc3c" type="folder">23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b33c3f872909ab2ecb1cce7cfcedb946" level="file">
+               <did>
+                  <unittitle>Funeral memory books, <unitdate type="inclusive">1947-1998</unitdate>
+                  </unittitle>
+                  <container id="aspace_78e420138a7d371547bd5a4550d59527" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_dda295f779bba29c5c7f07af0a65a2b5"
+                     parent="aspace_78e420138a7d371547bd5a4550d59527" type="folder">24</container>
+               </did>
+               <scopecontent id="aspace_59bbbe8387255400d2476a4a1482e3e5">
+                  <head>Scope and Content</head>
+                  <p>Luther Charles Fultz, 1947; J. Wayne Fairburn, January 1993; Agnes Rexrode,
+                     October 1993 (2 copies); Maggie Elizabeth Props, 1995; Richard Craig Dudley,
+                     1998</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_29aebe7d971bd49096b8e293c572a41d" level="file">
+               <did>
+                  <unittitle>Newspaper clippings - local interest articles, <unitdate
+                        type="inclusive">1948-1984, undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_8237e69a20aca5815bbd43b3156efe0a" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_35bdc86ca04dd1c73c7574ba67ed6b8e"
+                     parent="aspace_8237e69a20aca5815bbd43b3156efe0a" type="folder">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_05e2391d73911d74472b3983ee481884" level="file">
+               <did>
+                  <unittitle>Newspaper clippings - wedding announcements, <unitdate type="inclusive"
+                        >1950, undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_dec1729db298a195a74a3a988e89c2b4" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_be924dbc4b4bc993b82c0cef29ca0e24"
+                     parent="aspace_dec1729db298a195a74a3a988e89c2b4" type="folder">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cdf0126a3d048e3cdd2aa6c4bff7c1bf" level="file">
+               <did>
+                  <unittitle>Newspaper clippings - obituaries, <unitdate type="inclusive"
+                        >1985-2005</unitdate>
+                  </unittitle>
+                  <container id="aspace_cf27702051ea4e4bfef80c935d77bc6c" label="Box:Folder"
+                     type="box">4</container>
+                  <container id="aspace_c00b6d969eb81a05a9562a13c8a710ef"
+                     parent="aspace_cf27702051ea4e4bfef80c935d77bc6c" type="folder">27</container>
+               </did>
+               <scopecontent id="aspace_df2f2abb7beb7896f1975c6c55d4aad8">
+                  <head>Scope and Content</head>
+                  <p>John H. Earhart (undated), Mabel Rexrode, 1986 March 23; Earl J. Shiflet, 1995
+                     December 14; S. Newton Karicofe, 1996 March 5; Earl T. Swink, 1996 September
+                     10; Clarence E. May, 1997 April 15; Kathleen C. McFall, 1997 December 7;
+                     Richard C. Dudley, 1998 May 23; Nancy R. Lewis, 1998 August 25; Garland Miller,
+                     1998 September 7; Rudolph B. Alexander, 1999 June 6; William A. Brooks, 1999
+                     November 16; Francis Dudley, 2000 April 8; Hiram C. Arey, 2000 April 30; Hiwana
+                     C. Crompton, 2000 May 4; Richard J. Hevener, 2000 June 12; Roy R. Smith, 2000
+                     November 28 (2); Arthur V. Bartenslayer, 2002 August 11; William J. Moffett
+                     Jr., 2002 August 20; Dr. John H. Guss, 2004 September 28; John A. Horn, 2005
+                     May 15</p>
+               </scopecontent>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
