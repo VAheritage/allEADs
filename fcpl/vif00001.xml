@@ -1,384 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" title="extended EAD relaxng schema" ?>
 
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<!-- The Annandale, Virginia Collection -->
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!-- Annandale, Virginia Collection -->
+<!-- Created: Sat Feb 16 12:17:40 2019 -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" id="vif00001">
 <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
-<eadid countrycode="US" mainagencycode="US-ViF">PUBLIC "-//Fairfax County Public Library//TEXT (US::ViF::vif00001::A Guide to the Annandale, Virginia Collection, 1743-1993)//EN" "vif00001.xml"
+
+<eadid countrycode="US" mainagencycode="US-ViF">
+PUBLIC "-//Fairfax County Public Library//TEXT (US::ViF::vif00001::A Guide to the Annandale, Virginia Collection)//EN" "vif00001.xml"
 </eadid>
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
 <filedesc>
+
 <titlestmt>
-<titleproper>A Guide to the Annandale, Virginia Collection, <date>1742-1993</date>
+<titleproper>A Guide to the Annandale, Virginia Collection, <date>1743-1993</date>
 </titleproper>
-<subtitle id="sort">Virginia, Annandale. Collection
-<num type="collectionnumber">2014.004
-</num>
+<subtitle id="sort">Annandale, Virginia Collection
+<num type="collectionnumber">MSS 03-02</num>
 </subtitle>
 </titlestmt>
 
 <publicationstmt>
 <!-- This puts in text for the boilerplate information about FCPL - address, phone number, etc.
-     These live in a separate file -->
+     Text lives in a separate file. -->
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
  href="http://ead.lib.virginia.edu/vivaead/add_con/fairfax_address.xi.xml"/>
  
 <!-- This must be here so that the publication date appears in search results -->
-<date type="publication">
-© 2015 Fairfax County Public Library. All rights reserved.
-</date>
+<date type="publication">© 2019 Fairfax County Public Library. All rights reserved.</date>
 </publicationstmt>
 
 </filedesc>
-
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <profiledesc>
-<creation>Machine-readable finding aid created in a text editor by Ross Landis, <date>28 February 2015</date>
+<creation>Machine-readable finding aid created by Ross Landis, <date>February 16, 2019</date>
 </creation>
+
 <langusage>Description is in
-<language langcode="eng">English
-</language>
+<language langcode="eng">English</language>
 </langusage>
+
 </profiledesc>
 </eadheader>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <frontmatter>
 <titlepage>
-<titleproper>A Guide to the Annandale, Virginia Collection, <date>1743-1993</date>
-</titleproper>
+
+<titleproper>A Guide to the Annandale, Virginia Collection, <date>1743-1993</date></titleproper>
+
 <subtitle>A Collection in The Fairfax County Public Library<lb/>
-<num type="Accession number">2014.004
-</num>
+<num type="Record Group Number">MSS 03-02</num>
 </subtitle>
+
+<!-- This puts in the JPEG of the logo. -->
 <p id="logostmt">
-<extptr xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/FairfaxCoPL.jpg"/>
+<extptr xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple"
+ xlink:href="http://ead.lib.virginia.edu/vivaead/logos/FairfaxCoPL.jpg"/>
 </p>
 
-<date type="publication">2015
-</date>
-<list type="deflist">
-<defitem>
-<label>[-check] Processed by
-</label>
-<item>Eric Anderson and Chris Barbuschak
-</item>
-</defitem>
-</list>
 </titlepage>
 </frontmatter>
+
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <archdesc level="collection">
-<runner placement="footer">Virginia Room, Fairfax County Public Library
-</runner>
+
+<runner placement="footer">Virginia Room, Fairfax County Public Library</runner>
+
 <did>
-<head>Descriptive Summary
-</head>
-<repository label="Repository" encodinganalog="852$a">Fairfax County Public Library
-</repository>
+<head>Descriptive Summary</head>
+<repository label="Repository" encodinganalog="852$a">Fairfax County Public Library</repository>
 <unittitle label="Title" encodinganalog="245$a">The Annandale, Virginia Collection, 
-<unitdate type="inclusive" label="Date" encodinganalog="245$f">1743-1993
-</unitdate>
-</unittitle>
-<unitid label="Accession number" encodinganalog="099$a">2014.004
-</unitid>
+<unitdate type="inclusive" label="Date" encodinganalog="245$f">1743-1993</unitdate></unittitle>
+<unitid label="Record Group Number" encodinganalog="099$a">MSS 03-02</unitid>
+
 <physdesc label="Extent" encodinganalog="300$a">
-<extent>.5 linear feet; 1 box</extent>
+<extent>
+.5 linear feet, 1 box
+</extent>
 </physdesc>
+
 <langmaterial label="Language">
-<language langcode="eng">English
-</language>
+<language langcode="eng">English</language>
 </langmaterial>
-<abstract label="Abstract">
-The Annandale, Virginia Collection consists of .5 linear feet, spanning
-the years 1742-1993. It includes photocopied handwritten notes and
-letters, a photocopied Navy commission from 1837, photographs,
-typewritten correspondence, a hand drawn plan of Oak Hill, and Annandale
-bumper stickers and a button.
+
+<abstract label="Abstract" encodinganalog="520$a">
+The Annandale, Virginia Collection consists of .5 linear feet, spanning the years 1742-1993. It includes photocopied handwritten notes and letters, a photocopied navy commission from 1837, photographs, typewritten correspondence, a hand drawn plan of Oak Hill, a program for Annandale Day, and Annandale bumper stickers and a button. Subjects covered are: Annandale, Va, Oak Hill, and The Ravensworth Historical Marker Project
 </abstract>
-<origination label="Creator" encodinganalog="100$a">Fairfax Historical Landmarks Preservation Commission, Dan Cragg (b.1939-)
+
+<origination label="Creator" encodinganalog="100$a">
+Virginia Room staff
 </origination>
+
 </did>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <descgrp type="admininfo">
-<head>Administrative Information
-</head>
+<head>Administrative Information</head>
 
 <accessrestrict encodinganalog="506$a">
 <head>Access Restrictions</head>
-<p>Collection is open to research.</p>
+<p>None</p>
 </accessrestrict>
 
 <userestrict encodinganalog="540$a">
 <head>Use Restrictions</head>
-<p>Consult repository for information on copyright restrictions.</p>
+<p>Consult repository for information.</p>
 </userestrict>
 
 <prefercite encodinganalog="524$a">
-<head>Preferred Citation
-</head>
-<p>
-Virginia Room. Archives and Manuscripts. City of Fairfax Regional Library. Annandale, Virginia Collection, Box 1, folder #
-</p>
+<head>Preferred Citation</head>
+<p>Annandale, Virginia Collection, MSS 03-02, Virginia Room, Fairfax County Public Library</p>
 </prefercite>
+
 <acqinfo encodinganalog="541$a">
-<head>Acquisition Information
-</head>
-<p>The Virginia Room staff artificially created this collection over a period of time. The Oak Hill correspondence came from the files of the Fairfax Historical Landmarks Preservation Commission. Mrs. Edward Howrey of Upperville, Va. discovered The Oak Hill papers in the attic of Oak Hill. Dan Cragg compiled The Ravensworth Historical Marker research files.
-</p>
+<head>Acquisition Information</head>
+<p>The Virginia Room staff artificially created this collection over a period of years. The Oak Hill correspondence came from the files of the Fairfax Historical Landmarks Preservation Commission. Mrs. Edward Howrey of Upperville, Va. discovered the 1743-1902 Oak Hill letters in the attic of Oak Hill. The originals are now located at the Virginia Historical Society. Dan Cragg compiled The Ravensworth Historical Marker research files. Chris Martin donated the 1953 Annandale Day Program in January 2019.</p>
 </acqinfo>
+
 <processinfo>
-<head>Processing Information
-</head>
-<p>Processed in 2015 by Eric Anderson and Chris Barbuschak.
-</p>
-<p>Finding aid compiled in 2015 by Chris Barbuschak.
-</p>
+<head>Processing Information</head>
+<p>Eric Anderson, Chris Barbuschak, 2015<lb/>EAD generated by Ross Landis, 2019</p>
 </processinfo>
+
 </descgrp>
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <bioghist encodinganalog="545$a">
-<head>Biographical Information
-</head>
-<p>The area now known as Annandale was home to an Indian village and
-trading post until 1685, when Col. William Fitzhugh purchased the 22,000
-acre tract from the original grantee, John Matthews. He named the tract
-Ravensworth in honor of his family’s ancestral home in Yorkshire.
-Fitzhugh brought in slaves and overseers to cultivate the land and also
-leased parcels of it to Huguenot refugees.</p>
-
-<p>The Fitzhughs built three notable mansions in the area during 1790s:
-Oak Hill, Ossian Hall, and Ravensworth. William Fitzhugh built the
-Ravensworth mansion which later came into the possession of the Lee
-family. Robert E. Lee’s mother died in Ravensworth and later Lee’s wife
-and family temporarily sought refuge there during the Civil War. The
-house burned in 1926 due to an arsonist.</p>
-
-<p>Nicholas Fitzhugh built Ossian Hall, which received many illustrious
-guests including George Washington and George Mason. Long abandoned and
-heavily damaged by vandals, the Annandale Fire Department burned the
-house in a controlled fire practice drill to make way for a new
-subdivision in 1957. Today, Ossian Hall is featured on the logo of the
-Annandale Fire Department.</p>
-
-<p>Around 1790 Richard Fitzhugh built Oak Hill. Edward and Jane Howrey
-purchased the house in 1935 and had it restored. It is the only one of
-the three houses which survives to this day and is listed on the
-National Register of Historic Places.</p>
-
-<p>With the completion of Little River Turnpike in 1811, a little white
-toll house was erected on the road in Annandale. The toll house served
-as a toll gate and polling place, where residents of the area later cast
-votes in favor of secession.</p>
-
-<p>By 1830, the community’s name changed to Annandale. The origin of the
-name is subject for debate. One theory is Annandale earned its name from
-a town in Scotland which is located along the Annan River. Another
-belief is the name comes from Sir Robert de Brus, the “Earl of
-Annandale” in Scotland. Regardless of the name’s source, the area
-officially became known as Annandale when the first “Annandale Post
-Office” opened in 1837.</p>
-
-<p>The area saw some Civil War action as the site of several skirmishes.
-The Union Army used the Annandale United Methodist Chapel as a temporary
-headquarters before dismantling it for firewood and winter quarters.
-Following the Civil War, the area remained fairly rural until the 20th
-Century when Fairfax County became a popular place to live for D.C.
-government employees. Starting in the late 1950s, developers bought the
-remainder of the Ravensworth property and subdivided it for new homes
-and shopping malls. The site of the Ravensworth mansion is now marked by
-a Historical Marker.</p>
-
+<head>Historical and Biographical Information</head>
+<p>The area now known as Annandale was home to an Indian village and trading post until 1685, when Col. William Fitzhugh purchased the 22,000 acre tract from the original grantee, John Matthews. He named the tract Ravensworth in honor of his family’s ancestral home in Yorkshire. Fitzhugh brought in slaves and overseers to cultivate the land and also leased parcels of it to Huguenot refugees.</p>
+<p>The Fitzhughs built three notable mansions in the area during 1790s: Oak Hill, Ossian Hall, and Ravensworth. William Fitzhugh built the Ravensworth mansion which later came into the possession of the Lee family. Robert E. Lee’s mother died in Ravensworth and later Lee’s wife and family temporarily sought refuge there during the Civil War. The house burned in 1926 due to an arsonist.</p>
+<p>Nicholas Fitzhugh built Ossian Hall, which received many illustrious guests including George Washington and George Mason. Long abandoned and heavily damaged by vandals, the Annandale Fire Department burned the house in a controlled fire practice drill to make way for a new subdivision in 1957. Today, Ossian Hall is featured on the logo of the Annandale Fire Department.</p>
+<p>Around 1790 Richard Fitzhugh built Oak Hill. Edward and Jane Howrey purchased the house in 1935 and had it restored. It is the only one of the three houses which survives to this day and is listed on the National Register of Historic Places.</p>
+<p>With the completion of Little River Turnpike in 1811, a little white toll house was erected on the road in Annandale. The toll house served as a toll gate and polling place, where residents of the area later cast votes in favor of secession.</p>
+<p>By 1830, the community’s name changed to Annandale. The origin of the name is subject for debate. One theory is Annandale earned its name from a town in Scotland which is located along the Annan River. Another belief is the name comes from Scotland’s Sir Robert de Brus, the “Earl of Annandale”. Regardless of the name’s source, the area officially became known as Annandale when the first “Annandale Post Office” opened in 1837.</p>
+<p>The area saw Civil War action as the site of several skirmishes. The Union Army used the Annandale United Methodist Chapel as a temporary headquarters before dismantling it for firewood and winter quarters. Following the Civil War, the area remained fairly rural until the twentieth century when Fairfax County became a popular place to live for D.C. government employees. Starting in the late 1950s, developers bought the remainder of the Ravensworth property and subdivided it for new homes and shopping malls. The site of the Ravensworth mansion is now marked by a Historical Marker. </p>
 </bioghist>
-<scopecontent encodinganalog="520$a">
-<head>Scope and Content
-</head>
 
-<p><emph render="bold">Series 1: Oak Hill Correspondence, 1743-1902</emph>
-contains correspondence between the Fairfax Historical Landmarks
-Preservation Commission, Berlage - Bernstein Builders (the company which
-developed the property around Oak Hill), and other interested parties.
-These letters include information about the restoration, preservation,
-and sale of Oak Hill. The file also contains a hand drawn map of the
-property. This series also contains photocopies of handwritten notes and
-letters which were discovered in the attic of Oak Hill. Subjects include
-personal correspondence, financial dealings, a court summons, and a
-commission appointing Andrew Fitzhugh to the rank of Master Commandant.
-The commission is dated 1837 and signed by Andrew Jackson.</p>
-
-<p><emph render = "bold">Series 2: Ravensworth Research, 1993</emph>
-contains papers relating to the Ravensworth Historical Marker Project
-including originally proposed marker text; sources cited in said text
-such as maps, diaries, and articles; subsequent revisions to the marker
-text and the final version; misc. correspondence on marker project; news
-clippings on marker dedication; photos of marker; dedication ceremony
-guest list; transcript of Cragg’s remarks at dedication; and a
-transcript of  an interview with Douglas Dove, a Ravensworth resident in
-the 1920s.</p>
-
-<p><emph render = "bold">Series 3: Memorabilia, undated</emph>
-contains two Annandale bumper stickers and a button. The bumper sticker
-and button simply reads “Annandale” and has a motif of a bird in a tree.
-The second bumper sticker reads “Rediscover Annandale, We Have A Lot In
-Store For You.”</p>
+<scopecontent encodinganalog="520$b">
+<head>Scope and Content</head>
+<p>The Annandale, Virginia Collection consists of .5 linear feet, spanning the years 1742-1993. It includes photocopied handwritten notes and letters, a photocopied navy commission from 1837, photographs, typewritten correspondence, a hand drawn plan of Oak Hill, a program for Annandale Day, and Annandale bumper stickers and a button. Subjects covered are: Annandale, Va, Oak Hill, and The Ravensworth Historical Marker Project</p>
+<p><emph render="boldunderline">Series 1: Oak Hill Correspondence, 1743-1902, Box 1</emph></p>
+<p>This series contains correspondence between the Fairfax Historical Landmarks Preservation Commission, Berlage - Bernstein Builders (the company which developed the property around Oak Hill), and other interested parties. These letters include information about the restoration, preservation, and sale of Oak Hill. The file also contains a hand drawn map of the property. This series also contains photocopies of handwritten notes and letters which were discovered in the attic of Oak Hill. Subjects include personal correspondence, financial dealings, a court summons, and a commission appointing Andrew Fitzhugh to the rank of Master Commandant. The commission is dated 1837 and signed by Andrew Jackson.</p>
+<p><emph render="boldunderline">Series 2: Ravensworth Research, 1993, Box 1 </emph></p>
+<p>This series contains papers relating to the Ravensworth Historical Marker Project including originally proposed marker text; sources cited in said text such as maps, diaries, and articles; subsequent revisions to the marker text and the final version; miscellaneous correspondence on marker project; news clippings on marker dedication; photos of marker; dedication ceremony guest list; transcript of Cragg’s remarks at dedication; and a transcript of an interview with Douglas Dove, a Ravensworth resident in the 1920s.</p>
+<p><emph render="boldunderline">Series 3, Memorabilia, N.D., Box 1</emph></p>
+<p>This series contains a 1953 Annandale Day program, and two Annandale bumper stickers and a button. The bumper sticker and button simply reads “Annandale” and has a motif of a bird in a tree. The second bumper sticker reads “Rediscover Annandale, We Have A Lot In Store For You.”</p>
 </scopecontent>
+
+
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-<arrangement encodinganalog="351">
-<head>Arrangement
-</head>
-<p>Organized into three series by material type.
-</p>
-<list>
-<item>Series 1: Oak Hill Correspondence, 1743-1902<lb/></item>
-<item>Series 2: Ravensworth Research, 1993<lb/></item>
-<item>Series 3: Memorabilia, undated<lb/></item>
-</list>
-</arrangement>
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <descgrp type="add">
-<head>Adjunct Descriptive Data
-</head>
+<head>Adjunct Descriptive Data</head>
+
 <relatedmaterial encodinganalog="544$a">
-<head>[-check] Related Materials
-</head>
-<p>
-Annandale, Virginia, A Brief History (1992) Collection<lb/>
-Oak Hill Historic Landmark File<lb/>
-Annandale Historic Landmark Files<lb/>
-University of North Carolina at Chapel Hill, Francis Asbury Dickins Papers, 1729-1934<lb/>
-</p>
+<p>Robert M. Moxham Manuscript Papers on “A History of Annandale, Virginia”, MSS 08-23, Virginia Room, Fairfax County Public Library;<lb/>
+University of North Carolina at Chapel Hill, Francis Asbury Dickins Papers, 1729-1934;<lb/>
+Watt Family Papers, 1821-1902, Mss1 W3403a, Virginia Historical Society</p>
 </relatedmaterial>
 
 <separatedmaterial encodinganalog="544$a">
-<p>
-None
-</p>
+<p>None</p>
 </separatedmaterial>
+
 </descgrp>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 
+<!-- Index/Search terms go here - categorized appropriately
+
+See page 38-39 for information on differentiated vs. undifferentiated lists.
+
+Going to do undifferentiated.
+
+<persname encodinganalog="600$a">^%term%</persname>
+<famname encodinganalog="600$a">^%term%</famname>
+<corpname encodinganalog="610$a">^%term%</corpname>
+<subject source="lcsh" encodinganalog="650$a">^%term%</subject>
+<geogname source="lcsh" encodinganalog="651$a">^%term%</geogname>
+<title encodinganalog="630$a">^%term%</title>
+<function encodinganalog="657$a">^%term%</function>
+<genreform source="aat" encodinganalog="655$a">^%term%</genreform>
+<occupation encodinganalog="656$a">^%term%</occupation>
+-->
+
+<!-- Example:
 <controlaccess>
 <head>Index Terms</head>
+<subject source="lcsh" encodinganalog="650$a">Oak Hill</subject>
+__index__terms_25__
+</controlaccess>
+-->
 
 <controlaccess>
-<head>Persons</head>
+<head>Index Terms</head>
+<subject encodinganalog="650$a">Annandale (Va.) - History </subject>
 <persname encodinganalog="600$a">Battail, Sue</persname>
 <persname encodinganalog="600$a">Berlage, Bruce</persname>
+<corpname encodinganalog="610$a">Berlage-Bernstein Builders, Inc.</corpname>
 <persname encodinganalog="600$a">Cragg, Dan</persname>
 <persname encodinganalog="600$a">Dove, Douglas</persname>
+<famname encodinganalog="600$a">Fitzhugh family</famname>
 <persname encodinganalog="600$a">Fitzhugh, Andrew</persname>
 <persname encodinganalog="600$a">Fitzhugh, Mary</persname>
 <persname encodinganalog="600$a">Fitzhugh, William</persname>
-<persname encodinganalog="600$a">Saunders, Philip</persname>
-</controlaccess>
-
-<controlaccess>
-<head>Family Names</head>
-<famname encodinganalog="600$a">Fitzhugh family</famname>
 <famname encodinganalog="600$a">Lee family</famname>
+<subject encodinganalog="650$a">Oak Hill (Annandale, Va.)</subject>
+<subject encodinganalog="650$a">Ossian Hall (Annandale, Va.)</subject>
+<subject encodinganalog="650$a">Ravensworth (Va.) - History</subject>
+<persname encodinganalog="600$a">Saunders, Philip</persname>
 <famname encodinganalog="600$a">Watt family</famname>
 </controlaccess>
 
-<controlaccess>
-<head>Corporate Bodies</head>
-<corpname encodinganalog="610$a">Berlage-Bernstein Builders, Inc.</corpname>
-</controlaccess>
-
-<controlaccess>
-<head>Subjects</head>
-<subject source="lcsh" encodinganalog="650$a">Oak Hill</subject>
-<subject source="lcsh" encodinganalog="650$a">Ossian Hall</subject>
-<subject source="lcsh" encodinganalog="650$a">Ravensworth Historical Marker Project</subject>
-<subject source="lcsh" encodinganalog="650$a">Ravensworth tract</subject>
-</controlaccess>
-
-<controlaccess>
-<head>Geographic Names</head>
-<geogname source="lcsh" encodinganalog="651$a">Annandale, Virginia</geogname>
-</controlaccess>
-
-</controlaccess>
-
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-<dsc type="combined">
-<head>The Annandale, Virginia Collection
-</head>
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-<!-- XXXXXXXX  BEGIN ITEM DESCS HERE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!-- Begin Container List xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<dsc type = "combined">
+<head>Container List</head>
 <c01 level="series">
 <did>
-<unittitle>Series 1: Oak Hill Correspondence
-<unitdate type="inclusive">1743-1973</unitdate>
+<unittitle>Series 1: Oak Hill Correspondence,
+<unitdate>1743-1973</unitdate>
 </unittitle>
 </did>
-<c02 level="file">
+<c02 level = "file">
 <did>
 <container label = "Box" type = "box">1
 </container>
 <container label = "Folder" type = "folder">1
 </container>
-<unittitle>Oak Hill Correspondence
-</unittitle>
+<unittitle>Oak Hill Correspondence, 
 <unitdate>1967-1973
 </unitdate>
+</unittitle>
 </did>
 </c02>
-<c02 level="file">
+<c02 level = "file">
 <did>
 <container label = "Box" type = "box">1
 </container>
 <container label = "Folder" type = "folder">2
 </container>
-<unittitle>Oak Hill, Papers Found in Attic, Letters to Mrs. Watts, Oak Hill (Photocopies) 
-</unittitle>
+<unittitle>Oak Hill, Papers Found in Attic, Letters to Mrs. Watts, Oak Hill (Photocopies) , 
 <unitdate>1743-1902
 </unitdate>
+</unittitle>
 </did>
 </c02>
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 </c01>
 <c01 level="series">
 <did>
 <unittitle>Series 2: Ravensworth Research,
-<unitdate type="inclusive">1993</unitdate>
+<unitdate>1993</unitdate>
 </unittitle>
 </did>
-<c02 level="file">
+<c02 level = "file">
 <did>
 <container label = "Box" type = "box">1
 </container>
 <container label = "Folder" type = "folder">3
 </container>
-<unittitle>Ravensworth Historical Marker Project - Research and Notes [compiled by Dan Cragg]
-</unittitle>
+<unittitle>Ravensworth Historical Marker Project - Research and Notes [compiled by Dan Cragg], 
 <unitdate>1993
 </unitdate>
+</unittitle>
 </did>
 </c02>
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 </c01>
 <c01 level="series">
 <did>
 <unittitle>Series 3: Memorabilia,
-<unitdate type="inclusive">undated</unitdate>
+<unitdate>Undated</unitdate>
 </unittitle>
 </did>
-<c02 level="file">
+<c02 level = "file">
 <did>
 <container label = "Box" type = "box">1
 </container>
 <container label = "Folder" type = "folder">4
 </container>
-<unittitle>2 Annandale Bumper Stickers, 1 button
-</unittitle>
-<unitdate>undated
+<unittitle>2 Annandale Bumper Stickers, 1 button, 
+<unitdate>Undated
 </unitdate>
+</unittitle>
+</did>
+</c02>
+<c02 level = "file">
+<did>
+<container label = "Box" type = "box">1
+</container>
+<container label = "Folder" type = "folder">5
+</container>
+<unittitle>Annandale Day Program, sponsored by the Annandale Businessmen’s Association, Saturday September 26, 1953, 
+<unitdate>1953
+</unitdate>
+</unittitle>
 </did>
 </c02>
 </c01>
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 </dsc>
+<!-- End Container List xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
 </archdesc>
 </ead>
