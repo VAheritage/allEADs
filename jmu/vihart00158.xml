@@ -1,1544 +1,1048 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00158">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
-			Library::Special Collections//TEXT (US::ViHarT::vihart00NUMBER::COLLECTION NAME AND
-			DESCRIPTION [i.e. vihart00129::Wampler Business records, 1918-1972])//EN"
-			"vihart00NUMBER.xml" </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the W.E. Long &amp; Sons General Store Collection,
-						<date era="ce" calendar="gregorian">1865-1971</date></titleproper>
-        <subtitle id="sort">W.E. Long &amp; Sons General Store Collection<num type="collectionnumber">SC 5044</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-				</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
-					rights reserved. </date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Peter Watt
-					<date era="ce" calendar="gregorian">7/2013</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-12-03">2013-12-03</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the W.E. Long an Sons General Store Collection,
-					<date era="ce" calendar="gregorian">1865-1971</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">SC
-					5044</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2012</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:</label>
-          <item>Ali Kolleda, Summer Bork, and Jacob Housner</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
-				University </repository>
-      <unittitle label="Title" encodinganalog="245$a">W.E. Long &amp; Sons General Store
-				Collection, <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1865-1971</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">SC 5044</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">7 boxes (3.25 linear feet)</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">The W.E. Long &amp; Sons General Store Collection, 1865-1971,
-				consists of seven boxes containing 1014 items pertaining to the business transacted
-				at W. E. Long &amp; Sons General Store. The collection is arranged into six series:
-				1.) Invoices, Advertisements, and Correspondence. 2.) Purchases and Orders. 3.) Bank
-				Ledgers, Expenses, and Sales. 4.) Long's Stores Account Books. 5.) Long's Store
-				Records. 6.) Mt. Clinton Post Office Records.</abstract>
-      <origination label="Creator" encodinganalog="100$a">William E. Long</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions </head>
-        <p>None</p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions </head>
-        <p>None</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation </head>
-        <p>[Identification of Item], The W.E. Long &amp; Sons General Store Collection,
-					1865-1971, SC# 5044, Special Collections, Carrier Library, James Madison
-					University, Harrisonburg, VA.</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information </head>
-        <p>Collection was purchased from Ronald L. Fulk care of Dusty’s Antique Market in
-					Mount Sidney, VA on December 15, 2008. Another part of the collection was
-					purchased from Rocky’s Gold and Silver on July 26, 2009 and merged with the
-					former.</p>
-      </acqinfo>
-      <custodhist>
-        <head>Provenance </head>
-        <p>The records were collected during the operation of W. E. Long &amp; Sons General
-					Store by its various owners, including Samuel Long, William E. Long, and S.
-					Claude Long, in order to record transactions, expenses, and profit for the
-					store.</p>
-      </custodhist>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information </head>
-      <p>Samuel Long was the original owner of the Long Store. He worked primarily as a
-				farmer and dry goods merchant, running numerous stores before moving from Shenandoah
-				County to Rockingham County in 1868. In 1880, he bought the Hopkins Upper Mill on
-				Muddy Creek and established the Chrisman general store and post office. His son,
-				William E. Long, was named postmaster of the Chrisman post office in 1881. Samuel
-				Long had also established another store around 1869 in Green Mount, Virginia.
-				William E. Long was named postmaster of the Green Mount branch in 1889, and took
-				over operations from J.W. Mauck. In 1892, Samuel Long bought A.B. Driver and Company
-				in Mt. Clinton, Virginia, and changed the name to S. Long &amp; Sons. At this time,
-				William Long was also appointed postmaster of the Mount Clinton post office. William
-				E. Long and his brother-in-law, John B. Bowman ran the Mount Clinton branch of the
-				store under the name Long and Bowman, until the death of Bowman in 1893. Upon the
-				death of Samuel Long in 1897, William’s sister sold her husband’s half of the Mount
-				Clinton store to William for $2,500. The name of the store was changed to W.E. Long
-				and Sons once William Long’s children reached maturity. The store kept this name
-				until it was turned over by William Long’s sons to a nephew, S. Claude Long, who
-				renamed the store S.C. Long &amp; Sons in 1959. It remained under his name until his
-				retirement in 1988 when it left the family’s possession. A quick succession of
-				owners succeeded S. Claude Long until the store was finally torn down in 1995. The
-				Long family owned and operated the Long family store for roughly 95 years, managing
-				to sustain a business through WWI, the Great Depression, and WWII.</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content </head>
-      <p>The collection, roughly 3.25 linear feet, consists of receipts, invoices, account
-				books, banks ledgers, postcards, and letters relating to the Long’s Store in Mount
-				Clinton, VA from 1865 to 1971. Also included are advertisements from various
-				companies to the owners of the Long Store. This collection consists of six series:
-				Invoices, Advertisements, and Correspondence, 1865-1955, Purchases and Orders,
-				1893-1924, and Bank Ledgers, Expenses, and Sales, 1866-1971, Long's Store Account
-				Books, 1869-1921, Long's Records, 1877-1929, Mt. Clinton Post Office Records,
-				1879-1893</p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement </head>
-      <p>The collection is arranged in 6 series:</p>
-      <blockquote>
-        <p>I: Invoices, Advertisements, and Correspondence, 1865-1955</p>
-      </blockquote>
-      <blockquote>
-        <p>II: Purchases and Orders, 1893-1924</p>
-      </blockquote>
-      <blockquote>
-        <p>III: Bank Ledgers, Expenses, and Sales, 1866-1971</p>
-      </blockquote>
-      <blockquote>
-        <p>IV: Long's Store Account Books, 1869-1921</p>
-      </blockquote>
-      <blockquote>
-        <p>V: Long's Store Records, 1877-1929</p>
-      </blockquote>
-      <blockquote>
-        <p>VI: Mt. Clinton Post Office Records, 1879-1893</p>
-      </blockquote>
-      <p>Series 1: Invoices, Advertisements and Correspondence, 1865-1955. This series
-				contains invoices to the Long Store from other companies, showing that orders were
-				paid for in full. Specific company invoices include: Harrisonburg Grocery Co. Inc.
-				Exclusively Wholesale, Merchants Grocery and Hardware Co. (Successors of Snell
-				Grocery and Hardware Co.), Sears, Roebuck and Co., Coca-Cola Co., National Biscuit
-				Co. (Nabisco), and the Standard Oil Co. Companies also sent advertisements to the
-				Long Store in order to try to persuade the store to buy their products. Specific
-				company and agency advertisements include advertisements from the US Food
-				Administration, Mishawaka Rubber and Woolen Mfg. Co., Sears, Roebuck and Co., and
-				the Merchants Grocery and Hardware Co. Correspondence includes letters and envelopes
-				addressed to the Long Store from a variety of companies. Most of the correspondence
-				thanks the Long Store for their business, provides information about backordered
-				items, and includes contract letters, and personal correspondence. Companies that
-				sent correspondence letters include; Miller and Yager General Commission Merchants,
-				Superior Dairy Goods Moseley and Stoddard MFG Co., Darby Manufacturing Co., and R.
-				P. Bayley and Co Importers of China and Glass. All of these papers provide insight
-				as to whom the Long Store was conducting business, and their relationships with said
-				businesses. The papers also show the types of products that the people of Mount
-				Clinton, VA were buying not only in everyday life, but also during the war years.
-				The papers are organized chronologically, and they are listed below with the
-				companies in alphabetical order, as well as the number of documents associated with
-				each company. There was a group of advertisements and letters found in Box 3, which
-				contained several letters, which had been left in their original envelopes. The
-				letters were taken out of the envelopes and placed in a folder for preservation. The
-				letters were moved to Series I for convenience sake, and are all contained together
-				in Folder 9, so they do not follow the chronological scheme of the other folders.
-				There is also one postcard from the State Normal School of Harrisonburg, VA, which
-				seemingly has no connection to the Long family, but was found in with the
-				ledgers.</p>
-      <p>Series 2: Purchases and Orders, 1893-1924. This series contains purchases and orders
-				in ledgers compiled during the lifetime of the Long Store. The series contains 23
-				ledgers in total. Some ledgers show what the people ordered from the store and
-				others show what the Long Store purchased from other companies in order to fulfill
-				the needs of their customers. The order ledgers show what the people wanted to buy
-				as well as who the regular customers were. They show the relationship that the Long
-				Store had with its customers. Once the orders were delivered and were paid for, the
-				order was crossed out with a red “X,” indicating that the transaction was complete.
-				The purchase ledgers show what the owners of the Long Store purchased in order to
-				meet the demand of their customers. Most of these ledgers are labeled with a date,
-				what was bought on that date, and how much the order cost. Most ledgers were not
-				specific with what goods were bought, but were specific with the pricing. Purchases
-				were mostly labeled as “Goods,” or “Tobacco,” showing the importance of tobacco in
-				that it was given its own category. Other ledgers simply state the name of the
-				company being ordered from, rather than listing all the specific goods themselves. </p>
-      <p>Series 3: Bank Ledgers, Expenses, and Sales, 1866-1971. This series contains records
-				of the expenses and sales of the Long family store, as well as ten bank ledgers. The
-				majority are specific to the First National Bank of Harrisonburg, VA. These indicate
-				expenses and sales of the store, including specific company or personal names to
-				whom the store is paying off bills or from whom it is receiving payment. There are
-				also three ledgers that indicate expenses of the store. The first ledger appears to
-				be expenses organized by specific person or business. The latter two are organized
-				by type of good, including groceries, tobacco, dry goods, drugs, etc. The orders
-				appear to be crossed out once they were acquired. There are two other larger ledgers
-				in the series. The smaller of the two appears to document the weekly sales of the
-				store. There are several other receipts and calculations relating to the profit of
-				the store stuck in the pages of the ledger. These loose papers were left there in
-				order to preserve original order and context.. The larger of the two ledgers seems
-				to be a system of credit from a store in Johnsonville prior to the existence of Long
-				Family Store in Mt. Clinton, VA. Samuel Long was known to have stores in many
-				locations, so it seems prudent to assume it was one of his stores before Mt.
-				Clinton. As with the previous ledger, there are calculations and a few documents of
-				correspondence stuck in between the pages. They were likewise kept within to
-				preserve original order. </p>
-      <p>Series 4: Long's Store Account Books, 1869-1921 This series consists of nine books:
-				one "road book" ostensibly from Long's Store in Green Mount, Va. (Rockingham
-				Country); three account books and five daybooks from Long's Store in Mt. Clinton,
-				Va. Daybooks record purchases of general household goods and merchandise, such as
-				eggs, butter, pens, pencils, shoes, yarn, chickens, roosters, sugar, dye, matches,
-				hats, and shovels. Account books typically record customer accounts, transactions
-				and balances over time and do not record itemized purchases. </p>
-      <p>Series 5: Long's Store Records, 1877-1929 This series is a collection of receipts
-				that document the business between small town merchant W. E. Long and commission
-				merchants such as Miller and Roller, Washington, D.C.; Acker and Long Produce,
-				Philadelphia; Standard Oil Company; Brand Shoe Co., Roanoke; and J. J. Underhill
-				Fruit and Vegetables, Baltimore which he supplied with butter, chicken, and eggs.
-				Among the local merchants are; Snell Grocery, Harrisonburg; Hoge and Hutchinson,
-				Staunton; Merchants Grocery and Hardware, Harrisonburg; L. W. Gaines, Inc.,
-				Harrisonburg; Worthington Hardware, Staunton; and National Biscuit Company,
-				Staunton. Bills document the variety of merchandise including shoes, fabric, sugar,
-				and coffee that Long purchased to supply his own customers. 15 Cancelled checks from
-				the First National Bank Harrisonburg date to 1920. </p>
-      <p>Series 6: Mt. Clinton Post Office Records, 1879-1893 The collection consists of three
-				record books from Mt. Clinton Post Office from 1879 through 1893. All three books
-				are roughly the same size. However, Book One was received missing most of the front
-				and back covers. Book Three was disassembled and boards discarded due to insect
-				damage. William E. long was a postmaster at Chrisman, Va. (1881-1887), Green Mount,
-				Va. (1889-1893), and Mt. Clinton ,Va. (1893-1897). William's father, Samuel,
-				established and operated general stores and post office in all three locations. Why
-				The Mt. Clinton post Office records prior to William's tenure remained in his
-				possession is unclear, as the items in the collection lists his predecessors as
-				Henry Parker and James W. Rhodes. </p>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data </head>
-      <bibliography encodinganalog="581$a">
-        <head>Bibliography </head>
-        <bibref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="">MacAllister, Dale. “The William E. Long Family and Long’s Store.” </bibref>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="completed"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00158.xml">vihart00158</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the W. E. Long &amp; Sons General Store Records, 1865-1971:<num>SC 0218</num>
+            </titleproper>
+            <author>Ali Kolleda, Summer Bork, and Jacob Houser, November 2012; Tiffany Cole, April 2019</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian">© 2019 By JMU Libraries. All rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink"
+                       xlink:type="simple"
+                       xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with ASpace2VaHeritage.xsl on <date>2019-04-22 15:59:06 -0400</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>April 2019</date>
+            <item>Updated physical housing and applied new collection number.</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the W. E. Long &amp; Sons General Store Records, <date era="ce" calendar="gregorian">1865-1971  </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC 0218</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:type="simple"
+                    xlink:actuate="onLoad"
+                    xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2019</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                     href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Ali Kolleda, Summer Bork, and Jacob Houser, November 2012; Tiffany Cole, April 2019</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Special Collections, James Madison University</corpname>
+         </repository>
+         <unittitle>W. E. Long &amp; Sons General Store Records, </unittitle>
+         <origination label="Creator">
+            <famname rules="local" source="local">W.E. Long &amp; Sons</famname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0218</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">2.31 cubic feet; 6 boxes</physdesc>
+         <unitdate normal="1865/1971" type="inclusive">1865-1971</unitdate>
+         <abstract id="aspace_fb898fdf7b571541d1841ea18d8cf7e4">The W. E. Long &amp; Sons General Store Records, 1865-1971, primarily document the business activities of W.E. Long &amp; Sons General Store in Rockingham County, Virginia. Records from the Mt. Clinton Post Office, predating W. E. Long's time as Mt. Clinton postmaster, are also included.</abstract>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_6681f323ed0fe6e21209879d35da55ed">
+            <head>Access Restrictions</head>
+            <p>Collection is open for research. Researchers must register and agree to copyright and privacy laws before using this collection. Please contact Research Services staff before visiting the James Madison University Special Collections Library to use this collection.</p>  
+         </accessrestrict>
+         <userestrict id="aspace_b8b8c4cf7dff9ed0418775bb12f0aa17">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison University Special Collection Library. For more information, contact the Special Collections Library Reference Desk (library-special@jmu.edu).</p>  
+         </userestrict>
+         <prefercite id="aspace_c3a8f709e8c2f1920a5093a1a7e68342">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box #, folder #], W. E. Long &amp; Sons General Store Records, 1865-1971, SC 0218, Special Collections, Carrier Library, James Madison University, Harrisonburg, VA.</p>  
+         </prefercite>
+         <acqinfo id="aspace_55aef42e68ec82bf27f87cdce0552f5c">
+            <head>Acquisition Information</head>
+            <p>Materials in this collection were donated by Scott Suter in 2001; purchased from Scott Suter between 2007 and 2008; purchased from Dusty's Antique Market (Ronald L. Fulk) in Mt. Sidney, Virginia in 2008; purchased from Rocky's Gold &amp; Silver in Weyer's Cave, Virginia in 2009; and found as orphaned material in a Carrier Library filing cabinet in 2016.</p>  
+         </acqinfo>
+         <processinfo id="aspace_e41477e04ebf895365a14efc47b80626">
+            <head>Processing Information</head>
+            <p>This collection comprises numerous accessions related to W. E. Long &amp; Sons General Store and the Long family of Mt. Clinton, Virginia. These accessions include 2001-0912, 2007-0419a, 2007-0419b, 2008-0311, 2008-1215b, and 2016-0501. Parts of this collection were previously cataloged as Long's Store Account Books (SC 4056) and Mt. Clinton Post Office Records (SC 4057).</p>
+            <p>In order to streamline the process of applying collection numbers, Special Collections staff completed a large-scale renumbering campaign in 2018-2019. <emph render="bold">This collection was previously cataloged as SC 5044.</emph> During this time, the collection was physically consolidated into fewer boxes and minor updates made to the intellectual arrangement. However, the overall intellectual arrangement of the collection was maintained.</p>  
+         </processinfo>
+      </descgrp>
+  
+  
+  
+  
+  
+      <bioghist id="aspace_68a1c99cfdb8e4f77bdf67562383ab21">
+         <head>Bio/Historical Note</head>
+         <p>Samuel Long (1821-1892) was the original owner of the Long Store. He worked primarily as a farmer and dry goods merchant, running numerous stores before moving from Shenandoah County to Rockingham County in 1868. In 1880, he bought the Hopkins Upper Mill on Muddy Creek and established the Chrisman general store and post office. His son, William Evans Long (1855-1926), was named postmaster of the Chrisman post office in 1881. Samuel Long also established another store around 1869 in Green Mount, Virginia. William E. Long was named postmaster of the Green Mount branch in 1889, and took over operations from J.W. Mauck. In 1892, Samuel Long bought A.B. Driver &amp; Company in Mt. Clinton, Virginia, and changed the name to S. Long &amp; Sons. At this time, William E. Long was also appointed postmaster of the Mt. Clinton post office. William E. Long and his brother-in-law, John B. Bowman (1844-1893) ran the Mt. Clinton branch of the store under the name Long &amp; Bowman, until the death of Bowman in 1893. Upon the death of Samuel Long in 1892, William's sister sold her husband's half of the Mt. Clinton store to William for $2,500. The name of the store was changed to W.E. Long &amp; Sons once William Long's children, specifically C. Edward (1887-1961) and Frank R. (1901-1958), reached maturity. The store operated under this name until it was turned over by William Long's sons to a nephew, Samuel Claude Long (1925-1988), who renamed the store S.C. Long &amp; Sons in 1959. It remained under his name until his retirement in 1988 when it left the family's possession. A quick succession of owners succeeded S. Claude Long until the store was torn down in 1995. The Long family owned and operated the Long family store for roughly 95 years, managing to sustain a business through WWI, the Great Depression, and WWII.</p>  
+      </bioghist>
+      <scopecontent id="aspace_5cac1d932dfccd79f40f8a55b0da1f91">
+         <head>Scope and Content</head>
+         <p>The W. E. Long &amp; Sons General Store Records, 1865-1971, primarily document the business activities of W.E. Long &amp; Sons General Store in Rockingham County, Virginia. Materials include account books and ledgers, invoices and receipts, advertisements, billheads, correspondence, and documentation of expenses and sales related to the business dealings of W.E. Long &amp; Sons. Records from the Mt. Clinton Post Office, predating W.E. Long's time as Mt. Clinton postmaster, are also included.</p>  
+      </scopecontent>
+      <arrangement id="aspace_381d36fdfdcecb662f3242594bc301c1">
+         <head>Arrangement</head>
+         <p>The collection is arranged into six series:</p>
+         <p>Series 1: Invoices, Advertisements, and Correspondence, 1865-1955</p>
+         <p>Series 2: Purchases and Orders, 1893-1924</p>
+         <p>Series 3: Bank Ledgers, Expenses, and Sales, 1866-1971</p>
+         <p>Series 4: Long's Store Account Books, 1869-1921</p>
+         <p>Series 5: Long's Store Records, 1877-1929</p>
+         <p>Series 6: Mt. Clinton Post Office Records, 1879-1893</p>
+         <p>Generally, each series is arranged chronologically. Exceptions to this arrangement were made in order to keep like materials together within a series.</p>  
+      </arrangement>
+      <bibliography id="aspace_beaa7067579c952b2ea80421e8053e62">
+         <head>Bibliography</head>
+         <p>Dale MacAllister, "The William E. Long Family and Long's Store," 2008,  https://dahjsg1f05sei.cloudfront.net/wp-content/uploads/2018/07/12160639/MacAllisteronLong.pdf (accessed April 18, 2019).</p>
       </bibliography>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series I"> Invoices, Advertisements, and
-							Correspondence, <unitdate type="inclusive" era="ce" calendar="gregorian">1865 - 1955</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>April 1, 1865 - March 31, 1899</unittitle>
-            <container label="Box:Folder" type="box-folder">1:1</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>C.L. Moor</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Common Wealth of Virginia</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>David Taylor and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Hellen Jatzeustler</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Heller Brothers and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Jacob and Viert</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Joseph Raish and Loans</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Long Store Ledger Page</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Rockingham Register</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>R.P. Bayley and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Smith, Ellet, and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Stoneburner and Richards</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Treasury of Rockingham County</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Tucker and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Wm. Devries and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Young, Kimmell, and Diggs</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>December 3, 1900 - November 6, 1917</unittitle>
-            <container label="Box:Folder" type="box-folder">1:2</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Baker and Shoe Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Baltimore Bargain House</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Baltimore Oil</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Brand Shoe Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Byers-Beery Grocery Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chesapeake and Ohio RR</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>C.J. Rice</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Daniel Miller Co. Dry Goods</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Edelen Bros. Commission</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First National Bank</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Evaporating Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Grocery Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Herb Medicine Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J.G. Haldeman and Bros.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Lynchburg Shoe Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Miscellaneous</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Mishawaka Woolen Manufacturing Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>N.K. Fairbank</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Norfolk Western RR</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Red C. Oil</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>R.M. Sutton Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Snell Grocery and Hardware</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Standard Oil</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>W. A. W. Davis Corporation</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>February 15, 1818 - September 17, 1818</unittitle>
-            <container label="Box:Folder" type="box-folder">1:3</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>American Snuff Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Baltimore Bargain House</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Baltimore and Ohio Railroad</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Crystal Lamps Asst.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> Daniel Miller Co. Dry Goods</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Grocery Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J. Frank Darling Co. Inc</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle> J.W. Ould Company Inc</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Merchants Grocery and Hardware Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Red "C" Oul Manufacturing Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Snell Grocery</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Southern Railroad Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>US Food Administration</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>December 19, 1921 - December 23, 1924</unittitle>
-            <container label="Box:Folder" type="box-folder">1:4</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>American Wholesale Corporation</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>B.F. Goodrich Rubber</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chattanooga Knitting Mills</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>City Produce Exchange</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Daniel Miller C. Dry Goods</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Friedman-Shelby International Shoe</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>G.K. Amdrews and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Grocery Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Imperial Ice Cream Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J.M. Snell and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Merchants Grocery and Hardware Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>National Buscuit Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Sternick and Bittman Butter and Eggs</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Wetsel Seed Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>W.F. Berry and Son</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>January 5, 1925 - November 1927</unittitle>
-            <container label="Box:Folder" type="box-folder">1:5</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>American Wholesale Corporation</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Arbuckle Brothers</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Branhart Overall Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>B.F. Goodrich Rubber Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Chas. King. and Son Co, Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Daniel Miller Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Edelen Brothers General Commission Merchants</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Ehrmann Manufacturing Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First National Bank</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>G.K. Andrews and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Candy and Fruit Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Grocery Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>International Shoe Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J.M. Strickler</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>John W. Eshelman and Sons</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J.W. Ould Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>L.W. Gaines and Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Merchants Grocery and Hardwarre Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Mishawaka Rubber and Woolen Mfg. Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>National Biscuit Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Proctor and Gamble Distributing Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Richmond Hosier Mills</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Southern Railway Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Valley Supply Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Virginia Cigar Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Wetsel Seed Company</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>February 18, 1928 - December 12, 1928</unittitle>
-            <container label="Box:Folder" type="box-folder">1:6</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>American Wholesale Corporation</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Barnhart Overall Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Burke and Prince Insurance</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Daniel Miller Co. Dry Goods</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>D.D. Ferry and Co. Seedsmen</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>E.W. Ross Ensilage Cutter and Silo. Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Friedman-Shelby International Shoe</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Candy and Fruit Co, Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Grocery Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Hawkins Hardware Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>H.M. Baucon and Sons</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J.M. Strickler</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>John. F. Birkmeyer and Sons</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Merchants Grocery and Hardware Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Nishawaka Rubber and Woolen Manufacturing Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>National Biscuit Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>R.A. Brice and Son</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>R.G. Dun and Co.</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>January 5, 1929 - November 16, 1929</unittitle>
-            <container label="Box:Folder" type="box-folder">1:7</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>C.D. Kenny Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Daniel Miller Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harlin Bro and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Candy and Fruit Company, Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Grocery Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Hawkins Hardware Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>International Shoe Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Merchants Grocery and Hardware Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Miscellaneous</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Mishawaka Rubber and Woolen Mfg. Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>R.A. Brice and Son</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Sears, Roebuck Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Southern Railway Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Wm. Schlunderburg-T.J. Kurdle Co.</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>March 4, 1930 - September 10, 1955</unittitle>
-            <container label="Box:Folder" type="box-folder">1:8</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>American Wholesale Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Bentley, Shriver and Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Bob's Food Products Co., Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Butler Brothers</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Daniel Miller Co. Dry Goods</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Dixie Distributing Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>E.J. Branch and Sons</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Elkton Lithia Bottling Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>First National Bank</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Friedman-Shelby International Shoe</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Goodyear Tire and Rubber Co., Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Candy and Fruit Company, Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Grocery Company</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Harrisonburg Livestock Market Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Hartford Fire Insurance Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Henry S. King and Sons</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J.F. Burkholder's Speech on World Peace</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>J.S. Denton and Sons, Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Manbeck Bread Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Merchants Grocery and Hardware Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Miscellaneous Accounting</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>M.O. Showalter and Son</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>National Biscuit Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Ort Brothers Bakery, Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Proctor and Gamble Distributing Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Rockingham Cooperative Farm Bureau, Inc.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Rockingham Tractor and Equipment Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Snow King Baking Powder Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Strietman Biscuit Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Virginia Pepsi-Cola Bottling Co.</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Wm. Schluderberg- T.J. Kurdle Co.</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>February 1, 1882 - June 24, 1911</unittitle>
-            <container label="Box:Folder" type="box:folder">1:9</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>R.P. Bayley and Co Importers of China and Glass</unittitle>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Miller and Yager General Commission Merchants:
-								 invoice/envelope,</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1882 February 2</unitdate>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Miller and yager General Commission
-								Merchants: invoice/envelope,</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1882 November 10</unitdate>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Superior Dairy Goods Moseley and Stoddard MFG Co.: 4
-								ads/envelope,</unittitle>
-              <unitdate era="ce" calendar="gregorian"> c. 1887</unitdate>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>George G. McClintock Commission
-								merchants: receipt.envelope,</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1892 August 2</unitdate>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Darby Manufacturing Co.: envelope,</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1892 August 25</unitdate>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Edelen Bros Commission Merchants: Invoice/Envelope
-								3:30/1901</unittitle>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>State Normal School Postcard,</unittitle>
-              <unitdate era="ce" calendar="gregorian"> 1911 June 25</unitdate>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series II">Purchases and Orders, <unitdate type="inclusive" era="ce" calendar="gregorian">1893 - 1924</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 1:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> November, 1899 - December, 1899</unitdate>
-            <container label="Box" type="box">2</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 2:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1900 - October, 1900</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 3:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> October, 1900 - August, 1901</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 4</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 5:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> September, 1902 - April, 1903</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 6:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1903 - August, 1903</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 7:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> June, 1904 - August, 1904</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 8:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1907 - May, 1907</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Customer Order Ledger 9:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1909 - June, 1909</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger Marker "To Goods" 1:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1893 - March, 1904</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger Marker "To Goods" 2:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> January, 1907 - January, 1908</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Specific Goods Listed 1:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> January, 1906 - January, 1907</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Specific Goods Listed 2:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> January, 1907 - January, 1908</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Specific Goods Listed 3:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> January, 1910 - 1911</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Specific Goods Listed 4:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1911 - 1913</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Specific Goods Listed 5:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1913 - 1915</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Specific Goods Listed 6</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Specific Goods Listed 7:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1914</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Company Names Listed 1:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1917 - December, 1919</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Company Names Listed 2:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> July, 1921 - June, 1922</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Company Names Listed 3:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> August, 1922 - July, 1923</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Purchase Ledger with Company Names Listed 4:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> August, 1923 - March, 1924</unitdate>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series III">Banke Ledgers, Expenses and Sales, 1866 - 1971 </unittitle>
-          <unitdate era="ce" calendar="gregorian"/>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 1:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1903 - August, 1905</unitdate>
-            <container label="Box" type="box">3</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 2:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> September, 1905 - January, 1908</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 3:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> January, 1908 - March, 1910</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 4:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> June, 1912 - August, 1914</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 5:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> August, 1913 - Augsust, 1914</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 6:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> August, 1914 - February, 1915</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 7:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> February, 1915 - December, 1915</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 8:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> February, 1918 - June, 1921</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 9:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> July, 1926 - June, 1927</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bank Ledger 10:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> July, 1932 - March, 1935</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Expense Ledger 1:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> April, 1893 - October, 1900</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Expense Ledger (Organized by Type of Good) 2</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Expense Ledger (Organized by Type of Good) 3:</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1901</unitdate>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Weekley Sales (Large Ledger),</unittitle>
-            <unitdate era="ce" calendar="gregorian"> January, 1919 - December, 1971</unitdate>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>Johnsonville Ledger</unittitle>
-            <unitdate era="ce" calendar="gregorian"> October, 1866 - March, 1868</unitdate>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series IV"> Long's Stores Account Books, 1869 - 1921</unittitle>
-          <unitdate era="ce" calendar="gregorian"/>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Book One: Daybook, December, 1869 - January, 1871</unittitle>
-            <container label="Box:Folder" type="box-folder">4:4</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Four: Daybook, November, 1902 - September, 1903</unittitle>
-            <container label="Box:Folder" type="box:folder">4:5</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Five: Daybook, November, 1905 - May, 1906</unittitle>
-            <container label="Box:Folder" type="box:folder">5:1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Six: Daybook, June - December, 1917</unittitle>
-            <container label="Box:Folder" type="box:folder">5:2</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Eight: Daybook, May - November, 1921</unittitle>
-            <container label="Box:Folder" type="box:folder">5:3</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Nine: Account Book (Undated)</unittitle>
-            <container label="Box:Folder" type="box:folder">5:4</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Seven: Accountbook, August 1918 - September, 1921</unittitle>
-            <container label="Box:Folder" type="box:folder">6:1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Three: Daybook, January - August, 1901</unittitle>
-            <container label="Box:Folder" type="box:folder">6:2</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Two: Accountbook, August, 1900 - July, 1903</unittitle>
-            <container label="Box:Folder" type="box:folder">6:3</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series V">Long's Store Records, 1877 - 1929</unittitle>
-          <unitdate era="ce" calendar="gregorian"/>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Bills and Receipts,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1877-1894</unitdate>
-            <container label="Box:Folder" type="box-folder">7:1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bills and Receipts,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1895</unitdate>
-            <container label="Box:Folder" type="box-folder">7:2</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bills and Receipts,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1896 - 1899</unitdate>
-            <container label="Box:Folder" type="box-folder">7:3</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bills and Receipts,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1900 - 1922</unitdate>
-            <container label="Box:Folder" type="box-folder">7:4</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bills and Receipts,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1923</unitdate>
-            <container label="Box:Folder" type="box-folder">7:5</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Bills and Receipts,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1924 - 1929</unitdate>
-            <container label="Box:Folder" type="box-folder">7:6</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Price Lists,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> 1880 - 1924</unitdate>
-            <container label="Box:Folder" type="box-folder">7:7</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series VI"> Mt. Clinton Post Office Records, 1879 - 1893 </unittitle>
-          <unitdate era="ce" calendar="gregorian"/>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Book One, </unittitle>
-            <unitdate era="ce" calendar="gregorian">September, 1879 - March, 1883</unitdate>
-            <container label="Box:Folder" type="box-folder">4:1</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book Two,</unittitle>
-            <unitdate era="ce" calendar="gregorian">April, 1883 - March, 1888</unitdate>
-            <container label="Box:Folder" type="box-folder">4:2</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Book 3,</unittitle>
-            <unitdate era="ce" calendar="gregorian"> October 1884 - December 1893</unitdate>
-            <container label="Box:Folder" type="box-folder">4:3</container>
-          </did>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Long, Samuel, 1821-1892</subject>
+            <subject source="lcsh">Long, William E., (William Evans), 1855-1926</subject>
+            <subject source="lcsh">Long, S. Claude, (Samuel Claude), 1925-1988</subject>
+            <subject source="lcsh">Long's Store (Green Mount, Va.)</subject>
+            <subject source="lcsh">Long's Store (Mt Clinton, Va.)</subject>
+            <subject source="lcsh">General stores -- Virginia -- Green Mount</subject>
+            <subject source="lcsh">General stores -- Virginia -- Mt. Clinton</subject>
+            <subject source="lcsh">Merchants -- Virginia -- Green Mount -- Records and correspondence</subject>
+            <subject source="aat">Merchants -- Virginia -- Mt. Clinton -- Records and correspondence</subject>
+            <subject source="lcsh">Postal service -- Virginia -- Mt. Clinton -- Records and correspondence</subject>
+            <subject source="lcsh">Postmasters -- Virginia -- Mt. Clinton -- Records and correspondence</subject>
+            <subject source="local">Account books -- Sources</subject>
+            <subject source="lcsh">Business records -- Sources</subject>
+            <subject source="lcsh">Rockingham County (Va.) -- History -- Sources</subject>
+            <subject source="lcsh">Virginia -- History, Local -- Sources</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Ledgers (account books)</genreform>
+            <genreform source="aat">Shipping records</genreform>
+            <genreform source="aat">Letters (correspondence)</genreform>
+            <genreform source="aat">Bills of sale</genreform>
+            <genreform source="aat">Promissory notes</genreform>
+            <genreform source="aat">Billheads</genreform>
+            <genreform source="aat">Invoices</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_31ca735e99cd2ed2f1da0dcdbdf5590a" level="series">
+            <did>
+               <unittitle>Series 1: Invoices, Advertisements, and Correspondence, <unitdate normal="1865/1955" type="inclusive">1865-1955</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_dcce7bfd3e2737ed3b7cc6a66628822c">
+               <head>Scope and Content</head>
+               <p>This series contains invoices to the Long Store from other companies, showing that orders were paid for in full. Specific company invoices include:  Harrisonburg Grocery Co. Inc. Exclusively Wholesale; Merchants Grocery and Hardware Co. (successors of  Snell Grocery and Hardware Co.); Sears, Roebuck and Co.; Coca-Cola Co.; National Biscuit Co. (Nabisco); and the Standard Oil Co.</p>
+               <p>Companies also sent advertisements to the Long Store in order to try to persuade the store to buy their products. Specific company and agency advertisements include advertisements from the US Food Administration; Mishawaka Rubber and Woolen Mfg. Co.; Sears, Roebuck and Co.; and the Merchants Grocery and Hardware Co.</p>
+               <p>Correspondence includes letters and envelopes addressed to the Long Store from a variety of companies. Most of the correspondence thanks the Long Store for their business, provides information about backorders, includes contract letters, and personal correspondence. Companies that sent correspondence letters include: Miller &amp; Yager General Commission Merchants, Superior Dairy Goods Moseley &amp; Stoddard MFG Co., Darby Manufacturing Co., and R. P. Bayley &amp; Co Importers of China &amp; Glass.</p>
+               <p>All of these papers provide insight into the business transactions of the Long Store. The papers also show the types of products that the people of Mt. Clinton, Virginia were buying not only in everyday life, but also during the war years. The papers are organized chronologically and they are listed below in alphabetical order by company name.</p>
+               <p>There was a group of advertisements and letters found with materials from Series 3 which had been left in their original envelopes. The letters were taken out of the envelopes and placed in a folder. The letters were moved to Series 1 for convenience sake, and are all contained together in Folder 9, so they do not follow the chronological scheme of the other folders. One postcard from the State Normal School of Harrisonburg, Virginia, with seemingly no connection to the Long family, was found with the ledgers.</p>
+            </scopecontent>
+            <c02 id="aspace_c4e62c35e55ee82cccadfcdc88907077" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">April 1, 1865-March 31, 1899</unitdate>
+                  </unittitle>
+                  <container id="aspace_ce971c935ca5076a7b2b30cb3aada361"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_ce82e2d34e6d778ed9842665c84464c1"
+                             parent="aspace_ce971c935ca5076a7b2b30cb3aada361"
+                             type="folder">1</container>
+               </did>
+               <scopecontent id="aspace_4e8c50195c79f1ddbfb2c113dbc06d14">
+                  <head>Scope and Content</head>
+                  <p>C. L. Moor; Commonwealth of Virginia; David Taylor and Co.; Hellen Jatzeusteler; Heller Brothers and Co.; Jacob and Viert; Joseph Raish Loans; Long Store Ledger Page; Rockingham Register; R. P. Bayley and Co.; Smith, Ellet, &amp; Co.; Stoneburner and Richards; Treasury of Rockingham County; Tucker and Co.; Wm. Devries &amp; Co.; Young, Kimmell, and Diggs</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_156d8ffe1ffb1b5075332031aaa4a1b9" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">December 3, 1900-November 6, 1917</unitdate>
+                  </unittitle>
+                  <container id="aspace_e33ce2044070526368ce89b217444672"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_9a37e94041ddc762f8b3a1541c8f7cee"
+                             parent="aspace_e33ce2044070526368ce89b217444672"
+                             type="folder">2</container>
+               </did>
+               <scopecontent id="aspace_ed71935a0c8e37123be9914e16c07ab8">
+                  <head>Scope and Content</head>
+                  <p>Baker and Company Groceries, Baltimore Bargain House, Baltimore Oil, Brand Shoe Co., Byers-Beery Grocery Co., Chesapeake &amp; Ohio RR, C. J. Rice, Daniel Miller Co. Dry Goods, Edelen Bros. Commission, First National Bank, Harrisonburg Evaporating Co., Harrisonburg Grocery Co., Herb Medicine Co., J. G. Haldeman &amp; Bros, Lynchburg Shoe Co., Miscellaneous, Mishawaka Woolen Manufacturing Co., N. K. Fairbank, Norfolk Western RR, Red C. Oil, R. M. Sutton Co., Snell Grocery &amp; Hardware, Standard Oil, W. A. W. Davis Corporation</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_b9f31f4ee536f06c07f4d89b3408f067" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">February 15, 1918-September 17, 1918</unitdate>
+                  </unittitle>
+                  <container id="aspace_70db966c76005626de8403c46f179a03"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_a0cfe2be0df6e9ed97df50c51f629b79"
+                             parent="aspace_70db966c76005626de8403c46f179a03"
+                             type="folder">3</container>
+               </did>
+               <scopecontent id="aspace_64650f9ed6a044ed3cbc5ae693bfec60">
+                  <head>Scope and Content</head>
+                  <p>American Snuff Co., Baltimore Bargain House, Baltimore and Ohio Railroad, Crystal Lamps Asst., Daniel Miller Co. Dry Goods, Harrisonburg Grocery Co., J. Frank Darling Co. Inc., J.W. Ould Company Inc., Merchants Grocery &amp; Hardware Co., Red "C" Oil Manufacturing Co., Snell Grocery, Southern Railroad Co., US Food Administration</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_af22778d374cb2f03e9167c10f7011de" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">December19, 1921-December 23, 1924</unitdate>
+                  </unittitle>
+                  <container id="aspace_e33bc38cbd3d17ef7e3dc1daca31bba1"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_7a1759766137c9c68d5cf96b8d252401"
+                             parent="aspace_e33bc38cbd3d17ef7e3dc1daca31bba1"
+                             type="folder">4</container>
+               </did>
+               <scopecontent id="aspace_be0d168157e606c60d114831d568f390">
+                  <head>Scope and Content</head>
+                  <p>American Wholesale Corporation, B. F. Goodrich Rubber, Chattanooga Knitting Mills, City Produce Exchange, Daniel Miller Co. Dry Goods, Friedman-Shelby International Shoe, G. K. Andrews &amp; Co., Harrisonburg Grocery Co., Imperial Ice Cream Co., J. M. Snell &amp; Co., Merchants Grocery &amp; Hardware Co., National Biscuit Company, Sternick &amp; Bittman Butter and Eggs, Westel Seed Co., W. F. Berry &amp; Son</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_0b9b82fffb14503ecc269c652b23a7c4" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">January 5, 1925-November 25, 1927</unitdate>
+                  </unittitle>
+                  <container id="aspace_d459207aa14665a741b121ddf407a540"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_99c4a437d6ddbe255fc057b1c3f27cbf"
+                             parent="aspace_d459207aa14665a741b121ddf407a540"
+                             type="folder">5</container>
+               </did>
+               <scopecontent id="aspace_87300d6ef72e69a9bcf2856007a82214">
+                  <head>Scope and Content</head>
+                  <p>American Wholesale Corporation, Arbuckle Brothers, Barnhart Overall Company, B. F. Goodrich Rubber Company, Chas. King &amp; Son Co, Inc., Daniel Miller Company, Edelen Brothers General Commission Merchants, Ehrmann Manufacturing Co., First National Bank, G. K. Andrews and Co., Harrisonburg Candy and Fruit Company, Harrisonburg Grocery Co., International Shoe Company, J. M. Strickler, John W. Eshelman and Sons, J. W. Ould Company, L.W. Gaines and Company, Merchants Grocery and Hardware Co., Mishawaka Rubber and Woolen Mfg. Co., National Biscuit Company, Proctor and Gamble Distributing Co., Richmond Hosier Mills, Southern Railway Company, Valley Supply Company, Virginia Cigar Company, Wetsel Seed Company</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_535aa85dceeb87c8bf7a09b6296f5f19" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">February 18, 1928-December 12, 1928</unitdate>
+                  </unittitle>
+                  <container id="aspace_c43d74695ce1ad7f7610705b2bdef840"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_c359ecb7373522d831c4363ef9d79d6b"
+                             parent="aspace_c43d74695ce1ad7f7610705b2bdef840"
+                             type="folder">6</container>
+               </did>
+               <scopecontent id="aspace_919bd915c40cabdd53d628487ac97943">
+                  <head>Scope and Content</head>
+                  <p>American Wholesale Corporation, Barnhart Overall Co.; Burke &amp; Price Insurance; Daniel Miller Co. Dry Goods; D. M. Ferry &amp; Co. Seedsmen; E. W. Ross Ensilage Cutter &amp; Silo Co.; Friedman-Shelby International Shoe; Harrisonburg Candy &amp; Fruit Co., Inc.; Harrisonburg Grocery Co.; Hawkins Hardware Co.; H. M. Baucon &amp; Sons; J. M. Strickler; John F. Birkmeyer &amp; Sons; Merchants Grocery &amp; Hardware Co.; Mishawaka Rubber &amp; Woolen Manufacturing Co.; National Biscuit Co.; R. A. Brice &amp; Son; R. G. Dun &amp; Co.</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_1d5d7bd9aded75e1ce8655b89e748472" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">January 5, 1929-November 16, 1929</unitdate>
+                  </unittitle>
+                  <container id="aspace_7eb004fe18f56f74632e956db2166107"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_d7d16b696a9c24c5c7d76e4501e3088e"
+                             parent="aspace_7eb004fe18f56f74632e956db2166107"
+                             type="folder">7</container>
+               </did>
+               <scopecontent id="aspace_f90d688aad6f9420a75eb04eae64f262">
+                  <head>Scope and Content</head>
+                  <p>C. D. Kenny Co.; Daniel Miller Company; Harlin Bro and Co.; Harrisonburg Candy and Fruit Company, Inc.; Harrisonburg Grocery Co.; Hawkins Hardware Co.; International Shoe Company; Miscellaneous; Mishawaka Rubber and Woolen Mfg. Co.; R. A. Brice and Son; R. A. Brice and Son; R. A. Brice and Son; R. A. Brice and Son</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_0c5925b46dde300fd8ab2a46be94db3b" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">March 4, 1930-September 10, 1955</unitdate>
+                  </unittitle>
+                  <container id="aspace_73ada6948bed7218180b72ad46a15505"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_b170e44c0d60e6d2a5af354984a3c453"
+                             parent="aspace_73ada6948bed7218180b72ad46a15505"
+                             type="folder">8</container>
+               </did>
+               <scopecontent id="aspace_645dc06681a9fab094d0a510f98cb28a">
+                  <head>Scope and Content</head>
+                  <p>American Wholesale Co.; Bentley, Shriver &amp; Co.; Bob's Food Products Co., Inc.; Butler Brothers; Daniel Miller Co. Dry Goods; Dixie Distributing Co.; E. J. Branch &amp; Sons; Elkton Lithia Bottling Co.; First National Bank; Friedman-Shelby International Shoe; Goodyear Tire and Rubber Co., Inc.; Harrisonburg Candy &amp; Fruit Company, Inc.; Harrisonburg Grocery Co.; Harrisonburg Livestock Market Inc.; Hartford Fire Insurance Co.; Henry S. King &amp; Sons; J. F. Burkholder's Speech on World Peace; J. S. Denton &amp; Sons, Inc.; Manbeck Bread Co.; Merchants Grocery &amp; Hardware Co.; Miscellaneous Accounting; M. O. Showalter &amp; Son; National Biscuit Co.; Ort Brothers Bakery, Inc.; Proctor &amp; Gamble Distributing Co.; Rockingham Cooperative Farm Bureau, Inc.; Rockingham Tractor &amp; Equipment Co.; Snow King Baking Powder Co.; Strietman Biscuit Co.; Virginia Pepsi-Cola Bottling Co.; Wm. Schluderberg- T. J. Kurdle Co.</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_e8eac2ac2ed7b0fdd1d055b82d7dca69" level="file">
+               <did>
+                  <unittitle>Invoices, Advertisements, and Correspondence, <unitdate type="inclusive">February 1, 1882-June 24, 1911</unitdate>
+                  </unittitle>
+                  <container id="aspace_748cad3da35972210b91fc08898bfd95"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_24a0ed5f857fe8baf686557ec44fb4a8"
+                             parent="aspace_748cad3da35972210b91fc08898bfd95"
+                             type="folder">9</container>
+               </did>
+               <scopecontent id="aspace_9b06c7c33a964eae6d629e28cf70976f">
+                  <head>Scope and Content</head>
+                  <p>R. P. Bayley &amp; Co Importers of China &amp; Glass, Miller &amp; Yager General Commission Merchants: invoice/envelope 2/2/1882, Miller &amp; Yager General Commission Merchants: invoice/envelope 11/10/1882, Superior Dairy Goods Moseley &amp; Stoddard MFG Co.: 4 ads/envelope ca. 1887, George G. McClintock Commission Merchants: receipt/envelope 8/2/1892, Darby Manufacturing Co.: envelope 8/25/1892, Edelen Bros Commission Merchants: invoice/envelope 3:30/1901, State Normal School Postcard: 6/25/1911</p>
+               </scopecontent>
+            </c02>
+         </c01>
+         <c01 id="aspace_3659a21c694ce9ae4496cef7594c6a50" level="series">
+            <did>
+               <unittitle>Series 2: Purchases and Orders, <unitdate normal="1893/1923" type="inclusive">1893-1924</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_012c23aa2617f9ae228de730907fb584">
+               <head>Scope and Content</head>
+               <p>This series contains purchases and orders in ledgers compiled during the lifetime of the Long Store. The series contains 23 ledgers in total. Some ledgers show what customers ordered from the store and others show what the Long Store purchased from other companies in order to fulfill the needs of their customers. The order ledgers show what customers wanted to buy as well as who the regular customers were. They show the relationship that the Long Store had with its customers. Once the orders were delivered and were paid for, the order was crossed out with a red "X," indicating that the transaction was complete.</p>
+               <p>The purchase ledgers show what the owners of the Long Store purchased in order to meet the demand of their customers. Most of these ledgers are labeled with a date, what was bought on that date, and how much the order cost. Most ledgers were not specific with what goods were bought, but were specific with the pricing. Purchases were mostly labeled as "Goods" or "Tobacco" showing the importance of tobacco in that it was given its own category. Other ledgers simply state the name of the company being ordered from, rather than listing all the specific goods themselves.</p>
+            </scopecontent>
+            <c02 id="aspace_426f541f91dedd595723b18713fde0af" level="file">
+               <did>
+                  <unittitle>Customer Order Ledgers 1-5, <unitdate type="inclusive">November 1899-April 1903</unitdate>
+                  </unittitle>
+                  <container id="aspace_d95d73167795a36b84be636b13b1efc9"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_8056a8f306e0572f792445c8fd9ed9ca"
+                             parent="aspace_d95d73167795a36b84be636b13b1efc9"
+                             type="folder">10</container>
+               </did>
+               <c03 id="aspace_c6fecda7b85b3e935d6b55dc3a3c36ec" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 1, <unitdate type="inclusive">November 1899-December 1899</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 id="aspace_f2e824963e1815b560d5e27972fc7e95" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 2, <unitdate type="inclusive">April 1900-October 1900</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 id="aspace_6f8b40e25520dd5e7d75181a1b7c4076" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 3, <unitdate type="inclusive">October 1900-August 1901</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 id="aspace_c4ae3d4d1ea1decb55e187780f3e01db" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 4, <unitdate type="inclusive">April 1902-September 1902</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 id="aspace_e6c375bc542f6352f09c7aa01decb847" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 5, <unitdate type="inclusive">September 1902-April 1903</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_26234488b34fb9e45da3e1a67828e277" level="file">
+               <did>
+                  <unittitle>Customer Order Ledgers 6-9, <unitdate type="inclusive">April 1903-June 1909</unitdate>
+                  </unittitle>
+                  <container id="aspace_ac1439cf4392bc4c7b9758b8b05377b7"
+                             label="Box:Folder"
+                             type="box">1</container>
+                  <container id="aspace_7ecd1dfb9d12ed1284e75689682407cc"
+                             parent="aspace_ac1439cf4392bc4c7b9758b8b05377b7"
+                             type="folder">11</container>
+               </did>
+               <c03 id="aspace_0dbc00c756fc97876d4e7b351f96a069" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 6, <unitdate type="inclusive">April 1903-August 1903</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 id="aspace_cc3ee15d066c516ac26710a665531afa" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 7, <unitdate type="inclusive">June 1904-August 1904</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 id="aspace_5c9873d12e618fe8fc5e49fc1130cd9d" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 8, <unitdate type="inclusive">April 1907-May 1907</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+               <c03 id="aspace_0a1c925ec2f2228317b8d5f3313ff8cc" level="item">
+                  <did>
+                     <unittitle>Customer Order Ledger 9, <unitdate type="inclusive">April 1909-June 1909</unitdate>
+                     </unittitle>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_bcfd715b2210b37038bf30146cb70f56" level="file">
+               <did>
+                  <unittitle>Purchase Ledger Marker "To Goods" 1, <unitdate type="inclusive">April 1893-March 1904</unitdate>
+                  </unittitle>
+                  <container id="aspace_71ecfcd31fc4d23201de066f0eff5694"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_e1e868302836e018e7977c1ae3f0f14d"
+                             parent="aspace_71ecfcd31fc4d23201de066f0eff5694"
+                             type="Envelope">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_88adf2f8d8c28c335ddf897477836f43" level="file">
+               <did>
+                  <unittitle>Purchase Ledger Marker "To Goods" 2, <unitdate type="inclusive">April 1904-December 1914</unitdate>
+                  </unittitle>
+                  <container id="aspace_e30fa4558bfb1841fe8f19b77c6645fe"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_f537a31b5b993013ffefc4f781c90272"
+                             parent="aspace_e30fa4558bfb1841fe8f19b77c6645fe"
+                             type="Envelope">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1096c414071dbb6c08a25cb2ae012f22" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 1, <unitdate type="inclusive">January 1906-January 1907</unitdate>
+                  </unittitle>
+                  <container id="aspace_96cfc428b24b100cb2d30c506baa9457"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_b62f5329f84a7acf3fe226e35c7cc736"
+                             parent="aspace_96cfc428b24b100cb2d30c506baa9457"
+                             type="Envelope">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_64c279dafd4493eae55622b4aa050236" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 2, <unitdate type="inclusive">January 1907-January 1908</unitdate>
+                  </unittitle>
+                  <container id="aspace_76b985fb635f5407a69ea20f3cc62633"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_7adf627ff41073f9f54affbacd0c405c"
+                             parent="aspace_76b985fb635f5407a69ea20f3cc62633"
+                             type="Envelope">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2483a9777b21fce5a71075a9213dbdce" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 3, <unitdate type="inclusive">January 1908-January 1910</unitdate>
+                  </unittitle>
+                  <container id="aspace_ebd8d4110eb607295578d8eb8273b657"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_f4a9c7064e60c7dec3d2be1d6d460955"
+                             parent="aspace_ebd8d4110eb607295578d8eb8273b657"
+                             type="Envelope">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_df06bc7a62994775c09e7e82243ebd68" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 4, <unitdate type="inclusive">January 1910-1911</unitdate>
+                  </unittitle>
+                  <container id="aspace_7b4f0f88083389bcefb3567e7916d74d"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_20d766b43e3c45e04a724c40075b1258"
+                             parent="aspace_7b4f0f88083389bcefb3567e7916d74d"
+                             type="Envelope">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2efcd8ca2649f247ca8bf60330b16f56" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 5, <unitdate type="inclusive">1911-1913</unitdate>
+                  </unittitle>
+                  <container id="aspace_abcf3a4e637278deb304bcb5f001b7e1"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_5166c6e6af4d767abe45c83980b88aff"
+                             parent="aspace_abcf3a4e637278deb304bcb5f001b7e1"
+                             type="Envelope">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d4eada004ea1533213f266779fa3749b" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 6, <unitdate type="inclusive">1913-1915</unitdate>
+                  </unittitle>
+                  <container id="aspace_abe7c4b708fa33e6f53a54fa07e89e57"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_b3ca24fff293cc7feb6cebbcdfa774fa"
+                             parent="aspace_abe7c4b708fa33e6f53a54fa07e89e57"
+                             type="Envelope">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f3e6542fd6f1eabef8b3de69a427b4e8" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 7, <unitdate>ca. 1915</unitdate>
+                  </unittitle>
+                  <container id="aspace_4056d03662be53530108764f75773c7e"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_e90fe2447ee189053f6050cc4cce8c43"
+                             parent="aspace_4056d03662be53530108764f75773c7e"
+                             type="Envelope">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_658b60f27fd9be3bc29ab2512584f78c" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Specific Goods Listed 8, <unitdate>1917</unitdate>
+                  </unittitle>
+                  <container id="aspace_9859813e1792915e1ab9ed568a3f98e2"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_a665a37d51d56902d76b3487f76ab468"
+                             parent="aspace_9859813e1792915e1ab9ed568a3f98e2"
+                             type="Envelope">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_93bcdb602e44e6d2f54a7987897804cf" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Company Names Listed 1, <unitdate type="inclusive">April 1917-December 1919</unitdate>
+                  </unittitle>
+                  <container id="aspace_0549e9d4ce1231f13415503237daab85"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_852e58f0c40c5c8082a23c8e76a35334"
+                             parent="aspace_0549e9d4ce1231f13415503237daab85"
+                             type="Envelope">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6ec30f5ab71d1f8de68bed4bedb1f068" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Company Names Listed 2, <unitdate type="inclusive">July 1921-June 1922</unitdate>
+                  </unittitle>
+                  <container id="aspace_4786a19943bb5111f864150dce11fdc2"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_090f095d3344ac5f6900e31fbb7337b9"
+                             parent="aspace_4786a19943bb5111f864150dce11fdc2"
+                             type="Envelope">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c05ed2fcb904ad06149e356d0561bc13" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Company Names Listed 3, <unitdate type="inclusive">August 1922-July 1923</unitdate>
+                  </unittitle>
+                  <container id="aspace_421f39caf0b870cfc48e2be28f4f177b"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_11df0570e97040e8e736c7fb5c345772"
+                             parent="aspace_421f39caf0b870cfc48e2be28f4f177b"
+                             type="Envelope">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4e870dc738bb465554f15ba06e60ab73" level="file">
+               <did>
+                  <unittitle>Purchase Ledger with Company Names Listed 4, <unitdate type="inclusive">August 1923-March 1924</unitdate>
+                  </unittitle>
+                  <container id="aspace_9da41041ae98eea6c3231d566e945ff3"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_637a75dce88f2966f7d7de561c1d5224"
+                             parent="aspace_9da41041ae98eea6c3231d566e945ff3"
+                             type="Envelope">14</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_e21840a81361844a3d4e76ed0d641391" level="series">
+            <did>
+               <unittitle>Series 3: Bank Ledgers, Expenses, and Sales, <unitdate normal="1866/1971" type="inclusive">1866-1971</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_c0a35d71a432699ac5c3e9b6d08c8b5c">
+               <head>Scope and Content</head>
+               <p>This series contains records of the expenses and sales of the Long family store, as well as ten bank ledgers. The majority are specific to the First National Bank of Harrisonburg, Virginia. These indicate expenses and sales of the store, including specific company or personal names to whom the store is paying off bills or from whom it is receiving payment.</p>
+               <p>There are also three ledgers that indicate expenses of the store. The first ledger appears to be expenses organized by specific person or business. The latter two are organized by types of goods, including groceries, tobacco, dry goods, drugs, etc. The orders appear to be crossed out once they were acquired.</p>
+               <p>There are two other larger ledgers in the series. The smaller of the two appears to document the weekly sales of the store. There are several other receipts and calculations relating to the profit of the store stuck in the pages of the ledger. These loose papers were left there in order to preserve original order and context. The larger of the two ledgers seems to be a system of credit from a store in Johnsonville prior to the existence of Long Family Store in Mt. Clinton, Virginia. Samuel Long was known to have stores in many locations, so it seems prudent to assume it was one of his stores before Mt. Clinton. As with the previous ledger, there are calculations and a few documents of correspondence stuck in between the pages. They were likewise kept within to preserve original order.</p>
+            </scopecontent>
+            <c02 id="aspace_3e4a1277af7fc26e5cb5ee92a080bfdc" level="file">
+               <did>
+                  <unittitle>Bank Ledger 1, <unitdate type="inclusive">April 1903-August 1905</unitdate>
+                  </unittitle>
+                  <container id="aspace_2463df7eb259dd6a89cbd228968135e6"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_1b9f709ba95441afd09da824ab56de16"
+                             parent="aspace_2463df7eb259dd6a89cbd228968135e6"
+                             type="Envelope">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_27ffe4bd4a2e57115b1624e7201cc7c5" level="file">
+               <did>
+                  <unittitle>Bank Ledger 2, <unitdate type="inclusive">September 1905-January 1908</unitdate>
+                  </unittitle>
+                  <container id="aspace_50691a8695e6ecececed10b026e2bedc"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_11b0386c163fa99a09ae27f32beb8e09"
+                             parent="aspace_50691a8695e6ecececed10b026e2bedc"
+                             type="Envelope">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_367ca97633c56453e78f80c9b2ba47cf" level="file">
+               <did>
+                  <unittitle>Bank Ledger 3, <unitdate type="inclusive">January 1908-March 1910</unitdate>
+                  </unittitle>
+                  <container id="aspace_dcaab0f2b06ade36beddf41921a14931"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_898a853db819211776882f88da88a554"
+                             parent="aspace_dcaab0f2b06ade36beddf41921a14931"
+                             type="Envelope">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_93a271769470d75ed1fbcf5fd7625ae1" level="file">
+               <did>
+                  <unittitle>Bank Ledger 4, <unitdate type="inclusive">June 1912-August 1914</unitdate>
+                  </unittitle>
+                  <container id="aspace_634e4ceb80803cea1b8747be6dad0676"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_9a75a7fedbd03364dcb3e519af25766a"
+                             parent="aspace_634e4ceb80803cea1b8747be6dad0676"
+                             type="Envelope">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_de619fb44029b4f748ef089d5470a5f9" level="file">
+               <did>
+                  <unittitle>Bank Ledger 5, <unitdate type="inclusive">August 1913-August 1914</unitdate>
+                  </unittitle>
+                  <container id="aspace_7e58a7efc6ddc23ee297d6e711b9bba0"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_6f01d4f10461b88135749725257ba72f"
+                             parent="aspace_7e58a7efc6ddc23ee297d6e711b9bba0"
+                             type="Envelope">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_14adf471ca44c1bc1f09a8ba687c770b" level="file">
+               <did>
+                  <unittitle>Bank Ledger 6, <unitdate type="inclusive">August 1914-February 1915</unitdate>
+                  </unittitle>
+                  <container id="aspace_3bb21bcbbc801f20e9f0dd3ffd7682a7"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_a4aeab1cb417cc135b54d807f9a0c43d"
+                             parent="aspace_3bb21bcbbc801f20e9f0dd3ffd7682a7"
+                             type="Envelope">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f6413be74124cd2333eb70bc311652c2" level="file">
+               <did>
+                  <unittitle>Bank Ledger 7, <unitdate type="inclusive">February 1918-June 1921</unitdate>
+                  </unittitle>
+                  <container id="aspace_ae48a45a8ef136fab2ce6fd2c964baff"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_834af022c80594064d0636c61e88275b"
+                             parent="aspace_ae48a45a8ef136fab2ce6fd2c964baff"
+                             type="Envelope">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7794460b6401daea2fdf99088b59d38b" level="file">
+               <did>
+                  <unittitle>Bank Ledger 8, <unitdate type="inclusive">February 1918-June 1921</unitdate>
+                  </unittitle>
+                  <container id="aspace_85a8c06bf856c9704aff9be5cbd10a12"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_ee9ab26dddf4cdb243dcd5a435a90e8a"
+                             parent="aspace_85a8c06bf856c9704aff9be5cbd10a12"
+                             type="Envelope">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4289012690c7d18090024f48ea20df59" level="file">
+               <did>
+                  <unittitle>Bank Ledger 9, <unitdate type="inclusive">July 1926-June 1927</unitdate>
+                  </unittitle>
+                  <container id="aspace_2257e3f6564e347c467893cb088fd131"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_0fd503b52fb169e1aa02dfb95e4a0467"
+                             parent="aspace_2257e3f6564e347c467893cb088fd131"
+                             type="Envelope">23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9a557211d765d82f0f0bccf9303cbaad" level="file">
+               <did>
+                  <unittitle>Bank Ledger 10, <unitdate type="inclusive">July 1932-March 1935</unitdate>
+                  </unittitle>
+                  <container id="aspace_014de4a815b46f317905fb22bf467d58"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_91db2188e548952971e72c6edf0210b9"
+                             parent="aspace_014de4a815b46f317905fb22bf467d58"
+                             type="Envelope">24</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ca98a3bf9ec4287f411599ccf5a61939" level="file">
+               <did>
+                  <unittitle>Expense Ledger 1, <unitdate type="inclusive">April 1893-October 1900</unitdate>
+                  </unittitle>
+                  <container id="aspace_720f7174f0e155cfdbb930ed64ebb415"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_0eb5e96e26f079947dd41d32bd9b4172"
+                             parent="aspace_720f7174f0e155cfdbb930ed64ebb415"
+                             type="Envelope">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3aa2224a6ff742d6b9fcb781a8d11349" level="file">
+               <did>
+                  <unittitle>Expense Ledger (organized by type of good) 2, <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_ea9f6d137a2ef46c0d682ac68b3564f1"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_31465a65fbf5fae1d22f1ccd6d5f6a77"
+                             parent="aspace_ea9f6d137a2ef46c0d682ac68b3564f1"
+                             type="Envelope">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e9918154e44a1da2f8ea60ef0f02ac27" level="file">
+               <did>
+                  <unittitle>Expense Ledger (organized by type of good) 3, <unitdate>1901</unitdate>
+                  </unittitle>
+                  <container id="aspace_4aec69cc9c80b8b3daa92583b8b3b56d"
+                             label="Box:Folder"
+                             type="box">2</container>
+                  <container id="aspace_e2da95f06d81e6f95fe5148fce02f66b"
+                             parent="aspace_4aec69cc9c80b8b3daa92583b8b3b56d"
+                             type="Envelope">27</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e675a9ab05416fc7996217f95802f7b8" level="file">
+               <did>
+                  <unittitle>Weekly Sales (Large) Ledger, <unitdate type="inclusive">January 1919-December 1971</unitdate>
+                  </unittitle>
+                  <container id="aspace_a036e13720ace3b78b0e8f79ba602a7f"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_97641b2e9dbb77b658ea55cb909e296a"
+                             parent="aspace_a036e13720ace3b78b0e8f79ba602a7f"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d4d3f4ee4e32a97625322cf5ab7870a3" level="file">
+               <did>
+                  <unittitle>Johnsonville Ledger, <unitdate type="inclusive">October 1866-March 1868</unitdate>
+                  </unittitle>
+                  <container id="aspace_e82797176a395dc2cee87f4fdd829bd9"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_4c0ddc81adf2695552fe4aa43ccfde86"
+                             parent="aspace_e82797176a395dc2cee87f4fdd829bd9"
+                             type="folder">2</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_159ef7afaaa0bfafaea7118cce618c87" level="series">
+            <did>
+               <unittitle>Series 4: Long's Store Account Books, <unitdate normal="1869/1921" type="inclusive">1869-1921</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_2645442466afcc3fc0a9c91d3eb81669">
+               <head>Scope and Content</head>
+               <p>This series consists of nine books: one "road book" ostensibly from Long's Store in Green Mount, Virginia and three account books and five daybooks from Long's Store in Mt. Clinton, Virginia. Daybooks record purchases of general household goods and merchandise, such as eggs, butter, pens, pencils, shoes, yarn, chickens, roosters, sugar, dye, matches, hats, and shovels. Account books typically record customer accounts, transactions and balances over time, and do not record itemized purchases.</p>
+            </scopecontent>
+            <c02 id="aspace_66a9ca06f93cf1b45437b80de6f26849" level="file">
+               <did>
+                  <unittitle>Daybook (Book 1), <unitdate type="inclusive">December 1869-January 1871</unitdate>
+                  </unittitle>
+                  <container id="aspace_5785838dfc939d4f9f4457d557354eba"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_1297176fd1796de830df6dcc2975a46f"
+                             parent="aspace_5785838dfc939d4f9f4457d557354eba"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_51231c0f0710ced0ef60bbb4710896c6" level="file">
+               <did>
+                  <unittitle>Account book (Book 2), <unitdate type="inclusive">August 1900-July 1903</unitdate>
+                  </unittitle>
+                  <container id="aspace_96dcebc77230d7153fa01990fad2cf17"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_8ebe03074929cff76e0b498bc3a61bae"
+                             parent="aspace_96dcebc77230d7153fa01990fad2cf17"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_57b9be51f18ca24c39123bc5d54bbc21" level="file">
+               <did>
+                  <unittitle>Daybook (Book 3), <unitdate type="inclusive">January 1901-August 1901</unitdate>
+                  </unittitle>
+                  <container id="aspace_a96d42267727beaec1f5801f11374242"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_bccb8ebd8d0788a1d134eaeb34ebf59d"
+                             parent="aspace_a96d42267727beaec1f5801f11374242"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c3407a87d4098a46f8dfc48c16130a25" level="file">
+               <did>
+                  <unittitle>Daybook (Book 4), <unitdate type="inclusive">November 1902-September 1903</unitdate>
+                  </unittitle>
+                  <container id="aspace_19b74404f1ec7be701ef691b676210a2"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_5388caf7d6c3adbebf2ff2ce405f6284"
+                             parent="aspace_19b74404f1ec7be701ef691b676210a2"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7ce7c4095c60ebb3e481edec5e93a1aa" level="file">
+               <did>
+                  <unittitle>Daybook (Book 5), <unitdate type="inclusive">November 1905-May 1906</unitdate>
+                  </unittitle>
+                  <container id="aspace_5a13078b72e7480a978d1b10815462b3"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_a9260c1a33dda05755377e97f38d9ce8"
+                             parent="aspace_5a13078b72e7480a978d1b10815462b3"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b3cb8a4383956d89c3d53f2dded5d843" level="file">
+               <did>
+                  <unittitle>Daybook (Book 6), <unitdate type="inclusive">June 1917-December 1917</unitdate>
+                  </unittitle>
+                  <container id="aspace_e8312b335866b7eb36d072cff1f58ad3"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_bc47003c28a0f60c7ad1253f38198ec1"
+                             parent="aspace_e8312b335866b7eb36d072cff1f58ad3"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_31aec5a7134c3534ffadae8590fd39aa" level="file">
+               <did>
+                  <unittitle>Account book (Book 7), <unitdate type="inclusive">August 1918-September 1921</unitdate>
+                  </unittitle>
+                  <container id="aspace_0dc751bbaf4d006e583e9179bdf36375"
+                             label="Box:Folder"
+                             type="box">6</container>
+                  <container id="aspace_fa1d23a23a32a7fcced3fc6327319780"
+                             parent="aspace_0dc751bbaf4d006e583e9179bdf36375"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9d0445095b7b810e44a2b392205bccf2" level="file">
+               <did>
+                  <unittitle>Daybook (Book 8), <unitdate type="inclusive">May 1921-November 1921</unitdate>
+                  </unittitle>
+                  <container id="aspace_27618139040d1c67839eda9fc4be174f"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_e0b48b035d8fde7624f6d5086a3baeaa"
+                             parent="aspace_27618139040d1c67839eda9fc4be174f"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_087a4b5e9a825efef85c5ce028818704" level="file">
+               <did>
+                  <unittitle>Account book (Book 9), <unitdate type="inclusive">undated</unitdate>
+                  </unittitle>
+                  <container id="aspace_eaa577acaea33d9846c288461c6169c9"
+                             label="Box:Folder"
+                             type="box">5</container>
+                  <container id="aspace_0a4a66c12264df528148106ce066af1e"
+                             parent="aspace_eaa577acaea33d9846c288461c6169c9"
+                             type="folder">4</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_daec960d6ef0c80441c49665f411010b" level="series">
+            <did>
+               <unittitle>Series 5: Long's Store Records, <unitdate normal="1877/1929" type="inclusive">1877-1929</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_11f143a70c2b1c9043192f30fe5d1e1a">
+               <head>Scope and Content</head>
+               <p>This series is a collection of receipts that document the business between small town merchant W.E. Long and commission merchants such as Miller &amp; Roller, Washington, D. C.; Acker &amp; Long Produce, Philadelphia; Standard Oil Company; Brand Shoe Co., Roanoke; and J. J. Underhill Fruit &amp; Vegetables, Baltimore which he supplied with butter, chicken, and eggs. Among the local merchants are: Snell Grocery, Harrisonburg; Hoge &amp; Hutchinson, Staunton; Merchants Grocery and Hardware, Harrisonburg; L. W. Gaines, Inc., Harrisonburg; Worthington Hardware, Staunton; and National Biscuit Company, Staunton. Bills document the variety of merchandise including shoes, fabric, sugar, and coffee that Long purchased to supply his own customers. Fifteen cancelled checks from the First National Bank Harrisonburg date to 1920. A folder of bank deposit slips, primarily from First National Bank in Harrisonburg, are included.</p>
+            </scopecontent>
+            <c02 id="aspace_b77168cc8cc7462e0a291bef251304e9" level="file">
+               <did>
+                  <unittitle>Bills and receipts, <unitdate type="inclusive">1877-1894</unitdate>
+                  </unittitle>
+                  <container id="aspace_93ff6edfe33a79c73e196d6afa93c43b"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_332dd1ae3e928f4560eb2c59cbd92096"
+                             parent="aspace_93ff6edfe33a79c73e196d6afa93c43b"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_178217b1f8dd12049298b369870bb65f" level="file">
+               <did>
+                  <unittitle>Bills and receipts, <unitdate>1895</unitdate>
+                  </unittitle>
+                  <container id="aspace_16ed4f607bd178624b37a22dd9ef1721"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_5aa3410898723d172ae0087dd13a3d2d"
+                             parent="aspace_16ed4f607bd178624b37a22dd9ef1721"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f4cd00bc094a9d77403276f6c37d46d6" level="file">
+               <did>
+                  <unittitle>Bills and receipts, <unitdate type="inclusive">1896-1899</unitdate>
+                  </unittitle>
+                  <container id="aspace_27361874509053bdc548a4246a5336cf"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_f886fd47eebb7a9e008d18b7b6d9a733"
+                             parent="aspace_27361874509053bdc548a4246a5336cf"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b0fd46fb9b6b36549d013c3ff4960b6e" level="file">
+               <did>
+                  <unittitle>Bills and receipts, <unitdate type="inclusive">1900-1922</unitdate>
+                  </unittitle>
+                  <container id="aspace_143b4ef80c63e15434b7053e7a30313b"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_cfbe3059ca04bb7fc0ac70eadbc8c145"
+                             parent="aspace_143b4ef80c63e15434b7053e7a30313b"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_83ee77da14317930e56af4eef0f1cb87" level="file">
+               <did>
+                  <unittitle>Bills and receipts, <unitdate>1923</unitdate>
+                  </unittitle>
+                  <container id="aspace_3f4dd9ded90386e2c3fb4e91499705c1"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_b29d532b0167c3adf92696e1d64417e6"
+                             parent="aspace_3f4dd9ded90386e2c3fb4e91499705c1"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f614bb2b0b13598b1f96b702a7a94a74" level="file">
+               <did>
+                  <unittitle>Bills and receipts, <unitdate type="inclusive">1924-1929</unitdate>
+                  </unittitle>
+                  <container id="aspace_a90c863e0a26ff155fe4b14868ee5029"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_62781a95a2a2fb406521df983043649f"
+                             parent="aspace_a90c863e0a26ff155fe4b14868ee5029"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f624500a902a142021658115ca3f0056" level="file">
+               <did>
+                  <unittitle>Price lists, <unitdate type="inclusive">1880-1924</unitdate>
+                  </unittitle>
+                  <container id="aspace_f47b2b21d211a4de626bed87df31e0d0"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_0c5238cb7a69f8c4ebbbf653d2141146"
+                             parent="aspace_f47b2b21d211a4de626bed87df31e0d0"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_01b1fd4b26eea10ee687cbca2313a48b" level="file">
+               <did>
+                  <unittitle>Bank deposit slips, <unitdate type="inclusive">1896, 1921-1922</unitdate>
+                  </unittitle>
+                  <container id="aspace_28c2f7d76b8bfb2e2301be0acfd8267f"
+                             label="Box:Folder"
+                             type="box">3</container>
+                  <container id="aspace_e195d86df2cc271c36c8dddf200b0144"
+                             parent="aspace_28c2f7d76b8bfb2e2301be0acfd8267f"
+                             type="folder">10</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_5e4ad0489f2883d24eaad888482b050e" level="series">
+            <did>
+               <unittitle>Series 6: Mt. Clinton Post Office Records, <unitdate normal="1879/1893" type="inclusive">1879-1893</unitdate>
+               </unittitle>
+            </did>
+            <scopecontent id="aspace_e705b473cb3eb3676323b724f5249911">
+               <head>Scope and Content</head>
+               <p>This series consists of three record books from Mt. Clinton Post Office from 1879 through 1893. All three books are roughly the same size. However, Book One was received missing most of the front and back covers. Book Three was disassembled and boards discarded due to insect damage.</p>
+               <p>William E. Long was a postmaster at Chrisman, Virginia (1881-1887); Green Mount, Virginia (1889-1893); and Mt. Clinton, Virginia (1893-1897). William's father, Samuel, established and operated general stores and post offices in all three locations. It is unclear why the Mt. Clinton post Office records prior to William's tenure as Mt. Clinton postmaster remained in his possession. They are included in this collection due to their peripheral connection to Long.</p>
+            </scopecontent>
+            <c02 id="aspace_b320cd2b2a59626e915a4b8e679554fe" level="file">
+               <did>
+                  <unittitle>Record of Registered Matter in Transit (Book 1), <unitdate type="inclusive">September 1879-March 1883</unitdate>
+                  </unittitle>
+                  <container id="aspace_bc427d5727e46593bf4c46d97263b23d"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_457495e500da0ece33291874d2992978"
+                             parent="aspace_bc427d5727e46593bf4c46d97263b23d"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_129d26c722d8deb493561c75f0a272e5" level="file">
+               <did>
+                  <unittitle>Record of Registered Matter in Transit (Book 2), <unitdate type="inclusive">April 1883-March 1888</unitdate>
+                  </unittitle>
+                  <container id="aspace_9de91fbe368eb22152a3143a7672b629"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_7a742fffcb52053b1698c4906da63557"
+                             parent="aspace_9de91fbe368eb22152a3143a7672b629"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_625e1017d8f2ce7fddcf8ae4a2cfbad2" level="file">
+               <did>
+                  <unittitle>Record of Registered Matter Received and Delivered (Book 3), <unitdate type="inclusive">October 1884-December 1893</unitdate>
+                  </unittitle>
+                  <container id="aspace_b62a82059c52402f707f9ce33f07fbfa"
+                             label="Box:Folder"
+                             type="box">4</container>
+                  <container id="aspace_4eb67ae68d6cbdc0631d8e50f301789c"
+                             parent="aspace_b62a82059c52402f707f9ce33f07fbfa"
+                             type="folder">3</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
