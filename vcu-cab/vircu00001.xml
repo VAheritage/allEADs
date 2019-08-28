@@ -1,464 +1,166 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
+<?xml version="1.0"?>
+<!--Change Vircuh to match your repository-->
+<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" title="extended EAD relaxng schema" ?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" id="vircu00001">
+<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft">
+<!-- Change below to match your institution's ead information -->
+<eadid countrycode="US" mainagencycode="US-ViRCU">PUBLIC "-//Virginia Commonwealth University::James Branch Cabell Library::Special Collections and Archives//TEXT (US::ViRCU::vircu00001::A Guide to the John Mitchell Brooks collection of NAACP files, 1957-1960, 1978)//EN" "vircu00001.xml"
+</eadid>
+<filedesc>
+<titlestmt>
+<titleproper>A Guide to the John Mitchell Brooks collection of NAACP files, <date>1957-1960, 1978</date>
+</titleproper>
+<subtitle id="sort">Brooks, Mitchell John, collection of NAACP files
+<num type="collectionnumber">M 296
+</num>
+</subtitle>
+<author>Dillon Thomas
+</author>
+</titlestmt>
+<publicationstmt>
+<publisher>Virginia Commonwealth University, James Branch Cabell Library<!-- Add your institution's name -->
+</publisher> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"  href="http://ead.lib.virginia.edu/vivaead/add_con/vcu-cab_address.xi.xml" /><!-- Change to match your institution -->
+<date type="publication">&#169; 2019 By Virginia Commonwealth University. All rights reserved <!-- Add your institution's name and copyright statement -->
+</date>
+</publicationstmt>
+</filedesc>
+<profiledesc>
+<creation>Machine-readable finding aid derived from Database, created by Margaret Kidd, <date>28 Auguest 2019</date>
+</creation>
+<langusage>Description is in
+<language langcode="eng">English
+</language>
+</langusage>
+</profiledesc>
+</eadheader>
+<frontmatter>
+<titlepage>
+<titleproper>A Guide to the John Mitchell Brooks collection of NAACP files, <date>1957-1960, 1978</date>
+</titleproper>
+<subtitle>A Collection in <lb/>Special Collections and Archives, James Branch Cabell Library<!-- Add your institution's name -->
+<num type="Collection number">M 296
+</num>
+</subtitle>
+<p id="logostmt">
+<!-- Change for your institutions logo -->
+<extptr xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vcu.jpg"/>
+</p>
+<publisher>Virginia Commonwealth University, James Branch Cabell Library<!-- Add your institution's name -->
+</publisher>
+<date type="publication">2019
+</date> 
+<list type="deflist">
+<defitem>
+<label>Processed by:
+</label>
+<item>Dillon Thomas
+</item>
+</defitem>
+</list>
+</titlepage>
+</frontmatter>
+<archdesc level="collection">
+<runner placement="footer">Special Collections and Archives, James Branch Cabell Library<!-- Add your institution's name -->
+</runner>
+<did>
+<head>Descriptive Summary
+</head>
+<repository label="Repository" encodinganalog="852$a">Special Collections and Archives, James Branch Cabell Library, Virginia Commonwealth University<!-- Add your institution's name -->
+</repository>
+<unittitle label="Title" encodinganalog="245$a">John Mitchell Brooks collection of NAACP files, 
+<unitdate type="inclusive" label="Date" encodinganalog="245$f">1957-1960, 1978
+</unitdate>
+</unittitle>
+<unitid label="Collection number" encodinganalog="099$a">M 296
+</unitid>
+<physdesc label="Extent" encodinganalog="300$a"><extent>0.84 linear feet</extent>.
+</physdesc>
+<langmaterial label="Language">
+<language langcode="eng">English
+</language>
+</langmaterial>
+<origination label="Collector" encodinganalog="100$a">Brooks, John Mitchell, 1917-1980
+</origination>
+</did>
+<descgrp type="admininfo">
+<head>Administrative Information
+</head>
+<accessrestrict encodinganalog="506$a">
+<head>Access Restrictions
+</head>
+<p>Collection is open to research.
+</p>
+</accessrestrict>
+<userestrict encodinganalog="540$a">
+<head>Use Restrictions
+</head>
+<p>There are no restrictions.
+</p>
+</userestrict>
+<prefercite encodinganalog="524$a">
+<head>Preferred Citation
+</head>
+<p>John Mitchell Brooks collection of NAACP files, 1957-1960, 1978 Collection # M 296, Special Collections and Archives, James Branch Cabell Library, Virginia Commonwealth University, Richmond, VA.<!-- Add your institution's citation information -->
+</p>
+</prefercite>
+<acqinfo encodinganalog="541$a">
+<head>Acquisition Information
+</head>
+<p>The collection was donated by K. Eanes in May 1992.
+</p>
+</acqinfo>
+<custodhist>
+<head>Custodial History
+</head>
+<p>The materials were kept by Brooks during his activities as the NAACP director of voter registration and education in the south. The collection was donated by K. Eanes in May 1992. The materials were found in the basement of 1900 S. Meadow Street, Richmond, Virginia when the house was sold to the donor.
+</p>
+</custodhist>
+<processinfo>
+<head>Processing Information
+</head>
+<p>The collection was originally processed in 1992, with the content retaining the original order in which they were found. The finding aid was revised in 2000.
+In 2019, the collection was rehoused and files were relabeled to bring into accordance with current best practice and to better reflect contents, while also respecting original order.
+</p>
+</processinfo>
+</descgrp>
+<bioghist encodinganalog="545$a">
+<head>Biographical Information
+</head>
+<p>John Mitchell Brooks was a civil rights activist and director of the National Association for the Advancement of Colored People (NAACP) voter registration and education program. Born in Braddock, Pennsylvania in 1917, Brooks moved to Richmond in 1931. As a teenager, he became one of the first black Eagle Scouts in Virginia. He attended Virginia Union University and West Virginia State College. Brooks served for three years as a lieutenant in the US Army and received the Bronze Star Medal for combat medical work in World War II. After the war, he became a partner at Millie's Grill and manager at Troy's Department Store in Richmond.</p>
+<p>Brooks began his work with the NAACP in 1957 where he was hired as an assistant to W. Lester Banks, Executive Secretary of the NAACP. In 1958, Brooks became the director of the NAACP national voter registration and education program, coordinating the voter registration programs of state branches. The initiative under Brooks created pamphlets and publications to educate voters and promote registration drives. Brooks served as political action director for the NAACP Virginia State Conference. He also assisted in the formation of the Crusade for Voters in Richmond with William S. Thornton and William Ferguson Reid. He remained the director of the voter registration program until 1975. After his retirement, Brooks remained active in state and local politics as a lobbyist for civil rights issues until his death in 1980.</p>  
+</bioghist>
+<scopecontent encodinganalog="520$a">
+<head>Scope and Content
+</head>
+<p>The John Mitchell Brooks collection of NAACP files, 1957-1960, is a collection of administrative paperwork and correspondence used by John Mitchell Brooks during his initial years as director of the national voter registration and education program of the National Association for the Advancement of Colored People (NAACP). The materials primarily consist of files regarding the state branches of the NAACP across the United States. These branch files contain correspondence and statistical reports from the officials in charge of each state's voter registration initiative. The files show methods that the different branches incorporated to maximize the effectiveness of their individual voting initiatives. Additionally, some branch files include examples of promotional material created by each branch to ignite public interest. The materials were sent to Brooks for approval and feedback. </p>
+<p>The collection also includes correspondence between Brooks and various individuals and groups involved with the NAACP's voter registration program. Individuals with whom he corresponded include the famous civil rights activist Henry Lee Moon, who was operating as the public relations director of the NAACP. Additionally, the collection contains correspondence with Ruby Hurley, often referred to as the "queen of civil rights," who was operating the Atlanta, Georgia NAACP regional office at the time. The collection also consists of administrative correspondence with various branch presidents and members regarding the production of NAACP literature.</p>  
+</scopecontent>
+<arrangement encodinganalog="351">
+<head>Arrangement
+</head>
+<p>The collection is arranged in alphabetical order by subject. The collection was maintained in its original order though a few files of similar materials were combined and miscellaneous materials were given more descriptive labels. Some newspaper clippings were disposed of but the citations to those articles are listed under the entry for Newspaper Clippings and are held by the library on microfilm.</p> 
+</arrangement>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="vircu00001">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid publicid="PUBLIC &amp;#34;-//Virginia Commonwealth University::James Branch Cabell Library::Special Collections and Archives//TEXT (US::ViRCU::vircu00001::Guide to the John Mitchell Brooks Collection ofNAACP Files)//EN&amp;#34; &amp;#34;vircu00001.xml&amp;#34;" countrycode="US" mainagencycode="US-ViRCU">PUBLIC
-             "-//Virginia Commonwealth University::James Branch Cabell
-             Library::Special Collections and Archives//TEXT
-             (US::ViRCU::vircu00001::Guide to the John Mitchell Brooks
-             Collection of NAACP Files)//EN" "vircu00001.xml"</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the John Mitchell Brooks Collection
-            of NAACP Files 
-            <date era="ce" calendar="gregorian">1957-1978</date></titleproper>
-        <subtitle id="sort">Brooks, John Mitchell NAACP Files
-            Collection 1957-1978. 
-            <num type="collectionnumber">M 296</num></subtitle>
-        <author>B. Pittman</author>
-        <sponsor>Web version of the finding aid funded in part by a
-               grant from the National Endowment for the
-               Humanities.</sponsor>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Virginia Commonwealth University, James Branch
-            Cabell Library</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vcu-cab_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2000 By Copyright
-            Virginia Commonwealth University. All Rights
-            Reserved.</date>
-        <p id="filesize">31 kb</p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from word
-         processing file. Meachine-readable finding aid created by Jodi
-         Koste and Curtis Lyons 
-         <date era="ce" calendar="gregorian">2000-2001</date></creation>
-      <langusage>Description is in 
-         <language>English</language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2004-02-16" era="ce" calendar="gregorian">Feb 16, 2004</date>
-        <item>PUBLIC "-//Virginia Commonwealth University::James
-            Branch Cabell Library::Special Collections and
-            Archives//TEXT (US::ViRCU::vircu00001::Guide to the John
-            Mitchell Brooks Collection of NAACP Files)//EN"
-            "vircu00001.xml" converted from EAD 1.0 to 2002 by
-            v1to02.xsl (sy2003-10-15).</item>
-      </change>
-      <change>
-        <date normal="2004-02-25" era="ce" calendar="gregorian">Feb 25, 2004</date>
-        <item>converted to conform to eadVIVA.dtd by
-            vivastrict.xsl</item>
-      </change>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the John Mitchell Brooks Collection of
-         NAACP Files 
-         <date era="ce" calendar="gregorian">1957-1978</date></titleproper>
-      <subtitle>A Collection in 
-         <lb/>Special Collections and Archives, James Branch Cabell
-         Library 
-         <num type="Collection Number">M 296</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vcu.jpg"/>
-      </p>
-      <publisher>James Branch Cabell Library, Virginia Commonwealth
-         University</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2000</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vcu-cab_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:</label>
-          <item>Betsy Pittman</item>
-        </defitem>
-        <defitem>
-          <label>Funding:</label>
-          <item>Web version of the finding aid funded in part by a
-               grant from the National Endowment for the
-               Humanities.</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections and Archives,
-      James Branch Cabell Library</runner>
-    <did>
-      <head>Descriptive Summary</head>
-      <repository label="Repository">Special Collections and Archives, James Branch
-         Cabell Library</repository>
-      <unittitle label="Title">John Mitchell Brooks Collection of
-         NAACP Files 
-         <unitdate type="inclusive" label="Date" era="ce" calendar="gregorian">
-         1957-1978</unitdate></unittitle>
-      <unitid label="Collection number">M 296</unitid>
-      <physdesc label="Physical Characteristics">1.5 linear
-         feet</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English</language>
-      </langmaterial>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information</head>
-      <accessrestrict>
-        <head>Access</head>
-        <p>No restrictions on Access.</p>
-      </accessrestrict>
-      <userestrict>
-        <head>Use Restrictions</head>
-        <p>No restrictions on use.</p>
-      </userestrict>
-      <prefercite>
-        <head>Preferred Citation</head>
-        <p>Box/Folder, John Mitchell Brooks Collection of NAACP
-            Files, M 296, Special Collections and Archives, James
-            Branch Cabell Library, Virginia Commonwealth University</p>
-      </prefercite>
-      <acqinfo>
-        <head>Acquisition Information</head>
-        <p>The collection was donated by K. Eanes in May of
-            1992.</p>
-      </acqinfo>
-      <custodhist>
-        <head>Provenance</head>
-        <p>The material was collected from the NAACP's office files
-            by Brooks during his activities as NAACP director of voter
-            registration and education in the south. The collection was
-            donated by K. Eanes in May of 1992. The material was found
-            in the basement of 1900 S. Meadow Street, Richmond,
-            Virginia, when the house was sold to the donor</p>
-      </custodhist>
-      <processinfo>
-        <head>Processing Information</head>
-        <p>This collection was organized in June 1992 by Betsy
-            Pittman. The scope and content notes were revised by Ray
-            Bonis in September 2000.</p>
-      </processinfo>
-    </descgrp>
-    <bioghist>
-      <head>Biographical/Historical Information</head>
-      <p>John Mitchell Brooks, born in 1917 in Bradock,
-         Pennsylvannia, moved in 1931 to Richmond, Virginia with his
-         six brothers and sisters to live with his grandparents. He
-         became one of the first black Eagle Scouts in the state and
-         eventually attended Virginia Union University and West
-         Virginia State College. Mr. Brooks spent three years in the
-         Army as a lieutenant and was awarded the Bronze Medal for his
-         combat medical work in World War II. After the war, he became
-         a partner in Millies Grill and then worked as a manager in
-         Troy's Department Store. His political activity began in 1957
-         when he was hired as an assistant to the Executive Secretary
-         of the NAACP, Mr. W. Lester Banks. Mr. Brooks became the
-         Director of the NAACP national voter registration and
-         education program in 1958 and continued at this post until
-         1975. He also worked as political action director for the
-         Virginia State Conference of the NAACP and formed the Crusade
-         for Voters in Richmond, Virginia with Drs. William S. Thornton
-         and William Ferguson Reid. After leaving the NAACP, he
-         remained active in state and local politics as a Lobbyist
-         while running Helen's Place with his wife. He was a life-time
-         member of the NAACP and was honored for his work by many local
-         organizations including the AFRO, Omega Psi Phi Fraternity,
-         Astoria Beneficial Club and Phi Beta Sigma Fraternity. Mr.
-         Brooks died in 1980.</p>
-    </bioghist>
-    <scopecontent>
-      <head>Scope and Content Information</head>
-      <p>The collection consists of the office files collected by
-         Brooks during his activities as NAACP director of voter
-         registration and education in the south. The bulk of the
-         collection falls between 1958 and 1959. Materials in the
-         collection include correspondence, promotional materials,
-         handbills, photographs, newspaper clippings and other
-         materials. Files contain information on activities in Texas,
-         Louisiana, Florida, Arkansas, Mississippi, Georgia, South
-         Carolina, North Carolina, Virginia, West Virginia, Tennessee,
-         Kentucky, Maryland and Washington, D.C. There are small file
-         containing information from Ohio, Oklahoma, Michigan,
-         Pennsylvania and New Jersey. There is a small quantity of
-         correspondence between Mr. Brooks and other NAACP officials
-         including Roy Wilkins, W.C. Patton, Gloucester Current, Henry
-         Lee Moon and Ruth Hurley. Materials related to the Richmond
-         Crusade for Voters organization, dating primarily from the
-         1970s, are also included.</p>
-    </scopecontent>
-    <arrangement>
-      <head>Arrangement</head>
-      <p>The collection was maintained in its original order though
-         a few multiple files were combined and miscellaneous materials
-         were labeled. Some newspaper clippings were disposed of but
-         the citations to those articles are listed under the entry for
-         Newspaper Clippings and are held by the library on
-         microfilm.</p>
-    </arrangement>
-    <dsc type="combined">
-      <head>Contents List</head>
-      <c01 level="file">
-        <did>
-          <unittitle>Branch Correspondence 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1960,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:1</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Hurley, Ruby 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:2</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Moon, Henry 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">
-               1958-1959</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:3</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>National Correspondence</unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:4</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>News Releases 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1959,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:5</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Newspaper Clippings 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1959,
-               1978</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:6</container>
-        </did>
-        <scopecontent>
-          <p><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond
-               Afro-American</title>1/2-7/78 pp. 5-8 
-               <lb/><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond Times
-               Dispatch</title>4/11/78 section B 
-               <lb/><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Washington Post</title>5/20/78
-               pp. A3-A4 
-               <title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond News
-               Leader</title>2/17/78 pp.13-26 
-               <lb/><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Washington Post</title>1/8/78 pp.
-               D1-D8 
-               <lb/><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Washington Post</title>1/15/78
-               B7-B8 
-               <lb/><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond
-               Afro-American</title>3/25/78 entire 
-               <lb/><title xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" render="italic" xlink:href="">Richmond
-               Afro-American</title>4/22/78 pp.15-28 
-               <lb/></p>
-        </scopecontent>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Patton, W.C. 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1961,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:7</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Publications 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1957</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:8</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Arkansas</unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:9</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Florida 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1960,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:10</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Georgia 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1959,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               1:1</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Louisiana 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1959,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:1</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Maryland 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">
-               1958-1960</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:2</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Midwest
-               (Ohio,Illinois, Oklahoma, Michigan) 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1960,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:3</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Mississippi 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1959,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:4</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--NorCarolina 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958-1959,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:5</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--New Jersey 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1960</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:6</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Pennsylvania 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1959</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:7</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--South Carolina 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:8</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Tennessee 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:9</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Texas 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:10</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Virginia 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1957-1960,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:11</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Virginia, Richmond 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1975,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               2:12</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--Washington, D.C. 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">
-               1958-1959</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               3:1</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Correspondence--West Virginia 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               3:2</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Regional Reports 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">
-               1958-1959</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               3:3</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Wilkins, Roy 
-               <unitdate type="inclusive" era="ce" calendar="gregorian">1958,
-               n.d.</unitdate></unittitle>
-          <container label="Box-folder" type="Box-folder">
-               3:4</container>
-        </did>
-      </c01>
-    </dsc>
-  </archdesc>
+  <dsc><c01 id="aspace_ebfb2fd162b6f5eea4efd4f09a28a06c" level="file"><did><unittitle>Branch Files - Arkansas</unittitle><unitdate normal="1958/1958">1958</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_b33ab8e35268159ed6775815f74a3a67" label="Box-folder" type="box">1</container><container id="aspace_465295e65fcd5f0232a797e2e74ac054" parent="aspace_b33ab8e35268159ed6775815f74a3a67" type="folder">1</container></did></c01>
+<c01 id="aspace_42370321249517b109f345ad4350a71b" level="file"><did><unittitle>Branch Files - Florida</unittitle><unitdate normal="1958/1960" type="inclusive">1958-1960</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_608b9911ae62064f879e3f6559d8465d" label="Box-folder" type="box">1</container><container id="aspace_7e6254c997b002d93bab1f0cb2657b7e" parent="aspace_608b9911ae62064f879e3f6559d8465d" type="folder">2</container></did></c01>
+<c01 id="aspace_7cb172433e0723a67e68b731d72a4f80" level="file"><did><unittitle>Branch Files - Georgia</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_55e134077b46ac7dac0f632edbb77639" label="Box-folder" type="box">1</container><container id="aspace_83464944bfa9d7c9840d1097e14aa2b1" parent="aspace_55e134077b46ac7dac0f632edbb77639" type="folder">3-4</container></did></c01>
+<c01 id="aspace_4488473a8a2dc3dea5e576e6c076ace3" level="file"><did><unittitle>Branch Files - Louisiana</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_5d80d8eed39c1b104a35fe351709f3ac" label="Box-folder" type="box">1</container><container id="aspace_b2d64d689241391ad89212037505e232" parent="aspace_5d80d8eed39c1b104a35fe351709f3ac" type="folder">5</container></did></c01>
+<c01 id="aspace_0ec99ea0ff55b66b208431d552cec72e" level="file"><did><unittitle>Branch Files - Maryland</unittitle><unitdate normal="1958/1958">1958</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_505a24fe3b44894b89ae45f73b430319" label="Box-folder" type="box">1</container><container id="aspace_c8db6b8c48e8070bcdbdb6d1644d2a63" parent="aspace_505a24fe3b44894b89ae45f73b430319" type="folder">6</container></did></c01>
+<c01 id="aspace_235cb35c35d55261418713f1bb38e41f" level="file"><did><unittitle>Branch Files - Mississippi</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_b320f66623228159874a03d9c4cdcb88" label="Box-folder" type="box">1</container><container id="aspace_df3ac4ba02f69432947af8aaab07d743" parent="aspace_b320f66623228159874a03d9c4cdcb88" type="folder">7</container></did></c01>
+<c01 id="aspace_dbd9d6faf9915addb1a96516841ea13b" level="file"><did><unittitle>Branch Files - Midwest (Ohio, Illinois, Oklahoma, Michigan)</unittitle><unitdate normal="1958/1960" type="inclusive">1958-1960</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_4671ba63f999eac54536d4af4c9e37d1" label="Box-folder" type="box">1</container><container id="aspace_4ca97c9e7befdde6e823afb642f85799" parent="aspace_4671ba63f999eac54536d4af4c9e37d1" type="folder">8</container></did></c01><c01 id="aspace_672e1d03bcb3c65050b6031553c47b51" level="file"><did><unittitle>Branch Files - New York</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_6b4472159d20e11c5a1d7a8a8996c407" label="Box-folder" type="box">1</container><container id="aspace_70d0e9c77bce4a85b6150376f9468fba" parent="aspace_6b4472159d20e11c5a1d7a8a8996c407" type="folder">9</container></did></c01>
+<c01 id="aspace_e6540d22f82b3c2d567fb54336e28e3c" level="file"><did><unittitle>Branch Files - North Carolina</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_0517520466ec030c79224a524e7320a8" label="Box-folder" type="box">1</container><container id="aspace_688bb9595690ebe4b459215d60a16a42" parent="aspace_0517520466ec030c79224a524e7320a8" type="folder">10</container></did></c01>
+<c01 id="aspace_4f705823c19e9d31e0b934c48fb2f420" level="file"><did><unittitle>Branch Files - New Jersey</unittitle><unitdate normal="1960/1960">1960</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_17e64a92354260c0ca941330b8362717" label="Box-folder" type="box">1</container><container id="aspace_4625c5c9f7f3cb40c582d24f4b835e42" parent="aspace_17e64a92354260c0ca941330b8362717" type="folder">11</container></did></c01>
+<c01 id="aspace_a9a59202c0d0d5ecc07977fe902bf0b3" level="file"><did><unittitle>Branch Files - Pennsylvania</unittitle><unitdate normal="1959/1959">1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_854365b5c8b11e4647f8af8246dfbded" label="Box-folder" type="box">1</container><container id="aspace_f79def23d772521b4984437471438917" parent="aspace_854365b5c8b11e4647f8af8246dfbded" type="folder">12</container></did></c01>
+<c01 id="aspace_443159d2ca1e099ddfae4de44e0a0179" level="file"><did><unittitle>Branch Files -  South Carolina</unittitle><unitdate normal="1958/1958">1958</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_7ebb7389a5c9f1c1a221804d7b2e24cd" label="Box-folder" type="box">1</container><container id="aspace_773605e7e023edafecb7ed2d0cb149b0" parent="aspace_7ebb7389a5c9f1c1a221804d7b2e24cd" type="folder">13</container></did></c01>
+<c01 id="aspace_296dcb0bec109c3dbb8802fb45aef6cc" level="file"><did><unittitle>Branch Files - Tennessee</unittitle><unitdate normal="1958/1958">1958</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_ee1bf2797004bd14bdf610a311a632c4" label="Box-folder" type="box">1</container><container id="aspace_277b4d22ca629594ea24eb67f43db5a8" parent="aspace_ee1bf2797004bd14bdf610a311a632c4" type="folder">14</container></did></c01>
+<c01 id="aspace_f2c430e2599c93d983eb584aac4f9cce" level="file"><did><unittitle>Branch Files - Texas</unittitle><unitdate normal="1958/1958">1958</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_c91297d49ad0a3a0dd337bd8a5f7d7f4" label="Box-folder" type="box">2</container><container id="aspace_d61a4e38967eb9e695c41bf93ba5e862" parent="aspace_c91297d49ad0a3a0dd337bd8a5f7d7f4" type="folder">1</container></did></c01>
+<c01 id="aspace_998a1792fdfa5fd36a43885dadfb2387" level="file"><did><unittitle>Branch Files - Virginia</unittitle><unitdate normal="1957/1960" type="inclusive">1957-1960</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_e3f7e2a17c35393452693638ed09281b" label="Box-folder" type="box">2</container><container id="aspace_d797dadfde065371bc94abc46312c915" parent="aspace_e3f7e2a17c35393452693638ed09281b" type="folder">2-3</container></did></c01>
+<c01 id="aspace_170d8baa70f8c8ab21cb15d65e070e4b" level="file"><did><unittitle>Branch Files - Virginia - Richmond</unittitle><unitdate normal="1958/1960" type="inclusive">1958-1960</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_f66087f1917047311d1e2740ab2d5b25" label="Box-folder" type="box">2</container><container id="aspace_979c3c59bfce406da0b1fd390f4e1cf9" parent="aspace_f66087f1917047311d1e2740ab2d5b25" type="folder">4</container></did></c01><c01 id="aspace_158d8e9bd87f617202d7ec15966f5c42" level="file"><did><unittitle>Branch Files - Washington, DC</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_a03b2c73b0496f1ba8e36b064acb80e4" label="Box-folder" type="box">2</container><container id="aspace_9b7e776ec2cf07fad3d0e447b363f84b" parent="aspace_a03b2c73b0496f1ba8e36b064acb80e4" type="folder">5</container></did></c01>
+<c01 id="aspace_d21371560b2d6ebea7a3faed6a16f0c3" level="file"><did><unittitle>Branch Files - West Virginia</unittitle><unitdate normal="1958/1958">1958</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_83ecf9be0f88b6d36f5634db7d0e7dfe" label="Box-folder" type="box">2</container><container id="aspace_9270d36b9c9ac6ee02f28c88c6b6400e" parent="aspace_83ecf9be0f88b6d36f5634db7d0e7dfe" type="folder">6</container></did></c01>
+<c01 id="aspace_0c3d75c7a109c880b7ff9ca344a6d06a" level="file"><did><unittitle>Correspondence - Branch Presidents</unittitle><unitdate normal="1958/1960" type="inclusive">1958-1960</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_2e8f8ef4c6f872c4e7f6d2aa58eedf6e" label="Box-folder" type="box">2</container><container id="aspace_21a90d4794a61c9a70fdc6646e753492" parent="aspace_2e8f8ef4c6f872c4e7f6d2aa58eedf6e" type="folder">7</container></did></c01><c01 id="aspace_97eba627b9e066af9bb23d841cad047e" level="file"><did><unittitle>Correspondence - Hurley, Ruby</unittitle><unitdate normal="1958/1958">1958</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_cf83daa460c9d235ac699f136606388f" label="Box-folder" type="box">2</container><container id="aspace_c24d0237db54f4fc9eb9bee54f01fc33" parent="aspace_cf83daa460c9d235ac699f136606388f" type="folder">8</container></did></c01>
+<c01 id="aspace_c25e9b170645d2e2f12598601aa089a1" level="file"><did><unittitle>Correspondence - Moon, Henry Lee</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_cd4086dcd8b761013d2dc2998950ee92" label="Box-folder" type="box">2</container><container id="aspace_d02bc7f4ea59743442a23bb42cc9c2b4" parent="aspace_cd4086dcd8b761013d2dc2998950ee92" type="folder">9</container></did></c01><c01 id="aspace_063afe0b8650921e4801a18b1f95900e" level="file"><did><unittitle>Correspondence - National Correspondence</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_dcbdc8e1779e8094ce12136f8add7907" label="Box-folder" type="box">2</container><container id="aspace_5f3f54c216c95a02f5adaa70b16a4973" parent="aspace_dcbdc8e1779e8094ce12136f8add7907" type="folder">10</container></did></c01>
+<c01 id="aspace_752a5b5dbdc26167de0713db3df39081" level="file"><did><unittitle>Correspondence - re: Publications</unittitle><unitdate normal="1958/1959" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_007dd7640538d58c994457ff8d45d5ec" label="Box-folder" type="box">2</container><container id="aspace_2288f2ee6c651df74ee8a6ab20ce7fa5" parent="aspace_007dd7640538d58c994457ff8d45d5ec" type="folder">11</container></did></c01>
+<c01 id="aspace_ae4e1df6b4ce96e9a53c089525815b59" level="file"><did><unittitle>Newspaper Clippings</unittitle><unitdate normal="1959/1978" type="inclusive">1959, 1978</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_2a53bfaa61c842f7c4304b064f08cd33" label="Box-folder" type="box">2</container><container id="aspace_76a4c44f4e98f6d8817bc8783af89808" parent="aspace_2a53bfaa61c842f7c4304b064f08cd33" type="folder">12</container></did><scopecontent id="aspace_cb91b5d37358caf6f09e1a17ee6469aa"><head>Scope and Contents</head><p>The following clippings were removed, but are available via microfilm.</p><p><title>Richmond Afro-American,</title> 1/2-7/78 pp. 5-8 </p><p><title>Richmond Times Dispatch,</title> 4/11/78 section B </p><p><title>Washington Post,</title> 5/20/78 pp. A3-A4 </p><p><title>Richmond News Leader,</title> 2/17/78 pp.13-26 </p><p><title>Washington Post,</title> 1/8/78 pp. D1-D8 </p><p><title >Washington Post, </title>1/15/78 B7-B8 </p><p><title>Richmond Afro-American, </title> 3/25/78 entire </p><p><title>Richmond Afro-American,</title> 4/22/78 pp.15-28</p></scopecontent></c01><c01 id="aspace_295eace7a95329158569c1a52c531796" level="file"><did><unittitle>News Releases</unittitle><unitdate normal="1959/1959">1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_c25745da188c9b2cfb9ffd7fde0231ed" label="Box-folder" type="box">2</container><container id="aspace_8428ffe0a1d85746ce1dda6faecfbbbb" parent="aspace_c25745da188c9b2cfb9ffd7fde0231ed" type="folder">13</container></did></c01>
+<c01 id="aspace_a87a221b0952bebc289a6878f539493c" level="file"><did><unittitle>Regional Reports</unittitle><unitdate normal="1958/1958" type="inclusive">1958-1959</unitdate><container altrender="5&quot; Doc Case, Legal" id="aspace_226e6cd897c3c94140358186418cc7d4" label="Box-folder" type="box">2</container><container id="aspace_8c1466459e8531d31e020cba94f9ccdf" parent="aspace_226e6cd897c3c94140358186418cc7d4" type="folder">14</container></did></c01></dsc>
+</archdesc>
 </ead>
