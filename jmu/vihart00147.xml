@@ -1,124 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+      langencoding="iso639-2b" repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="US-US-vihart"
+         url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00147.xml"
+         >vihart00147</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Sarah Maria Everett Collection on James Madison, 1816,
+                  1907:<num>SC 0220</num>
+            </titleproper>
+            <author>Mark Peterson, September 2012</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+               href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian">© 2019 By JMU Libraries. All
+               rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                  xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+                  Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with
+            ASpace2VaHeritage.xsl on <date>2019-10-09 10:59:42 -0400</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change audience="internal">
+            <date>2019-10-08</date>
+            <item>Revised with new collection collection number and minor edits to finding
+               aid.</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Sarah Maria Everett Collection on James Madison, 1816, <date
+               era="ce" calendar="gregorian">1907 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+               0220</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+               xlink:actuate="onLoad" xlink:show="embed"
+               xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2019</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Mark Peterson, September 2012</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Special Collections, Carrier Library, James Madison University</corpname>
+         </repository>
+         <unittitle>Sarah Maria Everett Collection on James Madison, </unittitle>
+         <origination audience="internal" label="Creator">
+            <persname source="local">Everett, Sarah Maria</persname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0220</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">.31 cubic feet; 1 box</physdesc>
+         <unitdate normal="1816/1907" type="inclusive">1816, 1907</unitdate>
+         <abstract id="aspace_a4e1dae132909a88767695bcd7f829d9">The Sarah Maria Everett Collection
+            on James Madison, 1816, 1907, comprises a December 9, 1816 issue of the <emph
+               render="italic">Boston Gazette</emph> and a 1907 portrait engraving of James
+            Madison.</abstract>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_f99adf135aeb83ab94bf96715b5934dc">
+            <head>Access Restrictions</head>
+            <p>Collection is open to research. Researchers must register and agree to copyright and
+               privacy laws before using this collection. Please contact Research Services staff
+               before visiting the James Madison University Special Collections Library to use this
+               collection.</p>
+         </accessrestrict>
+         <userestrict id="aspace_333f444b8ec65761c347daff38858e82">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison
+               University Special Collections Library. For more information, contact the Special
+               Collections Library Reference Desk (library-special@jmu.edu).</p>
+         </userestrict>
+         <prefercite id="aspace_4c5526282ef0a20cf75bd6015147054c">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box #, folder #], Sarah Maria Everett Collection on James
+               Madison, 1816, 1907, SC 0220, Special Collections, Carrier Library, James Madison
+               University, Harrisonburg, VA.</p>
+         </prefercite>
+         <acqinfo id="aspace_3660628dd3c7a0bf15824ba05ba1052a">
+            <head>Acquisition Information</head>
+            <p>Donated by Sarah Maria Everett in 2012, during her senior year as a student at James
+               Madison University.</p>
+         </acqinfo>
+         <custodhist id="aspace_ce5ae1fd3abde4a60a3b5fc6d5954e42">
+            <head>Provenance</head>
+            <p>The newspaper was a gift to the donor from her parents, purchased from an antique
+               dealer. The engraving was given to the donor by Pat Thompson, a longtime docent at
+               Montpelier. This was a retirement gift to Thompson from staff at Montpelier who
+               purchased it from Jentz Prints in Brunswick, Maryland.</p>
+         </custodhist>
+         <processinfo id="aspace_55fbd2a6e47b1eba681c315072f1acbe">
+            <head>Processing Information</head>
+            <p>In order to streamline the process of applying collection numbers, Special
+               Collections staff completed a large-scale renumbering campaign in 2017-2019. <emph
+                  render="bold">This collection was previously cataloged as SC 5047.</emph>
+            </p>
+         </processinfo>
+      </descgrp>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00147">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
-			Library::Special Collections//TEXT (US::ViHarT::vihart00147::Sarah Maria Everett Collection on James Madison, 1816-1907//EN" "vihart00147.xml" </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Sarah Maria Everett Collection on James Madison, <date era="ce" calendar="gregorian">1816-1907</date></titleproper>
-        <subtitle id="sort">Sarah Maria Everett Collection on James Madison<num type="collectionnumber">SC# 5039</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-				</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
-					rights reserved. </date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by David Black,
-				<date era="ce" calendar="gregorian">10/2012</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-11-21">2013-11-21</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the Sarah Maria Everett Collection on James Madison, <date era="ce" calendar="gregorian">1816-1907</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"> SC# 5039</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2012</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:</label>
-          <item>Mark Peterson, September 2012</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
-				University </repository>
-      <unittitle label="Title" encodinganalog="245$a">Sarah Maria Everett Collection on James Madison<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1816-1907</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">5039</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">1 flat box</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">December 9, 1816 Boston Gazette and a 1907 printed portrait of President James Madison.</abstract>
-      <origination label="Creator" encodinganalog="100$a">Sarah Maria Everett</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions </head>
-        <p>None. </p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions </head>
-        <p>None. </p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation </head>
-        <p>[Identification of Item], The Sarah Maria Everett Collection on James Madison, 1816-1907, SC#
-					5039, Special Collections, Carrier Library, James Madison University,
-					Harrisonburg, Va.</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information </head>
-        <p>Donation from Sarah Maria Everett during her senior year as a student at James Madison University.</p>
-      </acqinfo>
-      <custodhist>
-        <head>Provenance </head>
-        <p>The newspaper was a gift to the donor from her parents, purchased from an antique dealer.
-					The engraving was given to the donor by Pat Thompson, a longtime docent at Montpelier. This was a retirement gift to Thompson from staff at Montpelier who purchased it from Jentz Prints in Brunswick, Maryland.
-				</p>
-      </custodhist>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information </head>
-      <p>Donor was a recognized expert on James Madison during her time as a student at JMU and received several gifts of historical items that mention Madison.</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content </head>
-      <p>The newspaper contains an address by President Madison on the second page. The engraving is a portrait and signature of James Madison with a small image of Montpelier beneath. "Copyright 1907 by Bureau of National Literature and Art."</p>
-    </scopecontent>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01 level="file">
-        <did>
-          <unittitle>Boston Gazette<unitdate type="inclusive" era="ce" calendar="gregorian">1816 December 9</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:1</container>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <unittitle>Portrait</unittitle>
-          <container label="Box:Folder" type="box-folder">1:2</container>
-        </did>
-      </c01>
-    </dsc>
-  </archdesc>
+
+
+
+
+
+      <bioghist id="aspace_a5fa523538067c85b357a63b81026554">
+         <head>Bio/Historical Note</head>
+         <p>Sarah Maria Everett, a Juneau, Alaska resident, transferred to James Madison University
+            in the fall of 2010 as a theater major. She researched and interpreted James Madison,
+            often dressing as Madison for football games and other public events. Everett graduated
+            from JMU in December 2012.</p>
+      </bioghist>
+      <scopecontent id="aspace_1dfa0bcc049e95c572121c7da0c94e27">
+         <head>Scope and Content</head>
+         <p>The Sarah Maria Everett Collection on James Madison, 1816, 1907, comprises a December 9,
+            1816 issue of the <emph render="italic">Boston Gazette</emph> and a 1907 portrait
+            engraving of James Madison. The newspaper contains James Madison's final address as
+            president (pg. 2).</p>
+      </scopecontent>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Madison, James, 1751-1836</subject>
+            <subject source="lcsh">Madison, James, 1751-1836 -- Portraits</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Steel engravings (visual works)</genreform>
+            <genreform source="aat">Newspapers</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_68c066f8a235331c6dbd7a716475d5ad" level="file">
+            <did>
+               <unittitle>Boston Gazette, <unitdate normal="1816-12-09/1816-12-09">December 9,
+                     1816</unitdate>
+               </unittitle>
+               <container id="aspace_e5bf9c87eb8636e60d150076e6c75234" label="Box:Folder" type="box"
+                  >OV 1</container>
+               <container id="aspace_0076e20dff10a1c373af137acf9f5332"
+                  parent="aspace_e5bf9c87eb8636e60d150076e6c75234" type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_684fbe998263084ca8777bd2dd29e2ce" level="file">
+            <did>
+               <unittitle>James Madison engraving, <unitdate normal="1907/1907">1907</unitdate>
+               </unittitle>
+               <container id="aspace_5d8547285d2dff536207e5bb5a6d8b8e" label="Box:Folder" type="box"
+                  >OV 1</container>
+               <container id="aspace_5f5aa0595157e5059a9a2fa34fe11fe3"
+                  parent="aspace_5d8547285d2dff536207e5bb5a6d8b8e" type="folder">2</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
