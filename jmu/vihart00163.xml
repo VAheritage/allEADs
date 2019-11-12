@@ -1,2869 +1,901 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="completed"
+      langencoding="iso639-2b" repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="US-US-vihart"
+         url="https://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00163.xml"
+         >vihart00163</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Anne Harter Collection of Credit Women International (CWI)
+               Scrapbooks, Harrisonburg, Virginia Chapter, 1984-1994:<num>SC 0228</num>
+            </titleproper>
+            <author>Chelsea Tholen, June 2013; Tiffany Cole, November 2019</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+               href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian"> © 2019 By JMU Libraries. All
+               rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                  xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of
+                  Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with
+            ASpace2VaHeritage.xsl on <date>2019-11-12 15:17:53 -0500</date>.</creation>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change audience="internal">
+            <date>2019-10-30</date>
+            <item>Updated to reflect new collection number and addition of new scrapbook.</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Anne Harter Collection of Credit Women International (CWI)
+            Scrapbooks, Harrisonburg, Virginia Chapter, <date era="ce" calendar="gregorian"
+               >1984-1994 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC
+               0228</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+               xlink:actuate="onLoad" xlink:show="embed"
+               xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2019</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Chelsea Tholen, June 2013; Tiffany Cole, November 2019</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <repository>
+            <corpname>Special Collections, Carrier Library, James Madison University</corpname>
+         </repository>
+         <unittitle>Anne Harter Collection of Credit Women International (CWI) Scrapbooks,
+            Harrisonburg, Virginia Chapter, </unittitle>
+         <origination label="Creator">
+            <persname source="local">Harter, Mary Anne Liskey, 1937-2018</persname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0228</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">1.31 cubic feet; 4 boxes</physdesc>
+         <unitdate normal="1984/1994" type="inclusive">1984-1994</unitdate>
+         <abstract id="aspace_916009191972b78cb2cc6d81a1e8f568">The Anne Harter Collection of Credit
+            Women International (CWI) Scrapbooks, Harrisonburg, Virginia Chapter, 1984-1994,
+            comprises two disbound scrapbooks and one bound scrapbook of ephemera, newsletters,
+            photographs, and newspaper clippings created by Anne Harter, member of the Harrisonburg,
+            Virginia chapter of CWI.</abstract>
+         <langmaterial>
+            <language langcode="eng">English</language> . </langmaterial>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_af171be8718d288d7284e116b6dcd0c4">
+            <head>Access Restrictions</head>
+            <p>Collection is open to research. Researchers must register and agree to copyright and
+               privacy laws before using this collection. Please contact Research Services staff
+               before visiting the James Madison Special Collections Library to use this
+               collection.</p>
+         </accessrestrict>
+         <userestrict id="aspace_750ef5dddbb564501e28f079ffd8d51a">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison
+               University Special Collection Library. For more information, contact the Special
+               Collections Library Reference Desk (library-special@jmu.edu).</p>
+         </userestrict>
+         <prefercite id="aspace_136155b3bc56dabe2976a2d319b9e430">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box #, folder #], Anne Harter Collection of Credit Women
+               International (CWI) Scrapbooks, Harrisonburg, Virginia Chapter, 1984-1994 SC 0228,
+               Special Collections, Carrier Library, James Madison University, Harrisonburg, VA.</p>
+         </prefercite>
+         <acqinfo id="aspace_ad3f65928efe25143b3a1a10f078e399">
+            <head>Acquisition Information</head>
+            <p>The 1984-1985 and 1984-1985, 1988-1989 scrapbooks were donated by Anne Harter in July
+               2010. The 1991-1994 scrapbook was donated by Dale Harter, son of Anne Harter, via his
+               niece Elizabeth Payne in March 2019.</p>
+         </acqinfo>
+         <processinfo id="aspace_9b8691e2bfde3b925f59798586f53c09">
+            <head>Processing Information</head>
+            <p>In order to streamline the process of applying collection numbers, Special
+               Collections staff completed a large-scale renumbering campaign in 2017-2019. <emph
+                  render="bold">This collection was previously cataloged as SC 5060.</emph>
+            </p>
+            <p>During this time, the collection was also minimally reprocessed in order to
+               incorporate a third scrapbook which was donated in 2019 and better stabilize the
+               materials through physical rehousing. The intellectual arrangement, including folder
+               titles, were retained. During initial processing in 2013, the scrapbooks, which
+               presumably were donated as bound objects, were inexplicably disbound and
+               disassembled. The photographs, printed material, and assorted ephemera comprising the
+               scrapbooks were removed from their respective scrapbooks, foldered into chronological
+               or topical groupings, and described at the item level. Given that item-level
+               discription is a highly unusual practice for printed ephemera and photographs
+               contained within or removed from a scrapbook, the materials contained within the
+               1991-1994 scrapbook were not individually described. The description created for the
+               1984-1985 and 1988-1989 scrapbooks was retained.</p>
+         </processinfo>
+      </descgrp>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00163">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
-			Library::Special Collections//TEXT (US::ViHarT::vihart00NUMBER::COLLECTION NAME AND
-			DESCRIPTION [i.e. vihart00129::Wampler Business records, 1918-1972])//EN"
-			"vihart00NUMBER.xml" </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Credit Women International Collection,
-						<date era="ce" calendar="gregorian">1984-1989</date></titleproper>
-        <subtitle id="sort">Credit Women International Collection<num type="collectionnumber">SC 5060</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-				</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
-					rights reserved. </date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Peter Watt,
-					<date era="ce" calendar="gregorian">06/2013</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-12-03">2013-12-03</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the Credit Women International Collection, <date era="ce" calendar="gregorian">1984-1989</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"> SC
-					5060</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2013</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:</label>
-          <item>Chelsea Tholen</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
-				University </repository>
-      <unittitle label="Title" encodinganalog="245$a">Credit Women International Collection, <unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1984-1989</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">SC 5060</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">1 Hollinger box (.417 linear
-				feet)</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">Materials present in this collection consist of two scrap
-				books donated to Special Collections. This includes newsletters, photographs,
-				flyers, and articles about the organization. It fills one Hollinger box and consists
-				of 34 folders.</abstract>
-      <origination label="Creator" encodinganalog="100$a">Credit Women International, Harrisonburg, Virginia Chapter</origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions </head>
-        <p>None </p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions </head>
-        <p>None </p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation </head>
-        <p>[Identification of Item], The Credit Women International Collection, 1984-1989,
-					SC 5060, Special Collections, Carrier Library, James Madison University,
-					Harrisonburg, VA.</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information </head>
-        <p>Two scrapbooks were donated by Anne Harter on 7/14/2010</p>
-      </acqinfo>
-      <processinfo>
-        <head>Processing Information</head>
-        <p>Contents of the scrapbooks have been removed from the original binders and rehoused
-					in acid-free folders. </p>
-      </processinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information </head>
-      <p>The Credit Women International is an organization in which women who are involved in
-				a credit union can join. The Harrisonburg chapter was influential in establishing
-				many other chapters, including the Winchester, Virginia chapter in 1985. The
-				organization also held many fundraisers and met once a month with leading
-				professionals in the area often addressing the organization. </p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content </head>
-      <p>Materials present in this collection consist of two scrapbooks donated to
-				Special Collections. This includes newsletters, photographs, flyers and articles
-				about the organization. It fills one Hollinger box and consists of 34
-				folders.</p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement </head>
-      <p>The collection is arranged in II series:</p>
-      <blockquote>
-        <p>I: Scrapbook, 1984-1985</p>
-      </blockquote>
-      <blockquote>
-        <p>II: Scrapbook 1985-1986</p>
-      </blockquote>
-    </arrangement>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series I">Scrapbook, <unitdate type="inclusive" era="ce" calendar="gregorian">1984-1985</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>November 1984</unittitle>
-            <container label="Box:Folder" type="box-folder">1:1</container>
-          </did>
-          <c03 level="item">
-            <did>
-              <unittitle>Executive Committee of Harrisonburg CWI</unittitle>
-            </did>
-          </c03>
-          <c03 level="item">
-            <did>
-              <unittitle>Lazarus, fine fashions of Virginia</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Ron Powell</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Steve Hall</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Emergency Medical Record I.D. Card</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>November 1984 Newsletter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>December 1984</unittitle>
-            <container label="Box:Folder" type="box-folder">1:1</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Regular Meeting CWI Harrisonburg Part 1</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Regular Meeting Harrisonburg CWI Part 2</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #11</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Comic</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>January 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:3</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Stickers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Picture of a Man Speaking</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI is Love</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Regular Meeting- Harrisonburg CWI</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women News Clipping</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Notes from David's Speaking on 3c's of Success (Part
-								1)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Notes from David's Speaking on 3c's of success (Part
-								2)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>City Chamber Plans Dale Carnegie Class</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>"What the Dale Carnegie Course Can Help You Do For Yourself"
-								pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>January 1985 Newsletter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>February 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:4</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh PA Tour Speakers
-								and Banquets</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>District XII 1984-1985 1st Flight- Pittsburgh, PA Accident
-								for Attention</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 Dist. XII Conference- Pittsburgh Int. Pres. Anne
-								and Int. V. Pres</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>1984-1985 District XII- Pittsburgh Banquets and
-								Meetings</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Two Women in a Bed</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Women with Wine Bottle</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Instillation Banquet, February 17, 1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Greater Pittsburgh International Airport Pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #10</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle> This Week In Pittsburgh Key</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>42nd Annual Mid-Atlantic Consumer Credit and Collection
-								Conference (Itinerary)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Conference News</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Greater Pittsburgh International Airport Stand
-								Pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Pittsburgh Marriott Map</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>42nd Annual Mid-Atlantic Consumer Credit and Collection
-								Conference (Mixer)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>42nd Annual Mid-Atlantic Consumer Credit and Collection
-								Conference (Instillation and Awards Banquet)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>42nd Annual Mid-Atlantic Consumer Credit and Collection
-								Conference (Coffee and Danish)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>42nd Annual Mid-Atlantic Consumer Credit and Collection
-								Conference (Instillation Banquet)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Annual Instillation Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Point to Your Future in Credit</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Elizabeth Allebaugh February Meeting on Consumer Credit
-								Education</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>District Twelve Conference</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>February 1985 Newsletter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>March 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:5</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Hi Ann! (March 16, 1985)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bridal Shower at Regular Meeting for Stephanie
-								Carr</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Pictures at March 1985 Meeting</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Pictures at 1985 Meeting</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Pictures at 1985 Meeting</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Community Mediation Center Pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Instillation Ceremony, September Meeting, 1985 Membership
-								Drive</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">1984-1985</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>March Meeting and Instillation, Stephanie Carr and Mary
-								Phillips</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Grand Piano and Furniture Co. History of Shirley Ann
-								Southerly</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Vicky S. Wenger History</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Alice Coffman Martens History</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Teresa A. Breeden History</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Community Mediation Center</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Community Mediation Center</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Mary Lynn Rexrode History</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Williette S. Moyers History</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>The Women Executive Pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Comic</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Instillation Ceremony</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">March 19, 1985</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Community Mediation Center Letter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>March 1985 Newsletter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>April 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:6</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Harrisonburg Daily News Record Credit Women</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">April 1985</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Valley Charter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>National Consumer Credit Week 1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Easter Wishes for You</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women News Clipping (Lyle Cameron)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Public Record Bulletin</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>April 1985 Newsletter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>May 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:7</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>'Grace Heatwole-Color Consultant'</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women International Of Virginia, Anne L.
-								Harter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women News Clipping John Sowers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>'Man At Lecture'</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>'At a Meeting around a Table'</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>'Man Presenting to a Group'</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Executive Board</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Women Talking Around A Table</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Women at a Park Bench</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Front Table</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Man Speaking at Front Table</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Woman addressing at Front Table</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>VA Conference May, 1985-Omni- Norfolk Business Meeting
-								Election of Officers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI- May Meeting- Guests</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Letter to Debbie from Anne Harter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Discover the Many sides of Waterside</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia Retail Merchants Association</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Omni Conference Itinerary</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Omni Button Cover</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Portside Pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia Credit Women International Program</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Omni International Hotel Pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Omni Hotel Receipt</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>May 1985 Newsletter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Awards and Instillation Luncheon </unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">May 19, 1985</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Flowers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Women in Pink Dresses</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia State Conference May, 1985-Omni- Norfolk Speakers,
-								Banquet and Tours </unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia State Conference May, 1985-Omni- Norfolk Speakers,
-								Banquet and Tours </unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia State Conference May, 1985-Omni- Norfolk Speakers,
-								Banquet and Tours </unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Ways and Means- May 1985, Bake Sale at Valley
-								Mall</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Harrisonburg-Rockingham Chamber of Commerce
-								Report</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>June 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:8</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>News Letter June 1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Prospective Member Letter June 1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>May Meeting 1985 Speaker Violet Allain Professor JMU
-								"Management- Two Perspectives"</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>A Letter from Mary Miller</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thank You Letter from Margaret Pitcher</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Letter from Bonnie Dispanet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>International Credit Conference Toronto</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">June 16-18, 1985</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Roanoke Executive Wins Award of Excellence</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>International Credit Conference Optional Tours</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>The Inner Circle</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bonie C. Dispanet Stepping Down Letter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>July 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:9</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>July Newsletter 1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>William Page Presenting at the Meeting</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>William Page Card</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>July Meeting-1985-Speaker- William Page Val Com Computer
-								Center "Computers for Small Bus."</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>August 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:11</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>August 1985 Newsletter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Education Award Certificate Credit Women (100% Passed
-								Exam)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Letter from Esther Washington</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Criteria for Candidate Nomination, CWI Boss of the
-								Year</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>XWI Officers in Training Seminar</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Leadership Seminary, Dist. XII-Charlottesville</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> Aug. 24, 1984</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Leadership Seminary, Dist. XII-Charlottesville</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> Aug. 24, 1984</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Itinerary August 24, 1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Boss of the Year Application</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Valley Chatter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>September 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:11</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>September Newsletter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>September Meeting- 1985, Speaker Jerry Hopkins (1984 Boss of
-								the Year) "The Sweet Juicy Gapes Can Be Yours" (Plus other
-								Topic)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>"The Sweet Juicy Grapes Can Be Yours" Address</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>September Meeting- 1985 Installation New Members (membership
-								drive</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Women Inducted</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Acceptance letter from Leonard R. Shifflette</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fashion Show Pictures</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Stress and Fashion Seminary Planned</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation to Roanoke's Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>A Seminar for Today's Women</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>A Seminar for Today's Women</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>List of What Women Were Wearing and Price</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Installation of Winchester's CWI</unittitle>
-            <container label="Box:Folder" type="box:folder">1:12</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Installation of New Officers</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian"> November 12, 1985</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>News Clipping, 2nd Meeting- Winchester Election of Officers
-								and By Lws Dist. and State Officer in Attendance Eva Lineberry and
-								Nancy Gibson</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newly Elected Officers- CWI Winchester, VA</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newspaper Clipping, Credit Women International </unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>New Club Formed</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>New Club Formed</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>New Club Formed</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Agenda</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Welcome CWI Letter to Deborah from Esther</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women International Meeting- Winchester,
-								VA</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Presentation of Charter of CWI of the Shenandoah
-								Valley</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>State Officer Nancy Gibson VA State 1st VP, District Officer,
-								Eva Lineberry 1st VP</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>International Officer Veni Whill, International Secretary,
-								CWI of the Shenandoah Valley Officers, 1985-1986</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Installation of New officers CWI of the Shen. Valley,
-								Winchester, VA. Presentation of Gavel to Winchester CWI from
-								Harrisonburg CWI</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Speaker- Finance One, Winchester VA</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>4th Meeting- Winchester VA, Presentation of Charter, Anna
-								Claytor, H’burg pres. Anne Harter, H’Burg Past Pres, Debbie Wakeman,
-								Winchester Pres, Meeting Presentation of Chapter District XII
-								President</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Letter from Debbie C. Wakeman</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>October 1985</unittitle>
-            <container label="Box:Folder" type="box:folder">1:13</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Club Auction</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Club Auction</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Way and Means Project</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Hampton CWI Denial</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Hagerstown Maryland Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Petersburg CWI Bosses Banquet Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Decline from Marilyn Landers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Charlottesville Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Promissory Note</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Skit for Bosses Night</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Valley Charter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Sixth Annual; Bosses Night and Installation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Presentation of Marth B. Gleason Bracelet from Immediate Past
-								President given by Martha to H’burg Club- Installation of New
-								Officers 1985-1986</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Letter From Pat Batten</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Presentation of 5 Year Perfect Attendance Award- Anne
-								Anve</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Letter from Anna</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thanks From Anne</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thanks From Anne Vance</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Ron and Anne</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Pilot Club Installs Vance as President</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bowen is Promoted</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Kline Attends Credit School</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Dispanet Named to CAM Board</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Harrisonburg Pilot</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>First American Names Manager</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Dinne Dean and Mary Rexrode</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Phyllis Kline and Karen Thompson</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Angie Arndt and Betty Propst (Credit Bureau
-								Staff)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Karen Thompson and Sara Bailey (Credit Bureau
-								Staff)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne Vance</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anna Claytor</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Linda Ritche</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Take it From One Who Knows, Don't Give All to Family,
-								Job</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Penney Official Speaks on Credit</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Sears Considering General Purpose Credit Card</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Consumers Advised to Check Credit Files</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Dun and Bradstreet Sells Data on Contractors</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Employees' Appearance Reflects on Company’s Business
-								Image</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>News Letter, October 1985</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Pamphlets and Articles</unittitle>
-            <container label="Box:Folder" type="box:folder">1:14</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>How the New Equal Credit Opportunity Act Affects
-								You</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>How To Establish and Use Credit</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Your Credit Rating</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>What the Credit Granter Needs to Know About th Fair Credit
-								Reporting Act</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Consumers, Credit Bureaus and the Fair Credit Reporting
-								Act</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Reporting Industry Security Standards</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Creditability</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Solving Credit Problems</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>$50,000 to $100,000 Group Term Life Insurance</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>How the New Equal Opportunity Act Affects You</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit and Collection Clinic</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Consumer Trials</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Consumers, Collectors and the Fair Credit Collection
-								Practices Act</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>What the Credit Grantor Needs To Know About the Fair Debt
-								Collection Practices Act</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Your Credit Rating</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Electronic Fund Transfer (Regulation E)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Options for Savers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Highlights of the Fair Credit Reporting Act For Credit
-								Grantors</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bankruptcy Strategies for Creditors</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Notice to Consumers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia General District Courts Information
-								Pamphlet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia Courts in Brief</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Consumer Credit Protection Act, Amendments</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Comprehensive Crime Control Act of 1984</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Title VI- Consumer Credit Reporting</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women International -District XII- April
-								1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women International- Fall 1984</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women International- Spring 1985</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Management Magazine Conference/Financial Report
-								1984</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit World 1985 (Vol. 73, No. 3,
-								January/February)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Specialist Must Work Alone</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Young, Old Women Out of Work Find the Job Market is Still
-								Tight</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Too Old to Get Credit</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Be Your Own Best Friend</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Money Talks by Richard Blodgett</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Cards, Their Use, Abuse Increasing</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Employers Key on Expression</unittitle>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle label="Series II">Scrapbook, <unitdate type="inclusive" era="ce" calendar="gregorian">1988-1989</unitdate></unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <unittitle>Martinsville Henry County</unittitle>
-            <container label="Box:Folder" type="box-folder">1:15</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Women Posing (Names on Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Pictures at Bosses Night In Martinsville</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bosses Night Invitation to Martinsville</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women International of Martinsville and Henry County,
-								Virginia</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Danville</unittitle>
-            <container label="Box:Folder" type="box:folder">1:16</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>To Anne, from Gabriella Lea</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Coffee Cream, Danville Credit Women</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Chewing Gum Keeps You Awake Better Than Coffee</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Danville Installation of Officers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Light your Way, Danville Credit Professionals</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Miscellaneous</unittitle>
-            <container label="Box:Folder" type="box:folder">1:17</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Souvenir Impression of the Seal of the Treasurer of the
-								Sovereign State of West Virginia</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Annual Installation Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>A. James Manchin, Treasurer of State</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI: Credit Professionals, Mid-Atlantic Council Newsletter
-								#3</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Luncheon, CWI, District XII, Arlington</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne, from Mary Rexrode</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Annual Installation Banquet, March 20, 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>77th Annual International Credit Conference</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>77th Annual International Credit Conference</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>77th Annual International Credit Conference</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne's Name Tag</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Not from Nancy Gibson</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Name Tag, Anne Harter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thanks from Hazel</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Congratulations from Jay</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Morning Worship, April 24, 1988</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Belegate Ribbon</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>To Anne, From Dot</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Image Impact Workshop</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia State President Workshop</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Congratulations from Divine Jeannie, and Mary</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Congratulations from Dot</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia CWI Credit Professionals Breakfast</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Congratulations from Jo</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Forty-Eight Installation Banquet Mid-Atlantic Council
-								District Twelve, March 20, 1988</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne, From Eva</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>To Anne, From Sheryl</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Congratulations From Phyllis Caffrey</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Virginia CWI: Credit Professionals 26th Installation and
-								Awards Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>27th Annual State Conference</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne From Venie B. Whitt</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Credit Professionals of Pennsylvania State Conference,
-								September 1988</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Note From Benie Whitt, re: Anne Harter's Travels</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Letter to Anne from JoAnne</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #3</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">March 27, 1989</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Itinerary for Virginia State Conference</unittitle>
-              <unitdate type="inclusive" era="ce" calendar="gregorian">April 21-23, 1989</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Spring State Conference Newsletter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #2, November</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Flyer #3, April 7, 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #1, April 1988</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #8, November 1988</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #11, February 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #12, March 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>To Anne, From Phyllis</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #1 August 1998 </unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletters 2,3,4,5,6,7 October 1988-April 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Women Around a table</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Staunton, Winchester, Augusta County</unittitle>
-            <container label="Box:Folder" type="box:folder">1:18</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Members at a Barbeque</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Professionals Officers Installed</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Professionals, Staunton, Waynesboro, and Augusta
-								County</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Key</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>First Annual Bosses Night, October 11, 1988</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Charlottesville</unittitle>
-            <container label="Box:Folder" type="box:folder">1:19</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Description in Folder)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Description in Folder)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bosses Banquet 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Speech for Installation</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Covington Clifton Forge</unittitle>
-            <container label="Box:Folder" type="box:folder">1:20</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Bosses Night</unittitle>
-              <unitdate era="ce" calendar="gregorian">April 15, 1989</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Officers Installed</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Nancy from Janis</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Covington-Clifton Forge Credit Women
-								Professionals</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Hampton</unittitle>
-            <container label="Box:Folder" type="box:folder">1:21</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation to Bosses Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Hampton Bosses Banquet</unittitle>
-              <unitdate era="ce" calendar="gregorian"> September 22, 1988</unitdate>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Lexington Buena Vista</unittitle>
-            <container label="Box:Folder" type="box:folder">1:22</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Anne from Doris and all Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Memo From Anne Harter</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Lynchburg</unittitle>
-            <container label="Box:Folder" type="box:folder">1:23</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Officers for 87-88, Lynchburg CWI</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI, 41st Annual Bosses' Banquet October 6th,
-								1988</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation Lynchburg's Bosses Night</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Petersburg</unittitle>
-            <container label="Box:Folder" type="box:folder">1:24</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Blank meeting List Notes</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #3 </unittitle>
-              <unitdate era="ce" calendar="gregorian">January 24, 1989</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation to Petersburg Installation and Bosses
-								Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Members (Two Women)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Members (Two Women)</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Credit Women International 1984-1985 Harrisonburg, VA</unittitle>
-            <container label="Box:Folder" type="box:folder">1:25</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter #3 Oct. and Nov. 1984</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>To Anne From Esther Worthington</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Newsletter # 1 October 1984</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Congratulations from Kristie</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Skit</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne Harter Name Tag</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Shield Pin</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Installs New Officers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>President Installed</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Women International of Harrisonburg, VA 1984-1985
-								Committees</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Valley Chatter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Roster</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Presidents Message</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI October 16, 1984</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Suffolk</unittitle>
-            <container label="Box:Folder" type="box:folder">1:26</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Harter Named State CWI President</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thank You From Hazel</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Harrisonburg CWI</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>With Congratulations from Juniata</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>VP Spreads Word on CWI</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Speech</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Speech for Installation of Officers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Update from Gail C. Williams</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Fruit Basket Drink and Peanuts from Gail and Lucy</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bosses Banquet Invitation</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thank You from Gail</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne Harter Name Tag</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Suffolk CWI: Credit Professionals Bosses' Banquet</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Northern Virginia Fairfax</unittitle>
-            <container label="Box:Folder" type="box:folder">1:27</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Last Minute Memo</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>49th Installation Banquet Mid-Atlantic Council District
-								12</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne Harter Name Tag</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Installation Banquet Invitation and Photos</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thanks from Frances</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>You've Come A Long Way Baby</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Newport News</unittitle>
-            <container label="Box:Folder" type="box:folder"/>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Saint Vincent de Paul Church</unittitle>
-              <unitdate era="ce" calendar="gregorian"> November 29, 1988</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Inside Business</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation to CWI Bosses Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bosses Banquet and Installation of Officers</unittitle>
-              <unitdate era="ce" calendar="gregorian"> October 5, 1988</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Membership Bulletin, January 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>First Impression</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Join a Winning Team of Credit Professionals</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>First Impressions</unittitle>
-              <unitdate era="ce" calendar="gregorian"> March 4, 1989</unitdate>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Harrisonburg</unittitle>
-            <container label="Box:Folder" type="box:folder">1:29</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Bankruptcy Increase Costly for Consumers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Club Notes</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thank You Anne From Alice Martens</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Business People and Dorothy R. Hinnant</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Carrier of the Year</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Certificate of Perfect Attendance to Anne Harter</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Harrisonburg CWI: CP Installation</unittitle>
-              <unitdate era="ce" calendar="gregorian"> October 18, 1988</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI-Credit Professionals, Bosses Banquet/Installation </unittitle>
-              <unitdate era="ce" calendar="gregorian">October 18,1988</unitdate>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Norfolk</unittitle>
-            <container label="Box:Folder" type="box:folder">1:30</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Speech</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members (Descriptions on Paper/Back)</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI-CP Officers Norfolk, VA 1989-1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bosses Night</unittitle>
-              <unitdate era="ce" calendar="gregorian"> October 4, 1988</unitdate>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Shenandoah Valley</unittitle>
-            <container label="Box:Folder" type="box:folder">1:31</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>CWI Previews, March 1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Bosses Night</unittitle>
-              <unitdate era="ce" calendar="gregorian"> March 21, 1989</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thank You Anne From Cindy McClain</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitation to Installation Meeting</unittitle>
-              <unitdate era="ce" calendar="gregorian"> October 11, 1988</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unitdate era="ce" calendar="gregorian">Thank You Anne From Cindy McClain</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Credit Professionals, Bosses Night Invitation</unittitle>
-              <unitdate era="ce" calendar="gregorian"> March 21, 1989</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Credit Professionals of the Shenandoah Valley,
-								Installation of Officers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Credit Professionals of the Shenandoah Valley, Bosses
-								Night</unittitle>
-              <unitdate era="ce" calendar="gregorian"> March,8 1988 </unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Anne harter Name Tag</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Roanoke</unittitle>
-            <container label="Box:Folder" type="Box:Folder">1:32</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Reach for the Stars</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Thank You Anne From Grace</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Installation of Officers</unittitle>
-              <unitdate era="ce" calendar="gregorian"> September 15, 1988</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Name Tag</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Club News</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI: Credit Professionals of Roanoke, 1988-1989</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Invitations to President's Tea</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>CWI Credit Professionals Elect Officers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Credit Professionals Elect New Officers</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Grace Pff Will Speak for CWI</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>President's Tea Napkin</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>The Jefferson Club Napkin</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Bosses Night</unittitle>
-              <unitdate era="ce" calendar="gregorian">May 10, 1988</unitdate>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Richmond</unittitle>
-            <container label="Box:Folder" type="box:folder">1:33</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Education Communication "Progress Through Communication
-								Strength Through Education"</unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02>
-          <did>
-            <unittitle>Portsmouth</unittitle>
-            <container label="Box:Folder" type="box:folder">1:34</container>
-          </did>
-          <c03>
-            <did>
-              <unittitle>Invitation to Bosses Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Late Summer Luau</unittitle>
-              <unitdate era="ce" calendar="gregorian"> September 20, 1988</unitdate>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Tick to Bosses Banquet</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Name Tag</unittitle>
-            </did>
-          </c03>
-          <c03>
-            <did>
-              <unittitle>Photos of Members</unittitle>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+
+
+
+
+      <bioghist id="aspace_91bd56a75d61a62f7a8e99ed511e4a22">
+         <head>Bio/Historical Note</head>
+         <p>Marie Anne Liskey Harter (1937-2018) of Dale Enterprise was an active member in the
+            Credit Women International (CWI), Harrisonburg, Virginia Chapter. She served as the
+            president of CWI, Harrisonburg chapter from 1984 to 1985 and also served as both vice
+            president and president of the Virginia chapter.</p>
+         <p>The primary purpose of Credit Women International was to further credit education for
+            its members and encourage participation in community credit evaluation programs.
+            Membership was open to to workers in the credit field.</p>
+      </bioghist>
+      <scopecontent id="aspace_c1049798c547b66025eb86d74754c2f4">
+         <head>Scope and Content</head>
+         <p>The Anne Harter Collection of Credit Women International (CWI) Scrapbooks, Harrisonburg,
+            Virginia Chapter, 1984-1994, comprises two disbound scrapbooks and one bound scrapbook
+            of ephemera, newsletters, photographs, and newspaper clippings created by Anne Harter,
+            member of the Harrisonburg, Virginia chapter of CWI. The collection includes
+            correspondence and thank you notes, invitations, Anne Harter's letters to CWI members,
+            photographs of chapter events and members, chapter newswletters and issues of Valley
+            Chatter, articles, member news, and assorted ephemera collected by Anne Harter during
+            her membership in CWI. Materials also document other CWI chapters and are filed
+            accordingly.</p>
+      </scopecontent>
+      <arrangement id="aspace_ec560f7db3e2c038de75297cef96f398">
+         <head>Arrangement</head>
+         <p>It is assumed that the materials from the disbound scrapbooks are in the order in which
+            they were removed from their respective scrapbooks. The third scrapbook (1991-1994)
+            remains bound and the materials therein are arranged in their original order.</p>
+      </arrangement>
+      <bibliography id="aspace_574e19896ac3fcc68b4fde648fd186f7">
+         <head>Bibliography</head>
+         <p>Obituary of Marie Anne Liskey Harter, <emph render="italic">Daily News-Record</emph>,
+            December 12, 2018.</p>
+      </bibliography>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Credit Women-International -- History</subject>
+            <subject source="lcsh">Credit Women-International: Credit Professionals --
+               History</subject>
+            <subject source="lcsh">Credit unions -- Women -- History</subject>
+            <subject source="lcsh">Credit unions -- Virginia -- History</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Scrapbooks</genreform>
+            <genreform source="aat">Photographs</genreform>
+            <genreform source="aat">Printed Ephemera</genreform>
+            <genreform source="aat">Newsletters</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_13edbb3d6c790401174039038681a71e" level="item">
+            <did>
+               <unittitle>Disbound scrapbook, <unitdate normal="1984/1985" type="inclusive"
+                     >1984-1985</unitdate>
+               </unittitle>
+            </did>
+            <c02 id="aspace_89812e3f5748fc156ccda3a94576e61c" level="file">
+               <did>
+                  <unittitle>November 1984, <unitdate normal="1984-11/1984-11">November
+                        1984</unitdate>
+                  </unittitle>
+                  <container id="aspace_a91209158be32672f79ff650b57d2085" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_2cc3411028d8283c61c7334299803764"
+                     parent="aspace_a91209158be32672f79ff650b57d2085" type="folder">1</container>
+               </did>
+               <scopecontent id="aspace_26a7ba8a78254984a4c74dfe10ea2156">
+                  <head>Scope and Content</head>
+                  <p>Executive Committee of Harrisonburg CWI; Lazarus, fine fashions of Virginia;
+                     Ron Powell; Steve Hall; CWI Emergency Medical Record I.D. Card; November 1984
+                     Newsletter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_4aef75b27e7e2de5e06e9e7246a9c055" level="file">
+               <did>
+                  <unittitle>December 1984, <unitdate normal="1984-12/1984-12">December
+                        1984</unitdate>
+                  </unittitle>
+                  <container id="aspace_60979cdc8aa835bcac135803c7b7b89f" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_5e7c3d6cb8dd41c7172818a3604fae89"
+                     parent="aspace_60979cdc8aa835bcac135803c7b7b89f" type="folder">2</container>
+               </did>
+               <scopecontent id="aspace_90ecc86480fd64d92fb75bc12ce9fd17">
+                  <head>Scope and Content</head>
+                  <p>Regular meeting CWI Harrisonburg Part 1, Regular Meeting Harrisonburg CWI Part
+                     2, Newsletter #11, Comic</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_4bcb5ddc47080ce9fab68ad2ed36320b" level="file">
+               <did>
+                  <unittitle>January 1985, <unitdate normal="1985-01/1985-01">January
+                        1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_ac0193753768e413aaf96169a4a61256" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_8b57d115a5a375efe115c9909c44f782"
+                     parent="aspace_ac0193753768e413aaf96169a4a61256" type="folder">3</container>
+               </did>
+               <scopecontent id="aspace_7b8d2109df9bdcab57378a882889b9c0">
+                  <head>Scope and Content</head>
+                  <p>Stickers, CWI Is Love, Regular Meeting- Harrisonburg CWI, Credit Women News
+                     Clipping, Notes from David's Speaking on 3 "C"s of success (Part 1), Notes from
+                     David's Speaking on 3 "C"s of success (Part 2), City Chamber Plans Dale
+                     Carnegie Class, What the Dale Carnegie Course can help you do for yourself
+                     pamphlet, January 1985 Newsletter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_ec549d3c7d64b9239354bb2147d37153" level="file">
+               <did>
+                  <unittitle>February 1985, <unitdate normal="1985-02/1985-02">February
+                        1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_182de183f99c5be886569d751fc57979" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_08dbcedf7e5d13ae70242c550676d3f0"
+                     parent="aspace_182de183f99c5be886569d751fc57979" type="folder">4</container>
+               </did>
+               <scopecontent id="aspace_7ad42597aead0db008ff685ab1266d3d">
+                  <head>Scope and Content</head>
+                  <p>1984-1985 District XII Conference- Pittsburgh PA Tour Speakers and Banquets;
+                     District XII 1984-1985 1st Flight- Pittsburgh, PA Accident for Attention;
+                     1984-1985 Dist. XII Conference- Pittsburgh Int. Pres. Anne &amp; Int. V. Pres;
+                     1984-1985 District XII- Pittsburgh Banquets and Meetings; Two Women in a Bed;
+                     Women with Wine Bottle; Installation Banquet, February 17, 1985; Greater
+                     Pittsburgh International Airport Pamphlet; Newsletter #10; This Week in
+                     Pittsburgh Key; 42nd Annual Mid-Atlantic Consumer Credit &amp; Collection
+                     Conference (Itinerary); Conference News; Greater Pittsburgh International
+                     Airport Stand Pamphlet; Pittsburgh Marriot Map; 42nd Annual Mid-Atlantic
+                     Consumer Credit &amp; Collection Conference (Mixer); 42nd Annual Mid-Atlantic
+                     Consumer Credit &amp; Collection Conference (Installation and Awards Banquet);
+                     42nd Annual Mid-Atlantic Consumer Credit &amp; Collection Conference (Coffee
+                     and Danish); 42nd Annual Mid-Atlantic Consumer Credit &amp; Collection
+                     Conference (Installation Banquet); Annual Installation Banquet; Point to your
+                     Future in Credit; Elizabeth Allebaugh February Meeting on Consumer Credit
+                     Education; District Twelve Conference; February 1985 Newsletter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_ce31d74418a3095d93e8c8501da761cb" level="file">
+               <did>
+                  <unittitle>March 1985, <unitdate normal="1985-03/1985-03">March 1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_bacba6fdb8736d588c48e11f911cbb72" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_d1bc6ef995eee4303f9f1041457349fe"
+                     parent="aspace_bacba6fdb8736d588c48e11f911cbb72" type="folder">5</container>
+               </did>
+               <scopecontent id="aspace_e7aeb48c752365f588ba8b209103e7e9">
+                  <head>Scope and Content</head>
+                  <p>Hi Ann! (March 16, 1985); Bridal Shower at Regular Meeting for Stephanie Carr;
+                     Pictures at March 1985 Meeting; Community Mediation Center Pamphlet;
+                     Installation Ceremony, September Meeting, 1985 Membership Drive (1984-1985);
+                     March Meeting &amp; Installation, Stephanie Carr &amp; Mary Phillips; Grand
+                     Piano and Furniture Co. History of Shirley Ann Southerly; Vicky S. Wenger
+                     History; Alice Coffman Martens History; Teresa A. Breeden History; Community
+                     Mediation Center; Mary Lynn Rexrode History; Williette S. Moyers History; The
+                     Women Executive Pamphlet; Comic; Installation Ceremony March 19, 1985;
+                     Community Mediation Center Letter; March 1985 Newsletter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_556d3945b1ca0f24766889fa56faf7b2" level="file">
+               <did>
+                  <unittitle>April 1985, <unitdate normal="1985-04/1985-04">April 1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_6e6ad66022c6bc7e59e4d63ad994c802" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_51e82613e84ef54fc4ed9b9f238da61f"
+                     parent="aspace_6e6ad66022c6bc7e59e4d63ad994c802" type="folder">6</container>
+               </did>
+               <scopecontent id="aspace_e0852fa2583118f2b9734c7b7faa2511">
+                  <head>Scope and Content</head>
+                  <p>April 1985, Harrisonburg Daily News-Record Credit Women; Valley Chatter;
+                     National Consumer Credit Education Week 1985; Easter Wishes for You; Credit
+                     Women News Clipping (Lyle Cameron); Public Record Bulletin; April 1985
+                     Newsletter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_9cb115a3efd60f520c64fb42bb0f9f74" level="file">
+               <did>
+                  <unittitle>May 1985, <unitdate normal="1985-05/1985-05">May 1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_42b6db98e2979026c2202aa69646aa71" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_3d0c7fc634dc6225ec4bfa7f14baa1b2"
+                     parent="aspace_42b6db98e2979026c2202aa69646aa71" type="folder">7</container>
+               </did>
+               <scopecontent id="aspace_4e409adeda6136249ced30b13fe41c30">
+                  <head>Scope and Content</head>
+                  <p>'Grace Heatwole- Color Consultant'; Credit Women International Of Virginia,
+                     Anne L. Harter; Credit Women News Clipping John Sowers; 'Man At Lecture'; 'At a
+                     Meeting around a Table'; 'Man Presenting to a group'; Executive Board; Women
+                     Talking around a Table; Women at a Table; Women at a Park Bench; Front Table;
+                     Man Speaking at Front Table; Woman addressing at Front Table; VA Conference
+                     May, 1985- Omni- Norfolk Business Meeting &amp; Election of Officers; CWI- May
+                     Meeting- Guests; Letter to Debbie from Anne Harter; Discover the Many sides of
+                     the Waterside; Virginia Retail Merchants Association; Omni Conference
+                     Itinerary, Omni Button Cover; Portside Pamphlet; Virginia Credit Women
+                     International Program; Omni International Hotel Pamphlet; Omni Hotel Receipt;
+                     May 1985 Newsletter; Awards and Installation Luncheon May 19; Flowers; Women in
+                     Pink Dresses; Virginia State Conference May, 1985- Omni- Norfolk Speakers,
+                     Banquet &amp; Tours; Ways &amp; Means- May 1985, Bake Sale at Valley Mall;
+                     Harrisonburg-Rockingham Chamber of Commerce Report</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_47f50be4028e44af49b0144fc7f47af1" level="file">
+               <did>
+                  <unittitle>June 1985, <unitdate normal="1985-06/1985-06">June 1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_2a2a25816c048301eb48b730c65d17ce" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_8882d53ac3048eb6b807d7498c9ffc93"
+                     parent="aspace_2a2a25816c048301eb48b730c65d17ce" type="folder">8</container>
+               </did>
+               <scopecontent id="aspace_59a3edfce0701de65034ec0a3f185b9d">
+                  <head>Scope and Content</head>
+                  <p>Newsletter June 1985, Prospective Member Letter June 1985; May Meeting 1985
+                     Speaker Violet Allain Professor JMU "Management- Two Perspectives"; A Letter
+                     from Mary Miller; Thank you letter from Margaret Pitcher; Letter from Bonnie
+                     Dispanet; International Credit Conference, June 16-18, 1985 Toronto; Roanoke
+                     Executive Wins Award of Excellence; International Credit Conference Optional
+                     Tours; The Inner Circle; Bonnie C. Dispanet Stepping down letter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_a3c5fff6fa98e1b157b973f18f708090" level="file">
+               <did>
+                  <unittitle>July 1985, <unitdate normal="1985-07/1985-07">July 1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_12e3a8659e4618f8e8868780ab0e6a2a" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_b0e9ade9e162070555b6bff559d8d67f"
+                     parent="aspace_12e3a8659e4618f8e8868780ab0e6a2a" type="folder">9</container>
+               </did>
+               <scopecontent id="aspace_15553fc9d1fc1027aab7cd5b17f0893b">
+                  <head>Scope and Content</head>
+                  <p>July Newsletter 1985, William Page Presenting at the meeting, William Page
+                     Card, July Meeting- 1985- Speaker- William Page Val Com Computer Center
+                     "Computers for Small Bus"</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_4d15dde1eb2fc24b3b98fe38751191a3" level="file">
+               <did>
+                  <unittitle>August 1985, <unitdate normal="1985-08/1985-08">August 1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_778e55191c57a6bfdee61cab34e40f93" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_5314f0607de82dad67969c9f803f46a6"
+                     parent="aspace_778e55191c57a6bfdee61cab34e40f93" type="folder">10</container>
+               </did>
+               <scopecontent id="aspace_8d0191416b40bed294e5820bd03f92bd">
+                  <head>Scope and Content</head>
+                  <p>August 1985 Newsletter; Education Award Certificate Credit Women (100% Passed
+                     Exam); Letter from Esther Worthington; Criteria for Candidate Nomination, CWI
+                     Boss of the Year; CWI Officers in Training Seminar; Leadership Seminary, Dist.
+                     XII- Charlottesville Aug. 24, 1985; Itinerary August 24 1985; CWI Boss of the
+                     Year Application; Valley Chatter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_48406200be299d15ec219d647f7f8083" level="file">
+               <did>
+                  <unittitle>September 1985, <unitdate normal="1985-09/1985-09">September
+                        1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_a4e7216e13d7e7ae78fba7c6784743d7" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_b1c267bbf6ed53ac25d6ee9e01e5d680"
+                     parent="aspace_a4e7216e13d7e7ae78fba7c6784743d7" type="folder">11</container>
+               </did>
+               <scopecontent id="aspace_4782c5270ed8f8d72939887c71d4a06e">
+                  <head>Scope and Content</head>
+                  <p>September Newsletter; September Meeting- 1985, Speaker Jerry Hopkins (1984 Boss
+                     of the Year) "The Sweet Juicy Grapes Can Be Yours (Plus other topic??); "The
+                     Sweet Juicy Grapes Can Be Yours" Address; September Meeting- 1985 Installation
+                     New members (membership drive); Women Inducted; Member duties; Acceptance
+                     letter from Leonard R. Shifflette; CWI Women in in the Work Force and Color
+                     Analysis Seminar; Fashion Show Pictures; Stress and Fashion Seminary Planned;
+                     Invitation to Roanoke's Installation; A Seminar for Today's Women; List of What
+                     Women Were Wearing &amp; Price</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_b7201b590ca5c41058165a7f6d438e4e" level="file">
+               <did>
+                  <unittitle>Installation of Winchester's CWI, <unitdate normal="1985/1986"
+                        type="inclusive">1985-1986</unitdate>
+                  </unittitle>
+                  <container id="aspace_25a32b8928a55fe6fb2ceb2ad9454bcf" label="Box:Folder"
+                     type="box">1</container>
+                  <container id="aspace_da9fd1c889cbad3b8b1b6d8efe53ccc1"
+                     parent="aspace_25a32b8928a55fe6fb2ceb2ad9454bcf" type="folder">12</container>
+               </did>
+               <scopecontent id="aspace_ea2698dba9f057194ab85450ab1a4b12">
+                  <head>Scope and Content</head>
+                  <p>Installation of Officer, November 12, 1985; News Clipping, 2nd meeting-
+                     Winchester Election of Officers &amp; By Laws Dist. &amp; State Officer in
+                     Attendance Eva Lineberry &amp; Nancy Gibson; Newly Elected Officers- CWI
+                     Winchester, VA; Newspaper Clipping, Credit Women International; New Club
+                     Formed; Agenda; Welcome CWI Letter to Deborah from Esther; Credit Women
+                     International Meeting- Winchester, VA; Presentation of Charter of CWI of the
+                     Shenandoah Valley; State Officer Nancy Gibson VA State 1st VP, District
+                     Officer, Eva Lineberry 1st VP; International Officer Veni Whill, International
+                     Secretary, CWI of the Shenandoah Valley Officers, 1985-1986; Installation of
+                     New officers CWI of the Shen. Valley, Winchester, VA. Presentation of Gavel to
+                     Winchester CWI from Harrisonburg CWI; Speaker—Finance One, Winchester VA; 4th
+                     Meeting- Winchester VA, Presentation of Charter, Anna Claytor, H'burg pres.
+                     Anne Harter, H'Burg Past Pres, Debbie Wakeman, Winchester Pres, Meeting
+                     Presentation of Chapter Distrct XII President; Letter from Debbie C.
+                     Wakeman</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_f8b31fee686bec1757e5ee8148744fd0" level="file">
+               <did>
+                  <unittitle>October 1985, <unitdate normal="1985-10/1985-10">October
+                        1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_6fbcbbd998ec66a289fce563008a8060" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_4e80845ef72dce71582248446fcf8033"
+                     parent="aspace_6fbcbbd998ec66a289fce563008a8060" type="folder">1</container>
+               </did>
+               <scopecontent id="aspace_abf130301a79b42a0a21e0cec10866a2">
+                  <head>Scope and Content</head>
+                  <p>Invitations; Club Auction, Way &amp; Means Project; Hampton CWI denial;
+                     Hagerstown Maryland Invitation; Petersburg CWI Bosses Banquet Invitation;
+                     Decline from Marilyn Landers; Charlottesville Invitation; Promissory Note, CWI
+                     Sixth Annual Bosses Night and Installation; Skit for Bosses Night; Valley
+                     Chatter; Presentation of Marth B. Gleason Bracelet from Immediate Past
+                     President given by Martha to H'burg Club- Installation of New Officers
+                     1985-1986; Letter from Pat Batten; Presentation of 5 Year Perfect Attendance
+                     Award- Anne Anve; Letter from Anna; Thanks from Anne; Thanks from Anne Vance;
+                     Ron and Anne; Pilot Club installs Vance as President; Bowen is Promoted; Kline
+                     Attends Credit School; Dispanet named to NACM Board; Harrisonburg Pilot; First
+                     American Names Manager; Dinnie Dean and Mary Rexrode; Phylliss Kline and Karen
+                     Thompson Angie Arndt and Betty Propst (Credit Bureau Staff); Karen Thompson And
+                     Sara Bailey (Credit Bureau Staff); Anne Vance, Anna Claytor; Linda Ritche; Take
+                     It from One Who Knows, Don't Give All to Family, Job; Penney Official Speaks on
+                     Credit; Sears Considering General Purpose Credit Card; Consumers Advised to
+                     Check Credit Files; Dun &amp; Bradstreet Sells Data on Contractors; Employees'
+                     Appearance Reflects on Company's Business Image; Newsletter, October 1985</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_8dc8f0dda73f3c572013065f81a1b201" level="file">
+               <did>
+                  <unittitle>Pamphlets and articles, <unitdate normal="1984/1985" type="inclusive"
+                        >1984-1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_01921721663cbfb1cbcd033c39a5642e" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_468a4bd93b917aa91fff7a7eb8463ac2"
+                     parent="aspace_01921721663cbfb1cbcd033c39a5642e" type="folder">2</container>
+               </did>
+               <scopecontent id="aspace_054a732bcab6e7acad1afd28151a5682">
+                  <head>Scope and Content</head>
+                  <p>How the New Equal Credit Opportunity Act Affects you; How to Establish and Use
+                     Credit; Your Credit Rating; What the Credit Granter needs to know about the
+                     fair credit reporting act; Consumers, Credit Bureaus and the Fair Credit
+                     Reporting Act; Credit Reporting Industry Security Standards; Credit
+                     Creditability; Solving Credit Problems; $50,000 to $100,000 group Term life
+                     insurance; How the New Equal Credit Opportunity Act Affects you; Credit &amp;
+                     Collection Clinic; Consumer Trends; Consumers, Collectors and the Fair Debt
+                     Collection practices Act; What the Credit Grantor needs to know about the fair
+                     Debt Collection Practices Act; Your Credit Rating; Electronic Fund transfer
+                     (Regulation E); Options for Savers; Highlights of the Fair Credit Reporting Act
+                     for Credit Grantors; Bankruptcy Strategies for Creditors; Notice to Consumers;
+                     Virginia General District Courts Information Pamphlet; Virginia Courts in
+                     Brief; Consumer Credit Protection Act, Amendments; Comprehensive Crime Control
+                     Act of 1984; Title VI- Consumer Credit Reporting; Credit Women International-
+                     District XII- April 1985; Credit Women International- Fall 1984; Credit Women
+                     International- Spring 1985; Management Magazine, Conference/Financial Report
+                     1984; Credit World 1985 (Vol. 73, No. 3, January/February); Specialist must
+                     work alone; Young, Old women out of Work Find the Job Market is Still Tight;
+                     Too Old to Get Credit; Be your Own Best friend; Money Talks by Richard
+                     Blodgett; Credit Cards, Their Use, Abuse Increasing; Employers Key on
+                     Expression</p>
+               </scopecontent>
+            </c02>
+         </c01>
+         <c01 id="aspace_57b53f91b86f71b02877d2a9d8aec838" level="item">
+            <did>
+               <unittitle>Disbound scrapbook, <unitdate normal="1984/1989" type="inclusive"
+                     >1984-1985, 1988-1989</unitdate>
+               </unittitle>
+            </did>
+            <c02 id="aspace_1bf67aa5e54921ab6ecbf5cbe08ea13b" level="file">
+               <did>
+                  <unittitle>Martinsville Henry County, <unitdate normal="1988/1989"
+                        type="inclusive">1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_e6f1a105b2890c0a79997f5c63edc556" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_a6d2340a71eedccf2b023b94507cad51"
+                     parent="aspace_e6f1a105b2890c0a79997f5c63edc556" type="folder">3</container>
+               </did>
+               <scopecontent id="aspace_bba509ab5e104c541d56666ea146fe5a">
+                  <head>Scope and Content</head>
+                  <p>Women Posing (Names on Back); Pictures at the Bosses Night in Martinsville;
+                     Bosses Night Invitation to Martinsville; Credit Women International of
+                     Martinsville and Henry County, Virginia</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_8b9613187dabfb5ea9a1c5e9cf2ad66c" level="file">
+               <did>
+                  <unittitle>Danville, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_695b5aa1159d2b8b24a3ba44bbe4c8ab" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_e0162c28f6372ee5ffd4c68219c83551"
+                     parent="aspace_695b5aa1159d2b8b24a3ba44bbe4c8ab" type="folder">4</container>
+               </did>
+               <scopecontent id="aspace_0d18958f2b2c232259862ed6b871bae1">
+                  <head>Scope and Content</head>
+                  <p>To Anne, from Gabriela Lea; Coffee Cream, Danville Credit Women; Chewing Gum
+                     Keeps you awake BETTER than Coffee; Danville Installation of Officers; Light
+                     Your Way, Danville Credit Professionals</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_d4167a8c9c31252f06a32a27635e92e6" level="file">
+               <did>
+                  <unittitle>Miscellaneous, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_97dac30267c5deec3a5287aad201290c" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_f0baab6d0c5bdad9c2df80751fe3268d"
+                     parent="aspace_97dac30267c5deec3a5287aad201290c" type="folder">5</container>
+               </did>
+               <scopecontent id="aspace_b81a66efb395203a589aff59cb2a578f">
+                  <head>Scope and Content</head>
+                  <p>Souvenir Impression of the Seal of the Treasurer of the Sovereign State of West
+                     Virginia; Annual Installation Banquet; A. James Manchin, Treasurer of State;
+                     CWI: Credit Professionals, Mid-Atlantic Council Newsletter #3; Luncheon, CWI,
+                     District XII, Arlington; Anne, from Mary Rexrode; Annual Installation Banquet,
+                     March 20, 1989; 77th Annual International Credit Conference; Anne's Name Tag;
+                     Photos at the 77th Annual International Credit Conference; Anne's Name Tag;
+                     Note from Nancy Gibson; Name tag, Anne Harter; Thanks from Hazel;
+                     Congratulations from Jay; Morning Worship, April 24, 1988; Delegate Ribbon; To
+                     Anne, From Dot; Image Impact Workshop; Virginia State President Napkin;
+                     Congratulations from Divine (?) Jeannie, &amp; Mary; Congratulations from Dot;
+                     Virginia CWI Credit Professionals Breakfast; Congratulations from Jo;
+                     Forty-Eight Installation Banquet Mid Atlantic Council District Twelve, March
+                     20, 1988; Anne, from Eva; To Anne, from Sheryl; Congratulations from Phyllis
+                     Caffey; Virginia CWI: Credit Professionals 26th Installation &amp; Awards
+                     Banquet; 27th Annual State Conference; Anne from Venie B. Whitt; CWI Credit
+                     Professionals of Pennsylvania State Conference, September 1988; Note from Venie
+                     Whitt, re: Anne Harter's Travels; Letter to Anne from JoAnne; Newsletter #3,
+                     March 27, 1989; Itinerary for Virginia State Conference 04/21/89-4/23/89;
+                     Spring State Conference Newsletter; Newsletter #2, November; Flyer #3, April 7,
+                     1989; Newsletter #1, April 1988; Newsletter #8 November 1988; Newsletter #11,
+                     February 1989; Newsletter #12, March 1989; To Anne, from Phyllis; Newsletter #1
+                     August, 1988; Newsletter #2, 3, 4, 5, 6, 7 October 1988- April 1989; Photos of
+                     Members; Women around a Table</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_a1095a8562c99bffb896d198f5a26614" level="file">
+               <did>
+                  <unittitle>Staunton, Waynesboro, Augusta County, <unitdate normal="1988/1989"
+                        type="inclusive">1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_6d986103505c791fdd2809e697dc03cf" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_0b3a94c680fc7dc32f8776155b3eff5a"
+                     parent="aspace_6d986103505c791fdd2809e697dc03cf" type="folder">6</container>
+               </did>
+               <scopecontent id="aspace_d759ae93eb18b303f43a07f87ed8c0de">
+                  <head>Scope and Content</head>
+                  <p>Members at a Barbeque; Credit Professionals Officers installed; CWI
+                     Professionals, Staunton, Waynesboro, and Augusta County; Key; First Annual
+                     Bosses Night, October 11, 1988</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_49d3612f018c5deee87332b021161770" level="file">
+               <did>
+                  <unittitle>Charlottesville, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_c1ed789e5613fc6d4c596952e0cff1e0" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_a7f333acc61fcd36b9094ff8084e9284"
+                     parent="aspace_c1ed789e5613fc6d4c596952e0cff1e0" type="folder">7</container>
+               </did>
+               <scopecontent id="aspace_ce8ec99d7c280191311abe00281379da">
+                  <head>Scope and Content</head>
+                  <p>Photos of Members (Description in Folder), Invitation, Bosses Banquet 1988,
+                     Speech for Installation</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_66e6597539555abf8db5e93bff94295b" level="file">
+               <did>
+                  <unittitle>Covington, Clifton Forge, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_c48c8a49943ae652fa5923a3a665da50" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_ff5605a42762d04754a96d2696cd3818"
+                     parent="aspace_c48c8a49943ae652fa5923a3a665da50" type="folder">8</container>
+               </did>
+               <scopecontent id="aspace_47a6f6004d2044982abc0fe379531f97">
+                  <head>Scope and Content</head>
+                  <p>Bosses Night 4/15/89, Officers Installed, Photos of Members, Nancy from Janis,
+                     Covington-Clifton Forge Credit Women Professionals, Invitation</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_8cf61aede7f5aa20810ec2c31033f572" level="file">
+               <did>
+                  <unittitle>Hampton, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_5915e67211e004139ddb4f67cae44698" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_413d7379d273653c9a93a9626fe71518"
+                     parent="aspace_5915e67211e004139ddb4f67cae44698" type="folder">9</container>
+               </did>
+               <scopecontent id="aspace_97deb2c0e4354f278e8cf91a3aa50873">
+                  <head>Scope and Content</head>
+                  <p>Photos of Members; Invitation to Bosses Banquet; Hampton Bosses Banquet
+                     September 22, 1988</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_4b94d30e860b2cff675b09aba2b8721d" level="file">
+               <did>
+                  <unittitle>Lexington, Buena Vista, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_4939ffb9bfaab92086ea676e00243a6c" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_415b8087e281ad184534789c24199295"
+                     parent="aspace_4939ffb9bfaab92086ea676e00243a6c" type="folder">10</container>
+               </did>
+               <scopecontent id="aspace_4a80565e484a871c8b4a4e648ed106a1">
+                  <head>Scope and Content</head>
+                  <p>Anne from Doris and all members, Memo from Anne Harter</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_0cc1abecd82c25190ab5be44f2ef1f04" level="file">
+               <did>
+                  <unittitle>Lynchburg, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_b120d54037610386535390bc85a3e066" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_2cc403f838e90115aff7a99f4feab6c9"
+                     parent="aspace_b120d54037610386535390bc85a3e066" type="folder">11</container>
+               </did>
+               <scopecontent id="aspace_a81fe1a59e423e95ca2782f334191224">
+                  <head>Scope and Content</head>
+                  <p>Officers for 87-88, Lynchburg CWI; CWI, 41st Annual Bosses' Banquet October 5,
+                     1988; Invitation Lynchburg's Bosses Night</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_8221e1cb79b245811763374c6a7c589b" level="file">
+               <did>
+                  <unittitle>Petersburg, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_89dee90f392dbc0d00f8ef2049051739" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_5ea0e4fb5a26a20d36ea0ed342227aa3"
+                     parent="aspace_89dee90f392dbc0d00f8ef2049051739" type="folder">12</container>
+               </did>
+               <scopecontent id="aspace_c8a0979cc102245cd448b33aa6752395">
+                  <head>Scope and Content</head>
+                  <p>Blank Meeting list notes; Newsletter #3, January 24, 1989; Invitation to
+                     Petersburg Installation and Bosses Banquet; Members (Two Women)</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_5731e2e0e7e47aa42db97d36a3629778" level="file">
+               <did>
+                  <unittitle>Credit Women International 1984-1985 Harrisonburg VA, <unitdate
+                        normal="1984/1985" type="inclusive">1984-1985</unitdate>
+                  </unittitle>
+                  <container id="aspace_a309543ead90d0f07e5500312266e3b4" label="Box:Folder"
+                     type="box">2</container>
+                  <container id="aspace_2e9a78389e5d1f50ddfad08a3e53c0e2"
+                     parent="aspace_a309543ead90d0f07e5500312266e3b4" type="folder">13</container>
+               </did>
+               <scopecontent id="aspace_b3e6073420ea28532201744cb3adc714">
+                  <head>Scope and Content</head>
+                  <p>Photos of Members; Newsletter #3 Oct. &amp; Nov. 1984; To Anne from Esther
+                     Worthington; Newsletter #1 October 1984; Congratulations from Kristie; Skit;
+                     Anne Harter Name Tag; Shield Pin; CWI Installs New Officers; President
+                     Installed; Credit Women International of Harrisonburg VA 1984-1985 Committees;
+                     Valley Chatter; Roster; Presidents Message; CWI October 16, 1984</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_dd9fe00e74c6d757acba4432b0caacee" level="file">
+               <did>
+                  <unittitle>Suffolk, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_b9340068296283afa9d113ad5fbba1ce" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_e57fecb81b7a1ab40ad8826d563de80a"
+                     parent="aspace_b9340068296283afa9d113ad5fbba1ce" type="folder">1</container>
+               </did>
+               <scopecontent id="aspace_e75d940f6f91a0e50c621c2f581f01b7">
+                  <head>Scope and Content</head>
+                  <p>Harter Named State CWI President, Photos of Members, Thank you from Hazel,
+                     Photos of Members, Harrisonburg CWI, With Congratulations from Juanita, VP
+                     Spreads word on CWI, Speech, Speech for Installation of Officers, Update from
+                     Gail C. Williams, Fruit Basket Drink and peanuts from Gail and Lucy, Bosses
+                     Banquet Invitation, Thank you from Gail, Anne Harter Name tag, Suffolk CWI:
+                     Credit Professionals Bosses' Banquet</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_5d23c54ca4011dae3596af5dcf557447" level="file">
+               <did>
+                  <unittitle>Northern Virginia, Fairfax, <unitdate normal="1988/1989"
+                        type="inclusive">1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_6afcd1294f8eb6dcbc51f3cdaabe2eda" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_7cb44ba14d9be75d1dc46c1bfa081fb4"
+                     parent="aspace_6afcd1294f8eb6dcbc51f3cdaabe2eda" type="folder">2</container>
+               </did>
+               <scopecontent id="aspace_3f7d80803b50e7269dcc6d2f8cc215a4">
+                  <head>Scope and Content</head>
+                  <p>Last Minute Memo, 49th Installation Banquet Mid-Atlantic Council District
+                     Twelve, Anne Harter Name Tag, Installation Banquet Invitation and Photos,
+                     Thanks from Frances, You've Come a Long Way Baby</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_2f6bf0aca36f1a9f0a2533443372853a" level="file">
+               <did>
+                  <unittitle>Newport News, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_ad7219dd2d2334811b450909ad3f4ede" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_8caf7eb244a8def1f86427ab5b39e2d8"
+                     parent="aspace_ad7219dd2d2334811b450909ad3f4ede" type="folder">3</container>
+               </did>
+               <scopecontent id="aspace_42dfdb116c43683291acae33339955ef">
+                  <head>Scope and Content</head>
+                  <p>Saint Vincent de Paul Church, November 29, 1988; Inside Business; Photos of
+                     Members; Invitation to CWI Bosses Banquet; Bosses Banquet and Installation of
+                     Officers October 5, 1988; Membership Bulletin, January 1989; First Impressions;
+                     Join a Winning Team of Credit Professionals; First Impressions, March 4,
+                     1989</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_d30ed11602c36b019bb4f01cd2ef8534" level="file">
+               <did>
+                  <unittitle>Harrisonburg, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_eaa571134c017e2daa2630649791f374" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_b53e18c547b4b0df312ccc89aa3e590f"
+                     parent="aspace_eaa571134c017e2daa2630649791f374" type="folder">4</container>
+               </did>
+               <scopecontent id="aspace_f4e930a30efa77d21c0fd83672f0035e">
+                  <head>Scope and Content</head>
+                  <p>Bankruptcy Increase Costly for Consumers; Club Notes; Thank you Anne from Alice
+                     Martens; Business People and Dorothy R. Hinnant; Carrier of the Year;
+                     Certificate of Perfect Attendance to Anne Harter; Harrisonburg CWI: CP
+                     Installation October 18, 1988; CWI- Credit Professionals, Bosses
+                     Banquet/Installation October 18, 1988</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_c315a4bb0808fce7bf9bf99d47c87f34" level="file">
+               <did>
+                  <unittitle>Norfolk, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_ba480bca38c4ff9ef5c003fdfab3f4ef" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_82221480e7b980519964f0663d560199"
+                     parent="aspace_ba480bca38c4ff9ef5c003fdfab3f4ef" type="folder">5</container>
+               </did>
+               <scopecontent id="aspace_e8620dd3d59a9cb3f6c3ffeb4c863020">
+                  <head>Scope and Content</head>
+                  <p>Photos of Members; Speech; Photos of Members (Description on Paper/Back);
+                     CWI-CP Officers Norfolk, VA 1988-1989; Bosses Night, October 4, 1988</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_257092aac8fa796052a582feb9f9a54d" level="file">
+               <did>
+                  <unittitle>Shenandoah Valley, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_f89202d2764fae4b8fb62ad36199fe4f" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_a73c21b358f6a5eefc93f7d56b29c154"
+                     parent="aspace_f89202d2764fae4b8fb62ad36199fe4f" type="folder">6</container>
+               </did>
+               <scopecontent id="aspace_6dfeff63b59c6b9a85aee9afa9aafebb">
+                  <head>Scope and Content</head>
+                  <p>CWI previews, March 1989; Photos of Members; CWI Bosses Night, March 21, 1989;
+                     Thank you Anne from Cindy McClain; Invitation to Installation Meeting, October
+                     11, 1988; Thank you Anne, from Cindy McClain; CWI Credit Professionals, Bosses
+                     Night, March 21, 1989 Invitation; CWI Credit Professionals of the Shenandoah
+                     Valley, Installation of Officers; CWI Credit Professionals of the Shenandoah
+                     Valley, Bosses Night, March 8, 1988; Anne Harter Name Tag</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_79cacaf80f70c505deab9b4e781660d1" level="file">
+               <did>
+                  <unittitle>Roanoke, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_c2647827272da7867cc1cecbffa69eb4" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_fd6c7f8c340c9cd02a81386d38fba425"
+                     parent="aspace_c2647827272da7867cc1cecbffa69eb4" type="folder">7</container>
+               </did>
+               <scopecontent id="aspace_7dfaa3fd734850a5231e356d5128373a">
+                  <head>Scope and Content</head>
+                  <p>Photos of Members; Reach for the Stars; Thank you Anne, from Grace;
+                     Installation of Officers, September 15, 1988; Name Tag; Club News; CWI: Credit
+                     Professionals of Roanoke, 1988-1989; Invitation to President's Tea; CWI Credit
+                     Professionals elect Officers; Credit Professionals elect New officers; Grace
+                     Poff will speak for CWI; President's Tea napkin; The Jefferson Club Napkin;
+                     Photos of members; Bosses Night, May 10, 1988</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_a2e05a595c020200f55303cda419efe6" level="file">
+               <did>
+                  <unittitle>Richmond, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_a6e123c2d133b5641982c86fdfcb17d2" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_760ecd50c604fed05a448364dc1482ff"
+                     parent="aspace_a6e123c2d133b5641982c86fdfcb17d2" type="folder">8</container>
+               </did>
+               <scopecontent id="aspace_4f50e33c399c72e3a3dde92d820bb524">
+                  <head>Scope and Content</head>
+                  <p>Photos of members, Education Communication "Progress through Communication
+                     Strength Through Education</p>
+               </scopecontent>
+            </c02>
+            <c02 id="aspace_1b05ea843d638f539bd5810033fdfb98" level="file">
+               <did>
+                  <unittitle>Portsmouth, <unitdate normal="1988/1989" type="inclusive"
+                        >1988-1989</unitdate>
+                  </unittitle>
+                  <container id="aspace_1c5b6b4038b2d2e1bf7d35b13873c96c" label="Box:Folder"
+                     type="box">3</container>
+                  <container id="aspace_8eb5ba2d5cf2e6d68b45e97a858dd230"
+                     parent="aspace_1c5b6b4038b2d2e1bf7d35b13873c96c" type="folder">9</container>
+               </did>
+               <scopecontent id="aspace_83b505aa24069c4838b657e035b3a07e">
+                  <head>Scope and Content</head>
+                  <p>Invitation Bosses Banquet; Late Summer Luau, September 20, 1988; Photos of
+                     members; Ticket to Bosses Banquet; Name Tag; Photos of Members</p>
+               </scopecontent>
+            </c02>
+         </c01>
+         <c01 id="aspace_a00f0a8a7577d61e184390883f7bce5b" level="item">
+            <did>
+               <unittitle>Bound scrapbook, <unitdate normal="1991/1994" type="inclusive"
+                     >1991-1994</unitdate>
+               </unittitle>
+               <container id="aspace_a6fc76a28870a1b54165823dc4333fdd" label="Box:Folder" type="box"
+                  >OV 1</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
