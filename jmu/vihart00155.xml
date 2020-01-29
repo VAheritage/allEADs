@@ -1,402 +1,757 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vihart00155">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-full-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-ViHarT">PUBLIC "-//James Madison University::Carrier
-			Library::Special Collections//TEXT (US::ViHarT::vihart00NUMBER::COLLECTION NAME AND DESCRIPTION [i.e. vihart00129::Wampler Business records,
-			1918-1972])//EN" "vihart00NUMBER.xml" </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Lee Morrison Collection, <date era="ce" calendar="gregorian">1946-2011</date></titleproper>
-        <subtitle id="sort">Lee Morrison Collection<num type="collectionnumber">SC# 5041</num></subtitle>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Special Collections, Carrier Library, James Madison University
-				</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2012 By JMU Libraries. All
-					rights reserved. </date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Machine-readable finding aid derived from MS Word, created by Peter Watt,
-				<date era="ce" calendar="gregorian">6/2013</date></creation>
-      <langusage>Description is in <language langcode="eng">English </language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2013-12-02">2013-12-02</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the Lee Morrison Collection, <date era="ce" calendar="gregorian">1941-2011</date></titleproper>
-      <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number"> SC 5041</num></subtitle>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
-      </p>
-      <publisher>Special Collections, Carrier Library, James Madison University </publisher>
-      <date type="publication" era="ce" calendar="gregorian">2013</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:</label>
-          <item>Peter Watt</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Special Collections, James Madison University </runner>
-    <did>
-      <head>Descriptive Summary </head>
-      <repository label="Repository" encodinganalog="852$a">Special Collections, James Madison
-				University </repository>
-      <unittitle label="Title" encodinganalog="245$a">Lee Morrison Collection<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">1941-2011</unitdate></unittitle>
-      <unitid label="Collection Number SC#" encodinganalog="099$a">SC 5041</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">2 boxes (2 linear feet)</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English </language>
-      </langmaterial>
-      <abstract label="Abstract">The materials presented in this collection are the personal papers of Dr. Lee Morrison. These files contain materials from conferences, speeches, diplomas and awards, photos, reports on women’s issues in sports and education, and personal reflections.</abstract>
-      <origination label="Creator" encodinganalog="100$a"> Lee Morrison<!-- EXACTLY FROM FIELD 100 FROM MARC RECORD *NOTE* <famname>(MARC FIELD 100) or <corpname>(MARC FIELD 110) MAY ALSO BE USED --></origination>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions </head>
-        <p>None. </p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions </head>
-        <p>None. </p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation </head>
-        <p>[Identification of Item], The Lee Morrison Collection, 1941-2011, SC#
-					5041, Special Collections, Carrier Library, James Madison University,
-					Harrisonburg, VA.</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information </head>
-        <p>Lee Morrison donated the materials in October of 2012</p>
-      </acqinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Biographical Information </head>
-      <p>Dr. Lonnie “Lee” Leotus Morrison was a professor, coach, and administrator at Madison College starting in 1954 until she retired in 1989. She graduated from Georgia State College for Women in 1948 with a B.S. in Education. She then went on to get her M.A. from George Peabody College for Teachers in 1951. After acquiring the position at Madison College, she received her doctorate at Indiana University in 1964. In 1967 she became the Coordinator of Women’s Sports for Madison College. From 1972 until her retirement in 1989 she served as the Associate Director of Athletics for James Madison University. Dr. Morrison dedicated her professional career to promoting equality in collegiate sports. After the passage of Title IX, an educational amendment that banned sex discrimination in any program receiving federal aid, she was still involved in many organizations that fought to end sex discrimination in school athletics. She was a member of the Virginia Association for Girls and Women in Sport and a founding board member of the Association for Intercollegiate Athletics for Women (AIAW), for which she later served as president. She worked on numerous committees at the state, regional, and national level for the National Association for Girls and Women in Sport. Throughout her career she won many awards for her dedication. After retirement, she helped establish the Morrison-Bruce Center for The Promotion of Physical Activity for Girls and Women on the JMU campus.</p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content </head>
-      <p>The Lee Morris Papers, 1946-2011, consist of 2 linear feet of material. The materials presented in this collection are the personal papers of Dr. Lee Morrison. These files contain materials from conferences, speeches, diplomas and awards, photos, reports on women’s issues in sports and education, and personal reflections.</p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement </head>
-      <p>This collection is arranged in the same order in which it was donated to maintain significance. </p>
-    </arrangement>
-    <descgrp type="add">
-      <head>Adjunct Descriptive Data </head>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List </head>
-      <c01>
-        <did>
-          <unittitle>Self Portraits<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:1</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Leadership and Development for Women Course Materials<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:2</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Diplomas, Awards, and Certificates<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:3</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Mary Baldwin Parent's Council Spring Symposium<unitdate type="inclusive" era="ce" calendar="gregorian"> 2003</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:4</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Honorary Doctorate and JMU Summer Commencement<unitdate type="inclusive" era="ce" calendar="gregorian"> 1990</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:5</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>American Council of Education Agenda<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:6</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Women in Sport- A Progress Report<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:7</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>NAGWS Conference Materials at Temple University<unitdate type="inclusive" era="ce" calendar="gregorian"/></unittitle>
-          <container label="Box:Folder" type="box-folder">1:8</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Germany Trip<unitdate type="inclusive" era="ce" calendar="gregorian"> Oct. 9-28, 1977</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:9</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Caroline Sinclair Portfolio<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:10</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Honors<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:11</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>AIAW Press Pictures<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:12</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Commencement Speech<unitdate type="inclusive" era="ce" calendar="gregorian">August 1990</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:13</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>UNESCO Conference Paris, France<unitdate type="inclusive" era="ce" calendar="gregorian"> 1978</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:14</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Miscellaneous<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:15</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Center for the Promotion of Physical Activity for Girls and Women<unitdate type="inclusive" era="ce" calendar="gregorian"> 2004</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:16</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>NACWAA Lifetime Achievement Award<unitdate type="inclusive" era="ce" calendar="gregorian"> 1998</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:17</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>AIAW Reunion in Florida <unitdate type="inclusive" era="ce" calendar="gregorian"> 2009</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:18</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Speeches<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:19</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>AIAW Documents<unitdate type="inclusive" era="ce" calendar="gregorian"> 1974</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:20</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Women's Fitness Center<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:21</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Poems and Thoughts<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:22</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Speech Material<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:23</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Essay<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:24</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Chuch Walcott Interview<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:25</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Tucker Center Newsletter<unitdate type="inclusive" era="ce" calendar="gregorian"> 2005</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:26</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Morrison-Bruce Center<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:27</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Women's Colleges and Athletics Conference<unitdate type="inclusive" era="ce" calendar="gregorian"> 2002</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:28</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Speech- G. Hunt<unitdate type="inclusive" era="ce" calendar="gregorian"> 2008</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:29</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Women in Sport Readings<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:30</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Articles<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:31</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Mudjie Research<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:32</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Title IX Timeline<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:33</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Greater Savannah Hall of Fame Banquet<unitdate type="inclusive" era="ce" calendar="gregorian"> 2008</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:34</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Virginia Sports Hall of Fame, 2000<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:35</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>AIAW History<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:36</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Personal Reflections<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:37</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Resume<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">1:38</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>CAA Folder and Smith Magazine<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:1</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Women's Issues Think Tank<unitdate type="inclusive" era="ce" calendar="gregorian">1988-1990</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:2</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Think Tank on Women<unitdate type="inclusive" era="ce" calendar="gregorian">1988-1990</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:3</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Think Tank Report<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:4</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Binder<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:5</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Smith Archives<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:6</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>National Girls and Women in Sports Day<unitdate type="inclusive" era="ce" calendar="gregorian"> Feb.9, 2005</unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:7</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Miscellaneous<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:8</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Title IX under G.W. Bush<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:9</container>
-        </did>
-      </c01>
-      <c01>
-        <did>
-          <unittitle>Speeches and Articles<unitdate type="inclusive" era="ce" calendar="gregorian"><!-- YYYY-YYYY --></unitdate></unittitle>
-          <container label="Box:Folder" type="box-folder">2:10</container>
-        </did>
-      </c01>
-    </dsc>
-  </archdesc>
+<?xml version="1.0" encoding="utf-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="completed"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US"
+             mainagencycode="US-vihart"
+             url="http://ead.lib.virginia.edu/vivaxtf/view?docId=jmu/vihart00155.xml">vihart00155</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>A Guide to the Lee Morrison Papers, 1946-2012:<num>SC 0215</num>
+            </titleproper>
+            <author>Peter Watt, June 2013</author>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Special Collections, Carrier Library, James Madison University</publisher>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                        href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_address.xi.xml"/>
+            <date type="publication" era="ce" calendar="gregorian"> © 2020 By JMU Libraries. All rights reserved. </date>
+            <p id="usestatement">
+               <extref xmlns:xlink="http://www.w3.org/1999/xlink"
+                       xlink:type="simple"
+                       xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use</extref>
+            </p>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace and transformed with ASpace2VaHeritage.xsl on <date>2020-01-29 08:39:37 -0500</date>.</creation>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change audience="internal">
+            <date>2020-01-24</date>
+            <item>Finding aid added to ASpace with slight alterations to folder titles. Collection was rehoused at this time. No major edits to narrative of the finding aid.</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <frontmatter>
+      <titlepage>
+         <titleproper>A Guide to the Lee Morrison Papers, <date era="ce" calendar="gregorian">1946-2012 </date>
+         </titleproper>
+         <subtitle> A Collection in <lb/> Special Collections <num type="Collection Number">SC 0215</num>
+         </subtitle>
+         <p id="logostmt">
+            <extptr xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:type="simple"
+                    xlink:actuate="onLoad"
+                    xlink:show="embed"
+                    xlink:href="http://ead.lib.virginia.edu/vivaead/logos/jmu.jpg"/>
+         </p>
+         <publisher> Special Collections, Carrier Library, James Madison University </publisher>
+         <date type="publication" era="ce" calendar="gregorian">2020</date>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                     href="http://ead.lib.virginia.edu:/vivaead/add_con/jmu_contact.xi.xml"/>
+         <list type="deflist">
+            <defitem>
+               <label>Processed by:</label>
+               <item>Peter Watt, June 2013</item>
+            </defitem>
+         </list>
+      </titlepage>
+   </frontmatter>
+   <archdesc level="collection">
+      <did>
+         <repository>
+            <corpname>Special Collections, Carrier Library, James Madison University</corpname>
+         </repository>
+         <unittitle>Lee Morrison Papers, </unittitle>
+         <origination label="Creator">
+            <persname authfilenumber="no2014109555" rules="aacr" source="lcnaf">Morrison, Lee (Lonnie Leotus Morrison), 1926-2015</persname>
+         </origination>
+         <unitid label="Collection Number" encodinganalog="099$a">SC 0215</unitid>
+         <physdesc label="Extent" encodinganalog="300$a">1.32 cubic feet; 4 boxes</physdesc>
+         <unitdate normal="1946/2012" type="inclusive">1946-2012</unitdate>
+         <abstract id="aspace_e10caaa40cfcecc877b023be053c2d57">The material present in this collection comprise the personal papers of Dr. Lee Morrison. These files contain materials from conferences, speeches, diplomas and awards, photos, reports on women's issues in sports and education, and personal reflections.</abstract>
+         <langmaterial>
+            <language langcode="eng">English</language>
+.    </langmaterial>
+      </did>
+      <descgrp type="admininfo">
+         <head>Administrative Information</head>
+         <accessrestrict id="aspace_0c1dd29324796254c91492964be7f9a6">
+            <head>Access Restrictions</head>
+            <p>Collection is open to research. Researchers must register and agree to copyright and privacy laws before using this collection. Please contact Research Services staff before visiting the James Madison University Special Collections Library to use this collection.</p>  
+         </accessrestrict>
+         <userestrict id="aspace_bdf3326bf0585ab0661fb437d1403516">
+            <head>Use Restrictions</head>
+            <p>The copyright interests in this collection have been transferred to the James Madison University Special Collections Library. For more information, contact the Special Collections Library Reference Desk (library-special@jmu.edu).</p>  
+         </userestrict>
+         <prefercite id="aspace_249b71010ba7af45cf6502c0678244b8">
+            <head>Preferred Citation</head>
+            <p>[identification of item], [box #, folder #], Lee Morrison Papers, 1946-2012, SC 0215, Special Collections, Carrier Library, James Madison University, Harrisonburg, Va.</p>  
+         </prefercite>
+         <acqinfo id="aspace_ece10282ed0be8f0d9df5c817120e3f9">
+            <head>Acquisition Information</head>
+            <p>Donated by Lee Morrison in October 2012.</p>  
+         </acqinfo>
+         <processinfo id="aspace_879294e0a92a39244c6868da44c61dc3">
+            <head>Processing Information</head>
+            <p>In order to streamline the process of applying collection numbers, Special Collections staff completed a large-scale renumbering campaign in 2017-2019. <emph render="bold">This collection was previously cataloged as SC 5041</emph>. This collection was rehoused in January 2020 and slight alterations were made to finding aid.</p>  
+         </processinfo>
+      </descgrp>
+  
+  
+  
+  
+      <appraisal id="aspace_03b229988804760628232a0ffdef66af">
+         <head>Appraisal</head>
+         <p>Four boxes of trophies, plaques, awards, and realia were not retained by Special Collections.</p>  
+      </appraisal>
+  
+      <bioghist id="aspace_e62fcc110c4abf7855c619e09fa083ae">
+         <head>Bio/Historical Note</head>
+         <p>Dr. Lonnie Leotus "Lee" Morrison (1926-2015) was a professor, coach, and administrator at Madison College starting in 1954 until she retired in 1989. She graduated from Georgia State College for Women in 1948 with a B.S. in Education. She then went on to get her M.A. from George Peabody College for Teachers in 1951. After acquiring the position at Madison College, she received her doctorate at Indiana University in 1964. In 1967, she became the Coordinator of Women's Sports for Madison College. From 1972 until her retirement in 1989 she served as the Associate Director of Athletics for James Madison University. Dr. Morrison dedicated her professional career to promoting equality in collegiate sports. After the passage of Title IX, an educational amendment that banned sex discrimination in any program receiving federal aid, she was still involved in many organizations that fought to end sex discrimination in school athletics. She was a member of the Virginia Association for Girls and Women in Sport and a founding board member of the Association for Intercollegiate Athletics for Women (AIAW), for which she later served as president. She worked on numerous committees at the state, regional, and national level for the National Association for Girls and Women in Sport. She also served on President Ronald Carrier's Think Tank on Women's Issues at JMU. Throughout her career she won many awards for her dedication. After retirement, she helped establish the Morrison-Bruce Center for the Promotion of Physical Activity for Girls and Women on the JMU campus.</p>  
+      </bioghist>
+      <scopecontent id="aspace_df55ec7c00f2a92b906637a2159d4084">
+         <head>Scope and Content</head>
+         <p>The Lee Morrison Papers, 1946-2012, comprise the personal and professional papers of Dr. Lee Morrison. These files relate to conferences, speeches, diplomas and awards, photographs, reports on women's issues in sports and education, Title IX, President Ronald Carrier's Think Tank on Women's Issues at JMU, and personal reflections. There are also transcripts of interviews conducted by Chuck Walcott, Virginia Tech professor of political science, with Lee Morrison dated 1996.</p>  
+      </scopecontent>
+      <arrangement id="aspace_9667972f20616f98bb187fdf5a75224b">
+         <head>Arrangement</head>
+         <p>This collection is arranged in the same order in which it was donated.</p>  
+      </arrangement>
+      <separatedmaterial id="aspace_48d36e7372c74601716217a70308369d">
+         <head>Separated Material</head>
+         <p>A copy of the brochure "Sexism in Higher Education: The James Madison Perspective" (1990) was separated from the collection and cataloged.</p>  
+      </separatedmaterial>
+      <controlaccess>
+         <head>Index Terms</head>
+         <controlaccess>
+            <head>Subjects:</head>
+            <subject source="lcsh">Morrison, Lee, 1926-2015 -- Correspondence.</subject>
+            <subject source="lcsh">Madison College -- Faculty -- Correspondence</subject>
+            <subject source="lcsh">James Madison University -- Faculty -- Correspondence</subject>
+            <subject source="lcsh">Physical education for girls</subject>
+            <subject source="lcsh">Physical education for women</subject>
+            <subject source="lcsh">College sports for women</subject>
+            <subject source="lcsh">College sports</subject>
+         </controlaccess>
+         <controlaccess>
+            <head>Genre and Form Terms:</head>
+            <genreform source="aat">Speeches (Documents)</genreform>
+            <genreform source="aat">Photographs</genreform>
+            <genreform source="aat">Letters (correspondence)</genreform>
+            <genreform source="aat">Research (documents)</genreform>
+            <genreform source="aat">Reports</genreform>
+         </controlaccess>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_c9639b2d7d0625552a32f05858d5c146" level="file">
+            <did>
+               <unittitle>Portrait photographs, <unitdate normal="1988/1990" type="inclusive">1988-1990, undated</unitdate>
+               </unittitle>
+               <container id="aspace_36a31aa965e2b07e52e531e5c76b73c1"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_887a7b862f9336ce26078f05a74540fb"
+                          parent="aspace_36a31aa965e2b07e52e531e5c76b73c1"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1195e977ffb69f2cfed065e33893084c" level="file">
+            <did>
+               <unittitle>Class presentations, <unitdate normal="1998/1998">1998, undated</unitdate>
+               </unittitle>
+               <container id="aspace_cfcfd833b40d35e028cdc5fefb957043"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_e89f33f3cc48844d741dcd70ed54b978"
+                          parent="aspace_cfcfd833b40d35e028cdc5fefb957043"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_01737af4c8419219f7d0e59d79b768bd" level="file">
+            <did>
+               <unittitle>Diplomas, awards, and certificates, <unitdate normal="1946/2008" type="inclusive">1946-2008</unitdate>
+               </unittitle>
+               <container id="aspace_5dfdb9dbf9ea7918212599988f93daa0"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_3bd7beefc40d9c386a4b8d95202a714e"
+                          parent="aspace_5dfdb9dbf9ea7918212599988f93daa0"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e9dbd38c45c4e2d54e57601e7cb6d3ce" level="file">
+            <did>
+               <unittitle>Mary Baldwin, <unitdate normal="2002/2002">2002</unitdate>
+               </unittitle>
+               <container id="aspace_59e4ae1b48c3070af2a6da0208b24eb8"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_73bc04446004628223b0b353558c2463"
+                          parent="aspace_59e4ae1b48c3070af2a6da0208b24eb8"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7d0c32225da5da87c9791ee7081fa08d" level="file">
+            <did>
+               <unittitle>1990 Honorary Degree, <unitdate normal="1990/1990">1990</unitdate>
+               </unittitle>
+               <container id="aspace_7656cfad79146ef10fdf353aaf78646e"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_9a46b35001876fa83f1900d2ffa654cc"
+                          parent="aspace_7656cfad79146ef10fdf353aaf78646e"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d8b100634c752d2fdc0b2438439e70cc" level="file">
+            <did>
+               <unittitle>ACE Conference Agenda, <unitdate normal="1989/1989">1989, undated</unitdate>
+               </unittitle>
+               <container id="aspace_e8653e1b0a02f80d9f015886a4d25962"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_db7a20e659767aae9397677f27a258df"
+                          parent="aspace_e8653e1b0a02f80d9f015886a4d25962"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e1b022c53abfde566eabeb2b3de44b28" level="file">
+            <did>
+               <unittitle>Women in Sport - A progress report, Bill Gilbert and Nancy Williamson, <unitdate normal="1983/1983">1983</unitdate>
+               </unittitle>
+               <container id="aspace_0c756f4f71c3ee94d2cb8804cd353de8"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_5391a2066db679f4d139dcfd4b61c019"
+                          parent="aspace_0c756f4f71c3ee94d2cb8804cd353de8"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d222a2c923f33599b92185688d39a27e" level="file">
+            <did>
+               <unittitle>NA Congress Philly, <unitdate normal="1983/1983">1983, undated</unitdate>
+               </unittitle>
+               <container id="aspace_f7706a6ee7d7fdb54feb96d648272ab5"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_d9655ba9bd5465a8a246a0bc7875fd0f"
+                          parent="aspace_f7706a6ee7d7fdb54feb96d648272ab5"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_128a653612c6ca3d65213c4ad359b949" level="file">
+            <did>
+               <unittitle>Germany October 9-28, 1977, <unitdate normal="1977/1979" type="inclusive">1977-1979</unitdate>
+               </unittitle>
+               <container id="aspace_2b527c7ea1a81ca7bddec808ebb8f7e7"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_f7c6729ba167f9e85ec0d523a47a09c0"
+                          parent="aspace_2b527c7ea1a81ca7bddec808ebb8f7e7"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7fbfa6eaeaf50843eb97cc8413727e9e" level="file">
+            <did>
+               <unittitle>Caroline Sinclair portfolio, <unitdate normal="1969/1998" type="inclusive">1969-1998</unitdate>
+               </unittitle>
+               <container id="aspace_b6fdc6b5e379fe0c213adf24219a54ac"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_69044206a9eac87a8faf4a243be99b59"
+                          parent="aspace_b6fdc6b5e379fe0c213adf24219a54ac"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9f5dca0aad856d60755f17a8e0da9d66" level="file">
+            <did>
+               <unittitle>Honors, <unitdate normal="1988/2000" type="inclusive">1988-2000</unitdate>
+               </unittitle>
+               <container id="aspace_007e005b07e161f76c7759b08d19ddcb"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_74a663825a342d591e132a50841bcbb3"
+                          parent="aspace_007e005b07e161f76c7759b08d19ddcb"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8b92720b1eb46f9aa2b331223e7ba382" level="file">
+            <did>
+               <unittitle>AIAW president pictures, <unitdate type="inclusive">undated</unitdate>
+               </unittitle>
+               <container id="aspace_f0681d3f5ae894adcd8aed5741c26b7d"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_4b73c15fe8c5c556f031b4a92024ad8c"
+                          parent="aspace_f0681d3f5ae894adcd8aed5741c26b7d"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ef0dff3df2cfad998016856a0893e971" level="file">
+            <did>
+               <unittitle>Commencement 8/90, <unitdate normal="1990/1990">1990</unitdate>
+               </unittitle>
+               <container id="aspace_310455752ea11cc11607b0d99394b8e0"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_a8b2c07100a59c5a482b4eb0cb9a7649"
+                          parent="aspace_310455752ea11cc11607b0d99394b8e0"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fa48aae547fe66db7da6bad9519fb308" level="file">
+            <did>
+               <unittitle>UNESCO trip to Paris, France 5/21/78, <unitdate normal="1977/1978" type="inclusive">1977-1978</unitdate>
+               </unittitle>
+               <container id="aspace_ac4ddab6c879cd02338f0147423e9215"
+                          label="Box:Folder"
+                          type="box">1</container>
+               <container id="aspace_47f760d8afc5696adb0fca91aba4cc84"
+                          parent="aspace_ac4ddab6c879cd02338f0147423e9215"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c56c6f1f2f340ef9df0e8fc4106fc490" level="file">
+            <did>
+               <unittitle>Comp. speeches, <unitdate normal="1974/1975" type="inclusive">1974-1975, undated</unitdate>
+               </unittitle>
+               <container id="aspace_7408682b5a65592559b41c4415dcebaf"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_ac327bddee502315b5cb26d1d26f0962"
+                          parent="aspace_7408682b5a65592559b41c4415dcebaf"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_348852adcb2dcb12c11a839335a7e2be" level="file">
+            <did>
+               <unittitle>Personal resume - L. Leotus Morrison, <unitdate normal="1962/2009" type="inclusive">1962-2009</unitdate>
+               </unittitle>
+               <container id="aspace_bdd8d38630bc86cfa516dbb35581e157"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_8ce43b2e6c4886301e2aa8426506d699"
+                          parent="aspace_bdd8d38630bc86cfa516dbb35581e157"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1abdb949fdb6d39bd423600716a2f829" level="file">
+            <did>
+               <unittitle>October weekend, <unitdate normal="2002/2004" type="inclusive">2002-2004</unitdate>
+               </unittitle>
+               <container id="aspace_809c048e4dfd3a9be1fc7bf620ffba05"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_a8e73f72fbe9b783ba77fcda540d6112"
+                          parent="aspace_809c048e4dfd3a9be1fc7bf620ffba05"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_855b9a9187bf8d21e83194b17f9d1000" level="file">
+            <did>
+               <unittitle>NACWAA, <unitdate normal="1998/1999" type="inclusive">1988-1999</unitdate>
+               </unittitle>
+               <container id="aspace_862de13617c9a9750cb0737cabff8be6"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_4f6f0b7c854e79be79b3ade4c76cf055"
+                          parent="aspace_862de13617c9a9750cb0737cabff8be6"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_73ffd10d02783ff401a7c7bc009c8668" level="file">
+            <did>
+               <unittitle>Reunion - Florida 2/11-14/09, <unitdate normal="1982/2009" type="inclusive">1982-2009, undated</unitdate>
+               </unittitle>
+               <container id="aspace_0dbe20985532e44fd7de43b02854a372"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_ac7c3729151506dad35cdd4a9d489d65"
+                          parent="aspace_0dbe20985532e44fd7de43b02854a372"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f7dc9b72949d3f93950e663cdfc7a26a" level="file">
+            <did>
+               <unittitle>AIAW documents 1974, <unitdate normal="1973/1980" type="inclusive">1973-1980, undated</unitdate>
+               </unittitle>
+               <container id="aspace_40aedf9811f6c18d8b1268a67188a5a0"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_16a3e8688661ff37da6364d15bb56dbd"
+                          parent="aspace_40aedf9811f6c18d8b1268a67188a5a0"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_eed80e25093780a88ccfbbc4c9e477ad" level="file">
+            <did>
+               <unittitle>Women's Fitness Center, <unitdate normal="2004/2006" type="inclusive">2004-2006</unitdate>
+               </unittitle>
+               <container id="aspace_f5c527effcb480ca08cdd6f85d133358"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_b67ddaac65d749001a4532ad70cc05c3"
+                          parent="aspace_f5c527effcb480ca08cdd6f85d133358"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3bc0f94db25f1a5b709e738f52fccf71" level="file">
+            <did>
+               <unittitle>Poems and thoughts, <unitdate normal="1962/1975" type="inclusive">1962-1975, undated</unitdate>
+               </unittitle>
+               <container id="aspace_b977148da8ed01acb0ff5a9c72f5122a"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_f66925c6cd1ebeb86568f63940aa3547"
+                          parent="aspace_b977148da8ed01acb0ff5a9c72f5122a"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_dac4a8c47c5fd1a732754fffd704d5ff" level="file">
+            <did>
+               <unittitle>Speech material, <unitdate normal="1972/1978" type="inclusive">1972-1978, undated</unitdate>
+               </unittitle>
+               <container id="aspace_6cf7023f9d1efe2b21c2452e8a07e4ef"
+                          label="Box:Folder"
+                          type="box">2</container>
+               <container id="aspace_ea01e47e1cad06a6c8d47a6ba3827bc3"
+                          parent="aspace_6cf7023f9d1efe2b21c2452e8a07e4ef"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_21cd750d3ce8667c16dc85631e92746c" level="file">
+            <did>
+               <unittitle>Essay, <unitdate normal="1959/1982" type="inclusive">1959-1982, undated</unitdate>
+               </unittitle>
+               <container id="aspace_a5f40caaaf1e33820aafec70a0eae85e"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_470b89df98963ed145a6785ec8fd1ceb"
+                          parent="aspace_a5f40caaaf1e33820aafec70a0eae85e"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cb652d95e1a31a40c357e97ca4bb8bcf" level="file">
+            <did>
+               <unittitle>Chuck Walcott - AIAW, <unitdate normal="1996/1999" type="inclusive">1996-1999</unitdate>
+               </unittitle>
+               <container id="aspace_23b98e7ddccc8c88b222e0218b9a3cde"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_386428c9a19e7496c795824bace7c8e0"
+                          parent="aspace_23b98e7ddccc8c88b222e0218b9a3cde"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f10a0a5def47b3f3f813e4ada09b86e2" level="file">
+            <did>
+               <unittitle>Morrison-Bruce Endowment, <unitdate normal="2009/2009">2009</unitdate>
+               </unittitle>
+               <container id="aspace_dd289359f7200b51ea7d326e9a1d20f0"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_5fedb949d2397b8966ce6fd926fd203f"
+                          parent="aspace_dd289359f7200b51ea7d326e9a1d20f0"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_601b758c26b47a8cc42dd13f9623f6d7" level="file">
+            <did>
+               <unittitle>Other centers, <unitdate normal="2003/2005" type="inclusive">2003-2005</unitdate>
+               </unittitle>
+               <container id="aspace_4fb00c6573496531a2cce3effc957a41"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_ed42276573eb63ea0a9ddc4c61af5b90"
+                          parent="aspace_4fb00c6573496531a2cce3effc957a41"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ad6fe875a8a76aba4019cc1524fb83af" level="file">
+            <did>
+               <unittitle>Morrison-Bruce Center, <unitdate normal="1966/2005" type="inclusive">1966-2005</unitdate>
+               </unittitle>
+               <container id="aspace_f375c2d25026e511a5d9cef892298cd3"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_89d4f95bed2794d9ed96a804f8724190"
+                          parent="aspace_f375c2d25026e511a5d9cef892298cd3"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5de739ea8b7975ddbb470241fcbf5353" level="file">
+            <did>
+               <unittitle>LLM - Odds &amp; Ends, <unitdate normal="2008/2011" type="inclusive">2008-2011</unitdate>
+               </unittitle>
+               <container id="aspace_95fc98049ba5fdaff91204a63e3db7a5"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_ce2ff0f9af52351d02850d8d7e1061bd"
+                          parent="aspace_95fc98049ba5fdaff91204a63e3db7a5"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e840c43ed5286f2a1ed2a312464bc674" level="file">
+            <did>
+               <unittitle>Speech - G. Hunt '08, <unitdate normal="2008/2008">2008</unitdate>
+               </unittitle>
+               <container id="aspace_26ab4ea2082fd384ac4e1d1f0ee238ad"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_122593243906e51a79bd0a5c598821d7"
+                          parent="aspace_26ab4ea2082fd384ac4e1d1f0ee238ad"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b6aae771c2a9e3fe9099acb17209bda4" level="file">
+            <did>
+               <unittitle>2011 - Women in Sports, <unitdate normal="2010/2011" type="inclusive">2010-2011</unitdate>
+               </unittitle>
+               <container id="aspace_30d9c91921c3a1ae4d5c00c7c4f05743"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_ae0b7eedf77054f8dc5b5fe0838a7dea"
+                          parent="aspace_30d9c91921c3a1ae4d5c00c7c4f05743"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_783939d6aecae31e8d5b0e3b6742678e" level="file">
+            <did>
+               <unittitle>Articles, <unitdate normal="2007/2010" type="inclusive">2007-2010</unitdate>
+               </unittitle>
+               <container id="aspace_1651c439c0259971cc7b23eab8334994"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_0e4a6a13cb399dc8f8854bf25cce8323"
+                          parent="aspace_1651c439c0259971cc7b23eab8334994"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d5e4fed648c1fd86c94a04fa5fdf8964" level="file">
+            <did>
+               <unittitle>Title IX research, <unitdate normal="2002/2003" type="inclusive">2002-2003</unitdate>
+               </unittitle>
+               <container id="aspace_c0c7f86c03941984068c4c43b28d5c46"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_1d194be51354f41733f3876ac5a094db"
+                          parent="aspace_c0c7f86c03941984068c4c43b28d5c46"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8e84357065fdfaef0831fd8fe1d95495" level="file">
+            <did>
+               <unittitle>Title IX - timelines/sport history, <unitdate normal="2004/2007" type="inclusive">2004-2007</unitdate>
+               </unittitle>
+               <container id="aspace_d71f0b576e2f9eac389b4dcb9c9cea6a"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_0cc5745df1b1c960600f8d4318765f40"
+                          parent="aspace_d71f0b576e2f9eac389b4dcb9c9cea6a"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0db8278b9736ce95ca5ddd044598f3e9" level="file">
+            <did>
+               <unittitle>Greater Savannah Athletic Hall of Fame, <unitdate normal="1990/2008" type="inclusive">1990-2008</unitdate>
+               </unittitle>
+               <container id="aspace_10280ba3e311588ec7ca4e23d709501a"
+                          label="Box:Folder"
+                          type="box">3</container>
+               <container id="aspace_adf35561d950eb9a7b803b02bebc12c2"
+                          parent="aspace_10280ba3e311588ec7ca4e23d709501a"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6fd4f4422ff40df6e14b9498e9e5ff04" level="file">
+            <did>
+               <unittitle>Virginia Hall of Fame, <unitdate normal="2000/2000">2000</unitdate>
+               </unittitle>
+               <container id="aspace_ef3f2a5c4ad0e2d07e8743df4b1ddd32"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_cd9e7b152283b6a35e19284db6f8eba7"
+                          parent="aspace_ef3f2a5c4ad0e2d07e8743df4b1ddd32"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a7c8326407d48c10f8141b02cf91de1e" level="file">
+            <did>
+               <unittitle>AIAW history, <unitdate normal="1981/1981">1981, undated</unitdate>
+               </unittitle>
+               <container id="aspace_f540dae7b4f36a38e92b4bdd4f2f2e43"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_472bee5e773626f7108351d357ebeb6e"
+                          parent="aspace_f540dae7b4f36a38e92b4bdd4f2f2e43"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_145bd52d993c234754310466f60b684b" level="file">
+            <did>
+               <unittitle>Personal reflections, <unitdate normal="1978/1978">1978, undated</unitdate>
+               </unittitle>
+               <container id="aspace_1eef4dbf7bc1a120803c0226fcfeb7fe"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_dfaf03643134ff8f64695592fca3793f"
+                          parent="aspace_1eef4dbf7bc1a120803c0226fcfeb7fe"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_44daf61549b4d4870e3c6cd2c10aef8c" level="file">
+            <did>
+               <unittitle>Resume, <unitdate normal="1983/2004" type="inclusive">1983-2004</unitdate>
+               </unittitle>
+               <container id="aspace_f4f58efa32044e5cdba7a734fdb82838"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_50fc165b2290fa3c84c8e12299030156"
+                          parent="aspace_f4f58efa32044e5cdba7a734fdb82838"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_81358ff24a036fd00d391098a254c794" level="file">
+            <did>
+               <unittitle>Smith magazine, <unitdate normal="2012/2012">2012</unitdate>
+               </unittitle>
+               <container id="aspace_503225a97bea949bc345de09bb67a875"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_83fe0e6c957edf6c2eb856ee0095719c"
+                          parent="aspace_503225a97bea949bc345de09bb67a875"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4bc715e6678ab701c9761ab4b7dffad3" level="file">
+            <did>
+               <unittitle>Think Tank on Women's Issues, <unitdate normal="1988/2007" type="inclusive">1988-2007</unitdate>
+               </unittitle>
+               <container id="aspace_526b3da28f70342273370510d9505f18"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_3d260b89e454f47030f22d1b9a6b6a9f"
+                          parent="aspace_526b3da28f70342273370510d9505f18"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9f57da799534d7a66c2ab94b0aa6b5d7" level="file">
+            <did>
+               <unittitle>Think Tank on Women's Issues, <unitdate normal="1990/1991" type="inclusive">1990-1991</unitdate>
+               </unittitle>
+               <container id="aspace_ae353d345d914b1560f22dc0d93f6a90"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_5eedcddf26c5af748c30f2b08d4b844c"
+                          parent="aspace_ae353d345d914b1560f22dc0d93f6a90"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d8e0393c063ef358b9f3731e1a05302a" level="file">
+            <did>
+               <unittitle>Think Tank Report, <unitdate normal="1990/1990">1990</unitdate>
+               </unittitle>
+               <container id="aspace_3d88fcffab9ad7f78e0f12d669e58b68"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_569465e1d2d74473e5a9ad6701c70ca5"
+                          parent="aspace_3d88fcffab9ad7f78e0f12d669e58b68"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_eaf190063455b7c5c430fefcce842a25" level="file">
+            <did>
+               <unittitle>Binder, <unitdate normal="1999/2007" type="inclusive">1999-2007, undated</unitdate>
+               </unittitle>
+               <container id="aspace_031284a916408314e282775cd0fd8878"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_cd50daa72b5de9085faf776feb523c49"
+                          parent="aspace_031284a916408314e282775cd0fd8878"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8f078711e45104282508664460e755e2" level="file">
+            <did>
+               <unittitle>Sweet Briar (2005), <unitdate normal="2005/2005">2005, undated</unitdate>
+               </unittitle>
+               <container id="aspace_4e347098b94def9885f80696d50df657"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_4545e5ffd8e5eeebdeecd04dcbed7662"
+                          parent="aspace_4e347098b94def9885f80696d50df657"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_dafc4e2b0f340501b476ff55f3efb856" level="file">
+            <did>
+               <unittitle>Smith archives, <unitdate normal="2011/2011">2011</unitdate>
+               </unittitle>
+               <container id="aspace_e7248a3ab377bcf083bb44269a73a734"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_1ae1df308174d0afca57630bac8e8894"
+                          parent="aspace_e7248a3ab377bcf083bb44269a73a734"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_eb7e2e6989c0ed6c997d21d9cb6221cd" level="file">
+            <did>
+               <unittitle>Odds and Ends, <unitdate normal="2002/2011" type="inclusive">2002-2011</unitdate>
+               </unittitle>
+               <container id="aspace_f04650c997e86d7d2cbf3ac7ef4fe780"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_63f85cbbf2d2efc5529b1779c29b8e04"
+                          parent="aspace_f04650c997e86d7d2cbf3ac7ef4fe780"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_878c73a19c13cf097039658f4b56cae6" level="file">
+            <did>
+               <unittitle>Women's Colleges and Athletics, <unitdate normal="2002/2002">September 2002</unitdate>
+               </unittitle>
+               <container id="aspace_b0ac40c987466f2208a4123256155309"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_491187a8d085ce2996d76eb736be4ab9"
+                          parent="aspace_b0ac40c987466f2208a4123256155309"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d05924f86ae175b327dd19eadd90f46f" level="file">
+            <did>
+               <unittitle>Title IX under George Bush, <unitdate normal="2003/2005" type="inclusive">2003-2005</unitdate>
+               </unittitle>
+               <container id="aspace_6364beff4fcd6d993fc5d9ee70c6d1e4"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_bf82d1a164818fd9f0fd053738a0783d"
+                          parent="aspace_6364beff4fcd6d993fc5d9ee70c6d1e4"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3dfa81bb4212b904b4f1b40b9bb8b751" level="file">
+            <did>
+               <unittitle>Speeches and articles, <unitdate normal="1966/2011" type="inclusive">1966-2011</unitdate>
+               </unittitle>
+               <container id="aspace_f3d607e9c6683297aee851076ec6a7f4"
+                          label="Box:Folder"
+                          type="box">4</container>
+               <container id="aspace_908e0f9a20667932358e389a68adfca8"
+                          parent="aspace_f3d607e9c6683297aee851076ec6a7f4"
+                          type="folder">15</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
