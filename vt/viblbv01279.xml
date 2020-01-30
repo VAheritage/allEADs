@@ -1,791 +1,1277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-    type="application/xml" 
-    schematypens="http://relaxng.org/ns/structure/1.0" 
-    title="extended EAD relaxng schema" ?>
+		type="application/xml" 
+		schematypens="http://relaxng.org/ns/structure/1.0" 
+		title="extended EAD relaxng schema" ?>
 
-<ead xmlns="urn:isbn:1-931666-22-9" id="viblbv01279">
-    <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="completed" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-        <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute
-            and State University::University Libraries::Special Collections//TEXT
-            (US::ViBlbV::viblbv01279::Nelson Family Papers, 1783-1872, n.d.)//EN" "viblbv01279.xml"</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>A Guide to the Nelson Family Papers, <date era="ce" calendar="gregorian">1783-1872, n.d.</date></titleproper>
-                <subtitle id="sort">Nelson Family Papers
-                    <num type="collectionnumber">Ms1989-021</num></subtitle>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Special Collections, Virginia Tech</publisher>
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
-                <date type="publication" era="ce" calendar="gregorian">©2014 By Virginia Tech. All rights reserved.</date>
-                <p id="usestatement">
-                    <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use </extref>
-                </p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>This finding aid was produced using the Archivists' Toolkit <date era="ce" calendar="gregorian">2014-02-21T15:35-0500</date></creation>
-            <langusage>Description is in <language langcode="eng">English </language></langusage>
-        </profiledesc>
-    </eadheader>
-    <frontmatter>
-        <titlepage>
-            <titleproper>Nelson Family Papers,
-                <date era="ce" calendar="gregorian">1783-1872, n.d.</date></titleproper>
-            <subtitle>A Collection in <lb/>Special Collections <num type="Collection Number">
-                Ms1989-021</num></subtitle>
-            <p id="logostmt">
-                <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
-            </p>
-            <publisher>Special Collections, Virginia Tech</publisher>
-            <date type="publication" era="ce" calendar="gregorian">2014 </date>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
-            <list type="deflist">
-                <defitem>
-                    <label>Processed by: Betsy Reed, Graduate Assistant and Kira A. Dietz, Archivist,</label>
-                    <item> Special Collections</item>
-                </defitem>
-            </list>
-        </titlepage>
-    </frontmatter>
-    
-    <archdesc level="collection">
-        <runner placement="footer">Special Collections, Virginia Tech </runner>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude" id="viblbv01279">
+  <eadheader langencoding="iso639-2b" findaidstatus="completed"
+    scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1"
+    repositoryencoding="iso15511">
+    <eadid countrycode="US" mainagencycode="US-ViBlbV">PUBLIC "-//Virginia Polytechnic Institute and
+      State University::University Libraries::Special Collections//TEXT
+      (US::ViBlbV::viblbv01279::Nelson Family Papers, 1783-1872, n.d.)//EN" "viblbv01279.xml"</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>A Guide to the Nelson Family Papers, <date era="ce" calendar="gregorian"
+          >1783-1872, n.d.</date></titleproper>
+        <subtitle id="sort">Nelson Family Papers <num type="collectionnumber">Ms1989-021</num></subtitle>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>Special Collections and University Archives, Virginia Tech</publisher>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+          href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_address.xi.xml"/>
+        <date type="publication" era="ce" calendar="gregorian">2020 (<emph><extref xlink:href="https://creativecommons.org/publicdomain/zero/1.0/" xlink:type="simple">CC0 1.0</extref></emph>)</date>
+        <p id="usestatement">
+          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
+          </extref>
+        </p>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>This finding aid was produced using ArchivesSpace <date era="ce"
+        calendar="gregorian">2019-12-13 15:02:40-0500</date></creation>
+      <langusage>Description is in <language langcode="eng">English </language></langusage>
+    </profiledesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Nelson Family Papers, <date era="ce" calendar="gregorian">1783-1872, n.d.</date></titleproper>
+      <subtitle>A Collection in <lb/>Special Collections and University Archives<num type="Collection Number">
+        Ms1989-021</num></subtitle>
+      <p id="logostmt">
+        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+          xlink:actuate="onLoad" xlink:show="embed"
+          xlink:href="http://ead.lib.virginia.edu/vivaead/logos/vt.jpg"/>
+      </p>
+      <publisher>Special Collections and University Archives, Virginia Tech</publisher>
+      <date type="publication" era="ce" calendar="gregorian">2020</date>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+        href="http://ead.lib.virginia.edu:/vivaead/add_con/vt_contact.xi.xml"/>
+      <list type="deflist">
+        <defitem>
+          <label>Processed by: Betsy Reed, Graduate Assistant and Kira A. Dietz, Archivist,</label>
+          <item> Special Collections and University Archives</item>
+        </defitem>
+      </list>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <runner placement="footer">Special Collections and University Archives, Virginia Tech </runner>
+    <did>
+      <head>Descriptive Summary </head>
+      <repository label="Repository" encodinganalog="852$a">Special Collections and University Archives, Virginia Tech,
+        Blacksburg, Va. </repository>
+      <unittitle label="Title">Nelson Family Papers, <unitdate>1783-1872, n.d.</unitdate></unittitle>
+      <langmaterial label="Language">
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination label="Creator">
+        <famname source="local">Nelson family</famname>; <persname role="wam" source="local">Nelson, Adelaide, 1816-1875</persname>; <persname source="local">Nelson, George Washington, Jr., 1840-1903</persname>; <persname role="wam" source="local">Nelson, Hugh Mortimer, Sr., 1811-1862</persname>
+      </origination>
+      <unitid label="Collection Number">Ms1989-021</unitid>
+      <physdesc altrender="whole" label="Physical Characteristics">
+        <extent altrender="materialtype spaceoccupied">0.9 Cubic Feet</extent>
+        <extent altrender="carrier">3 boxes</extent>
+      </physdesc>      
+      <abstract id="aspace_13aad2192372a27e7523c2cd21e65408">This collection contains papers
+        (primarily correspondence and Civil War documents) from the Nelson family of Clarke County,
+        Virginia, 1783-1872, n.d.</abstract>
+    </did>
+    <accessrestrict id="aspace_356058c3733e05ebea5dba1f9def15e1">
+      <head>Access Restrictions</head>
+      <p>Collection is open for research.</p>
+    </accessrestrict>
+    <userestrict id="aspace_71198f419a8c4d5cb0eb71aa4c888f87">
+      <head>Use Restrictions</head>
+      <p>Permission to publish material from the Nelson Family Papers must be obtained from Special
+        Collections, Virginia Tech.</p>
+    </userestrict>
+    <prefercite id="aspace_fab55ab5fef271d0bcb7e87df8bc554a">
+      <head>Preferred Citation</head>
+      <p>Researchers wishing to cite this collection should include the following information:
+        Nelson Family Papers, Ms1989-021, Special Collections, Virginia Tech, Blacksburg, Va.</p>
+    </prefercite>
+    <acqinfo id="aspace_0e95ff2b3fb1d4b688fbde51afcbd83d">
+      <head>Acquisition Information</head>
+      <p>The collection was acquired by Special Collections in 1989.</p>
+    </acqinfo>
+    <processinfo id="aspace_3d220c94d2507f30e7813736314fd5af">
+      <head>Processing Information</head>
+      <p>Initial processing, arrangement, and description of the the Nelson Family Papers was
+        completed in October 2013. Additional work was completed in January 2015.</p>
+    </processinfo>
+    <bioghist id="aspace_0e7322d50292336fe12db028afe3dafc">
+      <head>Biographical note</head>
+      <p>The Nelson family has a long and rich history in the state of Virginia beginning with
+        Thomas Nelson (1677–1745) who came to Yorktown in the early years of the 18th century and is
+        often identified as Scotch Tom. Among his sons was William Nelson (1711–72), colonial
+        governor of Virginia (1771–71), sometimes known as "President Nelson," as he held the title,
+        President and Commander in Chief of the Colony and Dominion of Virginia; and Thomas Nelson
+        (1716–82), known as Secretary Nelson, who served as secretary of the Virginia Colony. One of
+        William's son's, Thomas Nelson (1738–89) represented Virginia in the Continental Congress,
+        was a signer of the Declaration of Independence, and was Governor of Virginia in 1781.
+        Governor Thomas Nelson and his wife, Lucy Grymes had eleven children, all of whom were born
+        at Yorktown. Among Governor Thomas Nelson and Lucy Grymes's children were Thomas Nelson Jr.
+        (b. 1764), Philip Nelson (b. 1766), and Francis Nelson (b. 1767). </p>
+      <p>Thomas Nelson Jr. married Frances Page in 1795 and had four children, including Rev. George
+        Washington Nelson (b. 1805), who married Jane Crease in 1834. They had three children,
+        including George Washington Nelson, Jr. (b. 1840), also known as "Wash." He attended
+        University of Virginia from 1858 to 1860, but, in May 1861, enlisted in the Confederate
+        Army. Within a year, he was a Captain commanding the Hanover Light Artillery, soon to be
+        promoted to Major. In October 1862, outside New Market in Millwood, Clarke County, Va., he
+        was captured by Union forces and spent the rest of the war as a prisoner. Confined first at
+        Atheneum Prison, West Virginia, he was transferred to Camp Chase, Ohio; Johnson's Island,
+        Ohio; Pt. Lookout then Hammond General Hospital, Maryland; and then to Ft. Delaware,
+        Delaware in June 1864. On 20 August 1864, he was moved to Morris Island outside Charleston,
+        South Carolina, where he become one of what is known as the Immortal 600, a group of
+        confederate prisoners placed by the Union in the line of Confederate fire, in retaliation
+        for a similar action by the Confederate Army. "Wash" was moved again to Ft. Pulaski,
+        Georgia, where he was finally released in June 1865. His correspondence with cousin Mollie
+        Scollay, written while he was a prisoner of war, is a prominent part of this collection. He
+        and Mollie were married in October 1865. George Washington Nelson, Jr. was ordained as a
+        Episcopal priest in 1875 and had been rector of St. James Episcopal Church in Warrenton, Va.
+        for over twenty years at the time of his death on 30 May 1903. Mollie died on 12 June
+        1923.</p>
+      <p>Philip Nelson married Sarah Ann Burwell in 1789 and moved to Clarke Co. Va. together with
+        Sarah's brother, Robert Carter Burwell in 1790. Robert Carter Burwell was the builder of the
+        home "Rosney" and, about twenty years later, the nearby mansion at Long Branch Plantation,
+        both of Clarke County. Burwell died while serving in the military during the War of 1812,
+        after which Philip and Sarah Nelson, who had lived at Rosney, inherited Long Branch.</p>
+      <p>Francis Nelson of Mont Air, Hanover Co. Va. married Lucy Page about 1792 and had fourteen
+        children. Among them were Sally Page Nelson (b. 1801), Hugh Mortimer Nelson (b. 1811), and
+        Fannie Burwell Nelson (b. 1810). </p>
+      <p>Sally Page Nelson married Dr. Samuel Scollay of Smithfield, Jefferson County, Va. (later
+        West Virginia) in 1841. Among their children was Mary Scollay (b. 1844), also known as
+        Mollie. It is Mollie's correspondence with George Washington ("Wash") Nelson, Jr., her
+        future husband, while he was a prisoner of war that forms a large part of this collection.
+        "Wash" and Mollie were cousins, as their fathers, Thomas Nelson, Jr. and Francis Nelson,
+        were brothers. They were both grandchildren of Governor Thomas Nelson. </p>
+      <p>Hugh Mortimer Nelson (Sr.) married Adelaide Holker (b. 1816) of Boston in 1836. They
+        settled in Baltimore for a short time, where Hugh began his career as a lawyer. In 1842,
+        Hugh moved back to Virginia with his wife and three-year old daughter Nannie and purchased a
+        struggling Long Branch from his uncle Philip Nelson. The correspondence between Adelaide and
+        daughter Nannie while the latter was attending a New York school in 1857 comprises another
+        significant portion of this collection. Son Hugh Nelson, Jr. was born in 1847. Another
+        daughter, Lucy, was born in 1842, but died as an infant. Hugh Mortimer Nelson, Sr.
+        represented Clarke County at the Virginia (Secession) Convention of 1861, where he initially
+        maintained his support for the Union. Following the events at Ft. Sumter and Virginia's
+        decision to secede, he raised a cavalry company from Clarke County and served under J.E.B.
+        Stuart's command for a time before attaining the rank of Major under General Richard S.
+        Ewell. Wounded at the Battle of Gaines Mill/Seven Days Battles on 26 June 1862, he died in
+        Albemarle County on 6 August 1862. Adelaide was left in charge of Long Branch. She died in
+        1875 of pneumonia after a long struggle to keep the property in the family. </p>
+      <p>Fanny Burwell Nelson, one of Hugh Mortimer Nelson, Sr's sisters, never married and moved
+        from Mont Air, Hanover County to Smithfield, Jefferson County, Va. (later West Virginia)
+        around 1846. She moved from Smithfield to Long Branch in 1878 when it belonged to Hugh
+        Mortimer Nelson, Jr. and his wife, Sally Page Nelson (b. 1866), daughter of George
+        Washington ("Wash") Nelson, Jr. and Mary (Mollie) Scollay Nelson. Fanny Burwell Nelson died
+        at Long Branch in 1896. </p>
+    </bioghist>
+    <scopecontent id="aspace_344535f56edea425961985094ad6f065">
+      <head>Scope and Content</head>
+      <p>This collection consists of papers, primarily correspondence, from the Nelson family of
+        Clarke County, Virginia. The Civil War letters between prisoner of war George Washington
+        "Wash" Nelson and his future wife, Mollie Scollay of Shepardstown, Jefferson County,
+        Virginia (now West Virginia) make up the largest part of the collection, followed by the
+        correspondence between Hugh and Adelaide Nelson of Long Branch Plantation and their daughter
+        Nannie. Other Civil War papers include muster rolls, one of them signed by J.E.B. Stuart, of
+        Captain Hugh Mortimer Nelson Sr.'s companies in the First and the Sixth Virginia Cavalry</p>
+    </scopecontent>
+    <arrangement id="aspace_935c38b8e23ec8934710f7308f50b264">
+      <head>Arrangement</head>
+      <p>The collection is arranged in two series, Correspondence and Documents. Items within the
+        first series are arranged, first, by primary correspondent, and then by date, when possible.
+        Items withing the second series are arranged by the family member with whom the document is
+        associated.</p>
+      <p>Box 1 Folders 24 and 25 were removed in June 2014 and refoldered as Oversize Folder 1. </p>
+    </arrangement>
+    <controlaccess>
+      <head>Index Terms</head>
+      <controlaccess>
+        <head>Subjects:</head>
+        <subject source="local">Civil War</subject>
+        <subject source="local">Local/Regional History and Appalachian South</subject>
+        <subject source="lcsh">United States -- History -- Civil War, 1861-1865</subject>
+        <subject source="lcsh">Women -- History</subject>
+      </controlaccess>
+      <controlaccess>
+        <head>Geographical Names:</head>
+      <geogname source="lcsh">Clarke County (Va.)</geogname>
+      </controlaccess>
+    </controlaccess>
+    <dsc type="combined">
+      <head>Contents List</head>
+      <c01 id="aspace_ref3_zwf" level="file">
         <did>
-            <head>Descriptive Summary </head>
-            <repository label="Repository" encodinganalog="852$a">Special Collections, Virginia
-                Tech, Blacksburg, Va. </repository>
-            <unittitle label="Title">Nelson Family Papers, <unitdate>1783-1872, n.d.</unitdate></unittitle>
-            <unitid label="Collection Number">Ms1989-021</unitid>
-            <physdesc label="Physical Characteristics">
-                <extent>0.9 cu. ft.</extent>
-                <extent>3 boxes</extent>
-            </physdesc>
-            <langmaterial label="Language">
-                <language langcode="eng">English</language>
-            </langmaterial>
-            <abstract id="ref118" label="Abstract">This collection contains papers (primarily correspondence and Civil War documents) from the Nelson family of Clarke County, Virginia, 1783-1872, n.d.</abstract>
-            <origination label="Creator">
-                <famname source="local">Nelson family</famname>; <persname source="local" role="Writer of accompanying material (wam)">Nelson, Adelaide</persname>; <persname source="local">Nelson, George Washington</persname>; <persname source="local" role="Writer of accompanying material (wam)">Nelson, Hugh Mortimer</persname>
-            </origination>
+          <unittitle>June 17, 1828 Prescription for Nelson Esq. from a Pharmacy in
+            Parish</unittitle>
+          <container id="aspace_a7fdab639ecf2a9b5021e85d91bd285b" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_04459450930b1b64e9aa1339982cd7bc"
+            parent="aspace_a7fdab639ecf2a9b5021e85d91bd285b" type="folder">1</container>
         </did>
-        <descgrp type="admininfo">
-            <head>Administrative Information</head>
-        <accessrestrict id="ref120">
-            <head>Access Restrictions</head>
-            <p>Collection is open for research.</p>
-        </accessrestrict>
-        <userestrict id="ref119">
-            <head>Use Restrictions</head>
-            <p>Permission to publish material from the Nelson Family Papers must be obtained from Special Collections, Virginia Tech.</p>
-        </userestrict>
-        <prefercite id="ref122">
-            <head>Preferred Citation</head>
-            <p>Researchers wishing to cite this collection should include the following information: Nelson Family Papers, Ms1989-021, Special Collections, Virginia Tech, Blacksburg, Va.</p>
-        </prefercite>
-        <acqinfo id="ref121">
-            <head>Acquisition Information</head>
-            <p>The collection was acquired by Special Collections in 1989.</p>
-        </acqinfo>
-        <processinfo id="ref123">
-            <head>Processing Information</head>
-            <p>The processing, arrangement, and description of the the Nelson Family Papers was completed in October 2013.</p>
-        </processinfo>
-            </descgrp>
-        <bioghist id="ref8" encodinganalog="545$a">
-            <head>Biographical Note</head>
-            <p>The Nelson family has a long and rich history in the state of Virginia beginning with Thomas Nelson (1677–1745) who came to Yorktown in the early years of the 18th century and is often identified as Scotch Tom. Among his sons was William Nelson (1711–72), colonial governor of Virginia (1771–71), sometimes known as “President Nelson,” as he held the title, President and Commander in Chief of the Colony and Dominion of Virginia; and Thomas Nelson (1716–82), known as Secretary Nelson, who served as secretary of the Virginia Colony. One of William’s son’s, Thomas Nelson (1738–89) represented Virginia in the Continental Congress, was a signer of the Declaration of Independence, and was Governor of Virginia in 1781. Governor Thomas Nelson and his wife, Lucy Grymes had eleven children, all of whom were born at Yorktown. Among Governor Thomas Nelson and Lucy Grymes’s children were Thomas Nelson Jr. (b. 1764), Philip Nelson (b. 1766), and Francis Nelson (b. 1767).</p> 
-            <p>Thomas Nelson Jr. married Frances Page in 1795 and had four children, including Rev. George Washington Nelson (b. 1805), who married Jane Crease in 1834. They had three children, including George Washington Nelson, Jr. (b. 1840), also known as “Wash.” He attended University of Virginia from 1858 to 1860, but, in May 1861, enlisted in the Confederate Army. Within a year, he was a Captain commanding the Hanover Light Artillery, soon to be promoted to Major. In October 1862, outside New Market in Millwood, Clarke County, Va., he was captured by Union forces and spent the rest of the war as a prisoner. Confined first at Atheneum Prison, West Virginia, he was transferred to Camp Chase, Ohio; Johnson’s Island, Ohio; Pt. Lookout then Hammond General Hospital, Maryland; and then to Ft. Delaware, Delaware in June 1864. On 20 August 1864, he was moved to Morris Island outside Charleston, South Carolina, where he become one of what is known as the Immortal 600, a group of confederate prisoners placed by the Union in the line of Confederate fire, in retaliation for a similar action by the Confederate Army. “Wash” was moved again to Ft. Pulaski, Georgia, where he was finally released in June 1865. His correspondence with cousin Mollie Scollay, written while he was a prisoner of war, is a prominent part of this collection. He and Mollie were married in October 1865. George Washington Nelson, Jr. was ordained as a Episcopal priest in 1875 and had been rector of St. James Episcopal Church in Warrenton, Va. for over twenty years at the time of his death on 30 May 1903. Mollie died on 12 June 1923.</p>
-            
-            <p>Philip Nelson married Sarah Ann Burwell in 1789 and moved to Clarke Co. Va. together with Sarah’s brother, Robert Carter Burwell in 1790. Robert Carter Burwell was the builder of the home “Rosney” and, about twenty years later, the nearby mansion at Long Branch Plantation, both of Clarke County. Burwell died while serving in the military during the War of 1812, after which Philip and Sarah Nelson, who had lived at Rosney, inherited Long Branch.</p>
-            
-            <p>Francis Nelson of Mont Air, Hanover Co. Va. married Lucy Page about 1792 and had fourteen children. Among them were Sally Page Nelson (b. 1801), Hugh Mortimer Nelson (b. 1811), and Fannie Burwell Nelson (b. 1810).</p> 
-            
-            <p>Sally Page Nelson married Dr. Samuel Scollay of Smithfield, Jefferson County, Va. (later West Virginia) in 1841. Among their children was Mary Scollay (b. 1844), also known as Mollie. It is Mollie’s correspondence with George Washington (“Wash”) Nelson, Jr., her future husband, while he was a prisoner of war that forms a large part of this collection. “Wash” and Mollie were cousins, as their fathers, Thomas Nelson, Jr. and Francis Nelson, were brothers. They were both grandchildren of Governor Thomas Nelson.</p> 
-            
-            <p>Hugh Mortimer Nelson (Sr.) married Adelaide Holker (b. 1816) of Boston in 1836. They settled in Baltimore for a short time, where Hugh began his career as a lawyer. In 1842, Hugh moved back to Virginia with his wife and three-year old daughter Nannie and purchased a struggling Long Branch from his uncle Philip Nelson. The correspondence between Adelaide and daughter Nannie while the latter was attending a New York school in 1857 comprises another significant portion of this collection. Son Hugh Nelson, Jr. was born in 1847. Another daughter, Lucy, was born in 1842, but died as an infant. Hugh Mortimer Nelson, Sr. represented Clarke County at the Virginia (Secession) Convention of 1861, where he initially maintained his support for the Union. Following the events at Ft. Sumter and Virginia’s decision to secede, he raised a cavalry company from Clarke County and served under J.E.B. Stuart’s command for a time before attaining the rank of Major under General Richard S. Ewell. Wounded at the Battle of Gaines Mill/Seven Days Battles on 26 June 1862, he died in Albemarle County on 6 August 1862. Adelaide was left in charge of Long Branch. She died in 1875 of pneumonia after a long struggle to keep the property in the family.</p> 
-            
-            <p>Fanny Burwell Nelson, one of Hugh Mortimer Nelson, Sr’s sisters, never married and moved from Mont Air, Hanover County to Smithfield, Jefferson County, Va. (later West Virginia) around 1846. She moved from Smithfield to Long Branch in 1878 when it belonged to Hugh Mortimer Nelson, Jr. and his wife, Sally Page Nelson (b. 1866), daughter of George Washington (“Wash”) Nelson, Jr. and Mary (Mollie) Scollay Nelson. Fanny Burwell Nelson died at Long Branch in 1896.</p>
-        </bioghist>
-        <scopecontent id="ref1">
-            <head>Scope and Content</head>
-            <p>This collection consists of papers from the Nelson family of Clarke County, Virginia. The papers consist of correspondence among the family members, particularly between Hugh and Adelaide Nelson of Long Branch Plantation in Millwood and their daughter Nannie, as well as the Civil War letters between prisoner of war G. Washington "Wash" Nelson and Mollie Scollay of Shepardstown, Virginia.</p>
-            <p>G. Washington Nelson was captured in 1863 and held at Johnson's Island, Ohio, Point Lookout, Maryland, and Fort Delaware, Delaware. Civil War papers also include muster rolls, one of them signed by J.E.B. Stuart, of Captain Hugh Nelson's company, the Clarke County, Company D., Sixth Cavalry Volunteers. </p>
-        </scopecontent>
-        <arrangement id="ref117">
-            <head>Arrangement</head>
-            <p>The collection is arranged in chronological order. Undated materials are arranged chronologically by month and day information, whenever possible.</p>
-            <p>Box 1 Folders 20, 21, 24, and 25 were removed in June 2014 and refoldered as Oversize Folder 1.</p>
-        </arrangement>
-        <controlaccess>
-            <head>Index Terms</head>
-            <controlaccess>
-                <head>Subjects:</head>
-            <subject source="local">Civil War</subject>
-            <subject source="local">Local/Regional History and Appalachian South</subject>
-            <subject source="lcsh">United States--History--Civil War, 1861-1865</subject>
-            </controlaccess>
-            <controlaccess>
-                <head>Geographical Names:</head>
-            <geogname source="lcsh">Clarke County (Va.)</geogname>
-                </controlaccess>
-        </controlaccess>
-        <dsc type="combined">
-            <c01 id="ref3" level="file">
-                <did>
-                    <unittitle>June 17, 1828 Prescription for Nelson Esq. from a Pharmacy in Parish</unittitle>
-                    <container id="cid1678001" type="Box-folder" label="Box-folder">1-1</container>
-                </did>
-            </c01>
-            <c01 id="ref4" level="file">
-                <did>
-                    <unittitle>July 1, 1836, From P. Graften, Jr. in New York City to Hugh M. Nelson, Esq. Re. a horse</unittitle>
-                    <container id="cid1678002" type="Box-folder" label="Box-folder">1-2</container>
-                </did>
-            </c01>
-            <c01 id="ref5" level="file">
-                <did>
-                    <unittitle>February 16, 1838, Letter from J.H. Mason in Washington, D.C. to Hugh M. Nelson, Esq. in Baltimore, Maryland, Re. The whereabouts of a clerk</unittitle>
-                    <container id="cid1678003" type="Box-folder" label="Box-folder">1-3</container>
-                </did>
-            </c01>
-            <c01 id="ref6" level="file">
-                <did>
-                    <unittitle>1857, Letter from Adelaide in Long Branch to Nannie</unittitle>
-                    <container id="cid1678004" type="Box-folder" label="Box-folder">1-4</container>
-                </did>
-            </c01>
-            <c01 id="ref7" level="file">
-                <did>
-                    <unittitle>March 31, 1857, Letter from Adelaide to Nannie</unittitle>
-                    <container id="cid1678005" type="Box-folder" label="Box-folder">1-5</container>
-                </did>
-            </c01>
-            <c01 id="ref8" level="file">
-                <did>
-                    <unittitle>April 6, 1837, Letter from Adelaide to Nannie</unittitle>
-                    <container id="cid1678006" type="Box-folder" label="Box-folder">1-6</container>
-                </did>
-            </c01>
-            <c01 id="ref9" level="file">
-                <did>
-                    <unittitle>April 13, 1857, Letter from Adelaide Nelson to Nannie</unittitle>
-                    <container id="cid1678007" type="Box-folder" label="Box-folder">1-7</container>
-                </did>
-            </c01>
-            <c01 id="ref10" level="file">
-                <did>
-                    <unittitle>April 25, 1857, Letter from Adelaide, in Long Branch, to Nannie</unittitle>
-                    <container id="cid1678008" type="Box-folder" label="Box-folder">1-8</container>
-                </did>
-            </c01>
-            <c01 id="ref11" level="file">
-                <did>
-                    <unittitle>April 28, 1857, Letter from Mother Adelaide, in Long Branch, Nannie</unittitle>
-                    <container id="cid1678009" type="Box-folder" label="Box-folder">1-9</container>
-                </did>
-            </c01>
-            <c01 id="ref13" level="file">
-                <did>
-                    <unittitle>May 4, 1857, Letter from Harriet L. Scollay, in Middleway, to Cousin Nannie</unittitle>
-                    <container id="cid1678010" type="Box-folder" label="Box-folder">1-10</container>
-                </did>
-            </c01>
-            <c01 id="ref14" level="file">
-                <did>
-                    <unittitle>May 9, 1857, Letter from Adelaide, to Nannie</unittitle>
-                    <container id="cid1678011" type="Box-folder" label="Box-folder">1-11</container>
-                </did>
-            </c01>
-            <c01 id="ref15" level="file">
-                <did>
-                    <unittitle>May 11, 1857, Letter from Hugh Nelson to Nannie</unittitle>
-                    <container id="cid1678012" type="Box-folder" label="Box-folder">1-12</container>
-                </did>
-            </c01>
-            <c01 id="ref16" level="file">
-                <did>
-                    <unittitle>May 16, 1857, Letter from Adelaide, to Nannie</unittitle>
-                    <container id="cid1678013" type="Box-folder" label="Box-folder">1-13</container>
-                </did>
-            </c01>
-            <c01 id="ref17" level="file">
-                <did>
-                    <unittitle>May 20, 1857, Letter from Mother, in Long Branch, to Nannie</unittitle>
-                    <container id="cid1678014" type="Box-folder" label="Box-folder">1-14</container>
-                </did>
-            </c01>
-            <c01 id="ref18" level="file">
-                <did>
-                    <unittitle>June 5, 1857, Letter from Cousin Mevllie Scollay, in Middleway, to Cousin Nannie</unittitle>
-                    <container id="cid1678015" type="Box-folder" label="Box-folder">1-15</container>
-                </did>
-            </c01>
-            <c01 id="ref19" level="file">
-                <did>
-                    <unittitle>June 14, 1857, Letter from Adelaide, to Nannie</unittitle>
-                    <container id="cid1678016" type="Box-folder" label="Box-folder">1-16</container>
-                </did>
-            </c01>
-            <c01 id="ref20" level="file">
-                <did>
-                    <unittitle>November 5, 1957, Letter to Nelson from Shier Wilie in Boston, (Re: 'The Bight' (a house), taxes $175, business transactions, discuss rent and repairs, mentions hard economic conditions)</unittitle>
-                    <container id="cid1678017" type="Box-folder" label="Box-folder">1-17</container>
-                </did>
-            </c01>
-            <c01 id="ref21" level="file">
-                <did>
-                    <unittitle>July 1, 1858, University of Virginia announcement (Re: Final exercises, best debater, Charles Stringfellow, sent by Bennett Taylor)</unittitle>
-                    <container id="cid1678018" type="Box-folder" label="Box-folder">1-18</container>
-                </did>
-            </c01>
-            <c01 id="ref22" level="file">
-                <did>
-                    <unittitle>April 9, 1860, Letter to Nelson from . Aar, discuss 1860 elections</unittitle>
-                    <container id="cid1678019" type="Box-folder" label="Box-folder">1-19</container>
-                </did>
-            </c01>
-            <c01 id="ref23" level="file">
-                <did>
-                    <unittitle>Capt. Joseph Hardesty, 1st Regiment Cavalry Muster Roll, Signed: JEB Stuart (Harper's Ferry, Shephardstown enrollments, Berryville, people mustered by Stuart)</unittitle>
-                    <container id="cid1678020" type="Folder" label="Oversize">1</container>
-                </did>
-            </c01>
-            <c01 id="ref24" level="file">
-                <did>
-                    <unittitle>Muster Roll, Pay Roll, Capt. Hugh M. Nelson, Co. D, First Virginia Cavalry, JEB Stuart Command, 1861</unittitle>
-                    <container id="cid1678021" type="Folder" label="Oversize">1</container>
-                </did>
-            </c01>
-            <c01 id="ref25" level="file">
-                <did>
-                    <unittitle>Muster Roll, Capt. Hugh M. Nelson, Co. D Sixth Cavalry, Col. Charles W. Field, 1861</unittitle>
-                    <container id="cid1678022" type="Box-folder" label="Box-folder">1-22</container>
-                </did>
-            </c01>
-            <c01 id="ref26" level="file">
-                <did>
-                    <unittitle>September 21, 1861, Letter to Mrs. Hugh Nelson from Insurance agent (re: burning of the green house)</unittitle>
-                    <container id="cid1678023" type="Box-folder" label="Box-folder">1-23</container>
-                </did>
-            </c01>
-            <c01 id="ref27" level="file">
-                <did>
-                    <unittitle>November 1, 1861, Muster Roll Company D, 6th Regiment</unittitle>
-                    <container id="cid1854001" type="Folder" label="Oversize">1</container>
-                </did>
-            </c01>
-            <c01 id="ref28" level="file">
-                <did>
-                    <unittitle>November 1, 1861, Muster Roll, Company D, Sixth Regiment</unittitle>
-                    <container id="cid1854002" type="Folder" label="Oversize">1</container>
-                </did>
-            </c01>
-            <c01 id="ref29" level="file">
-                <did>
-                    <unittitle>November 5, 1861, Letter from Hugh Nelson, at Carter Hall, to sister</unittitle>
-                    <container id="cid1678026" type="Box-folder" label="Box-folder">1-26</container>
-                </did>
-            </c01>
-            <c01 id="ref30" level="file">
-                <did>
-                    <unittitle>Wrapper, envelope- war letters, no letters contained, envelope addressed to Col. A.R. Boteler, 1861-1862</unittitle>
-                    <container id="cid1678027" type="Box-folder" label="Box-folder">1-27</container>
-                </did>
-            </c01>
-            <c01 id="ref31" level="file">
-                <did>
-                    <unittitle>February 11, 1862, Orders Concerning Recruitment</unittitle>
-                    <container id="cid1678028" type="Box-folder" label="Box-folder">1-28</container>
-                </did>
-            </c01>
-            <c01 id="ref32" level="file">
-                <did>
-                    <unittitle>February 12, 1862, Letter to Capt. Hugh M. Nelson, Co. D, 6th Regiment, Virginia Cavalry, from Camp GW Smith, Special Order No. 40, Recruiting</unittitle>
-                    <container id="cid1678029" type="Box-folder" label="Box-folder">1-29</container>
-                </did>
-            </c01>
-            <c01 id="ref33" level="file">
-                <did>
-                    <unittitle>March 4, 1862, Statement of enlistment order, Capt. Hugh M. Nelson, Clarke Cavalry Co. D, 6th regiment (?), Virginia Cavalry</unittitle>
-                    <container id="cid1678030" type="Box-folder" label="Box-folder">1-30</container>
-                </did>
-            </c01>
-            <c01 id="ref34" level="file">
-                <did>
-                    <unittitle>April 6, 1862, Letter to Hugh M. Nelson, letter Re: Sabres- JEB Stuart</unittitle>
-                    <container id="cid1678031" type="Box-folder" label="Box-folder">1-31</container>
-                </did>
-            </c01>
-            <c01 id="ref37" level="file">
-                <did>
-                    <unittitle>July 6, 1863, "Home," letter to Wash from Cousin Molly S. Award of Gettysburg and loss of 10,000 Men</unittitle>
-                    <container id="cid1684001" type="Box-folder" label="Box-folder">2-1</container>
-                </did>
-            </c01>
-            <c01 id="ref38" level="file">
-                <did>
-                    <unittitle>October 25, 1863, To Mollie from Wash in Westwood and March 31, 1865, To Mollie from Wash in Fort Delaware (Two Letters to One Envelope)</unittitle>
-                    <container id="cid1684002" type="Box-folder" label="Box-folder">2-2</container>
-                </did>
-            </c01>
-            <c01 id="ref39" level="file">
-                <did>
-                    <unittitle>October 28, 1863, Letter to Mollie from Wash in Winchester, Telling Mollie of his Capture</unittitle>
-                    <container id="cid1684003" type="Box-folder" label="Box-folder">2-3</container>
-                </did>
-            </c01>
-            <c01 id="ref40" level="file">
-                <did>
-                    <unittitle>December 20, 1863, Letter to Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio), from M.N.S.</unittitle>
-                    <container id="cid1684004" type="Box-folder" label="Box-folder">2-4</container>
-                </did>
-            </c01>
-            <c01 id="ref41" level="file">
-                <did>
-                    <unittitle>December 30, 1863, Letter to Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio), from Mollie</unittitle>
-                    <container id="cid1684005" type="Box-folder" label="Box-folder">2-5</container>
-                </did>
-            </c01>
-            <c01 id="ref42" level="file">
-                <did>
-                    <unittitle>January 16, 1864, Letter to Cap. G.W. Nelson (P.O.W. Johnson's Island, Ohio)</unittitle>
-                    <container id="cid1684006" type="Box-folder" label="Box-folder">2-6</container>
-                </did>
-            </c01>
-            <c01 id="ref43" level="file">
-                <did>
-                    <unittitle>January 30, 1864, To Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio) from Mollie</unittitle>
-                    <container id="cid1684007" type="Box-folder" label="Box-folder">2-7</container>
-                </did>
-            </c01>
-            <c01 id="ref44" level="file">
-                <did>
-                    <unittitle>February 9, 1864, Letter to Mollie, from Wash in Johnson's Island, Ohio</unittitle>
-                    <container id="cid1684008" type="Box-folder" label="Box-folder">2-8</container>
-                </did>
-            </c01>
-            <c01 id="ref45" level="file">
-                <did>
-                    <unittitle>February 25, 1864, Letter to Mollie, from Wash in Johnson's Island, Ohio</unittitle>
-                    <container id="cid1684009" type="Box-folder" label="Box-folder">2-9</container>
-                </did>
-            </c01>
-            <c01 id="ref46" level="file">
-                <did>
-                    <unittitle>February 26, 1864, To Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio), from Mollie</unittitle>
-                    <container id="cid1684010" type="Box-folder" label="Box-folder">2-10</container>
-                </did>
-            </c01>
-            <c01 id="ref47" level="file">
-                <did>
-                    <unittitle>March 2, 1864, Letter to Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio) from M</unittitle>
-                    <container id="cid1684011" type="Box-folder" label="Box-folder">2-11</container>
-                </did>
-            </c01>
-            <c01 id="ref48" level="file">
-                <did>
-                    <unittitle>March 8, 1864, March 27, 1864,Two letters in one envelope; Both to Mollie, from Wash in Johnson's Island</unittitle>
-                    <container id="cid1684012" type="Box-folder" label="Box-folder">2-12</container>
-                </did>
-            </c01>
-            <c01 id="ref49" level="file">
-                <did>
-                    <unittitle>March 13, 1864, Letter to Capt. G.W. Nelson (P.O.W. at Point Lookout, MD) from sister</unittitle>
-                    <container id="cid1684013" type="Box-folder" label="Box-folder">2-13</container>
-                </did>
-            </c01>
-            <c01 id="ref50" level="file">
-                <did>
-                    <unittitle>March 14, 1864, Letter to Mollie from Wash in Johnson's Island</unittitle>
-                    <container id="cid1684014" type="Box-folder" label="Box-folder">2-14</container>
-                </did>
-            </c01>
-            <c01 id="ref51" level="file">
-                <did>
-                    <unittitle>1864, Letter to mollie, from Capt. Wash Nelson (P.O.W. at Johnson's Island) the envelope has "Div:38 Fort Delaware, Delaware"</unittitle>
-                    <container id="cid1684015" type="Box-folder" label="Box-folder">2-15</container>
-                </did>
-            </c01>
-            <c01 id="ref52" level="file">
-                <did>
-                    <unittitle>April 5, 1864, Letter to Capt. G.W. Nelson, Hd.Qtrs, Gen. Pendleton's Corps from Mollie</unittitle>
-                    <container id="cid1684016" type="Box-folder" label="Box-folder">2-16</container>
-                </did>
-            </c01>
-            <c01 id="ref53" level="file">
-                <did>
-                    <unittitle>May 23, 1864 and June 14, 1864, Two letters in one envelope, to Mollie, from Wash, Point Lookout; and letter to Mollie from Wash, Hammund General Hospital, Point Lookout</unittitle>
-                    <container id="cid1684017" type="Box-folder" label="Box-folder">2-17</container>
-                </did>
-            </c01>
-            <c01 id="ref54" level="file">
-                <did>
-                    <unittitle>May 30, 1864, Letter to Mollie, from Wash in Harrimand General Hospital, Point Lookout</unittitle>
-                    <container id="cid1684018" type="Box-folder" label="Box-folder">2-18</container>
-                </did>
-            </c01>
-            <c01 id="ref55" level="file">
-                <did>
-                    <unittitle>June 3, 1864, Letter to Capt. G.W. Nelson (P.O.W.) Point Lookout, MD</unittitle>
-                    <container id="cid1684019" type="Box-folder" label="Box-folder">2-19</container>
-                </did>
-            </c01>
-            <c01 id="ref56" level="file">
-                <did>
-                    <unittitle>June 6, 1864, Letter to Capt. G.W. Nelson (P.O.W.) Point Lookout, MD, from M</unittitle>
-                    <container id="cid1684020" type="Box-folder" label="Box-folder">2-20</container>
-                </did>
-            </c01>
-            <c01 id="ref57" level="file">
-                <did>
-                    <unittitle>June 7, 1864, Letter to Mollie, from Wash, Point Lookout</unittitle>
-                    <container id="cid1684021" type="Box-folder" label="Box-folder">2-21</container>
-                </did>
-            </c01>
-            <c01 id="ref58" level="file">
-                <did>
-                    <unittitle>June 12, 1864, Letter to Mollie, from Wash, Point Lookout</unittitle>
-                    <container id="cid1684022" type="Box-folder" label="Box-folder">2-22</container>
-                </did>
-            </c01>
-            <c01 id="ref59" level="file">
-                <did>
-                    <unittitle>June 17, 1864, Letter Capt. G.W. Nelson (P.O.W.) Point Lookout, MD</unittitle>
-                    <container id="cid1684023" type="Box-folder" label="Box-folder">2-23</container>
-                </did>
-            </c01>
-            <c01 id="ref60" level="file">
-                <did>
-                    <unittitle>June 22, 1864, Letter to Capt. G.W. Nelson (P.O.W.) Point Lookout, MD</unittitle>
-                    <container id="cid1684024" type="Box-folder" label="Box-folder">2-24</container>
-                </did>
-            </c01>
-            <c01 id="ref61" level="file">
-                <did>
-                    <unittitle>June 22, 1864, Letter to Mollie, from Wash, Point Lookout</unittitle>
-                    <container id="cid1684025" type="Box-folder" label="Box-folder">2-25</container>
-                </did>
-            </c01>
-            <c01 id="ref62" level="file">
-                <did>
-                    <unittitle>June 26, 1864, Letter to Capt. G.W. Nelson (P.O.W.), Point Lookout, MD, From M</unittitle>
-                    <container id="cid1684026" type="Box-folder" label="Box-folder">2-26</container>
-                </did>
-            </c01>
-            <c01 id="ref63" level="file">
-                <did>
-                    <unittitle>June 28, 1864, Letter to Mollie, from Wash in Fort Delaware, (Envelope Contains a small note- [To Mollie from Dune-requests a book] and Another letter to "My Dear Friend," from Haley Curtis-no date)</unittitle>
-                    <container id="cid1684027" type="Box-folder" label="Box-folder">2-27</container>
-                </did>
-            </c01>
-            <c01 id="ref64" level="file">
-                <did>
-                    <unittitle>1864, Letter to Miss Mollie N. Scollay, Shepherdstown, VA, from Wash</unittitle>
-                    <container id="cid1684028" type="Box-folder" label="Box-folder">2-28</container>
-                </did>
-            </c01>
-            <c01 id="ref65" level="file">
-                <did>
-                    <unittitle>October 31, 1864, Letter to Mollie, from Wash Nelson, Ft. Pulaski</unittitle>
-                    <container id="cid1684029" type="Box-folder" label="Box-folder">2-29</container>
-                </did>
-            </c01>
-            <c01 id="ref68" level="file">
-                <did>
-                    <unittitle>October 1865 - March 1866, Letters from C.A. Welch to Cousin (Mrs. Hugh Nelson)</unittitle>
-                    <container id="cid1684030" type="Box-folder" label="Box-folder">2-30</container>
-                </did>
-            </c01>
-            <c01 id="ref69" level="file">
-                <did>
-                    <unittitle>1865, Letter to Mollie, from Wash Nelson, Fort Delaware</unittitle>
-                    <container id="cid1684031" type="Box-folder" label="Box-folder">2-31</container>
-                </did>
-            </c01>
-            <c01 id="ref70" level="file">
-                <did>
-                    <unittitle>March 21, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Ft. Delaware, DE, from Mollie</unittitle>
-                    <container id="cid1684032" type="Box-folder" label="Box-folder">2-32</container>
-                </did>
-            </c01>
-            <c01 id="ref71" level="file">
-                <did>
-                    <unittitle>March 24, 1865, Letter to Capt. G. W. Nelson (P.O.W.), Ft. Delaware, DE, from Mollie</unittitle>
-                    <container id="cid1684033" type="Box-folder" label="Box-folder">2-33</container>
-                </did>
-            </c01>
-            <c01 id="ref72" level="file">
-                <did>
-                    <unittitle>April 4, 1865, Letter to Capt. G.W. Nelson (P.O.W.), Ft. Delaware, DE, from Mollie</unittitle>
-                    <container id="cid1684034" type="Box-folder" label="Box-folder">2-34</container>
-                </did>
-            </c01>
-            <c01 id="ref73" level="file">
-                <did>
-                    <unittitle>April 2, 1865, Letter to Mollie, from Wash in Ft. Delaware</unittitle>
-                    <container id="cid1684035" type="Box-folder" label="Box-folder">2-35</container>
-                </did>
-            </c01>
-            <c01 id="ref74" level="file">
-                <did>
-                    <unittitle>April 6, 1865, Letter to Mollie, from Wash in Ft. Delaware</unittitle>
-                    <container id="cid1684036" type="Box-folder" label="Box-folder">2-36</container>
-                </did>
-            </c01>
-            <c01 id="ref75" level="file">
-                <did>
-                    <unittitle>April 9, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Ft. Delaware, DE, (Pressed Flowers inside Envelope)</unittitle>
-                    <container id="cid1684037" type="Box-folder" label="Box-folder">2-37</container>
-                </did>
-            </c01>
-            <c01 id="ref76" level="file">
-                <did>
-                    <unittitle>April 12, 1865, Letter to Mollie, from Wash Nelson in Ft. Delaware</unittitle>
-                    <container id="cid1684038" type="Box-folder" label="Box-folder">2-38</container>
-                </did>
-            </c01>
-            <c01 id="ref77" level="file">
-                <did>
-                    <unittitle>April 15, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Div. 34- Ft. Delaware, DE</unittitle>
-                    <container id="cid1684039" type="Box-folder" label="Box-folder">2-39</container>
-                </did>
-            </c01>
-            <c01 id="ref78" level="file">
-                <did>
-                    <unittitle>April 15, 1865, Letter to Mollie from Wash in Ft. Delaware</unittitle>
-                    <container id="cid1684040" type="Box-folder" label="Box-folder">2-40</container>
-                </did>
-            </c01>
-            <c01 id="ref79" level="file">
-                <did>
-                    <unittitle>April 28, 1865 and April 23, 1865, Letter to Capt. G.W. Nelson (P.O.W.), from Mollie, Letter to (same); Two letters in one Envelope</unittitle>
-                    <container id="cid1684041" type="Box-folder" label="Box-folder">2-41</container>
-                </did>
-            </c01>
-            <c01 id="ref80" level="file">
-                <did>
-                    <unittitle>May 3, 1865, Letter to Mollie, from Wash, Ft. Delaware</unittitle>
-                    <container id="cid1684042" type="Box-folder" label="Box-folder">2-42</container>
-                </did>
-            </c01>
-            <c01 id="ref81" level="file">
-                <did>
-                    <unittitle>May 4, 1865, Letter to Mollie, From Wash, Ft. Delaware</unittitle>
-                    <container id="cid1684043" type="Box-folder" label="Box-folder">2-43</container>
-                </did>
-            </c01>
-            <c01 id="ref82" level="file">
-                <did>
-                    <unittitle>May 10, 1865, Letter to Mollie, from Wash in Ft. Delaware</unittitle>
-                    <container id="cid1685001" type="Box-folder" label="Box-folder">3-1</container>
-                </did>
-            </c01>
-            <c01 id="ref83" level="file">
-                <did>
-                    <unittitle>May 14, 1865, Letter to Mollie, from Wash, in Ft. Delaware</unittitle>
-                    <container id="cid1685002" type="Box-folder" label="Box-folder">3-2</container>
-                </did>
-            </c01>
-            <c01 id="ref84" level="file">
-                <did>
-                    <unittitle>May 21, 1865, Letter to Capt. G.W. Nelson (P.O.W) Ft. Delaware, DE. from Mollie</unittitle>
-                    <container id="cid1685003" type="Box-folder" label="Box-folder">3-3</container>
-                </did>
-            </c01>
-            <c01 id="ref85" level="file">
-                <did>
-                    <unittitle>May 27, 1865, Letter to Wash from Mollie</unittitle>
-                    <container id="cid1685004" type="Box-folder" label="Box-folder">3-4</container>
-                </did>
-            </c01>
-            <c01 id="ref86" level="file">
-                <did>
-                    <unittitle>May 27, 1865, Letter to Mollie, from Wash, Ft. Delaware</unittitle>
-                    <container id="cid1685005" type="Box-folder" label="Box-folder">3-5</container>
-                </did>
-            </c01>
-            <c01 id="ref87" level="file">
-                <did>
-                    <unittitle>June 3, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Division 38, Ft. Delaware, DE</unittitle>
-                    <container id="cid1685006" type="Box-folder" label="Box-folder">3-6</container>
-                </did>
-            </c01>
-            <c01 id="ref88" level="file">
-                <did>
-                    <unittitle>July 11, 1865 and April 9, 1866, Letters to Cousin, from Charles (C.A.W.) (C.A. Welch), Boston</unittitle>
-                    <container id="cid1685007" type="Box-folder" label="Box-folder">3-7</container>
-                </did>
-            </c01>
-            <c01 id="ref89" level="file">
-                <did>
-                    <unittitle>July 12, 1865, Letter to G.W. Nelson in Beaver Dam Depot, Hanover County, VA, from Mollie</unittitle>
-                    <container id="cid1685008" type="Box-folder" label="Box-folder">3-8</container>
-                </did>
-            </c01>
-            <c01 id="ref90" level="file">
-                <did>
-                    <unittitle>September 25, 1865, Letter to Capt. G.W. Nelson in Gettysburg, PA, from Mollie</unittitle>
-                    <container id="cid1685009" type="Box-folder" label="Box-folder">3-9</container>
-                </did>
-            </c01>
-            <c01 id="ref91" level="file">
-                <did>
-                    <unittitle>September 4, 1865, Letter to Mollie in Middleway, Jefferson County, VA, from Wash in Mont Air</unittitle>
-                    <container id="cid1685010" type="Box-folder" label="Box-folder">3-10</container>
-                </did>
-            </c01>
-            <c01 id="ref92" level="file">
-                <did>
-                    <unittitle>December 8, 1871 and February 19, 1872, Letters to Mrs. G.W. Nelson (Mollie) from her mother, S.P. Scollay</unittitle>
-                    <container id="cid1685011" type="Box-folder" label="Box-folder">3-11</container>
-                </did>
-            </c01>
-            <c01 id="ref93" level="file">
-                <did>
-                    <unittitle>January 29, 1872, Letter to Mollie from Mother, S.P. Scollay, in Middleway W. VA at Smithfield, Mollie has Daughter Page and siste Lizzie.</unittitle>
-                    <container id="cid1685012" type="Box-folder" label="Box-folder">3-12</container>
-                </did>
-            </c01>
-            <c01 id="ref94" level="file">
-                <did>
-                    <unittitle>February 18, 1783, Letter from Walker Daniel, at Col. Floyd's, to a French Merchant concerning commercial conditions on the wester Kentucky Frontier Both are friends of Col. Floyd, mentions Lincon, Fayette, Fall's of Ohio River, KY River' number of inhabitants; Indians; type of settlers; crops grown. (Merchant- Monsieur Major B. Tardiveau); No. 33 Louisville</unittitle>
-                    <container id="cid1685013" type="Box-folder" label="Box-folder">3-13</container>
-                </did>
-            </c01>
-            <c01 id="ref95" level="file">
-                <did>
-                    <unittitle>March 23 (year unknown), Letter from Delaide in Long Branch to "My Precious Little Child"</unittitle>
-                    <container id="cid1685014" type="Box-folder" label="Box-folder">3-14</container>
-                </did>
-            </c01>
-            <c01 id="ref96" level="file">
-                <did>
-                    <unittitle>March 30 (no year), Letter from Smithfield to Nannie</unittitle>
-                    <container id="cid1685015" type="Box-folder" label="Box-folder">3-15</container>
-                </did>
-            </c01>
-            <c01 id="ref97" level="file">
-                <did>
-                    <unittitle>March 30 and April 8, Two Envelopes to Nannie</unittitle>
-                    <container id="cid1685016" type="Box-folder" label="Box-folder">3-16</container>
-                </did>
-            </c01>
-            <c01 id="ref98" level="file">
-                <did>
-                    <unittitle>April 6 (no year), Envelope to Nannie</unittitle>
-                    <container id="cid1685017" type="Box-folder" label="Box-folder">3-17</container>
-                </did>
-            </c01>
-            <c01 id="ref99" level="file">
-                <did>
-                    <unittitle>April 10 (no year), Letter to Nannie from Adelaide in Long Beach</unittitle>
-                    <container id="cid1685018" type="Box-folder" label="Box-folder">3-18</container>
-                </did>
-            </c01>
-            <c01 id="ref100" level="file">
-                <did>
-                    <unittitle>April 30 (no year), Letter to Nannie from Adelaide</unittitle>
-                    <container id="cid1685019" type="Box-folder" label="Box-folder">3-19</container>
-                </did>
-            </c01>
-            <c01 id="ref101" level="file">
-                <did>
-                    <unittitle>No Date, Letter from Adelaid in Long Beach, to Nannie, Envelope included, 2 small pieces of paper, one is a note</unittitle>
-                    <container id="cid1685020" type="Box-folder" label="Box-folder">3-20</container>
-                </did>
-            </c01>
-            <c01 id="ref102" level="file">
-                <did>
-                    <unittitle>May 8 (no year), Letter from L.B. Nelson, Weehaul to Miss Nannie Nelson, Pelham Priory, Westchester, New York</unittitle>
-                    <container id="cid1685021" type="Box-folder" label="Box-folder">3-21</container>
-                </did>
-            </c01>
-            <c01 id="ref103" level="file">
-                <did>
-                    <unittitle>May 8 (no year), Envelope to Nannie</unittitle>
-                    <container id="cid1685022" type="Box-folder" label="Box-folder">3-22</container>
-                </did>
-            </c01>
-            <c01 id="ref104" level="file">
-                <did>
-                    <unittitle>May 22 (no year), Envelope to Nannie</unittitle>
-                    <container id="cid1685023" type="Box-folder" label="Box-folder">3-23</container>
-                </did>
-            </c01>
-            <c01 id="ref105" level="file">
-                <did>
-                    <unittitle>May 22 (no year), Envelope to Nannie</unittitle>
-                    <container id="cid1685024" type="Box-folder" label="Box-folder">3-24</container>
-                </did>
-            </c01>
-            <c01 id="ref106" level="file">
-                <did>
-                    <unittitle>May 25 (no year), Letter from Hugh and Mother to Nannie</unittitle>
-                    <container id="cid1685025" type="Box-folder" label="Box-folder">3-25</container>
-                </did>
-            </c01>
-            <c01 id="ref107" level="file">
-                <did>
-                    <unittitle>May 25 (no year), Letter from Hugh M. Nelson, New York, to Nannie</unittitle>
-                    <container id="cid1685026" type="Box-folder" label="Box-folder">3-26</container>
-                </did>
-            </c01>
-            <c01 id="ref108" level="file">
-                <did>
-                    <unittitle>June 5 (no year), Letter from Adelaide to Nannie</unittitle>
-                    <container id="cid1685027" type="Box-folder" label="Box-folder">3-27</container>
-                </did>
-            </c01>
-            <c01 id="ref109" level="file">
-                <did>
-                    <unittitle>June 6 (no year), Letter from Mother to Nannie, letter included a pressed flower and a note from Little Hugh</unittitle>
-                    <container id="cid1685028" type="Box-folder" label="Box-folder">3-28</container>
-                </did>
-            </c01>
-            <c01 id="ref110" level="file">
-                <did>
-                    <unittitle>August (no date), Letter to Mollie from Wash (married), Aunt Adelaide</unittitle>
-                    <container id="cid1685029" type="Box-folder" label="Box-folder">3-29</container>
-                </did>
-            </c01>
-            <c01 id="ref111" level="file">
-                <did>
-                    <unittitle>(No Date), Envelope (empty), "Copy of Commission Gen. Thomas Nelson by General Washington"</unittitle>
-                    <container id="cid1685030" type="Box-folder" label="Box-folder">3-30</container>
-                </did>
-            </c01>
-            <c01 id="ref112" level="file">
-                <did>
-                    <unittitle>(No Date), Envelope Cover, Hugh M. Nelson, Near Millwood</unittitle>
-                    <container id="cid1685031" type="Box-folder" label="Box-folder">3-31</container>
-                </did>
-            </c01>
-            <c01 id="ref113" level="file">
-                <did>
-                    <unittitle>(No Date), Hugh M. Nelson Accounts</unittitle>
-                    <container id="cid1685032" type="Box-folder" label="Box-folder">3-32</container>
-                </did>
-            </c01>
-            <c01 id="ref114" level="file">
-                <did>
-                    <unittitle>(No Date), Remnants of European Tour</unittitle>
-                    <container id="cid1685033" type="Box-folder" label="Box-folder">3-33</container>
-                </did>
-            </c01>
-            <c01 id="ref115" level="file">
-                <did>
-                    <unittitle>(No Date), Letter "Thursday Morning" from Adelaide, to Nannie (includes note from Hugh Nelson)</unittitle>
-                    <container id="cid1685034" type="Box-folder" label="Box-folder">3-34</container>
-                </did>
-            </c01>
-            <c01 id="ref116" level="file">
-                <did>
-                    <unittitle>(No Date), "Saturday, March" from mother to daughter, (March)</unittitle>
-                    <container id="cid1685035" type="Box-folder" label="Box-folder">3-35</container>
-                </did>
-            </c01>
-        </dsc>
-    </archdesc>
+      </c01>
+      <c01 id="aspace_ref4_xee" level="file">
+        <did>
+          <unittitle>July 1, 1836, From P. Graften, Jr. in New York City to Hugh M. Nelson, Esq. Re.
+            a horse</unittitle>
+          <container id="aspace_bbcc784ccc0597ae9c67e74428a37d07" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_869111fa2f6d9e5b5c0c9c9c7dfcf5c3"
+            parent="aspace_bbcc784ccc0597ae9c67e74428a37d07" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref5_gws" level="file">
+        <did>
+          <unittitle>February 16, 1838, Letter from J.H. Mason in Washington, D.C. to Hugh M.
+            Nelson, Esq. in Baltimore, Maryland, Re. The whereabouts of a clerk </unittitle>
+          <container id="aspace_640ecac3ba98dc2884079050f06c984b" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_d2761e75be5ff5d4d15d94dc7731ae7c"
+            parent="aspace_640ecac3ba98dc2884079050f06c984b" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref6_ri5" level="file">
+        <did>
+          <unittitle>1857, Letter from Adelaide in Long Branch to Nannie</unittitle>
+          <container id="aspace_ebda24160bdc59b0436cfd7d11884668" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_4da89a0d89bb5d4df79643679a091402"
+            parent="aspace_ebda24160bdc59b0436cfd7d11884668" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref7_szm" level="file">
+        <did>
+          <unittitle>March 31, 1857, Letter from Adelaide to Nannie</unittitle>
+          <container id="aspace_311e641781a763ef6f2691cf0fb468e1" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_1ee01ad8fc6f14c90d2cd7be2c84140e"
+            parent="aspace_311e641781a763ef6f2691cf0fb468e1" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref8_kt6" level="file">
+        <did>
+          <unittitle>April 6, 1837, Letter from Adelaide to Nannie</unittitle>
+          <container id="aspace_75a62d13f5a1fa9dfae6f6d6b3f15fea" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_fd354b393987c8d8e588872791a45bdd"
+            parent="aspace_75a62d13f5a1fa9dfae6f6d6b3f15fea" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref9_a3c" level="file">
+        <did>
+          <unittitle>April 13, 1857, Letter from Adelaide Nelson to Nannie</unittitle>
+          <container id="aspace_32edbacb40e56be5e26229bc1d89fa12" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_e615d2e797079d73f5ed4abef134b59c"
+            parent="aspace_32edbacb40e56be5e26229bc1d89fa12" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref10_aua" level="file">
+        <did>
+          <unittitle>April 25, 1857, Letter from Adelaide, in Long Branch, to Nannie</unittitle>
+          <container id="aspace_3e37bb2931927adf8840b903d793e55c" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_8301cf78cc21601bddd17be4bf305c76"
+            parent="aspace_3e37bb2931927adf8840b903d793e55c" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref11_308" level="file">
+        <did>
+          <unittitle>April 28, 1857, Letter from Mother Adelaide, in Long Branch, Nannie</unittitle>
+          <container id="aspace_4f93dc4ad060bad979fafbad080335a5" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_d72d601f4136104fc9bf1bcb1305ffe1"
+            parent="aspace_4f93dc4ad060bad979fafbad080335a5" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref13_3s1" level="file">
+        <did>
+          <unittitle>May 4, 1857, Letter from Harriet L. Scollay, in Middleway, to Cousin
+            Nannie</unittitle>
+          <container id="aspace_7a981cbe3473adc53a4009dcd739526a" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_3e5da7e260fef3f3c320182111150501"
+            parent="aspace_7a981cbe3473adc53a4009dcd739526a" type="folder">10</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref14_skr" level="file">
+        <did>
+          <unittitle>May 9, 1857, Letter from Adelaide, to Nannie</unittitle>
+          <container id="aspace_26ed3e717fc2cd39aa81ff6425f9550d" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_ed7065ed1d0c2b782b5e86c8387d02f0"
+            parent="aspace_26ed3e717fc2cd39aa81ff6425f9550d" type="folder">11</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref15_wc9" level="file">
+        <did>
+          <unittitle>May 11, 1857, Letter from Hugh Nelson to Nannie</unittitle>
+          <container id="aspace_3c0f3803b936de0c32247de64cd3a055" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_7411744be25d3e07d5072daa926b0931"
+            parent="aspace_3c0f3803b936de0c32247de64cd3a055" type="folder">12</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref16_1lf" level="file">
+        <did>
+          <unittitle>May 16, 1857, Letter from Adelaide, to Nannie</unittitle>
+          <container id="aspace_b836fecc1ecd6eb1501b18bb5679785a" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_78db3a5a5e4edc6b90457fbb4c13a19a"
+            parent="aspace_b836fecc1ecd6eb1501b18bb5679785a" type="folder">13</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref17_sac" level="file">
+        <did>
+          <unittitle>May 20, 1857, Letter from Mother, in Long Branch, to Nannie</unittitle>
+          <container id="aspace_f2b1c1d48c4edd46bfa3958fea156b71" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_9053b42f71e09ecee85754667de53075"
+            parent="aspace_f2b1c1d48c4edd46bfa3958fea156b71" type="folder">14</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref18_c7m" level="file">
+        <did>
+          <unittitle>June 5, 1857, Letter from Cousin Mevllie Scollay, in Middleway, to Cousin
+            Nannie</unittitle>
+          <container id="aspace_5c95bb011debfb1656fd5ba57cd0c82f" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_b0c207ed2c41e41088ea17007dfaf84a"
+            parent="aspace_5c95bb011debfb1656fd5ba57cd0c82f" type="folder">15</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref19_70f" level="file">
+        <did>
+          <unittitle>June 14, 1857, Letter from Adelaide, to Nannie</unittitle>
+          <container id="aspace_49e518101c0384711e09163219931d32" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_addb4558abb0ada28b532e67bbb10ac8"
+            parent="aspace_49e518101c0384711e09163219931d32" type="folder">16</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref20_06q" level="file">
+        <did>
+          <unittitle>November 5, 1957, Letter to Nelson from Shier Wilie in Boston, (Re: 'The Bight'
+            (a house), taxes $175, business transactions, discuss rent and repairs, mentions hard
+            economic conditions)</unittitle>
+          <container id="aspace_0911722118304b60f49091befa4dd2cf" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_5c378498ac158605c9d3640bccaedd85"
+            parent="aspace_0911722118304b60f49091befa4dd2cf" type="folder">17</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref21_jj1" level="file">
+        <did>
+          <unittitle>July 1, 1858, University of Virginia announcement (Re: Final exercises, best
+            debater, Charles Stringfellow, sent by Bennett Taylor)</unittitle>
+          <container id="aspace_8ddad007384fce04e3bcaae4e5001ec5" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_2850625a53dbd3b41f73a22df28f9198"
+            parent="aspace_8ddad007384fce04e3bcaae4e5001ec5" type="folder">18</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref22_c53" level="file">
+        <did>
+          <unittitle>April 9, 1860, Letter to Nelson from C. Aar, discuss 1860 elections</unittitle>
+          <container id="aspace_6dd8ccd76c51d1935174f5fa42b39f73" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_5b3678668c44b9c2121a4ccdecf993d9"
+            parent="aspace_6dd8ccd76c51d1935174f5fa42b39f73" type="folder">19</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref23_xbj" level="file">
+        <did>
+          <unittitle>Capt. Joseph Hardesty, 1st Regiment Cavalry Muster Roll, Signed: JEB Stuart
+            (Harper's Ferry, Shephardstown enrollments, Berryville, people mustered by
+            Stuart)</unittitle>
+          <container id="aspace_25d50fa286d3ac6e64befe08283f8df4" label="oversize" type="folder"
+            >1</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref24_49a" level="file">
+        <did>
+          <unittitle>Muster Roll, Pay Roll, Capt. Hugh M. Nelson, Co. D, First Virginia Cavalry, JEB
+            Stuart Command, 1861</unittitle>
+          <container id="aspace_76ff5bf86ad78814e93843ebd48fdb15" label="oversize" type="folder"
+            >1</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref25_zbp" level="file">
+        <did>
+          <unittitle>Muster Roll, Capt. Hugh M. Nelson, Co. D Sixth Cavalry, Col. Charles W. Field,
+            1861</unittitle>
+          <container id="aspace_98934f92308cc3ab6a6debfa530b7c8f" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_ed55c80baa2788a2394845f89a8085d5"
+            parent="aspace_98934f92308cc3ab6a6debfa530b7c8f" type="folder">22</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref26_wga" level="file">
+        <did>
+          <unittitle>September 21, 1861, Letter to Mrs. Hugh Nelson from Insurance agent (re:
+            burning of the green house)</unittitle>
+          <container id="aspace_6f07592dfe1fa46fc17fcd193dbfcf9d" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_d6a1cfee9164193912ebf9b785d4cc94"
+            parent="aspace_6f07592dfe1fa46fc17fcd193dbfcf9d" type="folder">23</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref27_ow3" level="file">
+        <did>
+          <unittitle>November 1, 1861, Muster Roll Company D, 6th Regiment</unittitle>
+          <container id="aspace_beab883244633cf50b401eec163950da" label="oversize" type="folder"
+            >1</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref28_wqr" level="file">
+        <did>
+          <unittitle>November 1, 1861, Muster Roll, Company D, Sixth Regiment</unittitle>
+          <container id="aspace_9925eaefa01fcc2dcefde9a0aec08b06" label="oversize" type="folder"
+            >1</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref29_928" level="file">
+        <did>
+          <unittitle>November 5, 1861, Letter from Hugh Nelson, at Carter Hall, to
+            sister</unittitle>
+          <container id="aspace_6c2bc45bc7aaab947fd510be0abaf250" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_a3c13cdc6a77033fdd2b08189bf555cb"
+            parent="aspace_6c2bc45bc7aaab947fd510be0abaf250" type="folder">26</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref30_9cx" level="file">
+        <did>
+          <unittitle>Wrapper, envelope- war letters, no letters contained, envelope addressed to
+            Col. A.R. Boteler, 1861-1862</unittitle>
+          <container id="aspace_49e1e4d1f51745fbd92af40a9437fb42" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_e1e55ab87c66edfa6596284214df5a10"
+            parent="aspace_49e1e4d1f51745fbd92af40a9437fb42" type="folder">27</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref31_8ca" level="file">
+        <did>
+          <unittitle>February 11, 1862, Orders Concerning Recruitment</unittitle>
+          <container id="aspace_5c9a7e310d4bd14ca44fb7e84bf0b0a9" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_2aedda687f6ff360d311e3ec6bc27a90"
+            parent="aspace_5c9a7e310d4bd14ca44fb7e84bf0b0a9" type="folder">28</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref32_vmq" level="file">
+        <did>
+          <unittitle>February 12, 1862, Letter to Capt. Hugh M. Nelson, Co. D, 6th Regiment,
+            Virginia Cavalry, from Camp GW Smith, Special Order No. 40, Recruiting</unittitle>
+          <container id="aspace_9652e21986fd7b63702ed42f9f4bf390" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_7e3f46c2e637a5970552dd58d1747417"
+            parent="aspace_9652e21986fd7b63702ed42f9f4bf390" type="folder">29</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref33_ad9" level="file">
+        <did>
+          <unittitle>March 4, 1862, Statement of enlistment order, Capt. Hugh M. Nelson, Clarke
+            Cavalry Co. D, 6th regiment (?), Virginia Cavalry</unittitle>
+          <container id="aspace_c87b780ab937f2739d7276818ca87fec" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_5fff25a46654c4f01b4876420dfa75f0"
+            parent="aspace_c87b780ab937f2739d7276818ca87fec" type="folder">30</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref34_xxm" level="file">
+        <did>
+          <unittitle>April 6, 1862, Letter to Hugh M. Nelson from T. K. Fauntleroy, Gordon,
+            commanding ordnance depot at Gordonsville, re: sabres and JEB Stuart's
+            orders</unittitle>
+          <container id="aspace_647aa51e44b937d183a7e9ac2595782a" label="Box-Folder" type="box"
+            >1</container>
+          <container id="aspace_08a20daa7ead6b6e0aaaf866a2862055"
+            parent="aspace_647aa51e44b937d183a7e9ac2595782a" type="folder">31</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref37_d65" level="file">
+        <did>
+          <unittitle>July 6, 1863, "Home," letter to Wash from Cousin Molly S. Award of Gettysburg
+            and loss of 10,000 Men</unittitle>
+          <container id="aspace_62fb4405e90edec98bf7773106670c42" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_b784418ceef2ea114cf2f75c5f3054b7"
+            parent="aspace_62fb4405e90edec98bf7773106670c42" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref38_h14" level="file">
+        <did>
+          <unittitle>October 25, 1863, To Mollie from Wash in Westwood and March 31, 1865, To Mollie
+            from Wash in Fort Delaware (Two Letters to One Envelope)</unittitle>
+          <container id="aspace_989a64466f7708e37379790e8817e953" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_4541fda9f8843d97cb995e9dcdac2ead"
+            parent="aspace_989a64466f7708e37379790e8817e953" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref39_yk4" level="file">
+        <did>
+          <unittitle>October 28, 1863, Letter to Mollie from Wash in Winchester, Telling Mollie of
+            his Capture</unittitle>
+          <container id="aspace_375fefc0990b1d97e12239c5e8c6c014" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_472853fcf9f3bb66bd0d2ba8ee78d98b"
+            parent="aspace_375fefc0990b1d97e12239c5e8c6c014" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref40_nrf" level="file">
+        <did>
+          <unittitle>December 20, 1863, Letter to Capt. G.W. Nelson (P.O.W. at Johnson's Island,
+            Ohio), from M.N.S. </unittitle>
+          <container id="aspace_6fb292996b006504f98fcde08d791540" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_672baa97d82fef9f4d207d2034eb3025"
+            parent="aspace_6fb292996b006504f98fcde08d791540" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref41_hpk" level="file">
+        <did>
+          <unittitle>December 30, 1863, Letter to Capt. G.W. Nelson (P.O.W. at Johnson's Island,
+            Ohio), from Mollie </unittitle>
+          <container id="aspace_fa86792417a6ebe3d8b3e01502969766" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_5c6da9843c580adc7159164217ffce1d"
+            parent="aspace_fa86792417a6ebe3d8b3e01502969766" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref42_1rx" level="file">
+        <did>
+          <unittitle>January 16, 1864, Letter to Cap. G.W. Nelson (P.O.W. Johnson's Island,
+            Ohio)</unittitle>
+          <container id="aspace_2bfa74e35080a6b1edd51c04747b3a09" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_c1b52f19dd5fa13a0fc58d74b232dcb0"
+            parent="aspace_2bfa74e35080a6b1edd51c04747b3a09" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref43_xis" level="file">
+        <did>
+          <unittitle>January 30, 1864, To Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio) from
+            Mollie</unittitle>
+          <container id="aspace_84bac777b45e742c9786fab6d4847c32" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_a3fb5ca9d2966702a9b984fa77984616"
+            parent="aspace_84bac777b45e742c9786fab6d4847c32" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref44_fth" level="file">
+        <did>
+          <unittitle>February 9, 1864, Letter to Mollie, from Wash in Johnson's Island,
+            Ohio</unittitle>
+          <container id="aspace_d7a01b335407b13ce94bd5a99f9cf006" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_0f8709429f2661ab48b5c332959026bb"
+            parent="aspace_d7a01b335407b13ce94bd5a99f9cf006" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref45_27t" level="file">
+        <did>
+          <unittitle>February 25, 1864, Letter to Mollie, from Wash in Johnson's Island,
+            Ohio</unittitle>
+          <container id="aspace_fc023c471e312ee0dead6417bc099027" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_541a4c6ed60d52027e373a300b25d5a3"
+            parent="aspace_fc023c471e312ee0dead6417bc099027" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref46_5gm" level="file">
+        <did>
+          <unittitle>February 26, 1864, To Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio),
+            from Mollie</unittitle>
+          <container id="aspace_e06a66b632fff0ecc591e9be18ca0665" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_901b098e550ecf57cb86ee355be6dd7e"
+            parent="aspace_e06a66b632fff0ecc591e9be18ca0665" type="folder">10</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref47_9s4" level="file">
+        <did>
+          <unittitle>March 2, 1864, Letter to Capt. G.W. Nelson (P.O.W. at Johnson's Island, Ohio)
+            from M</unittitle>
+          <container id="aspace_e63f5ac7cd1e3da6a8d3697847de02ef" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_4b61bb42051dca1a1f8788532360071e"
+            parent="aspace_e63f5ac7cd1e3da6a8d3697847de02ef" type="folder">11</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref48_vuj" level="file">
+        <did>
+          <unittitle>March 8, 1864, March 27, 1864,Two letters in one envelope; Both to Mollie, from
+            Wash in Johnson's Island</unittitle>
+          <container id="aspace_f9f819dca8b30396af8429ac7302d37f" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_368b148778c9bf8f7d839da2411adfc0"
+            parent="aspace_f9f819dca8b30396af8429ac7302d37f" type="folder">12</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref49_ynv" level="file">
+        <did>
+          <unittitle>March 13, 1864, Letter to Capt. G.W. Nelson (P.O.W. at Point Lookout, MD) from
+            sister</unittitle>
+          <container id="aspace_3f7c609c439ab7295f245619bcfb5ce8" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_31594eb385c00512884f2a901a97d799"
+            parent="aspace_3f7c609c439ab7295f245619bcfb5ce8" type="folder">13</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref50_kg4" level="file">
+        <did>
+          <unittitle>March 14, 1864, Letter to Mollie from Wash in Johnson's Island</unittitle>
+          <container id="aspace_77ad908548dab47ad1cb37404e861c54" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_872c8cc51b7b3d174eb3abdf0a44bce9"
+            parent="aspace_77ad908548dab47ad1cb37404e861c54" type="folder">14</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref51_qp9" level="file">
+        <did>
+          <unittitle>1864, Letter to mollie, from Capt. Wash Nelson (P.O.W. at Johnson's Island) the
+            envelope has "Div:38 Fort Delaware, Delaware"</unittitle>
+          <container id="aspace_d087c51be4631aba2f87871f06b0254a" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_8810350a8c149448590f0a25210bf34e"
+            parent="aspace_d087c51be4631aba2f87871f06b0254a" type="folder">15</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref52_8zb" level="file">
+        <did>
+          <unittitle>April 5, 1864, Letter to Capt. G.W. Nelson, Hd.Qtrs, Gen. Pendleton's Corps
+            from Mollie</unittitle>
+          <container id="aspace_8cc52b7e0d761bb9a5696f76c73833f3" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_5f940592bf36f465d9232c27c84f9524"
+            parent="aspace_8cc52b7e0d761bb9a5696f76c73833f3" type="folder">16</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref53_z7q" level="file">
+        <did>
+          <unittitle>May 23, 1864 and June 14, 1864, Two letters in one envelope, to Mollie, from
+            Wash, Point Lookout; and letter to Mollie from Wash, Hammund General Hospital, Point
+            Lookout</unittitle>
+          <container id="aspace_043ca7c832b09ffcedf34b0a52363814" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_f42d2d4791d00a1e7a1926506219be8f"
+            parent="aspace_043ca7c832b09ffcedf34b0a52363814" type="folder">17</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref54_xi3" level="file">
+        <did>
+          <unittitle>May 30, 1864, Letter to Mollie, from Wash in Harrimand General Hospital, Point
+            Lookout</unittitle>
+          <container id="aspace_9d61bf5575cf2510e4d72d924c75e7a2" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_962066382ea62e9e6bbe7d2a8145b282"
+            parent="aspace_9d61bf5575cf2510e4d72d924c75e7a2" type="folder">18</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref55_l4s" level="file">
+        <did>
+          <unittitle>June 3, 1864, Letter to Capt. G.W. Nelson (P.O.W.) Point Lookout,
+            MD</unittitle>
+          <container id="aspace_84495dd5cc29d3e31f416ad0c3163c36" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_9ab3bb93f9cf03a5344607ff6485c8dc"
+            parent="aspace_84495dd5cc29d3e31f416ad0c3163c36" type="folder">19</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref56_dmf" level="file">
+        <did>
+          <unittitle>June 6, 1864, Letter to Capt. G.W. Nelson (P.O.W.) Point Lookout, MD, from
+            M</unittitle>
+          <container id="aspace_b97ea59d32efda221ca02ac89f9d7c6d" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_77e98c7c1a6f0acaf2fc5080f002de19"
+            parent="aspace_b97ea59d32efda221ca02ac89f9d7c6d" type="folder">20</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref57_bsg" level="file">
+        <did>
+          <unittitle>June 7, 1864, Letter to Mollie, from Wash, Point Lookout</unittitle>
+          <container id="aspace_087e81db91a51a115d5e1077a9b100b4" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_c39dc682f40e89ed91852b1dac059326"
+            parent="aspace_087e81db91a51a115d5e1077a9b100b4" type="folder">21</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref58_myw" level="file">
+        <did>
+          <unittitle>June 12, 1864, Letter to Mollie, from Wash, Point Lookout</unittitle>
+          <container id="aspace_3d4ba14e4e8d5189398f07e4181da862" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_d930ad1b47b88311ddf3de8ce5eacb70"
+            parent="aspace_3d4ba14e4e8d5189398f07e4181da862" type="folder">22</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref59_yci" level="file">
+        <did>
+          <unittitle>June 17, 1864, Letter Capt. G.W. Nelson (P.O.W.) Point Lookout, MD</unittitle>
+          <container id="aspace_f67ac3a20524e8e5ef44ce357c0652ec" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_23195d92f4301c866af9ab68fcf6dc30"
+            parent="aspace_f67ac3a20524e8e5ef44ce357c0652ec" type="folder">23</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref60_xse" level="file">
+        <did>
+          <unittitle>June 22, 1864, Letter to Capt. G.W. Nelson (P.O.W.) Point Lookout,
+            MD</unittitle>
+          <container id="aspace_ad0006d961d812c6445f40a014a49dd7" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_6b2b07c5cd2a5982dee000cd199c6fca"
+            parent="aspace_ad0006d961d812c6445f40a014a49dd7" type="folder">24</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref61_6nh" level="file">
+        <did>
+          <unittitle>June 22, 1864, Letter to Mollie, from Wash, Point Lookout</unittitle>
+          <container id="aspace_308655989791c94ed26c61f67e2577d5" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_5f4dfae1d7746b2fd4dc18e211f2f81e"
+            parent="aspace_308655989791c94ed26c61f67e2577d5" type="folder">25</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref62_cm4" level="file">
+        <did>
+          <unittitle>June 26, 1864, Letter to Capt. G.W. Nelson (P.O.W.), Point Lookout, MD, From
+            M</unittitle>
+          <container id="aspace_acb93552ea123368000b519ffca63b65" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_0dc7d0a28223bd7bf81590b9c0caac22"
+            parent="aspace_acb93552ea123368000b519ffca63b65" type="folder">26</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref63_er9" level="file">
+        <did>
+          <unittitle>June 28, 1864, Letter to Mollie, from Wash in Fort Delaware, (Envelope Contains
+            a small note- [To Mollie from Dune-requests a book] and Another letter to "My Dear
+            Friend," from Haley Curtis-no date)</unittitle>
+          <container id="aspace_dc84a6be7fa62fb8569ba87a348791d0" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_bf40b641f31f6a1acc5f73cdeac01e1f"
+            parent="aspace_dc84a6be7fa62fb8569ba87a348791d0" type="folder">27</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref64_dpx" level="file">
+        <did>
+          <unittitle>1864, Letter to Miss Mollie N. Scollay, Shepherdstown, VA, from
+            Wash</unittitle>
+          <container id="aspace_29db110bd60e38c43c49e535fcf1af20" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_85de681267e6dd20aa3d1bd78610d1f3"
+            parent="aspace_29db110bd60e38c43c49e535fcf1af20" type="folder">28</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref65_2lj" level="file">
+        <did>
+          <unittitle>October 31, 1864, Letter to Mollie, from Wash Nelson, Ft. Pulaski</unittitle>
+          <container id="aspace_08a628a0c89de2258dc854ea1000a81c" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_b812546ebf3d1df517b601d4162a3a3e"
+            parent="aspace_08a628a0c89de2258dc854ea1000a81c" type="folder">29</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref68_ile" level="file">
+        <did>
+          <unittitle>October 1865 - March 1866, Letters from C.A. Welch to Cousin (Mrs. Hugh
+            Nelson)</unittitle>
+          <container id="aspace_ed097939f2e133b54c31d1255a1926cd" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_fa226eb2de103b7a6f90d39df3396f2a"
+            parent="aspace_ed097939f2e133b54c31d1255a1926cd" type="folder">30</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref69_8vs" level="file">
+        <did>
+          <unittitle>1865, Letter to Mollie, from Wash Nelson, Fort Delaware</unittitle>
+          <container id="aspace_29a8d0d1f273362fdd0ccea51e772595" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_5bdaced3058c6ab4c1d5e09bcaafab22"
+            parent="aspace_29a8d0d1f273362fdd0ccea51e772595" type="folder">31</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref70_u5d" level="file">
+        <did>
+          <unittitle>March 21, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Ft. Delaware, DE, from
+            Mollie </unittitle>
+          <container id="aspace_f3f86110bedd60bf0c9b68964404751a" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_8e60c4480968735b707b622051b7c2e3"
+            parent="aspace_f3f86110bedd60bf0c9b68964404751a" type="folder">32</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref71_sn4" level="file">
+        <did>
+          <unittitle>March 24, 1865, Letter to Capt. G. W. Nelson (P.O.W.), Ft. Delaware, DE, from
+            Mollie</unittitle>
+          <container id="aspace_c55050c1990852f945e64e29c9ad5ff3" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_f97c27c1d53c8655b72eab8909768830"
+            parent="aspace_c55050c1990852f945e64e29c9ad5ff3" type="folder">33</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref72_fvf" level="file">
+        <did>
+          <unittitle>April 4, 1865, Letter to Capt. G.W. Nelson (P.O.W.), Ft. Delaware, DE, from
+            Mollie</unittitle>
+          <container id="aspace_477f748e6fdf03e2d9789832291b7a31" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_8ed2fd671110e798207da5f53590629c"
+            parent="aspace_477f748e6fdf03e2d9789832291b7a31" type="folder">34</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref73_c2j" level="file">
+        <did>
+          <unittitle>April 2, 1865, Letter to Mollie, from Wash in Ft. Delaware</unittitle>
+          <container id="aspace_5d37b620e92098fc6aa873f70203eda5" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_f3a1745e694f2e7f74aaca7013a03551"
+            parent="aspace_5d37b620e92098fc6aa873f70203eda5" type="folder">35</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref74_o4r" level="file">
+        <did>
+          <unittitle>April 6, 1865, Letter to Mollie, from Wash in Ft. Delaware</unittitle>
+          <container id="aspace_75a5b09675b16ea1fc9e97d2114cf16b" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_4ee01d8e8c90812922e5a469ed318ce8"
+            parent="aspace_75a5b09675b16ea1fc9e97d2114cf16b" type="folder">36</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref75_0kl" level="file">
+        <did>
+          <unittitle>April 9, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Ft. Delaware, DE, (Pressed
+            Flowers inside Envelope)</unittitle>
+          <container id="aspace_648e03d10342bc8b083f98189dc3a690" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_abc03d3f41c8fce16201acc4fe27d3ab"
+            parent="aspace_648e03d10342bc8b083f98189dc3a690" type="folder">37</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref76_q8l" level="file">
+        <did>
+          <unittitle>April 12, 1865, Letter to Mollie, from Wash Nelson in Ft. Delaware</unittitle>
+          <container id="aspace_8a85bf10065a090204d044660a7b4aad" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_5e1939a111935976cba547c4eb2d9de8"
+            parent="aspace_8a85bf10065a090204d044660a7b4aad" type="folder">38</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref77_0ac" level="file">
+        <did>
+          <unittitle>April 15, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Div. 34- Ft. Delaware,
+            DE</unittitle>
+          <container id="aspace_d9850c26c0831dbfb8b0b54fd5819f65" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_262e51a9db742f3c3d732a0482f58b81"
+            parent="aspace_d9850c26c0831dbfb8b0b54fd5819f65" type="folder">39</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref78_8zk" level="file">
+        <did>
+          <unittitle>April 15, 1865, Letter to Mollie from Wash in Ft. Delaware</unittitle>
+          <container id="aspace_9f707778b092b02a5fabc8b9ecf27988" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_be36c2cbd327b5c45c880363b94df0b9"
+            parent="aspace_9f707778b092b02a5fabc8b9ecf27988" type="folder">40</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref79_8fk" level="file">
+        <did>
+          <unittitle>April 28, 1865 and April 23, 1865, Letter to Capt. G.W. Nelson (P.O.W.), from
+            Mollie, Letter to (same); Two letters in one Envelope</unittitle>
+          <container id="aspace_96e55aa33bc568c9de327d00c7ab187f" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_d9c3992d0a2375c8fcddc70cfda579ff"
+            parent="aspace_96e55aa33bc568c9de327d00c7ab187f" type="folder">41</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref80_qot" level="file">
+        <did>
+          <unittitle>May 3, 1865, Letter to Mollie, from Wash, Ft. Delaware </unittitle>
+          <container id="aspace_858745619af79e7cbfa2109c06a73fbe" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_0c225033a9a9ef9880e3934005d7056f"
+            parent="aspace_858745619af79e7cbfa2109c06a73fbe" type="folder">42</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref81_cxm" level="file">
+        <did>
+          <unittitle>May 4, 1865, Letter to Mollie, From Wash, Ft. Delaware</unittitle>
+          <container id="aspace_166dd7e77a296b176c2c716147f008ce" label="Box-Folder" type="box"
+            >2</container>
+          <container id="aspace_8ca22f22d5eaecdba8a83c1882e747e7"
+            parent="aspace_166dd7e77a296b176c2c716147f008ce" type="folder">43</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref82_el3" level="file">
+        <did>
+          <unittitle>May 10, 1865, Letter to Mollie, from Wash in Ft. Delaware</unittitle>
+          <container id="aspace_452fae6c717fb5398597bd0eb8907e4b" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_65387aef23d49178e738e3223ff16511"
+            parent="aspace_452fae6c717fb5398597bd0eb8907e4b" type="folder">1</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref83_jl7" level="file">
+        <did>
+          <unittitle>May 14, 1865, Letter to Mollie, from Wash, in Ft. Delaware</unittitle>
+          <container id="aspace_b965941dcb44540664a23d7a9a6eeac1" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_ee9ef6e27fe4b683ea144a6c08bc782e"
+            parent="aspace_b965941dcb44540664a23d7a9a6eeac1" type="folder">2</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref84_rxj" level="file">
+        <did>
+          <unittitle>May 21, 1865, Letter to Capt. G.W. Nelson (P.O.W) Ft. Delaware, DE. from
+            Mollie</unittitle>
+          <container id="aspace_940c12fa007f5b6b8edbff6730698a57" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_1e39cc93d93b89ea096f401216b6ace3"
+            parent="aspace_940c12fa007f5b6b8edbff6730698a57" type="folder">3</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref85_2qf" level="file">
+        <did>
+          <unittitle>May 27, 1865, Letter to Wash from Mollie </unittitle>
+          <container id="aspace_d3dbbaea0a005e881abfbc68f837fa66" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_4fb1e76c89afb18da8dff2094261eb32"
+            parent="aspace_d3dbbaea0a005e881abfbc68f837fa66" type="folder">4</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref86_ctk" level="file">
+        <did>
+          <unittitle>May 27, 1865, Letter to Mollie, from Wash, Ft. Delaware</unittitle>
+          <container id="aspace_631ac351bd12284b9cca88982a71928a" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_8e1eae9246e70e4d6c4fafd62a0aa78f"
+            parent="aspace_631ac351bd12284b9cca88982a71928a" type="folder">5</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref87_x0c" level="file">
+        <did>
+          <unittitle>June 3, 1865, Letter to Capt. G.W. Nelson (P.O.W.) Division 38, Ft. Delaware,
+            DE</unittitle>
+          <container id="aspace_2cce361616c11d438729086ba5591a96" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_7d8f6858a97b525b09df8e135b8228d6"
+            parent="aspace_2cce361616c11d438729086ba5591a96" type="folder">6</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref88_c00" level="file">
+        <did>
+          <unittitle>July 11, 1865 and April 9, 1866, Letters to Cousin, from Charles (C.A.W.) (C.A.
+            Welch), Boston</unittitle>
+          <container id="aspace_c5a3c4b325f763c492fcbe5af9c3fadb" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_20c49c08f1824d24e6ad5d7464027f4c"
+            parent="aspace_c5a3c4b325f763c492fcbe5af9c3fadb" type="folder">7</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref89_71u" level="file">
+        <did>
+          <unittitle>July 12, 1865, Letter to G.W. Nelson in Beaver Dam Depot, Hanover County, VA,
+            from Mollie</unittitle>
+          <container id="aspace_5fbce68bd2be6a79ba703a35aa573151" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_79e5b5df5ecde0d6b0b20f8378da9f6d"
+            parent="aspace_5fbce68bd2be6a79ba703a35aa573151" type="folder">8</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref90_4eu" level="file">
+        <did>
+          <unittitle>September 25, 1865, Letter to Capt. G.W. Nelson in Gettysburg, PA, from
+            Mollie</unittitle>
+          <container id="aspace_519457484e994e170dd32cf23d594cc4" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_fcc0b469e1938892554080fb9b2b7f9d"
+            parent="aspace_519457484e994e170dd32cf23d594cc4" type="folder">9</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref91_nvt" level="file">
+        <did>
+          <unittitle>September 4, 1865, Letter to Mollie in Middleway, Jefferson County, VA, from
+            Wash in Mont Air</unittitle>
+          <container id="aspace_b004b63ada99345540a7ec7122852bc9" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_87bdc9ea231f9ebbb90e48a16b28f797"
+            parent="aspace_b004b63ada99345540a7ec7122852bc9" type="folder">10</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref92_2ba" level="file">
+        <did>
+          <unittitle>December 8, 1871 and February 19, 1872, Letters to Mrs. G.W. Nelson (Mollie)
+            from her mother, S.P. Scollay</unittitle>
+          <container id="aspace_96f257d198db5e48194c942a64724cad" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_fd03c985313ce48091a093d3105eaac0"
+            parent="aspace_96f257d198db5e48194c942a64724cad" type="folder">11</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref93_txs" level="file">
+        <did>
+          <unittitle>January 29, 1872, Letter to Mollie from Mother, S.P. Scollay, in Middleway W.
+            VA at Smithfield, Mollie has Daughter Page and siste Lizzie. </unittitle>
+          <container id="aspace_886ebc676169af53da759a32b68b0ed8" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_fbb05ff4f2a33c73c905e3f5742255c8"
+            parent="aspace_886ebc676169af53da759a32b68b0ed8" type="folder">12</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref94_lqm" level="file">
+        <did>
+          <unittitle>February 18, 1783, Letter from Walker Daniel, at Col. Floyd's, to a French
+            Merchant concerning commercial conditions on the wester Kentucky Frontier Both are
+            friends of Col. Floyd, mentions Lincon, Fayette, Fall's of Ohio River, KY River' number
+            of inhabitants; Indians; type of settlers; crops grown. (Merchant- Monsieur Major B.
+            Tardiveau); No. 33 Louisville</unittitle>
+          <container id="aspace_bae7e0f601eab9444413832355abac56" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_f0fd4a903d368870af44abec9b02d8dc"
+            parent="aspace_bae7e0f601eab9444413832355abac56" type="folder">13</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref95_s35" level="file">
+        <did>
+          <unittitle>March 23 (year unknown), Letter from Delaide in Long Branch to "My Precious
+            Little Child"</unittitle>
+          <container id="aspace_3b415872e450656a45396e30610c00ce" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_ec297536a662d2f0b9ae382be6132826"
+            parent="aspace_3b415872e450656a45396e30610c00ce" type="folder">14</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref96_l41" level="file">
+        <did>
+          <unittitle>March 30 (no year), Letter from Smithfield to Nannie</unittitle>
+          <container id="aspace_a3c8c719b0bbb393dac938eb3e0f3a64" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_4f5f2e0028db466d8d703faea2efdec9"
+            parent="aspace_a3c8c719b0bbb393dac938eb3e0f3a64" type="folder">15</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref97_1ko" level="file">
+        <did>
+          <unittitle>March 30 and April 8, Two Envelopes to Nannie</unittitle>
+          <container id="aspace_ad50edfbd65e408aecab5852f5ec0569" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_8df7f6765cc3b0250fba2590b3e89c7f"
+            parent="aspace_ad50edfbd65e408aecab5852f5ec0569" type="folder">16</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref98_m9v" level="file">
+        <did>
+          <unittitle>April 6 (no year), Envelope to Nannie</unittitle>
+          <container id="aspace_2225b81dc4ce9e927852b205feeade6a" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_70a56f8319f4edf35b4ce86a5540f752"
+            parent="aspace_2225b81dc4ce9e927852b205feeade6a" type="folder">17</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref99_i6l" level="file">
+        <did>
+          <unittitle>April 10 (no year), Letter to Nannie from Adelaide in Long Beach</unittitle>
+          <container id="aspace_959acbbe96d861d0efdec0618af89a54" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_5fb9fcaffea0032f703f81e8c3924f1a"
+            parent="aspace_959acbbe96d861d0efdec0618af89a54" type="folder">18</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref100_nnp" level="file">
+        <did>
+          <unittitle>April 30 (no year), Letter to Nannie from Adelaide</unittitle>
+          <container id="aspace_2f2dee77d8db36e5dfa01726897f5d6f" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_21231dc435e71f8af9e5b7818e2952ae"
+            parent="aspace_2f2dee77d8db36e5dfa01726897f5d6f" type="folder">19</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref101_ydt" level="file">
+        <did>
+          <unittitle>No Date, Letter from Adelaid in Long Beach, to Nannie, Envelope included, 2
+            small pieces of paper, one is a note</unittitle>
+          <container id="aspace_a7e20c5d679e2c95c81913b942a9dba6" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_423cf78d8bc3d4307e80b11a5475189b"
+            parent="aspace_a7e20c5d679e2c95c81913b942a9dba6" type="folder">20</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref102_ktf" level="file">
+        <did>
+          <unittitle>May 8 (no year), Letter from L.B. Nelson, Weehaul to Miss Nannie Nelson, Pelham
+            Priory, Westchester, New York</unittitle>
+          <container id="aspace_5e4c05bb41a2e6e8dc028f11c71a59fb" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_05cc190e6747598fbafcc32654bf2bab"
+            parent="aspace_5e4c05bb41a2e6e8dc028f11c71a59fb" type="folder">21</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref103_wf4" level="file">
+        <did>
+          <unittitle>May 8 (no year), Envelope to Nannie</unittitle>
+          <container id="aspace_63024b2baf32bfdfa696b585ff9d48d0" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_8ef2ddbac53689eedfac87b983d332da"
+            parent="aspace_63024b2baf32bfdfa696b585ff9d48d0" type="folder">22</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref104_u8a" level="file">
+        <did>
+          <unittitle>May 22 (no year), Envelope to Nannie</unittitle>
+          <container id="aspace_f468ad13f87645b6b3f147b7214b7ea3" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_5b3d6489573611b587887fa4611c12e3"
+            parent="aspace_f468ad13f87645b6b3f147b7214b7ea3" type="folder">23</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref105_s2r" level="file">
+        <did>
+          <unittitle>May 22 (no year), Envelope to Nannie</unittitle>
+          <container id="aspace_844aa82aff7674fc27d2e90c862067f8" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_80c54bcfcb710d20cf2bbfc047bdc318"
+            parent="aspace_844aa82aff7674fc27d2e90c862067f8" type="folder">24</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref106_27t" level="file">
+        <did>
+          <unittitle>May 25 (no year), Letter from Hugh and Mother to Nannie</unittitle>
+          <container id="aspace_094d5ef1d456ef4acd4b6a34e1b09e00" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_3e72be026918ca5c8288dafc7ce9ccbc"
+            parent="aspace_094d5ef1d456ef4acd4b6a34e1b09e00" type="folder">25</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref107_xm9" level="file">
+        <did>
+          <unittitle>May 25 (no year), Letter from Hugh M. Nelson, New York, to Nannie</unittitle>
+          <container id="aspace_bb9e8d6fcda40e5c3750a7988d5fd683" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_1bbda50ae653906b340dfc0c13d43195"
+            parent="aspace_bb9e8d6fcda40e5c3750a7988d5fd683" type="folder">26</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref108_wrw" level="file">
+        <did>
+          <unittitle>June 5 (no year), Letter from Adelaide to Nannie</unittitle>
+          <container id="aspace_b420b603c9f298700c49811cef53eca3" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_40411462beeb1b9893835c5ffed62dd1"
+            parent="aspace_b420b603c9f298700c49811cef53eca3" type="folder">27</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref109_zs2" level="file">
+        <did>
+          <unittitle>June 6 (no year), Letter from Mother to Nannie, letter included a pressed
+            flower and a note from Little Hugh</unittitle>
+          <container id="aspace_f043bbe66f97db0963cbaa3ea1096111" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_01e2c6773d5158281d00bb6262000eef"
+            parent="aspace_f043bbe66f97db0963cbaa3ea1096111" type="folder">28</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref110_2kj" level="file">
+        <did>
+          <unittitle>August (no date), Letter to Mollie from Wash (married), Aunt
+            Adelaide</unittitle>
+          <container id="aspace_298a9b1325786a9aebc26fd37425c93f" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_d9753410dece6a8ea9e0497d19444360"
+            parent="aspace_298a9b1325786a9aebc26fd37425c93f" type="folder">29</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref111_2a3" level="file">
+        <did>
+          <unittitle>(No Date), Envelope (empty), "Copy of Commission Gen. Thomas Nelson by General
+            Washington"</unittitle>
+          <container id="aspace_d897febd6007a3953b1266ce9bf22407" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_3952b953ee83b84c6618728d35ba38e4"
+            parent="aspace_d897febd6007a3953b1266ce9bf22407" type="folder">30</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref112_i7v" level="file">
+        <did>
+          <unittitle>(No Date), Envelope Cover, Hugh M. Nelson, Near Millwood</unittitle>
+          <container id="aspace_6ef20e03bfdbed9c01e32bc5ddfb32c7" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_80369edec424534ec0879fe62a5d851e"
+            parent="aspace_6ef20e03bfdbed9c01e32bc5ddfb32c7" type="folder">31</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref113_jt4" level="file">
+        <did>
+          <unittitle>(No Date), Hugh M. Nelson Accounts</unittitle>
+          <container id="aspace_b63e4993bdd3a86639500c7dd848729f" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_2e2611d9c877f8d93de150da310ddbde"
+            parent="aspace_b63e4993bdd3a86639500c7dd848729f" type="folder">32</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref114_9i7" level="file">
+        <did>
+          <unittitle>(No Date), Remnants of European Tour</unittitle>
+          <container id="aspace_4c9dc15274b4545a4f5d206dfe090ed7" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_d9c89034c1d86396e0d90cff5a0ae071"
+            parent="aspace_4c9dc15274b4545a4f5d206dfe090ed7" type="folder">33</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref115_tdd" level="file">
+        <did>
+          <unittitle>(No Date), Letter "Thursday Morning" from Adelaide, to Nannie (includes note
+            from Hugh Nelson)</unittitle>
+          <container id="aspace_2f99ba477146151943844177c16dd2f7" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_d95ddb19a68a26f56c61f199e178fff5"
+            parent="aspace_2f99ba477146151943844177c16dd2f7" type="folder">34</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref116_sri" level="file">
+        <did>
+          <unittitle>(No Date), "Saturday, March" from mother to daughter, (March)</unittitle>
+          <container id="aspace_6186caac769fc6b3b91e0a8ea7c123b0" label="Box-Folder" type="box"
+            >3</container>
+          <container id="aspace_7df7c6d074f469e04c7127e33432d722"
+            parent="aspace_6186caac769fc6b3b91e0a8ea7c123b0" type="folder">35</container>
+        </did>
+      </c01>
+      <c01 id="aspace_ref124_9on" level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+        </did>
+        <c02 id="aspace_ref126_cip" level="subseries">
+          <did>
+            <unittitle>Letters to/from Mollie and Wash</unittitle>
+          </did>
+        </c02>
+        <c02 id="aspace_ref127_hw9" level="subseries">
+          <did>
+            <unittitle>Letters to/from Adelaide</unittitle>
+          </did>
+        </c02>
+        <c02 id="aspace_ref128_q96" level="subseries">
+          <did>
+            <unittitle>Envelopes and Covers Not Attached to Letters</unittitle>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="aspace_ref125_osv" level="series">
+        <did>
+          <unittitle>Papers</unittitle>
+        </did>
+      </c01>
+    </dsc>
+  </archdesc>
 </ead>
