@@ -1,2750 +1,3087 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vi00986">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00986::A Guide to the Governor Timothy M. Kaine, Press Office Records, 2004-2010 (bulk 2006-2009)//EN" "vi00986.xml"
+<?xml version="1.0"?>
+<?xml-model href="http://www.loc.gov/ead/ead.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" id="vi00986">
+<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
+<eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00986::A Guide to the Governor Timothy M. Kaine, Press Office Records, 2004-2010 (bulk 2006-2009)//EN" "vi00986.xml"
 </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Governor Timothy M. Kaine, Press Office Records, <date era="ce" calendar="gregorian">2004-2010 (bulk 2006-2009</date></titleproper>
-        <subtitle id="sort">Kaine, Governor Timothy M., Press Office Records, 2004-2010 (bulk 2006-2009)
+
+<filedesc>
+
+<titlestmt>
+<titleproper>A Guide to the Governor Timothy M. Kaine, Press Office Records, <date>2004-2010 (bulk 2006-2009)</date>
+</titleproper>
+
+<subtitle id="sort">Kaine, Governor Timothy M., Press Office Records, 2004-2010 (bulk 2006-2009)
 <num type="collectionnumber">44739
-</num></subtitle>
-        <author>Roger E. Christman
+</num>
+</subtitle>
+
+<author>Roger E. Christman
 </author>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Library of Virginia
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2011 By The Library of Virginia. All Rights Reserved. 
-</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Created by Roger Christman, <date era="ce" calendar="gregorian">25 February 2011</date></creation>
-      <langusage>Description is in
+
+</titlestmt>
+
+<publicationstmt>
+<publisher>Library of Virginia
+</publisher><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"  href="http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xi.xml" />
+
+<date type="publication">&#169; 2011 By The Library of Virginia. All Rights Reserved. 
+</date> 
+
+</publicationstmt>
+
+</filedesc>
+
+<profiledesc>
+<creation>Created by Roger Christman, <date>25 February 2011</date>
+</creation>
+<langusage>Description is in
 <language langcode="eng">English
-</language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2014-01-03">2014-01-03</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the Governor Timothy M. Kaine, Press Office Records, <date era="ce" calendar="gregorian">2004-2010 (bulk 2006-2009)</date></titleproper>
-      <subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">44739
-</num></subtitle>
-      <author>Roger E. Christman
-</author>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
-      </p>
-      <publisher>Library of Virginia
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2011
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:
-</label>
-          <item>Roger Christman
-</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Library of Virginia
-</runner>
-    <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-      <unittitle label="Title" encodinganalog="245$a">Governor Timothy M. Kaine, Press Office Records
-<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">2004-2010 (bulk 2006-2009)
-</unitdate></unittitle>
-      <unitid label="Accession Number" encodinganalog="099$a">44739
-</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">3.95 cu. ft. (13 boxes)
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
 </language>
-      </langmaterial>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information
-</head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions
-</head>
-        <p>Collection is open to research.
+</langusage>
+</profiledesc>
+
+</eadheader>
+
+<frontmatter>
+
+<titlepage>
+<titleproper>A Guide to the Governor Timothy M. Kaine, Press Office Records, <date>2004-2010 (bulk 2006-2009)</date>
+</titleproper>
+
+<subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">44739
+</num>
+</subtitle>
+
+<author>Roger E. Christman
+</author>
+
+<p id="logostmt">
+<extptr xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
 </p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions
+
+<publisher>Library of Virginia
+</publisher>
+
+<date type="publication">2011 
+</date>
+
+<list type="deflist">
+<defitem>
+<label>Processed by:
+</label>
+<item>Roger Christman
+</item>
+</defitem>
+</list>
+</titlepage>
+</frontmatter>
+
+<archdesc level="collection">
+<runner placement="footer">Library of Virginia
+</runner>
+<did>
+<head>Descriptive Summary
 </head>
-        <p>Attorney-client privileged records are closed for 75 years per Code of Virginia 2.2-2705.1 and 42.1-78. Restricted material has been sealed, but has not been removed from the collection.
-</p>
-        <p>Video recordings (DVDs and videotapes) may not be duplicated without written permission of the copyright holder.
-</p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation
+<repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+<unittitle label="Title" encodinganalog="245$a">Governor Timothy M. Kaine, Press Office Records
+<unitdate type="inclusive" label="Date" encodinganalog="245$f">2004-2010 (bulk 2006-2009)
+</unitdate>
+</unittitle>
+<unitid label="Accession Number" encodinganalog="099$a">44739
+</unitid>
+<physdesc label="Extent" encodinganalog="300$a">3.95 cu. ft. (13 boxes)
+</physdesc>
+<langmaterial label="Language">
+<language langcode="eng">English
+</language>
+</langmaterial>
+</did>
+
+<descgrp type="admininfo">
+<head>Administrative Information
 </head>
-        <p>Records of the Press Office, Governor Timothy M. Kaine, 2004-2010 (bulk 2006-2009), Accession 44739, State Records Collection, Library of Virginia
-</p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information
+<accessrestrict encodinganalog="506$a">
+<head>Access Restrictions
 </head>
-        <p>Office of the Governor, Patrick Henry Building, 1111 E. Broad Street, Richmond, Virginia, 23219, accession 44739 transferred on 14 January 2010.
+<p>Collection is open to research.
 </p>
-      </acqinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Historical Information
+</accessrestrict>
+<userestrict encodinganalog="540$a">
+<head>Use Restrictions
 </head>
-      <p>The Press Office is a division of the Office of the Governor in the Executive Branch of Virginia state government. During Governor Tim Kaine's administration, the Press Office was responsible for shaping communication strategy, communicating with the public, handling relations with the press, managing the Governor's Web site and providing advice/guidance on agency public communications.  The Press Office reviewed all documents with quotes from or references to the Governor, press releases on high profile/controversial agency issues, Governor's talking points, Cabinet talking points on high profile/controversial issues and grant announcements.  The Press Office created press releases and made them publicly available, gathered and analyzed newspaper and magazine articles and television coverage pertaining to Governor Kaine and his administration, and maintained a file of photographs taken and collected by the Governor's Photographer that document Governor Kaine's public appearances. The Press Office was also responsible for making the Governor's public schedule, press releases, executive orders, proclamations, and selected speeches available online.
+<p>Attorney-client privileged records are closed for 75 years per Code of Virginia 2.2-2705.1 and 42.1-78. Restricted material has been sealed, but has not been removed from the collection.
 </p>
-      <p>
+<p>Video recordings (DVDs and videotapes) may not be duplicated without written permission of the copyright holder.
+</p>
+</userestrict>
+<prefercite encodinganalog="524$a">
+<head>Preferred Citation
+</head>
+<p>Records of the Press Office, Governor Timothy M. Kaine, 2004-2010 (bulk 2006-2009), Accession 44739, State Records Collection, Library of Virginia
+</p>
+</prefercite>
+<acqinfo encodinganalog="541$a">
+<head>Acquisition Information
+</head>
+<p>Office of the Governor, Patrick Henry Building, 1111 E. Broad Street, Richmond, Virginia, 23219, accession 44739 transferred on 14 January 2010.
+</p>
+</acqinfo>
+
+
+</descgrp>
+<bioghist encodinganalog="545$a">
+<head>Historical Information
+</head>
+<p>The Press Office is a division of the Office of the Governor in the Executive Branch of Virginia state government. During Governor Tim Kaine's administration, the Press Office was responsible for shaping communication strategy, communicating with the public, handling relations with the press, managing the Governor's Web site and providing advice/guidance on agency public communications.  The Press Office reviewed all documents with quotes from or references to the Governor, press releases on high profile/controversial agency issues, Governor's talking points, Cabinet talking points on high profile/controversial issues and grant announcements.  The Press Office created press releases and made them publicly available, gathered and analyzed newspaper and magazine articles and television coverage pertaining to Governor Kaine and his administration, and maintained a file of photographs taken and collected by the Governor's Photographer that document Governor Kaine's public appearances. The Press Office was also responsible for making the Governor's public schedule, press releases, executive orders, proclamations, and selected speeches available online.
+</p>
+
+<p>
 On 11 January 2006, Governor-elect Tim Kaine named Delacey Skinner as Communications Director. The Communication Director (Skinner, January 2006-December 2008 and Lynda Tran (2009-2010) supervised the Press Office.  She was assisted in her responsibilities by a Press Secretary (Kevin Hall, January 2006-October 2007 and Gordon Hickey (October 2007-January 2010), additional press staff, a webmaster and photographer.  In addition, the Communications Director oversaw the work of the Constituent Services Director whose staff members responded to inquiries of the public received via mail, phone and email.
 </p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content
+
+
+</bioghist>
+<scopecontent encodinganalog="520$a">
+<head>Scope and Content
 </head>
-      <p>The Press Office Records of Governor Timothy M. Kaine are housed in 13 archival boxes. The collection is arranged into three (3) series. Series have been designated for: I. Records of Communication Director; II. Records of the Press Secretary; and III. Multimedia Files. These records include correspondence, memorandums, talking points and photographs, digital files and videos. These records document the press office activities of the Kaine administration (2006-2010).  
+<p>The Press Office Records of Governor Timothy M. Kaine are housed in 13 archival boxes. The collection is arranged into three (3) series. Series have been designated for: I. Records of Communication Director; II. Records of the Press Secretary; and III. Multimedia Files. These records include correspondence, memorandums, talking points and photographs, digital files and videos. These records document the press office activities of the Kaine administration (2006-2010).  
 </p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement
+</scopecontent>
+<arrangement encodinganalog="351">
+<head>Arrangement
 </head>
-      <p>This collection is arranged into the following series:</p>
-      <list type="simple">
-        <item>I. Records of the Communication Director, 2005-2009</item>
-        <item>II. Records of the Press Secretary, 2005-2007</item>
-        <item>III. Multimedia Files, 2004-2010</item>
-      </list>
-    </arrangement>
-    <descgrp type="add">
-      <head>Related Material
+<p>This collection is arranged into the following series:</p>
+<list type="simple">
+<item>I. Records of the Communication Director, 2005-2009</item>
+<item>II. Records of the Press Secretary, 2005-2007</item>
+<item>III. Multimedia Files, 2004-2010</item>
+</list></arrangement>
+
+<relatedmaterial encodinganalog="544$a">
+<head>Related Material
 </head>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00978.xml">A Guide to the Governor Timothy M. Kaine, Executive Office-Governor, Records, 2005-2009.</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00982.xml">A Guide to the Governor Timothy M. Kaine, Executive Office-Chief of Staff, Records, 2006-2009.</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00983.xml">A Guide to the Governor Timothy M. Kaine, Executive Office-Counselor's Office, Records, 2001-2009 (bulk 2006-2009).</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00984.xml">A Guide to the Governor Timothy M. Kaine, Policy Office, Records, 2002-2010 (bulk 2006-2009).</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.archive-it.org/collections/263">Governor Tim Kaine Administration Web Archive Collection, 2006-2010.</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://digitool1.lva.lib.va.us:8881/R?func=collections-result&amp;collection_id=1512">Executive Orders Digital Collection</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00987.xml">A Guide to the Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records, 2006-2009.</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00988.xml">A Guide to the Governor Timothy M. Kaine, Latino Liaison Records, 2004-2009. </extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi03050.xml">A Guide to the Records of the Virginia Secretary of Health and Human Resources, 2005-2010. </extref>
-      </p>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List
+
+<p><emph render="bold"><emph render="underline">Office of the Governor-Tim Kaine</emph>
+</emph>
+</p>
+
+<p><extref xlink:type="simple" xlink:href="https://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00993.xml"><emph render="bold">A Guide to the Governor Timothy M. Kaine Administration Electronic Files, Email, 2002-2010 (bulk 2006-2009).</emph></extref> This collection documents the email of the Kaine Administration (2006-2010). <extref xlink:type="simple" xlink:href="https://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00993.xml#series3"><emph render="bold">The Communications Office Electronic Files series</emph></extref> documents the electronic communication of the Communication Office of the Kaine Administration. This series contains 22064 emails in twelve (12) subseries. Subseries have been designated for A. Lynda Tran Email; B. Jeff Kraus Email; C. Gordon Hickey Email; D. Maurice A. Henderson II Email; E. Jeff Tiller Email; F. Robin Winchell Email; G. Michael Kelly Email; H. Lauren Cunningham Email; I. Doug Scott Email; J. Laura DeLibero Email; K. Amanda Howe Email; and L. Michaele White Email. There are 127 privacy protected and confidential emails in this series that are restricted from public access for 75 years per Code of Virginia 42.1-78, 2.2-3800 and 2.2-3705.1-8. Types of restricted information may include, but are not limited to: clemency records, and records containing personal/personnel information. The PST files for Delacey Skinner, Communications Director from January 2006 to December 2008, and Kevin Hall, Press Secretary from January 2006 to November 2007, were empty. However, email messages sent by Skinner and Hall may be found in the email files of other members of the Kaine Administration (Executive Office, Policy Office, Communications Office, etc.). The <extref xlink:type="simple" xlink:href="https://www.virginiamemory.com/collections/kaine/"><emph render="bold">Library of Virginia Email Project - Governor Tim Kaine Portal</emph></extref>
+ provides access to the Kaine email collection and includes guides to other Kaine administration records.
+</p>
+
+<p>The <extref xlink:type="simple" xlink:href="http://www.archive-it.org/collections/263"><emph render="bold">Governor Tim Kaine Administration Web Archive Collection, 2006-2010</emph></extref> contains archived versions of websites for the Governor's Office, his initiative sites, and the sites of his cabinet secretaries. Also included are the related sites for the First Lady (Anne Holton), as well as the Lt. Governor (Bill Bolling), and Attorney General (Bob McDonnell and William C. Mims), two statewide officials elected in the same cycle as Governor Kaine. The governor's website contains a complete record of Kaine administration press releases.
+</p>
+
+<p>The <extref xlink:type="simple" xlink:href="http://bit.ly/2dhCkCL"><emph render="bold">Timothy M. Kaine Administration (2006-2010) Cabinet Weekly Reports Digital Collection</emph></extref> contains the weekly reports submitted to the Governor and Chief of Staff by the Governor's Cabinet, including the Secretaries of Administration (Viola Baskerville), Agriculture and Forestry (Robert S. Bloxom), Commerce and Trade (Patrick O. Gottschalk), Commonwealth (Daniel C. LeBlanc, Jan-Mar. 2006 and Katherine K. Hanley (Mar. 2006-2010), Education (Dr. Thomas R. Morris), Finance (Jody Wagner, 2006-2008 and Richard D. Brown, 2008-2010), Health and Human Resources (Marilyn Tavenner), Natural Resources (Preston Bryant), Public Safety (John W. Marshall), Technology (Aneesh Chopra, 2006-2009 and Leonard M. Pomata, 2009-2010), and Transportation (Pierce Homer). Also included are reports by the Assistant to the Governor for Commonwealth Preparedness (Robert Crouch), Office of Constituent Services (Marc Cheatham, 2006-2007 and Amber Amato, 2007-2010), Press Office, Policy Office and Virginia Liaison Office. Reports were submitted each Thursday and placed in a binder for the Governor that he took with him at the end of the day on Friday. A second copy of the report was made for the Chief of Staff. The level of detail varied for each cabinet officer and items of importance were highlighted by staff for the Governor. Each report contains information on legislation, Governor's initiatives/special projects, agency matters/operations, events/agency visits, audits/investigations/compliance, stakeholder issues and pending decisions. Governor Kaine wrote handwritten notes and/or marked-up some reports with post-it notes and requested follow up information from the person submitting the report. Those questions and answers are included in this series. This series provides a weekly account of the issues and policy decisions of the Kaine Administration.
+</p>
+
+<p><extref xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00998.xml"><emph render="bold">A Guide to the Governor Timothy M. Kaine Administration YouTube Channel Videos, 2008-2010.</emph></extref> This collection consists of 63 videos that were originally posted onto YouTube by Governor Tim Kaine's Webmaster between March 2008 and January 2010. Governor Kaine formally announced the creation of the governor's YouTube channel in a 6 May 2008 press release.
+</p>
+
+</relatedmaterial>
+
+<dsc type="combined">
+<head>Contents List
 </head>
-      <c01 level="series">
-        <did>
-          <unittitle><emph render="bold">I. Records of the Communication Director</emph>, 
-<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2005-2009</emph></unitdate>.</unittitle>
-          <container type="box" label="Boxes">1-3
+
+<c01 level="series">
+<did>
+<unittitle><emph render="bold">I. Records of the Communication Director</emph>, 
+<unitdate type="inclusive"><emph render="bold">2005-2009</emph></unitdate>.</unittitle>
+<container type="box" label="Boxes">1-3
 </container>
-          <physdesc>
-            <extent>Extent: 0.88 cubic feet (3 boxes).</extent>
-          </physdesc>
-        </did>
-        <scopecontent>
-          <p>The Records of the Communication Director (Delacey Skinner, 2006-2008 and Lynda Tran, 2009-2010) are housed in three (3) boxes.  The original file order has been maintained.  These records consist primarily of policy background material, drafts of major speeches by Governor Kaine, Skinner's handwritten notepads, and a compilation of priority actions and policy positions taken by Kaine during his 2005 campaign.  These records include correspondence, talking points, presentations, memorandum, e-mail, reports, speeches, and notes.
+<physdesc><extent>Extent: 0.88 cubic feet (3 boxes).</extent>
+</physdesc>
+</did>
+<scopecontent>
+<p>The Records of the Communication Director (Delacey Skinner, 2006-2008 and Lynda Tran, 2009-2010) are housed in three (3) boxes.  The original file order has been maintained.  These records consist primarily of policy background material, drafts of major speeches by Governor Kaine, Skinner's handwritten notepads, and a compilation of priority actions and policy positions taken by Kaine during his 2005 campaign.  These records include correspondence, talking points, presentations, memorandum, e-mail, reports, speeches, and notes.
 </p>
-          <p>Notable documents include:  Proposed Communication Plan, Office of Governor Timothy M., Kaine, 2009-2010 (b1, f1); memorandum from Lynda Tran to Governor Kaine, dated 11 September 2009, outline an end-of-term communication plan (b1, f1); multiple drafts of Governor Kaine's 2006 State of the Commonwealth address (b2, f1); working outline and draft of Kaine's 2006 State of the Union Response (b2, f2); and multiple drafts of Kaine's 2008 State of the Commonwealth address (b2, f8).</p>
-        </scopecontent>
-        <c02 level="file">
-          <did>
-            <unittitle>Communication Planning, 2009
+
+<p>Notable documents include:  Proposed Communication Plan, Office of Governor Timothy M., Kaine, 2009-2010 (b1, f1); memorandum from Lynda Tran to Governor Kaine, dated 11 September 2009, outline an end-of-term communication plan (b1, f1); multiple drafts of Governor Kaine's 2006 State of the Commonwealth address (b2, f1); working outline and draft of Kaine's 2006 State of the Union Response (b2, f2); and multiple drafts of Kaine's 2008 State of the Commonwealth address (b2, f8).</p>
+
+</scopecontent>
+
+
+		<c02 level="file">
+		<did>
+		<unittitle>Communication Planning, 2009
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Potential Press Events, 2008-2009
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Potential Press Events, 2008-2009
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Press Office Staff Reports, 2009
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Press Office Staff Reports, 2009
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Transportation, 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Transportation, 2008
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Illegal Immigration, 2007-2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Illegal Immigration, 2007-2008
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Coal Plant (Dominion's Virginia City Hybrid Energy Center), ca. 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Coal Plant (Dominion's Virginia City Hybrid Energy Center), ca. 2008
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>2008 Legislative Packages
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>2008 Legislative Packages
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Uranium Mining, ca. 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Uranium Mining, ca. 2008
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">8
+		<container label="Folder" type="folder">8
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Status Report: Governor's Office Web Sites and Other Projects, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Status Report: Governor's Office Web Sites and Other Projects, 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">9
+		<container label="Folder" type="folder">9
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Do Not Sell Registry (ED 5 Consumer Privacy Working Group), 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Do Not Sell Registry (ED 5 Consumer Privacy Working Group), 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">10
+		<container label="Folder" type="folder">10
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Health Reform Commission, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Health Reform Commission, 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">11
+		<container label="Folder" type="folder">11
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>FY 2008-2013 Six Year Improvement Program
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>FY 2008-2013 Six Year Improvement Program
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">12
+		<container label="Folder" type="folder">12
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Budget Related, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Budget Related, 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">13
+		<container label="Folder" type="folder">13
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Campaign Promises, undated
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Campaign Promises, undated
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">14
+		<container label="Folder" type="folder">14
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Mental Health, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Mental Health, 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">15
+		<container label="Folder" type="folder">15
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Virginia Film Industry, 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Virginia Film Industry, 2008
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">16
+		<container label="Folder" type="folder">16
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Pre-K Outreach, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Pre-K Outreach, 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">17
+		<container label="Folder" type="folder">17
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Pre-K Proposal, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Pre-K Proposal, 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">18
+		<container label="Folder" type="folder">18
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Pre-K Background Material, 2006-2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Pre-K Background Material, 2006-2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">19
+		<container label="Folder" type="folder">19
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Virginia Employment Commission, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Virginia Employment Commission, 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">20
+		<container label="Folder" type="folder">20
 		</container>
-          </did>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="underline">Speeches and Articles</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>State of the Commonwealth Address, 2006   
+		</did>
+		</c02>
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="underline">Speeches and Articles</emph>
+
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>State of the Commonwealth Address, 2006   
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>State of the Union Response, 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>State of the Union Response, 2006   
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>"Performance Management" Draft of Op Ed by Governor Tim Kaine for Capitol Connections, Summer 2007
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>"Performance Management" Draft of Op Ed by Governor Tim Kaine for Capitol Connections, Summer 2007
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Draft of stay of execution for Christopher Emmett, June 2007   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Draft of stay of execution for Christopher Emmett, June 2007   
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Draft of "Virginia's Energy Policy" by Governor Tim Kaine, 2007
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Draft of "Virginia's Energy Policy" by Governor Tim Kaine, 2007
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Budget Rollout/Speech, December 2007   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Budget Rollout/Speech, December 2007   
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Lawyer article, 2007   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Lawyer article, 2007   
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>State of the Commonwealth Address, 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>State of the Commonwealth Address, 2008   
 		</unittitle>
-              <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-              <container label="Folder" type="folder">8
+		<container label="Folder" type="folder">8
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Notepads, 2006-2008 and undated (part one)
+		</did>
+		</c03>
+
+</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Notepads, 2006-2008 and undated (part one)
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">9
+		<container label="Folder" type="folder">9
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Notepads, 2006-2008 and undated (part two)
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Notepads, 2006-2008 and undated (part two)
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">10
+		<container label="Folder" type="folder">10
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Notepads, 2006-2008 and undated (part three)
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Notepads, 2006-2008 and undated (part three)
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">11
+		<container label="Folder" type="folder">11
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Notepads, 2006-2008 and undated (part four)
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Notepads, 2006-2008 and undated (part four)
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">12
+		<container label="Folder" type="folder">12
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Compilation of priority action items and policy positions, 2005
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Compilation of priority action items and policy positions, 2005
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Governor-Elect Tim Kaine's 2005 Transportation Program
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Governor-Elect Tim Kaine's 2005 Transportation Program
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous Documents, 2006-2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Miscellaneous Documents, 2006-2008
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Governor's Briefing Materials, Southern Governors' Association Annual Meeting, 8-11 August 2008   
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Governor's Briefing Materials, Southern Governors' Association Annual Meeting, 8-11 August 2008   
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle><emph render="bold">II. Records of the Press Secretary</emph>, 
-<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2005-2007</emph></unitdate>.</unittitle>
-          <container type="box" label="Boxes">4-8
+		</did>
+		</c02>
+
+</c01>
+
+<c01 level="series">
+<did>
+<unittitle><emph render="bold">II. Records of the Press Secretary</emph>, 
+<unitdate type="inclusive"><emph render="bold">2005-2007</emph></unitdate>.</unittitle>
+<container type="box" label="Boxes">4-8
 </container>
-          <physdesc>
-            <extent>Extent: 1.63 cubic feet (5 boxes).</extent>
-          </physdesc>
-        </did>
-        <scopecontent>
-          <p>The Records of the Press Secretary (Kevin Hall, January 2006-October 2007) are housed in five (5) boxes.  Original order was impossible to ascertain.  The records have been put in chronological order by the processing archivist.  These records consist primarily of documents related to the 2006 budget/transportation plan, 2007 budget/transportation plan, and press releases.  Kevin Hall also served as Governor Mark Warner's deputy press secretary and press secretary.  A few records in this series date from that service.  These records include correspondence, talking points, presentations, memorandum, e-mail, reports, schedules, speeches, and notes.  
+<physdesc><extent>Extent: 1.63 cubic feet (5 boxes).</extent>
+</physdesc>
+</did>
+<scopecontent>
+<p>The Records of the Press Secretary (Kevin Hall, January 2006-October 2007) are housed in five (5) boxes.  Original order was impossible to ascertain.  The records have been put in chronological order by the processing archivist.  These records consist primarily of documents related to the 2006 budget/transportation plan, 2007 budget/transportation plan, and press releases.  Kevin Hall also served as Governor Mark Warner's deputy press secretary and press secretary.  A few records in this series date from that service.  These records include correspondence, talking points, presentations, memorandum, e-mail, reports, schedules, speeches, and notes.  
 </p>
-          <p>Notable documents include:  copy of public opinion poll by Benson Strategy Group on transportation needs and solutions, dated 29 December 2005 (b4, f1);  draft and final text of Governor Kaine's response to the State of the Union, 31 January 2006 (b4, f1); memorandum from Pete Brodnitz, Benenson Strategy Group, to Governor Kaine, date 24 February 2006, on new internal polling on transportation issues (b4, f3); Transportation Communications Strategy, 4 April 2006 (b4, f3); post-budget deal talking points, 18 June 2006 (b4, f4); memorandum from Secretary of Transportation Pierce R. Homer to Governor Kaine, dated 31 January 2007, initial review of Tunnel Project [Tysons - part of Dulles Corridor Metrorail Project] (b5, f2); Governor Kaine's schedule for 3 May 2007 (Queen Elizabeth and Prince Philip visit to Richmond) (b5, f4); Governor's schedule for 23 June 2007 (meeting with Virginia Tech Families) (b5, f5); and copies of Statement of Economic Interests for Tim Kaine, 2005-2007 (b7, f8).</p>
-        </scopecontent>
-        <c02 level="file">
-          <did>
-            <unittitle>December 2005-February 2006
+
+<p>Notable documents include:  copy of public opinion poll by Benson Strategy Group on transportation needs and solutions, dated 29 December 2005 (b4, f1);  draft and final text of Governor Kaine's response to the State of the Union, 31 January 2006 (b4, f1); memorandum from Pete Brodnitz, Benenson Strategy Group, to Governor Kaine, date 24 February 2006, on new internal polling on transportation issues (b4, f3); Transportation Communications Strategy, 4 April 2006 (b4, f3); post-budget deal talking points, 18 June 2006 (b4, f4); memorandum from Secretary of Transportation Pierce R. Homer to Governor Kaine, dated 31 January 2007, initial review of Tunnel Project [Tysons - part of Dulles Corridor Metrorail Project] (b5, f2); Governor Kaine's schedule for 3 May 2007 (Queen Elizabeth and Prince Philip visit to Richmond) (b5, f4); Governor's schedule for 23 June 2007 (meeting with Virginia Tech Families) (b5, f5); and copies of Statement of Economic Interests for Tim Kaine, 2005-2007 (b7, f8).</p>
+
+</scopecontent>
+
+		<c02 level="file">
+		<did>
+		<unittitle>December 2005-February 2006
 		</unittitle>
-            <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>February 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>February 2006
 		</unittitle>
-            <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>February 2006-April 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>February 2006-April 2006
 		</unittitle>
-            <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>April 2006-June 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>April 2006-June 2006
 		</unittitle>
-            <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>June 2006-July 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>June 2006-July 2006
 		</unittitle>
-            <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>August 2006-December 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>August 2006-December 2006
 		</unittitle>
-            <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>January 2007-February 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>January 2007-February 2007
 		</unittitle>
-            <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>February 2007-April 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>February 2007-April 2007
 		</unittitle>
-            <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>May 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>May 2007
 		</unittitle>
-            <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>June 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>June 2007
 		</unittitle>
-            <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>June 2007-August 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>June 2007-August 2007
 		</unittitle>
-            <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>August 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>August 2007
 		</unittitle>
-            <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>August 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>August 2007
 		</unittitle>
-            <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>August 2007-September 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>August 2007-September 2007
 		</unittitle>
-            <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>September 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>September 2007
 		</unittitle>
-            <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>September 2007-October 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>September 2007-October 2007
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>October 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>October 2007
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Notepads, 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Notepads, 2006
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Notepads, 2005-2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Notepads, 2005-2006
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Miscellaneous material, 2005 and undated
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Miscellaneous material, 2005 and undated
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Reference Material (part one)
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Reference Material (part one)
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Reference Material (part two)
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Reference Material (part two)
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Copies of Statement of Economic Interests for Tim Kaine, 2005-2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Copies of Statement of Economic Interests for Tim Kaine, 2005-2007
 		</unittitle>
-            <container label="Box" type="box">7
+		<container label="Box" type="box">7
 		</container>
-            <container label="Folder" type="folder">8
+		<container label="Folder" type="folder">8
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Budget Materials
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Budget Materials
 		</unittitle>
-            <container label="Box" type="box">8
+		<container label="Box" type="box">8
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>FY 2008 Agency Budget Reduction Plan, Virginia Dept. of Planning and Budget, Fall 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>FY 2008 Agency Budget Reduction Plan, Virginia Dept. of Planning and Budget, Fall 2007
 		</unittitle>
-            <container label="Box" type="box">8
+		<container label="Box" type="box">8
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle><emph render="bold">III. Multimedia Files</emph>, 
-<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2004-2010</emph></unitdate>.</unittitle>
-          <container type="box" label="Boxes">9-13
+		</did>
+		</c02>
+
+</c01>
+
+
+<c01 level="series">
+<did>
+<unittitle><emph render="bold">III. Multimedia Files</emph>, 
+<unitdate type="inclusive"><emph render="bold">2004-2010</emph></unitdate>.</unittitle>
+<container type="box" label="Boxes">9-13
 </container>
-          <physdesc>
-            <extent>Extent: 1.44 cubic feet (5 boxes).</extent>
-          </physdesc>
-        </did>
-        <scopecontent>
-          <p>The Multimedia Files are housed in five (5) boxes and is arranged by format.  Formats include:  DVD, audio files, digital photographs, documents on CD, video tapes (VHS and Beta) and photographic prints.  Records are arranged in chronological order within each format category.  These records include interviews, major speeches, public service announcements (PSAs), and photographs of Governor Tim Kaine.  Some of this material dates from when Kaine was Lt. Governor.  The photographic prints are not identified (event or date). <title render="bold">Video recordings (DVDs and videotapes) may not be duplicated without written permission of the copyright holder.</title>
+<physdesc><extent>Extent: 1.44 cubic feet (5 boxes).</extent>
+</physdesc>
+</did>
+<scopecontent>
+<p>The Multimedia Files are housed in five (5) boxes and is arranged by format.  Formats include:  DVD, audio files, digital photographs, documents on CD, video tapes (VHS and Beta) and photographic prints.  Records are arranged in chronological order within each format category.  These records include interviews, major speeches, public service announcements (PSAs), and photographs of Governor Tim Kaine.  Some of this material dates from when Kaine was Lt. Governor.  The photographic prints are not identified (event or date).
 </p>
-          <p>Notable DVDs include:  Fairfax Chamber of Commerce gubernatorial debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Tim Russert, 13 September 2005; CBS-6 WTVR gubernatorial debate moderated by Larry Sabato, 9 October 2005; inaugural entertainment, parade, and inaugural address, 14 January 2006; State of the Commonwealth Addresses, 16 January 2006, 10 January 2007 and 10 January 2008; Kaine's Democratic State of the Union Response, 31 January 2006; Virginia Tech Convocation, 17 April 2007; Queen Elizabeth II visit to Virginia, 3 May 2007; Attorney General Christmas Party 2007 video by David Clementson [abusive driver fees/Santa lost his license plate - includes McDonnell, Decker, Kent, Gov. Kaine]; and Governor Tim Kaine address to Electoral College, December 2008. </p>
-          <p>Notable audio files include:  Governor-Elect Tim Kaine Transportation Meeting in Roanoke, 18 November 2005 and Kaine's final Ask the Governor program on WTOP, 22 December 2009 (President Barack Obama and Governor-Elect Bob McDonnell called in).
+
+<p>Notable DVDs include:  Fairfax Chamber of Commerce gubernatorial debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Tim Russert, 13 September 2005; CBS-6 WTVR gubernatorial debate moderated by Larry Sabato, 9 October 2005; inaugural entertainment, parade, and inaugural address, 14 January 2006; State of the Commonwealth Addresses, 16 January 2006, 10 January 2007 and 10 January 2008; Kaine's Democratic State of the Union Response, 31 January 2006; Virginia Tech Convocation, 17 April 2007; Queen Elizabeth II visit to Virginia, 3 May 2007; Attorney General Christmas Party 2007 video by David Clementson [abusive driver fees/Santa lost his license plate - includes McDonnell, Decker, Kent, Gov. Kaine]; and Governor Tim Kaine address to Electoral College, December 2008. </p>
+
+<p>Notable audio files include:  Governor-Elect Tim Kaine Transportation Meeting in Roanoke, 18 November 2005 and Kaine's final Ask the Governor program on WTOP, 22 December 2009 (President Barack Obama and Governor-Elect Bob McDonnell called in).
 </p>
-          <p>Notable digital photographs include:  Governor Tim Kaine's inauguration in Williamsburg, 14 January 2006; Kaine's mideast trip (Afghanistan and Iraq), March 2006; and Kaine's European trade mission, 11-18 November 2006; Queen Elizabeth's visit to Virginia, 3 May 2007.
+
+<p>Notable digital photographs include:  Governor Tim Kaine's inauguration in Williamsburg, 14 January 2006; Kaine's mideast trip (Afghanistan and Iraq), March 2006; and Kaine's European trade mission, 11-18 November 2006; Queen Elizabeth's visit to Virginia, 3 May 2007.
 </p>
-          <p>Notable photographic prints include:  Governor Tim Kaine and Anne Holton with President George W. Bush and First Lady Laura Bush, undated; Governor Kaine, Lt. Governor Bill Bolling and Attorney General Bob McDonnell with members of Virginia's Congressional Delegation (Senator John Warner, Senator James Webb, Representative Thelma Drake, Bobby Scott, Randy Forbes, Bob Goodlatte, Eric Cantor and Jim Moran, ca. 2007 or 2008?; Governor Kaine with Governors Mark Warner, George Allen, Doug Wilder, Gerald Baliles, Chuck Robb and Linwood Holton, undated; Governor Kaine with Queen Elizabeth II, May 2007; Tim Kaine for Governor rally, ca. 2005; and Governor Kaine's inauguration, 14 January 2006.
+
+<p>Notable photographic prints include:  Governor Tim Kaine and Anne Holton with President George W. Bush and First Lady Laura Bush, undated; Governor Kaine, Lt. Governor Bill Bolling and Attorney General Bob McDonnell with members of Virginia's Congressional Delegation (Senator John Warner, Senator James Webb, Representative Thelma Drake, Bobby Scott, Randy Forbes, Bob Goodlatte, Eric Cantor and Jim Moran, ca. 2007 or 2008?; Governor Kaine with Governors Mark Warner, George Allen, Doug Wilder, Gerald Baliles, Chuck Robb and Linwood Holton, undated; Governor Kaine with Queen Elizabeth II, May 2007; Tim Kaine for Governor rally, ca. 2005; and Governor Kaine's inauguration, 14 January 2006.
 </p>
-        </scopecontent>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="bold">DVDs</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Hispanic Chamber of Commerce (VAHCC) 2005 Gala, "Bridging Cultures, Building Communities," 4 April 2005 - 7:54 minutes   
+
+
+</scopecontent>
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="bold">DVDs</emph>
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Hispanic Chamber of Commerce (VAHCC) 2005 Gala, "Bridging Cultures, Building Communities," 4 April 2005 - 7:54 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">1
+		<container label="Disc" type="disc">1
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Landmarks of Greater Richmond, introduction by Governor Mark Warner, 6 May 2005 - 19:01 minutes   
+
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Landmarks of Greater Richmond, introduction by Governor Mark Warner, 6 May 2005 - 19:01 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">2
+		<container label="Disc" type="disc">2
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">DVD contains multiple events/clips:</emph>
-              </unittitle>
-              <container label="Box" type="box">9
+
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">DVD contains multiple events/clips:</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">3
+		<container label="Disc" type="disc">3
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>News Channel 8, Fairfax Chamber of Commerce Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Tim Russert, 13 September 2005 (clips)
+
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>News Channel 8, Fairfax Chamber of Commerce Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Tim Russert, 13 September 2005 (clips)
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>CBS-6 WTVR Richmond, Gubernatorial Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Larry Sabato, 9 October 2005 (clips)
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>CBS-6 WTVR Richmond, Gubernatorial Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Larry Sabato, 9 October 2005 (clips)
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>State of the Union Response, 31 January 2006 - 10:52 minutes
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>State of the Union Response, 31 January 2006 - 10:52 minutes
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Virginia Tech Convocation, 17 April 2007 - 9:01 minutes
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Virginia Tech Convocation, 17 April 2007 - 9:01 minutes
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Hour of Power, 29 April 2007 - 10:26 minutes
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Hour of Power, 29 April 2007 - 10:26 minutes
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Fox News Sunday, 24 February 2008 - 13:35 minutes
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Fox News Sunday, 24 February 2008 - 13:35 minutes
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>CNN with Wolf Blitzer, 18 March 2008 - 5:36 minutes
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>CNN with Wolf Blitzer, 18 March 2008 - 5:36 minutes
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Civil Rights Memorial Dedication, 21 July 2008 - 6:45 minutes
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Civil Rights Memorial Dedication, 21 July 2008 - 6:45 minutes
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Virginia Democratic Convention Video, August 2008 - 4:18 minutes
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Virginia Democratic Convention Video, August 2008 - 4:18 minutes
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>News Channel 8, Fairfax Chamber of Commerce Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Tim Russert, 13 September 2005 - 1:00:19 hours   
+			</did>
+			</c04>
+
+
+		</c03>
+
+
+
+
+		<c03 level="file">
+		<did>
+		<unittitle>News Channel 8, Fairfax Chamber of Commerce Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Tim Russert, 13 September 2005 - 1:00:19 hours   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">4
+		<container label="Disc" type="disc">4
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>CBS-6 WTVR Richmond, Gubernatorial Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Larry Sabato, 9 October 2005 - 57:37 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>CBS-6 WTVR Richmond, Gubernatorial Debate between Jerry Kilgore (R) and Tim Kaine (D), moderated by Larry Sabato, 9 October 2005 - 57:37 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">5
+		<container label="Disc" type="disc">5
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Bradley and Gaige Television Productions, That Culpeper Feeling, Episode 235, includes interview with Governor-Elect Tim Kaine, ca. December 2005 - 2:00:30 hours   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Bradley and Gaige Television Productions, That Culpeper Feeling, Episode 235, includes interview with Governor-Elect Tim Kaine, ca. December 2005 - 2:00:30 hours   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">6
+		<container label="Disc" type="disc">6
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Farm Bureau, Down Home Virginia, Episode 49, includes interview with Governor-Elect Tim Kaine, January 2006 - 29:44 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Farm Bureau, Down Home Virginia, Episode 49, includes interview with Governor-Elect Tim Kaine, January 2006 - 29:44 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">7
+		<container label="Disc" type="disc">7
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Pre-Inaugural Celebration, Governor-Elect Tim Kaine, Inaugural Ball in Abingdon, ARC TV, 7 January 2006 - 1 video file (48:06 minutes)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Pre-Inaugural Celebration, Governor-Elect Tim Kaine, Inaugural Ball in Abingdon, ARC TV, 7 January 2006 - 1 video file (48:06 minutes)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">8
+		<container label="Disc" type="disc">8
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Inaugural Entertainment, Williamsburg, Virginia, Appalachian Regional Community (ARC) TV, 13 January 2006 - 3 video files (28:25, 34:41 and 29:00 minutes)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Inaugural Entertainment, Williamsburg, Virginia, Appalachian Regional Community (ARC) TV, 13 January 2006 - 3 video files (28:25, 34:41 and 29:00 minutes)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">9
+		<container label="Disc" type="disc">9
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Inauguration, Williamsburg, Virginia, ARC TV, 14 January 2006 - 2 video files (20:13 and 41:29 minutes)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Inauguration, Williamsburg, Virginia, ARC TV, 14 January 2006 - 2 video files (20:13 and 41:29 minutes)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">10
+		<container label="Disc" type="disc">10
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Inaugural Parade, Williamsburg, Virginia, ARC TV, 14 January 2006 - 2 video files (9:15 and 48:15 minutes)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Inaugural Parade, Williamsburg, Virginia, ARC TV, 14 January 2006 - 2 video files (9:15 and 48:15 minutes)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">11
+		<container label="Disc" type="disc">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Inaugural Entertainment, Richmond, Virginia, ARC TV, 14 January 2006 - 1 video file (43:25 minutes) (part I)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Inaugural Entertainment, Richmond, Virginia, ARC TV, 14 January 2006 - 1 video file (43:25 minutes) (part I)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">12
+		<container label="Disc" type="disc">12
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Inaugural Entertainment, Richmond, Virginia, ARC TV, 14 January 2006 - 1 video file (1:25:50 hours) (part II)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Inaugural Entertainment, Richmond, Virginia, ARC TV, 14 January 2006 - 1 video file (1:25:50 hours) (part II)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">13
+		<container label="Disc" type="disc">13
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Speech to the General Assembly, 16 January 2006 - 43 minutes (1 DVD master and 2 service copies)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Speech to the General Assembly, 16 January 2006 - 43 minutes (1 DVD master and 2 service copies)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">14
+		<container label="Disc" type="disc">14
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, WAVY-TV clips on the VHDA Genesis Project, 22 March 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, WAVY-TV clips on the VHDA Genesis Project, 22 March 2006   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">15
+		<container label="Disc" type="disc">15
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Chesapeake Legislative Review, WCTV 48, City of Chesapeake, March 2006, includes interview with Governor Tim Kaine - 32:52 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Chesapeake Legislative Review, WCTV 48, City of Chesapeake, March 2006, includes interview with Governor Tim Kaine - 32:52 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">16
+		<container label="Disc" type="disc">16
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Campaign for Fitness, Governor Tim Kaine visits Brookland Elementary School, 4 May 2006 - 6:10 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Campaign for Fitness, Governor Tim Kaine visits Brookland Elementary School, 4 May 2006 - 6:10 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">17
+		<container label="Disc" type="disc">17
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Telenoticias-64, Washington, DC, 6:30 News Cast, 18 May 2006, includes brief interview with Governor Tim Kaine - 23:40 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Telenoticias-64, Washington, DC, 6:30 News Cast, 18 May 2006, includes brief interview with Governor Tim Kaine - 23:40 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">18
+		<container label="Disc" type="disc">18
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Housing Development Authority, "Affordable Housing Fair," 18 May 2006 - 30 seconds   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Housing Development Authority, "Affordable Housing Fair," 18 May 2006 - 30 seconds   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">19
+		<container label="Disc" type="disc">19
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>ARC TV, A New Economy Tourism Conference, 13 June 2006 - 37:08 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>ARC TV, A New Economy Tourism Conference, 13 June 2006 - 37:08 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">20
+		<container label="Disc" type="disc">20
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Caritas Ribbon Cutting, WRIC and WTVR clips, 29 June 2006 - 30 seconds each   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Caritas Ribbon Cutting, WRIC and WTVR clips, 29 June 2006 - 30 seconds each   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">21
+		<container label="Disc" type="disc">21
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Farm Bureau, Down Home Virginia, Episode 54, June 2006 - 28:22 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Farm Bureau, Down Home Virginia, Episode 54, June 2006 - 28:22 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">22
+		<container label="Disc" type="disc">22
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Secretary of Technology Aneesh Chopra's prerecorded remarks for the September 15 NOVA RHIO Launch Summit, 15 September 2006 - 13:24 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Secretary of Technology Aneesh Chopra's prerecorded remarks for the September 15 NOVA RHIO Launch Summit, 15 September 2006 - 13:24 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">23
+		<container label="Disc" type="disc">23
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Northrup Gruman Gift to University of Virginia at Wise, 18 September 2006 - 49:38 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Northrup Gruman Gift to University of Virginia at Wise, 18 September 2006 - 49:38 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">24
+		<container label="Disc" type="disc">24
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Latino/Hispanic Heritage Month, 20 September 2006, Zona Latina TV - 3:53 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Latino/Hispanic Heritage Month, 20 September 2006, Zona Latina TV - 3:53 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">25
+		<container label="Disc" type="disc">25
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>National Federation of Press Women, 2007 Conference, Richmond, Virginia, Promotional DVD [created ca. September 2006] - 3:50 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>National Federation of Press Women, 2007 Conference, Richmond, Virginia, Promotional DVD [created ca. September 2006] - 3:50 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">26
+		<container label="Disc" type="disc">26
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Secretary of Technology Aneesh Chopra, Remarks to Southwest Virginia Community College ["Fast Track Program"], 18 October 2006 - 9:50 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Secretary of Technology Aneesh Chopra, Remarks to Southwest Virginia Community College ["Fast Track Program"], 18 October 2006 - 9:50 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">27
+		<container label="Disc" type="disc">27
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Region 2000 Partnership's Strategic Plan Presentation, Guest Speaker:  Governor Tim Kaine, 24 October 2006 - 42:40 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Region 2000 Partnership's Strategic Plan Presentation, Guest Speaker:  Governor Tim Kaine, 24 October 2006 - 42:40 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">28
+		<container label="Disc" type="disc">28
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Video tribute to J. Robert Bray, Darden Award for Regional Leadership, 2 November 2006 - 11:30 minutes (includes congratulations from Governor Kaine)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Video tribute to J. Robert Bray, Darden Award for Regional Leadership, 2 November 2006 - 11:30 minutes (includes congratulations from Governor Kaine)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">29
+		<container label="Disc" type="disc">29
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Dept. of Game and Inland Fisheries, Virginia Capital Trail, Opening Ceremony, 21 November 2006 - 17 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Dept. of Game and Inland Fisheries, Virginia Capital Trail, Opening Ceremony, 21 November 2006 - 17 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">30
+		<container label="Disc" type="disc">30
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, State Parks VAB PSA, Virginia Dept. of Conservation and Recreation, 29 November 2006, two 30 second PSAs   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, State Parks VAB PSA, Virginia Dept. of Conservation and Recreation, 29 November 2006, two 30 second PSAs   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">31
+		<container label="Disc" type="disc">31
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Perspective, Anne Holton, record date 12 December 2006 - 26:46 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Perspective, Anne Holton, record date 12 December 2006 - 26:46 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">32
+		<container label="Disc" type="disc">32
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>JCRB/AJC Dinner Honoring Gary Forsee Featuring Governor Tim Kaine, December 2006 - 1:22:02 hours   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>JCRB/AJC Dinner Honoring Gary Forsee Featuring Governor Tim Kaine, December 2006 - 1:22:02 hours   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">33
+		<container label="Disc" type="disc">33
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Sorensen Institute for Political Leadership at the University of Virginia, 2006 - 15 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Sorensen Institute for Political Leadership at the University of Virginia, 2006 - 15 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">34
+		<container label="Disc" type="disc">34
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, State of the Commonwealth Address, Jamestown, Virginia, 10 January 2007 - 40:37 minutes (3 copies)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, State of the Commonwealth Address, Jamestown, Virginia, 10 January 2007 - 40:37 minutes (3 copies)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">35
+		<container label="Disc" type="disc">35
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Democracy in Action in Rural America by Star City Studios, Laura George and Kate Irwin Speak to the Board of Corrections, 17 January 2007 - 24:36 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Democracy in Action in Rural America by Star City Studios, Laura George and Kate Irwin Speak to the Board of Corrections, 17 January 2007 - 24:36 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">36
+		<container label="Disc" type="disc">36
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Comcast Spotlight, Read Across America PSA, Governor Tim Kaine, Lane Ramsey, Lt. Governor Bill Bolling, Mike Batten and Cecil Rhu Harris, 19 March 2007, each 30 seconds   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Comcast Spotlight, Read Across America PSA, Governor Tim Kaine, Lane Ramsey, Lt. Governor Bill Bolling, Mike Batten and Cecil Rhu Harris, 19 March 2007, each 30 seconds   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">37
+		<container label="Disc" type="disc">37
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine visits James Carville's Topics in American Politics Class, Northern Virginia Community College, March 2007 - 1:18:32 hours   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine visits James Carville's Topics in American Politics Class, Northern Virginia Community College, March 2007 - 1:18:32 hours   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">38
+		<container label="Disc" type="disc">38
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Tech Convocation, 17 April 2007 - 70 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Tech Convocation, 17 April 2007 - 70 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">39
+		<container label="Disc" type="disc">39
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Google/Virginia Press Conference, Library of Virginia, 30 April 2007 - 19:35 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Google/Virginia Press Conference, Library of Virginia, 30 April 2007 - 19:35 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">40
+		<container label="Disc" type="disc">40
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Queen Elizabeth II in Virginia, 3 May 2007, A Royal Welcome - 04:52:26 minutes; The Queens Visit - 54:32:16 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Queen Elizabeth II in Virginia, 3 May 2007, A Royal Welcome - 04:52:26 minutes; The Queens Visit - 54:32:16 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">41
+		<container label="Disc" type="disc">41
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, PGM Clean 2, 3 May 2007 - 1:08:43 hours   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, PGM Clean 2, 3 May 2007 - 1:08:43 hours   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">42
+		<container label="Disc" type="disc">42
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, PGM Clean 3, 3 May 2007 - 1:29:13 hours   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, PGM Clean 3, 3 May 2007 - 1:29:13 hours   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">43
+		<container label="Disc" type="disc">43
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, PGM Clean 4, 3 May 2007 - 24:12 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, PGM Clean 4, 3 May 2007 - 24:12 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">44
+		<container label="Disc" type="disc">44
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine's Address, Commencement Exercises, Southwest Virginia Community College, 10 May 2007 - 19:45 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine's Address, Commencement Exercises, Southwest Virginia Community College, 10 May 2007 - 19:45 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">45
+		<container label="Disc" type="disc">45
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Southeastern Association of Tax Administrators (SEATA) 2008 Invitation, created by Virginia Dept. of Taxation (includes Governor Kaine), 19 June 2007 - 6:30 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Southeastern Association of Tax Administrators (SEATA) 2008 Invitation, created by Virginia Dept. of Taxation (includes Governor Kaine), 19 June 2007 - 6:30 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">46
+		<container label="Disc" type="disc">46
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Colonial Downs 2007 Virginia Derby, TV CBS, includes brief statement from Governor Tim Kaine, 21 July 2007 - 58:42 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Colonial Downs 2007 Virginia Derby, TV CBS, includes brief statement from Governor Tim Kaine, 21 July 2007 - 58:42 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">47
+		<container label="Disc" type="disc">47
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Early Childhood Development Program, Moton Elementary School, WHCS-46 Hampton City Schools, 11 September 2007 - 59:25 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Early Childhood Development Program, Moton Elementary School, WHCS-46 Hampton City Schools, 11 September 2007 - 59:25 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">48
+		<container label="Disc" type="disc">48
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Own Your Future (Long Term Care DVD) includes brief message from Governor Tim Kaine, undated possibly ca. 2007?   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Own Your Future (Long Term Care DVD) includes brief message from Governor Tim Kaine, undated possibly ca. 2007?   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">49
+		<container label="Disc" type="disc">49
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Attorney General Christmas Party 2007 by David Clementson - 8:43 minutes [abusive driver fees/Santa lost his license plate - includes Robert McDonnell, Marla Decker, Martin Kent, Gov. Tim Kaine]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Attorney General Christmas Party 2007 by David Clementson - 8:43 minutes [abusive driver fees/Santa lost his license plate - includes Robert McDonnell, Marla Decker, Martin Kent, Gov. Tim Kaine]   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">50
+		<container label="Disc" type="disc">50
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Forever.  Our Land. Our Water. Our Quality of Life.  ca. 2007?   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Forever.  Our Land. Our Water. Our Quality of Life.  ca. 2007?   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">51
+		<container label="Disc" type="disc">51
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia State Parks with Governor Tim Kaine, two 30 second PSAs, 9 January 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia State Parks with Governor Tim Kaine, two 30 second PSAs, 9 January 2008   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">52
+		<container label="Disc" type="disc">52
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, State of the Commonwealth Address, 10 January 2008 - 43:21 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, State of the Commonwealth Address, 10 January 2008 - 43:21 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">53
+		<container label="Disc" type="disc">53
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine press conference at 2008 Biotech Annual Convention, San Diego, California, 18 June 2008 - 12:31 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine press conference at 2008 Biotech Annual Convention, San Diego, California, 18 June 2008 - 12:31 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">54
+		<container label="Disc" type="disc">54
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Timothy M. Kaine, Address to Electoral College, December 2008 - 8:00 minutes (2 copies)  
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Timothy M. Kaine, Address to Electoral College, December 2008 - 8:00 minutes (2 copies)  
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">55
+		<container label="Disc" type="disc">55
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Consider This, WVPT, Governor Tim Kaine, 26 February 2009 - 26:46 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Consider This, WVPT, Governor Tim Kaine, 26 February 2009 - 26:46 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">56
+		<container label="Disc" type="disc">56
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Meet the Farmer TV, No. 25, Specialty Foods and Education Conference, 12 May 2009 - 29:00 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Meet the Farmer TV, No. 25, Specialty Foods and Education Conference, 12 May 2009 - 29:00 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">57
+		<container label="Disc" type="disc">57
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>NewsPlus with Mark Segraves, DC50 TV, 2 January 2010 episode, includes segment on Governor Tim Kaine - 21:12 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>NewsPlus with Mark Segraves, DC50 TV, 2 January 2010 episode, includes segment on Governor Tim Kaine - 21:12 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">58
+		<container label="Disc" type="disc">58
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Public Service Announcement by Governor Tim Kaine for VINE (Victim Information and Notification Everyday), undated - 0:33 seconds   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Public Service Announcement by Governor Tim Kaine for VINE (Victim Information and Notification Everyday), undated - 0:33 seconds   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">59
+		<container label="Disc" type="disc">59
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="bold">Audio</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor-Elect Tim Kaine Transportation Meeting, Roanoke, Virginia, 18 November 2005, 2 files - 45:44 and 29:14 minutes   
+		</did>
+		</c03>
+
+</c02>
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="bold">Audio</emph>
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor-Elect Tim Kaine Transportation Meeting, Roanoke, Virginia, 18 November 2005, 2 files - 45:44 and 29:14 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">60
+		<container label="Disc" type="disc">60
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Speech to the General Assembly, 16 January 2006 - 42 minutes (1 audio master and 2 service copies)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Speech to the General Assembly, 16 January 2006 - 42 minutes (1 audio master and 2 service copies)   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">61
+		<container label="Disc" type="disc">61
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Radio ad by Americans for Prosperity-Virginia in opposition to tax increases proposed by Governor Tim Kaine and State Senate leaders, 20 March 2006 - 1:00 minute   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Radio ad by Americans for Prosperity-Virginia in opposition to tax increases proposed by Governor Tim Kaine and State Senate leaders, 20 March 2006 - 1:00 minute   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">62
+		<container label="Disc" type="disc">62
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine clip from Sandy Lesberg's World, WRRW 100.9 Williamsburg Public Radio, 15 September 2007 - 16 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine clip from Sandy Lesberg's World, WRRW 100.9 Williamsburg Public Radio, 15 September 2007 - 16 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">63
+		<container label="Disc" type="disc">63
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine interviewed on Epicentro Politico, a Spanish language radio program, 5 April 2008 - 59:01 minutes [Kaine interview 18:15-24:40]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine interviewed on Epicentro Politico, a Spanish language radio program, 5 April 2008 - 59:01 minutes [Kaine interview 18:15-24:40]   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">65
+		<container label="Disc" type="disc">65
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Ask the Governor, WTOP, 22 December 2009 - 40:57 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Ask the Governor, WTOP, 22 December 2009 - 40:57 minutes   
 		</unittitle>
-              <container label="Box" type="box">9
+		<container label="Box" type="box">9
 		</container>
-              <container label="Disc" type="disc">66
+		<container label="Disc" type="disc">66
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="bold">Digital Photographs on CD</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Photographs of Governor Mark Warner, Whitewater Rafting, Richmond, Virginia, 27 August 2004 [jpg files] (2 CDs)   
+		</did>
+		</c03>
+
+</c02>
+
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="bold">Digital Photographs on CD</emph>
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Photographs of Governor Mark Warner, Whitewater Rafting, Richmond, Virginia, 27 August 2004 [jpg files] (2 CDs)   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">1
+		<container label="Disc" type="disc">1
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Portrait of Governor-Elect Tim Kaine, 19 December 2005 [jpg files] (2 CDs)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Portrait of Governor-Elect Tim Kaine, 19 December 2005 [jpg files] (2 CDs)   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">2
+		<container label="Disc" type="disc">2
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Portrait of First Lady Anne Holton, 3 January 2006 [jpg files] (2 CDs)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Portrait of First Lady Anne Holton, 3 January 2006 [jpg files] (2 CDs)   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">3
+		<container label="Disc" type="disc">3
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor-Elect Tim Kaine Appoints Secretary of Education Dr. Thomas R. Morris, Arthur Ash Elementary School, 6 January 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor-Elect Tim Kaine Appoints Secretary of Education Dr. Thomas R. Morris, Arthur Ash Elementary School, 6 January 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">4
+		<container label="Disc" type="disc">4
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">1 CD containing multiple events [jpg files]:</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">1 CD containing multiple events [jpg files]:</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">5
+		<container label="Disc" type="disc">5
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Governor-Elect Tim Kaine at the Dedication of the Springfield Ramp, 10 January 2006
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Governor-Elect Tim Kaine at the Dedication of the Springfield Ramp, 10 January 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Governor Kaine at the January CTB Meeting in Richmond, 18 January 2006
+			</did>
+			</c04>	
+
+ 			<c04 level="item">
+		 	<did>
+		 	<unittitle>Governor Kaine at the January CTB Meeting in Richmond, 18 January 2006
 		 	</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Governor Kaine at the VDOT Garver Leadership Conference in Roanoke, 5 April 2006
+		 	</did>
+		 	</c04>	
+
+			<c04 level="item">
+			<did>
+			<unittitle>Governor Kaine at the VDOT Garver Leadership Conference in Roanoke, 5 April 2006
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine's Inauguration, Williamsburg, Virginia, 14 January 2006 [jpg files]   
+			</did>
+			</c04>
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine's Inauguration, Williamsburg, Virginia, 14 January 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">6
+		<container label="Disc" type="disc">6
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Virginia Association of School Superintendents (VASS), Library of Virginia, 17 January 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Virginia Association of School Superintendents (VASS), Library of Virginia, 17 January 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">7
+		<container label="Disc" type="disc">7
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Cabinet Members Portraits, 17-24 January 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Cabinet Members Portraits, 17-24 January 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">8
+		<container label="Disc" type="disc">8
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Press Availability with Attorney General Robert McDonnell and Transportation News Conference, 20 January 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Press Availability with Attorney General Robert McDonnell and Transportation News Conference, 20 January 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">9
+		<container label="Disc" type="disc">9
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Swearing in of Secretary of the Commonwealth Daniel G. Leblanc, 22 January 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Swearing in of Secretary of the Commonwealth Daniel G. Leblanc, 22 January 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">10
+		<container label="Disc" type="disc">10
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>David Smith, Steve Mondule, Vivek Kundra, 9 March 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>David Smith, Steve Mondule, Vivek Kundra, 9 March 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">11
+		<container label="Disc" type="disc">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">CD Mideast Trip - March 2006, Two Discs (multiple events - jpg files):</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">CD Mideast Trip - March 2006, Two Discs (multiple events - jpg files):</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">12
+		<container label="Disc" type="disc">12
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Afghan Ambassador's Residence, 15 March 2006
+		</did>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Afghan Ambassador's Residence, 15 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Afghan Embassy Compound, 15 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Afghan Embassy Compound, 15 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Al Saleem Arrival, 13 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Al Saleem Arrival, 13 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Al Saleem Breakfast, 15 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Al Saleem Breakfast, 15 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Amb Korologos Breakfast, 17 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Amb Korologos Breakfast, 17 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Bagram AFB, 16 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Bagram AFB, 16 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Camp Arifjan Dinner, 13 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Camp Arifjan Dinner, 13 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Camp Eggars, 15 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Camp Eggars, 15 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Camp Eggars Troop Breakfast, 16 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Camp Eggars Troop Breakfast, 16 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Flight to Baghdad - Overflight photos, 14 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Flight to Baghdad - Overflight photos, 14 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Flight to Iraq, 14 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Flight to Iraq, 14 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Flight to Islamabad, 15 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Flight to Islamabad, 15 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Flight to Kabul, 15 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Flight to Kabul, 15 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>General Eikenberry, 16 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>General Eikenberry, 16 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Green Zone, 14 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Green Zone, 14 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Green Zone Memorials, 14 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Green Zone Memorials, 14 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Helo Photos Kuwait, 13 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Helo Photos Kuwait, 13 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Kabul Motorcade, 16 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Kabul Motorcade, 16 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Sather AB - Baghdad IA - Iraqi Forces Demo, 14 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>Sather AB - Baghdad IA - Iraqi Forces Demo, 14 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>USAID School, 16 March 2006
+			</did>
+			</c04>
+
+ 			<c04 level="item">
+			<did>
+			<unittitle>USAID School, 16 March 2006
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Bristol Public Library and Announcement of Kate Hanley as Secretary of the Commonwealth, both 20 March 2006 [jpgs files] (2 cds)   
+			</did>
+			</c04>
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Bristol Public Library and Announcement of Kate Hanley as Secretary of the Commonwealth, both 20 March 2006 [jpgs files] (2 cds)   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">13
+		<container label="Disc" type="disc">13
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine's Staff, Secretaries and Deputy Secretaries, 16 April 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine's Staff, Secretaries and Deputy Secretaries, 16 April 2006   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">14
+		<container label="Disc" type="disc">14
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Kaine at Ford plant in Norfolk, Virginia, 17 April 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Kaine at Ford plant in Norfolk, Virginia, 17 April 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">15
+		<container label="Disc" type="disc">15
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>State Employee Governor's Awards, 4 May 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>State Employee Governor's Awards, 4 May 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">16
+		<container label="Disc" type="disc">16
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine with Virginia Minority Supplier Development Council (VMSDC) participants at Virginia Business Opportunity Fair (VBOF), 7 May 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine with Virginia Minority Supplier Development Council (VMSDC) participants at Virginia Business Opportunity Fair (VBOF), 7 May 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">17
+		<container label="Disc" type="disc">17
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Group photograph of Governor Tim Kaine and Cabinet, [Jamestown?], 23 May 2006 [jpg file]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Group photograph of Governor Tim Kaine and Cabinet, [Jamestown?], 23 May 2006 [jpg file]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">18
+		<container label="Disc" type="disc">18
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Visit to Queens Park, 29 May 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Visit to Queens Park, 29 May 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">19
+		<container label="Disc" type="disc">19
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine at Pocahontas State Park, 17 June 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine at Pocahontas State Park, 17 June 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">20
+		<container label="Disc" type="disc">20
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Bill Signing Ceremony. Governor Kaine will sign legislation that establishes Virginia's goal of attracting highly qualified teachers, and requiring regular, written performance evaluations of public school teachers, 23 June 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Bill Signing Ceremony. Governor Kaine will sign legislation that establishes Virginia's goal of attracting highly qualified teachers, and requiring regular, written performance evaluations of public school teachers, 23 June 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">21
+		<container label="Disc" type="disc">21
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Caritas Ribbon Cutting, 29 June 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Caritas Ribbon Cutting, 29 June 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">22
+		<container label="Disc" type="disc">22
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Common Health Walk, 24 July 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Common Health Walk, 24 July 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">23
+		<container label="Disc" type="disc">23
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Roberto Flores Bermudez, Ambassador of Honduras to the United States, 8 August 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Roberto Flores Bermudez, Ambassador of Honduras to the United States, 8 August 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">24
+		<container label="Disc" type="disc">24
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Dismal Swamp Canal Trail, 9 August 2006 (2 copies) [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Dismal Swamp Canal Trail, 9 August 2006 (2 copies) [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">25
+		<container label="Disc" type="disc">25
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Sallie Mae "Teach and Care" News Announcement, 15 August 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Sallie Mae "Teach and Care" News Announcement, 15 August 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">26
+		<container label="Disc" type="disc">26
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine Visits the VDOT Salem District and Tours the STC Facility and the New STC Location Underconstruction, 12 September 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine Visits the VDOT Salem District and Tours the STC Facility and the New STC Location Underconstruction, 12 September 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">27
+		<container label="Disc" type="disc">27
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, Northrup Gruman Gift to University of Virginia at Wise, 18 September 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, Northrup Gruman Gift to University of Virginia at Wise, 18 September 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">28
+		<container label="Disc" type="disc">28
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor's Mansion Reception, 20 September 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor's Mansion Reception, 20 September 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">29
+		<container label="Disc" type="disc">29
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Commonwealth Scholars Reception at the VDOT Auditorium, 28 September 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Commonwealth Scholars Reception at the VDOT Auditorium, 28 September 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">30
+		<container label="Disc" type="disc">30
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine's European Trade Mission, 11-18 November 2006 (photographs from 14, 16-17 November) [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine's European Trade Mission, 11-18 November 2006 (photographs from 14, 16-17 November) [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">31
+		<container label="Disc" type="disc">31
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>2006 Governor's Housing Conference, Award Luncheon, 30 November 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>2006 Governor's Housing Conference, Award Luncheon, 30 November 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">32
+		<container label="Disc" type="disc">32
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>West Virginia-Virginia Governor's Meeting, Bluefield, West Virginia, 30 November 2006, taken by Steven Rotsch, Governor's Photograph for West Virginia Governor Joe Manchin, III [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>West Virginia-Virginia Governor's Meeting, Bluefield, West Virginia, 30 November 2006, taken by Steven Rotsch, Governor's Photograph for West Virginia Governor Joe Manchin, III [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">33
+		<container label="Disc" type="disc">33
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor's Mansion Reception, 4 December 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor's Mansion Reception, 4 December 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">34
+		<container label="Disc" type="disc">34
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor's Mansion Reception, 15 December 2006 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor's Mansion Reception, 15 December 2006 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">35
+		<container label="Disc" type="disc">35
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Elementary School Principals with Governor Tim Kaine, 29 January 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Elementary School Principals with Governor Tim Kaine, 29 January 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">36
+		<container label="Disc" type="disc">36
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Transit Association 2007 Transportation Choices Legislative Reception, 29 January 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Transit Association 2007 Transportation Choices Legislative Reception, 29 January 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">37
+		<container label="Disc" type="disc">37
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Sorensen Institute 2007 Gala Honoring Governor Linwood Holton, 27 March 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Sorensen Institute 2007 Gala Honoring Governor Linwood Holton, 27 March 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">38
+		<container label="Disc" type="disc">38
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 1 of 7 [jpg files]    
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 1 of 7 [jpg files]    
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">39
+		<container label="Disc" type="disc">39
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 2 of 7 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 2 of 7 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">40
+		<container label="Disc" type="disc">40
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 3 of 7 [jpg files]    
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 3 of 7 [jpg files]    
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">41
+		<container label="Disc" type="disc">41
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 4 of 7 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 4 of 7 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">42
+		<container label="Disc" type="disc">42
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 5 of 7 [jpg files]    
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 5 of 7 [jpg files]    
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">43
+		<container label="Disc" type="disc">43
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 6 of 7 [jpg files]    
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 6 of 7 [jpg files]    
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">44
+		<container label="Disc" type="disc">44
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 7 of 7 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia's Royal Welcome, 3 May 2007, State Capitol, CD 7 of 7 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">45
+		<container label="Disc" type="disc">45
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Jamestown 2007, America's 400th Anniversary, Day 1, 11 May 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Jamestown 2007, America's 400th Anniversary, Day 1, 11 May 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">46
+		<container label="Disc" type="disc">46
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Jamestown 2007, America's 400th Anniversary, Day 2, 12 May 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Jamestown 2007, America's 400th Anniversary, Day 2, 12 May 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">47
+		<container label="Disc" type="disc">47
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Jamestown 2007, America's 400th Anniversary, Day 3, 13 May 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Jamestown 2007, America's 400th Anniversary, Day 3, 13 May 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">48
+		<container label="Disc" type="disc">48
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Shubert Family, Colonial Forge Bands, Reception for Senator Chichester and Delegate Callahan, 21 May 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Shubert Family, Colonial Forge Bands, Reception for Senator Chichester and Delegate Callahan, 21 May 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">49
+		<container label="Disc" type="disc">49
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Dept. of Game and Inland Fisheries 3rd Law Enforcement Academy Training, Run with the Governor, 4 June 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Dept. of Game and Inland Fisheries 3rd Law Enforcement Academy Training, Run with the Governor, 4 June 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">50
+		<container label="Disc" type="disc">50
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Anne Holton Portraits, 6 June 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Anne Holton Portraits, 6 June 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">51
+		<container label="Disc" type="disc">51
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine, 2007 Girls State, Longwood University, 19 June 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine, 2007 Girls State, Longwood University, 19 June 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">52
+		<container label="Disc" type="disc">52
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Springfield Interchange Ribbon Cutting Ceremony, photos by Tom Saunders, VDOT, 18 July 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Springfield Interchange Ribbon Cutting Ceremony, photos by Tom Saunders, VDOT, 18 July 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">53
+		<container label="Disc" type="disc">53
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Springfield Interchange Ribbon Cutting Ceremony, 18 July 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Springfield Interchange Ribbon Cutting Ceremony, 18 July 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">54
+		<container label="Disc" type="disc">54
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Oliver Hill Sr., Governor's Mansion, 11 August 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Oliver Hill Sr., Governor's Mansion, 11 August 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">55
+		<container label="Disc" type="disc">55
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Oliver Hill, Sr., Memorial Service, 12 August 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Oliver Hill, Sr., Memorial Service, 12 August 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">56
+		<container label="Disc" type="disc">56
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Security Conference at Virginia Commonwealth University, 15 August 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Security Conference at Virginia Commonwealth University, 15 August 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">57
+		<container label="Disc" type="disc">57
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Reception at Governor's Mansion, 16 August 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Reception at Governor's Mansion, 16 August 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">58
+		<container label="Disc" type="disc">58
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>APM Terminals Virginia Grand Opening, Portsmouth, 7 September 2007 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>APM Terminals Virginia Grand Opening, Portsmouth, 7 September 2007 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">59
+		<container label="Disc" type="disc">59
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>A Collection of Photographs: The First Two Years, January 2006-November 2007 (2 copies)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>A Collection of Photographs: The First Two Years, January 2006-November 2007 (2 copies)   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">60
+		<container label="Disc" type="disc">60
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Reception at Governor's Mansion, 21 February 2008 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Reception at Governor's Mansion, 21 February 2008 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">61
+		<container label="Disc" type="disc">61
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine at WBCH, 16 June 2009 (disc one) [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine at WBCH, 16 June 2009 (disc one) [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">62
+		<container label="Disc" type="disc">62
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine at WBCH, 16 June 2009 (disc two) [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine at WBCH, 16 June 2009 (disc two) [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">63
+		<container label="Disc" type="disc">63
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc one of three)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc one of three)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">64
+		<container label="Disc" type="disc">64
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA Golf Tournament, 22 August 2009 [jpg files]
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA Golf Tournament, 22 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA Press Conference, 22 August 2009 [jpg files]
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA Press Conference, 22 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA Reception, Governor's Palace, Williamsburg, 22 August 2009 [jpg files]
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA Reception, Governor's Palace, Williamsburg, 22 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc two of three)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+			</did>
+			</c04>
+
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc two of three)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">65
+		<container label="Disc" type="disc">65
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA Reception, Governor's Palace, Williamsburg, 22 August 2009 [jpg files]
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA Reception, Governor's Palace, Williamsburg, 22 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc three of three)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+			</did>
+			</c04>
+
+		</c03>
+
+
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc three of three)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">66
+		<container label="Disc" type="disc">66
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA Session 3 and 4, 23 August 2009 [jpg files]
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA Session 3 and 4, 23 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA First Lady, Cooking Demo, 23 August 2009 [jpg files]
+			</did>
+			</c04>
+
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA First Lady, Cooking Demo, 23 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc one of five)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+			</did>
+			</c04>
+
+
+		</c03>
+
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc one of five)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">67
+		<container label="Disc" type="disc">67
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>First Lady Anne Holton Luncheon, 22 August 2009 [jpg files]
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>First Lady Anne Holton Luncheon, 22 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA Sessions 1 and 2, 22 August 2009 [jpg files]
+			</did>
+			</c04>
+
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA Sessions 1 and 2, 22 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc two of five)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+			</did>
+			</c04>
+
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc two of five)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">68
+		<container label="Disc" type="disc">68
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>SGA Sessions 1 and 2, 22 August 2009 [jpg files]
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>SGA Sessions 1 and 2, 22 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
+			</did>
+			</c04>
+
+
+			<c04 level="item">
+			<did>
+			<unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc three of five)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+			</did>
+			</c04>
+
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc three of five)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">69
+		<container label="Disc" type="disc">69
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
+		</did>
+			
+			<c04 level="item">
+			<did>
+			<unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc four of five)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+			</did>
+			</c04>
+
+
+		</c03>
+
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc four of five)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">70
+		<container label="Disc" type="disc">70
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
+		</did>
+			
+			<c04 level="item">
+			<did>
+			<unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc five of five)</emph>
-              </unittitle>
-              <container label="Box" type="box">10
+			</did>
+			</c04>
+
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">Southern Governors' Association, Annual Meeting, Williamsburg, Virginia, 21-24 August 2009 (disc five of five)</emph>
+   
+		</unittitle>
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">71
+		<container label="Disc" type="disc">71
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
+		</did>
+			
+			<c04 level="item">
+			<did>
+			<unittitle>Kingsmill, Williamsburg, Virginia, 23-24 August 2009 [jpg files]
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Route 3 Ground Breaking with Governor Tim Kaine, photos by Trevor Wrayton, VDOT, 28 October 2009 [jpg files]   
+			</did>
+			</c04>
+
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Route 3 Ground Breaking with Governor Tim Kaine, photos by Trevor Wrayton, VDOT, 28 October 2009 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">72
+		<container label="Disc" type="disc">72
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor Tim Kaine visits Norfolk Ship Repair, 18 November 2009 [jpg files]   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor Tim Kaine visits Norfolk Ship Repair, 18 November 2009 [jpg files]   
 		</unittitle>
-              <container label="Box" type="box">10
+		<container label="Box" type="box">10
 		</container>
-              <container label="Disc" type="disc">73
+		<container label="Disc" type="disc">73
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="bold">Documents on CD</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor's Biennial Executive Budget, 2006-2008 and Amendments to the 2005 Appropriation Act, prepared by Virginia Department of Planning and Budget, December 2005 (pdf files)   
+		</did>
+		</c03>
+
+</c02>
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="bold">Documents on CD</emph>
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor's Biennial Executive Budget, 2006-2008 and Amendments to the 2005 Appropriation Act, prepared by Virginia Department of Planning and Budget, December 2005 (pdf files)   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">1
+		<container label="Disc" type="disc">1
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Shell PowerPoint Presentation, February 2006?   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Shell PowerPoint Presentation, February 2006?   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">2
+		<container label="Disc" type="disc">2
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">1 CD containing two PowerPoint presentations:</emph>
-              </unittitle>
-              <container label="Box" type="box">11
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">1 CD containing two PowerPoint presentations:</emph>
+   		</unittitle>
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">3
+		<container label="Disc" type="disc">3
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Bristol Public Library, 20 March 2006
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Bristol Public Library, 20 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Grover King VFW Post 1115, Hillville, 21 March 2006
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Grover King VFW Post 1115, Hillville, 21 March 2006
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>
-                <emph render="underline">1 CD containing two PowerPoint presentations:</emph>
-              </unittitle>
-              <container label="Box" type="box">11
+			</did>
+			</c04>
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle><emph render="underline">1 CD containing two PowerPoint presentations:</emph>
+   		</unittitle>
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">4
+		<container label="Disc" type="disc">4
 		</container>
-            </did>
-            <c04 level="item">
-              <did>
-                <unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Sterling, 28 March 2006
+		</did>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Sterling, 28 March 2006
 			</unittitle>
-              </did>
-            </c04>
-            <c04 level="item">
-              <did>
-                <unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Chesapeake Conference Center, 29 March 2006
+			</did>
+			</c04>
+
+			<c04 level="item">
+			<did>
+			<unittitle>Governor Tim Kaine's Transportation Town Hall Meeting, Chesapeake Conference Center, 29 March 2006
 			</unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor's Workforce Strategic Plan, 16 January 2007 (pdf files)   
+			</did>
+			</c04>
+
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor's Workforce Strategic Plan, 16 January 2007 (pdf files)   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">5
+		<container label="Disc" type="disc">5
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Transportation Accountability Commission, Overview of Current Transportation Accountability and Performance Methods, Commission Briefing, Ralph M. Davis, Deputy Secretary of Transportation, 31 January 2007 (PowerPoint)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Transportation Accountability Commission, Overview of Current Transportation Accountability and Performance Methods, Commission Briefing, Ralph M. Davis, Deputy Secretary of Transportation, 31 January 2007 (PowerPoint)   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">6
+		<container label="Disc" type="disc">6
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>2008-2010 Executive Biennial Budget, prepared by Virginia Department of Planning and Budget, December 2007 (pdf files) (2 copies)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>2008-2010 Executive Biennial Budget, prepared by Virginia Department of Planning and Budget, December 2007 (pdf files) (2 copies)   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">7
+		<container label="Disc" type="disc">7
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Executive Amendments to the 2008-2010 Biennial Budget prepared by Virginia Department of Planning and Budget, December 2008 (pdf files) (2 copies)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Executive Amendments to the 2008-2010 Biennial Budget prepared by Virginia Department of Planning and Budget, December 2008 (pdf files) (2 copies)   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-              <container label="Disc" type="disc">8
+		<container label="Disc" type="disc">8
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="bold">Video Tapes:  VHS</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Consider This with Richard Parker, Guest:  Lt. Governor Tim Kaine, 23 January 2004 - 26:46 minutes   
+		</did>
+		</c03>
+
+</c02>
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="bold">Video Tapes:  VHS</emph>
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Consider This with Richard Parker, Guest:  Lt. Governor Tim Kaine, 23 January 2004 - 26:46 minutes   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Consider This with Richard Parker, Guest:  Lt. Governor Tim Kaine, ca. February 2004? - 24:10 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Consider This with Richard Parker, Guest:  Lt. Governor Tim Kaine, ca. February 2004? - 24:10 minutes   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Consider This with Richard Parker, Guest:  Governor Tim Kaine, 14 February 2006 - 26:45 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Consider This with Richard Parker, Guest:  Governor Tim Kaine, 14 February 2006 - 26:45 minutes   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Comcast Metro Richmond - Public Affairs, Read Across America, Governor Tim Kaine PSA, 10 March 2006 - 30 seconds   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Comcast Metro Richmond - Public Affairs, Read Across America, Governor Tim Kaine PSA, 10 March 2006 - 30 seconds   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Fatal Contact:  Bird Flu in America, ABC TV Network (fiction), 9 May 2006 - 2 hours   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Fatal Contact:  Bird Flu in America, ABC TV Network (fiction), 9 May 2006 - 2 hours   
 		</unittitle>
-              <container label="Box" type="box">11
+		<container label="Box" type="box">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Nightline, Bird Flu, Governor Tim Kaine interviewed, 9 May 2006 - 30:00 minutes   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Nightline, Bird Flu, Governor Tim Kaine interviewed, 9 May 2006 - 30:00 minutes   
 		</unittitle>
-              <container label="Box" type="box">12
+		<container label="Box" type="box">12
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>House of Delegates, 13 February 2008, partial recording; Senate of Virginia, 19 April 2006, partial recording   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>House of Delegates, 13 February 2008, partial recording; Senate of Virginia, 19 April 2006, partial recording   
 		</unittitle>
-              <container label="Box" type="box">12
+		<container label="Box" type="box">12
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="bold">Video Tapes:  Beta</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Nightline, Bird Flu, Governor Tim Kaine interviewed, 9 May 2006 - 30:00 minutes   
+		</did>
+		</c03>
+
+</c02>
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="bold">Video Tapes:  Beta</emph>
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Nightline, Bird Flu, Governor Tim Kaine interviewed, 9 May 2006 - 30:00 minutes   
 		</unittitle>
-              <container label="Box" type="box">12
+		<container label="Box" type="box">12
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Democratic Response to the State of the Union Address, Governor Tim Kaine, 31 January 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Democratic Response to the State of the Union Address, Governor Tim Kaine, 31 January 2006   
 		</unittitle>
-              <container label="Box" type="box">12
+		<container label="Box" type="box">12
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="item">
-          <did>
-            <unittitle>
-              <emph render="bold">Photographic Prints</emph>
-            </unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Photographic Prints, undated   
+		</did>
+		</c03>
+
+</c02>
+
+	<c02 level="item">
+	<did>
+	<unittitle><emph render="bold">Photographic Prints</emph>
+	</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Photographic Prints, undated   
 		</unittitle>
-              <container label="Box" type="box">13
+		<container label="Box" type="box">13
 		</container>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+		</did>
+		</c03>
+
+
+
+</c02>
+
+
+</c01>
+
+
+
+</dsc>
+</archdesc>
 </ead>
