@@ -1,787 +1,884 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Converted with dtd2schema.vh.xsl -->
-<?xml-model href="http://text.lib.virginia.edu/dtd/eadVIVA/ead-ext.rng"
-		type="application/xml" 
-		schematypens="http://relaxng.org/ns/structure/1.0" 
-		title="extended EAD relaxng schema" ?>
-
-<ead xmlns="urn:isbn:1-931666-22-9" id="vi00987">
-  <eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft" scriptencoding="iso15924" dateencoding="iso8601" countryencoding="iso3166-1" repositoryencoding="iso15511">
-    <eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00987::A Guide to the Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records, 2006-2009//EN" "vi00987.xml"
+<?xml version="1.0"?>
+<?xml-model href="http://www.loc.gov/ead/ead.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" id="vi00987">
+<eadheader audience="internal" langencoding="iso639-2b" findaidstatus="edited-partial-draft">
+<eadid countrycode="US" mainagencycode="US-Vi">PUBLIC "-//Library of Virginia//TEXT (US::Vi::vi00987::A Guide to the Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records, 2006-2009//EN" "vi00987.xml"
 </eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>A Guide to the Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records, <date era="ce" calendar="gregorian">2006-2009</date></titleproper>
-        <subtitle id="sort">Kaine, Governor Timothy M., Senior Advisor to the Governor for Workforce Records, 2006-2009
+
+<filedesc>
+
+<titlestmt>
+<titleproper>A Guide to the Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records, <date>2006-2009</date>
+</titleproper>
+
+<subtitle id="sort">Kaine, Governor Timothy M., Senior Advisor to the Governor for Workforce Records, 2006-2009
 <num type="collectionnumber">44699
-</num></subtitle>
-        <author>Roger E. Christman
+</num>
+</subtitle>
+
+<author>Roger E. Christman
 </author>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Library of Virginia
-</publisher>
-        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_address.xi.xml"/>
-        <date type="publication" era="ce" calendar="gregorian">© 2011 By The Library of Virginia. All Rights Reserved. 
-</date>
-        <p id="usestatement">
-          <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.lib.virginia.edu/speccol/vhp/conditions.html">Conditions of Use
-</extref>
-        </p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Created by Roger Christman, <date era="ce" calendar="gregorian">21 March 2011</date></creation>
-      <langusage>Description is in
+
+</titlestmt>
+
+<publicationstmt>
+<publisher>Library of Virginia
+</publisher><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"  href="http://ead.lib.virginia.edu/vivaead/add_con/lva_address.xi.xml" />
+
+<date type="publication">&#169; 2011 By The Library of Virginia. All Rights Reserved. 
+</date> 
+
+</publicationstmt>
+
+</filedesc>
+
+<profiledesc>
+<creation>Created by Roger Christman, <date>21 March 2011</date>
+</creation>
+<langusage>Description is in
 <language langcode="eng">English
-</language></langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2014-01-03">2014-01-03</date>
-        <item>Converted to schema conforming EAD by dtd2schema.vh.xsl.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter>
-    <titlepage>
-      <titleproper>A Guide to the Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records, <date era="ce" calendar="gregorian">2006-2009</date></titleproper>
-      <subtitle>A Collection in <lb/>the Library of Virginia
-<num type="Accession Number">44699
-</num></subtitle>
-      <author>Roger E. Christman
-</author>
-      <p id="logostmt">
-        <extptr xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
-      </p>
-      <publisher>Library of Virginia
-</publisher>
-      <date type="publication" era="ce" calendar="gregorian">2011
-</date>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://ead.lib.virginia.edu:/vivaead/add_con/lva_contact.xi.xml"/>
-      <list type="deflist">
-        <defitem>
-          <label>Processed by:
-</label>
-          <item>Roger Christman
-</item>
-        </defitem>
-      </list>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="collection">
-    <runner placement="footer">Library of Virginia
-</runner>
-    <did>
-      <head>Descriptive Summary
-</head>
-      <repository label="Repository" encodinganalog="852$a">The Library of Virginia
-</repository>
-      <unittitle label="Title" encodinganalog="245$a">Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records
-<unitdate type="inclusive" label="Date" encodinganalog="245$f" era="ce" calendar="gregorian">2006-2009
-</unitdate></unittitle>
-      <unitid label="Accession Number" encodinganalog="099$a">44699
-</unitid>
-      <physdesc label="Extent" encodinganalog="300$a">2.10 cu. ft. (6 boxes)
-</physdesc>
-      <langmaterial label="Language">
-        <language langcode="eng">English
 </language>
-      </langmaterial>
-    </did>
-    <descgrp type="admininfo">
-      <head>Administrative Information
+</langusage>
+</profiledesc>
+
+</eadheader>
+
+<frontmatter>
+<titlepage>
+<titleproper>A Guide to the Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records, <date>2006-2009</date>
+</titleproper>
+
+<subtitle>A Collection in <lb/>the Library of Virginia
+<num type="Accession Number">44699
+</num>
+</subtitle>
+
+<author>Roger E. Christman
+</author>
+
+<p id="logostmt">
+<extptr xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaead/logos/lva.jpg"/>
+</p>
+
+<publisher>Library of Virginia
+</publisher>
+
+<date type="publication">2011 
+</date>
+
+<list type="deflist">
+<defitem>
+<label>Processed by:
+</label>
+<item>Roger Christman
+</item>
+</defitem>
+</list>
+</titlepage>
+</frontmatter>
+
+<archdesc level="collection">
+<runner placement="footer">Library of Virginia
+</runner>
+<did>
+<head>Descriptive Summary
 </head>
-      <accessrestrict encodinganalog="506$a">
-        <head>Access Restrictions
+<repository label="Repository" encodinganalog="852$a">The Library of Virginia
+</repository>
+<unittitle label="Title" encodinganalog="245$a">Governor Timothy M. Kaine, Senior Advisor to the Governor for Workforce Records
+<unitdate type="inclusive" label="Date" encodinganalog="245$f">2006-2009
+</unitdate>
+</unittitle>
+<unitid label="Accession Number" encodinganalog="099$a">44699
+</unitid>
+<physdesc label="Extent" encodinganalog="300$a">2.10 cu. ft. (6 boxes)
+</physdesc>
+<langmaterial label="Language">
+<language langcode="eng">English
+</language>
+</langmaterial>
+</did>
+
+
+
+
+<descgrp type="admininfo">
+<head>Administrative Information
 </head>
-        <p>Collection is open to research.
-</p>
-      </accessrestrict>
-      <userestrict encodinganalog="540$a">
-        <head>Use Restrictions
+<accessrestrict encodinganalog="506$a">
+<head>Access Restrictions
 </head>
-        <p>There are no use restrictions.
+<p>Collection is open to research.
 </p>
-      </userestrict>
-      <prefercite encodinganalog="524$a">
-        <head>Preferred Citation
+</accessrestrict>
+<userestrict encodinganalog="540$a">
+<head>Use Restrictions
 </head>
-        <p>Records of the Senior Advisor to the Governor for Workforce, Governor Timothy M. Kaine, 2006-2009, Accession 44699, State Records Collection, Library of Virginia
+<p>There are no use restrictions.
 </p>
-      </prefercite>
-      <acqinfo encodinganalog="541$a">
-        <head>Acquisition Information
+</userestrict>
+<prefercite encodinganalog="524$a">
+<head>Preferred Citation
 </head>
-        <p>Office of the Governor, Patrick Henry Building, 1111 E. Broad Street, Richmond, Virginia, 23219, accession 44699 transferred on 14 January 2010.
+<p>Records of the Senior Advisor to the Governor for Workforce, Governor Timothy M. Kaine, 2006-2009, Accession 44699, State Records Collection, Library of Virginia
 </p>
-      </acqinfo>
-    </descgrp>
-    <bioghist encodinganalog="545$a">
-      <head>Historical Information
+</prefercite>
+<acqinfo encodinganalog="541$a">
+<head>Acquisition Information
 </head>
-      <p>The Workforce Investment Act (WIA), signed by President Bill Clinton in 1998, reformed federal job training programs and created a new comprehensive workforce investment system.  The WIA did five things:  created a state workforce investment system, created a local one stop delivery system, authorized three local workforce programs for adults, youth and dislocated workers, amended three related federal statutes (Adult Education and Literacy), (Wagner-Peyser) and (Rehabilitation Act) and authorized five national workforce programs - Job Corps, Migrant and Seasonal Farm Workers, Veterans, Native Americans and Youth Opportunity Grants.
+<p>Office of the Governor, Patrick Henry Building, 1111 E. Broad Street, Richmond, Virginia, 23219, accession 44699 transferred on 14 January 2010.
 </p>
-      <p>A 2002 Joint Legislative Audit and Review Commission review of Virginia's implementation of WIA recommended the creation of a workforce development coordinator, reporting directly to the Governor, whose sole responsibility would be statewide coordination of workforce development services.  When the General Assembly did not pass this recommendation in 2003, Governor Mark Warner, took executive action and on 17 June 2003 appointed Dr. Barbara Bolin as Special Assistant to the Governor on Workforce Development.
+</acqinfo>
+
+
+</descgrp>
+<bioghist encodinganalog="545$a">
+<head>Historical Information
+</head>
+<p>The Workforce Investment Act (WIA), signed by President Bill Clinton in 1998, reformed federal job training programs and created a new comprehensive workforce investment system.  The WIA did five things:  created a state workforce investment system, created a local one stop delivery system, authorized three local workforce programs for adults, youth and dislocated workers, amended three related federal statutes (Adult Education and Literacy), (Wagner-Peyser) and (Rehabilitation Act) and authorized five national workforce programs - Job Corps, Migrant and Seasonal Farm Workers, Veterans, Native Americans and Youth Opportunity Grants.
 </p>
-      <p>In 2004 the General Assembly codified the position (renamed Special Advisor to the Governor for Workforce Development) and clarified the advisor's specific duties.  The advisor is responsible for serving as the liaison for workforce training with state and local government, the Virginia Workforce Council (VWC), local work investment boards, as well as the general business community. The advisor is also responsible for reviewing fund allocation, helping the VWC implement policies for the Virginia Workforce System, monitoring federal workforce-related legislation, and reporting annually on the condition of statewide workforce training programs.  Dr. Bolin resigned her position in May 2005, and Dolores Esser of the Virginia Employment Commission was appointed to fill the vacancy in November 2005.
+
+<p>A 2002 Joint Legislative Audit and Review Commission review of Virginia's implementation of WIA recommended the creation of a workforce development coordinator, reporting directly to the Governor, whose sole responsibility would be statewide coordination of workforce development services.  When the General Assembly did not pass this recommendation in 2003, Governor Mark Warner, took executive action and on 17 June 2003 appointed Dr. Barbara Bolin as Special Assistant to the Governor on Workforce Development.
 </p>
-      <p>In 2006 General Assembly enacted into law legislation creating the Chief Workforce Development Officer.  The Governor is the Chief Workforce Development Officer and he may delegate that responsibility to a senior person on his immediate staff.  The Chief Workforce Development Officer is responsible for the coordination of workforce development across Secretariats and ensuring that the Commonwealth's workforce development efforts are implemented in a coordinated and efficient manner.  This position replaced the Special Advisor to the Governor for Workforce Development created in 2004.
+
+<p>In 2004 the General Assembly codified the position (renamed Special Advisor to the Governor for Workforce Development) and clarified the advisor's specific duties.  The advisor is responsible for serving as the liaison for workforce training with state and local government, the Virginia Workforce Council (VWC), local work investment boards, as well as the general business community. The advisor is also responsible for reviewing fund allocation, helping the VWC implement policies for the Virginia Workforce System, monitoring federal workforce-related legislation, and reporting annually on the condition of statewide workforce training programs.  Dr. Bolin resigned her position in May 2005, and Dolores Esser of the Virginia Employment Commission was appointed to fill the vacancy in November 2005.
 </p>
-      <p>
+
+<p>In 2006 General Assembly enacted into law legislation creating the Chief Workforce Development Officer.  The Governor is the Chief Workforce Development Officer and he may delegate that responsibility to a senior person on his immediate staff.  The Chief Workforce Development Officer is responsible for the coordination of workforce development across Secretariats and ensuring that the Commonwealth's workforce development efforts are implemented in a coordinated and efficient manner.  This position replaced the Special Advisor to the Governor for Workforce Development created in 2004.
+</p>
+
+<p>
 On 21 March 2006, Governor Tim Kaine named Daniel C. LeBlanc, former President of the Virginia AFL-CIO and Kaine's failed nominee for Secretary of the Commonwealth, as Senior Advisor to the Governor for Workforce.  Executive Order 25 issued by Governor Kaine on 23 June 2006 delegated his authority as Chief Workforce Development Officer to the Senior Advisor to the Governor for Workforce and further clarified the Advisor's duties and responsibilities.  This order was issued to ensure that initial transition steps occurred to implement the 2006 legislation.  Kaine's Executive Order 61, issued on 4 January 2008, rescinded Executive Order 25 and was issued to ensure that the next phase of transition occurred including: the creation of a Workforce Sub Cabinet to ensure Cabinet collaboration regarding workforce development as required by state and federal statute; listing of the duties of the Cabinet Secretaries and designating the Virginia Community College System (VCCS) as the designated state agency for the WIA, including that of grant recipient and fiscal administrative agency.  
 </p>
-    </bioghist>
-    <scopecontent encodinganalog="520$a">
-      <head>Scope and Content
+
+</bioghist>
+<scopecontent encodinganalog="520$a">
+<head>Scope and Content
 </head>
-      <p>The Senior Advisor to the Governor for Workforce Records of Governor Timothy M. Kaine are housed in 6 boxes. The collection is arranged into two (2) series. Series have been designated for: I. Correspondence; and II. Research Project Files. These records include correspondence, memorandums, notes, reports, presentations, contracts, decision briefs, plans, and project files. These records document the workforce development activities of the Kaine administration (2006-2010).  
+<p>The Senior Advisor to the Governor for Workforce Records of Governor Timothy M. Kaine are housed in 6 boxes. The collection is arranged into two (2) series. Series have been designated for: I. Correspondence; and II. Research Project Files. These records include correspondence, memorandums, notes, reports, presentations, contracts, decision briefs, plans, and project files. These records document the workforce development activities of the Kaine administration (2006-2010).  
 </p>
-    </scopecontent>
-    <arrangement encodinganalog="351">
-      <head>Arrangement
+</scopecontent>
+<arrangement encodinganalog="351">
+<head>Arrangement
 </head>
-      <p>This collection is arranged into the following series:</p>
-      <list type="simple">
-        <item>I. Correspondence and Supporting Documentation, 2006-2009</item>
-        <item>II. Research Project Files, 2006-2009</item>
-      </list>
-    </arrangement>
-    <descgrp type="add">
-      <head>Related Material
+<p>This collection is arranged into the following series:</p>
+<list type="simple">
+<item>I. Correspondence and Supporting Documentation, 2006-2009</item>
+<item>II. Research Project Files, 2006-2009</item>
+</list></arrangement>
+
+<relatedmaterial encodinganalog="544$a">
+<head>Related Material
 </head>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00978.xml">A Guide to the Governor Timothy M. Kaine, Executive Office-Governor, Records, 2005-2009.</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00982.xml">A Guide to the Governor Timothy M. Kaine, Executive Office-Chief of Staff, Records, 2006-2009.</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00983.xml">A Guide to the Governor Timothy M. Kaine, Executive Office-Counselor's Office, Records, 2001-2009 (bulk 2006-2009).</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00984.xml">A Guide to the Governor Timothy M. Kaine, Policy Office, Records, 2002-2010 (bulk 2006-2009).</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00986.xml">A Guide to the Governor Timothy M. Kaine, Press Office Records, 2004-2010 (bulk 2006-2009).</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.archive-it.org/collections/263">Governor Tim Kaine Administration Web Archive Collection, 2006-2010.</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://digitool1.lva.lib.va.us:8881/R?func=collections-result&amp;collection_id=1512">Executive Orders Digital Collection</extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00988.xml">A Guide to the Governor Timothy M. Kaine, Latino Liaison Records, 2004-2009. </extref>
-      </p>
-      <p>
-        <extref xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi03050.xml">A Guide to the Records of the Virginia Secretary of Health and Human Resources, 2005-2010. </extref>
-      </p>
-    </descgrp>
-    <dsc type="combined">
-      <head>Contents List
+
+<p><emph render="bold">OFFICE OF THE GOVERNOR-TIM KAINE</emph>
+</p>
+
+<p><extref xlink:type="simple" xlink:href="https://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00993.xml"><emph render="bold">A Guide to the Governor Timothy M. Kaine Administration Electronic Files, Email, 2002-2010 (bulk 2006-2009).</emph></extref> <extref xlink:type="simple" xlink:href="https://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00993.xml#series7"><emph render="bold">The Office of the Senior Advisor to the Governor for Workforce Electronic Files series</emph></extref> documents the electronic communication of the office during the Kaine Administration. This series contains 10490 emails in seven (7) subseries. Subseries have been designated for A. Daniel LeBlanc Email; B. Gail Robinson Email; C. Brian Davis Email; D. Marietta Salyer Email; E. Beatrice Yarney Email; F. Sarah Abubaker Email; and G. Patrick Callahan Email. There are 49 privacy protected and confidential emails in this series that are restricted from public access for 75 years per Code of Virginia 42.1-78. Types of restricted information may include, but are not limited to: attorney-client communications. The <extref xlink:type="simple" xlink:href="https://www.virginiamemory.com/collections/kaine/"><emph render="bold">Library of Virginia Email Project - Governor Tim Kaine Portal</emph></extref>
+ provides access to the Kaine email collection and includes guides to other Kaine administration records.
+</p>
+
+<p>The <extref xlink:type="simple" xlink:href="http://www.archive-it.org/collections/263"><emph render="bold">Governor Tim Kaine Administration Web Archive Collection, 2006-2010</emph></extref> contains archived versions of websites for the Governor's Office, his initiative sites, and the sites of his cabinet secretaries. Also included are the related sites for the First Lady (Anne Holton), as well as the Lt. Governor (Bill Bolling), and Attorney General (Bob McDonnell and William C. Mims), two statewide officials elected in the same cycle as Governor Kaine. 
+</p>
+
+<p>The <extref xlink:type="simple" xlink:href="http://bit.ly/2dhCkCL"><emph render="bold">Timothy M. Kaine Administration (2006-2010) Cabinet Weekly Reports Digital Collection</emph></extref> contains the weekly reports submitted to the Governor and Chief of Staff by the Governor's Cabinet, including the Secretaries of Administration (Viola Baskerville), Agriculture and Forestry (Robert S. Bloxom), Commerce and Trade (Patrick O. Gottschalk), Commonwealth (Daniel C. LeBlanc, Jan-Mar. 2006 and Katherine K. Hanley (Mar. 2006-2010), Education (Dr. Thomas R. Morris), Finance (Jody Wagner, 2006-2008 and Richard D. Brown, 2008-2010), Health and Human Resources (Marilyn Tavenner), Natural Resources (Preston Bryant), Public Safety (John W. Marshall), Technology (Aneesh Chopra, 2006-2009 and Leonard M. Pomata, 2009-2010), and Transportation (Pierce Homer). Also included are reports by the Assistant to the Governor for Commonwealth Preparedness (Robert Crouch), Office of Constituent Services (Marc Cheatham, 2006-2007 and Amber Amato, 2007-2010), Press Office, Policy Office and Virginia Liaison Office. Reports were submitted each Thursday and placed in a binder for the Governor that he took with him at the end of the day on Friday. A second copy of the report was made for the Chief of Staff. The level of detail varied for each cabinet officer and items of importance were highlighted by staff for the Governor. Each report contains information on legislation, Governor's initiatives/special projects, agency matters/operations, events/agency visits, audits/investigations/compliance, stakeholder issues and pending decisions. Governor Kaine wrote handwritten notes and/or marked-up some reports with post-it notes and requested follow up information from the person submitting the report. Those questions and answers are included in this series. This series provides a weekly account of the issues and policy decisions of the Kaine Administration.
+</p>
+
+<p>The <extref xlink:type="simple" xlink:href="https://bit.ly/3zbqrqU"><emph render="bold">Executive Orders Digital Collection</emph></extref> includes 110 executive orders and 9 executive directives issued by Governor Kaine.
+</p>
+
+<p><extref xlink:type="simple" xlink:href="http://ead.lib.virginia.edu/vivaxtf/view?docId=lva/vi00984.xml"><emph render="bold">A Guide to the Governor Timothy M. Kaine, Policy Office, Records, 2002-2010 (bulk 2006-2009).</emph></extref> The Policy Office Records of Governor Timothy M. Kaine are housed in 174 boxes. The collection is arranged into five (5) series. Series have been designated for: I. Decision Briefs; II. Regulations; III. Legislative Files; IV. Executive Orders and Directives; and V. Policy Analyst Files. These records include agendas, decision briefs, correspondence, memorandums, legislative files, briefing books, meeting notes, subject files, reports, talking points and regulations. These records document the legislative and policy priorities of the Kaine administration (2006-2010). This collection also includes records from Governor Mark Warner's administration (2002-2006). 
+</p>
+
+</relatedmaterial>
+
+<dsc type="combined">
+<head>Contents List
 </head>
-      <c01 level="series">
-        <did>
-          <unittitle><emph render="bold">I. Correspondence and Supporting Documentation</emph>, 
-<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
-          <container type="box" label="Boxes">1-3
+
+<c01 level="series">
+<did>
+<unittitle><emph render="bold">I. Correspondence and Supporting Documentation</emph>, 
+<unitdate type="inclusive"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
+<container type="box" label="Boxes">1-3
 </container>
-          <physdesc>
-            <extent>Extent: 1.05 cubic feet (3 boxes).</extent>
-          </physdesc>
-        </did>
-        <scopecontent>
-          <p>The Correspondence and Supporting Documentation series is housed in three (3) archival boxes and are arranged by incoming and outgoing correspondence and chronologically therein.   This series contains incoming and outgoing correspondence, memorandums, reports, and other sundry items.  The correspondence includes correspondence with  William H. Leighty, Chief of Staff; Patrick Gottschalk, Secretary of Commerce and Trade; and Lenita Jacobs-Simmons, Regional Administrator, Region II, Employment and Training Administrator, United States Department of Labor.
+<physdesc><extent>Extent: 1.05 cubic feet (3 boxes).</extent>
+</physdesc>
+</did>
+<scopecontent>
+<p>The Correspondence and Supporting Documentation series is housed in three (3) archival boxes and are arranged by incoming and outgoing correspondence and chronologically therein.   This series contains incoming and outgoing correspondence, memorandums, reports, and other sundry items.  The correspondence includes correspondence with  William H. Leighty, Chief of Staff; Patrick Gottschalk, Secretary of Commerce and Trade; and Lenita Jacobs-Simmons, Regional Administrator, Region II, Employment and Training Administrator, United States Department of Labor.
 </p>
-          <p>These correspondence relate to the following subjects:  development of Governor's Workforce Development Strategic Plan, transfer of workforce programs to the Governor's Office for Workforce, Workforce Investment Board (WIB), Virginia Employment Commission, Virginia Workforce Network Information System (VWNIS), Virginia Workforce Council (VWC), realignment of Workforce Investment Areas, establishment on Comprehensive One Stop Centers, and the United States Department of Labor.
+
+<p>These correspondence relate to the following subjects:  development of Governor's Workforce Development Strategic Plan, transfer of workforce programs to the Governor's Office for Workforce, Workforce Investment Board (WIB), Virginia Employment Commission, Virginia Workforce Network Information System (VWNIS), Virginia Workforce Council (VWC), realignment of Workforce Investment Areas, establishment on Comprehensive One Stop Centers, and the United States Department of Labor.
 </p>
-          <p>Notable documents include:  memorandum from LeBlanc to William H. Leighty, Chief of Staff, 25 October 2006, describing feedback from 24 October meeting of the Steering Committee for the Governor's Workforce Development Strategic Plan (b1, f2);  memorandum from LeBlanc to Leighty, 3 November 2006, evaluating State Workforce Training Programs (b1, f3); memorandum from Patrick Gottschalk, Secretary of Commerce and Trade, 12 June 2007, on completion of Workforce Investment Act (WIA) transition (b1, f4); Virginia Workforce Network (VWN) Memorandum Conveying Policy Directive from LeBlanc and Gottschalk to Local Workforce Investment Board (WIB) Chairs and Commissioner of the Virginia Employment Commission, 14 February 2007, VWN Directive 07-01: Co-Enrollment of Eligible Individuals in Workforce Investment Act (WIA) Dislocated Worker and Trade Adjustment Act (TAA) Programs and Services (b1, f5);  memorandum from LeBlanc to Leighty, 27 April 2007, initial list of Workforce Programs targeted for consolidation with the Virginia Community College System (b1, f5);  memorandum from LeBlanc to Gottschalk, 5 June 2007, completion of WIA transition (b1, f6); memorandum from LeBlanc to Governor Tim Kaine, 1 November 2007, major 2007 accomplishments and major challenges ahead for Workforce Development (b1, f7); and External Realignment of Workforce Investment Areas, June 27, prepared for LeBlanc by Chumra Economics and Analytics, attachment to 21 June 2007 letter from Megan A. Root, Executive Assistant to LeBlanc (b2, f3).</p>
-        </scopecontent>
-        <c02 level="file">
-          <did>
-            <unittitle>Incoming Correspondence (no reply necessary), 2006
+
+<p>Notable documents include:  memorandum from LeBlanc to William H. Leighty, Chief of Staff, 25 October 2006, describing feedback from 24 October meeting of the Steering Committee for the Governor's Workforce Development Strategic Plan (b1, f2);  memorandum from LeBlanc to Leighty, 3 November 2006, evaluating State Workforce Training Programs (b1, f3); memorandum from Patrick Gottschalk, Secretary of Commerce and Trade, 12 June 2007, on completion of Workforce Investment Act (WIA) transition (b1, f4); Virginia Workforce Network (VWN) Memorandum Conveying Policy Directive from LeBlanc and Gottschalk to Local Workforce Investment Board (WIB) Chairs and Commissioner of the Virginia Employment Commission, 14 February 2007, VWN Directive 07-01: Co-Enrollment of Eligible Individuals in Workforce Investment Act (WIA) Dislocated Worker and Trade Adjustment Act (TAA) Programs and Services (b1, f5);  memorandum from LeBlanc to Leighty, 27 April 2007, initial list of Workforce Programs targeted for consolidation with the Virginia Community College System (b1, f5);  memorandum from LeBlanc to Gottschalk, 5 June 2007, completion of WIA transition (b1, f6); memorandum from LeBlanc to Governor Tim Kaine, 1 November 2007, major 2007 accomplishments and major challenges ahead for Workforce Development (b1, f7); and External Realignment of Workforce Investment Areas, June 27, prepared for LeBlanc by Chumra Economics and Analytics, attachment to 21 June 2007 letter from Megan A. Root, Executive Assistant to LeBlanc (b2, f3).</p>
+
+</scopecontent>
+
+
+		<c02 level="file">
+		<did>
+		<unittitle>Incoming Correspondence (no reply necessary), 2006
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Correspondence, June-October 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Correspondence, June-October 2006
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Correspondence, November-December 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Correspondence, November-December 2006
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Incoming Correspondence (no reply necessary), 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Incoming Correspondence (no reply necessary), 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Outgoing Correspondence, January-April 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Outgoing Correspondence, January-April 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Outgoing Correspondence, May-September 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Outgoing Correspondence, May-September 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Outgoing Correspondence, October-December 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Outgoing Correspondence, October-December 2007
 		</unittitle>
-            <container label="Box" type="box">1
+		<container label="Box" type="box">1
 		</container>
-            <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Workforce Investment Areas/Boards, 2006-2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Workforce Investment Areas/Boards, 2006-2007
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Workforce Investment Areas/Boards, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Workforce Investment Areas/Boards, 2007
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Workforce Investment Areas/Boards, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Workforce Investment Areas/Boards, 2007
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Workforce Investment Areas/Boards, 2007
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Workforce Investment Areas/Boards, 2007
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Incoming Correspondence, January-April 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Incoming Correspondence, January-April 2008
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Incoming Correspondence, May-November 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Incoming Correspondence, May-November 2008
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Outgoing Correspondence, 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Outgoing Correspondence, 2008
 		</unittitle>
-            <container label="Box" type="box">2
+		<container label="Box" type="box">2
 		</container>
-            <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Incoming Correspondence (no reply necessary), 2009
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Incoming Correspondence (no reply necessary), 2009
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Outgoing Correspondence, 2009
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Outgoing Correspondence, 2009
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>2009 Funding Proposals, Support Letters and Solicitations
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>2009 Funding Proposals, Support Letters and Solicitations
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>2009 Office of the Attorney General
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>2009 Office of the Attorney General
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Virginia Community College System (VCCS), 2008
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Virginia Community College System (VCCS), 2008
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Workforce Investment Act, 2006
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>Workforce Investment Act, 2006
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>United States Department of Labor, 2006-2009
+		</did>
+		</c02>
+
+		<c02 level="file">
+		<did>
+		<unittitle>United States Department of Labor, 2006-2009
 		</unittitle>
-            <container label="Box" type="box">3
+		<container label="Box" type="box">3
 		</container>
-            <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-          </did>
-        </c02>
-      </c01>
-      <c01 level="series">
-        <did>
-          <unittitle><emph render="bold">II. Research Project Files</emph>, 
-<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
-          <container type="box" label="Boxes">4-6
+		</did>
+		</c02>
+
+
+
+</c01>
+
+<c01 level="series">
+<did>
+<unittitle><emph render="bold">II. Research Project Files</emph>, 
+<unitdate type="inclusive"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
+<container type="box" label="Boxes">4-6
 </container>
-          <physdesc>
-            <extent>Extent: 1.05 cubic feet (3 boxes).</extent>
-          </physdesc>
-        </did>
-        <scopecontent>
-          <p>The Research Project Files series is housed in three (3) archival boxes.  This series contains correspondence, memorandums, reports, contracts, decision briefs, plans, and project files.  Subjects/Projects include:  memorandums of understanding, decision briefs, Healthcare Workforce Data Center Advisory Council, disability issues, One Stops, Workforce Development Strategic Plan, Local Workforce Investment Area Realignment Project, Economic Crisis Strike Force, miscellaneous project files and Workforce Meeting of the States.
+<physdesc><extent>Extent: 1.05 cubic feet (3 boxes).</extent>
+</physdesc>
+</did>
+<scopecontent>
+<p>The Research Project Files series is housed in three (3) archival boxes.  This series contains correspondence, memorandums, reports, contracts, decision briefs, plans, and project files.  Subjects/Projects include:  memorandums of understanding, decision briefs, Healthcare Workforce Data Center Advisory Council, disability issues, One Stops, Workforce Development Strategic Plan, Local Workforce Investment Area Realignment Project, Economic Crisis Strike Force, miscellaneous project files and Workforce Meeting of the States.
 </p>
-        </scopecontent>
-        <c02 level="subseries">
-          <did>
-            <unittitle><emph render="bold">Memorandum of Understanding (MOU)</emph>, 
-	<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
-          </did>
-          <scopecontent>
-            <p>The Workforce Investment Act (WIA) requires that certain programs make their services available through comprehensive one stop centers.  Further, the WIA requires that local Workforce Investment Board (WIB) and the chief local elected official develop and enter into a local Memorandum of Understanding (MOU) between the WIB and the local partner programs for operating the comprehensive One Stop Centers (brand name "Virginia Workforce Network") in the local workforce investment area.  The State MOU specifies the responsibilities of State agencies and mandatory partner programs under the WIA and Virginia Workforce Network.  Included in this subseries is the original State Partners Memorandum of Instructions and Understanding, dated March 2008, and copies of other MOUs between the Senior Advisor to the Governor for Workforce, state agencies and/or private entities.
+
+</scopecontent>
+
+	<c02 level="subseries">
+	<did>
+	<unittitle><emph render="bold">Memorandum of Understanding (MOU)</emph>, 
+	<unitdate type="inclusive"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
+	</did>
+	<scopecontent>
+	<p>The Workforce Investment Act (WIA) requires that certain programs make their services available through comprehensive one stop centers.  Further, the WIA requires that local Workforce Investment Board (WIB) and the chief local elected official develop and enter into a local Memorandum of Understanding (MOU) between the WIB and the local partner programs for operating the comprehensive One Stop Centers (brand name "Virginia Workforce Network") in the local workforce investment area.  The State MOU specifies the responsibilities of State agencies and mandatory partner programs under the WIA and Virginia Workforce Network.  Included in this subseries is the original State Partners Memorandum of Instructions and Understanding, dated March 2008, and copies of other MOUs between the Senior Advisor to the Governor for Workforce, state agencies and/or private entities.
 	</p>
-          </scopecontent>
-          <c03 level="file">
-            <did>
-              <unittitle>MOU, 2008   
+	</scopecontent>
+
+		<c03 level="file">
+		<did>
+		<unittitle>MOU, 2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>MOU, 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>MOU, 2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Regional Meetings on Governor Kaine's Workforce Reform Agenda and the State Workforce Memorandum of Understanding, 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Regional Meetings on Governor Kaine's Workforce Reform Agenda and the State Workforce Memorandum of Understanding, 2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>MOU, 2009   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>MOU, 2009   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Memorandum of Understanding with Virginia Employment Commission, 2006-2008   
+		</did>
+		</c03>
+
+
+		<c03 level="file">
+		<did>
+		<unittitle>Memorandum of Understanding with Virginia Employment Commission, 2006-2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>MOU/Contracts, 2006-2007   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>MOU/Contracts, 2006-2007   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><emph render="bold">Decision Briefs</emph>, 
-	<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
-          </did>
-          <scopecontent>
-            <p>The Decision Briefs document requests from the Senior Advisor to the Governor for Workforce to Governor Kaine for the expenditure of funds from various sources controlled by the Governor's Office, primarily the Workforce Investment Act (WIA).  Each Decision Brief usually includes a description of the request including background material.  The Decision Brief was forwarded to Department of Planning and Budget, Cabinet members (if applicable), Director of Policy (Brian Sheppard), Counselor to the Governor (Lawrence Roberts, 2006-2009 and Mark E. Rubin, 2009-2010) and Chief of Staff (William H. Leighty, 2006-2007 and Wayne Turnage, 2007-2010). If all concur, the Governor then signs the brief.
+		</did>
+		</c03>
+
+</c02>
+
+	<c02 level="subseries">
+	<did>
+	<unittitle><emph render="bold">Decision Briefs</emph>, 
+	<unitdate type="inclusive"><emph render="bold">2006-2009</emph></unitdate>.</unittitle>
+	</did>
+	<scopecontent>
+	<p>The Decision Briefs document requests from the Senior Advisor to the Governor for Workforce to Governor Kaine for the expenditure of funds from various sources controlled by the Governor's Office, primarily the Workforce Investment Act (WIA).  Each Decision Brief usually includes a description of the request including background material.  The Decision Brief was forwarded to Department of Planning and Budget, Cabinet members (if applicable), Director of Policy (Brian Sheppard), Counselor to the Governor (Lawrence Roberts, 2006-2009 and Mark E. Rubin, 2009-2010) and Chief of Staff (William H. Leighty, 2006-2007 and Wayne Turnage, 2007-2010). If all concur, the Governor then signs the brief.
 	</p>
-          </scopecontent>
-          <c03 level="file">
-            <did>
-              <unittitle>2006-2007   
+	</scopecontent>
+
+		<c03 level="file">
+		<did>
+		<unittitle>2006-2007   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">8
+		<container label="Folder" type="folder">8
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>2009   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>2009   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">9
+		<container label="Folder" type="folder">9
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><emph render="bold">Miscellaneous Projects/Issues</emph>, 
-	<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2008-2009</emph></unitdate>.</unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>U.S. Department of Labor-Office of Disability Employment Programs (DOL-ODEP), 2008   
+		</did>
+		</c03>
+
+
+</c02>
+
+	<c02 level="subseries">
+	<did>
+	<unittitle><emph render="bold">Miscellaneous Projects/Issues</emph>, 
+	<unitdate type="inclusive"><emph render="bold">2008-2009</emph></unitdate>.</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>U.S. Department of Labor-Office of Disability Employment Programs (DOL-ODEP), 2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">10
+		<container label="Folder" type="folder">10
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Disability Issues, 2008-2009   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Disability Issues, 2008-2009   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">11
+		<container label="Folder" type="folder">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Dept. of Health Professions, Advisory Council Meeting, 2009   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Dept. of Health Professions, Advisory Council Meeting, 2009   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">12
+		<container label="Folder" type="folder">12
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>NGA Application for State Sector Strategies:  Innovative Workforce Policies to Address Worker and Employer Needs, 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>NGA Application for State Sector Strategies:  Innovative Workforce Policies to Address Worker and Employer Needs, 2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">13
+		<container label="Folder" type="folder">13
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Science, Technology, Engineering and Mathematics (STEM) Grant, 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Science, Technology, Engineering and Mathematics (STEM) Grant, 2008   
 		</unittitle>
-              <container label="Box" type="box">4
+		<container label="Box" type="box">4
 		</container>
-              <container label="Folder" type="folder">14
+		<container label="Folder" type="folder">14
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><emph render="bold">One Stop Centers</emph>, 
-	<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2007-2009</emph></unitdate>.</unittitle>
-          </did>
-          <scopecontent>
-            <p>The Workforce Investment Act (WIA) requires that certain programs make their services available through comprehensive one stop centers.  This subseries documents the implementation of comprehensive One Stop Centers (brand name "Virginia Workforce Network").  Included are meeting notes, training material and correspondence and documents on the selection and location of One Stop Centers.
+		</did>
+		</c03>
+
+
+
+</c02>
+
+	<c02 level="subseries">
+	<did>
+	<unittitle><emph render="bold">One Stop Centers</emph>, 
+	<unitdate type="inclusive"><emph render="bold">2007-2009</emph></unitdate>.</unittitle>
+	</did>
+	<scopecontent>
+	<p>The Workforce Investment Act (WIA) requires that certain programs make their services available through comprehensive one stop centers.  This subseries documents the implementation of comprehensive One Stop Centers (brand name "Virginia Workforce Network").  Included are meeting notes, training material and correspondence and documents on the selection and location of One Stop Centers.
 	</p>
-          </scopecontent>
-          <c03 level="file">
-            <did>
-              <unittitle>Division of Real Estate Services (DRES) Meeting Notes, 2007   
+	</scopecontent>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Division of Real Estate Services (DRES) Meeting Notes, 2007   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Workforce Network Binder (One-Stop Committee of WVC; Systems Integration Team; Universal Design Implementation Tool), 2007 (part one)    
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Workforce Network Binder (One-Stop Committee of WVC; Systems Integration Team; Universal Design Implementation Tool), 2007 (part one)    
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Virginia Workforce Network Binder (One-Stop Committee of WVC; Systems Integration Team; Universal Design Implementation Tool), 2007 (part two)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Virginia Workforce Network Binder (One-Stop Committee of WVC; Systems Integration Team; Universal Design Implementation Tool), 2007 (part two)   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>U.S. Department of Labor/Comprehensive One Stop Center Introductory Training Event (Video Conference Class), 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>U.S. Department of Labor/Comprehensive One Stop Center Introductory Training Event (Video Conference Class), 2008   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>One Stop, 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>One Stop, 2008   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>One Stop, 2009   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>One Stop, 2009   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><emph render="bold">Workforce Development Strategic Plan and Realignment</emph>, 
-	<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2006-2007, 2009</emph></unitdate>.</unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Strategic Plan State Agency Workgroup, 2006   
+		</did>
+		</c03>
+
+</c02>
+
+	<c02 level="subseries">
+	<did>
+	<unittitle><emph render="bold">Workforce Development Strategic Plan and Realignment</emph>, 
+	<unitdate type="inclusive"><emph render="bold">2006-2007, 2009</emph></unitdate>.</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Strategic Plan State Agency Workgroup, 2006   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">7
+		<container label="Folder" type="folder">7
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Strategic Plan Steering Committee, RSVP List, 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Strategic Plan Steering Committee, RSVP List, 2006   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">8
+		<container label="Folder" type="folder">8
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Strategic Plan Steering Committee Meetings, 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Strategic Plan Steering Committee Meetings, 2006   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">9
+		<container label="Folder" type="folder">9
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Workforce Progress Report, Briefing for Governor Timothy M. Kaine, 10 August 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Workforce Progress Report, Briefing for Governor Timothy M. Kaine, 10 August 2006   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">10
+		<container label="Folder" type="folder">10
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Governor's Workforce Strategic Plan, comments by Deputy Chief of Staff Wayne Turnage, 2006   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Governor's Workforce Strategic Plan, comments by Deputy Chief of Staff Wayne Turnage, 2006   
 		</unittitle>
-              <container label="Box" type="box">5
+		<container label="Box" type="box">5
 		</container>
-              <container label="Folder" type="folder">11
+		<container label="Folder" type="folder">11
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Local Workforce Investment Area Realignment Project, 2007   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Local Workforce Investment Area Realignment Project, 2007   
 		</unittitle>
-              <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-              <container label="Folder" type="folder">1
+		<container label="Folder" type="folder">1
 		</container>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="subseries">
-          <did>
-            <unittitle><emph render="bold">Miscellaneous Meetings</emph>, 
-	<unitdate type="inclusive" era="ce" calendar="gregorian"><emph render="bold">2008-2009</emph></unitdate>.</unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <unittitle>Workforce Meeting of the States, hosted by Governor Timothy M. Kaine's Workforce Sub-Cabinet Members, 5 March 2007 (part one)   
+		</did>
+		</c03>
+
+
+</c02>
+
+	<c02 level="subseries">
+	<did>
+	<unittitle><emph render="bold">Miscellaneous Meetings</emph>, 
+	<unitdate type="inclusive"><emph render="bold">2008-2009</emph></unitdate>.</unittitle>
+	</did>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Workforce Meeting of the States, hosted by Governor Timothy M. Kaine's Workforce Sub-Cabinet Members, 5 March 2007 (part one)   
 		</unittitle>
-              <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-              <container label="Folder" type="folder">2
+		<container label="Folder" type="folder">2
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Workforce Meeting of the States, hosted by Governor Timothy M. Kaine's Workforce Sub-Cabinet Members, 5 March 2007 (part two)   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Workforce Meeting of the States, hosted by Governor Timothy M. Kaine's Workforce Sub-Cabinet Members, 5 March 2007 (part two)   
 		</unittitle>
-              <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-              <container label="Folder" type="folder">3
+		<container label="Folder" type="folder">3
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Workforce Investment Board Chairs and Directors Meeting, 6 June 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Workforce Investment Board Chairs and Directors Meeting, 6 June 2008   
 		</unittitle>
-              <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-              <container label="Folder" type="folder">4
+		<container label="Folder" type="folder">4
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Southern Governors' Association Annual Meeting, Greenbrier, West Virginia, 8-11 August 2008   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Southern Governors' Association Annual Meeting, Greenbrier, West Virginia, 8-11 August 2008   
 		</unittitle>
-              <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-              <container label="Folder" type="folder">5
+		<container label="Folder" type="folder">5
 		</container>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <unittitle>Economic Crisis Strike Force, 2009   
+		</did>
+		</c03>
+
+		<c03 level="file">
+		<did>
+		<unittitle>Economic Crisis Strike Force, 2009   
 		</unittitle>
-              <container label="Box" type="box">6
+		<container label="Box" type="box">6
 		</container>
-              <container label="Folder" type="folder">6
+		<container label="Folder" type="folder">6
 		</container>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+		</did>
+		</c03>
+
+
+</c02>
+
+
+</c01>
+
+
+
+</dsc>
+</archdesc>
 </ead>
