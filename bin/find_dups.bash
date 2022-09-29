@@ -2,6 +2,11 @@
 
 cat /dev/null > /tmp/f1
 cat /dev/null > /tmp/f2
+if [[ "$1" == "-t" ]] ; then 
+    test=1
+else
+    test=0
+fi
 
 for file in `cat /tmp/vt1.list`
 do 
@@ -15,8 +20,22 @@ do
             cmp -s "vt/${eadid}.xml" "../vivaxtf/data/vt/${eadid}.xml" 
             result=$?
             if [[ "$result" == "0" ]] ; then 
-                mv "vt/${eadid}.xml" ../deleted/vt
-                #rm "../vivaxtf/vt/${eadid}.xml" 
+                if [[ "$test" == 0 ]] ; then
+                    mv "vt/${eadid}.xml" ../deleted/vt
+                else
+                    echo mv "vt/${eadid}.xml" ../deleted/vt
+                fi
+            fi
+        elif [[ "${oaititle}" == *"${vttitle}"* ]] ; then 
+            echo "near Match-y match"
+            cmp -s "vt/${eadid}.xml" "../vivaxtf/data/vt/${eadid}.xml"
+            result=$?
+            if [[ "$result" == "0" ]] ; then
+                if [[ "$test" == 0 ]] ; then
+                    mv "vt/${eadid}.xml" ../deleted/vt
+                else
+                    echo mv "vt/${eadid}.xml" ../deleted/vt
+                fi
             fi
         else    
             echo "vt/${eadid}.xml ${oaititle}" >> /tmp/f1
