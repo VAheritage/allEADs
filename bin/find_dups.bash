@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cat /dev/null > /tmp/f1
+cat /dev/null > /tmp/f2
+
 for file in `cat /tmp/vt1.list`
 do 
     eadid=`egrep "eadid" $file | sed -e 's/></>\n</g' | egrep eadid | sed -e 's/.*">//' -e 's/<.*//' -e 's/xx\(.*\)xx/\1/' `
@@ -16,8 +19,8 @@ do
                 #rm "../vivaxtf/vt/${eadid}.xml" 
             fi
         else    
-            diff=`diffcolor <(echo "${oaititle}) <(echo "${vttitle}")`
-            echo "vt/${eadid}.xml" $diff
+            echo "vt/${eadid}.xml ${oaititle}" >> /tmp/f1
+            echo "vt/${eadid}.xml ${vttitle}" >> /tmp/f2
         fi
 #    else     
 #        if [[ "${eadid}" == "" ]] ; then 
