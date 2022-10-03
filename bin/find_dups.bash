@@ -7,7 +7,7 @@ if [[ "$1" == "-t" ]] ; then
 else
     test=0
 fi
-allbut="vt/viblbv01319.xml vt/viblbv00013.xml vt/viblbv01395.xml vt/viblbv01409.xml vt/viblbv01410.xml vt/viblbv01412.xml vt/viblbv01440.xml vt/viblbv01453.xml vt/viblbv01462.xml vt/viblbv01462.xml vt/viblbv01494.xml vt/viblbv00869.xml vt/viblbv00976.xml vt/viblbv01882.xml"
+allbut="vt/viblbv01409.xml vt/viblbv01882.xml"
 
 for file in `cat /tmp/vt1.list`
 do 
