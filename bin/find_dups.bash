@@ -7,6 +7,7 @@ if [[ "$1" == "-t" ]] ; then
 else
     test=0
 fi
+allbut="vt/viblbv01319.xml vt/viblbv00013.xml vt/viblbv01395.xml vt/viblbv01409.xml vt/viblbv01410.xml vt/viblbv01412.xml vt/viblbv01440.xml vt/viblbv01453.xml vt/viblbv01462.xml vt/viblbv01462.xml vt/viblbv01494.xml vt/viblbv00869.xml vt/viblbv00976.xml vt/viblbv01882.xml"
 
 for file in `cat /tmp/vt1.list`
 do 
@@ -19,47 +20,38 @@ do
         vttitlestrip=`echo $vttitle | sed -e 's/[., ")(:;*]//g' -e "s/'//g"`
         if [[ ${oaititle} == ${vttitle} ]] ; then
             echo "Match-y match"
-            cmp -s "vt/${eadid}.xml" "../vivaxtf/data/vt/${eadid}.xml" 
-            result=$?
-            if [[ "$result" == "0" ]] ; then 
-                if [[ "$test" == 0 ]] ; then
-                    mv "vt/${eadid}.xml" ../deleted/vt
-                else
-                    echo mv "vt/${eadid}.xml" ../deleted/vt
-                fi
+            if [[ "$test" == 0 ]] ; then
+                mv "vt/${eadid}.xml" ../deleted/vt
+            else
+                echo mv "vt/${eadid}.xml" ../deleted/vt
             fi
         elif [[ "${oaititle}" == *"${vttitle}"* ]] ; then 
             echo "near Match-y match"
-            cmp -s "vt/${eadid}.xml" "../vivaxtf/data/vt/${eadid}.xml"
-            result=$?
-            if [[ "$result" == "0" ]] ; then
-                if [[ "$test" == 0 ]] ; then
-                    mv "vt/${eadid}.xml" ../deleted/vt
-                else
-                    echo mv "vt/${eadid}.xml" ../deleted/vt
-                fi
+            if [[ "$test" == 0 ]] ; then
+                mv "vt/${eadid}.xml" ../deleted/vt
+            else
+                echo mv "vt/${eadid}.xml" ../deleted/vt
             fi
         elif [[ "${vttitle}" == *"${oaititle}"* ]] ; then 
             echo "near Match-y match-y"
-            cmp -s "vt/${eadid}.xml" "../vivaxtf/data/vt/${eadid}.xml"
-            result=$?
-            if [[ "$result" == "0" ]] ; then
-                if [[ "$test" == 0 ]] ; then
-                    mv "vt/${eadid}.xml" ../deleted/vt
-                else
-                    echo mv "vt/${eadid}.xml" ../deleted/vt
-                fi
+            if [[ "$test" == 0 ]] ; then
+                mv "vt/${eadid}.xml" ../deleted/vt
+            else
+                echo mv "vt/${eadid}.xml" ../deleted/vt
             fi
         elif [[ "${vttitlestrip}" == "${oaititlestrip}" ]] ; then 
             echo "near Match-y match-y strip"
-            cmp -s "vt/${eadid}.xml" "../vivaxtf/data/vt/${eadid}.xml"
-            result=$?
-            if [[ "$result" == "0" ]] ; then
-                if [[ "$test" == 0 ]] ; then
-                    mv "vt/${eadid}.xml" ../deleted/vt
-                else
-                    echo mv "vt/${eadid}.xml" ../deleted/vt
-                fi
+            if [[ "$test" == 0 ]] ; then
+                mv "vt/${eadid}.xml" ../deleted/vt
+            else
+                echo mv "vt/${eadid}.xml" ../deleted/vt
+            fi
+        elif [[ `echo $allbut | egrep "vt/${eadid}.xml" | wc -l` == "0" ]] ; then
+            echo "manual review ok'd"
+            if [[ "$test" == 0 ]] ; then
+                mv "vt/${eadid}.xml" ../deleted/vt
+            else
+                echo mv "vt/${eadid}.xml" ../deleted/vt
             fi
         else    
             echo "vt/${eadid}.xml ${oaititle}" >> /tmp/f1
